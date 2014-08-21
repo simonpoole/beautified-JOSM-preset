@@ -2864,7 +2864,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="bicycle" text="Bicycle" />
             </optional>
         </item> <!-- Subway Entrance -->
-        <item name="Ticket Machine" icon="presets/vending_machine.png" type="node" preset_name_label="true">
+        <item name="Ticket Machine" icon="https://github.com/simonpoole/beautified-JOSM-preset/raw/master/icons/png/shopping_pngvending_machine.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vending_machine"
@@ -6591,7 +6591,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Pet -->
     </group> <!-- Other -->
         <separator/>
-    <item name="Vending Machine" icon="presets/vending_machine.png" type="node" preset_name_label="true">
+    <item name="Vending Machine" icon="https://github.com/simonpoole/beautified-JOSM-preset/raw/master/icons/png/shopping_pngvending_machine.png" type="node" preset_name_label="true">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vending_machine"
