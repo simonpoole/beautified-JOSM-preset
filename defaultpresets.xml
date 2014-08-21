@@ -2864,7 +2864,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="bicycle" text="Bicycle" />
             </optional>
         </item> <!-- Subway Entrance -->
-        <item name="Ticket Machine" icon="https://github.com/simonpoole/beautified-JOSM-preset/raw/master/icons/png/shopping_pngvending_machine.png" type="node" preset_name_label="true">
+        <item name="Ticket Machine" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_vending_machine.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vending_machine"
@@ -2880,7 +2880,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Ticket Machine -->
     </group> <!-- Public Transport -->
     <group name="Public Transport (Legacy)" icon="presets/bus.png">
-        <item name="Public transport route (Legacy)" icon="presets/path.png" type="relation" preset_name_label="true">
+        <item name="Public transport route (Legacy)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png" type="relation" preset_name_label="true">
             <key key="type" value="route" />
             <combo key="route" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,aerialway,ferry" values_searchable="true" match="keyvalue" />
             <key key="public_transport:version" value="1" /> <!-- only validate marked relations in order to avoid false positives -->
@@ -6591,7 +6591,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Pet -->
     </group> <!-- Other -->
         <separator/>
-    <item name="Vending Machine" icon="https://github.com/simonpoole/beautified-JOSM-preset/raw/master/icons/png/shopping_pngvending_machine.png" type="node" preset_name_label="true">
+    <item name="Vending Machine" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_vending_machine.png" type="node" preset_name_label="true">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vending_machine"
