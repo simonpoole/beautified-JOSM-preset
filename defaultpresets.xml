@@ -3100,9 +3100,9 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Gate -->
     </group> <!-- Airport -->
   </group> <!-- Transport -->
-  <group name="Facilities" icon="presets/bed.png">
-    <group name="Accommodation" icon="presets/bed.png">
-        <item name="Hotel" icon="presets/bed.png" type="node,closedway" preset_name_label="true">
+  <group name="Facilities" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_hotel2.png">
+    <group name="Accommodation" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_hotel2.png">
+        <item name="Hotel" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_hotel2.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=hotel"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=hotel"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:tourism=hotel"
@@ -3120,7 +3120,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Hotel -->
-        <item name="Motel" icon="styles/standard/accommodation/motel.png" type="node,closedway" preset_name_label="true">
+        <item name="Motel" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_motel.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=motel"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=motel"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=motel"
@@ -3151,7 +3151,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Guest House/Bed & Breakfast -->
-        <item name="Chalet" icon="styles/standard/accommodation/chalet.png" type="node,closedway" preset_name_label="true">
+        <item name="Chalet" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_chalet2.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=chalet"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=chalet"
                   nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:tourism=chalet"
@@ -3167,7 +3167,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Chalet -->
-        <item name="Hostel" icon="presets/hostel.png" type="node,closedway" preset_name_label="true">
+        <item name="Hostel" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_hostel.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=hostel"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=hostel"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=hostel"
@@ -3184,7 +3184,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Hostel -->
-        <item name="Alpine Hut" icon="styles/standard/accommodation/alpine_hut.png" type="node,closedway" preset_name_label="true">
+        <item name="Alpine Hut" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_alpinehut.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=alpine_hut"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=alpine_hut"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=alpine_hut"
@@ -3201,7 +3201,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="contact" />
         </item> <!-- Alpine Hut -->
         <separator/>
-        <item name="Caravan Site/RV Park" icon="presets/caravan2.png" type="node,closedway" preset_name_label="true">
+        <item name="Caravan Site/RV Park" icon="https://github.com/simonpoole/beautified-JOSM-preset/blob/master/icons/png/accommodation_caravan_park.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=caravan_site"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=caravan_site"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=caravan_site"
@@ -3220,7 +3220,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Caravan Site/RV Park -->
-        <item name="Camping Site" icon="presets/tent.png" type="node,closedway" preset_name_label="true">
+        <item name="Camping Site" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_camping.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=camp_site"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=camp_site"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=camp_site"
@@ -4445,7 +4445,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" />
             <combo key="seats" text="Amount of Seats" values="2,3,4,5,6,7,8,9,10" />
         </item> <!-- Bench -->
-        <item name="Shelter" icon="presets/shelter.png" type="node,closedway" preset_name_label="true">
+        <item name="Shelter" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_shelter2.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=shelter"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=shelter"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=shelter"
