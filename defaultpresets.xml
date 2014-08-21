@@ -2959,7 +2959,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="name" text="Name" />
             </optional>
         </item> <!-- Bus Station -->
-        <item name="Bus Stop" icon="presets/bus_small.png" type="node" preset_name_label="true">
+        <item name="Bus Stop" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=bus_stop"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=bus_stop"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=bus_stop"
@@ -3741,7 +3741,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator" />
             <reference ref="link_contact" />
         </item> <!-- Theatre -->
-        <item name="Library" icon="styles/standard/shop/rental/library.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Library" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_library.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=library"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=library"
                   et.href="http://wiki.openstreetmap.org/wiki/Et:Tag:amenity=library"
@@ -4425,7 +4425,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="amenity" value="waste_disposal" />
         </item> <!-- Waste Disposal/Dumpster -->
         <separator/>
-        <item name="Bench" icon="presets/bench.png" type="node" preset_name_label="true">
+        <item name="Bench" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_bench.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bench"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bench"
                   et.href="http://wiki.openstreetmap.org/wiki/Et:Tag:amenity=bench"
@@ -4474,7 +4474,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="lock" text="Lock" values="yes,no,unknown" />
         </item> <!-- Hunting Stand -->
         <separator/>
-        <item name="Drinking Water" icon="presets/drinking_water.png" type="node" preset_name_label="true">
+        <item name="Drinking Water" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_drinkingtap.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=drinking_water"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=drinking_water"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=drinking_water"
@@ -5841,7 +5841,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Kiosk -->
         <separator/>
-        <item name="Bakery" icon="presets/baker.png" type="node,closedway" preset_name_label="true">
+        <item name="Bakery" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_bakery.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=bakery"
                   ar.href="http://wiki.openstreetmap.org/wiki/Ar:Tag:shop=bakery"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=bakery"
