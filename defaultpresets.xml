@@ -2719,7 +2719,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Rental -->
     </group> <!-- Bicycle -->
-    <group name="Public Transport" icon="https://github.com/simonpoole/beautified-JOSM-preset/blob/master/icons/png/transport_bus_stop.png">
+    <group name="Public Transport" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png">
         <item name="Public Transport Route" icon="presets/path.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Public_Transport#Route" />
             <space />
@@ -2879,7 +2879,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="payment_account" />
         </item> <!-- Ticket Machine -->
     </group> <!-- Public Transport -->
-    <group name="Public Transport (Legacy)" icon="presets/bus.png">
+    <group name="Public Transport (Legacy)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png">
         <item name="Public transport route (Legacy)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png" type="relation" preset_name_label="true">
             <key key="type" value="route" />
             <combo key="route" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,aerialway,ferry" values_searchable="true" match="keyvalue" />
