@@ -1112,7 +1112,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Dedicated Footway -->
-        <item name="Steps" icon="presets/steps.png" type="way" preset_name_label="true">
+        <item name="Steps" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_steps.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=steps"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=steps"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:highway=steps"
@@ -1328,8 +1328,8 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Mountain Pass -->
     </group> <!-- Waypoints -->
-    <group name="Barriers" icon="presets/barrier.png"> <!-- *** Node Barriers *** -->
-        <item name="Block" icon="styles/standard/vehicle/block.svg" type="node,way,closedway" preset_name_label="true">
+    <group name="Barriers" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_gate.png"> <!-- *** Node Barriers *** -->
+        <item name="Block" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_blocks.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=block"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=block"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:barrier=block"
@@ -1341,7 +1341,7 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="material" text="Material" values="concrete,stone" />
             </optional>
         </item> <!-- Block -->
-        <item name="Bollard" icon="presets/bollard.png" type="node,way" preset_name_label="true">
+        <item name="Bollard" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_bollard.png" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=bollard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=bollard"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:barrier=bollard"
@@ -1358,7 +1358,7 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" />
             </optional>
         </item> <!-- Bollard -->
-        <item name="Cycle Barrier" icon="styles/standard/vehicle/cycle_barrier.png" type="node" preset_name_label="true">
+        <item name="Cycle Barrier" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_cycle_barrier.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=cycle_barrier"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=cycle_barrier"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:barrier=cycle_barrier"
@@ -1367,7 +1367,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="barrier_4" />
             <reference ref="optional_maxwidth" />
         </item> <!-- Cycle Barrier -->
-        <item name="Cattle Grid" icon="presets/cattle_grid.png" type="node" preset_name_label="true">
+        <item name="Cattle Grid" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_cattle_grid.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=cattle_grid"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=cattle_grid"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:barrier=cattle_grid" />
@@ -1395,7 +1395,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="barrier" value="spikes" />
             <reference ref="barrier_5" />
         </item> <!-- Spikes -->
-        <item name="Toll Booth" icon="presets/toll_station.png" type="node,closedway" preset_name_label="true">
+        <item name="Toll Booth" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_toll_booth.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=toll_booth"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=toll_booth"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:barrier=toll_booth"
@@ -1504,7 +1504,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="optional_height" />
         </item> <!-- Kerb -->
         <separator/> <!-- *** Access *** -->
-        <item name="Entrance (Barrier Opening)" icon="styles/standard/vehicle/entrance.png" type="node" preset_name_label="true">
+        <item name="Entrance (Barrier Opening)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_entrance.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=entrance"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:barrier=entrance"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=entrance" />
@@ -1512,7 +1512,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="barrier_5" />
             <reference ref="optional_maxwidth" />
         </item> <!-- Entrance (Barrier Opening) -->
-        <item name="Gate" icon="presets/gate.png" type="node" preset_name_label="true">
+        <item name="Gate" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_gate.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=gate"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=gate"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:barrier=gate"
@@ -1525,7 +1525,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="optional_maxheight_maxwidth" />
             <reference ref="general_access" />
         </item> <!-- Gate -->
-        <item name="Lift Gate" icon="presets/lift_gate.png" type="node" preset_name_label="true">
+        <item name="Lift Gate" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_lift_gate.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=lift_gate"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=lift_gate"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:barrier=lift_gate"
@@ -1577,7 +1577,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="barrier_5" />
             <reference ref="optional_maxwidth" />
         </item> <!-- Bump Gate -->
-        <item name="Kissing Gate" icon="presets/empty.png" type="node" preset_name_label="true">
+        <item name="Kissing Gate" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_kissing_gate.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=kissing_gate"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=kissing_gate" />
             <key key="barrier" value="kissing_gate" />
@@ -1591,7 +1591,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="barrier_5" />
             <reference ref="optional_maxwidth" />
         </item> <!-- Chain -->
-        <item name="Stile" icon="presets/stile.png" type="node" preset_name_label="true">
+        <item name="Stile" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_stile.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=stile" />
             <space />
             <key key="barrier" value="stile" />
@@ -3201,7 +3201,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="contact" />
         </item> <!-- Alpine Hut -->
         <separator/>
-        <item name="Caravan Site/RV Park" icon="https://github.com/simonpoole/beautified-JOSM-preset/blob/master/icons/png/accommodation_caravan_park.png" type="node,closedway" preset_name_label="true">
+        <item name="Caravan Site/RV Park" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_caravan_park.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=caravan_site"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=caravan_site"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=caravan_site"
@@ -3654,7 +3654,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="contact" />
         </item> <!-- Brothel -->
         <separator/>
-        <item name="Playground" icon="styles/standard/leisure/playground.png" type="node,closedway" preset_name_label="true">
+        <item name="Playground" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_playground.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=playground"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=playground"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=playground"
@@ -3950,8 +3950,8 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="oh" />
         </item> <!-- Other Place of Worship -->
     </group> <!-- Place of Worship -->
-    <group name="Public Building" icon="presets/townhall.png">
-        <item name="Public Building" icon="styles/standard/service.png" type="node,closedway,relation" preset_name_label="true">
+    <group name="Public Building" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_public_building2.png">
+        <item name="Public Building" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_public_building2.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=public_building"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=public_building"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=public_building"
@@ -3960,7 +3960,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="amenity" value="public_building" />
             <text key="name" text="Name" />
         </item> <!-- Public Building -->
-        <item name="Town Hall" icon="presets/townhall.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Town Hall" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_town_hall2.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=townhall"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=townhall"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=townhall"
@@ -3999,7 +3999,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="link_contact" />
         </item> <!-- Embassy -->
-        <item name="Courthouse" icon="presets/JusticeScales.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Courthouse" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_court.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=courthouse"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=courthouse"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=courthouse"
@@ -4011,7 +4011,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="link_contact" />
         </item> <!-- Courthouse -->
-        <item name="Prison" icon="presets/prison.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Prison" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_prison.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=prison"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=prison"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=prison"
@@ -4023,7 +4023,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="link_contact" />
         </item> <!-- Prison -->
-        <item name="Police" icon="styles/standard/service/police.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Police" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_police.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=police"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=police"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=police"
@@ -4037,7 +4037,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="link_contact" />
         </item> <!-- Police -->
-        <item name="Fire Station" icon="presets/firebrigade.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Fire Station" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_firestation.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=fire_station"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=fire_station"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=fire_station"
@@ -4050,7 +4050,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="amenity" value="fire_station" />
             <text key="name" text="Name" />
         </item> <!-- Fire Station -->
-        <item name="Post Office" icon="styles/standard/service/post_office.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Post Office" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_post_office.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=post_office"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=post_office"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=post_office"
@@ -4278,8 +4278,8 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Veterinary -->
     </group> <!-- Health -->
-    <group name="Facilities" icon="presets/telephone.png">
-        <item name="Toilets/Restrooms" icon="presets/toilet.png" type="node,closedway" preset_name_label="true">
+    <group name="Facilities" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_telephone.png">
+        <item name="Toilets/Restrooms" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_toilets.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=toilets"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=toilets"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=toilets"
@@ -4301,7 +4301,7 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="wheelchair" text="Wheelchair" values="no,limited,yes" />
             </optional>
         </item> <!-- Toilets/Restrooms -->
-        <item name="Post Box" icon="styles/standard/service/post_box.png" type="node" preset_name_label="true">
+        <item name="Post Box" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_post_box.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=post_box"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=post_box"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=post_box"
@@ -4315,7 +4315,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="collection_times" text="Collection times" delimiter="|" values="11:30|Mo-Fr 15:00,17:45,19:00,23:00; Sa 15:10; Su 10:30,23:00|Mo-Fr 09:00-12:00,17:15; Sa 14:00; Su,PH off" />
             <check key="drive_through" text="Drive through" />
         </item> <!-- Post Box -->
-        <item name="Telephone" icon="presets/telephone.png" type="node" preset_name_label="true">
+        <item name="Telephone" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_telephone.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=telephone"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=telephone"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=telephone"
@@ -4382,7 +4382,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="hygrometer" text="Shows humidity" />
             </optional>
         </item> <!-- Clock -->
-        <item name="Recycling" icon="presets/recycling.png" type="node,closedway" preset_name_label="true">
+        <item name="Recycling" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_recycling.png" type="node,closedway" preset_name_label="true">
            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=recycling"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=recycling"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=recycling"
@@ -4404,7 +4404,7 @@ Note that for a match, at least one positive and no negative is required.
             <check key="recycling:scrap_metal" text="Scrap Metal" />
             <combo key="recycling_type" text="Type" values="container,centre" />
         </item> <!-- Recycling -->
-        <item name="Waste Basket/Trash Can" icon="styles/standard/service/recycling/trash-bin.png" type="node" preset_name_label="true">
+        <item name="Waste Basket/Trash Can" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_waste_bin.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=waste_basket"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=waste_basket"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=waste_basket"
@@ -5007,7 +5007,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="building" text="Building" values="residential,apartments,house,hut,dormitory,terrace,detached,roof" default="residential" match="keyvalue" values_context="building" values_searchable="true" />
             <text key="name" text="Name" />
         </item> <!-- Residential Building -->
-        <item name="Entrance" icon="styles/standard/misc/entrance-yes.png" type="node" preset_name_label="true">
+        <item name="Entrance" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/barrier_entrance.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:entrance"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:entrance"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:entrance"
@@ -5184,7 +5184,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="man_made" value="watermill" />
             <text key="name" text="Name" />
         </item> <!-- Watermill -->
-        <item name="Fountain" icon="presets/spring.png" type="node,closedway" preset_name_label="true">
+        <item name="Fountain" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_fountain2.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=fountain"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=fountain"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=fountain"
@@ -5272,7 +5272,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="display:digital" text="Digital" />
             </checkgroup>
         </item> <!-- Monitoring Station -->
-        <item name="Survey Point" icon="presets/survey_point.png" type="node" preset_name_label="true">
+        <item name="Survey Point" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_survey_point.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=survey_point"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=survey_point"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=survey_point"
