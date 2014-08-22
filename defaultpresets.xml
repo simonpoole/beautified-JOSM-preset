@@ -3239,8 +3239,8 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="contact" />
         </item> <!-- Camping Site -->
     </group> <!-- Accommodation -->
-    <group name="Food+Drinks" icon="presets/restaurant.png">
-        <item name="Restaurant" icon="presets/restaurant.png" type="node,closedway" preset_name_label="true">
+    <group name="Food+Drinks" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_restaurant.png">
+        <item name="Restaurant" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_restaurant.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=restaurant"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=restaurant"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=restaurant"
@@ -3260,7 +3260,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Restaurant -->
-        <item name="Fast Food" icon="presets/fastfood.png" type="node,closedway" preset_name_label="true">
+        <item name="Fast Food" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_fastfood2.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=fast_food"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=fast_food"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=fast_food"
@@ -3276,7 +3276,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Fast Food -->
-        <item name="Food Court" icon="presets/fastfood.png" type="node,closedway" preset_name_label="true">
+        <item name="Food Court" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_fastfood.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=food_court"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=food_court"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=food_court"
@@ -3289,7 +3289,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Food Court -->
-        <item name="Cafe" icon="presets/cafe.png" type="node,closedway" preset_name_label="true">
+        <item name="Cafe" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_cafe.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=cafe"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=cafe"
                   et.href="http://wiki.openstreetmap.org/wiki/Et:Tag:amenity=cafe"
@@ -3309,7 +3309,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Cafe -->
-        <item name="Pub" icon="presets/pub.png" type="node,closedway" preset_name_label="true">
+        <item name="Pub" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_pub.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=pub"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=pub"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=pub"
@@ -3325,7 +3325,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Pub -->
-        <item name="Beer Garden" icon="presets/biergarten.png" type="node,closedway" preset_name_label="true">
+        <item name="Beer Garden" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_biergarten.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=biergarten"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=biergarten"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=biergarten"
@@ -3341,7 +3341,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Beer Garden -->
-        <item name="Bar" icon="presets/bar.png" type="node,closedway" preset_name_label="true">
+        <item name="Bar" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_bar.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bar"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bar"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=bar"
@@ -3358,7 +3358,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Bar -->
-        <item name="Night Club" icon="presets/bar.png" type="node,closedway" preset_name_label="true">
+        <item name="Night Club" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_bar.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=nightclub"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:amenity=nightclub"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=nightclub"
@@ -4065,8 +4065,8 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator" />
         </item> <!-- Post Office -->
     </group> <!-- Public Buildings -->
-    <group name="Education" icon="presets/school.png">
-        <item name="Kindergarten" icon="presets/kindergarten.png" type="node,closedway,relation" preset_name_label="true">
+    <group name="Education" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_school.png">
+        <item name="Kindergarten" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_nursery2.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=kindergarten"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=kindergarten"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=kindergarten"
@@ -4079,7 +4079,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="link_contact" />
         </item> <!-- Kindergarten -->
-        <item name="School" icon="presets/school.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="School" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_school.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=school"
                   ar.href="http://wiki.openstreetmap.org/wiki/Ar:Tag:amenity=school"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=school"
@@ -4095,7 +4095,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="link_contact" />
         </item> <!-- School -->
-        <item name="University" icon="styles/standard/education/university.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="University" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_university.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=university"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=university"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=university"
@@ -4110,7 +4110,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="link_contact" />
         </item> <!-- University -->
-        <item name="College" icon="styles/standard/education/college.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="College" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_college.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=college"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=college"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=college"
