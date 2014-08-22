@@ -2282,7 +2282,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="ref" text="Reference" />
         </item> <!-- Railway Switch -->
     </group> <!-- Railway -->
-    <group name="Aerialway" icon="presets/aerialway.png">
+    <group name="Aerialway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_transport_aerialway.png">
         <item name="Chair Lift" icon="presets/chair_lift.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=chair_lift"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:aerialway=chair_lift" />
@@ -2424,7 +2424,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Pylon -->
     </group> <!-- Aerialway -->
     <separator/>
-    <group name="Car" icon="presets/car.png">
+    <group name="Car" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_car.png">
         <item name="Parking" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_parking.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=parking"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=parking"
@@ -2622,7 +2622,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="website" text="Website" />
         </item> <!-- Sharing -->
     </group> <!-- Car -->
-    <group name="Motorcycle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_motorcycle.png">
+    <group name="Motorcycle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_motorcycle.png">
         <item name="Parking" icon="styles/standard/vehicle/parking/motorbike.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=motorcycle_parking"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=motorcycle_parking"
@@ -2659,7 +2659,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Motorcycle Dealer -->
     </group> <!-- Motorcycle -->
-    <group name="Bicycle" icon="presets/bike.png">
+    <group name="Bicycle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bicycle.png">
         <item name="Parking" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_parking_bicycle.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bicycle_parking"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bicycle_parking"
@@ -2719,7 +2719,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Rental -->
     </group> <!-- Bicycle -->
-    <group name="Public Transport" icon="presets/bus.png">
+    <group name="Public Transport" icon="https://github.com/simonpoole/beautified-JOSM-preset/blob/master/icons/png/transport_bus_stop.png">
         <item name="Public Transport Route" icon="presets/path.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Public_Transport#Route" />
             <space />
