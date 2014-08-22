@@ -2623,7 +2623,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Sharing -->
     </group> <!-- Car -->
     <group name="Motorcycle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_motorcycle.png">
-        <item name="Parking" icon="styles/standard/vehicle/parking/motorbike.png" type="node,closedway" preset_name_label="true">
+        <item name="Parking" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_transport_motorcycle_parking.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=motorcycle_parking"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=motorcycle_parking"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=motorcycle_parking" />
@@ -6896,7 +6896,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Ridge -->
     </group> <!-- Geography -->
     <group name="Nature" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_coniferous_and_deciduous.png">
-        <item name="Tree" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_coniferous_and_deciduous.png" type="node" preset_name_label="true">
+        <item name="Tree" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_landuse_tree.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=tree"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=tree"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=tree"
@@ -7251,7 +7251,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="residential" />
             <text key="name" text="Name" />
         </item> <!-- Residential Area -->
-        <item name="Graveyard" icon="presets/graveyard.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Graveyard" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_place_of_worship_grave_yard.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=grave_yard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=grave_yard"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=grave_yard"
@@ -7264,7 +7264,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="amenity" value="grave_yard" />
             <reference ref="religious" />
         </item> <!-- Graveyard -->
-        <item name="Cemetery" icon="presets/cemetery.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Cemetery" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_place_of_worship_grave_yard.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=cemetery"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=cemetery"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=cemetery"
