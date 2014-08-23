@@ -4541,7 +4541,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="optional_sport" />
         </item> <!-- Sports Centre -->
-        <item name="Pitch" icon="presets/pitch.png" type="node,closedway" preset_name_label="true">
+        <item name="Pitch" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_pitch_21033.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=pitch"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=pitch"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=pitch"
@@ -4590,7 +4590,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
         </item> <!-- Miniature Golf -->
     </group> <!-- Sport Facilities -->
-    <group name="Sport" icon="presets/rowing.png">
+    <group name="Sport" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_rowing_21113.png">
         <item name="Multi" icon="styles/standard/sport/multi.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=multi" />
             <space />
@@ -4598,7 +4598,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" />
         </item> <!-- Multi -->
-        <item name="Nine-pin Bowling" icon="styles/standard/sport/10pin.png" type="node,closedway" preset_name_label="true">
+        <item name="Nine-pin Bowling" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_bowling_21179.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=9pin"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:sport=9pin" />
             <space />
@@ -4606,7 +4606,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
         </item> <!-- Nine-pin Bowling -->
-        <item name="Ten-pin Bowling" icon="styles/standard/sport/10pin.png" type="node,closedway" preset_name_label="true">
+        <item name="Ten-pin Bowling" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_bowling_21179.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=10pin" />
             <space />
             <key key="sport" value="10pin" />
@@ -4621,14 +4621,14 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
         </item> <!-- Archery -->
-        <item name="Track and Field Athletics" icon="presets/athletics.png" type="node,closedway" preset_name_label="true">
+        <item name="Track and Field Athletics" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_athletics_21002.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sports=athletics" />
             <space />
             <key key="sport" value="athletics" />
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" default="track" />
         </item> <!-- Track and Field Athletics -->
-        <item name="Climbing" icon="styles/standard/sport/climbing.png" type="node,way,closedway" preset_name_label="true">
+        <item name="Climbing" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_climbing_21005.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=climbing"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:sport=climbing"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:sport=climbing" />
@@ -4643,14 +4643,14 @@ Note that for a match, at least one positive and no negative is required.
             <key key="sport" value="canoe" />
             <text key="name" text="Name" />
         </item> <!-- Canoeing/Kayaking -->
-        <item name="Cycling" icon="presets/cycling.png" type="node,closedway" preset_name_label="true">
+        <item name="Cycling" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_cycling_21098.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=cycling" />
             <space />
             <key key="sport" value="cycling" />
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="racing" />
         </item> <!-- Cycling -->
-        <item name="Dog Racing" icon="styles/standard/leisure/dog.png" type="node,closedway" preset_name_label="true">
+        <item name="Dog Racing" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_dog_racing_21180.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=dog_racing" />
             <space />
             <key key="sport" value="dog_racing" />
@@ -4686,7 +4686,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" default="ice_rink" />
         </item> <!-- Skating -->
-        <item name="Skateboard" icon="styles/standard/sport/skateboard.png" type="node,closedway" preset_name_label="true">
+        <item name="Skateboard" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_skateboard_21059.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=skateboard"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:sport=skateboard" />
             <space />
@@ -4754,7 +4754,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="sport" value="canadian_football" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Canadian Football -->
-        <item name="Gaelic Games" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_football_21036.png" type="node,closedway" preset_name_label="true">
+        <item name="Gaelic Games" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_gaelic_games_21156.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=gaelic_games" />
             <space />
             <key key="sport" value="gaelic_games" />
@@ -4786,20 +4786,20 @@ Note that for a match, at least one positive and no negative is required.
             <key key="sport" value="baseball" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Baseball -->
-        <item name="Basketball" icon="presets/basketball.png" type="node,closedway" preset_name_label="true">
+        <item name="Basketball" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_basketball_21039.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=basketball" />
             <space />
             <key key="sport" value="basketball" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Basketball -->
-        <item name="Volleyball" icon="styles/standard/sport/volleyball.png" type="node,closedway" preset_name_label="true">
+        <item name="Volleyball" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_volleyball_21073.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=volleyball" />
             <space />
             <key key="sport" value="volleyball" />
             <reference ref="name_operator" />
             <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
         </item> <!-- Volleyball -->
-        <item name="Beach Volleyball" icon="presets/beachvolleyball.png" type="node,closedway" preset_name_label="true">
+        <item name="Beach Volleyball" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_beachvolleyball_21150.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=beachvolleyball" />
             <space />
             <key key="sport" value="beachvolleyball" />
@@ -4816,13 +4816,13 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="golf_course,pitch,sports_centre,stadium" default="golf_course" />
         </item> <!-- Golf -->
-        <item name="Boule" icon="presets/boule.png" type="node,closedway" preset_name_label="true">
+        <item name="Boule" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_boules_21040.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=boules" />
             <space />
             <key key="sport" value="boules" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Boule -->
-        <item name="Lawn Bowling" icon="presets/boule.png" type="node,closedway" preset_name_label="true">
+        <item name="Lawn Bowling" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_bowling_21179.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=bowls" />
             <space />
             <key key="sport" value="bowls" />
@@ -4834,34 +4834,34 @@ Note that for a match, at least one positive and no negative is required.
             <key key="sport" value="cricket" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Cricket -->
-        <item name="Cricket Nets" icon="presets/cricket.png" type="node,closedway" preset_name_label="true">
+        <item name="Cricket Nets" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_cricket_nets_21154.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=cricket_nets" />
             <space />
             <key key="sport" value="cricket_nets" />
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
         </item> <!-- Cricket Nets -->
-        <item name="Croquet" icon="styles/standard/sport/croquet.png" type="node,closedway" preset_name_label="true">
+        <item name="Croquet" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_croquet_21051.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=croquet" />
             <space />
             <key key="sport" value="croquet" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Croquet -->
-        <item name="Hockey" icon="presets/Hockey.png" type="node,closedway" preset_name_label="true">
+        <item name="Hockey" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_hockey_21013.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=hockey" />
             <space />
             <key key="sport" value="hockey" />
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" />
         </item> <!-- Hockey -->
-        <item name="Pelota" icon="presets/pelota.png" type="node,closedway" preset_name_label="true">
+        <item name="Pelota" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_pelota_21031.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=pelota"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:sport=pelota" />
             <space />
             <key key="sport" value="pelota" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Pelota -->
-        <item name="Racquetball" icon="presets/racquetball.png" type="node,closedway" preset_name_label="true">
+        <item name="Racquetball" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_racquet_21055.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=racquet"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:sport=racquet" />
             <space />
@@ -4869,7 +4869,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
         </item> <!-- Racquetball -->
-        <item name="Table Tennis/Ping-Pong" icon="presets/table_tennis.png" type="node,closedway" preset_name_label="true">
+        <item name="Table Tennis/Ping-Pong" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_table_tennis_21070.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=table_tennis" />
             <space />
             <key key="sport" value="table_tennis" />
@@ -4891,14 +4891,14 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="racing" />
         </item> <!-- Motorsport -->
-        <item name="Kart Racing" icon="presets/karting.png" type="node,closedway" preset_name_label="true">
+        <item name="Kart Racing" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_karting_21016.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=karting" />
             <space />
             <key key="sport" value="karting" />
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
         </item> <!-- Kart Racing -->
-        <item name="Motocross" icon="styles/standard/sport/motocross.png" type="node,closedway" preset_name_label="true">
+        <item name="Motocross" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_motocross_21100.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=motocross"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:sport"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:sport"
@@ -4915,7 +4915,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
         </item> <!-- Motocross -->
-        <item name="Safety Training" icon="presets/safety_training.png" type="node,closedway" preset_name_label="true">
+        <item name="Safety Training" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_safety_training_21077.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=safety_training"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:sport"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:sport"
@@ -4933,14 +4933,14 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
         </item> <!-- Safety Training -->
         <separator/>
-        <item name="Model Aerodrome" icon="presets/plane.png" type="node,closedway" preset_name_label="true">
+        <item name="Model Aerodrome" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_model_aerodrome_21020.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=model_aerodrome" />
             <space />
             <key key="sport" value="model_aerodrome" />
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="aerialway" />
         </item> <!-- Model Aerodrome -->
-        <item name="RC Car" icon="presets/car.png" type="node,closedway" preset_name_label="true">
+        <item name="RC Car" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_rc_car_21075.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=rc_car"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:sport"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:sport"
@@ -7614,7 +7614,7 @@ Note that for a match, at least one positive and no negative is required.
                 <role key="to" text="to way" requisite="required" count="1" type="way" />
             </roles>
         </item> <!-- Turn Restriction -->
-        <item name="Enforcement" icon="presets/speed_camera.png" type="relation" preset_name_label="true">
+        <item name="Enforcement" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_speed_camera_18025.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:enforcement"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:enforcement"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:enforcement"
