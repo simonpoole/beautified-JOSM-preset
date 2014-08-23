@@ -2623,7 +2623,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Sharing -->
     </group> <!-- Car -->
     <group name="Motorcycle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_motorcycle.png">
-        <item name="Parking" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_motorcycle_parking_12091.png" type="node,closedway" preset_name_label="true">
+        <item name="Parking" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_motorcycle_parking_12001.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=motorcycle_parking"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=motorcycle_parking"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=motorcycle_parking" />
@@ -2904,7 +2904,7 @@ Note that for a match, at least one positive and no negative is required.
                 <role key="platform" text="platform" requisite="optional" type="node,way,closedway" member_expression="highway=platform OR railway=platform" />
             </roles>
         </item> <!-- Public transport route (Legacy) -->
-        <item name="Station" name_context="railway" icon="styles/standard/transport/railway_station.png" type="node,closedway" preset_name_label="true">
+        <item name="Station" name_context="railway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_train_station2.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=station"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=station"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:railway=station"
@@ -3377,7 +3377,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Night Club -->
-        <item name="Strip Club" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_stripcluba_12255.png" type="node,closedway" preset_name_label="true">
+        <item name="Strip Club" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_stripclub_12255.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=stripclub"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=stripclub"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=stripclub"
@@ -6304,7 +6304,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Interior Decoration -->
     </group> <!-- Home decoration -->
     <group name="Printed Material" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_stationery_29130.png">
-        <item name="Stationery" icon="presets/stationery.png" type="node,closedway" preset_name_label="true">
+        <item name="Stationery" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_stationery_29130.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=stationery"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=stationery"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=stationery"
