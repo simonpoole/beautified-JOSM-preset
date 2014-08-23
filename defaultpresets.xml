@@ -3543,7 +3543,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="description" text="Closer Description" />
         </item> <!-- Other Information Point -->
     </group> <!-- Tourism -->
-    <group name="Leisure" icon="presets/theme_park.png">
+    <group name="Leisure" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_theme_park.png">
         <item name="Movie Theater/Cinema" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_cinema2.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=cinema"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=cinema"
@@ -4329,7 +4329,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="payment_base" />
             <check key="payment:telephone_cards" text="Telephone cards" />
         </item> <!-- Telephone -->
-        <item name="Emergency Phone" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_emergency_phone.png" type="node" preset_name_label="true">
+        <item name="Emergency Phone" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_emergency_phone_17022.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:emergency=phone"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:emergency=phone"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:emergency=phone"
@@ -5880,7 +5880,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Seafood -->
-        <item name="Deli (Fine Food)" icon="presets/deli.png" type="node,closedway" preset_name_label="true">
+        <item name="Deli (Fine Food)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_deli_29042.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=deli"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=deli"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=deli"
@@ -5913,7 +5913,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Tea -->
-        <item name="Coffee" icon="styles/standard/shop/groceries/coffee.svg" type="node,closedway" preset_name_label="true">
+        <item name="Coffee" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_coffee_29167.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=coffee" />
             <space />
             <key key="shop" value="coffee" />
@@ -5949,7 +5949,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="organic" text="Organic" values="only,yes,no" />
             <reference ref="link_contact" />
         </item> <!-- Greengrocer -->
-        <item name="Farm Stand" icon="presets/apple.png" type="node,closedway" preset_name_label="true">
+        <item name="Farm Stand" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_farm_29062.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=farm"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=farm"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=farm"
@@ -5963,13 +5963,13 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Farm Stand -->
         <separator/>
-        <item name="Organic" type="node,closedway" preset_name_label="true">
+        <item name="Organic" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_organic_29120.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:organic"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Key:organic" />
             <space />
             <combo text="Organic/Bio" key="organic" values="only,yes,no" match="key" />
         </item> <!-- Organic -->
-        <item name="Fair Trade" type="node,closedway" preset_name_label="true">
+        <item name="Fair Trade" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_fair_trade_29060.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:fair_trade" />
             <space />
             <combo text="Fair Trade" key="fair_trade" values="no,yes,only" match="key" />
@@ -5987,7 +5987,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Alcohol -->
-        <item name="Beverages" icon="styles/standard/shop/beverages.png" type="node,closedway" preset_name_label="true">
+        <item name="Beverages" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_beverages_29007.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=beverages"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=beverages"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=beverages"
@@ -6026,7 +6026,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Boutique -->
-        <item name="Shoes" icon="styles/standard/shop/shoes.png" type="node,closedway" preset_name_label="true">
+        <item name="Shoes" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_shoes_29128.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=shoes"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=shoes"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=shoes"
@@ -6038,7 +6038,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="organic" text="Organic" values="only,yes,no" />
             <reference ref="link_contact" />
         </item> <!-- Shoes -->
-        <item name="Outdoor" icon="presets/tent.png" type="node,closedway" preset_name_label="true">
+        <item name="Outdoor" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_outdoor_29121.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=outdoor"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=outdoor"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=outdoor"
@@ -6049,7 +6049,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Outdoor -->
-        <item name="Sports" icon="presets/rowing.png" type="node,closedway" preset_name_label="true">
+        <item name="Sports" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_sports_29129.png" type="node,closedway" preset_name_label="true">
              <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=sports"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=sports"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=sports" />
@@ -6102,7 +6102,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Tailor -->
-        <item name="Fabric" icon="presets/fabric.png" type="node,closedway" preset_name_label="true">
+        <item name="Fabric" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_fabric_29050.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=fabric"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=fabric"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=fabric"
@@ -6113,7 +6113,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Fabric -->
     </group> <!-- Clothes -->
-    <group name="Electronic" icon="styles/standard/shop/electronics.png">
+    <group name="Electronic" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_electronics_29047.png">
         <item name="Computer" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_computer.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=computer"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=computer"
@@ -6125,7 +6125,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Computer -->
-        <item name="Electronics" icon="styles/standard/shop/electronics.png" type="node,closedway" preset_name_label="true">
+        <item name="Electronics" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_electronics_29047.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=electronics"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=electronics"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=electronics"
@@ -6144,7 +6144,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Mobile Phone -->
-        <item name="Vacuum Cleaner" icon="presets/vacuum_cleaner.png" type="node,closedway" preset_name_label="true">
+        <item name="Vacuum Cleaner" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_vacuum_cleaner_29147.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=vacuum_cleaner"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=vacuum_cleaner"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=vacuum_cleaner" />
@@ -6229,7 +6229,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="operator" text="Operator" />
             <reference ref="oh" />
         </item> <!-- Automated Teller Machine -->
-        <item name="Pawnbroker" icon="presets/pawnbroker.svg" type="node,closedway" preset_name_label="true">
+        <item name="Pawnbroker" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/money_pawnbroker_29185.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=pawnbroker"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=pawnbroker"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=pawnbroker" />
@@ -6239,8 +6239,8 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Pawnbroker -->
     </group> <!-- Cash -->
-    <group name="Home decoration" icon="styles/standard/shop/interior_decoration.svg">	
-        <item name="Furniture" icon="styles/standard/shop/furniture.png" type="node,closedway" preset_name_label="true">
+    <group name="Home decoration" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_interior_decoration_29087.png">	
+        <item name="Furniture" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_furniture_29068.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=furniture"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=furniture"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=furniture"
@@ -6251,7 +6251,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_brand_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Furniture -->
-        <item name="Kitchen" icon="presets/kitchen.png" type="node,closedway" preset_name_label="true">
+        <item name="Kitchen" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_kitchen_29090.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=kitchen"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=kitchen"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=kitchen"
@@ -6263,7 +6263,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_brand_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Kitchen -->
-        <item name="Curtain" icon="presets/curtain.png" type="node,closedway" preset_name_label="true">
+        <item name="Curtain" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_curtain_29041.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=curtain"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=curtain"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=curtain" />
@@ -6272,7 +6272,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Curtain -->
-        <item name="Frame" icon="presets/frame.png" type="node,closedway" preset_name_label="true">
+        <item name="Frame" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_frame_29066.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=frame"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=frame"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=frame"
@@ -6282,7 +6282,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Frame -->
-        <item name="Bed" icon="styles/standard/shop/bed.svg" type="node,closedway" preset_name_label="true">
+        <item name="Bed" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_bed_29163.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=bed"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=bed"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=bed"
@@ -6293,7 +6293,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Bed -->
-        <item name="Interior Decoration" icon="styles/standard/shop/interior_decoration.svg" type="node,closedway" preset_name_label="true">
+        <item name="Interior Decoration" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_interior_decoration_29087.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=interior_decoration"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=interior_decoration"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=interior_decoration" />
@@ -6303,7 +6303,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Interior Decoration -->
     </group> <!-- Home decoration -->
-    <group name="Printed Material" icon="presets/stationery.png">
+    <group name="Printed Material" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_stationery_29130.png">
         <item name="Stationery" icon="presets/stationery.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=stationery"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=stationery"
@@ -6336,7 +6336,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_brand_oh" />
             <combo key="second_hand" text="Second hand" values="only,yes,no" />
         </item> <!-- Book Store -->
-        <item name="Newspaper Stand" icon="presets/kiosk.png" type="node,closedway" preset_name_label="true">
+        <item name="Newspaper Stand" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_kiosk.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=newsagent"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=newsagent"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=newsagent"
@@ -6347,7 +6347,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="shop" value="newsagent" />
             <reference ref="name_oh" />
         </item> <!-- Newspaper Stand -->
-        <item name="Ticket" icon="styles/standard/shop/ticket.svg" type="node,closedway" preset_name_label="true">
+        <item name="Ticket" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_ticket_29200.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=ticket"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=ticket" />
             <space />
@@ -6381,7 +6381,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Mall -->
         <separator/>
-        <item name="Chemist" icon="styles/standard/shop/chemist.png" type="node,closedway" preset_name_label="true">
+        <item name="Chemist" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_chemist_29025.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=chemist"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=chemist"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=chemist"
@@ -6404,7 +6404,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Hairdresser/Barber -->
-        <item name="Beauty" icon="styles/standard/shop/beauty.svg" type="node,closedway" preset_name_label="true">
+        <item name="Beauty" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_beauty_29906.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=beauty"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=beauty"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=beauty"
@@ -6449,7 +6449,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
             <reference ref="link_contact" />
         </item> <!-- Gift/Souvenir -->
-        <item name="Erotic" icon="presets/erotic.png" type="node,closedway" preset_name_label="true">
+        <item name="Erotic" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_erotic_29049.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=erotic"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=erotic"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=erotic" />
@@ -6508,7 +6508,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Hardware -->
-        <item name="Paint" icon="presets/paint.png" type="node,closedway" preset_name_label="true">
+        <item name="Paint" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_paint_29122.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=paint"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=paint"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=paint"
@@ -6519,7 +6519,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="link_contact" />
         </item> <!-- Paint -->
         <separator/>
-        <item name="Travel Agency" icon="presets/travel.png" type="node,closedway" preset_name_label="true">
+        <item name="Travel Agency" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_travel_agency_29144.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=travel_agency"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=travel_agency"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=travel_agency" />
@@ -6545,7 +6545,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="shop" value="toys" />
             <reference ref="name_oh" />
         </item> <!-- Toys -->
-        <item name="Variety Store" icon="presets/variety_store.png" type="node,closedway" preset_name_label="true">
+        <item name="Variety Store" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_variety_store_29148.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=variety_store"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=variety_store"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=variety_store"
@@ -6569,7 +6569,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="shop" value="lottery" />
             <reference ref="name_operator_oh" />
         </item> <!-- Lottery -->
-        <item name="Bag" icon="styles/standard/shop/bag.svg" type="node,closedway" preset_name_label="true">
+        <item name="Bag" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_bag_29004.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=bag"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=bag"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=bag" />
