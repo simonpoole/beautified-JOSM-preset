@@ -437,8 +437,8 @@ Note that for a match, at least one positive and no negative is required.
     <preset_link preset_name="Contact (Common Schema)" />
   </chunk>
   <!--  Groups -->
-  <group name="Highways" icon="presets/way_secondary.png">
-    <group name="Streets" icon="presets/way_secondary.png">
+  <group name="Highways" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png">
+    <group name="Streets" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png">
         <item name="Motorway" icon="presets/motorway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=motorway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=motorway"
@@ -547,7 +547,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Trunk Link -->
         <separator/>
-        <item name="Primary" icon="presets/way_primary.png" type="way,closedway" preset_name_label="true">
+        <item name="Primary" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=primary"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=primary"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=primary"
@@ -1221,7 +1221,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <combo key="direction" text="Direction" values="clockwise" />
         </item> <!-- Mini-Roundabout -->
-        <item name="Pedestrian Crossing" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/way_crossing_18002.png" type="node" preset_name_label="true">
+        <item name="Pedestrian Crossing" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_crossing_18002.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:crossing"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:crossing"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:crossing"
@@ -1283,7 +1283,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <text key="alt_name" text="Second Name" />
         </item> <!-- City Limit -->
-        <item name="Speed Camera" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/way_speed_camera_18025.png" type="node" preset_name_label="true">
+        <item name="Speed Camera" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_speed_camera_18025.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=speed_camera"
                   az.href="http://wiki.openstreetmap.org/wiki/Az:Tag:highway=speed_camera"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=speed_camera"
