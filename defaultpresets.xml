@@ -2409,7 +2409,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Goods -->
         <separator/>
-        <item name="Station" name_context="aerialway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_station_10010.png" type="node,closedway" preset_name_label="true">
+        <item name="Station" name_context="aerialway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_aerialway_station_10010.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=station"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:aerialway=station" />
             <space />
@@ -3051,7 +3051,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="ref" text="Reference" />
             </optional>
         </item> <!-- Helipad -->
-        <item name="Apron" icon="presets/apron.png" type="closedway" preset_name_label="true">
+        <item name="Apron" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_apron_11002.png" type="closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aeroway=apron"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:aeroway=apron"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:aeroway=apron"
@@ -7180,7 +7180,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="leisure" value="garden" />
             <text key="name" text="Name" />
         </item> <!-- Garden -->
-        <item name="Grass" icon="presets/landuse.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Grass" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_grass.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=grass"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=grass"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=grass"
@@ -7334,7 +7334,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <text key="operator" text="Operator" />
         </item> <!-- Garages -->
-        <item name="Railway Land" icon="presets/rail_light.png" type="closedway,relation" preset_name_label="true">
+        <item name="Railway Land" icon="" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=railway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=railway"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=railway"
@@ -7399,7 +7399,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="landfill" />
             <text key="name" text="Name" />
         </item> <!-- Landfill -->
-        <item name="Quarry" icon="presets/mine.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Quarry" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_quary.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=quarry"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=quarry"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=quarry"
