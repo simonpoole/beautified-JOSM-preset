@@ -2283,7 +2283,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Railway Switch -->
     </group> <!-- Railway -->
     <group name="Aerialway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_aerialway_10001.png">
-        <item name="Chair Lift" icon="presets/chair_lift.png" type="way" preset_name_label="true">
+        <item name="Chair Lift" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_chair_lift_10002.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=chair_lift"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:aerialway=chair_lift" />
             <space />
@@ -2297,7 +2297,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="aerialway:heating" text="Has heating?" />
             </optional>
         </item> <!-- Chair Lift -->
-        <item name="Drag Lift" icon="presets/drag_lift.png" type="way" preset_name_label="true">
+        <item name="Drag Lift" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_drag_lift_10003.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=drag_lift" />
             <space />
             <key key="aerialway" value="drag_lift" />
@@ -2307,7 +2307,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="aerialway:duration" text="Typical journey time in minutes" />
             </optional>
         </item> <!-- Drag Lift -->
-        <item name="Cable Car" icon="presets/cable_car.png" type="way" preset_name_label="true">
+        <item name="Cable Car" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_aerialway_10001.png" gtype="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=cable_car"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:aerialway=cable_car"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:aerialway=cable_car"
@@ -2324,7 +2324,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="aerialway:heating" text="Has heating?" />
             </optional>
         </item> <!-- Cable Car -->
-        <item name="Gondola" icon="presets/aerialway.png" type="way" preset_name_label="true">
+        <item name="Gondola" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_gondola_10006.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=gondola" />
             <space />
             <key key="aerialway" value="gondola" />
@@ -2336,7 +2336,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="aerialway:heating" text="Has heating?" />
             </optional>
         </item> <!-- Gondola -->
-        <item name="Mixed Lift" type="way" preset_name_label="true">
+        <item name="Mixed Lift" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_mixed_lift_10008.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=mixed_lift" />
             <space />
             <key key="aerialway" value="mixed_lift" />
@@ -2349,7 +2349,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="aerialway:heating" text="Has heating?" />
             </optional>
         </item> <!-- Mixed Lift -->
-        <item name="T-bar Lift" icon="presets/drag_lift.png" type="way" preset_name_label="true">
+        <item name="T-bar Lift" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_t-bar_10004.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=t-bar" />
             <space />
             <key key="aerialway" value="t-bar" />
@@ -2359,7 +2359,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="aerialway:duration" text="Typical journey time in minutes" />
             </optional>
         </item> <!-- T-bar Lift -->
-        <item name="J-bar Lift" icon="presets/drag_lift.png" type="way" preset_name_label="true">
+        <item name="J-bar Lift" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_t-bar_10004.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=j-bar" />
             <space />
             <key key="aerialway" value="j-bar" />
@@ -2369,7 +2369,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="aerialway:duration" text="Typical journey time in minutes" />
             </optional>
         </item> <!-- J-bar Lift -->
-        <item name="Platter Lift" icon="presets/drag_lift.png" type="way" preset_name_label="true">
+        <item name="Platter Lift" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_drag_lift_10003.png" gtype="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=platter" />
             <space />
             <key key="aerialway" value="platter" />
@@ -2399,7 +2399,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="aerialway:duration" text="Typical journey time in minutes" />
             </optional>
         </item> <!-- Magic Carpet -->
-        <item name="Goods" icon="presets/goods.png" type="way" preset_name_label="true">
+        <item name="Goods" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_aerialway_goods_10007.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=goods" />
             <space />
             <key key="aerialway" value="goods" />
