@@ -2264,18 +2264,18 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
             </optional>
         </item> <!-- Crossing -->
-        <item name="Turntable" icon="presets/turntable.png" type="node,closedway" preset_name_label="true">
+        <item name="Turntable" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_turntable_27022.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=turntable"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=turntable"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=turntable" />
             <key key="railway" value="turntable" />
         </item> <!-- Turntable -->
-        <item name="Buffer Stop" icon="styles/standard/transport/buffer_stop.png" type="node" preset_name_label="true">
+        <item name="Buffer Stop" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_buffer_stop_27001.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=buffer_stop"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=buffer_stop" />
             <key key="railway" value="buffer_stop" />
         </item> <!-- Buffer Stop -->
-        <item name="Railway Switch" icon="presets/railway_switch.png" type="node" preset_name_label="true">
+        <item name="Railway Switch" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_switch_27020.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=switch"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=switch" />
             <key key="railway" value="switch" />
@@ -2409,14 +2409,14 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Goods -->
         <separator/>
-        <item name="Station" name_context="aerialway" icon="presets/aerialway_station.png" type="node,closedway" preset_name_label="true">
+        <item name="Station" name_context="aerialway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_station_10010.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=station"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:aerialway=station" />
             <space />
             <key key="aerialway" value="station" />
             <text key="name" text="Name" />
         </item> <!-- Station -->
-        <item name="Pylon" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_substation.png" type="node" preset_name_label="true">
+        <item name="Pylon" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_aerialway_pylon_10009.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=pylon" />
             <space />
             <key key="aerialway" value="pylon" />
@@ -2451,7 +2451,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="stay" />
             <reference ref="supervised_lit_oh" />
         </item> <!-- Parking -->
-        <item name="Parking Space" icon="presets/parking.png" type="node,closedway" preset_name_label="true">
+        <item name="Parking Space" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_parking_space_12099.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=parking_space"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=parking_space"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=parking_space"
@@ -2467,7 +2467,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="supervised_lit_oh" />
             <check key="covered" text="Covered (with roof)" />
         </item> <!-- Parking Space -->
-        <item name="Parking Entrance" icon="presets/parking.png" type="node" preset_name_label="true">
+        <item name="Parking Entrance" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_parking_entrance_12098.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=parking_entrance"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=parking_entrance"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=parking_entrance"
@@ -2535,7 +2535,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="voltage" text="Voltage" />
             <text key="amperage" text="Amperage" />
         </item> <!-- Charging Station -->
-        <item name="Wash" icon="presets/car_wash.png" type="node,closedway" preset_name_label="true">
+        <item name="Wash" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_car_wash_12018.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=car_wash"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=car_wash"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=car_wash"
@@ -2574,7 +2574,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_brand_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Repair -->
-        <item name="Parts" icon="styles/standard/vehicle/car_parts.svg" type="node,closedway" preset_name_label="true">
+        <item name="Parts" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_car_parts_29021.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=car_parts"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=car_parts"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=car_parts" />
@@ -2583,7 +2583,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_brand_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Parts -->
-        <item name="Tires" icon="presets/tyres.png" type="node,closedway" preset_name_label="true">
+        <item name="Tires" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_tyres_29145.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=tyres"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=tyres" />
             <space />
@@ -2808,7 +2808,7 @@ Note that for a match, at least one positive and no negative is required.
             <check key="aerialway" text="Aerialway" />
             <check key="ferry" text="Ferry" />
         </item> <!-- Stop Position -->
-        <item name="Platform" type="node,way,closedway" icon="presets/platform_bus.png" preset_name_label="true">
+        <item name="Platform" type="node,way,closedway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_platform_32003.png" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Public_Transport#Platform" />
             <space />
             <key key="public_transport" value="platform" />
@@ -2918,7 +2918,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="uic_ref" text="UIC-Reference" />
             </optional>
         </item> <!-- Station -->
-        <item name="Railway Halt" icon="presets/station.png" type="node" preset_name_label="true">
+        <item name="Railway Halt" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_halt_27002.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=halt"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=halt"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=halt"
@@ -2977,7 +2977,7 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="tactile_paving" text="Tactile Paving" values="yes,no" />
             </optional>
         </item> <!-- Bus Stop -->
-        <item name="Bus Platform" icon="presets/platform_bus.png" type="node,way,closedway" preset_name_label="true">
+        <item name="Bus Platform" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_platform_32003.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=platform"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=platform"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=platform"
@@ -3058,19 +3058,19 @@ Note that for a match, at least one positive and no negative is required.
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:aeroway=apron" />
             <key key="aeroway" value="apron" />
         </item> <!-- Apron -->
-        <item name="Hangar" icon="presets/hangar.png" type="node,closedway" preset_name_label="true">
+        <item name="Hangar" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_hangar_11004.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aeroway=hangar"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:aeroway=hangar"
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:aeroway=hangar" />
             <key key="building" value="hangar" />
         </item> <!-- Hangar -->
-        <item name="Beacon" icon="styles/standard/misc/landmark/beacon.png" type="node" preset_name_label="true">
+        <item name="Beacon" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_beacon_22008.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=beacon"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=beacon"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=beacon" />
             <key key="man_made" value="beacon" />
         </item> <!-- Beacon -->
-        <item name="Windsock" icon="styles/standard/transport/airport/windsock.png" type="node" preset_name_label="true">
+        <item name="Windsock" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_windsock_11009.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aeroway=windsock"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:aeroway=windsock"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:aeroway=windsock" />
