@@ -6080,7 +6080,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Laundry -->
-        <item name="Tailor" icon="styles/standard/shop/tailor.png" type="node,closedway" preset_name_label="true">
+        <item name="Tailor" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_tailor_16085.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=tailor"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:shop"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:shop"
@@ -6173,7 +6173,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Video -->
-        <item name="Video Games" icon="styles/standard/shop/video_games.png" type="node,closedway" preset_name_label="true">
+        <item name="Video Games" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_video_games_29201.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=video_games" />
             <space />
             <key key="shop" value="video_games" />
@@ -6824,7 +6824,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_wikipedia" />
             <text key="ele" text="Elevation" />
         </item> <!-- Saddle -->
-        <item name="Glacier" icon="presets/glacier.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Glacier" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/natural_glacier_24003.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=glacier"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=glacier"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=glacier"
@@ -6978,7 +6978,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="grassland" text="Type" values="pampas,prairie,puszta,savanna,steppe,veld" />
         </item> <!-- Grassland -->
-        <item name="Nature Reserve" icon="styles/standard/leisure/nature_reserve.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Nature Reserve" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_nature_reserve_21137.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=nature_reserve"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=nature_reserve"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=nature_reserve"
@@ -7059,7 +7059,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="natural" value="bare_rock" />
             <text key="name" text="Name" />
         </item> <!-- Bare Rock -->
-        <item name="Stone" icon="presets/empty.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Stone" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/natural_stone_24006.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=stone"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=stone"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:natural=stone"
@@ -7170,7 +7170,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Allotments -->
         <separator/>
-        <item name="Garden" icon="presets/empty.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Garden" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_garden_21010.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=garden"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=garden"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=garden"
@@ -7205,7 +7205,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="village_green" />
             <text key="name" text="Name" />
         </item> <!-- Village Green -->
-        <item name="Common" icon="presets/empty.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Common" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_common_21194.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=common"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:leisure=common"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=common" />
@@ -7213,7 +7213,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="leisure" value="common" />
             <text key="name" text="Name" />
         </item> <!-- Common -->
-        <item name="Park" icon="presets/empty.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Park" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_park_21030.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=park"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=park"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=park"
@@ -7226,7 +7226,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="leisure" value="park" />
             <text key="name" text="Name" />
         </item> <!-- Park -->
-        <item name="Recreation Ground" icon="presets/landuse.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Recreation Ground" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_recreation_ground_21132.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=recreation_ground"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=recreation_ground"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=recreation_ground"
@@ -7334,7 +7334,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <text key="operator" text="Operator" />
         </item> <!-- Garages -->
-        <item name="Railway Land" icon="" type="closedway,relation" preset_name_label="true">
+        <item name="Railway Land" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_train_station.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=railway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=railway"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=railway"
