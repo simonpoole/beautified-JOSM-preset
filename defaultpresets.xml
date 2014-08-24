@@ -1715,8 +1715,8 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Avalanche Protector -->
     </group> <!-- Passageways -->
   </group> <!-- Highways -->
-  <group name="Water" icon="presets/waterway.png">
-    <group name="Water" icon="presets/waterway.png">
+  <group name="Water" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_water_24008.png">
+    <group name="Water" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_water_24008.png">
         <item name="Drain" icon="presets/waterway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=drain"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:waterway=drain"
@@ -1756,14 +1756,14 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
         </item> <!-- Stream -->
-        <item name="Wadi" icon="presets/waterway.png" type="way" preset_name_label="true">
+        <item name="Wadi" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_wadi_34024.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=wadi" />
             <space />
             <key key="waterway" value="wadi" />
             <text key="name" text="Name" />
             <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
         </item> <!-- Wadi -->
-        <item name="Canal" icon="presets/waterway.png" type="way" preset_name_label="true">
+        <item name="Canal" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_canal_34001.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=canal"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:waterway=canal"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:waterway=canal"
@@ -1791,7 +1791,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
         </item> <!-- River -->
         <separator/>
-        <item name="Spring" icon="presets/spring.png" type="node,closedway" preset_name_label="true">
+        <item name="Spring" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_spring_24021.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=spring"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=spring"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:natural=spring"
@@ -1804,7 +1804,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <check key="drinking_water" text="Drinking Water" />
         </item> <!-- Spring -->
-        <item name="Waterfall" icon="presets/waterfall.png" type="node,way" preset_name_label="true">
+        <item name="Waterfall" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_waterfall_24009.png" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=waterfall" />
             <space />
             <key key="waterway" value="waterfall" />
@@ -1834,14 +1834,14 @@ Note that for a match, at least one positive and no negative is required.
             <key key="waterway" value="dam" />
             <reference ref="name_wikipedia" />
         </item> <!-- Dam -->
-        <item name="Groyne" icon="presets/groyne.png" type="node,way,closedway" preset_name_label="true">
+        <item name="Groyne" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_groyne_34006.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=groyne"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=groyne"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=groyne"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=groyne" />
             <key key="man_made" value="groyne" />
         </item> <!-- Groyne -->
-        <item name="Breakwater" icon="presets/groyne.png" type="way,closedway" preset_name_label="true">
+        <item name="Breakwater" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_breakwater_22004.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=breakwater"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=breakwater"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=breakwater"
@@ -2016,8 +2016,8 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Cliff -->
     </group> <!-- Water -->
-    <group name="Shipping" icon="presets/ferry.png">
-        <item name="Ferry Terminal" icon="presets/ferry.png" type="node,closedway" preset_name_label="true">
+    <group name="Shipping" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_ferry_terminal_12048.png">
+        <item name="Ferry Terminal" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_ferry_terminal_12048.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=ferry_terminal"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=ferry_terminal"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=ferry_terminal"
@@ -2054,7 +2054,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="leisure" value="marina" />
             <text key="name" text="Name" />
         </item> <!-- Marina -->
-        <item name="Pier" icon="presets/pier.png" type="way,closedway" preset_name_label="true">
+        <item name="Pier" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_pier_22046.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pier"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=pier"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=pier"
@@ -2066,7 +2066,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="man_made" value="pier" />
             <text key="name" text="Name" />
         </item> <!-- Pier -->
-        <item name="Lock Gate" icon="presets/lock_gate.png" type="node" preset_name_label="true">
+        <item name="Lock Gate" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_lock_gate_34007.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=lock_gate"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:waterway=lock_gate"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:waterway=lock_gate"
@@ -2076,7 +2076,7 @@ Note that for a match, at least one positive and no negative is required.
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:waterway=lock_gate" />
             <key key="waterway" value="lock_gate" />
         </item> <!-- Lock Gate -->
-        <item name="Turning Point" icon="presets/turning.png" type="node" preset_name_label="true">
+        <item name="Turning Point" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_turning_point_34023.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=turning_point"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:waterway=turning_point" />
             <key key="waterway" value="turning_point" />
@@ -2094,7 +2094,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="name" text="Name" />
             </optional>
         </item> <!-- Slipway -->
-        <item name="Boatyard" icon="presets/boatyard.png" type="node,closedway" preset_name_label="true">
+        <item name="Boatyard" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_boatyard_34003.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=boatyard"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:waterway=boatyard"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:waterway=boatyard"
@@ -2104,7 +2104,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="waterway" value="boatyard" />
             <text key="name" text="Name" />
         </item> <!-- Boatyard -->
-        <item name="Dock" icon="presets/boatyard.png" type="node,closedway" preset_name_label="true">
+        <item name="Dock" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_dock_34005.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=dock"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:waterway=dock"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:waterway=dock"
@@ -3136,7 +3136,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <reference ref="contact" />
         </item> <!-- Motel -->
-        <item name="Guest House/Bed &amp; Breakfast" icon="styles/standard/accommodation/guest_house.png" type="node,closedway" preset_name_label="true">
+        <item name="Guest House/Bed &amp; Breakfast" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/accommodation_guest_house_30009.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=guest_house"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=guest_house"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=guest_house"
