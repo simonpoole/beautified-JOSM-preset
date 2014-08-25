@@ -1160,7 +1160,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="toilets" text="Toilets" />
             </optional>
         </item> <!-- Services -->
-        <item name="Rest Area" icon="presets/parking.png" type="node,closedway" preset_name_label="true">
+        <item name="Rest Area" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_rest_area_18021.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=rest_area"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=rest_area"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=rest_area"
@@ -4246,7 +4246,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="oh" />
         </item> <!-- Baby Hatch/Safe Haven -->
         <separator/>
-        <item name="Emergency Access Point" icon="styles/standard/service/emergency_access_point.png" type="node,closedway" preset_name_label="true">
+        <item name="Emergency Access Point" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/health_emergency_access_point_17005.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=emergency_access_point"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=emergency_access_point"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=emergency_access_point"
