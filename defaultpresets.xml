@@ -692,7 +692,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Residential -->
-        <item name="Bicycle Road" icon="presets/bicycle_road.svg" type="way" preset_name_label="true">
+        <item name="Bicycle Road" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_residential_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:bicycle_road"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:bicycle_road"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:bicycle_road" />
@@ -714,7 +714,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Bicycle Road -->
-        <item name="Living Street" icon="presets/living_street.png" type="way,closedway" preset_name_label="true">
+        <item name="Living Street" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_residential_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=living_street"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=living_street"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=living_street"
@@ -758,7 +758,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Pedestrian -->
-        <item name="Service" icon="presets/way_unclassified.png" type="way,closedway" preset_name_label="true">
+        <item name="Service" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_service_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=service"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=service"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=service"
@@ -778,7 +778,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Service -->
-        <item name="Parking Aisle" icon="presets/way_unclassified.png" type="way,closedway" preset_name_label="true">
+        <item name="Parking Aisle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_service_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:service=parking_aisle"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:service=parking_aisle"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:service=parking_aisle"
@@ -795,7 +795,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="lit" text="Lit" />
             </optional>
         </item> <!-- Parking Aisle -->
-        <item name="Road (Unknown Type)" icon="presets/way_unclassified.png" type="way,closedway" preset_name_label="true">
+        <item name="Road (Unknown Type)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=road"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=road"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=road"
@@ -3928,7 +3928,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="service_times" />
             <reference ref="oh" />
         </item> <!-- Shinto Shrine -->
-        <item name="Other Place of Worship" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/place_of_worship_unknown.pngi" type="node,closedway,relation" preset_name_label="true">
+        <item name="Other Place of Worship" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/place_of_worship_unknown.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=place_of_worship"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:amenity=place_of_worship"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=place_of_worship"

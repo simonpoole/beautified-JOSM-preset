@@ -6,8 +6,8 @@ BASEFOLDER=`pwd`;
 popd  > /dev/null
 BASEFOLDER=`dirname $BASEFOLDER`
 
-TYPES=(             'accommodation' 'amenity' 'barrier' 'education' 'food'    'health'  'landuse' 'money'   'natural'	'place_of_worship' 'poi'	'power'    'shopping' 'sport'   'tourist' 'transport' 'water'	'highway')
-FORGROUND_COLOURS=( '#0092DA'       '#734A08' '#666666' '#39AC39'   '#734A08' '#DA0092' '#999999' '#000000' '#999999'	'#000000'          '#000000'	'#8e7409'  '#AC39AC'  '#39AC39' '#734A08' '#0092DA'   '#0092DA' '#666666')
+TYPES=(             'accommodation' 'amenity' 'barrier' 'education' 'food'    'health'  'highway'	'landuse' 'money'   'natural'	'man_made'	'place_of_worship' 'poi'	'power'    'shopping' 'sport'   'tourist' 'transport' 'water')
+FORGROUND_COLOURS=( '#0092DA'       '#734A08' '#666666' '#39AC39'   '#734A08' '#DA0092' '#666666'	'#999999' '#000000' '#999999'	'#8e7409'	'#000000'          '#000000'	'#8e7409'  '#AC39AC'  '#39AC39' '#734A08' '#0092DA'   '#0092DA' )
 
 SIZES=( 32 )
 
