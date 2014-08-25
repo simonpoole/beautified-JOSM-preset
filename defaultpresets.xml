@@ -1252,7 +1252,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <combo key="traffic_calming" text="Type" values="yes,bump,chicane,choker,cushion,hump,island,rumble_strip,table" match="key" values_searchable="true" />
         </item> <!-- Traffic Calming -->
-        <item name="Passing Place" icon="presets/passingplace.png" type="node" preset_name_label="true">
+        <item name="Passing Place" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_passing_place_18020.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=passing_place"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=passing_place"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=passing_place" />
