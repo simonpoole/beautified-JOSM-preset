@@ -2153,7 +2153,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="railway_electrified" />
             </optional>
         </item> <!-- Monorail -->
-        <item name="Preserved" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_stream_train_30027.png" type="way" preset_name_label="true">
+        <item name="Preserved" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_steam_train_30027.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=preserved"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:railway=preserved"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:railway=preserved" />
@@ -2191,7 +2191,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="railway_service_gauge_electrified" />
             </optional>
         </item> <!-- Tram -->
-        <item name="Bus Guideway" icon="https://github.com/simonpoole/beautified-JOSM-preset/blob/master/icons/png/transport_bus_stop.png" type="way" preset_name_label="true">
+        <item name="Bus Guideway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=bus_guideway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=bus_guideway"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=bus_guideway"
@@ -7827,7 +7827,7 @@ Note that for a match, at least one positive and no negative is required.
                 <role key="house" text="house" requisite="required" type="node,way,closedway,relation" member_expression="&quot;addr:housenumber&quot; | &quot;addr:interpolation&quot;" />
             </roles>
         </item> <!-- Associated Street -->
-        <item name="Street" type="relation" preset_name_label="true">
+        <item name="Street" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:street"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:street" />
             <space />
