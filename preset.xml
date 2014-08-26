@@ -7413,7 +7413,7 @@ Note that for a match, at least one positive and no negative is required.
     </group> <!-- Landuse -->
   </group> <!-- Geography -->
     <group name="Annotation" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_housenumber_sp.png">
-        <item name="Name" icon="https://github.com/simonpoole/beautified-JOSM-preset/blob/master/icons/png/poi_name_sp.png" type="node,way,closedway,relation" preset_name_label="true">
+        <item name="Name" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_name_sp.png" type="node,way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:name"
                   ar.href="http://wiki.openstreetmap.org/wiki/Ar:Key:name"
                   ca.href="http://wiki.openstreetmap.org/wiki/Ca:Key:name"
@@ -7533,7 +7533,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="image" text="Image" />
         </item> <!-- Contact (Schema with 'contact:*' Prefix) -->
     </group> <!-- Annotation -->
-    <group name="Relations" icon="presets/relations.png">
+    <group name="Relations" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_relation_sp.png">
         <item name="Multipolygon" icon="presets/multipolygon.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:multipolygon"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:multipolygon"
