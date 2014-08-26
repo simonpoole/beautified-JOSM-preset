@@ -7251,7 +7251,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="residential" />
             <text key="name" text="Name" />
         </item> <!-- Residential Area -->
-        <item name="Graveyard" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/place_of_worship_grave_yard_12062.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Graveyard" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_grave_yard_12062.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=grave_yard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=grave_yard"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=grave_yard"
@@ -7264,7 +7264,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="amenity" value="grave_yard" />
             <reference ref="religious" />
         </item> <!-- Graveyard -->
-        <item name="Cemetery" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/place_of_worship_grave_yard_12062.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Cemetery" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_grave_yard_12062.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=cemetery"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=cemetery"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=cemetery"
@@ -7288,7 +7288,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="religious" />
             <reference ref="religious" />
         </item> <!-- Religious -->
-        <item name="Retail" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_supermarket.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Retail" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_supermarket.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=retail"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=retail"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=retail"
@@ -7553,7 +7553,7 @@ Note that for a match, at least one positive and no negative is required.
                 <role key="inner" text="inner segment" requisite="optional" type="way" />
             </roles>
         </item> <!-- Multipolygon -->
-        <item name="Boundary" icon="presets/boundaries.png" type="relation" preset_name_label="true">
+        <item name="Boundary" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_boundary_administrative.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:boundary"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:boundary"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:boundary"
