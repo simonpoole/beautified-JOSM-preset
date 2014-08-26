@@ -6813,7 +6813,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_wikipedia" />
             <text key="ele" text="Elevation" />
         </item> <!-- Peak -->
-        <item name="Saddle" icon="presets/saddle.svg" type="node" preset_name_label="true">
+        <item name="Saddle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_saddle_sp.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=saddle"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=saddle"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=saddle"
@@ -7412,8 +7412,8 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Quarry -->
     </group> <!-- Landuse -->
   </group> <!-- Geography -->
-    <group name="Annotation" icon="presets/addresses.png">
-        <item name="Name" icon="presets/message.png" type="node,way,closedway,relation" preset_name_label="true">
+    <group name="Annotation" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_housenumber_sp.png">
+        <item name="Name" icon="https://github.com/simonpoole/beautified-JOSM-preset/blob/master/icons/png/poi_name_sp.png" type="node,way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:name"
                   ar.href="http://wiki.openstreetmap.org/wiki/Ar:Key:name"
                   ca.href="http://wiki.openstreetmap.org/wiki/Ca:Key:name"
@@ -7444,7 +7444,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="short_name" text="Common name abbreviation" match="key" />
             </optional>
         </item> <!-- Name -->
-        <item name="Addresses" icon="presets/addresses.png" type="node,way,closedway,relation" preset_name_label="true">
+        <item name="Addresses" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_housenumber_sp.png" type="node,way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:addr"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:addr"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:addr"
@@ -7498,7 +7498,7 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="addr:inclusion" text="Accuracy" values="actual,estimate,potential" match="key" />
             </optional>
         </item> <!-- Address Interpolation -->
-        <item name="Contact (Common Schema)" icon="presets/contact.png" type="node,way,closedway,relation" preset_name_label="true">
+        <item name="Contact (Common Schema)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_contact_sp.png" type="node,way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Annotations"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Annotations"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Annotations"
@@ -7513,7 +7513,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="wikipedia" text="Wikipedia" />
             <text key="image" text="Image" />
         </item> <!-- Contact (Common Schema) -->
-        <item name="Contact (Schema with 'contact:*' Prefix)" icon="presets/contact.png" type="node,way,closedway,relation" preset_name_label="true">
+        <item name="Contact (Schema with 'contact:*' Prefix)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_contact_sp.png" type="node,way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:contact"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:contact"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:contact"
@@ -7811,7 +7811,7 @@ Note that for a match, at least one positive and no negative is required.
             </roles>
         </item> <!-- Route Network -->
         <separator/>
-        <item name="Associated Street" icon="presets/addresses.png" type="relation" preset_name_label="true">
+        <item name="Associated Street" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_housenumber_sp.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:associatedStreet"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:associatedStreet"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:associatedStreet"
