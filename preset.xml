@@ -2134,7 +2134,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="railway_service_gauge_electrified" />
             </optional>
         </item> <!-- Rail -->
-        <item name="Narrow Gauge Rail" icon="presets/railway.png" type="way" preset_name_label="true">
+        <item name="Narrow Gauge Rail" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_train_station.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=light_rail" />
             <key key="railway" value="narrow_gauge" />
             <optional>
@@ -2142,7 +2142,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="railway_service_gauge_electrified" />
             </optional>
         </item> <!-- Narrow Gauge Rail -->
-        <item name="Monorail" icon="presets/railway.png" type="way" preset_name_label="true">
+        <item name="Monorail" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_train_station.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=monorail"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=monorail"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=monorail"
@@ -2153,7 +2153,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="railway_electrified" />
             </optional>
         </item> <!-- Monorail -->
-        <item name="Preserved" icon="presets/rail_preserved.png" type="way" preset_name_label="true">
+        <item name="Preserved" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_stream_train_30027.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=preserved"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:railway=preserved"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:railway=preserved" />
@@ -2162,14 +2162,14 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="railway_service_gauge_electrified" />
             </optional>
         </item> <!-- Preserved -->
-        <item name="Light Rail" icon="presets/rail_light.png" type="way" preset_name_label="true">
+        <item name="Light Rail" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_tram_stop.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=light_rail" />
             <key key="railway" value="light_rail" />
             <optional>
                 <reference ref="railway_service_gauge_electrified" />
             </optional>
         </item> <!-- Light Rail -->
-        <item name="Subway" icon="presets/rail_light.png" type="way" preset_name_label="true">
+        <item name="Subway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_subway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=subway"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=subway"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=subway"
@@ -2179,7 +2179,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="railway_service_gauge_electrified" />
             </optional>
         </item> <!-- Subway -->
-        <item name="Tram" icon="presets/tram.png" type="way" preset_name_label="true">
+        <item name="Tram" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_tram_stop.png" gtype="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=tram"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=tram"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=tram"
@@ -2191,7 +2191,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="railway_service_gauge_electrified" />
             </optional>
         </item> <!-- Tram -->
-        <item name="Bus Guideway" icon="presets/busway.png" type="way" preset_name_label="true">
+        <item name="Bus Guideway" icon="https://github.com/simonpoole/beautified-JOSM-preset/blob/master/icons/png/transport_bus_stop.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=bus_guideway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=bus_guideway"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=bus_guideway"
