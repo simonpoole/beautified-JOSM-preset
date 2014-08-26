@@ -493,7 +493,7 @@ Note that for a match, at least one positive and no negative is required.
                 </checkgroup>
             </optional>
         </item> <!-- Motorway Link -->
-        <item name="Trunk" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_dual_sp.pnghttps://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_dual_sp.png" type="way" preset_name_label="true">
+        <item name="Trunk" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_car_29023.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=trunk"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=trunk"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=trunk"
@@ -521,7 +521,7 @@ Note that for a match, at least one positive and no negative is required.
                 </checkgroup>
             </optional>
         </item> <!-- Trunk -->
-        <item name="Trunk Link" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_dual_sp.png" type="way" preset_name_label="true">
+        <item name="Trunk Link" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_car_29023.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Link_(highway)"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Link_(highway)"
@@ -897,7 +897,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Roundabout -->
-        <item name="Bridge" icon="presets/bridge.png" type="way" preset_name_label="true">
+        <item name="Bridge" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_bridge_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:bridge"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:bridge"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:bridge"
@@ -1617,8 +1617,8 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="optional_maxheight_maxwidth" />
         </item> <!-- Sally Port -->
     </group> <!-- Barriers -->
-    <group name="Passageways" icon="presets/tunnel.png">
-        <item name="Tunnel" icon="presets/tunnel.png" type="way" preset_name_label="true">
+    <group name="Passageways" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_tunnel_sp.png">
+        <item name="Tunnel" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_tunnel_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:tunnel"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:tunnel"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:tunnel"
@@ -1640,7 +1640,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="toll" text="Toll" />
             </optional>
         </item> <!-- Tunnel -->
-        <item name="Building Passage" icon="presets/tunnel.png" type="way" preset_name_label="true">
+        <item name="Building Passage" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_tunnel_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:tunnel"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:tunnel"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:tunnel"
@@ -1853,7 +1853,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Breakwater -->
         <separator/>
-        <item name="Culvert" icon="presets/tunnel.png" type="way" preset_name_label="true">
+        <item name="Culvert" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_tunnel_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tunnel=culvert"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tunnel=culvert"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tunnel=culvert"
@@ -7887,7 +7887,7 @@ Note that for a match, at least one positive and no negative is required.
                 <role key="spring" text="spring of waterway" requisite="optional" type="node" />
             </roles>
         </item> <!-- Waterway -->
-        <item name="Bridge" icon="presets/bridge.png" type="relation" preset_name_label="true">
+        <item name="Bridge" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_bridge_sp.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relations/Proposed/Bridges_and_Tunnels"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Relations/Proposed/Bridges_and_Tunnels"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Relations/Proposed/Bridges_and_Tunnels"
@@ -7906,7 +7906,7 @@ Note that for a match, at least one positive and no negative is required.
                 <role key="edge" text="edge ways parallel to 'across'" requisite="optional" type="way" />
             </roles>
         </item> <!-- Bridge -->
-        <item name="Tunnel" icon="presets/tunnel.png" type="relation" preset_name_label="true">
+        <item name="Tunnel" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_tunnel_sp.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relations/Proposed/Bridges_and_Tunnels" />
             <space />
             <key key="type" value="tunnel" />
