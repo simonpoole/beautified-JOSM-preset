@@ -5335,21 +5335,21 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Power Plant -->
         <group name="Power Generator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_station_coal.png">
-            <item name="Biofuel Power Generator" icon="presets/power_source-biofuel.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Biofuel Power Generator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_biofuel_26006.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="biofuel" />
                 <reference ref="power_generator" />
                 <key key="generator:method" value="combustion" />
                 <combo key="generator:type" text="Generator Type" values="gas_turbine,reciprocating_engine,steam_generator" />
                 <reference ref="power_output" />
             </item> <!-- Power Generator -->
-            <item name="Biogas Power Generator" icon="presets/power_source-biofuel.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Biogas Power Generator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_biogas_26007.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="biogas" />
                 <reference ref="power_generator" />
                 <key key="generator:method" value="combustion" />
                 <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator" />
                 <reference ref="power_output" />
             </item> <!-- Biogas Power Generator -->
-            <item name="Biomass Power Generator" icon="presets/power_source-biofuel.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Biomass Power Generator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_biomass_26008.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="biomass" />
                 <reference ref="power_generator" />
                 <combo key="generator:method" text="Method" values_context="generator method" values="anaerobic_digestion,combustion,gasification" />
@@ -5375,28 +5375,28 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="generator:type" text="Generator Type" values="combined_cycle,gas_turbine,reciprocating_engine,steam_generator,steam_turbine" />
                 <reference ref="power_output" />
             </item> <!-- Gas Power Generator -->
-            <item name="Oil Power Generator" icon="presets/power_source-oil.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Oil Power Generator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_oil_26025.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="oil" />
                 <reference ref="power_generator" />
                 <key key="generator:method" value="combustion" />
                 <combo key="generator:type" text="Generator Type" values="steam_generator,steam_turbine" />
                 <reference ref="power_output" />
             </item> <!-- Oil Power Generator -->
-            <item name="Diesel Power Generator" icon="presets/power_source-oil.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Diesel Power Generator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_diesel_26025.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="diesel" />
                 <reference ref="power_generator" />
                 <key key="generator:method" value="combustion" />
                 <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator" />
                 <reference ref="power_output" />
             </item> <!-- Diesel Power Generator -->
-            <item name="Gasoline Power Generator" icon="presets/power_source-oil.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Gasoline Power Generator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_gasoline_26022.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="gasoline" />
                 <reference ref="power_generator" />
                 <key key="generator:method" value="combustion" />
                 <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator" />
                 <reference ref="power_output" />
             </item> <!-- Gasoline Power Generator -->
-            <item name="Nuclear Reactor" icon="presets/power_source-nuclear.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Nuclear Reactor" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_nuclear_26024.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="nuclear" />
                 <reference ref="power_generator" />
                 <combo key="generator:method" text="Method" values_context="generator method" values="fission,fusion" />
@@ -5432,7 +5432,7 @@ Note that for a match, at least one positive and no negative is required.
                 </combo>
                 <reference ref="power_output" />
             </item> <!-- Solar Power Generator -->
-            <item name="Waste Power Generator" icon="presets/power_source-waste.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Waste Power Generator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_waste_26028.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="waste" />
                 <reference ref="power_generator" />
                 <combo key="generator:method" text="Method" values_context="generator method" values="combustion,gasification,pyrolysis" />
@@ -5457,7 +5457,7 @@ Note that for a match, at least one positive and no negative is required.
                 </combo>
                 <reference ref="power_output" />
             </item> <!-- Water Turbine -->
-            <item name="Tidal Water Turbine" icon="presets/power_source-water.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Tidal Water Turbine" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_tidal_26027.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="tidal" />
                 <reference ref="power_generator" />
                 <combo key="generator:method" text="Method" values_context="generator method" values="barrage,stream" />
@@ -5468,7 +5468,7 @@ Note that for a match, at least one positive and no negative is required.
                 </combo>
                 <reference ref="power_output" />
             </item> <!-- Tidal Water Turbine -->
-            <item name="Wave Energy Converter" icon="presets/power_source-water.svg" type="node,closedway,relation" preset_name_label="true">
+            <item name="Wave Energy Converter" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_generator_wave_26029.png" type="node,closedway,relation" preset_name_label="true">
                 <key key="generator:source" value="wave" />
                 <reference ref="power_generator" />
                 <reference ref="power_output" />
@@ -5526,7 +5526,7 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="phases" text="Phases" values="1,3" length="1" />
             </optional>
         </item> <!-- Power Transformer -->
-        <item name="Power Switchgear" icon="presets/power.png" type="closedway" preset_name_label="true">
+        <item name="Power Switchgear" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_switch_26041.png" type="closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:power=switch"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:power=substation"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:power=substation"
@@ -5542,7 +5542,7 @@ Note that for a match, at least one positive and no negative is required.
                 <check key="gas_insulated" text="Gas insulated" />
             </optional>
         </item> <!-- Power Switchgear -->
-        <item name="Power Busbar" icon="presets/power.png" type="way" preset_name_label="true">
+        <item name="Power Busbar" icon=""https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_busbar_26004.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:line=busbar"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:power=substation"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:power=substation"
@@ -5570,7 +5570,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="power" value="switch" />
         </item> <!-- Power Switch -->
         <separator/>
-        <item name="Power Converter" icon="presets/power.png" type="node,closedway" preset_name_label="true">
+        <item name="Power Converter" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_converter_26044.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:power=converter"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:power=substation"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:power=substation"
@@ -5586,7 +5586,7 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="rating" text="Power rating (MVA)" values="15 MVA,50 MVA,100 MVA" />
             </optional>
         </item> <!-- Power Converter -->
-        <item name="Power Compensator" icon="presets/power.png" type="node,closedway" preset_name_label="true">
+        <item name="Power Compensator" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_compensator_26043.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:power=compensator"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:power=substation"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:power=substation"
@@ -5602,7 +5602,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Power Compensator -->
         <separator/>
-        <item name="Cable Distribution Cabinet" icon="presets/power.png" type="node" preset_name_label="true">
+        <item name="Cable Distribution Cabinet" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/power_cable_distribution_cabinet_26001.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:power=cable"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:power=cable"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:power=cable" />
@@ -5730,7 +5730,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="historic" value="battlefield" />
             <text key="name" text="Name" />
         </item> <!-- Battlefield -->
-        <item name="Palaeontological Site" icon="presets/palaeontological_site.png" type="node,closedway" preset_name_label="true">
+        <item name="Palaeontological Site" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/natural_palaeontological_site_24004.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:geological=palaeontological_site"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:geological=palaeontological_site"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:geological=palaeontological_site"
@@ -5788,7 +5788,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="historic" value="wayside_shrine" />
             <text key="name" text="Name" />
         </item> <!-- Wayside Shrine -->
-        <item name="Boundary Stone" icon="styles/standard/historic/boundary_stone.png" type="node,closedway" preset_name_label="true">
+        <item name="Boundary Stone" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_boundary_stone_19004.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=boundary_stone"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=boundary_stone"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic=boundary_stone"
