@@ -4591,7 +4591,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Miniature Golf -->
     </group> <!-- Sport Facilities -->
     <group name="Sport" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_rowing_21113.png">
-        <item name="Multi" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_multi_21054" type="node,closedway" preset_name_label="true">
+        <item name="Multi" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_multi_21054.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=multi" />
             <space />
             <key key="sport" value="multi" />
@@ -7636,8 +7636,8 @@ Note that for a match, at least one positive and no negative is required.
             </roles>
         </item> <!-- Enforcement -->
         <separator/>
-        <group name="Routes">
-            <item name="Bicycle Route" icon="presets/path.png" type="relation" preset_name_label="true">
+        <group name="Routes"  icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png">
+            <item name="Bicycle Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=bicycle"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Cycle_routes"
                   sk.href="http://wiki.openstreetmap.org/wiki/Sk:Cycle_routes"
@@ -7654,7 +7654,7 @@ Note that for a match, at least one positive and no negative is required.
                     <role key="" text="route segment" requisite="required" type="way"/>
                 </roles>
             </item> <!-- Bicycle Route -->
-            <item name="Mountain Biking Route" icon="presets/path.png" type="relation" preset_name_label="true">
+            <item name="Mountain Biking Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Mountain_biking"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Mountain_biking"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Mountain_biking"
@@ -7674,7 +7674,7 @@ Note that for a match, at least one positive and no negative is required.
                     <role key="" text="route segment" requisite="required" type="way" member_expression="highway=path OR highway=track"/>
                 </roles>
             </item> <!-- Mountain Biking Route -->
-            <item name="Hiking Route" icon="presets/path.png" type="relation" preset_name_label="true">
+            <item name="Hiking Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=hiking#Tagging_walking_and_hiking_Route_Networks"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Hiking"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Hiking"
@@ -7696,7 +7696,7 @@ Note that for a match, at least one positive and no negative is required.
                     <role key="" text="natural" requisite="optional" type="node,closedway" member_expression="natural=peak OR natural=volcano OR mountain_pass=yes OR natural=water OR tourism=viewpoint OR amenity=drinking_water OR natural=spring OR place=locality"/>
                 </roles>
             </item> <!-- Hiking Route -->
-            <item name="Piste Route" icon="presets/path.png" type="relation" preset_name_label="true">
+            <item name="Piste Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=piste"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:route=piste" />
                 <space/>
@@ -7717,7 +7717,7 @@ Note that for a match, at least one positive and no negative is required.
                     <role key="start" text="entry points" requisite="optional" type="node" />
                 </roles>
             </item> <!-- Piste Route -->
-            <item name="Ski Route" icon="presets/path.png" type="relation" preset_name_label="true">
+            <item name="Ski Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=ski"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:route=ski" />
                 <space/>
@@ -7739,7 +7739,7 @@ Note that for a match, at least one positive and no negative is required.
                 </roles>
             </item> <!-- Ski Route -->
             <separator/>
-            <item name="Detour Route" icon="presets/path.png" type="relation" preset_name_label="true">
+            <item name="Detour Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=detour"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:route=detour" />
                 <space/>
@@ -7755,7 +7755,7 @@ Note that for a match, at least one positive and no negative is required.
                     <role key="fork" text="fork node for alternative routes" requisite="optional" type="node"/>
                 </roles>
             </item> <!-- Detour Route -->
-            <item name="Power Route" icon="presets/path.png" type="relation" preset_name_label="true">
+            <item name="Power Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=power" />
                 <space/>
                 <key key="type" value="route"/>
@@ -7765,7 +7765,7 @@ Note that for a match, at least one positive and no negative is required.
                     <role key="" text="route segment" requisite="required" type="way" member_expression="power"/>
                 </roles>
             </item> <!-- Power Route -->
-            <item name="Railway Route" icon="presets/path.png" type="relation" preset_name_label="true">
+            <item name="Railway Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=railway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:route=railway"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:route=railway"
@@ -7778,7 +7778,7 @@ Note that for a match, at least one positive and no negative is required.
                     <role key="" text="route segment" requisite="required" type="way" member_expression="railway"/>
                 </roles>
             </item> <!-- Railway Route -->
-            <item name="Road Route" icon="presets/path.png" type="relation" preset_name_label="true">
+            <item name="Road Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=road"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:route=road"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:route=road" />
@@ -7797,7 +7797,7 @@ Note that for a match, at least one positive and no negative is required.
                 </roles>
             </item> <!-- Road Route -->
         </group> <!-- Routes -->
-        <item name="Route Network" icon="presets/path.png" type="relation" preset_name_label="true">
+        <item name="Route Network" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relations/Proposed/Network" />
             <space />
             <key key="type" value="network" />
