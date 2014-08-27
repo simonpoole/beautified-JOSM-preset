@@ -2720,7 +2720,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Rental -->
     </group> <!-- Bicycle -->
     <group name="Public Transport" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png">
-        <item name="Public Transport Route" icon="presets/path.png" type="relation" preset_name_label="true">
+        <item name="Public Transport Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_route_sp.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Public_Transport#Route" />
             <space />
             <key key="type" value="route" />
@@ -2880,7 +2880,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Ticket Machine -->
     </group> <!-- Public Transport -->
     <group name="Public Transport (Legacy)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png">
-        <item name="Public transport route (Legacy)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_bus_stop.png" type="relation" preset_name_label="true">
+        <item name="Public transport route (Legacy)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_route_sp.png" type="relation" preset_name_label="true">
             <key key="type" value="route" />
             <combo key="route" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,aerialway,ferry" values_searchable="true" match="keyvalue" />
             <key key="public_transport:version" value="1" /> <!-- only validate marked relations in order to avoid false positives -->
@@ -6527,7 +6527,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="shop" value="travel_agency" />
             <reference ref="name_brand_oh" />
         </item> <!-- Travel Agency -->
-        <item name="Musical Instrument" icon="presets/musical_instrument.png" type="node,closedway" preset_name_label="true">
+        <item name="Musical Instrument" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_musical_instrument_29107.svg" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=musical_instrument"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=musical_instrument"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=musical_instrument" />
@@ -6884,7 +6884,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="place" value="islet" />
             <reference ref="name_wikipedia" />
         </item> <!-- Islet -->
-        <item name="Ridge" icon="presets/empty.png" type="way" preset_name_label="true">
+        <item name="Ridge" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_ridge_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=ridge"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=ridge"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=ridge" />
