@@ -936,8 +936,8 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Ford -->
     </group> <!-- Streets -->
-    <group name="Ways" icon="presets/way_unclassified.png">
-        <item name="Track" icon="presets/track1.png" type="way,closedway" preset_name_label="true">
+    <group name="Ways" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_way_sp.png">
+        <item name="Track" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_agricultural_engines_16001.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=track"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:highway=track"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=track"
@@ -1131,7 +1131,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Steps -->
     </group> <!-- Ways -->
-    <group name="Waypoints" icon="presets/waypoints.png">
+    <group name="Waypoints" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_way_point_sp.png">
         <item name="Motorway Junction" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_motorway_junction_18009.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=motorway_junction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=motorway_junction"
