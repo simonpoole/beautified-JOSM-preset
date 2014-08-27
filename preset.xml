@@ -936,7 +936,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Ford -->
     </group> <!-- Streets -->
-    <group name="Ways" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_way_sp.png">
+    <group name="Ways" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_way_sp.png">
         <item name="Track" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_agricultural_engines_16001.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=track"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:highway=track"
@@ -965,7 +965,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Track -->
-        <item name="Path" icon="presets/path.png" type="way,closedway" preset_name_label="true">
+        <item name="Path" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_way_thin_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=path"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=path"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=path"
@@ -1131,7 +1131,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Steps -->
     </group> <!-- Ways -->
-    <group name="Waypoints" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_way_point_sp.png">
+    <group name="Waypoints" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_way_point_sp.png">
         <item name="Motorway Junction" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_motorway_junction_18009.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=motorway_junction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=motorway_junction"
@@ -1717,7 +1717,7 @@ Note that for a match, at least one positive and no negative is required.
   </group> <!-- Highways -->
   <group name="Water" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_water_24008.png">
     <group name="Water" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_water_24008.png">
-        <item name="Drain" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_waterway_sp.png" type="way" preset_name_label="true">
+        <item name="Drain" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_waterway_thin_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=drain"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:waterway=drain"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:waterway=drain"
@@ -1869,7 +1869,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Culvert -->
         <separator/>
-        <item name="Basin" icon="presets/landuse_water.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Basin" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=basin"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=basin"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=basin"
@@ -2030,7 +2030,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="cargo" text="Cargo" values="passengers,vehicle,bicycle,hgv,passengers;vehicle" values_context="cargo" />
         </item> <!-- Ferry Terminal -->
-        <item name="Ferry Route" icon="presets/ferry.png" type="way,closedway,relation" preset_name_label="true">
+        <item name="Ferry Route" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_route_sp.png" type="way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:route=ferry"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:route=ferry"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:route=ferry"
@@ -2746,7 +2746,7 @@ Note that for a match, at least one positive and no negative is required.
                 <role key="platform_entry_only" text="platform (entry only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
             </roles>
         </item> <!-- Public Transport Route -->
-        <item name="Route Master" icon="presets/path.png" type="relation" preset_name_label="true">
+        <item name="Route Master" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_route_sp.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Public_Transport#Route_master" />
             <space />
             <key key="type" value="route_master" />
@@ -7074,7 +7074,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Stone -->
     </group> <!-- Nature -->
-    <group name="Land use" icon="presets/landuse.png">
+    <group name="Land use" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png">
         <item name="Farmyard" icon="presets/landuse.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farmyard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=farmyard"
@@ -7086,7 +7086,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="farmyard" />
             <text key="name" text="Name" />
         </item> <!-- Farmyard -->
-        <item name="Farmland" icon="presets/landuse.png" type="closedway,relation" preset_name_label="true">
+        <item name="Farmland" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farmland"
                   ca.href="http://wiki.openstreetmap.org/wiki/Ca:Tag:landuse=farmland"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=farmland"
@@ -7099,7 +7099,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="farmland" />
             <text key="name" text="Name" />
         </item> <!-- Farmland -->
-        <item name="Meadow" icon="presets/landuse.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Meadow" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=meadow"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=meadow"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=meadow"
@@ -7110,7 +7110,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="meadow" />
             <text key="name" text="Name" />
         </item> <!-- Meadow -->
-        <item name="Orchard" icon="presets/landuse.png" type="closedway,relation" preset_name_label="true">
+        <item name="Orchard" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=orchard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=orchard"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=orchard"
@@ -7155,7 +7155,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="genus" text="Genus" />
             <text key="species" text="Species" />
         </item> <!-- Plant Nursery -->
-        <item name="Allotments" icon="presets/landuse.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Allotments" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=allotments"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=allotments"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=allotments"
@@ -7193,7 +7193,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="grass" />
             <text key="name" text="Name" />
         </item> <!-- Grass -->
-        <item name="Village Green" icon="presets/landuse.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Village Green" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=village_green"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=village_green"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=village_green"
@@ -7238,7 +7238,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Recreation Ground -->
         <separator/>
-        <item name="Residential Area" icon="styles/standard/misc/landmark/building.png" type="closedway,relation" preset_name_label="true">
+        <item name="Residential Area" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_house_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=residential"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=residential"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=residential"
@@ -7367,7 +7367,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="construction" />
             <text key="name" text="Name" />
         </item> <!-- Construction Area -->
-        <item name="Brownfield" icon="presets/landuse.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Brownfield" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=brownfield"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=brownfield"
@@ -7378,7 +7378,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="brownfield" />
             <text key="name" text="Name" />
         </item> <!-- Brownfield -->
-        <item name="Greenfield" icon="presets/landuse.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Greenfield" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=greenfield"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=greenfield"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=greenfield"
@@ -7388,7 +7388,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="greenfield" />
             <text key="name" text="Name" />
         </item> <!-- Greenfield -->
-        <item name="Landfill" icon="presets/landuse.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Landfill" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=landfill"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=landfill"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=landfill"
@@ -7864,7 +7864,7 @@ Note that for a match, at least one positive and no negative is required.
             </roles>
         </item> <!-- Destination Sign -->
         <separator/>
-        <item name="Waterway" icon="presets/river.png" type="relation" preset_name_label="true">
+        <item name="Waterway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_waterway_sp.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relations/Proposed/Waterway" />
             <space />
             <key key="type" value="waterway" />
