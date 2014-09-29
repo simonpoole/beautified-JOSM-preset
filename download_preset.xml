@@ -4066,19 +4066,26 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Post Office -->
     </group> <!-- Public Buildings -->
     <group name="Education" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_school.png">
-        <item name="Kindergarten" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_nursery2.png" type="node,closedway,relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=kindergarten"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=kindergarten"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=kindergarten"
-                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=kindergarten"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=kindergarten"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=kindergarten"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=kindergarten" />
+        <item name="Childcare" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_nursery2.png" type="node,closedway,relation" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/childcare2.0" />
             <space />
-            <key key="amenity" value="kindergarten" />
+            <key key="amenity" value="childcare" />
             <text key="name" text="Name" />
+            <text key="operator" text="Operator" />
+            <combo key="operator:type" text="Operator type" values="public;private;religious" />
+                        <text key="age_group" text="Age group (ie: 6-12)" />
+                        <space />
+                        <check key="nursery" text="Nursery" />
+                        <check key="kindergarten" text="Kindergarten" />
+                        <check key="after_school" text="After school care" />
+                        <check key="orphanage" text="Orphanage" />
+                        <space />
+                        <text key="childcare:capacity" text="Childcare capacity" />
+                        <text key="after_school:capacity" text="After school capacity" />
+                        <space />
+                        <reference ref="oh" />
             <reference ref="link_contact" />
-        </item> <!-- Kindergarten -->
+        </item> <!-- Childcare -->
         <item name="School" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_school.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=school"
                   ar.href="http://wiki.openstreetmap.org/wiki/Ar:Tag:amenity=school"
@@ -8442,7 +8449,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="office" value="insurance" />
             <reference ref="name_oh" />
         </item> <!-- Insurance -->
-        <item name="It" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/office_it_25008.png" type="node,closedway,relation">
+        <item name="IT" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/office_it_25008.png" type="node,closedway,relation">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:office=it"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:office=it" />
             <space />
