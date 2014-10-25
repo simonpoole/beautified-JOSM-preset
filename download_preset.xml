@@ -317,6 +317,9 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="sport" text="Sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,boules,bowls,canadian_football,canoe,climbing,cricket,cricket_nets,croquet,cycling,dog_racing,equestrian,gaelic_games,golf,gymnastics,handball,hockey,horse_racing,motor,pelota,racquet,rugby_league,rugby_union,shooting,skateboard,skating,skiing,soccer,swimming,table_tennis,tennis" values_context="sport" />
         </optional>
     </chunk>
+    <chunk id="bin">
+        <combo key="bin" text="Bin" values="yes,no" />
+    </chunk>
     <chunk id="payment_base">
         <check key="payment:coins" text="Coins" />
         <check key="payment:notes" text="Notes" />
@@ -4577,6 +4580,20 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="5,6,8,suction" />
             <text key="fire_hydrant:count" text="Count" />
         </item> <!-- Fire Hydrant -->
+        <item name="Excrement sBbag Dispenser" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_vending_excrement_bags_12290.png" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine%3Dexcrement_bags"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine%3Dexcrement_bags"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vending_machine"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=vending_machine" />
+            <space />
+            <key key="amenity" value="vending_machine" />
+            <key key="vending" value="excrement_bags" />
+            <text key="operator" text="Operator" />
+            <text key="ref" text="Reference number" />
+            <text key="note" text="Note" />
+            <reference ref="fee" />
+            <reference ref="bin" />
+        </item> <!-- "Excrement sBbag Dispenser -->
     </group> <!-- Facilities -->
   </group>  <!-- Facilities -->
   <group name="Sports" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_soccer.png">
