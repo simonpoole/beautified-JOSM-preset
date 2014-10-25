@@ -4580,7 +4580,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="5,6,8,suction" />
             <text key="fire_hydrant:count" text="Count" />
         </item> <!-- Fire Hydrant -->
-        <item name="Excrement sBbag Dispenser" icon="ICONPATH:amenity_vending_excrement_bags_12290.ICONTYPE" type="node" preset_name_label="true">
+        <item name="Excrement Bags" icon="ICONPATH:amenity_vending_excrement_bags_12290.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine%3Dexcrement_bags"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine%3Dexcrement_bags"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vending_machine"
@@ -4590,9 +4590,9 @@ Note that for a match, at least one positive and no negative is required.
             <key key="vending" value="excrement_bags" />
             <text key="operator" text="Operator" />
             <text key="ref" text="Reference number" />
-            <text key="note" text="Note" />
             <reference ref="fee" />
             <reference ref="bin" />
+            <text key="note" text="Note" />
         </item> <!-- "Excrement sBbag Dispenser -->
     </group> <!-- Facilities -->
   </group>  <!-- Facilities -->
