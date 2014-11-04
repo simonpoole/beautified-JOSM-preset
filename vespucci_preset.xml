@@ -475,6 +475,7 @@ Note that for a match, at least one positive and no negative is required.
     <combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no" match="key" />
     <combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" match="key" />
     <combo key="tourist_bus" text="Tourist buses" values="yes,no" match="key" />
+    <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,no" match="key" />
     <check key="oneway" text="Oneway" />
     <check key="toll" text="Toll" />
     <check key="noexit" text="No exit (cul-de-sac)" />
@@ -1710,7 +1711,8 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item> <!-- Avalanche Protector -->
     </group> <!-- Passageways -->
-        <item name="Road Restrictions" icon="icons/png/closed_to_vehicles_in_both_directions.png" type="node,way" preset_name_label="true">
+    <group name="Access Restrictions" icon="icons/png/closed_to_vehicles_in_both_directions.png">
+        <item name="All vehicles" icon="icons/png/closed_to_vehicles_in_both_directions.png" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
@@ -1723,18 +1725,90 @@ Note that for a match, at least one positive and no negative is required.
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <label text="Transport mode restrictions" />
-            <space />
-            <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" match="key" values_searchable="true" />
-            <label text="Vehicles per type" />
-            <space />
             <combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
-            <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,no" match="key" />
+	    <reference ref="additional_access_tags" /> 
+        </item> <!-- All vehicles -->
+        <item name="Motor vehicle" icon="icons/png/no_motor_vehicles.png" type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
+            <space />
             <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
-            <combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+	    <reference ref="additional_access_tags" /> 
+        </item> <!-- Motor vehicle -->
+        <item name="Motor vehicle (CH)" icon="icons/png/no_motor_vehicles_CH.png" type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
+            <space />
+            <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+	    <reference ref="additional_access_tags" /> 
+        </item> <!-- Motor vehicle CH -->
+        <item name="Motorcar" icon="icons/png/no_motor_vehicles_except_motorcycles.png" type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
+            <space />
             <combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
 	    <reference ref="additional_access_tags" /> 
-        </item> <!-- Road Restrictions -->
+        </item> <!-- Motorcar -->
+        <item name="Motorcar" icon="icons/png/no_motorcycles.png" type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
+            <space />
+            <combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+	    <reference ref="additional_access_tags" /> 
+        </item> <!-- Motorcycles -->
+        <item name="General access"  type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
+            <space />
+            <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" match="key" values_searchable="true" />
+	    <reference ref="additional_access_tags" /> 
+        </item> <!-- General access -->
+    </group>  <!-- access restrictions -->
   </group> <!-- Highways -->
   <group name="Water" icon="icons/png/water_water_24008.png">
     <group name="Water" icon="icons/png/water_water_24008.png">
