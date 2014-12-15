@@ -1607,7 +1607,7 @@
             <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
 	    <reference ref="additional_access_tags" /> 
         </item> <!-- Motor vehicle CH -->
-        <item name="Motorcar & -cycle (CH)" icon="ICONPATH:no_motor_vehicles.ICONTYPE" type="node,way" preset_name_label="true">
+        <item name="Motorcar and -cycle (CH)" icon="ICONPATH:no_motor_vehicles.ICONTYPE" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
