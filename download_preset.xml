@@ -7,163 +7,8 @@
     http://www.kde.org
     http://openclipart.org/media/view/media/clip_art
     http://www.sjjb.co.uk/mapicons/ (meanwhile in osm svn)
--->
-<!--
-item:
-  name: the text to display
-  icon: the icon to display
-  - relative to the icon path
-  - URL's are also supported to allow remote icons (are cached locally)
-  type: the data types - way,node,relation,closedway (separated by comma)
-  name_template: define custom formatting for OSM primitives
-                 see https://josm.openstreetmap.de/wiki/NameTemplate
-  preset_name_label: whether to insert "[preset name]" label in dialog
-                     (defaults to "false" for backward-compatibility on external presets)
 
-group: a group of items (same syntax as "item")
-
-link: link to the relating map features website
-  href: the URL
-
-preset_link: a link to an other preset
-  preset_name: the exact name of the preset to link to
-
-label: simple static text label
-  text: the text to display
-  icon: location of icon to display (optional)
-  icon_size: maximal size of icon (optional). If no value is given, default is 16px
-
-space: empty line
-
-optional: optional tags, short for "space" plus "label" plus "space"
-  text: the text to display (defaults to "Optional Attributes:")
-
-separator: separator line in menus
-
-item_separator: horizontal separator line between items (in window)
-
-key: fixed key/value pair to be set
-  key: key to set
-  value: value to set
-  match: none/key/key!/keyvalue/keyvalue! (default is "keyvalue!", see below for more information)
-
-text: text box
-  key: key to set
-  text: fixed label to display
-  default: default string to display (defaults to "")
-  use_last_as_default: true/false/force (default is "false")
-  auto_increment: may contain a comma separated list of integer increments or
-                  decrements, e.g. "-2,-1,+1,+2"; a button will be shown next
-                  to the text field for each value, allowing the user to select
-                  auto-increment with the given stepping. auto-increment only
-                  happens if the user selects it. default is no auto-increment;
-                  mutually exclusive with use_last_as_default.
-  match: none/key/key!/keyvalue/keyvalue! (default is "none", see below for more information)
-  length: length of input box (number of characters allowed)
-  alternative_autocomplete_keys: comma separated list of alternative keys to use for autocompletion
-
-combo: combo box, with multiple choices and possible to enter free form text
-  key: key to set
-  text: fixed label to display
-  delimiter: character that separates values (default: comma)
-  values: separated list of values
-  values_from: to use instead of "values" if the list of values has to be obtained with a Java method
-               of this form: public static String[] getValues();
-               The value must be: "full.package.name.ClassName#methodName"
-  display_values: comma separated list of values to be displayed instead of the
-                  database values, order and number must be equal to values
-  short_descriptions: comma separated list of texts to be displayed below each
-                      display_value. (Only if it is not possible to describe
-                      the entry in 2-3 words.) Instead of comma separated list
-  instead using values, display_values and short_descriptions, the following form is also supported:
-    <list_entry value="" display_value="" short_description="" icon="" icon_size="" />
-        icon: location of icon
-        icon_size: maximal size of icon. If tag is not setup it is taken default size of icon file
-  default: default string to display (defaults to "")
-  use_last_as_default: true/false/force (default is "false")
-  editable: allow to add other values as text (default is "true")
-  match: none/key/key!/keyvalue/keyvalue! (default is none, see below for more information)
-  values_searchable: true/false (whether to search in combo (display_)values when searching for presets)
-  length: length of input box (number of characters allowed)
-
-multiselect: list of values from which zero or more can be selected
-  key: key to set
-  text: fixed label to display
-  delimiter: character that separates values (default: semicolon) - this
-             will also be used to separate selected values in the tag.
-  values: delimiter-separated list of values (delimiter can be escaped with backslash)
-  values_from: to use instead of "values" if the list of values has to be obtained with a Java method
-               of this form: public static String[] getValues();
-               The value must be: "full.package.name.ClassName#methodName"
-  rows: specify the number of rows to display (default -1)
-  display_values: delimiter-separated list of values to be displayed instead of the
-                  database values, order and number must be equal to values
-  short_descriptions: delimiter-separated list of texts to be displayed below each
-                      display_value. (Only if it is not possible to describe
-                      the entry in 2-3 words.) Instead of a separated list
-  instead using values, display_values and short_descriptions, the following form is also supported:
-    <list_entry value="" display_value="' short_description="" icon="" icon_size="" />
-        icon: location of icon
-        icon_size: maximal size of icon. If tag is not setup it is taken default size of icon file
-  default: default string to display (defaults to "")
-  use_last_as_default: true/false/force (default is "false")
-  match: none/key/key!/keyvalue/keyvalue! (default is "none", see below for more information)
-  values_searchable: true/false (whether to search in multiselect (display_)values when searching for presets)
-
-checkgroup: group of checks
-  columns: number of columns
-
-check: checkbox
-  key: key to set
-  text: fixed label to display
-  default: ticked on/off (default is "off")
-  value_on: the value to set when checked (default is "yes")
-  value_off: the value to set when unchecked (default is "no")
-  disable_off: whether the off value is disabled in the dialog, i.e., only unset or yes are provided
-  match: none/key/key!/keyvalue/keyvalue! (default is "none", see below for more information)
-
-role: type to specify possible roles in relations
-  key: the role name used in relation
-  text: fixed label to display
-  requisite: optional/required (default is "optional")
-  count: how often can the role occur (if not given unlimited number is assumed)
-  type: the data types - way,node,relation,closedway (separated by comma)
-  member_expression: an expression (cf. search dialog) for objects of this role
-
-chunk: a template of elements for later (repeated) use
-  id: the unique identifier for this chunk
-
-reference: include an earlier defined template
-  ref: the unique identifier of the (already defined) template to include
-
- presets: For external files <presets> should have following attributes:
-   author: the author of the preset
-   version: a version number of some sort (e.g. creation date)
-   description: what is your preset meant to be
-   shortdescription: very short description
-   link: a link to a helpful website (optional)
-   icon: an icon for the whole presets
- The fields description, shortdescription and link may also be localized (e.g. de.link)
-
-See also https://josm.openstreetmap.de/wiki/TaggingPresets wiki page.
-
-The fields "name", "text", "display_values" may also be localized (e.g. de.name).
-When translations of equal words but different meanings may conflict, a translation
-context should be specified. Use "name_context", "text_context" or "values_context"
-for this. The context should be a meaningful short description to help translators.
-
-In JOSM internally all "name", "text" and "display_values" are translated when
-no specific translation has been given in XML file. When no "display_values"
-are supplied, then "values" will be treated as "display_values" and translated instead.
-
-The match attribute allows to change the matching process, i.e., determining whether
-the tags of an OSM object fit into this preset.
- - none: neutral, i.e., do not consider this item for matching
- - key: positive if key matches, neutral otherwise
- - key!: positive if key matches, negative otherwise
- - keyvalue: positive if key and value matches, neutral otherwise
- - keyvalue!: positive if key and value matches, negative otherwise
-Note that for a match, at least one positive and no negative is required.
+    Format description: https://josm.openstreetmap.de/wiki/TaggingPresets
 -->
     <!-- Item chunks -->
     <chunk id="surface">
@@ -197,6 +42,10 @@ Note that for a match, at least one positive and no negative is required.
     <chunk id="highway_yesno_incline_oneway_lit_width">
         <reference ref="highway_yesno_incline_oneway_lit" />
         <text key="width" text="Width (meters)" />
+    </chunk>
+    <chunk id="highway_yesno_incline_oneway_lit_width_sidewalk">
+        <reference ref="highway_yesno_incline_oneway_lit_width" />
+        <combo key="sidewalk" text="Sidewalk" values="both,left,right,no" values_context="sidewalk" />
     </chunk>
     <chunk id="railway_service">
         <combo key="service" text="Service type" values="yard,siding,spur" />
@@ -322,7 +171,7 @@ Note that for a match, at least one positive and no negative is required.
     </chunk>
     <chunk id="payment_base">
         <check key="payment:coins" text="Coins" />
-        <check key="payment:notes" text="Notes" />
+        <check key="payment:notes" text="Notes" text_context="payment" />
         <check key="payment:electronic_purses" text="Electronic purses and Charge cards" />
         <check key="payment:debit_cards" text="Debit cards" />
         <check key="payment:credit_cards" text="Credit cards" />
@@ -339,7 +188,7 @@ Note that for a match, at least one positive and no negative is required.
     </chunk>
     <chunk id="parking_name_type_ref">
         <text key="name" text="Name" />
-        <combo key="parking" text="Type" values="multi-storey,surface,underground,rooftop" />
+        <combo key="parking" text="Type" values="multi-storey,surface,underground,rooftop" values_context="parking" />
         <text key="ref" text="Reference number" />
     </chunk>
     <chunk id="parking_access_fee_operator_surface">
@@ -486,7 +335,7 @@ Note that for a match, at least one positive and no negative is required.
     <text key="maxheight" text="Max. height (meters)" match="key" />
     <text key="maxwidth" text="Max. width (meters)" match="key" />
     <text key="maxlength" text="Max. length (meters)" match="key" />
-    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" match="key" />
+    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" values_context="overtaking" match="key" />
   </chunk>
   <!--  Groups -->
   <group name="Highways" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png">
@@ -510,6 +359,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
+                <text key="width" text="Width (meters)" />
                 <checkgroup columns="4">
                     <check key="oneway" text="Oneway" default="on" />
                     <check key="bridge" text="Bridge" disable_off="true" />
@@ -534,6 +384,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="highway" value="motorway_link" />
             <optional>
                 <reference ref="highway_base" />
+                <text key="width" text="Width (meters)" />
                 <checkgroup columns="4">
                     <check key="oneway" text="Oneway" default="on" />
                     <check key="bridge" text="Bridge" disable_off="true" />
@@ -561,6 +412,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
+                <text key="width" text="Width (meters)" />
                 <checkgroup columns="4">
                     <check key="oneway" text="Oneway" default="on" />
                     <check key="motorroad" text="Motorroad" default="on" />
@@ -586,6 +438,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="ref" text="Reference" />
             <optional>
                 <reference ref="highway_base" />
+                <text key="width" text="Width (meters)" />
                 <checkgroup columns="4">
                     <check key="oneway" text="Oneway" default="on" />
                     <check key="motorroad" text="Motorroad" default="on" />
@@ -617,7 +470,7 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
                 <check key="motorroad" text="Motorroad" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Primary -->
         <item name="Primary Link" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="way" preset_name_label="true">
@@ -632,7 +485,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <reference ref="highway_base" />
                 <check key="motorroad" text="Motorroad" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Primary Link -->
         <item name="Secondary" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="way,closedway" preset_name_label="true">
@@ -653,7 +506,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Secondary -->
         <item name="Secondary Link" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="way" preset_name_label="true">
@@ -667,7 +520,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="highway" value="secondary_link" />
             <optional>
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Secondary Link -->
         <item name="Tertiary" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="way,closedway" preset_name_label="true">
@@ -688,7 +541,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Tertiary -->
         <item name="Tertiary Link" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="way" preset_name_label="true">
@@ -702,7 +555,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="highway" value="tertiary_link" />
             <optional>
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Tertiary Link -->
         <item name="Unclassified" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_highway_sp.png" type="way,closedway" preset_name_label="true">
@@ -720,9 +573,8 @@ Note that for a match, at least one positive and no negative is required.
                 <text key="name" text="Name" />
                 <text key="ref" text="Reference" />
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
                 <check key="passing_places" text="Passing Places" />
-                <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Unclassified -->
         <item name="Residential" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_residential_sp.png" type="way,closedway" preset_name_label="true">
@@ -742,8 +594,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <text key="ref" text="Reference" />
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
-                <text key="width" text="Width (meters)" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Residential -->
         <item name="Bicycle Road" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_residential_sp.png" type="way" preset_name_label="true">
@@ -766,6 +617,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="highway_yesno_incline" />
                 <check key="lit" text="Lit" />
                 <text key="width" text="Width (meters)" />
+                <combo key="sidewalk" text="Sidewalk" values="both,left,right,no" values_context="sidewalk" />
             </optional>
         </item> <!-- Bicycle Road -->
         <item name="Living Street" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_residential_sp.png" type="way,closedway" preset_name_label="true">
@@ -784,8 +636,7 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
                 <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" />
                 <reference ref="surface" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
-                <text key="width" text="Width (meters)" />
+                <reference ref="highway_yesno_incline_oneway_lit_width" />
             </optional>
         </item> <!-- Living Street -->
         <item name="Pedestrian" icon="presets/pedestrian.png" type="way,closedway,relation" preset_name_label="true">
@@ -827,9 +678,8 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
                 <check key="passing_places" text="Passing Places" />
-                <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Service -->
         <item name="Parking Aisle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_service_sp.png" type="way,closedway" preset_name_label="true">
@@ -862,7 +712,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit_width" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Road (Unknown Type) -->
         <item name="Construction" icon="presets/construction.png" type="way,closedway" preset_name_label="true">
@@ -878,9 +728,8 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
                 <combo key="junction" text="Junction" values="roundabout,jughandle,yes" />
-                <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Construction -->
         <separator/>
@@ -928,6 +777,7 @@ Note that for a match, at least one positive and no negative is required.
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=track"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:highway=track"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=track"
+                  id.href="http://wiki.openstreetmap.org/wiki/Id:Tag:highway=track"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=track"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=track"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=track"
@@ -941,13 +791,12 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <reference ref="name_layer" />
                 <combo key="surface" text="Surface" values="paved,concrete,cobblestone,gravel,ground,grass,sand" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width" />
                 <combo key="mtb:scale" text="MTB Scale" values="0,1,2,3,4,5" />
                 <reference ref="general_access" />
                 <combo key="motor_vehicle" text="Motor vehicles" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
                 <combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
                 <combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
-                <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Track -->
         <item name="Path" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/highway_way_thin_sp.png" type="way,closedway" preset_name_label="true">
@@ -966,7 +815,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <reference ref="name_layer" />
                 <reference ref="surface" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width" />
                 <combo key="sac_scale" text="SAC Scale" values_searchable="true">
                     <list_entry value="hiking" display_value="T1 - hiking trail" short_description="Trail well cleared. Area flat or slightly sloped, no fall hazard" />
                     <list_entry value="mountain_hiking" display_value="T2 - mountain hiking trail" short_description="Trail with continuous line and balanced ascent. Terrain partially steep, fall hazard possible" />
@@ -984,7 +833,6 @@ Note that for a match, at least one positive and no negative is required.
                 <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,no" />
                 <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,no" />
                 <!-- <combo key="motorcar" text="Motorcar" values="yes,designated,no" default="no" /> -->
-                <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Path -->
         <separator/>
@@ -1001,8 +849,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="name_layer" />
                 <text key="maxspeed" text="Max. speed (km/h)" />
                 <reference ref="surface" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
-                <text key="width" text="Width (meters)" />
+                <reference ref="highway_yesno_incline_oneway_lit_width" />
             </optional>
         </item> <!-- Dedicated Bridleway -->
         <item name="Cycle Lane/Track" type="way" preset_name_label="true">
@@ -1043,9 +890,8 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <reference ref="name_layer" />
                 <reference ref="surface" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width" />
                 <combo key="foot" text="Pedestrians" values="unknown,yes,no" />
-                <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Dedicated Cycleway -->
         <item name="Segregated Foot- and Cycleway" icon="presets/foot_and_cycleway_segregated.png" type="way" preset_name_label="true">
@@ -1059,8 +905,7 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <reference ref="name_layer" />
                 <reference ref="surface" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
-                <text key="width" text="Width (meters)" />
+                <reference ref="highway_yesno_incline_oneway_lit_width" />
             </optional>
         </item> <!-- Segregated Foot- and Cycleway -->
         <item name="Combined Foot- and Cycleway" icon="presets/foot_and_cycleway_combined.png" type="way" preset_name_label="true">
@@ -1074,9 +919,8 @@ Note that for a match, at least one positive and no negative is required.
             <optional>
                 <reference ref="name_layer" />
                 <reference ref="surface" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
+                <reference ref="highway_yesno_incline_oneway_lit_width" />
                 <check key="passing_places" text="Passing Places" />
-                <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Combined Foot- and Cycleway -->
         <item name="Dedicated Footway" icon="presets/footway.png" type="way" preset_name_label="true">
@@ -1110,14 +954,14 @@ Note that for a match, at least one positive and no negative is required.
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=steps"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=steps"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=steps"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=steps" />
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=steps"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=steps" />
             <key key="highway" value="steps" />
             <optional>
                 <reference ref="name_layer" />
                 <reference ref="surface" />
                 <text key="step_count" text="Amount of Steps" />
-                <reference ref="highway_yesno_incline_oneway_lit" />
-                <text key="width" text="Width (meters)" />
+                <reference ref="highway_yesno_incline_oneway_lit_width" />
             </optional>
         </item> <!-- Steps -->
     </group> <!-- Ways -->
@@ -1180,6 +1024,8 @@ Note that for a match, at least one positive and no negative is required.
             <optional text="Optional crossing attributes:">
                 <combo key="crossing" text="Pedestrian crossing type" values="uncontrolled,traffic_signals,island,unmarked,no,unknown" />
                 <combo key="crossing_ref" text="Crossing type name (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger" />
+                <check key="button_operated" text="Button operated" />
+                <check key="traffic_signals:sound" text="Sound signals" />
                 <combo key="supervised" text="Crossing attendant" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
                 <check key="bicycle" text="Cross by bicycle" />
                 <check key="horse" text="Cross on horseback" />
@@ -1256,6 +1102,7 @@ Note that for a match, at least one positive and no negative is required.
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=turning_circle"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=turning_circle"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=turning_circle"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=turning_circle"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=turning_circle"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=turning_circle"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=turning_circle" />
@@ -1760,6 +1607,23 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
 	    <reference ref="additional_access_tags" /> 
         </item> <!-- Motor vehicle CH -->
+        <item name="Motorcar & -cycle (CH)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/no_motor_vehicles.png" type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
+            <space />
+            <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcycle" text="Motorcycle" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+	    <reference ref="additional_access_tags" /> 
+        </item> <!-- Motor vehicle -->
         <item name="Motorcar" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/no_motor_vehicles_except_motorcycles.png" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
@@ -1776,7 +1640,7 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
 	    <reference ref="additional_access_tags" /> 
         </item> <!-- Motorcar -->
-        <item name="Motorcar" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/no_motorcycles.png" type="node,way" preset_name_label="true">
+        <item name="Motorcycle" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/no_motorcycles.png" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
@@ -1990,6 +1854,7 @@ Note that for a match, at least one positive and no negative is required.
         <item name="Covered Reservoir" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/water_reservoir_covered_22048.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=reservoir_covered"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=reservoir_covered"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=reservoir_covered"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=reservoir_covered"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=reservoir_covered" />
             <space />
@@ -1997,7 +1862,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Covered Reservoir -->
         <separator/>
-        <item name="Water" icon="presets/water.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Water" icon="presets/water.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=water"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=water"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=water"
@@ -2069,7 +1934,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="natural" value="mud" />
             <text key="name" text="Name" />
         </item> <!-- Mud -->
-        <item name="Beach" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_beach.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Beach" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_beach.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=beach"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=beach"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=beach"
@@ -2255,7 +2120,9 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Monorail -->
         <item name="Preserved" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_steam_train_30027.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=preserved"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=preserved"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:railway=preserved"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=preserved"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:railway=preserved" />
             <key key="railway" value="preserved" />
             <optional>
@@ -2370,16 +2237,19 @@ Note that for a match, at least one positive and no negative is required.
         <item name="Turntable" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_turntable_27022.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=turntable"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=turntable"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=turntable"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=turntable" />
             <key key="railway" value="turntable" />
         </item> <!-- Turntable -->
         <item name="Buffer Stop" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_buffer_stop_27001.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=buffer_stop"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=buffer_stop"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=buffer_stop" />
             <key key="railway" value="buffer_stop" />
         </item> <!-- Buffer Stop -->
         <item name="Railway Switch" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_switch_27020.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=switch"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=switch"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=switch" />
             <key key="railway" value="switch" />
             <text key="ref" text="Reference" />
@@ -2777,6 +2647,7 @@ Note that for a match, at least one positive and no negative is required.
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=bicycle_parking"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=bicycle_parking"
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=bicycle_parking"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=bicycle_parking"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bicycle_parking"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=bicycle_parking" />
             <space />
@@ -2800,7 +2671,7 @@ Note that for a match, at least one positive and no negative is required.
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:shop=bicycle" />
             <space />
             <key key="shop" value="bicycle" />
-            <text key="name" text="Name" />
+            <reference ref="name_oh" />
             <check key="service:bicycle:retail" text="Bicycles are sold" />
             <check key="service:bicycle:second_hand" text="Second-hand bicycles are sold" />
             <check key="service:bicycle:repair" text="Bicycles are repaired" />
@@ -2967,6 +2838,7 @@ Note that for a match, at least one positive and no negative is required.
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=subway_entrance"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=subway_entrance"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:railway=subway_entrance"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=subway_entrance"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=subway_entrance"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:railway=subway_entrance" />
             <key key="railway" value="subway_entrance" />
@@ -3033,6 +2905,7 @@ Note that for a match, at least one positive and no negative is required.
         <item name="Railway Halt" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/transport_halt_27002.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=halt"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=halt"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=halt"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:railway=halt"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:railway=halt" />
             <key key="railway" value="halt" />
@@ -3805,6 +3678,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Public Grill -->
         <item name="Firepit" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_firepit_21134.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=firepit"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=firepit"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=firepit"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=firepit" />
             <space />
@@ -3926,6 +3800,7 @@ Note that for a match, at least one positive and no negative is required.
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=place_of_worship"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=place_of_worship"
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:amenity=place_of_worship"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=place_of_worship"
                   zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:amenity=place_of_worship" />
             <space />
             <key key="amenity" value="place_of_worship" />
@@ -4182,6 +4057,7 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <key key="amenity" value="post_office" />
             <reference ref="name_operator_oh" />
+            <text key="ref" text="Reference" />
         </item> <!-- Post Office -->
     </group> <!-- Public Buildings -->
     <group name="Education" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_school.png">
@@ -4654,6 +4530,23 @@ Note that for a match, at least one positive and no negative is required.
             <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="5,6,8,suction" />
             <text key="fire_hydrant:count" text="Count" />
         </item> <!-- Fire Hydrant -->
+        <separator/>
+        <item name="Advertising Column" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_advertising_column_12428.png" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:advertising=column" />
+            <space />
+            <key key="advertising" value="column" />
+            <optional>
+                <check key="lit" text="Lit" />
+            </optional>
+        </item> <!-- Advertising Column -->
+        <item name="Billboard" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_advertising_billboard_12427.png" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:advertising=billboard" />
+            <space />
+            <key key="advertising" value="billboard" />
+            <optional>
+                <check key="lit" text="Lit" />
+            </optional>
+        </item> <!-- Billboard -->  
         <item name="Excrement Bags" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_vending_excrement_bags_12290.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine%3Dexcrement_bags"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine%3Dexcrement_bags"
@@ -5121,7 +5014,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
         </item> <!-- RC Car -->
-        <item name="Raceway" type="closedway" preset_name_label="true">
+        <item name="Raceway" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=raceway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=raceway"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=raceway"
@@ -5220,8 +5113,9 @@ Note that for a match, at least one positive and no negative is required.
             <key key="man_made" value="works" />
             <text key="name" text="Name" />
         </item> <!-- Works -->
-        <item name="Chimney" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_chimney_22008.png" type="node" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=chimney" />
+        <item name="Chimney" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_chimney_22008.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=chimney"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=chimney" />
             <space />
             <key key="man_made" value="chimney" />
             <reference ref="name_operator" />
@@ -5245,6 +5139,13 @@ Note that for a match, at least one positive and no negative is required.
             <key key="man_made" value="gasometer" />
             <text key="name" text="Name" />
         </item> <!-- Gasometer -->
+        <item name="Bunker Silo" icon="styles/standard/bunker_silo.svg" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=bunker_silo"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=bunker_silo" />
+            <space />
+            <key key="man_made" value="bunker_silo" />
+            <text key="name" text="Name" />
+        </item> <!-- Bunker Silo -->
         <item name="Pipeline" icon="presets/path.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pipeline"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=pipeline"
@@ -5405,6 +5306,7 @@ Note that for a match, at least one positive and no negative is required.
         <item name="Monitoring Station" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_monitoring_station_22042.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=monitoring_station"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=monitoring_station"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=monitoring_station"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=monitoring_station"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=monitoring_station" />
             <space />
@@ -5412,15 +5314,16 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator" />
             <label text="Monitoring:" />
             <checkgroup columns="3">
-                <check key="monitoring:weather" text="Weather" />
                 <check key="monitoring:water_level" text="Water level" />
                 <check key="monitoring:tide_gauge" text="Tide Level" />
+                <check key="monitoring:groundwater" text="Groundwater" />
                 <check key="monitoring:traffic" text="Traffic" />
                 <check key="monitoring:air_quality" text="Air Quality" />
                 <check key="monitoring:noise" text="Noise" />
                 <check key="monitoring:gps" text="GPS Signals" />
                 <check key="monitoring:glonass" text="GLONASS Signals" />
                 <check key="monitoring:galileo" text="Galileo Signals" />
+                <check key="monitoring:weather" text="Weather" />
                 <check key="monitoring:radiation" text="Radiation" />
                 <check key="monitoring:seismic_activity" text="Seismic Activity" />
             </checkgroup>
@@ -5875,7 +5778,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="ref_operator_branch" />
             <space />
             <label text="Transformer Attributes:" />
-            <key key="transformer" value="distribution" match="key!" values_context="power" />
+            <key key="transformer" value="distribution" match="key!" />
             <reference ref="voltage_frequency" />
             <optional>
                 <combo key="rating" text="Power rating (kVA/MVA)" values="2700 kVA,12500 kVA,15 MVA,50 MVA,100 MVA" />
@@ -5912,7 +5815,7 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="ref_operator_branch" />
             <optional>
                 <reference ref="cable_circuit" />
-                <combo key="location" text="Location" values="underground,underwater,overground" />
+                <combo key="location" text="Location" values="underground,underwater,overground" values_context="power cable" />
                 <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" />
                 <check key="communication" text="Used for data communications" value_on="line" value_off="" default="off" />
             </optional>
@@ -5951,6 +5854,7 @@ Note that for a match, at least one positive and no negative is required.
         </item> <!-- Archaeological Site -->
         <item name="Battlefield" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_battlefield.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=battlefield"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=battlefield"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:historic=battlefield"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic=battlefield"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic=battlefield"
@@ -5996,6 +5900,13 @@ Note that for a match, at least one positive and no negative is required.
             <space />
             <key key="historic" value="memorial" />
             <text key="name" text="Name" />
+            <combo key="memorial" text="Type" values="statue,bust,plaque,stele,stone,war_memorial" />
+            <optional>
+                <text key="inscription" text="Inscription" />
+                <text key="artist_name" text="Artist Name" />
+                <text key="start_date" text="Start date" />
+                <text key="wikipedia" text="Wikipedia" />
+            </optional>
         </item> <!-- Memorial -->
         <item name="Wayside Cross" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/tourist_wayside_cross.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=wayside_cross"
@@ -6061,6 +5972,7 @@ Note that for a match, at least one positive and no negative is required.
         <item name="Kiosk" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_kiosk.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=kiosk"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=kiosk"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=kiosk"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=kiosk"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=kiosk"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=kiosk"
@@ -6233,6 +6145,14 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Beverages -->
+        <item name="Wine" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_wine_29203.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=wine"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=wine" />
+            <space />
+            <key key="shop" value="wine" />
+            <reference ref="name_oh" />
+            <reference ref="link_contact" />
+        </item> <!-- Wine -->
     </group> <!-- Food -->
     <group name="Clothes" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_clothes.png">
         <item name="Clothes" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_clothes.png" type="node,closedway" preset_name_label="true">
@@ -6415,6 +6335,13 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Video Games -->
+        <item name="Music" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_music_29106.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=music" />
+            <space />
+            <key key="shop" value="music" />
+            <reference ref="name_oh" />
+            <reference ref="link_contact" />
+        </item> <!-- Music -->
     </group> <!-- Electronic -->
     <group name="Cash" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/money_bank2.png">
         <item name="Bank" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/money_bank2.png" type="node,closedway" preset_name_label="true">
@@ -6432,6 +6359,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="amenity" value="bank" />
             <reference ref="name_brand_operator_oh" />
             <check key="atm" text="Automated Teller Machine" default="on" />
+            <text key="ref" text="Reference" />
             <reference ref="link_contact" />
         </item> <!-- Bank -->
         <item name="Money Exchange" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/money_currency_exchange.png" type="node,closedway" preset_name_label="true">
@@ -6507,6 +6435,16 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_operator_oh" />
             <reference ref="link_contact" />
         </item> <!-- Curtain -->
+        <item name="Art" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_art_29003.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=art"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=art"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=art"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=art" />
+            <space />
+            <key key="shop" value="art" />
+            <reference ref="name_operator_oh" />
+            <reference ref="link_contact" />
+        </item> <!-- Art -->
         <item name="Frame" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_frame_29066.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=frame"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=frame"
@@ -6661,6 +6599,16 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Beauty -->
+        <item name="Tattoo" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_tattoo_29190.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=tattoo"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=tattoo"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=tattoo"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=tattoo" />
+            <space />
+            <key key="shop" value="tattoo" />
+            <reference ref="name_oh" />
+            <reference ref="link_contact" />
+        </item> <!-- Tattoo -->
         <item name="Optician" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/health_opticians.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=optician"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=optician"
@@ -6836,6 +6784,19 @@ Note that for a match, at least one positive and no negative is required.
             <reference ref="name_oh" />
             <reference ref="link_contact" />
         </item> <!-- Pet -->
+        <item name="Funeral Directors" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_funeral_directors_29067.png"node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=funeral_directors"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=funeral_directors"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=funeral_directors"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=funeral_directors"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=funeral_directors"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=funeral_directors"
+                  zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:shop=funeral_directors" />
+            <space />
+            <key key="shop" value="funeral_directors" />
+            <reference ref="name_oh" />
+            <reference ref="link_contact" />
+        </item> <!-- Funeral Directors -->
     </group> <!-- Other -->
         <separator/>
     <item name="Vending Machine" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_vending_machine.png" type="node" preset_name_label="true">
@@ -6881,7 +6842,8 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Political -->
         <item name="Postal Code" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_boundary_administrative.png" type="closedway,relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:boundary=postal_code" />
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:boundary=postal_code"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:boundary=postal_code" />
             <space />
             <key key="boundary" value="postal_code" />
             <text key="postal_code" text="Postal Code" />
@@ -6895,6 +6857,22 @@ Note that for a match, at least one positive and no negative is required.
             <key key="boundary" value="national_park" />
             <text key="name" text="Name" />
         </item> <!-- National Park -->
+        <item name="Protected Area" icon="presets/boundaries.png" type="closedway,relation" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:boundary=protected_area"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:boundary=protected_area"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:boundary=protected_area"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:boundary=protected_area"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:boundary=protected_area" />
+            <space />
+            <key key="boundary" value="protected_area" />
+            <text key="protected_class" text="Protected Class" length="2" />
+            <text key="protection_title" text="Title or type of protection" />
+            <optional>
+                <reference ref="name_operator_oh" />
+                <text key="wikipedia" text="Wikipedia" />
+                <text key="start_date" text="Start date" />
+            </optional>
+        </item> <!-- Protected Area -->
     </group> <!-- Boundaries -->
     <group name="Places" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_place_city.png">
         <item name="Continent" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_boundary_administrative.png" type="node,closedway" preset_name_label="true">
@@ -7189,7 +7167,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="leaf" />
             </optional>
         </item> <!-- Tree Row -->
-        <item name="Wood" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_coniferous_and_deciduous.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Wood" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_coniferous_and_deciduous.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=wood"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=wood"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=wood"
@@ -7202,7 +7180,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
             <reference ref="leaf" />
         </item> <!-- Wood -->
-        <item name="Forest" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_coniferous_and_deciduous.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Forest" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_coniferous_and_deciduous.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=forest"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=forest"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=forest"
@@ -7242,7 +7220,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Nature Reserve -->
         <separator/>
-        <item name="Scree" icon="presets/empty.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Scree" icon="presets/empty.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=scree"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=scree"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:natural=scree"
@@ -7254,7 +7232,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="natural" value="scree" />
             <text key="name" text="Name" />
         </item> <!-- Scree -->
-        <item name="Fell" icon="presets/empty.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Fell" icon="presets/empty.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=fell"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=fell"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=fell"
@@ -7265,7 +7243,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="natural" value="fell" />
             <text key="name" text="Name" />
         </item> <!-- Fell -->
-        <item name="Scrub" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_scrub.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Scrub" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_scrub.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=scrub"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=scrub"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=scrub"
@@ -7281,7 +7259,7 @@ Note that for a match, at least one positive and no negative is required.
                 <reference ref="leaf" />
             </optional>
         </item> <!-- Scrub -->
-        <item name="Heath" icon="presets/empty.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Heath" icon="presets/empty.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=heath"
                   bg.href="http://wiki.openstreetmap.org/wiki/Bg:Tag:natural=heath"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=heath"
@@ -7352,7 +7330,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="farmland" />
             <text key="name" text="Name" />
         </item> <!-- Farmland -->
-        <item name="Meadow" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Meadow" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=meadow"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=meadow"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=meadow"
@@ -7374,7 +7352,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="orchard" />
             <text key="name" text="Name" />
         </item> <!-- Orchard -->
-        <item name="Vineyard" icon="presets/fruits.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Vineyard" icon="presets/fruits.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=vineyard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=vineyard"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=vineyard"
@@ -7408,7 +7386,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="genus" text="Genus" />
             <text key="species" text="Species" />
         </item> <!-- Plant Nursery -->
-        <item name="Allotments" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Allotments" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=allotments"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=allotments"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=allotments"
@@ -7423,7 +7401,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Allotments -->
         <separator/>
-        <item name="Garden" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_garden_21010.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Garden" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_garden_21010.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=garden"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=garden"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=garden"
@@ -7433,7 +7411,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="leisure" value="garden" />
             <text key="name" text="Name" />
         </item> <!-- Garden -->
-        <item name="Grass" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_grass.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Grass" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_grass.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=grass"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=grass"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=grass"
@@ -7446,7 +7424,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="grass" />
             <text key="name" text="Name" />
         </item> <!-- Grass -->
-        <item name="Village Green" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Village Green" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=village_green"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=village_green"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=village_green"
@@ -7458,7 +7436,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="village_green" />
             <text key="name" text="Name" />
         </item> <!-- Village Green -->
-        <item name="Common" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_common_21194.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Common" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_common_21194.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=common"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:leisure=common"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=common" />
@@ -7466,7 +7444,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="leisure" value="common" />
             <text key="name" text="Name" />
         </item> <!-- Common -->
-        <item name="Park" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_park_21030.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Park" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_park_21030.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=park"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=park"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=park"
@@ -7479,7 +7457,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="leisure" value="park" />
             <text key="name" text="Name" />
         </item> <!-- Park -->
-        <item name="Recreation Ground" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_recreation_ground_21132.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Recreation Ground" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_recreation_ground_21132.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=recreation_ground"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=recreation_ground"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=recreation_ground"
@@ -7517,7 +7495,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="amenity" value="grave_yard" />
             <reference ref="religious" />
         </item> <!-- Graveyard -->
-        <item name="Cemetery" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_grave_yard_12062.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Cemetery" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_grave_yard_12062.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=cemetery"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=cemetery"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=cemetery"
@@ -7532,7 +7510,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="cemetery" />
             <reference ref="religious" />
         </item> <!-- Cemetery -->
-        <item name="Religious" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/place_of_worship_unknown.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Religious" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/place_of_worship_unknown.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=religious"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=religious"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=religious"
@@ -7541,7 +7519,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="religious" />
             <reference ref="religious" />
         </item> <!-- Religious -->
-        <item name="Retail" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_supermarket.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Retail" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_supermarket.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=retail"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=retail"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=retail"
@@ -7552,7 +7530,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="retail" />
             <text key="name" text="Name" />
         </item> <!-- Retail -->
-        <item name="Commercial" icon="presets/empty.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Commercial" icon="presets/empty.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=commercial"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=commercial"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=commercial"
@@ -7563,7 +7541,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="commercial" />
             <text key="name" text="Name" />
         </item> <!-- Commercial -->
-        <item name="Industrial" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_works_22087.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Industrial" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_works_22087.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=industrial"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=industrial"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=industrial"
@@ -7575,7 +7553,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="industrial" />
             <text key="name" text="Name" />
         </item> <!-- Industrial -->
-        <item name="Garages" icon="presets/garages.png" type="closedway" preset_name_label="true">
+        <item name="Garages" icon="presets/garages.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=garages"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=garages"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=garages"
@@ -7598,7 +7576,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="railway" />
             <text key="name" text="Name" />
         </item> <!-- Railway Land -->
-        <item name="Military" icon="presets/military.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Military" icon="presets/military.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=military"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=military"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=military"
@@ -7609,7 +7587,7 @@ Note that for a match, at least one positive and no negative is required.
             <text key="name" text="Name" />
         </item> <!-- Military -->
         <separator/>
-        <item name="Construction Area" icon="presets/construction.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Construction Area" icon="presets/construction.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=construction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=construction"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=construction"
@@ -7621,18 +7599,19 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="construction" />
             <text key="name" text="Name" />
         </item> <!-- Construction Area -->
-        <item name="Brownfield" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Brownfield" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=brownfield"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=brownfield"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=brownfield"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=brownfield"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=brownfield" />
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=brownfield"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=brownfield" />
             <space />
             <key key="landuse" value="brownfield" />
             <text key="name" text="Name" />
         </item> <!-- Brownfield -->
-        <item name="Greenfield" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Greenfield" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=greenfield"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=greenfield"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=greenfield"
@@ -7642,7 +7621,7 @@ Note that for a match, at least one positive and no negative is required.
             <key key="landuse" value="greenfield" />
             <text key="name" text="Name" />
         </item> <!-- Greenfield -->
-        <item name="Landfill" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="node,closedway,relation" preset_name_label="true">
+        <item name="Landfill" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=landfill"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=landfill"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=landfill"
@@ -7756,7 +7735,8 @@ Note that for a match, at least one positive and no negative is required.
             <link href="http://wiki.openstreetmap.org/wiki/Annotations"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Annotations"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Annotations"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Annotations" />
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Annotations"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Annotations" />
             <space />
             <text key="phone" text="Phone Number" match="key" />
             <text key="fax" text="Fax Number" match="key" />
@@ -7937,7 +7917,8 @@ Note that for a match, at least one positive and no negative is required.
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Hiking"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Hiking"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Hiking"
-                  ro.href="http://wiki.openstreetmap.org/wiki/Ro:Hiking" />
+                  ro.href="http://wiki.openstreetmap.org/wiki/Ro:Hiking"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Hiking" />
                 <space/>
                 <key key="type" value="route"/>
                 <key key="route" value="hiking"/>
