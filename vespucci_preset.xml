@@ -715,7 +715,7 @@
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
         </item> <!-- Road (Unknown Type) -->
-        <item name="Construction" icon="presets/construction.png" type="way,closedway" preset_name_label="true">
+        <item name="Construction" icon="icons/png/construction.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:construction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:construction"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:construction"
@@ -836,7 +836,7 @@
             </optional>
         </item> <!-- Path -->
         <separator/>
-        <item name="Dedicated Bridleway" icon="presets/equestrian.png" type="way" preset_name_label="true">
+        <item name="Dedicated Bridleway" icon="icons/png/bridleway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=bridleway"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:highway=bridleway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=bridleway"
@@ -876,7 +876,7 @@
                 <check key="oneway" text="Oneway" />
             </optional>
         </item> <!-- Cycle Lane/Track -->
-        <item name="Dedicated Cycleway" icon="presets/cycleway.png" type="way" preset_name_label="true">
+        <item name="Dedicated Cycleway" icon="icons/png/cycleway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=cycleway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=cycleway"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=cycleway"
@@ -894,7 +894,7 @@
                 <combo key="foot" text="Pedestrians" values="unknown,yes,no" />
             </optional>
         </item> <!-- Dedicated Cycleway -->
-        <item name="Segregated Foot- and Cycleway" icon="presets/foot_and_cycleway_segregated.png" type="way" preset_name_label="true">
+        <item name="Segregated Foot- and Cycleway" icon="icons/png/segregated_foot_and_cycleway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=cycleway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=cycleway"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=cycleway" />
@@ -908,7 +908,7 @@
                 <reference ref="highway_yesno_incline_oneway_lit_width" />
             </optional>
         </item> <!-- Segregated Foot- and Cycleway -->
-        <item name="Combined Foot- and Cycleway" icon="presets/foot_and_cycleway_combined.png" type="way" preset_name_label="true">
+        <item name="Combined Foot- and Cycleway" icon="icons/png/foot_and_cycleway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=cycleway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=cycleway"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=cycleway" />
@@ -923,7 +923,7 @@
                 <check key="passing_places" text="Passing Places" />
             </optional>
         </item> <!-- Combined Foot- and Cycleway -->
-        <item name="Dedicated Footway" icon="presets/footway.png" type="way" preset_name_label="true">
+        <item name="Dedicated Footway" icon="icons/png/footway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=footway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=footway"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:highway=footway"
@@ -1040,7 +1040,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=stop" />
             <key key="highway" value="stop" />
         </item> <!-- Stop -->
-        <item name="Give Way" icon="styles/standard/vehicle/restriction/right_of_way.png" type="node" preset_name_label="true">
+        <item name="Give Way" icon="icons/png/give_way.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=give_way"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=give_way"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=give_way"
@@ -2195,7 +2195,7 @@
             </optional>
         </item> <!-- Abandoned Rail -->
         <separator/>
-        <item name="Level Crossing" icon="presets/level_crossing.png" type="node" preset_name_label="true">
+        <item name="Level Crossing" icon="icons/png/level_crossing.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=level_crossing"
                   bg.href="http://wiki.openstreetmap.org/wiki/Bg:Tag:railway=level_crossing"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=level_crossing"
@@ -7587,7 +7587,7 @@
             <text key="name" text="Name" />
         </item> <!-- Military -->
         <separator/>
-        <item name="Construction Area" icon="presets/construction.png" type="closedway,relation" preset_name_label="true">
+        <item name="Construction Area" icon="icons/png/construction.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=construction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=construction"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=construction"
@@ -7828,7 +7828,7 @@
             </roles>
         </item> <!-- Site -->
         <separator/>
-        <item name="Turn Restriction" icon="styles/standard/vehicle/restriction/turn_restrictions/no_u_turn.png" type="relation" preset_name_label="true">
+        <item name="Turn Restriction" icon="icons/png/no_u_turn.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
