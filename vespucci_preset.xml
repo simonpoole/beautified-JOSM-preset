@@ -315,27 +315,12 @@
     <preset_link preset_name="Contact (Common Schema)" />
   </chunk>
   <chunk id="additional_access_tags">
-    <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,no" match="key" />
-    <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,no" match="key" />
-    <combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
-    <combo key="hgv" text="Heavy Goods Vehicles (hgv)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
-    <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no" match="key" />
-    <combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,permissive,private,no" match="keyvalue" />
-    <combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no" match="key" />
-    <combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" match="key" />
-    <combo key="tourist_bus" text="Tourist buses" values="yes,no" match="key" />
-    <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,no" match="key" />
     <check key="oneway" text="Oneway" />
     <check key="toll" text="Toll" />
     <check key="noexit" text="No exit (cul-de-sac)" />
+    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" values_context="overtaking" match="key" />
     <text key="maxspeed" text="Max. speed (km/h)" />
     <text key="minspeed" text="Min. speed (km/h)" match="key" />
-    <text key="maxweight" text="Max. weight (tonnes)" match="key" />
-    <text key="maxaxleload" text="Max. axleload (tonnes)" match="key" />
-    <text key="maxheight" text="Max. height (meters)" match="key" />
-    <text key="maxwidth" text="Max. width (meters)" match="key" />
-    <text key="maxlength" text="Max. length (meters)" match="key" />
-    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" values_context="overtaking" match="key" />
   </chunk>
   <!--  Groups -->
   <group name="Highways" icon="icons/png/highway_highway_sp.png">
@@ -1672,6 +1657,49 @@
             <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" match="key" values_searchable="true" />
 	    <reference ref="additional_access_tags" /> 
         </item> <!-- General access -->
+        <item name="Physical restrictions" icon="icons/png/maximum_width.png" type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
+            <space />
+            <text key="maxweight" text="Max. weight (tonnes)" match="key" />
+            <text key="maxaxleload" text="Max. axleload (tonnes)" match="key" />
+            <text key="maxheight" text="Max. height (meters)" match="key" />
+            <text key="maxwidth" text="Max. width (meters)" match="key" />
+            <text key="maxlength" text="Max. length (meters)" match="key" />
+        </item> <!-- Physical restrictions -->
+        <item name="Other transport mode restrictions" icon="icons/png/no_walking.png" type="node,way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
+            <space />
+            <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,no" match="key" />
+            <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,no" match="key" />
+            <combo key="hgv" text="Heavy Goods Vehicles (hgv)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,no" match="key" />
+            <combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no" match="key" />
+            <combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,permissive,private,no" match="keyvalue" />
+            <combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no" match="key" />
+            <combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" match="key" />
+            <combo key="tourist_bus" text="Tourist buses" values="yes,no" match="key" />
+        </item> <!-- Physical restrictions -->
     </group>  <!-- access restrictions -->
   </group> <!-- Highways -->
   <group name="Water" icon="icons/png/water_water_24008.png">
