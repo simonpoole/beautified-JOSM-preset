@@ -330,6 +330,16 @@
     <text key="maxspeed" text="Max. speed (km/h)" />
     <text key="minspeed" text="Min. speed (km/h)" match="key" />
   </chunk>
+  <chunk id="road_access_restrictions">
+    <preset_link preset_name="All vehicles" />
+    <preset_link preset_name="Motor vehicle" />
+    <preset_link preset_name="Motorcar" />
+    <preset_link preset_name="Motorcycle" />
+    <preset_link preset_name="Physical restrictions" />
+    <preset_link preset_name="Other mode restrictions" />
+    <preset_link preset_name="Motor vehicle (CH)" />
+    <preset_link preset_name="Motorcar and -cycle (CH)" />
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="ICONPATH:highway_highway_sp.ICONTYPE">
     <group name="Streets" icon="ICONPATH:highway_highway_sp.ICONTYPE">
@@ -364,7 +374,7 @@
                     <check key="toll" text="Toll" />
                 </checkgroup>
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Motorway -->
         <item name="Motorway Link" icon="ICONPATH:highway_dual_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=motorway_link"
@@ -390,7 +400,7 @@
                     <check key="toll" text="Toll" />
                 </checkgroup>
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Motorway Link -->
         <item name="Trunk" icon="ICONPATH:highway_car_29023.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=trunk"
@@ -421,7 +431,7 @@
                     <check key="toll" text="Toll" />
                 </checkgroup>
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Trunk -->
         <item name="Trunk Link" icon="ICONPATH:highway_car_29023.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)" />
@@ -442,7 +452,7 @@
                     <check key="toll" text="Toll" />
                 </checkgroup>
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Trunk Link -->
         <separator/>
         <item name="Primary" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
@@ -465,7 +475,7 @@
                 <check key="motorroad" text="Motorroad" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Primary -->
         <item name="Primary Link" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -481,7 +491,7 @@
                 <check key="motorroad" text="Motorroad" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Primary Link -->
         <item name="Secondary" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=secondary"
@@ -503,7 +513,7 @@
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Secondary -->
         <item name="Secondary Link" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -518,7 +528,7 @@
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Secondary Link -->
         <item name="Tertiary" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=tertiary"
@@ -540,7 +550,7 @@
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Tertiary -->
         <item name="Tertiary Link" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -555,7 +565,7 @@
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Tertiary Link -->
         <item name="Unclassified" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=unclassified"
@@ -575,7 +585,7 @@
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
                 <check key="passing_places" text="Passing Places" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Unclassified -->
         <item name="Residential" icon="ICONPATH:highway_residential_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=residential"
@@ -596,7 +606,7 @@
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Residential -->
         <item name="Bicycle Road" icon="ICONPATH:highway_residential_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:bicycle_road"
@@ -620,9 +630,9 @@
                 <text key="width" text="Width (meters)" />
                 <combo key="sidewalk" text="Sidewalk" values="both,left,right,no" values_context="sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Bicycle Road -->
-        <item name="Living Street" icon="ICONPATH:highway_residential_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
+        <item name="Living Street" icon="ICONPATH:homezone.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=living_street"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=living_street"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=living_street"
@@ -640,9 +650,9 @@
                 <reference ref="surface_smoothness" />
                 <reference ref="highway_yesno_incline_oneway_lit_width" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Living Street -->
-        <item name="Pedestrian" icon="presets/pedestrian.png" type="way,closedway,relation" preset_name_label="true">
+        <item name="Pedestrian" icon="ICONPATH:pedestrian_zone.ICONTYPE" type="way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=pedestrian"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=pedestrian"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=pedestrian"
@@ -665,7 +675,7 @@
                 <check key="lit" text="Lit" />
                 <text key="width" text="Width (meters)" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Pedestrian -->
         <item name="Service" icon="ICONPATH:highway_service_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=service"
@@ -685,7 +695,7 @@
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
                 <check key="passing_places" text="Passing Places" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Service -->
         <item name="Parking Aisle" icon="ICONPATH:highway_service_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:service=parking_aisle"
@@ -703,7 +713,7 @@
                 <check key="oneway" text="Oneway" />
                 <check key="lit" text="Lit" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Parking Aisle -->
         <item name="Escape" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=escape"
@@ -734,7 +744,7 @@
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Road (Unknown Type) -->
         <item name="Construction" icon="ICONPATH:construction.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:construction"
@@ -753,7 +763,7 @@
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
                 <combo key="junction" text="Junction" values="roundabout,jughandle,yes" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Construction -->
         <separator/>
         <item name="Roundabout" icon="ICONPATH:transport_roundabout_anticlockwise.ICONTYPE" type="node,closedway" preset_name_label="true">
@@ -777,7 +787,7 @@
                 <reference ref="highway_yesno_incline_oneway" />
                 <text key="width" text="Width (meters)" />
             </optional>
-            <preset_link preset_name="Road Restrictions" />
+            <reference ref="road_access_restrictions" />
         </item> <!-- Roundabout -->
         <item name="Ford" icon="ICONPATH:transport_ford.ICONTYPE" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:ford"
@@ -1187,7 +1197,7 @@
                 <text key="maxspeed" text="Max. speed (km/h)" />
             </optional>
         </item> <!-- Speed Camera -->
-        <item name="Traffic Mirror" type="node" preset_name_label="true">
+        <item name="Traffic Mirror" icon="ICONPATH:highway_traffic_mirror_18049.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=traffic_mirror"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=traffic_mirror" />
             <key key="highway" value="traffic_mirror" />
@@ -3142,7 +3152,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:aeroway=apron" />
             <key key="aeroway" value="apron" />
         </item> <!-- Apron -->
-        <item name="Plane Parking Position" type="node,way" preset_name_label="true">
+        <item name="Plane Parking Position"  icon="ICONPATH:transport_parking_position_11007.ICONTYPE" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aeroway=parking_position" />
             <key key="aeroway" value="parking_position" />
             <text key="ref" text="Reference" />
@@ -6784,7 +6794,7 @@
             <reference ref="name_operator_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Hearing Aids -->
-        <item name="Medical Supply" type="node,closedway" preset_name_label="true">
+        <item name="Medical Supply"  icon="ICONPATH:shopping_medical_supply_29183.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=medical_supply" />
             <space />
             <key key="shop" value="medical_supply" />
