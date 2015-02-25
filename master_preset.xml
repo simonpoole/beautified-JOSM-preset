@@ -8111,7 +8111,7 @@
                 <text key="name" text="Name" />
             </optional>
             <roles>
-                <role key="outer" text="outer segment" requisite="required" type="way.closedway" />
+                <role key="outer" text="outer segment" requisite="required" type="way,closedway" />
                 <role key="inner" text="inner segment" requisite="optional" type="way,closedway" />
             </roles>
         </item> <!-- Multipolygon -->
