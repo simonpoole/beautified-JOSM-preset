@@ -9,5 +9,8 @@ The scripts
 
  * vespucci.sh will produce a version (vespucci_preset.xml) of the file suitable for inclusion in a build
  * download.sh wil produce a version with URLs to this site for downloading
+ * vespucci_zip.sh will produce a zip (vespucci_zip.zip) suitable for downloading and installing
+
+The scripts are silly don't have any error checking and should be executed form the top level directory.
 
 Something similar  could be done directly with the SVG versions of the icons for inclusion in JOSM.
