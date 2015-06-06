@@ -2030,7 +2030,7 @@
             <text key="name" text="Name" />
         </item> <!-- Covered Reservoir -->
         <separator/>
-        <item name="Water" icon="presets/water.png" type="closedway,relation" preset_name_label="true">
+        <item name="Water" name_context="natural" icon="presets/water.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=water"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=water"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=water"
@@ -2190,6 +2190,33 @@
             <text key="name" text="Name" />
             <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no" />
         </item> <!-- Marina -->
+        <item name="Marine Fuel" icon="styles/standard/nautical/marine_fuel.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=fuel"/>
+            <space />
+            <key key="waterway" value="fuel" />
+            <optional>
+                <combo key="brand" text="Brand" values="Agip,Aral,Avia,BP,Chevron,Citgo,Eni,Esso,Exxon,Gulf,Mobil,OMV,Petro-Canada,Pioneer,Q8,Repsol,Shell,Socar,Statoil,Sunoco,Tamoil,Texaco,Total,Independent" values_searchable="true" />
+                <reference ref="name_operator" />
+                <reference ref="oh" />
+                <space />
+                <label text="Fuel types:" />
+                <checkgroup columns="2">
+                    <check key="fuel:diesel" text="Diesel"  disable_off="true" />
+                    <check key="fuel:biodiesel" text="Bio Diesel" disable_off="true" />
+                    <check key="fuel:octane_80" text="Octane 80" disable_off="true" />
+                    <check key="fuel:octane_91" text="Octane 91" disable_off="true" />
+                    <check key="fuel:octane_92" text="Octane 92" disable_off="true" />
+                    <check key="fuel:octane_95" text="Octane 95" disable_off="true" />
+                    <check key="fuel:octane_98" text="Octane 98" disable_off="true" />
+                    <check key="fuel:octane_100" text="Octane 100" disable_off="true" />
+                    <check key="fuel:e10" text="E10 (10% Ethanol mix)" disable_off="true" />
+                    <check key="fuel:e85" text="E85 (85% Ethanol mix)" disable_off="true" />
+                    <check key="fuel:lpg" text="LPG (Liquefied petroleum gas)" disable_off="true" />
+                    <check key="fuel:cng" text="CNG (Compressed Natural Gas)" disable_off="true" />
+                </checkgroup>
+            </optional>
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Marine Fuel -->
         <item name="Pier" icon="ICONPATH:water_pier_22046.ICONTYPE" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pier"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=pier"
@@ -2888,13 +2915,13 @@
                 <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" />
             </optional>
             <roles>
-                <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="highway OR railway OR waterway OR aerialway" />
                 <role key="stop" text="stop position" requisite="optional" type="node" member_expression="public_transport=stop_position" />
                 <role key="stop_exit_only" text="stop position (exit only)" requisite="optional" type="node" member_expression="public_transport=stop_position" />
                 <role key="stop_entry_only" text="stop position (entry only)" requisite="optional" type="node" member_expression="public_transport=stop_position" />
                 <role key="platform" text="platform" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
                 <role key="platform_exit_only" text="platform (exit only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
                 <role key="platform_entry_only" text="platform (entry only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
+                <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="highway OR railway OR waterway OR aerialway" />
             </roles>
         </item> <!-- Public Transport Route -->
         <item name="Route Master" icon="ICONPATH:osm_route_sp.ICONTYPE" type="relation" preset_name_label="true">
@@ -3289,6 +3316,8 @@
             <key key="tourism" value="hotel" />
             <reference ref="name_operator" />
             <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <text key="rooms" text="Rooms" />
+            <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
             <space />
             <reference ref="internet_smoking" />
@@ -3307,6 +3336,8 @@
             <key key="tourism" value="motel" />
             <reference ref="name_operator" />
             <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <text key="rooms" text="Rooms" />
+            <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
             <space />
             <reference ref="internet_smoking" />
@@ -3324,6 +3355,8 @@
             <key key="tourism" value="guest_house" />
             <reference ref="name_operator" />
             <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <text key="rooms" text="Rooms" />
+            <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
             <space />
             <reference ref="internet_smoking" />
@@ -3342,6 +3375,8 @@
             <key key="tourism" value="chalet" />
             <reference ref="name_operator" />
             <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <text key="rooms" text="Rooms" />
+            <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
             <space />
             <reference ref="internet_smoking" />
@@ -3360,6 +3395,8 @@
             <key key="tourism" value="hostel" />
             <reference ref="name_operator" />
             <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <text key="rooms" text="Rooms" />
+            <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
             <space />
             <reference ref="internet_smoking" />
@@ -3393,6 +3430,8 @@
             <key key="tourism" value="caravan_site" />
             <reference ref="name_operator" />
             <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <text key="rooms" text="Rooms" />
+            <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
             <space />
             <text key="capacity" text="Number of places" />
@@ -3438,7 +3477,7 @@
             <space />
             <key key="amenity" value="restaurant" />
             <reference ref="name_operator" />
-            <multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;sushi" values_searchable="true" />
+            <multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;sushi;steak_house" values_searchable="true" />
             <check key="microbrewery" text="Microbrewery" />
             <check key="outdoor_seating" text="Outdoor seating" />
             <reference ref="oh_wheelchair" />
@@ -4651,7 +4690,7 @@
                 <check key="hygrometer" text="Shows humidity" />
             </optional>
         </item> <!-- Clock -->
-        <item name="Recycling" icon="ICONPATH:amenity_recycling.ICONTYPE" type="node,closedway" preset_name_label="true">
+        <item name="Recycling Container" icon="ICONPATH:amenity_recycling.ICONTYPE" type="node,closedway" preset_name_label="true">
            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=recycling"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=recycling"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=recycling"
@@ -4665,14 +4704,65 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:amenity=recycling" />
             <space />
             <key key="amenity" value="recycling" />
-            <check key="recycling:batteries" text="Batteries" />
-            <check key="recycling:cans" text="Cans" />
-            <check key="recycling:clothes" text="Clothes" />
-            <check key="recycling:glass" text="Glass" />
-            <check key="recycling:paper" text="Paper" />
-            <check key="recycling:scrap_metal" text="Scrap Metal" />
-            <combo key="recycling_type" text="Type" values="container,centre" />
-        </item> <!-- Recycling -->
+            <key key="recycling_type" value="container" />
+            <reference ref="oh_wheelchair" />
+            <space />
+            <checkgroup columns="4">
+                <check key="recycling:batteries" text="Batteries" disable_off="true" />
+                <check key="recycling:cans" text="Cans" />
+                <check key="recycling:cardboard" text="Cardboard" disable_off="true" />
+                <check key="recycling:clothes" text="Clothes" disable_off="true" />
+                <check key="recycling:electrical_appliances" text="Electrical Appliances" disable_off="true" />
+                <check key="recycling:glass" text="Glass" disable_off="true" />
+                <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true" />
+                <check key="recycling:green_waste" text="Green Waste" disable_off="true" />
+                <check key="recycling:paper" text="Paper" disable_off="true" />
+                <check key="recycling:plastic" text="Plastic" disable_off="true" />
+                <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true" />
+                <check key="recycling:plastic_packaging" text="Plastic Packaging" disable_off="true" />
+                <check key="recycling:scrap_metal" text="Scrap Metal" disable_off="true" />
+                <check key="recycling:shoes" text="Shoes" disable_off="true" />
+                <check key="recycling:small_appliances" text="Small Appliances" disable_off="true" />
+                <check key="recycling:waste" text="Waste" disable_off="true" />
+            </checkgroup>
+        </item> <!-- Recycling Container-->
+        <item name="Recycling Centre" icon="styles/standard/service/recycling/recycling_centre.svg" type="node,closedway" preset_name_label="true">
+           <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=recycling"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=recycling"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=recycling"
+                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=recycling"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=recycling"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=recycling"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=recycling"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=recycling"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=recycling"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=recycling"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:amenity=recycling" />
+            <space />
+            <key key="amenity" value="recycling" />
+            <key key="recycling_type" value="centre" />
+            <reference ref="name_operator_oh_wheelchair" />
+            <space />
+            <checkgroup columns="4">
+                <check key="recycling:batteries" text="Batteries" disable_off="true" />
+                <check key="recycling:cans" text="Cans" />
+                <check key="recycling:cardboard" text="Cardboard" disable_off="true" />
+                <check key="recycling:clothes" text="Clothes" disable_off="true" />
+                <check key="recycling:electrical_appliances" text="Electrical Appliances" disable_off="true" />
+                <check key="recycling:glass" text="Glass" disable_off="true" />
+                <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true" />
+                <check key="recycling:green_waste" text="Green Waste" disable_off="true" />
+                <check key="recycling:paper" text="Paper" disable_off="true" />
+                <check key="recycling:plastic" text="Plastic" disable_off="true" />
+                <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true" />
+                <check key="recycling:plastic_packaging" text="Plastic Packaging" disable_off="true" />
+                <check key="recycling:scrap_metal" text="Scrap Metal" disable_off="true" />
+                <check key="recycling:shoes" text="Shoes" disable_off="true" />
+                <check key="recycling:small_appliances" text="Small Appliances" disable_off="true" />
+                <check key="recycling:waste" text="Waste" disable_off="true" />
+            </checkgroup>
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Recycling Centre-->
         <item name="Waste Basket/Trash Can" icon="ICONPATH:amenity_waste_bin.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=waste_basket"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=waste_basket"
@@ -4726,7 +4816,7 @@
             <space />
             <key key="amenity" value="bench" />
             <check key="backrest" text="Backrest" />
-            <combo key="material" text="Material" values="stone,metal,wood,plastic" />
+            <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" />
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" />
             <combo key="seats" text="Amount of Seats" values="2,3,4,5,6,7,8,9,10" />
         </item> <!-- Bench -->
@@ -5034,7 +5124,7 @@
             <text key="name" text="Name" />
         </item> <!-- Scuba Diving -->
         <item name="Skiing" icon="ICONPATH:sport_skiing_downhill.ICONTYPE" type="node,way,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Piste_Maps"
+            <link href="http://wiki.openstreetmap.org/wiki/Piste_Maps"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Piste_Maps"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Piste_Maps"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Piste_Maps" />
@@ -5139,6 +5229,13 @@
             <reference ref="name_operator" />
             <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
         </item> <!-- Beach Volleyball -->
+        <item name="Billiards" icon="styles/standard/sport/billiards.svg" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=billiards" />
+            <space />
+            <key key="sport" value="billiards" />
+            <reference ref="name_operator" />
+            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+        </item> <!-- Billiards -->
         <item name="Golf" icon="ICONPATH:sport_golf.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=golf"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:sport=golf"
@@ -5180,13 +5277,20 @@
             <key key="sport" value="croquet" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Croquet -->
-        <item name="Hockey" icon="ICONPATH:sport_hockey_21013.ICONTYPE" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=hockey" />
+        <item name="Field Hockey" icon="presets/field_hockey.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=field_hockey" />
             <space />
-            <key key="sport" value="hockey" />
+            <key key="sport" value="field_hockey" />
             <text key="name" text="Name" />
+            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+        </item> <!-- Field Hockey -->
+        <item name="Ice Hockey" icon="presets/ice_hockey.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=ice_hockey" />
+            <space />
+            <key key="sport" value="ice_hockey" />
+           <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" />
-        </item> <!-- Hockey -->
+        </item> <!-- Ice Hockey -->
         <item name="Pelota" icon="ICONPATH:sport_pelota_21031.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=pelota"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:sport=pelota" />
@@ -5322,7 +5426,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building" />
             <space />
-            <combo key="building" text="Building" values="yes,roof,garage,garages,industrial,school,hangar,commercial,barn,farm_auxiliary,transportation,greenhouse,office,university,hospital,warehouse,retail,shed,storage_tank,cowshed,construction" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
+            <combo key="building" text="Building" values="yes,roof,garage,garages,industrial,school,hangar,commercial,barn,farm_auxiliary,transportation,greenhouse,office,university,hospital,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
             <text key="name" text="Name" />
             <combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" />
             <text key="height" text="Height (meters)" />
@@ -5356,7 +5460,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building:part"
                   zh_CN.href="http://wiki.openstreetmap.org/wiki/Zh-hans:Key:building:part" />
             <space />
-            <combo key="building:part" text="Building part" values="yes,roof,garage,garages,industrial,school,hangar,commercial,barn,farm_auxiliary,transportation,greenhouse,office,university,hospital,warehouse,retail,shed,cowshed,construction" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
+            <combo key="building:part" text="Building part" values="yes,roof,garage,garages,industrial,school,hangar,commercial,barn,farm_auxiliary,transportation,greenhouse,office,university,hospital,warehouse,retail,shed,supermarket,cowshed,construction" values_context="building" default="yes" match="keyvalue!" values_searchable="true" />
             <text key="name" text="Name" />
             <combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" />
             <combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" text_context="building" />
@@ -5440,14 +5544,42 @@
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=gasometer" />
             <space />
             <key key="man_made" value="gasometer" />
-            <text key="name" text="Name" />
+            <optional>
+                <reference ref="name_operator" />
+                <combo key="building" text="Building" values="gasometer" values_context="building" />
+                <text key="height" text="Height (meters)" length="7" />
+            </optional>
         </item> <!-- Gasometer -->
+        <item name="Storage Tank" icon="presets/storage_tank.png" type="node,closedway">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=storage_tank"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=storage_tank"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=storage_tank" />
+            <key key="man_made" value="storage_tank" />
+            <optional>
+                <reference ref="name_operator" />
+                <combo key="building" text="Building" values="storage_tank" values_context="building" />
+                <combo key="content"  text="Content" values="fuel,manure,oil,sewage,silage,slurry,water,wine" values_context="content" />
+                <text key="height" text="Height (meters)" length="7" />
+            </optional>
+        </item> <!-- Storage Tank -->
+        <item name="Water Works" icon="ICONPATH:man_made_water_works_22084.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_works"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=water_works"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=water_works"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=water_works"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=water_works" />
+            <space />
+            <key key="man_made" value="water_works" />
+            <reference ref="name_operator" />
+        </item> <!-- Water Works -->
         <item name="Bunker Silo" icon="styles/standard/bunker_silo.svg" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=bunker_silo"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=bunker_silo" />
             <space />
             <key key="man_made" value="bunker_silo" />
-            <text key="name" text="Name" />
+            <optional>
+                <reference ref="name_operator" />
+            </optional>
         </item> <!-- Bunker Silo -->
         <item name="Pipeline" icon="presets/path.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pipeline"
@@ -5522,28 +5654,11 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=water_tower" />
             <space />
             <key key="man_made" value="water_tower" />
-            <text key="name" text="Name" />
+             <optional>
+                <reference ref="name_operator" />
+                <text key="height" text="Height (meters)" length="7" />
+            </optional>
         </item> <!-- Water Tower -->
-        <item name="Storage Tank" icon="presets/storage_tank.png" type="node,closedway">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=storage_tank"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=storage_tank"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=storage_tank" />
-            <key key="man_made" value="storage_tank" />
-            <combo key="building" text="Building" values="storage_tank" values_context="building" />
-            <combo key="content"  text="Content" values="fuel,manure,oil,sewage,silage,slurry,water,wine" values_context="content" />
-            <text key="operator" text="Operator" />
-            <text key="height" text="Height (meters)" length="7" />
-        </item> <!-- Storage Tank -->
-        <item name="Water Works" icon="ICONPATH:man_made_water_works_22084.ICONTYPE" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_works"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=water_works"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=water_works"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=water_works"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=water_works" />
-            <space />
-            <key key="man_made" value="water_works" />
-            <reference ref="name_operator" />
-        </item> <!-- Water Works -->
         <item name="Wastewater Treatment Plant" icon="ICONPATH:man_made_wastewater_plant_22081.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=wastewater_plant"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=wastewater_plant"
@@ -8674,7 +8789,7 @@
         </item> <!-- Destination Sign -->
         <separator/>
         <item name="Waterway" icon="ICONPATH:water_waterway_sp.ICONTYPE" type="relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Relations/Proposed/Waterway" />
+            <link href="http://wiki.openstreetmap.org/wiki/Relation:waterway" />
             <space />
             <key key="type" value="waterway" />
             <combo key="waterway" text="Subtype of waterway (largest one of members)" values="river,stream,canal,drain,ditch" values_searchable="true" />
