@@ -1418,6 +1418,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=wall"
                   zh_CN.href="http://wiki.openstreetmap.org/wiki/Zh-hans:Tag:barrier=wall" />
             <key key="barrier" value="wall" />
+            <optional>
+                <combo key="wall" text="Type" values="dry_stone,brick,noise_barrier,jersey_barrier,gabion,seawall,flood_wall,castle_wall" />
+            </optional>
             <reference ref="optional_height" />
         </item> <!-- Wall -->
         <item name="City Wall" icon="presets/city_wall.png" type="way,closedway" preset_name_label="true">
