@@ -175,7 +175,7 @@
         <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" default="pitch" />
     </chunk>
     <chunk id="sport">
-        <combo key="sport" text="Sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,boules,bowls,canadian_football,canoe,climbing,cricket,cricket_nets,croquet,cycling,dog_racing,equestrian,gaelic_games,golf,gymnastics,handball,hockey,horse_racing,motor,pelota,racquet,rugby_league,rugby_union,running,shooting,skateboard,skating,soccer,swimming,table_tennis,tennis" values_context="sport" />
+        <combo key="sport" text="Sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
     </chunk>
     <chunk id="bin">
         <combo key="bin" text="Bin" values="yes,no" />
@@ -232,12 +232,12 @@
     <chunk id="leaf">
         <combo key="leaf_type" text="Type" values="broadleaved,needleleaved,mixed,leafless" values_searchable="true" />
         <combo key="leaf_cycle" text="Cycle" values_searchable="true" >
-                    <list_entry value="deciduous" short_description="Plants that are leafless for a certain period during the year." />
-                        <list_entry value="evergreen" short_description="Plants that are never entirely without green foliage." />
-                        <list_entry value="semi_deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting." />
-                        <list_entry value="semi_evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year." />
-                        <list_entry value="mixed" short_description="Habitat with evergreen and deciduous vegetation." />
-                </combo>
+            <list_entry value="deciduous" short_description="Plants that are leafless for a certain period during the year." />
+            <list_entry value="evergreen" short_description="Plants that are never entirely without green foliage." />
+            <list_entry value="semi_deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting." />
+            <list_entry value="semi_evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year." />
+            <list_entry value="mixed" short_description="Habitat with evergreen and deciduous vegetation." />
+        </combo>
     </chunk>
     <chunk id="religious">
         <text key="name" text="Name" />
@@ -435,7 +435,8 @@
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=trunk"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=trunk"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=trunk"
-                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=trunk" />
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=trunk"
+                  vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=trunk" />
             <space />
             <key key="highway" value="trunk" />
             <text key="ref" text="Reference" />
@@ -711,6 +712,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=service"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=service"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=service"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=service"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=service"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=service"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=service"
@@ -840,6 +842,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=track"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:highway=track"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=track"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=track"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:highway=track"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=track"
                   id.href="http://wiki.openstreetmap.org/wiki/Id:Tag:highway=track"
@@ -868,6 +871,7 @@
         <item name="Path" icon="highway_way_thin_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=path"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=path"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=path"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=path"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=path"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=path"
@@ -1087,6 +1091,7 @@
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=rest_area"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=rest_area"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=rest_area"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=rest_area"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=rest_area"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=rest_area"
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:highway=rest_area" />
@@ -1180,6 +1185,7 @@
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Key:traffic_calming"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:traffic_calming"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:traffic_calming"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:traffic_calming"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:traffic_calming"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:traffic_calming" />
             <space />
@@ -1680,6 +1686,7 @@
     <group name="Access Restrictions" icon="closed_to_vehicles_in_both_directions.png">
         <item name="All vehicles" icon="closed_to_vehicles_in_both_directions.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:access"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access"
@@ -1967,6 +1974,7 @@
         </item> <!-- Dam -->
         <item name="Groyne" icon="water_groyne_34006.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=groyne"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=groyne"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=groyne"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=groyne"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=groyne" />
@@ -1974,6 +1982,7 @@
         </item> <!-- Groyne -->
         <item name="Breakwater" icon="water_breakwater_22004.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=breakwater"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=breakwater"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=breakwater"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=breakwater"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=breakwater"
@@ -2014,6 +2023,7 @@
         </item> <!-- Basin -->
         <item name="Reservoir" icon="water_reservoir_22110.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=reservoir"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=reservoir"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=reservoir"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=reservoir"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=reservoir"
@@ -2222,6 +2232,7 @@
         </item> <!-- Marine Fuel -->
         <item name="Pier" icon="water_pier_22046.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pier"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=pier"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=pier"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=pier"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=pier"
@@ -2412,6 +2423,7 @@
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:railway=level_crossing"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:railway=level_crossing"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:railway=level_crossing"
+                  hu.href="http://wiki.openstreetmap.org/wiki/Hu:Tag:railway=level_crossing"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:railway=level_crossing"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=level_crossing"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:railway=level_crossing"
@@ -2716,6 +2728,7 @@
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=car"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=car"
                   nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:shop=car"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=car"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=car"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=car" />
             <space />
@@ -2728,6 +2741,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=car_repair"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=car_repair"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=car_repair"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=car_repair"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=car_repair"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=car_repair" />
             <space />
@@ -2921,7 +2935,7 @@
                 <role key="stop" text="stop position" requisite="optional" type="node" member_expression="public_transport=stop_position" />
                 <role key="stop_exit_only" text="stop position (exit only)" requisite="optional" type="node" member_expression="public_transport=stop_position" />
                 <role key="stop_entry_only" text="stop position (entry only)" requisite="optional" type="node" member_expression="public_transport=stop_position" />
-                <role key="platform" text="platform" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
+                <role key="platform" text="platform" requisite="optional" type="node,way,closedway,relation" member_expression="public_transport=platform" />
                 <role key="platform_exit_only" text="platform (exit only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
                 <role key="platform_entry_only" text="platform (entry only)" requisite="optional" type="node,way,closedway" member_expression="public_transport=platform" />
                 <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="highway OR railway OR waterway OR aerialway" />
@@ -3023,6 +3037,7 @@
         <item name="Station" name_context="railway" type="node,closedway" icon="transport_train_station2.png" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:public_transport=station"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:public_transport=station"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:public_transport=station"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:public_transport=station"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:public_transport=station"
                   nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:public_transport=station"
@@ -3053,6 +3068,7 @@
         <item name="Ticket Machine" icon="shopping_vending_machine.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=vending_machine"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vending_machine"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=vending_machine"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=vending_machine"
@@ -3169,6 +3185,7 @@
         <item name="Bus Platform" icon="transport_platform_32003.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=platform"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=platform"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=platform"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=platform"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=platform" />
             <space />
@@ -3181,6 +3198,7 @@
     <item name="Taxi" icon="transport_taxi_rank.png" type="node,closedway" preset_name_label="true">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=taxi"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=taxi"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=taxi"
                   et.href="http://wiki.openstreetmap.org/wiki/Et:Tag:amenity=taxi"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=taxi"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=taxi"
@@ -3269,6 +3287,7 @@
         </item> <!-- Hangar -->
         <item name="Beacon" icon="transport_beacon_22008.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=beacon"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=beacon"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=beacon"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=beacon" />
             <key key="man_made" value="beacon" />
@@ -3809,6 +3828,7 @@
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=zoo"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:tourism=zoo"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=zoo"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=zoo"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=zoo"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:tourism=zoo" />
             <space />
@@ -3863,7 +3883,7 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Water Park -->
-        <item name="Sauna" de.name="Sauna" icon="amenity_sauna_12241.png" type="node,closedway" preset_name_label="true">
+        <item name="Sauna" icon="amenity_sauna_12241.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=sauna"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=sauna"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=sauna"
@@ -3884,6 +3904,19 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Horse Riding -->
+        <item name="Casino" icon="styles/standard/leisure/casino.svg" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=casino"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=casino"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=casino"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=casino" />
+            <space />
+            <key key="amenity" value="casino" />
+            <reference ref="name_operator_oh_wheelchair" />
+            <space />
+            <reference ref="internet_smoking" />
+            <space />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Casino -->
         <item name="Brothel" de.name="Bordell" icon="amenity_brothel_12012.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=brothel"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=brothel"
@@ -3950,6 +3983,7 @@
         <item name="Firepit" icon="tourist_firepit_21134.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=firepit"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=firepit"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=firepit"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=firepit"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=firepit"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=firepit" />
@@ -4053,7 +4087,8 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=studio"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=studio"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=studio"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=studio" />
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=studio"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=studio" />
             <space />
             <key key="amenity" value="studio" />
             <reference ref="name_operator" />
@@ -4438,7 +4473,8 @@
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=hospital"
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=hospital"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=hospital"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=hospital" />
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=pharmacy"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=pharmacy" />
             <space />
             <key key="amenity" value="hospital" />
             <reference ref="name_operator" />
@@ -4556,6 +4592,7 @@
         <separator/>
         <item name="Veterinary" icon="health_veterinary.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=veterinary"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=veterinary"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:amenity=veterinary"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=veterinary"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=veterinary"
@@ -4980,11 +5017,12 @@
             <space />
             <key key="leisure" value="track" />
             <text key="name" text="Name" />
-            <reference ref="sport" />
+            <combo key="sport" text="Sport" values="athletics,cycling,dog_racing,equestrian,horse_racing,running,skating" values_context="sport" />
         </item> <!-- Racetrack -->
         <item name="Golf Course" icon="sport_golf.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=golf_course"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=golf_course"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=golf_course"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=golf_course"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=golf_course"
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=golf_course"
@@ -4996,6 +5034,7 @@
         <item name="Miniature Golf" icon="sport_minature_golf.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=miniature_golf"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=miniature_golf"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=miniature_golf"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=miniature_golf"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:leisure=miniature_golf"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=miniature_golf" />
@@ -5044,6 +5083,13 @@
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" default="track" />
         </item> <!-- Track and Field Athletics -->
+        <item name="Running" icon="styles/standard/sport/running.svg" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=running" />
+            <space />
+            <key key="sport" value="running" />
+            <reference ref="name_operator" />
+            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" />
+        </item> <!-- Running -->
         <item name="Climbing" icon="sport_climbing_21005.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=climbing"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:sport=climbing"
@@ -5218,6 +5264,13 @@
             <key key="sport" value="basketball" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Basketball -->
+        <item name="Handball" icon="styles/standard/sport/handball.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=handball" />
+            <space />
+            <key key="sport" value="handball" />
+            <reference ref="name_operator" />
+            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+        </item> <!-- Handball -->
         <item name="Volleyball" icon="sport_volleyball_21073.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=volleyball" />
             <space />
@@ -5267,13 +5320,6 @@
             <key key="sport" value="cricket" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Cricket -->
-        <item name="Cricket Nets" icon="sport_cricket_nets_21154.png" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=cricket_nets" />
-            <space />
-            <key key="sport" value="cricket_nets" />
-            <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
-        </item> <!-- Cricket Nets -->
         <item name="Croquet" icon="sport_croquet_21051.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=croquet" />
             <space />
@@ -5524,7 +5570,9 @@
         </item> <!-- Works -->
         <item name="Chimney" icon="man_made_chimney_22008.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=chimney"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=chimney" />
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=chimney"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=chimney"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=chimney" />
             <space />
             <key key="man_made" value="chimney" />
             <reference ref="name_operator" />
@@ -5568,6 +5616,7 @@
         <item name="Water Works" icon="man_made_water_works_22084.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_works"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=water_works"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=water_works"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=water_works"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=water_works"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=water_works" />
@@ -5577,7 +5626,9 @@
         </item> <!-- Water Works -->
         <item name="Bunker Silo" icon="styles/standard/bunker_silo.svg" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=bunker_silo"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=bunker_silo" />
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=bunker_silo"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=bunker_silo"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=bunker_silo" />
             <space />
             <key key="man_made" value="bunker_silo" />
             <optional>
@@ -5652,6 +5703,7 @@
         <item name="Water Tower" icon="poi_tower_water.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_tower"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=water_tower"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=water_tower"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=water_tower"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:man_made=water_tower"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=water_tower" />
@@ -5665,6 +5717,7 @@
         <item name="Wastewater Treatment Plant" icon="man_made_wastewater_plant_22081.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=wastewater_plant"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=wastewater_plant"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=wastewater_plant"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:man_made=wastewater_plant"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=wastewater_plant"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=wastewater_plant"
@@ -5703,6 +5756,7 @@
         <item name="Water Well" icon="man_made_water_well_22083.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_well"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=water_well"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=water_well"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=water_well"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=water_well"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=water_well"
@@ -5849,6 +5903,7 @@
         </item> <!-- Bridge Support -->
         <item name="Bridge outline" icon="highway_bridge_sp.png" type="closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=bridge"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=bridge"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=bridge" />
             <space />
             <key key="man_made" value="bridge" />
@@ -6435,6 +6490,7 @@
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=kiosk"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=kiosk"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=kiosk"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=kiosk"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=kiosk"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=kiosk" />
             <space />
@@ -6467,6 +6523,7 @@
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:shop=butcher"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=butcher"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=butcher"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=butcher"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=butcher"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=butcher" />
             <space />
@@ -6635,6 +6692,7 @@
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=clothes"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=clothes"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=clothes"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=clothes"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=clothes"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=clothes" />
             <space />
@@ -6680,6 +6738,7 @@
         </item> <!-- Outdoor -->
         <item name="Sports" icon="shopping_sports_29129.png" type="node,closedway" preset_name_label="true">
              <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=sports"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=sports"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=sports"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=sports" />
             <space />
@@ -6752,6 +6811,7 @@
         </item> <!-- Computer -->
         <item name="Mobile Phone" icon="shopping_mobile_phone.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=mobile_phone"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=mobile_phone"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=mobile_phone"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=mobile_phone" />
             <space />
@@ -6770,6 +6830,7 @@
         </item> <!-- Vacuum Cleaner -->
         <item name="Hifi" icon="shopping_hifi.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=hifi"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=hifi"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=hifi"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=hifi"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=hifi" />
@@ -6796,7 +6857,8 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Video Games -->
         <item name="Music" icon="shopping_music_29106.png" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=music" />
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=music"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=music" />
             <space />
             <key key="shop" value="music" />
             <reference ref="name_oh_wheelchair" />
@@ -6909,6 +6971,7 @@
         </item> <!-- Art -->
         <item name="Frame" icon="shopping_frame_29066.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=frame"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=frame"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=frame"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=frame"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=frame" />
@@ -6997,6 +7060,8 @@
         </item> <!-- Newspaper Stand -->
         <item name="Ticket" icon="shopping_ticket_29200.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=ticket"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=ticket"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=ticket"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=ticket" />
             <space />
             <key key="shop" value="ticket" />
@@ -7022,6 +7087,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=mall"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=mall"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=mall"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=mall"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=mall"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=mall" />
             <space />
@@ -7058,6 +7124,7 @@
         </item> <!-- Hairdresser/Barber -->
         <item name="Beauty" icon="shopping_beauty_29906.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=beauty"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=beauty"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=beauty"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=beauty"
                   pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:shop=beauty"
@@ -7082,7 +7149,8 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=optician"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=optician"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=optician"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=optician" />
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=optician"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:shop=optician" />
             <space />
             <key key="shop" value="optician" />
             <reference ref="name_oh_wheelchair" />
@@ -7136,6 +7204,7 @@
         </item> <!-- Gift/Souvenir -->
         <item name="Erotic" icon="shopping_erotic_29049.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=erotic"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=erotic"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=erotic"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=erotic" />
             <space />
@@ -7149,6 +7218,7 @@
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=florist"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=florist"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=florist"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=florist"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=florist"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=florist" />
             <space />
@@ -7175,6 +7245,7 @@
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=doityourself"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=doityourself"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=doityourself"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=doityourself"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=doityourself"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=doityourself" />
             <space />
@@ -7206,6 +7277,7 @@
         <separator/>
         <item name="Travel Agency" icon="shopping_travel_agency_29144.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=travel_agency"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=travel_agency"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=travel_agency"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=travel_agency" />
             <space />
@@ -7317,54 +7389,54 @@
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:payment"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:payment" />
         <space />
-        <combo key="payment:cash" text="Cash" values="yes,no" />
+        <combo key="payment:cash" text="Cash" values="yes,no" match="keyvalue" />
         <checkgroup columns="4">
-            <check key="payment:coins" text="Coins" disable_off="true" />
-            <check key="payment:notes" text="Notes" disable_off="true" text_context="payment" />
+            <check key="payment:coins" text="Coins" match="keyvalue" />
+            <check key="payment:notes" text="Notes" text_context="payment" match="keyvalue" />
         </checkgroup>
         <space />
-        <combo key="payment:debit_cards" text="Debit cards" values="no" />
+        <combo key="payment:debit_cards" text="Debit cards" values="no" match="keyvalue" />
         <checkgroup columns="4">
-            <check key="payment:bankaxess" text="BankAxess" disable_off="true" />
-            <check key="payment:bancomat" text="Bancomat" disable_off="true" />
-            <check key="payment:girocard" text="Girocard" disable_off="true" />
-            <check key="payment:laser" text="Laser" disable_off="true" />
-            <check key="payment:maestro" text="Maestro" disable_off="true" />
-            <check key="payment:visa_debit" text="Visa Debit" disable_off="true" />
-            <check key="payment:visa_electron" text="Visa Electron" disable_off="true" />
+            <check key="payment:bankaxess" text="BankAxess" match="keyvalue" disable_off="true" />
+            <check key="payment:bancomat" text="Bancomat" match="keyvalue" disable_off="true" />
+            <check key="payment:girocard" text="Girocard" match="keyvalue" disable_off="true" />
+            <check key="payment:laser" text="Laser" match="keyvalue" disable_off="true" />
+            <check key="payment:maestro" text="Maestro" match="keyvalue" disable_off="true" />
+            <check key="payment:visa_debit" text="Visa Debit" match="keyvalue" disable_off="true" />
+            <check key="payment:visa_electron" text="Visa Electron" match="keyvalue" disable_off="true" />
         </checkgroup>
         <space />
-        <combo key="payment:credit_cards" text="Credit cards" values="no" />
+        <combo key="payment:credit_cards" text="Credit cards" values="no" match="keyvalue" />
         <checkgroup columns="4">
-            <check key="payment:american_express" text="American Express" disable_off="true" />
-            <check key="payment:diners_club" text="Diners Club" disable_off="true" />
-            <check key="payment:discover_card" text="Discover Card" disable_off="true" />
-            <check key="payment:jcb" text="JCB" disable_off="true" />
-            <check key="payment:mastercard" text="Mastercard" disable_off="true" />
-            <check key="payment:visa" text="Visa" disable_off="true" />
+            <check key="payment:american_express" text="American Express" match="keyvalue" disable_off="true" />
+            <check key="payment:diners_club" text="Diners Club" match="keyvalue" disable_off="true" />
+            <check key="payment:discover_card" text="Discover Card" match="keyvalue" disable_off="true" />
+            <check key="payment:jcb" text="JCB" match="keyvalue" disable_off="true" />
+            <check key="payment:mastercard" text="Mastercard" match="keyvalue" disable_off="true" />
+            <check key="payment:visa" text="Visa" match="keyvalue" disable_off="true" />
         </checkgroup>
         <space />
-        <combo key="payment:electronic_purses" text="Electronic purses and Charge cards" values="no" />
+        <combo key="payment:electronic_purses" text="Electronic purses and Charge cards" values="no" match="keyvalue" />
         <checkgroup columns="4">
-            <check key="payment:ep_avant" text="Avant (fi)" disable_off="true" />
-            <check key="payment:ep_cash" text="Cash (ch)" disable_off="true" />
-            <check key="payment:ep_chipknip" text="Chipknip (nl)" disable_off="true" />
-            <check key="payment:ep_geldkarte" text="Geldkarte (de)" disable_off="true" />
-            <check key="payment:ep_mep" text="Mep (pt)" disable_off="true" />
-            <check key="payment:ep_minicash" text="Minicash (lu)" disable_off="true" />
-            <check key="payment:ep_minipay" text="Minipay (it)" disable_off="true" />
-            <check key="payment:ep_monedero" text="Mondero (ar)" disable_off="true" />
-            <check key="payment:ep_monedero4b" text="Mondero 4b (es)" disable_off="true" />
-            <check key="payment:ep_moneo" text="Moneo (fr)" disable_off="true" />
-            <check key="payment:ep_proton" text="Proton (be)" disable_off="true" />
-            <check key="payment:ep_quick" text="Quick (au)" disable_off="true" />
+            <check key="payment:ep_avant" text="Avant (fi)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_cash" text="Cash (ch)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_chipknip" text="Chipknip (nl)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_geldkarte" text="Geldkarte (de)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_mep" text="Mep (pt)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_minicash" text="Minicash (lu)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_minipay" text="Minipay (it)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_monedero" text="Mondero (ar)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_monedero4b" text="Mondero 4b (es)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_moneo" text="Moneo (fr)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_proton" text="Proton (be)" match="keyvalue" disable_off="true" />
+            <check key="payment:ep_quick" text="Quick (au)" match="keyvalue" disable_off="true" />
         </checkgroup>
         <space />
-        <combo key="payment:cryptocurrencies" text="Cryptocurrencies" values="no" />
+        <combo key="payment:cryptocurrencies" text="Cryptocurrencies" values="no"  match="keyvalue" />
         <checkgroup columns="4">
-            <check key="payment:bitcoin" text="Bitcoin" disable_off="true" />
-            <check key="payment:dogecoin" text="Dogecoin" disable_off="true" />
-            <check key="payment:litecoin" text="Litecoin" disable_off="true" />
+            <check key="payment:bitcoin" text="Bitcoin" match="keyvalue" disable_off="true" />
+            <check key="payment:dogecoin" text="Dogecoin" match="keyvalue" disable_off="true" />
+            <check key="payment:litecoin" text="Litecoin" match="keyvalue" disable_off="true" />
         </checkgroup>
     </item> <!-- Payment Methods -->
   </group> <!-- Shops -->
@@ -7609,6 +7681,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=peak"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=peak"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=peak"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=peak"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:natural=peak"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=peak"
                   zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:natural=peak" />
@@ -7623,6 +7696,7 @@
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=saddle"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=saddle"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=saddle"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=saddle"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=saddle" />
             <label text="A saddle point between mountains or hills." />
             <space/>
@@ -7646,6 +7720,7 @@
         <item name="Volcano" icon="presets/volcano.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=volcano"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=volcano"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=volcano"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=volcano"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:natural=volcano"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=volcano" />
@@ -7663,6 +7738,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=ridge"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=ridge"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=ridge"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=ridge"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=ridge"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=ridge"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=ridge" />
@@ -7674,6 +7750,8 @@
         </item> <!-- Ridge -->
         <item name="Valley" icon="presets/valley.svg" type="way,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=valley"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=valley"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=valley"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=valley" />
             <label text="A low area between hills." />
             <space />
@@ -7777,6 +7855,7 @@
         </item> <!-- Wood -->
         <item name="Forest" icon="landuse_coniferous_and_deciduous.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=forest"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=forest"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=forest"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=forest"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=forest"
@@ -7804,6 +7883,7 @@
         <item name="Grassland" icon="landuse_grass.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=grassland"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=grassland"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:natural=grassland"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:natural=grassland"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=grassland"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=grassland"
@@ -7856,6 +7936,7 @@
         <item name="Scrub" icon="landuse_scrub.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=scrub"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=scrub"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:natural=scrub"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=scrub"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=scrub"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:natural=scrub"
@@ -7873,6 +7954,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=heath"
                   bg.href="http://wiki.openstreetmap.org/wiki/Bg:Tag:natural=heath"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=heath"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:natural=heath"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=heath"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=heath"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:natural=heath"
@@ -7936,6 +8018,7 @@
     <group name="Land use" icon="landuse_landuse_sp.png">
         <item name="Farmyard" icon="presets/landuse.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farmyard"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=farmyard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=farmyard"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=farmyard"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=farmyard"
@@ -7948,6 +8031,7 @@
         <item name="Farmland" icon="landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farmland"
                   ca.href="http://wiki.openstreetmap.org/wiki/Ca:Tag:landuse=farmland"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=farmland"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=farmland"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=farmland"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=farmland"
@@ -7959,7 +8043,9 @@
         </item> <!-- Farmland -->
         <item name="Meadow" icon="landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=meadow"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=meadow"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=meadow"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=meadow"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=meadow"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=meadow"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=meadow"
@@ -7970,6 +8056,7 @@
         </item> <!-- Meadow -->
         <item name="Orchard" icon="landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=orchard"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=orchard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=orchard"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=orchard"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=orchard"
@@ -7981,6 +8068,7 @@
         </item> <!-- Orchard -->
         <item name="Vineyard" icon="presets/fruits.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=vineyard"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=vineyard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=vineyard"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=vineyard"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=vineyard" />
@@ -7990,7 +8078,9 @@
         </item> <!-- Vineyard -->
         <item name="Greenhouse Horticulture" icon="presets/greenhouse_horticulture.png" type="closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=greenhouse_horticulture"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=greenhouse_horticulture"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=greenhouse_horticulture"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=greenhouse_horticulture"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=greenhouse_horticulture"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=greenhouse_horticulture"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=greenhouse_horticulture"
@@ -8002,6 +8092,7 @@
         </item> <!-- Greenhouse Horticulture -->
         <item name="Plant Nursery" icon="styles/standard/misc/landmark/plant.png" type="closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=plant_nursery"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=plant_nursery"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=plant_nursery"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=plant_nursery"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=plant_nursery"
@@ -8032,6 +8123,7 @@
         <item name="Garden" icon="landuse_garden_21010.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=garden"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=garden"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=garden"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=garden"
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=garden"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:leisure=garden" />
@@ -8041,6 +8133,7 @@
         </item> <!-- Garden -->
         <item name="Grass" icon="landuse_grass.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=grass"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=grass"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=grass"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=grass"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=grass"
@@ -8054,6 +8147,7 @@
         </item> <!-- Grass -->
         <item name="Village Green" icon="landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=village_green"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=village_green"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=village_green"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=village_green"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=village_green"
@@ -8087,6 +8181,7 @@
         </item> <!-- Park -->
         <item name="Recreation Ground" icon="landuse_recreation_ground_21132.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=recreation_ground"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=recreation_ground"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=recreation_ground"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=recreation_ground"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=recreation_ground"
@@ -8099,6 +8194,7 @@
         <separator/>
         <item name="Residential Area" icon="man_made_house_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=residential"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=residential"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=residential"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=residential"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=residential"
@@ -8124,6 +8220,7 @@
         </item> <!-- Graveyard -->
         <item name="Cemetery" icon="landuse_grave_yard_12062.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=cemetery"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=cemetery"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=cemetery"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=cemetery"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=cemetery"
@@ -8148,7 +8245,9 @@
         </item> <!-- Religious -->
         <item name="Retail" icon="landuse_supermarket.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=retail"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=retail"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=retail"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=retail"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=retail"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=retail"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=retail"
@@ -8159,7 +8258,9 @@
         </item> <!-- Retail -->
         <item name="Commercial" icon="presets/empty.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=commercial"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=commercial"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=commercial"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=commercial"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=commercial"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=commercial"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=commercial"
@@ -8170,6 +8271,7 @@
         </item> <!-- Commercial -->
         <item name="Industrial" icon="landuse_works_22087.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=industrial"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=industrial"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=industrial"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=industrial"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=industrial"
@@ -8182,6 +8284,7 @@
         </item> <!-- Industrial -->
         <item name="Garages" icon="presets/garages.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=garages"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=garages"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=garages"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=garages"
                   nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:landuse=garages"
@@ -8194,6 +8297,7 @@
         </item> <!-- Garages -->
         <item name="Railway Land" icon="landuse_train_station.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=railway"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=railway"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=railway"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=railway"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=railway"
@@ -8205,6 +8309,7 @@
         </item> <!-- Railway Land -->
         <item name="Military" icon="presets/military.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=military"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=military"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=military"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=military"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=military"
@@ -8216,6 +8321,7 @@
         <separator/>
         <item name="Construction Area" icon="construction.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=construction"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=construction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=construction"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=construction"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=construction"
@@ -8250,6 +8356,7 @@
         </item> <!-- Greenfield -->
         <item name="Landfill" icon="landuse_landuse_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=landfill"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=landfill"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=landfill"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=landfill"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=landfill"
@@ -8261,6 +8368,7 @@
         </item> <!-- Landfill -->
         <item name="Quarry" icon="landuse_quary.png" type="node,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=quarry"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=quarry"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=quarry"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=quarry"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=quarry"
@@ -8362,6 +8470,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Annotations"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Annotations"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Annotations"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:contact"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Annotations"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Annotations" />
             <space />
@@ -8378,6 +8487,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Key:contact"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:contact"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:contact"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:contact"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:contact"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:contact"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:contact"
@@ -8395,6 +8505,7 @@
         </item> <!-- Contact (Schema with 'contact:*' Prefix) -->
         <item name="Description" type="node,way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:description"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:description"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:description"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:description"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:description"
@@ -8413,6 +8524,7 @@
         </item> <!-- Description -->
         <item name="Note" name_context="the tag note=*" type="node,way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:note"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:note"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:note"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:note"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:note"
@@ -8431,7 +8543,9 @@
         </item> <!-- Note -->
         <item name="Fixme" type="node,way,closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:fixme"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:fixme"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:fixme"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:fixme"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:fixme"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:fixme"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:fixme"
@@ -8792,7 +8906,11 @@
         </item> <!-- Destination Sign -->
         <separator/>
         <item name="Waterway" icon="water_waterway_sp.png" type="relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Relation:waterway" />
+            <link href="http://wiki.openstreetmap.org/wiki/Relation:waterway"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:waterway"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:waterway"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:waterway"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:waterway" />
             <space />
             <key key="type" value="waterway" />
             <combo key="waterway" text="Subtype of waterway (largest one of members)" values="river,stream,canal,drain,ditch" values_searchable="true" />
