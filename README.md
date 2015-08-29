@@ -13,4 +13,4 @@ The scripts
 
 The scripts are silly don't have any error checking and should be executed form the top level directory. Output is written to the gen directory.
 
-Something similar  could be done directly with the SVG versions of the icons for inclusion in JOSM.
+The presets are being translated on transifex [here](https://www.transifex.com/openstreetmap/presets/).
