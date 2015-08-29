@@ -12,7 +12,7 @@
 -->
     <!-- Item chunks -->
     <chunk id="surface">
-        <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground,sett" />
+        <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,sett" />
     </chunk>
     <chunk id="surface_smoothness">
         <reference ref="surface" />
