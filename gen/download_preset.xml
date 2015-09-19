@@ -5092,7 +5092,7 @@
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" default="track" />
         </item> <!-- Track and Field Athletics -->
-        <item name="Running" icon="styles/standard/sport/running.svg" type="node,closedway" preset_name_label="true">
+        <item name="Running" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_running_21190.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=running" />
             <space />
             <key key="sport" value="running" />
@@ -5273,7 +5273,7 @@
             <key key="sport" value="basketball" />
             <reference ref="name_leisure_pitch" />
         </item> <!-- Basketball -->
-        <item name="Handball" icon="styles/standard/sport/handball.png" type="node,closedway" preset_name_label="true">
+        <item name="Handball" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_handball_21071.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=handball" />
             <space />
             <key key="sport" value="handball" />
