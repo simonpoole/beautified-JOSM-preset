@@ -1,7 +1,7 @@
 beautified-JOSM-preset
 ======================
 
-Replace the, admittedly rather ugly, standard icons in the default JOSM preset with such from http://www.sjjb.co.uk/mapicons/introduction ,  http://osm-icons.org and a handful of very ugly ones from myself . This effort is mainly for use with Vespucci and for now uses 48x48 pixel icons with inverted colors.  
+Replace the, admittedly rather ugly, standard icons in the default JOSM preset with such from http://www.sjjb.co.uk/mapicons/introduction ,  http://osm-icons.org, https://github.com/gmgeo/osmic  and a handful of very ugly ones from myself . This effort is mainly for use with Vespucci and for now uses 48x48 pixel icons with inverted colors.  
 
 The original icons remain if they currently don't have a replacement, current count is 54 original icons left. A roughly 100 further presets not present in the JOSM file have been added to cover craft and office tags. 
 

@@ -2442,7 +2442,7 @@
                 <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
             </optional>
         </item> <!-- Level Crossing -->
-        <item name="Crossing" icon="presets/crossing.png" type="node" preset_name_label="true">
+        <item name="Crossing" icon="ICONPATH:level_crossing.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:crossing"
                   bg.href="http://wiki.openstreetmap.org/wiki/Bg:Key:crossing"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:crossing"
@@ -2700,7 +2700,7 @@
             </optional>
             <reference ref="link_contact_address_payment" />
         </item> <!-- Fuel -->
-        <item name="Charging Station" icon="styles/standard/vehicle/fuel/charging_station.png" type="node" preset_name_label="true">
+        <item name="Charging Station" icon="ICONPATH:transport_charging_station.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=charging_station"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=charging_station"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=charging_station"
@@ -3910,7 +3910,7 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Horse Riding -->
-        <item name="Casino" icon="styles/standard/leisure/casino.svg" type="node,closedway" preset_name_label="true">
+        <item name="Casino" icon="ICONPATH:tourist_casino.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=casino"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=casino"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=casino"
@@ -4773,7 +4773,7 @@
                 <check key="recycling:waste" text="Waste" disable_off="true" />
             </checkgroup>
         </item> <!-- Recycling Container-->
-        <item name="Recycling Centre" icon="styles/standard/service/recycling/recycling_centre.svg" type="node,closedway" preset_name_label="true">
+        <item name="Recycling Centre" icon=""ICONPATH:amenity_recycling.ICONTYPE"" type="node,closedway" preset_name_label="true">
            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=recycling"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=recycling"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=recycling"
@@ -5342,7 +5342,7 @@
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
         </item> <!-- Field Hockey -->
-        <item name="Ice Hockey" icon="presets/ice_hockey.png" type="node,closedway" preset_name_label="true">
+        <item name="Ice Hockey" icon="ICONPATH:sport_hockey_21013.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=ice_hockey" />
             <space />
             <key key="sport" value="ice_hockey" />
