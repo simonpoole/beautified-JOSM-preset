@@ -8675,7 +8675,7 @@
             <key key="type" value="restriction" />
             <combo key="restriction" text="Restriction" values="no_left_turn,no_right_turn,no_straight_on,no_u_turn,only_right_turn,only_left_turn,only_straight_on" values_searchable="true" />
             <optional>
-                <text key="name" text="Name" />
+		<combo key="except" text="Exceptions" values="bicycle,emergency,hgv,motorcar,psv" />
             </optional>
             <roles>
                 <role key="from" text="from way" requisite="required" count="1" type="way" />
