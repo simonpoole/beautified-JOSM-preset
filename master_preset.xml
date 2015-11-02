@@ -4674,7 +4674,7 @@
         </item> <!-- Veterinary -->
     </group> <!-- Health -->
     <group name="Social Facilities" icon="ICONPATH:amenity_outreach_12252.ICONTYPE">
-        <item name="Ambulantory Care" icon="ICONPATH:ambulantory_care_12248.ICONTYPE" type="node,closedway" preset_name_label="true">
+        <item name="Ambulantory Care" icon="ICONPATH:amenity_ambulantory_care_12248.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
@@ -4748,7 +4748,7 @@
             <text key="capacity" text="Capacity" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
-        <item name="Group Home" icon="ICONPATH:amenity_group_home_12240.ICONTYPE" type="node,closedway" preset_name_label="true">
+        <item name="Group Home" icon="ICONPATH:amenity_group_home_12251.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
