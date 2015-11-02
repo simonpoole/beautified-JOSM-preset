@@ -4606,22 +4606,6 @@
             <reference ref="name_operator" />
             <reference ref="link_contact_address" />
         </item> <!-- Nursing Home -->
-        <item name="Retirement Home" icon="icons/png/health_retirement_home_12240.png" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
-                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
-            <space />
-            <key key="amenity" value="social_facility" />
-            <key key="social_facility" value="group_home" />
-            <key key="social_facility:for" value="senior" />
-            <reference ref="name_operator" />
-            <text key="capacity" text="Capacity" />
-            <reference ref="link_contact_address" />
-        </item> <!-- Retirement Home -->
         <item name="Pharmacy" icon="icons/png/health_pharmacy.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=pharmacy"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=pharmacy"
@@ -4689,6 +4673,169 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Veterinary -->
     </group> <!-- Health -->
+    <group name="Social Facilities" icon="icons/png/amenity_outreach_12252.png">
+        <item name="Ambulantory Care" icon="icons/png/ambulantory_care_12248.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="ambulantory_care" />
+            <combo key="social_facility:for" text="For group" values="abused;child;disabled;diseased;drug_addicted;homeless;juvenile;mental_health;migrant;orphan;senior;underprivileged;unemployed;victim" />
+            <reference ref="name_operator" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Assisted Living" icon="icons/png/amenity_assisted_living_12249.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="assisted_living" />
+            <combo key="social_facility:for" text="For group" values="abused;child;disabled;diseased;drug_addicted;homeless;juvenile;mental_health;migrant;orphan;senior;underprivileged;unemployed;victim" />
+            <reference ref="name_operator" />
+            <text key="capacity" text="Capacity" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Social Centre" icon="icons/png/amenity_social_centre_12352.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_centre" />
+            <reference ref="name_operator" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Food Bank" icon="icons/png/amenity_food_bank_12250.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="food_bank" />
+            <reference ref="name_operator" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Retirement Home" icon="icons/png/amenity_retirement_home_12240.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="group_home" />
+            <key key="social_facility:for" value="senior" />
+            <reference ref="name_operator" />
+            <text key="capacity" text="Capacity" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Group Home" icon="icons/png/amenity_group_home_12240.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="group_home" />
+            <combo key="social_facility:for" text="For group" values="abused;child;disabled;diseased;drug_addicted;homeless;juvenile;mental_health;migrant;orphan;senior;underprivileged;unemployed;victim" />
+            <reference ref="name_operator" />
+            <text key="capacity" text="Capacity" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Outreach" icon="icons/png/amenity_outreach_12252.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="outreach" />
+            <combo key="social_facility:for" text="For group" values="abused;child;disabled;diseased;drug_addicted;homeless;juvenile;mental_health;migrant;orphan;senior;underprivileged;unemployed;victim" />
+            <reference ref="name_operator" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Shelter" icon="icons/png/amenity_shelter_12253.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="shelter" />
+            <reference ref="name_operator" />
+            <text key="capacity" text="Capacity" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Social Club" icon="icons/png/amenity_social_club_21172.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="social_club" />
+            <reference ref="name_operator" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Social Workshop" icon="icons/png/amenity_social_workshop_12254.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="social_facility" />
+            <key key="social_facility" value="workshop" />
+            <reference ref="name_operator" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+        <item name="Youth Centre" icon="icons/png/amenity_youth_centre_12356.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
+            <space />
+            <key key="amenity" value="youth_centre" />
+            <reference ref="name_operator" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Retirement Home -->
+    </group> <!-- Social Facility -->
     <group name="Facilities" icon="icons/png/amenity_telephone.png">
         <item name="Toilets/Restrooms" icon="icons/png/amenity_toilets.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=toilets"
@@ -7197,7 +7344,7 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Ticket -->
     </group> <!-- Printed Material -->
-    <group name="For the body" icon="styles/standard/shop/body.svg">
+    <group name="For the body" icon="iicons/png/shopping_body.png">
         <item name="Chemist" icon="icons/png/shopping_chemist_29025.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=chemist"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=chemist"
