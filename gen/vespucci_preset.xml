@@ -362,6 +362,9 @@
     <preset_link preset_name="Motor vehicle (CH)" />
     <preset_link preset_name="Motorcar and -cycle (CH)" />
   </chunk>
+  <chunk id="social_facility_for">
+    <combo key="social_facility:for" text="For group" values="abused,child,disabled,diseased,drug_addicted,homeless,juvenile,mental_health,migrant,orphan,senior,underprivileged,unemployed,victim" />
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="icons/png/highway_highway_sp.png">
     <group name="Streets" icon="icons/png/highway_highway_sp.png">
@@ -4685,7 +4688,7 @@
             <space />
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="ambulantory_care" />
-            <combo key="social_facility:for" text="For group" values="abused,child,disabled,diseased,drug_addicted,homeless,juvenile,mental_health,migrant,orphan,senior,underprivileged,unemployed,victim" />
+            <reference ref="social_facility_for" />
             <reference ref="name_operator" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
@@ -4700,7 +4703,7 @@
             <space />
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="assisted_living" />
-            <combo key="social_facility:for" text="For group" values="abused,child,disabled,diseased,drug_addicted,homeless,juvenile,mental_health,migrant,orphan,senior,underprivileged,unemployed,victim" />
+            <reference ref="social_facility_for" />
             <reference ref="name_operator" />
             <text key="capacity" text="Capacity" />
             <reference ref="link_contact_address" />
@@ -4759,7 +4762,7 @@
             <space />
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="group_home" />
-            <combo key="social_facility:for" text="For group" values="abused,child,disabled,diseased,drug_addicted,homeless,juvenile,mental_health,migrant,orphan,senior,underprivileged,unemployed,victim" />
+            <reference ref="social_facility_for" />
             <reference ref="name_operator" />
             <text key="capacity" text="Capacity" />
             <reference ref="link_contact_address" />
@@ -4775,7 +4778,7 @@
             <space />
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="outreach" />
-            <combo key="social_facility:for" text="For group" values="abused,child,disabled,diseased,drug_addicted,homeless,juvenile,mental_health,migrant,orphan,senior,underprivileged,unemployed,victim" />
+            <reference ref="social_facility_for" />
             <reference ref="name_operator" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
