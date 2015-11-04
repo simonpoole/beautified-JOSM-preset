@@ -161,7 +161,7 @@ public class Preset2Pot {
 		pw.print("\"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\\n\"\n");
 		pw.print("\"Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n\"\n");
 		pw.print("\"Language-Team: LANGUAGE <LL@li.org>\\n\"\n");
-		pw.print("\"MIME-Version: 1.0\\n\"");
+		pw.print("\"MIME-Version: 1.0\\n\"\n");
 		pw.print("\"Content-Type: text/plain; charset=UTF-8\\n\"\n");
 		pw.print("\"Content-Transfer-Encoding: 8bit\\n\"\n");
 		pw.print("\n");
@@ -175,11 +175,11 @@ public class Preset2Pot {
 					pw.print(" " + loc);
 				}
 				pw.print("\n");
-				pw.print("msgid \"" + msgId + "\"\n");
-				pw.print("msgstr \"\"\n");
 				if (context != null && !"".equals(context)) {
 					pw.print("msgctxt \"" + context + "\"\n");
 				}
+				pw.print("msgid \"" + msgId + "\"\n");
+				pw.print("msgstr \"\"\n");
 				pw.print("\n");
 			}
 		}
