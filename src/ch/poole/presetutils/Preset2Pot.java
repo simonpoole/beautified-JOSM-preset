@@ -33,9 +33,13 @@ import org.xml.sax.Locator;
 import org.xml.sax.SAXException;
 
 /**
- * Small utility to extract strings from a JOSM style preset file that should be translated
+ * Small utility to extract strings from a JOSM style preset file that should be translated, 
+ * error handling is essentially crashing and burning when something does wrong.
+ * Some parts of this were nicked from Vespucci.
+ * 
  * Licence Apache 2.0
- * @author simon
+ * 
+ * @author Simon Poole
  *
  */
 
@@ -52,8 +56,6 @@ public class Preset2Pot {
         saxParser.parse(input, new HandlerBase() {
         	
         	Locator locator = null;
-        	
-        	boolean inOptionalSection = true;
         	
         	void addMsg(String tag, AttributeList attr, String attrName) {
         		String context = attr.getValue("text_context");
@@ -113,7 +115,6 @@ public class Preset2Pot {
             	} else if ("label".equals(name)) {
             		addMsg(name, attr, "text");
             	} else if ("optional".equals(name)) {
-            		inOptionalSection = true;
             		addMsg(name, attr, "text");
             	} else if ("key".equals(name)) {
             		addMsg(name, attr, "text");
@@ -141,7 +142,6 @@ public class Preset2Pot {
             public void endElement(String name) throws SAXException {
             	if ("group".equals(name)) {
             	} else if ("optional".equals(name)) {
-            		inOptionalSection = false;
             	} else if ("item".equals(name)) {
             	} else if ("chunk".equals(name)) {
             	} else if ("combo".equals(name) || "multiselect".equals(name)) {
@@ -161,7 +161,7 @@ public class Preset2Pot {
 		pw.print("\"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\\n\"\n");
 		pw.print("\"Last-Translator: FULL NAME <EMAIL@ADDRESS>\\n\"\n");
 		pw.print("\"Language-Team: LANGUAGE <LL@li.org>\\n\"\n");
-		pw.print("\"MIME-Version: 1.0\\n\"");
+		pw.print("\"MIME-Version: 1.0\\n\"\n");
 		pw.print("\"Content-Type: text/plain; charset=UTF-8\\n\"\n");
 		pw.print("\"Content-Transfer-Encoding: 8bit\\n\"\n");
 		pw.print("\n");
@@ -175,11 +175,11 @@ public class Preset2Pot {
 					pw.print(" " + loc);
 				}
 				pw.print("\n");
-				pw.print("msgid \"" + msgId + "\"\n");
-				pw.print("msgstr \"\"\n");
 				if (context != null && !"".equals(context)) {
 					pw.print("msgctxt \"" + context + "\"\n");
 				}
+				pw.print("msgid \"" + msgId + "\"\n");
+				pw.print("msgstr \"\"\n");
 				pw.print("\n");
 			}
 		}
@@ -236,9 +236,11 @@ public class Preset2Pot {
 		catch( ParseException exp ) {
 			// oops, something went wrong
 			System.err.println( "Parsing failed.  Reason: " + exp.getMessage() );
+			return;
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			return;
 		}
 		
 		try {
@@ -259,6 +261,4 @@ public class Preset2Pot {
 			e.printStackTrace();
 		}
 	}
-
-
 }
