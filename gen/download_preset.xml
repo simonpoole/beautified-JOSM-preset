@@ -32,14 +32,14 @@
         <combo key="surface" text="Surface" values="grass,sand,clay,dirt,fine_gravel,ground,mud,unpaved,compacted" />
     </chunk>
     <chunk id="highway_base">
-        <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3"/>
-        <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3"/>
         <text key="maxspeed" text="Max. speed (km/h)"/>
         <reference ref="surface_smoothness" />
+        <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3"/>
     </chunk>
     <chunk id="highway_yesno_incline">
         <check key="bridge" text="Bridge" disable_off="true" />
         <check key="tunnel" text="Tunnel" disable_off="true" />
+        <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3"/>
         <check key="cutting" text="Cutting" disable_off="true" />
         <check key="embankment" text="Embankment" disable_off="true" />
         <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down"/>
@@ -345,11 +345,9 @@
     <preset_link preset_name="Payment Methods" />
   </chunk>
   <chunk id="additional_access_tags">
-    <check key="oneway" text="Oneway" disable_off="true" />
     <check key="toll" text="Toll" disable_off="true" />
     <check key="noexit" text="No exit (cul-de-sac)" disable_off="true" />
     <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" values_context="overtaking" match="key" />
-    <text key="maxspeed" text="Max. speed (km/h)" />
     <text key="minspeed" text="Min. speed (km/h)" match="key" />
   </chunk>
   <chunk id="road_access_restrictions">
