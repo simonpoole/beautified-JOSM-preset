@@ -127,6 +127,10 @@
         <reference ref="oh" />
         <reference ref="wheelchair" />
     </chunk>
+    <chunk id="oh_wheelchair_level">
+        <reference ref="oh_wheelchair" />
+	<combo text="Level (ground floor is 0)" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5"/>
+    </chunk>
     <chunk id="name_oh_wheelchair">
         <text key="name" text="Name" />
         <reference ref="oh_wheelchair" />
@@ -3580,7 +3584,7 @@
             <multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;sushi;steak_house" values_searchable="true" />
             <check key="microbrewery" text="Microbrewery" disable_off="true" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
-            <reference ref="oh_wheelchair" />
+            <reference ref="oh_wheelchair_level" />
             <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
             <space />
             <reference ref="internet_smoking" />
@@ -3600,7 +3604,7 @@
             <reference ref="name_operator" />
             <combo key="cuisine" text="Cuisine" values="italian,chinese,pizza,burger,greek,german,indian,regional,kebab,turkish,asian,thai,mexican,japanese,french,sandwich,sushi,fish_and_chips,chicken" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
-            <reference ref="oh_wheelchair" />
+            <reference ref="oh_wheelchair_level" />
             <space />
             <reference ref="internet_smoking" />
             <space />
@@ -3616,7 +3620,7 @@
             <key key="amenity" value="food_court" />
             <reference ref="name_operator" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
-            <reference ref="oh_wheelchair" />
+            <reference ref="oh_wheelchair_level" />
             <space />
             <reference ref="internet_smoking" />
             <space />
@@ -3639,7 +3643,7 @@
             <reference ref="name_operator" />
             <combo key="cuisine" text="Cuisine" values="ice_cream" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
-            <reference ref="oh_wheelchair" />
+            <reference ref="oh_wheelchair_level" />
             <space />
             <reference ref="internet_smoking" />
             <space />
@@ -3658,7 +3662,7 @@
             <reference ref="name_operator" />
             <check key="microbrewery" text="Microbrewery" disable_off="true" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
-            <reference ref="oh_wheelchair" />
+            <reference ref="oh_wheelchair_level" />
             <space />
             <reference ref="internet_smoking" />
             <space />
@@ -3695,7 +3699,7 @@
             <key key="amenity" value="bar" />
             <reference ref="name_operator" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
-            <reference ref="oh_wheelchair" />
+            <reference ref="oh_wheelchair_level" />
             <space />
             <reference ref="internet_smoking" />
             <space />
@@ -4888,7 +4892,7 @@
                 <text key="description" text="Description" />
                 <combo key="fee" text="Fee" values="yes,no" />
                 <text key="operator" text="Operator" />
-                <reference ref="oh_wheelchair" />
+                <reference ref="oh_wheelchair_level" />
             </optional>
         </item> <!-- Shower -->
         <item name="Post Box" icon="icons/png/amenity_post_box.png" type="node" preset_name_label="true">
@@ -4950,7 +4954,7 @@
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:emergency=defibrillator" />
             <space />
             <key key="emergency" value="defibrillator" />
-            <reference ref="oh_wheelchair" />
+            <reference ref="oh_wheelchair_level" />
             <text  key="operator" text="Operator" />
             <check key="indoor" text="Located inside a building?" disable_off="true" />
             <!-- lastcheck is in use for aed devices, but not yet well discussed or documented
@@ -7199,7 +7203,7 @@
             <key key="amenity" value="atm" />
             <text key="brand" text="Brand" />
             <text key="operator" text="Operator" />
-            <reference ref="oh_wheelchair" />
+            <reference ref="oh_wheelchair_level" />
         </item> <!-- Automated Teller Machine -->
         <item name="Pawnbroker" icon="icons/png/money_pawnbroker_29185.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=pawnbroker"
