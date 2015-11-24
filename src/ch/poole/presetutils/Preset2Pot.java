@@ -23,6 +23,7 @@ import javax.xml.parsers.SAXParserFactory;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
@@ -34,8 +35,8 @@ import org.xml.sax.SAXException;
 
 /**
  * Small utility to extract strings from a JOSM style preset file that should be translated, 
- * error handling is essentially crashing and burning when something does wrong.
- * Some parts of this were nicked from Vespucci.
+ * error handling is essentially crashing and burning when something goes wrong.
+ * Some parts of this were nicked from Vespucci and some from Apache CLI sample code.
  * 
  * Licence Apache 2.0
  * 
@@ -206,12 +207,12 @@ public class Preset2Pot {
 		// arguments
 		Option inputFile = OptionBuilder.withArgName("file")
 				.hasArg()
-				.withDescription(  "input preset" )
+				.withDescription(  "input preset file, default: standard in" )
 				.create( "input" );
 
 		Option outputFile = OptionBuilder.withArgName("file")
 				.hasArg()
-				.withDescription( "output .pot file" )
+				.withDescription( "output .pot file, default: standard out" )
 				.create( "output" );
 		Options options = new Options();
 
@@ -233,13 +234,12 @@ public class Preset2Pot {
 			    os = new FileOutputStream(output);
 			}
 		}
-		catch( ParseException exp ) {
-			// oops, something went wrong
-			System.err.println( "Parsing failed.  Reason: " + exp.getMessage() );
+		catch(ParseException exp) {
+			HelpFormatter formatter = new HelpFormatter();
+			formatter.printHelp( "Preset2Pot", options );
 			return;
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.err.println("File not found: " + e.getMessage());
 			return;
 		}
 		
@@ -248,16 +248,12 @@ public class Preset2Pot {
 			p.parseXML(is);
 			p.dump2Pot(new PrintWriter(os));
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ParserConfigurationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SAXException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
