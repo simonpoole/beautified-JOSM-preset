@@ -127,24 +127,20 @@
         <reference ref="oh" />
         <reference ref="wheelchair" />
     </chunk>
-    <chunk id="name_oh_wheelchair_level">
-        <reference ref="name_oh_wheelchair" />
-	<combo text="Level (ground floor is 0)" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5"/>
-    </chunk>
     <chunk id="name_oh_wheelchair">
         <text key="name" text="Name" />
         <reference ref="oh_wheelchair" />
     </chunk>
-    <chunk id="name_operator_oh_wheelchair_level">
-        <reference ref="name_operator_oh_wheelchair" />
+    <chunk id="name_oh_wheelchair_level">
+        <reference ref="name_oh_wheelchair" />
 	<combo text="Level (ground floor is 0)" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5"/>
     </chunk>
     <chunk id="name_operator_oh_wheelchair">
         <reference ref="name_operator" />
         <reference ref="oh_wheelchair" />
     </chunk>
-    <chunk id="name_brand_operator_oh_wheelchairi_level">
-	<reference ref="name_brand_operator_oh_wheelchair" />
+    <chunk id="name_operator_oh_wheelchair_level">
+        <reference ref="name_operator_oh_wheelchair" />
 	<combo text="Level (ground floor is 0)" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5"/>
     </chunk>
     <chunk id="name_brand_operator_oh_wheelchair">
@@ -152,6 +148,10 @@
         <text key="brand" text="Brand" />
         <text key="operator" text="Operator" />
         <reference ref="oh_wheelchair" />
+    </chunk>
+    <chunk id="name_brand_operator_oh_wheelchairi_level">
+	<reference ref="name_brand_operator_oh_wheelchair" />
+	<combo text="Level (ground floor is 0)" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5"/>
     </chunk>
     <chunk id="name_brand_oh_wheelchair">
         <text key="name" text="Name" />
