@@ -57,6 +57,8 @@ public class Preset2Pot {
         saxParser.parse(input, new HandlerBase() {
         	
         	Locator locator = null;
+        	String group = null;
+        	String preset = null;
         	
         	void addMsg(String tag, AttributeList attr, String attrName) {
         		String context = attr.getValue("text_context");
@@ -68,7 +70,7 @@ public class Preset2Pot {
         		}
         		String value = attr.getValue(attrName);
         		if (value != null && !"".equals(value)) {
-        			msgs.get(context).add(value, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + attrName + ")");
+        			msgs.get(context).add(value, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + attrName + (group!=null?", group:" + group:"") + (preset!=null?", preset:" + preset:"") + ")");
         		}
         	}
         	
@@ -88,7 +90,7 @@ public class Preset2Pot {
             		}
         			for (String s:displayValues.split(Pattern.quote(delimiter))) {
         				if (s != null && !"".equals(s)) {
-                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":display_values)");
+                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":display_values" + (group!=null?", group:" + group:"") + (preset!=null?", preset:" + preset:"") +")");
                 		}
         			}
         		}
@@ -108,8 +110,10 @@ public class Preset2Pot {
 			@Override
             public void startElement(String name, AttributeList attr) throws SAXException {
             	if ("group".equals(name)) {
+            		group = attr.getValue("name");
             		addMsg(name, attr, "name");
             	} else if ("item".equals(name)) {
+            		preset = attr.getValue("name");
             		addMsg(name, attr, "name");
             	} else if ("chunk".equals(name)) {
             	} else if ("separator".equals(name)) {
@@ -142,8 +146,10 @@ public class Preset2Pot {
             @Override
             public void endElement(String name) throws SAXException {
             	if ("group".equals(name)) {
+            		group = null;
             	} else if ("optional".equals(name)) {
             	} else if ("item".equals(name)) {
+            		preset = null;
             	} else if ("chunk".equals(name)) {
             	} else if ("combo".equals(name) || "multiselect".equals(name)) {
             	}
