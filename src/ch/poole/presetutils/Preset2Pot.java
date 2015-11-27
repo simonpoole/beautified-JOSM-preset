@@ -23,6 +23,7 @@ import javax.xml.parsers.SAXParserFactory;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
+import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
@@ -34,8 +35,8 @@ import org.xml.sax.SAXException;
 
 /**
  * Small utility to extract strings from a JOSM style preset file that should be translated, 
- * error handling is essentially crashing and burning when something does wrong.
- * Some parts of this were nicked from Vespucci.
+ * error handling is essentially crashing and burning when something goes wrong.
+ * Some parts of this were nicked from Vespucci and some from Apache CLI sample code.
  * 
  * Licence Apache 2.0
  * 
@@ -56,6 +57,12 @@ public class Preset2Pot {
         saxParser.parse(input, new HandlerBase() {
         	
         	Locator locator = null;
+        	String group = null;
+        	String preset = null;
+        	
+        	String presetContext() {
+        		return (group!=null?"|group:" + group.replace(' ', '_'):"") + (preset!=null?"|preset:" + preset.replace(' ', '_'):"");
+        	}
         	
         	void addMsg(String tag, AttributeList attr, String attrName) {
         		String context = attr.getValue("text_context");
@@ -67,7 +74,7 @@ public class Preset2Pot {
         		}
         		String value = attr.getValue(attrName);
         		if (value != null && !"".equals(value)) {
-        			msgs.get(context).add(value, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + attrName + ")");
+        			msgs.get(context).add(value, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + attrName + presetContext() + ")");
         		}
         	}
         	
@@ -87,7 +94,7 @@ public class Preset2Pot {
             		}
         			for (String s:displayValues.split(Pattern.quote(delimiter))) {
         				if (s != null && !"".equals(s)) {
-                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":display_values)");
+                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":display_values" + presetContext() +")");
                 		}
         			}
         		}
@@ -107,8 +114,10 @@ public class Preset2Pot {
 			@Override
             public void startElement(String name, AttributeList attr) throws SAXException {
             	if ("group".equals(name)) {
+            		group = attr.getValue("name");
             		addMsg(name, attr, "name");
             	} else if ("item".equals(name)) {
+            		preset = attr.getValue("name");
             		addMsg(name, attr, "name");
             	} else if ("chunk".equals(name)) {
             	} else if ("separator".equals(name)) {
@@ -141,8 +150,10 @@ public class Preset2Pot {
             @Override
             public void endElement(String name) throws SAXException {
             	if ("group".equals(name)) {
+            		group = null;
             	} else if ("optional".equals(name)) {
             	} else if ("item".equals(name)) {
+            		preset = null;
             	} else if ("chunk".equals(name)) {
             	} else if ("combo".equals(name) || "multiselect".equals(name)) {
             	}
@@ -206,12 +217,12 @@ public class Preset2Pot {
 		// arguments
 		Option inputFile = OptionBuilder.withArgName("file")
 				.hasArg()
-				.withDescription(  "input preset" )
+				.withDescription(  "input preset file, default: standard in" )
 				.create( "input" );
 
 		Option outputFile = OptionBuilder.withArgName("file")
 				.hasArg()
-				.withDescription( "output .pot file" )
+				.withDescription( "output .pot file, default: standard out" )
 				.create( "output" );
 		Options options = new Options();
 
@@ -233,13 +244,12 @@ public class Preset2Pot {
 			    os = new FileOutputStream(output);
 			}
 		}
-		catch( ParseException exp ) {
-			// oops, something went wrong
-			System.err.println( "Parsing failed.  Reason: " + exp.getMessage() );
+		catch(ParseException exp) {
+			HelpFormatter formatter = new HelpFormatter();
+			formatter.printHelp( "Preset2Pot", options );
 			return;
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.err.println("File not found: " + e.getMessage());
 			return;
 		}
 		
@@ -248,16 +258,12 @@ public class Preset2Pot {
 			p.parseXML(is);
 			p.dump2Pot(new PrintWriter(os));
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ParserConfigurationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (SAXException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
