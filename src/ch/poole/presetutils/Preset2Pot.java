@@ -60,6 +60,10 @@ public class Preset2Pot {
         	String group = null;
         	String preset = null;
         	
+        	String presetContext() {
+        		return (group!=null?"|group:" + group.replace(' ', '_'):"") + (preset!=null?"|preset:" + preset.replace(' ', '_'):"");
+        	}
+        	
         	void addMsg(String tag, AttributeList attr, String attrName) {
         		String context = attr.getValue("text_context");
         		if (context == null) {
@@ -70,7 +74,7 @@ public class Preset2Pot {
         		}
         		String value = attr.getValue(attrName);
         		if (value != null && !"".equals(value)) {
-        			msgs.get(context).add(value, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + attrName + (group!=null?", group:" + group:"") + (preset!=null?", preset:" + preset:"") + ")");
+        			msgs.get(context).add(value, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + attrName + presetContext() + ")");
         		}
         	}
         	
@@ -90,7 +94,7 @@ public class Preset2Pot {
             		}
         			for (String s:displayValues.split(Pattern.quote(delimiter))) {
         				if (s != null && !"".equals(s)) {
-                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":display_values" + (group!=null?", group:" + group:"") + (preset!=null?", preset:" + preset:"") +")");
+                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":display_values" + presetContext() +")");
                 		}
         			}
         		}
