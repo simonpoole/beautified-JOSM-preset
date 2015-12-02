@@ -8334,7 +8334,7 @@
         </item> <!-- Stone -->
     </group> <!-- Nature -->
     <group name="Land use" icon="landuse_landuse_sp.png">
-        <item name="Farmyard" icon="poi_farm_22120.png" type="closedway,relation" preset_name_label="true">
+        <item name="Farmyard" icon="landuse_farm_22120.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farmyard"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=farmyard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=farmyard"
@@ -8515,7 +8515,7 @@
             <text key="name" text="Name" />
         </item> <!-- Recreation Ground -->
         <separator/>
-        <item name="Residential Area" icon="man_made_house_sp.png" type="closedway,relation" preset_name_label="true">
+        <item name="Residential Area" icon="landuse_house_sp.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=residential"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=residential"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=residential"
@@ -8558,7 +8558,7 @@
             <key key="landuse" value="cemetery" />
             <reference ref="religious" />
         </item> <!-- Cemetery -->
-        <item name="Religious" icon="place_of_worship_unknown.png" type="closedway,relation" preset_name_label="true">
+        <item name="Religious" icon="landuse_religous.png" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=religious"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=religious"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=religious"
