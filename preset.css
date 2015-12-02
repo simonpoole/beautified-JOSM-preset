@@ -1,11 +1,8 @@
 div.preset{
-    background: #E0E0E0;
-    width:80px; 
-    height:100px; float:left; line-height: 22px; text-align: center;
+    line-height: 22px; text-align: center;
     vertical-align: bottom;
-    padding:5px;
-    margin:10px;
     font: 12px arial, sans-serif;
+	padding:5px; 
 }
 
 div.group {
@@ -15,4 +12,29 @@ div.group {
 
 h3{
 	font: 20px arial, sans-serif;
+}
+
+div.container {
+  background: #E0E0E0;
+  position: relative;
+  width:90px; 
+  height:110px; 
+  float:left; 
+  margin:10px;
+
+}
+
+div.container .popup {
+  display: none;
+}
+
+div.container:hover .popup {
+  position: absolute;
+  background: #FFFFFF;
+  display: block;
+  z-index: 9;
+  bottom: 0;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px; 
 }

@@ -64,6 +64,10 @@ public class Preset2Html {
         	Locator locator = null;
         	String group = null;
         	String preset = null;
+        	String icon = null;
+        	String icon2 = null;
+        	String keys = null;
+        	boolean optional = false;
         	
         	/** 
              * ${@inheritDoc}.
@@ -83,28 +87,30 @@ public class Preset2Html {
             		pw.write("<div class=\"group\"><h3>" + group + "</h3>\n");
             	} else if ("item".equals(name)) {
             		preset = attr.getValue("name");
-            		String icon = attr.getValue("icon");
+            		icon = attr.getValue("icon");
             		if (icon != null && !"".equals(icon)) {
-            			String icon2 = icon.replace("ICONPATH:", "icons/png/");
+            			icon2 = icon.replace("ICONPATH:", "icons/png/");
             			icon2 = icon2.replace("ICONTYPE", "png");
-            			if (!icon2.equals(icon)) {
-            				pw.write("<div class=\"preset\"><img src=\""+icon2+"\"><br>"+preset+"</div>");
-            			} else {
-            				pw.write("<div class=\"preset\">"+preset+"</div>");
-            			}
-            		} else {
-            			pw.write("<div class=\"preset\">"+preset+"</div>");
             		}
             	} else if ("chunk".equals(name)) {
             	} else if ("separator".equals(name)) {
             	} else if ("label".equals(name)) {
             	} else if ("optional".equals(name)) {
-            	} else if ("key".equals(name)) {
-            	} else if ("text".equals(name)) {
+            		optional = true;
+            	} else if ("key".equals(name) || "multiselect".equals(name) || "combo".equals(name) || "check".equals(name) || "text".equals(name)) {
+            		if (!optional) {
+            			String key = attr.getValue("key");
+            			String value = attr.getValue("value");
+            			// only fixed keys 
+            			if (key != null && !"".equals(key)) {
+            				if (keys == null) {
+            					keys = key + "=" + (value!=null?value:"*");
+            				} else {
+            					keys = keys + "<br>" + key + "=" + (value!=null?value:"*");
+            				}
+            			}
+            		} 
             	} else if ("link".equals(name)) {
-            	} else if ("check".equals(name)) {
-            	} else if ("combo".equals(name)) {
-            	} else if ("multiselect".equals(name)) {
             	} else if ("role".equals(name)) {
             	} else if ("reference".equals(name)) {
             	} else if ("list_entry".equals(name)) {
@@ -118,9 +124,32 @@ public class Preset2Html {
             		group = null;
             		pw.write("</div>\n");
             	} else if ("optional".equals(name)) {
+            		optional = false;
             	} else if ("item".equals(name)) {
-            		preset = null;
+            		if (preset != null) {
+            			pw.write("<div class=\"container\">");
+            			if (icon != null && !"".equals(icon)) {
+            				if (!icon2.equals(icon)) {
+            					pw.write("<div class=\"preset\"><img src=\""+icon2+"\"><br>"+preset+"</div>");
+            				} else {
+            					pw.write("<div class=\"preset\">"+preset+"</div>");
+            				}
+            				if (keys != null) {
+            					pw.write("<div class=\"popup\" \">" + keys + "</div>");
+            				}
+            				pw.write("</div>");
+            			} else {
+            				pw.write("<div class=\"preset\">"+preset+"</div>");
+            				if (keys != null) {
+            					pw.write("<div class=\"popup\" \">" + keys + "</div>");
+            				}
+            			}
+           				pw.write("</div>");
+            			preset = null;
+            		}
+        			keys = null;
             	} else if ("chunk".equals(name)) {
+            		keys = null;
             	} else if ("combo".equals(name) || "multiselect".equals(name)) {
             	}
             }
