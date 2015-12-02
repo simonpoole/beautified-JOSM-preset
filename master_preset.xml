@@ -7690,7 +7690,7 @@
         <text key="ref" text="Reference number" />
         <preset_link preset_name="Payment Methods" />
     </item> <!-- Vending Machine -->
-    <item name="Payment Methods" type="node,way,closedway,relation" preset_name_label="true">
+    <item name="Payment Methods" icon="ICONPATH:money_payment_methods.ICONTYPE" type="node,way,closedway,relation" preset_name_label="true">
         <link href="http://wiki.openstreetmap.org/wiki/Key:payment"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:payment"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Key:payment"
@@ -8334,7 +8334,7 @@
         </item> <!-- Stone -->
     </group> <!-- Nature -->
     <group name="Land use" icon="ICONPATH:landuse_landuse_sp.ICONTYPE">
-        <item name="Farmyard" icon="presets/landuse.png" type="closedway,relation" preset_name_label="true">
+        <item name="Farmyard" icon="ICONPATH:poi_farm_22120.ICONTYPE" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farmyard"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=farmyard"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=farmyard"
