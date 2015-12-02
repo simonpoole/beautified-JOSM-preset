@@ -56,7 +56,7 @@ public class Preset2Html {
 		pw.write("<head>");
 		pw.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>");
 		pw.write("<link rel=\"stylesheet\" href=\"preset.css\" type=\"text/css\" />");
-		pw.write("</head><body>");
+		pw.write("</head><body><h1>Presets in File " + inputFilename + "</h1>");
 		
 		
         saxParser.parse(input, new HandlerBase() {
