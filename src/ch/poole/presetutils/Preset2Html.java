@@ -56,7 +56,7 @@ public class Preset2Html {
 		pw.write("<head>");
 		pw.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"/>");
 		pw.write("<link rel=\"stylesheet\" href=\"preset.css\" type=\"text/css\" />");
-		pw.write("</head><body><h1>Presets in File " + inputFilename + "</h1>");
+		pw.write("</head><body>");
 		
 		
         saxParser.parse(input, new HandlerBase() {
@@ -82,7 +82,14 @@ public class Preset2Html {
              */
 			@Override
             public void startElement(String name, AttributeList attr) throws SAXException {
-            	if ("group".equals(name)) {
+				if ("presets".equals(name)) {
+					String shortdescription = attr.getValue("shortdescription");
+					if (shortdescription == null) {
+						pw.write("<h1>Presets from File " + inputFilename + "</h1>\n");
+					} else {
+						pw.write("<h1>" + shortdescription + "</h1>\n");
+					}
+				} else if ("group".equals(name)) {
             		group = attr.getValue("name");
             		pw.write("<div class=\"group\"><h3>" + group + "</h3>\n");
             	} else if ("item".equals(name)) {
