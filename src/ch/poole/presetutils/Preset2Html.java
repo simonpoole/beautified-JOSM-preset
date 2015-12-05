@@ -43,6 +43,7 @@ public class Preset2Html {
 	
 	String inputFilename;
 	String downloadLink = null;
+	int groupCount = 0;
 	
 	void parseXML(final InputStream input, final PrintWriter pw)
 			throws ParserConfigurationException, SAXException, IOException {
@@ -94,8 +95,18 @@ public class Preset2Html {
 						pw.write("<div class=\"download\"><a href=\"" + downloadLink + "\">Download link for JOSM</a></div>\n");
 					}
 				} else if ("group".equals(name)) {
+					groupCount++;
             		group = attr.getValue("name");
-            		pw.write("<div class=\"group\"><h3>" + group + "</h3>\n");
+            		pw.write("<div class=\"group\"><h" + (groupCount + 1) + ">"); 
+            		String groupIcon = attr.getValue("icon");
+            		if (groupIcon != null && !"".equals(groupIcon)) {
+            			String groupIcon2 = groupIcon.replace("ICONPATH:", "icons/png/");
+            			groupIcon2 = groupIcon2.replace("ICONTYPE", "png");
+            			if (!groupIcon.equals(groupIcon2)) {
+            				pw.write("<img src=\""+groupIcon2+"\" style=\"vertical-align:middle\"> ");
+            			}
+            		}
+            		pw.write(group + "</h" + (groupCount + 1) + ">\n");
             	} else if ("item".equals(name)) {
             		preset = attr.getValue("name");
             		icon = attr.getValue("icon");
@@ -134,6 +145,7 @@ public class Preset2Html {
             	if ("group".equals(name)) {
             		group = null;
             		pw.write("</div>\n");
+            		groupCount--;
             	} else if ("optional".equals(name)) {
             		optional = false;
             	} else if ("item".equals(name)) {
