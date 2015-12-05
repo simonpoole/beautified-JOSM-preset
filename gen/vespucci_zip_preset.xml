@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version">
 <!--
     Icons have been derived from mainly from
   
@@ -119,7 +119,12 @@
         <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 1-53/2 Fr 09:00-12:00; week 2-52/2 We 09:00-12:00" values_no_i18n="true" />
     </chunk>
     <chunk id="wheelchair">
-        <combo key="wheelchair" text="Wheelchairs" values="yes,limited,no" />
+        <combo key="wheelchair" text="Wheelchairs" values_searchable="true" values_sort="false">
+        <list_entry value="designated" short_description="Dedicated facilities" />
+        <list_entry value="yes" short_description="Unrestricted access" />
+        <list_entry value="limited" short_description="Partial access" />
+        <list_entry value="no" short_description="No access" />          
+        </combo>
     </chunk>
     <chunk id="oh_wheelchair">
         <reference ref="oh" />
