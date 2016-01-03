@@ -200,7 +200,16 @@
         <combo key="bin" text="Bin" values="yes,no" />
     </chunk>
     <chunk id="diaper">
-        <combo key="diaper" values="yes,no,room,1,2,3,4,5" />
+        <combo key="diaper" text="Diaper changing facilities" >
+	      <list_entry value="yes" short_description="Available" />
+	      <list_entry value="no" short_description="Not available" />
+	      <list_entry value="room" short_description="Dedicated room" />
+	      <list_entry value="1" short_description="1 table" />
+	      <list_entry value="2" short_description="2 tables" />
+	      <list_entry value="3" short_description="3 tables" />
+	      <list_entry value="4" short_description="4 tables" />
+	      <list_entry value="5" short_description="5 tables" />
+	</combo>
     </chunk>
     <chunk id="fee">
         <combo key="fee" text="Fee" values="yes,no" />
