@@ -199,6 +199,9 @@
     <chunk id="bin">
         <combo key="bin" text="Bin" values="yes,no" />
     </chunk>
+    <chunk id="diaper">
+        <combo key="diaper" values="yes,no,room,1,2,3,4,5" />
+    </chunk>
     <chunk id="fee">
         <combo key="fee" text="Fee" values="yes,no" />
     </chunk>
@@ -4887,6 +4890,7 @@
                 <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal" />
                 <text key="description" text="Description" />
                 <reference ref="fee" />
+                <reference ref="diaper" />
                 <text key="operator" text="Operator" />
                 <combo key="toilets:position" text="Usage Position" values="seated,seated;urinal,squat,urinal" />
                 <reference ref="wheelchair" />
