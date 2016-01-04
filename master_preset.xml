@@ -1204,7 +1204,7 @@
             </optional>
         </item> <!-- Rest Area -->
         <separator/>
-        <item name="Traffic Signal" icon="presets/traffic-light.png" type="node" preset_name_label="true">
+        <item name="Traffic Signal" icon="ICONPATH:traffic_lights.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=traffic_signals"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=traffic_signals"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=traffic_signals"
@@ -1330,7 +1330,7 @@
             <text key="name" text="Name" />
             <text key="alt_name" text="Second Name" />
         </item> <!-- City Limit -->
-        <item name="Speed Limit Sign" icon="styles/standard/vehicle/restriction/speed.png" type="node" preset_name_label="true">
+        <item name="Speed Limit Sign" icon="ICONPATH:speed_limit.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:traffic_sign"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:traffic_sign"
                   fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:traffic_sign"
@@ -6373,7 +6373,7 @@
             </optional>
         </item> <!-- Bridge outline -->
     </group> <!-- Bridges -->
-    <group name="Military" name_context="preset group" icon="presets/military.png">
+    <group name="Military" name_context="preset group" icon="ICONPATH:military_military.ICONTYPE">
         <item name="Airfield" icon="styles/standard/transport/airport/airfield.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:military=airfield"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=airfield"
@@ -8876,7 +8876,7 @@
             <key key="landuse" value="railway" />
             <text key="name" text="Name" />
         </item> <!-- Railway Land -->
-        <item name="Military" icon="presets/military.png" type="closedway,relation" preset_name_label="true">
+        <item name="Military" icon="ICONPATH:landuse_military.ICONTYPE" type="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=military"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=military"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=military"
@@ -9673,14 +9673,6 @@
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Electrician -->
-        <item name="Falles" icon="ICONPATH:craft_falles_16026.ICONTYPE" type="node,closedway,relation">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=falles"
-            	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=falles" />
-            <space />
-            <key key="craft" value="falles" />
-            <reference ref="name_oh_wheelchair" />
-            <reference ref="link_contact_address_payment" />
-        </item> <!-- Falles -->
         <item name="Floorer" icon="ICONPATH:craft_carpet_layer_16020.ICONTYPE" type="node,closedway,relation">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=floorer"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=floorer" />
@@ -10426,7 +10418,7 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address" />
         </item> <!-- Therapist -->
-        <item name="Religion" icon="styles/standard/office/religion.svg" name_context="office" type="node,closedway" preset_name_label="true">
+        <item name="Religion" icon="ICONPATH:office_religious.ICONTYPE" name_context="office" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:office=religion"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:office=religion"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:office=religion" />

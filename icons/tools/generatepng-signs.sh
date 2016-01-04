@@ -21,7 +21,7 @@ for FILE in $SVGFOLDER/*.svg; do
 
       for (( j = 0 ; j < ${#SIZES[@]} ; j++ )) do
 	echo  $FILE ${BASENAME}
-	rsvg-convert -f png -w ${SIZES[j]} -h ${SIZES[j]} -o ${BASENAME}.png $FILE
+	rsvg-convert -f png -h ${SIZES[j]} -o ${BASENAME}.png $FILE
       done
 
 done
