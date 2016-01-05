@@ -6373,45 +6373,6 @@
             </optional>
         </item> <!-- Bridge outline -->
     </group> <!-- Bridges -->
-    <group name="Military" name_context="preset group" icon="ICONPATH:military_military.ICONTYPE">
-        <item name="Airfield" icon="styles/standard/transport/airport/airfield.png" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=airfield"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=airfield"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=airfield"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:military=airfield" />
-            <space />
-            <key key="military" value="airfield" match="keyvalue!" />
-            <reference ref="aerodrome" />
-        </item>
-        <item name="Barracks" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=barracks"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=barracks"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=barracks" />
-            <space />
-            <key key="military" value="barracks" />
-        </item>
-        <item name="Bunker" icon="styles/standard/misc/landmark/bunker.png" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=bunker"
-                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:military=bunker"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=bunker"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:military=bunker"
-                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:military=bunker"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=bunker" />
-            <space />
-            <key key="military" value="bunker" />
-            <combo key="bunker_type" text="Type" values="pillbox,munitions,hardened_aircraft_shelter" match="key" />
-            <text key="name" text="Name" />
-            <check key="historic" text="Historic" />
-            <check key="ruins" text="Ruins" />
-        </item>
-        <item name="Range" icon="styles/standard/misc/landmark/range.png" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:military=range"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:military=range"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:military=range" />
-            <space />
-            <key key="military" value="range" />
-        </item>
-    </group> <!-- Military -->
     <group name="Power" icon="ICONPATH:power_station_coal.ICONTYPE">
         <item name="Power Plant" icon="ICONPATH:power_station_coal.ICONTYPE" gtype="closedway,relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:power=plant"
