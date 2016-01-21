@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-01-21 21:57+0100\n"
+"POT-Creation-Date: 2016-01-21 23:21+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,12 +78,12 @@ msgstr ""
 msgid "Opening Hours"
 msgstr ""
 
-#: master_preset.xml:30(combo:text) master_preset.xml:2322(combo:text|group:Water|preset:Beach) master_preset.xml:13(combo:text)
-msgid "Surface"
-msgstr ""
-
 #: master_preset.xml:1094(item:name|group:Ways|preset:Combined_Foot-_and_Cycleway)
 msgid "Combined Foot- and Cycleway"
+msgstr ""
+
+#: master_preset.xml:30(combo:text) master_preset.xml:2322(combo:text|group:Water|preset:Beach) master_preset.xml:13(combo:text)
+msgid "Surface"
 msgstr ""
 
 #: master_preset.xml:9079(text:text|group:Addresses_and_Contact|preset:Name)
@@ -120,6 +120,10 @@ msgstr ""
 
 #: master_preset.xml:10333(item:name|group:Offices|preset:Architect)
 msgid "Architect"
+msgstr ""
+
+#: master_preset.xml:6550(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Boiling Water Reactor 1 (BWR-1)"
 msgstr ""
 
 #: master_preset.xml:3902(label:text|group:Tourism|preset:Information_Office)
@@ -326,6 +330,10 @@ msgstr ""
 msgid "Art"
 msgstr ""
 
+#: master_preset.xml:6553(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Boiling Water Reactor 4 (BWR-4)"
+msgstr ""
+
 #: master_preset.xml:1359(item:name|group:Waypoints|preset:Speed_Limit_Sign)
 msgid "Speed Limit Sign"
 msgstr ""
@@ -350,12 +358,12 @@ msgstr ""
 msgid "Shown Area"
 msgstr ""
 
-#: master_preset.xml:2636(check:text|group:Railway|preset:Crossing) master_preset.xml:2617(check:text|group:Railway|preset:Level_Crossing)
-msgid "Traffic lights"
-msgstr ""
-
 #: master_preset.xml:1547(item:name|group:Barriers|preset:Fence)
 msgid "Fence"
+msgstr ""
+
+#: master_preset.xml:2636(check:text|group:Railway|preset:Crossing) master_preset.xml:2617(check:text|group:Railway|preset:Level_Crossing)
+msgid "Traffic lights"
 msgstr ""
 
 #: master_preset.xml:5725(item:name|group:Sport_(Ball)|preset:Canadian_Football)
@@ -402,6 +410,10 @@ msgstr ""
 msgid "Green Waste"
 msgstr ""
 
+#: master_preset.xml:1314(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
+msgid "Chicane"
+msgstr ""
+
 #: master_preset.xml:8518(item:name|group:Nature|preset:Cutline)
 msgid "Cutline"
 msgstr ""
@@ -428,6 +440,10 @@ msgstr ""
 
 #: master_preset.xml:5763(item:name|group:Sport_(Ball)|preset:Basketball)
 msgid "Basketball"
+msgstr ""
+
+#: master_preset.xml:6556(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "CANada Deuterium Uranium reactor (CANDU)"
 msgstr ""
 
 #: master_preset.xml:910(combo:text|group:Streets|preset:Construction)
@@ -482,6 +498,10 @@ msgstr ""
 msgid "Luggage ramp"
 msgstr ""
 
+#: master_preset.xml:440(list_entry:display_value)
+msgid "Victims"
+msgstr ""
+
 #: master_preset.xml:2804(text:text|group:Car|preset:Parking)
 msgid "Capacity (overall)"
 msgstr ""
@@ -500,6 +520,10 @@ msgstr ""
 
 #: master_preset.xml:1807(check:text|group:Passageways|preset:Arcade) master_preset.xml:1824(check:text|group:Passageways|preset:Colonnade) master_preset.xml:1843(check:text|group:Passageways|preset:Avalanche_Protector)
 msgid "Open on left side"
+msgstr ""
+
+#: master_preset.xml:438(list_entry:display_value)
+msgid "Underprivileged"
 msgstr ""
 
 #: master_preset.xml:5006(item:name|group:Social_Facilities|preset:Food_Bank)
@@ -722,12 +746,12 @@ msgstr ""
 msgid "Visa Electron"
 msgstr ""
 
-#: master_preset.xml:391(text:text)
-msgid "IATA"
-msgstr ""
-
 #: master_preset.xml:5381(combo:text|group:Facilities|preset:Shelter)
 msgid "Type of shelter"
+msgstr ""
+
+#: master_preset.xml:391(text:text)
+msgid "IATA"
 msgstr ""
 
 #: master_preset.xml:10130(item:name|group:Crafts|preset:Print_shop)
@@ -806,8 +830,16 @@ msgstr ""
 msgid "Tea"
 msgstr ""
 
+#: master_preset.xml:1005(list_entry:display_value|group:Ways|preset:Path)
+msgid "T3 - difficult, exposed hiking trail"
+msgstr ""
+
 #: master_preset.xml:5900(item:name|group:Motorsport|preset:Safety_Training)
 msgid "Safety Training"
+msgstr ""
+
+#: master_preset.xml:1006(list_entry:display_value|group:Ways|preset:Path)
+msgid "T4 - difficult, exposed, steep alpine trail"
 msgstr ""
 
 #: master_preset.xml:6903(check:text|group:Historic_Places|preset:Castle) master_preset.xml:6906(item:name|group:Historic_Places|preset:Ruins)
@@ -878,6 +910,10 @@ msgstr ""
 msgid "Publisher"
 msgstr ""
 
+#: master_preset.xml:6551(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Boiling Water Reactor 2 (BWR-2)"
+msgstr ""
+
 #: master_preset.xml:1003(list_entry:short_description|group:Ways|preset:Path)
 msgid "Trail well cleared. Area flat or slightly sloped, no fall hazard"
 msgstr ""
@@ -886,12 +922,12 @@ msgstr ""
 msgid "Logistics"
 msgstr ""
 
-#: master_preset.xml:3167(item:name|group:Public_Transport|preset:Stop_Area)
-msgid "Stop Area"
-msgstr ""
-
 #: master_preset.xml:5427(multiselect:display_values|group:Facilities|preset:Compressed_Air)
 msgid "Regina"
+msgstr ""
+
+#: master_preset.xml:3167(item:name|group:Public_Transport|preset:Stop_Area)
+msgid "Stop Area"
 msgstr ""
 
 #: master_preset.xml:10050(item:name|group:Crafts|preset:Turner)
@@ -1158,12 +1194,20 @@ msgstr ""
 msgid "Political"
 msgstr ""
 
+#: master_preset.xml:1319(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
+msgid "Rumble strip"
+msgstr ""
+
 #: master_preset.xml:1106(check:text|group:Ways|preset:Combined_Foot-_and_Cycleway) master_preset.xml:723(check:text|group:Streets|preset:Unclassified) master_preset.xml:840(check:text|group:Streets|preset:Service)
 msgid "Passing Places"
 msgstr ""
 
 #: master_preset.xml:2907(text:text|group:Car|preset:Charging_Station)
 msgid "Amperage"
+msgstr ""
+
+#: master_preset.xml:429(list_entry:display_value)
+msgid "Disabled"
 msgstr ""
 
 #: master_preset.xml:6557(list_entry:short_description|group:Power_Generator|preset:Nuclear_Reactor) master_preset.xml:6565(list_entry:short_description|group:Power_Generator|preset:Nuclear_Reactor) master_preset.xml:6560(list_entry:short_description|group:Power_Generator|preset:Nuclear_Reactor) master_preset.xml:6564(list_entry:short_description|group:Power_Generator|preset:Nuclear_Reactor)
@@ -1190,6 +1234,10 @@ msgstr ""
 msgid "Battlefield"
 msgstr ""
 
+#: master_preset.xml:6558(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "China Pressurized Reactor (CPR-1000)"
+msgstr ""
+
 #: master_preset.xml:7401(item:name|group:Electronic|preset:Vacuum_Cleaner)
 msgid "Vacuum Cleaner"
 msgstr ""
@@ -1214,12 +1262,12 @@ msgstr ""
 msgid "Wood"
 msgstr ""
 
-#: master_preset.xml:334(combo:text) master_preset.xml:6472(combo:text|group:Power|preset:Power_Plant)
-msgid "hot water"
-msgstr ""
-
 #: master_preset.xml:5391(combo:text|group:Facilities|preset:Hunting_Stand)
 msgid "Height"
+msgstr ""
+
+#: master_preset.xml:334(combo:text) master_preset.xml:6472(combo:text|group:Power|preset:Power_Plant)
+msgid "hot water"
 msgstr ""
 
 #: master_preset.xml:5392(check:text|group:Facilities|preset:Hunting_Stand) master_preset.xml:5368(item:name|group:Facilities|preset:Shelter) master_preset.xml:3390(check:text|group:Public_Transport_(Legacy)|preset:Bus_Stop) master_preset.xml:3221(check:text|group:Public_Transport|preset:Platform)
@@ -1386,6 +1434,10 @@ msgstr ""
 msgid "vacuum"
 msgstr ""
 
+#: master_preset.xml:1004(list_entry:display_value|group:Ways|preset:Path)
+msgid "T2 - mountain hiking trail"
+msgstr ""
+
 #: master_preset.xml:2740(combo:display_values|group:Aerialway|preset:Drag_Lift)
 msgid "drag_lift (general type - use only if exact type (see values below) is unknown)"
 msgstr ""
@@ -1412,6 +1464,10 @@ msgstr ""
 
 #: master_preset.xml:2884(check:text|group:Car|preset:Fuel) master_preset.xml:2402(check:text|group:Shipping|preset:Marine_Fuel)
 msgid "CNG (Compressed Natural Gas)"
+msgstr ""
+
+#: master_preset.xml:6566(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Vodo-Vodyanoi Energetichesky Reactor (VVER)"
 msgstr ""
 
 #: master_preset.xml:1981(text:text|group:Access_Restrictions|preset:Physical_restrictions)
@@ -1454,6 +1510,10 @@ msgstr ""
 msgid "Education"
 msgstr ""
 
+#: master_preset.xml:1003(list_entry:display_value|group:Ways|preset:Path)
+msgid "T1 - hiking trail"
+msgstr ""
+
 #: master_preset.xml:8348(item:name|group:Geography|preset:Volcano)
 msgid "Volcano"
 msgstr ""
@@ -1478,6 +1538,10 @@ msgstr ""
 msgid "Mixed Lift"
 msgstr ""
 
+#: master_preset.xml:6561(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Pressurized water reactor (PWR)"
+msgstr ""
+
 #: master_preset.xml:9610(role:text|preset:Waterway) master_preset.xml:9611(role:text|preset:Waterway)
 msgid "waterways (no riverbank)"
 msgstr ""
@@ -1496,6 +1560,10 @@ msgstr ""
 
 #: master_preset.xml:214(list_entry:short_description)
 msgid "2 tables"
+msgstr ""
+
+#: master_preset.xml:1316(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
+msgid "Cushion"
 msgstr ""
 
 #: master_preset.xml:7650(item:name|group:Printed_Material|preset:Ticket)
@@ -1818,12 +1886,20 @@ msgstr ""
 msgid "Cricket"
 msgstr ""
 
+#: master_preset.xml:434(list_entry:display_value)
+msgid "Mental health"
+msgstr ""
+
 #: master_preset.xml:5060(text:text|group:Social_Facilities|preset:Group_Home) master_preset.xml:2823(text:text|group:Car|preset:Parking_Space) master_preset.xml:3664(text:text|group:Accommodation|preset:Wilderness_Hut) master_preset.xml:4990(text:text|group:Social_Facilities|preset:Assisted_Living) master_preset.xml:3063(text:text|group:Bicycle|preset:Parking) master_preset.xml:5090(text:text|group:Social_Facilities|preset:Shelter) master_preset.xml:2999(text:text|group:Car|preset:Sharing) master_preset.xml:3014(text:text|group:Motorcycle|preset:Parking) master_preset.xml:5033(text:text|group:Social_Facilities|preset:Retirement_Home)
 msgid "Capacity"
 msgstr ""
 
 #: master_preset.xml:9605(text:text|preset:Waterway)
 msgid "Reference GNIS (USA)"
+msgstr ""
+
+#: master_preset.xml:435(list_entry:display_value)
+msgid "Migrants"
 msgstr ""
 
 #: master_preset.xml:5494(item:name|group:Sport_Facilities|preset:Pitch)
@@ -2090,6 +2166,10 @@ msgstr ""
 msgid "Material"
 msgstr ""
 
+#: master_preset.xml:437(list_entry:display_value)
+msgid "Elderly"
+msgstr ""
+
 #: master_preset.xml:9140(combo:text|group:Addresses_and_Contact|preset:Address_Interpolation)
 msgid "Accuracy"
 msgstr ""
@@ -2104,6 +2184,10 @@ msgstr ""
 
 #: master_preset.xml:4727(group:name|group:Health)
 msgid "Health"
+msgstr ""
+
+#: master_preset.xml:432(list_entry:display_value)
+msgid "Homeless"
 msgstr ""
 
 #: master_preset.xml:176(combo:text)
@@ -2176,6 +2260,10 @@ msgstr ""
 
 #: master_preset.xml:9597(combo:text|preset:Waterway)
 msgid "Subtype of waterway (largest one of members)"
+msgstr ""
+
+#: master_preset.xml:431(list_entry:display_value)
+msgid "Drug addicted"
 msgstr ""
 
 #: master_preset.xml:9755(item:name|group:Crafts|preset:Clockmaker)
@@ -2578,6 +2666,10 @@ msgstr ""
 msgid "Field Hockey"
 msgstr ""
 
+#: master_preset.xml:1007(list_entry:display_value|group:Ways|preset:Path)
+msgid "T5 - difficult alpine trail with climbing"
+msgstr ""
+
 #: master_preset.xml:8733(item:name|group:Land_use|preset:Vineyard)
 msgid "Vineyard"
 msgstr ""
@@ -2594,12 +2686,16 @@ msgstr ""
 msgid "Depth in meters"
 msgstr ""
 
-#: master_preset.xml:2579(item:name|group:Railway|preset:Disused_Rail)
-msgid "Disused Rail"
+#: master_preset.xml:6552(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Boiling Water Reactor 3 (BWR-3)"
 msgstr ""
 
 #: master_preset.xml:904(combo:text|group:Streets|preset:Construction) master_preset.xml:758(combo:text|group:Streets|preset:Bicycle_Road)
 msgid "Highway type"
+msgstr ""
+
+#: master_preset.xml:2579(item:name|group:Railway|preset:Disused_Rail)
+msgid "Disused Rail"
 msgstr ""
 
 #: master_preset.xml:4163(item:name|group:Leisure|preset:Public_Grill)
@@ -2810,12 +2906,12 @@ msgstr ""
 msgid "Is the water body intermittent (disappears seasonally)?"
 msgstr ""
 
-#: master_preset.xml:2807(combo:text|group:Car|preset:Parking)
-msgid "Spaces for Parents"
-msgstr ""
-
 #: master_preset.xml:5366(combo:text|group:Facilities|preset:Bench)
 msgid "Seats count"
+msgstr ""
+
+#: master_preset.xml:2807(combo:text|group:Car|preset:Parking)
+msgid "Spaces for Parents"
 msgstr ""
 
 #: master_preset.xml:9275(combo:text|group:Relations|preset:Boundary)
@@ -2842,6 +2938,10 @@ msgstr ""
 msgid "Geothermal Power Generator"
 msgstr ""
 
+#: master_preset.xml:6555(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Boiling Water Reactor 6 (BWR-6)"
+msgstr ""
+
 #: master_preset.xml:4917(text:text|group:Emergency|preset:Fire_Hydrant)
 msgid "Count"
 msgstr ""
@@ -2858,7 +2958,7 @@ msgstr ""
 msgid "Outdoor"
 msgstr ""
 
-#: master_preset.xml:8421(item:name|group:Geography|preset:Island)
+#: master_preset.xml:8421(item:name|group:Geography|preset:Island) master_preset.xml:1318(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
 msgid "Island"
 msgstr ""
 
@@ -2994,6 +3094,10 @@ msgstr ""
 msgid "Turning Point"
 msgstr ""
 
+#: master_preset.xml:439(list_entry:display_value)
+msgid "Unemployed"
+msgstr ""
+
 #: master_preset.xml:2805(combo:text|group:Car|preset:Parking)
 msgid "Spaces for Disabled"
 msgstr ""
@@ -3052,6 +3156,10 @@ msgstr ""
 
 #: master_preset.xml:1886(item:name|group:Access_Restrictions|preset:Motor_vehicle_(CH))
 msgid "Motor vehicle (CH)"
+msgstr ""
+
+#: master_preset.xml:436(list_entry:display_value)
+msgid "Orphans"
 msgstr ""
 
 #: master_preset.xml:3182(role:text|group:Public_Transport|preset:Stop_Area) master_preset.xml:3215(item:name|group:Public_Transport|preset:Platform)
@@ -3334,16 +3442,16 @@ msgstr ""
 msgid "Audio Guide"
 msgstr ""
 
+#: master_preset.xml:6329(combo:text|group:Man_Made|preset:Street_Lamp) master_preset.xml:5345(combo:text|group:Facilities|preset:Sanitary_Dump_Station)
+msgid "Operation times"
+msgstr ""
+
 #: master_preset.xml:3209(check:text|group:Public_Transport|preset:Stop_Position) master_preset.xml:3239(check:text|group:Public_Transport|preset:Platform) master_preset.xml:2536(item:name|group:Railway|preset:Subway)
 msgid "Subway"
 msgstr ""
 
 #: master_preset.xml:2744(text:text|group:Aerialway|preset:Drag_Lift) master_preset.xml:2754(text:text|group:Aerialway|preset:Magic_Carpet) master_preset.xml:2716(text:text|group:Aerialway|preset:Gondola) master_preset.xml:2703(text:text|group:Aerialway|preset:Chair_Lift) master_preset.xml:2690(text:text|group:Aerialway|preset:Cable_Car) master_preset.xml:2728(text:text|group:Aerialway|preset:Mixed_Lift)
 msgid "Number of people per hour"
-msgstr ""
-
-#: master_preset.xml:6329(combo:text|group:Man_Made|preset:Street_Lamp) master_preset.xml:5345(combo:text|group:Facilities|preset:Sanitary_Dump_Station)
-msgid "Operation times"
 msgstr ""
 
 #: master_preset.xml:6531(item:name|group:Power_Generator|preset:Diesel_Power_Generator)
@@ -3460,6 +3568,10 @@ msgstr ""
 
 #: master_preset.xml:1715(item:name|group:Barriers|preset:Chain)
 msgid "Chain"
+msgstr ""
+
+#: master_preset.xml:1315(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
+msgid "Choker"
 msgstr ""
 
 #: master_preset.xml:3799(combo:text|group:Food+Drinks|preset:Cafe) master_preset.xml:3758(combo:text|group:Food+Drinks|preset:Fast_Food) master_preset.xml:3736(multiselect:text|group:Food+Drinks|preset:Restaurant)
@@ -3612,6 +3724,10 @@ msgstr ""
 
 #: master_preset.xml:9113(optional:text|group:Addresses_and_Contact|preset:Addresses) master_preset.xml:1241(optional:text|group:Waypoints|preset:Traffic_Signal)
 msgid "Optional values for specific countries"
+msgstr ""
+
+#: master_preset.xml:433(list_entry:display_value)
+msgid "Juveniles"
 msgstr ""
 
 #: master_preset.xml:10122(item:name|group:Crafts|preset:Photographer)
@@ -3854,6 +3970,10 @@ msgstr ""
 msgid "Common"
 msgstr ""
 
+#: master_preset.xml:1320(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
+msgid "Table"
+msgstr ""
+
 #: master_preset.xml:2352(combo:text|group:Shipping|preset:Ferry_Terminal)
 msgid "Cargo"
 msgstr ""
@@ -3874,6 +3994,10 @@ msgstr ""
 msgid "City Wall"
 msgstr ""
 
+#: master_preset.xml:427(list_entry:display_value)
+msgid "Abused"
+msgstr ""
+
 #: master_preset.xml:3147(role:text|group:Public_Transport|preset:Public_Transport_Route)
 msgid "platform (exit only)"
 msgstr ""
@@ -3884,6 +4008,10 @@ msgstr ""
 
 #: master_preset.xml:10214(item:name|group:Offices|preset:Employment_agency)
 msgid "Employment agency"
+msgstr ""
+
+#: master_preset.xml:1008(list_entry:display_value|group:Ways|preset:Path)
+msgid "T6 - hazardous alpine trail with climbing"
 msgstr ""
 
 #: master_preset.xml:8018(check:text|preset:Payment_Methods) master_preset.xml:5204(check:text|group:Facilities|preset:Telephone)
@@ -4006,6 +4134,10 @@ msgstr ""
 msgid "An accumulation of loose rocks."
 msgstr ""
 
+#: master_preset.xml:430(list_entry:display_value)
+msgid "Diseased"
+msgstr ""
+
 #: master_preset.xml:6702(item:name|preset:Power_Bay)
 msgid "Power Bay"
 msgstr ""
@@ -4052,6 +4184,10 @@ msgstr ""
 
 #: master_preset.xml:8292(item:name|group:Places|preset:Locality)
 msgid "Locality"
+msgstr ""
+
+#: master_preset.xml:1312(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
+msgid "yes - choose a specific value instead if possible"
 msgstr ""
 
 #: master_preset.xml:1254(item:name|group:Waypoints|preset:Give_Way)
@@ -4128,6 +4264,10 @@ msgstr ""
 
 #: master_preset.xml:8053(check:text|preset:Payment_Methods)
 msgid "Mondero 4b (es)"
+msgstr ""
+
+#: master_preset.xml:6563(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Reactor Bolshoy Moshchnosti Kanalniy 1500 (RBMK-1500)"
 msgstr ""
 
 #: master_preset.xml:9606(text:text|preset:Waterway)
@@ -4390,12 +4530,12 @@ msgstr ""
 msgid "Miniature Golf"
 msgstr ""
 
-#: master_preset.xml:4383(item:name|group:Place_of_Worship|preset:Mosque)
-msgid "Mosque"
-msgstr ""
-
 #: master_preset.xml:5427(multiselect:display_values|group:Facilities|preset:Compressed_Air)
 msgid "Sclaverand (Presta)"
+msgstr ""
+
+#: master_preset.xml:4383(item:name|group:Place_of_Worship|preset:Mosque)
+msgid "Mosque"
 msgstr ""
 
 #: master_preset.xml:3196(text:text|group:Public_Transport|preset:Stop_Position) master_preset.xml:3228(text:text|group:Public_Transport|preset:Platform) master_preset.xml:3176(text:text|group:Public_Transport|preset:Stop_Area)
@@ -4618,6 +4758,10 @@ msgstr ""
 msgid "Block"
 msgstr ""
 
+#: master_preset.xml:6554(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Boiling Water Reactor 5 (BWR-5)"
+msgstr ""
+
 #: master_preset.xml:9083(text:text|group:Addresses_and_Contact|preset:Name)
 msgid "National name"
 msgstr ""
@@ -4760,6 +4904,10 @@ msgstr ""
 
 #: master_preset.xml:9155(text:text|group:Addresses_and_Contact|preset:Contact) master_preset.xml:9175(text:text|group:Addresses_and_Contact|preset:Contact_('contact:*'))
 msgid "Fax Number"
+msgstr ""
+
+#: master_preset.xml:1317(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
+msgid "Hump"
 msgstr ""
 
 #: master_preset.xml:211(list_entry:short_description)
@@ -5042,6 +5190,10 @@ msgstr ""
 msgid "Aerialway"
 msgstr ""
 
+#: master_preset.xml:6560(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Inertial Confinement Fusion (ICF)"
+msgstr ""
+
 #: master_preset.xml:5136(item:name|group:Facilities|preset:Toilets/Restrooms)
 msgid "Toilets/Restrooms"
 msgstr ""
@@ -5182,6 +5334,10 @@ msgstr ""
 msgid "Bancomat"
 msgstr ""
 
+#: master_preset.xml:6562(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "Reactor Bolshoy Moshchnosti Kanalniy 1000 (RBMK-1000)"
+msgstr ""
+
 #: master_preset.xml:9106(text:text|group:Addresses_and_Contact|preset:Addresses) master_preset.xml:9546(text:text|preset:Associated_Street)
 msgid "Street name"
 msgstr ""
@@ -5268,6 +5424,10 @@ msgstr ""
 
 #: master_preset.xml:3205(check:text|group:Public_Transport|preset:Stop_Position)
 msgid "Railway station (legacy)"
+msgstr ""
+
+#: master_preset.xml:1313(list_entry:display_value|group:Waypoints|preset:Traffic_Calming)
+msgid "Bump"
 msgstr ""
 
 #: master_preset.xml:3533(item:name|group:Accommodation|preset:Hotel)
@@ -5404,6 +5564,10 @@ msgstr ""
 
 #: master_preset.xml:5958(group:name|group:Man_Made) master_preset.xml:5957(group:name|group:Man_Made)
 msgid "Man Made"
+msgstr ""
+
+#: master_preset.xml:6559(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor)
+msgid "European Pressurized Reactor (EPR)"
 msgstr ""
 
 #: master_preset.xml:1403(label:text|group:Waypoints|preset:Named_Junction)
@@ -5566,12 +5730,12 @@ msgstr ""
 msgid "Bridge"
 msgstr ""
 
-#: master_preset.xml:2497(item:name|group:Railway|preset:Narrow_Gauge_Rail)
-msgid "Narrow Gauge Rail"
-msgstr ""
-
 #: master_preset.xml:1005(list_entry:short_description|group:Ways|preset:Path)
 msgid "exposed sites may be secured with ropes or chains, possible need to use hands for balance. Partly exposed sites with fall hazard, scree, pathless jagged rocks"
+msgstr ""
+
+#: master_preset.xml:2497(item:name|group:Railway|preset:Narrow_Gauge_Rail)
+msgid "Narrow Gauge Rail"
 msgstr ""
 
 #: master_preset.xml:3108(item:name|group:Bicycle|preset:Public_Bicycle_Repair_Station)
@@ -5676,6 +5840,10 @@ msgstr ""
 
 #: master_preset.xml:2886(check:text|group:Car|preset:Fuel)
 msgid "1/50 mix (mofa/moped)"
+msgstr ""
+
+#: master_preset.xml:428(list_entry:display_value)
+msgid "Children"
 msgstr ""
 
 #: master_preset.xml:258(text:text) master_preset.xml:9110(text:text|group:Addresses_and_Contact|preset:Addresses)

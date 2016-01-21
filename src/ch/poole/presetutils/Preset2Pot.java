@@ -143,6 +143,7 @@ public class Preset2Pot {
             	} else if ("reference".equals(name)) {
             	} else if ("list_entry".equals(name)) {
             		addMsg(name, attr, "short_description");
+            		addMsg(name, attr, "display_value");
             	} else if ("preset_link".equals(name)) {
             	}
             }
