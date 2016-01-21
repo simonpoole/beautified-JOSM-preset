@@ -1308,7 +1308,7 @@
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:traffic_calming"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:traffic_calming" />
             <space />
-			<combo key="traffic_calming" text="Type" match="key" values_searchable="true" values_context=*traffic_calming >
+			<combo key="traffic_calming" text="Type" match="key" values_searchable="true" values_context="traffic_calming" >
                 <list_entry value="yes" display_value="yes - choose a specific value instead if possible" icon="styles/standard/vehicle/traffic_calming.svg" />
                 <list_entry value="bump" display_value="Bump" icon="styles/standard/vehicle/bump.svg" />
                 <list_entry value="chicane" display_value="Chicane" icon="styles/standard/vehicle/chicane.svg" />
