@@ -78,8 +78,8 @@ public class Preset2Pot {
         		}
         	}
         	
-        	void addDisplayValues(String tag, AttributeList attr, String defaultDelimiter) {
-        		String displayValues = attr.getValue("display_values");
+        	void addValues(String valueAttr, String tag, AttributeList attr, String defaultDelimiter) {
+        		String displayValues = attr.getValue(valueAttr);
         		if (displayValues != null) {
         			String delimiter = attr.getValue("delimiter");
         			if (delimiter == null) {
@@ -94,7 +94,7 @@ public class Preset2Pot {
             		}
         			for (String s:displayValues.split(Pattern.quote(delimiter))) {
         				if (s != null && !"".equals(s)) {
-                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":display_values" + presetContext() +")");
+                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + valueAttr + presetContext() +")");
                 		}
         			}
         		}
@@ -134,10 +134,14 @@ public class Preset2Pot {
             		addMsg(name, attr, "text");
             	} else if ("combo".equals(name)) {
             		addMsg(name, attr, "text");
-            		addDisplayValues(name, attr, ",");;
+            		String delimiter = attr.getValue("delimiter");
+            		addValues("display_values",name, attr, delimiter != null ? delimiter : ",");
+            		addValues("short_descriptions",name, attr, delimiter != null ? delimiter : ",");
             	} else if ("multiselect".equals(name)) {
             		addMsg(name, attr, "text");
-            		addDisplayValues(name, attr, ";");
+            		String delimiter = attr.getValue("delimiter");
+            		addValues("display_values",name, attr, delimiter != null ? delimiter : ";");
+            		addValues("short_descriptions",name, attr, delimiter != null ? delimiter : ";");
             	} else if ("role".equals(name)) {
             		addMsg(name, attr, "text");
             	} else if ("reference".equals(name)) {
