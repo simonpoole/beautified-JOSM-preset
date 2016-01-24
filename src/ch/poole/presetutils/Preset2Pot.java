@@ -64,7 +64,7 @@ public class Preset2Pot {
         		return (group!=null?"|group:" + group.replace(' ', '_'):"") + (preset!=null?"|preset:" + preset.replace(' ', '_'):"");
         	}
         	
-        	void addMsg(String tag, AttributeList attr, String attrName) {
+        	void addMsg(String tag, AttributeList attr, String keyName, String attrName) {
         		String context = attr.getValue("text_context");
         		if (context == null) {
         			context = attr.getValue("name_context");
@@ -72,13 +72,19 @@ public class Preset2Pot {
         		if (!msgs.containsKey(context)) {
         			msgs.put(context,new MultiHashMap<String,String>());
         		}
+        		String key = null;
+        		if (keyName != null) {
+        			key = attr.getValue(keyName);
+        		}
         		String value = attr.getValue(attrName);
         		if (value != null && !"".equals(value)) {
-        			msgs.get(context).add(value, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + attrName + presetContext() + ")");
+        			msgs.get(context).add(value, inputFilename + ":" 
+        					+ (locator !=null?locator.getLineNumber():0) 
+        					+ "(" + tag + ":" + attrName + presetContext() + (key != null ? "|"+keyName+":"+key : "") + ")");
         		}
         	}
         	
-        	void addValues(String valueAttr, String tag, AttributeList attr, String defaultDelimiter) {
+        	void addValues(String keyName, String valueAttr, String tag, AttributeList attr, String defaultDelimiter) {
         		String displayValues = attr.getValue(valueAttr);
         		if (displayValues != null) {
         			String delimiter = attr.getValue("delimiter");
@@ -92,9 +98,15 @@ public class Preset2Pot {
             		if (!msgs.containsKey(context)) {
             			msgs.put(context,new MultiHashMap<String,String>());
             		}
+            		String key = null;
+            		if (keyName != null) {
+            			key = attr.getValue(keyName);
+            		}
         			for (String s:displayValues.split(Pattern.quote(delimiter))) {
         				if (s != null && !"".equals(s)) {
-                			msgs.get(context).add(s, inputFilename + ":" + (locator !=null?locator.getLineNumber():0) + "(" + tag + ":" + valueAttr + presetContext() +")");
+                			msgs.get(context).add(s, inputFilename + ":" 
+                					+ (locator !=null?locator.getLineNumber():0) 
+                					+ "(" + tag + ":" + valueAttr + presetContext()  + (key != null ? "|"+keyName+":"+key : "") + ")");
                 		}
         			}
         		}
@@ -115,39 +127,39 @@ public class Preset2Pot {
             public void startElement(String name, AttributeList attr) throws SAXException {
             	if ("group".equals(name)) {
             		group = attr.getValue("name");
-            		addMsg(name, attr, "name");
+            		addMsg(name, attr, null, "name");
             	} else if ("item".equals(name)) {
             		preset = attr.getValue("name");
-            		addMsg(name, attr, "name");
+            		addMsg(name, attr, null, "name");
             	} else if ("chunk".equals(name)) {
             	} else if ("separator".equals(name)) {
             	} else if ("label".equals(name)) {
-            		addMsg(name, attr, "text");
+            		addMsg(name, attr, null, "text");
             	} else if ("optional".equals(name)) {
-            		addMsg(name, attr, "text");
+            		addMsg(name, attr, null, "text");
             	} else if ("key".equals(name)) {
-            		addMsg(name, attr, "text");
+            		addMsg(name, attr, "key", "text");
             	} else if ("text".equals(name)) {
-            		addMsg(name, attr, "text");
+            		addMsg(name, attr, "key", "text");
             	} else if ("link".equals(name)) {
             	} else if ("check".equals(name)) {
-            		addMsg(name, attr, "text");
+            		addMsg(name, attr, "key", "text");
             	} else if ("combo".equals(name)) {
-            		addMsg(name, attr, "text");
+            		addMsg(name, attr, "key", "text");
             		String delimiter = attr.getValue("delimiter");
-            		addValues("display_values",name, attr, delimiter != null ? delimiter : ",");
-            		addValues("short_descriptions",name, attr, delimiter != null ? delimiter : ",");
+            		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ",");
+            		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ",");
             	} else if ("multiselect".equals(name)) {
-            		addMsg(name, attr, "text");
+            		addMsg(name, attr, "key", "text");
             		String delimiter = attr.getValue("delimiter");
-            		addValues("display_values",name, attr, delimiter != null ? delimiter : ";");
-            		addValues("short_descriptions",name, attr, delimiter != null ? delimiter : ";");
+            		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ";");
+            		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ";");
             	} else if ("role".equals(name)) {
-            		addMsg(name, attr, "text");
+            		addMsg(name, attr, "key", "text");
             	} else if ("reference".equals(name)) {
             	} else if ("list_entry".equals(name)) {
-            		addMsg(name, attr, "short_description");
-            		addMsg(name, attr, "display_value");
+            		addMsg(name, attr, "value", "short_description");
+            		addMsg(name, attr, "value", "display_value");
             	} else if ("preset_link".equals(name)) {
             	}
             }
