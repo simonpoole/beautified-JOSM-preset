@@ -3128,7 +3128,7 @@
             <space />
             <key key="type" value="route" />
             <combo key="route" text="Route type" values="train,subway,monorail,tram,light_rail,bus,trolleybus,aerialway,ferry" values_searchable="true" match="keyvalue!" />
-            <key key="public_transport:version" value="2" /> <!-- only validate marked relations in order to avoid false positives -->
+            <key key="public_transport:version" text="Version" value="2" /> <!-- only validate marked relations in order to avoid false positives -->
             <reference ref="name_ref" />
             <optional>
                 <text key="from" text="From (initial stop)" />
@@ -3294,7 +3294,7 @@
         <item name="Public transport route (Legacy)" icon="icons/png/transport_route_sp.png" type="relation" preset_name_label="true">
             <key key="type" value="route" />
             <combo key="route" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,aerialway,ferry" values_searchable="true" match="keyvalue!" />
-            <key key="public_transport:version" value="1" match="none" />  <!-- only validate marked relations in order to avoid false positives -->
+            <key key="public_transport:version" text="Version" value="1" match="none" />  <!-- only validate marked relations in order to avoid false positives -->
             <reference ref="name_ref" />
             <optional>
                 <text key="from" text="From (initial stop)" />
