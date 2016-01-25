@@ -32,6 +32,7 @@ import org.xml.sax.AttributeList;
 import org.xml.sax.HandlerBase;
 import org.xml.sax.Locator;
 import org.xml.sax.SAXException;
+import org.xml.sax.helpers.AttributeListImpl;
 
 /**
  * Small utility to extract strings from a JOSM style preset file that should be translated, 
@@ -59,15 +60,22 @@ public class Preset2Pot {
         	Locator locator = null;
         	String group = null;
         	String preset = null;
+        	AttributeList mainAttr = null;
         	
         	String presetContext() {
         		return (group!=null?"|group:" + group.replace(' ', '_'):"") + (preset!=null?"|preset:" + preset.replace(' ', '_'):"");
         	}
         	
-        	void addMsg(String tag, AttributeList attr, String keyName, String attrName) {
-        		String context = attr.getValue("text_context");
-        		if (context == null) {
-        			context = attr.getValue("name_context");
+        	void addMsg(String tag, AttributeList attr, String keyName, String attrName, AttributeList mainAttr) {
+        		String context = null;
+        		if (mainAttr == null) {
+        			context = attr.getValue("text_context");
+        			if (context == null) {
+        				context = attr.getValue("name_context");
+        			}
+        		} else {
+        			// special case for list_entry
+        			context = mainAttr.getValue("values_context");
         		}
         		if (!msgs.containsKey(context)) {
         			msgs.put(context,new MultiHashMap<String,String>());
@@ -91,10 +99,8 @@ public class Preset2Pot {
         			if (delimiter == null) {
         				delimiter = defaultDelimiter;
         			}
-        			String context = attr.getValue("text_context");
-        			if (context == null) {
-            			context = attr.getValue("name_context");
-            		}
+        			String context = attr.getValue("values_context");
+        			
             		if (!msgs.containsKey(context)) {
             			msgs.put(context,new MultiHashMap<String,String>());
             		}
@@ -127,39 +133,46 @@ public class Preset2Pot {
             public void startElement(String name, AttributeList attr) throws SAXException {
             	if ("group".equals(name)) {
             		group = attr.getValue("name");
-            		addMsg(name, attr, null, "name");
+            		addMsg(name, attr, null, "name", null);
             	} else if ("item".equals(name)) {
             		preset = attr.getValue("name");
-            		addMsg(name, attr, null, "name");
+            		addMsg(name, attr, null, "name", null);
+            		mainAttr = null;
             	} else if ("chunk".equals(name)) {
+            		mainAttr = null;
             	} else if ("separator".equals(name)) {
             	} else if ("label".equals(name)) {
-            		addMsg(name, attr, null, "text");
+            		addMsg(name, attr, null, "text", null);
             	} else if ("optional".equals(name)) {
-            		addMsg(name, attr, null, "text");
+            		addMsg(name, attr, null, "text", null);
             	} else if ("key".equals(name)) {
-            		addMsg(name, attr, "key", "text");
+            		addMsg(name, attr, "key", "text", null);
+            		mainAttr = null;
             	} else if ("text".equals(name)) {
-            		addMsg(name, attr, "key", "text");
+            		addMsg(name, attr, "key", "text", null);
+            		mainAttr = null;
             	} else if ("link".equals(name)) {
             	} else if ("check".equals(name)) {
-            		addMsg(name, attr, "key", "text");
+            		addMsg(name, attr, "key", "text", null);
+            		mainAttr = null;
             	} else if ("combo".equals(name)) {
-            		addMsg(name, attr, "key", "text");
+            		addMsg(name, attr, "key", "text", null);
             		String delimiter = attr.getValue("delimiter");
             		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ",");
             		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ",");
+            		mainAttr = new AttributeListImpl(attr);
             	} else if ("multiselect".equals(name)) {
-            		addMsg(name, attr, "key", "text");
+            		addMsg(name, attr, "key", "text", null);
             		String delimiter = attr.getValue("delimiter");
             		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ";");
             		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ";");
+            		mainAttr = new AttributeListImpl(attr);
             	} else if ("role".equals(name)) {
-            		addMsg(name, attr, "key", "text");
+            		addMsg(name, attr, "key", "text", null);
             	} else if ("reference".equals(name)) {
             	} else if ("list_entry".equals(name)) {
-            		addMsg(name, attr, "value", "short_description");
-            		addMsg(name, attr, "value", "display_value");
+            		addMsg(name, attr, "value", "short_description", mainAttr);
+            		addMsg(name, attr, "value", "display_value", mainAttr);
             	} else if ("preset_link".equals(name)) {
             	}
             }
