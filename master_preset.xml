@@ -172,7 +172,7 @@
         <reference ref="oh_wheelchair" />
     </chunk>
     <chunk id="internet">
-         <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" values_sort="false" />
+         <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" display_values="Available,WLAN,Wired,Terminal,Not available" values_sort="false" />
          <combo key="internet_access:fee" text="Internet access fee" values="yes,no" />
     </chunk>
     <chunk id="internet_smoking">
@@ -225,7 +225,7 @@
     </chunk>
     <chunk id="parking_name_type_ref">
         <text key="name" text="Name" />
-        <combo key="parking" text="Type" values="multi-storey,surface,underground,rooftop" values_context="parking" />
+        <combo key="parking" text="Type" values="multi-storey,surface,underground,rooftop" display_values="Multi-storey,Surface,Underground,Rooftop" values_context="parking" />
         <text key="ref" text="Reference number" />
     </chunk>
     <chunk id="parking_access_fee_operator_surface_smoothness">
@@ -379,7 +379,7 @@
     </chunk>
     <chunk id="operator_substance">
         <text key="operator" text="Operator" />
-        <combo key="substance" text="Substance" values="water,gas,heat,oil,sewage" />
+        <combo key="substance" text="Substance" values="water,gas,heat,oil,sewage" display_values="Water,Gas,Heat,Oil,Sewage"/>
     </chunk>
     <chunk id="support">
         <combo key="support" text="Support" values="pole,wall_mounted,billboard,ground" values_context="mounting/support" />
@@ -439,6 +439,9 @@
         <list_entry value="unemployed" display_value="Unemployed" />
         <list_entry value="victim"  display_value="Victims" />
  	</combo>
+  </chunk>
+  <chunk id="stars">
+      <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" display_values="*,**,***,****,*****,******,*******"/>
   </chunk>
   <chunk id="car_brands">
     <multiselect key="brand" text="Car brand" values="Alfa Romeo;Aston Martin;Audi;Bentley;BMW;Buick;Cadillac;Chevrolet;Chrysler;Citroën;Dacia;Daewoo;Daihatsu;Dodge;Ferrari;Fiat;Ford;GMC;Great Wall;Holden;Honda;Hyundai;Infiniti;Isuzu;Jaguar;Jeep;Kia;Lada;Lancia;Land Rover;Lexus;Lincoln;Lotus;Maserati;Mazda;Mercedes-Benz;Mini;Mitsubishi;Nissan;Opel;Peugeot;Renault;Saab;Seat;Škoda;Smart;SsangYong;Subaru;Suzuki;Toyota;Vauxhall;Volkswagen;Volvo" match="key" />
@@ -1309,7 +1312,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:traffic_calming" />
             <space />
 			<combo key="traffic_calming" text="Type" match="key" values_searchable="true" values_context="traffic_calming" >
-                <list_entry value="yes" display_value="yes - choose a specific value instead if possible" icon="styles/standard/vehicle/traffic_calming.svg" />
+                <list_entry value="yes" display_value="Present - choose a specific value if possible" icon="styles/standard/vehicle/traffic_calming.svg" />
                 <list_entry value="bump" display_value="Bump" icon="styles/standard/vehicle/bump.svg" />
                 <list_entry value="chicane" display_value="Chicane" icon="styles/standard/vehicle/chicane.svg" />
                 <list_entry value="choker" display_value="Choker" icon="styles/standard/vehicle/choker.svg" />
@@ -1446,7 +1449,7 @@
             <reference ref="barrier_4" />
             <optional>
                 <text key="maxwidth" text="Max. width (meters)" length="7" />
-                <combo key="material" text="Material" values="concrete,stone" />
+                <combo key="material" text="Material" values="concrete,stone" display_values="Concrete,Stone" />
             </optional>
         </item> <!-- Block -->
         <item name="Bollard" icon="ICONPATH:barrier_bollard.ICONTYPE" type="node,way" preset_name_label="true">
@@ -1459,11 +1462,11 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=bollard" />
             <space />
             <key key="barrier" value="bollard" />
-            <combo key="bollard" text="Bollard type" values="rising,removable" />
+            <combo key="bollard" text="Bollard type" values="rising,removable" display_values="Rising,Removable" />
             <reference ref="barrier_4" />
             <optional>
                 <text key="maxwidth" text="Max. width (meters)" length="7" />
-                <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" />
+                <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" display_values="Concrete,Metal,Plastic,Stone,Wood" />
             </optional>
         </item> <!-- Bollard -->
         <item name="Cycle Barrier" icon="ICONPATH:barrier_cycle_barrier.ICONTYPE" type="node" preset_name_label="true">
@@ -1555,7 +1558,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=fence" />
             <key key="barrier" value="fence" />
             <optional>
-                <combo key="fence_type" text="Type" values="barbed_wire,chain_link,electric,metal,pole,split_rail,wire,wood" />
+                <combo key="fence_type" text="Type" values="barbed_wire,chain_link,electric,metal,pole,split_rail,wire,wood"  display_values="Barbed wire,Chain link,Electric,Metal,Pole,Split rail,Wire,Wood"/>
                 <text key="height" text="Height (meters)" length="7" />
             </optional>
         </item> <!-- Fence -->
@@ -1607,7 +1610,7 @@
         <item name="Jersey Barrier" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=jersey_barrier" />
             <key key="barrier" value="jersey_barrier" />
-            <combo key="material" text="Material" values="concrete,plastic" />
+            <combo key="material" text="Material" values="concrete,plastic" display_values="Concrete,Plastic" />
         </item> <!-- Jersey Barrier -->
         <item name="Ditch" name_context="Barrier" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=ditch"
@@ -2319,8 +2322,8 @@
                 <reference ref="supervised" />
                 <reference ref="oh_wheelchair" />
                 <reference ref="general_access" />
-                <combo key="surface" text="Surface" values="gravel,pebblestone,sand" />
-                <combo key="sport" text="Sport" values="swimming,surfing" />
+                <combo key="surface" text="Surface" values="gravel,pebblestone,sand" display_values="Gravel,Pebblestone,Sand" />
+                <combo key="sport" text="Sport" values="swimming,surfing" display_values="Swimming,Surfing" />
             </optional>
         </item> <!-- Beach -->
         <item name="Bay" icon="presets/bay.png" type="node,closedway,relation" preset_name_label="true">
@@ -2737,7 +2740,7 @@
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:aerialway=drag_lift"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:aerialway=drag_lift" />
             <space />
-            <combo key="aerialway" text="Type" values="drag_lift,t-bar,j-bar,platter,rope_tow" display_values="drag_lift (general type - use only if exact type (see values below) is unknown),t-bar,j-bar,platter,rope_tow" match="keyvalue" />
+            <combo key="aerialway" text="Type" values="drag_lift,t-bar,j-bar,platter,rope_tow" display_values="Drag lift (generic),T-bar,J-bar,Platter,Rope tow" match="keyvalue" />
             <key key="aerialway" value="t-bar" />
             <reference ref="name_ref" />
             <optional>
@@ -3543,7 +3546,7 @@
             <space />
             <key key="tourism" value="hotel" />
             <reference ref="name_operator" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <reference ref="stars" />
             <text key="rooms" text="Rooms" />
             <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
@@ -3564,7 +3567,7 @@
             <space />
             <key key="tourism" value="motel" />
             <reference ref="name_operator" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <reference ref="stars" />
             <text key="rooms" text="Rooms" />
             <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
@@ -3584,7 +3587,7 @@
             <space />
             <key key="tourism" value="guest_house" />
             <reference ref="name_operator" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <reference ref="stars" />
             <text key="rooms" text="Rooms" />
             <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
@@ -3605,7 +3608,7 @@
             <space />
             <key key="tourism" value="chalet" />
             <reference ref="name_operator" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <reference ref="stars" />
             <text key="rooms" text="Rooms" />
             <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
@@ -3626,7 +3629,7 @@
             <space />
             <key key="tourism" value="hostel" />
             <reference ref="name_operator" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <reference ref="stars" />
             <text key="rooms" text="Rooms" />
             <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
@@ -3683,7 +3686,7 @@
             <space />
             <key key="tourism" value="caravan_site" />
             <reference ref="name_operator" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <reference ref="stars" />
             <text key="rooms" text="Rooms" />
             <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
@@ -3711,7 +3714,7 @@
             <space />
             <key key="tourism" value="camp_site" />
             <reference ref="name_operator" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <reference ref="stars" />
             <reference ref="wheelchair" />
             <space />
             <reference ref="internet_smoking" />
@@ -3738,7 +3741,7 @@
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
             <combo key="takeaway" text="Takeaway" values="yes,no,only" values_sort="false" display_values="Yes,No,Only" />
             <reference ref="oh_wheelchair_level" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" display_values="*,**,***,****,*****,******,*******" />
+            <reference ref="stars" />
             <space />
             <reference ref="internet_smoking" />
             <space />

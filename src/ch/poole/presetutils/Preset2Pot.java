@@ -50,33 +50,59 @@ public class Preset2Pot {
 	HashMap<String,MultiHashMap<String,String>>msgs = new HashMap<String,MultiHashMap<String,String>>();
 	
 	String inputFilename;
+	MyHandler handler;
 	
-	void parseXML(InputStream input)
-			throws ParserConfigurationException, SAXException, IOException {
-		SAXParser saxParser = SAXParserFactory.newInstance().newSAXParser();
-		
-        saxParser.parse(input, new HandlerBase() {
-        	
-        	Locator locator = null;
-        	String group = null;
-        	String preset = null;
-        	AttributeList mainAttr = null;
-        	
-        	String presetContext() {
-        		return (group!=null?"|group:" + group.replace(' ', '_'):"") + (preset!=null?"|preset:" + preset.replace(' ', '_'):"");
-        	}
-        	
-        	void addMsg(String tag, AttributeList attr, String keyName, String attrName, AttributeList mainAttr) {
-        		String context = null;
-        		if (mainAttr == null) {
-        			context = attr.getValue("text_context");
-        			if (context == null) {
-        				context = attr.getValue("name_context");
-        			}
-        		} else {
-        			// special case for list_entry
-        			context = mainAttr.getValue("values_context");
-        		}
+	
+	public Locator getLocator() {
+		return handler.locator;
+	}
+	
+	class MyHandler extends HandlerBase {
+    	
+    	Locator locator = null;
+    	String group = null;
+    	String preset = null;
+    	AttributeList mainAttr = null;
+    	
+    	String presetContext() {
+    		return (group!=null?"|group:" + group.replace(' ', '_'):"") + (preset!=null?"|preset:" + preset.replace(' ', '_'):"");
+    	}
+    	
+    	void addMsg(String tag, AttributeList attr, String keyName, String attrName, AttributeList mainAttr) {
+    		String context = null;
+    		if (mainAttr == null) {
+    			context = attr.getValue("text_context");
+    			if (context == null) {
+    				context = attr.getValue("name_context");
+    			}
+    		} else {
+    			// special case for list_entry
+    			context = mainAttr.getValue("values_context");
+    		}
+    		if (!msgs.containsKey(context)) {
+    			msgs.put(context,new MultiHashMap<String,String>());
+    		}
+    		String key = null;
+    		if (keyName != null) {
+    			key = attr.getValue(keyName);
+    		}
+    		String value = attr.getValue(attrName);
+    		if (value != null && !"".equals(value)) {
+    			msgs.get(context).add(value, inputFilename + ":" 
+    					+ (locator !=null?locator.getLineNumber():0) 
+    					+ "(" + tag + ":" + attrName + presetContext() + (key != null ? "|"+keyName+":"+key : "") + ")");
+    		}
+    	}
+    	
+    	void addValues(String keyName, String valueAttr, String tag, AttributeList attr, String defaultDelimiter) {
+    		String displayValues = attr.getValue(valueAttr);
+    		if (displayValues != null) {
+    			String delimiter = attr.getValue("delimiter");
+    			if (delimiter == null) {
+    				delimiter = defaultDelimiter;
+    			}
+    			String context = attr.getValue("values_context");
+    			
         		if (!msgs.containsKey(context)) {
         			msgs.put(context,new MultiHashMap<String,String>());
         		}
@@ -84,111 +110,96 @@ public class Preset2Pot {
         		if (keyName != null) {
         			key = attr.getValue(keyName);
         		}
-        		String value = attr.getValue(attrName);
-        		if (value != null && !"".equals(value)) {
-        			msgs.get(context).add(value, inputFilename + ":" 
-        					+ (locator !=null?locator.getLineNumber():0) 
-        					+ "(" + tag + ":" + attrName + presetContext() + (key != null ? "|"+keyName+":"+key : "") + ")");
-        		}
-        	}
-        	
-        	void addValues(String keyName, String valueAttr, String tag, AttributeList attr, String defaultDelimiter) {
-        		String displayValues = attr.getValue(valueAttr);
-        		if (displayValues != null) {
-        			String delimiter = attr.getValue("delimiter");
-        			if (delimiter == null) {
-        				delimiter = defaultDelimiter;
-        			}
-        			String context = attr.getValue("values_context");
-        			
-            		if (!msgs.containsKey(context)) {
-            			msgs.put(context,new MultiHashMap<String,String>());
+    			for (String s:displayValues.split(Pattern.quote(delimiter))) {
+    				if (s != null && !"".equals(s)) {
+            			msgs.get(context).add(s, inputFilename + ":" 
+            					+ (locator !=null?locator.getLineNumber():0) 
+            					+ "(" + tag + ":" + valueAttr + presetContext()  + (key != null ? "|"+keyName+":"+key : "") + ")");
             		}
-            		String key = null;
-            		if (keyName != null) {
-            			key = attr.getValue(keyName);
-            		}
-        			for (String s:displayValues.split(Pattern.quote(delimiter))) {
-        				if (s != null && !"".equals(s)) {
-                			msgs.get(context).add(s, inputFilename + ":" 
-                					+ (locator !=null?locator.getLineNumber():0) 
-                					+ "(" + tag + ":" + valueAttr + presetContext()  + (key != null ? "|"+keyName+":"+key : "") + ")");
-                		}
-        			}
-        		}
+    			}
+    		}
+    	}
+    	
+    	/** 
+         * ${@inheritDoc}.
+         */
+		@Override
+    	public void setDocumentLocator(Locator locator) {
+			this.locator = locator;
+		}
+
+        /** 
+         * ${@inheritDoc}.
+         */
+		@Override
+        public void startElement(String name, AttributeList attr) throws SAXException {
+        	if ("group".equals(name)) {
+        		group = attr.getValue("name");
+        		addMsg(name, attr, null, "name", null);
+        	} else if ("item".equals(name)) {
+        		preset = attr.getValue("name");
+        		addMsg(name, attr, null, "name", null);
+        		mainAttr = null;
+        	} else if ("chunk".equals(name)) {
+        		mainAttr = null;
+        	} else if ("separator".equals(name)) {
+        	} else if ("label".equals(name)) {
+        		addMsg(name, attr, null, "text", null);
+        	} else if ("optional".equals(name)) {
+        		addMsg(name, attr, null, "text", null);
+        	} else if ("key".equals(name)) {
+        		addMsg(name, attr, "key", "text", null);
+        		mainAttr = null;
+        	} else if ("text".equals(name)) {
+        		addMsg(name, attr, "key", "text", null);
+        		mainAttr = null;
+        	} else if ("link".equals(name)) {
+        	} else if ("check".equals(name)) {
+        		addMsg(name, attr, "key", "text", null);
+        		mainAttr = null;
+        	} else if ("combo".equals(name)) {
+        		addMsg(name, attr, "key", "text", null);
+        		String delimiter = attr.getValue("delimiter");
+        		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ",");
+        		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ",");
+        		mainAttr = new AttributeListImpl(attr);
+        	} else if ("multiselect".equals(name)) {
+        		addMsg(name, attr, "key", "text", null);
+        		String delimiter = attr.getValue("delimiter");
+        		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ";");
+        		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ";");
+        		mainAttr = new AttributeListImpl(attr);
+        	} else if ("role".equals(name)) {
+        		addMsg(name, attr, "key", "text", null);
+        	} else if ("reference".equals(name)) {
+        	} else if ("list_entry".equals(name)) {
+        		addMsg(name, attr, "value", "short_description", mainAttr);
+        		addMsg(name, attr, "value", "display_value", mainAttr);
+        	} else if ("preset_link".equals(name)) {
         	}
-        	
-        	/** 
-             * ${@inheritDoc}.
-             */
-			@Override
-        	public void setDocumentLocator(Locator locator) {
-				this.locator = locator;
-			}
-        	
-            /** 
-             * ${@inheritDoc}.
-             */
-			@Override
-            public void startElement(String name, AttributeList attr) throws SAXException {
-            	if ("group".equals(name)) {
-            		group = attr.getValue("name");
-            		addMsg(name, attr, null, "name", null);
-            	} else if ("item".equals(name)) {
-            		preset = attr.getValue("name");
-            		addMsg(name, attr, null, "name", null);
-            		mainAttr = null;
-            	} else if ("chunk".equals(name)) {
-            		mainAttr = null;
-            	} else if ("separator".equals(name)) {
-            	} else if ("label".equals(name)) {
-            		addMsg(name, attr, null, "text", null);
-            	} else if ("optional".equals(name)) {
-            		addMsg(name, attr, null, "text", null);
-            	} else if ("key".equals(name)) {
-            		addMsg(name, attr, "key", "text", null);
-            		mainAttr = null;
-            	} else if ("text".equals(name)) {
-            		addMsg(name, attr, "key", "text", null);
-            		mainAttr = null;
-            	} else if ("link".equals(name)) {
-            	} else if ("check".equals(name)) {
-            		addMsg(name, attr, "key", "text", null);
-            		mainAttr = null;
-            	} else if ("combo".equals(name)) {
-            		addMsg(name, attr, "key", "text", null);
-            		String delimiter = attr.getValue("delimiter");
-            		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ",");
-            		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ",");
-            		mainAttr = new AttributeListImpl(attr);
-            	} else if ("multiselect".equals(name)) {
-            		addMsg(name, attr, "key", "text", null);
-            		String delimiter = attr.getValue("delimiter");
-            		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ";");
-            		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ";");
-            		mainAttr = new AttributeListImpl(attr);
-            	} else if ("role".equals(name)) {
-            		addMsg(name, attr, "key", "text", null);
-            	} else if ("reference".equals(name)) {
-            	} else if ("list_entry".equals(name)) {
-            		addMsg(name, attr, "value", "short_description", mainAttr);
-            		addMsg(name, attr, "value", "display_value", mainAttr);
-            	} else if ("preset_link".equals(name)) {
-            	}
-            }
-            
-            @Override
-            public void endElement(String name) throws SAXException {
-            	if ("group".equals(name)) {
-            		group = null;
-            	} else if ("optional".equals(name)) {
-            	} else if ("item".equals(name)) {
-            		preset = null;
-            	} else if ("chunk".equals(name)) {
-            	} else if ("combo".equals(name) || "multiselect".equals(name)) {
-            	}
-            }
-        });
+        }
+        
+        @Override
+        public void endElement(String name) throws SAXException {
+        	if ("group".equals(name)) {
+        		group = null;
+        	} else if ("optional".equals(name)) {
+        	} else if ("item".equals(name)) {
+        		preset = null;
+        	} else if ("chunk".equals(name)) {
+        	} else if ("combo".equals(name) || "multiselect".equals(name)) {
+        	}
+        }
+	}
+	
+	
+	void parseXML(InputStream input)
+			throws ParserConfigurationException, SAXException, IOException {
+		SAXParser saxParser = SAXParserFactory.newInstance().newSAXParser();
+		
+		handler = new MyHandler();
+
+        saxParser.parse(input, handler);
 	}
 	
 	void dump2Pot(PrintWriter pw) {
@@ -292,6 +303,7 @@ public class Preset2Pot {
 		} catch (ParserConfigurationException e) {
 			e.printStackTrace();
 		} catch (SAXException e) {
+			System.err.println("Error at line " + p.getLocator()!=null?p.getLocator().getLineNumber():"unknown line");
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
