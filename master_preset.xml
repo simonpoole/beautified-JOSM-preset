@@ -46,7 +46,7 @@
         <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3"/>
         <check key="cutting" text="Cutting" disable_off="true" />
         <check key="embankment" text="Embankment" disable_off="true" />
-        <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down"/>
+        <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down" values_sort="false" />
     </chunk>
     <chunk id="highway_yesno_incline_oneway">
         <check key="oneway" text="Oneway" disable_off="true" />
@@ -172,12 +172,12 @@
         <reference ref="oh_wheelchair" />
     </chunk>
     <chunk id="internet">
-         <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" />
+         <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" values_sort="false" />
          <combo key="internet_access:fee" text="Internet access fee" values="yes,no" />
     </chunk>
     <chunk id="internet_smoking">
         <reference ref="internet" />
-        <combo key="smoking" text="Smoking" values="yes,dedicated,separated,isolated,outside,no" />
+        <combo key="smoking" text="Smoking" values="yes,dedicated,separated,isolated,outside,no" values_sort="false" />
     </chunk>
     <chunk id="optional_height">
         <optional>
@@ -206,7 +206,7 @@
         <combo key="bin" text="Bin" values="yes,no" />
     </chunk>
     <chunk id="diaper">
-        <combo key="diaper" text="Diaper changing facilities" >
+        <combo key="diaper" text="Diaper changing facilities" values_sort="false" >
 	      <list_entry value="yes" short_description="Available" />
 	      <list_entry value="no" short_description="Not available" />
 	      <list_entry value="room" short_description="Dedicated room" />
@@ -221,7 +221,7 @@
         <combo key="fee" text="Fee" values="yes,no" />
     </chunk>
     <chunk id="fee_interval">
-        <combo key="fee" text="Fee" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
+        <combo key="fee" text="Fee" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" values_sort="false" />
     </chunk>
     <chunk id="parking_name_type_ref">
         <text key="name" text="Name" />
@@ -230,7 +230,7 @@
     </chunk>
     <chunk id="parking_access_fee_operator_surface_smoothness">
         <space />
-        <combo key="access" text="Access" values="yes,private,customers,permissive,no" />
+        <combo key="access" text="Access" values="yes,private,customers,permissive,no" values_sort="false" />
         <reference ref="fee_interval" />
         <text key="operator" text="Operator" />
         <reference ref="surface_smoothness" />
@@ -239,15 +239,15 @@
         <combo key="maxstay" text="Time Limit (minutes)" values="0,30,60,90,120,180" />
     </chunk>
     <chunk id="supervised">
-        <combo key="supervised" text="Supervised" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
+        <combo key="supervised" text="Supervised" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" values_sort="false" />
     </chunk>
     <chunk id="supervised_lit_oh">
         <reference ref="supervised" />
-        <combo key="lit" text="Lit" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
+        <combo key="lit" text="Lit" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" values_sort="false" />
         <reference ref="oh" />
     </chunk>
     <chunk id="general_access">
-        <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" values_searchable="true" />
+        <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" values_sort="false" values_searchable="true" />
     </chunk>
     <chunk id="name_wikipedia">
         <text key="name" text="Name" />
@@ -329,15 +329,15 @@
     </chunk>
     <chunk id="power_output">
         <optional text="Output forms of energy:">
-            <combo key="generator:output:biogas" text="biogas" values="yes,2 W,3 kW,5 MW,7 GW" />
-            <combo key="generator:output:electricity" text="electricity" values="yes,2 W,3 kW,5 MW,7 GW" />
-            <combo key="generator:output:hot_water" text="hot water" values="yes,2 W,3 kW,5 MW,7 GW" />
-            <combo key="generator:output:hot_air" text="hot air" values="yes,2 W,3 kW,5 MW,7 GW" />
-            <combo key="generator:output:cold_water" text="cold water" values="yes,2 W,3 kW,5 MW,7 GW" />
-            <combo key="generator:output:cold_air" text="cold air" values="yes,2 W,3 kW,5 MW,7 GW" />
-            <combo key="generator:output:compressed_air" text="compressed air" values="yes,2 W,3 kW,5 MW,7 GW" />
-            <combo key="generator:output:steam" text="steam" values="yes,2 W,3 kW,5 MW,7 GW" />
-            <combo key="generator:output:vacuum" text="vacuum" values="yes,2 W,3 kW,5 MW,7 GW" />
+            <combo key="generator:output:biogas" text="biogas" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
+            <combo key="generator:output:electricity" text="electricity" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
+            <combo key="generator:output:hot_water" text="hot water" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
+            <combo key="generator:output:hot_air" text="hot air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
+            <combo key="generator:output:cold_water" text="cold water" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
+            <combo key="generator:output:cold_air" text="cold air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
+            <combo key="generator:output:compressed_air" text="compressed air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
+            <combo key="generator:output:steam" text="steam" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
+            <combo key="generator:output:vacuum" text="vacuum" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" />
             <space />
             <reference ref="voltage_frequency" />
         </optional>
@@ -352,7 +352,7 @@
             <text key="maxspeed:backward" text="Max. speed opposed to way direction" />
             <space />
             <text key="maxweight" text="Max. weight (tonnes)" />
-            <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down" match="key" />
+            <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down" match="key" values_sort="false" />
             <text key="width" text="Width (meters)" />
             <check key="toll" text="Toll" disable_off="true" />
         </optional>
@@ -371,10 +371,10 @@
     </chunk>
     <chunk id="water_access">
         <optional text="Water access rules:">
-            <combo key="ship" text="Ship" values="yes,designated,destination,delivery,permissive,private,no" />
-            <combo key="boat" text="Boat" values="yes,designated,destination,delivery,permissive,private,no" />
-            <combo key="motorboat" text="Motorboat" values="yes,designated,destination,delivery,permissive,private,no" />
-            <combo key="canoe" text="Canoe" values="yes,designated,destination,delivery,permissive,private,no" />
+            <combo key="ship" text="Ship" values="yes,designated,destination,delivery,permissive,private,no" values_sort="false" />
+            <combo key="boat" text="Boat" values="yes,designated,destination,delivery,permissive,private,no" values_sort="false" />
+            <combo key="motorboat" text="Motorboat" values="yes,designated,destination,delivery,permissive,private,no" values_sort="false" />
+            <combo key="canoe" text="Canoe" values="yes,designated,destination,delivery,permissive,private,no" values_sort="false" />
         </optional>
     </chunk>
     <chunk id="operator_substance">
@@ -409,7 +409,7 @@
   <chunk id="additional_access_tags">
     <check key="toll" text="Toll" disable_off="true" />
     <check key="noexit" text="No exit (cul-de-sac)" disable_off="true" />
-    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" values_context="overtaking" match="key" />
+    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" values_sort="false" values_context="overtaking" match="key" />
     <text key="minspeed" text="Min. speed (km/h)" match="key" />
   </chunk>
   <chunk id="road_access_restrictions">
@@ -3736,9 +3736,9 @@
             <multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;sushi;steak_house" values_searchable="true" />
             <check key="microbrewery" text="Microbrewery" disable_off="true" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
-            <combo key="takeaway" text="Takeaway" values="yes,no,only" />
+            <combo key="takeaway" text="Takeaway" values="yes,no,only" values_sort="false" display_values="Yes,No,Only" />
             <reference ref="oh_wheelchair_level" />
-            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" />
+            <combo key="stars" text="Stars" values="1,2,3,4,5,6,7" display_values="*,**,***,****,*****,******,*******" />
             <space />
             <reference ref="internet_smoking" />
             <space />
@@ -3757,7 +3757,7 @@
             <reference ref="name_operator" />
             <combo key="cuisine" text="Cuisine" values="italian,chinese,pizza,burger,greek,german,indian,regional,kebab,turkish,asian,thai,mexican,japanese,french,sandwich,sushi,fish_and_chips,chicken" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
-            <combo key="takeaway" text="Takeaway" values="yes,no,only" />
+            <combo key="takeaway" text="Takeaway" values="yes,no,only" values_sort="false" display_values="Yes,No,Only" />
             <reference ref="oh_wheelchair_level" />
             <space />
             <reference ref="internet_smoking" />
