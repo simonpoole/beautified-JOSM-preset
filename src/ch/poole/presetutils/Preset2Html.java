@@ -153,16 +153,16 @@ public class Preset2Html {
             			pw.write("<div class=\"container\">");
             			if (icon != null && !"".equals(icon)) {
             				if (!icon2.equals(icon)) {
-            					pw.write("<div class=\"preset\"><img src=\""+icon2+"\"><br>"+preset+"</div>");
+            					pw.write("<div class=\"preset\"><img src=\""+icon2+"\"><br>"+preset.replace("/", " / ")+"</div>");
             				} else {
-            					pw.write("<div class=\"preset\">"+preset+"</div>");
+            					pw.write("<div class=\"preset\">"+preset.replace("/", " / ")+"</div>");
             				}
             				if (keys != null) {
             					pw.write("<div class=\"popup\" \">" + keys + "</div>");
             				}
             				pw.write("</div>");
             			} else {
-            				pw.write("<div class=\"preset\">"+preset+"</div>");
+            				pw.write("<div class=\"preset\">"+preset.replace("/", " / ")+"</div>");
             				if (keys != null) {
             					pw.write("<div class=\"popup\" \">" + keys + "</div>");
             				}
