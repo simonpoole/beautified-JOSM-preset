@@ -3257,8 +3257,10 @@
             <space />
             <key key="public_transport" value="station" />
             <text key="name" text="Name" />
-            <check key="area" text="Area" disable_off="true" />
-            <check key="building" text="Building" disable_off="true" />
+            <optional>
+            	<check key="area" text="Area" disable_off="true" />
+            	<check key="building" text="Building" disable_off="true" />
+            </optional>
             <text key="operator" text="Operator" />
             <text key="network" text="Network" />
         </item> <!-- Station -->
