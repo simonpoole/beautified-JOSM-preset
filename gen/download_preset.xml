@@ -1080,7 +1080,8 @@
                 <reference ref="name_layer" />
                 <reference ref="surface_smoothness" />
                 <reference ref="highway_yesno_incline_oneway_lit_width" />
-                <combo key="foot" text="Pedestrians" values="yes,no" />
+                <combo key="foot" text="Pedestrians" values="designated,yes,no" />
+                <check key="segregated" text="Segregated" disable_off="true" />
             </optional>
         </item> <!-- Dedicated Cycleway -->
         <item name="Segregated Foot- and Cycleway" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/segregated_foot_and_cycleway.png" type="way,closedway" preset_name_label="true">
@@ -1132,7 +1133,8 @@
                 <reference ref="surface_smoothness" />
                 <reference ref="highway_yesno_incline" />
                 <check key="lit" text="Lit" disable_off="true" />
-                <check key="bicycle" text="Bicycle" disable_off="true" />
+                <combo key="bicycle" text=Bicycle" values="designated,yes,no" />
+                <check key="segregated" text="Segregated" disable_off="true" />
                 <text key="width" text="Width (meters)" />
             </optional>
         </item> <!-- Dedicated Footway -->
