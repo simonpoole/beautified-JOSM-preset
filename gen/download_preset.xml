@@ -1133,7 +1133,7 @@
                 <reference ref="surface_smoothness" />
                 <reference ref="highway_yesno_incline" />
                 <check key="lit" text="Lit" disable_off="true" />
-                <combo key="bicycle" text=Bicycle" values="designated,yes,no" />
+                <combo key="bicycle" text="Bicycle" values="designated,yes,no" />
                 <check key="segregated" text="Segregated" disable_off="true" />
                 <text key="width" text="Width (meters)" />
             </optional>
