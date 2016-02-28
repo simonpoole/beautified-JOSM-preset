@@ -5122,7 +5122,7 @@
         </item> <!-- Emergency Phone -->
     </group> <!-- Emergency -->
     <group name="Social Facilities" icon="amenity_outreach_12252.png">
-        <item name="Ambulantory Care" icon="amenity_ambulantory_care_12248.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Ambulatory Care" icon="amenity_ambulatory_care_12248.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility"
@@ -5132,7 +5132,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility" />
             <space />
             <key key="amenity" value="social_facility" />
-            <key key="social_facility" value="ambulantory_care" />
+            <key key="social_facility" value="ambulatory_care" />
             <reference ref="social_facility_for" />
             <reference ref="name_operator" />
             <reference ref="link_contact_address" />
