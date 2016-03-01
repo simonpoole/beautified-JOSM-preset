@@ -425,6 +425,8 @@
     <preset_link preset_name="Heavy Goods Vehicle" />
     <preset_link preset_name="Physical restrictions" />
     <preset_link preset_name="Other mode restrictions" />
+    <preset_link preset_name="Single direction roads" />
+    <preset_link preset_name="Bi-directional roads" />
   </chunk>
   <chunk id="social_facility_for">
     <combo key="social_facility:for" text="For group" match="key" >
@@ -956,6 +958,77 @@
                 <text key="name" text="Name" />
             </optional>
         </item> <!-- Ford -->
+        <!--  Basic lane attributes -->
+        <group name="Lane attributes" icon="ICONPATH:spurpfeile2.ICONTYPE">
+            <item name="Single direction roads" icon="ICONPATH:spurpfeile1.ICONTYPE" type="way,closedway" preset_name_label="true">
+            	<link href="http://http://wiki.openstreetmap.org/wiki/Lanes" />
+            	<combo key="lanes" values="1,2,3,4,5,6,7,8" description="Total number of full width lanes" />
+            	<optional>
+                	<multiselect key="turn:lanes" text="Turning lanes" delimiter="|" match="key" >
+                	    <list_entry value="none" short_description="None" />
+                	    <list_entry value="reverse" short_description="Reverse" />
+                	    <list_entry value="sharp_left" short_description="Sharp left" />
+                	    <list_entry value="left" short_description="Left" />
+                	    <list_entry value="left:through" short_description="Left and through" />
+                	    <list_entry value="slight_left" short_description="Slight left" />
+                	    <list_entry value="merge_to_left" short_description="Merge to left" />
+                	    <list_entry value="through" short_description="Slight left" />
+                	    <list_entry value="merge_to_right" short_description="Merge to right" />
+                	    <list_entry value="slight_right" short_description="Slight right" />
+                	    <list_entry value="left:through" short_description="Right and through" />
+                	    <list_entry value="right" short_description="right" />
+                	    <list_entry value="sharp_right" short_description="Sharp right" />
+                    </multiselect>
+                    <text key="destination:lanes" text="Destinations per lane"  match="key"/>
+					<text key="destination:ref:lanes" text="Refs per lane" match="key"/>
+					<text key="maxspeed:lanes" text="Maxspeed per lane" match="key"/>
+            	</optional>
+            </item> <!-- Single direction roads -->
+            <item name="Bi-directional roads" icon="ICONPATH:spurpfeile2.ICONTYPE" type="way,closedway" preset_name_label="true">
+            	<link href="http://http://wiki.openstreetmap.org/wiki/Lanes" />
+            	<combo key="lanes" values="1,2,3,4,5,6,7,8" description="Total number of full width lanes" />
+            	<combo key="lanes:forward" values="1,2,3,4,5,6,7,8" description="# full width lanes in way direction" />
+            	<combo key="lanes:backward" values="1,2,3,4,5,6,7,8" description="# full width lanes opposite to way direction" />
+            	<optional>
+                	<multiselect key="turn:lanes:forward" text="Turning lanes in way direction" delimiter="|" match="key" >
+                	    <list_entry value="none" short_description="None" />
+                	    <list_entry value="reverse" short_description="Reverse" />
+                	    <list_entry value="sharp_left" short_description="Sharp left" />
+                	    <list_entry value="left" short_description="Left" />
+                	    <list_entry value="left:through" short_description="Left and through" />
+                	    <list_entry value="slight_left" short_description="Slight left" />
+                	    <list_entry value="merge_to_left" short_description="Merge to left" />
+                	    <list_entry value="through" short_description="Slight left" />
+                	    <list_entry value="merge_to_right" short_description="Merge to right" />
+                	    <list_entry value="slight_right" short_description="Slight right" />
+                	    <list_entry value="left:through" short_description="Right and through" />
+                	    <list_entry value="right" short_description="right" />
+                	    <list_entry value="sharp_right" short_description="Sharp right" />
+                    </multiselect>
+                    <text key="destination:lanes:forward" text="Destinations per lane in way direction"  match="key"/>
+					<text key="destination:ref:lanes:forward" text="Refs per lane in way direction" match="key"/>
+					<text key="maxspeed:lanes:forward" text="Maxspeed per lane in way direction" match="key"/>
+                    <multiselect key="turn:lanes:backward" text="Turning lanes opposite to way direction" delimiter="|" match="key" >
+                	    <list_entry value="none" short_description="None" />
+                	    <list_entry value="reverse" short_description="Reverse" />
+                	    <list_entry value="sharp_left" short_description="Sharp left" />
+                	    <list_entry value="left" short_description="Left" />
+                	    <list_entry value="left:through" short_description="Left and through" />
+                	    <list_entry value="slight_left" short_description="Slight left" />
+                	    <list_entry value="merge_to_left" short_description="Merge to left" />
+                	    <list_entry value="through" short_description="Slight left" />
+                	    <list_entry value="merge_to_right" short_description="Merge to right" />
+                	    <list_entry value="slight_right" short_description="Slight right" />
+                	    <list_entry value="left:through" short_description="Right and through" />
+                	    <list_entry value="right" short_description="right" />
+                	    <list_entry value="sharp_right" short_description="Sharp right" />
+                    </multiselect>
+                    <text key="destination:lanes:backward" text="Destinations per lane opposite to way direction"  match="key"/>
+					<text key="destination:ref:lanes:backward" text="Refs per lane opposite to way direction" match="key"/>
+					<text key="maxspeed:lanes:backward" text="Maxspeed per lane opposite to way direction" match="key"/>
+            	</optional>
+        	</item> <!-- Bi-directional roads -->
+        </group> <!-- Lane attributes -->
     </group> <!-- Streets -->
     <group name="Ways" icon="ICONPATH:highway_way_sp.ICONTYPE">
         <item name="Track" icon="ICONPATH:highway_agricultural_engines_16001.ICONTYPE" type="way,closedway" preset_name_label="true">
