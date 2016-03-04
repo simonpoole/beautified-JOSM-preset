@@ -203,7 +203,7 @@
         <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" default="pitch" />
     </chunk>
     <chunk id="sport">
-        <combo key="sport" text="Sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
+        <combo key="sport" text="Sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,skating,roller_skating,ice_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" values_context="sport" />
     </chunk>
     <chunk id="bin">
         <combo key="bin" text="Bin" values="yes,no" />
@@ -2713,9 +2713,7 @@
             </optional>
         </item> <!-- Rail -->
         <item name="Narrow Gauge Rail" icon="ICONPATH:transport_train_station.ICONTYPE" type="way" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=light_rail"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=light_rail"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=light_rail" />
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:narrow_gauge" />
             <key key="railway" value="narrow_gauge" />
             <optional>
                 <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight" />
@@ -4351,6 +4349,14 @@
             <space />
             <combo key="access" text="Access" values="yes,customers,private" />
         </item> <!-- Swimming Pool -->
+        <item name="Fitness Station" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=fitness_station" />
+			<space />
+			<key key="leisure" value="fitness_station" />
+			<reference ref="name_operator_oh_wheelchair" />
+			<text key="ref" text="Reference" />
+			<text key="description" text="Description" />
+		</item> <!-- Fitness Station -->
         <item name="Sauna" icon="ICONPATH:amenity_sauna_12241.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=sauna"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=sauna"
@@ -5764,7 +5770,7 @@
             <space />
             <key key="leisure" value="track" />
             <text key="name" text="Name" />
-            <combo key="sport" text="Sport" values="athletics,cycling,dog_racing,equestrian,horse_racing,running,skating" values_context="sport" />
+            <combo key="sport" text="Sport" values="athletics,cycling,dog_racing,equestrian,horse_racing,running,skating,roller_skating,ice_skating" values_context="sport" />
         </item> <!-- Racetrack -->
         <group name="Golf" icon="ICONPATH:sport_golf.ICONTYPE">
                 <item name="Golf Course" icon="ICONPATH:sport_golf.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6002,7 +6008,7 @@
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
         </item> <!-- Gymnastics -->
-        <item name="Skating" icon="ICONPATH:sport_iceskating.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Skating (deprecated)" icon="ICONPATH:sport_iceskating.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=skating"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:sport=skating" />
             <space />
@@ -6010,6 +6016,20 @@
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" default="ice_rink" />
         </item> <!-- Skating -->
+        <item name="Ice Skating" icon="ICONPATH:sport_iceskating.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=ice_skating" />
+            <space />
+            <key key="sport" value="ice_skating" />
+             <text key="name" text="Name" />
+             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" default="ice_rink" />
+        </item> <!-- Ice Skating -->
+        <item name="Roller Skating" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=roller_skating"/>
+            <space />
+            <key key="sport" value="roller_skating" />
+            <text key="name" text="Name" />
+            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+        </item> <!-- Roller Skating -->
         <item name="Skateboard" icon="ICONPATH:sport_skateboard_21059.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=skateboard"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:sport=skateboard" />
@@ -9801,6 +9821,22 @@
                     <role key="" text="natural" requisite="optional" type="node,closedway" member_expression="natural=peak OR natural=volcano OR mountain_pass=yes OR natural=water OR tourism=viewpoint OR amenity=drinking_water OR natural=spring OR place=locality"/>
                 </roles>
             </item> <!-- Hiking Route -->
+            <item name="Walking Route" icon="ICONPATH:osm_route_sp.ICONTYPE" type="relation" preset_name_label="true">
+                <link href="http://wiki.openstreetmap.org/wiki/Tag:route=foot" />
+                <space/>
+                <key key="type" value="route"/>
+                <key key="route" value="foot"/>
+                <combo key="network" text="Network" values="rwn,lwn" match="keyvalue!" />
+                <reference ref="name_ref_operator"/>
+                <optional>
+                    <reference ref="route_hikebike_optionals" />
+                </optional>
+                <roles>
+                    <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="highway|route=ferry"/>
+                    <role key="" text="infrastructure" requisite="optional" type="node,closedway" member_expression="tourism OR amenity"/>
+                    <role key="" text="natural" requisite="optional" type="node,closedway" member_expression="natural=peak OR natural=volcano OR mountain_pass=yes OR natural=water OR tourism=viewpoint OR amenity=drinking_water OR natural=spring OR place=locality"/>
+                </roles>
+            </item> <!-- Walking Route -->
             <item name="Piste Route" icon="ICONPATH:osm_route_sp.ICONTYPE" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=piste"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:route=piste"
@@ -9844,6 +9880,17 @@
                     <role key="start" text="entry points" requisite="optional" type="node" />
                 </roles>
             </item> <!-- Ski Route -->
+            <item name="Inline Skating Route" icon="ICONPATH:osm_route_sp.ICONTYPE" type="relation" preset_name_label="true">
+                <link href="http://wiki.openstreetmap.org/wiki/Tag:route=inline_skates" />
+                <space/>
+                <key key="type" value="route"/>
+                <key key="route" value="inline_skates"/>
+                <combo key="network" text="Network" values="international,national,regional,local" match="keyvalue!" />
+                <reference ref="name_ref_operator"/>
+                <optional>
+                    <reference ref="route_hikebike_optionals" />
+                </optional>
+            </item> <!-- Walking Route -->
             <separator/>
             <item name="Detour Route" icon="ICONPATH:osm_route_sp.ICONTYPE" type="relation" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Tag:route=detour"
