@@ -425,6 +425,8 @@
     <preset_link preset_name="Heavy Goods Vehicle" />
     <preset_link preset_name="Physical restrictions" />
     <preset_link preset_name="Other mode restrictions" />
+  </chunk>
+  <chunk id="lane_presets">
     <preset_link preset_name="Single direction roads" />
     <preset_link preset_name="Bi-directional roads" />
   </chunk>
@@ -492,6 +494,7 @@
                 </checkgroup>
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Motorway -->
         <item name="Motorway Link" icon="ICONPATH:highway_dual_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=motorway_link"
@@ -519,6 +522,7 @@
                 </checkgroup>
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Motorway Link -->
         <item name="Trunk" icon="ICONPATH:highway_car_29023.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=trunk"
@@ -554,6 +558,7 @@
                 </checkgroup>
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Trunk -->
         <item name="Trunk Link" icon="ICONPATH:highway_car_29023.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -577,6 +582,7 @@
                 </checkgroup>
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Trunk Link -->
         <separator/>
         <item name="Primary" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
@@ -604,6 +610,7 @@
                 <reference ref="placement" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Primary -->
         <item name="Primary Link" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -621,6 +628,7 @@
                 <reference ref="placement" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Primary Link -->
         <item name="Secondary" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=secondary"
@@ -647,6 +655,7 @@
                 <reference ref="placement" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Secondary -->
         <item name="Secondary Link" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -663,6 +672,7 @@
                 <reference ref="placement" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Secondary Link -->
         <item name="Tertiary" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=tertiary"
@@ -690,6 +700,7 @@
                 <reference ref="placement" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Tertiary -->
         <item name="Tertiary Link" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -706,6 +717,7 @@
                 <reference ref="placement" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Tertiary Link -->
         <item name="Minor road" icon="ICONPATH:highway_highway_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=unclassified"
@@ -732,6 +744,7 @@
                 <check key="passing_places" text="Passing Places" disable_off="true" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Unclassified -->
         <item name="Residential" icon="ICONPATH:highway_residential_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=residential"
@@ -756,6 +769,7 @@
 		        <check key="trolley_wire" text="Overhead trolley wires"  disable_off="true" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Residential -->
         <item name="Bicycle Road" icon="ICONPATH:highway_residential_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:bicycle_road"
@@ -780,6 +794,7 @@
                 <combo key="sidewalk" text="Sidewalk" values="both,left,right,no" values_context="sidewalk" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="lane_presets" />
         </item> <!-- Bicycle Road -->
         <item name="Living Street" icon="ICONPATH:homezone.ICONTYPE" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=living_street"
@@ -1055,10 +1070,7 @@
                 <reference ref="surface_smoothness" />
                 <reference ref="highway_yesno_incline_oneway_lit_width" />
                 <combo key="mtb:scale" text="MTB Scale" values="0,1,2,3,4,5" />
-                <reference ref="general_access" />
-                <combo key="motor_vehicle" text="Motor vehicles" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
-                <combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
-                <combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" />
+                <reference ref="road_access_restrictions" />
             </optional>
         </item> <!-- Track -->
         <item name="Path" icon="ICONPATH:highway_way_thin_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
@@ -1089,13 +1101,10 @@
                 </combo>
                 <combo key="mtb:scale" text="MTB Scale" values="0,1,2,3,4,5" />
                 <combo key="trail_visibility" text="Visibility" values="excellent,good,intermediate,bad,horrible,no" values_context="trail_visibility" values_sort="false" />
-                <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,no" />
-                <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,no" />
-                <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,no" />
                 <combo key="wheelchair" text="Wheelchairs" values="yes,designated,limited,no" />
                 <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,no" />
                 <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,no" />
-                <!-- <combo key="motorcar" text="Motorcar" values="yes,designated,no" default="no" /> -->
+                <reference ref="road_access_restrictions" />
             </optional>
         </item> <!-- Path -->
         <separator/>
