@@ -63,7 +63,7 @@
         <reference ref="highway_yesno_incline_oneway_lit" />
         <text key="width" text="Width (meters)" />
     </chunk>
-    <chunk>
+    <chunk id="sidewalk">
         <combo key="sidewalk" text="Sidewalk" values_context="sidewalk" >
         	<list_entry value="both" short_description="Both sides" />
         	<list_entry value="left" short_description="Only left side" />
@@ -415,37 +415,6 @@
     <chunk id="placement" >
         <combo key="placement" text="Placement" values="left_of:1,left_of:2,left_of:3,middle_of:1,middle_of:2,middle_of:3,right_of:1,right_of:2,right_of:3,transition" />
     </chunk>
-  <!-- Link chunks -->
-  <chunk id="link_contact_address">
-    <preset_link preset_name="Contact" />
-    <preset_link preset_name="Addresses" />
-  </chunk>
-  <chunk id="link_contact_address_payment">
-    <preset_link preset_name="Contact" />
-    <preset_link preset_name="Addresses" />
-    <preset_link preset_name="Payment Methods" />
-  </chunk>
-  <chunk id="additional_access_tags">
-    <check key="toll" text="Toll" disable_off="true" />
-    <check key="noexit" text="No exit (cul-de-sac)" disable_off="true" />
-    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes, Both directions, In way direction, Oppostite to way dorection, No" values_sort="false" values_context="overtaking" match="key" />
-    <text key="minspeed" text="Min. speed (km/h)" match="key" />
-  </chunk>
-  <chunk id="road_access_restrictions">
-    <preset_link preset_name="All vehicles" />
-    <preset_link preset_name="Motor vehicle" />
-    <preset_link preset_name="Motorcar" />
-    <preset_link preset_name="Motorcycle" />
-    <preset_link preset_name="Motor vehicle (CH)" />
-    <preset_link preset_name="Motorcar and -cycle (CH)" />
-    <preset_link preset_name="Heavy Goods Vehicle" />
-    <preset_link preset_name="Physical restrictions" />
-    <preset_link preset_name="Other mode restrictions" />
-  </chunk>
-  <chunk id="lane_presets">
-    <preset_link preset_name="Single direction roads" />
-    <preset_link preset_name="Bi-directional roads" />
-  </chunk>
   <chunk id="social_facility_for">
     <combo key="social_facility:for" text="For group" match="key" >
         <list_entry value="abused" display_value="Abused" />
@@ -508,6 +477,37 @@
         <list_entry value="no" display_value="None" />
         <list_entry value="incorrect" display_value="Incorrect" />
      </combo>
+  </chunk>
+  <!-- Link chunks -->
+  <chunk id="link_contact_address">
+    <preset_link preset_name="Contact" />
+    <preset_link preset_name="Addresses" />
+  </chunk>
+  <chunk id="link_contact_address_payment">
+    <preset_link preset_name="Contact" />
+    <preset_link preset_name="Addresses" />
+    <preset_link preset_name="Payment Methods" />
+  </chunk>
+  <chunk id="additional_access_tags">
+    <check key="toll" text="Toll" disable_off="true" />
+    <check key="noexit" text="No exit (cul-de-sac)" disable_off="true" />
+    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes, Both directions, In way direction, Oppostite to way dorection, No" values_sort="false" values_context="overtaking" match="key" />
+    <text key="minspeed" text="Min. speed (km/h)" match="key" />
+  </chunk>
+  <chunk id="road_access_restrictions">
+    <preset_link preset_name="All vehicles" />
+    <preset_link preset_name="Motor vehicle" />
+    <preset_link preset_name="Motorcar" />
+    <preset_link preset_name="Motorcycle" />
+    <preset_link preset_name="Motor vehicle (CH)" />
+    <preset_link preset_name="Motorcar and -cycle (CH)" />
+    <preset_link preset_name="Heavy Goods Vehicle" />
+    <preset_link preset_name="Physical restrictions" />
+    <preset_link preset_name="Other mode restrictions" />
+  </chunk>
+  <chunk id="lane_presets">
+    <preset_link preset_name="Single direction roads" />
+    <preset_link preset_name="Bi-directional roads" />
   </chunk>
   <!--  Groups -->
   <group name="Highways" icon="ICONPATH:highway_highway_sp.ICONTYPE">

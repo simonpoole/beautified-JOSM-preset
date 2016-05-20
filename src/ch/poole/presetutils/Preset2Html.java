@@ -60,6 +60,8 @@ public class Preset2Html {
         	Locator locator = null;
         	String group = null;
         	String preset = null;
+        	String chunk = null;
+        	HashMap<String,String> chunkKeys = new HashMap<String,String>();
         	String icon = null;
         	String icon2 = null;
         	String keys = null;
@@ -115,6 +117,8 @@ public class Preset2Html {
             			icon2 = icon2.replace("ICONTYPE", "png");
             		}
             	} else if ("chunk".equals(name)) {
+            		chunk = attr.getValue("id");
+            		keys="";
             	} else if ("separator".equals(name)) {
             	} else if ("label".equals(name)) {
             	} else if ("optional".equals(name)) {
@@ -135,6 +139,13 @@ public class Preset2Html {
             	} else if ("link".equals(name)) {
             	} else if ("role".equals(name)) {
             	} else if ("reference".equals(name)) {
+            		String ref = attr.getValue("ref");
+            		String refKeys = chunkKeys.get(ref);
+            		if (refKeys != null) {
+            			keys = keys + refKeys;
+            		} else {
+            			System.err.println(ref + " was not found for preset " + preset);
+            		}
             	} else if ("list_entry".equals(name)) {
             	} else if ("preset_link".equals(name)) {
             	}
@@ -172,7 +183,14 @@ public class Preset2Html {
             		}
         			keys = null;
             	} else if ("chunk".equals(name)) {
+            		if (chunk != null) {
+            			chunkKeys.put(chunk, keys);
+            			// System.err.println("added chunk " + chunk);
+            		} else {
+            			System.err.println("chunk null");
+            		}
             		keys = null;
+            		chunk = null;
             	} else if ("combo".equals(name) || "multiselect".equals(name)) {
             	}
             }
