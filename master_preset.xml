@@ -486,6 +486,13 @@
     <text key="description" text="Description" />
     <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" />
   </chunk>
+  <chunk id="tactile_paving">
+  	<combo key="tactile_paving" text="Tactile paving" match="key" >
+        <list_entry value="yes" display_value="Present" />
+        <list_entry value="no" display_value="None" />
+        <list_entry value="incorrect" display_value="Incorrect" />
+     </combo>
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="ICONPATH:highway_highway_sp.ICONTYPE">
     <group name="Streets" icon="ICONPATH:highway_highway_sp.ICONTYPE">
@@ -1362,6 +1369,7 @@
                 <check key="button_operated" text="Button operated" disable_off="true" />
                 <check key="traffic_signals:sound" text="Sound signals" disable_off="true" />
                 <combo key="supervised" text="Crossing attendant" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" />
+                <reference ref="tactile_paving" />
                 <check key="bicycle" text="Cross by bicycle" disable_off="true" />
                 <check key="horse" text="Cross on horseback" disable_off="true" />
             </optional>
@@ -1880,6 +1888,7 @@
             </optional>
             <reference ref="optional_height" />
             <reference ref="wheelchair" />
+            <reference ref="tactile_paving" />
         </item> <!-- Kerb -->
         <separator/> <!-- *** Access *** -->
         <item name="Entrance (Barrier Opening)" icon="ICONPATH:barrier_entrance.ICONTYPE" type="node" preset_name_label="true">
@@ -2389,6 +2398,7 @@
             <space />
             <key key="waterway" value="waterfall" />
             <reference ref="name_wikipedia" />
+            <text key="height" text="Height (meters)" />
         </item> <!-- Waterfall -->
         <item name="Weir" icon="ICONPATH:water_weir.ICONTYPE" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=weir"
@@ -3485,6 +3495,7 @@
                 <text key="uic_name" text="UIC name" />
                 <text key="operator" text="Operator" />
                 <text key="network" text="Network" />
+                <reference ref="tactile_paving" />
             </optional>
             <check key="bus" text="Bus" disable_off="true" />
             <check key="highway" value_on="bus_stop" value_off="" text="Bus stop (legacy)" />
@@ -3511,6 +3522,7 @@
             <check key="bin" text="Waste Basket/Trash Can" />
             <check key="covered" text="Covered" disable_off="true" />
             <reference ref="wheelchair" />
+            <reference ref="tactile_paving" />
             <optional>
                 <text key="ref" text="Reference" />
                 <text key="uic_ref" text="UIC reference" />
@@ -3680,7 +3692,7 @@
                 <text key="name" text="Name" />
                 <check key="shelter" text="Shelter" disable_off="true" />
                 <check key="bench" text="Bench" disable_off="true" />
-                <combo key="tactile_paving" text="Tactile Paving" values="yes,no,incorrect" />
+                <reference ref="tactile_paving" />
             </optional>
         </item> <!-- Bus Stop -->
         <item name="Bus Platform" icon="ICONPATH:transport_platform_32003.ICONTYPE" type="node,way,closedway,multipolygon" preset_name_label="true">
@@ -3694,6 +3706,7 @@
             <text key="ref" text="Reference (track number)" />
             <text key="width" text="Width (meters)" />
             <check key="area" text="Area" disable_off="true" />
+            <reference ref="tactile_paving" />
         </item> <!-- Bus Platform -->
     </group> <!-- Public Transport -->
     <item name="Taxi" icon="ICONPATH:transport_taxi_rank.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
