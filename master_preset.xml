@@ -9068,7 +9068,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:natural=wood" />
             <label text="Woodland where timber production does not dominate use." />
             <space />
-            <key key="natural" value="wood" />
+            <key key="natural" value="wood" values_context="natural" />
             <text key="name" text="Name" />
             <reference ref="leaf" />
         </item> <!-- Wood -->
