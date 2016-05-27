@@ -13,7 +13,10 @@
         <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down" display_values="10%,-10%,10°,-10°,Up,Down" values_sort="false" />
     </chunk>
     <chunk id="surface">
-        <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,sett" />
+        <combo key="surface" text="Surface"  
+        	values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,sett" 
+        	display_values="Paved,Unpaved,Asphalt,Concrete,Metal,Wood,Paving stones,Cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Sett"
+        	values_sort="false" />
     </chunk>
     <chunk id="surface_smoothness">
         <reference ref="surface" />
