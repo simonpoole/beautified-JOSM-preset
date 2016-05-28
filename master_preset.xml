@@ -8552,7 +8552,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=vending_machine" />
         <space />
         <key key="amenity" value="vending_machine" />
-        <multiselect key="vending" text="Vending products" values_searchable="true" >
+        <multiselect key="vending" text="Vending products" values_searchable="true" match="key">
             <list_entry value="animal_food" short_description="Animal food" />
             <list_entry value="bicycle_tube" short_description="Bicycle tubes" />
             <list_entry value="cigarettes" short_description="Cigarettes" />
@@ -9057,7 +9057,7 @@
                 <reference ref="leaf" />
             </optional>
         </item> <!-- Tree Row -->
-        <item name="Wood" icon="ICONPATH:landuse_coniferous_and_deciduous.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Wood" icon="ICONPATH:landuse_coniferous_and_deciduous.ICONTYPE" type="closedway,multipolygon" preset_name_label="true" name_context="natural" >
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=wood"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=wood"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=wood"
@@ -9068,7 +9068,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:natural=wood" />
             <label text="Woodland where timber production does not dominate use." />
             <space />
-            <key key="natural" value="wood" values_context="natural" />
+            <key key="natural" value="wood" />
             <text key="name" text="Name" />
             <reference ref="leaf" />
         </item> <!-- Wood -->
