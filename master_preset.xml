@@ -9120,7 +9120,7 @@
             <space />
             <key key="natural" value="grassland" />
             <text key="name" text="Name" />
-            <combo key="grassland" text="Type" values="pampas,prairie,puszta,savanna,steppe,veld" display_values="pampas,prairie,puszta,savanna,steppe,veld" />
+            <combo key="grassland" text="Type" values="pampas,prairie,puszta,savanna,steppe,veld" display_values="Pampas,Prairie,Puszta,Savanna,Steppe,Veld" />
         </item> <!-- Grassland -->
         <item name="Nature Reserve" icon="ICONPATH:landuse_nature_reserve_21137.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=nature_reserve"
@@ -9890,9 +9890,10 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
             <space />
             <key key="type" value="restriction" />
-            <combo key="restriction" text="Restriction" values="no_left_turn,no_right_turn,no_straight_on,no_u_turn,only_right_turn,only_left_turn,only_straight_on" values_searchable="true" />
+            <combo key="restriction" text="Restriction" values="no_left_turn,no_right_turn,no_straight_on,no_u_turn,only_right_turn,only_left_turn,only_straight_on" 
+            	display_values="No left turn,No right turn,No straight on,No u-turn,Only right turn,Only left turn,Only straight on" values_searchable="true" />
             <optional>
-				<combo key="except" text="Exceptions" values="bicycle,emergency,hgv,motorcar,psv" />
+				<multiselect key="except" text="Exceptions" values="bicycle,emergency,hgv,motorcar,psv" display_values="Bicycle,Emergency,HGV,Car,PSV"/>
             </optional>
             <roles>
                 <role key="from" text="from way" requisite="required" count="1" type="way" />
