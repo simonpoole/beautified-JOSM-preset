@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-01 00:30+0200\n"
+"POT-Creation-Date: 2016-06-01 08:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1893,6 +1893,10 @@ msgstr ""
 msgid "Painter"
 msgstr ""
 
+#: master_preset.xml:207(combo:display_values|key:smoking)
+msgid "Separated"
+msgstr ""
+
 #: master_preset.xml:8490(item:name|group:Other|preset:Bookmaker)
 msgid "Bookmaker"
 msgstr ""
@@ -1915,6 +1919,10 @@ msgstr ""
 
 #: master_preset.xml:6255(item:name|group:Sport_(Ball)|preset:Gaelic_Games)
 msgid "Gaelic Games"
+msgstr ""
+
+#: master_preset.xml:9896(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
+msgid "HGV"
 msgstr ""
 
 #: master_preset.xml:9493(item:name|group:Land_use|preset:Retail)
@@ -2169,7 +2177,7 @@ msgstr ""
 msgid "Childcare"
 msgstr ""
 
-#: master_preset.xml:3362(group:name|group:Bicycle) master_preset.xml:2308(combo:text|group:Access_Restrictions|preset:Other_mode_restrictions|key:bicycle) master_preset.xml:1293(combo:text|group:Ways|preset:Dedicated_Footway|key:bicycle) master_preset.xml:3608(check:text|group:Public_Transport|preset:Subway_Entrance|key:bicycle) master_preset.xml:118(check:text|key:bicycle) master_preset.xml:101(check:text|key:bicycle) master_preset.xml:110(check:text|key:bicycle)
+#: master_preset.xml:3362(group:name|group:Bicycle) master_preset.xml:2308(combo:text|group:Access_Restrictions|preset:Other_mode_restrictions|key:bicycle) master_preset.xml:9896(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:1293(combo:text|group:Ways|preset:Dedicated_Footway|key:bicycle) master_preset.xml:3608(check:text|group:Public_Transport|preset:Subway_Entrance|key:bicycle) master_preset.xml:118(check:text|key:bicycle) master_preset.xml:101(check:text|key:bicycle) master_preset.xml:110(check:text|key:bicycle)
 msgid "Bicycle"
 msgstr ""
 
@@ -2601,6 +2609,10 @@ msgstr ""
 msgid "Associated Street"
 msgstr ""
 
+#: master_preset.xml:9896(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
+msgid "Car:PSV"
+msgstr ""
+
 #: master_preset.xml:1215(combo:text|group:Ways|preset:Cycle_Lane/Track|key:cycleway)
 msgid "Cycleway"
 msgstr ""
@@ -2659,10 +2671,6 @@ msgstr ""
 
 #: master_preset.xml:311(combo:display_values|key:religion)
 msgid "Shinto"
-msgstr ""
-
-#: master_preset.xml:207(combo:display_values|key:smoking)
-msgid "Seperated"
 msgstr ""
 
 #: master_preset.xml:431(combo:text|key:social_facility:for)
@@ -3529,7 +3537,7 @@ msgstr ""
 msgid "A body of standing water, such as a lake or pond."
 msgstr ""
 
-#: master_preset.xml:5213(group:name|group:Emergency)
+#: master_preset.xml:9896(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:5213(group:name|group:Emergency)
 msgid "Emergency"
 msgstr ""
 
@@ -5475,10 +5483,6 @@ msgstr ""
 
 #: master_preset.xml:8709(combo:text|group:Boundaries|preset:Maritime|key:border_type)
 msgid "Border type"
-msgstr ""
-
-#: master_preset.xml:9896(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
-msgid "Bicycle,Emergency,HGV,Car,PSV"
 msgstr ""
 
 #: master_preset.xml:5633(check:text|group:Facilities|preset:Recycling_Container|key:recycling:clothes) master_preset.xml:3356(combo:text|group:Motorcycle|preset:Motorcycle_Dealer|key:clothes) master_preset.xml:7810(item:name|group:Clothes|preset:Clothes) master_preset.xml:7809(group:name|group:Clothes) master_preset.xml:5673(check:text|group:Facilities|preset:Recycling_Centre|key:recycling:clothes)
