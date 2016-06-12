@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-12 16:48+0200\n"
+"POT-Creation-Date: 2016-06-12 16:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2477,7 +2477,7 @@ msgstr ""
 msgid "Max. speed in way direction"
 msgstr ""
 
-#: master_preset.xml:3103(group:name|group:Car) master_preset.xml:3236(check:text|group:Car|preset:Charging_Station|key:car)
+#: master_preset.xml:9972(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:3103(group:name|group:Car) master_preset.xml:3236(check:text|group:Car|preset:Charging_Station|key:car)
 msgid "Car"
 msgstr ""
 
@@ -2663,10 +2663,6 @@ msgstr ""
 
 #: master_preset.xml:10236(item:name|preset:Associated_Street)
 msgid "Associated Street"
-msgstr ""
-
-#: master_preset.xml:9972(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
-msgid "Car:PSV"
 msgstr ""
 
 #: master_preset.xml:1217(combo:text|group:Ways|preset:Cycle_Lane/Track|key:cycleway)
@@ -3215,6 +3211,10 @@ msgstr ""
 
 #: master_preset.xml:7128(item:name|group:Power_Generator|preset:Gas_Power_Generator)
 msgid "Gas Power Generator"
+msgstr ""
+
+#: master_preset.xml:9972(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
+msgid "PSV"
 msgstr ""
 
 #: master_preset.xml:2549(check:text|group:Water|preset:Water|key:salt)

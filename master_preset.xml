@@ -9969,7 +9969,7 @@
             <combo key="restriction" text="Restriction" values="no_left_turn,no_right_turn,no_straight_on,no_u_turn,only_right_turn,only_left_turn,only_straight_on" 
             	display_values="No left turn,No right turn,No straight on,No u-turn,Only right turn,Only left turn,Only straight on" values_searchable="true" />
             <optional>
-				<multiselect key="except" text="Exceptions" values="bicycle;emergency;hgv;motorcar;psv" display_values="Bicycle;Emergency;HGV;Car:PSV"/>
+				<multiselect key="except" text="Exceptions" values="bicycle;emergency;hgv;motorcar;psv" display_values="Bicycle;Emergency;HGV;Car;PSV"/>
             </optional>
             <roles>
                 <role key="from" text="from way" requisite="required" count="1" type="way" />
