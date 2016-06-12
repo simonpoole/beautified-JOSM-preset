@@ -4486,7 +4486,7 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Sauna -->
-        <item name="Tanning studio" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Tanning Studio" icon="" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=sauna"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=sauna"
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=sauna"
@@ -4498,7 +4498,7 @@
             <combo key="access" text="Access" values="yes,permissive,private" />
             <space />
             <reference ref="link_contact_address_payment" />
-        </item> <!-- Tanning studio -->
+        </item> <!-- Tanning Studio -->
         <item name="Horse Riding" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_horse_racing.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=horse_riding" />
             <space />
@@ -5101,7 +5101,7 @@
             <combo key="license_classes" text="License Classes" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E" />
             <reference ref="link_contact_address" />
         </item> <!-- Driving School -->
-        <item name="Music school" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Music School" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/education_musical_instrument_29107.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=music_school"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=music_school" />
             <space />
@@ -5109,7 +5109,7 @@
             <reference ref="name_operator_oh_wheelchair_level" />
             <combo key="operator:type" text="Operator type" values="public,private" display_values="Public,Private" />
             <reference ref="link_contact_address" />
-        </item> <!-- Music school -->
+        </item> <!-- Music School -->
     </group> <!-- Education -->
     <group name="Health" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/health_pharmacy.png">
         <item name="Hospital" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/health_hospital.png" type="node,closedway,multipolygon" preset_name_label="true">
