@@ -281,6 +281,7 @@
     <chunk id="name_wikipedia">
         <text key="name" text="Name" />
         <text key="wikipedia" text="Wikipedia" />
+        <preset_link preset_name="Name" />
     </chunk>
     <chunk id="population_postcode_website">
         <text key="population" text="Population" />
@@ -1643,7 +1644,7 @@
             <space />
             <key key="traffic_sign" value="city_limit" />
             <text key="name" text="Name" />
-            <text key="alt_name" text="Second Name" />
+            <preset_link preset_name="Name" />
         </item> <!-- City Limit -->
         <item name="Speed Limit Sign" icon="ICONPATH:speed_limit.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:traffic_sign"
