@@ -281,6 +281,7 @@
     <chunk id="name_wikipedia">
         <text key="name" text="Name" />
         <text key="wikipedia" text="Wikipedia" />
+        <preset_link preset_name="Name" />
     </chunk>
     <chunk id="population_postcode_website">
         <text key="population" text="Population" />
@@ -1643,7 +1644,7 @@
             <space />
             <key key="traffic_sign" value="city_limit" />
             <text key="name" text="Name" />
-            <text key="alt_name" text="Second Name" />
+            <preset_link preset_name="Name" />
         </item> <!-- City Limit -->
         <item name="Speed Limit Sign" icon="icons/png/speed_limit.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:traffic_sign"
@@ -5577,9 +5578,9 @@
             </combo>
             <optional>
                 <checkgroup columns="3">
-                    <check key="female" text="Female" text_context="restroom" />
-                    <check key="male" text="Male" text_context="restroom" />
-                    <check key="unisex" text="Unisex" text_context="restroom" />
+                    <check key="female" text="Female" text_context="restroom" disable_off="true" />
+                    <check key="male" text="Male" text_context="restroom" disable_off="true" />
+                    <check key="unisex" text="Unisex" text_context="restroom" disable_off="true" />
                 </checkgroup>
                 <combo key="toilets:disposal" text="Type" values="flush,pitlatrine,chemical,bucket" />
                 <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal" />
@@ -5588,7 +5589,7 @@
                 <reference ref="diaper" />
                 <text key="operator" text="Operator" />
                 <combo key="toilets:position" text="Usage Position" values="seated,seated;urinal,squat,urinal" />
-                <reference ref="wheelchair" />
+                <reference ref="oh_wheelchair_level" />
             </optional>
         </item> <!-- Toilets/Restrooms -->
         <item name="Shower" icon="icons/png/amenity_shower_12247.png" type="node,closedway" preset_name_label="true">
