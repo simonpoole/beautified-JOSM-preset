@@ -5635,7 +5635,7 @@
             <key key="amenity" value="post_box" />
             <text key="operator" text="Operator" />
             <text key="ref" text="Reference number" />
-            <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30"  values_no_i18n="true" match="key" editable="true" />
+            <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30"  values_no_i18n="true" match="none" editable="true" />
             <check key="drive_through" text="Drive through" disable_off="true" />
         </item> <!-- Post Box -->
         <item name="Telephone" icon="amenity_telephone.png" type="node" preset_name_label="true">
@@ -5799,7 +5799,7 @@
             <reference ref="facility_access" />
             <reference ref="fee" />
             <text key="operator" text="Operator" />
-            <combo key="opening_hours" text="Operation times" values="24/7" match="none" values_no_i18n="true" />
+            <combo key="opening_hours" text="Operation times" values="24/7" match="none" editable="true" values_no_i18n="true" />
         </item> <!-- Sanitary Dump Station -->
         <separator/>
         <item name="Bench" icon="amenity_bench.png" type="node,way" preset_name_label="true">
@@ -6970,7 +6970,7 @@
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:highway=street_lamp" />
             <space />
             <key key="highway" value="street_lamp" />
-            <combo key="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" values_no_i18n="true" />
+            <combo key="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" editable="true" values_no_i18n="true" />
         </item> <!-- Street Lamp -->
         <item name="Monitoring Station" icon="man_made_monitoring_station_22042.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=monitoring_station"
