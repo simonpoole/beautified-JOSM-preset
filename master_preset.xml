@@ -493,7 +493,7 @@
     <text key="operator" text="Operator" />
     <text key="network" text="Network" />
     <text key="description" text="Description" />
-    <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
+    <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
   </chunk>
   <chunk id="tactile_paving">
   	<combo key="tactile_paving" text="Tactile paving" match="key" values_sort="false" >
@@ -3546,7 +3546,7 @@
             <optional>
                 <text key="operator" text="Operator" />
                 <text key="network" text="Network" />
-                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" />
+                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
             </optional>
             <roles>
                 <role key="" text="route variant/direction (at least 2)" requisite="required" type="relation" member_expression="type=route" /> <!-- FIXME: at least 2 members are required -->
@@ -3698,7 +3698,7 @@
                 <text key="operator" text="Operator" />
                 <text key="network" text="Network" />
                 <text key="description" text="Description" />
-                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" />
+                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
             </optional>
             <roles>
                 <role key="" text="route segment" requisite="optional" type="way,closedway" />
@@ -5819,7 +5819,7 @@
             <key key="amenity" value="bench" />
             <check key="backrest" text="Backrest" disable_off="true" />
             <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" />
-            <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="color" values="black,brown,green,red,blue,gray,white,#CD853F" />
+            <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
             <combo key="seats" text="Seats count" values="2,3,4,5,6,7,8,9,10" />
         </item> <!-- Bench -->
         <item name="Shelter" icon="ICONPATH:accommodation_shelter2.ICONTYPE" type="node,closedway" preset_name_label="true">
@@ -7417,7 +7417,7 @@
             <text key="height" text="Height (meters)" />
             <combo key="structure" text="Type of construction" values="lattice,tubular,solid" />
             <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" />
-            <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="color" />
+            <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="colour"  match="none" editable="true" />
             <reference ref="ref_operator_branch" />
             <combo key="design" text="Portal design" values="portal,portal_two-level,portal_three-level" values_context="power" />
         </item> <!-- Power Portal -->
@@ -7437,7 +7437,7 @@
             <text key="height" text="Height in meter (m)" />
             <combo key="structure" text="Type of construction" values="lattice,tubular,solid" />
             <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" />
-            <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="color" />
+            <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="colour"  match="none" editable="true" />
             <reference ref="ref_operator_branch" />
             <optional>
                 <combo key="tower:type" text="Tower type" values="suspension,anchor,termination,branch,transposing,crossing,transition" text_context="power" values_context="power" />
