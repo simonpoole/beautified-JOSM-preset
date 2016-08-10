@@ -6,7 +6,9 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
@@ -249,64 +251,70 @@ public class Preset2Pot {
 	}
 	
 	public static void main(String[] args) {
-		// defaults
-		InputStream is = System.in;
-		OutputStream os = System.out;
-		Preset2Pot p = new Preset2Pot();
-		p.setInputFilename("stdin");
-		
-		// arguments
-		Option inputFile = OptionBuilder.withArgName("file")
-				.hasArg()
-				.withDescription(  "input preset file, default: standard in" )
-				.create( "input" );
-
-		Option outputFile = OptionBuilder.withArgName("file")
-				.hasArg()
-				.withDescription( "output .pot file, default: standard out" )
-				.create( "output" );
-		Options options = new Options();
-
-		options.addOption(inputFile);
-		options.addOption(outputFile);
-
-		CommandLineParser parser = new DefaultParser();
 		try {
-			// parse the command line arguments
-			CommandLine line = parser.parse( options, args );
-			if (line.hasOption( "input")) {
-			    // initialise the member variable
-			    String input = line.getOptionValue("input");
-			    p.setInputFilename(input);
-			    is = new FileInputStream(input);
+			// defaults
+			InputStream is = System.in;
+			OutputStreamWriter os = new OutputStreamWriter(System.out, "UTF-8");
+
+			Preset2Pot p = new Preset2Pot();
+			p.setInputFilename("stdin");
+
+			// arguments
+			Option inputFile = OptionBuilder.withArgName("file")
+					.hasArg()
+					.withDescription(  "input preset file, default: standard in" )
+					.create( "input" );
+
+			Option outputFile = OptionBuilder.withArgName("file")
+					.hasArg()
+					.withDescription( "output .pot file, default: standard out" )
+					.create( "output" );
+			Options options = new Options();
+
+			options.addOption(inputFile);
+			options.addOption(outputFile);
+
+			CommandLineParser parser = new DefaultParser();
+			try {
+				// parse the command line arguments
+				CommandLine line = parser.parse( options, args );
+				if (line.hasOption( "input")) {
+					// initialise the member variable
+					String input = line.getOptionValue("input");
+					p.setInputFilename(input);
+					is = new FileInputStream(input);
+				}
+				if (line.hasOption( "output")) {
+					String output = line.getOptionValue("output");
+					os = new OutputStreamWriter(
+							new FileOutputStream(output), "UTF-8");
+				}
 			}
-			if (line.hasOption( "output")) {
-			    String output = line.getOptionValue("output");
-			    os = new FileOutputStream(output);
+			catch(ParseException exp) {
+				HelpFormatter formatter = new HelpFormatter();
+				formatter.printHelp( "Preset2Pot", options );
+				return;
+			} catch (FileNotFoundException e) {
+				System.err.println("File not found: " + e.getMessage());
+				return;
 			}
-		}
-		catch(ParseException exp) {
-			HelpFormatter formatter = new HelpFormatter();
-			formatter.printHelp( "Preset2Pot", options );
-			return;
-		} catch (FileNotFoundException e) {
-			System.err.println("File not found: " + e.getMessage());
-			return;
-		}
-		
-		try {
-			p.setInputFilename("master_preset.xml");
-			p.parseXML(is);
-			p.dump2Pot(new PrintWriter(os));
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (ParserConfigurationException e) {
-			e.printStackTrace();
-		} catch (SAXException e) {
-			System.err.println("Error at line " + p.getLocator()!=null?p.getLocator().getLineNumber():"unknown line");
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+
+			try {
+				p.setInputFilename("master_preset.xml");
+				p.parseXML(is);
+				p.dump2Pot(new PrintWriter(os));
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (ParserConfigurationException e) {
+				e.printStackTrace();
+			} catch (SAXException e) {
+				System.err.println("Error at line " + p.getLocator()!=null?p.getLocator().getLineNumber():"unknown line");
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		} catch (UnsupportedEncodingException e1) {
+			e1.printStackTrace();
 		}
 	}
 }
