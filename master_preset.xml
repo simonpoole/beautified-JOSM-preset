@@ -35,6 +35,11 @@
         <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="riding" />
         <combo key="surface" text="Surface" values="grass,sand,clay,dirt,fine_gravel,ground,mud,unpaved,compacted" />
     </chunk>
+    <chunk id="lanes">
+        <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" match="none" />
+        <combo key="lanes:forward" text="Lanes in way direction" values="1,2,3,4,5" length="3" match="none" />
+        <combo key="lanes:backward" text="Lanes opposed to way direction" values="1,2,3,4,5" length="3" match="none" />
+    </chunk>
     <chunk id="highway_base">
         <text key="maxspeed" text="Max. speed (km/h)"/>
         <text key="maxspeed:forward" text="Max. speed in way direction" />
@@ -42,9 +47,7 @@
         <space />
         <reference ref="surface_smoothness" />
         <space />
-        <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3"/>
-        <combo key="lanes:forward" text="Lanes in way direction" values="1,2,3,4,5" length="3" />
-        <combo key="lanes:backward" text="Lanes opposed to way direction" values="1,2,3,4,5" length="3" />
+        <reference ref="lanes" />
     </chunk>
     <chunk id="layer" >
     	<combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" match="none" editable="true" />
@@ -870,7 +873,7 @@
             <combo key="vehicle" text="Vehicle access" values="yes,no,destination" default="no" />
             <text key="maxspeed" text="Max. speed (km/h)" default="30" />
             <optional>
-                <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" />
+                <reference ref="lanes" />
                 <reference ref="layer" />
                 <reference ref="surface_smoothness" />
                 <check key="oneway" text="Oneway" disable_off="true" />
@@ -896,7 +899,7 @@
             <key key="highway" value="living_street" />
             <text key="name" text="Name" />
             <optional>
-                <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" />
+                <reference ref="lanes" />
                 <reference ref="layer" />
                 <reference ref="surface_smoothness" />
                 <reference ref="highway_yesno_incline_oneway_lit_width" />
@@ -919,7 +922,7 @@
             <key key="highway" value="pedestrian" />
             <text key="name" text="Name" />
             <optional>
-                <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" />
+                <reference ref="lanes" />
                 <reference ref="layer" />
                 <reference ref="surface_smoothness" />
                 <check key="area" text="Area" disable_off="true" />
@@ -1041,7 +1044,7 @@
             <combo key="highway" text="Type" values="motorway,motorway_link,trunk,trunk_link,primary,primary_link,secondary,tertiary,unclassified,residential,living_street,service,bus_guideway,construction" values_context="Highway" />
             <optional>
                 <reference ref="name_layer" />
-                <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" match="none" />
                 <reference ref="highway_yesno_incline_oneway" />
                 <text key="width" text="Width (meters)" />
             </optional>
