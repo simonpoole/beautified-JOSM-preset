@@ -254,7 +254,7 @@ public class Preset2Html {
 			    String output = line.getOptionValue("output");
 			    os = new FileOutputStream(output);
 			}
-			if (line.hasOption( "output")) {
+			if (line.hasOption( "download")) {
 			    p.setDownLoadLink(line.getOptionValue("download"));
 			}
 		}
