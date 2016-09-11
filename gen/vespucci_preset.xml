@@ -2178,6 +2178,8 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
             <combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="vehicle:conditional" text="All vehicles @"
+                  delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0" />
 	    	<reference ref="additional_access_tags" /> 
         </item> <!-- All vehicles -->
         <item name="Motor vehicle" icon="icons/png/no_motor_vehicles.png" type="node,way,closedway" preset_name_label="true">
@@ -2194,6 +2196,8 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
             <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motor_vehicle:conditional" text="Motor vehicles @"
+                  delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0" />
 	    	<reference ref="additional_access_tags" /> 
         </item> <!-- Motor vehicle -->
         <item name="Motor vehicle (CH)" icon="icons/png/no_motor_vehicles_CH.png" type="node,way,closedway" preset_name_label="true">
@@ -2210,6 +2214,8 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
             <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motor_vehicle:conditional" text="Motor vehicles @"
+                  delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0" />
 	    	<reference ref="additional_access_tags" /> 
         </item> <!-- Motor vehicle CH -->
         <item name="Motorcar and -cycle (CH)" icon="icons/png/no_motor_vehicles.png" type="node,way,closedway" preset_name_label="true">
@@ -2226,7 +2232,11 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
             <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcar:conditional" text="Motorcar @"
+                  delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0" />
             <combo key="motorcycle" text="Motorcycle" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcycle:conditional" text="Motorcycle @"
+                  delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0" />
 	    <reference ref="additional_access_tags" /> 
         </item> <!-- Motor vehicle -->
         <item name="Motorcar" icon="icons/png/no_motor_vehicles_except_motorcycles.png" type="node,way,closedway" preset_name_label="true">
@@ -2243,6 +2253,8 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
             <combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcar:conditional" text="Motorcar @"
+                  delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0" />
 	    <reference ref="additional_access_tags" /> 
         </item> <!-- Motorcar -->
         <item name="Motorcycle" icon="icons/png/no_motorcycles.png" type="node,way,closedway" preset_name_label="true">
@@ -2259,6 +2271,8 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
             <combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcycle:conditional" text="Motorcycle @"
+                  delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0" />
 	    <reference ref="additional_access_tags" /> 
         </item> <!-- Motorcycles -->
         <item name="Heavy Goods Vehicle" icon="icons/png/no_hgv.png" type="node,way,closedway" preset_name_label="true">
@@ -2275,6 +2289,8 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
             <combo key="hgv" text="Heavy Goods Vehicles" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+	    	<combo key="hgv:conditional" text="Heavy Goods Vehicles @"
+                  delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0" />
 	    	<text key="maxspeed:hgv" text="Max. speed Heavy Goods Vehicles (km/h)" match="key" />
             <combo key="maxspeed:hgv:conditional" text="Max. speed Heavy Goods Vehicles (km/h) @"
                   delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0" />    
