@@ -528,7 +528,7 @@
   <chunk id="additional_access_tags">
     <check key="toll" text="Toll" disable_off="true" />
     <check key="noexit" text="No exit (cul-de-sac)" disable_off="true" />
-    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes, Both directions, In way direction, Oppostite to way dorection, No" values_sort="false" values_context="overtaking" match="key" />
+    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes, Both directions, In way direction, Opposite to way direction, No" values_sort="false" values_context="overtaking" match="key" />
     <text key="minspeed" text="Min. speed (km/h)" match="key" />
   </chunk>
   <chunk id="road_access_restrictions">
