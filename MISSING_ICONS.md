@@ -58,8 +58,6 @@ Taxiway
 
 Tanning Studio
 
-Bird Hide
-
 Ranger Station
 
 Internet Access
@@ -68,7 +66,7 @@ Sanitary Dump Station
 
 Compressed Air
 
-Fitness Centre
+Sport Centre
 
 Racetrack
 
@@ -173,3 +171,9 @@ Address Interpolation
 Multipolygon
 
 Site
+
+Pastry
+
+Shingle
+
+Aquaculture

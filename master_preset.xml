@@ -3887,7 +3887,7 @@
                 <text key="ref" text="Reference" />
             </optional>
         </item> <!-- Taxiway -->
-        <item name="Holding Position" icon="presets/transport/airport/holding_position.svg" type="node" preset_name_label="true">
+        <item name="Holding Position" icon="ICONPATH:transport_holding_position_11006.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aeroway=holding_position" />
             <key key="aeroway" value="holding_position" />
             <optional>
@@ -4555,7 +4555,7 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Water Park -->
-        <item name="Beach Resort" icon="presets/leisure/beach_resort.svg" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Beach Resort" icon="ICONPATH:tourist_beach_resort_21003.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=beach_resort" />
             <space />
             <key key="leisure" value="beach_resort" />
@@ -4691,7 +4691,7 @@
             <key key="leisure" value="fishing" />
             <text key="name" text="Name" />
         </item> <!-- Fishing -->
-        <item name="Bird Hide" icon="" type="node,closedway" preset_name_label="true">
+        <item name="Bird Hide" icon="ICONPATH:tourist_bird_hide_21004.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=bird_hide" />
             <space />
             <key key="leisure" value="bird_hide" />
@@ -6004,7 +6004,7 @@
             <reference ref="sport" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Stadium -->
-        <item name="Sports Centre" icon="ICONPATH:sport_gym.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Sports Centre" icon="" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=sports_centre"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=sports_centre"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=sports_centre"
@@ -6017,15 +6017,15 @@
             <reference ref="sport" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Sports Centre -->
-		<item name="Fitness Centre" icon="presets/sport/fitness_centre.png" type="node,closedway,multipolygon" preset_name_label="true">
-			<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=fitness_centre" />
-			<space />
-			<key key="leisure" value="fitness_centre" />
-			<text key="name" text="Name" />
-			<reference ref="sport" />
-			<reference ref="link_contact_address_payment" />
-			<preset_link preset_name="Building" />
-		</item> <!-- Fitness Centre -->
+	<item name="Fitness Centre" icon="ICONPATH:sport_gym.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+		<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=fitness_centre" />
+		<space />
+		<key key="leisure" value="fitness_centre" />
+		<text key="name" text="Name" />
+		<reference ref="sport" />
+		<reference ref="link_contact_address_payment" />
+		<preset_link preset_name="Building" />
+	</item> <!-- Fitness Centre -->
         <item name="Pitch" icon="ICONPATH:sport_pitch_21033.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=pitch"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=pitch"
