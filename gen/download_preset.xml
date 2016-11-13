@@ -153,7 +153,7 @@
         <text key="operator" text="Operator" />
     </chunk>
     <chunk id="level">
-    	<combo text="Level (ground floor is 0)" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" default="0" values_sort="false" match="none" editable="true" />
+    	<combo text="Level (ground floor 0)" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" default="0" values_sort="false" match="none" editable="true" />
     </chunk>
     <chunk id="name_layer">
         <text key="name" text="Name" />
@@ -5907,7 +5907,7 @@
             <combo key="height" text="Height" values="low,half,full,5,10,15,20" values_context="height" />
             <check key="shelter" text="Shelter" disable_off="true" />
             <check key="hide" text="Hide" text_context="hunting stand" disable_off="true" />
-            <check key="lock" text="Lock" disable_off="true" />
+            <check key="lockable" text="Lockable" disable_off="true" />
         </item> <!-- Hunting Stand -->
         <separator/>
         <item name="Drinking Water" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/food_drinkingtap.png" type="node" preset_name_label="true">
