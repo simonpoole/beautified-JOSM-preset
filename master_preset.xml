@@ -5907,7 +5907,7 @@
             <combo key="height" text="Height" values="low,half,full,5,10,15,20" values_context="height" />
             <check key="shelter" text="Shelter" disable_off="true" />
             <check key="hide" text="Hide" text_context="hunting stand" disable_off="true" />
-            <check key="lock" text="Lock" disable_off="true" />
+            <check key="lockable" text="Lockable" disable_off="true" />
         </item> <!-- Hunting Stand -->
         <separator/>
         <item name="Drinking Water" icon="ICONPATH:food_drinkingtap.ICONTYPE" type="node" preset_name_label="true">
