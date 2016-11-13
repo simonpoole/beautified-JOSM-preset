@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-10-13 00:49+0200\n"
+"POT-Creation-Date: 2016-11-13 23:36+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2013,6 +2013,14 @@ msgstr ""
 msgid "Electrical Appliances"
 msgstr ""
 
+#: master_preset.xml:156(combo:text|key:level)
+msgid "Level (ground floor 0)"
+msgstr ""
+
+#: master_preset.xml:5910(check:text|group:Facilities|preset:Hunting_Stand|key:lockable)
+msgid "Lockable"
+msgstr ""
+
 #: master_preset.xml:1773(combo:display_values|group:Barriers|preset:Bollard|key:bollard)
 msgid "Rising"
 msgstr ""
@@ -3549,10 +3557,6 @@ msgstr ""
 msgid "Zone"
 msgstr ""
 
-#: master_preset.xml:156(combo:text|key:level)
-msgid "Level (ground floor is 0)"
-msgstr ""
-
 #: master_preset.xml:300(combo:display_values|key:access) master_preset.xml:282(combo:display_values|key:access) master_preset.xml:2305(item:name|group:Access_Restrictions|preset:General_access) master_preset.xml:2318(combo:text|group:Access_Restrictions|preset:General_access|key:access)
 msgid "General access"
 msgstr ""
@@ -4249,7 +4253,7 @@ msgstr ""
 msgid "5 tables"
 msgstr ""
 
-#: master_preset.xml:2596(combo:display_values|group:Water|preset:Water|key:water) master_preset.xml:5910(check:text|group:Facilities|preset:Hunting_Stand|key:lock)
+#: master_preset.xml:2596(combo:display_values|group:Water|preset:Water|key:water)
 msgid "Lock"
 msgstr ""
 
@@ -5437,7 +5441,7 @@ msgstr ""
 msgid "Electric"
 msgstr ""
 
-#: master_preset.xml:223(combo:display_values|key:internet_access) master_preset.xml:3946(item:name|group:Airport|preset:Terminal)
+#: master_preset.xml:223(combo:display_values|key:internet_access)
 msgid "Terminal"
 msgstr ""
 
@@ -7803,6 +7807,11 @@ msgstr ""
 #: master_preset.xml:3959(item:name|group:Airport|preset:Gate)
 msgctxt "airport"
 msgid "Gate"
+msgstr ""
+
+#: master_preset.xml:3946(item:name|group:Airport|preset:Terminal)
+msgctxt "airport"
+msgid "Terminal"
 msgstr ""
 
 #: master_preset.xml:1202(combo:display_values|group:Ways|preset:Path|key:trail_visibility)
