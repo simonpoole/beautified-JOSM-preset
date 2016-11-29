@@ -5282,6 +5282,23 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=doctors" />
             <space />
             <key key="amenity" value="doctors" />
+            <optional>
+            	<key key="healthcare" value="doctor" />
+            </optional>
+            <combo key="healthcare:speciality" text="Speciality" values_context="healthcare" values_searchable="true" editable="true" >
+				<list_entry value="general" short_description="General" />
+				<list_entry value="gynaecology" short_description="Gynaecology" />
+				<list_entry value="ophthalmology" short_description="Ophthalmology" />
+				<list_entry value="internal" short_description="Internal" />
+				<list_entry value="orthopaedics" short_description="Orthopaedics" />
+				<list_entry value="paediatrics" short_description="Paediatrics" />
+				<list_entry value="otolaryngology" short_description="Otolaryngology" />
+				<list_entry value="chiropractic" short_description="Chiropractic" />
+				<list_entry value="dermatology" short_description="Dermatology" />
+				<list_entry value="urology" short_description="Urology" />
+				<list_entry value="radiology" short_description="Radiology" />
+				<list_entry value="psychiatry" short_description="Psychiatry" />
+			</combo>
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Doctor's Office -->
