@@ -2610,7 +2610,7 @@
             <key key="natural" value="water" />
             <text key="name" text="Name" />
             <combo key="water" text="Water Body" values="canal,lake,lagoon,oxbow,pond,reservoir,river,lock,wastewater" match="key" 
-                   display_values="Canal,Lake,Lagoon,Oxbow,Pond,Reservioir,River,Lock,Wastewater" values_searchable="true" />
+                   display_values="Canal,Lake,Lagoon,Oxbow,Pond,Reservoir,River,Lock,Wastewater" values_searchable="true" />
             <check key="salt" text="Salt Water" disable_off="true" />
             <check key="intermittent" text="Is the water body intermittent (disappears seasonally)?" disable_off="true" />
             <check key="tidal" text="In the tidal range" disable_off="true" />
