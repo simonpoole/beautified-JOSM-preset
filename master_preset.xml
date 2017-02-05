@@ -859,7 +859,7 @@
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
         </item> <!-- Unclassified -->
-        <item name="Residential" icon="ICONPATH:highway_residential_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
+        <item name="Residential" icon="ICONPATH:highway_residential_sp.ICONTYPE" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=residential"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=residential"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=residential"
