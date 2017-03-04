@@ -297,7 +297,7 @@
     </chunk>
     <chunk id="general_access">
         <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" 
-            display_values="General access,Destination,Delivery,Permissive,Private,Customers,Agricultural,Forestry,No access" values_sort="false" values_searchable="true"  match="none" />
+            display_values="General access,Destination,Delivery,Permissive,Private,Customers,Agricultural,Forestry,No access" values_context="access" values_sort="false" values_searchable="true"  match="none" />
     </chunk>
     <chunk id="name_wikipedia">
         <text key="name" text="Name" />
@@ -2193,7 +2193,8 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" 
+            	   display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" match="key" />
             <combo key="vehicle:conditional" text="All vehicles conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" match="key" />
 	    	<reference ref="additional_access_tags" /> 
@@ -2211,7 +2212,8 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" 
+            	  display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" match="key" />
             <combo key="motor_vehicle:conditional" text="Motor vehicles conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" match="key" />
 	    	<reference ref="additional_access_tags" /> 
@@ -2229,7 +2231,8 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" 
+                  display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" match="key" />
             <combo key="motor_vehicle:conditional" text="Motor vehicles conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" match="key" />
 	    	<reference ref="additional_access_tags" /> 
@@ -2247,10 +2250,12 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" 
+                  display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" match="key" />
             <combo key="motorcar:conditional" text="Motorcar conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" />
-            <combo key="motorcycle" text="Motorcycle" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcycle" text="Motorcycle" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" 
+                  display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" match="key" />
             <combo key="motorcycle:conditional" text="Motorcycle conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" />
 	    <reference ref="additional_access_tags" /> 
@@ -2268,7 +2273,8 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <combo key="motorcar" text="Motorcar" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" 
+                  display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" match="key" />
             <combo key="motorcar:conditional" text="Motorcar conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" />
 	    <reference ref="additional_access_tags" /> 
@@ -2286,7 +2292,8 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <combo key="motorcycle" text="Motorcycle" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="motorcycle" text="Motorcycle" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" 
+                  display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" match="key" />
             <combo key="motorcycle:conditional" text="Motorcycle conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" match="key" />
 	    <reference ref="additional_access_tags" /> 
@@ -2304,7 +2311,8 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <combo key="hgv" text="Heavy Goods Vehicles" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,no" match="key" />
+            <combo key="hgv" text="Heavy Goods Vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" 
+                  display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" match="key" />
 	    	<combo key="hgv:conditional" text="Heavy Goods Vehicles conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" match="key" />
 	    	<text key="maxspeed:hgv" text="Max. speed Heavy Goods Vehicles (km/h)" match="key" />
@@ -2331,7 +2339,8 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access" />
             <space />
-            <combo key="access" text="General access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" match="key" values_searchable="true" />
+            <combo key="access" text="General access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" 
+                  display_values="General access,Destination,Delivery,Permissive,Private,Customers,Agricultural,Forestry,No access" values_context="access" match="key" values_searchable="true" />
 	    	<combo key="access:conditional" text="General access conditional"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" match="key" />
 	    <reference ref="additional_access_tags" /> 
