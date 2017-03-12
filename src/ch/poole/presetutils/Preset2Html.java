@@ -89,7 +89,7 @@ public class Preset2Html {
 					}
 					if (downloadLink != null) {
 						try {
-							pw.write("<div class=\"download\"><a href=\"vespucci://preset/?preseturl=" + URLEncoder.encode(downloadLink, "UTF-8") + "\">Download link for Vespucci</a><br>\n");
+							pw.write("<div class=\"download\"><a href=\"vespucci:/preset?preseturl=" + URLEncoder.encode(downloadLink, "UTF-8") + "\">Download link for Vespucci</a><br>\n");
 						} catch (UnsupportedEncodingException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
