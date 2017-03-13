@@ -42,7 +42,8 @@ public class Preset2Html {
 	HashMap<String,MultiHashMap<String,String>>msgs = new HashMap<String,MultiHashMap<String,String>>();
 	
 	String inputFilename;
-	String downloadLink = null;
+	String vespucciLink = null;
+	String josmLink = null;
 	int groupCount = 0;
 	
 	void parseXML(final InputStream input, final PrintWriter pw)
@@ -87,14 +88,16 @@ public class Preset2Html {
 					} else {
 						pw.write("<h1>" + shortdescription + "</h1>\n");
 					}
-					if (downloadLink != null) {
+					if (vespucciLink != null) {
 						try {
-							pw.write("<div class=\"download\"><a href=\"vespucci:/preset?preseturl=" + URLEncoder.encode(downloadLink, "UTF-8") + "\">Download link for Vespucci</a><br>\n");
+							pw.write("<div class=\"download\"><a href=\"vespucci:/preset?preseturl=" + URLEncoder.encode(vespucciLink, "UTF-8") + "\">Download link for Vespucci</a><br>\n");
 						} catch (UnsupportedEncodingException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
-						pw.write("<div class=\"download\"><a href=\"" + downloadLink + "\">Download link for JOSM</a></div>\n");
+					}
+					if (josmLink != null) {
+						pw.write("<div class=\"download\"><a href=\"" + josmLink + "\">Download link for JOSM</a></div>\n");
 					}
 				} else if ("group".equals(name)) {
 					groupCount++;
@@ -203,8 +206,12 @@ public class Preset2Html {
         });
 	}
 	
-	private void setDownLoadLink(String optionValue) {
-		downloadLink = optionValue;
+	private void setVespucciLink(String optionValue) {
+		vespucciLink = optionValue;
+	}
+	
+	private void setJosmLink(String optionValue) {
+		josmLink = optionValue;
 	}
 	
 	private void setInputFilename(String fn) {
@@ -229,16 +236,22 @@ public class Preset2Html {
 				.withDescription("output .pot file, default: standard out")
 				.create("output");
 		
-		Option downloadLink = OptionBuilder.withArgName("download")
+		Option vespucciLink = OptionBuilder.withArgName("vespucci")
 				.hasArg()
-				.withDescription("download link, default: none")
-				.create("download");
+				.withDescription("download link vespucci format, default: none")
+				.create("vespucci");
+		
+		Option josmLink = OptionBuilder.withArgName("josm")
+				.hasArg()
+				.withDescription("download link JOSM format, default: none")
+				.create("josm");
 		
 		Options options = new Options();
 
 		options.addOption(inputFile);
 		options.addOption(outputFile);
-		options.addOption(downloadLink);
+		options.addOption(vespucciLink);
+		options.addOption(josmLink);
 
 		CommandLineParser parser = new DefaultParser();
 		try {
@@ -254,8 +267,11 @@ public class Preset2Html {
 			    String output = line.getOptionValue("output");
 			    os = new FileOutputStream(output);
 			}
-			if (line.hasOption( "download")) {
-			    p.setDownLoadLink(line.getOptionValue("download"));
+			if (line.hasOption( "vespucci")) {
+			    p.setVespucciLink(line.getOptionValue("vespucci"));
+			}
+			if (line.hasOption( "josm")) {
+			    p.setJosmLink(line.getOptionValue("josm"));
 			}
 		}
 		catch(ParseException exp) {

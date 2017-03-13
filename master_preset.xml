@@ -2218,7 +2218,7 @@
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key" />
 	    	<reference ref="additional_access_tags" /> 
         </item> <!-- Motor vehicle -->
-        <item name="Motor vehicle (CH)" icon="ICONPATH:no_motor_vehicles_CH.ICONTYPE" type="node,way,closedway" preset_name_label="true">
+        <item name="Motor vehicle (CH)" region="CH" icon="ICONPATH:no_motor_vehicles_CH.ICONTYPE" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
@@ -2237,7 +2237,7 @@
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key" />
 	    	<reference ref="additional_access_tags" /> 
         </item> <!-- Motor vehicle CH -->
-        <item name="Motorcar and -cycle (CH)" icon="ICONPATH:no_motor_vehicles.ICONTYPE" type="node,way,closedway" preset_name_label="true">
+        <item name="Motorcar and -cycle (CH)" region="CH" icon="ICONPATH:no_motor_vehicles.ICONTYPE" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access"
                   da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access"
@@ -5128,7 +5128,7 @@
         </item> <!-- Other Place of Worship -->
     </group> <!-- Place of Worship -->
     <group name="Public Building" icon="ICONPATH:amenity_public_building2.ICONTYPE">
-        <item name="Public Building (deprecated)" icon="ICONPATH:amenity_public_building2.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Public Building (deprecated)" deprecated="true" icon="ICONPATH:amenity_public_building2.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=public_building"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=public_building"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=public_building"
@@ -6426,7 +6426,7 @@
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
         </item> <!-- Gymnastics -->
-        <item name="Skating (deprecated)" icon="ICONPATH:sport_iceskating.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Skating (deprecated)" deprecated="true" icon="ICONPATH:sport_iceskating.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=skating"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:sport=skating" />
             <space />
@@ -6847,6 +6847,9 @@
                 <text key="addr:flats" text="Flat numbers" />
             </optional>
         </item> <!-- Entrance -->
+        <item name="Entrance (deprecated)" deprecated="true" icon="ICONPATH:barrier_entrance.ICONTYPE" type="node" preset_name_label="true">
+            <key key="man_made" value="tower" />
+        </item> <!-- Entrance (deprecated) -->
         <item name="Tower" icon="ICONPATH:poi_tower_communications.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=tower"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=tower"

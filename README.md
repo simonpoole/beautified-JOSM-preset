@@ -10,6 +10,7 @@ The scripts
  * vespucci.sh will produce a version (vespucci_preset.xml) of the file suitable for inclusion in a build
  * download.sh wil produce a version with URLs to this site for downloading
  * vespucci_zip.sh will produce a zip (vespucci_zip.zip) suitable for downloading and installing
+ * josm_zip.sh will produce a zip (josm.zip) suitable for downloading and installing with extensions to the JOSM xml schema removed
 
 The scripts are silly don't have any error checking and should be executed form the top level directory. Output is written to the gen directory.
 
