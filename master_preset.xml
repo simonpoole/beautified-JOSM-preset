@@ -6848,7 +6848,7 @@
             </optional>
         </item> <!-- Entrance -->
         <item name="Entrance (deprecated)" deprecated="true" icon="ICONPATH:barrier_entrance.ICONTYPE" type="node" preset_name_label="true">
-            <key key="man_made" value="tower" />
+            <key key="building" value="entrance" />
         </item> <!-- Entrance (deprecated) -->
         <item name="Tower" icon="ICONPATH:poi_tower_communications.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=tower"
