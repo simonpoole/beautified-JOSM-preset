@@ -2,8 +2,7 @@
     <!--empty template suppresses attributes-->
     <xsl:template match="@deprecated" />
     <xsl:template match="@region" />
-    <xsl:template match="@fill" />
-    <xsl:template match="@prefill" />
+    <xsl:template match="@javascript" />
     <!--identity template copies everything forward by default-->
     <xsl:template match="@*|node()">
         <xsl:copy>
