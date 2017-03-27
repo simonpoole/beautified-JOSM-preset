@@ -872,7 +872,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=residential"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=residential" />
             <space />
-            <key key="highway" value="residential" />
+            <key key="highway" value="residential" values_context="Highway" />
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
@@ -955,7 +955,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
         </item> <!-- Pedestrian -->
-        <item name="Service" icon="ICONPATH:highway_service_sp.ICONTYPE" type="way,closedway" preset_name_label="true">
+        <item name="Service" icon="ICONPATH:highway_service_sp.ICONTYPE" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=service"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=service"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=service"
@@ -968,7 +968,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=service"
                   vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=service" />
             <space />
-            <key key="highway" value="service" />
+            <key key="highway" value="service" values_context="Highway" />
             <combo key="service" text="Service way type" values="alley,driveway,parking_aisle,drive-through,emergency_access" 
                 display_values="Alley,Driveway,Parking,Parking ailse,Drive-through,Emergency access" />
             <optional>
@@ -9640,6 +9640,11 @@
             <text key="name" text="Name" />
             <combo key="crop" text="Crop" values="corn,grass,rice,wheat,hop" display_values="Corn,Grass,Rice,Wheat,Hop" editable="true" values_context="crop" />
         </item> <!-- Farmland -->
+        <item name="Farm (deprecated)" icon="ICONPATH:landuse_farm_22120.ICONTYPE" type="closedway,multipolygon" preset_name_label="true" deprecated="true" >
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farm" />
+            <space />
+            <key key="landuse" value="farm" />
+        </item> <!-- Farm (deprecated) -->
         <item name="Meadow" icon="ICONPATH:landuse_landuse_sp.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=meadow"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=meadow"
