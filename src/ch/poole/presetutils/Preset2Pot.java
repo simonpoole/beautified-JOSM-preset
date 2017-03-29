@@ -5,16 +5,12 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
-
-
-
+import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.regex.Pattern;
 
@@ -49,7 +45,7 @@ import org.xml.sax.helpers.AttributeListImpl;
 
 public class Preset2Pot {
 
-	HashMap<String,MultiHashMap<String,String>>msgs = new HashMap<String,MultiHashMap<String,String>>();
+	LinkedHashMap<String,MultiHashMap<String,String>>msgs = new LinkedHashMap<String,MultiHashMap<String,String>>();
 	
 	String inputFilename;
 	MyHandler handler;
@@ -77,12 +73,15 @@ public class Preset2Pot {
     			if (context == null) {
     				context = attr.getValue("name_context");
     			}
+       			if (context == null) {
+    				context = attr.getValue("values_context");
+    			}
     		} else {
     			// special case for list_entry
     			context = mainAttr.getValue("values_context");
     		}
     		if (!msgs.containsKey(context)) {
-    			msgs.put(context,new MultiHashMap<String,String>());
+    			msgs.put(context,new MultiHashMap<String,String>(true));
     		}
     		String key = null;
     		if (keyName != null) {
@@ -106,7 +105,7 @@ public class Preset2Pot {
     			String context = attr.getValue("values_context");
     			
         		if (!msgs.containsKey(context)) {
-        			msgs.put(context,new MultiHashMap<String,String>());
+        			msgs.put(context,new MultiHashMap<String,String>(true));
         		}
         		String key = null;
         		if (keyName != null) {
