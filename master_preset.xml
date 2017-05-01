@@ -9821,7 +9821,7 @@
                   pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:landuse=residential"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=residential" />
             <space />
-            <key key="landuse" value="residential" />
+            <key key="landuse" value="residential" values_context="landuse" />
             <text key="name" text="Name" />
         </item> <!-- Residential Area -->
         <item name="Graveyard" icon="ICONPATH:landuse_grave_yard_12062.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
