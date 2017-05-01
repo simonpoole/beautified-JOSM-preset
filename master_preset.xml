@@ -16,7 +16,8 @@
         <combo key="surface" text="Surface"  
         	values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,mud" 
         	display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Mud"
-        	values_sort="false" />
+        	values_sort="false" 
+        	values_context="surface" />
     </chunk>
     <chunk id="surface_smoothness">
         <reference ref="surface" />
@@ -1790,7 +1791,7 @@
             <reference ref="barrier_4" />
             <optional>
                 <text key="maxwidth" text="Max. width (meters)" length="7" />
-                <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" display_values="Concrete,Metal,Plastic,Stone,Wood" />
+                <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" display_values="Concrete,Metal,Plastic,Stone,Wood" values_context="material" />
             </optional>
         </item> <!-- Bollard -->
         <item name="Cycle Barrier" icon="ICONPATH:barrier_cycle_barrier.ICONTYPE" type="node" preset_name_label="true">
@@ -1882,7 +1883,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=fence" />
             <key key="barrier" value="fence" />
             <optional>
-                <combo key="fence_type" text="Type" values="barbed_wire,chain_link,electric,metal,pole,split_rail,wire,wood"  display_values="Barbed wire,Chain link,Electric,Metal,Pole,Split rail,Wire,Wood"/>
+                <combo key="fence_type" text="Type" values="barbed_wire,chain_link,electric,metal,pole,split_rail,wire,wood"  display_values="Barbed wire,Chain link,Electric,Metal,Pole,Split rail,Wire,Wood" values_context="material" />
                 <text key="height" text="Height (meters)" length="7" />
             </optional>
         </item> <!-- Fence -->
@@ -2056,7 +2057,7 @@
             <key key="barrier" value="stile" />
             <combo key="stile" text="Type" values="ladder,squeezer,stepover" display_values="Ladder,Squeezer,Stepover" />
             <optional>
-                <combo key="material" text="Material" values="metal,stone,wood" />
+                <combo key="material" text="Material" values="metal,stone,wood" values_context="material" />
             </optional>
             <reference ref="barrier_2" />
         </item> <!-- Stile -->
@@ -4718,7 +4719,7 @@
             <space />
             <key key="amenity" value="bbq" />
             <text key="name" text="Name" />
-            <combo key="fuel" text="Fuel" text_context="grill" values="charcoal,electric,wood" />
+            <combo key="fuel" text="Fuel" text_context="grill" values="charcoal,electric,wood" values_context="fuel" />
             <check key="covered" text="Covered" disable_off="true" />
         </item> <!-- Public Grill -->
         <item name="Firepit" icon="ICONPATH:tourist_firepit_21134.ICONTYPE" type="node,closedway" preset_name_label="true">
@@ -5991,7 +5992,7 @@
             <space />
             <key key="amenity" value="bench" />
             <check key="backrest" text="Backrest" disable_off="true" />
-            <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" />
+            <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" values_context="material" />
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
             <combo key="seats" text="Seats count" values="2,3,4,5,6,7,8,9,10" />
         </item> <!-- Bench -->
@@ -7601,7 +7602,7 @@
             <key key="power" value="portal" />
             <text key="height" text="Height (meters)" />
             <combo key="structure" text="Type of construction" values="lattice,tubular,solid" />
-            <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" />
+            <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" values_context="material" />
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="colour"  match="none" editable="true" />
             <reference ref="ref_operator_branch" />
             <combo key="design" text="Portal design" values="portal,portal_two-level,portal_three-level" values_context="power" />
@@ -7621,7 +7622,7 @@
             <key key="power" value="tower" />
             <text key="height" text="Height in meter (m)" />
             <combo key="structure" text="Type of construction" values="lattice,tubular,solid" />
-            <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" />
+            <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" values_context="material" />
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="colour"  match="none" editable="true" />
             <reference ref="ref_operator_branch" />
             <optional>
@@ -7647,7 +7648,7 @@
             <space />
             <key key="power" value="pole" />
             <text key="height" text="Height in meter (m)" />
-            <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" />
+            <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" values_context="material" />
             <check key="location:transition" text="Location transition" disable_off="true" />
             <reference ref="ref_operator_branch" />
         </item> <!-- Pole -->
@@ -7664,7 +7665,7 @@
             <key key="power" value="pole" />
             <label text="Pole Attributes:" />
             <text key="height" text="Height in meter (m)" />
-            <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" />
+            <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" values_context="material" />
             <check key="location:transition" text="Location transition" disable_off="true" />
             <reference ref="ref_operator_branch" />
             <space />
