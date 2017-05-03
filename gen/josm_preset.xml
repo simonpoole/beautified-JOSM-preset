@@ -544,15 +544,6 @@
 	  <list_entry value="psychiatry" short_description="Psychiatry"/>
 	</combo>
   </chunk>
-  <chunk id="additional_building_tags">
-	<optional>
-		<text key="name" text="Name"/>
-		<combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key"/>
-		<text key="height" text="Height (meters)"/>
-		<combo key="min_level" text="Min. level" values="-5,-4,-3,-2,-1,0,1,2,3,4,5" editable="true" values_sort="false" text_context="building" match="key"/>
-		<combo key="max_level" text="Max. level" values="0,1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key"/>
-	</optional>
-  </chunk>
   <chunk id="roof_main">
     <combo key="roof:colour" text="Roof colour" values="black, blue, red, yellow, white, grey" display_values="Black, Blue, Red, Yellow, White, Grey" editable="true" text_context="roof_colour"/>
     <combo key="roof:levels" text="Stories (roof)" values="1,2,3" editable="true" text_context="roof_levels"/>
@@ -564,6 +555,32 @@
       	<list_entry value="across" display_value="Across"/>
     </combo>
   </chunk>
+  <chunk id="additional_building_tags">
+	<optional>
+		<text key="name" text="Name"/>
+		<combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key"/>
+		<text key="height" text="Height (meters)"/>
+		<combo key="min_level" text="Min. level" values="-5,-4,-3,-2,-1,0,1,2,3,4,5" editable="true" values_sort="false" text_context="building" match="key"/>
+		<combo key="max_level" text="Max. level" values="0,1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key"/>
+		<combo key="roof:type" text="Roof type" values_searchable="true" editable="false" values_context="building">
+	  		<list_entry value="dome" short_description="Dome"/>
+	  		<list_entry value="flat" short_description="Flat"/>
+	  		<list_entry value="gabled" short_description="Gabled"/>
+	  		<list_entry value="gambrel" short_description="Gambrel"/>
+	  		<list_entry value="half-hipped" short_description="Half-hipped"/>
+	  		<list_entry value="hipped" short_description="Hipped"/>
+	  		<list_entry value="mansard" short_description="Mansard"/>
+	  		<list_entry value="onion" short_description="Onion"/>
+	  		<list_entry value="pyramdial" short_description="Pyramdia&#xF6;"/>
+	  		<list_entry value="round" short_description="Round"/>
+	  		<list_entry value="saltbox" short_description="Saltbox"/>
+	  		<list_entry value="skillion" short_description="Skillion"/>
+	  	</combo>
+		<reference ref="roof_orientation"/>
+		<reference ref="roof_main"/>
+	</optional>
+  </chunk>
+
   <!--  Groups -->
   <group name="Highways" icon="highway_highway_sp.png">
     <group name="Streets" icon="highway_highway_sp.png">
@@ -4706,83 +4723,83 @@
             <text key="min_height" text="Skipped height (meters)"/>
         </item> <!-- Building part -->
 		<group name="Roof type" icon="hipped.png">
-			<item name="Dome" icon="dome.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Dome" icon="dome.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="dome"/>
+				<key key="roof:type" value="dome" values_context="building"/>
 				<reference ref="roof_main"/>
 			</item> <!-- Roof type dome -->
-			<item name="Flat" icon="flat.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Flat" icon="flat.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="flat"/>
+				<key key="roof:type" value="flat" values_context="building"/>
 				<reference ref="roof_main"/>
 			</item> <!-- Roof type flat -->
-			<item name="Gabled" icon="gabled.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Gabled" icon="gabled.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="gabled"/>
+				<key key="roof:type" value="gabled" values_context="building"/>
 				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
+				<reference ref="roof_orientation" values_context="building"/>
 			</item> <!-- Roof type gabled -->
-			<item name="Gambrel" icon="gambrel.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Gambrel" icon="gambrel.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="gambrel"/>
+				<key key="roof:type" value="gambrel" values_context="building"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type gambrel -->
-			<item name="Half-hipped" icon="half-hipped.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Half-hipped" icon="half-hipped.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="half-hipped"/>
+				<key key="roof:type" value="half-hipped" values_context="building"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type half-hipped -->
-			<item name="Hipped" icon="hipped.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Hipped" icon="hipped.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="hipped"/>
+				<key key="roof:type" value="hipped" values_context="building"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type hipped -->
-			<item name="Mansard" icon="mansard.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Mansard" icon="mansard.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="mansard"/>
+				<key key="roof:type" value="mansard" values_context="building"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type mansard -->
-			<item name="Onion" icon="onion.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Onion" icon="onion.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="onion"/>
+				<key key="roof:type" value="onion" values_context="building"/>
 				<reference ref="roof_main"/>
 			</item> <!-- Roof type onion -->
-			<item name="Pyramidal" icon="pyramidal.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Pyramidal" icon="pyramidal.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="pyramidal"/>
+				<key key="roof:type" value="pyramidal" values_context="building"/>
 				<reference ref="roof_main"/>
 			</item> <!-- Roof type pyramidal -->
-			<item name="Round" icon="round.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Round" icon="round.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="round"/>
+				<key key="roof:type" value="round" values_context="building"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type round -->
-			<item name="Saltbox" icon="saltbox.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Saltbox" icon="saltbox.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="saltbox"/>
+				<key key="roof:type" value="saltbox" values_context="building"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type saltbox -->
-			<item name="Skillion" icon="skillion.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+			<item name="Skillion" icon="skillion.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:type" value="skillion"/>
+				<key key="roof:type" value="skillion" values_context="building"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type skillion -->
