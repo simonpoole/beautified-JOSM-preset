@@ -6,7 +6,7 @@ BASEFOLDER=`pwd`;
 popd  > /dev/null
 BASEFOLDER=`dirname $BASEFOLDER`
 
-SIZES=( 48 )
+SIZES=( 56 )
 SVGFOLDER=${BASEFOLDER}/svg-roofs/
 OUTPUTFOLDER=${BASEFOLDER}/png/
 
