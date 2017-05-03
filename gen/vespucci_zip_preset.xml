@@ -574,15 +574,18 @@
 	</optional>
   </chunk>
   <chunk id="roof_main">
-    <combo key="roof:colour" text="Roof colour" values="black, blue, red, yellow, white, grey" editable="true" text_context="roof_colour" />
-    <combo key="roof:levels" text="Number of stories (roof)" values="1,2,3" editable="true" text_context="roof_levels" />
-    <combo key="roof:material" text="Roof material" values="acrylic_glass,concrete,copper,eternit,glass,grass,gravel,metal,plants,roof_tiles,shadecloth,slate,stone,tar_paper,thatch,wood" editable="true" text_context="roof_material" values_searchable="true" />
+    <combo key="roof:colour" text="Roof colour" values="black, blue, red, yellow, white, grey" 
+    	display_values="Black, Blue, Red, Yellow, White, Grey"
+    	editable="true" text_context="roof_colour" />
+    <combo key="roof:levels" text="Stories (roof)" values="1,2,3" editable="true" text_context="roof_levels" />
+    <combo key="roof:material" text="Roof material" values="acrylic_glass,concrete,copper,eternit,glass,grass,gravel,metal,plants,roof_tiles,shadecloth,slate,stone,tar_paper,thatch,wood" 
+    	display_values="Acrylic glass,Concrete,Copper,Eternit,Glass,Grass,Gravel,Metal,Plants,Roof tiles,Shadecloth,Slate,Stone,Tar paper,Thatch,Wood"
+    	editable="true" text_context="roof_material" values_searchable="true" />
   </chunk>
-  <!-- separated roof:orientation to handle roof types without orientation -->
   <chunk id="roof_orientation">
-    <combo key="roof:orientation" text="Roof orientation" match="key" >
-    <list_entry value="along" display_value="Along" />
-    <list_entry value="across" display_value="Across"  />
+    <combo key="roof:orientation" text="Roof orientation" default="along" editable="false" match="key" >
+    	<list_entry value="along" display_value="Along" />
+      	<list_entry value="across" display_value="Across"  />
     </combo>
   </chunk>
   <!--  Groups -->
