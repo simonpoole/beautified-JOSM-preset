@@ -10,4 +10,5 @@ ${BASEFOLDER}/tools/generatepng.sh svg-osm-icons
 ${BASEFOLDER}/tools/generatepng.sh svg-sjjb
 ${BASEFOLDER}/tools/generatepng.sh svg-osmic
 ${BASEFOLDER}/tools/generatepng-signs.sh
+${BASEFOLDER}/tools/generatepng-roofs.sh
 
