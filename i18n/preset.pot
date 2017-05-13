@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-05-13 13:18+0200\n"
+"POT-Creation-Date: 2017-05-13 13:38+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1362,7 +1362,7 @@ msgid "Concrete"
 msgstr ""
 
 #: master_preset.xml:2459(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:forward:conditional) master_preset.xml:2462(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:backwardward:conditional)
-msgid "Condifitonal maximum speed for heavy goods vehicles in way direction specified in km/h"
+msgid "Condiditonal maximum speed for heavy goods vehicles in way direction specified in km/h"
 msgstr ""
 
 #: master_preset.xml:50(combo:long_text|key:maxspeed:forward:conditional)
@@ -3093,12 +3093,12 @@ msgstr ""
 msgid "Lanes"
 msgstr ""
 
-#: master_preset.xml:41(combo:text|key:lanes:forward)
-msgid "Lanes in way direction"
+#: master_preset.xml:42(combo:text|key:lanes:backward)
+msgid "Lanes ←"
 msgstr ""
 
-#: master_preset.xml:42(combo:text|key:lanes:backward)
-msgid "Lanes opposed to way direction"
+#: master_preset.xml:41(combo:text|key:lanes:forward)
+msgid "Lanes →"
 msgstr ""
 
 #: master_preset.xml:2849(label:text|group:Water|preset:Mud)
@@ -3943,6 +3943,14 @@ msgstr ""
 
 #: master_preset.xml:357(combo:text|key:circuits)
 msgid "Number of circuits"
+msgstr ""
+
+#: master_preset.xml:41(combo:long_text|key:lanes:forward)
+msgid "Number of lanes in way direction"
+msgstr ""
+
+#: master_preset.xml:42(combo:long_text|key:lanes:backward)
+msgid "Number of lanes opposite way direction"
 msgstr ""
 
 #: master_preset.xml:3301(text:text|group:Aerialway|preset:Cable_Car|key:aerialway:occupancy)
