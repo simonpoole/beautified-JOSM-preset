@@ -3,6 +3,7 @@
     <xsl:template match="@deprecated" />
     <xsl:template match="@region" />
     <xsl:template match="@javascript" />
+    <xsl:template match="@long_text" />
     <!--identity template copies everything forward by default-->
     <xsl:template match="@*|node()">
         <xsl:copy>

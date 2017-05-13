@@ -150,28 +150,34 @@ public class Preset2Pot {
         		addMsg(name, attr, null, "text", null);
         	} else if ("key".equals(name)) {
         		addMsg(name, attr, "key", "text", null);
+        		addMsg(name, attr, "key", "long_text", null);
         		mainAttr = null;
         	} else if ("text".equals(name)) {
         		addMsg(name, attr, "key", "text", null);
+        		addMsg(name, attr, "key", "long_text", null);
         		mainAttr = null;
         	} else if ("link".equals(name)) {
         	} else if ("check".equals(name)) {
         		addMsg(name, attr, "key", "text", null);
+        		addMsg(name, attr, "key", "long_text", null);
         		mainAttr = null;
         	} else if ("combo".equals(name)) {
         		addMsg(name, attr, "key", "text", null);
+        		addMsg(name, attr, "key", "long_text", null);
         		String delimiter = attr.getValue("delimiter");
         		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ",");
         		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ",");
         		mainAttr = new AttributeListImpl(attr);
         	} else if ("multiselect".equals(name)) {
         		addMsg(name, attr, "key", "text", null);
+        		addMsg(name, attr, "key", "long_text", null);
         		String delimiter = attr.getValue("delimiter");
         		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ";");
         		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ";");
         		mainAttr = new AttributeListImpl(attr);
         	} else if ("role".equals(name)) {
         		addMsg(name, attr, "key", "text", null);
+        		addMsg(name, attr, "key", "long_text", null);
         	} else if ("reference".equals(name)) {
         	} else if ("list_entry".equals(name)) {
         		addMsg(name, attr, "value", "short_description", mainAttr);
