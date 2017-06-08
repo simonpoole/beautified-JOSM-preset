@@ -7016,7 +7016,7 @@
                  before the PropertyEditor was started, tags are the current values, by removing the key at the 
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
         	<text key="automatic_check_date" text="Automatic check_date generation"/>	
-		</item> <!-- check_date example update existing -->
+		</item> <!-- Add or update check date -->
     </group> <!-- Annotation -->
     <group name="Relations" icon="osm_relation_sp.png">
         <item name="Multipolygon" icon="presets/multipolygon.png" type="relation,multipolygon" preset_name_label="true">

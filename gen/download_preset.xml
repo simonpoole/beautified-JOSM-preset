@@ -11257,7 +11257,7 @@ function addCheckDate(key) {
   v.add(df.format(new java.util.Date()));
   tags.put(key,v);
 }
-// update exsting keys
+
 for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {
   if (key.startsWith('check_date:')) {
     addCheckDate(key);
@@ -11266,7 +11266,7 @@ for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {
 addCheckDate('check_date');
 tags.remove('automatic_check_date');"
         	text="Automatic check_date generation"/>	
-		</item> <!-- check_date example update existing -->
+		</item> <!-- Add or update check date -->
     </group> <!-- Annotation -->
     <group name="Relations" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_relation_sp.png">
         <item name="Multipolygon" icon="presets/multipolygon.png" type="relation,multipolygon" preset_name_label="true">
