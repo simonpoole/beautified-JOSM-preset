@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-05-16 12:30+0200\n"
+"POT-Creation-Date: 2017-06-08 14:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,7 +193,7 @@ msgstr ""
 msgid "Accommodation"
 msgstr ""
 
-#: master_preset.xml:12520(item:name|group:Offices|preset:Accountant)
+#: master_preset.xml:12542(item:name|group:Offices|preset:Accountant)
 msgid "Accountant"
 msgstr ""
 
@@ -207,6 +207,10 @@ msgstr ""
 
 #: master_preset.xml:574(combo:display_values|key:roof:material)
 msgid "Acrylic glass"
+msgstr ""
+
+#: master_preset.xml:11248(item:name|group:Annotation|preset:Add_or_update_check_date)
+msgid "Add or update check date"
 msgstr ""
 
 #: master_preset.xml:11090(item:name|group:Addresses_and_Contact|preset:Address)
@@ -225,15 +229,15 @@ msgstr ""
 msgid "Adit"
 msgstr ""
 
-#: master_preset.xml:11294(role:text|group:Relations|preset:Boundary|key:admin_centre)
+#: master_preset.xml:11316(role:text|group:Relations|preset:Boundary|key:admin_centre)
 msgid "Administration centre"
 msgstr ""
 
-#: master_preset.xml:11286(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:12370(item:name|group:Offices|preset:Administrative) master_preset.xml:9958(item:name|group:Boundaries|preset:Administrative)
+#: master_preset.xml:11308(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:12392(item:name|group:Offices|preset:Administrative) master_preset.xml:9958(item:name|group:Boundaries|preset:Administrative)
 msgid "Administrative"
 msgstr ""
 
-#: master_preset.xml:11288(combo:text|group:Relations|preset:Boundary|key:admin_level) master_preset.xml:9970(combo:text|group:Boundaries|preset:Administrative|key:admin_level)
+#: master_preset.xml:11310(combo:text|group:Relations|preset:Boundary|key:admin_level) master_preset.xml:9970(combo:text|group:Boundaries|preset:Administrative|key:admin_level)
 msgid "Administrative level"
 msgstr ""
 
@@ -245,7 +249,7 @@ msgstr ""
 msgid "Advertising Column"
 msgstr ""
 
-#: master_preset.xml:12382(item:name|group:Offices|preset:Advertising_agency)
+#: master_preset.xml:12404(item:name|group:Offices|preset:Advertising_agency)
 msgid "Advertising agency"
 msgstr ""
 
@@ -269,7 +273,7 @@ msgstr ""
 msgid "Agricultural"
 msgstr ""
 
-#: master_preset.xml:11736(item:name|group:Crafts|preset:Agricultural_engines)
+#: master_preset.xml:11758(item:name|group:Crafts|preset:Agricultural_engines)
 msgid "Agricultural engines"
 msgstr ""
 
@@ -321,7 +325,7 @@ msgstr ""
 msgid "Alphabetic"
 msgstr ""
 
-#: master_preset.xml:11509(combo:display_values|group:Routes|preset:Ski_Route|key:piste:type)
+#: master_preset.xml:11531(combo:display_values|group:Routes|preset:Ski_Route|key:piste:type)
 msgid "Alpine"
 msgstr ""
 
@@ -421,7 +425,7 @@ msgstr ""
 msgid "Archery"
 msgstr ""
 
-#: master_preset.xml:12533(item:name|group:Offices|preset:Architect)
+#: master_preset.xml:12555(item:name|group:Offices|preset:Architect)
 msgid "Architect"
 msgstr ""
 
@@ -461,11 +465,11 @@ msgstr ""
 msgid "Assisted Living"
 msgstr ""
 
-#: master_preset.xml:11613(item:name|preset:Associated_Street)
+#: master_preset.xml:11635(item:name|preset:Associated_Street)
 msgid "Associated Street"
 msgstr ""
 
-#: master_preset.xml:12546(item:name|group:Offices|preset:Association)
+#: master_preset.xml:12568(item:name|group:Offices|preset:Association)
 msgid "Association"
 msgstr ""
 
@@ -499,6 +503,10 @@ msgstr ""
 
 #: master_preset.xml:9186(check:text|group:Cash|preset:Bank|key:atm) master_preset.xml:9203(item:name|group:Cash|preset:Automated_Teller_Machine)
 msgid "Automated Teller Machine"
+msgstr ""
+
+#: master_preset.xml:11268(text:text|group:Annotation|preset:Add_or_update_check_date|key:automatic_check_date)
+msgid "Automatic check_date generation"
 msgstr ""
 
 #: master_preset.xml:224(combo:display_values|key:internet_access) master_preset.xml:260(list_entry:short_description|value:yes)
@@ -597,7 +605,7 @@ msgstr ""
 msgid "Basin"
 msgstr ""
 
-#: master_preset.xml:11744(item:name|group:Crafts|preset:Basket_maker)
+#: master_preset.xml:11766(item:name|group:Crafts|preset:Basket_maker)
 msgid "Basket maker"
 msgstr ""
 
@@ -645,7 +653,7 @@ msgstr ""
 msgid "Beds"
 msgstr ""
 
-#: master_preset.xml:11752(item:name|group:Crafts|preset:Beekeeper)
+#: master_preset.xml:11774(item:name|group:Crafts|preset:Beekeeper)
 msgid "Beekeeper"
 msgstr ""
 
@@ -665,7 +673,7 @@ msgstr ""
 msgid "Bi-directional roads"
 msgstr ""
 
-#: master_preset.xml:11345(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:123(check:text|key:bicycle) master_preset.xml:132(check:text|key:bicycle) master_preset.xml:140(check:text|key:bicycle) master_preset.xml:1422(combo:text|group:Ways|preset:Dedicated_Footway|key:bicycle) master_preset.xml:2520(combo:text|group:Access_Restrictions|preset:Other_mode_restrictions|key:bicycle) master_preset.xml:3555(check:text|group:Car|preset:Charging_Station|key:bicycle) master_preset.xml:3740(group:name|group:Bicycle) master_preset.xml:3995(check:text|group:Public_Transport|preset:Subway_Entrance|key:bicycle)
+#: master_preset.xml:11367(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:123(check:text|key:bicycle) master_preset.xml:132(check:text|key:bicycle) master_preset.xml:140(check:text|key:bicycle) master_preset.xml:1422(combo:text|group:Ways|preset:Dedicated_Footway|key:bicycle) master_preset.xml:2520(combo:text|group:Access_Restrictions|preset:Other_mode_restrictions|key:bicycle) master_preset.xml:3555(check:text|group:Car|preset:Charging_Station|key:bicycle) master_preset.xml:3740(group:name|group:Bicycle) master_preset.xml:3995(check:text|group:Public_Transport|preset:Subway_Entrance|key:bicycle)
 msgid "Bicycle"
 msgstr ""
 
@@ -673,7 +681,7 @@ msgstr ""
 msgid "Bicycle Road"
 msgstr ""
 
-#: master_preset.xml:11379(item:name|group:Routes|preset:Bicycle_Route)
+#: master_preset.xml:11401(item:name|group:Routes|preset:Bicycle_Route)
 msgid "Bicycle Route"
 msgstr ""
 
@@ -745,7 +753,7 @@ msgstr ""
 msgid "Black"
 msgstr ""
 
-#: master_preset.xml:11767(item:name|group:Crafts|preset:Blacksmith)
+#: master_preset.xml:11789(item:name|group:Crafts|preset:Blacksmith)
 msgid "Blacksmith"
 msgstr ""
 
@@ -765,7 +773,7 @@ msgstr ""
 msgid "Boat"
 msgstr ""
 
-#: master_preset.xml:11779(item:name|group:Crafts|preset:Boatbuilder)
+#: master_preset.xml:11801(item:name|group:Crafts|preset:Boatbuilder)
 msgid "Boatbuilder"
 msgstr ""
 
@@ -813,7 +821,7 @@ msgstr ""
 msgid "Book Store"
 msgstr ""
 
-#: master_preset.xml:11787(item:name|group:Crafts|preset:Bookbinder)
+#: master_preset.xml:11809(item:name|group:Crafts|preset:Bookbinder)
 msgid "Bookbinder"
 msgstr ""
 
@@ -841,7 +849,7 @@ msgstr ""
 msgid "Boundaries"
 msgstr ""
 
-#: master_preset.xml:11272(item:name|group:Relations|preset:Boundary)
+#: master_preset.xml:11294(item:name|group:Relations|preset:Boundary)
 msgid "Boundary"
 msgstr ""
 
@@ -849,7 +857,7 @@ msgstr ""
 msgid "Boundary Stone"
 msgstr ""
 
-#: master_preset.xml:11286(combo:text|group:Relations|preset:Boundary|key:boundary)
+#: master_preset.xml:11308(combo:text|group:Relations|preset:Boundary|key:boundary)
 msgid "Boundary type"
 msgstr ""
 
@@ -869,11 +877,11 @@ msgstr ""
 msgid "Breakwater"
 msgstr ""
 
-#: master_preset.xml:11795(item:name|group:Crafts|preset:Brewery)
+#: master_preset.xml:11817(item:name|group:Crafts|preset:Brewery)
 msgid "Brewery"
 msgstr ""
 
-#: master_preset.xml:11701(item:name|preset:Bridge) master_preset.xml:66(check:text|key:bridge) master_preset.xml:660(check:text|group:Streets|preset:Motorway|key:bridge) master_preset.xml:691(check:text|group:Streets|preset:Motorway_Link|key:bridge) master_preset.xml:727(check:text|group:Streets|preset:Trunk|key:bridge) master_preset.xml:755(check:text|group:Streets|preset:Trunk_Link|key:bridge) master_preset.xml:7993(item:name|group:Bridges|preset:Bridge) master_preset.xml:8007(combo:text|group:Bridges|preset:Bridge|key:bridge)
+#: master_preset.xml:11723(item:name|preset:Bridge) master_preset.xml:66(check:text|key:bridge) master_preset.xml:660(check:text|group:Streets|preset:Motorway|key:bridge) master_preset.xml:691(check:text|group:Streets|preset:Motorway_Link|key:bridge) master_preset.xml:727(check:text|group:Streets|preset:Trunk|key:bridge) master_preset.xml:755(check:text|group:Streets|preset:Trunk_Link|key:bridge) master_preset.xml:7993(item:name|group:Bridges|preset:Bridge) master_preset.xml:8007(combo:text|group:Bridges|preset:Bridge|key:bridge)
 msgid "Bridge"
 msgstr ""
 
@@ -913,11 +921,11 @@ msgstr ""
 msgid "Buffer Stop"
 msgstr ""
 
-#: master_preset.xml:11808(item:name|group:Crafts|preset:Builder)
+#: master_preset.xml:11830(item:name|group:Crafts|preset:Builder)
 msgid "Builder"
 msgstr ""
 
-#: master_preset.xml:11298(item:name|group:Relations|preset:Building) master_preset.xml:3976(check:text|group:Public_Transport|preset:Station|key:building) master_preset.xml:7370(item:name|group:Buildings|preset:Building)
+#: master_preset.xml:11320(item:name|group:Relations|preset:Building) master_preset.xml:3976(check:text|group:Public_Transport|preset:Station|key:building) master_preset.xml:7370(item:name|group:Buildings|preset:Building)
 msgid "Building"
 msgstr ""
 
@@ -925,7 +933,7 @@ msgstr ""
 msgid "Building Passage"
 msgstr ""
 
-#: master_preset.xml:11313(role:text|group:Relations|preset:Building|key:level_-?\d+)
+#: master_preset.xml:11335(role:text|group:Relations|preset:Building|key:level_-?\d+)
 msgid "Building level"
 msgstr ""
 
@@ -1021,7 +1029,7 @@ msgstr ""
 msgid "Cabaret"
 msgstr ""
 
-#: master_preset.xml:11816(item:name|group:Crafts|preset:Cabinet_maker)
+#: master_preset.xml:11838(item:name|group:Crafts|preset:Cabinet_maker)
 msgid "Cabinet maker"
 msgstr ""
 
@@ -1045,7 +1053,7 @@ msgstr ""
 msgid "Camogie"
 msgstr ""
 
-#: master_preset.xml:12555(item:name|group:Offices|preset:Camping)
+#: master_preset.xml:12577(item:name|group:Offices|preset:Camping)
 msgid "Camping"
 msgstr ""
 
@@ -1057,7 +1065,7 @@ msgstr ""
 msgid "Canadian Football"
 msgstr ""
 
-#: master_preset.xml:11682(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2607(item:name|group:Water|preset:Canal) master_preset.xml:2776(combo:display_values|group:Water|preset:Water|key:water)
+#: master_preset.xml:11704(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2607(item:name|group:Water|preset:Canal) master_preset.xml:2776(combo:display_values|group:Water|preset:Water|key:water)
 msgid "Canal"
 msgstr ""
 
@@ -1081,7 +1089,7 @@ msgstr ""
 msgid "Capacity (overall)"
 msgstr ""
 
-#: master_preset.xml:11345(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:3418(group:name|group:Car) master_preset.xml:3557(check:text|group:Car|preset:Charging_Station|key:car)
+#: master_preset.xml:11367(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:3418(group:name|group:Car) master_preset.xml:3557(check:text|group:Car|preset:Charging_Station|key:car)
 msgid "Car"
 msgstr ""
 
@@ -1101,11 +1109,11 @@ msgstr ""
 msgid "Cardboard"
 msgstr ""
 
-#: master_preset.xml:11824(item:name|group:Crafts|preset:Carpenter)
+#: master_preset.xml:11846(item:name|group:Crafts|preset:Carpenter)
 msgid "Carpenter"
 msgstr ""
 
-#: master_preset.xml:11836(item:name|group:Crafts|preset:Carpet_layer)
+#: master_preset.xml:11858(item:name|group:Crafts|preset:Carpet_layer)
 msgid "Carpet layer"
 msgstr ""
 
@@ -1129,7 +1137,7 @@ msgstr ""
 msgid "Castle"
 msgstr ""
 
-#: master_preset.xml:11844(item:name|group:Crafts|preset:Caterer)
+#: master_preset.xml:11866(item:name|group:Crafts|preset:Caterer)
 msgid "Caterer"
 msgstr ""
 
@@ -1177,7 +1185,7 @@ msgstr ""
 msgid "Charging Station"
 msgstr ""
 
-#: master_preset.xml:11366(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
+#: master_preset.xml:11388(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
 msgid "Check"
 msgstr ""
 
@@ -1257,7 +1265,7 @@ msgstr ""
 msgid "City name"
 msgstr ""
 
-#: master_preset.xml:11855(item:name|group:Crafts|preset:Cleaning)
+#: master_preset.xml:11877(item:name|group:Crafts|preset:Cleaning)
 msgid "Cleaning"
 msgstr ""
 
@@ -1277,7 +1285,7 @@ msgstr ""
 msgid "Clock"
 msgstr ""
 
-#: master_preset.xml:11863(item:name|group:Crafts|preset:Clockmaker)
+#: master_preset.xml:11885(item:name|group:Crafts|preset:Clockmaker)
 msgid "Clockmaker"
 msgstr ""
 
@@ -1317,15 +1325,15 @@ msgstr ""
 msgid "Colonnade"
 msgstr ""
 
-#: master_preset.xml:11660(text:text|preset:Destination_Sign|key:colour:back)
+#: master_preset.xml:11682(text:text|preset:Destination_Sign|key:colour:back)
 msgid "Colour of background"
 msgstr ""
 
-#: master_preset.xml:11662(text:text|preset:Destination_Sign|key:colour:arrow)
+#: master_preset.xml:11684(text:text|preset:Destination_Sign|key:colour:arrow)
 msgid "Colour of border/arrow"
 msgstr ""
 
-#: master_preset.xml:11661(text:text|preset:Destination_Sign|key:colour:text)
+#: master_preset.xml:11683(text:text|preset:Destination_Sign|key:colour:text)
 msgid "Colour of text"
 msgstr ""
 
@@ -1353,7 +1361,7 @@ msgstr ""
 msgid "Community Centre"
 msgstr ""
 
-#: master_preset.xml:12563(item:name|group:Offices|preset:Company)
+#: master_preset.xml:12585(item:name|group:Offices|preset:Company)
 msgid "Company"
 msgstr ""
 
@@ -1409,11 +1417,11 @@ msgstr ""
 msgid "Condoms"
 msgstr ""
 
-#: master_preset.xml:12240(item:name|group:Crafts|preset:Confectionery) master_preset.xml:8776(item:name|group:Food|preset:Confectionery)
+#: master_preset.xml:12262(item:name|group:Crafts|preset:Confectionery) master_preset.xml:8776(item:name|group:Food|preset:Confectionery)
 msgid "Confectionery"
 msgstr ""
 
-#: master_preset.xml:1107(item:name|group:Streets|preset:Construction) master_preset.xml:12248(item:name|group:Crafts|preset:Construction)
+#: master_preset.xml:1107(item:name|group:Streets|preset:Construction) master_preset.xml:12270(item:name|group:Crafts|preset:Construction)
 msgid "Construction"
 msgstr ""
 
@@ -1421,7 +1429,7 @@ msgstr ""
 msgid "Construction Area"
 msgstr ""
 
-#: master_preset.xml:12648(item:name|group:Offices|preset:Consulting)
+#: master_preset.xml:12670(item:name|group:Offices|preset:Consulting)
 msgid "Consulting"
 msgstr ""
 
@@ -1445,7 +1453,7 @@ msgstr ""
 msgid "Cooking oil"
 msgstr ""
 
-#: master_preset.xml:12656(item:name|group:Offices|preset:Cooperative)
+#: master_preset.xml:12678(item:name|group:Offices|preset:Cooperative)
 msgid "Cooperative"
 msgstr ""
 
@@ -1497,7 +1505,7 @@ msgstr ""
 msgid "Covered Reservoir"
 msgstr ""
 
-#: master_preset.xml:11735(group:name|group:Crafts)
+#: master_preset.xml:11757(group:name|group:Crafts)
 msgid "Crafts"
 msgstr ""
 
@@ -1673,11 +1681,11 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: master_preset.xml:11545(text:text|group:Routes|preset:Detour_Route|key:destination) master_preset.xml:654(text:text|group:Streets|preset:Motorway|key:destination) master_preset.xml:685(text:text|group:Streets|preset:Motorway_Link|key:destination) master_preset.xml:720(text:text|group:Streets|preset:Trunk|key:destination) master_preset.xml:748(text:text|group:Streets|preset:Trunk_Link|key:destination)
+#: master_preset.xml:11567(text:text|group:Routes|preset:Detour_Route|key:destination) master_preset.xml:654(text:text|group:Streets|preset:Motorway|key:destination) master_preset.xml:685(text:text|group:Streets|preset:Motorway_Link|key:destination) master_preset.xml:720(text:text|group:Streets|preset:Trunk|key:destination) master_preset.xml:748(text:text|group:Streets|preset:Trunk_Link|key:destination)
 msgid "Destination"
 msgstr ""
 
-#: master_preset.xml:11646(item:name|preset:Destination_Sign)
+#: master_preset.xml:11668(item:name|preset:Destination_Sign)
 msgid "Destination Sign"
 msgstr ""
 
@@ -1685,7 +1693,7 @@ msgstr ""
 msgid "Destination reference"
 msgstr ""
 
-#: master_preset.xml:11657(text:text|preset:Destination_Sign|key:destination)
+#: master_preset.xml:11679(text:text|preset:Destination_Sign|key:destination)
 msgid "Destination written on sign (w/o distance)"
 msgstr ""
 
@@ -1709,7 +1717,7 @@ msgstr ""
 msgid "Detailed description"
 msgstr ""
 
-#: master_preset.xml:11535(item:name|group:Routes|preset:Detour_Route)
+#: master_preset.xml:11557(item:name|group:Routes|preset:Detour_Route)
 msgid "Detour Route"
 msgstr ""
 
@@ -1781,11 +1789,11 @@ msgstr ""
 msgid "Distance (kilometers)"
 msgstr ""
 
-#: master_preset.xml:11590(text:text|group:Routes|preset:Road_Route|key:distance) master_preset.xml:11658(text:text|preset:Destination_Sign|key:distance) master_preset.xml:316(text:text|key:distance)
+#: master_preset.xml:11612(text:text|group:Routes|preset:Road_Route|key:distance) master_preset.xml:11680(text:text|preset:Destination_Sign|key:distance) master_preset.xml:316(text:text|key:distance)
 msgid "Distance (km)"
 msgstr ""
 
-#: master_preset.xml:11871(item:name|group:Crafts|preset:Distillery)
+#: master_preset.xml:11893(item:name|group:Crafts|preset:Distillery)
 msgid "Distillery"
 msgstr ""
 
@@ -1801,7 +1809,7 @@ msgstr ""
 msgid "Disused Rail"
 msgstr ""
 
-#: master_preset.xml:11682(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2550(item:name|group:Water|preset:Ditch)
+#: master_preset.xml:11704(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2550(item:name|group:Water|preset:Ditch)
 msgid "Ditch"
 msgstr ""
 
@@ -1837,7 +1845,7 @@ msgstr ""
 msgid "Down"
 msgstr ""
 
-#: master_preset.xml:11487(combo:display_values|group:Routes|preset:Piste_Route|key:piste:type)
+#: master_preset.xml:11509(combo:display_values|group:Routes|preset:Piste_Route|key:piste:type)
 msgid "Downhill"
 msgstr ""
 
@@ -1849,7 +1857,7 @@ msgstr ""
 msgid "Drag lift (generic)"
 msgstr ""
 
-#: master_preset.xml:11682(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2534(item:name|group:Water|preset:Drain)
+#: master_preset.xml:11704(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2534(item:name|group:Water|preset:Drain)
 msgid "Drain"
 msgstr ""
 
@@ -1857,7 +1865,7 @@ msgstr ""
 msgid "Drama"
 msgstr ""
 
-#: master_preset.xml:12336(item:name|group:Crafts|preset:Dressmaker)
+#: master_preset.xml:12358(item:name|group:Crafts|preset:Dressmaker)
 msgid "Dressmaker"
 msgstr ""
 
@@ -1921,7 +1929,7 @@ msgstr ""
 msgid "Education"
 msgstr ""
 
-#: master_preset.xml:12575(item:name|group:Offices|preset:Educational_institution)
+#: master_preset.xml:12597(item:name|group:Offices|preset:Educational_institution)
 msgid "Educational institution"
 msgstr ""
 
@@ -1933,7 +1941,7 @@ msgstr ""
 msgid "Electrical Appliances"
 msgstr ""
 
-#: master_preset.xml:11879(item:name|group:Crafts|preset:Electrician)
+#: master_preset.xml:11901(item:name|group:Crafts|preset:Electrician)
 msgid "Electrician"
 msgstr ""
 
@@ -1945,7 +1953,7 @@ msgstr ""
 msgid "Electronic purses and Charge cards"
 msgstr ""
 
-#: master_preset.xml:12256(item:name|group:Crafts|preset:Electronics) master_preset.xml:9084(item:name|group:Electronic|preset:Electronics)
+#: master_preset.xml:12278(item:name|group:Crafts|preset:Electronics) master_preset.xml:9084(item:name|group:Electronic|preset:Electronics)
 msgid "Electronics"
 msgstr ""
 
@@ -1973,7 +1981,7 @@ msgstr ""
 msgid "Embassy"
 msgstr ""
 
-#: master_preset.xml:11345(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:5917(group:name|group:Emergency)
+#: master_preset.xml:11367(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except) master_preset.xml:5917(group:name|group:Emergency)
 msgid "Emergency"
 msgstr ""
 
@@ -2001,11 +2009,11 @@ msgstr ""
 msgid "Emergency vehicles"
 msgstr ""
 
-#: master_preset.xml:12391(item:name|group:Offices|preset:Employment_agency)
+#: master_preset.xml:12413(item:name|group:Offices|preset:Employment_agency)
 msgid "Employment agency"
 msgstr ""
 
-#: master_preset.xml:11353(item:name|group:Relations|preset:Enforcement)
+#: master_preset.xml:11375(item:name|group:Relations|preset:Enforcement)
 msgid "Enforcement"
 msgstr ""
 
@@ -2013,7 +2021,7 @@ msgstr ""
 msgid "Engine oil"
 msgstr ""
 
-#: master_preset.xml:11312(role:text|group:Relations|preset:Building|key:entrance) master_preset.xml:7538(item:name|preset:Entrance)
+#: master_preset.xml:11334(role:text|group:Relations|preset:Building|key:entrance) master_preset.xml:7538(item:name|preset:Entrance)
 msgid "Entrance"
 msgstr ""
 
@@ -2045,7 +2053,7 @@ msgstr ""
 msgid "Escape"
 msgstr ""
 
-#: master_preset.xml:12405(item:name|group:Offices|preset:Estate_agent)
+#: master_preset.xml:12427(item:name|group:Offices|preset:Estate_agent)
 msgid "Estate agent"
 msgstr ""
 
@@ -2069,7 +2077,7 @@ msgstr ""
 msgid "Even"
 msgstr ""
 
-#: master_preset.xml:11345(multiselect:text|group:Relations|preset:Turn_Restriction|key:except)
+#: master_preset.xml:11367(multiselect:text|group:Relations|preset:Turn_Restriction|key:except)
 msgid "Exceptions"
 msgstr ""
 
@@ -2165,7 +2173,7 @@ msgstr ""
 msgid "Figure/puppet theatres"
 msgstr ""
 
-#: master_preset.xml:12664(item:name|group:Offices|preset:Financial)
+#: master_preset.xml:12686(item:name|group:Offices|preset:Financial)
 msgid "Financial"
 msgstr ""
 
@@ -2229,7 +2237,7 @@ msgstr ""
 msgid "Floating"
 msgstr ""
 
-#: master_preset.xml:11892(item:name|group:Crafts|preset:Floorer)
+#: master_preset.xml:11914(item:name|group:Crafts|preset:Floorer)
 msgid "Floorer"
 msgstr ""
 
@@ -2289,7 +2297,7 @@ msgstr ""
 msgid "Forest"
 msgstr ""
 
-#: master_preset.xml:12672(item:name|group:Offices|preset:Forestry)
+#: master_preset.xml:12694(item:name|group:Offices|preset:Forestry)
 msgid "Forestry"
 msgstr ""
 
@@ -2297,7 +2305,7 @@ msgstr ""
 msgid "Fortification"
 msgstr ""
 
-#: master_preset.xml:12586(item:name|group:Offices|preset:Foundation)
+#: master_preset.xml:12608(item:name|group:Offices|preset:Foundation)
 msgid "Foundation"
 msgstr ""
 
@@ -2353,7 +2361,7 @@ msgstr ""
 msgid "Fur"
 msgstr ""
 
-#: master_preset.xml:12264(item:name|group:Crafts|preset:Furniture) master_preset.xml:9236(item:name|group:Home_decoration|preset:Furniture)
+#: master_preset.xml:12286(item:name|group:Crafts|preset:Furniture) master_preset.xml:9236(item:name|group:Home_decoration|preset:Furniture)
 msgid "Furniture"
 msgstr ""
 
@@ -2385,7 +2393,7 @@ msgstr ""
 msgid "Garden Centre"
 msgstr ""
 
-#: master_preset.xml:12272(item:name|group:Crafts|preset:Gardener)
+#: master_preset.xml:12294(item:name|group:Crafts|preset:Gardener)
 msgid "Gardener"
 msgstr ""
 
@@ -2465,7 +2473,7 @@ msgstr ""
 msgid "Glacier"
 msgstr ""
 
-#: master_preset.xml:11900(item:name|group:Crafts|preset:Glass) master_preset.xml:574(combo:display_values|key:roof:material) master_preset.xml:6407(check:text|group:Facilities|preset:Recycling_Container|key:recycling:glass) master_preset.xml:6447(check:text|group:Facilities|preset:Recycling_Centre|key:recycling:glass)
+#: master_preset.xml:11922(item:name|group:Crafts|preset:Glass) master_preset.xml:574(combo:display_values|key:roof:material) master_preset.xml:6407(check:text|group:Facilities|preset:Recycling_Container|key:recycling:glass) master_preset.xml:6447(check:text|group:Facilities|preset:Recycling_Centre|key:recycling:glass)
 msgid "Glass"
 msgstr ""
 
@@ -2473,7 +2481,7 @@ msgstr ""
 msgid "Glass Bottles"
 msgstr ""
 
-#: master_preset.xml:11908(item:name|group:Crafts|preset:Glaziery)
+#: master_preset.xml:11930(item:name|group:Crafts|preset:Glaziery)
 msgid "Glaziery"
 msgstr ""
 
@@ -2493,7 +2501,7 @@ msgstr ""
 msgid "Goods"
 msgstr ""
 
-#: master_preset.xml:12419(item:name|group:Offices|preset:Government)
+#: master_preset.xml:12441(item:name|group:Offices|preset:Government)
 msgid "Government"
 msgstr ""
 
@@ -2569,7 +2577,7 @@ msgstr ""
 msgid "Guest House/Bed & Breakfast"
 msgstr ""
 
-#: master_preset.xml:12594(item:name|group:Offices|preset:Guide)
+#: master_preset.xml:12616(item:name|group:Offices|preset:Guide)
 msgid "Guide"
 msgstr ""
 
@@ -2581,7 +2589,7 @@ msgstr ""
 msgid "Gymnastics"
 msgstr ""
 
-#: master_preset.xml:11345(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
+#: master_preset.xml:11367(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
 msgid "HGV"
 msgstr ""
 
@@ -2613,7 +2621,7 @@ msgstr ""
 msgid "Handicap rating"
 msgstr ""
 
-#: master_preset.xml:11916(item:name|group:Crafts|preset:Handicraft)
+#: master_preset.xml:11938(item:name|group:Crafts|preset:Handicraft)
 msgid "Handicraft"
 msgstr ""
 
@@ -2657,7 +2665,7 @@ msgstr ""
 msgid "Heath"
 msgstr ""
 
-#: master_preset.xml:11929(item:name|group:Crafts|preset:Heating_engineer)
+#: master_preset.xml:11951(item:name|group:Crafts|preset:Heating_engineer)
 msgid "Heating engineer"
 msgstr ""
 
@@ -2669,7 +2677,7 @@ msgstr ""
 msgid "Hedge"
 msgstr ""
 
-#: master_preset.xml:10642(text:text|group:Nature|preset:Stone|key:height) master_preset.xml:11710(text:text|preset:Bridge|key:height) master_preset.xml:1988(text:text|group:Barriers|preset:Hedge|key:height) master_preset.xml:2009(text:text|group:Barriers|preset:Fence|key:height) master_preset.xml:233(text:text|key:height) master_preset.xml:2653(text:text|group:Water|preset:Waterfall|key:height) master_preset.xml:597(text:text|key:height) master_preset.xml:7584(text:text|group:Man_Made|preset:Tower|key:height) master_preset.xml:7619(text:text|group:Man_Made|preset:Chimney|key:height) master_preset.xml:7646(text:text|group:Man_Made|preset:Gasometer|key:height) master_preset.xml:7660(text:text|group:Man_Made|preset:Silo|key:height) master_preset.xml:7676(text:text|group:Man_Made|preset:Storage_Tank|key:height) master_preset.xml:7813(text:text|group:Man_Made|preset:Water_Tower|key:height) master_preset.xml:8347(text:text|preset:Transformer_Tower|key:height) master_preset.xml:8357(text:text|preset:Power_Portal|key:height)
+#: master_preset.xml:10642(text:text|group:Nature|preset:Stone|key:height) master_preset.xml:11732(text:text|preset:Bridge|key:height) master_preset.xml:1988(text:text|group:Barriers|preset:Hedge|key:height) master_preset.xml:2009(text:text|group:Barriers|preset:Fence|key:height) master_preset.xml:233(text:text|key:height) master_preset.xml:2653(text:text|group:Water|preset:Waterfall|key:height) master_preset.xml:597(text:text|key:height) master_preset.xml:7584(text:text|group:Man_Made|preset:Tower|key:height) master_preset.xml:7619(text:text|group:Man_Made|preset:Chimney|key:height) master_preset.xml:7646(text:text|group:Man_Made|preset:Gasometer|key:height) master_preset.xml:7660(text:text|group:Man_Made|preset:Silo|key:height) master_preset.xml:7676(text:text|group:Man_Made|preset:Storage_Tank|key:height) master_preset.xml:7813(text:text|group:Man_Made|preset:Water_Tower|key:height) master_preset.xml:8347(text:text|preset:Transformer_Tower|key:height) master_preset.xml:8357(text:text|preset:Power_Portal|key:height)
 msgid "Height (meters)"
 msgstr ""
 
@@ -2709,7 +2717,7 @@ msgstr ""
 msgid "Hiking"
 msgstr ""
 
-#: master_preset.xml:11422(item:name|group:Routes|preset:Hiking_Route)
+#: master_preset.xml:11444(item:name|group:Routes|preset:Hiking_Route)
 msgid "Hiking Route"
 msgstr ""
 
@@ -2793,7 +2801,7 @@ msgstr ""
 msgid "Hurling"
 msgstr ""
 
-#: master_preset.xml:11937(item:name|group:Crafts|preset:Hvac)
+#: master_preset.xml:11959(item:name|group:Crafts|preset:Hvac)
 msgid "Hvac"
 msgstr ""
 
@@ -2805,7 +2813,7 @@ msgstr ""
 msgid "ICAO"
 msgstr ""
 
-#: master_preset.xml:12450(item:name|group:Offices|preset:IT)
+#: master_preset.xml:12472(item:name|group:Offices|preset:IT)
 msgid "IT"
 msgstr ""
 
@@ -2885,11 +2893,11 @@ msgstr ""
 msgid "Information using headphones or a mobile phone."
 msgstr ""
 
-#: master_preset.xml:11523(item:name|group:Routes|preset:Inline_Skating_Route)
+#: master_preset.xml:11545(item:name|group:Routes|preset:Inline_Skating_Route)
 msgid "Inline Skating Route"
 msgstr ""
 
-#: master_preset.xml:11309(role:text|group:Relations|preset:Building|key:part)
+#: master_preset.xml:11331(role:text|group:Relations|preset:Building|key:part)
 msgid "Inner segment"
 msgstr ""
 
@@ -2897,7 +2905,7 @@ msgstr ""
 msgid "Inscription"
 msgstr ""
 
-#: master_preset.xml:11948(item:name|group:Crafts|preset:Insulation)
+#: master_preset.xml:11970(item:name|group:Crafts|preset:Insulation)
 msgid "Insulation"
 msgstr ""
 
@@ -2905,7 +2913,7 @@ msgstr ""
 msgid "Insulator"
 msgstr ""
 
-#: master_preset.xml:12436(item:name|group:Offices|preset:Insurance)
+#: master_preset.xml:12458(item:name|group:Offices|preset:Insurance)
 msgid "Insurance"
 msgstr ""
 
@@ -2917,7 +2925,7 @@ msgstr ""
 msgid "Intermittent"
 msgstr ""
 
-#: master_preset.xml:11388(combo:display_values|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11431(combo:display_values|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11468(combo:display_values|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11528(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network) master_preset.xml:221(multiselect:display_values|key:cuisine)
+#: master_preset.xml:11410(combo:display_values|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11453(combo:display_values|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11490(combo:display_values|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11550(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network) master_preset.xml:221(multiselect:display_values|key:cuisine)
 msgid "International"
 msgstr ""
 
@@ -2989,7 +2997,7 @@ msgstr ""
 msgid "Jersey Barrier"
 msgstr ""
 
-#: master_preset.xml:12344(item:name|group:Crafts|preset:Jeweller)
+#: master_preset.xml:12366(item:name|group:Crafts|preset:Jeweller)
 msgid "Jeweller"
 msgstr ""
 
@@ -3001,7 +3009,7 @@ msgstr ""
 msgid "Jewish"
 msgstr ""
 
-#: master_preset.xml:11955(item:name|group:Crafts|preset:Joiner)
+#: master_preset.xml:11977(item:name|group:Crafts|preset:Joiner)
 msgid "Joiner"
 msgstr ""
 
@@ -3033,7 +3041,7 @@ msgstr ""
 msgid "Kerb (right)"
 msgstr ""
 
-#: master_preset.xml:11963(item:name|group:Crafts|preset:Key_cutter)
+#: master_preset.xml:11985(item:name|group:Crafts|preset:Key_cutter)
 msgid "Key cutter"
 msgstr ""
 
@@ -3065,11 +3073,11 @@ msgstr ""
 msgid "LPG (Liquefied petroleum gas)"
 msgstr ""
 
-#: master_preset.xml:11295(role:text|group:Relations|preset:Boundary|key:label)
+#: master_preset.xml:11317(role:text|group:Relations|preset:Boundary|key:label)
 msgid "Label point"
 msgstr ""
 
-#: master_preset.xml:12328(item:name|group:Crafts|preset:Laboratory)
+#: master_preset.xml:12350(item:name|group:Crafts|preset:Laboratory)
 msgid "Laboratory"
 msgstr ""
 
@@ -3129,7 +3137,7 @@ msgstr ""
 msgid "Lawn Bowling"
 msgstr ""
 
-#: master_preset.xml:12462(item:name|group:Offices|preset:Lawyer)
+#: master_preset.xml:12484(item:name|group:Offices|preset:Lawyer)
 msgid "Lawyer"
 msgstr ""
 
@@ -3137,7 +3145,7 @@ msgstr ""
 msgid "Layer"
 msgstr ""
 
-#: master_preset.xml:11974(item:name|group:Crafts|preset:Leather) master_preset.xml:8948(list_entry:short_description|group:Clothes|preset:Clothes|value:leather)
+#: master_preset.xml:11996(item:name|group:Crafts|preset:Leather) master_preset.xml:8948(list_entry:short_description|group:Clothes|preset:Clothes|value:leather)
 msgid "Leather"
 msgstr ""
 
@@ -3157,7 +3165,7 @@ msgstr ""
 msgid "Leisure"
 msgstr ""
 
-#: master_preset.xml:11711(text:text|preset:Bridge|key:length) master_preset.xml:11726(text:text|preset:Tunnel|key:length)
+#: master_preset.xml:11733(text:text|preset:Bridge|key:length) master_preset.xml:11748(text:text|preset:Tunnel|key:length)
 msgid "Length (meters)"
 msgstr ""
 
@@ -3217,7 +3225,7 @@ msgstr ""
 msgid "Living Street"
 msgstr ""
 
-#: master_preset.xml:11388(combo:display_values|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11431(combo:display_values|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11449(combo:display_values|group:Routes|preset:Walking_Route|key:network) master_preset.xml:11468(combo:display_values|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11528(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network)
+#: master_preset.xml:11410(combo:display_values|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11453(combo:display_values|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11471(combo:display_values|group:Routes|preset:Walking_Route|key:network) master_preset.xml:11490(combo:display_values|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11550(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network)
 msgid "Local"
 msgstr ""
 
@@ -3253,11 +3261,11 @@ msgstr ""
 msgid "Lockable"
 msgstr ""
 
-#: master_preset.xml:11982(item:name|group:Crafts|preset:Locksmith) master_preset.xml:9695(item:name|group:Other|preset:Locksmith)
+#: master_preset.xml:12004(item:name|group:Crafts|preset:Locksmith) master_preset.xml:9695(item:name|group:Other|preset:Locksmith)
 msgid "Locksmith"
 msgstr ""
 
-#: master_preset.xml:12680(item:name|group:Offices|preset:Logistics)
+#: master_preset.xml:12702(item:name|group:Offices|preset:Logistics)
 msgid "Logistics"
 msgstr ""
 
@@ -3321,7 +3329,7 @@ msgstr ""
 msgid "Marine Fuel"
 msgstr ""
 
-#: master_preset.xml:10029(item:name|group:Boundaries|preset:Maritime) master_preset.xml:11286(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:9971(check:text|group:Boundaries|preset:Administrative|key:maritime)
+#: master_preset.xml:10029(item:name|group:Boundaries|preset:Maritime) master_preset.xml:11308(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:9971(check:text|group:Boundaries|preset:Administrative|key:maritime)
 msgid "Maritime"
 msgstr ""
 
@@ -3329,7 +3337,7 @@ msgstr ""
 msgid "Marsh"
 msgstr ""
 
-#: master_preset.xml:11992(item:name|group:Crafts|preset:Mason)
+#: master_preset.xml:12014(item:name|group:Crafts|preset:Mason)
 msgid "Mason"
 msgstr ""
 
@@ -3385,7 +3393,7 @@ msgstr ""
 msgid "Max. axleload (tonnes)"
 msgstr ""
 
-#: master_preset.xml:11366(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
+#: master_preset.xml:11388(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
 msgid "Max. height"
 msgstr ""
 
@@ -3393,7 +3401,7 @@ msgstr ""
 msgid "Max. height (meters)"
 msgstr ""
 
-#: master_preset.xml:11367(text:text|group:Relations|preset:Enforcement|key:maxheight)
+#: master_preset.xml:11389(text:text|group:Relations|preset:Enforcement|key:maxheight)
 msgid "Max. height (meters, only if enforcement=maxheight)"
 msgstr ""
 
@@ -3401,7 +3409,7 @@ msgstr ""
 msgid "Max. length (meters)"
 msgstr ""
 
-#: master_preset.xml:11366(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
+#: master_preset.xml:11388(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
 msgid "Max. speed"
 msgstr ""
 
@@ -3409,7 +3417,7 @@ msgstr ""
 msgid "Max. speed (km/h)"
 msgstr ""
 
-#: master_preset.xml:11369(text:text|group:Relations|preset:Enforcement|key:maxspeed)
+#: master_preset.xml:11391(text:text|group:Relations|preset:Enforcement|key:maxspeed)
 msgid "Max. speed (km/h, only if enforcement=maxspeed)"
 msgstr ""
 
@@ -3425,7 +3433,7 @@ msgstr ""
 msgid "Max. speed HGV →"
 msgstr ""
 
-#: master_preset.xml:11366(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
+#: master_preset.xml:11388(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
 msgid "Max. weight"
 msgstr ""
 
@@ -3433,7 +3441,7 @@ msgstr ""
 msgid "Max. weight (tonnes)"
 msgstr ""
 
-#: master_preset.xml:11368(text:text|group:Relations|preset:Enforcement|key:maxweight)
+#: master_preset.xml:11390(text:text|group:Relations|preset:Enforcement|key:maxweight)
 msgid "Max. weight (tonnes, only if enforcement=maxweight)"
 msgstr ""
 
@@ -3513,11 +3521,11 @@ msgstr ""
 msgid "Metal"
 msgstr ""
 
-#: master_preset.xml:12000(item:name|group:Crafts|preset:Metal_construction)
+#: master_preset.xml:12022(item:name|group:Crafts|preset:Metal_construction)
 msgid "Metal construction"
 msgstr ""
 
-#: master_preset.xml:12011(item:name|group:Crafts|preset:Metal_works)
+#: master_preset.xml:12033(item:name|group:Crafts|preset:Metal_works)
 msgid "Metal works"
 msgstr ""
 
@@ -3545,7 +3553,7 @@ msgstr ""
 msgid "Milk"
 msgstr ""
 
-#: master_preset.xml:11366(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
+#: master_preset.xml:11388(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
 msgid "Min. distance"
 msgstr ""
 
@@ -3577,7 +3585,7 @@ msgstr ""
 msgid "Minipay (it)"
 msgstr ""
 
-#: master_preset.xml:12432(combo:display_values|group:Offices|preset:Government|key:government)
+#: master_preset.xml:12454(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Ministry"
 msgstr ""
 
@@ -3717,7 +3725,7 @@ msgstr ""
 msgid "Motorway Link"
 msgstr ""
 
-#: master_preset.xml:11398(item:name|group:Routes|preset:Mountain_Biking_Route)
+#: master_preset.xml:11420(item:name|group:Routes|preset:Mountain_Biking_Route)
 msgid "Mountain Biking Route"
 msgstr ""
 
@@ -3745,7 +3753,7 @@ msgstr ""
 msgid "Multi"
 msgstr ""
 
-#: master_preset.xml:11250(item:name|group:Relations|preset:Multipolygon)
+#: master_preset.xml:11272(item:name|group:Relations|preset:Multipolygon)
 msgid "Multipolygon"
 msgstr ""
 
@@ -3793,11 +3801,11 @@ msgstr ""
 msgid "NFC"
 msgstr ""
 
-#: master_preset.xml:10007(text:text|group:Boundaries|preset:National_Park|key:name) master_preset.xml:10039(text:text|group:Boundaries|preset:Maritime|key:name) master_preset.xml:1015(text:text|group:Streets|preset:Pedestrian|key:name) master_preset.xml:10331(text:text|group:Geography|preset:Cliff|key:name) master_preset.xml:10382(text:text|group:Geography|preset:Reef|key:name) master_preset.xml:10402(text:text|group:Nature|preset:Tree|key:name) master_preset.xml:10441(text:text|group:Nature|preset:Wood|key:name) master_preset.xml:1045(text:text|group:Streets|preset:Service|key:name) master_preset.xml:10457(text:text|group:Nature|preset:Forest|key:name) master_preset.xml:10489(text:text|group:Nature|preset:Grassland|key:name) master_preset.xml:10502(text:text|group:Nature|preset:Nature_Reserve|key:name) master_preset.xml:10519(text:text|group:Nature|preset:Scree|key:name) master_preset.xml:10532(text:text|group:Nature|preset:Shingle|key:name) master_preset.xml:10546(text:text|group:Nature|preset:Fell|key:name) master_preset.xml:10562(text:text|group:Nature|preset:Scrub|key:name) master_preset.xml:10581(text:text|group:Nature|preset:Heath|key:name) master_preset.xml:10595(text:text|group:Nature|preset:Sand|key:name) master_preset.xml:10611(text:text|group:Nature|preset:Bare_Rock|key:name) master_preset.xml:10658(text:text|group:Land_use|preset:Farmyard|key:name) master_preset.xml:10672(text:text|group:Land_use|preset:Farmland|key:name) master_preset.xml:10691(text:text|group:Land_use|preset:Meadow|key:name) master_preset.xml:10704(text:text|group:Land_use|preset:Orchard|key:name) master_preset.xml:10716(text:text|group:Land_use|preset:Vineyard|key:name) master_preset.xml:10731(text:text|group:Land_use|preset:Greenhouse_Horticulture|key:name) master_preset.xml:10744(text:text|group:Land_use|preset:Plant_Nursery|key:name) master_preset.xml:10756(text:text|group:Land_use|preset:Aquaculture|key:name) master_preset.xml:10772(text:text|group:Land_use|preset:Allotments|key:name) master_preset.xml:10785(text:text|group:Land_use|preset:Garden|key:name) master_preset.xml:10800(text:text|group:Land_use|preset:Grass|key:name) master_preset.xml:10814(text:text|group:Land_use|preset:Village_Green|key:name) master_preset.xml:10827(text:text|group:Land_use|preset:Common|key:name) master_preset.xml:10841(text:text|group:Land_use|preset:Park|key:name) master_preset.xml:10854(text:text|group:Land_use|preset:Recreation_Ground|key:name) master_preset.xml:10869(text:text|group:Land_use|preset:Residential_Area|key:name) master_preset.xml:10923(text:text|group:Land_use|preset:Retail|key:name) master_preset.xml:10936(text:text|group:Land_use|preset:Commercial|key:name) master_preset.xml:10950(text:text|group:Land_use|preset:Industrial|key:name) master_preset.xml:10963(text:text|group:Land_use|preset:Garages|key:name) master_preset.xml:10976(text:text|group:Land_use|preset:Railway_Land|key:name) master_preset.xml:10987(text:text|group:Land_use|preset:Military|key:name) master_preset.xml:11003(text:text|group:Land_use|preset:Construction_Area|key:name) master_preset.xml:1101(text:text|group:Streets|preset:Road_(Unknown_Type)|key:name) master_preset.xml:11016(text:text|group:Land_use|preset:Brownfield|key:name) master_preset.xml:11028(text:text|group:Land_use|preset:Greenfield|key:name) master_preset.xml:11040(text:text|group:Land_use|preset:Landfill|key:name) master_preset.xml:11059(item:name|group:Addresses_and_Contact|preset:Name) master_preset.xml:11078(text:text|group:Addresses_and_Contact|preset:Name|key:name) master_preset.xml:1120(text:text|group:Streets|preset:Construction|key:name) master_preset.xml:11265(text:text|group:Relations|preset:Multipolygon|key:name) master_preset.xml:11284(text:text|group:Relations|preset:Boundary|key:name) master_preset.xml:11387(text:text|group:Routes|preset:Bicycle_Route|key:name) master_preset.xml:11412(text:text|group:Routes|preset:Mountain_Biking_Route|key:name) master_preset.xml:11430(text:text|group:Routes|preset:Hiking_Route|key:name) master_preset.xml:11448(text:text|group:Routes|preset:Walking_Route|key:name) master_preset.xml:11467(text:text|group:Routes|preset:Riding_Route|key:name) master_preset.xml:11486(text:text|group:Routes|preset:Piste_Route|key:name) master_preset.xml:11508(text:text|group:Routes|preset:Ski_Route|key:name) master_preset.xml:11603(text:text|preset:Route_Network|key:name) master_preset.xml:11638(text:text|preset:Street|key:name) master_preset.xml:1166(text:text|group:Streets|preset:Ford|key:name) master_preset.xml:11683(text:text|preset:Waterway|key:name) master_preset.xml:12431(text:text|group:Offices|preset:Government|key:name) master_preset.xml:144(text:text|key:name) master_preset.xml:148(text:text|key:name) master_preset.xml:1483(text:text|group:Waypoints|preset:Motorway_Junction|key:name) master_preset.xml:1497(text:text|group:Waypoints|preset:Services|key:name) master_preset.xml:1515(text:text|group:Waypoints|preset:Rest_Area|key:name) master_preset.xml:153(text:text|key:name) master_preset.xml:1543(text:text|group:Waypoints|preset:Traffic_Signal|key:name) master_preset.xml:160(text:text|key:name) master_preset.xml:1786(text:text|preset:City_Limit|key:name) master_preset.xml:1841(text:text|preset:Named_Junction|key:name) master_preset.xml:186(text:text|key:name) master_preset.xml:1875(text:text|preset:Mountain_Pass|key:name) master_preset.xml:1963(text:text|group:Barriers|preset:Toll_Booth|key:name) master_preset.xml:202(text:text|key:name) master_preset.xml:212(text:text|key:name) master_preset.xml:2231(text:text|group:Passageways|preset:Tunnel|key:name) master_preset.xml:248(text:text|key:name) master_preset.xml:2546(text:text|group:Water|preset:Drain|key:name) master_preset.xml:2563(text:text|group:Water|preset:Ditch|key:name) master_preset.xml:2581(text:text|group:Water|preset:Stream|key:name) master_preset.xml:2600(text:text|group:Water|preset:River|key:name) master_preset.xml:2618(text:text|group:Water|preset:Canal|key:name) master_preset.xml:2640(text:text|group:Water|preset:Spring|key:name) master_preset.xml:2667(text:text|group:Water|preset:Weir|key:name) master_preset.xml:2701(text:text|group:Water|preset:Breakwater|key:name) master_preset.xml:2715(text:text|group:Water|preset:Culvert|key:name) master_preset.xml:2731(text:text|group:Water|preset:Basin|key:name) master_preset.xml:2743(text:text|group:Water|preset:Reservoir|key:name) master_preset.xml:2757(text:text|group:Water|preset:Covered_Reservoir|key:name) master_preset.xml:277(text:text|key:name) master_preset.xml:2774(text:text|group:Water|preset:Water|key:name) master_preset.xml:2795(text:text|group:Water|preset:Coastline|key:name) master_preset.xml:2810(text:text|group:Water|preset:Riverbank|key:name) master_preset.xml:2829(text:text|group:Water|preset:Wetland|key:name) master_preset.xml:2855(text:text|group:Water|preset:Mud|key:name) master_preset.xml:2890(text:text|group:Water|preset:Bay|key:name) master_preset.xml:2905(text:text|group:Shipping|preset:Ferry_Terminal|key:name) master_preset.xml:2918(text:text|group:Shipping|preset:Ferry_Route|key:name) master_preset.xml:2933(text:text|group:Shipping|preset:Marina|key:name) master_preset.xml:2979(text:text|group:Shipping|preset:Pier|key:name) master_preset.xml:3015(text:text|group:Shipping|preset:Slipway|key:name) master_preset.xml:3029(text:text|group:Shipping|preset:Boatyard|key:name) master_preset.xml:304(text:text|key:name) master_preset.xml:3042(text:text|group:Shipping|preset:Dock|key:name) master_preset.xml:3164(text:text|group:Railway|preset:Bus_Guideway|key:name) master_preset.xml:334(text:text|key:name) master_preset.xml:3405(text:text|group:Aerialway|preset:Station|key:name) master_preset.xml:3414(text:text|group:Aerialway|preset:Pylon|key:name) master_preset.xml:3501(text:text|group:Car|preset:Fuel|key:name) master_preset.xml:3723(text:text|group:Motorcycle|preset:Motorcycle_Dealer|key:name) master_preset.xml:3757(text:text|group:Bicycle|preset:Parking|key:name) master_preset.xml:3802(text:text|group:Bicycle|preset:Rental|key:name) master_preset.xml:3814(text:text|group:Bicycle|preset:Public_Bicycle_Repair_Station|key:name) master_preset.xml:3883(text:text|group:Public_Transport|preset:Stop_Area|key:name) master_preset.xml:3903(text:text|group:Public_Transport|preset:Stop_Position|key:name) master_preset.xml:3934(text:text|group:Public_Transport|preset:Platform|key:name) master_preset.xml:3973(text:text|group:Public_Transport|preset:Station|key:name) master_preset.xml:3993(text:text|group:Public_Transport|preset:Subway_Entrance|key:name) master_preset.xml:404(text:text|key:name) master_preset.xml:4052(text:text|group:Public_Transport_(Legacy)|preset:Station|key:name) master_preset.xml:4066(text:text|group:Public_Transport_(Legacy)|preset:Railway_Halt|key:name) master_preset.xml:4079(text:text|group:Public_Transport_(Legacy)|preset:Tram_Stop|key:name) master_preset.xml:4106(text:text|group:Public_Transport_(Legacy)|preset:Bus_Station|key:name) master_preset.xml:4122(text:text|group:Public_Transport_(Legacy)|preset:Bus_Stop|key:name) master_preset.xml:4157(text:text|preset:Taxi|key:name) master_preset.xml:4278(text:text|group:Airport|preset:Terminal|key:name) master_preset.xml:444(text:text|key:name) master_preset.xml:4727(text:text|group:Tourism|preset:Viewpoint|key:name) master_preset.xml:4758(text:text|group:Tourism|preset:Map|key:name) master_preset.xml:4783(text:text|group:Tourism|preset:Information_Board|key:name) master_preset.xml:4860(text:text|group:Tourism|preset:Other_Information_Point|key:name) master_preset.xml:4915(text:text|group:Leisure|preset:Dog_Park|key:name) master_preset.xml:5066(text:text|group:Leisure|preset:Picnic_Site|key:name) master_preset.xml:5092(text:text|group:Leisure|preset:Public_Grill|key:name) master_preset.xml:5106(text:text|group:Leisure|preset:Firepit|key:name) master_preset.xml:5118(text:text|group:Leisure|preset:Fishing|key:name) master_preset.xml:5327(text:text|group:Culture|preset:Arts_Centre|key:name) master_preset.xml:5344(text:text|group:Culture|preset:Artwork|key:name) master_preset.xml:5382(text:text|group:Place_of_Worship|preset:Church|key:name) master_preset.xml:5406(text:text|group:Place_of_Worship|preset:Mosque|key:name) master_preset.xml:5430(text:text|group:Place_of_Worship|preset:Synagogue|key:name) master_preset.xml:5454(text:text|group:Place_of_Worship|preset:Buddhist_Temple|key:name) master_preset.xml:5477(text:text|group:Place_of_Worship|preset:Hindu_Temple|key:name) master_preset.xml:5500(text:text|group:Place_of_Worship|preset:Shinto_Shrine|key:name) master_preset.xml:5521(text:text|group:Place_of_Worship|preset:Other_Place_of_Worship|key:name) master_preset.xml:5652(text:text|group:Public_Building|preset:Fire_Station|key:name) master_preset.xml:594(text:text|key:name) master_preset.xml:652(text:text|group:Streets|preset:Motorway|key:name) master_preset.xml:6537(text:text|group:Facilities|preset:Shelter|key:name) master_preset.xml:6581(text:text|group:Facilities|preset:Drinking_Water|key:name) master_preset.xml:6597(text:text|group:Facilities|preset:Water_Point|key:name) master_preset.xml:6612(text:text|group:Facilities|preset:Animal_watering_place|key:name) master_preset.xml:6686(text:text|group:Sport_Facilities|preset:Stadium|key:name) master_preset.xml:6702(text:text|group:Sport_Facilities|preset:Sports_Centre|key:name) master_preset.xml:6716(text:text|group:Sport_Facilities|preset:Fitness_Centre|key:name) master_preset.xml:6733(text:text|group:Sport_Facilities|preset:Pitch|key:name) master_preset.xml:6748(text:text|group:Sport_Facilities|preset:Racetrack|key:name) master_preset.xml:6797(text:text|group:Golf|preset:Hole|key:name) master_preset.xml:6911(text:text|group:Sport|preset:Multi|key:name) master_preset.xml:6920(text:text|group:Sport|preset:Nine-pin_Bowling|key:name) master_preset.xml:6930(text:text|group:Sport|preset:Ten-pin_Bowling|key:name) master_preset.xml:6940(text:text|group:Sport|preset:Archery|key:name) master_preset.xml:6948(text:text|group:Sport|preset:Track_and_Field_Athletics|key:name) master_preset.xml:6965(text:text|group:Sport|preset:Climbing|key:name) master_preset.xml:6972(text:text|group:Sport|preset:Canoeing/Kayaking|key:name) master_preset.xml:6979(text:text|group:Sport|preset:Cycling|key:name) master_preset.xml:6986(text:text|group:Sport|preset:Dog_Racing|key:name) master_preset.xml:6995(text:text|group:Sport|preset:Equestrian|key:name) master_preset.xml:7002(text:text|group:Sport|preset:Horse_Racing|key:name) master_preset.xml:7009(text:text|group:Sport|preset:Gymnastics|key:name) master_preset.xml:7017(text:text|group:Sport|preset:Skating_(deprecated)|key:name) master_preset.xml:7025(text:text|group:Sport|preset:Ice_Skating|key:name) master_preset.xml:7032(text:text|group:Sport|preset:Roller_Skating|key:name) master_preset.xml:7041(text:text|group:Sport|preset:Skateboard|key:name) master_preset.xml:7050(text:text|group:Sport|preset:Swimming|key:name) master_preset.xml:7059(text:text|group:Sport|preset:Scuba_Diving|key:name) master_preset.xml:7068(text:text|group:Sport|preset:Skiing|key:name) master_preset.xml:7086(text:text|group:Sport|preset:Shooting|key:name) master_preset.xml:718(text:text|group:Streets|preset:Trunk|key:name) master_preset.xml:7207(text:text|group:Sport_(Ball)|preset:Golf|key:name) master_preset.xml:7241(text:text|group:Sport_(Ball)|preset:Field_Hockey|key:name) master_preset.xml:7248(text:text|group:Sport_(Ball)|preset:Ice_Hockey|key:name) master_preset.xml:7263(text:text|group:Sport_(Ball)|preset:Racquetball|key:name) master_preset.xml:7271(text:text|group:Sport_(Ball)|preset:Table_Tennis/Ping-Pong|key:name) master_preset.xml:7289(text:text|group:Motorsport|preset:Motorsport|key:name) master_preset.xml:7297(text:text|group:Motorsport|preset:Kart_Racing|key:name) master_preset.xml:7308(text:text|group:Motorsport|preset:Motocross|key:name) master_preset.xml:7324(text:text|group:Motorsport|preset:Safety_Training|key:name) master_preset.xml:7332(text:text|group:Motorsport|preset:Model_Aerodrome|key:name) master_preset.xml:7350(text:text|group:Motorsport|preset:RC_Car|key:name) master_preset.xml:7364(text:text|group:Motorsport|preset:Raceway|key:name) master_preset.xml:7581(text:text|group:Man_Made|preset:Tower|key:name) master_preset.xml:7608(text:text|group:Man_Made|preset:Works|key:name) master_preset.xml:7633(text:text|group:Man_Made|preset:Windmill|key:name) master_preset.xml:7714(text:text|group:Man_Made|preset:Crane|key:name) master_preset.xml:7726(text:text|group:Man_Made|preset:Mineshaft|key:name) master_preset.xml:7745(text:text|group:Man_Made|preset:Adit|key:name) master_preset.xml:7773(text:text|group:Man_Made|preset:Pipeline|key:name) master_preset.xml:7828(text:text|group:Man_Made|preset:Wastewater_Treatment_Plant|key:name) master_preset.xml:783(text:text|group:Streets|preset:Primary|key:name) master_preset.xml:7843(text:text|group:Man_Made|preset:Watermill|key:name) master_preset.xml:7858(text:text|group:Man_Made|preset:Fountain|key:name) master_preset.xml:7872(text:text|group:Man_Made|preset:Water_Well|key:name) master_preset.xml:7885(text:text|group:Man_Made|preset:Lighthouse|key:name) master_preset.xml:7893(text:text|group:Man_Made|preset:Beacon|key:name) master_preset.xml:7957(text:text|group:Man_Made|preset:Survey_Point|key:name) master_preset.xml:7977(text:text|group:Man_Made|preset:Surveillance_Camera|key:name) master_preset.xml:8240(text:text|preset:Power_Substation|key:name) master_preset.xml:828(text:text|group:Streets|preset:Secondary|key:name) master_preset.xml:8532(text:text|group:Historic_Places|preset:Battlefield|key:name) master_preset.xml:8544(text:text|group:Historic_Places|preset:Palaeontological_Site|key:name) master_preset.xml:8560(text:text|group:Historic_Places|preset:Monument|key:name) master_preset.xml:8575(text:text|group:Historic_Places|preset:Memorial|key:name) master_preset.xml:8597(text:text|group:Historic_Places|preset:Wayside_Cross|key:name) master_preset.xml:8615(text:text|group:Historic_Places|preset:Wayside_Shrine|key:name) master_preset.xml:8633(text:text|group:Historic_Places|preset:Boundary_Stone|key:name) master_preset.xml:873(text:text|group:Streets|preset:Tertiary|key:name) master_preset.xml:913(text:text|group:Streets|preset:Minor_road|key:name) master_preset.xml:939(text:text|group:Streets|preset:Residential|key:name) master_preset.xml:960(text:text|group:Streets|preset:Bicycle_Road|key:name) master_preset.xml:991(text:text|group:Streets|preset:Living_Street|key:name) master_preset.xml:9969(text:text|group:Boundaries|preset:Administrative|key:name) master_preset.xml:9984(text:text|group:Boundaries|preset:Political|key:name)
+#: master_preset.xml:10007(text:text|group:Boundaries|preset:National_Park|key:name) master_preset.xml:10039(text:text|group:Boundaries|preset:Maritime|key:name) master_preset.xml:1015(text:text|group:Streets|preset:Pedestrian|key:name) master_preset.xml:10331(text:text|group:Geography|preset:Cliff|key:name) master_preset.xml:10382(text:text|group:Geography|preset:Reef|key:name) master_preset.xml:10402(text:text|group:Nature|preset:Tree|key:name) master_preset.xml:10441(text:text|group:Nature|preset:Wood|key:name) master_preset.xml:1045(text:text|group:Streets|preset:Service|key:name) master_preset.xml:10457(text:text|group:Nature|preset:Forest|key:name) master_preset.xml:10489(text:text|group:Nature|preset:Grassland|key:name) master_preset.xml:10502(text:text|group:Nature|preset:Nature_Reserve|key:name) master_preset.xml:10519(text:text|group:Nature|preset:Scree|key:name) master_preset.xml:10532(text:text|group:Nature|preset:Shingle|key:name) master_preset.xml:10546(text:text|group:Nature|preset:Fell|key:name) master_preset.xml:10562(text:text|group:Nature|preset:Scrub|key:name) master_preset.xml:10581(text:text|group:Nature|preset:Heath|key:name) master_preset.xml:10595(text:text|group:Nature|preset:Sand|key:name) master_preset.xml:10611(text:text|group:Nature|preset:Bare_Rock|key:name) master_preset.xml:10658(text:text|group:Land_use|preset:Farmyard|key:name) master_preset.xml:10672(text:text|group:Land_use|preset:Farmland|key:name) master_preset.xml:10691(text:text|group:Land_use|preset:Meadow|key:name) master_preset.xml:10704(text:text|group:Land_use|preset:Orchard|key:name) master_preset.xml:10716(text:text|group:Land_use|preset:Vineyard|key:name) master_preset.xml:10731(text:text|group:Land_use|preset:Greenhouse_Horticulture|key:name) master_preset.xml:10744(text:text|group:Land_use|preset:Plant_Nursery|key:name) master_preset.xml:10756(text:text|group:Land_use|preset:Aquaculture|key:name) master_preset.xml:10772(text:text|group:Land_use|preset:Allotments|key:name) master_preset.xml:10785(text:text|group:Land_use|preset:Garden|key:name) master_preset.xml:10800(text:text|group:Land_use|preset:Grass|key:name) master_preset.xml:10814(text:text|group:Land_use|preset:Village_Green|key:name) master_preset.xml:10827(text:text|group:Land_use|preset:Common|key:name) master_preset.xml:10841(text:text|group:Land_use|preset:Park|key:name) master_preset.xml:10854(text:text|group:Land_use|preset:Recreation_Ground|key:name) master_preset.xml:10869(text:text|group:Land_use|preset:Residential_Area|key:name) master_preset.xml:10923(text:text|group:Land_use|preset:Retail|key:name) master_preset.xml:10936(text:text|group:Land_use|preset:Commercial|key:name) master_preset.xml:10950(text:text|group:Land_use|preset:Industrial|key:name) master_preset.xml:10963(text:text|group:Land_use|preset:Garages|key:name) master_preset.xml:10976(text:text|group:Land_use|preset:Railway_Land|key:name) master_preset.xml:10987(text:text|group:Land_use|preset:Military|key:name) master_preset.xml:11003(text:text|group:Land_use|preset:Construction_Area|key:name) master_preset.xml:1101(text:text|group:Streets|preset:Road_(Unknown_Type)|key:name) master_preset.xml:11016(text:text|group:Land_use|preset:Brownfield|key:name) master_preset.xml:11028(text:text|group:Land_use|preset:Greenfield|key:name) master_preset.xml:11040(text:text|group:Land_use|preset:Landfill|key:name) master_preset.xml:11059(item:name|group:Addresses_and_Contact|preset:Name) master_preset.xml:11078(text:text|group:Addresses_and_Contact|preset:Name|key:name) master_preset.xml:1120(text:text|group:Streets|preset:Construction|key:name) master_preset.xml:11287(text:text|group:Relations|preset:Multipolygon|key:name) master_preset.xml:11306(text:text|group:Relations|preset:Boundary|key:name) master_preset.xml:11409(text:text|group:Routes|preset:Bicycle_Route|key:name) master_preset.xml:11434(text:text|group:Routes|preset:Mountain_Biking_Route|key:name) master_preset.xml:11452(text:text|group:Routes|preset:Hiking_Route|key:name) master_preset.xml:11470(text:text|group:Routes|preset:Walking_Route|key:name) master_preset.xml:11489(text:text|group:Routes|preset:Riding_Route|key:name) master_preset.xml:11508(text:text|group:Routes|preset:Piste_Route|key:name) master_preset.xml:11530(text:text|group:Routes|preset:Ski_Route|key:name) master_preset.xml:11625(text:text|preset:Route_Network|key:name) master_preset.xml:1166(text:text|group:Streets|preset:Ford|key:name) master_preset.xml:11660(text:text|preset:Street|key:name) master_preset.xml:11705(text:text|preset:Waterway|key:name) master_preset.xml:12453(text:text|group:Offices|preset:Government|key:name) master_preset.xml:144(text:text|key:name) master_preset.xml:148(text:text|key:name) master_preset.xml:1483(text:text|group:Waypoints|preset:Motorway_Junction|key:name) master_preset.xml:1497(text:text|group:Waypoints|preset:Services|key:name) master_preset.xml:1515(text:text|group:Waypoints|preset:Rest_Area|key:name) master_preset.xml:153(text:text|key:name) master_preset.xml:1543(text:text|group:Waypoints|preset:Traffic_Signal|key:name) master_preset.xml:160(text:text|key:name) master_preset.xml:1786(text:text|preset:City_Limit|key:name) master_preset.xml:1841(text:text|preset:Named_Junction|key:name) master_preset.xml:186(text:text|key:name) master_preset.xml:1875(text:text|preset:Mountain_Pass|key:name) master_preset.xml:1963(text:text|group:Barriers|preset:Toll_Booth|key:name) master_preset.xml:202(text:text|key:name) master_preset.xml:212(text:text|key:name) master_preset.xml:2231(text:text|group:Passageways|preset:Tunnel|key:name) master_preset.xml:248(text:text|key:name) master_preset.xml:2546(text:text|group:Water|preset:Drain|key:name) master_preset.xml:2563(text:text|group:Water|preset:Ditch|key:name) master_preset.xml:2581(text:text|group:Water|preset:Stream|key:name) master_preset.xml:2600(text:text|group:Water|preset:River|key:name) master_preset.xml:2618(text:text|group:Water|preset:Canal|key:name) master_preset.xml:2640(text:text|group:Water|preset:Spring|key:name) master_preset.xml:2667(text:text|group:Water|preset:Weir|key:name) master_preset.xml:2701(text:text|group:Water|preset:Breakwater|key:name) master_preset.xml:2715(text:text|group:Water|preset:Culvert|key:name) master_preset.xml:2731(text:text|group:Water|preset:Basin|key:name) master_preset.xml:2743(text:text|group:Water|preset:Reservoir|key:name) master_preset.xml:2757(text:text|group:Water|preset:Covered_Reservoir|key:name) master_preset.xml:277(text:text|key:name) master_preset.xml:2774(text:text|group:Water|preset:Water|key:name) master_preset.xml:2795(text:text|group:Water|preset:Coastline|key:name) master_preset.xml:2810(text:text|group:Water|preset:Riverbank|key:name) master_preset.xml:2829(text:text|group:Water|preset:Wetland|key:name) master_preset.xml:2855(text:text|group:Water|preset:Mud|key:name) master_preset.xml:2890(text:text|group:Water|preset:Bay|key:name) master_preset.xml:2905(text:text|group:Shipping|preset:Ferry_Terminal|key:name) master_preset.xml:2918(text:text|group:Shipping|preset:Ferry_Route|key:name) master_preset.xml:2933(text:text|group:Shipping|preset:Marina|key:name) master_preset.xml:2979(text:text|group:Shipping|preset:Pier|key:name) master_preset.xml:3015(text:text|group:Shipping|preset:Slipway|key:name) master_preset.xml:3029(text:text|group:Shipping|preset:Boatyard|key:name) master_preset.xml:304(text:text|key:name) master_preset.xml:3042(text:text|group:Shipping|preset:Dock|key:name) master_preset.xml:3164(text:text|group:Railway|preset:Bus_Guideway|key:name) master_preset.xml:334(text:text|key:name) master_preset.xml:3405(text:text|group:Aerialway|preset:Station|key:name) master_preset.xml:3414(text:text|group:Aerialway|preset:Pylon|key:name) master_preset.xml:3501(text:text|group:Car|preset:Fuel|key:name) master_preset.xml:3723(text:text|group:Motorcycle|preset:Motorcycle_Dealer|key:name) master_preset.xml:3757(text:text|group:Bicycle|preset:Parking|key:name) master_preset.xml:3802(text:text|group:Bicycle|preset:Rental|key:name) master_preset.xml:3814(text:text|group:Bicycle|preset:Public_Bicycle_Repair_Station|key:name) master_preset.xml:3883(text:text|group:Public_Transport|preset:Stop_Area|key:name) master_preset.xml:3903(text:text|group:Public_Transport|preset:Stop_Position|key:name) master_preset.xml:3934(text:text|group:Public_Transport|preset:Platform|key:name) master_preset.xml:3973(text:text|group:Public_Transport|preset:Station|key:name) master_preset.xml:3993(text:text|group:Public_Transport|preset:Subway_Entrance|key:name) master_preset.xml:404(text:text|key:name) master_preset.xml:4052(text:text|group:Public_Transport_(Legacy)|preset:Station|key:name) master_preset.xml:4066(text:text|group:Public_Transport_(Legacy)|preset:Railway_Halt|key:name) master_preset.xml:4079(text:text|group:Public_Transport_(Legacy)|preset:Tram_Stop|key:name) master_preset.xml:4106(text:text|group:Public_Transport_(Legacy)|preset:Bus_Station|key:name) master_preset.xml:4122(text:text|group:Public_Transport_(Legacy)|preset:Bus_Stop|key:name) master_preset.xml:4157(text:text|preset:Taxi|key:name) master_preset.xml:4278(text:text|group:Airport|preset:Terminal|key:name) master_preset.xml:444(text:text|key:name) master_preset.xml:4727(text:text|group:Tourism|preset:Viewpoint|key:name) master_preset.xml:4758(text:text|group:Tourism|preset:Map|key:name) master_preset.xml:4783(text:text|group:Tourism|preset:Information_Board|key:name) master_preset.xml:4860(text:text|group:Tourism|preset:Other_Information_Point|key:name) master_preset.xml:4915(text:text|group:Leisure|preset:Dog_Park|key:name) master_preset.xml:5066(text:text|group:Leisure|preset:Picnic_Site|key:name) master_preset.xml:5092(text:text|group:Leisure|preset:Public_Grill|key:name) master_preset.xml:5106(text:text|group:Leisure|preset:Firepit|key:name) master_preset.xml:5118(text:text|group:Leisure|preset:Fishing|key:name) master_preset.xml:5327(text:text|group:Culture|preset:Arts_Centre|key:name) master_preset.xml:5344(text:text|group:Culture|preset:Artwork|key:name) master_preset.xml:5382(text:text|group:Place_of_Worship|preset:Church|key:name) master_preset.xml:5406(text:text|group:Place_of_Worship|preset:Mosque|key:name) master_preset.xml:5430(text:text|group:Place_of_Worship|preset:Synagogue|key:name) master_preset.xml:5454(text:text|group:Place_of_Worship|preset:Buddhist_Temple|key:name) master_preset.xml:5477(text:text|group:Place_of_Worship|preset:Hindu_Temple|key:name) master_preset.xml:5500(text:text|group:Place_of_Worship|preset:Shinto_Shrine|key:name) master_preset.xml:5521(text:text|group:Place_of_Worship|preset:Other_Place_of_Worship|key:name) master_preset.xml:5652(text:text|group:Public_Building|preset:Fire_Station|key:name) master_preset.xml:594(text:text|key:name) master_preset.xml:652(text:text|group:Streets|preset:Motorway|key:name) master_preset.xml:6537(text:text|group:Facilities|preset:Shelter|key:name) master_preset.xml:6581(text:text|group:Facilities|preset:Drinking_Water|key:name) master_preset.xml:6597(text:text|group:Facilities|preset:Water_Point|key:name) master_preset.xml:6612(text:text|group:Facilities|preset:Animal_watering_place|key:name) master_preset.xml:6686(text:text|group:Sport_Facilities|preset:Stadium|key:name) master_preset.xml:6702(text:text|group:Sport_Facilities|preset:Sports_Centre|key:name) master_preset.xml:6716(text:text|group:Sport_Facilities|preset:Fitness_Centre|key:name) master_preset.xml:6733(text:text|group:Sport_Facilities|preset:Pitch|key:name) master_preset.xml:6748(text:text|group:Sport_Facilities|preset:Racetrack|key:name) master_preset.xml:6797(text:text|group:Golf|preset:Hole|key:name) master_preset.xml:6911(text:text|group:Sport|preset:Multi|key:name) master_preset.xml:6920(text:text|group:Sport|preset:Nine-pin_Bowling|key:name) master_preset.xml:6930(text:text|group:Sport|preset:Ten-pin_Bowling|key:name) master_preset.xml:6940(text:text|group:Sport|preset:Archery|key:name) master_preset.xml:6948(text:text|group:Sport|preset:Track_and_Field_Athletics|key:name) master_preset.xml:6965(text:text|group:Sport|preset:Climbing|key:name) master_preset.xml:6972(text:text|group:Sport|preset:Canoeing/Kayaking|key:name) master_preset.xml:6979(text:text|group:Sport|preset:Cycling|key:name) master_preset.xml:6986(text:text|group:Sport|preset:Dog_Racing|key:name) master_preset.xml:6995(text:text|group:Sport|preset:Equestrian|key:name) master_preset.xml:7002(text:text|group:Sport|preset:Horse_Racing|key:name) master_preset.xml:7009(text:text|group:Sport|preset:Gymnastics|key:name) master_preset.xml:7017(text:text|group:Sport|preset:Skating_(deprecated)|key:name) master_preset.xml:7025(text:text|group:Sport|preset:Ice_Skating|key:name) master_preset.xml:7032(text:text|group:Sport|preset:Roller_Skating|key:name) master_preset.xml:7041(text:text|group:Sport|preset:Skateboard|key:name) master_preset.xml:7050(text:text|group:Sport|preset:Swimming|key:name) master_preset.xml:7059(text:text|group:Sport|preset:Scuba_Diving|key:name) master_preset.xml:7068(text:text|group:Sport|preset:Skiing|key:name) master_preset.xml:7086(text:text|group:Sport|preset:Shooting|key:name) master_preset.xml:718(text:text|group:Streets|preset:Trunk|key:name) master_preset.xml:7207(text:text|group:Sport_(Ball)|preset:Golf|key:name) master_preset.xml:7241(text:text|group:Sport_(Ball)|preset:Field_Hockey|key:name) master_preset.xml:7248(text:text|group:Sport_(Ball)|preset:Ice_Hockey|key:name) master_preset.xml:7263(text:text|group:Sport_(Ball)|preset:Racquetball|key:name) master_preset.xml:7271(text:text|group:Sport_(Ball)|preset:Table_Tennis/Ping-Pong|key:name) master_preset.xml:7289(text:text|group:Motorsport|preset:Motorsport|key:name) master_preset.xml:7297(text:text|group:Motorsport|preset:Kart_Racing|key:name) master_preset.xml:7308(text:text|group:Motorsport|preset:Motocross|key:name) master_preset.xml:7324(text:text|group:Motorsport|preset:Safety_Training|key:name) master_preset.xml:7332(text:text|group:Motorsport|preset:Model_Aerodrome|key:name) master_preset.xml:7350(text:text|group:Motorsport|preset:RC_Car|key:name) master_preset.xml:7364(text:text|group:Motorsport|preset:Raceway|key:name) master_preset.xml:7581(text:text|group:Man_Made|preset:Tower|key:name) master_preset.xml:7608(text:text|group:Man_Made|preset:Works|key:name) master_preset.xml:7633(text:text|group:Man_Made|preset:Windmill|key:name) master_preset.xml:7714(text:text|group:Man_Made|preset:Crane|key:name) master_preset.xml:7726(text:text|group:Man_Made|preset:Mineshaft|key:name) master_preset.xml:7745(text:text|group:Man_Made|preset:Adit|key:name) master_preset.xml:7773(text:text|group:Man_Made|preset:Pipeline|key:name) master_preset.xml:7828(text:text|group:Man_Made|preset:Wastewater_Treatment_Plant|key:name) master_preset.xml:783(text:text|group:Streets|preset:Primary|key:name) master_preset.xml:7843(text:text|group:Man_Made|preset:Watermill|key:name) master_preset.xml:7858(text:text|group:Man_Made|preset:Fountain|key:name) master_preset.xml:7872(text:text|group:Man_Made|preset:Water_Well|key:name) master_preset.xml:7885(text:text|group:Man_Made|preset:Lighthouse|key:name) master_preset.xml:7893(text:text|group:Man_Made|preset:Beacon|key:name) master_preset.xml:7957(text:text|group:Man_Made|preset:Survey_Point|key:name) master_preset.xml:7977(text:text|group:Man_Made|preset:Surveillance_Camera|key:name) master_preset.xml:8240(text:text|preset:Power_Substation|key:name) master_preset.xml:828(text:text|group:Streets|preset:Secondary|key:name) master_preset.xml:8532(text:text|group:Historic_Places|preset:Battlefield|key:name) master_preset.xml:8544(text:text|group:Historic_Places|preset:Palaeontological_Site|key:name) master_preset.xml:8560(text:text|group:Historic_Places|preset:Monument|key:name) master_preset.xml:8575(text:text|group:Historic_Places|preset:Memorial|key:name) master_preset.xml:8597(text:text|group:Historic_Places|preset:Wayside_Cross|key:name) master_preset.xml:8615(text:text|group:Historic_Places|preset:Wayside_Shrine|key:name) master_preset.xml:8633(text:text|group:Historic_Places|preset:Boundary_Stone|key:name) master_preset.xml:873(text:text|group:Streets|preset:Tertiary|key:name) master_preset.xml:913(text:text|group:Streets|preset:Minor_road|key:name) master_preset.xml:939(text:text|group:Streets|preset:Residential|key:name) master_preset.xml:960(text:text|group:Streets|preset:Bicycle_Road|key:name) master_preset.xml:991(text:text|group:Streets|preset:Living_Street|key:name) master_preset.xml:9969(text:text|group:Boundaries|preset:Administrative|key:name) master_preset.xml:9984(text:text|group:Boundaries|preset:Political|key:name)
 msgid "Name"
 msgstr ""
 
-#: master_preset.xml:11685(text:text|preset:Waterway|key:destination)
+#: master_preset.xml:11707(text:text|preset:Waterway|key:destination)
 msgid "Name of river/lake/sea/ocean it runs into"
 msgstr ""
 
@@ -3805,7 +3813,7 @@ msgstr ""
 msgid "Narrow Gauge Rail"
 msgstr ""
 
-#: master_preset.xml:11388(combo:display_values|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11431(combo:display_values|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11468(combo:display_values|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11528(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network)
+#: master_preset.xml:11410(combo:display_values|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11453(combo:display_values|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11490(combo:display_values|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11550(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network)
 msgid "National"
 msgstr ""
 
@@ -3817,7 +3825,7 @@ msgstr ""
 msgid "National name"
 msgstr ""
 
-#: master_preset.xml:11286(combo:display_values|group:Relations|preset:Boundary|key:boundary)
+#: master_preset.xml:11308(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 msgid "National park"
 msgstr ""
 
@@ -3837,11 +3845,11 @@ msgstr ""
 msgid "Neighbourhood"
 msgstr ""
 
-#: master_preset.xml:11388(combo:text|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11431(combo:text|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11449(combo:text|group:Routes|preset:Walking_Route|key:network) master_preset.xml:11468(combo:text|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11528(combo:text|group:Routes|preset:Inline_Skating_Route|key:network) master_preset.xml:11588(text:text|group:Routes|preset:Road_Route|key:network) master_preset.xml:11605(text:text|preset:Route_Network|key:network) master_preset.xml:3871(text:text|group:Public_Transport|preset:Route_Master|key:network) master_preset.xml:3889(text:text|group:Public_Transport|preset:Stop_Area|key:network) master_preset.xml:3909(text:text|group:Public_Transport|preset:Stop_Position|key:network) master_preset.xml:3946(text:text|group:Public_Transport|preset:Platform|key:network) master_preset.xml:3979(text:text|group:Public_Transport|preset:Station|key:network) master_preset.xml:4027(text:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:network) master_preset.xml:506(text:text|key:network)
+#: master_preset.xml:11410(combo:text|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11453(combo:text|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11471(combo:text|group:Routes|preset:Walking_Route|key:network) master_preset.xml:11490(combo:text|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11550(combo:text|group:Routes|preset:Inline_Skating_Route|key:network) master_preset.xml:11610(text:text|group:Routes|preset:Road_Route|key:network) master_preset.xml:11627(text:text|preset:Route_Network|key:network) master_preset.xml:3871(text:text|group:Public_Transport|preset:Route_Master|key:network) master_preset.xml:3889(text:text|group:Public_Transport|preset:Stop_Area|key:network) master_preset.xml:3909(text:text|group:Public_Transport|preset:Stop_Position|key:network) master_preset.xml:3946(text:text|group:Public_Transport|preset:Platform|key:network) master_preset.xml:3979(text:text|group:Public_Transport|preset:Station|key:network) master_preset.xml:4027(text:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:network) master_preset.xml:506(text:text|key:network)
 msgid "Network"
 msgstr ""
 
-#: master_preset.xml:12602(item:name|group:Offices|preset:Newspaper)
+#: master_preset.xml:12624(item:name|group:Offices|preset:Newspaper)
 msgid "Newspaper"
 msgstr ""
 
@@ -3853,7 +3861,7 @@ msgstr ""
 msgid "Newspapers"
 msgstr ""
 
-#: master_preset.xml:12477(item:name|group:Offices|preset:Ngo)
+#: master_preset.xml:12499(item:name|group:Offices|preset:Ngo)
 msgid "Ngo"
 msgstr ""
 
@@ -3881,19 +3889,19 @@ msgstr ""
 msgid "No exit (cul-de-sac)"
 msgstr ""
 
-#: master_preset.xml:11343(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
+#: master_preset.xml:11365(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "No left turn"
 msgstr ""
 
-#: master_preset.xml:11343(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
+#: master_preset.xml:11365(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "No right turn"
 msgstr ""
 
-#: master_preset.xml:11343(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
+#: master_preset.xml:11365(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "No straight on"
 msgstr ""
 
-#: master_preset.xml:11343(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
+#: master_preset.xml:11365(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "No u-turn"
 msgstr ""
 
@@ -3913,7 +3921,7 @@ msgstr ""
 msgid "Noodle"
 msgstr ""
 
-#: master_preset.xml:11487(combo:display_values|group:Routes|preset:Piste_Route|key:piste:type) master_preset.xml:11509(combo:display_values|group:Routes|preset:Ski_Route|key:piste:type)
+#: master_preset.xml:11509(combo:display_values|group:Routes|preset:Piste_Route|key:piste:type) master_preset.xml:11531(combo:display_values|group:Routes|preset:Ski_Route|key:piste:type)
 msgid "Nordic"
 msgstr ""
 
@@ -3925,7 +3933,7 @@ msgstr ""
 msgid "Not controlled"
 msgstr ""
 
-#: master_preset.xml:12688(item:name|group:Offices|preset:Notary)
+#: master_preset.xml:12710(item:name|group:Offices|preset:Notary)
 msgid "Notary"
 msgstr ""
 
@@ -4045,7 +4053,7 @@ msgstr ""
 msgid "Off-Road: heavy duty off-road vehicle"
 msgstr ""
 
-#: master_preset.xml:12369(group:name|group:Offices)
+#: master_preset.xml:12391(group:name|group:Offices)
 msgid "Offices"
 msgstr ""
 
@@ -4081,15 +4089,15 @@ msgstr ""
 msgid "Only"
 msgstr ""
 
-#: master_preset.xml:11343(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
+#: master_preset.xml:11365(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "Only left turn"
 msgstr ""
 
-#: master_preset.xml:11343(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
+#: master_preset.xml:11365(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "Only right turn"
 msgstr ""
 
-#: master_preset.xml:11343(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
+#: master_preset.xml:11365(combo:display_values|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "Only straight on"
 msgstr ""
 
@@ -4113,7 +4121,7 @@ msgstr ""
 msgid "Operation times"
 msgstr ""
 
-#: master_preset.xml:10732(text:text|group:Land_use|preset:Greenhouse_Horticulture|key:operator) master_preset.xml:10745(text:text|group:Land_use|preset:Plant_Nursery|key:operator) master_preset.xml:10757(text:text|group:Land_use|preset:Aquaculture|key:operator) master_preset.xml:10964(text:text|group:Land_use|preset:Garages|key:operator) master_preset.xml:11544(text:text|group:Routes|preset:Detour_Route|key:operator) master_preset.xml:11589(text:text|group:Routes|preset:Road_Route|key:operator) master_preset.xml:11606(text:text|preset:Route_Network|key:operator) master_preset.xml:11712(text:text|preset:Bridge|key:operator) master_preset.xml:11727(text:text|preset:Tunnel|key:operator) master_preset.xml:1498(text:text|group:Waypoints|preset:Services|key:operator) master_preset.xml:150(text:text|key:operator) master_preset.xml:154(text:text|key:operator) master_preset.xml:1964(text:text|group:Barriers|preset:Toll_Booth|key:operator) master_preset.xml:204(text:text|key:operator) master_preset.xml:285(text:text|key:operator) master_preset.xml:315(text:text|key:operator) master_preset.xml:3268(text:text|group:Railway|preset:Railway_Switch|key:operator) master_preset.xml:3277(text:text|group:Railway|preset:Railway_Signal|key:operator) master_preset.xml:3502(text:text|group:Car|preset:Fuel|key:operator) master_preset.xml:352(text:text|key:operator) master_preset.xml:3689(text:text|group:Car|preset:Sharing|key:operator) master_preset.xml:3725(text:text|group:Motorcycle|preset:Motorcycle_Dealer|key:operator) master_preset.xml:3816(text:text|group:Bicycle|preset:Public_Bicycle_Repair_Station|key:operator) master_preset.xml:3870(text:text|group:Public_Transport|preset:Route_Master|key:operator) master_preset.xml:3888(text:text|group:Public_Transport|preset:Stop_Area|key:operator) master_preset.xml:3908(text:text|group:Public_Transport|preset:Stop_Position|key:operator) master_preset.xml:3945(text:text|group:Public_Transport|preset:Platform|key:operator) master_preset.xml:3978(text:text|group:Public_Transport|preset:Station|key:operator) master_preset.xml:4026(text:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:operator) master_preset.xml:436(text:text|key:operator) master_preset.xml:505(text:text|key:operator) master_preset.xml:5894(text:text|group:Health|preset:Emergency_Access_Point|key:operator) master_preset.xml:5942(text:text|group:Emergency|preset:Automated_Defibrillator|key:operator) master_preset.xml:5965(text:text|group:Emergency|preset:Fire_Extinguisher|key:operator) master_preset.xml:5977(text:text|group:Emergency|preset:Fire_Hose|key:operator) master_preset.xml:5997(text:text|group:Emergency|preset:Fire_Hydrant|key:operator) master_preset.xml:6035(text:text|group:Emergency|preset:Emergency_Phone|key:operator) master_preset.xml:6045(text:text|group:Emergency|preset:Siren|key:operator) master_preset.xml:6263(text:text|group:Facilities|preset:Toilets/Restrooms|key:operator) master_preset.xml:6285(text:text|group:Facilities|preset:Shower|key:operator) master_preset.xml:6301(text:text|group:Facilities|preset:Post_Box|key:operator) master_preset.xml:6317(text:text|group:Facilities|preset:Telephone|key:operator) master_preset.xml:6498(text:text|group:Facilities|preset:Sanitary_Dump_Station|key:operator) master_preset.xml:6627(text:text|group:Facilities|preset:Compressed_Air|key:operator) master_preset.xml:6665(text:text|group:Facilities|preset:Excrement_Bags|key:operator) master_preset.xml:7585(text:text|group:Man_Made|preset:Tower|key:operator) master_preset.xml:7729(text:text|group:Man_Made|preset:Mineshaft|key:operator) master_preset.xml:7747(text:text|group:Man_Made|preset:Adit|key:operator) master_preset.xml:7975(text:text|group:Man_Made|preset:Surveillance_Camera|key:operator) master_preset.xml:9219(text:text|group:Cash|preset:Automated_Teller_Machine|key:operator) master_preset.xml:9893(text:text|preset:Vending_Machine|key:operator)
+#: master_preset.xml:10732(text:text|group:Land_use|preset:Greenhouse_Horticulture|key:operator) master_preset.xml:10745(text:text|group:Land_use|preset:Plant_Nursery|key:operator) master_preset.xml:10757(text:text|group:Land_use|preset:Aquaculture|key:operator) master_preset.xml:10964(text:text|group:Land_use|preset:Garages|key:operator) master_preset.xml:11566(text:text|group:Routes|preset:Detour_Route|key:operator) master_preset.xml:11611(text:text|group:Routes|preset:Road_Route|key:operator) master_preset.xml:11628(text:text|preset:Route_Network|key:operator) master_preset.xml:11734(text:text|preset:Bridge|key:operator) master_preset.xml:11749(text:text|preset:Tunnel|key:operator) master_preset.xml:1498(text:text|group:Waypoints|preset:Services|key:operator) master_preset.xml:150(text:text|key:operator) master_preset.xml:154(text:text|key:operator) master_preset.xml:1964(text:text|group:Barriers|preset:Toll_Booth|key:operator) master_preset.xml:204(text:text|key:operator) master_preset.xml:285(text:text|key:operator) master_preset.xml:315(text:text|key:operator) master_preset.xml:3268(text:text|group:Railway|preset:Railway_Switch|key:operator) master_preset.xml:3277(text:text|group:Railway|preset:Railway_Signal|key:operator) master_preset.xml:3502(text:text|group:Car|preset:Fuel|key:operator) master_preset.xml:352(text:text|key:operator) master_preset.xml:3689(text:text|group:Car|preset:Sharing|key:operator) master_preset.xml:3725(text:text|group:Motorcycle|preset:Motorcycle_Dealer|key:operator) master_preset.xml:3816(text:text|group:Bicycle|preset:Public_Bicycle_Repair_Station|key:operator) master_preset.xml:3870(text:text|group:Public_Transport|preset:Route_Master|key:operator) master_preset.xml:3888(text:text|group:Public_Transport|preset:Stop_Area|key:operator) master_preset.xml:3908(text:text|group:Public_Transport|preset:Stop_Position|key:operator) master_preset.xml:3945(text:text|group:Public_Transport|preset:Platform|key:operator) master_preset.xml:3978(text:text|group:Public_Transport|preset:Station|key:operator) master_preset.xml:4026(text:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:operator) master_preset.xml:436(text:text|key:operator) master_preset.xml:505(text:text|key:operator) master_preset.xml:5894(text:text|group:Health|preset:Emergency_Access_Point|key:operator) master_preset.xml:5942(text:text|group:Emergency|preset:Automated_Defibrillator|key:operator) master_preset.xml:5965(text:text|group:Emergency|preset:Fire_Extinguisher|key:operator) master_preset.xml:5977(text:text|group:Emergency|preset:Fire_Hose|key:operator) master_preset.xml:5997(text:text|group:Emergency|preset:Fire_Hydrant|key:operator) master_preset.xml:6035(text:text|group:Emergency|preset:Emergency_Phone|key:operator) master_preset.xml:6045(text:text|group:Emergency|preset:Siren|key:operator) master_preset.xml:6263(text:text|group:Facilities|preset:Toilets/Restrooms|key:operator) master_preset.xml:6285(text:text|group:Facilities|preset:Shower|key:operator) master_preset.xml:6301(text:text|group:Facilities|preset:Post_Box|key:operator) master_preset.xml:6317(text:text|group:Facilities|preset:Telephone|key:operator) master_preset.xml:6498(text:text|group:Facilities|preset:Sanitary_Dump_Station|key:operator) master_preset.xml:6627(text:text|group:Facilities|preset:Compressed_Air|key:operator) master_preset.xml:6665(text:text|group:Facilities|preset:Excrement_Bags|key:operator) master_preset.xml:7585(text:text|group:Man_Made|preset:Tower|key:operator) master_preset.xml:7729(text:text|group:Man_Made|preset:Mineshaft|key:operator) master_preset.xml:7747(text:text|group:Man_Made|preset:Adit|key:operator) master_preset.xml:7975(text:text|group:Man_Made|preset:Surveillance_Camera|key:operator) master_preset.xml:9219(text:text|group:Cash|preset:Automated_Teller_Machine|key:operator) master_preset.xml:9893(text:text|preset:Vending_Machine|key:operator)
 msgid "Operator"
 msgstr ""
 
@@ -4121,7 +4129,7 @@ msgstr ""
 msgid "Operator type"
 msgstr ""
 
-#: master_preset.xml:12352(item:name|group:Crafts|preset:Optician) master_preset.xml:9522(item:name|group:For_the_body|preset:Optician)
+#: master_preset.xml:12374(item:name|group:Crafts|preset:Optician) master_preset.xml:9522(item:name|group:For_the_body|preset:Optician)
 msgid "Optician"
 msgstr ""
 
@@ -4185,7 +4193,7 @@ msgstr ""
 msgid "Outdoor seating"
 msgstr ""
 
-#: master_preset.xml:11308(role:text|group:Relations|preset:Building|key:outline)
+#: master_preset.xml:11330(role:text|group:Relations|preset:Building|key:outline)
 msgid "Outline of building"
 msgstr ""
 
@@ -4221,7 +4229,7 @@ msgstr ""
 msgid "PET"
 msgstr ""
 
-#: master_preset.xml:11345(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
+#: master_preset.xml:11367(multiselect:display_values|group:Relations|preset:Turn_Restriction|key:except)
 msgid "PSV"
 msgstr ""
 
@@ -4229,7 +4237,7 @@ msgstr ""
 msgid "Paint"
 msgstr ""
 
-#: master_preset.xml:12019(item:name|group:Crafts|preset:Painter)
+#: master_preset.xml:12041(item:name|group:Crafts|preset:Painter)
 msgid "Painter"
 msgstr ""
 
@@ -4257,7 +4265,7 @@ msgstr ""
 msgid "Parcel pickup"
 msgstr ""
 
-#: master_preset.xml:12696(item:name|group:Offices|preset:Parish)
+#: master_preset.xml:12718(item:name|group:Offices|preset:Parish)
 msgid "Parish"
 msgstr ""
 
@@ -4293,7 +4301,7 @@ msgstr ""
 msgid "Parking tickets"
 msgstr ""
 
-#: master_preset.xml:12030(item:name|group:Crafts|preset:Parquet_layer)
+#: master_preset.xml:12052(item:name|group:Crafts|preset:Parquet_layer)
 msgid "Parquet layer"
 msgstr ""
 
@@ -4405,15 +4413,15 @@ msgstr ""
 msgid "Photo booth"
 msgstr ""
 
-#: master_preset.xml:12360(item:name|group:Crafts|preset:Photo_studio)
+#: master_preset.xml:12382(item:name|group:Crafts|preset:Photo_studio)
 msgid "Photo studio"
 msgstr ""
 
-#: master_preset.xml:12283(item:name|group:Crafts|preset:Photographer)
+#: master_preset.xml:12305(item:name|group:Crafts|preset:Photographer)
 msgid "Photographer"
 msgstr ""
 
-#: master_preset.xml:12038(item:name|group:Crafts|preset:Photographic_laboratory)
+#: master_preset.xml:12060(item:name|group:Crafts|preset:Photographic_laboratory)
 msgid "Photographic laboratory"
 msgstr ""
 
@@ -4425,7 +4433,7 @@ msgstr ""
 msgid "Physical restrictions"
 msgstr ""
 
-#: master_preset.xml:12704(item:name|group:Offices|preset:Physician)
+#: master_preset.xml:12726(item:name|group:Offices|preset:Physician)
 msgid "Physician"
 msgstr ""
 
@@ -4453,11 +4461,11 @@ msgstr ""
 msgid "Pipeline Valve"
 msgstr ""
 
-#: master_preset.xml:11478(item:name|group:Routes|preset:Piste_Route)
+#: master_preset.xml:11500(item:name|group:Routes|preset:Piste_Route)
 msgid "Piste Route"
 msgstr ""
 
-#: master_preset.xml:11487(combo:text|group:Routes|preset:Piste_Route|key:piste:type) master_preset.xml:11509(combo:text|group:Routes|preset:Ski_Route|key:piste:type) master_preset.xml:7069(combo:text|group:Sport|preset:Skiing|key:piste:type)
+#: master_preset.xml:11509(combo:text|group:Routes|preset:Piste_Route|key:piste:type) master_preset.xml:11531(combo:text|group:Routes|preset:Ski_Route|key:piste:type) master_preset.xml:7069(combo:text|group:Sport|preset:Skiing|key:piste:type)
 msgid "Piste type"
 msgstr ""
 
@@ -4521,7 +4529,7 @@ msgstr ""
 msgid "Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting."
 msgstr ""
 
-#: master_preset.xml:12046(item:name|group:Crafts|preset:Plasterer)
+#: master_preset.xml:12068(item:name|group:Crafts|preset:Plasterer)
 msgid "Plasterer"
 msgstr ""
 
@@ -4549,7 +4557,7 @@ msgstr ""
 msgid "Playground"
 msgstr ""
 
-#: master_preset.xml:12054(item:name|group:Crafts|preset:Plumber)
+#: master_preset.xml:12076(item:name|group:Crafts|preset:Plumber)
 msgid "Plumber"
 msgstr ""
 
@@ -4577,11 +4585,11 @@ msgstr ""
 msgid "Police"
 msgstr ""
 
-#: master_preset.xml:11286(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:5273(list_entry:display_value|group:Culture|preset:Other_theatres|value:political) master_preset.xml:9973(item:name|group:Boundaries|preset:Political)
+#: master_preset.xml:11308(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:5273(list_entry:display_value|group:Culture|preset:Other_theatres|value:political) master_preset.xml:9973(item:name|group:Boundaries|preset:Political)
 msgid "Political"
 msgstr ""
 
-#: master_preset.xml:12490(item:name|group:Offices|preset:Political_party)
+#: master_preset.xml:12512(item:name|group:Offices|preset:Political_party)
 msgid "Political party"
 msgstr ""
 
@@ -4609,11 +4617,11 @@ msgstr ""
 msgid "Postal Code"
 msgstr ""
 
-#: master_preset.xml:11286(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:310(text:text|key:postal_code)
+#: master_preset.xml:11308(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:310(text:text|key:postal_code)
 msgid "Postal code"
 msgstr ""
 
-#: master_preset.xml:12065(item:name|group:Crafts|preset:Pottery)
+#: master_preset.xml:12087(item:name|group:Crafts|preset:Pottery)
 msgid "Pottery"
 msgstr ""
 
@@ -4657,7 +4665,7 @@ msgstr ""
 msgid "Power Portal"
 msgstr ""
 
-#: master_preset.xml:11553(item:name|group:Routes|preset:Power_Route)
+#: master_preset.xml:11575(item:name|group:Routes|preset:Power_Route)
 msgid "Power Route"
 msgstr ""
 
@@ -4733,7 +4741,7 @@ msgstr ""
 msgid "Primary Link"
 msgstr ""
 
-#: master_preset.xml:12296(item:name|group:Crafts|preset:Print_shop)
+#: master_preset.xml:12318(item:name|group:Crafts|preset:Print_shop)
 msgid "Print shop"
 msgstr ""
 
@@ -4749,7 +4757,7 @@ msgstr ""
 msgid "Private"
 msgstr ""
 
-#: master_preset.xml:12432(combo:display_values|group:Offices|preset:Government|key:government)
+#: master_preset.xml:12454(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Prosecutor"
 msgstr ""
 
@@ -4761,7 +4769,7 @@ msgstr ""
 msgid "Protected Class"
 msgstr ""
 
-#: master_preset.xml:11286(combo:display_values|group:Relations|preset:Boundary|key:boundary)
+#: master_preset.xml:11308(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 msgid "Protected area"
 msgstr ""
 
@@ -4829,7 +4837,7 @@ msgstr ""
 msgid "Public transport route (Legacy)"
 msgstr ""
 
-#: master_preset.xml:12712(item:name|group:Offices|preset:Publisher)
+#: master_preset.xml:12734(item:name|group:Offices|preset:Publisher)
 msgid "Publisher"
 msgstr ""
 
@@ -4853,7 +4861,7 @@ msgstr ""
 msgid "Quaker"
 msgstr ""
 
-#: master_preset.xml:12616(item:name|group:Offices|preset:Quango)
+#: master_preset.xml:12638(item:name|group:Offices|preset:Quango)
 msgid "Quango"
 msgstr ""
 
@@ -4905,7 +4913,7 @@ msgstr ""
 msgid "Railway Platform"
 msgstr ""
 
-#: master_preset.xml:11563(item:name|group:Routes|preset:Railway_Route)
+#: master_preset.xml:11585(item:name|group:Routes|preset:Railway_Route)
 msgid "Railway Route"
 msgstr ""
 
@@ -4985,11 +4993,11 @@ msgstr ""
 msgid "Reef"
 msgstr ""
 
-#: master_preset.xml:11546(text:text|group:Routes|preset:Detour_Route|key:detour)
+#: master_preset.xml:11568(text:text|group:Routes|preset:Detour_Route|key:detour)
 msgid "Ref of the way this is a detour to"
 msgstr ""
 
-#: master_preset.xml:11686(text:text|preset:Waterway|key:ref) master_preset.xml:145(text:text|key:ref) master_preset.xml:149(text:text|key:ref) master_preset.xml:1834(text:text|preset:Highway_milestone|key:ref) master_preset.xml:2700(text:text|group:Water|preset:Breakwater|key:ref) master_preset.xml:314(text:text|key:ref) master_preset.xml:3267(text:text|group:Railway|preset:Railway_Switch|key:ref) master_preset.xml:3276(text:text|group:Railway|preset:Railway_Signal|key:ref) master_preset.xml:3286(text:text|group:Railway|preset:Railway_milestone|key:ref) master_preset.xml:351(text:text|key:ref) master_preset.xml:3885(text:text|group:Public_Transport|preset:Stop_Area|key:ref) master_preset.xml:3905(text:text|group:Public_Transport|preset:Stop_Position|key:ref) master_preset.xml:3942(text:text|group:Public_Transport|preset:Platform|key:ref) master_preset.xml:4183(text:text|group:Airport|preset:Runway|key:ref) master_preset.xml:4196(text:text|group:Airport|preset:Taxiway|key:ref) master_preset.xml:4205(text:text|group:Airport|preset:Holding_Position|key:ref) master_preset.xml:4219(text:text|group:Airport|preset:Helipad|key:ref) master_preset.xml:4237(text:text|group:Airport|preset:Plane_Parking_Position|key:ref) master_preset.xml:4291(text:text|group:Airport|preset:Gate|key:ref) master_preset.xml:4993(text:text|group:Leisure|preset:Fitness_Station|key:ref) master_preset.xml:5670(text:text|group:Public_Building|preset:Post_Office|key:ref) master_preset.xml:5964(text:text|group:Emergency|preset:Fire_Extinguisher|key:ref) master_preset.xml:5976(text:text|group:Emergency|preset:Fire_Hose|key:ref) master_preset.xml:6034(text:text|group:Emergency|preset:Emergency_Phone|key:ref) master_preset.xml:6044(text:text|group:Emergency|preset:Siren|key:ref) master_preset.xml:650(text:text|group:Streets|preset:Motorway|key:ref) master_preset.xml:6794(text:text|group:Golf|preset:Hole|key:ref) master_preset.xml:6812(text:text|group:Golf|preset:Pin|key:ref) master_preset.xml:716(text:text|group:Streets|preset:Trunk|key:ref) master_preset.xml:745(text:text|group:Streets|preset:Trunk_Link|key:ref) master_preset.xml:7774(text:text|group:Man_Made|preset:Pipeline|key:ref) master_preset.xml:7785(text:text|group:Man_Made|preset:Pipeline_Marker|key:ref) master_preset.xml:7795(text:text|group:Man_Made|preset:Pipeline_Valve|key:ref) master_preset.xml:781(text:text|group:Streets|preset:Primary|key:ref) master_preset.xml:7958(text:text|group:Man_Made|preset:Survey_Point|key:ref) master_preset.xml:7978(text:text|group:Man_Made|preset:Surveillance_Camera|key:ref) master_preset.xml:826(text:text|group:Streets|preset:Secondary|key:ref) master_preset.xml:871(text:text|group:Streets|preset:Tertiary|key:ref) master_preset.xml:915(text:text|group:Streets|preset:Minor_road|key:ref) master_preset.xml:9187(text:text|group:Cash|preset:Bank|key:ref) master_preset.xml:942(text:text|group:Streets|preset:Residential|key:ref)
+#: master_preset.xml:11708(text:text|preset:Waterway|key:ref) master_preset.xml:145(text:text|key:ref) master_preset.xml:149(text:text|key:ref) master_preset.xml:1834(text:text|preset:Highway_milestone|key:ref) master_preset.xml:2700(text:text|group:Water|preset:Breakwater|key:ref) master_preset.xml:314(text:text|key:ref) master_preset.xml:3267(text:text|group:Railway|preset:Railway_Switch|key:ref) master_preset.xml:3276(text:text|group:Railway|preset:Railway_Signal|key:ref) master_preset.xml:3286(text:text|group:Railway|preset:Railway_milestone|key:ref) master_preset.xml:351(text:text|key:ref) master_preset.xml:3885(text:text|group:Public_Transport|preset:Stop_Area|key:ref) master_preset.xml:3905(text:text|group:Public_Transport|preset:Stop_Position|key:ref) master_preset.xml:3942(text:text|group:Public_Transport|preset:Platform|key:ref) master_preset.xml:4183(text:text|group:Airport|preset:Runway|key:ref) master_preset.xml:4196(text:text|group:Airport|preset:Taxiway|key:ref) master_preset.xml:4205(text:text|group:Airport|preset:Holding_Position|key:ref) master_preset.xml:4219(text:text|group:Airport|preset:Helipad|key:ref) master_preset.xml:4237(text:text|group:Airport|preset:Plane_Parking_Position|key:ref) master_preset.xml:4291(text:text|group:Airport|preset:Gate|key:ref) master_preset.xml:4993(text:text|group:Leisure|preset:Fitness_Station|key:ref) master_preset.xml:5670(text:text|group:Public_Building|preset:Post_Office|key:ref) master_preset.xml:5964(text:text|group:Emergency|preset:Fire_Extinguisher|key:ref) master_preset.xml:5976(text:text|group:Emergency|preset:Fire_Hose|key:ref) master_preset.xml:6034(text:text|group:Emergency|preset:Emergency_Phone|key:ref) master_preset.xml:6044(text:text|group:Emergency|preset:Siren|key:ref) master_preset.xml:650(text:text|group:Streets|preset:Motorway|key:ref) master_preset.xml:6794(text:text|group:Golf|preset:Hole|key:ref) master_preset.xml:6812(text:text|group:Golf|preset:Pin|key:ref) master_preset.xml:716(text:text|group:Streets|preset:Trunk|key:ref) master_preset.xml:745(text:text|group:Streets|preset:Trunk_Link|key:ref) master_preset.xml:7774(text:text|group:Man_Made|preset:Pipeline|key:ref) master_preset.xml:7785(text:text|group:Man_Made|preset:Pipeline_Marker|key:ref) master_preset.xml:7795(text:text|group:Man_Made|preset:Pipeline_Valve|key:ref) master_preset.xml:781(text:text|group:Streets|preset:Primary|key:ref) master_preset.xml:7958(text:text|group:Man_Made|preset:Survey_Point|key:ref) master_preset.xml:7978(text:text|group:Man_Made|preset:Surveillance_Camera|key:ref) master_preset.xml:826(text:text|group:Streets|preset:Secondary|key:ref) master_preset.xml:871(text:text|group:Streets|preset:Tertiary|key:ref) master_preset.xml:915(text:text|group:Streets|preset:Minor_road|key:ref) master_preset.xml:9187(text:text|group:Cash|preset:Bank|key:ref) master_preset.xml:942(text:text|group:Streets|preset:Residential|key:ref)
 msgid "Reference"
 msgstr ""
 
@@ -4997,15 +5005,15 @@ msgstr ""
 msgid "Reference (track number)"
 msgstr ""
 
-#: master_preset.xml:11688(text:text|preset:Waterway|key:ref:fgkz)
+#: master_preset.xml:11710(text:text|preset:Waterway|key:ref:fgkz)
 msgid "Reference FGKZ (DE)"
 msgstr ""
 
-#: master_preset.xml:11691(text:text|preset:Waterway|key:ref:gnbc)
+#: master_preset.xml:11713(text:text|preset:Waterway|key:ref:gnbc)
 msgid "Reference GNBC (CA)"
 msgstr ""
 
-#: master_preset.xml:11690(text:text|preset:Waterway|key:ref:gnis)
+#: master_preset.xml:11712(text:text|preset:Waterway|key:ref:gnis)
 msgid "Reference GNIS (USA)"
 msgstr ""
 
@@ -5013,11 +5021,11 @@ msgstr ""
 msgid "Reference Number"
 msgstr ""
 
-#: master_preset.xml:11689(text:text|preset:Waterway|key:ref:regine)
+#: master_preset.xml:11711(text:text|preset:Waterway|key:ref:regine)
 msgid "Reference REGINE (NO)"
 msgstr ""
 
-#: master_preset.xml:11687(text:text|preset:Waterway|key:ref:sandre)
+#: master_preset.xml:11709(text:text|preset:Waterway|key:ref:sandre)
 msgid "Reference Sandre (FR)"
 msgstr ""
 
@@ -5045,7 +5053,7 @@ msgstr ""
 msgid "Region"
 msgstr ""
 
-#: master_preset.xml:11388(combo:display_values|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11431(combo:display_values|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11449(combo:display_values|group:Routes|preset:Walking_Route|key:network) master_preset.xml:11468(combo:display_values|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11528(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network) master_preset.xml:221(multiselect:display_values|key:cuisine)
+#: master_preset.xml:11410(combo:display_values|group:Routes|preset:Bicycle_Route|key:network) master_preset.xml:11453(combo:display_values|group:Routes|preset:Hiking_Route|key:network) master_preset.xml:11471(combo:display_values|group:Routes|preset:Walking_Route|key:network) master_preset.xml:11490(combo:display_values|group:Routes|preset:Riding_Route|key:network) master_preset.xml:11550(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network) master_preset.xml:221(multiselect:display_values|key:cuisine)
 msgid "Regional"
 msgstr ""
 
@@ -5053,15 +5061,15 @@ msgstr ""
 msgid "Regional name"
 msgstr ""
 
-#: master_preset.xml:12720(item:name|group:Offices|preset:Register)
+#: master_preset.xml:12742(item:name|group:Offices|preset:Register)
 msgid "Register"
 msgstr ""
 
-#: master_preset.xml:12432(combo:display_values|group:Offices|preset:Government|key:government)
+#: master_preset.xml:12454(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Register office"
 msgstr ""
 
-#: master_preset.xml:11249(group:name|group:Relations)
+#: master_preset.xml:11271(group:name|group:Relations)
 msgid "Relations"
 msgstr ""
 
@@ -5093,7 +5101,7 @@ msgstr ""
 msgid "Repair"
 msgstr ""
 
-#: master_preset.xml:12624(item:name|group:Offices|preset:Research)
+#: master_preset.xml:12646(item:name|group:Offices|preset:Research)
 msgid "Research"
 msgstr ""
 
@@ -5125,7 +5133,7 @@ msgstr ""
 msgid "Restaurant"
 msgstr ""
 
-#: master_preset.xml:11343(combo:text|group:Relations|preset:Turn_Restriction|key:restriction)
+#: master_preset.xml:11365(combo:text|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "Restriction"
 msgstr ""
 
@@ -5153,11 +5161,11 @@ msgstr ""
 msgid "Riding"
 msgstr ""
 
-#: master_preset.xml:11459(item:name|group:Routes|preset:Riding_Route)
+#: master_preset.xml:11481(item:name|group:Routes|preset:Riding_Route)
 msgid "Riding Route"
 msgstr ""
 
-#: master_preset.xml:12076(item:name|group:Crafts|preset:Rigger)
+#: master_preset.xml:12098(item:name|group:Crafts|preset:Rigger)
 msgid "Rigger"
 msgstr ""
 
@@ -5173,7 +5181,7 @@ msgstr ""
 msgid "Rising"
 msgstr ""
 
-#: master_preset.xml:11682(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2587(item:name|group:Water|preset:River) master_preset.xml:2776(combo:display_values|group:Water|preset:Water|key:water)
+#: master_preset.xml:11704(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2587(item:name|group:Water|preset:River) master_preset.xml:2776(combo:display_values|group:Water|preset:Water|key:water)
 msgid "River"
 msgstr ""
 
@@ -5185,7 +5193,7 @@ msgstr ""
 msgid "Road (Unknown Type)"
 msgstr ""
 
-#: master_preset.xml:11578(item:name|group:Routes|preset:Road_Route)
+#: master_preset.xml:11600(item:name|group:Routes|preset:Road_Route)
 msgid "Road Route"
 msgstr ""
 
@@ -5209,7 +5217,7 @@ msgstr ""
 msgid "Roman catholic"
 msgstr ""
 
-#: master_preset.xml:11311(role:text|group:Relations|preset:Building|key:edge)
+#: master_preset.xml:11333(role:text|group:Relations|preset:Building|key:edge)
 msgid "Roof edge"
 msgstr ""
 
@@ -5217,7 +5225,7 @@ msgstr ""
 msgid "Roof orientation"
 msgstr ""
 
-#: master_preset.xml:11310(role:text|group:Relations|preset:Building|key:ridge)
+#: master_preset.xml:11332(role:text|group:Relations|preset:Building|key:ridge)
 msgid "Roof ridge"
 msgstr ""
 
@@ -5229,7 +5237,7 @@ msgstr ""
 msgid "Roof type"
 msgstr ""
 
-#: master_preset.xml:12084(item:name|group:Crafts|preset:Roofer)
+#: master_preset.xml:12106(item:name|group:Crafts|preset:Roofer)
 msgid "Roofer"
 msgstr ""
 
@@ -5257,7 +5265,7 @@ msgstr ""
 msgid "Route Master"
 msgstr ""
 
-#: master_preset.xml:11599(item:name|preset:Route_Network)
+#: master_preset.xml:11621(item:name|preset:Route_Network)
 msgid "Route Network"
 msgstr ""
 
@@ -5265,7 +5273,7 @@ msgstr ""
 msgid "Route type"
 msgstr ""
 
-#: master_preset.xml:11378(group:name|group:Routes)
+#: master_preset.xml:11400(group:name|group:Routes)
 msgid "Routes"
 msgstr ""
 
@@ -5313,7 +5321,7 @@ msgstr ""
 msgid "Saddle"
 msgstr ""
 
-#: master_preset.xml:12095(item:name|group:Crafts|preset:Saddler)
+#: master_preset.xml:12117(item:name|group:Crafts|preset:Saddler)
 msgid "Saddler"
 msgstr ""
 
@@ -5325,7 +5333,7 @@ msgstr ""
 msgid "Safety inspection"
 msgstr ""
 
-#: master_preset.xml:12103(item:name|group:Crafts|preset:Sailmaker)
+#: master_preset.xml:12125(item:name|group:Crafts|preset:Sailmaker)
 msgid "Sailmaker"
 msgstr ""
 
@@ -5369,11 +5377,11 @@ msgstr ""
 msgid "Savanna"
 msgstr ""
 
-#: master_preset.xml:12111(item:name|group:Crafts|preset:Sawmill)
+#: master_preset.xml:12133(item:name|group:Crafts|preset:Sawmill)
 msgid "Sawmill"
 msgstr ""
 
-#: master_preset.xml:12123(item:name|group:Crafts|preset:Scaffolder)
+#: master_preset.xml:12145(item:name|group:Crafts|preset:Scaffolder)
 msgid "Scaffolder"
 msgstr ""
 
@@ -5417,7 +5425,7 @@ msgstr ""
 msgid "Scuba Diving"
 msgstr ""
 
-#: master_preset.xml:12131(item:name|group:Crafts|preset:Sculptor)
+#: master_preset.xml:12153(item:name|group:Crafts|preset:Sculptor)
 msgid "Sculptor"
 msgstr ""
 
@@ -5557,7 +5565,7 @@ msgstr ""
 msgid "Shipping"
 msgstr ""
 
-#: master_preset.xml:12304(item:name|group:Crafts|preset:Shoemaker)
+#: master_preset.xml:12326(item:name|group:Crafts|preset:Shoemaker)
 msgid "Shoemaker"
 msgstr ""
 
@@ -5621,11 +5629,11 @@ msgstr ""
 msgid "Siren"
 msgstr ""
 
-#: master_preset.xml:11316(item:name|group:Relations|preset:Site)
+#: master_preset.xml:11338(item:name|group:Relations|preset:Site)
 msgid "Site"
 msgstr ""
 
-#: master_preset.xml:11320(text:text|group:Relations|preset:Site|key:name)
+#: master_preset.xml:11342(text:text|group:Relations|preset:Site|key:name)
 msgid "Site name"
 msgstr ""
 
@@ -5641,7 +5649,7 @@ msgstr ""
 msgid "Ski"
 msgstr ""
 
-#: master_preset.xml:11501(item:name|group:Routes|preset:Ski_Route)
+#: master_preset.xml:11523(item:name|group:Routes|preset:Ski_Route)
 msgid "Ski Route"
 msgstr ""
 
@@ -5653,7 +5661,7 @@ msgstr ""
 msgid "Skipped height (meters)"
 msgstr ""
 
-#: master_preset.xml:11487(combo:display_values|group:Routes|preset:Piste_Route|key:piste:type)
+#: master_preset.xml:11509(combo:display_values|group:Routes|preset:Piste_Route|key:piste:type)
 msgid "Skitour"
 msgstr ""
 
@@ -5685,7 +5693,7 @@ msgstr ""
 msgid "Smoothness"
 msgstr ""
 
-#: master_preset.xml:11487(combo:display_values|group:Routes|preset:Piste_Route|key:piste:type)
+#: master_preset.xml:11509(combo:display_values|group:Routes|preset:Piste_Route|key:piste:type)
 msgid "Snow park"
 msgstr ""
 
@@ -5801,7 +5809,7 @@ msgstr ""
 msgid "Stamps"
 msgstr ""
 
-#: master_preset.xml:12139(item:name|group:Crafts|preset:Stand_builder)
+#: master_preset.xml:12161(item:name|group:Crafts|preset:Stand_builder)
 msgid "Stand builder"
 msgstr ""
 
@@ -5853,7 +5861,7 @@ msgstr ""
 msgid "Stone"
 msgstr ""
 
-#: master_preset.xml:12147(item:name|group:Crafts|preset:Stonemason)
+#: master_preset.xml:12169(item:name|group:Crafts|preset:Stonemason)
 msgid "Stonemason"
 msgstr ""
 
@@ -5873,11 +5881,11 @@ msgstr ""
 msgid "Storage Tank"
 msgstr ""
 
-#: master_preset.xml:11682(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2567(item:name|group:Water|preset:Stream)
+#: master_preset.xml:11704(combo:display_values|preset:Waterway|key:waterway) master_preset.xml:2567(item:name|group:Water|preset:Stream)
 msgid "Stream"
 msgstr ""
 
-#: master_preset.xml:11631(item:name|preset:Street)
+#: master_preset.xml:11653(item:name|preset:Street)
 msgid "Street"
 msgstr ""
 
@@ -5889,7 +5897,7 @@ msgstr ""
 msgid "Street has no name"
 msgstr ""
 
-#: master_preset.xml:11108(text:text|group:Addresses_and_Contact|preset:Address|key:addr:street) master_preset.xml:11625(text:text|preset:Associated_Street|key:name)
+#: master_preset.xml:11108(text:text|group:Addresses_and_Contact|preset:Address|key:addr:street) master_preset.xml:11647(text:text|preset:Associated_Street|key:name)
 msgid "Street name"
 msgstr ""
 
@@ -5917,7 +5925,7 @@ msgstr ""
 msgid "Studio"
 msgstr ""
 
-#: master_preset.xml:11293(role:text|group:Relations|preset:Boundary|key:subarea)
+#: master_preset.xml:11315(role:text|group:Relations|preset:Boundary|key:subarea)
 msgid "Sub area"
 msgstr ""
 
@@ -5929,7 +5937,7 @@ msgstr ""
 msgid "Substance"
 msgstr ""
 
-#: master_preset.xml:11682(combo:text|preset:Waterway|key:waterway)
+#: master_preset.xml:11704(combo:text|preset:Waterway|key:waterway)
 msgid "Subtype of waterway (largest one of members)"
 msgstr ""
 
@@ -5953,7 +5961,7 @@ msgstr ""
 msgid "Suits"
 msgstr ""
 
-#: master_preset.xml:12159(item:name|group:Crafts|preset:Sun_protection)
+#: master_preset.xml:12181(item:name|group:Crafts|preset:Sun_protection)
 msgid "Sun protection"
 msgstr ""
 
@@ -5993,7 +6001,7 @@ msgstr ""
 msgid "Swamp"
 msgstr ""
 
-#: master_preset.xml:12167(item:name|group:Crafts|preset:Sweep)
+#: master_preset.xml:12189(item:name|group:Crafts|preset:Sweep)
 msgid "Sweep"
 msgstr ""
 
@@ -6065,7 +6073,7 @@ msgstr ""
 msgid "Tailings"
 msgstr ""
 
-#: master_preset.xml:12175(item:name|group:Crafts|preset:Tailor) master_preset.xml:9048(item:name|group:Clothes|preset:Tailor)
+#: master_preset.xml:12197(item:name|group:Crafts|preset:Tailor) master_preset.xml:9048(item:name|group:Clothes|preset:Tailor)
 msgid "Tailor"
 msgstr ""
 
@@ -6093,11 +6101,11 @@ msgstr ""
 msgid "Tattoo"
 msgstr ""
 
-#: master_preset.xml:12432(combo:display_values|group:Offices|preset:Government|key:government)
+#: master_preset.xml:12454(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Tax"
 msgstr ""
 
-#: master_preset.xml:12638(item:name|group:Offices|preset:Tax_advisor)
+#: master_preset.xml:12660(item:name|group:Offices|preset:Tax_advisor)
 msgid "Tax advisor"
 msgstr ""
 
@@ -6117,7 +6125,7 @@ msgstr ""
 msgid "Tea"
 msgstr ""
 
-#: master_preset.xml:12500(item:name|group:Offices|preset:Telecommunication)
+#: master_preset.xml:12522(item:name|group:Offices|preset:Telecommunication)
 msgid "Telecommunication"
 msgstr ""
 
@@ -6185,7 +6193,7 @@ msgstr ""
 msgid "Theatre type"
 msgstr ""
 
-#: master_preset.xml:12728(item:name|group:Offices|preset:Therapist)
+#: master_preset.xml:12750(item:name|group:Offices|preset:Therapist)
 msgid "Therapist"
 msgstr ""
 
@@ -6221,11 +6229,11 @@ msgstr ""
 msgid "Tide Level"
 msgstr ""
 
-#: master_preset.xml:12183(item:name|group:Crafts|preset:Tiler)
+#: master_preset.xml:12205(item:name|group:Crafts|preset:Tiler)
 msgid "Tiler"
 msgstr ""
 
-#: master_preset.xml:11659(text:text|preset:Destination_Sign|key:time)
+#: master_preset.xml:11681(text:text|preset:Destination_Sign|key:time)
 msgid "Time (hh:mm, for trekking)"
 msgstr ""
 
@@ -6233,7 +6241,7 @@ msgstr ""
 msgid "Time Limit (minutes)"
 msgstr ""
 
-#: master_preset.xml:12194(item:name|group:Crafts|preset:Tinsmith)
+#: master_preset.xml:12216(item:name|group:Crafts|preset:Tinsmith)
 msgid "Tinsmith"
 msgstr ""
 
@@ -6341,7 +6349,7 @@ msgstr ""
 msgid "Traffic lights"
 msgstr ""
 
-#: master_preset.xml:100(list_entry:short_description|value:traffic_signals) master_preset.xml:11366(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
+#: master_preset.xml:100(list_entry:short_description|value:traffic_signals) master_preset.xml:11388(combo:display_values|group:Relations|preset:Enforcement|key:enforcement)
 msgid "Traffic signals"
 msgstr ""
 
@@ -6385,7 +6393,7 @@ msgstr ""
 msgid "Travel Agency"
 msgstr ""
 
-#: master_preset.xml:12512(item:name|group:Offices|preset:Travel_agent)
+#: master_preset.xml:12534(item:name|group:Offices|preset:Travel_agent)
 msgid "Travel agent"
 msgstr ""
 
@@ -6425,7 +6433,7 @@ msgstr ""
 msgid "Tumulus"
 msgstr ""
 
-#: master_preset.xml:11720(item:name|preset:Tunnel) master_preset.xml:2217(item:name|group:Passageways|preset:Tunnel) master_preset.xml:420(combo:text|key:tunnel) master_preset.xml:661(check:text|group:Streets|preset:Motorway|key:tunnel) master_preset.xml:67(check:text|key:tunnel) master_preset.xml:692(check:text|group:Streets|preset:Motorway_Link|key:tunnel) master_preset.xml:728(check:text|group:Streets|preset:Trunk|key:tunnel) master_preset.xml:756(check:text|group:Streets|preset:Trunk_Link|key:tunnel)
+#: master_preset.xml:11742(item:name|preset:Tunnel) master_preset.xml:2217(item:name|group:Passageways|preset:Tunnel) master_preset.xml:420(combo:text|key:tunnel) master_preset.xml:661(check:text|group:Streets|preset:Motorway|key:tunnel) master_preset.xml:67(check:text|key:tunnel) master_preset.xml:692(check:text|group:Streets|preset:Motorway_Link|key:tunnel) master_preset.xml:728(check:text|group:Streets|preset:Trunk|key:tunnel) master_preset.xml:756(check:text|group:Streets|preset:Trunk_Link|key:tunnel)
 msgid "Tunnel"
 msgstr ""
 
@@ -6433,11 +6441,11 @@ msgstr ""
 msgid "Turkish"
 msgstr ""
 
-#: master_preset.xml:11329(item:name|group:Relations|preset:Turn_Restriction)
+#: master_preset.xml:11351(item:name|group:Relations|preset:Turn_Restriction)
 msgid "Turn Restriction"
 msgstr ""
 
-#: master_preset.xml:12202(item:name|group:Crafts|preset:Turner)
+#: master_preset.xml:12224(item:name|group:Crafts|preset:Turner)
 msgid "Turner"
 msgstr ""
 
@@ -6473,7 +6481,7 @@ msgstr ""
 msgid "Turntable"
 msgstr ""
 
-#: master_preset.xml:10289(combo:text|group:Geography|preset:Volcano|key:volcano:type) master_preset.xml:10383(combo:text|group:Geography|preset:Reef|key:reef) master_preset.xml:10490(combo:text|group:Nature|preset:Grassland|key:grassland) master_preset.xml:12432(combo:text|group:Offices|preset:Government|key:government) master_preset.xml:2034(combo:text|group:Barriers|preset:Wall|key:wall) master_preset.xml:2190(combo:text|group:Barriers|preset:Stile|key:stile) master_preset.xml:249(combo:text|key:leisure) master_preset.xml:2744(combo:text|group:Water|preset:Reservoir|key:reservoir_type) master_preset.xml:2830(combo:text|group:Water|preset:Wetland|key:wetland) master_preset.xml:324(combo:text|key:leaf_type) master_preset.xml:3362(combo:text|group:Aerialway|preset:Drag_Lift|key:aerialway) master_preset.xml:3756(combo:text|group:Bicycle|preset:Parking|key:bicycle_parking) master_preset.xml:5343(combo:text|group:Culture|preset:Artwork|key:artwork_type) master_preset.xml:5358(combo:text|group:Culture|preset:Studio|key:type) master_preset.xml:6047(combo:text|group:Emergency|preset:Siren|key:siren:type) master_preset.xml:6258(combo:text|group:Facilities|preset:Toilets/Restrooms|key:toilets:disposal) master_preset.xml:6921(combo:text|group:Sport|preset:Nine-pin_Bowling|key:leisure) master_preset.xml:6931(combo:text|group:Sport|preset:Ten-pin_Bowling|key:leisure) master_preset.xml:6941(combo:text|group:Sport|preset:Archery|key:leisure) master_preset.xml:6966(combo:text|group:Sport|preset:Climbing|key:leisure) master_preset.xml:7010(combo:text|group:Sport|preset:Gymnastics|key:leisure) master_preset.xml:7018(combo:text|group:Sport|preset:Skating_(deprecated)|key:leisure) master_preset.xml:7026(combo:text|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7033(combo:text|group:Sport|preset:Roller_Skating|key:leisure) master_preset.xml:7051(combo:text|group:Sport|preset:Swimming|key:leisure) master_preset.xml:7087(combo:text|group:Sport|preset:Shooting|key:leisure) master_preset.xml:7173(combo:text|group:Sport_(Ball)|preset:Handball|key:leisure) master_preset.xml:7181(combo:text|group:Sport_(Ball)|preset:Volleyball|key:leisure) master_preset.xml:7189(combo:text|group:Sport_(Ball)|preset:Beach_Volleyball|key:leisure) master_preset.xml:7198(combo:text|group:Sport_(Ball)|preset:Billiards|key:leisure) master_preset.xml:7208(combo:text|group:Sport_(Ball)|preset:Golf|key:leisure) master_preset.xml:7242(combo:text|group:Sport_(Ball)|preset:Field_Hockey|key:leisure) master_preset.xml:7249(combo:text|group:Sport_(Ball)|preset:Ice_Hockey|key:leisure) master_preset.xml:7264(combo:text|group:Sport_(Ball)|preset:Racquetball|key:leisure) master_preset.xml:7272(combo:text|group:Sport_(Ball)|preset:Table_Tennis/Ping-Pong|key:leisure) master_preset.xml:7973(combo:text|group:Man_Made|preset:Surveillance_Camera|key:surveillance) master_preset.xml:8020(combo:text|group:Bridges|preset:Movable_Bridge|key:bridge:movable) master_preset.xml:8029(combo:text|group:Bridges|preset:Bridge_Support|key:bridge:support) master_preset.xml:8518(combo:text|group:Historic_Places|preset:Archaeological_Site|key:site_type)
+#: master_preset.xml:10289(combo:text|group:Geography|preset:Volcano|key:volcano:type) master_preset.xml:10383(combo:text|group:Geography|preset:Reef|key:reef) master_preset.xml:10490(combo:text|group:Nature|preset:Grassland|key:grassland) master_preset.xml:12454(combo:text|group:Offices|preset:Government|key:government) master_preset.xml:2034(combo:text|group:Barriers|preset:Wall|key:wall) master_preset.xml:2190(combo:text|group:Barriers|preset:Stile|key:stile) master_preset.xml:249(combo:text|key:leisure) master_preset.xml:2744(combo:text|group:Water|preset:Reservoir|key:reservoir_type) master_preset.xml:2830(combo:text|group:Water|preset:Wetland|key:wetland) master_preset.xml:324(combo:text|key:leaf_type) master_preset.xml:3362(combo:text|group:Aerialway|preset:Drag_Lift|key:aerialway) master_preset.xml:3756(combo:text|group:Bicycle|preset:Parking|key:bicycle_parking) master_preset.xml:5343(combo:text|group:Culture|preset:Artwork|key:artwork_type) master_preset.xml:5358(combo:text|group:Culture|preset:Studio|key:type) master_preset.xml:6047(combo:text|group:Emergency|preset:Siren|key:siren:type) master_preset.xml:6258(combo:text|group:Facilities|preset:Toilets/Restrooms|key:toilets:disposal) master_preset.xml:6921(combo:text|group:Sport|preset:Nine-pin_Bowling|key:leisure) master_preset.xml:6931(combo:text|group:Sport|preset:Ten-pin_Bowling|key:leisure) master_preset.xml:6941(combo:text|group:Sport|preset:Archery|key:leisure) master_preset.xml:6966(combo:text|group:Sport|preset:Climbing|key:leisure) master_preset.xml:7010(combo:text|group:Sport|preset:Gymnastics|key:leisure) master_preset.xml:7018(combo:text|group:Sport|preset:Skating_(deprecated)|key:leisure) master_preset.xml:7026(combo:text|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7033(combo:text|group:Sport|preset:Roller_Skating|key:leisure) master_preset.xml:7051(combo:text|group:Sport|preset:Swimming|key:leisure) master_preset.xml:7087(combo:text|group:Sport|preset:Shooting|key:leisure) master_preset.xml:7173(combo:text|group:Sport_(Ball)|preset:Handball|key:leisure) master_preset.xml:7181(combo:text|group:Sport_(Ball)|preset:Volleyball|key:leisure) master_preset.xml:7189(combo:text|group:Sport_(Ball)|preset:Beach_Volleyball|key:leisure) master_preset.xml:7198(combo:text|group:Sport_(Ball)|preset:Billiards|key:leisure) master_preset.xml:7208(combo:text|group:Sport_(Ball)|preset:Golf|key:leisure) master_preset.xml:7242(combo:text|group:Sport_(Ball)|preset:Field_Hockey|key:leisure) master_preset.xml:7249(combo:text|group:Sport_(Ball)|preset:Ice_Hockey|key:leisure) master_preset.xml:7264(combo:text|group:Sport_(Ball)|preset:Racquetball|key:leisure) master_preset.xml:7272(combo:text|group:Sport_(Ball)|preset:Table_Tennis/Ping-Pong|key:leisure) master_preset.xml:7973(combo:text|group:Man_Made|preset:Surveillance_Camera|key:surveillance) master_preset.xml:8020(combo:text|group:Bridges|preset:Movable_Bridge|key:bridge:movable) master_preset.xml:8029(combo:text|group:Bridges|preset:Bridge_Support|key:bridge:support) master_preset.xml:8518(combo:text|group:Historic_Places|preset:Archaeological_Site|key:site_type)
 msgid "Type"
 msgstr ""
 
@@ -6501,7 +6509,7 @@ msgstr ""
 msgid "Type of construction"
 msgstr ""
 
-#: master_preset.xml:11366(combo:text|group:Relations|preset:Enforcement|key:enforcement)
+#: master_preset.xml:11388(combo:text|group:Relations|preset:Enforcement|key:enforcement)
 msgid "Type of enforcement"
 msgstr ""
 
@@ -6569,7 +6577,7 @@ msgstr ""
 msgid "Up"
 msgstr ""
 
-#: master_preset.xml:12210(item:name|group:Crafts|preset:Upholsterer)
+#: master_preset.xml:12232(item:name|group:Crafts|preset:Upholsterer)
 msgid "Upholsterer"
 msgstr ""
 
@@ -6593,7 +6601,7 @@ msgstr ""
 msgid "Used in some countries for a named road junction who.s name serves for local orientation."
 msgstr ""
 
-#: master_preset.xml:12749(item:name|group:Offices|preset:Vacant)
+#: master_preset.xml:12771(item:name|group:Offices|preset:Vacant)
 msgid "Vacant"
 msgstr ""
 
@@ -6733,7 +6741,7 @@ msgstr ""
 msgid "WLAN"
 msgstr ""
 
-#: master_preset.xml:11441(item:name|group:Routes|preset:Walking_Route)
+#: master_preset.xml:11463(item:name|group:Routes|preset:Walking_Route)
 msgid "Walking Route"
 msgstr ""
 
@@ -6773,7 +6781,7 @@ msgstr ""
 msgid "Watches"
 msgstr ""
 
-#: master_preset.xml:12221(item:name|group:Crafts|preset:Watchmaker)
+#: master_preset.xml:12243(item:name|group:Crafts|preset:Watchmaker)
 msgid "Watchmaker"
 msgstr ""
 
@@ -6837,7 +6845,7 @@ msgstr ""
 msgid "Watermill"
 msgstr ""
 
-#: master_preset.xml:11671(item:name|preset:Waterway)
+#: master_preset.xml:11693(item:name|preset:Waterway)
 msgid "Waterway"
 msgstr ""
 
@@ -6909,7 +6917,7 @@ msgstr ""
 msgid "Width (meters)"
 msgstr ""
 
-#: master_preset.xml:10025(text:text|group:Boundaries|preset:Protected_Area|key:wikipedia) master_preset.xml:11162(text:text|group:Addresses_and_Contact|preset:Contact|key:wikipedia) master_preset.xml:11182(text:text|group:Addresses_and_Contact|preset:Contact_('contact:*')|key:wikipedia) master_preset.xml:11692(text:text|preset:Waterway|key:wikipedia) master_preset.xml:1877(text:text|preset:Mountain_Pass|key:wikipedia) master_preset.xml:2780(text:text|group:Water|preset:Water|key:wikipedia) master_preset.xml:305(text:text|key:wikipedia) master_preset.xml:425(text:text|key:wikipedia) master_preset.xml:448(text:text|key:wikipedia) master_preset.xml:4896(text:text|group:Leisure|preset:Zoo|key:wikipedia) master_preset.xml:5214(text:text|group:Culture|preset:Museum|key:wikipedia) master_preset.xml:8582(text:text|group:Historic_Places|preset:Memorial|key:wikipedia)
+#: master_preset.xml:10025(text:text|group:Boundaries|preset:Protected_Area|key:wikipedia) master_preset.xml:11162(text:text|group:Addresses_and_Contact|preset:Contact|key:wikipedia) master_preset.xml:11182(text:text|group:Addresses_and_Contact|preset:Contact_('contact:*')|key:wikipedia) master_preset.xml:11714(text:text|preset:Waterway|key:wikipedia) master_preset.xml:1877(text:text|preset:Mountain_Pass|key:wikipedia) master_preset.xml:2780(text:text|group:Water|preset:Water|key:wikipedia) master_preset.xml:305(text:text|key:wikipedia) master_preset.xml:425(text:text|key:wikipedia) master_preset.xml:448(text:text|key:wikipedia) master_preset.xml:4896(text:text|group:Leisure|preset:Zoo|key:wikipedia) master_preset.xml:5214(text:text|group:Culture|preset:Museum|key:wikipedia) master_preset.xml:8582(text:text|group:Historic_Places|preset:Memorial|key:wikipedia)
 msgid "Wikipedia"
 msgstr ""
 
@@ -6925,7 +6933,7 @@ msgstr ""
 msgid "Windmill"
 msgstr ""
 
-#: master_preset.xml:12229(item:name|group:Crafts|preset:Window_construction)
+#: master_preset.xml:12251(item:name|group:Crafts|preset:Window_construction)
 msgid "Window construction"
 msgstr ""
 
@@ -6937,7 +6945,7 @@ msgstr ""
 msgid "Wine"
 msgstr ""
 
-#: master_preset.xml:12316(item:name|group:Crafts|preset:Winery)
+#: master_preset.xml:12338(item:name|group:Crafts|preset:Winery)
 msgid "Winery"
 msgstr ""
 
@@ -6993,7 +7001,7 @@ msgstr ""
 msgid "Zoroastrian"
 msgstr ""
 
-#: master_preset.xml:11641(role:text|preset:Street|key:address)
+#: master_preset.xml:11663(role:text|preset:Street|key:address)
 msgid "addresses belonging to the street"
 msgstr ""
 
@@ -7009,7 +7017,7 @@ msgstr ""
 msgid "anaerobic_digestion / combustion"
 msgstr ""
 
-#: master_preset.xml:11643(role:text|preset:Street|key:associated)
+#: master_preset.xml:11665(role:text|preset:Street|key:associated)
 msgid "anything related to the street"
 msgstr ""
 
@@ -7021,7 +7029,7 @@ msgstr ""
 msgid "backward halt point"
 msgstr ""
 
-#: master_preset.xml:11395(role:text|group:Routes|preset:Bicycle_Route|key:backward) master_preset.xml:11419(role:text|group:Routes|preset:Mountain_Biking_Route|key:backward) master_preset.xml:11494(role:text|group:Routes|preset:Piste_Route|key:backward) master_preset.xml:11516(role:text|group:Routes|preset:Ski_Route|key:backward) master_preset.xml:11594(role:text|group:Routes|preset:Road_Route|key:backward) master_preset.xml:4034(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:backward)
+#: master_preset.xml:11417(role:text|group:Routes|preset:Bicycle_Route|key:backward) master_preset.xml:11441(role:text|group:Routes|preset:Mountain_Biking_Route|key:backward) master_preset.xml:11516(role:text|group:Routes|preset:Piste_Route|key:backward) master_preset.xml:11538(role:text|group:Routes|preset:Ski_Route|key:backward) master_preset.xml:11616(role:text|group:Routes|preset:Road_Route|key:backward) master_preset.xml:4034(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:backward)
 msgid "backward segment"
 msgstr ""
 
@@ -7033,7 +7041,7 @@ msgstr ""
 msgid "biogas"
 msgstr ""
 
-#: master_preset.xml:11697(role:text|preset:Waterway|key:side_stream)
+#: master_preset.xml:11719(role:text|preset:Waterway|key:side_stream)
 msgid "branch waterways (no riverbank)"
 msgstr ""
 
@@ -7057,11 +7065,11 @@ msgstr ""
 msgid "compressed air"
 msgstr ""
 
-#: master_preset.xml:11717(role:text|preset:Bridge|key:edge)
+#: master_preset.xml:11739(role:text|preset:Bridge|key:edge)
 msgid "edge ways parallel to 'across'"
 msgstr ""
 
-#: master_preset.xml:11731(role:text|preset:Tunnel|key:edge)
+#: master_preset.xml:11753(role:text|preset:Tunnel|key:edge)
 msgid "edge ways parallel to 'through'"
 msgstr ""
 
@@ -7069,11 +7077,11 @@ msgstr ""
 msgid "electricity"
 msgstr ""
 
-#: master_preset.xml:11324(role:text|group:Relations|preset:Site|key:entrance)
+#: master_preset.xml:11346(role:text|group:Relations|preset:Site|key:entrance)
 msgid "entrances to the site, on the perimeter"
 msgstr ""
 
-#: master_preset.xml:11498(role:text|group:Routes|preset:Piste_Route|key:start) master_preset.xml:11520(role:text|group:Routes|preset:Ski_Route|key:start)
+#: master_preset.xml:11520(role:text|group:Routes|preset:Piste_Route|key:start) master_preset.xml:11542(role:text|group:Routes|preset:Ski_Route|key:start)
 msgid "entry points"
 msgstr ""
 
@@ -7085,7 +7093,7 @@ msgstr ""
 msgid "ferry"
 msgstr ""
 
-#: master_preset.xml:11666(role:text|preset:Destination_Sign|key:to)
+#: master_preset.xml:11688(role:text|preset:Destination_Sign|key:to)
 msgid "first way after junction"
 msgstr ""
 
@@ -7093,7 +7101,7 @@ msgstr ""
 msgid "fission"
 msgstr ""
 
-#: master_preset.xml:11550(role:text|group:Routes|preset:Detour_Route|key:fork)
+#: master_preset.xml:11572(role:text|group:Routes|preset:Detour_Route|key:fork)
 msgid "fork node for alternative routes"
 msgstr ""
 
@@ -7101,11 +7109,11 @@ msgstr ""
 msgid "forward halt point"
 msgstr ""
 
-#: master_preset.xml:11394(role:text|group:Routes|preset:Bicycle_Route|key:forward) master_preset.xml:11418(role:text|group:Routes|preset:Mountain_Biking_Route|key:forward) master_preset.xml:11493(role:text|group:Routes|preset:Piste_Route|key:forward) master_preset.xml:11515(role:text|group:Routes|preset:Ski_Route|key:forward) master_preset.xml:11593(role:text|group:Routes|preset:Road_Route|key:forward) master_preset.xml:4033(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:forward)
+#: master_preset.xml:11416(role:text|group:Routes|preset:Bicycle_Route|key:forward) master_preset.xml:11440(role:text|group:Routes|preset:Mountain_Biking_Route|key:forward) master_preset.xml:11515(role:text|group:Routes|preset:Piste_Route|key:forward) master_preset.xml:11537(role:text|group:Routes|preset:Ski_Route|key:forward) master_preset.xml:11615(role:text|group:Routes|preset:Road_Route|key:forward) master_preset.xml:4033(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:forward)
 msgid "forward segment"
 msgstr ""
 
-#: master_preset.xml:11348(role:text|group:Relations|preset:Turn_Restriction|key:from)
+#: master_preset.xml:11370(role:text|group:Relations|preset:Turn_Restriction|key:from)
 msgid "from way"
 msgstr ""
 
@@ -7133,7 +7141,7 @@ msgstr ""
 msgid "hot water"
 msgstr ""
 
-#: master_preset.xml:11628(role:text|preset:Associated_Street|key:house)
+#: master_preset.xml:11650(role:text|preset:Associated_Street|key:house)
 msgid "house"
 msgstr ""
 
@@ -7141,27 +7149,27 @@ msgstr ""
 msgid "house (up to 5m)"
 msgstr ""
 
-#: master_preset.xml:11642(role:text|preset:Street|key:house)
+#: master_preset.xml:11664(role:text|preset:Street|key:house)
 msgid "houses belonging to the street"
 msgstr ""
 
-#: master_preset.xml:11437(role:text|group:Routes|preset:Hiking_Route|key:) master_preset.xml:11455(role:text|group:Routes|preset:Walking_Route|key:) master_preset.xml:11474(role:text|group:Routes|preset:Riding_Route|key:)
+#: master_preset.xml:11459(role:text|group:Routes|preset:Hiking_Route|key:) master_preset.xml:11477(role:text|group:Routes|preset:Walking_Route|key:) master_preset.xml:11496(role:text|group:Routes|preset:Riding_Route|key:)
 msgid "infrastructure"
 msgstr ""
 
-#: master_preset.xml:11269(role:text|group:Relations|preset:Multipolygon|key:inner) master_preset.xml:11292(role:text|group:Relations|preset:Boundary|key:inner)
+#: master_preset.xml:11291(role:text|group:Relations|preset:Multipolygon|key:inner) master_preset.xml:11314(role:text|group:Relations|preset:Boundary|key:inner)
 msgid "inner segment"
 msgstr ""
 
-#: master_preset.xml:11664(role:text|preset:Destination_Sign|key:from)
+#: master_preset.xml:11686(role:text|preset:Destination_Sign|key:from)
 msgid "last way before junction"
 msgstr ""
 
-#: master_preset.xml:11495(role:text|group:Routes|preset:Piste_Route|key:link) master_preset.xml:11517(role:text|group:Routes|preset:Ski_Route|key:link) master_preset.xml:11595(role:text|group:Routes|preset:Road_Route|key:link)
+#: master_preset.xml:11517(role:text|group:Routes|preset:Piste_Route|key:link) master_preset.xml:11539(role:text|group:Routes|preset:Ski_Route|key:link) master_preset.xml:11617(role:text|group:Routes|preset:Road_Route|key:link)
 msgid "link segment"
 msgstr ""
 
-#: master_preset.xml:11371(role:text|group:Relations|preset:Enforcement|key:device)
+#: master_preset.xml:11393(role:text|group:Relations|preset:Enforcement|key:device)
 msgid "location of enforcement device"
 msgstr ""
 
@@ -7169,31 +7177,31 @@ msgstr ""
 msgid "marionette"
 msgstr ""
 
-#: master_preset.xml:11609(role:text|preset:Route_Network|key:)
+#: master_preset.xml:11631(role:text|preset:Route_Network|key:)
 msgid "member"
 msgstr ""
 
-#: master_preset.xml:11325(role:text|group:Relations|preset:Site|key:)
+#: master_preset.xml:11347(role:text|group:Relations|preset:Site|key:)
 msgid "members of site"
 msgstr ""
 
-#: master_preset.xml:11438(role:text|group:Routes|preset:Hiking_Route|key:) master_preset.xml:11456(role:text|group:Routes|preset:Walking_Route|key:) master_preset.xml:11475(role:text|group:Routes|preset:Riding_Route|key:)
+#: master_preset.xml:11460(role:text|group:Routes|preset:Hiking_Route|key:) master_preset.xml:11478(role:text|group:Routes|preset:Walking_Route|key:) master_preset.xml:11497(role:text|group:Routes|preset:Riding_Route|key:)
 msgid "natural"
 msgstr ""
 
-#: master_preset.xml:11665(role:text|preset:Destination_Sign|key:intersection)
+#: master_preset.xml:11687(role:text|preset:Destination_Sign|key:intersection)
 msgid "node of the intersection"
 msgstr ""
 
-#: master_preset.xml:11372(role:text|group:Relations|preset:Enforcement|key:from)
+#: master_preset.xml:11394(role:text|group:Relations|preset:Enforcement|key:from)
 msgid "node on way where enforcement starts"
 msgstr ""
 
-#: master_preset.xml:11268(role:text|group:Relations|preset:Multipolygon|key:outer) master_preset.xml:11291(role:text|group:Relations|preset:Boundary|key:outer)
+#: master_preset.xml:11290(role:text|group:Relations|preset:Multipolygon|key:outer) master_preset.xml:11313(role:text|group:Relations|preset:Boundary|key:outer)
 msgid "outer segment"
 msgstr ""
 
-#: master_preset.xml:11323(role:text|group:Relations|preset:Site|key:perimeter)
+#: master_preset.xml:11345(role:text|group:Relations|preset:Site|key:perimeter)
 msgid "perimeter of the site"
 msgstr ""
 
@@ -7213,7 +7221,7 @@ msgstr ""
 msgid "platform (exit only)"
 msgstr ""
 
-#: master_preset.xml:11667(role:text|preset:Destination_Sign|key:sign)
+#: master_preset.xml:11689(role:text|preset:Destination_Sign|key:sign)
 msgid "position of sign"
 msgstr ""
 
@@ -7221,7 +7229,7 @@ msgstr ""
 msgid "right"
 msgstr ""
 
-#: master_preset.xml:11393(role:text|group:Routes|preset:Bicycle_Route|key:) master_preset.xml:11417(role:text|group:Routes|preset:Mountain_Biking_Route|key:) master_preset.xml:11436(role:text|group:Routes|preset:Hiking_Route|key:) master_preset.xml:11454(role:text|group:Routes|preset:Walking_Route|key:) master_preset.xml:11473(role:text|group:Routes|preset:Riding_Route|key:) master_preset.xml:11492(role:text|group:Routes|preset:Piste_Route|key:) master_preset.xml:11514(role:text|group:Routes|preset:Ski_Route|key:) master_preset.xml:11549(role:text|group:Routes|preset:Detour_Route|key:) master_preset.xml:11560(role:text|group:Routes|preset:Power_Route|key:) master_preset.xml:11575(role:text|group:Routes|preset:Railway_Route|key:) master_preset.xml:11592(role:text|group:Routes|preset:Road_Route|key:) master_preset.xml:3840(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:) master_preset.xml:3860(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:) master_preset.xml:4032(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
+#: master_preset.xml:11415(role:text|group:Routes|preset:Bicycle_Route|key:) master_preset.xml:11439(role:text|group:Routes|preset:Mountain_Biking_Route|key:) master_preset.xml:11458(role:text|group:Routes|preset:Hiking_Route|key:) master_preset.xml:11476(role:text|group:Routes|preset:Walking_Route|key:) master_preset.xml:11495(role:text|group:Routes|preset:Riding_Route|key:) master_preset.xml:11514(role:text|group:Routes|preset:Piste_Route|key:) master_preset.xml:11536(role:text|group:Routes|preset:Ski_Route|key:) master_preset.xml:11571(role:text|group:Routes|preset:Detour_Route|key:) master_preset.xml:11582(role:text|group:Routes|preset:Power_Route|key:) master_preset.xml:11597(role:text|group:Routes|preset:Railway_Route|key:) master_preset.xml:11614(role:text|group:Routes|preset:Road_Route|key:) master_preset.xml:3840(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:) master_preset.xml:3860(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:) master_preset.xml:4032(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
 msgid "route segment"
 msgstr ""
 
@@ -7237,7 +7245,7 @@ msgstr ""
 msgid "run-of-the-river / water-storage"
 msgstr ""
 
-#: master_preset.xml:11496(role:text|group:Routes|preset:Piste_Route|key:shortcut) master_preset.xml:11518(role:text|group:Routes|preset:Ski_Route|key:shortcut)
+#: master_preset.xml:11518(role:text|group:Routes|preset:Piste_Route|key:shortcut) master_preset.xml:11540(role:text|group:Routes|preset:Ski_Route|key:shortcut)
 msgid "shortcut segment"
 msgstr ""
 
@@ -7253,7 +7261,7 @@ msgstr ""
 msgid "sometimes need for hand use to get ahead. Terrain quite exposed, precarious grassy acclivities, jagged rocks, facile snow-free glaciers"
 msgstr ""
 
-#: master_preset.xml:11698(role:text|preset:Waterway|key:spring)
+#: master_preset.xml:11720(role:text|preset:Waterway|key:spring)
 msgid "spring of waterway"
 msgstr ""
 
@@ -7273,7 +7281,7 @@ msgstr ""
 msgid "stop position (exit only)"
 msgstr ""
 
-#: master_preset.xml:11627(role:text|preset:Associated_Street|key:street)
+#: master_preset.xml:11649(role:text|preset:Associated_Street|key:street)
 msgid "street"
 msgstr ""
 
@@ -7285,11 +7293,11 @@ msgstr ""
 msgid "thermal"
 msgstr ""
 
-#: master_preset.xml:11350(role:text|group:Relations|preset:Turn_Restriction|key:to)
+#: master_preset.xml:11372(role:text|group:Relations|preset:Turn_Restriction|key:to)
 msgid "to way"
 msgstr ""
 
-#: master_preset.xml:11374(role:text|group:Relations|preset:Enforcement|key:force)
+#: master_preset.xml:11396(role:text|group:Relations|preset:Enforcement|key:force)
 msgid "traffic light or barrier that stops you"
 msgstr ""
 
@@ -7297,43 +7305,43 @@ msgstr ""
 msgid "vacuum"
 msgstr ""
 
-#: master_preset.xml:11497(role:text|group:Routes|preset:Piste_Route|key:variant) master_preset.xml:11519(role:text|group:Routes|preset:Ski_Route|key:variant)
+#: master_preset.xml:11519(role:text|group:Routes|preset:Piste_Route|key:variant) master_preset.xml:11541(role:text|group:Routes|preset:Ski_Route|key:variant)
 msgid "variant segment"
 msgstr ""
 
-#: master_preset.xml:11349(role:text|group:Relations|preset:Turn_Restriction|key:via)
+#: master_preset.xml:11371(role:text|group:Relations|preset:Turn_Restriction|key:via)
 msgid "via node or ways"
 msgstr ""
 
-#: master_preset.xml:11695(role:text|preset:Waterway|key:) master_preset.xml:11696(role:text|preset:Waterway|key:main_stream)
+#: master_preset.xml:11717(role:text|preset:Waterway|key:) master_preset.xml:11718(role:text|preset:Waterway|key:main_stream)
 msgid "waterways (no riverbank)"
 msgstr ""
 
-#: master_preset.xml:11716(role:text|preset:Bridge|key:outline) master_preset.xml:11730(role:text|preset:Tunnel|key:outline)
+#: master_preset.xml:11738(role:text|preset:Bridge|key:outline) master_preset.xml:11752(role:text|preset:Tunnel|key:outline)
 msgid "way forming the outline footprint"
 msgstr ""
 
-#: master_preset.xml:11640(role:text|preset:Street|key:street)
+#: master_preset.xml:11662(role:text|preset:Street|key:street)
 msgid "ways being part of street"
 msgstr ""
 
-#: master_preset.xml:11729(role:text|preset:Tunnel|key:through)
+#: master_preset.xml:11751(role:text|preset:Tunnel|key:through)
 msgid "ways passing through the tunnel"
 msgstr ""
 
-#: master_preset.xml:11715(role:text|preset:Bridge|key:under)
+#: master_preset.xml:11737(role:text|preset:Bridge|key:under)
 msgid "ways passing under the bridge"
 msgstr ""
 
-#: master_preset.xml:11714(role:text|preset:Bridge|key:across)
+#: master_preset.xml:11736(role:text|preset:Bridge|key:across)
 msgid "ways supported by (on top of) the bridge"
 msgstr ""
 
-#: master_preset.xml:11373(role:text|group:Relations|preset:Enforcement|key:to)
+#: master_preset.xml:11395(role:text|group:Relations|preset:Enforcement|key:to)
 msgid "where enforcement ends"
 msgstr ""
 
-#: master_preset.xml:11322(role:text|group:Relations|preset:Site|key:label)
+#: master_preset.xml:11344(role:text|group:Relations|preset:Site|key:label)
 msgid "where to place the label"
 msgstr ""
 
@@ -9247,7 +9255,7 @@ msgctxt "fixme=*"
 msgid "A hint for other mappers (not for the end user), that an object needs an improvement."
 msgstr ""
 
-#: master_preset.xml:12736(item:name|group:Offices|preset:Religion)
+#: master_preset.xml:12758(item:name|group:Offices|preset:Religion)
 msgctxt "office"
 msgid "Religion"
 msgstr ""
