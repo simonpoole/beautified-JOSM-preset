@@ -10932,7 +10932,7 @@
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=commercial"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=commercial" />
             <space />
-            <key key="landuse" value="commercial" />
+            <key key="landuse" value="commercial" values_context="landuse" />
             <text key="name" text="Name" />
         </item> <!-- Commercial -->
         <item name="Industrial" icon="ICONPATH:landuse_works_22087.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
