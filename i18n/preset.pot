@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-06-08 14:26+0200\n"
+"POT-Creation-Date: 2017-07-06 17:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3153,7 +3153,7 @@ msgstr ""
 msgid "Left"
 msgstr ""
 
-#: master_preset.xml:1180(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:left:through) master_preset.xml:1206(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:left:through) master_preset.xml:1224(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:left:through)
+#: master_preset.xml:1180(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:left:through) master_preset.xml:1186(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:left:through) master_preset.xml:1206(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:left:through) master_preset.xml:1212(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:left:through) master_preset.xml:1224(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:left:through) master_preset.xml:1230(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:left:through)
 msgid "Left and through"
 msgstr ""
 
@@ -5169,8 +5169,8 @@ msgstr ""
 msgid "Rigger"
 msgstr ""
 
-#: master_preset.xml:1186(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:left:through) master_preset.xml:1212(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:left:through) master_preset.xml:1230(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:left:through)
-msgid "Right and through"
+#: master_preset.xml:1187(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:right) master_preset.xml:1213(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:right) master_preset.xml:1231(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:right)
+msgid "Right"
 msgstr ""
 
 #: master_preset.xml:1462(check:text|group:Ways|preset:Steps|key:handrail:right)
@@ -5669,7 +5669,7 @@ msgstr ""
 msgid "Slate"
 msgstr ""
 
-#: master_preset.xml:1181(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:slight_left) master_preset.xml:1183(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:through) master_preset.xml:1207(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:slight_left) master_preset.xml:1209(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:through) master_preset.xml:1225(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:slight_left) master_preset.xml:1227(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:through)
+#: master_preset.xml:1181(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:slight_left) master_preset.xml:1207(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:slight_left) master_preset.xml:1225(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:slight_left)
 msgid "Slight left"
 msgstr ""
 
@@ -6203,6 +6203,10 @@ msgstr ""
 
 #: master_preset.xml:26(list_entry:short_description|value:good)
 msgid "Thin Wheels: racing bike"
+msgstr ""
+
+#: master_preset.xml:1183(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:through) master_preset.xml:1209(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:through) master_preset.xml:1227(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:through)
+msgid "Through"
 msgstr ""
 
 #: master_preset.xml:9410(item:name|group:Printed_Material|preset:Ticket)
@@ -7223,10 +7227,6 @@ msgstr ""
 
 #: master_preset.xml:11689(role:text|preset:Destination_Sign|key:sign)
 msgid "position of sign"
-msgstr ""
-
-#: master_preset.xml:1187(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:right) master_preset.xml:1213(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:right) master_preset.xml:1231(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:right)
-msgid "right"
 msgstr ""
 
 #: master_preset.xml:11415(role:text|group:Routes|preset:Bicycle_Route|key:) master_preset.xml:11439(role:text|group:Routes|preset:Mountain_Biking_Route|key:) master_preset.xml:11458(role:text|group:Routes|preset:Hiking_Route|key:) master_preset.xml:11476(role:text|group:Routes|preset:Walking_Route|key:) master_preset.xml:11495(role:text|group:Routes|preset:Riding_Route|key:) master_preset.xml:11514(role:text|group:Routes|preset:Piste_Route|key:) master_preset.xml:11536(role:text|group:Routes|preset:Ski_Route|key:) master_preset.xml:11571(role:text|group:Routes|preset:Detour_Route|key:) master_preset.xml:11582(role:text|group:Routes|preset:Power_Route|key:) master_preset.xml:11597(role:text|group:Routes|preset:Railway_Route|key:) master_preset.xml:11614(role:text|group:Routes|preset:Road_Route|key:) master_preset.xml:3840(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:) master_preset.xml:3860(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:) master_preset.xml:4032(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
