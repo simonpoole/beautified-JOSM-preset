@@ -1365,7 +1365,7 @@
                 <reference ref="name_layer" />
                 <reference ref="surface_smoothness" />
                 <reference ref="highway_yesno_incline_oneway_lit_width" />
-                <combo key="foot" text="Pedestrians" values="designated,yes,no" />
+                <combo key="foot" text="Pedestrians" values="designated,yes,no" display_values="Designated,Yes,No" />
                 <check key="segregated" text="Segregated" disable_off="true" />
             </optional>
         </item> <!-- Dedicated Cycleway -->
@@ -1419,7 +1419,7 @@
                 <reference ref="surface_smoothness" />
                 <reference ref="highway_yesno_incline" />
                 <check key="lit" text="Lit" disable_off="true" />
-                <combo key="bicycle" text="Bicycle" values="designated,yes,no" />
+                <combo key="bicycle" text="Bicycle" values="designated,yes,no" display_values="Designated,Yes,No" />
                 <check key="segregated" text="Segregated" disable_off="true" />
  	            <text key="width" text="Width (meters)" />
             </optional>
@@ -1450,8 +1450,8 @@
                     <check key="ramp:stroller" text="Stroller ramp" disable_off="true" />
                     <check key="ramp:bicycle" text="Bicycle ramp" disable_off="true" />
                 </checkgroup>
-                <combo key="ramp:wheelchair" text="Wheelchair ramp" values="yes,limited,no" />
-                <combo key="ramp:luggage" text="Luggage ramp" values="yes,automatic,manual,no" />
+                <combo key="ramp:wheelchair" text="Wheelchair ramp" values="yes,limited,no" display_values="Yes,Limited,No" />
+                <combo key="ramp:luggage" text="Luggage ramp" values="yes,automatic,manual,no" display_values="Yes,Automatic,Manual,No" />
                 <space />
                 <checkgroup columns="1" > <!-- workaround -->
                     <check key="handrail" text="Handrail" disable_off="true" />
