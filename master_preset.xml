@@ -12396,7 +12396,7 @@ tags.remove('automatic_check_date');"
         </item> <!-- Photo studio -->
     </group> <!-- Crafts -->
     <group name="Offices" icon="ICONPATH:office_company_25027.ICONTYPE">
-        <item name="Administrative" icon="ICONPATH:office_administrative_25001.ICONTYPE" type="node,closedway,multipolygon">
+        <item name="Administrative (deprecated)" deprecated="true" icon="ICONPATH:office_administrative_25001.ICONTYPE" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:office=administrative"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:office=administrative"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:office=administrative"
@@ -12746,7 +12746,7 @@ tags.remove('automatic_check_date');"
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address" />
         </item> <!-- Publisher -->
-        <item name="Register" icon="ICONPATH:office_register_25053.ICONTYPE" type="node,closedway,multipolygon">
+        <item name="Register (deprecated)" deprecated="true" icon="ICONPATH:office_register_25053.ICONTYPE" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:office=register"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:office=register" />
             <space />
