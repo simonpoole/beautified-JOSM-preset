@@ -7593,8 +7593,7 @@
 			</item> <!-- Roof type skillion -->
 		</group>
 		<!-- /roof type -->
-		<item name="Entrance" icon="ICONPATH:barrier_entrance.ICONTYPE"
-			type="node" preset_name_label="true">
+		<item name="Entrance" icon="ICONPATH:barrier_entrance.ICONTYPE" type="node" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Key:entrance"
 				cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:entrance"
 				de.href="http://wiki.openstreetmap.org/wiki/DE:Key:entrance"
@@ -7616,9 +7615,7 @@
 				<text key="addr:flats" text="Flat numbers" />
 			</optional>
 		</item> <!-- Entrance -->
-		<item name="Entrance (deprecated)" deprecated="true"
-			icon="ICONPATH:barrier_entrance.ICONTYPE" type="node"
-			preset_name_label="true">
+		<item name="Entrance (deprecated)" deprecated="true" icon="ICONPATH:barrier_entrance.ICONTYPE" type="node" preset_name_label="true">
 			<key key="building" value="entrance" />
 		</item> <!-- Entrance (deprecated) -->
 	</group> <!-- Buildings -->
