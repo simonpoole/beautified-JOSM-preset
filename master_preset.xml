@@ -6328,6 +6328,17 @@
                 <reference ref="oh_wheelchair_level" />
             </optional>
         </item> <!-- Shower -->
+        <item name="Smoking area" icon="ICONPATH:amenity_tobacco_29141.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=smoking_area"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=smoking_area"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=smoking_area"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=smoking_area"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=smoking_area" />
+            <space />
+            <key key="amenity" value="smoking_area" />
+            <reference ref="facility_access" />
+            <reference ref="level" />
+        </item> <!-- Smoking area -->
         <separator/>
         <item name="Post Box" icon="ICONPATH:amenity_post_box.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=post_box"
