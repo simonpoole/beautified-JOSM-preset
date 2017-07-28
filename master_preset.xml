@@ -4288,6 +4288,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:aeroway=gate" />
             <space />
             <key key="aeroway" value="gate" values_context="airport" />
+            <optional>
+            	<reference ref="level" />
+            </optional>
             <text key="ref" text="Reference" />
         </item> <!-- Gate -->
     </group> <!-- Airport -->
