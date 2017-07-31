@@ -2749,7 +2749,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=basin" />
             <space />
             <key key="landuse" value="basin" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
         </item> <!-- Basin -->
         <item name="Reservoir" icon="ICONPATH:water_reservoir_22110.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=reservoir"
@@ -10769,7 +10771,9 @@
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=farmland" />
             <space />
             <key key="landuse" value="farmland" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
             <combo key="crop" text="Crop" values="corn,grass,rice,wheat,hop" display_values="Corn,Grass,Rice,Wheat,Hop" editable="true" values_context="crop" />
         </item> <!-- Farmland -->
         <item name="Farm (deprecated)" icon="ICONPATH:landuse_farm_22120.ICONTYPE" type="closedway,multipolygon" preset_name_label="true" deprecated="true" >
@@ -10788,7 +10792,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=meadow" />
             <space />
             <key key="landuse" value="meadow" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
         </item> <!-- Meadow -->
         <item name="Orchard" icon="ICONPATH:landuse_greengrocer.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=orchard"
@@ -10801,7 +10807,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=orchard" />
             <space />
             <key key="landuse" value="orchard" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
             <combo key="trees" text="Trees" values="olive_trees,apple_trees,oil_palms,orange_trees,almond_trees,banana_plants,coconut_palms,hazel_plants,cherry_trees,persimmon_trees,walnut_trees,plum_trees,peach_trees,tea_plants" />
         </item> <!-- Orchard -->
         <item name="Vineyard" icon="ICONPATH:landuse_wine_29203.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
@@ -10896,7 +10904,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=grass" />
             <space />
             <key key="landuse" value="grass" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
         </item> <!-- Grass -->
         <item name="Village Green" icon="ICONPATH:landuse_landuse_sp.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=village_green"
@@ -10966,7 +10976,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=residential" />
             <space />
             <key key="landuse" value="residential" values_context="landuse" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
         </item> <!-- Residential Area -->
         <item name="Graveyard" icon="ICONPATH:landuse_grave_yard_12062.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=grave_yard"
