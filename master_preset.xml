@@ -7616,9 +7616,11 @@
 				<text key="ref" text="Entrance number" />
 				<text key="addr:flats" text="Flat numbers" />
 			</optional>
+			<preset_link preset_name="Address" />
 		</item> <!-- Entrance -->
 		<item name="Entrance (deprecated)" deprecated="true" icon="ICONPATH:barrier_entrance.ICONTYPE" type="node" preset_name_label="true">
 			<key key="building" value="entrance" />
+			<preset_link preset_name="Address" />
 		</item> <!-- Entrance (deprecated) -->
 	</group> <!-- Buildings -->
   <group name="Man Made" icon="ICONPATH:man_made_works_22087.ICONTYPE">
