@@ -7616,6 +7616,9 @@
 			<reference ref="wheelchair" />
 			<optional>
 				<text key="ref" text="Entrance number" />
+				<combo key="door" text="Door type"
+					values="hinged,sliding,revolving,folding,trapdoor,overhead,loadingdock,no" display_values="Hinged,Sliding,Revolving,Folding,Trapdoor,Overhead,Loadingdock,None"
+					values_context="entrance" match="key" />
 				<text key="addr:flats" text="Flat numbers" />
 			</optional>
 			<preset_link preset_name="Address" />
