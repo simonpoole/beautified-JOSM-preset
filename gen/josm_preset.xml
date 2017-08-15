@@ -6655,7 +6655,9 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=forest" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=forest" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=forest" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=forest" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=forest" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=forest" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=forest" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=forest" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=forest" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:landuse=forest"/>
             <space/>
             <key key="landuse" value="forest"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
             <reference ref="leaf"/>
         </item> <!-- Forest -->
         <item name="Cutline" icon="styles/standard/misc/landmark/cutline.svg" type="way" preset_name_label="true">
@@ -6669,7 +6671,9 @@
             <label text="Where vegetation is dominated by grasses (Poaceae) and other herbaceous (non-woody) plants. Excludes cultivated areas and wetlands."/>
             <space/>
             <key key="natural" value="grassland"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
             <combo key="grassland" text="Type" values="pampas,prairie,puszta,savanna,steppe,veld" display_values="Pampas,Prairie,Puszta,Savanna,Steppe,Veld"/>
         </item> <!-- Grassland -->
         <item name="Nature Reserve" icon="landuse_nature_reserve_21137.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6684,29 +6688,35 @@
             <label text="An accumulation of loose rocks."/>
             <space/>
             <key key="natural" value="scree"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Scree -->
         <item name="Shingle" icon="presets/landuse/shingle.svg" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=shingle" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=shingle" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=shingle" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=shingle" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=shingle" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=shingle" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=shingle"/>
             <label text="An accumulation of loose rounded rocks on a beach or riverbed."/>
             <space/>
             <key key="natural" value="shingle"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Shingle -->       
         <item name="Fell" icon="presets/empty.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=fell" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=fell" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=fell" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=fell" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=fell" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=fell" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:natural=fell" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=fell"/>
             <label text="Bare upper lying uncultivated land principally covered with grass and often grazed."/>
             <space/>
             <key key="natural" value="fell"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Fell -->
         <item name="Scrub" icon="landuse_scrub.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=scrub" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=scrub" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=scrub" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=scrub" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:natural=scrub" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=scrub" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=scrub" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:natural=scrub" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=scrub" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:natural=scrub"/>
             <label text="Bare lower lying uncultivated land with bushes but little or no tree cover."/>
             <space/>
             <key key="natural" value="scrub"/>
-            <text key="name" text="Name"/>
             <optional>
+            	<text key="name" text="Name"/>
                 <reference ref="leaf"/>
             </optional>
         </item> <!-- Scrub -->
@@ -6715,29 +6725,35 @@
             <label text="Bare lower lying uncultivated land with a shrubland habitat found mainly on free-draining infertile, acidic soils, and is characterised by open, low-growing woody vegetation."/>
             <space/>
             <key key="natural" value="heath"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Heath -->
         <item name="Sand" icon="presets/empty.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=sand" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=sand" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=sand" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=sand" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=sand" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=sand" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:natural=sand" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=sand"/>
             <label text="Large area covered with sand."/>
             <space/>
             <key key="natural" value="sand"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Sand -->
         <item name="Bare Rock" icon="presets/empty.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=bare_rock" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=bare_rock" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=bare_rock" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=bare_rock" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:natural=bare_rock" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:natural=bare_rock" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=bare_rock" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=bare_rock" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=bare_rock" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:natural=bare_rock"/>
             <label text="For areas of solid visible rock that is sparsely vegetated or not vegetated at all."/>
             <space/>
             <key key="natural" value="bare_rock"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Bare Rock -->
         <item name="Rock" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=rock" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=rock" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=rock" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=rock" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=rock" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=rock"/>
             <label text="A notable rock or group of rocks, with at least one of them firmly attached to the underlying bedrock."/>
             <space/>
             <key key="natural" value="rock"/>
-            <reference ref="name_wikipedia"/>
             <optional>
+                <reference ref="name_wikipedia"/>
                 <check key="tourism" text="Tourism attraction" value_on="attraction" disable_off="true"/>
             </optional>
         </item> <!-- Rock -->
@@ -6746,8 +6762,8 @@
             <label text="A single notable free-standing rock, which may differ from the composition of the terrain it lies in."/>
             <space/>
             <key key="natural" value="stone"/>
-            <reference ref="name_wikipedia"/>
             <optional>
+            	<reference ref="name_wikipedia"/>
                 <text key="height" text="Height (meters)" length="7"/>
                 <text key="width" text="Width (meters)"/>
             </optional>
@@ -6758,7 +6774,9 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farmyard" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=farmyard" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=farmyard" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=farmyard" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=farmyard" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=farmyard" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=farmyard"/>
             <space/>
             <key key="landuse" value="farmyard"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Farmyard -->
         <item name="Farmland" icon="landuse_landuse_sp.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=farmland" ca.href="http://wiki.openstreetmap.org/wiki/Ca:Tag:landuse=farmland" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=farmland" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=farmland" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=farmland" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=farmland" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=farmland" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=farmland" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=farmland"/>
@@ -6795,43 +6813,55 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=vineyard" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=vineyard" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=vineyard" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=vineyard" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=vineyard" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=vineyard"/>
             <space/>
             <key key="landuse" value="vineyard"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Vineyard -->
         <item name="Greenhouse Horticulture" icon="presets/greenhouse_horticulture.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=greenhouse_horticulture" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=greenhouse_horticulture" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=greenhouse_horticulture" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=greenhouse_horticulture" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=greenhouse_horticulture" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=greenhouse_horticulture" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=greenhouse_horticulture" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=greenhouse_horticulture" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=greenhouse_horticulture" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=greenhouse_horticulture"/>
             <space/>
             <key key="landuse" value="greenhouse_horticulture"/>
-            <text key="name" text="Name"/>
-            <text key="operator" text="Operator"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            	<text key="operator" text="Operator"/>
+            </optional>
         </item> <!-- Greenhouse Horticulture -->
         <item name="Plant Nursery" icon="landuse_plant_26008.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=plant_nursery" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=plant_nursery" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=plant_nursery" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=plant_nursery" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=plant_nursery" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=plant_nursery" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=plant_nursery"/>
             <space/>
             <key key="landuse" value="plant_nursery"/>
-            <text key="name" text="Name"/>
-            <text key="operator" text="Operator"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            	<text key="operator" text="Operator"/>
+            </optional>
             <reference ref="genus_species_taxon"/>
         </item> <!-- Plant Nursery -->
         <item name="Aquaculture" icon="presets/landuse/aquaculture.svg" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=aquaculture" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=aquaculture" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=aquaculture" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=aquaculture"/>
             <space/>
             <key key="landuse" value="aquaculture"/>
-            <text key="name" text="Name"/>
-            <text key="operator" text="Operator"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            	<text key="operator" text="Operator"/>
+            </optional>
             <combo key="aquaculture" text="Aquaculture" values="shrimp,fish,mussels" display_values="Shrimp,Fish,Mussels"/>
         </item> <!-- Aquaculture -->
         <item name="Allotments" icon="landuse_landuse_sp.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=allotments" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=allotments" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=allotments" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=allotments" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=allotments" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=allotments" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=allotments" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=allotments" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=allotments"/>
             <space/>
             <key key="landuse" value="allotments"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Allotments -->
         <separator/>
         <item name="Garden" icon="landuse_garden_21010.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=garden" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=garden" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=garden" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=garden" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=garden" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=garden" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=garden"/>
             <space/>
             <key key="leisure" value="garden"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Garden -->
         <item name="Grass" icon="landuse_grass.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=grass" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=grass" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=grass" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=grass" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=grass" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=grass" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:landuse=grass" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=grass" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=grass" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=grass"/>
@@ -6845,25 +6875,33 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=village_green" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=village_green" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=village_green" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=village_green" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=village_green" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=village_green" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=village_green" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=village_green" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=village_green" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:landuse=village_green"/>
             <space/>
             <key key="landuse" value="village_green"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>&gt;
         </item> <!-- Village Green -->
         <item name="Common" icon="landuse_common_21194.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=common" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=common" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=common" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=common" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=common" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=common" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=common" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:leisure=common"/>
             <space/>
             <key key="leisure" value="common"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Common -->
         <item name="Park" icon="landuse_park_21030.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=park" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=park" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=park" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=park" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=park" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=park" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=park" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=park" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=park"/>
             <space/>
             <key key="leisure" value="park"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Park -->
         <item name="Recreation Ground" icon="landuse_recreation_ground_21132.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=recreation_ground" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=recreation_ground" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=recreation_ground" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=recreation_ground" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=recreation_ground" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=recreation_ground" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=recreation_ground" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=recreation_ground"/>
             <space/>
             <key key="landuse" value="recreation_ground"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Recreation Ground -->
         <separator/>
         <item name="Residential Area" icon="landuse_house_sp.png" type="closedway,multipolygon" preset_name_label="true">
@@ -6896,63 +6934,83 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=retail" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=retail" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=retail" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=retail" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=retail" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=retail" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=retail" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=retail"/>
             <space/>
             <key key="landuse" value="retail"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Retail -->
         <item name="Commercial" icon="presets/empty.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=commercial" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=commercial" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=commercial" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=commercial" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=commercial" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=commercial" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=commercial" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=commercial"/>
             <space/>
             <key key="landuse" value="commercial" values_context="landuse"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Commercial -->
         <item name="Industrial" icon="landuse_works_22087.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=industrial" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=industrial" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=industrial" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=industrial" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=industrial" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:landuse=industrial" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=industrial" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=industrial" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=industrial"/>
             <space/>
             <key key="landuse" value="industrial"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Industrial -->
         <item name="Garages" icon="presets/garages.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=garages" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=garages" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=garages" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=garages" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=garages" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:landuse=garages" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=garages" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=garages"/>
             <space/>
             <key key="landuse" value="garages"/>
-            <text key="name" text="Name"/>
-            <text key="operator" text="Operator"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            	<text key="operator" text="Operator"/>
+            </optional>
         </item> <!-- Garages -->
         <item name="Railway Land" icon="landuse_train_station.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=railway" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=railway" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=railway" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=railway" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=railway" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=railway" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=railway"/>
             <space/>
             <key key="landuse" value="railway"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Railway Land -->
         <item name="Military" icon="landuse_military.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=military" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=military" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=military" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=military" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=military" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=military"/>
             <space/>
             <key key="landuse" value="military"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Military -->
         <separator/>
         <item name="Construction Area" icon="construction.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=construction" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=construction" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=construction" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=construction" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=construction" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=construction" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=construction" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=construction" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=construction" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=construction"/>
             <space/>
             <key key="landuse" value="construction"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Construction Area -->
         <item name="Brownfield" icon="landuse_landuse_sp.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=brownfield" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=brownfield" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=brownfield" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=brownfield" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=brownfield" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=brownfield" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=brownfield" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=brownfield"/>
             <space/>
             <key key="landuse" value="brownfield"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Brownfield -->
         <item name="Greenfield" icon="landuse_landuse_sp.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=greenfield" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=greenfield" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=greenfield" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=greenfield" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=greenfield" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=greenfield" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=greenfield"/>
             <space/>
             <key key="landuse" value="greenfield"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Greenfield -->
         <item name="Landfill" icon="landuse_landuse_sp.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=landfill" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=landfill" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=landfill" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=landfill" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=landfill" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=landfill" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=landfill" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=landfill"/>
             <space/>
             <key key="landuse" value="landfill"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
         </item> <!-- Landfill -->
         <item name="Quarry" icon="landuse_quary.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=quarry" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=quarry" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=quarry" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=quarry" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=quarry" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=quarry" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=quarry" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=quarry" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=quarry"/>
