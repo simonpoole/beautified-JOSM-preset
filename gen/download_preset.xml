@@ -7428,7 +7428,7 @@
         </item> <!-- Raceway -->
     </group> <!-- Motorsport -->
   </group> <!-- Sports -->
-	<group name="Buildings" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_house_sp.png">
+  <group name="Buildings" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_house_sp.png">
 		<item name="Building" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_house_sp.png"
 			type="node,closedway,multipolygon" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Key:building"
@@ -9717,6 +9717,24 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Mall -->
         <separator/>
+        <item name="Baby goods" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_baby_goods_29161.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=baby_goods"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=baby_goods"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=baby_goods"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=baby_goods"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=baby_goods"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=baby_goods"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=baby_goods"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=baby_goods" 
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:shop=baby_goods"/>
+            <space />
+            <key key="shop" value="baby_goods" />
+            <reference ref="name_oh_wheelchair_level" />
+            <optional>
+               <text key="brand" text="Brand" />
+            </optional>
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Baby goods -->
         <item name="Florist" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_florist.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=florist"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=florist"
@@ -9801,7 +9819,16 @@
             <key key="shop" value="locksmith" />
             <reference ref="name_operator_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
-        </item> <!-- Paint -->
+        </item> <!-- Locksmith -->
+        <item name="Sewing" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_dressmaker_16111.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=sewing"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=sewing"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=sewing" />
+            <space />
+            <key key="shop" value="sewing" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Sewing -->
         <separator/>
         <item name="Travel Agency" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_travel_agency_29144.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=travel_agency"
@@ -9957,7 +9984,7 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Funeral Directors -->
     </group> <!-- Other -->
-        <separator/>
+    <separator/>
     <item name="Vending Machine" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_vending_machine.png" type="node" preset_name_label="true">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine"
@@ -11449,7 +11476,7 @@ tags.remove('automatic_check_date');"
         	text="Automatic check_date generation"/>	
 		</item> <!-- Add or update check date -->
     </group> <!-- Annotation -->
-    <group name="Relations" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_relation_sp.png">
+  <group name="Relations" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/osm_relation_sp.png">
         <item name="Multipolygon" icon="presets/multipolygon.png" type="relation,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:multipolygon"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:multipolygon"
@@ -11935,7 +11962,7 @@ tags.remove('automatic_check_date');"
             </roles>
         </item> <!-- Tunnel -->
     </group> <!-- Relations -->
-    <group name="Crafts" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/craft_builder_16008.png">
+  <group name="Crafts" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/craft_builder_16008.png">
         <item name="Agricultural engines" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/craft_agricultural_engines_16001.png" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=agricultural_engines"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=agricultural_engines" />
@@ -12572,7 +12599,7 @@ tags.remove('automatic_check_date');"
             <reference ref="link_contact_address_payment" />
         </item> <!-- Photo studio -->
     </group> <!-- Crafts -->
-    <group name="Offices" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/office_company_25027.png">
+  <group name="Offices" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/office_company_25027.png">
         <item name="Administrative (deprecated)" deprecated="true" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/office_administrative_25001.png" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:office=administrative"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:office=administrative"
