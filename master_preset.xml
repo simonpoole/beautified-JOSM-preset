@@ -7428,7 +7428,7 @@
         </item> <!-- Raceway -->
     </group> <!-- Motorsport -->
   </group> <!-- Sports -->
-	<group name="Buildings" icon="ICONPATH:man_made_house_sp.ICONTYPE">
+  <group name="Buildings" icon="ICONPATH:man_made_house_sp.ICONTYPE">
 		<item name="Building" icon="ICONPATH:man_made_house_sp.ICONTYPE"
 			type="node,closedway,multipolygon" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Key:building"
@@ -9717,6 +9717,24 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Mall -->
         <separator/>
+        <item name="Baby goods" icon="ICONPATH:shopping_baby_goods_29161.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=baby_goods"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=baby_goods"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=baby_goods"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=baby_goods"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=baby_goods"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=baby_goods"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=baby_goods"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=baby_goods" 
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:shop=baby_goods"/>
+            <space />
+            <key key="shop" value="baby_goods" />
+            <reference ref="name_oh_wheelchair_level" />
+            <optional>
+               <text key="brand" text="Brand" />
+            </optional>
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Baby goods -->
         <item name="Florist" icon="ICONPATH:shopping_florist.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=florist"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=florist"
@@ -9801,7 +9819,16 @@
             <key key="shop" value="locksmith" />
             <reference ref="name_operator_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
-        </item> <!-- Paint -->
+        </item> <!-- Locksmith -->
+        <item name="Sewing" icon="ICONPATH:shopping_dressmaker_16111.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=sewing"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=sewing"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=sewing" />
+            <space />
+            <key key="shop" value="sewing" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Sewing -->
         <separator/>
         <item name="Travel Agency" icon="ICONPATH:shopping_travel_agency_29144.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=travel_agency"
@@ -9957,7 +9984,7 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Funeral Directors -->
     </group> <!-- Other -->
-        <separator/>
+    <separator/>
     <item name="Vending Machine" icon="ICONPATH:shopping_vending_machine.ICONTYPE" type="node" preset_name_label="true">
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vending_machine"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vending_machine"
@@ -11449,7 +11476,7 @@ tags.remove('automatic_check_date');"
         	text="Automatic check_date generation"/>	
 		</item> <!-- Add or update check date -->
     </group> <!-- Annotation -->
-    <group name="Relations" icon="ICONPATH:osm_relation_sp.ICONTYPE">
+  <group name="Relations" icon="ICONPATH:osm_relation_sp.ICONTYPE">
         <item name="Multipolygon" icon="presets/multipolygon.png" type="relation,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:multipolygon"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:multipolygon"
@@ -11935,7 +11962,7 @@ tags.remove('automatic_check_date');"
             </roles>
         </item> <!-- Tunnel -->
     </group> <!-- Relations -->
-    <group name="Crafts" icon="ICONPATH:craft_builder_16008.ICONTYPE">
+  <group name="Crafts" icon="ICONPATH:craft_builder_16008.ICONTYPE">
         <item name="Agricultural engines" icon="ICONPATH:craft_agricultural_engines_16001.ICONTYPE" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=agricultural_engines"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=agricultural_engines" />
@@ -12572,7 +12599,7 @@ tags.remove('automatic_check_date');"
             <reference ref="link_contact_address_payment" />
         </item> <!-- Photo studio -->
     </group> <!-- Crafts -->
-    <group name="Offices" icon="ICONPATH:office_company_25027.ICONTYPE">
+  <group name="Offices" icon="ICONPATH:office_company_25027.ICONTYPE">
         <item name="Administrative (deprecated)" deprecated="true" icon="ICONPATH:office_administrative_25001.ICONTYPE" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:office=administrative"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:office=administrative"
