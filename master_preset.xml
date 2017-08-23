@@ -7878,6 +7878,20 @@
             <check key="headframe" text="Visible Headframe" disable_off="true" />
             <check key="disused" text="Disused" disable_off="true" />
         </item> <!-- Mineshaft -->
+        <item name="Petroleum well" icon="ICONPATH:man_made_petroleum_well_22045.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=petroleum_well"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=petroleum_well"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=petroleum_well"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=petroleum_well"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=petroleum_well"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:man_made=petroleum_well"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=petroleum_well" />
+            <space />
+            <key key="man_made" value="petroleum_well" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
+        </item> <!-- Petroleum well -->
         <item name="Adit" icon="ICONPATH:man_made_adit_22001.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=adit"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=adit"
@@ -7987,8 +8001,23 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=watermill" />
             <space />
             <key key="man_made" value="watermill" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
         </item> <!-- Watermill -->
+       <item name="Pumping station" icon="ICONPATH:man_made_pumping_station_22106.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pumping_station"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=pumping_station"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=pumping_station"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=pumping_station"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=pumping_station"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=pumping_station" />
+            <space />
+            <key key="man_made" value="pumping_station" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
+        </item> <!-- Pumping station -->
         <item name="Fountain" icon="ICONPATH:amenity_fountain2.ICONTYPE" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=fountain"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=fountain"
