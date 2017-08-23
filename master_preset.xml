@@ -10004,7 +10004,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=second_hand"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=second_hand"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=second_hand"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=second_han"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=second_hand"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=second_hand" 
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=second_hand" 
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=second_hand" 
@@ -10015,6 +10015,20 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Second hand -->
+        <item name="Charity" icon="ICONPATH:shopping_charity_29024.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=charity"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=charity"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=charity"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=charity"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=charity" 
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=charity" 
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=charity" />
+            <space />
+            <key key="shop" value="charity" />
+            <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Charity -->
         <separator/>
         <item name="Travel Agency" icon="ICONPATH:shopping_travel_agency_29144.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=travel_agency"
