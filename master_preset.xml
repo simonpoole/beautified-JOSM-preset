@@ -7692,8 +7692,6 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=tower"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=tower"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=tower"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:entrance"
-                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:entrance"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=tower"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=tower"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=tower"
@@ -7701,9 +7699,26 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=tower" />
             <space />
             <key key="man_made" value="tower" />
-            <text key="name" text="Name" />
-            <combo key="tower:type" text="Tower type" values="communication,observation" />
+            <combo key="tower:type" text="Tower type" values="communication,observation" editable="true" match="key" />
             <optional>
+            	<text key="name" text="Name" />
+                <text key="height" text="Height (meters)" />
+                <text key="operator" text="Operator" />
+            </optional>
+        </item> <!-- Tower -->
+        <item name="Mast" icon="ICONPATH:poi_mast_22028.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=mast"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=mast"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=mast"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:man_made=mast"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:man_made=mast"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=mast"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=mast" />
+            <space />
+            <key key="man_made" value="mast" />
+            <combo key="tower:type" text="Tower type" values="communication,observation" editable="true" match="key" />
+            <optional>
+            	<text key="name" text="Name" />
                 <text key="height" text="Height (meters)" />
                 <text key="operator" text="Operator" />
             </optional>
