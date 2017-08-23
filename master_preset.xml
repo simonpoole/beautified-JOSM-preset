@@ -5032,13 +5032,30 @@
 			<text key="description" text="Description" />
 		</item> <!-- Fitness Station -->
         <item name="Sauna" icon="ICONPATH:amenity_sauna_12241.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=sauna"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=sauna"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=sauna"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=sauna"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=sauna" />
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=sauna"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=sauna"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=sauna"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=sauna" />
             <space />
             <key key="leisure" value="sauna" />
+            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="facility_access" />
+            <space />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Sauna -->
+        <item name="Dance" icon="ICONPATH:amenity_dance_21173.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dance"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dance"
+            	  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=dance"
+            	  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:leisure=dance"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=dance"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=dance"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=dance"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=dance" />
+            <space />
+            <key key="leisure" value="dance" />
+            <check key="dance:teaching" text="Teaching" disable_off="true" />
+            <multiselect key="dance:style" text="Styles" values="ballroom;latin;Tango" display_values="BallRoom;Latin" editable="true" values_searchable="true" />
             <reference ref="name_operator_oh_wheelchair" />
             <reference ref="facility_access" />
             <space />
@@ -6086,7 +6103,15 @@
             <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical" />
             <combo key="siren:purpose" text="Purpose" values="tornado,fire,air_raid,civil_defense" />
             <text key="siren:range" text="Range (in meters)" />
-        </item> <!-- Emergency Phone -->
+        </item> <!-- Siren -->
+        <item name="Life ring" icon="ICONPATH:emergency_life_ring_12080.ICONTYPE" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:emergency=life_ring"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:emergency=life_ring"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:emergency=life_ring" />
+            <key key="emergency" value="life_ring" />
+            <text key="ref" text="Reference" />
+            <text key="operator" text="Operator" />
+        </item> <!-- Life ring -->
     </group> <!-- Emergency -->
     <group name="Social Facilities" icon="ICONPATH:amenity_outreach_12252.ICONTYPE">
         <item name="Ambulatory Care" icon="ICONPATH:amenity_ambulatory_care_12248.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
