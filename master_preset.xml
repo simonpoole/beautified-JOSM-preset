@@ -6779,21 +6779,37 @@
             <reference ref="sport" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Sports Centre -->
-	<item name="Fitness Centre" icon="ICONPATH:sport_gym.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
-		<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=fitness_centre"
+		<item name="Fitness Centre" icon="ICONPATH:sport_gym.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=fitness_centre"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=fitness_centre"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=fitness_centre"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=fitness_centre"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=fitness_centre"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=fitness_centre"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=fitness_centre" />
-		<space />
-		<key key="leisure" value="fitness_centre" />
-		<text key="name" text="Name" />
-		<reference ref="sport" />
-		<reference ref="link_contact_address_payment" />
-		<preset_link preset_name="Building" />
-	</item> <!-- Fitness Centre -->
+			<space />
+			<key key="leisure" value="fitness_centre" />
+			<text key="name" text="Name" />
+			<reference ref="sport" />
+			<reference ref="link_contact_address_payment" />
+			<preset_link preset_name="Building" />
+		</item> <!-- Fitness Centre -->
+		<item name="Dojo" icon="ICONPATH:sport_dojo_12331.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=dojo"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=dojo"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=dojo"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=dojo" />
+			<space />
+			<key key="amenity" value="dojo" />
+			<text key="name" text="Name" />
+			<multiselect key="sport" text="Sport" values_searchable="true" match="key">
+                <list_entry value="aikido" short_description="Aikido" />
+                <list_entry value="judo" short_description="Judo" />
+                <list_entry value="kendo" short_description="Kendo" />
+                <list_entry value="karate" short_description="Karate" />
+            </multiselect>
+			<reference ref="link_contact_address_payment" />
+		</item> <!-- Fitness Centre -->
         <item name="Pitch" icon="ICONPATH:sport_pitch_21033.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=pitch"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=pitch"
