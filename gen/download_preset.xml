@@ -5032,13 +5032,30 @@
 			<text key="description" text="Description" />
 		</item> <!-- Fitness Station -->
         <item name="Sauna" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_sauna_12241.png" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=sauna"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=sauna"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=sauna"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=sauna"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=sauna" />
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=sauna"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=sauna"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=sauna"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=sauna" />
             <space />
             <key key="leisure" value="sauna" />
+            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="facility_access" />
+            <space />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Sauna -->
+        <item name="Dance" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_dance_21173.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dance"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dance"
+            	  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=dance"
+            	  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:leisure=dance"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=dance"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=dance"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=dance"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=dance" />
+            <space />
+            <key key="leisure" value="dance" />
+            <check key="dance:teaching" text="Teaching" disable_off="true" />
+            <multiselect key="dance:style" text="Styles" values="ballroom;latin;Tango" display_values="BallRoom;Latin" editable="true" values_searchable="true" />
             <reference ref="name_operator_oh_wheelchair" />
             <reference ref="facility_access" />
             <space />
@@ -6086,7 +6103,15 @@
             <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical" />
             <combo key="siren:purpose" text="Purpose" values="tornado,fire,air_raid,civil_defense" />
             <text key="siren:range" text="Range (in meters)" />
-        </item> <!-- Emergency Phone -->
+        </item> <!-- Siren -->
+        <item name="Life ring" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/emergency_life_ring_12080.png" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:emergency=life_ring"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:emergency=life_ring"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:emergency=life_ring" />
+            <key key="emergency" value="life_ring" />
+            <text key="ref" text="Reference" />
+            <text key="operator" text="Operator" />
+        </item> <!-- Life ring -->
     </group> <!-- Emergency -->
     <group name="Social Facilities" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_outreach_12252.png">
         <item name="Ambulatory Care" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_ambulatory_care_12248.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6779,21 +6804,37 @@
             <reference ref="sport" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Sports Centre -->
-	<item name="Fitness Centre" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_gym.png" type="node,closedway,multipolygon" preset_name_label="true">
-		<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=fitness_centre"
+		<item name="Fitness Centre" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_gym.png" type="node,closedway,multipolygon" preset_name_label="true">
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=fitness_centre"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=fitness_centre"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=fitness_centre"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=fitness_centre"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=fitness_centre"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=fitness_centre"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=fitness_centre" />
-		<space />
-		<key key="leisure" value="fitness_centre" />
-		<text key="name" text="Name" />
-		<reference ref="sport" />
-		<reference ref="link_contact_address_payment" />
-		<preset_link preset_name="Building" />
-	</item> <!-- Fitness Centre -->
+			<space />
+			<key key="leisure" value="fitness_centre" />
+			<text key="name" text="Name" />
+			<reference ref="sport" />
+			<reference ref="link_contact_address_payment" />
+			<preset_link preset_name="Building" />
+		</item> <!-- Fitness Centre -->
+		<item name="Dojo" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_dojo_12331.png" type="node,closedway,multipolygon" preset_name_label="true">
+			<link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=dojo"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=dojo"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=dojo"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=dojo" />
+			<space />
+			<key key="amenity" value="dojo" />
+			<text key="name" text="Name" />
+			<multiselect key="sport" text="Sport" values_searchable="true" match="key">
+                <list_entry value="aikido" short_description="Aikido" />
+                <list_entry value="judo" short_description="Judo" />
+                <list_entry value="kendo" short_description="Kendo" />
+                <list_entry value="karate" short_description="Karate" />
+            </multiselect>
+			<reference ref="link_contact_address_payment" />
+		</item> <!-- Fitness Centre -->
         <item name="Pitch" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/sport_pitch_21033.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=pitch"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=pitch"
@@ -7651,8 +7692,6 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=tower"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=tower"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=tower"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:entrance"
-                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:entrance"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=tower"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=tower"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=tower"
@@ -7660,9 +7699,26 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=tower" />
             <space />
             <key key="man_made" value="tower" />
-            <text key="name" text="Name" />
-            <combo key="tower:type" text="Tower type" values="communication,observation" />
+            <combo key="tower:type" text="Tower type" values="communication,observation" editable="true" match="key" />
             <optional>
+            	<text key="name" text="Name" />
+                <text key="height" text="Height (meters)" />
+                <text key="operator" text="Operator" />
+            </optional>
+        </item> <!-- Tower -->
+        <item name="Mast" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/poi_mast_22028.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=mast"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=mast"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=mast"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Key:man_made=mast"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Key:man_made=mast"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=mast"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=mast" />
+            <space />
+            <key key="man_made" value="mast" />
+            <combo key="tower:type" text="Tower type" values="communication,observation" editable="true" match="key" />
+            <optional>
+            	<text key="name" text="Name" />
                 <text key="height" text="Height (meters)" />
                 <text key="operator" text="Operator" />
             </optional>
@@ -7822,6 +7878,20 @@
             <check key="headframe" text="Visible Headframe" disable_off="true" />
             <check key="disused" text="Disused" disable_off="true" />
         </item> <!-- Mineshaft -->
+        <item name="Petroleum well" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_petroleum_well_22045.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=petroleum_well"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=petroleum_well"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=petroleum_well"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=petroleum_well"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=petroleum_well"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:man_made=petroleum_well"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=petroleum_well" />
+            <space />
+            <key key="man_made" value="petroleum_well" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
+        </item> <!-- Petroleum well -->
         <item name="Adit" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_adit_22001.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=adit"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=adit"
@@ -7931,8 +8001,23 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=watermill" />
             <space />
             <key key="man_made" value="watermill" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
         </item> <!-- Watermill -->
+       <item name="Pumping station" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/man_made_pumping_station_22106.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pumping_station"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=pumping_station"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=pumping_station"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=pumping_station"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=pumping_station"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=pumping_station" />
+            <space />
+            <key key="man_made" value="pumping_station" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
+        </item> <!-- Pumping station -->
         <item name="Fountain" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_fountain2.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=fountain"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=fountain"
@@ -9919,7 +10004,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=second_hand"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=second_hand"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=second_hand"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=second_han"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=second_hand"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=second_hand" 
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=second_hand" 
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=second_hand" 
@@ -9930,6 +10015,20 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Second hand -->
+        <item name="Charity" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_charity_29024.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=charity"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=charity"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=charity"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=charity"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=charity" 
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=charity" 
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=charity" />
+            <space />
+            <key key="shop" value="charity" />
+            <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Charity -->
         <separator/>
         <item name="Travel Agency" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_travel_agency_29144.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=travel_agency"
