@@ -5990,6 +5990,20 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Bed -->
+        <item name="Carpet" icon="shopping_carpet_29165.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=carpet" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=carpet" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=carpet" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=carpet" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=carpet" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=carpet"/>
+            <space/>
+            <key key="shop" value="carpet"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Carpet -->
+        <item name="Bathroom" icon="shopping_bathroom_furnishing_29162.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=bathroom_furnishing" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=bathroom_furnishing" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=bathroom_furnishing" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=bathroom_furnishing" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=bathroom_furnishing" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=bathroom_furnishing" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=bathroom_furnishing" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=bathroom_furnishing"/>
+            <space/>
+            <key key="shop" value="bathroom_furnishing"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Carpet -->
         <item name="Interior Decoration" icon="shopping_interior_decoration_29087.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=interior_decoration" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=interior_decoration" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=interior_decoration" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=interior_decoration" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=interior_decoration" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=interior_decoration"/>
             <space/>
@@ -6072,6 +6086,27 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Beauty -->
+        <item name="Nail salon" icon="shopping_nail_salon_29108.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=beauty" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=beauty" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=beauty" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=beauty" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=beauty" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=beauty" pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:shop=beauty" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=beauty" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=beauty"/>
+            <space/>
+            <key key="shop" value="beauty"/>
+            <key key="beauty" value="nails"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Nail salon -->
+        <item name="Massage" icon="shopping_massage_29103.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=massage" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=massage" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=massage" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=massage" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=massage" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=massage"/>
+            <space/>
+            <key key="shop" value="massage"/>
+            <multiselect key="massage" text="Massage type" values_searchable="true" match="key">
+        		<list_entry value="thai" short_description="Thai"/>
+        		<list_entry value="shiatsu" short_description="Shiatsu"/>
+        		<list_entry value="therapeutic" short_description="Therapeutic"/>
+        		<list_entry value="sport" short_description="Sport"/>
+        	</multiselect>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Massage -->
 		<item name="Tobacco" icon="shopping_tobacco_29141.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=tobacco" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=tobacco" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=tobacco" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=tobacco" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=tobacco" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=tobacco" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=tobacco"/>
             <space/>
@@ -6079,6 +6114,13 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Tobacco -->
+        <item name="e-cigarette" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=e-cigarette" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=e-cigarette" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=e-cigarette"/>
+            <space/>
+            <key key="shop" value="e-cigarette"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- e-cigarette -->
         <item name="Hairdresser/Barber" icon="shopping_hairdresser.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=hairdresser" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=hairdresser" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=hairdresser" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=hairdresser" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=hairdresser" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=hairdresser" pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:shop=hairdresser" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=hairdresser" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=hairdresser"/>
             <space/>
@@ -6211,6 +6253,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Sewing -->
+        <item name="Second hand" icon="shopping_second_hand_29127.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=second_hand" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=second_hand" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=second_hand" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=second_han" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=second_hand" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=second_hand" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=second_hand" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=second_hand" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:shop=second_hand"/>
+            <space/>
+            <key key="shop" value="second_hand"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Second hand -->
         <separator/>
         <item name="Travel Agency" icon="shopping_travel_agency_29144.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=travel_agency" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=travel_agency" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=travel_agency" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=travel_agency" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=travel_agency" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=travel_agency"/>
@@ -6307,7 +6356,7 @@
         <space/>
         <key key="amenity" value="vending_machine"/>
         <multiselect key="vending" text="Vending products" values_searchable="true" match="key">
-        	<list_entry value="admission_tickets;" short_description="Admission tickets"/>
+        	<list_entry value="admission_tickets" short_description="Admission tickets"/>
             <list_entry value="animal_food" short_description="Animal food"/>
             <list_entry value="bicycle_tube" short_description="Bicycle tubes"/>
             <list_entry value="cigarettes" short_description="Cigarettes"/>
