@@ -10230,6 +10230,16 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Pet -->
+        <item name="Pet grooming" icon="ICONPATH:shopping_pet_grooming.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=pet_grooming" />
+            <space />
+            <key key="shop" value="pet_grooming" />
+            <optional>
+            	<multiselect key="pet" text="Animals" values="dog;cat" display_values="Dog;Cat" values_searchable="true" />
+            </optional>
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Pet -->
         <item name="Photo" icon="ICONPATH:shopping_photo_29124.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=photo"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=photo"
