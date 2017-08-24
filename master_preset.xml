@@ -9968,6 +9968,18 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Hardware -->
+        <item name="Gas" icon="ICONPATH:shopping_gas_29070.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=gas"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=gas"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=gas"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=gas"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=gas"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=gas" />
+            <space />
+            <key key="shop" value="gas" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Hardware -->
         <item name="Paint" icon="ICONPATH:shopping_paint_29122.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=paint"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=paint"
