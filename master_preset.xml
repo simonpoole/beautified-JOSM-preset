@@ -2989,6 +2989,27 @@
             </optional>
             <reference ref="link_contact_address_payment" />
         </item> <!-- Marine Fuel -->
+        <item name="Boat rental" icon="ICONPATH:transport_boat_rental.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=boat_rental"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=boat_rental"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=boat_rental" />
+            <space />
+            <key key="amenity" value="boat_rental" />
+            <reference ref="name_operator" />
+            <reference ref="oh" />
+            <optional>
+            	<text key="capacity" text="Number of boats" />
+            	<check key="motorboat_rental" text="Motorboats" disable_off="true" /> 
+            	<check key="houseboat_rental" text="Houseboats" disable_off="true" />
+            	<check key="pedalboat_rental" text="Pedalos" disable_off="true" />
+            	<check key="jetski_rental" text="Jetskis" disable_off="true" />
+            	<check key="sailboat_rental" text="Sailing boats" disable_off="true" />
+            	<check key="dinghy_rental" text="Dinghies" disable_off="true" />
+            	<check key="kayak_rental" text="Kayaks" disable_off="true" />
+            	<check key="canoe_rental" text="Canoes" disable_off="true" />
+            </optional>
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Boat rental -->
         <item name="Pier" icon="ICONPATH:water_pier_22046.ICONTYPE" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=pier"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=pier"
