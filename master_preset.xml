@@ -6699,6 +6699,47 @@
                 <text key="description" text="Description" />
             </optional>
         </item> <!-- Water Point -->
+        <item name="Animal shelter" icon="ICONPATH:amenity_animal_shelter_12315.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=animal_shelter"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=animal_shelter"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=animal_shelter"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=animal_shelter"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=animal_shelter"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=animal_shelter"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=animal_shelter"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=animal_shelter" />
+            <space />
+            <key key="amenity" value="animal_shelter" />
+            <optional>
+                <text key="name" text="Name" />
+                <text key="operator" text="Operator" />
+                <text key="description" text="Description" />
+                <multiselect key="animal_shelter" text="Animals" values="dog;cat;horse;wildlife;fish;amphibian;reptile;bird;mammal;sea_mammal;sea_animal" 
+                	display_values="Dog;Cat;Horse;Wildlife;Fish;Amphibian;Reptile;Bird;Mammal;Sea mammal;Sea animal" values_searchable="true" match="key" />
+                <!-- The following two tags should be multiselects accroding to the wiki, but values outside of yes and no are hardly used -->
+                <check key="animal_shelter:adoption" text="For adoption" disable_off="true" /> />
+ 				<check key="animal_shelter:release" text="For release" disable_off="true" /> />
+            </optional>
+        </item> <!-- Animal shelter -->
+        <item name="Animal boarding" icon="ICONPATH:amenity_animal_boarding_12314.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=animal_boarding"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=animal_boarding"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=animal_boarding"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=animal_boarding"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=animal_boarding"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=animal_boarding"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=animal_boarding"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=animal_boarding" />
+            <space />
+            <key key="amenity" value="animal_boarding" />
+            <optional>
+                <text key="name" text="Name" />
+                <text key="operator" text="Operator" />
+                <text key="description" text="Description" />
+                <multiselect key="animal_boarding" text="Animals" values="dog;cat;horse;fish;amphibian;reptile;bird;mammal" 
+                	display_values="Dog;Cat;Horse;Fish;Amphibian;Reptile;Bird;Mammal" values_searchable="true" match="key" />
+            </optional>
+        </item> <!-- Animal boarding -->
         <item name="Animal watering place" icon="presets/misc/watering_place.svg" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=watering_place"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=watering_place"
