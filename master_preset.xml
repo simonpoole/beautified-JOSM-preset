@@ -5365,7 +5365,7 @@
             <combo key="theatre:genre" text="Theatre type" values_searchable="true">
             	<list_entry value="figure" display_value="Figure" />
             	<list_entry value="puppet" display_value="Puppet" />
-            	<list_entry value="marionette" display_value="marionette" />
+            	<list_entry value="marionette" display_value="Marionette" />
             	<list_entry value="shadow_play" display_value="Shadow play" />
             </combo>
             <reference ref="name_operator" />
@@ -5388,6 +5388,28 @@
             <key key="amenity" value="library" />
             <reference ref="name_operator_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
+        </item> <!-- Library -->
+        <item name="Public bookcase" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=public_bookcase"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=public_bookcase"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=public_bookcase"
+                  el.href="http://wiki.openstreetmap.org/wiki/El:Tag:amenity=public_bookcase"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=public_bookcase"
+                  et.href="http://wiki.openstreetmap.org/wiki/Et:Tag:amenity=public_bookcase"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=public_bookcase"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=public_bookcase"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=public_bookcase" />
+            <space />
+            <key key="amenity" value="public_bookcase" />
+            <optional>
+            	<text key="name" text="Name" />
+            	<text key="operator" text="Operator" />
+            	<text key="capacity" text="Capacity" />
+            	<reference ref="oh" />
+            	<combo key="public_bookcase:type" text="Type" 
+            		values="building,glass_cabinet,metal_cabinet,movable_cabinet,phone_box,reading_box,sculpture,shelf,shelter,wooden_cabinet" 
+            		display_values="Building,Glass cabinet,Metal cabinet,Movable cabinet,Phone booth,Reading box,Sculpture,Shelf,Shelter,Wooden cabinet"/>
+            </optional>
         </item> <!-- Library -->
         <item name="Arts Centre" icon="ICONPATH:amenity_arts_centre_12001.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=arts_centre"
@@ -5416,7 +5438,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=artwork" />
             <space />
             <key key="tourism" value="artwork" />
-            <combo key="artwork_type" text="Type" values="mural,sculpture,statue" />
+            <combo key="artwork_type" text="Type" values="mural,sculpture,statue" display_values="Mural,Sculpture,Statue"/>
             <text key="name" text="Name" />
             <text key="artist_name" text="Artist Name" />
         </item> <!-- Artwork -->
@@ -6618,7 +6640,7 @@
             <reference ref="facility_access" />
             <reference ref="fee" />
             <text key="operator" text="Operator" />
-            <combo key="opening_hours" text="Operation times" values="24/7" match="none" editable="true" values_no_i18n="true" />
+            <reference ref="oh" />
         </item> <!-- Sanitary Dump Station -->
         <separator/>
         <item name="Bench" icon="ICONPATH:amenity_bench.ICONTYPE" type="node,way" preset_name_label="true">
