@@ -10289,6 +10289,16 @@
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Funeral Directors -->
+        <item name="Scuba diving" icon="ICONPATH:shopping_scuba_diving_29044.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=scuba_diving"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=scuba_diving"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=scuba_diving"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=scuba_diving" />
+            <space />
+            <key key="shop" value="scuba_diving" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Scuba diving -->
     </group> <!-- Other -->
     <separator/>
     <item name="Vending Machine" icon="ICONPATH:shopping_vending_machine.ICONTYPE" type="node" preset_name_label="true">
