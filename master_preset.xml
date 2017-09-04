@@ -5769,6 +5769,21 @@
             <text key="ref" text="Reference" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Post Office -->
+        <item name="Crematorium" icon="ICONPATH:amenity_crematorium_12318.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=crematorium"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=crematorium"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=crematorium"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=crematorium"
+                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=crematorium"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=crematorium"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=crematorium"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=crematorium"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=crematorium" />
+            <space />
+            <key key="amenity" value="crematorium" />
+            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Crematorium -->
     </group> <!-- Public Buildings -->
     <group name="Education" icon="ICONPATH:education_school.ICONTYPE">
         <item name="Childcare" icon="ICONPATH:education_nursery2.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
