@@ -9529,6 +9529,17 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Pawnbroker -->
+        <item name="Money lender" icon="ICONPATH:money_money_lender_29184.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=money_lender"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=money_lender"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=money_lender"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=money_lender"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=money_lender" />
+            <space />
+            <key key="shop" value="money_lender" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Money lender -->
     </group> <!-- Cash -->
     <group name="Home decoration" icon="ICONPATH:shopping_interior_decoration_29087.ICONTYPE">
         <item name="Furniture" icon="ICONPATH:shopping_furniture_29068.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
