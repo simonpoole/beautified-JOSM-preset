@@ -9081,6 +9081,17 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Confectionery -->
+        <item name="Chocolate" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=chocolate"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=chocolate"
+            	  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=chocolate"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=chocolate"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=chocolate" />
+            <space />
+            <key key="shop" value="chocolate" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Chocolate -->
         <item name="Tea" icon="styles/standard/shop/groceries/tea.svg" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=tea"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=tea"
@@ -10358,6 +10369,15 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Scuba diving -->
+        <item name="Storage rental" icon="shopping_storage_rental.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=storage_rental"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=storage_rental"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=storage_rental" />
+            <space />
+            <key key="shop" value="storage_rental" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Storage rental -->
     </group> <!-- Other -->
     <separator/>
     <item name="Vending Machine" icon="shopping_vending_machine.png" type="node" preset_name_label="true">
@@ -12852,7 +12872,7 @@ tags.remove('automatic_check_date');"
             <key key="craft" value="confectionery" />
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
-        </item> <!-- Confectionery -->
+        </item> <!-- Confectionery -->>
         <item name="Construction" icon="craft_construction_16102.png" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=construction"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=construction" />
