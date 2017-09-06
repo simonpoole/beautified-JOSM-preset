@@ -212,6 +212,31 @@
 	<chunk id="cuisine">
     	<multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;coffee_shop;sushi;steak_house;fish_and_chips;chicken;american;ice_cream;international;seafood;spanish;vietnamese;fish;noodle;barbecue;vegetarian;korean" display_values="Italian;Chinese;Pizza;Burger;Greek;German;Indian;Regional;Kebab;Turkish;Asian;Thai;Mexican;Japanese;French;Sandwich;Coffee shop;Sushi;Steak house;Fish and chips;Chicken;American;Ice cream;International;Seafood;Spanish;Vietnamese;Fish;Noodle;Barbecue;Vegetarian;Korean" values_searchable="true"/>
     </chunk>
+    <chunk id="clothes">
+    	<multiselect key="clothes" text="Kind of clothes" values_searchable="true" match="key">
+        	<list_entry value="babies" short_description="Babies"/>
+            <list_entry value="children" short_description="Children"/>
+            <list_entry value="costumes" short_description="Costumes"/>
+            <list_entry value="denim" short_description="Denim"/>
+            <list_entry value="fashion" short_description="Fashion"/>
+            <list_entry value="fur" short_description="Fur"/>
+            <list_entry value="hats" short_description="Hats"/>
+            <list_entry value="leather" short_description="Leather"/>
+            <list_entry value="maternity" short_description="Maternity"/>
+            <list_entry value="men" short_description="Men"/>
+            <list_entry value="motorcycle" short_description="Motorcycle"/>
+            <list_entry value="oversize" short_description="Oversize"/>
+            <list_entry value="schoolwear" short_description="Schoolwear"/>
+            <list_entry value="sports" short_description="Sports"/>
+            <list_entry value="suits" short_description="Suits"/>
+            <list_entry value="swimwear" short_description="Swimwear"/>
+            <list_entry value="traditional" short_description="Traditional"/>
+        	<list_entry value="underwear" short_description="Underwear"/>
+        	<list_entry value="wedding" short_description="Wedding"/>
+        	<list_entry value="women" short_description="Women"/>
+        	<list_entry value="workwear" short_description="Workwear"/>
+    	</multiselect>
+    </chunk>
     <chunk id="internet">
          <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" display_values="Available,WLAN,Wired,Terminal,Not available" values_sort="false"/>
          <combo key="internet_access:fee" text="Internet access fee" values="yes,no" display_values="Yes,No"/>
@@ -326,7 +351,6 @@
         </combo>
     </chunk>
     <chunk id="religious">
-        <text key="name" text="Name"/>
         <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,unitarian,zoroastrian" display_values="Bahai,Buddhist,Christian,Hindu,Jain,Jewish,Muslim,Shinto,Sikh,Spiritualist,Taoist,Unitarian,Zoroastrian"/>
         <combo key="denomination" text="Denomination" values="anglican,baptist,catholic,evangelical,greek_catholic,jehovahs_witness,lutheran,methodist,mormon,old_catholic,orthodox,pentecostal,presbyterian,protestant,quaker,roman_catholic,shia,sunni" display_values="Anglican,Baptist,Catholic,Evangelical,Greek catholic,Jehovahs witness,Lutheran,Methodist,Mormon,Old catholic,Orthodox,Pentecostal,Presbyterian,Protestant,Quaker,Roman catholic,Shia,Sunni"/>
     </chunk>
@@ -2192,7 +2216,6 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=drag_lift" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:aerialway=drag_lift" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:aerialway=drag_lift" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:aerialway=drag_lift"/>
             <space/>
             <combo key="aerialway" text="Type" values="drag_lift,t-bar,j-bar,platter,rope_tow" display_values="Drag lift (generic),T-bar,J-bar,Platter,Rope tow" match="keyvalue"/>
-            <key key="aerialway" value="t-bar"/>
             <reference ref="name_ref"/>
             <optional>
                 <text key="aerialway:capacity" text="Number of people per hour"/>
@@ -5707,8 +5730,8 @@
             <space/>
             <key key="historic" value="wayside_cross"/>
             <text key="name" text="Name"/>
-            <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,unitarian,zoroastrian" default="christian"/>
-            <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" default="catholic"/>
+            <combo key="religion" text="Religion" values="christian" display_values="Christian" default="christian"/>
+            <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic" default="catholic"/>
             <text key="start_date" text="Start date"/>
             <text key="inscription" text="Inscription"/>
         </item> <!-- Wayside Cross -->
@@ -5717,8 +5740,7 @@
             <space/>
             <key key="historic" value="wayside_shrine"/>
             <text key="name" text="Name"/>
-            <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,unitarian,zoroastrian" default="christian"/>
-            <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" default="catholic"/>
+            <reference ref="religious"/>
             <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
             <combo key="building" text="Building" values="wayside_shrine" values_context="building"/>
             <text key="start_date" text="Start date"/>
@@ -5908,29 +5930,7 @@
             <space/>
             <key key="shop" value="clothes"/>
             <reference ref="name_oh_wheelchair_level"/>
-            <multiselect key="clothes" text="Kind of clothes" values_searchable="true" match="key">
-                <list_entry value="babies" short_description="Babies"/>
-                <list_entry value="children" short_description="Children"/>
-                <list_entry value="costumes" short_description="Costumes"/>
-                <list_entry value="denim" short_description="Denim"/>
-                <list_entry value="fashion" short_description="Fashion"/>
-                <list_entry value="fur" short_description="Fur"/>
-                <list_entry value="hats" short_description="Hats"/>
-                <list_entry value="leather" short_description="Leather"/>
-                <list_entry value="maternity" short_description="Maternity"/>
-                <list_entry value="men" short_description="Men"/>
-                <list_entry value="motorcycle" short_description="Motorcycle"/>
-                <list_entry value="oversize" short_description="Oversize"/>
-                <list_entry value="schoolwear" short_description="Schoolwear"/>
-                <list_entry value="sports" short_description="Sports"/>
-                <list_entry value="suits" short_description="Suits"/>
-                <list_entry value="swimwear" short_description="Swimwear"/>
-                <list_entry value="traditional" short_description="Traditional"/>
-                <list_entry value="underwear" short_description="Underwear"/>
-                <list_entry value="wedding" short_description="Wedding"/>
-                <list_entry value="women" short_description="Women"/>
-                <list_entry value="workwear" short_description="Workwear"/>
-            </multiselect>
+            <reference ref="clothes"/>
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No"/>
             <reference ref="organic"/>
             <reference ref="link_contact_address_payment"/>
@@ -5940,8 +5940,17 @@
             <space/>
             <key key="shop" value="boutique"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="clothes"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Boutique -->
+        <item name="Fashion (deprecated)" icon="shopping_clothes.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=fashion" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=fashion" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=fashion" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=fashion" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=fashion" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=fashion"/>
+            <space/>
+            <key key="shop" value="fashio"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="clothes"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Fashion (deprecated) -->
         <item name="Shoes" icon="shopping_shoes_29128.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=shoes" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=shoes" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=shoes" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=shoes" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=shoes" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=shoes" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=shoes" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=shoes"/>
             <space/>
@@ -6399,6 +6408,13 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Paint -->
+        <item name="Arts and craft supplies" icon="shopping_handicraft_16029.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=craft" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=craft" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=craft" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=craft" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=craft"/>
+            <space/>
+            <key key="shop" value="craft"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>     
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Arts and craft supplies -->
         <item name="Locksmith" icon="shopping_locksmith_16046.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=locksmith" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=locksmith" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=locksmith" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:shop=locksmith"/>
             <space/>
@@ -6470,9 +6486,8 @@
             <key key="shop" value="gift"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <optional>
-                <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,sikh,spiritualist,taoist,unitarian,zoroastrian"/>
-                <combo key="denomination" text="Denomination" values="anglican,baptist,catholic,evangelical,jehovahs_witness,lutheran,methodist,mormon,orthodox,pentecostal,presbyterian,protestant,quaker,shia,sunni"/>
-            </optional>
+ 				<reference ref="religious"/>            
+ 			</optional>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Gift/Souvenir -->
         <item name="Variety Store" icon="shopping_variety_store_29148.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6539,6 +6554,7 @@
             <space/>
             <key key="shop" value="religion"/>
             <reference ref="name_oh_wheelchair"/>
+            <reference ref="religious"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Religion -->
         <item name="Scuba diving" icon="shopping_scuba_diving_29044.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7188,18 +7204,21 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=grave_yard" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=grave_yard" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=grave_yard" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=grave_yard" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=grave_yard" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=grave_yard" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:amenity=grave_yard" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=grave_yard" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=grave_yard" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=grave_yard"/>
             <space/>
             <key key="amenity" value="grave_yard"/>
+            <text key="name" text="Name"/>
             <reference ref="religious"/>
         </item> <!-- Graveyard -->
         <item name="Cemetery" icon="landuse_grave_yard_12062.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=cemetery" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=cemetery" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=cemetery" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=cemetery" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=cemetery" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=cemetery" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=cemetery" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:landuse=cemetery" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=cemetery" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=cemetery" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=cemetery" zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:landuse=cemetery"/>
             <space/>
             <key key="landuse" value="cemetery"/>
+            <text key="name" text="Name"/>
             <reference ref="religious"/>
         </item> <!-- Cemetery -->
         <item name="Religious" icon="landuse_religous.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=religious" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=religious" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=religious" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=religious"/>
             <space/>
             <key key="landuse" value="religious"/>
+            <text key="name" text="Name"/>
             <reference ref="religious"/>
         </item> <!-- Religious -->
         <item name="Retail" icon="landuse_supermarket.png" type="closedway,multipolygon" preset_name_label="true">
@@ -8519,6 +8538,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:office=religion" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:office=religion" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:office=religion" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:office=religion" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:office=religion" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:office=religion"/>
             <space/>
             <key key="office" value="religion"/>
+            <text key="name" text="Name"/>
             <reference ref="religious"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
