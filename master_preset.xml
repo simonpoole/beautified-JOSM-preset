@@ -4979,6 +4979,22 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Zoo -->
+        <item name="Aquarium" icon="ICONPATH:tourist_aquarium_29063.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=aquarium"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=aquarium"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=aquarium"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=aquarium"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:tourism=aquarium"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=aquarium"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=aquarium"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:tourism=aquarium" />
+            <space />
+            <key key="tourism" value="aquarium" />
+            <reference ref="name_oh_wheelchair" />
+            <text key="wikipedia" text="Wikipedia" />
+            <space />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Aquarium -->
         <item name="Dog Park" icon="ICONPATH:landuse_dog_park_21007.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dog_park"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dog_park"
