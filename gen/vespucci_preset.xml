@@ -5114,6 +5114,19 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Public bath -->
+        <item name="Tanning Studio" icon="icons/png/amenity_tanning_studio.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=sauna"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=sauna"
+                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=sauna"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=sauna" />
+            <space />
+            <key key="leisure" value="tanning_studio" />
+            <check key="self-service" text="Self-service" disable_off="true" />
+            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="facility_access" />
+            <space />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Tanning Studio -->
         <item name="Dance" icon="icons/png/amenity_dance_21173.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dance"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dance"
@@ -5131,20 +5144,7 @@
             <reference ref="facility_access" />
             <space />
             <reference ref="link_contact_address_payment" />
-        </item> <!-- Sauna -->
-        <item name="Tanning Studio" icon="" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=sauna"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=sauna"
-                  pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Tag:amenity=sauna"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=sauna" />
-            <space />
-            <key key="leisure" value="tanning_studio" />
-            <check key="self-service" text="Self-service" disable_off="true" />
-            <reference ref="name_operator_oh_wheelchair" />
-            <reference ref="facility_access" />
-            <space />
-            <reference ref="link_contact_address_payment" />
-        </item> <!-- Tanning Studio -->
+        </item> <!-- Dance -->
         <item name="Horse Riding" icon="icons/png/sport_horse_racing.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=horse_riding"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=horse_riding"
@@ -9326,7 +9326,7 @@
             <reference ref="organic" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Clothes -->
-        <item name="Boutique" icon="presets/boutique.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Boutique" icon="icons/png/shopping_boutique.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=boutique"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=boutique"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=boutique"
@@ -9341,7 +9341,7 @@
             <reference ref="clothes" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Boutique -->
-        <item name="Fashion (deprecated)" icon="icons/png/shopping_clothes.png" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
+        <item name="Fashion (deprecated)" icon="icons/png/shopping_boutique.png" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=fashion"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=fashion"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=fashion"
