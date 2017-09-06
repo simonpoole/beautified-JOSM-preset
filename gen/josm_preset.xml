@@ -3256,6 +3256,15 @@
             <space/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Zoo -->
+        <item name="Aquarium" icon="tourist_aquarium_29063.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=aquarium" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=aquarium" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=aquarium" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=aquarium" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:tourism=aquarium" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=aquarium" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=aquarium" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:tourism=aquarium"/>
+            <space/>
+            <key key="tourism" value="aquarium"/>
+            <reference ref="name_oh_wheelchair"/>
+            <text key="wikipedia" text="Wikipedia"/>
+            <space/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Aquarium -->
         <item name="Dog Park" icon="landuse_dog_park_21007.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dog_park" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dog_park" da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:leisure=dog_park" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=dog_park" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=dog_park" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:leisure=dog_park" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=dog_park" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:leisure=dog_park" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=dog_park" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=dog_park" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=dog_park" sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:leisure=dog_park"/>
             <space/>
@@ -3316,6 +3325,15 @@
             <space/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Sauna -->
+        <item name="Public bath" icon="amenity_public_bath_29162.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=public_bath" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=public_bath" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=public_bath"/>
+            <space/>
+            <key key="amenity" value="public_bath"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="facility_access"/>
+            <space/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Public bath -->
         <item name="Dance" icon="amenity_dance_21173.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dance" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dance" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=dance" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:leisure=dance" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=dance" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=dance" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=dance" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=dance"/>
             <space/>
@@ -3444,6 +3462,14 @@
             <text key="wikipedia" text="Wikipedia"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Museum -->
+        <item name="Art gallery" icon="tourist_gallery_30041.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=gallery" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=gallery" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=gallery" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=gallery" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=gallery" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=gallery" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=gallery"/>
+            <space/>
+            <key key="tourism" value="gallery"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <text key="wikipedia" text="Wikipedia"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Art gallery -->
         <item name="Theatre" icon="tourist_theatre.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=theatre" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=theatre" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=theatre" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=theatre" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=theatre" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=theatre" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=theatre" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=theatre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=theatre"/>
             <space/>
