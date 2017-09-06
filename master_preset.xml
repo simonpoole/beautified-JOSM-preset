@@ -220,6 +220,31 @@
     	<multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;coffee_shop;sushi;steak_house;fish_and_chips;chicken;american;ice_cream;international;seafood;spanish;vietnamese;fish;noodle;barbecue;vegetarian;korean" 
     	     display_values="Italian;Chinese;Pizza;Burger;Greek;German;Indian;Regional;Kebab;Turkish;Asian;Thai;Mexican;Japanese;French;Sandwich;Coffee shop;Sushi;Steak house;Fish and chips;Chicken;American;Ice cream;International;Seafood;Spanish;Vietnamese;Fish;Noodle;Barbecue;Vegetarian;Korean" values_searchable="true" />
     </chunk>
+    <chunk id="clothes">
+    	<multiselect key="clothes" text="Kind of clothes" values_searchable="true" match="key">
+        	<list_entry value="babies" short_description="Babies" />
+            <list_entry value="children" short_description="Children" />
+            <list_entry value="costumes" short_description="Costumes" />
+            <list_entry value="denim" short_description="Denim" />
+            <list_entry value="fashion" short_description="Fashion" />
+            <list_entry value="fur" short_description="Fur" />
+            <list_entry value="hats" short_description="Hats" />
+            <list_entry value="leather" short_description="Leather" />
+            <list_entry value="maternity" short_description="Maternity" />
+            <list_entry value="men" short_description="Men" />
+            <list_entry value="motorcycle" short_description="Motorcycle" />
+            <list_entry value="oversize" short_description="Oversize" />
+            <list_entry value="schoolwear" short_description="Schoolwear" />
+            <list_entry value="sports" short_description="Sports" />
+            <list_entry value="suits" short_description="Suits" />
+            <list_entry value="swimwear" short_description="Swimwear" />
+            <list_entry value="traditional" short_description="Traditional" />
+        	<list_entry value="underwear" short_description="Underwear" />
+        	<list_entry value="wedding" short_description="Wedding" />
+        	<list_entry value="women" short_description="Women" />
+        	<list_entry value="workwear" short_description="Workwear" />
+    	</multiselect>
+    </chunk>
     <chunk id="internet">
          <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" display_values="Available,WLAN,Wired,Terminal,Not available" values_sort="false" />
          <combo key="internet_access:fee" text="Internet access fee" values="yes,no" display_values="Yes,No" />
@@ -3406,7 +3431,6 @@
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:aerialway=drag_lift" />
             <space />
             <combo key="aerialway" text="Type" values="drag_lift,t-bar,j-bar,platter,rope_tow" display_values="Drag lift (generic),T-bar,J-bar,Platter,Rope tow" match="keyvalue" />
-            <key key="aerialway" value="t-bar" />
             <reference ref="name_ref" />
             <optional>
                 <text key="aerialway:capacity" text="Number of people per hour" />
@@ -9256,29 +9280,7 @@
             <space />
             <key key="shop" value="clothes" />
             <reference ref="name_oh_wheelchair_level" />
-            <multiselect key="clothes" text="Kind of clothes" values_searchable="true" match="key">
-                <list_entry value="babies" short_description="Babies" />
-                <list_entry value="children" short_description="Children" />
-                <list_entry value="costumes" short_description="Costumes" />
-                <list_entry value="denim" short_description="Denim" />
-                <list_entry value="fashion" short_description="Fashion" />
-                <list_entry value="fur" short_description="Fur" />
-                <list_entry value="hats" short_description="Hats" />
-                <list_entry value="leather" short_description="Leather" />
-                <list_entry value="maternity" short_description="Maternity" />
-                <list_entry value="men" short_description="Men" />
-                <list_entry value="motorcycle" short_description="Motorcycle" />
-                <list_entry value="oversize" short_description="Oversize" />
-                <list_entry value="schoolwear" short_description="Schoolwear" />
-                <list_entry value="sports" short_description="Sports" />
-                <list_entry value="suits" short_description="Suits" />
-                <list_entry value="swimwear" short_description="Swimwear" />
-                <list_entry value="traditional" short_description="Traditional" />
-                <list_entry value="underwear" short_description="Underwear" />
-                <list_entry value="wedding" short_description="Wedding" />
-                <list_entry value="women" short_description="Women" />
-                <list_entry value="workwear" short_description="Workwear" />
-            </multiselect>
+            <reference ref="clothes" />
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No" />
             <reference ref="organic" />
             <reference ref="link_contact_address_payment" />
@@ -9295,8 +9297,22 @@
             <space />
             <key key="shop" value="boutique" />
             <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="clothes" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Boutique -->
+        <item name="Fashion (deprecated)" icon="ICONPATH:shopping_clothes.ICONTYPE" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=fashion"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=fashion"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=fashion"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=fashion"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=fashion"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=fashion" />
+            <space />
+            <key key="shop" value="fashio" />
+            <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="clothes" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Fashion (deprecated) -->
         <item name="Shoes" icon="ICONPATH:shopping_shoes_29128.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=shoes"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=shoes"
