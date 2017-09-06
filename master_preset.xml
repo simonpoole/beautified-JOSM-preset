@@ -5103,6 +5103,17 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Sauna -->
+        <item name="Public bath" icon="ICONPATH:amenity_public_bath_29162.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=public_bath"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=public_bath"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=public_bath" />
+            <space />
+            <key key="amenity" value="public_bath" />
+            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="facility_access" />
+            <space />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Public bath -->
         <item name="Dance" icon="ICONPATH:amenity_dance_21173.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dance"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dance"
