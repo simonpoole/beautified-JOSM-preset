@@ -336,7 +336,6 @@
         </combo>
     </chunk>
     <chunk id="religious">
-        <text key="name" text="Name" />
         <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,unitarian,zoroastrian" 
             display_values="Bahai,Buddhist,Christian,Hindu,Jain,Jewish,Muslim,Shinto,Sikh,Spiritualist,Taoist,Unitarian,Zoroastrian" />
         <combo key="denomination" text="Denomination" values="anglican,baptist,catholic,evangelical,greek_catholic,jehovahs_witness,lutheran,methodist,mormon,old_catholic,orthodox,pentecostal,presbyterian,protestant,quaker,roman_catholic,shia,sunni" 
@@ -8875,8 +8874,10 @@
             <space />
             <key key="historic" value="wayside_cross" />
             <text key="name" text="Name" />
-            <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,unitarian,zoroastrian" default="christian" />
-            <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" default="catholic" />
+            <combo key="religion" text="Religion" values="christian" display_values="Christian" default="christian" />
+            <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" 
+            	display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic"
+            	default="catholic" />
             <text key="start_date" text="Start date" />
             <text key="inscription" text="Inscription" />
         </item> <!-- Wayside Cross -->
@@ -8893,8 +8894,7 @@
             <space />
             <key key="historic" value="wayside_shrine" />
             <text key="name" text="Name" />
-            <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,unitarian,zoroastrian" default="christian" />
-            <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" default="catholic" />
+            <reference ref="religious" />
             <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true" />
             <combo key="building" text="Building" values="wayside_shrine" values_context="building" />
             <text key="start_date" text="Start date" />
@@ -10248,9 +10248,8 @@
             <key key="shop" value="gift" />
             <reference ref="name_operator_oh_wheelchair_level" />
             <optional>
-                <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,sikh,spiritualist,taoist,unitarian,zoroastrian" />
-                <combo key="denomination" text="Denomination" values="anglican,baptist,catholic,evangelical,jehovahs_witness,lutheran,methodist,mormon,orthodox,pentecostal,presbyterian,protestant,quaker,shia,sunni" />
-            </optional>
+ 				<reference ref="religious" />            
+ 			</optional>
             <reference ref="link_contact_address_payment" />
         </item> <!-- Gift/Souvenir -->
         <item name="Variety Store" icon="ICONPATH:shopping_variety_store_29148.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -10357,6 +10356,7 @@
             <space />
             <key key="shop" value="religion" />
             <reference ref="name_oh_wheelchair" />
+            <reference ref="religious" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Religion -->
         <item name="Scuba diving" icon="ICONPATH:shopping_scuba_diving_29044.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -11463,6 +11463,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=grave_yard" />
             <space />
             <key key="amenity" value="grave_yard" />
+            <text key="name" text="Name" />
             <reference ref="religious" />
         </item> <!-- Graveyard -->
         <item name="Cemetery" icon="ICONPATH:landuse_grave_yard_12062.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
@@ -11480,6 +11481,7 @@
                   zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:landuse=cemetery" />
             <space />
             <key key="landuse" value="cemetery" />
+            <text key="name" text="Name" />
             <reference ref="religious" />
         </item> <!-- Cemetery -->
         <item name="Religious" icon="ICONPATH:landuse_religous.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
@@ -11489,6 +11491,7 @@
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=religious" />
             <space />
             <key key="landuse" value="religious" />
+            <text key="name" text="Name" />
             <reference ref="religious" />
         </item> <!-- Religious -->
         <item name="Retail" icon="ICONPATH:landuse_supermarket.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
@@ -13373,6 +13376,7 @@ tags.remove('automatic_check_date');"
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:office=religion" />
             <space />
             <key key="office" value="religion" />
+            <text key="name" text="Name" />
             <reference ref="religious" />
             <reference ref="oh_wheelchair" />
             <reference ref="link_contact_address" />
