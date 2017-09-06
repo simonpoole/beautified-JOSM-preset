@@ -10127,6 +10127,17 @@
             <reference ref="name_operator_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Paint -->
+        <item name="Arts and craft supplies" icon="ICONPATH:shopping_handicraft_16029.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=craft"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=craft"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=craft"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=craft"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=craft" />
+            <space />
+            <key key="shop" value="craft" />
+            <reference ref="name_operator_oh_wheelchair_level" />     
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Arts and craft supplies -->
         <item name="Locksmith" icon="ICONPATH:shopping_locksmith_16046.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=locksmith"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=locksmith"
