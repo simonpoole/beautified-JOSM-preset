@@ -9326,7 +9326,7 @@
             <reference ref="organic" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Clothes -->
-        <item name="Boutique" icon="presets/boutique.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Boutique" icon="ICONPATH:shopping_boutique.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=boutique"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=boutique"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=boutique"
@@ -9341,7 +9341,7 @@
             <reference ref="clothes" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Boutique -->
-        <item name="Fashion (deprecated)" icon="ICONPATH:shopping_clothes.ICONTYPE" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
+        <item name="Fashion (deprecated)" icon="ICONPATH:shopping_boutique.ICONTYPE" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=fashion"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=fashion"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=fashion"
