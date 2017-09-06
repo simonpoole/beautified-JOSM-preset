@@ -5313,6 +5313,20 @@
             <text key="wikipedia" text="Wikipedia" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Museum -->
+        <item name="Art gallery" icon="ICONPATH:tourist_gallery_30041.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=gallery"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=gallery"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=gallery"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=gallery"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=gallery"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=gallery"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=gallery" />
+            <space />
+            <key key="tourism" value="gallery" />
+            <reference ref="name_operator_oh_wheelchair" />
+            <text key="wikipedia" text="Wikipedia" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Art gallery -->
         <item name="Theatre" icon="ICONPATH:tourist_theatre.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=theatre"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=theatre"
