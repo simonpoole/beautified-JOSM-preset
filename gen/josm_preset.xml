@@ -931,7 +931,7 @@
             </optional>
             <reference ref="road_access_restrictions"/>
         </item> <!-- Road (Unknown Type) -->
-        <item name="Construction" icon="construction.png" type="way,closedway" preset_name_label="true">
+        <item name="Construction" icon="construction.png" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:construction" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:construction" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:construction" es.href="http://wiki.openstreetmap.org/wiki/ES:Key:construction" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:construction" it.href="http://wiki.openstreetmap.org/wiki/IT:Key:construction" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:construction" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:construction" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:construction" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:construction"/>
             <key key="highway" value="construction"/>
             <combo key="construction" text="Highway type" values="motorway,motorway_link,trunk,trunk_link,primary,primary_link,secondary,secondary_link,tertiary,tertiary_link,unclassified,residential,service,bus_guideway,bridleway,living_street,pedestrian,track,path,footway,cycleway,steps" values_context="Highway"/>
@@ -7297,7 +7297,7 @@
             </optional>
         </item> <!-- Military -->
         <separator/>
-        <item name="Construction Area" icon="construction.png" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Construction Area" icon="construction.png" name_context="Landuse" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=construction" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=construction" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=construction" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=construction" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=construction" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:landuse=construction" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=construction" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=construction" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=construction" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=construction"/>
             <space/>
             <key key="landuse" value="construction"/>
@@ -8217,13 +8217,6 @@
             <reference ref="name_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Confectionery -->&gt;
-        <item name="Construction" icon="craft_construction_16102.png" type="node,closedway,multipolygon">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=construction" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=construction"/>
-            <space/>
-            <key key="craft" value="construction"/>
-            <reference ref="name_oh_wheelchair"/>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Construction -->
         <item name="Electronics" icon="craft_electronics_16103.png" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=electronics" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=electronics"/>
             <space/>
