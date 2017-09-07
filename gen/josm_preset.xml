@@ -5041,7 +5041,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=flagpole" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=flagpole" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=flagpole" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=flagpole" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=flagpole" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:man_made=flagpole"/>
             <key key="man_made" value="flagpole"/>
         </item> <!-- Flagpole -->
-        <item name="Cross" icon="presets/landmark/cross.svg" type="node" preset_name_label="true">
+        <item name="Cross" icon="man_made_cross_12107.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=cross" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=cross" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=cross" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=cross" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=cross"/>
             <key key="man_made" value="cross"/>
         </item> <!-- Cross -->
@@ -5211,14 +5211,18 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=fountain" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=fountain" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=fountain" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=fountain" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=fountain" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=fountain" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=fountain" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=fountain" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=fountain" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=fountain" zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:amenity=fountain"/>
             <space/>
             <key key="amenity" value="fountain"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
             <check key="drinking_water" text="Drinking Water" disable_off="true" match="key"/>
         </item> <!-- Fountain -->
         <item name="Water Well" icon="man_made_water_well_22083.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=water_well" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=water_well" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=water_well" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=water_well" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=water_well" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=water_well" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=water_well" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:man_made=water_well" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=water_well"/>
             <space/>
             <key key="man_made" value="water_well"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+           	</optional>
         </item> <!-- Water Well -->
         <separator/>
         <item name="Lighthouse" icon="transport_lighthouse.png" type="node,closedway" preset_name_label="true">
@@ -5725,6 +5729,13 @@
             <key key="historic" value="battlefield"/>
             <text key="name" text="Name"/>
         </item> <!-- Battlefield -->
+        <item name="Tomb" icon="tourist_tomb_19030.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=tomb" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:historic=tomb" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=tomb" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:historic=tomb" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:historic=tomb" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic=tomb" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic=tomb"/>
+            <space/>
+            <key key="historic" value="tomb"/>
+            <text key="name" text="Name"/>
+            <combo key="tomb" text="Tomb type" values="tumulus,rock-cut,hypogeum,war_grave,mausoleum,columbarium,crypt,pyramid,sarcophagus,vault" display_values="Tumulus,Rock-cut,Hypogeum,War grave,Mausoleum,Columbarium,Crypt,Pyramid,Sarcophagus,Vault"/>
+        </item> <!-- Tomb -->
         <item name="Palaeontological Site" icon="natural_palaeontological_site_24004.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:geological=palaeontological_site" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:geological=palaeontological_site" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:geological=palaeontological_site" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:geological=palaeontological_site" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:geological=palaeontological_site" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:geological=palaeontological_site" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:geological=palaeontological_site"/>
             <space/>
@@ -6613,6 +6624,7 @@
             <list_entry value="drinks" short_description="Drinks"/>
             <list_entry value="elongated_coin" short_description="Elongated coin"/>
             <list_entry value="excrement_bags" short_description="Excrement bags"/>
+            <list_entry value="feminine_hygiene" short_description="Feminine hygiene articles"/> 
             <list_entry value="food" short_description="Food"/>
             <list_entry value="milk" short_description="Milk"/>
             <list_entry value="newspapers" short_description="Newspapers"/>
