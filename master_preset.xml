@@ -1142,7 +1142,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
         </item> <!-- Road (Unknown Type) -->
-        <item name="Construction" icon="ICONPATH:construction.ICONTYPE" type="way,closedway" preset_name_label="true">
+        <item name="Construction" icon="ICONPATH:construction.ICONTYPE" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:construction"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:construction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:construction"
@@ -11652,7 +11652,7 @@
             </optional>
         </item> <!-- Military -->
         <separator/>
-        <item name="Construction Area" icon="ICONPATH:construction.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Construction Area" icon="ICONPATH:construction.ICONTYPE" name_context="Landuse" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=construction"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=construction"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=construction"
@@ -12944,7 +12944,7 @@ tags.remove('automatic_check_date');"
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Confectionery -->>
-        <item name="Construction" icon="ICONPATH:craft_construction_16102.ICONTYPE" type="node,closedway,multipolygon">
+        <item name="Construction" icon="ICONPATH:craft_construction_16102.ICONTYPE" name_context="Craft" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=construction"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=construction" />
             <space />
