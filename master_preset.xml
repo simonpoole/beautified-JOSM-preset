@@ -8195,7 +8195,9 @@
                   zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:amenity=fountain" />
             <space />
             <key key="amenity" value="fountain" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
             <check key="drinking_water" text="Drinking Water" disable_off="true" match="key" />
         </item> <!-- Fountain -->
         <item name="Water Well" icon="ICONPATH:man_made_water_well_22083.ICONTYPE" type="node,closedway" preset_name_label="true">
@@ -8210,7 +8212,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=water_well" />
             <space />
             <key key="man_made" value="water_well" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+           	</optional>
         </item> <!-- Water Well -->
         <separator/>
         <item name="Lighthouse" icon="ICONPATH:transport_lighthouse.ICONTYPE" type="node,closedway" preset_name_label="true">
