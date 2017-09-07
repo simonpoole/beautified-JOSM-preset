@@ -8875,6 +8875,20 @@
             <key key="historic" value="battlefield" />
             <text key="name" text="Name" />
         </item> <!-- Battlefield -->
+        <item name="Tomb" icon="ICONPATH:tourist_tomb_19030.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=tomb"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:historic=tomb"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=tomb"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:historic=tomb"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:historic=tomb"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic=tomb"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic=tomb" />
+            <space />
+            <key key="historic" value="tomb" />
+            <text key="name" text="Name" />
+            <combo key="tomb" text="Tomb type" values="tumulus,rock-cut,hypogeum,war_grave,mausoleum,columbarium,crypt,pyramid,sarcophagus,vault" 
+            	display_values="Tumulus,Rock-cut,Hypogeum,War grave,Mausoleum,Columbarium,Crypt,Pyramid,Sarcophagus,Vault" />
+        </item> <!-- Tomb -->
         <item name="Palaeontological Site" icon="ICONPATH:natural_palaeontological_site_24004.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:geological=palaeontological_site"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:geological=palaeontological_site"
