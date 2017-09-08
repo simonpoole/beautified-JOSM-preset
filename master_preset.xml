@@ -11332,6 +11332,8 @@
             <optional>
             	<text key="name" text="Name" />
             </optional>
+            <combo key="meadow" text="Meadow type" values="agricultural,perpetual,transitional" 
+            	display_values="Agricultural,Perpetual,Transitional" />
         </item> <!-- Meadow -->
         <item name="Orchard" icon="ICONPATH:landuse_greengrocer.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=orchard"
@@ -11347,7 +11349,8 @@
             <optional>
             	<text key="name" text="Name" />
             </optional>
-            <combo key="trees" text="Trees" values="olive_trees,apple_trees,oil_palms,orange_trees,almond_trees,banana_plants,coconut_palms,hazel_plants,cherry_trees,persimmon_trees,walnut_trees,plum_trees,peach_trees,tea_plants" />
+            <combo key="trees" text="Trees" values="olive_trees,apple_trees,oil_palms,orange_trees,almond_trees,banana_plants,coconut_palms,hazel_plants,cherry_trees,persimmon_trees,walnut_trees,plum_trees,peach_trees,tea_plants" 
+            	display_values="Olive trees,Apple trees,Oil palms,Orange trees,Almond trees,Banana plants,Coconut palms,Hazel plants,Cherry trees,Persimmon trees,Walnut trees,Plum trees,Peach trees,Tea plants"/>
         </item> <!-- Orchard -->
         <item name="Vineyard" icon="ICONPATH:landuse_wine_29203.ICONTYPE" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=vineyard"
