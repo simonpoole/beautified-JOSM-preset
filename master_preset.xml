@@ -4848,7 +4848,9 @@
             <space />
             <key key="tourism" value="information" />
             <key key="information" value="map" />
-            <text key="name" text="Name" />
+            <optiona>
+            	<text key="name" text="Name" />
+            </optiona>
             <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" />
             <combo key="map_size" text="Shown Area" values="site,city,region" />
             <text key="description" text="Detailed description" />
@@ -4873,7 +4875,9 @@
             <label text="A board with information." />
             <key key="tourism" value="information" />
             <key key="information" value="board" />
-            <text key="name" text="Name" />
+            <optiona>
+            	<text key="name" text="Name" />
+            </optiona>
             <combo key="board_type" text="Board Content" values="notice,history,nature,wildlife,plants,geology" />
             <text key="description" text="Detailed description" />
         </item> <!-- Information Board -->
@@ -4912,8 +4916,10 @@
             <space />
             <key key="tourism" value="information" />
             <key key="information" value="terminal" />
-            <reference ref="name_operator" />
-            <reference ref="wheelchair" />
+            <optional>
+            	<reference ref="name_operator" />
+            	<reference ref="wheelchair" />
+            </optional>
             <text key="description" text="Detailed description" />
             <text key="ref" text="Reference number" />
             <reference ref="fee" />
@@ -4930,8 +4936,10 @@
             <space />
             <key key="tourism" value="information" />
             <key key="information" value="audioguide" />
-            <reference ref="name_operator" />
-            <reference ref="wheelchair" />
+            <optional>
+            	<reference ref="name_operator" />
+            	<reference ref="wheelchair" />
+            </optional>
             <text key="description" text="Detailed description" />
             <text key="ref" text="Reference number" />
             <reference ref="fee" />
@@ -4950,7 +4958,10 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=information" />
             <space />
             <key key="tourism" value="information" />
-            <text key="name" text="Name" />
+            <optional>
+            	<reference ref="name_operator" />
+            	<reference ref="wheelchair" />
+            </optional>
             <text key="description" text="Detailed description" />
         </item> <!-- Other Information Point -->
     </group> <!-- Tourism -->
