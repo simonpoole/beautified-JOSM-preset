@@ -167,6 +167,32 @@
     <chunk id="oh">
         <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" match="none" editable="true" />
     </chunk>
+    <chunk id="diaper">
+        <combo key="diaper" text="Diaper changing facilities" values_sort="false" >
+	      <list_entry value="yes" short_description="Available" />
+	      <list_entry value="no" short_description="Not available" />
+	      <list_entry value="room" short_description="Dedicated room" />
+	      <list_entry value="1" short_description="1 table" />
+	      <list_entry value="2" short_description="2 tables" />
+	      <list_entry value="3" short_description="3 tables" />
+	      <list_entry value="4" short_description="4 tables" />
+	      <list_entry value="5" short_description="5 tables" />
+		</combo>
+    </chunk>
+    <chunk id="toilets">
+    	<check key="toilets" text="Toilets" disable_off="true" />
+    	<reference ref="diaper" />
+    	<combo key="toilets:wheelchair" text="Wheelchairs"  match="none" values_searchable="true" values_sort="false">
+        	<list_entry value="designated" short_description="Dedicated facilities" />
+        	<list_entry value="yes" short_description="Unrestricted access" />
+        	<list_entry value="limited" short_description="Partial access" />
+        	<list_entry value="no" short_description="No access" />          
+        </combo>
+    </chunk>
+    <chunk id="toilets_with_access">
+    	<reference ref="toilets" />
+    	<combo key="toilets:access" text="Toilet access" values="yes,permissive,customers,private" display_values="Public,Permissive,Customers,Private" match="none" />   	
+    </chunk>
     <chunk id="wheelchair">
         <combo key="wheelchair" text="Wheelchairs"  match="none" values_searchable="true" values_sort="false">
         <list_entry value="designated" short_description="Dedicated facilities" />
@@ -187,17 +213,37 @@
         <text key="name" text="Name" />
         <reference ref="oh_wheelchair" />
     </chunk>
+    <chunk id="name_oh_wheelchair_toilets">
+        <text key="name" text="Name" />
+        <reference ref="oh_wheelchair" />
+        <reference ref="toilets_with_access" />
+    </chunk>
     <chunk id="name_oh_wheelchair_level">
         <reference ref="name_oh_wheelchair" />
 		<reference ref="level" />
+    </chunk>
+    <chunk id="name_oh_wheelchair_level_toilets">
+        <reference ref="name_oh_wheelchair" />
+		<reference ref="level" />
+		<reference ref="toilets_with_access" />
     </chunk>
     <chunk id="name_operator_oh_wheelchair">
         <reference ref="name_operator" />
         <reference ref="oh_wheelchair" />
     </chunk>
+    <chunk id="name_operator_oh_wheelchair_toilets">
+        <reference ref="name_operator" />
+        <reference ref="oh_wheelchair" />
+        <reference ref="toilets_with_access" />
+    </chunk>
     <chunk id="name_operator_oh_wheelchair_level">
         <reference ref="name_operator_oh_wheelchair" />
 		<reference ref="level" />
+    </chunk>
+    <chunk id="name_operator_oh_wheelchair_level_toilets">
+        <reference ref="name_operator_oh_wheelchair" />
+		<reference ref="level" />
+		<reference ref="toilets_with_access" />
     </chunk>
     <chunk id="name_brand_operator_oh_wheelchair">
         <text key="name" text="Name" />
@@ -209,10 +255,21 @@
 		<reference ref="name_brand_operator_oh_wheelchair" />
 		<reference ref="level" />
     </chunk>
+        <chunk id="name_brand_operator_oh_wheelchair_level_toilets">
+		<reference ref="name_brand_operator_oh_wheelchair" />
+		<reference ref="level" />
+		<reference ref="toilets_with_access" />
+    </chunk>
     <chunk id="name_brand_oh_wheelchair">
         <text key="name" text="Name" />
         <text key="brand" text="Brand" />
         <reference ref="oh_wheelchair" />
+    </chunk>
+    <chunk id="name_brand_oh_wheelchair_toilets">
+        <text key="name" text="Name" />
+        <text key="brand" text="Brand" />
+        <reference ref="oh_wheelchair" />
+        <reference ref="toilets_with_access" />
     </chunk>
     <chunk id="organic">
     	<combo key="organic" text="Organic" values="only,yes,no" display_values="Only,Yes,No" />
@@ -280,18 +337,6 @@
     </chunk>
     <chunk id="bin">
         <combo key="bin" text="Bin" values="yes,no" display_values="Yes,No" />
-    </chunk>
-    <chunk id="diaper">
-        <combo key="diaper" text="Diaper changing facilities" values_sort="false" >
-	      <list_entry value="yes" short_description="Available" />
-	      <list_entry value="no" short_description="Not available" />
-	      <list_entry value="room" short_description="Dedicated room" />
-	      <list_entry value="1" short_description="1 table" />
-	      <list_entry value="2" short_description="2 tables" />
-	      <list_entry value="3" short_description="3 tables" />
-	      <list_entry value="4" short_description="4 tables" />
-	      <list_entry value="5" short_description="5 tables" />
-	</combo>
     </chunk>
     <chunk id="fee">
         <combo key="fee" text="Fee" values="yes,no" display_values="Yes,No" match="none" />
@@ -1555,7 +1600,7 @@
             <optional>
                 <text key="name" text="Name" />
                 <text key="operator" text="Operator" />
-                <check key="toilets" text="Toilets" disable_off="true" />
+                <reference ref="toilets" />
             </optional>
         </item> <!-- Services -->
         <item name="Rest Area" icon="ICONPATH:transport_rest_area_18021.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -1572,7 +1617,7 @@
             <key key="highway" value="rest_area" />
             <optional>
                 <text key="name" text="Name" />
-                <check key="toilets" text="Toilets" disable_off="true" />
+                <reference ref="toilets" />
                 <check key="drinking_water" text="Drinking Water" />
             </optional>
         </item> <!-- Rest Area -->
@@ -4557,7 +4602,7 @@
             <reference ref="facility_access" />
             <text key="capacity" text="Capacity" />
             <reference ref="fee" />
-            <check key="toilets" text="Toilets" />
+            <reference ref="toilets" />
             <check key="shower" text="Shower" />
             <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal" />
             <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" />
@@ -4816,7 +4861,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=attraction" />
             <space />
             <key key="tourism" value="attraction" />
-            <reference ref="name_oh_wheelchair" />
+            <reference ref="name_oh_wheelchair_toilets" />
         </item> <!-- Attraction -->
         <item name="Viewpoint" icon="ICONPATH:tourist_view_point.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=viewpoint"
@@ -4846,7 +4891,7 @@
             <space />
             <key key="tourism" value="information" />
             <key key="information" value="office" />
-            <reference ref="name_oh_wheelchair" />
+            <reference ref="name_oh_wheelchair_toilets" />
             <reference ref="internet" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Information Office -->
@@ -4991,7 +5036,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=cinema" />
             <space />
             <key key="amenity" value="cinema" />
-            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="name_operator_oh_wheelchair_toilets" />
             <check key="drive_in" text="Drive-in theater" disable_off="true" />
             <check key="cinema:3D" text="3D" disable_off="true" />
             <text key="screen" text="Number of screens" />
@@ -5009,7 +5054,7 @@
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:tourism=zoo" />
             <space />
             <key key="tourism" value="zoo" />
-            <reference ref="name_oh_wheelchair" />
+            <reference ref="name_oh_wheelchair_toilets" />
             <text key="wikipedia" text="Wikipedia" />
             <space />
             <reference ref="link_contact_address_payment" />
@@ -5025,7 +5070,7 @@
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:tourism=aquarium" />
             <space />
             <key key="tourism" value="aquarium" />
-            <reference ref="name_oh_wheelchair" />
+            <reference ref="name_oh_wheelchair_toilets" />
             <text key="wikipedia" text="Wikipedia" />
             <space />
             <reference ref="link_contact_address_payment" />
@@ -5371,7 +5416,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=museum" />
             <space />
             <key key="tourism" value="museum" />
-            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="name_operator_oh_wheelchair_toilets" />
             <text key="wikipedia" text="Wikipedia" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Museum -->
@@ -5385,7 +5430,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=gallery" />
             <space />
             <key key="tourism" value="gallery" />
-            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="name_operator_oh_wheelchair_toilets" />
             <text key="wikipedia" text="Wikipedia" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Art gallery -->
@@ -5409,6 +5454,7 @@
            	</optional>
             <reference ref="name_operator" />
             <reference ref="wheelchair" />
+            <reference ref="toilets_with_access" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Theatre -->
         <item name="Music theatres" icon="ICONPATH:tourist_concert_hall_12317.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5429,6 +5475,7 @@
             </combo>
             <reference ref="name_operator" />
             <reference ref="wheelchair" />
+            <reference ref="toilets_with_access" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Music theatres -->	
         <item name="Other theatres" icon="ICONPATH:tourist_theatre.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5450,6 +5497,7 @@
             </combo>
             <reference ref="name_operator" />
             <reference ref="wheelchair" />
+            <reference ref="toilets_with_access" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Other theatres -->	
        <item name="Figure/puppet theatres" icon="ICONPATH:tourist_theatre.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5469,6 +5517,7 @@
             </combo>
             <reference ref="name_operator" />
             <reference ref="wheelchair" />
+            <reference ref="toilets_with_access" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Figure/puppet theatres -->
         <item name="Library" icon="ICONPATH:amenity_library.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5485,7 +5534,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=library" />
             <space />
             <key key="amenity" value="library" />
-            <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="name_operator_oh_wheelchair_level_toilets" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Library -->
         <item name="Public bookcase" icon="" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5731,7 +5780,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=public_building" />
             <space />
             <key key="amenity" value="public_building" />
-            <reference ref="name_oh_wheelchair" />
+            <reference ref="name_oh_wheelchair_toilets" />
             <reference ref="link_contact_address" />
         </item> <!-- Public Building -->
         <item name="Town Hall" icon="ICONPATH:amenity_town_hall2.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5747,7 +5796,7 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:amenity=townhall" />
             <space />
             <key key="amenity" value="townhall" />
-            <reference ref="name_oh_wheelchair" />
+            <reference ref="name_oh_wheelchair_toilets" />
             <reference ref="link_contact_address" />
         </item> <!-- Town Hall -->
         <item name="Community Centre" icon="ICONPATH:amenity_community_centre_12035.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5763,7 +5812,7 @@
             <label text="Community Centre" />
             <space />
             <key key="amenity" value="community_centre" />
-            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="name_operator_oh_wheelchair_toilets" />
             <reference ref="link_contact_address" />
         </item> <!-- Community Centre -->
         <item name="Embassy" icon="ICONPATH:poi_embassy.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5793,7 +5842,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=courthouse" />
             <space />
             <key key="amenity" value="courthouse" />
-            <reference ref="name_oh_wheelchair" />
+            <reference ref="name_oh_wheelchair_toilets" />
             <reference ref="link_contact_address" />
         </item> <!-- Courthouse -->
         <item name="Prison" icon="ICONPATH:amenity_prison.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5823,7 +5872,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=police" />
             <space />
             <key key="amenity" value="police" />
-            <reference ref="name_oh_wheelchair" />
+            <reference ref="name_oh_wheelchair_toilets" />
             <reference ref="link_contact_address" />
         </item> <!-- Police -->
         <item name="Ranger Station" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5833,7 +5882,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=ranger_station" />
             <space />
             <key key="amenity" value="ranger_station" />
-            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="name_operator_oh_wheelchair_toilets" />
             <reference ref="link_contact_address" />
         </item> <!-- Ranger Station -->
         <item name="Fire Station" icon="ICONPATH:amenity_firestation.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -9071,7 +9120,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=supermarket" />
             <space />
             <key key="shop" value="supermarket" />
-            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="name_oh_wheelchair_level_toilets" />
             <reference ref="organic" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Supermarket -->
@@ -9088,7 +9137,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=convenience" />
             <space />
             <key key="shop" value="convenience" />
-            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="name_oh_wheelchair_level_toilets" />
             <reference ref="organic" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Convenience Store -->
@@ -9398,7 +9447,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=clothes" />
             <space />
             <key key="shop" value="clothes" />
-            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="name_oh_wheelchair_level_toilets" />
             <reference ref="clothes" />
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No" />
             <reference ref="organic" />
@@ -9415,7 +9464,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=boutique" />
             <space />
             <key key="shop" value="boutique" />
-            <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="name_operator_oh_wheelchair_level_toilets" />
             <reference ref="clothes" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Boutique -->
@@ -9428,7 +9477,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=fashion" />
             <space />
             <key key="shop" value="fashio" />
-            <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="name_operator_oh_wheelchair_level_toilets" />
             <reference ref="clothes" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Fashion (deprecated) -->
@@ -9443,7 +9492,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=shoes" />
             <space />
             <key key="shop" value="shoes" />
-            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="name_oh_wheelchair_level_toilets" />
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No" />
             <reference ref="organic" />
             <reference ref="link_contact_address_payment" />
@@ -9471,7 +9520,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=sports" />
             <space />
             <key key="shop" value="sports" />
-            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="name_oh_wheelchair_level_toilets" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Sports -->
         <separator/>
@@ -9548,7 +9597,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=electronics" />
             <space />
             <key key="shop" value="electronics" />
-            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="name_oh_wheelchair_level_toilets" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Computer -->
         <item name="Mobile Phone" icon="ICONPATH:shopping_mobile_phone.ICONTYPE" type="node,closedway" preset_name_label="true">
@@ -10141,7 +10190,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=department_store" />
             <space />
             <key key="shop" value="department_store" />
-            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="name_operator_oh_wheelchair_toilets" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Department Store -->
         <item name="Mall" icon="ICONPATH:shopping_department_store.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -10155,7 +10204,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=mall" />
             <space />
             <key key="shop" value="mall" />
-            <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="name_operator_oh_wheelchair_toilets" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Mall -->
         <separator/>
