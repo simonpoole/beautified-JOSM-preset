@@ -659,7 +659,20 @@
     </combo>
 	<reference ref="roof_main" />
   </chunk>
-
+  <chunk id="education_operator_type">
+  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religous" />
+  </chunk>
+  <chunk id="isced_level">
+  	<multiselect key="isced:level" text="ISCED level" delimiter=";" match="key" editable="true">
+    	<list_entry value="0" short_description="Pre-primary (0)" />
+    	<list_entry value="1" short_description="Primary (1)" />
+    	<list_entry value="2" short_description="Lower secondary (2)" /> 
+    	<list_entry value="3" short_description="Upper secondary (3)" />
+    	<list_entry value="4" short_description="Post secondars (4)" />
+    	<list_entry value="5" short_description="Lower tertiary education (5)" />
+    	<list_entry value="6" short_description="Upper  tertiary education (6)" />           	   
+  	</multiselect>
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="ICONPATH:highway_highway_sp.ICONTYPE">
     <group name="Streets" icon="ICONPATH:highway_highway_sp.ICONTYPE">
@@ -5878,7 +5891,10 @@
             <space />
             <key key="amenity" value="childcare" />
             <reference ref="name_operator_oh_wheelchair_level" />
-            <combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religous" />
+            <reference ref="education_operator_type" />
+            <optional>
+            	<reference ref="religious" />
+            </optional>
             <text key="age_group" text="Age group (ie: 6-12)" />
             <space />
             <check key="nursery" text="Nursery" disable_off="true" />
@@ -5903,7 +5919,12 @@
 				  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=kindergarten" />
 			<space />
 			<key key="amenity" value="kindergarten" />
+			<reference ref="isced_level" />
 			<reference ref="name_operator_oh_wheelchair_level" />
+			<reference ref="education_operator_type" />
+			<optional>
+            	<reference ref="religious" />
+            </optional>
 			<reference ref="link_contact_address" />
 			<preset_link preset_name="Building" />
 		</item> <!-- Kindergarten -->
@@ -5922,7 +5943,12 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=school" />
             <space />
             <key key="amenity" value="school" />
+            <reference ref="isced_level" />
             <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="education_operator_type" />
+            <optional>
+            	<reference ref="religious" />
+            </optional>
             <reference ref="link_contact_address" />
         </item> <!-- School -->
         <item name="University" icon="ICONPATH:education_university.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5939,7 +5965,12 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=university" />
             <space />
             <key key="amenity" value="university" />
+            <reference ref="isced_level" />
             <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="education_operator_type" />
+            <optional>
+            	<reference ref="religious" />
+            </optional>
             <reference ref="link_contact_address" />
         </item> <!-- University -->
         <item name="College" icon="ICONPATH:education_college.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5954,7 +5985,12 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=college" />
             <space />
             <key key="amenity" value="college" />
+            <reference ref="isced_level" />
             <reference ref="name_operator_oh_wheelchair" />
+            <reference ref="education_operator_type" />
+            <optional>
+            	<reference ref="religious" />
+            </optional>
             <reference ref="link_contact_address" />
         </item> <!-- College -->
          <item name="Driving School" icon="ICONPATH:education_driving_school_12041.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
