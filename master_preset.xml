@@ -3173,6 +3173,15 @@
             <key key="waterway" value="dock" />
             <text key="name" text="Name" />
         </item> <!-- Dock -->
+        <item name="Boat storage" icon="ICONPATH:water_boat_storage_12011.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=boat_storage"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=boat_storage"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=boat_storage"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=boat_storage"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=boat_storage" />
+            <space />
+            <key key="amenity" value="boat_storage" />
+        </item> <!-- Dock -->
     </group> <!-- Shipping -->
   </group> <!-- Water -->
   <group name="Transport" icon="ICONPATH:transport_train_station2.ICONTYPE">
