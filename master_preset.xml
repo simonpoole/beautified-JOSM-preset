@@ -9518,19 +9518,6 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Outdoor -->
-        <item name="Sports" icon="ICONPATH:shopping_sports_29129.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
-             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=sports"
-             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=sports"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=sports"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=sports"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=sports"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=sports"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=sports" />
-            <space />
-            <key key="shop" value="sports" />
-            <reference ref="name_oh_wheelchair_level_toilets" />
-            <reference ref="link_contact_address_payment" />
-        </item> <!-- Sports -->
         <separator/>
         <item name="Dry Cleaning" icon="ICONPATH:shopping_laundrette.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=dry_cleaning"
@@ -10185,6 +10172,58 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Erotic -->
     </group> <!-- For the body -->
+    <group name="Sports and hobbies" icon="ICONPATH:shopping_sports_29129.ICONTYPE">
+       <item name="Sports" icon="ICONPATH:shopping_sports_29129.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=sports"
+             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=sports"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=sports"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=sports"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=sports"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=sports"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=sports" />
+            <space />
+            <key key="shop" value="sports" />
+            <reference ref="sport"/>
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Sports -->
+        <item name="Fishing" icon="ICONPATH:shopping_fishing_29064.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=fishing"
+             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=fishing"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=fishing"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=fishing"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:shop=fishing"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=fishing"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=fishing" />
+            <space />
+            <key key="shop" value="fishing" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Sports -->
+        <item name="Hunting" icon="ICONPATH:shopping_hunting_29182.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=hunting"
+             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=hunting"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=hunting"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=hunting"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=hunting"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=hunting"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=hunting" />
+            <space />
+            <key key="shop" value="hunting" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Sports -->
+        <item name="Scuba diving" icon="ICONPATH:shopping_scuba_diving_29044.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=scuba_diving"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=scuba_diving"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=scuba_diving"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=scuba_diving" />
+            <space />
+            <key key="shop" value="scuba_diving" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Scuba diving -->
+    </group> <!-- Sports and hobbies -->
     <group name="Other" icon="ICONPATH:shopping_department_store.ICONTYPE">
         <item name="Department Store" icon="ICONPATH:shopping_department_store.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=department_store"
@@ -10565,16 +10604,6 @@
             <reference ref="religious" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Religion -->
-        <item name="Scuba diving" icon="ICONPATH:shopping_scuba_diving_29044.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=scuba_diving"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=scuba_diving"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=scuba_diving"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=scuba_diving" />
-            <space />
-            <key key="shop" value="scuba_diving" />
-            <reference ref="name_oh_wheelchair_level" />
-            <reference ref="link_contact_address_payment" />
-        </item> <!-- Scuba diving -->
         <item name="Storage rental" icon="ICONPATH:shopping_storage_rental.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=storage_rental"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=storage_rental"
