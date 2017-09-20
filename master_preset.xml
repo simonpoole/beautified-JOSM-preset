@@ -10622,6 +10622,16 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Storage rental -->
+        <item name="Weapons" icon="ICONPATH:shopping_weapons_29188.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=weapons"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=weapons"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=weapons"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=weapons" />
+            <space />
+            <key key="shop" value="weapons" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- WEapons -->
     </group> <!-- Other -->
     <separator/>
     <item name="Vending Machine" icon="ICONPATH:shopping_vending_machine.ICONTYPE" type="node" preset_name_label="true">
