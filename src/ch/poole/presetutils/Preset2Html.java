@@ -111,7 +111,7 @@ public class Preset2Html {
             				pw.write("<img src=\""+groupIcon2+"\" style=\"vertical-align:middle\"> ");
             			}
             		}
-            		pw.write(group + "</h" + (groupCount + 1) + ">\n");
+            		pw.write("<a name=\""+group + "\"></a>" + group + "</h" + (groupCount + 1) + ">\n");
             	} else if ("item".equals(name)) {
             		preset = attr.getValue("name");
             		icon = attr.getValue("icon");
