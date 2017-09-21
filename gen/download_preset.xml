@@ -9601,7 +9601,7 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Computer -->
-        <item name="Electronics" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_electronics_29047.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Consumer electronics" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_electronics_29047.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=electronics"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=electronics"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=electronics"
@@ -9770,7 +9770,14 @@
             <reference ref="name_brand_operator_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Furniture -->
-        <item name="Electrical appliances &amp; supplies" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_electrical.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Electrical appliances" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_electrical.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Appliance_Store#shop.3Dappliance" />
+            <space />
+            <key key="shop" value="appliances" />
+            <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Electrical appliances -->
+        <item name="Electrical appliances (UK)" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_electrical.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=electrical"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=electrical"
                   es.href="http://wiki.openstreetmap.org/wiki/Es:Tag:shop=electrical"
@@ -9781,7 +9788,7 @@
             <key key="shop" value="electrical" />
             <reference ref="name_operator_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
-        </item> <!-- Vacuum Cleaner -->
+        </item> <!-- Electrical appliances (UK) -->
         <item name="Kitchen" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/shopping_kitchen_29090.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=kitchen"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=kitchen"

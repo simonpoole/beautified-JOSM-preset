@@ -6159,7 +6159,7 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Computer -->
-        <item name="Electronics" icon="shopping_electronics_29047.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Consumer electronics" icon="shopping_electronics_29047.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=electronics" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=electronics" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=electronics" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=electronics" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=electronics" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=electronics" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=electronics" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=electronics"/>
             <space/>
             <key key="shop" value="electronics"/>
@@ -6250,13 +6250,20 @@
             <reference ref="name_brand_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Furniture -->
-        <item name="Electrical appliances &amp; supplies" icon="shopping_electrical.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Electrical appliances" icon="shopping_electrical.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="https://wiki.openstreetmap.org/wiki/Proposed_features/Appliance_Store#shop.3Dappliance"/>
+            <space/>
+            <key key="shop" value="appliances"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Electrical appliances -->
+        <item name="Electrical appliances (UK)" icon="shopping_electrical.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=electrical" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=electrical" es.href="http://wiki.openstreetmap.org/wiki/Es:Tag:shop=electrical" it.href="http://wiki.openstreetmap.org/wiki/It:Tag:shop=electrical" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=electrical" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=electrical"/>
             <space/>
             <key key="shop" value="electrical"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Vacuum Cleaner -->
+        </item> <!-- Electrical appliances (UK) -->
         <item name="Kitchen" icon="shopping_kitchen_29090.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=kitchen" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=kitchen" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=kitchen" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=kitchen" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=kitchen" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=kitchen" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=kitchen" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=kitchen"/>
             <space/>
