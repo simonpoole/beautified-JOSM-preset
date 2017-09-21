@@ -6107,6 +6107,13 @@
             <reference ref="organic"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Shoes -->
+        <item name="Bag" icon="shopping_bag_29004.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=bag" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=bag" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=bag" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=bag" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=bag"/>
+            <space/>
+            <key key="shop" value="bag"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Bag -->
         <item name="Outdoor" icon="shopping_outdoor_29121.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=outdoor" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=outdoor" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=outdoor" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=outdoor" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=outdoor" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=outdoor" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=outdoor"/>
             <space/>
@@ -6166,13 +6173,6 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Mobile Phone -->
-        <item name="Vacuum Cleaner" icon="shopping_vacuum_cleaner_29147.png" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=vacuum_cleaner" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=vacuum_cleaner" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=vacuum_cleaner" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=vacuum_cleaner" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=vacuum_cleaner"/>
-            <space/>
-            <key key="shop" value="vacuum_cleaner"/>
-            <reference ref="name_operator_oh_wheelchair_level"/>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Vacuum Cleaner -->
         <item name="Hifi" icon="shopping_hifi.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=hifi" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=hifi" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=hifi" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=hifi" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=hifi" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=hifi" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=hifi"/>
             <space/>
@@ -6242,7 +6242,7 @@
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Money lender -->
     </group> <!-- Cash -->
-    <group name="Home decoration" icon="shopping_interior_decoration_29087.png">
+    <group name="Home furnishing and decoration" icon="shopping_interior_decoration_29087.png">
         <item name="Furniture" icon="shopping_furniture_29068.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=furniture" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=furniture" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=furniture" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=furniture" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=furniture" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=furniture" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=furniture" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=furniture"/>
             <space/>
@@ -6250,6 +6250,13 @@
             <reference ref="name_brand_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Furniture -->
+        <item name="Electrical appliances &amp; supplies" icon="shopping_electrical.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=electrical" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=electrical" es.href="http://wiki.openstreetmap.org/wiki/Es:Tag:shop=electrical" it.href="http://wiki.openstreetmap.org/wiki/It:Tag:shop=electrical" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=electrical" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=electrical"/>
+            <space/>
+            <key key="shop" value="electrical"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Vacuum Cleaner -->
         <item name="Kitchen" icon="shopping_kitchen_29090.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=kitchen" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=kitchen" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=kitchen" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=kitchen" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=kitchen" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=kitchen" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=kitchen" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=kitchen"/>
             <space/>
@@ -6320,7 +6327,14 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Antiques -->
-    </group> <!-- Home decoration -->
+        <item name="Vacuum Cleaner" icon="shopping_vacuum_cleaner_29147.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=vacuum_cleaner" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=vacuum_cleaner" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=vacuum_cleaner" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=vacuum_cleaner" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=vacuum_cleaner"/>
+            <space/>
+            <key key="shop" value="vacuum_cleaner"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Vacuum Cleaner -->
+    </group> <!-- Home furnishing and decoration -->
     <group name="Printed Material" icon="shopping_stationery_29130.png">
         <item name="Stationery" icon="shopping_stationery_29130.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=stationery" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=stationery" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=stationery" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=stationery" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=stationery" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=stationery" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=stationery"/>
@@ -6351,13 +6365,6 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Newspaper Stand -->
-        <item name="Ticket" icon="shopping_ticket_29200.png" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=ticket" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=ticket" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=ticket" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=ticket" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=ticket" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=ticket" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=ticket" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=ticket"/>
-            <space/>
-            <key key="shop" value="ticket"/>
-            <reference ref="name_oh_wheelchair_level"/>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Ticket -->
     </group> <!-- Printed Material -->
     <group name="For the body" icon="shopping_body.png">
         <item name="Chemist" icon="shopping_chemist_29025.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6509,6 +6516,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Scuba diving -->
+        <item name="Sewing" icon="shopping_dressmaker_16111.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=sewing" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=sewing" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=sewing"/>
+            <space/>
+            <key key="shop" value="sewing"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Sewing -->
     </group> <!-- Sports and hobbies -->
     <group name="Other" icon="shopping_department_store.png">
         <item name="Department Store" icon="shopping_department_store.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6682,13 +6696,13 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Lottery -->
-        <item name="Bag" icon="shopping_bag_29004.png" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=bag" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=bag" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=bag" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=bag" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=bag"/>
+        <item name="Ticket" icon="shopping_ticket_29200.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=ticket" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=ticket" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=ticket" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=ticket" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=ticket" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=ticket" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=ticket" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=ticket"/>
             <space/>
-            <key key="shop" value="bag"/>
+            <key key="shop" value="ticket"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Bag -->
+        </item> <!-- Ticket -->
         <item name="Pet" icon="shopping_pet2.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=pet" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=pet" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=pet" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=pet" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=pet" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=pet" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=pet" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=pet"/>
             <space/>
