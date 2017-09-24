@@ -4266,8 +4266,8 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=bus_stop"
                   zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:highway=bus_stop" />
             <key key="highway" value="bus_stop" />
+            <text key="name" text="Name" />
             <optional>
-                <text key="name" text="Name" />
                 <check key="shelter" text="Shelter" disable_off="true" />
                 <check key="bench" text="Bench" disable_off="true" />
                 <reference ref="tactile_paving" />
