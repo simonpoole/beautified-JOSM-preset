@@ -8965,6 +8965,41 @@
          <check key="ruins" text="Ruins" />
          <reference ref="link_contact_address_payment" />
      </item> <!-- Castle -->
+     <item name="City gate" icon="ICONPATH:tourist_city_gate_19009.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+         <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=city_gate"
+               cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:historic=city_gate"
+               de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=city_gate"
+               fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:historic=city_gate"
+               ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic=city_gate"
+               pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:historic=city_gate"
+               pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:historic=city_gate"
+               ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:historic=city_gate" />
+         <space />
+         <key key="historic" value="city_gate" />
+         <reference ref="name_wikipedia" />
+         <check key="ruins" text="Ruins" />
+         <reference ref="link_contact_address_payment" />
+     </item> <!-- City gate -->
+     <item name="Building" icon="ICONPATH:tourist_building_19005.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+         <link href="http://wiki.openstreetmap.org/wiki/Tag:historic"
+               cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:historic"
+               de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic"
+               es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:historic"
+               fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:historic"
+               hr.href="http://wiki.openstreetmap.org/wiki/HR:Tag:historic"
+               it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:historic"
+               ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic"
+               pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic"
+               pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:historic"
+               ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:historic"
+               tr.href="http://wiki.openstreetmap.org/wiki/TR:Tag:historic" 
+               uk.href="http://wiki.openstreetmap.org/wiki/UK:Tag:historic" />
+         <space />
+         <key key="historic" value="building" />
+         <reference ref="name_wikipedia" />
+         <check key="ruins" text="Ruins" />
+         <reference ref="link_contact_address_payment" />
+     </item> <!-- Building -->
      <item name="Ruins" icon="ICONPATH:tourist_ruin.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
          <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=ruins"
                cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:historic=ruins"
@@ -9122,6 +9157,20 @@
          <key key="historic" value="boundary_stone" />
          <text key="name" text="Name" />
      </item> <!-- Boundary Stone -->
+     <item name="Wreck" icon="ICONPATH:tourist_wreck_19033.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+     	  <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=wreck"
+               cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:historic=wreck"
+               de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=wreck"
+               es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:historic=wreck"
+               fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:historic=wreck"
+               ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic=wreck"
+               pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:historic=wreck"
+               ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:historic=wreck" />
+         <space />
+         <key key="historic" value="wreck" />
+         <reference ref="name_wikipedia" />
+         <reference ref="link_contact_address_payment" />
+     </item> <!-- Wreck -->
   </group> <!-- Historic Places -->
   <group name="Shops" icon="ICONPATH:shopping_department_store.ICONTYPE">
     <group name="Food" icon="ICONPATH:shopping_supermarket.ICONTYPE">
