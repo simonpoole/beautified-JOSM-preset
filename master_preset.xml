@@ -8365,6 +8365,13 @@
             <key key="man_made" value="beacon" />
             <text key="name" text="Name" />
         </item> <!-- Beacon -->
+        <item name="Dolphin" icon="ICONPATH:man_made_dolphin_22022.ICONTYPE" name_context="man_made" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=dolphin" />
+            <key key="man_made" value="dolphin" />
+            <optional>
+            	<text key="ref" text="Ref" />
+            </optional>
+        </item> <!-- Dolphin -->
         <item name="Street Lamp" icon="ICONPATH:man_made_street_lamp_18027.ICONTYPE" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=street_lamp"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=street_lamp"
@@ -8461,6 +8468,14 @@
                 <text key="height" text="Height in meter (m)" />
             </optional>
         </item> <!-- Surveillance Camera -->
+        <item name="MDF" icon="ICONPATH:man_made_MDF_22029.ICONTYPE" name_context="man_made" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=MDF" 
+            de.href="http://wiki.openstreetmap.org/wiki/DE:Key:man_made=MDF" />
+            <key key="man_made" value="MDF" />
+            <optional>
+            	<text key="operator" text="Operator" />
+            </optional>
+        </item> <!-- MDF -->
     </group> <!-- Man Made -->
     <group name="Bridges" icon="ICONPATH:highway_bridge_sp.ICONTYPE">
         <item name="Bridge" icon="ICONPATH:highway_bridge_sp.ICONTYPE" type="way,relation,multipolygon" preset_name_label="true">
