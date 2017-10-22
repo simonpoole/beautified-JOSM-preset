@@ -63,9 +63,13 @@ public class Preset2Html {
         	String preset = null;
         	String chunk = null;
         	HashMap<String,String> chunkKeys = new HashMap<String,String>();
+        	HashMap<String,String> chunkOptionalKeys = new HashMap<String,String>();
+        	HashMap<String,String> chunkLinks = new HashMap<String,String>();
         	String icon = null;
         	String icon2 = null;
         	String keys = null;
+        	String optionalKeys = null;
+        	String links = null;
         	boolean optional = false;
         	StringBuffer buffer = new StringBuffer();
         	
@@ -133,30 +137,74 @@ public class Preset2Html {
             		optional = true;
             	} else if ("key".equals(name) || "multiselect".equals(name) || "combo".equals(name) || "check".equals(name) || "text".equals(name)) {
             		if (!optional) {
-            			String key = attr.getValue("key");
-            			String value = attr.getValue("value");
-            			// only fixed keys 
-            			if (key != null && !"".equals(key)) {
-            				if (keys == null) {
-            					keys = key + "=" + (value!=null?value:"*");
-            				} else {
-            					keys = keys + "<br>" + key + "=" + (value!=null?value:"*");
-            				}
-            			}
-            		} 
-            	} else if ("link".equals(name)) {
+            			keys = addTags(keys, attr);
+            		} else {
+            		    optionalKeys = addTags(optionalKeys, attr);
+            		}
+            	} else if ("preset_link".equals(name)) {
+            	    String link = attr.getValue("preset_name");
+            	    if (link != null) { 
+            	        if (links==null) {
+            	            links = link;
+            	        } else {
+            	            links = links + "<BR>" + link;
+            	        }
+            	    }    
             	} else if ("role".equals(name)) {
             	} else if ("reference".equals(name)) {
             		String ref = attr.getValue("ref");
             		String refKeys = chunkKeys.get(ref);
             		if (refKeys != null) {
-            			keys = keys + refKeys;
-            		} else {
-            			System.err.println(ref + " was not found for preset " + preset);
-            		}
+            		    if (!optional) {
+            		        if (keys != null) {
+            		            keys = keys + refKeys;
+            		        } else {
+            		            keys = refKeys;
+            		        }
+            		    } else {
+            		        if (optionalKeys != null) {
+                                optionalKeys = optionalKeys + refKeys;
+                            } else {
+                                optionalKeys = refKeys;
+                            }
+            		    }
+            		} 
+                    String refOptionalKeys = chunkOptionalKeys.get(ref);
+                    if (refOptionalKeys != null) {
+                        if (optionalKeys != null) {
+                            optionalKeys = optionalKeys + refOptionalKeys;
+                        } else {
+                            optionalKeys = refOptionalKeys;
+                        }
+                    } 
+                    
+                    String refLinks = chunkLinks.get(ref);
+                    if (refLinks != null) {
+                        if (links != null) {
+                            links = links + refLinks;
+                        } else {
+                            links = refLinks;
+                        }
+                    } 
+                    
+                    if ((refKeys==null || "".equals(refKeys)) && (refOptionalKeys==null || "".equals(refOptionalKeys)) && (refLinks==null || "".equals(refLinks))) {
+                        System.err.println(ref + " was not found for preset " + preset);
+                    }
             	} else if ("list_entry".equals(name)) {
-            	} else if ("preset_link".equals(name)) {
-            	}
+            	} 
+            }
+
+            private String addTags(String result, AttributeList attr) {
+                String key = attr.getValue("key");
+                String value = attr.getValue("value");
+                if (key != null && !"".equals(key)) {
+                	if (result == null) {
+                		result = key + "=" + (value!=null?value:"*");
+                	} else {
+                		result = result + "<br>" + key + "=" + (value!=null?value:"*");
+                	}
+                }
+                return result;
             }
             
             @Override
@@ -176,31 +224,54 @@ public class Preset2Html {
             				} else {
             				    buffer.append("<div class=\"preset\">"+preset.replace("/", " / ")+"</div>");
             				}
-            				if (keys != null) {
-            				    buffer.append("<div class=\"popup\" \">" + keys + "</div>");
-            				}
+            				appendKeys();
             				buffer.append("</div>");
             			} else {
             			    buffer.append("<div class=\"preset\">"+preset.replace("/", " / ")+"</div>");
-            				if (keys != null) {
-            				    buffer.append("<div class=\"popup\" \">" + keys + "</div>");
-            				}
+            			    appendKeys();
             			}
             			buffer.append("</div>");
             			preset = null;
             		}
         			keys = null;
+        			optionalKeys=null;
+        			links = null;
             	} else if ("chunk".equals(name)) {
             		if (chunk != null) {
-            			chunkKeys.put(chunk, keys);
+            		    if (keys != null) {
+            		        chunkKeys.put(chunk, keys);
+            		    }
+            			if (optionalKeys != null) {
+            			    chunkOptionalKeys.put(chunk, optionalKeys);
+            			}
+            			if (links != null) {
+            			    chunkLinks.put(chunk, links);
+            			}
             			// System.err.println("added chunk " + chunk);
             		} else {
             			System.err.println("chunk null");
             		}
             		keys = null;
+            		optionalKeys=null;
             		chunk = null;
+            		links = null;
             	} else if ("combo".equals(name) || "multiselect".equals(name)) {
             	}
+            }
+
+            private void appendKeys() {
+                if (keys != null) {
+                    buffer.append("<div class=\"popup\" \">" + keys);
+                    if (optionalKeys != null) {
+                        buffer.append("<P/><B>Optional:</B><BR>");
+                        buffer.append(optionalKeys);
+                    }
+                    if (links != null) {
+                        buffer.append("<P/><B>Links:</B><BR>");
+                        buffer.append(links);
+                    }
+                    buffer.append("</div>");
+                }
             }
             
             @Override
