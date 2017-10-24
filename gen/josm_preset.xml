@@ -3453,13 +3453,20 @@
             <space/>
             <key key="leisure" value="playground"/>
             <reference ref="facility_access"/>
-            <reference ref="name_operator_oh_wheelchair"/>
+            <optional>
+            	<text key="min_age" text="Minimum age"/>
+            	<text key="max_age" text="Maximum age"/>
+            	<reference ref="surface"/>
+            	<reference ref="name_operator_oh_wheelchair"/>
+            </optional>
         </item> <!-- Playground -->
         <item name="Picnic Site" icon="tourist_picnic.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=picnic_site" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=picnic_site" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=picnic_site" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=picnic_site" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=picnic_site" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=picnic_site" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=picnic_site" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:tourism=picnic_site" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=picnic_site"/>
             <space/>
             <key key="tourism" value="picnic_site"/>
-            <text key="name" text="Name"/>
+            <optional>
+            	<text key="name" text="Name"/>
+            </optional>
             <check key="fireplace" text="Fireplace" disable_off="true"/>
         </item> <!-- Picnic Site -->
         <item name="Picnic Table" icon="tourist_picnic.png" type="node" preset_name_label="true">

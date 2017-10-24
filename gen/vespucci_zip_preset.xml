@@ -5272,7 +5272,12 @@
             <space />
             <key key="leisure" value="playground" />
             <reference ref="facility_access" />
-            <reference ref="name_operator_oh_wheelchair" />
+            <optional>
+            	<text key="min_age" text="Minimum age" />
+            	<text key="max_age" text="Maximum age" />
+            	<reference ref="surface" />
+            	<reference ref="name_operator_oh_wheelchair" />
+            </optional>
         </item> <!-- Playground -->
         <item name="Picnic Site" icon="tourist_picnic.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=picnic_site"
@@ -5286,7 +5291,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=picnic_site" />
             <space />
             <key key="tourism" value="picnic_site" />
-            <text key="name" text="Name" />
+            <optional>
+            	<text key="name" text="Name" />
+            </optional>
             <check key="fireplace" text="Fireplace" disable_off="true" />
         </item> <!-- Picnic Site -->
         <item name="Picnic Table" icon="tourist_picnic.png" type="node" preset_name_label="true">
