@@ -6675,6 +6675,18 @@
             <check key="payment:telephone_cards" text="Telephone cards" disable_off="true" />
             <preset_link preset_name="Payment Methods" />
         </item> <!-- Telephone -->
+        <item name="Coworking space" icon="ICONPATH:amenity_coworking.ICONTYPE" type="node,closedway,multipolygon">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenits=coworking_space"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenits=coworking_space"
+            	  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenits=coworking_space"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenits=coworking_space"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenits=coworking_space" />
+            <space />
+            <key key="amenity" value="coworking_space" />
+            <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="fee" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Company -->
         <item name="Internet Cafe" icon="" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=internet_cafe"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=internet_cafe"
