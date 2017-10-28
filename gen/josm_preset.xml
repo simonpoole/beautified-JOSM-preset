@@ -679,6 +679,17 @@
     	<list_entry value="6" short_description="Upper tertiary education (6)"/>           	   
   	</multiselect>
   </chunk>
+  <chunk id="additonal_aerialway_tags">
+  	<text key="aerialway:capacity" text="Number of people per hour"/>
+    <text key="aerialway:occupancy" text="Number of people per gondola/chair"/>
+    <text key="aerialway:duration" text="Typical journey time in minutes"/>
+    <check key="aerialway:heating" text="Has heating?" disable_off="true"/>
+  </chunk>
+  <chunk id="additonal_aerialway_tags_with_bubble">
+  	<reference ref="additonal_aerialway_tags"/>
+  	<check key="aerialway:bubble" text="Has bubble?" disable_off="true"/>
+  </chunk>
+    
   <!--  Groups -->
   <group name="Highways" icon="highway_highway_sp.png">
     <group name="Streets" icon="highway_highway_sp.png">
@@ -2231,11 +2242,9 @@
             <space/>
             <key key="aerialway" value="cable_car"/>
             <reference ref="name_ref"/>
+            <reference ref="oh"/>
             <optional>
-                <text key="aerialway:capacity" text="Number of people per hour"/>
-                <text key="aerialway:occupancy" text="Number of people per car"/>
-                <text key="aerialway:duration" text="Typical journey time in minutes"/>
-                <check key="aerialway:heating" text="Has heating?" disable_off="true"/>
+                <reference ref="additonal_aerialway_tags"/>
             </optional>
         </item> <!-- Cable Car -->
         <item name="Chair Lift" icon="transport_chair_lift_10002.png" type="way" preset_name_label="true">
@@ -2243,12 +2252,9 @@
             <space/>
             <key key="aerialway" value="chair_lift"/>
             <reference ref="name_ref"/>
+            <reference ref="oh"/>
             <optional>
-                <text key="aerialway:capacity" text="Number of people per hour"/>
-                <text key="aerialway:occupancy" text="Number of people per chair"/>
-                <text key="aerialway:duration" text="Typical journey time in minutes"/>
-                <check key="aerialway:bubble" text="Has bubble?" disable_off="true"/>
-                <check key="aerialway:heating" text="Has heating?" disable_off="true"/>
+                <reference ref="additonal_aerialway_tags_with_bubble"/>
             </optional>
         </item> <!-- Chair Lift -->
         <item name="Gondola" icon="transport_gondola_10006.png" type="way" preset_name_label="true">
@@ -2256,11 +2262,9 @@
             <space/>
             <key key="aerialway" value="gondola"/>
             <reference ref="name_ref"/>
+            <reference ref="oh"/>
             <optional>
-                <text key="aerialway:capacity" text="Number of people per hour"/>
-                <text key="aerialway:occupancy" text="Number of people per gondola"/>
-                <text key="aerialway:duration" text="Typical journey time in minutes"/>
-                <check key="aerialway:heating" text="Has heating?" disable_off="true"/>
+                <reference ref="additonal_aerialway_tags"/>
             </optional>
         </item> <!-- Gondola -->
         <item name="Mixed Lift" icon="transport_mixed_lift_10008.png" type="way" preset_name_label="true">
@@ -2268,12 +2272,9 @@
             <space/>
             <key key="aerialway" value="mixed_lift"/>
             <reference ref="name_ref"/>
+            <reference ref="oh"/>
             <optional>
-                <text key="aerialway:capacity" text="Number of people per hour"/>
-                <text key="aerialway:occupancy" text="Number of people per gondola/chair"/>
-                <text key="aerialway:duration" text="Typical journey time in minutes"/>
-                <check key="aerialway:bubble" text="Has bubble?" disable_off="true"/>
-                <check key="aerialway:heating" text="Has heating?" disable_off="true"/>
+				<reference ref="additonal_aerialway_tags_with_bubble"/>
             </optional>
         </item> <!-- Mixed Lift -->
         <item name="Drag Lift" icon="transport_drag_lift_10003.png" type="way" preset_name_label="true">
@@ -2281,16 +2282,18 @@
             <space/>
             <combo key="aerialway" text="Type" values="drag_lift,t-bar,j-bar,platter,rope_tow" display_values="Drag lift (generic),T-bar,J-bar,Platter,Rope tow" match="keyvalue"/>
             <reference ref="name_ref"/>
+            <reference ref="oh"/>
             <optional>
                 <text key="aerialway:capacity" text="Number of people per hour"/>
                 <text key="aerialway:duration" text="Typical journey time in minutes"/>
             </optional>
-        </item> <!-- T-bar Lift -->
+        </item> <!-- Drag Lift -->
         <item name="Magic Carpet" icon="transport_magic_carpet.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=magic_carpet" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:aerialway=magic_carpet" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:aerialway=magic_carpet" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:aerialway=magic_carpet"/>
             <space/>
             <key key="aerialway" value="magic_carpet"/>
             <reference ref="name_ref"/>
+            <reference ref="oh"/>
             <optional>
                 <text key="aerialway:capacity" text="Number of people per hour"/>
                 <text key="aerialway:duration" text="Typical journey time in minutes"/>
@@ -2301,6 +2304,7 @@
             <space/>
             <key key="aerialway" value="goods"/>
             <reference ref="name_ref"/>
+            <reference ref="oh"/>
             <optional>
                 <text key="aerialway:duration" text="Typical journey time in minutes"/>
             </optional>
