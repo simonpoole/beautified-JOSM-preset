@@ -3508,7 +3508,7 @@
                 <text key="aerialway:duration" text="Typical journey time in minutes" />
             </optional>
         </item> <!-- T-bar Lift -->
-        <item name="Magic Carpet" type="way" preset_name_label="true">
+        <item name="Magic Carpet" icon="icons/png/transport_magic_carpet.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aerialway=magic_carpet"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:aerialway=magic_carpet"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:aerialway=magic_carpet"
@@ -6687,7 +6687,7 @@
             <reference ref="fee" />
             <reference ref="link_contact_address" />
         </item> <!-- Company -->
-        <item name="Internet Cafe" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Internet Cafe" icon="icons/png/amenity_internet_cafe.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=internet_cafe"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=internet_cafe"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=internet_cafe"
@@ -6698,7 +6698,7 @@
             <reference ref="name_operator_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Internet Cafe -->
-        <item name="Internet Access" icon="presets/network-wireless.svg" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Internet Access" icon="icons/png/amenity_internet.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:internet_access"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:internet_access"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Key:internet_access"
