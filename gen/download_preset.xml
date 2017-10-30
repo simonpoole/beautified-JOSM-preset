@@ -6187,7 +6187,7 @@
             <space />
             <key key="amenity" value="clinic" />
             <key key="healthcare" value="clinic" />
-            <reference ref="healthcare_speciality_clinic" />
+            <reference ref="healthcare_speciality" />
             <reference ref="name_operator" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Clinic -->
@@ -6259,24 +6259,6 @@
             <reference ref="link_contact_address" />
         </item> <!-- Baby Hatch/Safe Haven -->
         <separator/>
-        <item name="Emergency Access Point" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/health_emergency_access_point_17005.png" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=emergency_access_point"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=emergency_access_point"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=emergency_access_point"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=emergency_access_point"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=emergency_access_point"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=emergency_access_point"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=emergency_access_point" />
-            <space />
-            <key key="highway" value="emergency_access_point" />
-            <text key="ref" text="Point Number" />
-            <text key="name" text="Point Name" />
-            <text key="operator" text="Operator" />
-            <text key="emergency_telephone_code" text="Emergency Phone Number" />
-            <label text="(Use number as shown on plate.)" />
-            <space />
-        </item> <!-- Emergency Access Point -->
-        <separator/>
         <item name="Veterinary" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/health_veterinary.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=veterinary"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=veterinary"
@@ -6339,7 +6321,7 @@
 			</multiselect>
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
-        </item> <!-- Other healthcare facilities -->
+        </item> <!-- Alternative medicine -->
     </group> <!-- Health -->
     <group name="Emergency" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/emergency_sos_point_17028.png">
 		<item name="Ambulance Station" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/emergency_ambulance_station_17007.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6483,6 +6465,23 @@
             <text key="ref" text="Reference" />
             <text key="operator" text="Operator" />
         </item> <!-- Life ring -->
+        <item name="Emergency Access Point" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/emergency_emergency_access_point_17005.png" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=emergency_access_point"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=emergency_access_point"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=emergency_access_point"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=emergency_access_point"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=emergency_access_point"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=emergency_access_point"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=emergency_access_point" />
+            <space />
+            <key key="highway" value="emergency_access_point" />
+            <text key="ref" text="Point Number" />
+            <text key="name" text="Point Name" />
+            <text key="operator" text="Operator" />
+            <text key="emergency_telephone_code" text="Emergency Phone Number" />
+            <label text="(Use number as shown on plate.)" />
+            <space />
+        </item> <!-- Emergency Access Point -->
     </group> <!-- Emergency -->
     <group name="Social Facilities" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_outreach_12252.png">
         <item name="Ambulatory Care" icon="https://raw.githubusercontent.com/simonpoole/beautified-JOSM-preset/master/icons/png/amenity_ambulatory_care_12248.png" type="node,closedway,multipolygon" preset_name_label="true">
