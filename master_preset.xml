@@ -6187,7 +6187,7 @@
             <space />
             <key key="amenity" value="clinic" />
             <key key="healthcare" value="clinic" />
-            <reference ref="healthcare_speciality_clinic" />
+            <reference ref="healthcare_speciality" />
             <reference ref="name_operator" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Clinic -->
@@ -6339,7 +6339,7 @@
 			</multiselect>
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
-        </item> <!-- Other healthcare facilities -->
+        </item> <!-- Alternative medicine -->
     </group> <!-- Health -->
     <group name="Emergency" icon="ICONPATH:emergency_sos_point_17028.ICONTYPE">
 		<item name="Ambulance Station" icon="ICONPATH:emergency_ambulance_station_17007.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
