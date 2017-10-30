@@ -661,7 +661,7 @@
     <preset_link preset_name="Bi-directional roads" />
   </chunk>
   <chunk id="healthcare_speciality">
-    <multiselect key="healthcare:speciality" text="Speciality" values_context="healthcare" values_searchable="true" editable="true" >
+    <multiselect key="healthcare:speciality" text="Speciality" values_context="healthcare" values_searchable="true" editable="false" >
 	  <list_entry value="general" short_description="General" />
 	  <list_entry value="abortion" short_description="Abortion" />
 	  <list_entry value="fertility" short_description="Fertility" />
