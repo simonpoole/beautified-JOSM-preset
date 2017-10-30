@@ -6259,24 +6259,6 @@
             <reference ref="link_contact_address" />
         </item> <!-- Baby Hatch/Safe Haven -->
         <separator/>
-        <item name="Emergency Access Point" icon="ICONPATH:health_emergency_access_point_17005.ICONTYPE" type="node,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=emergency_access_point"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=emergency_access_point"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=emergency_access_point"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=emergency_access_point"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=emergency_access_point"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=emergency_access_point"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=emergency_access_point" />
-            <space />
-            <key key="highway" value="emergency_access_point" />
-            <text key="ref" text="Point Number" />
-            <text key="name" text="Point Name" />
-            <text key="operator" text="Operator" />
-            <text key="emergency_telephone_code" text="Emergency Phone Number" />
-            <label text="(Use number as shown on plate.)" />
-            <space />
-        </item> <!-- Emergency Access Point -->
-        <separator/>
         <item name="Veterinary" icon="ICONPATH:health_veterinary.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=veterinary"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=veterinary"
@@ -6483,6 +6465,23 @@
             <text key="ref" text="Reference" />
             <text key="operator" text="Operator" />
         </item> <!-- Life ring -->
+        <item name="Emergency Access Point" icon="ICONPATH:emergency_emergency_access_point_17005.ICONTYPE" type="node,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=emergency_access_point"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=emergency_access_point"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=emergency_access_point"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=emergency_access_point"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=emergency_access_point"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=emergency_access_point"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=emergency_access_point" />
+            <space />
+            <key key="highway" value="emergency_access_point" />
+            <text key="ref" text="Point Number" />
+            <text key="name" text="Point Name" />
+            <text key="operator" text="Operator" />
+            <text key="emergency_telephone_code" text="Emergency Phone Number" />
+            <label text="(Use number as shown on plate.)" />
+            <space />
+        </item> <!-- Emergency Access Point -->
     </group> <!-- Emergency -->
     <group name="Social Facilities" icon="ICONPATH:amenity_outreach_12252.ICONTYPE">
         <item name="Ambulatory Care" icon="ICONPATH:amenity_ambulatory_care_12248.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
