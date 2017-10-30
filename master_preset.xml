@@ -661,20 +661,28 @@
     <preset_link preset_name="Bi-directional roads" />
   </chunk>
   <chunk id="healthcare_speciality">
-    <combo key="healthcare:speciality" text="Speciality" values_context="healthcare" values_searchable="true" editable="true" >
+    <multiselect key="healthcare:speciality" text="Speciality" values_context="healthcare" values_searchable="true" editable="true" >
 	  <list_entry value="general" short_description="General" />
-	  <list_entry value="gynaecology" short_description="Gynaecology" />
-	  <list_entry value="ophthalmology" short_description="Ophthalmology" />
-	  <list_entry value="internal" short_description="Internal" />
-	  <list_entry value="orthopaedics" short_description="Orthopaedics" />
-	  <list_entry value="paediatrics" short_description="Paediatrics" />
-	  <list_entry value="otolaryngology" short_description="Otolaryngology" />
+	  <list_entry value="abortion" short_description="Abortion" />
+	  <list_entry value="fertility" short_description="Fertility" />
+	  <list_entry value="allergology" short_description="Allergology" />
+	  <list_entry value="cardiology" short_description="Cardiology" />
+	  <list_entry value="child_psychiatry" short_description="Child psychiatry" />
 	  <list_entry value="chiropractic" short_description="Chiropractic" />
 	  <list_entry value="dermatology" short_description="Dermatology" />
-	  <list_entry value="urology" short_description="Urology" />
-	  <list_entry value="radiology" short_description="Radiology" />
+	  <list_entry value="gynaecology" short_description="Gynaecology" />
+	  <list_entry value="internal" short_description="Internal" />
+	  <list_entry value="neurology" short_description="Neurology" />
+	  <list_entry value="ophthalmology" short_description="Ophthalmology" />
+	  <list_entry value="orthopaedics" short_description="Orthopaedics" />
+	  <list_entry value="otolaryngology" short_description="Otolaryngology" />
+	  <list_entry value="podiatry" short_description="Podiatry" />
+	  <list_entry value="paediatrics" short_description="Paediatrics" />
+	  <list_entry value="plastic_surgery" short_description="Plastic surgery" />
 	  <list_entry value="psychiatry" short_description="Psychiatry" />
-	</combo>
+	  <list_entry value="radiology" short_description="Radiology" />
+	  <list_entry value="urology" short_description="Urology" />
+	</multiselect>
   </chunk>
   <chunk id="roof_main">
     <combo key="roof:colour" text="Roof colour" values="black,blue,brown,red,yellow,white,grey" 
@@ -6163,6 +6171,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=pharmacy" />
             <space />
             <key key="amenity" value="hospital" />
+            <key key="healthcare" value="hospital" />
             <reference ref="name_operator" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Hospital -->
@@ -6177,7 +6186,8 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=clinic" />
             <space />
             <key key="amenity" value="clinic" />
-            <reference ref="healthcare_speciality" />
+            <key key="healthcare" value="clinic" />
+            <reference ref="healthcare_speciality_clinic" />
             <reference ref="name_operator" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Clinic -->
@@ -6193,6 +6203,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=doctors" />
             <space />
             <key key="amenity" value="doctors" />
+            <key key="healthcare" value="doctor" />
  			<reference ref="healthcare_speciality" />
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
@@ -6208,6 +6219,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=dentist" />
             <space />
             <key key="amenity" value="dentist" />
+            <key key="healthcare" value="dentist" />
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Dentist -->
@@ -6281,6 +6293,53 @@
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Veterinary -->
+        <item name="Other healthcare facilities" icon="ICONPATH:health_healthcare.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:healthcare"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:healthcare"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:healthcare"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:healthcare"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:healthcare" />
+            <space />
+            <combo key="healthcare" text="Type of shelter"  values_searchable="true">
+				<list_entry value="birthing_center" short_description="Birthing center" />
+				<list_entry value="blood_donation" short_description="Blood donation" />
+				<list_entry value="hospice" short_description="Hospice" />
+				<list_entry value="midwife" short_description="Midwife" />
+			</combo>
+            <reference ref="name_oh_wheelchair" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Other healthcare facilities -->
+        <item name="Alternative medicine" icon="ICONPATH:health_alternative.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:healthcare"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:healthcare"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:healthcare"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:healthcare"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:healthcare" />
+            <space />
+            <key key="healthcare" value="alternative" />
+            <multiselect key="healthcare:speciality" text="Speciality"  values_searchable="true">
+				<list_entry value="acupuncture" short_description="Acupuncture" />
+				<list_entry value="anthroposophical" short_description="Anthroposophic medicine" />
+				<list_entry value="applied_kinesiology" short_description="Applied kinesiology" />
+				<list_entry value="aromatherapy" short_description="Aromatherapy" />
+				<list_entry value="ayurveda" short_description="Ayurveda" />
+				<list_entry value="chiropractic" short_description="Chiropractic" />
+				<list_entry value="herbalism" short_description="Herbalism" />
+				<list_entry value="homeopathy" short_description="Homeopathy" />
+				<list_entry value="hydrotherapy" short_description="Hydrotherapy" />
+				<list_entry value="hypnosis" short_description="Hypnosis" />
+				<list_entry value="naturopathy" short_description="Naturopathy" />
+				<list_entry value="osteopathy" short_description="Osteopathy" />
+				<list_entry value="reflexology" short_description="Reflexology" />
+				<list_entry value="reiki" short_description="Reiki" />
+				<list_entry value="shiatsu" short_description="Shiatsu" />
+				<list_entry value="traditional_chinese_medicine" short_description="Traditional Chinese medicine" />
+				<list_entry value="tuina" short_description="Tuī ná" />
+				<list_entry value="unani" short_description="Unani medicine" />
+			</multiselect>
+            <reference ref="name_oh_wheelchair" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Other healthcare facilities -->
     </group> <!-- Health -->
     <group name="Emergency" icon="ICONPATH:emergency_sos_point_17028.ICONTYPE">
 		<item name="Ambulance Station" icon="ICONPATH:emergency_ambulance_station_17007.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
