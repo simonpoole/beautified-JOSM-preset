@@ -7096,8 +7096,8 @@
                 <multiselect key="animal_shelter" text="Animals" values="dog;cat;horse;wildlife;fish;amphibian;reptile;bird;mammal;sea_mammal;sea_animal" 
                 	display_values="Dog;Cat;Horse;Wildlife;Fish;Amphibian;Reptile;Bird;Mammal;Sea mammal;Sea animal" values_searchable="true" match="key" />
                 <!-- The following two tags should be multiselects accroding to the wiki, but values outside of yes and no are hardly used -->
-                <check key="animal_shelter:adoption" text="For adoption" disable_off="true" /> />
- 				<check key="animal_shelter:release" text="For release" disable_off="true" /> />
+                <check key="animal_shelter:adoption" text="For adoption" disable_off="true" />
+ 				<check key="animal_shelter:release" text="For release" disable_off="true" />
             </optional>
         </item> <!-- Animal shelter -->
         <item name="Animal boarding" icon="amenity_animal_boarding_12330.png" type="node,closedway" preset_name_label="true">
