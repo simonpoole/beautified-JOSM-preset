@@ -4989,8 +4989,8 @@
             <optiona>
             	<text key="name" text="Name" />
             </optiona>
-            <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" />
-            <combo key="map_size" text="Shown Area" values="site,city,region" />
+            <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" display_values="Topo,Street,Scheme,Toposcope" />
+            <combo key="map_size" text="Shown Area" values="site,city,region" display_values="Site,City,Region" />
             <text key="description" text="Detailed description" />
             <optional text="Routes shown for:">
                 <check key="hiking" text="Hiking" disable_off="true" />

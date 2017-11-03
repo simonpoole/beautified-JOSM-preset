@@ -935,7 +935,7 @@
         <item name="Residential" icon="highway_residential_sp.png" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=residential" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=residential" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=residential" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=residential" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=residential" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=residential" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=residential" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=residential" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=residential" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=residential" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=residential"/>
             <space/>
-            <key key="highway" value="residential" values_context="Highway"/>
+            <key key="highway" value="residential"/>
             <text key="name" text="Name"/>
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true"/>
@@ -1003,7 +1003,7 @@
         <item name="Service" icon="highway_service_sp.png" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=service" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=service" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=service" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=service" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=service" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=service" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=service" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=service" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=service" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=service" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=service" vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=service"/>
             <space/>
-            <key key="highway" value="service" values_context="Highway"/>
+            <key key="highway" value="service"/>
             <combo key="service" text="Service way type" values="alley,driveway,parking_aisle,drive-through,emergency_access" display_values="Alley,Driveway,Parking,Parking ailse,Drive-through,Emergency access"/>
             <optional>
                 <text key="name" text="Name"/>
@@ -2970,7 +2970,7 @@
         <item name="Gate" name_context="airport" icon="transport_airport_gate.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aeroway=gate" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:aeroway=terminal" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:aeroway=gate" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:aeroway=gate" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:aeroway=gate" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:aeroway=gate"/>
             <space/>
-            <key key="aeroway" value="gate" values_context="airport"/>
+            <key key="aeroway" value="gate"/>
             <optional>
             	<reference ref="level"/>
             </optional>
@@ -3282,8 +3282,8 @@
             <optiona>
             	<text key="name" text="Name"/>
             </optiona>
-            <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope"/>
-            <combo key="map_size" text="Shown Area" values="site,city,region"/>
+            <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" display_values="Topo,Street,Scheme,Toposcope"/>
+            <combo key="map_size" text="Shown Area" values="site,city,region" display_values="Site,City,Region"/>
             <text key="description" text="Detailed description"/>
             <optional text="Routes shown for:">
                 <check key="hiking" text="Hiking" disable_off="true"/>
@@ -5135,80 +5135,80 @@
 			<item name="Dome" icon="dome.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="dome" values_context="building"/>
+				<key key="roof:shape" value="dome"/>
 				<reference ref="roof_main"/>
 			</item> <!-- Roof type dome -->
 			<item name="Flat" icon="flat.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="flat" values_context="building"/>
+				<key key="roof:shape" value="flat"/>
 				<reference ref="roof_main"/>
 			</item> <!-- Roof type flat -->
 			<item name="Gabled" icon="gabled.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="gabled" values_context="building"/>
+				<key key="roof:shape" value="gabled"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation" values_context="building"/>
 			</item> <!-- Roof type gabled -->
 			<item name="Gambrel" icon="gambrel.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="gambrel" values_context="building"/>
+				<key key="roof:shape" value="gambrel"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type gambrel -->
 			<item name="Half-hipped" icon="half-hipped.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="half-hipped" values_context="building"/>
+				<key key="roof:shape" value="half-hipped"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type half-hipped -->
 			<item name="Hipped" icon="hipped.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="hipped" values_context="building"/>
+				<key key="roof:shape" value="hipped"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type hipped -->
 			<item name="Mansard" icon="mansard.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="mansard" values_context="building"/>
+				<key key="roof:shape" value="mansard"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type mansard -->
 			<item name="Onion" icon="onion.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="onion" values_context="building"/>
+				<key key="roof:shape" value="onion"/>
 				<reference ref="roof_main"/>
 			</item> <!-- Roof type onion -->
 			<item name="Pyramidal" icon="pyramidal.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="pyramidal" values_context="building"/>
+				<key key="roof:shape" value="pyramidal"/>
 				<reference ref="roof_main"/>
 			</item> <!-- Roof type pyramidal -->
 			<item name="Round" icon="round.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="round" values_context="building"/>
+				<key key="roof:shape" value="round"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type round -->
 			<item name="Saltbox" icon="saltbox.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="saltbox" values_context="building"/>
+				<key key="roof:shape" value="saltbox"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type saltbox -->
 			<item name="Skillion" icon="skillion.png" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
 				<link href="http://wiki.openstreetmap.org/wiki/Simple_3D_Buildings"/>
 				<space/>
-				<key key="roof:shape" value="skillion" values_context="building"/>
+				<key key="roof:shape" value="skillion"/>
 				<reference ref="roof_main"/>
 				<reference ref="roof_orientation"/>
 			</item> <!-- Roof type skillion -->
@@ -7520,7 +7520,7 @@
         <item name="Residential Area" icon="landuse_house_sp.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=residential" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=residential" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=residential" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=residential" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=residential" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=residential" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=residential" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=residential" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=residential"/>
             <space/>
-            <key key="landuse" value="residential" values_context="landuse"/>
+            <key key="landuse" value="residential"/>
             <reference ref="optional_name"/>
         </item> <!-- Residential Area -->
         <item name="Graveyard" icon="landuse_grave_yard_12062.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7553,7 +7553,7 @@
         <item name="Commercial" icon="presets/empty.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=commercial" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=commercial" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=commercial" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=commercial" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=commercial" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=commercial" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=commercial" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=commercial"/>
             <space/>
-            <key key="landuse" value="commercial" values_context="landuse"/>
+            <key key="landuse" value="commercial"/>
             <reference ref="optional_name"/>
         </item> <!-- Commercial -->
         <item name="Industrial" icon="landuse_works_22087.png" type="closedway,multipolygon" preset_name_label="true">
