@@ -8001,7 +8001,7 @@
 				<space />
 				<key key="roof:shape" value="gabled" values_context="building" />
 				<reference ref="roof_main" />
-				<reference ref="roof_orientation" values_context="building" />
+				<reference ref="roof_orientation" />
 			</item> <!-- Roof type gabled -->
 			<item name="Gambrel" icon="ICONPATH:gambrel.ICONTYPE" type="node,way,closedway,multipolygon"
 				name_context="building" preset_name_label="true">
