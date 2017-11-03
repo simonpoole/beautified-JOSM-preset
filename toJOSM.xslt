@@ -7,6 +7,7 @@
     <xsl:template match="@javascript" />
     <xsl:template match="@long_text" />
     <xsl:template match="m:key/@values_context" />
+    <xsl:template match="m:key/@text" />
     <!--identity template copies everything forward by default-->
     <xsl:template match="@*|node()">
         <xsl:copy>
