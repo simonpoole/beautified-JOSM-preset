@@ -3279,9 +3279,7 @@
             <space/>
             <key key="tourism" value="information"/>
             <key key="information" value="map"/>
-            <optiona>
-            	<text key="name" text="Name"/>
-            </optiona>
+            <reference ref="optional_name"/>
             <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" display_values="Topo,Street,Scheme,Toposcope"/>
             <combo key="map_size" text="Shown Area" values="site,city,region" display_values="Site,City,Region"/>
             <text key="description" text="Detailed description"/>
@@ -3301,9 +3299,7 @@
             <label text="A board with information."/>
             <key key="tourism" value="information"/>
             <key key="information" value="board"/>
-            <optiona>
-            	<text key="name" text="Name"/>
-            </optiona>
+            <reference ref="optional_name"/>
             <combo key="board_type" text="Board Content" values="notice,history,nature,wildlife,plants,geology"/>
             <text key="description" text="Detailed description"/>
         </item> <!-- Information Board -->
