@@ -13347,11 +13347,11 @@ tags.remove('automatic_check_date');"
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Confectionery -->
-        <item name="Electronics" icon="ICONPATH:craft_electronics_16103.ICONTYPE" type="node,closedway,multipolygon">
+        <item name="Electronics repair" icon="ICONPATH:craft_electronics_16103.ICONTYPE" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:craft=electronics"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:craft=electronics" />
             <space />
-            <key key="craft" value="electronics" />
+            <key key="craft" value="electronics_repair" />
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Electronics -->
