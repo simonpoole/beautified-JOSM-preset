@@ -20,13 +20,11 @@ import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
-import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import org.xml.sax.AttributeList;
-import org.xml.sax.HandlerBase;
-import org.xml.sax.Locator;
+import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
 
 /**
  * Make a (semi-)nice HTML page out of the presets
@@ -56,9 +54,8 @@ public class Preset2Html {
 		pw.write("<link rel=\"stylesheet\" href=\"preset.css\" type=\"text/css\" />");
 		pw.write("</head><body>");
 		
-        saxParser.parse(input, new HandlerBase() {
+        saxParser.parse(input, new DefaultHandler() {
         	
-        	Locator locator = null;
         	String group = null;
         	String preset = null;
         	String chunk = null;
@@ -73,19 +70,11 @@ public class Preset2Html {
         	boolean optional = false;
         	StringBuffer buffer = new StringBuffer();
         	
-        	/** 
-             * ${@inheritDoc}.
-             */
-			@Override
-        	public void setDocumentLocator(Locator locator) {
-				this.locator = locator;
-			}
-        	
             /** 
              * ${@inheritDoc}.
              */
 			@Override
-            public void startElement(String name, AttributeList attr) throws SAXException {
+            public void startElement(String uri, String localName, String name, Attributes attr) throws SAXException {
 				if ("presets".equals(name)) {
 					String shortdescription = attr.getValue("shortdescription");
 					if (shortdescription == null) {
@@ -194,7 +183,7 @@ public class Preset2Html {
             	} 
             }
 
-            private String addTags(String result, AttributeList attr) {
+            private String addTags(String result, Attributes attr) {
                 String key = attr.getValue("key");
                 String value = attr.getValue("value");
                 if (key != null && !"".equals(key)) {
@@ -208,7 +197,7 @@ public class Preset2Html {
             }
             
             @Override
-            public void endElement(String name) throws SAXException {
+            public void endElement(String uri, String localMame, String name) throws SAXException {
             	if ("group".equals(name)) {
             		group = null;
             		buffer.append("</div>\n");
@@ -303,25 +292,29 @@ public class Preset2Html {
 		p.setInputFilename("stdin");
 		
 		// arguments
-		Option inputFile = OptionBuilder.withArgName("file")
-				.hasArg()
-				.withDescription("input preset file, default: standard in")
-				.create("input");
+        Option inputFile = Option.builder("i")
+                .longOpt("input")
+                .hasArg()
+                .desc("input preset file, default: standard in")
+                .build();
 
-		Option outputFile = OptionBuilder.withArgName("file")
-				.hasArg()
-				.withDescription("output .pot file, default: standard out")
-				.create("output");
+        Option outputFile = Option.builder("o")
+                .longOpt("output")
+                .hasArg()
+                .desc("output .html file, default: standard out")
+                .build();
 		
-		Option vespucciLink = OptionBuilder.withArgName("vespucci")
-				.hasArg()
-				.withDescription("download link vespucci format, default: none")
-				.create("vespucci");
+        Option vespucciLink = Option.builder("v")
+                .longOpt("vespucci")
+                .hasArg()
+                .desc("download link vespucci format, default: none")
+                .build();
 		
-		Option josmLink = OptionBuilder.withArgName("josm")
-				.hasArg()
-				.withDescription("download link JOSM format, default: none")
-				.create("josm");
+		Option josmLink = Option.builder("j")
+                .longOpt("josm")
+                .hasArg()
+                .desc("download link JOSM format, default: none")
+                .build();
 		
 		Options options = new Options();
 

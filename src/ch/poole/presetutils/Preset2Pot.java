@@ -23,14 +23,13 @@ import org.apache.commons.cli.CommandLineParser;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Option;
-import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import org.xml.sax.AttributeList;
-import org.xml.sax.HandlerBase;
+import org.xml.sax.Attributes;
 import org.xml.sax.Locator;
 import org.xml.sax.SAXException;
-import org.xml.sax.helpers.AttributeListImpl;
+import org.xml.sax.helpers.AttributesImpl;
+import org.xml.sax.helpers.DefaultHandler;
 
 /**
  * Small utility to extract strings from a JOSM style preset file that should be translated, 
@@ -55,18 +54,18 @@ public class Preset2Pot {
 		return handler.locator;
 	}
 	
-	class MyHandler extends HandlerBase {
+	class MyHandler extends DefaultHandler {
     	
     	Locator locator = null;
     	String group = null;
     	String preset = null;
-    	AttributeList mainAttr = null;
+    	Attributes mainAttr = null;
     	
     	String presetContext() {
     		return (group!=null?"|group:" + group.replace(' ', '_'):"") + (preset!=null?"|preset:" + preset.replace(' ', '_'):"");
     	}
     	
-    	void addMsg(String tag, AttributeList attr, String keyName, String attrName, AttributeList mainAttr) {
+    	void addMsg(String tag, Attributes attr, String keyName, String attrName, Attributes mainAttr) {
     		String context = null;
     		if (mainAttr == null) {
     			context = attr.getValue("text_context");
@@ -95,7 +94,7 @@ public class Preset2Pot {
     		}
     	}
     	
-    	void addValues(String keyName, String valueAttr, String tag, AttributeList attr, String defaultDelimiter) {
+    	void addValues(String keyName, String valueAttr, String tag, Attributes attr, String defaultDelimiter) {
     		String displayValues = attr.getValue(valueAttr);
     		if (displayValues != null) {
     			String delimiter = attr.getValue("delimiter");
@@ -133,68 +132,68 @@ public class Preset2Pot {
          * ${@inheritDoc}.
          */
 		@Override
-        public void startElement(String name, AttributeList attr) throws SAXException {
-        	if ("group".equals(name)) {
+        public void startElement(String uri, String localName, String qName, Attributes attr) throws SAXException {
+        	if ("group".equals(qName)) {
         		group = attr.getValue("name");
-        		addMsg(name, attr, null, "name", null);
-        	} else if ("item".equals(name)) {
+        		addMsg(qName, attr, null, "name", null);
+        	} else if ("item".equals(qName)) {
         		preset = attr.getValue("name");
-        		addMsg(name, attr, null, "name", null);
+        		addMsg(qName, attr, null, "name", null);
         		mainAttr = null;
-        	} else if ("chunk".equals(name)) {
+        	} else if ("chunk".equals(qName)) {
         		mainAttr = null;
-        	} else if ("separator".equals(name)) {
-        	} else if ("label".equals(name)) {
-        		addMsg(name, attr, null, "text", null);
-        	} else if ("optional".equals(name)) {
-        		addMsg(name, attr, null, "text", null);
-        	} else if ("key".equals(name)) {
-        		addMsg(name, attr, "key", "text", null);
-        		addMsg(name, attr, "key", "long_text", null);
+        	} else if ("separator".equals(qName)) {
+        	} else if ("label".equals(qName)) {
+        		addMsg(qName, attr, null, "text", null);
+        	} else if ("optional".equals(qName)) {
+        		addMsg(qName, attr, null, "text", null);
+        	} else if ("key".equals(qName)) {
+        		addMsg(qName, attr, "key", "text", null);
+        		addMsg(qName, attr, "key", "long_text", null);
         		mainAttr = null;
-        	} else if ("text".equals(name)) {
-        		addMsg(name, attr, "key", "text", null);
-        		addMsg(name, attr, "key", "long_text", null);
+        	} else if ("text".equals(qName)) {
+        		addMsg(qName, attr, "key", "text", null);
+        		addMsg(qName, attr, "key", "long_text", null);
         		mainAttr = null;
-        	} else if ("link".equals(name)) {
-        	} else if ("check".equals(name)) {
-        		addMsg(name, attr, "key", "text", null);
-        		addMsg(name, attr, "key", "long_text", null);
+        	} else if ("link".equals(qName)) {
+        	} else if ("check".equals(qName)) {
+        		addMsg(qName, attr, "key", "text", null);
+        		addMsg(qName, attr, "key", "long_text", null);
         		mainAttr = null;
-        	} else if ("combo".equals(name)) {
-        		addMsg(name, attr, "key", "text", null);
-        		addMsg(name, attr, "key", "long_text", null);
+        	} else if ("combo".equals(qName)) {
+        		addMsg(qName, attr, "key", "text", null);
+        		addMsg(qName, attr, "key", "long_text", null);
         		String delimiter = attr.getValue("delimiter");
-        		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ",");
-        		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ",");
-        		mainAttr = new AttributeListImpl(attr);
-        	} else if ("multiselect".equals(name)) {
-        		addMsg(name, attr, "key", "text", null);
-        		addMsg(name, attr, "key", "long_text", null);
+        		addValues("key","display_values", qName, attr, delimiter != null ? delimiter : ",");
+        		addValues("key","short_descriptions", qName, attr, delimiter != null ? delimiter : ",");
+        		mainAttr = new AttributesImpl(attr);
+        	} else if ("multiselect".equals(qName)) {
+        		addMsg(qName, attr, "key", "text", null);
+        		addMsg(qName, attr, "key", "long_text", null);
         		String delimiter = attr.getValue("delimiter");
-        		addValues("key","display_values", name, attr, delimiter != null ? delimiter : ";");
-        		addValues("key","short_descriptions", name, attr, delimiter != null ? delimiter : ";");
-        		mainAttr = new AttributeListImpl(attr);
-        	} else if ("role".equals(name)) {
-        		addMsg(name, attr, "key", "text", null);
-        		addMsg(name, attr, "key", "long_text", null);
-        	} else if ("reference".equals(name)) {
-        	} else if ("list_entry".equals(name)) {
-        		addMsg(name, attr, "value", "short_description", mainAttr);
-        		addMsg(name, attr, "value", "display_value", mainAttr);
-        	} else if ("preset_link".equals(name)) {
+        		addValues("key","display_values", qName, attr, delimiter != null ? delimiter : ";");
+        		addValues("key","short_descriptions", qName, attr, delimiter != null ? delimiter : ";");
+        		mainAttr = new AttributesImpl(attr);
+        	} else if ("role".equals(qName)) {
+        		addMsg(qName, attr, "key", "text", null);
+        		addMsg(qName, attr, "key", "long_text", null);
+        	} else if ("reference".equals(qName)) {
+        	} else if ("list_entry".equals(qName)) {
+        		addMsg(qName, attr, "value", "short_description", mainAttr);
+        		addMsg(qName, attr, "value", "display_value", mainAttr);
+        	} else if ("preset_link".equals(qName)) {
         	}
         }
         
         @Override
-        public void endElement(String name) throws SAXException {
-        	if ("group".equals(name)) {
+        public void endElement(String uri, String localMame, String qName) throws SAXException {
+        	if ("group".equals(qName)) {
         		group = null;
-        	} else if ("optional".equals(name)) {
-        	} else if ("item".equals(name)) {
+        	} else if ("optional".equals(qName)) {
+        	} else if ("item".equals(qName)) {
         		preset = null;
-        	} else if ("chunk".equals(name)) {
-        	} else if ("combo".equals(name) || "multiselect".equals(name)) {
+        	} else if ("chunk".equals(qName)) {
+        	} else if ("combo".equals(qName) || "multiselect".equals(qName)) {
         	}
         }
 	}
@@ -264,16 +263,19 @@ public class Preset2Pot {
 			Preset2Pot p = new Preset2Pot();
 			p.setInputFilename("stdin");
 
-			// arguments
-			Option inputFile = OptionBuilder.withArgName("file")
-					.hasArg()
-					.withDescription(  "input preset file, default: standard in" )
-					.create( "input" );
+			// arguments			
+			Option inputFile = Option.builder("i")
+			        .longOpt("input")
+			        .hasArg()
+			        .desc("input preset file, default: standard in")
+			        .build();
 
-			Option outputFile = OptionBuilder.withArgName("file")
-					.hasArg()
-					.withDescription( "output .pot file, default: standard out" )
-					.create( "output" );
+			Option outputFile = Option.builder("o")
+                    .longOpt("output")
+                    .hasArg()
+                    .desc("output .pot file, default: standard out")
+                    .build();
+			
 			Options options = new Options();
 
 			options.addOption(inputFile);
