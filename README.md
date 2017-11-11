@@ -7,7 +7,7 @@ The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/intro
 
 The links to original icons remain if they currently don't have a replacement, current count is roughly 90 icons that either have not been replaced or are missing. 
 
-The preset file contained at last count 880 individual object presets vs 724 in the original.
+The preset file contained at last count 880 individual object presets vs 724 in the original. Extensions to the original JOSM schema are documented on the [vespucci site](http://vespucci.io/tutorials/presets/).
 
 The scripts
 
