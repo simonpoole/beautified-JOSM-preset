@@ -160,6 +160,11 @@
     <chunk id="level">
     	<combo text="Level" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" values_sort="false" match="none" editable="true"/>
     </chunk>
+    <chunk id="optional_level">
+    	<optional>
+    		<reference ref="level"/>
+    	</optional>
+    </chunk>
     <chunk id="name_layer">
         <text key="name" text="Name"/>
         <reference ref="layer"/>
@@ -230,6 +235,10 @@
 		<reference ref="level"/>
 		<reference ref="toilets_with_access"/>
     </chunk>
+    <chunk id="name_operator_level">
+        <reference ref="name_operator"/>
+        <reference ref="level"/>
+    </chunk>
     <chunk id="name_operator_oh_wheelchair">
         <reference ref="name_operator"/>
         <reference ref="oh_wheelchair"/>
@@ -268,11 +277,24 @@
         <text key="brand" text="Brand"/>
         <reference ref="oh_wheelchair"/>
     </chunk>
+    <chunk id="name_brand_oh_wheelchair_level">
+        <text key="name" text="Name"/>
+        <text key="brand" text="Brand"/>
+        <reference ref="oh_wheelchair"/>
+        <reference ref="level"/>
+    </chunk>
     <chunk id="name_brand_oh_wheelchair_toilets">
         <text key="name" text="Name"/>
         <text key="brand" text="Brand"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="toilets_with_access"/>
+    </chunk>
+    <chunk id="name_brand_oh_wheelchair_toilets_level">
+        <text key="name" text="Name"/>
+        <text key="brand" text="Brand"/>
+        <reference ref="oh_wheelchair"/>
+        <reference ref="toilets_with_access"/>
+        <reference ref="level"/>
     </chunk>
     <chunk id="organic">
     	<combo key="organic" text="Organic" values="only,yes,no" display_values="Only,Yes,No"/>
@@ -2803,7 +2825,7 @@
             <space/>
             <key key="amenity" value="vending_machine"/>
             <key key="vending" value="public_transport_tickets"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_level"/>
             <text key="ref" text="Reference Number"/>
             <preset_link preset_name="Payment Methods"/>
         </item> <!-- Ticket Machine -->
@@ -2973,9 +2995,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:aeroway=gate" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:aeroway=terminal" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:aeroway=gate" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:aeroway=gate" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:aeroway=gate" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:aeroway=gate"/>
             <space/>
             <key key="aeroway" value="gate"/>
-            <optional>
-            	<reference ref="level"/>
-            </optional>
+            <reference ref="optional_level"/>
             <text key="ref" text="Reference"/>
         </item> <!-- Gate -->
     </group> <!-- Airport -->
@@ -3028,7 +3048,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=apartment" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=apartment" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:tourism=apartment" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:tourism=apartment" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:tourism=apartment" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:tourism=apartment" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:tourism=apartment" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:tourism=apartment"/>
             <space/>
             <key key="tourism" value="apartment"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_level"/>
             <combo key="number_of_apartments" text="Number of apartments" values="1,2,3,4,5,6,7,8,9,10"/>
             <combo key="stars" text="Stars" values="1,2,3,4,5,6,7"/>
             <reference ref="wheelchair"/>
@@ -3980,7 +4000,7 @@
             <key key="amenity" value="clinic" match="keyvalue"/>
             <key key="healthcare" value="clinic" match="keyvalue"/>
             <reference ref="healthcare_speciality"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Clinic -->
         <item name="Doctor's Office" icon="health_doctors.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3989,7 +4009,7 @@
             <key key="amenity" value="doctors" match="keyvalue"/>
             <key key="healthcare" value="doctor" match="keyvalue"/>
  			<reference ref="healthcare_speciality"/>
-            <reference ref="name_oh_wheelchair"/>
+            <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Doctor's Office -->
         <item name="Dentist" icon="health_dentist.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3997,7 +4017,7 @@
             <space/>
             <key key="amenity" value="dentist" match="keyvalue"/>
             <key key="healthcare" value="dentist" match="keyvalue"/>
-            <reference ref="name_oh_wheelchair"/>
+            <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Dentist -->
         <item name="Pharmacy" icon="health_pharmacy.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4013,7 +4033,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=baby_hatch" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=baby_hatch" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=baby_hatch" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=baby_hatch" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=baby_hatch" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=baby_hatch" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=baby_hatch" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:amenity=baby_hatch" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=baby_hatch" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=baby_hatch" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=baby_hatch"/>
             <space/>
             <key key="amenity" value="baby_hatch"/>
-            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Baby Hatch/Safe Haven -->
         <separator/>
@@ -4033,7 +4053,7 @@
 				<list_entry value="hospice" short_description="Hospice"/>
 				<list_entry value="midwife" short_description="Midwife"/>
 			</combo>
-            <reference ref="name_oh_wheelchair"/>
+            <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Other healthcare facilities -->
         <item name="Alternative medicine" icon="health_alternative.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4060,7 +4080,7 @@
 				<list_entry value="tuina" short_description="Tu&#x12B; n&#xE1;"/>
 				<list_entry value="unani" short_description="Unani medicine"/>
 			</multiselect>
-            <reference ref="name_oh_wheelchair"/>
+            <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Alternative medicine -->
     </group> <!-- Health -->
@@ -4095,6 +4115,7 @@
             <key key="emergency" value="fire_extinguisher"/>
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
+            <reference ref="level"/>
             <check key="indoor" text="Indoor" match="none"/>
         </item> <!-- Fire Extinguisher -->
         <item name="Fire Hose" icon="emergency_fire_hose_17010.png" type="node" preset_name_label="true">
@@ -4103,6 +4124,8 @@
             <key key="emergency" value="fire_hose"/>
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
+            <reference ref="level"/>
+            <check key="indoor" text="Indoor" match="none"/>
         </item> <!-- Fire Hose -->
        <item name="Fire Hydrant" icon="emergency_fire_hydrant_17020.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:emergency=fire_hydrant" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:emergency=fire_hydrant" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:emergency=fire_hydrant" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:emergency=fire_hydrant" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:emergency=fire_hydrant" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:emergency=fire_hydrant" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:emergency=fire_hydrant" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:emergency=fire_hydrant" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:emergency=fire_hydrant" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:emergency=fire_hydrant" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:emergency=fire_hydrant"/>
@@ -4174,8 +4197,7 @@
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="ambulatory_care"/>
             <reference ref="social_facility_for"/>
-            <reference ref="oh"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Retirement Home -->
         <item name="Assisted Living" icon="amenity_assisted_living_12249.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4184,7 +4206,7 @@
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="assisted_living"/>
             <reference ref="social_facility_for"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_level"/>
             <text key="capacity" text="Capacity"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Retirement Home -->
@@ -4192,8 +4214,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:social_facility" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility" es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility" pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility"/>
             <space/>
             <key key="amenity" value="social_centre"/>
-            <reference ref="name_operator"/>
-            <reference ref="oh"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Retirement Home -->
         <item name="Food Bank" icon="amenity_food_bank_12250.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4201,8 +4222,7 @@
             <space/>
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="food_bank"/>
-            <reference ref="name_operator"/>
-            <reference ref="oh"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Retirement Home -->
         <item name="Retirement Home" icon="amenity_retirement_home_12240.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4211,7 +4231,7 @@
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="group_home"/>
             <key key="social_facility:for" value="senior"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_level"/>
             <text key="capacity" text="Capacity"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Retirement Home -->
@@ -4221,7 +4241,7 @@
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="nursing_home"/>
             <reference ref="social_facility_for"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_level"/>
             <text key="capacity" text="Capacity"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Nursing Home -->
@@ -4238,7 +4258,7 @@
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="group_home"/>
             <reference ref="social_facility_for"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_level"/>
             <text key="capacity" text="Capacity"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Group Home -->
@@ -4248,8 +4268,7 @@
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="outreach"/>
             <reference ref="social_facility_for"/>
-            <reference ref="name_operator"/>
-            <reference ref="oh"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Outreach -->
         <item name="Shelter" icon="amenity_shelter_12253.png" type="node,closedway,multipolygon" preset_name_label="true" name_context="social_facility">
@@ -4257,7 +4276,7 @@
             <space/>
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="shelter"/>
-            <reference ref="name_operator"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <text key="capacity" text="Capacity"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Shelter -->
@@ -4266,8 +4285,7 @@
             <space/>
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="social_club"/>
-            <reference ref="name_operator"/>
-            <reference ref="oh"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Social Club -->
         <item name="Social Workshop" icon="amenity_social_workshop_12254.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4275,16 +4293,14 @@
             <space/>
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="workshop"/>
-            <reference ref="name_operator"/>
-            <reference ref="oh"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Social Workshop -->
         <item name="Youth Centre" icon="amenity_youth_centre_12356.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:social_facility" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:social_facility" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:social_facility" es.href="http://wiki.openstreetmap.org/wiki/ES:Key:social_facility" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:social_facility" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:social_facility" pl.href="http://wiki.openstreetmap.org/wiki/PL:Key:social_facility" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:social_facility"/>
             <space/>
             <key key="amenity" value="youth_centre"/>
-            <reference ref="name_operator"/>
-            <reference ref="oh"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Youth Centre -->
     </group> <!-- Social Facility -->
@@ -4392,7 +4408,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=photo_booth" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=photo_booth" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=photo_booth" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=photo_booth" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=photo_booth" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=photo_booth" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=photo_booth"/>
             <space/>
             <key key="amenity" value="photo_booth"/>
-            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
         </item> <!-- Photo booth -->
         <separator/>
         <item name="Recycling Container" icon="amenity_recycling.png" type="node,closedway" preset_name_label="true">
@@ -4521,6 +4537,7 @@
             <optional>
                 <text key="name" text="Name"/>
                 <text key="description" text="Description"/>
+                <reference ref="level"/>
             </optional>
         </item> <!-- Drinking Water -->
         <item name="Water Point" icon="amenity_water_point_34025.png" type="node" preset_name_label="true">
@@ -4630,6 +4647,7 @@
 			<key key="leisure" value="fitness_centre"/>
 			<text key="name" text="Name"/>
 			<reference ref="sport"/>
+			<reference ref="optional_level"/>
 			<reference ref="link_contact_address_payment"/>
 			<preset_link preset_name="Building"/>
 		</item> <!-- Fitness Centre -->
@@ -4644,6 +4662,7 @@
                 <list_entry value="kendo" short_description="Kendo"/>
                 <list_entry value="karate" short_description="Karate"/>
             </multiselect>
+            <reference ref="optional_level"/>
 			<reference ref="link_contact_address_payment"/>
 		</item> <!-- Fitness Centre -->
         <item name="Pitch" icon="sport_pitch_21033.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6105,7 +6124,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=dairy" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=dairy" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=dairy" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=dairy" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=dairy"/>
             <space/>
             <key key="shop" value="dairy"/>
-            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Dairy -->
         <item name="Cheese" icon="shopping_cheese_29166.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6126,7 +6145,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=pastry" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=pastry" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=pastry" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=pastry" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=pastry" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:shop=pastry" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=pastry" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=pastry" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=pastry"/>
             <space/>
             <key key="shop" value="pastry"/>
-            <reference ref="name_oh_wheelchair"/>
+            <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Pastry -->
         <item name="Confectionery" icon="shopping_confectionery.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6442,7 +6461,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=houseware" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=houseware" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=houseware" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=houseware" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=houseware" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=houseware" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=houseware"/>
             <space/>
             <key key="shop" value="houseware"/>
-            <reference ref="name_brand_operator_oh_wheelchair"/>
+            <reference ref="name_brand_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Houseware -->
         <item name="Curtain" icon="shopping_curtain_29041.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6556,7 +6575,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=books" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=books" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=books" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=books" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=books" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=books" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=books" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=books"/>
             <space/>
             <key key="shop" value="books"/>
-            <reference ref="name_brand_oh_wheelchair"/>
+            <reference ref="name_brand_oh_wheelchair_level"/>
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Book Store -->
@@ -6778,7 +6797,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=garden_centre" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=garden_centre" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=garden_centre" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=garden_centre" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=garden_centre" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=garden_centre" ko.href="http://wiki.openstreetmap.org/wiki/Ko:Tag:shop=garden_centre" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=garden_centre" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=garden_centre" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=garden_centre"/>
             <space/>
             <key key="shop" value="garden_centre"/>
-            <reference ref="name_brand_oh_wheelchair"/>
+            <reference ref="name_brand_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Garden Centre -->
         <separator/>
@@ -6786,7 +6805,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=doityourself" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=doityourself" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=doityourself" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=doityourself" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=doityourself" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=doityourself" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=doityourself" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=doityourself" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=doityourself"/>
             <space/>
             <key key="shop" value="doityourself"/>
-            <reference ref="name_brand_oh_wheelchair"/>
+            <reference ref="name_brand_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Do-It-Yourself Store -->
         <item name="Hardware" icon="shopping_diy.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6844,7 +6863,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=travel_agency" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=travel_agency" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=travel_agency" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=travel_agency" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=travel_agency" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=travel_agency"/>
             <space/>
             <key key="shop" value="travel_agency"/>
-            <reference ref="name_brand_oh_wheelchair"/>
+            <reference ref="name_brand_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Travel Agency -->
         <item name="Musical Instrument" icon="shopping_musical_instrument_29107.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6941,14 +6960,14 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=funeral_directors" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=funeral_directors" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=funeral_directors" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=funeral_directors" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=funeral_directors" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=funeral_directors" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:shop=funeral_directors" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=funeral_directors" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=funeral_directors" zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Tag:shop=funeral_directors"/>
             <space/>
             <key key="shop" value="funeral_directors"/>
-            <reference ref="name_oh_wheelchair"/>
+            <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Funeral Directors -->
         <item name="Religion" icon="shopping_religion_29125.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=religion" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=religion" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=religion" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=religion"/>
             <space/>
             <key key="shop" value="religion"/>
-            <reference ref="name_oh_wheelchair"/>
+            <reference ref="name_oh_wheelchair_level"/>
             <reference ref="religious"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Religion -->
@@ -7010,6 +7029,7 @@
         <text key="operator" text="Operator"/>
         <text key="ref" text="Reference number"/>
         <preset_link preset_name="Payment Methods"/>
+        <reference ref="optional_level"/>
     </item> <!-- Vending Machine -->
     <item name="Payment Methods" icon="money_payment_methods.png" type="node,way,closedway,,multipolygon,relation" preset_name_label="true">
         <link href="http://wiki.openstreetmap.org/wiki/Key:payment" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:payment" es.href="http://wiki.openstreetmap.org/wiki/ES:Key:payment" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:payment" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:payment" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:payment"/>
