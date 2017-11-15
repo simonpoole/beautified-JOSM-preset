@@ -8115,8 +8115,8 @@
 			<combo key="access" text="Access" values="yes,delivery,private,no"
 				display_values="Yes,Delivery,Private,No" values_context="access"
 				match="none" />
-			<reference ref="wheelchair" />
 			<optional>
+				<reference ref="wheelchair" />
 				<text key="ref" text="Entrance number" />
 				<combo key="door" text="Door type"
 					values="hinged,sliding,revolving,folding,trapdoor,overhead,loadingdock,no" display_values="Hinged,Sliding,Revolving,Folding,Trapdoor,Overhead,Loadingdock,None"
