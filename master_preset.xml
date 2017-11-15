@@ -371,7 +371,7 @@
          </optional>
      </chunk>
     <chunk id="name_leisure_pitch">
-        <text key="name" text="Name" />
+        <reference ref="optional_name" />
         <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" display_values="Pitch,Sports centre,Stadium" default="pitch" />
     </chunk>
     <chunk id="sport">
