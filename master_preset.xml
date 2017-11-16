@@ -3154,6 +3154,19 @@
             </optional>
             <reference ref="link_contact_address_payment" />
         </item> <!-- Marine Fuel -->
+        <item name="Water point" icon="ICONPATH:transport_water_point_34025.ICONTYPE" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=water_point"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:waterway=water_point"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:waterway=water_point"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:waterway=water_point"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:waterway=water_point"/>
+            <key key="waterway" value="water_point" />
+        </item> <!-- Water point -->
+        <item name="Sanitary dump station" icon="ICONPATH:transport_boat_sanitary_dump_station.ICONTYPE" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=sanitary_dump_station"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:waterway=sanitary_dump_station"/>
+            <key key="waterway" value="sanitary_dump_station" />
+        </item> <!-- Water point -->
         <item name="Boat rental" icon="ICONPATH:transport_boat_rental.ICONTYPE" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=boat_rental"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=boat_rental"
