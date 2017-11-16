@@ -3506,6 +3506,16 @@
             <text key="distance" text="Distance (kilometers)" />
             <text key="ref" text="Reference" />
         </item> <!-- Railway Milestone -->
+        <item name="Derail" icon="ICONPATH:transport_derail_27023.ICONTYPE" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=derail"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:railway=derail"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=derail"
+                  pt.href="http://wiki.openstreetmap.org/wiki/PT:Tag:railway=derail"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=derail" />
+            <key key="railway" value="derail" />
+            <text key="ref" text="Reference" />
+            <text key="operator" text="Operator" />
+        </item> <!-- Derail -->
     </group> <!-- Railway -->
     <group name="Aerialway" icon="ICONPATH:transport_aerialway_10001.ICONTYPE">
         <item name="Cable Car" icon="ICONPATH:transport_aerialway_10001.ICONTYPE" gtype="way" preset_name_label="true">
