@@ -32,6 +32,16 @@ task updatePot(type: JavaExec) {
 updatePot.group = 'preset utils'
 updatePot.description = 'Update the translation template'
 
+task updateTranslations(type: Exec) {
+	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+    	commandLine 'cmd', '/c', 'tx.exe', 'pull', '-a'
+	} else {
+    	commandLine 'tx', 'pull', '-a'
+	}
+}
+updateTranslations.group = 'transifex'
+updateTranslations.description = 'Update translations by executing the transifex tx utility'
+
 dependencies {
 	runtime 'ch.poole:preset-utils:0.0.1'
 	runtime 'commons-cli:commons-cli:1.4'
