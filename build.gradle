@@ -1,0 +1,38 @@
+/*
+ */
+ 
+apply plugin: 'java'
+
+repositories {
+	jcenter()
+	maven { url 'https://dl.bintray.com/content/simonpoole/osm' }
+}
+
+ext {
+	preset_file = 'master_preset.xml'
+}
+
+task updateWebsite(type: JavaExec) {
+    main = "ch.poole.osm.presetutils.Preset2Html"
+    classpath = configurations.runtime
+    args('-input',    preset_file,
+    	 '-output',   'index.html',
+    	 '-vespucci', 'https://github.com/simonpoole/beautified-JOSM-preset/raw/master/gen/vespucci_zip.zip', 
+    	 '-josm',     'https://github.com/simonpoole/beautified-JOSM-preset/raw/master/gen/josm.zip')
+}
+updateWebsite.group = 'preset utils'
+updateWebsite.description = 'Update the website'
+
+task updatePot(type: JavaExec) {
+    main = "ch.poole.osm.presetutils.Preset2Pot"
+    classpath = configurations.runtime
+    args('-input',  preset_file,
+    	 '-output', 'i18n/preset.pot')
+}
+updatePot.group = 'preset utils'
+updatePot.description = 'Update the translation template'
+
+dependencies {
+	runtime 'ch.poole:preset-utils:0.0.1'
+	runtime 'commons-cli:commons-cli:1.4'
+}
