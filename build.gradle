@@ -19,6 +19,9 @@ dependencies {
 	runtime 'commons-cli:commons-cli:1.4'
 }
 
+
+defaultTasks 'generateAllPresetTypes'
+
 task copyCss(type: Copy) {
 	from zipTree(project.configurations.runtime.filter{it.name.startsWith('preset-utils')}.singleFile)
     include "preset.css"
@@ -158,3 +161,4 @@ task generateAllPresetTypes {
 } 
 generateAllPresetTypes.group = 'preset'
 generateAllPresetTypes.description = 'Generate all preset types'
+
