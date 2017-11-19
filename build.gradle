@@ -10,6 +10,8 @@ repositories {
 
 ext {
 	preset_file = 'master_preset.xml'
+	josm_preset_file = 'josm_preset.xml'
+	vespucci_preset_file = 'vespucci_preset.xml'
 }
 
 dependencies {
@@ -53,4 +55,106 @@ task updateTranslations(type: Exec) {
 updateTranslations.group = 'transifex'
 updateTranslations.description = 'Update translations by executing the transifex tx utility'
 
+// tasks to generate a zipped preset for JOSM
+task josmIcons(type: Copy) {
+  from projectDir
+  include preset_file
+  into 'build/temp'
+  filteringCharset = 'UTF-8'
+  rename preset_file, josm_preset_file
+  expand([
+    ICONPATH: '',
+    ICONTYPE: 'png'
+  ])
+}
 
+task transformToJosm(dependsOn: ["josmIcons"], type: Exec) {
+	def output = 'gen/' + josm_preset_file
+	mkdir('gen')
+	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+		// remove extensions
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'toJOSM.xslt', 'build/temp/' + josm_preset_file 
+	} else {
+		// remove extensions
+    	commandLine 'xmlstarlet', 'tr', 'toJOSM.xslt', 'build/temp/' + josm_preset_file
+	}	
+	doFirst {
+		standardOutput = new FileOutputStream(new File(projectDir, output))
+	}
+}
+
+task generateAndValidateJosm(dependsOn: ["transformToJosm"], type: Exec) {
+	def input = 'gen/' + josm_preset_file
+	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+    	// validation
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'josm-preset-1.0.xlmns', '-e', input
+	} else {
+    	// validation
+    	commandLine 'xmlstarlet', 'val', '-s', 'josm-preset-1.0.xlmns', '-e', input
+	}	
+}
+
+task josmZip(dependsOn: ["generateAndValidateJosm"], type: Zip) {
+    baseName 'josm'
+    destinationDir = new File(projectDir, 'gen')
+    from ('icons/png')
+    from ('gen/' + josm_preset_file)
+}
+josmZip.group = 'preset'
+josmZip.description = 'Generate zipped preset file for JOSM'
+
+// tasks to generate a zipped preset for vespucci
+task vespucciIcons(type: Copy) {
+  from projectDir
+  include preset_file
+  into 'gen'
+  filteringCharset = 'UTF-8'
+  rename (preset_file, vespucci_preset_file)
+  expand([
+    ICONPATH: '',
+    ICONTYPE: 'png'
+  ])
+}
+
+task generateAndValidateVespucci(dependsOn: ["vespucciIcons"], type: Exec) {
+	def input = 'gen/' + vespucci_preset_file
+	mkdir('gen')
+	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+    	// validation
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'vespucci-preset-1.0.xlmns', '-e', input
+	} else {
+    	// validation
+    	commandLine 'xmlstarlet', 'val', '-s', 'vespucci-preset-1.0.xlmns', '-e', input
+	}	
+}
+
+task vespucciZip(dependsOn: ["generateAndValidateVespucci"], type: Zip) {
+    baseName 'vespucci_zip'
+    destinationDir = new File(projectDir, 'gen')
+    from ('icons/png')
+    from ('gen/' + vespucci_preset_file)
+    from ('i18n')
+    exclude ('*.pot')
+}
+vespucciZip.group = 'preset'
+vespucciZip.description = 'Generate zipped preset file for vespucci'
+
+task vespucciNoTranslationsZip(dependsOn: ["generateAndValidateVespucci"], type: Zip) {
+    baseName 'vespucci_zip_no_translations'
+    destinationDir = new File(projectDir, 'gen')
+    from ('icons/png')
+    from ('gen/' + vespucci_preset_file)
+}
+vespucciNoTranslationsZip.group = 'preset'
+vespucciNoTranslationsZip.description = 'Generate zipped preset file for vespucci without translations'
+
+// generate everything
+task generateAllPresetTypes {
+	dependsOn "vespucciNoTranslationsZip"
+	dependsOn "vespucciZip" 
+	dependsOn "josmZip"
+	dependsOn "updatePot"
+	dependsOn "updateWebsite"
+} 
+generateAllPresetTypes.group = 'preset'
+generateAllPresetTypes.description = 'Generate all preset types'

@@ -9,16 +9,11 @@ The links to original icons remain if they currently don't have a replacement, c
 
 The preset file contained at last count over 880 individual object presets vs 724 in the original. Extensions to the original JOSM schema are documented on the [vespucci site](http://vespucci.io/tutorials/presets/).
 
-The scripts
+Building the actual preset files is done with gradle and should work on both unixy operations systems and windows, the "generateAllPresetTypes" task will generate the variants in the `gen` directory.
 
- * vespucci.sh will produce a version (vespucci_preset.xml) of the file suitable for inclusion in a build
- * download.sh wil produce a version with URLs to this site for downloading
- * vespucci_zip.sh will produce a zip (vespucci_zip.zip) suitable for downloading and installing
- * josm_zip.sh will produce a zip (josm.zip) suitable for downloading and installing with extensions to the JOSM xml schema removed
+Building requires `xmlstarlet` installed and on your path. 
 
-The scripts require `xmlstarlet` (and you will need `rsvg-convert`to generate the icons) and don't have any error checking and should be executed form the top level directory. Output is written to the `gen` directory.
-
-We are in the process of moving the building of the project to gradle.
+The icons are currently assumed to be in icons/png, generating the icons from SVG requires `rsvg-convert`to be installed and sh to be present (we will likely move this to gradle too).
 
 The presets are being translated on transifex [here](https://www.transifex.com/openstreetmap/presets/).
 
