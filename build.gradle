@@ -15,7 +15,7 @@ ext {
 }
 
 dependencies {
-	runtime 'ch.poole:preset-utils:0.0.4'
+	runtime 'ch.poole:preset-utils:0.0.7'
 	runtime 'commons-cli:commons-cli:1.4'
 }
 
@@ -26,6 +26,14 @@ task copyCss(type: Copy) {
 	from zipTree(project.configurations.runtime.filter{it.name.startsWith('preset-utils')}.singleFile)
     include "preset.css"
     into new File(projectDir.getPath() + '/website')
+}
+
+task copyResources(type: Copy) {
+	from zipTree(project.configurations.runtime.filter{it.name.startsWith('preset-utils')}.singleFile)
+    include "josm-preset-1.0.xlmns"
+    include "vespucci-preset-1.0.xlmns"
+	include "toJOSM.xslt"
+    into new File(buildDir.getPath() + '/xml')
 }
 
 task updateWebsite(dependsOn: ["copyCss"], type: JavaExec) {
@@ -71,15 +79,15 @@ task josmIcons(type: Copy) {
   ])
 }
 
-task transformToJosm(dependsOn: ["josmIcons"], type: Exec) {
+task transformToJosm(dependsOn: ["josmIcons","copyResources"], type: Exec) {
 	def output = 'gen/' + josm_preset_file
 	mkdir('gen')
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
 		// remove extensions
-    	commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'toJOSM.xslt', 'build/temp/' + josm_preset_file 
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/toJOSM.xslt', 'build/temp/' + josm_preset_file 
 	} else {
 		// remove extensions
-    	commandLine 'xmlstarlet', 'tr', 'toJOSM.xslt', 'build/temp/' + josm_preset_file
+    	commandLine 'xmlstarlet', 'tr', 'build/xml/toJOSM.xslt', 'build/temp/' + josm_preset_file
 	}	
 	doFirst {
 		standardOutput = new FileOutputStream(new File(projectDir, output))
@@ -90,10 +98,10 @@ task generateAndValidateJosm(dependsOn: ["transformToJosm"], type: Exec) {
 	def input = 'gen/' + josm_preset_file
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
     	// validation
-    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'josm-preset-1.0.xlmns', '-e', input
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'build/xml/josm-preset-1.0.xlmns', '-e', input
 	} else {
     	// validation
-    	commandLine 'xmlstarlet', 'val', '-s', 'josm-preset-1.0.xlmns', '-e', input
+    	commandLine 'xmlstarlet', 'val', '-s', 'build/xml/josm-preset-1.0.xlmns', '-e', input
 	}	
 }
 
@@ -119,19 +127,19 @@ task vespucciIcons(type: Copy) {
   ])
 }
 
-task generateAndValidateVespucci(dependsOn: ["vespucciIcons"], type: Exec) {
+task generateAndValidateVespucci(dependsOn: ["vespucciIcons","copyResources"], type: Exec) {
 	def input = 'gen/' + vespucci_preset_file
 	mkdir('gen')
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
     	// validation
-    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'vespucci-preset-1.0.xlmns', '-e', input
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.0.xlmns', '-e', input
 	} else {
     	// validation
-    	commandLine 'xmlstarlet', 'val', '-s', 'vespucci-preset-1.0.xlmns', '-e', input
+    	commandLine 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.0.xlmns', '-e', input
 	}	
 }
 
-task vespucciZip(dependsOn: ["generateAndValidateVespucci"], type: Zip) {
+task vespucciZip(dependsOn: ["generateAndValidateVespucci","updateTranslations"], type: Zip) {
     baseName 'vespucci_zip'
     destinationDir = new File(projectDir, 'gen')
     from ('icons/png')
