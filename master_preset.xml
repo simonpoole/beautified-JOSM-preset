@@ -215,6 +215,13 @@
         <list_entry value="limited" short_description="Partial access" />
         <list_entry value="no" short_description="No access" />          
         </combo>
+        <optional>
+        	<text key="wheelchair:description" text="Details" i18n="true" />
+			<text key="wheelchair:entrance_width" text="Entrance width in cm"/>
+			<text key="wheelchair:step_height" text="Step height in cm"/>
+			<text key="wheelchair:rooms" text="Number of rooms suitable for wheelchairs"/>
+			<text key="wheelchair:places" text="Number of wheelchair seating places in cinemas and similar"/>
+        </optional>
     </chunk>
     <chunk id="oh_wheelchair">
         <reference ref="oh" />
