@@ -370,10 +370,10 @@
          </optional>
     </chunk>
     <chunk id="sport_facility">
-    	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium" display_values="Pitch,Sports centre,Stadium" default="sport"/>
+    	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium" display_values="Pitch,Sports centre,Stadium" values_context="sport"/>
     </chunk>
     <chunk id="sport_facility_track">
-    	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" display_values="Pitch,Sports centre,Stadium,Track" default="sport"/>
+    	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" display_values="Pitch,Sports centre,Stadium,Track" values_context="sport"/>
     </chunk> 
     <chunk id="name_leisure_pitch">
         <reference ref="optional_name"/>
