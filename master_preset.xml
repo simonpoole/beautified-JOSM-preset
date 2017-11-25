@@ -376,10 +376,16 @@
             <text key="name" text="Name" />
             <text key="operator" text="Operator" />
          </optional>
-     </chunk>
+    </chunk>
+    <chunk id="sport_facility">
+    	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium" display_values="Pitch,Sports centre,Stadium" default="sport" />
+    </chunk>
+    <chunk id="sport_facility_track">
+    	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" display_values="Pitch,Sports centre,Stadium,Track" default="sport" />
+    </chunk> 
     <chunk id="name_leisure_pitch">
         <reference ref="optional_name" />
-        <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" display_values="Pitch,Sports centre,Stadium" default="pitch" />
+        <reference ref="sport_facility" />
     </chunk>
     <chunk id="sport">
         <combo key="sport" text="Sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,martial_arts,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,skating,roller_skating,ice_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" 
@@ -7500,7 +7506,9 @@
             <space />
             <key key="sport" value="multi" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" />
+            <reference ref="sport_facility_track" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Multi -->
         <item name="Nine-pin Bowling" icon="${ICONPATH}sport_bowling_21179.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=9pin"
@@ -7509,7 +7517,9 @@
             <space />
             <key key="sport" value="9pin" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Nine-pin Bowling -->
         <item name="Ten-pin Bowling" icon="${ICONPATH}sport_bowling_21179.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=10pin"
@@ -7519,7 +7529,9 @@
             <space />
             <key key="sport" value="10pin" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Ten-pin Bowling -->
         <item name="Archery" icon="${ICONPATH}sport_archery.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=archery"
@@ -7529,7 +7541,9 @@
             <space />
             <key key="sport" value="archery" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Archery -->
         <item name="Track and Field Athletics" icon="${ICONPATH}sport_athletics_21002.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sports=athletics"
@@ -7537,14 +7551,18 @@
             <space />
             <key key="sport" value="athletics" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" default="track" />
+            <reference ref="sport_facility_track" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Track and Field Athletics -->
         <item name="Running" icon="${ICONPATH}sport_running_21190.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=running" />
             <space />
             <key key="sport" value="running" />
             <reference ref="name_operator" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="running" />
+            <reference ref="sport_facility_track" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Running -->
         <item name="Climbing" icon="${ICONPATH}sport_climbing_21005.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=climbing"
@@ -7554,13 +7572,29 @@
             <space />
             <key key="sport" value="climbing" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="sports_centre" />
+            <check key="leisure" text="Sports centre" disable_off="true" value_on="sports_centre"/>
+            <reference ref="oh" />
+            <optional>
+            	<check key="climbing:sport" text="Sport climbing" disable_off="true" />
+				<check key="climbing:boulder" text="Bouldering" disable_off="true" />
+				<check key="climbing:toprope" text="Top rope" disable_off="true" />
+				<check key="climbing:trad" text="Traditional" disable_off="true" />
+				<check key="climbing:multipitch" text="Multi-pitch routes" disable_off="true" />
+				<check key="climbing:ice" text="Ice climbing" disable_off="true" />
+				<check key="climbing:mixed" text="Mixed climbing" disable_off="true" />
+				<check key="climbing:deepwater" text="Deep-Water-Soloing" disable_off="true" />
+				<combo key="climbing:rock" text="Rock" values="limestone,granite,sandstone,quarzite,gneiss,porphyry,basalt,conglomerate,concrete" display_values="Limestone,Granite,Sandstone,Quarzite,Gneiss,Porphyry,Basalt,Conglomerate,Concrete" />
+            	<check key="climbing:bolted" text="Bolted" disable_off="true" />
+            </optional>
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Climbing -->
         <item name="Canoeing/Kayaking" icon="${ICONPATH}sport_canoe.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=canoe" />
             <space />
             <key key="sport" value="canoe" />
             <text key="name" text="Name" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Canoeing/Kayaking -->
         <item name="Cycling" icon="${ICONPATH}sport_cycling_21098.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=cycling"
@@ -7568,14 +7602,18 @@
             <space />
             <key key="sport" value="cycling" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="racing" />
+            <reference ref="sport_facility_track" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Cycling -->
         <item name="Dog Racing" icon="${ICONPATH}sport_dog_racing_21180.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=dog_racing" />
             <space />
             <key key="sport" value="dog_racing" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="racing" />
+            <reference ref="sport_facility_track" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Dog Racing -->
         <item name="Equestrian" icon="${ICONPATH}sport_horse_racing.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=equestrian"
@@ -7585,6 +7623,8 @@
             <key key="sport" value="equestrian" />
             <text key="name" text="Name" />
             <reference ref="riding_surface" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Equestrian -->
         <item name="Horse Racing" icon="${ICONPATH}sport_horse_racing.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=horse_racing"
@@ -7593,13 +7633,17 @@
             <key key="sport" value="horse_racing" />
             <text key="name" text="Name" />
             <reference ref="riding_surface" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Horse Racing -->
         <item name="Gymnastics" icon="${ICONPATH}sport_gymnasium.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=gymnastics" />
             <space />
             <key key="sport" value="gymnastics" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Gymnastics -->
         <item name="Skating (deprecated)" deprecated="true" icon="${ICONPATH}sport_iceskating.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=skating"
@@ -7607,22 +7651,26 @@
             <space />
             <key key="sport" value="skating" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" default="ice_rink" />
+            <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" display_values="Ice rink,Pitch,Sports centre,Stadium" default="ice_rink" />
         </item> <!-- Skating -->
         <item name="Ice Skating" icon="${ICONPATH}sport_iceskating.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=ice_skating"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:sport=ice_skating" />
             <space />
             <key key="sport" value="ice_skating" />
-             <text key="name" text="Name" />
-             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" default="ice_rink" />
+            <text key="name" text="Name" />
+            <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" display_values="Ice rink,Pitch,Sports centre,Stadium" default="ice_rink" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Ice Skating -->
         <item name="Roller Skating" icon="" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=roller_skating"/>
             <space />
             <key key="sport" value="roller_skating" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Roller Skating -->
         <item name="Skateboard" icon="${ICONPATH}sport_skateboard_21059.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=skateboard"
@@ -7631,7 +7679,9 @@
             <space />
             <key key="sport" value="skateboard" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" default="pitch" values_context="racing" />
+            <reference ref="sport_facility_track" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Skateboard -->
         <item name="Swimming" icon="${ICONPATH}sport_swimming_outdoor.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=swimming"
@@ -7641,6 +7691,8 @@
             <key key="sport" value="swimming" />
             <text key="name" text="Name" />
             <combo key="leisure" text="Type" values="sports_centre,stadium,swimming_pool,water_park" default="swimming_pool" values_searchable="true" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Swimming -->
         <item name="Scuba Diving" icon="${ICONPATH}sport_scuba_diving_21080.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=scuba_diving"
@@ -7676,7 +7728,9 @@
             <space />
             <key key="sport" value="shooting" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
+            <reference ref="oh" />
+            <reference ref="link_contact_address_payment" />
         </item> <!-- Shooting -->
     </group> <!-- Sport -->
     <group name="Sport (Ball)" icon="${ICONPATH}sport_soccer.${ICONTYPE}">
@@ -7763,7 +7817,7 @@
             <space />
             <key key="sport" value="handball" />
             <reference ref="name_operator" />
-            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+            <reference ref="sport_facility" />
         </item> <!-- Handball -->
         <item name="Volleyball" icon="${ICONPATH}sport_volleyball_21073.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=volleyball"
@@ -7771,7 +7825,7 @@
             <space />
             <key key="sport" value="volleyball" />
             <reference ref="name_operator" />
-            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+            <reference ref="sport_facility" />
         </item> <!-- Volleyball -->
         <item name="Beach Volleyball" icon="${ICONPATH}sport_beachvolleyball_21150.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=beachvolleyball"
@@ -7779,7 +7833,7 @@
             <space />
             <key key="sport" value="beachvolleyball" />
             <reference ref="name_operator" />
-            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+            <reference ref="sport_facility" />
         </item> <!-- Beach Volleyball -->
         <item name="Billiards" icon="${ICONPATH}sport_billiards_sp.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=billiards"
@@ -7788,7 +7842,7 @@
             <space />
             <key key="sport" value="billiards" />
             <reference ref="name_operator" />
-            <combo key="leisure" text="Type" values="stadium,pitch,sports_centre" />
+            <reference ref="sport_facility" />
         </item> <!-- Billiards -->
         <item name="Golf" icon="${ICONPATH}sport_golf.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=golf"
@@ -7832,7 +7886,7 @@
             <space />
             <key key="sport" value="field_hockey" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
         </item> <!-- Field Hockey -->
         <item name="Ice Hockey" icon="${ICONPATH}sport_hockey_21013.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=ice_hockey" />
@@ -7854,7 +7908,7 @@
             <space />
             <key key="sport" value="racquet" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
         </item> <!-- Racquetball -->
         <item name="Table Tennis/Ping-Pong" icon="${ICONPATH}sport_table_tennis_21070.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=table_tennis"
@@ -7862,7 +7916,7 @@
             <space />
             <key key="sport" value="table_tennis" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium" />
+            <reference ref="sport_facility" />
         </item> <!-- Table Tennis/Ping-Pong -->
         <item name="Tennis" icon="${ICONPATH}sport_tennis.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=tennis"
@@ -7881,7 +7935,7 @@
             <space />
             <key key="sport" value="motor" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,stadium,track" values_context="racing" />
+            <reference ref="sport_facility_track" />
         </item> <!-- Motorsport -->
         <item name="Kart Racing" icon="${ICONPATH}sport_karting_21016.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=karting"
@@ -7889,7 +7943,7 @@
             <space />
             <key key="sport" value="karting" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
+            <reference ref="sport_facility" />
         </item> <!-- Kart Racing -->
         <item name="Motocross" icon="${ICONPATH}sport_motocross_21100.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=motocross"
@@ -7900,7 +7954,7 @@
             <space />
             <key key="sport" value="motocross" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
+            <reference ref="sport_facility" />
         </item> <!-- Motocross -->
         <item name="Safety Training" icon="${ICONPATH}sport_safety_training_21077.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=safety_training"
@@ -7916,7 +7970,7 @@
             <space />
             <key key="sport" value="safety_training" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
+            <reference ref="sport_facility" />
         </item> <!-- Safety Training -->
         <separator/>
         <item name="Model Aerodrome" icon="${ICONPATH}sport_model_aerodrome_21020.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7924,7 +7978,7 @@
             <space />
             <key key="sport" value="model_aerodrome" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="aerialway" />
+            <reference ref="sport_facility" />
         </item> <!-- Model Aerodrome -->
         <item name="RC Car" icon="${ICONPATH}sport_rc_car_21075.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=rc_car"
@@ -7942,7 +7996,7 @@
             <space />
             <key key="sport" value="rc_car" />
             <text key="name" text="Name" />
-            <combo key="leisure" text="Type" values="pitch,sports_centre,track" values_context="racing" />
+            <reference ref="sport_facility" />
         </item> <!-- RC Car -->
         <item name="Raceway" type="way,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=raceway"
