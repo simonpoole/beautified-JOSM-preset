@@ -697,6 +697,9 @@
     <preset_link preset_name="Single direction roads" />
     <preset_link preset_name="Bi-directional roads" />
   </chunk>
+  <chunk id="cycle_lanes">
+  	<preset_link preset_name="Cycle Lane/Track" />
+  </chunk>
   <chunk id="healthcare_speciality">
     <multiselect key="healthcare:speciality" text="Speciality" values_context="healthcare" values_searchable="true" editable="false" >
 	  <list_entry value="general" short_description="General" />
@@ -973,6 +976,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Primary -->
         <item name="Primary Link" icon="highway_highway_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -991,6 +995,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Primary Link -->
         <item name="Secondary" icon="highway_highway_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=secondary"
@@ -1018,6 +1023,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Secondary -->
         <item name="Secondary Link" icon="highway_highway_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -1035,6 +1041,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Secondary Link -->
         <item name="Tertiary" icon="highway_highway_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=tertiary"
@@ -1064,6 +1071,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Tertiary -->
         <item name="Tertiary Link" icon="highway_highway_sp.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"
@@ -1081,6 +1089,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Tertiary Link -->
         <item name="Minor road" icon="highway_highway_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=unclassified"
@@ -1109,6 +1118,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Unclassified -->
         <item name="Residential" icon="highway_residential_sp.png" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=residential"
@@ -1134,6 +1144,7 @@
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="lane_presets" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Residential -->
         <item name="Bicycle Road" icon="highway_residential_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:bicycle_road"
@@ -1237,6 +1248,7 @@
                 <check key="passing_places" text="Passing Places" disable_off="true" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Service -->
         <item name="Parking Aisle" icon="highway_service_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:service=parking_aisle"
@@ -1340,6 +1352,7 @@
                 <text key="width" text="Width (meters)" />
             </optional>
             <reference ref="road_access_restrictions" />
+            <reference ref="cycle_lanes" />
         </item> <!-- Roundabout -->
         <item name="Ford" icon="transport_ford.png" type="node,way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:ford"
@@ -1428,6 +1441,31 @@
             	</optional>
         	</item> <!-- Bi-directional roads -->
         </group> <!-- Lane attributes -->
+        <item name="Cycle Lane/Track" icon="bicycle.png" type="way,closedway" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Bicycle"
+            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Bicycle"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Bicycle"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Bicycle"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Bicycle"
+                  hr.href="http://wiki.openstreetmap.org/wiki/Hr:Bicycle"
+                  hu.href="http://wiki.openstreetmap.org/wiki/Hu:Bicycle"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Bicycle"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Bicycle"
+                  nl.href="http://wiki.openstreetmap.org/wiki/NL:Bicycle"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Bicycle"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Bicycle"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Bicycle"
+                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Bicycle" />
+            <space />
+            <combo key="cycleway" text="Cycleway" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" 
+            			display_values="Lane,Track,Opposite lane,Opposite track,Opposite,Share busway,Shared lane" match="none" />
+            <combo key="cycleway:left" text="Cycleway left" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" 
+            			display_values="Lane,Track,Opposite lane,Opposite track,Opposite,Share busway,Shared lane" match="none" />
+            <combo key="cycleway:right" text="Cycleway right" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" 
+            			display_values="Lane,Track,Opposite lane,Opposite track,Opposite,Share busway,Shared lane" match="none" />
+            <combo key="oneway:bicycle" text="Oneway (bicycle)" values="yes,no" display_values="Yes,No" />
+            <space />
+        </item> <!-- Cycle Lane/Track -->
     </group> <!-- Streets -->
     <group name="Ways" icon="highway_way_sp.png">
         <item name="Track" icon="highway_agricultural_engines_16001.png" type="way,closedway" preset_name_label="true">
@@ -1515,32 +1553,6 @@
                 <reference ref="highway_yesno_incline_oneway_lit_width" />
             </optional>
         </item> <!-- Dedicated Bridleway -->
-        <item name="Cycle Lane/Track" type="way,closedway" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Bicycle"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Bicycle"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Bicycle"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Bicycle"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Bicycle"
-                  hr.href="http://wiki.openstreetmap.org/wiki/Hr:Bicycle"
-                  hu.href="http://wiki.openstreetmap.org/wiki/Hu:Bicycle"
-                  it.href="http://wiki.openstreetmap.org/wiki/IT:Bicycle"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Bicycle"
-                  nl.href="http://wiki.openstreetmap.org/wiki/NL:Bicycle"
-                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Bicycle"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Bicycle"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Bicycle"
-                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Bicycle" />
-            <space />
-            <combo key="cycleway" text="Cycleway" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" match="key" />
-            <combo key="cycleway:left" text="Cycleway left" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" />
-            <combo key="cycleway:right" text="Cycleway right" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" />
-            <check key="oneway:bicycle" text="Oneway (bicycle)" disable_off="true" />
-            <space />
-            <optional text="Edit Highway Attributes:">
-                <combo key="highway" text="Highway" values="motorway,motorway_link,trunk,trunk_link,primary,primary_link,secondary,tertiary,unclassified,residential,living_street,service,bus_guideway,construction" values_context="Highway" />
-                <check key="oneway" text="Oneway" disable_off="true" />
-            </optional>
-        </item> <!-- Cycle Lane/Track -->
         <item name="Dedicated Cycleway" icon="cycleway.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=cycleway"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=cycleway"
