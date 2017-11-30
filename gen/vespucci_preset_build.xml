@@ -2711,7 +2711,6 @@
                   display_values="General access,Destination,Delivery,Permissive,Private,Customers,Agricultural,Forestry,No access" values_context="access" values_sort="false" match="key" values_searchable="true" />
 	    	<combo key="access:conditional" text="General access @"
                   delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key" />
-	    	<reference ref="additional_access_tags" /> 
         </item> <!-- General access -->
         <item name="Physical restrictions" icon="icons/png/maximum_width.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access"
