@@ -39,11 +39,13 @@
     </chunk>
     <chunk id="maxspeed">
         <text key="maxspeed" text="Max speed"/>
-        <combo key="maxspeed:conditional" text="Max speed @" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>    
-        <text key="maxspeed:forward" text="Max speed &#x2192;"/>
-        <combo key="maxspeed:forward:conditional" text="Max speed &#x2192; @" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>
-        <text key="maxspeed:backward" text="Max speed &#x2190;"/>
-        <combo key="maxspeed:backwardward:conditional" text="Max speed &#x2190; @" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>
+        <optional>
+        	<combo key="maxspeed:conditional" text="Max speed @" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>    
+        	<text key="maxspeed:forward" text="Max speed &#x2192;"/>
+        	<combo key="maxspeed:forward:conditional" text="Max speed &#x2192; @" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>
+        	<text key="maxspeed:backward" text="Max speed &#x2190;"/>
+        	<combo key="maxspeed:backwardward:conditional" text="Max speed &#x2190; @" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>
+        </optional>
     </chunk>
     <chunk id="highway_base">
 		<reference ref="maxspeed"/>
@@ -62,6 +64,8 @@
         <check key="cutting" text="Cutting" disable_off="true"/>
         <check key="embankment" text="Embankment" disable_off="true"/>
         <reference ref="incline"/>
+        <check key="noexit" text="No exit (cul-de-sac)" disable_off="true"/>
+    	<combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes,Both directions,In way direction,Opposite to way direction,No" values_sort="false" values_context="overtaking" match="key"/>
     </chunk>
     <chunk id="highway_yesno_incline_oneway">
         <check key="oneway" text="Oneway" disable_off="true"/>
@@ -657,8 +661,6 @@
   </chunk>
   <chunk id="additional_access_tags">
     <check key="toll" text="Toll" disable_off="true"/>
-    <check key="noexit" text="No exit (cul-de-sac)" disable_off="true"/>
-    <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes, Both directions, In way direction, Opposite to way direction, No" values_sort="false" values_context="overtaking" match="key"/>
     <text key="minspeed" text="Min. speed (km/h)" match="key"/>
   </chunk>
   <chunk id="road_access_restrictions">
@@ -881,8 +883,9 @@
             <space/>
             <key key="highway" value="primary"/>
             <text key="ref" text="Reference"/>
+            <text key="name" text="Name"/>
             <optional>
-                <text key="name" text="Name"/>
+                <check key="noname" text="Street has no name" disable_off="true"/>
                 <reference ref="highway_base"/>
                 <check key="motorroad" text="Motorroad" disable_off="true"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
@@ -897,6 +900,8 @@
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)" de.href="http://wiki.openstreetmap.org/wiki/DE:Link_(highway)" fr.href="http://wiki.openstreetmap.org/wiki/FR:Link_(highway)" it.href="http://wiki.openstreetmap.org/wiki/IT:Link_(highway)" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Link_(highway)" ru.href="http://wiki.openstreetmap.org/wiki/RU:Link_(highway)" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)"/>
             <key key="highway" value="primary_link"/>
             <optional>
+                <text key="ref" text="Reference"/>
+                <text key="name" text="Name"/>
                 <reference ref="highway_base"/>
                 <check key="motorroad" text="Motorroad" disable_off="true"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
@@ -911,8 +916,9 @@
             <space/>
             <key key="highway" value="secondary"/>
             <text key="ref" text="Reference"/>
+            <text key="name" text="Name"/>
             <optional>
-                <text key="name" text="Name"/>
+                <check key="noname" text="Street has no name" disable_off="true"/>
                 <reference ref="highway_base"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
@@ -926,6 +932,8 @@
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)" de.href="http://wiki.openstreetmap.org/wiki/DE:Link_(highway)" fr.href="http://wiki.openstreetmap.org/wiki/FR:Link_(highway)" it.href="http://wiki.openstreetmap.org/wiki/IT:Link_(highway)" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Link_(highway)" ru.href="http://wiki.openstreetmap.org/wiki/RU:Link_(highway)" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)"/>
             <key key="highway" value="secondary_link"/>
             <optional>
+                <text key="ref" text="Reference"/>
+            	<text key="name" text="Name"/>
                 <reference ref="highway_base"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
                 <reference ref="placement"/>
@@ -939,8 +947,9 @@
             <space/>
             <key key="highway" value="tertiary"/>
             <text key="ref" text="Reference"/>
+            <text key="name" text="Name"/>
             <optional>
-                <text key="name" text="Name"/>
+                <check key="noname" text="Street has no name" disable_off="true"/>
                 <reference ref="highway_base"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
@@ -954,6 +963,8 @@
             <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)" de.href="http://wiki.openstreetmap.org/wiki/DE:Link_(highway)" fr.href="http://wiki.openstreetmap.org/wiki/FR:Link_(highway)" it.href="http://wiki.openstreetmap.org/wiki/IT:Link_(highway)" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Link_(highway)" ru.href="http://wiki.openstreetmap.org/wiki/RU:Link_(highway)" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)"/>
             <key key="highway" value="tertiary_link"/>
             <optional>
+                <text key="ref" text="Reference"/>
+            	<text key="name" text="Name"/>
                 <reference ref="highway_base"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
                 <reference ref="placement"/>
@@ -965,8 +976,8 @@
         <item name="Minor road" icon="highway_highway_sp.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=unclassified" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=unclassified" da.href="http://wiki.openstreetmap.org/wiki/DA:Tag:highway=unclassified" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=unclassified" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=unclassified" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:highway=unclassified" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=unclassified" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=unclassified" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=unclassified" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=unclassified" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=unclassified" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=unclassified" vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=unclassified"/>
             <key key="highway" value="unclassified"/>
+            <text key="name" text="Name"/>
             <optional>
-                <text key="name" text="Name"/>
                 <check key="noname" text="Street has no name" disable_off="true"/>
                 <text key="ref" text="Reference"/>
                 <reference ref="highway_base"/>
@@ -1005,6 +1016,7 @@
             <combo key="vehicle" text="Vehicle access" values="yes,no,destination" default="no" values_context="access"/>
             <text key="maxspeed" text="Max. speed (km/h)" default="30"/>
             <optional>
+                <check key="noname" text="Street has no name" disable_off="true"/>
                 <reference ref="lanes"/>
                 <reference ref="layer"/>
                 <reference ref="surface_smoothness"/>
@@ -1024,6 +1036,7 @@
             <key key="highway" value="living_street"/>
             <text key="name" text="Name"/>
             <optional>
+                <check key="noname" text="Street has no name" disable_off="true"/>
                 <reference ref="lanes"/>
                 <reference ref="layer"/>
                 <reference ref="surface_smoothness"/>
@@ -1038,6 +1051,7 @@
             <key key="highway" value="pedestrian"/>
             <text key="name" text="Name"/>
             <optional>
+                <check key="noname" text="Street has no name" disable_off="true"/>
                 <reference ref="lanes"/>
                 <reference ref="layer"/>
                 <reference ref="surface_smoothness"/>
@@ -1848,7 +1862,7 @@
             <space/>
             <combo key="access" text="General access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" display_values="General access,Destination,Delivery,Permissive,Private,Customers,Agricultural,Forestry,No access" values_context="access" values_sort="false" match="key" values_searchable="true"/>
 	    	<combo key="access:conditional" text="General access @" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
-	    <reference ref="additional_access_tags"/> 
+	    	<reference ref="additional_access_tags"/> 
         </item> <!-- General access -->
         <item name="Physical restrictions" icon="maximum_width.png" type="node,way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:access" da.href="http://wiki.openstreetmap.org/wiki/Da:Key:access" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:access" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:access" it.href="http://wiki.openstreetmap.org/wiki/IT:Key:access" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:access" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:access" pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:access" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:access" sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:access" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:access"/>
