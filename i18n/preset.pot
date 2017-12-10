@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2017-11-30 21:49+0100\n"
+"POT-Creation-Date: 2017-12-11 00:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1549,8 +1549,12 @@ msgstr ""
 msgid "Concrete"
 msgstr ""
 
-#: master_preset.xml:2691(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:forward:conditional) master_preset.xml:2694(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:backwardward:conditional)
+#: master_preset.xml:2691(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:forward:conditional)
 msgid "Condiditonal maximum speed for heavy goods vehicles in way direction specified in km/h"
+msgstr ""
+
+#: master_preset.xml:2694(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:backwardward:conditional)
+msgid "Condiditonal maximum speed for heavy goods vehicles opposite way direction specified in km/h"
 msgstr ""
 
 #: master_preset.xml:51(combo:long_text|key:maxspeed:forward:conditional)
@@ -3853,16 +3857,24 @@ msgstr ""
 msgid "Maximum age"
 msgstr ""
 
-#: master_preset.xml:2689(text:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:forward) master_preset.xml:2692(text:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:backward)
+#: master_preset.xml:2689(text:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:forward)
 msgid "Maximum speed for heavy goods vehicles in way direction specified in km/h"
+msgstr ""
+
+#: master_preset.xml:2692(text:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:backward)
+msgid "Maximum speed for heavy goods vehicles opposite way direction specified in km/h"
 msgstr ""
 
 #: master_preset.xml:2686(text:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv)
 msgid "Maximum speed for heavy goods vehicles specified in km/h"
 msgstr ""
 
-#: master_preset.xml:49(text:long_text|key:maxspeed:forward) master_preset.xml:52(text:long_text|key:maxspeed:backward)
+#: master_preset.xml:49(text:long_text|key:maxspeed:forward)
 msgid "Maximum speed in way direction specified in km/h"
+msgstr ""
+
+#: master_preset.xml:52(text:long_text|key:maxspeed:backward)
+msgid "Maximum speed opposite way direction specified in km/h"
 msgstr ""
 
 #: master_preset.xml:45(text:long_text|key:maxspeed)
