@@ -2687,10 +2687,10 @@
             <combo key="maxspeed:hgv:conditional" text="Max speed HGV @"
                   delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|0 @ length=0|0 @ width=0" values_sort="false" match="key" />    
             <text key="maxspeed:hgv:forward" text="Max. speed HGV →" long_text="Maximum speed for heavy goods vehicles in way direction specified in km/h" match="key" />
-            <combo key="maxspeed:hgv:forward:conditional" text="Max speed HGV → @" long_text="Condiditonal maximum speed for heavy goods vehicles in way direction specified in km/h"
+            <combo key="maxspeed:hgv:forward:conditional" text="Max speed HGV → @" long_text="Conditional maximum speed for heavy goods vehicles in way direction specified in km/h"
                   delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|0 @ length=0|0 @ width=0" values_sort="false" match="key" />
             <text key="maxspeed:hgv:backward" text="Max. speed HGV ←" long_text="Maximum speed for heavy goods vehicles opposite way direction specified in km/h" match="key" />
-            <combo key="maxspeed:hgv:backwardward:conditional" text="Max speed HGV ← @" long_text="Condiditonal maximum speed for heavy goods vehicles opposite way direction specified in km/h"
+            <combo key="maxspeed:hgv:backwardward:conditional" text="Max speed HGV ← @" long_text="Conditional maximum speed for heavy goods vehicles opposite way direction specified in km/h"
                   delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|0 @ length=0|0 @ width=0" values_sort="false"  match="key" />
 	        <reference ref="additional_access_tags" /> 
         </item> <!-- Heavy Goods Vehicle -->
