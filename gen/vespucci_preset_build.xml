@@ -381,6 +381,13 @@
             <text key="operator" text="Operator" />
          </optional>
     </chunk>
+    <chunk id="optional_name_wikipedia">
+        <optional>
+            <text key="name" text="Name" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
+        </optional>
+    </chunk>
     <chunk id="sport_facility">
     	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium" display_values="Pitch,Sports centre,Stadium" values_context="sport" />
     </chunk>
@@ -435,7 +442,8 @@
     </chunk>
     <chunk id="name_wikipedia">
         <text key="name" text="Name" />
-        <text key="wikipedia" text="Wikipedia" />
+        <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+        <text key="wikidata" text="Wikidata" value_type="wikidata" />
         <preset_link preset_name="Name" />
     </chunk>
     <chunk id="population_postcode_website">
@@ -575,7 +583,8 @@
     </chunk>
     <chunk id="waterway_wikipedia">
         <reference ref="waterway" />
-        <text key="wikipedia" text="Wikipedia" />
+        <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+        <text key="wikidata" text="Wikidata" value_type="wikidata" />
     </chunk>
     <chunk id="water_access">
         <optional text="Water access rules:">
@@ -598,7 +607,8 @@
         <optional>
             <text key="iata" text="IATA" />
             <text key="icao" text="ICAO" />
-           <text key="wikipedia" text="Wikipedia" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
         </optional>
     </chunk>
     <chunk id="placement" >
@@ -2102,7 +2112,8 @@
             <optional>
                 <text key="name" text="Name" />
                 <text key="ele" text="Elevation" />
-                <text key="wikipedia" text="Wikipedia" />
+                <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+                <text key="wikidata" text="Wikidata" value_type="wikidata" />
             </optional>
         </item> <!-- Mountain Pass -->
     </group> <!-- Waypoints -->
@@ -3005,7 +3016,8 @@
             <check key="salt" text="Salt Water" disable_off="true" />
             <check key="intermittent" text="Is the water body intermittent (disappears seasonally)?" disable_off="true" />
             <check key="tidal" text="In the tidal range" disable_off="true" />
-            <text key="wikipedia" text="Wikipedia" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
             <reference ref="water_access" />
         </item> <!-- Water -->
         <item name="Coastline" icon="presets/coastline.png" type="way,closedway" preset_name_label="true">
@@ -3020,7 +3032,7 @@
             <label text="Line between the sea and land (with the water on the right side of the way)." />
             <space />
             <key key="natural" value="coastline" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name_wikipedia" />
         </item> <!-- Coastline -->
         <item name="Riverbank" icon="presets/waterway.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:waterway=riverbank"
@@ -3094,7 +3106,7 @@
             <label text="A flat area of sand, gravel or pebble next to water." />
             <space />
             <key key="natural" value="beach" />
-            <reference ref="name_wikipedia" />
+            <reference ref="optional_name_wikipedia" />
             <optional>
                 <reference ref="supervised" />
                 <reference ref="oh_wheelchair" />
@@ -3115,7 +3127,7 @@
             <label text="An area of water mostly surrounded by land but with level connection to the ocean or a lake." />
             <space />
             <key key="natural" value="bay" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name_wikipedia" />
         </item> <!-- Bay -->
     </group> <!-- Water -->
     <group name="Shipping" icon="icons/png/water_ferry_terminal_12048.png">
@@ -5217,7 +5229,8 @@
             <space />
             <key key="tourism" value="zoo" />
             <reference ref="name_oh_wheelchair_toilets" />
-            <text key="wikipedia" text="Wikipedia" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Zoo -->
@@ -5233,7 +5246,8 @@
             <space />
             <key key="tourism" value="aquarium" />
             <reference ref="name_oh_wheelchair_toilets" />
-            <text key="wikipedia" text="Wikipedia" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Aquarium -->
@@ -5586,7 +5600,8 @@
             <space />
             <key key="tourism" value="museum" />
             <reference ref="name_operator_oh_wheelchair_toilets" />
-            <text key="wikipedia" text="Wikipedia" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Museum -->
         <item name="Art gallery" icon="icons/png/tourist_gallery_30041.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5600,7 +5615,8 @@
             <space />
             <key key="tourism" value="gallery" />
             <reference ref="name_operator_oh_wheelchair_toilets" />
-            <text key="wikipedia" text="Wikipedia" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Art gallery -->
         <item name="Theatre" icon="icons/png/tourist_theatre.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -9399,7 +9415,8 @@
              <text key="inscription" text="Inscription" />
              <text key="artist_name" text="Artist Name" />
              <text key="start_date" text="Start date" />
-             <text key="wikipedia" text="Wikipedia" />
+             <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+             <text key="wikidata" text="Wikidata" value_type="wikidata" />
          </optional>
      </item> <!-- Memorial -->
      <item name="Wayside Cross" icon="icons/png/tourist_wayside_cross.png" type="node,closedway" preset_name_label="true">
@@ -11257,7 +11274,8 @@
             <optional>
                 <reference ref="name_operator" />
                 <reference ref="oh" />
-                <text key="wikipedia" text="Wikipedia" />
+                <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+                <text key="wikidata" text="Wikidata" value_type="wikidata" />
                 <text key="start_date" text="Start date" />
             </optional>
         </item> <!-- Protected Area -->
@@ -11575,7 +11593,7 @@
             <label text="A steep rock face exposure, with a significant vertical, or near vertical (leave the lower face to the right of the way)." />
             <space />
             <key key="natural" value="cliff" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name_wikipedia" />
         </item> <!-- Cliff -->
         <item name="Cave Entrance" icon="icons/png/poi_cave.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=cave_entrance"
@@ -12456,7 +12474,8 @@
             <text key="phone" text="Phone Number" match="key" />
             <text key="fax" text="Fax Number" match="key" />
             <space />
-            <text key="wikipedia" text="Wikipedia" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
             <text key="image" text="Image" />
         </item> <!-- Contact (Common Schema) -->
         <item name="Contact ('contact:*')" icon="icons/png/osm_contact_sp.png" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
@@ -12476,7 +12495,8 @@
             <text key="contact:phone" text="Phone Number" match="key" />
             <text key="contact:fax" text="Fax Number" match="key" />
             <space />
-            <text key="wikipedia" text="Wikipedia" />
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+            <text key="wikidata" text="Wikidata" value_type="wikidata" />
             <text key="image" text="Image" />
         </item> <!-- Contact (Schema with 'contact:*' Prefix) -->
   </group> <!-- Addresses and Contact -->
@@ -13008,7 +13028,8 @@ tags.remove('automatic_check_date');"
                 <text key="ref:regine" text="Reference REGINE (NO)" />
                 <text key="ref:gnis" text="Reference GNIS (USA)" />
                 <text key="ref:gnbc" text="Reference GNBC (CA)" />
-                <text key="wikipedia" text="Wikipedia" />
+                <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+                <text key="wikidata" text="Wikidata" value_type="wikidata" />
             </optional>
             <roles>
                 <role key="" text="waterways (no riverbank)" requisite="optional" type="way" member_expression="waterway -waterway:riverbank" />
