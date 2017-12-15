@@ -14059,6 +14059,16 @@ tags.remove('automatic_check_date');"
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address" />
         </item> <!-- Notary -->
+        <item name="Movers" icon="office_moving_company.png" type="node,closedway,multipolygon">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:office=moving_company"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:office=moving_company" 
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:office=moving_company"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:office=moving_company" />
+            <space />
+            <key key="office" value="moving_company" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Notary -->
         <item name="Parish" icon="office_parish_25050.png" type="node,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:office=parish"
             	de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:office=parish" />
