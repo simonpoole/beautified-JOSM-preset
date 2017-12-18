@@ -5631,7 +5631,9 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=street_lamp" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=street_lamp" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=street_lamp" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=street_lamp" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=street_lamp" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=street_lamp" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=street_lamp"/>
             <space/>
             <key key="highway" value="street_lamp"/>
-            <combo key="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" editable="true" values_no_i18n="true"/>
+            <optional>
+                <combo key="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" editable="true" values_no_i18n="true"/>
+            </optional>
         </item> <!-- Street Lamp -->
         <item name="Monitoring Station" icon="man_made_monitoring_station_22042.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=monitoring_station" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_made=monitoring_station" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=monitoring_station" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:man_made=monitoring_station" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=monitoring_station" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=monitoring_station" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:man_made=monitoring_station" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=monitoring_station"/>
