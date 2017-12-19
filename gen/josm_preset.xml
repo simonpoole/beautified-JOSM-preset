@@ -1084,7 +1084,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=service" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=service" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=service" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=service" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=service" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=service" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=service" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=service" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=service" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=service" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=service" vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=service"/>
             <space/>
             <key key="highway" value="service"/>
-            <combo key="service" text="Service way type" values="alley,driveway,parking_aisle,drive-through,emergency_access" display_values="Alley,Driveway,Parking,Parking ailse,Drive-through,Emergency access"/>
+            <combo key="service" text="Service way type" values="alley,driveway,parking_aisle,drive-through,emergency_access" display_values="Alley,Driveway,Parking,Parking aisle,Drive-through,Emergency access"/>
             <optional>
                 <text key="name" text="Name"/>
                 <reference ref="highway_base"/>
