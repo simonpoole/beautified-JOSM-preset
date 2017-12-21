@@ -100,7 +100,7 @@
         <reference ref="sidewalk" />
     </chunk>
     <chunk id="crossing_type">    
-    	<multiselect key="crossing" text="Pedestrian crossing type" >
+    	<multiselect key="crossing" text="Pedestrian crossing type" values_context="transport" >
  			<list_entry value="uncontrolled" short_description="Not controlled" icon="presets/vehicle/crossing.svg" />
  			<list_entry value="traffic_signals" short_description="Traffic signals" icon="presets/vehicle/crossing_traffic_signals.svg" />
 			<list_entry value="island" short_description="Island" icon="presets/vehicle/crossing_island.svg" />
@@ -1938,7 +1938,7 @@
                 <space />
                 <key key="traffic_calming" value="hump" />
             </item> <!-- Hump -->
-            <item name="Island" name_context="traffic_calming" icon="${ICONPATH}transport_island_18046.${ICONTYPE}" type="node,way" preset_name_label="true">
+            <item name="Island" name_context="traffic_calming" icon="${ICONPATH}transport_island_18046.${ICONTYPE}" type="node,way" preset_name_label="true" >
                 <link href="http://wiki.openstreetmap.org/wiki/Key:traffic_calming"
                       cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:traffic_calming"
                       de.href="http://wiki.openstreetmap.org/wiki/DE:Key:traffic_calming"
@@ -1952,7 +1952,7 @@
                       pt_BR.href="http://wiki.openstreetmap.org/wiki/Pt-br:Key:traffic_calming"
                       ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:traffic_calming" />
                 <space />
-                <key key="traffic_calming" value="island" />
+                <key key="traffic_calming" value="island" values_context="traffic_calming" />
             </item> <!-- Island -->
             <item name="Rumble strip" icon="${ICONPATH}transport_rumble_strip_18047.${ICONTYPE}" type="node,way" preset_name_label="true">
                 <link href="http://wiki.openstreetmap.org/wiki/Key:traffic_calming"
@@ -11656,7 +11656,7 @@
             <reference ref="fee" />
         </item> <!-- Cave Entrance -->
         <separator/>
-        <item name="Island" icon="presets/island.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Island" icon="presets/island.png" type="node,closedway,multipolygon" preset_name_label="true" name_context="place">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:place=island"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:place=island"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:place=island"
@@ -11666,7 +11666,7 @@
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:place=island"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:place=island" />
             <space />
-            <key key="place" value="island" />
+            <key key="place" value="island" values_context="place" />
             <reference ref="name_wikipedia" />
         </item> <!-- Island -->
         <item name="Islet" icon="presets/islet.png" type="node,closedway,multipolygon" preset_name_label="true">
