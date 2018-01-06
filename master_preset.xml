@@ -442,7 +442,9 @@
     <chunk id="supervised_lit_oh">
         <reference ref="supervised" />
         <combo key="lit" text="Lit" delimiter="|" values="yes|no|06:00-20:00|Mo-Fr 09:00-18:00,Sa 08:00-14:00|May-Sep 09:30-12:30,14:15-19:30" values_sort="false"  match="none" editable="true" />
-        <reference ref="oh" />
+        <optional>
+            <reference ref="oh" />
+        </optional>
     </chunk>
     <chunk id="general_access">
         <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,no" 
@@ -12258,7 +12260,7 @@
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=religious" />
             <space />
             <key key="landuse" value="religious" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name" />
             <reference ref="religious" />
         </item> <!-- Religious -->
         <item name="Retail" icon="${ICONPATH}landuse_supermarket.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
@@ -12272,7 +12274,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=retail" />
             <space />
             <key key="landuse" value="retail" />
-           <reference ref="optional_name" />
+            <reference ref="optional_name" />
         </item> <!-- Retail -->
         <item name="Commercial" icon="presets/empty.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=commercial"
