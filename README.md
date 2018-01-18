@@ -13,9 +13,9 @@ Due to the touchy nature of the subject, presets for military objects have been 
 
 Building the actual preset files is done with gradle and should work on both unixy operations systems and windows, the "generateAllPresetTypes" task will generate the variants in the `gen` directory.
 
-Building requires `xmlstarlet` installed and on your path. 
+Building requires `xmlstarlet` installed and on your path.
 
-The icons are currently assumed to be in icons/png, generating the icons from SVG requires `rsvg-convert`to be installed and sh to be present (we will likely move this to gradle too).
+The icons are currently assumed to be in icons/png, generating the icons from SVG requires `rsvg-convert` to be installed and sh to be present (we will likely move this to gradle too).
 
 The presets are being translated on transifex [here](https://www.transifex.com/openstreetmap/presets/).
 
