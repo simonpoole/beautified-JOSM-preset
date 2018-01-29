@@ -11299,7 +11299,6 @@
         <combo key="payment:cryptocurrencies" text="Cryptocurrencies" values="no"  match="keyvalue" />
         <checkgroup columns="4">
             <check key="payment:bitcoin" text="Bitcoin" match="keyvalue" disable_off="true" />
-            <check key="payment:dogecoin" text="Dogecoin" match="keyvalue" disable_off="true" />
             <check key="payment:litecoin" text="Litecoin" match="keyvalue" disable_off="true" />
         </checkgroup>
     </item> <!-- Payment Methods -->
