@@ -5533,7 +5533,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bbq" />
             <space />
             <key key="amenity" value="bbq" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name" />
             <combo key="fuel" text="Fuel" text_context="grill" values="charcoal,electric,wood" values_context="fuel" />
             <check key="covered" text="Covered" disable_off="true" />
         </item> <!-- Public Grill -->
@@ -5547,7 +5547,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=firepit" />
             <space />
             <key key="leisure" value="firepit" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name" />
         </item> <!-- Firepit -->
         <item name="Fishing" icon="${ICONPATH}tourist_fishing_29064.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=fishing"
@@ -5559,7 +5559,7 @@
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=fishing" />
             <space />
             <key key="leisure" value="fishing" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name" />
         </item> <!-- Fishing -->
         <item name="Bird Hide" icon="${ICONPATH}tourist_bird_hide_21004.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=bird_hide"
