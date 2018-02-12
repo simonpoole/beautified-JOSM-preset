@@ -5610,6 +5610,18 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Casino -->
+        <item name="Love Hotel" icon="${ICONPATH}love_hotel.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=love_hotel"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=love_hotel"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=love_hotel"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=love_hotel"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=love_hotel"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=love_hotel" />
+            <space />
+            <key key="amenity" value="love_hotel" />
+            <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Night Club -->
         <item name="Strip Club" icon="${ICONPATH}amenity_stripclub_12255.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=stripclub"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=stripclub"
