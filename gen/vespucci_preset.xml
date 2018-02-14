@@ -8161,39 +8161,101 @@
 				uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building" />
 			<space />
 			<combo key="building" text="Building"
-				values="yes,roof,garage,garages,industrial,school,hangar,commercial,service,train_station,barn,stable,cabin,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,kindergarten,manufacture,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction,basilica,cathedral,chapel,church,temple,mosque,synagogue,transformer_tower,public,ruins"
-				display_values="Yes,Roof,Garage,Garages,Industrial,School,Hangar,Commercial,Service,Train station,Barn,Stable,Cabin,Farm auxiliary,Transportation,Greenhouse,Office,University,College,Hospital,Kindergarten,Manufacture,Warehouse,Retail,Shed,Storage tank,Supermarket,Gasometer,Cowshed,Construction,Basilica,Cathedral,Chapel,Church,Temple,Mosque,Synagogue,Transformer tower,Public,Ruins"
+				values="yes,residential,detached,terrace,bungalow,hut,roof,garages,school,dormitory,hotel,hangar,commercial,service,train_station,barn,stable,cabin,farm,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,kindergarten,manufacture,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction,basilica,cathedral,chapel,church,temple,mosque,synagogue,transformer_tower,public,ruins"
+				display_values="Yes,Residential,Detached,Terrace,Bungalow,Hut,Roof,Garages,School,Dormitory,Hotel,Hangar,Commercial,Service,Train station,Barn,Stable,Cabin,Farm,Farm auxiliary,Transportation,Greenhouse,Office,University,College,Hospital,Kindergarten,Manufacture,Warehouse,Retail,Shed,Storage tank,Supermarket,Gasometer,Cowshed,Construction,Basilica,Cathedral,Chapel,Church,Temple,Mosque,Synagogue,Transformer tower,Public,Ruins"
 				values_context="building" default="yes" match="keyvalue!"
 				values_searchable="true" />
 			<reference ref="additional_building_tags" />
 			<preset_link preset_name="Address" />
 		</item> <!-- Building -->
-		<item name="Residential Building" icon="man_made_house_sp.png"
-			type="node,closedway,multipolygon" preset_name_label="true">
-			<link href="http://wiki.openstreetmap.org/wiki/Key:building"
-				bg.href="http://wiki.openstreetmap.org/wiki/Bg:Key:building"
-				cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:building"
-				de.href="http://wiki.openstreetmap.org/wiki/DE:Key:building"
-				es.href="http://wiki.openstreetmap.org/wiki/ES:Key:building"
-				fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building"
-				hu.href="http://wiki.openstreetmap.org/wiki/Hu:Key:building"
-				it.href="http://wiki.openstreetmap.org/wiki/IT:Key:building"
-				ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:building"
-				nl.href="http://wiki.openstreetmap.org/wiki/NL:Key:building"
-				no.href="http://wiki.openstreetmap.org/wiki/No:Key:building"
-				pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:building"
-				pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:building"
-				ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building"
-				uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building" />
-			<space />
-			<combo key="building" text="Building"
-				values="residential,apartments,house,hotel,hut,bungalow,dormitory,terrace,detached,farm"
-				display_values="Residential,Apartments,House,Hotel,Hut,Bungalow,Dormitory,Terrace,Detached,Farm"
-				default="residential" match="keyvalue!" values_context="building"
-				values_searchable="true" />
-			<reference ref="additional_building_tags" />
-			<preset_link preset_name="Address" />
-		</item> <!-- Residential Building -->
+        <item name="Apartments" icon="man_made_apartments.png"
+            type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:building"
+                bg.href="http://wiki.openstreetmap.org/wiki/Bg:Key:building"
+                cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:building"
+                de.href="http://wiki.openstreetmap.org/wiki/DE:Key:building"
+                es.href="http://wiki.openstreetmap.org/wiki/ES:Key:building"
+                fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building"
+                hu.href="http://wiki.openstreetmap.org/wiki/Hu:Key:building"
+                it.href="http://wiki.openstreetmap.org/wiki/IT:Key:building"
+                ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:building"
+                nl.href="http://wiki.openstreetmap.org/wiki/NL:Key:building"
+                no.href="http://wiki.openstreetmap.org/wiki/No:Key:building"
+                pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:building"
+                pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:building"
+                ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building"
+                uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building" />
+            <space />
+            <key key="building" text="Apartments" value="apartments" values_context="building" />
+            <reference ref="additional_building_tags" />
+            <preset_link preset_name="Address" />
+        </item> <!-- Apartments -->
+        <item name="House" icon="man_made_house_sp.png"
+            type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:building"
+                bg.href="http://wiki.openstreetmap.org/wiki/Bg:Key:building"
+                cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:building"
+                de.href="http://wiki.openstreetmap.org/wiki/DE:Key:building"
+                es.href="http://wiki.openstreetmap.org/wiki/ES:Key:building"
+                fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building"
+                hu.href="http://wiki.openstreetmap.org/wiki/Hu:Key:building"
+                it.href="http://wiki.openstreetmap.org/wiki/IT:Key:building"
+                ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:building"
+                nl.href="http://wiki.openstreetmap.org/wiki/NL:Key:building"
+                no.href="http://wiki.openstreetmap.org/wiki/No:Key:building"
+                pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:building"
+                pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:building"
+                ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building"
+                uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building" />
+            <space />
+            <key key="building" text="House" value="house" values_context="building" />
+            <reference ref="additional_building_tags" />
+            <preset_link preset_name="Address" />
+        </item> <!-- House -->
+        <item name="Garage" icon="man_made_garage.png"
+            type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:building"
+                bg.href="http://wiki.openstreetmap.org/wiki/Bg:Key:building"
+                cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:building"
+                de.href="http://wiki.openstreetmap.org/wiki/DE:Key:building"
+                es.href="http://wiki.openstreetmap.org/wiki/ES:Key:building"
+                fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building"
+                hu.href="http://wiki.openstreetmap.org/wiki/Hu:Key:building"
+                it.href="http://wiki.openstreetmap.org/wiki/IT:Key:building"
+                ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:building"
+                nl.href="http://wiki.openstreetmap.org/wiki/NL:Key:building"
+                no.href="http://wiki.openstreetmap.org/wiki/No:Key:building"
+                pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:building"
+                pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:building"
+                ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building"
+                uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building" />
+            <space />
+            <key key="building" text="Garage" value="garage" values_context="building" />
+            <reference ref="additional_building_tags" />
+            <preset_link preset_name="Address" />
+        </item> <!-- House -->
+        <item name="Industrial" icon="man_made_works_22087.png"
+            type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:building"
+                bg.href="http://wiki.openstreetmap.org/wiki/Bg:Key:building"
+                cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:building"
+                de.href="http://wiki.openstreetmap.org/wiki/DE:Key:building"
+                es.href="http://wiki.openstreetmap.org/wiki/ES:Key:building"
+                fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building"
+                hu.href="http://wiki.openstreetmap.org/wiki/Hu:Key:building"
+                it.href="http://wiki.openstreetmap.org/wiki/IT:Key:building"
+                ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:building"
+                nl.href="http://wiki.openstreetmap.org/wiki/NL:Key:building"
+                no.href="http://wiki.openstreetmap.org/wiki/No:Key:building"
+                pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:building"
+                pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:building"
+                ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building"
+                uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building" />
+            <space />
+            <key key="building" text="Industrial" value="industrial" values_context="building" />
+            <reference ref="additional_building_tags" />
+            <preset_link preset_name="Address" />
+        </item> <!-- Industrial -->
 		<item name="Building part" icon="styles/standard/misc/landmark/building.png"
 			type="closedway,multipolygon" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Key:building:part"
