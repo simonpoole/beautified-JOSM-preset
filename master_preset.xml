@@ -3847,7 +3847,7 @@
                 </checkgroup>
                 <space />
                 <label text="Additives:" />
-                <check key="fuel:adblue" text="Diesel Exhaust Fluid (AdBlue/AUS32)" />
+                <check key="fuel:adblue" text="Diesel Exhaust Fluid (AdBlue/AUS32)" disable_off="true" />
                 <space />
                 <label text="Fuel cards:" />
                 <checkgroup columns="3">
