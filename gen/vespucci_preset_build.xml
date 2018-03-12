@@ -43,9 +43,9 @@
         <combo key="lanes:psv" text="PSV Lanes" values="1,2,3,4,5,6" length="3" match="none" />
         <combo key="lanes:psv:forward" text="PSV Lanes →" long_text="Number of PSV lanes in way direction" values="1,2,3,4,5" length="3" match="none" />
         <combo key="lanes:psv:backward" text="PSV Lanes ←" long_text="Number of PSV lanes opposite way direction" values="1,2,3,4,5" length="3" match="none" />
-        <combo key="lanes:bus" text="BUS Lanes" values="1,2,3,4,5,6" length="3" match="none" />
-        <combo key="lanes:bus:forward" text="BUS Lanes →" long_text="Number of bus lanes in way direction" values="1,2,3,4,5" length="3" match="none" />
-        <combo key="lanes:bus:backward" text="BUS Lanes ←" long_text="Number of bus lanes opposite way direction" values="1,2,3,4,5" length="3" match="none" />
+        <combo key="lanes:bus" text="Bus lanes" values="1,2,3,4,5,6" length="3" match="none" />
+        <combo key="lanes:bus:forward" text="Bus lanes →" long_text="Number of bus lanes in way direction" values="1,2,3,4,5" length="3" match="none" />
+        <combo key="lanes:bus:backward" text="Bus lanes ←" long_text="Number of bus lanes opposite way direction" values="1,2,3,4,5" length="3" match="none" />
     </chunk>
     <chunk id="maxspeed">
         <text key="maxspeed" text="Max speed" long_text="Maximum speed specified in km/h" />
