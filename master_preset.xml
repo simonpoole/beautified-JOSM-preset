@@ -483,13 +483,13 @@
         <text key="taxon" text="Taxon" />
     </chunk>
     <chunk id="leaf">
-        <combo key="leaf_type" text="Type" values="broadleaved,needleleaved,mixed,leafless" values_searchable="true" />
+        <combo key="leaf_type" text="Type" values="broadleaved,needleleaved,mixed,leafless" display_values="Broadleaved,Needleleaved,Mixed,Leafless" values_searchable="true" />
         <combo key="leaf_cycle" text="Cycle" values_searchable="true" >
-            <list_entry value="deciduous" short_description="Plants that are leafless for a certain period during the year." />
-            <list_entry value="evergreen" short_description="Plants that are never entirely without green foliage." />
-            <list_entry value="semi_deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting." />
-            <list_entry value="semi_evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year." />
-            <list_entry value="mixed" short_description="Habitat with evergreen and deciduous vegetation." />
+            <list_entry value="deciduous" display_value="Deciduous" short_description="Plants that are leafless for a certain period during the year." />
+            <list_entry value="evergreen" display_value="Evergreen" short_description="Plants that are never entirely without green foliage." />
+            <list_entry value="semi_deciduous" display_value="Semi deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting." />
+            <list_entry value="semi_evergreen" display_value="Semi evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year." />
+            <list_entry value="mixed" display_value="Mixed" short_description="Habitat with evergreen and deciduous vegetation." />
         </combo>
     </chunk>
     <chunk id="religious">
@@ -11830,6 +11830,8 @@
 			<combo key="reef" text="Type" values="coral,oyster,rock,sand" />
 		</item> <!-- Reef -->
     </group> <!-- Geography -->
+  </group> <!-- Geography -->
+  <group name="Land use and nature" icon="${ICONPATH}landuse_coniferous_and_deciduous.${ICONTYPE}">
     <group name="Nature" icon="${ICONPATH}landuse_coniferous_and_deciduous.${ICONTYPE}">
         <item name="Tree" icon="${ICONPATH}natural_tree_24020.${ICONTYPE}" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=tree"
@@ -12547,7 +12549,7 @@
             <reference ref="name_operator" />
         </item> <!-- Quarry -->
     </group> <!-- Landuse -->
-  </group> <!-- Geography -->
+  </group> <!-- Nature and land use -->
   <group name="Addresses and Contact" icon="${ICONPATH}osm_housenumber_sp.${ICONTYPE}">
       <item name="Name" icon="${ICONPATH}osm_name_sp.${ICONTYPE}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:name"
