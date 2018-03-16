@@ -288,6 +288,14 @@
         <text key="operator" text="Operator"/>
         <reference ref="oh_wheelchair"/>
     </chunk>
+    <chunk id="optional_name_brand_operator_oh_wheelchair">
+        <optional>
+            <text key="name" text="Name"/>
+            <text key="brand" text="Brand"/>
+            <text key="operator" text="Operator"/>
+        </optional>
+        <reference ref="oh_wheelchair"/>
+    </chunk>
     <chunk id="name_brand_operator_oh_wheelchair_level">
 		<reference ref="name_brand_operator_oh_wheelchair"/>
 		<reference ref="level"/>
@@ -473,13 +481,13 @@
         <text key="taxon" text="Taxon"/>
     </chunk>
     <chunk id="leaf">
-        <combo key="leaf_type" text="Type" values="broadleaved,needleleaved,mixed,leafless" values_searchable="true"/>
+        <combo key="leaf_type" text="Type" values="broadleaved,needleleaved,mixed,leafless" display_values="Broadleaved,Needleleaved,Mixed,Leafless" values_searchable="true"/>
         <combo key="leaf_cycle" text="Cycle" values_searchable="true">
-            <list_entry value="deciduous" short_description="Plants that are leafless for a certain period during the year."/>
-            <list_entry value="evergreen" short_description="Plants that are never entirely without green foliage."/>
-            <list_entry value="semi_deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting."/>
-            <list_entry value="semi_evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year."/>
-            <list_entry value="mixed" short_description="Habitat with evergreen and deciduous vegetation."/>
+            <list_entry value="deciduous" display_value="Deciduous" short_description="Plants that are leafless for a certain period during the year."/>
+            <list_entry value="evergreen" display_value="Evergreen" short_description="Plants that are never entirely without green foliage."/>
+            <list_entry value="semi_deciduous" display_value="Semi deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting."/>
+            <list_entry value="semi_evergreen" display_value="Semi evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year."/>
+            <list_entry value="mixed" display_value="Mixed" short_description="Habitat with evergreen and deciduous vegetation."/>
         </combo>
     </chunk>
     <chunk id="religious">
@@ -2603,7 +2611,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=car_wash" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=car_wash" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=car_wash" el.href="http://wiki.openstreetmap.org/wiki/El:Tag:amenity=car_wash" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=car_wash" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=car_wash" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=car_wash" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=car_wash" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=car_wash" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=car_wash"/>
             <space/>
             <key key="amenity" value="car_wash"/>
-            <reference ref="name_brand_operator_oh_wheelchair"/>
+            <reference ref="optional_name_brand_operator_oh_wheelchair"/>
             <check key="self_service" text="Self service" disable_off="true"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Wash -->
@@ -4626,7 +4634,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=shelter" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=shelter" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=shelter" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=shelter" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=shelter" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=shelter" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=shelter" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=shelter" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=shelter" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=shelter"/>
             <space/>
             <key key="amenity" value="shelter"/>
-            <text key="name" text="Name"/>
+            <reference ref="optional_name"/>
             <check key="fireplace" text="Fireplace" disable_off="true"/>
             <combo key="shelter_type" text="Type of shelter" values_context="shelter" values_searchable="true">
 				<list_entry value="basic_hut" short_description="Basic hut" icon="presets/accommodation/basic_hut_blue.png"/>
@@ -6243,7 +6251,7 @@
          <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=wayside_shrine" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:historic=wayside_shrine" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=wayside_shrine" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:historic=wayside_shrine" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:historic=wayside_shrine" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic=wayside_shrine" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic=wayside_shrine" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:historic=wayside_shrine" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:historic=wayside_shrine"/>
          <space/>
          <key key="historic" value="wayside_shrine"/>
-         <text key="name" text="Name"/>
+         <reference ref="optional_name"/>
          <reference ref="religious"/>
          <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
          <combo key="building" text="Building" values="wayside_shrine" values_context="building"/>
@@ -7525,6 +7533,8 @@
 			<combo key="reef" text="Type" values="coral,oyster,rock,sand"/>
 		</item> <!-- Reef -->
     </group> <!-- Geography -->
+  </group> <!-- Geography -->
+  <group name="Land use and nature" icon="landuse_coniferous_and_deciduous.png">
     <group name="Nature" icon="landuse_coniferous_and_deciduous.png">
         <item name="Tree" icon="natural_tree_24020.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=tree" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:natural=tree" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:natural=tree" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:natural=tree" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:natural=tree" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:natural=tree" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:natural=tree" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:natural=tree" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:natural=tree" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:natural=tree" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:natural=tree" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:natural=tree"/>
@@ -7883,7 +7893,7 @@
             <reference ref="name_operator"/>
         </item> <!-- Quarry -->
     </group> <!-- Landuse -->
-  </group> <!-- Geography -->
+  </group> <!-- Nature and land use -->
   <group name="Addresses and Contact" icon="osm_housenumber_sp.png">
       <item name="Name" icon="osm_name_sp.png" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:name" ar.href="http://wiki.openstreetmap.org/wiki/Ar:Key:name" ca.href="http://wiki.openstreetmap.org/wiki/Ca:Key:name" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:name" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:name" es.href="http://wiki.openstreetmap.org/wiki/ES:Key:name" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Key:name" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:name" it.href="http://wiki.openstreetmap.org/wiki/IT:Key:name" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:name" nl.href="http://wiki.openstreetmap.org/wiki/NL:Key:name" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:name" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:name" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:name" sv.href="http://wiki.openstreetmap.org/wiki/Sv:Key:name" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:name" zh_CN.href="http://wiki.openstreetmap.org/wiki/Zh-hans:Key:name" zh_TW.href="http://wiki.openstreetmap.org/wiki/Zh-hant:Key:name"/>

@@ -295,6 +295,14 @@
         <text key="operator" text="Operator" />
         <reference ref="oh_wheelchair" />
     </chunk>
+    <chunk id="optional_name_brand_operator_oh_wheelchair">
+        <optional>
+            <text key="name" text="Name" />
+            <text key="brand" text="Brand" />
+            <text key="operator" text="Operator" />
+        </optional>
+        <reference ref="oh_wheelchair" />
+    </chunk>
     <chunk id="name_brand_operator_oh_wheelchair_level">
 		<reference ref="name_brand_operator_oh_wheelchair" />
 		<reference ref="level" />
@@ -483,13 +491,13 @@
         <text key="taxon" text="Taxon" />
     </chunk>
     <chunk id="leaf">
-        <combo key="leaf_type" text="Type" values="broadleaved,needleleaved,mixed,leafless" values_searchable="true" />
+        <combo key="leaf_type" text="Type" values="broadleaved,needleleaved,mixed,leafless" display_values="Broadleaved,Needleleaved,Mixed,Leafless" values_searchable="true" />
         <combo key="leaf_cycle" text="Cycle" values_searchable="true" >
-            <list_entry value="deciduous" short_description="Plants that are leafless for a certain period during the year." />
-            <list_entry value="evergreen" short_description="Plants that are never entirely without green foliage." />
-            <list_entry value="semi_deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting." />
-            <list_entry value="semi_evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year." />
-            <list_entry value="mixed" short_description="Habitat with evergreen and deciduous vegetation." />
+            <list_entry value="deciduous" display_value="Deciduous" short_description="Plants that are leafless for a certain period during the year." />
+            <list_entry value="evergreen" display_value="Evergreen" short_description="Plants that are never entirely without green foliage." />
+            <list_entry value="semi_deciduous" display_value="Semi deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting." />
+            <list_entry value="semi_evergreen" display_value="Semi evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year." />
+            <list_entry value="mixed" display_value="Mixed" short_description="Habitat with evergreen and deciduous vegetation." />
         </combo>
     </chunk>
     <chunk id="religious">
@@ -3928,7 +3936,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=car_wash" />
             <space />
             <key key="amenity" value="car_wash" />
-            <reference ref="name_brand_operator_oh_wheelchair" />
+            <reference ref="optional_name_brand_operator_oh_wheelchair" />
             <check key="self_service" text="Self service" disable_off="true" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Wash -->
@@ -7200,7 +7208,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=shelter" />
             <space />
             <key key="amenity" value="shelter" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name" />
             <check key="fireplace" text="Fireplace" disable_off="true" />
             <combo key="shelter_type" text="Type of shelter" values_context="shelter" values_searchable="true">
 				<list_entry value="basic_hut" short_description="Basic hut" icon="presets/accommodation/basic_hut_blue.png" />
@@ -9617,7 +9625,7 @@
                ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:historic=wayside_shrine" />
          <space />
          <key key="historic" value="wayside_shrine" />
-         <text key="name" text="Name" />
+         <reference ref="optional_name" />
          <reference ref="religious" />
          <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true" />
          <combo key="building" text="Building" values="wayside_shrine" values_context="building" />
@@ -11830,6 +11838,8 @@
 			<combo key="reef" text="Type" values="coral,oyster,rock,sand" />
 		</item> <!-- Reef -->
     </group> <!-- Geography -->
+  </group> <!-- Geography -->
+  <group name="Land use and nature" icon="icons/png/landuse_coniferous_and_deciduous.png">
     <group name="Nature" icon="icons/png/landuse_coniferous_and_deciduous.png">
         <item name="Tree" icon="icons/png/natural_tree_24020.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:natural=tree"
@@ -12547,7 +12557,7 @@
             <reference ref="name_operator" />
         </item> <!-- Quarry -->
     </group> <!-- Landuse -->
-  </group> <!-- Geography -->
+  </group> <!-- Nature and land use -->
   <group name="Addresses and Contact" icon="icons/png/osm_housenumber_sp.png">
       <item name="Name" icon="icons/png/osm_name_sp.png" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:name"
