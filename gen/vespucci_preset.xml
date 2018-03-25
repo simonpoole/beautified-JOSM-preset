@@ -70,19 +70,30 @@
     <chunk id="layer" >
     	<combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" match="none" editable="true" />
     </chunk>
+    <chunk id="tunnel">
+        <combo key="tunnel" text="Tunnel" values="yes,building_passage" 
+            display_values="Yes,Building passage," values_sort="false" match="key" />
+            <optional>
+                <reference ref="name_layer" />
+                <text key="width" text="Width (meters)" />
+                <text key="maxheight" text="Max. height (meters)" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <reference ref="incline" />
+            </optional>
+    </chunk>
     <chunk id="highway_yesno_incline">
         <check key="bridge" text="Bridge" disable_off="true" />
-        <check key="tunnel" text="Tunnel" disable_off="true" />
+        <reference ref="tunnel" />
         <reference ref="layer" />
         <check key="cutting" text="Cutting" disable_off="true" />
         <check key="embankment" text="Embankment" disable_off="true" />
         <reference ref="incline" />
         <check key="noexit" text="No exit (cul-de-sac)" disable_off="true" />
-    	<combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes,Both directions,In way direction,Opposite to way direction,No" values_sort="false" values_context="overtaking" match="key" />
     </chunk>
     <chunk id="highway_yesno_incline_oneway">
         <check key="oneway" text="Oneway" disable_off="true" />
         <reference ref="highway_yesno_incline" />
+        <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes,Both directions,In way direction,Opposite to way direction,No" values_sort="false" values_context="overtaking" match="key" />
     </chunk>
     <chunk id="highway_yesno_incline_oneway_lit">
         <reference ref="highway_yesno_incline_oneway" />
@@ -1680,6 +1691,8 @@
                 <check key="segregated" text="Segregated" disable_off="true" />
  	            <text key="width" text="Width (meters)" />
             </optional>
+            <preset_link preset_name="Arcade" />
+            <preset_link preset_name="Colonnade" />
         </item> <!-- Dedicated Footway -->
         <item name="Steps" icon="barrier_steps.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=steps"
@@ -1723,6 +1736,8 @@
                 <space />
                 <reference ref="highway_yesno_incline_oneway_lit_width" />
             </optional>
+            <preset_link preset_name="Arcade" />
+            <preset_link preset_name="Colonnade" />
         </item> <!-- Steps -->
     </group> <!-- Ways -->
     <group name="Waypoints" icon="highway_way_point_sp.png">
@@ -2524,7 +2539,7 @@
                   pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:tunnel"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:tunnel"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:tunnel" />
-            <key key="tunnel" value="building_passage" />
+            <key key="tunnel" value="building_passage" match="none" />
             <optional>
                 <reference ref="name_layer" />
                 <text key="width" text="Width (meters)" />
@@ -2544,9 +2559,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:covered" 
                   uk.href="http://wiki.openstreetmap.org/wiki/UK:Key:covered" />
             <space />
-            <key key="covered" value="arcade" />
-            <check key="arcade:left" value_on="open" text="Open on left side" disable_off="true" />
-            <check key="arcade:right" value_on="open" text="Open on right side" disable_off="true" />
+            <key key="covered" value="arcade" match="none" />
+            <check key="arcade:left" value_on="open" text="Open on left side" disable_off="true" match="none" />
+            <check key="arcade:right" value_on="open" text="Open on right side" disable_off="true" match="none" />
             <optional>
                 <reference ref="name_layer" />
                 <text key="width" text="Width (meters)" />
@@ -2561,9 +2576,9 @@
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:covered"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:covered" />
             <space />
-            <key key="covered" value="colonnade" />
-            <check key="colonnade:left" value_on="open" text="Open on left side" disable_off="true" />
-            <check key="colonnade:right" value_on="open" text="Open on right side" disable_off="true" />
+            <key key="covered" value="colonnade" match="none" />
+            <check key="colonnade:left" value_on="open" text="Open on left side" disable_off="true" match="none" />
+            <check key="colonnade:right" value_on="open" text="Open on right side" disable_off="true" match="none" />
             <optional>
                 <reference ref="name_layer" />
                 <text key="width" text="Width (meters)" />
@@ -2580,9 +2595,9 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:tunnel"
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:tunnel" />
             <space />
-            <key key="tunnel" value="avalanche_protector" />
-            <check key="avalanche_protector:left" value_on="open" text="Open on left side" disable_off="true" />
-            <check key="avalanche_protector:right" value_on="open" text="Open on right side" disable_off="true" />
+            <key key="tunnel" value="avalanche_protector" match="none" />
+            <check key="avalanche_protector:left" value_on="open" text="Open on left side" disable_off="true" match="none" />
+            <check key="avalanche_protector:right" value_on="open" text="Open on right side" disable_off="true" match="none" />
             <optional>
                 <reference ref="name_layer" />
                 <text key="width" text="Width (meters)" />
