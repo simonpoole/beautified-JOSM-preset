@@ -8434,7 +8434,8 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=tower" />
             <space />
             <key key="man_made" value="tower" />
-            <combo key="tower:type" text="Tower type" values="communication,observation" editable="true" match="key" />
+            <combo key="tower:type" text="Tower type" values="communication,observation,bell_tower,cooling" 
+                display_values="Communication,Observation,Bell tower,Cooling" editable="true" match="key" />
             <optional>
             	<text key="name" text="Name" />
                 <text key="height" text="Height (meters)" />
@@ -8451,7 +8452,8 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=mast" />
             <space />
             <key key="man_made" value="mast" />
-            <combo key="tower:type" text="Tower type" values="communication,observation" editable="true" match="key" />
+            <combo key="tower:type" text="Tower type" values="communication,observation,lighting" 
+                display_values="Communication,Observation,Lighting" editable="true" match="key" />
             <optional>
             	<text key="name" text="Name" />
                 <text key="height" text="Height (meters)" />
