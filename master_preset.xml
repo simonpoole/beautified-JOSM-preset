@@ -2559,7 +2559,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:covered" 
                   uk.href="http://wiki.openstreetmap.org/wiki/UK:Key:covered" />
             <space />
-            <key key="covered" value="arcade" match="none" />
+            <key key="covered" text="Covered" value="arcade" match="none" />
             <check key="arcade:left" value_on="open" text="Open on left side" disable_off="true" match="none" />
             <check key="arcade:right" value_on="open" text="Open on right side" disable_off="true" match="none" />
             <optional>
@@ -2576,7 +2576,7 @@
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:covered"
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:covered" />
             <space />
-            <key key="covered" value="colonnade" match="none" />
+            <key key="covered" text="Covered" value="colonnade" match="none" />
             <check key="colonnade:left" value_on="open" text="Open on left side" disable_off="true" match="none" />
             <check key="colonnade:right" value_on="open" text="Open on right side" disable_off="true" match="none" />
             <optional>
