@@ -11039,6 +11039,22 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Hardware -->
+        <item name="Trade supplies" icon="shopping_trade_29143.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=trade"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=trade"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=trade"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=trade"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:shop=trade"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=trade"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=trade"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=trade" />
+            <space />
+            <key key="shop" value="trade" />
+            <combo key="trade" text="Trade" values="building_supplies,plumbing,timber,agricultural_supplies,tiles,windows" 
+                display_values="Building supplies,Plumbing,Timber,Agricultural supplies,Tiles,Windows" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Trade supplies -->
         <item name="Gas" icon="shopping_gas_29070.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=gas"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=gas"
