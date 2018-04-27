@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2018-03-31 22:33+0200\n"
-"PO-Revision-Date: 2018-03-31 20:34+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"PO-Revision-Date: 2018-04-18 15:50+0000\n"
+"Last-Translator: Gábor Babos <gabor.babos@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/openstreetmap/presets/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -273,7 +273,7 @@ msgstr "Belépőjegy"
 
 #: master_preset.xml:5618(item:name|group:Leisure|preset:Adult_gaming_centre)
 msgid "Adult gaming centre"
-msgstr ""
+msgstr "Játékterem (csak felnőtteknek)"
 
 #: master_preset.xml:7391(item:name|group:Facilities|preset:Advertising_Column)
 msgid "Advertising Column"
@@ -311,7 +311,7 @@ msgstr "Mezőgazdaságigép-gyártó"
 
 #: master_preset.xml:11054(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Agricultural supplies"
-msgstr ""
+msgstr "Mezőgazdasági anyagok"
 
 #: master_preset.xml:7490(list_entry:short_description|group:Sport_Facilities|preset:Dojo|value:aikido)
 msgid "Aikido"
@@ -423,7 +423,7 @@ msgstr "Kétéltű"
 
 #: master_preset.xml:5605(item:name|group:Leisure|preset:Amusement_arcade)
 msgid "Amusement arcade"
-msgstr ""
+msgstr "Játékterem (kiskorúaknak is)"
 
 #: master_preset.xml:5362(item:name|group:Leisure|preset:Amusement/Theme_Park)
 msgid "Amusement/Theme Park"
@@ -828,7 +828,7 @@ msgstr "Sörkert"
 
 #: master_preset.xml:8480(combo:display_values|group:Man_Made|preset:Tower|key:tower:type)
 msgid "Bell tower"
-msgstr ""
+msgstr "Harangtorony"
 
 #: master_preset.xml:4304(check:text|group:Public_Transport|preset:Platform|key:bench)
 #: master_preset.xml:4495(check:text|group:Public_Transport_(Legacy)|preset:Bus_Stop|key:bench)
@@ -1178,11 +1178,11 @@ msgstr "Épületrész"
 
 #: master_preset.xml:75(combo:display_values|key:tunnel)
 msgid "Building passage"
-msgstr ""
+msgstr "Épület alatti átjáró"
 
 #: master_preset.xml:11054(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Building supplies"
-msgstr ""
+msgstr "Építőanyag (tüzép)"
 
 #: master_preset.xml:5944(combo:text|group:Place_of_Worship|preset:Church|key:building)
 #: master_preset.xml:5971(combo:text|group:Place_of_Worship|preset:Mosque|key:building)
@@ -1708,7 +1708,7 @@ msgstr "Közismert rövidítés"
 #: master_preset.xml:8480(combo:display_values|group:Man_Made|preset:Tower|key:tower:type)
 #: master_preset.xml:8498(combo:display_values|group:Man_Made|preset:Mast|key:tower:type)
 msgid "Communication"
-msgstr ""
+msgstr "Távközlés"
 
 #: master_preset.xml:6120(item:name|group:Public_Building|preset:Community_Centre)
 #: master_preset.xml:6130(label:text|group:Public_Building|preset:Community_Centre)
@@ -1825,7 +1825,7 @@ msgstr "Sütőolaj"
 
 #: master_preset.xml:8480(combo:display_values|group:Man_Made|preset:Tower|key:tower:type)
 msgid "Cooling"
-msgstr ""
+msgstr "Hűtőtorony"
 
 #: master_preset.xml:14256(item:name|group:Offices|preset:Cooperative)
 msgid "Cooperative"
@@ -4026,7 +4026,7 @@ msgstr "Világítótorony"
 
 #: master_preset.xml:8498(combo:display_values|group:Man_Made|preset:Mast|key:tower:type)
 msgid "Lighting"
-msgstr ""
+msgstr "Reflektoroszlop"
 
 #: master_preset.xml:7771(combo:display_values|group:Sport|preset:Climbing|key:climbing:rock)
 msgid "Limestone"
@@ -5298,7 +5298,7 @@ msgstr "Étrend-kiegészítők"
 #: master_preset.xml:8480(combo:display_values|group:Man_Made|preset:Tower|key:tower:type)
 #: master_preset.xml:8498(combo:display_values|group:Man_Made|preset:Mast|key:tower:type)
 msgid "Observation"
-msgstr ""
+msgstr "Kilátótorony"
 
 #: master_preset.xml:5785(list_entry:display_value|group:Culture|preset:Music_theatres|value:philharmonic)
 msgid "Ochestral music"
@@ -6044,7 +6044,7 @@ msgstr "Vízvezeték-szerelő"
 
 #: master_preset.xml:11054(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Plumbing"
-msgstr ""
+msgstr "Vízvezeték-szerelési anyagok"
 
 #: master_preset.xml:6716(text:text|group:Emergency|preset:Emergency_Access_Point|key:name)
 msgid "Point Name"
@@ -7368,7 +7368,7 @@ msgstr "Mutatja a légnyomást"
 
 #: master_preset.xml:7073(check:text|group:Facilities|preset:Clock|key:date)
 msgid "Shows current date"
-msgstr "A jelenlegi dátumot mutatja"
+msgstr "Mutatja a jelenlegi dátumot"
 
 #: master_preset.xml:7076(check:text|group:Facilities|preset:Clock|key:hygrometer)
 msgid "Shows humidity"
@@ -8124,11 +8124,11 @@ msgstr "Burkoló"
 
 #: master_preset.xml:11054(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Tiles"
-msgstr ""
+msgstr "Burkolóanyagok"
 
 #: master_preset.xml:11054(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Timber"
-msgstr ""
+msgstr "Faanyagok"
 
 #: master_preset.xml:13249(text:text|preset:Destination_Sign|key:time)
 msgid "Time (hh:mm, for trekking)"
@@ -8257,11 +8257,11 @@ msgstr "Földút típusa"
 
 #: master_preset.xml:11054(combo:text|group:Other|preset:Trade_supplies|key:trade)
 msgid "Trade"
-msgstr ""
+msgstr "Szakmaterület"
 
 #: master_preset.xml:11042(item:name|group:Other|preset:Trade_supplies)
 msgid "Trade supplies"
-msgstr ""
+msgstr "Szakáruház"
 
 #: master_preset.xml:375(list_entry:short_description|value:traditional)
 #: master_preset.xml:7766(check:text|group:Sport|preset:Climbing|key:climbing:trad)
@@ -9079,7 +9079,7 @@ msgstr "Ablakkészítő"
 
 #: master_preset.xml:11054(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Windows"
-msgstr ""
+msgstr "Nyílászárók"
 
 #: master_preset.xml:4639(item:name|group:Airport|preset:Windsock)
 msgid "Windsock"
@@ -9206,7 +9206,7 @@ msgstr "bármi, ami az utcához kötődik"
 
 #: master_preset.xml:7072(combo:display_values|group:Facilities|preset:Clock|key:visibility)
 msgid "area (more than 20m)"
-msgstr "terület (több mint 20 m)"
+msgstr "3) terület (több mint 20 méterről)"
 
 #: master_preset.xml:4408(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:backward_stop)
 msgid "backward halt point"
@@ -9374,7 +9374,7 @@ msgstr "ház"
 
 #: master_preset.xml:7072(combo:display_values|group:Facilities|preset:Clock|key:visibility)
 msgid "house (up to 5m)"
-msgstr "ház (legfeljebb 5 m)"
+msgstr "1) sétálók (legfeljebb 5 m-ről)"
 
 #: master_preset.xml:13232(role:text|preset:Street|key:house)
 msgid "houses belonging to the street"
@@ -9543,7 +9543,7 @@ msgstr "utca"
 
 #: master_preset.xml:7072(combo:display_values|group:Facilities|preset:Clock|key:visibility)
 msgid "street (up to 20m)"
-msgstr "utca (legfeljebb 20 m)"
+msgstr "2) utca (5–20 m távolságból)"
 
 #: master_preset.xml:9151(list_entry:short_description|group:Power_Generator|preset:Solar_Power_Generator|value:steam_turbine)
 msgid "thermal"
