@@ -8807,6 +8807,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=watermill" />
             <space />
             <key key="man_made" value="watermill" />
+            <reference ref="optional_name" />
             <optional>
             	<text key="name" text="Name" />
             </optional>
@@ -8820,9 +8821,20 @@
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_made=pumping_station" />
             <space />
             <key key="man_made" value="pumping_station" />
-            <optional>
-            	<text key="name" text="Name" />
-            </optional>
+            <reference ref="optional_name" />
+        </item> <!-- Pumping station -->
+        <item name="Dyke" icon="${ICONPATH}man_made_dyke_22021.${ICONTYPE}" type="way" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=dyke"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:man_madedyke"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:man_made=dyke"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:man_made=dyke"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:man_made=dyke"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:man_madedyke"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:man_madedyke"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_madedyke" />
+            <space />
+            <key key="man_made" value="dyke" />
+            <reference ref="optional_name" />
         </item> <!-- Pumping station -->
         <item name="Fountain" icon="${ICONPATH}amenity_fountain2.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=fountain"
