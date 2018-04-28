@@ -5315,6 +5315,7 @@
             <reference ref="name_operator_oh_wheelchair" />
             <reference ref="facility_access" />
         </item> <!-- Bandstand -->
+        <separator/>
         <item name="Zoo" icon="${ICONPATH}tourist_zoo.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=zoo"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=zoo"
@@ -5349,27 +5350,112 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Aquarium -->
-        <item name="Dog Park" icon="${ICONPATH}landuse_dog_park_21007.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dog_park"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dog_park"
-                  da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:leisure=dog_park"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=dog_park"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=dog_park"
-                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:leisure=dog_park"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=dog_park"
-                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:leisure=dog_park"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=dog_park"
-                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=dog_park"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=dog_park"
-                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:leisure=dog_park" />
+        <item name="Animals" icon="${ICONPATH}tourist_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:attraction=animal"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:attraction=animal"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:attraction=animal"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:attraction=animal"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:attraction=animal" />
             <space />
-            <key key="leisure" value="dog_park" />
-            <reference ref="optional_name" />
-            <check key="area" text="Area" disable_off="true" match="none"/>
-            <combo key="barrier" text="Barrier" values="fence,wall" />
-            <reference ref="oh_wheelchair" />
-            <check key="lit" text="Lit" disable_off="true" />
-        </item> <!-- Dog Park -->
+            <key key="attraction" value="animal" />
+            <multiselect key="animal" text="Animal" values_searchable="true">
+                <list_entry value="alpaca" display_value="Alpaca" />
+                <list_entry value="anteater" display_value="Anteater" />
+                <list_entry value="antilope" display_value="Antilope" />
+                <list_entry value="artic_fox" display_value="Artic fox" />
+                <list_entry value="baboon" display_value="Baboon" />
+                <list_entry value="bat" display_value="Bat" />
+                <list_entry value="bear" display_value="Bear" />
+                <list_entry value="beaver" display_value="Beaver" />
+                <list_entry value="bison" display_value="Bison" />
+                <list_entry value="boar" display_value="Boar" />
+                <list_entry value="brown_bear" display_value="Brown bear" />
+                <list_entry value="buffalo" display_value="Buffalo" />
+                <list_entry value="butterfly" display_value="Butterfly" />
+                <list_entry value="camel" display_value="Camel" />
+                <list_entry value="cheetah" display_value="Cheetah" />
+                <list_entry value="chimpanzee" display_value="Chimpanzee" />
+                <list_entry value="crocodile" display_value="Crocodile" />
+                <list_entry value="deer" display_value="Deer" />
+                <list_entry value="dolphin" display_value="Dolphin" />
+                <list_entry value="donkey" display_value="Donkey" />
+                <list_entry value="duck" display_value="Duck" />
+                <list_entry value="eagle" display_value="Eagle" />
+                <list_entry value="elephant" display_value="Elephant" />
+                <list_entry value="elk" display_value="Elk" />
+                <list_entry value="emu" display_value="Emu" />
+                <list_entry value="flamingo" display_value="Flamingo" />
+                <list_entry value="fox" display_value="Fox" />
+                <list_entry value="giraffe" display_value="Giraffe" />
+                <list_entry value="goat" display_value="Goat" />
+                <list_entry value="goase" display_value="Goase" />
+                <list_entry value="gorilla" display_value="Gorilla" />
+                <list_entry value="hippopotamus" display_value="Hippopotamus" />
+                <list_entry value="horse" display_value="Horse" />
+                <list_entry value="ibex" display_value="Ibex" />
+                <list_entry value="jaguar" display_value="Jaguar" />
+                <list_entry value="kangaroo" display_value="Kangaroo" />
+                <list_entry value="koala" display_value="Koala" />              
+                <list_entry value="lemur" display_value="Lemur" />
+                <list_entry value="leopard" display_value="Leopard" />
+                <list_entry value="lion" display_value="Lion" />
+                <list_entry value="llama" display_value="Llama" />
+                <list_entry value="lynx" display_value="Lynx" />
+                <list_entry value="mandrill" display_value="Mandrill" />
+                <list_entry value="marmot" display_value="Marmot" />
+                <list_entry value="meerkat" display_value="Meerkat" />
+                <list_entry value="monkey" display_value="Monkey" />
+                <list_entry value="moose" display_value="Moose" />
+                <list_entry value="okapi" display_value="Okapi" />
+                <list_entry value="ostrich" display_value="Ostrich" />
+                <list_entry value="otter" display_value="Otter" />
+                <list_entry value="owl" display_value="Owl" />
+                <list_entry value="ox" display_value="Ox" />
+                <list_entry value="panda" display_value="Panda" />
+                <list_entry value="panther" display_value="Panther" />
+                <list_entry value="parrot" display_value="Parrot" />
+                <list_entry value="peqcock" display_value="Peacock" />
+                <list_entry value="pelican" display_value="Pelican" />
+                <list_entry value="penguin" display_value="Penguin" />
+                <list_entry value="pheasant" display_value="Pheasant" />
+                <list_entry value="pig" display_value="Pig" />
+                <list_entry value="polar_bear" display_value="Polar bear" />
+                <list_entry value="pony" display_value="Pony" />
+                <list_entry value="porcupine" display_value="Porcupine" />
+                <list_entry value="rabbit" display_value="Rabbit" />
+                <list_entry value="raccoon" display_value="Raccoon" />
+                <list_entry value="rhinoceros" display_value="Rhinoceros" />
+                <list_entry value="sea_lion" display_value="Sea lion" />
+                <list_entry value="sea_turtle" display_value="Sea turtle" />
+                <list_entry value="seal" display_value="Seal" />
+                <list_entry value="shark" display_value="Shark" />
+                <list_entry value="sheep" display_value="Sheep" />
+                <list_entry value="skunk" display_value="Skunk" />
+                <list_entry value="snake" display_value="Snake" />
+                <list_entry value="snow_leopard" display_value="Snow leopard" />
+                <list_entry value="tapir" display_value="Tapir" />
+                <list_entry value="tasmanian_devil" display_value="Tasmanian devil" />
+                <list_entry value="termite" display_value="Termite" />
+                <list_entry value="tiger" display_value="Tiger" />
+                <list_entry value="tortoise" display_value="Tortoise" />
+                <list_entry value="turkey" display_value="turkey" />
+                <list_entry value="vulture" display_value="Vulture" />
+                <list_entry value="wapiti" display_value="Wapiti" />
+                <list_entry value="wildcat" display_value="Wildcat" />
+                <list_entry value="wisent" display_value="Wisent" />
+                <list_entry value="wolf" display_value="Wolf" />
+                <list_entry value="yak" display_value="Yak" />
+                <list_entry value="zebra" display_value="Zebra" />
+            </multiselect> 
+            <optional>
+                <text key="species" text="Species" />
+                <reference ref="oh_wheelchair" />
+                <reference ref="toilets_with_access" />
+                <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+                <text key="wikidata" text="Wikidata" value_type="wikidata" />
+            </optional>
+        </item> <!-- Aquarium -->
+        <separator/>
         <item name="Amusement/Theme Park" icon="${ICONPATH}tourist_theme_park.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=theme_park"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=theme_park"
@@ -5385,6 +5471,7 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Amusement/Theme Park -->
+
         <item name="Water Park" icon="${ICONPATH}sport_swimming_indoor.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=water_park"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=water_park"
@@ -5401,6 +5488,43 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Water Park -->
+        <item name="Rides" icon="${ICONPATH}tourist_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Key:attraction"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:attraction"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Key:attraction"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:attraction"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:attraction" />
+            <space />
+            <combo key="attraction" text="Attraction" values_searchable="true">
+                <list_entry value="amusement_ride" display_value="Amusement ride" />
+                <list_entry value="big_wheel" display_value="Big wheel" />
+                <list_entry value="bumper_car" display_value="Bumper car" />
+                <list_entry value="bungee_jumping" display_value="Bungee jumping" />
+                <list_entry value="carousel" display_value="Carousel" />
+                <list_entry value="dark_ride" display_value="Dark ride" />
+                <list_entry value="drop_tower" display_value="Drop tower" />
+                <list_entry value="kiddie_ride" display_value="Kiddie ride" />
+                <list_entry value="log_flume" display_value="Log flume" />
+                <list_entry value="maze" display_value="Maze" />
+                <list_entry value="pirate_ship" display_value="Pirate ship" />
+                <list_entry value="roller_coaster" display_value="Roller coaster" />
+                <list_entry value="slide" display_value="Slide" />
+                <list_entry value="swing" display_value="Swing" />
+                <list_entry value="swing_carousel" display_value="Swing carousel" />
+                <list_entry value="summer_toboggan" display_value="Summer toboggan" />
+                <list_entry value="train" display_value="Train" />              
+                <list_entry value="trampoline" display_value="Trampoline" />
+                <list_entry value="water_slide" display_value="Water slide" />
+           </combo>
+           <optional>
+                <text key="name" text="Name" />
+                <reference ref="oh_wheelchair" />
+                <reference ref="toilets_with_access" />
+                <text key="wikipedia" text="Wikipedia" value_type="wikipedia" />
+                <text key="wikidata" text="Wikidata" value_type="wikidata" />
+            </optional>
+        </item> <!-- Rides -->
+        <separator/>
         <item name="Beach Resort" icon="${ICONPATH}tourist_beach_resort_21003.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=beach_resort"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=beach_resort"
@@ -5516,6 +5640,27 @@
             <space />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Horse Riding -->
+        <item name="Dog Park" icon="${ICONPATH}landuse_dog_park_21007.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=dog_park"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=dog_park"
+                  da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:leisure=dog_park"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=dog_park"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=dog_park"
+                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:leisure=dog_park"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=dog_park"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:leisure=dog_park"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=dog_park"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=dog_park"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=dog_park"
+                  sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:leisure=dog_park" />
+            <space />
+            <key key="leisure" value="dog_park" />
+            <reference ref="optional_name" />
+            <check key="area" text="Area" disable_off="true" match="none"/>
+            <combo key="barrier" text="Barrier" values="fence,wall" />
+            <reference ref="oh_wheelchair" />
+            <check key="lit" text="Lit" disable_off="true" />
+        </item> <!-- Dog Park -->
         <separator/>
         <item name="Playground" icon="${ICONPATH}amenity_playground.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=playground"
