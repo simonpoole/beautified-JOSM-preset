@@ -1688,7 +1688,7 @@
                 <reference ref="highway_yesno_incline" />
                 <check key="lit" text="Lit" disable_off="true" />
                 <combo key="bicycle" text="Bicycle" values="designated,yes,no" display_values="Designated,Yes,No" />
-                <check key="segregated" text="Segregated" disable_off="true" />
+                <combo key="segregated" text="Segregated" values="yes,no" display_values="Yes,No" default="" />
  	            <text key="width" text="Width (meters)" />
             </optional>
             <preset_link preset_name="Arcade" />
@@ -1788,7 +1788,7 @@
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="toilets" />
-                <check key="drinking_water" text="Drinking Water" />
+                <check key="drinking_water" text="Drinking Water" disable_off="true" />
             </optional>
         </item> <!-- Rest Area -->
         <separator/>
