@@ -819,18 +819,18 @@
 		display_values="Brick,Cement block,Clay,Concrete,Glass,Limestone,Masonry,MDF,Metal,Metal plates,Mirror,Mud,Plaster,Plastic,Sandstone,Steel,Stone,Timber framing,Tin,Traditional,Vinyl,Wood"
 		editable="false" values_context="building" values_searchable="true" match="key" /> 
 	<combo key="roof:shape" text="Roof type"  values_searchable="true" editable="false" values_context="building" >
-	  	<list_entry value="dome" short_description="Dome" />
-	  	<list_entry value="flat" short_description="Flat" />
-	  	<list_entry value="gabled" short_description="Gabled" />
-	  	<list_entry value="gambrel" short_description="Gambrel" />
-	  	<list_entry value="half-hipped" short_description="Half-hipped" />
-	  	<list_entry value="hipped" short_description="Hipped" />
-	  	<list_entry value="mansard" short_description="Mansard" />
-	  	<list_entry value="onion" short_description="Onion" />
-	  	<list_entry value="pyramidal" short_description="Pyramidal" />
-	  	<list_entry value="round" short_description="Round" />
-	  	<list_entry value="saltbox" short_description="Saltbox" />
-	  	<list_entry value="skillion" short_description="Skillion" />
+	  	<list_entry value="dome" short_description="Dome" icon="icons/png/dome.png" />
+	  	<list_entry value="flat" short_description="Flat" icon="icons/png/flat.png" />
+	  	<list_entry value="gabled" short_description="Gabled" icon="icons/png/gabled.png" />
+	  	<list_entry value="gambrel" short_description="Gambrel" icon="icons/png/gambrel.png" />
+	  	<list_entry value="half-hipped" short_description="Half-hipped" icon="icons/png/half-hipped.png" />
+	  	<list_entry value="hipped" short_description="Hipped" icon="icons/png/hipped.png" />
+	  	<list_entry value="mansard" short_description="Mansard" icon="icons/png/mansard.png" />
+	  	<list_entry value="onion" short_description="Onion" icon="icons/png/onion.png" />
+	  	<list_entry value="pyramidal" short_description="Pyramidal" icon="icons/png/pyramidal.png" />
+	  	<list_entry value="round" short_description="Round" icon="icons/png/round.png" />
+	  	<list_entry value="saltbox" short_description="Saltbox" icon="icons/png/saltbox.png" />
+	  	<list_entry value="skillion" short_description="Skillion" icon="icons/png/skillion.png" />
 	</combo>
 	<combo key="roof:orientation" text="Roof orientation" editable="false" >
     	<list_entry value="along" display_value="Along" />
