@@ -1658,7 +1658,7 @@
                 <reference ref="leaf"/>
             </optional>
         </item> <!-- Hedge -->
-        <item name="Fence" icon="presets/fence.png" type="way,closedway" preset_name_label="true">
+        <item name="Fence" icon="barrier_fence.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=fence" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=fence" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=fence" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:barrier=fence" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:barrier=fence" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:barrier=fence" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:barrier=fence" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:barrier=fence" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:barrier=fence" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=fence"/>
             <key key="barrier" value="fence"/>
             <optional>
@@ -1671,11 +1671,11 @@
             <key key="barrier" value="guard_rail"/>
             <reference ref="optional_height"/>
         </item> <!-- Guard Rail -->
-        <item name="Wall" icon="presets/wall.png" type="way,closedway" preset_name_label="true">
+        <item name="Wall" icon="barrier_wall.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=wall" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=wall" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=wall" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:barrier=wall" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:barrier=wall" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:barrier=wall" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:barrier=wall" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:barrier=wall" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=wall" zh_CN.href="http://wiki.openstreetmap.org/wiki/Zh-hans:Tag:barrier=wall"/>
             <key key="barrier" value="wall"/>
             <optional>
-                <combo key="wall" text="Type" values="dry_stone,brick,noise_barrier,jersey_barrier,gabion,seawall,flood_wall,castle_wall"/>
+                <combo key="wall" text="Type" values="dry_stone,brick,noise_barrier,jersey_barrier,gabion,seawall,flood_wall,castle_wall" display_values="Dry stone,Brick,Noise barrier,Jersey barrier,Gabion,Seawall,Flood wall,Castle wall"/>
             </optional>
             <reference ref="optional_height"/>
         </item> <!-- Wall -->
@@ -1694,14 +1694,14 @@
             <key key="barrier" value="jersey_barrier"/>
             <combo key="material" text="Material" values="concrete,plastic" display_values="Concrete,Plastic"/>
         </item> <!-- Jersey Barrier -->
-        <item name="Ditch" name_context="Barrier" type="way,closedway" preset_name_label="true">
+        <item name="Ditch" icon="barrier_empty.png" name_context="Barrier" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=ditch" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=ditch" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=ditch" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:barrier=ditch" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:barrier=ditch" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:barrier=ditch" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:barrier=ditch" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=ditch"/>
             <key key="barrier" value="ditch"/>
             <optional>
                 <text key="width" text="Width (meters)" length="7"/>
             </optional>
         </item> <!-- Ditch -->
-        <item name="Kerb" type="way,closedway" preset_name_label="true">
+        <item name="Kerb" icon="barrier_empty.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=kerb" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=kerb" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:barrier=kerb" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:barrier=kerb" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:barrier=kerb" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:barrier=kerb" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:barrier=kerb"/>
             <key key="barrier" value="kerb"/>
             <optional>
@@ -2330,14 +2330,14 @@
             </optional>
         </item> <!-- Bus Guideway -->
         <separator/>
-        <item name="Disused Rail" icon="presets/railway.png" type="way" preset_name_label="true">
+        <item name="Disused Rail" icon="transport_disused_railway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=disused" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:railway=disused" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=disused" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:railway=disused" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:railway=disused" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=disused" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:railway=disused"/>
             <key key="railway" value="disused"/>
             <optional>
                 <reference ref="railway_service"/>
             </optional>
         </item> <!-- Disused Rail -->
-        <item name="Abandoned Rail" icon="presets/railway.png" type="way" preset_name_label="true">
+        <item name="Abandoned Rail" icon="transport_disused_railway.png" type="way" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:railway=abandoned" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:railway=abandoned" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:railway=abandoned" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:railway=abandoned" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:railway=abandoned" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:railway=abandoned" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:railway=abandoned"/>
             <key key="railway" value="abandoned"/>
             <optional>
@@ -3549,7 +3549,7 @@
             <space/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Aquarium -->
-        <item name="Animals" icon="tourist_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Animals" icon="tourist_animals.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:attraction=animal" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:attraction=animal" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:attraction=animal" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:attraction=animal" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:attraction=animal"/>
             <space/>
             <key key="attraction" value="animal"/>
@@ -3668,7 +3668,7 @@
             <space/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Water Park -->
-        <item name="Rides" icon="tourist_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Rides" icon="tourist_ride.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:attraction" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:attraction" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:attraction" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:attraction" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:attraction"/>
             <space/>
             <combo key="attraction" text="Attraction" values_searchable="true">
@@ -3998,7 +3998,7 @@
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Library -->
-        <item name="Public bookcase" icon="" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Public bookcase" icon="amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=public_bookcase" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=public_bookcase" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=public_bookcase" el.href="http://wiki.openstreetmap.org/wiki/El:Tag:amenity=public_bookcase" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=public_bookcase" et.href="http://wiki.openstreetmap.org/wiki/Et:Tag:amenity=public_bookcase" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=public_bookcase" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=public_bookcase" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=public_bookcase"/>
             <space/>
             <key key="amenity" value="public_bookcase"/>
@@ -4166,7 +4166,7 @@
             <reference ref="name_oh_wheelchair_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Police -->
-        <item name="Ranger Station" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Ranger Station" icon="amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=ranger_station" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=ranger_station" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=ranger_station" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=ranger_station"/>
             <space/>
             <key key="amenity" value="ranger_station"/>
@@ -5514,7 +5514,7 @@
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
         </item> <!-- Industrial -->
-		<item name="Building part" icon="styles/standard/misc/landmark/building.png" type="closedway,multipolygon" preset_name_label="true">
+		<item name="Building part" icon="man_made_empty.png" type="closedway,multipolygon" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Key:building:part" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:building:part" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:building:part" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building:part" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:building:part" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:building:part" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:building:part" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building:part" zh_CN.href="http://wiki.openstreetmap.org/wiki/Zh-hans:Key:building:part"/>
 			<space/>
 			<combo key="building:part" text="Building part" values="yes,roof,garage,garages,industrial,school,hangar,commercial,barn,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,warehouse,retail,shed,supermarket,cowshed,construction,ruins" values_context="building" default="yes" match="key" values_searchable="true"/>
