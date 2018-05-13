@@ -709,7 +709,7 @@
     <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
   </chunk>
   <chunk id="tactile_paving">
-  	<combo key="tactile_paving" text="Tactile paving" match="key" values_sort="false" >
+  	<combo key="tactile_paving" text="Tactile paving" values_context="tactile_paving" match="key" values_sort="false" >
         <list_entry value="yes" display_value="Present" />
         <list_entry value="no" display_value="None" />
         <list_entry value="incorrect" display_value="Incorrect" />

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-05-10 19:02+0200\n"
+"POT-Creation-Date: 2018-05-13 23:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3501,10 +3501,6 @@ msgstr ""
 msgid "Incomplete tower"
 msgstr ""
 
-#: master_preset.xml:715(list_entry:display_value|value:incorrect)
-msgid "Incorrect"
-msgstr ""
-
 #: master_preset.xml:358(multiselect:display_values|key:cuisine)
 msgid "Indian"
 msgstr ""
@@ -4801,7 +4797,7 @@ msgstr ""
 msgid "Noise barrier"
 msgstr ""
 
-#: master_preset.xml:1444(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:none) master_preset.xml:1470(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:none) master_preset.xml:1488(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:none) master_preset.xml:3938(check:text|group:Car|preset:Charging_Station|key:authentication:none) master_preset.xml:714(list_entry:display_value|value:no)
+#: master_preset.xml:1444(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:none) master_preset.xml:1470(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:none) master_preset.xml:1488(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:none) master_preset.xml:3938(check:text|group:Car|preset:Charging_Station|key:authentication:none)
 msgid "None"
 msgstr ""
 
@@ -5783,10 +5779,6 @@ msgstr ""
 
 #: master_preset.xml:521(combo:display_values|key:denomination)
 msgid "Presbyterian"
-msgstr ""
-
-#: master_preset.xml:713(list_entry:display_value|value:yes)
-msgid "Present"
 msgstr ""
 
 #: master_preset.xml:3430(item:name|group:Railway|preset:Preserved)
@@ -7387,10 +7379,6 @@ msgstr ""
 
 #: master_preset.xml:8265(item:name|group:Sport_(Ball)|preset:Table_Tennis/Ping-Pong)
 msgid "Table Tennis/Ping-Pong"
-msgstr ""
-
-#: master_preset.xml:712(combo:text|key:tactile_paving)
-msgid "Tactile paving"
 msgstr ""
 
 #: master_preset.xml:3037(combo:display_values|group:Water|preset:Reservoir|key:reservoir_type)
@@ -9644,6 +9632,26 @@ msgstr ""
 #: master_preset.xml:4246(combo:text|group:Public_Transport|preset:Route_Master|key:colour) master_preset.xml:4407(combo:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:colour) master_preset.xml:709(combo:text|key:colour) master_preset.xml:7402(combo:text|group:Facilities|preset:Bench|key:colour) master_preset.xml:9536(combo:text|preset:Power_Portal|key:colour) master_preset.xml:9556(combo:text|preset:Power_Tower|key:colour)
 msgctxt "colour"
 msgid "Color (HTML name or hexadecimal code)"
+msgstr ""
+
+#: master_preset.xml:715(list_entry:display_value|value:incorrect)
+msgctxt "tactile_paving"
+msgid "Incorrect"
+msgstr ""
+
+#: master_preset.xml:714(list_entry:display_value|value:no)
+msgctxt "tactile_paving"
+msgid "None"
+msgstr ""
+
+#: master_preset.xml:713(list_entry:display_value|value:yes)
+msgctxt "tactile_paving"
+msgid "Present"
+msgstr ""
+
+#: master_preset.xml:712(combo:text|key:tactile_paving)
+msgctxt "tactile_paving"
+msgid "Tactile paving"
 msgstr ""
 
 #: master_preset.xml:756(list_entry:short_description|value:abortion)
