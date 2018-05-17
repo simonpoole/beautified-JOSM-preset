@@ -12628,7 +12628,7 @@
             <reference ref="optional_name" />
         </item> <!-- Recreation Ground -->
         <separator/>
-        <item name="Residential Area" icon="${ICONPATH}landuse_house_sp.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Residential Area" icon="${ICONPATH}landuse_house_sp.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=residential"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=residential"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=residential"
@@ -12686,7 +12686,7 @@
             <reference ref="optional_name" />
             <reference ref="religious" />
         </item> <!-- Religious -->
-        <item name="Retail" icon="${ICONPATH}landuse_supermarket.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Retail" icon="${ICONPATH}landuse_supermarket.${ICONTYPE}" name_context="Landuse" type="closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=retail"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=retail"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=retail"
@@ -12699,7 +12699,7 @@
             <key key="landuse" value="retail" />
             <reference ref="optional_name" />
         </item> <!-- Retail -->
-        <item name="Commercial" icon="${ICONPATH}natural_empty.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Commercial" icon="${ICONPATH}natural_empty.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=commercial"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=commercial"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=commercial"
@@ -12712,7 +12712,7 @@
             <key key="landuse" value="commercial" values_context="landuse" />
             <reference ref="optional_name" />
         </item> <!-- Commercial -->
-        <item name="Industrial" icon="${ICONPATH}landuse_works_22087.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Industrial" icon="${ICONPATH}landuse_works_22087.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=industrial"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=industrial"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=industrial"
@@ -12731,7 +12731,7 @@
             	editable="true"
             	values_context="industrial" match="key"/>
         </item> <!-- Industrial -->
-        <item name="Garages" icon="presets/garages.png" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Garages" icon="presets/garages.png" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=garages"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=garages"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=garages"
@@ -12756,7 +12756,7 @@
             <key key="landuse" value="railway" />
             <reference ref="optional_name" />
         </item> <!-- Railway Land -->
-        <item name="Military" icon="${ICONPATH}landuse_military.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Military" icon="${ICONPATH}landuse_military.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=military"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=military"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=military"
