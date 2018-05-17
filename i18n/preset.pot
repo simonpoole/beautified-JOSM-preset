@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-05-17 18:53+0200\n"
+"POT-Creation-Date: 2018-05-17 19:22+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1673,10 +1673,6 @@ msgstr ""
 msgid "Comedy"
 msgstr ""
 
-#: master_preset.xml:12702(item:name|group:Land_use|preset:Commercial)
-msgid "Commercial"
-msgstr ""
-
 #: master_preset.xml:12589(item:name|group:Land_use|preset:Common)
 msgid "Common"
 msgstr ""
@@ -2921,10 +2917,6 @@ msgstr ""
 msgid "Garage"
 msgstr ""
 
-#: master_preset.xml:12734(item:name|group:Land_use|preset:Garages)
-msgid "Garages"
-msgstr ""
-
 #: master_preset.xml:12544(item:name|group:Land_use|preset:Garden)
 msgid "Garden"
 msgstr ""
@@ -3513,7 +3505,7 @@ msgstr ""
 msgid "Indoor"
 msgstr ""
 
-#: master_preset.xml:12715(item:name|group:Land_use|preset:Industrial) master_preset.xml:8466(item:name|group:Buildings|preset:Industrial)
+#: master_preset.xml:8466(item:name|group:Buildings|preset:Industrial)
 msgid "Industrial"
 msgstr ""
 
@@ -4375,10 +4367,6 @@ msgstr ""
 
 #: master_preset.xml:668(list_entry:display_value|value:migrant)
 msgid "Migrants"
-msgstr ""
-
-#: master_preset.xml:12759(item:name|group:Land_use|preset:Military)
-msgid "Military"
 msgstr ""
 
 #: master_preset.xml:11578(list_entry:short_description|preset:Vending_Machine|value:milk)
@@ -6249,10 +6237,6 @@ msgstr ""
 msgid "Reservoir"
 msgstr ""
 
-#: master_preset.xml:12631(item:name|group:Land_use|preset:Residential_Area)
-msgid "Residential Area"
-msgstr ""
-
 #: master_preset.xml:8834(combo:text|group:Man_Made|preset:Mineshaft|key:resource) master_preset.xml:8867(combo:text|group:Man_Made|preset:Adit|key:resource)
 msgid "Resource"
 msgstr ""
@@ -6267,10 +6251,6 @@ msgstr ""
 
 #: master_preset.xml:13151(combo:text|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "Restriction"
-msgstr ""
-
-#: master_preset.xml:12689(item:name|group:Land_use|preset:Retail)
-msgid "Retail"
 msgstr ""
 
 #: master_preset.xml:2341(item:name|group:Barriers|preset:Retaining_Wall)
@@ -11183,6 +11163,41 @@ msgctxt "crop"
 msgid "Wheat"
 msgstr ""
 
+#: master_preset.xml:12702(item:name|group:Land_use|preset:Commercial)
+msgctxt "Landuse"
+msgid "Commercial"
+msgstr ""
+
+#: master_preset.xml:12771(item:name|group:Land_use|preset:Construction_Area)
+msgctxt "Landuse"
+msgid "Construction Area"
+msgstr ""
+
+#: master_preset.xml:12734(item:name|group:Land_use|preset:Garages)
+msgctxt "Landuse"
+msgid "Garages"
+msgstr ""
+
+#: master_preset.xml:12715(item:name|group:Land_use|preset:Industrial)
+msgctxt "Landuse"
+msgid "Industrial"
+msgstr ""
+
+#: master_preset.xml:12759(item:name|group:Land_use|preset:Military)
+msgctxt "Landuse"
+msgid "Military"
+msgstr ""
+
+#: master_preset.xml:12631(item:name|group:Land_use|preset:Residential_Area)
+msgctxt "Landuse"
+msgid "Residential Area"
+msgstr ""
+
+#: master_preset.xml:12689(item:name|group:Land_use|preset:Retail)
+msgctxt "Landuse"
+msgid "Retail"
+msgstr ""
+
 #: master_preset.xml:12732(combo:display_values|group:Land_use|preset:Industrial|key:industrial)
 msgctxt "industrial"
 msgid "Bakery"
@@ -11276,11 +11291,6 @@ msgstr ""
 #: master_preset.xml:12732(combo:display_values|group:Land_use|preset:Industrial|key:industrial)
 msgctxt "industrial"
 msgid "Warehouse"
-msgstr ""
-
-#: master_preset.xml:12771(item:name|group:Land_use|preset:Construction_Area)
-msgctxt "Landuse"
-msgid "Construction Area"
 msgstr ""
 
 #: master_preset.xml:12908(combo:text|group:Addresses_and_Contact|preset:Address|key:addr:state)

@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2018-05-14 21:42+0200\n"
-"PO-Revision-Date: 2018-05-14 19:44+0000\n"
-"Last-Translator: Constable\n"
+"POT-Creation-Date: 2018-05-17 19:19+0200\n"
+"PO-Revision-Date: 2018-05-17 17:19+0000\n"
+"Last-Translator: idetao <marcxosm@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/openstreetmap/presets/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1808,10 +1808,6 @@ msgstr "Pista ciclabile e pedonale combinate"
 msgid "Comedy"
 msgstr "Commedia"
 
-#: master_preset.xml:12702(item:name|group:Land_use|preset:Commercial)
-msgid "Commercial"
-msgstr "Commerciale"
-
 #: master_preset.xml:12589(item:name|group:Land_use|preset:Common)
 msgid "Common"
 msgstr "Comune"
@@ -3200,10 +3196,6 @@ msgstr ""
 msgid "Garage"
 msgstr "Garage"
 
-#: master_preset.xml:12734(item:name|group:Land_use|preset:Garages)
-msgid "Garages"
-msgstr "Garage"
-
 #: master_preset.xml:12544(item:name|group:Land_use|preset:Garden)
 msgid "Garden"
 msgstr "Giardino"
@@ -3339,10 +3331,6 @@ msgstr "Vetraio"
 msgid "Gneiss"
 msgstr ""
 
-#: master_preset.xml:5398(list_entry:display_value|group:Leisure|preset:Animals|value:goase)
-msgid "Goase"
-msgstr ""
-
 #: master_preset.xml:5397(list_entry:display_value|group:Leisure|preset:Animals|value:goat)
 msgid "Goat"
 msgstr ""
@@ -3363,6 +3351,10 @@ msgstr "Gondola"
 #: master_preset.xml:3736(item:name|group:Aerialway|preset:Goods)
 msgid "Goods"
 msgstr "Merci"
+
+#: master_preset.xml:5398(list_entry:display_value|group:Leisure|preset:Animals|value:goose)
+msgid "Goose"
+msgstr ""
 
 #: master_preset.xml:5399(list_entry:display_value|group:Leisure|preset:Animals|value:gorilla)
 msgid "Gorilla"
@@ -3852,7 +3844,6 @@ msgstr "Indiano"
 msgid "Indoor"
 msgstr "Interni"
 
-#: master_preset.xml:12715(item:name|group:Land_use|preset:Industrial)
 #: master_preset.xml:8466(item:name|group:Buildings|preset:Industrial)
 msgid "Industrial"
 msgstr "Industriale"
@@ -4790,10 +4781,6 @@ msgstr "Clinica prenatale"
 msgid "Migrants"
 msgstr "Migranti"
 
-#: master_preset.xml:12759(item:name|group:Land_use|preset:Military)
-msgid "Military"
-msgstr "Militare"
-
 #: master_preset.xml:11578(list_entry:short_description|preset:Vending_Machine|value:milk)
 msgid "Milk"
 msgstr "Latte"
@@ -5405,12 +5392,17 @@ msgstr ""
 #: master_preset.xml:1697(combo:display_values|group:Ways|preset:Dedicated_Footway|key:segregated)
 #: master_preset.xml:1729(combo:display_values|group:Ways|preset:Steps|key:ramp:wheelchair)
 #: master_preset.xml:1730(combo:display_values|group:Ways|preset:Steps|key:ramp:luggage)
+#: master_preset.xml:1817(combo:display_values|group:Waypoints|preset:Traffic_Signal|key:supervised)
+#: master_preset.xml:1882(combo:display_values|group:Waypoints|preset:Pedestrian_Crossing|key:supervised)
 #: master_preset.xml:354(combo:display_values|key:organic)
 #: master_preset.xml:387(combo:display_values|key:internet_access:fee)
 #: master_preset.xml:391(combo:display_values|key:smoking)
 #: master_preset.xml:3983(combo:display_values|group:Car|preset:Car_Dealer|key:second_hand)
 #: master_preset.xml:442(combo:display_values|key:bin)
 #: master_preset.xml:445(combo:display_values|key:fee)
+#: master_preset.xml:448(combo:display_values|key:fee)
+#: master_preset.xml:468(combo:display_values|key:supervised)
+#: master_preset.xml:472(combo:display_values|key:lit)
 #: master_preset.xml:4943(combo:display_values|group:Food+Drinks|preset:Restaurant|key:takeaway)
 #: master_preset.xml:4944(combo:display_values|group:Food+Drinks|preset:Restaurant|key:delivery)
 #: master_preset.xml:4970(combo:display_values|group:Food+Drinks|preset:Fast_Food|key:takeaway)
@@ -7138,10 +7130,6 @@ msgstr "Prenotazione"
 msgid "Reservoir"
 msgstr "Riserva"
 
-#: master_preset.xml:12631(item:name|group:Land_use|preset:Residential_Area)
-msgid "Residential Area"
-msgstr "Area residenziale"
-
 #: master_preset.xml:8834(combo:text|group:Man_Made|preset:Mineshaft|key:resource)
 #: master_preset.xml:8867(combo:text|group:Man_Made|preset:Adit|key:resource)
 msgid "Resource"
@@ -7158,10 +7146,6 @@ msgstr "Ristorante"
 #: master_preset.xml:13151(combo:text|group:Relations|preset:Turn_Restriction|key:restriction)
 msgid "Restriction"
 msgstr "Restrizione"
-
-#: master_preset.xml:12689(item:name|group:Land_use|preset:Retail)
-msgid "Retail"
-msgstr "Vendita al dettaglio"
 
 #: master_preset.xml:2341(item:name|group:Barriers|preset:Retaining_Wall)
 msgid "Retaining Wall"
@@ -9641,12 +9625,17 @@ msgstr "Giallo"
 #: master_preset.xml:1697(combo:display_values|group:Ways|preset:Dedicated_Footway|key:segregated)
 #: master_preset.xml:1729(combo:display_values|group:Ways|preset:Steps|key:ramp:wheelchair)
 #: master_preset.xml:1730(combo:display_values|group:Ways|preset:Steps|key:ramp:luggage)
+#: master_preset.xml:1817(combo:display_values|group:Waypoints|preset:Traffic_Signal|key:supervised)
+#: master_preset.xml:1882(combo:display_values|group:Waypoints|preset:Pedestrian_Crossing|key:supervised)
 #: master_preset.xml:354(combo:display_values|key:organic)
 #: master_preset.xml:387(combo:display_values|key:internet_access:fee)
 #: master_preset.xml:391(combo:display_values|key:smoking)
 #: master_preset.xml:3983(combo:display_values|group:Car|preset:Car_Dealer|key:second_hand)
 #: master_preset.xml:442(combo:display_values|key:bin)
 #: master_preset.xml:445(combo:display_values|key:fee)
+#: master_preset.xml:448(combo:display_values|key:fee)
+#: master_preset.xml:468(combo:display_values|key:supervised)
+#: master_preset.xml:472(combo:display_values|key:lit)
 #: master_preset.xml:4943(combo:display_values|group:Food+Drinks|preset:Restaurant|key:takeaway)
 #: master_preset.xml:4944(combo:display_values|group:Food+Drinks|preset:Restaurant|key:delivery)
 #: master_preset.xml:4970(combo:display_values|group:Food+Drinks|preset:Fast_Food|key:takeaway)
@@ -12648,6 +12637,41 @@ msgctxt "crop"
 msgid "Wheat"
 msgstr "Grano"
 
+#: master_preset.xml:12702(item:name|group:Land_use|preset:Commercial)
+msgctxt "Landuse"
+msgid "Commercial"
+msgstr "Commerciale"
+
+#: master_preset.xml:12771(item:name|group:Land_use|preset:Construction_Area)
+msgctxt "Landuse"
+msgid "Construction Area"
+msgstr "Area in costruzione"
+
+#: master_preset.xml:12734(item:name|group:Land_use|preset:Garages)
+msgctxt "Landuse"
+msgid "Garages"
+msgstr "Garage"
+
+#: master_preset.xml:12715(item:name|group:Land_use|preset:Industrial)
+msgctxt "Landuse"
+msgid "Industrial"
+msgstr "Industriale"
+
+#: master_preset.xml:12759(item:name|group:Land_use|preset:Military)
+msgctxt "Landuse"
+msgid "Military"
+msgstr "Militare"
+
+#: master_preset.xml:12631(item:name|group:Land_use|preset:Residential_Area)
+msgctxt "Landuse"
+msgid "Residential Area"
+msgstr "Area residenziale"
+
+#: master_preset.xml:12689(item:name|group:Land_use|preset:Retail)
+msgctxt "Landuse"
+msgid "Retail"
+msgstr "Vendita al dettaglio"
+
 #: master_preset.xml:12732(combo:display_values|group:Land_use|preset:Industrial|key:industrial)
 msgctxt "industrial"
 msgid "Bakery"
@@ -12742,11 +12766,6 @@ msgstr "Tipo"
 msgctxt "industrial"
 msgid "Warehouse"
 msgstr "Magazzino"
-
-#: master_preset.xml:12771(item:name|group:Land_use|preset:Construction_Area)
-msgctxt "Landuse"
-msgid "Construction Area"
-msgstr "Area in costruzione"
 
 #: master_preset.xml:12908(combo:text|group:Addresses_and_Contact|preset:Address|key:addr:state)
 msgctxt "addr:"
