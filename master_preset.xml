@@ -2,7 +2,7 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
     shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version"
-    object_keys="attraction" >
+    object_keys="attraction,traffic_sign" >
 <!--
     Icons have been derived from mainly from
   
@@ -62,6 +62,12 @@
         	<combo key="maxspeed:backwardward:conditional" text="Max speed ← @" long_text="Conditional maximum speed opposite way direction specified in km/h" match="key"
                delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0" />
         </optional>
+    </chunk>
+    <chunk id="traffic_sign_direction">
+        <checkgroup name="Traffic sign direction" radiogroup="true">
+            <check key="traffic_sign:forward" text="Forward" disable_off="true" />
+            <check key="traffic_sign:backward" text="Backward" disable_off="true" />
+        </checkgroup>
     </chunk>
     <chunk id="highway_base">
 		<reference ref="maxspeed" />
@@ -2069,6 +2075,7 @@
             <space />
             <key key="traffic_sign" value="city_limit" />
             <text key="name" text="Name" />
+            <reference ref="traffic_sign_direction" />
             <preset_link preset_name="Name" />
         </item> <!-- City Limit -->
         <item name="Speed Limit Sign" icon="${ICONPATH}speed_limit.${ICONTYPE}" type="node" preset_name_label="true">
@@ -2082,6 +2089,7 @@
             <space />
             <key key="traffic_sign" value="maxspeed" />
             <text key="maxspeed" text="Max. speed (km/h)" />
+            <reference ref="traffic_sign_direction" />
         </item> <!-- Speed Limit -->
         <item name="Speed Camera" icon="${ICONPATH}highway_speed_camera_18025.${ICONTYPE}" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=speed_camera"
