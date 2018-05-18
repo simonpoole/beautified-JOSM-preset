@@ -16,7 +16,7 @@ ext {
 }
 
 dependencies {
-	runtime 'ch.poole:preset-utils:0.3.0'
+	runtime 'ch.poole:preset-utils:0.3.1'
 }
 
 defaultTasks 'generateAllPresetTypes'
