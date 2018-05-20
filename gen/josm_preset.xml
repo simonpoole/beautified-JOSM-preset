@@ -1434,6 +1434,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=traffic_signals" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=traffic_signals" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=traffic_signals" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=traffic_signals" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=traffic_signals" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=traffic_signals" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=traffic_signals" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=traffic_signals" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=traffic_signals"/>
             <key key="highway" value="traffic_signals"/>
             <optional text="Optional crossing attributes:">
+                <combo key="traffic_signals:direction" text="For traffic direction" values="forward,backward" display_values="Forward,Backward"/>
             	<reference ref="crossing_type"/>
                 <combo key="crossing_ref" text="Crossing type (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger"/>
                 <check key="button_operated" text="Button operated" disable_off="true"/>
@@ -1450,10 +1451,12 @@
         <item name="Stop" icon="highway_stop_18064.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=stop" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=stop" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=stop" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=stop" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=stop" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=stop" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=stop" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=stop" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=stop"/>
             <key key="highway" value="stop"/>
+            <combo key="direction" text="For traffic direction" values="forward,backward" display_values="Forward,Backward"/> 
         </item> <!-- Stop -->
         <item name="Give Way" icon="give_way.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=give_way" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=give_way" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=give_way" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=give_way" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=give_way" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=give_way" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=give_way" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=give_way"/>
             <key key="highway" value="give_way"/>
+            <combo key="direction" text="For traffic direction" values="forward,backward" display_values="Forward,Backward"/>
         </item> <!-- Give Way -->
         <item name="Mini-Roundabout" icon="transport_miniroundabout_clockwise.png" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=mini_roundabout" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=mini_roundabout" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=mini_roundabout" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=mini_roundabout" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=mini_roundabout" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=mini_roundabout" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=mini_roundabout" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=mini_roundabout" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=mini_roundabout"/>
