@@ -4336,7 +4336,6 @@
             <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Public_Transport#Platform" />
             <space />
             <key key="public_transport" value="platform" />
-            <text key="name" text="Name" />
             <check key="bench" text="Bench" disable_off="true" />
             <check key="shelter" text="Shelter" disable_off="true" />
             <reference ref="bin" />
@@ -4344,6 +4343,7 @@
             <reference ref="wheelchair" />
             <reference ref="tactile_paving" />
             <optional>
+                <text key="name" text="Name" />
                 <text key="ref" text="Reference" />
                 <text key="uic_ref" text="UIC reference" />
                 <text key="uic_name" text="UIC name" />
