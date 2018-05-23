@@ -13082,6 +13082,32 @@ tags.remove('automatic_check_date');"
 		</item> <!-- Add or update check date -->
     </group> <!-- Annotation -->
   <group name="Relations" icon="${ICONPATH}osm_relation_sp.${ICONTYPE}">
+  <item name="Relations" icon="${ICONPATH}osm_relation_sp.${ICONTYPE}" type="relation,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Types_of_relation"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Types_of_relation"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Types_of_relation"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Types_of_relation"
+                  hu.href="http://wiki.openstreetmap.org/wiki/Hu:Types_of_relation"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Types_of_relation"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Types_of_relation" />
+            <combo key="type" text="Relation type" editable="true" match="key" >
+                <list_entry value="multipolygon" display_value="Multipolgon" />
+                <list_entry value="route" display_value="Route" />
+                <list_entry value="route_master" display_value="Route master" />
+                <list_entry value="restriction" display_value="Turn restriction" />
+                <list_entry value="boundary" display_value="Boundary" />
+                <list_entry value="site" display_value="Site" />
+                <list_entry value="associatedStreet" display_value="Associated street" />
+                <list_entry value="public_transport" display_value="Public transport" />
+                <list_entry value="destination_sign" display_value="Destination sign" />
+                <list_entry value="waterway" display_value="Waterway" />
+                <list_entry value="enforcement" display_value="Enforcement" />
+                <list_entry value="bridge" display_value="Bridge" />
+                <list_entry value="tunnel" display_value="Tunnel" />
+                <list_entry value="building" display_value="Building (3D)" />
+                <list_entry value="street" display_value="Street" />
+            </combo>
+        </item> <!-- Relations -->
         <item name="Multipolygon" icon="presets/multipolygon.png" type="relation,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:multipolygon"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:multipolygon"
