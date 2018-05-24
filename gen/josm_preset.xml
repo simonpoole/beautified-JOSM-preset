@@ -8255,7 +8255,7 @@
   <item name="Relations" icon="osm_relation_sp.png" type="relation,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Types_of_relation" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Types_of_relation" de.href="http://wiki.openstreetmap.org/wiki/DE:Types_of_relation" fr.href="http://wiki.openstreetmap.org/wiki/FR:Types_of_relation" hu.href="http://wiki.openstreetmap.org/wiki/Hu:Types_of_relation" ja.href="http://wiki.openstreetmap.org/wiki/JA:Types_of_relation" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Types_of_relation"/>
             <combo key="type" text="Relation type" editable="true" match="key">
-                <list_entry value="multipolygon" display_value="Multipolgon"/>
+                <list_entry value="multipolygon" display_value="Multipolygon"/>
                 <list_entry value="route" display_value="Route"/>
                 <list_entry value="route_master" display_value="Route master"/>
                 <list_entry value="restriction" display_value="Turn restriction"/>
