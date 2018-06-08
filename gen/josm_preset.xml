@@ -1270,8 +1270,14 @@
         <item name="Track" icon="highway_agricultural_engines_16001.png" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:highway=track" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:highway=track" da.href="http://wiki.openstreetmap.org/wiki/Da:Tag:highway=track" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:highway=track" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:highway=track" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:highway=track" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:highway=track" id.href="http://wiki.openstreetmap.org/wiki/Id:Tag:highway=track" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:highway=track" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:highway=track" ko.href="http://wiki.openstreetmap.org/wiki/Ko:Tag:highway=track" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:highway=track" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:highway=track" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:highway=track" sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:highway=track" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=track"/>
             <space/>
-            <combo key="tracktype" text="Tracktype" values="grade1,grade2,grade3,grade4,grade5"/>
             <key key="highway" value="track"/>
+            <combo key="tracktype" text="Tracktype">
+                <list_entry value="grade1" display_value="1 - Solid" short_description="Usually a paved or heavily compacted hardcore surface"/>
+                <list_entry value="grade2" display_value="2 - Mostly solid" short_description="Usually an unpaved track with surface of gravel mixed with a varying amount of sand, silt, and clay"/>
+                <list_entry value="grade3" display_value="3 - Mix hard and soft" short_description="Even mixture of hard and soft materials"/>
+                <list_entry value="grade4" display_value="4 - Mostly soft" short_description="Almost always an unpaved track prominently with soil/sand/grass, but with some hard materials, or compressed materials"/>
+                <list_entry value="grade5" display_value="5 - Soft" short_description="TAlmost always an unpaved track lacking hard materials, uncompacted, with surface of soil/sand/grass"/>
+            </combo>
             <optional>
                 <reference ref="name_layer"/>
                 <reference ref="surface_smoothness"/>
@@ -5528,13 +5534,13 @@
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
         </item> <!-- House -->
-        <item name="Industrial" icon="man_made_works_22087.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Industrial building" icon="man_made_works_22087.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:building" bg.href="http://wiki.openstreetmap.org/wiki/Bg:Key:building" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:building" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:building" es.href="http://wiki.openstreetmap.org/wiki/ES:Key:building" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building" hu.href="http://wiki.openstreetmap.org/wiki/Hu:Key:building" it.href="http://wiki.openstreetmap.org/wiki/IT:Key:building" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:building" nl.href="http://wiki.openstreetmap.org/wiki/NL:Key:building" no.href="http://wiki.openstreetmap.org/wiki/No:Key:building" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:building" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:building" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building"/>
             <space/>
             <key key="building" value="industrial"/>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
-        </item> <!-- Industrial -->
+        </item> <!-- Industrial  building -->
 		<item name="Building part" icon="man_made_empty.png" type="closedway,multipolygon" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Key:building:part" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Key:building:part" de.href="http://wiki.openstreetmap.org/wiki/DE:Key:building:part" fr.href="http://wiki.openstreetmap.org/wiki/FR:Key:building:part" ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:building:part" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Key:building:part" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Key:building:part" ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building:part" zh_CN.href="http://wiki.openstreetmap.org/wiki/Zh-hans:Key:building:part"/>
 			<space/>
@@ -6453,7 +6459,7 @@
          <link href="http://wiki.openstreetmap.org/wiki/Tag:historic=wayside_cross" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:historic=wayside_cross" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:historic=wayside_cross" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:historic=wayside_cross" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:historic=wayside_cross" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:historic=wayside_cross" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:historic=wayside_cross" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:historic=wayside_cross" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:historic=wayside_cross"/>
          <space/>
          <key key="historic" value="wayside_cross"/>
-         <text key="name" text="Name"/>
+         <reference ref="optional_name"/>
          <combo key="religion" text="Religion" values="christian" display_values="Christian" default="christian"/>
          <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic" default="catholic"/>
          <text key="start_date" text="Start date"/>
@@ -8076,13 +8082,13 @@
             <key key="landuse" value="commercial"/>
             <reference ref="optional_name"/>
         </item> <!-- Commercial -->
-        <item name="Industrial" icon="landuse_works_22087.png" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
+        <item name="Industrial area" icon="landuse_works_22087.png" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=industrial" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=industrial" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=industrial" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:landuse=industrial" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=industrial" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=industrial" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:landuse=industrial" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:landuse=industrial" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=industrial" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=industrial"/>
             <space/>
             <key key="landuse" value="industrial"/>
             <reference ref="optional_name"/>
             <combo key="industrial" text="Type" values="bakery,brewery,brickyard,depot,distributor,factory,grinding_mill,heating_station,machine_shop,mine,oil,port,salt_pond,sawmill,scrap_yard,shipyard,slaughterhouse,warehouse" display_values="Bakery,Brewery,Brickyard,Depot,Distributor,Factory,Grinding mill,Heating station,Machine shop,Mine,Oil,Port,Salt pond,Sawmill,Scrap yard,Shipyard,Slaughterhouse,Warehouse" editable="true" values_context="industrial" match="key"/>
-        </item> <!-- Industrial -->
+        </item> <!-- Industrial area -->
         <item name="Garages" icon="presets/garages.png" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=garages" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=garages" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=garages" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:landuse=garages" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:landuse=garages" nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:landuse=garages" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:landuse=garages" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:landuse=garages"/>
             <space/>
