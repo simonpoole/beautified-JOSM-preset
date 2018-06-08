@@ -8507,7 +8507,7 @@
             <reference ref="additional_building_tags" />
             <preset_link preset_name="Address" />
         </item> <!-- House -->
-        <item name="Industrial" icon="${ICONPATH}man_made_works_22087.${ICONTYPE}"
+        <item name="Industrial building" icon="${ICONPATH}man_made_works_22087.${ICONTYPE}"
             type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Key:building"
                 bg.href="http://wiki.openstreetmap.org/wiki/Bg:Key:building"
@@ -8525,10 +8525,10 @@
                 ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:building"
                 uk.href="http://wiki.openstreetmap.org/wiki/Uk:Key:building" />
             <space />
-            <key key="building" text="Industrial" value="industrial" values_context="building" />
+            <key key="building" text="Industrial building" value="industrial" values_context="building" />
             <reference ref="additional_building_tags" />
             <preset_link preset_name="Address" />
-        </item> <!-- Industrial -->
+        </item> <!-- Industrial  building -->
 		<item name="Building part" icon="${ICONPATH}man_made_empty.${ICONTYPE}"
 			type="closedway,multipolygon" preset_name_label="true">
 			<link href="http://wiki.openstreetmap.org/wiki/Key:building:part"
@@ -12757,7 +12757,7 @@
             <key key="landuse" value="commercial" values_context="landuse" />
             <reference ref="optional_name" />
         </item> <!-- Commercial -->
-        <item name="Industrial" icon="${ICONPATH}landuse_works_22087.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
+        <item name="Industrial area" icon="${ICONPATH}landuse_works_22087.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=industrial"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=industrial"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:landuse=industrial"
@@ -12775,7 +12775,7 @@
             	display_values="Bakery,Brewery,Brickyard,Depot,Distributor,Factory,Grinding mill,Heating station,Machine shop,Mine,Oil,Port,Salt pond,Sawmill,Scrap yard,Shipyard,Slaughterhouse,Warehouse" 
             	editable="true"
             	values_context="industrial" match="key"/>
-        </item> <!-- Industrial -->
+        </item> <!-- Industrial area -->
         <item name="Garages" icon="presets/garages.png" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:landuse=garages"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:landuse=garages"
