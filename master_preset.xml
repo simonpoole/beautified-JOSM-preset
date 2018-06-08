@@ -9883,7 +9883,7 @@
                uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:historic=wayside_cross" />
          <space />
          <key key="historic" value="wayside_cross" />
-         <text key="name" text="Name" />
+         <reference ref="optional_name" />
          <combo key="religion" text="Religion" values="christian" display_values="Christian" default="christian" />
          <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" 
          	display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic"
