@@ -6803,6 +6803,15 @@
             </optional>
             -->
         </item> <!-- Automated Defibrillator -->
+        <item name="First Aid" icon="${ICONPATH}emergency_first_aid_17002.${ICONTYPE}" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:emergency=first_aid" />
+            <space />
+            <key key="emergency" value="first_aid" />
+            <reference ref="oh_wheelchair_level" />
+            <text key="operator" text="Operator" />
+            <combo key="access" text="Access" values="yes,private,customers,permissive,no" display_values="Yes,Private,Customers,Permissive,No" />
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none" />
+        </item> <!-- First Aid -->
         <item name="Fire Extinguisher" icon="${ICONPATH}emergency_fire_extinguisher_17008.${ICONTYPE}" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:emergency=fire_extinguisher"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:emergency=fire_extinguisher"
