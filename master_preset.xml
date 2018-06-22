@@ -3831,9 +3831,9 @@
             <space />
             <key key="amenity" value="parking" />
             <reference ref="parking_name_type_ref" />
-            <text key="maxheight" text="Max. height (meters)" />
             <combo key="park_ride" text="Park and Ride" values="yes,no,bus,train,tram,metro,ferry" />
             <reference ref="parking_access_fee_operator_surface_smoothness" />
+            <text key="maxheight" text="Max. height (meters)" />
             <space />
             <text key="capacity" text="Capacity (overall)" />
             <combo key="capacity:disabled" text="Spaces for Disabled" values="yes,no,1,2,3" />
