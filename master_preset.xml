@@ -10299,6 +10299,17 @@
             <reference ref="name_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Nutrition supplements -->
+        <item name="Spices" icon="${ICONPATH}shopping_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=spices"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=spices"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=spices"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=spices"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=spices" />
+            <space />
+            <key key="shop" value="spices" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Spices -->
     </group> <!-- Food -->
     <group name="Clothes" icon="${ICONPATH}shopping_clothes.${ICONTYPE}">
         <item name="Clothes" icon="${ICONPATH}shopping_clothes.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
