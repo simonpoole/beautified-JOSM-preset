@@ -16,7 +16,7 @@ ext {
 }
 
 dependencies {
-	runtime 'ch.poole:preset-utils:0.3.1'
+	runtime 'ch.poole:preset-utils:0.5.0'
 }
 
 defaultTasks 'generateAllPresetTypes'
@@ -31,6 +31,7 @@ task copyResources(type: Copy) {
 	from zipTree(project.configurations.runtime.filter{it.name.startsWith('preset-utils')}.singleFile)
     include "josm-preset-1.0.xlmns"
     include "vespucci-preset-1.0.xlmns"
+    include "vespucci-preset-1.1.xlmns"
 	include "toJOSM.xslt"
     into new File(buildDir.getPath() + '/xml')
 }
@@ -131,10 +132,10 @@ task generateAndValidateVespucci(dependsOn: ["vespucciIcons","copyResources"], t
 	mkdir('gen')
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
     	// validation
-    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.0.xlmns', '-e', input
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.1.xlmns', '-e', input
 	} else {
     	// validation
-    	commandLine 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.0.xlmns', '-e', input
+    	commandLine 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.1.xlmns', '-e', input
 	}	
 }
 
@@ -156,10 +157,10 @@ task generateAndValidateVespucciBuild(dependsOn: ["vespucciBuild","copyResources
 	mkdir('gen')
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
     	// validation
-    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.0.xlmns', '-e', input
+    	commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.1.xlmns', '-e', input
 	} else {
     	// validation
-    	commandLine 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.0.xlmns', '-e', input
+    	commandLine 'xmlstarlet', 'val', '-s', 'build/xml/vespucci-preset-1.1.xlmns', '-e', input
 	}	
 }
 
