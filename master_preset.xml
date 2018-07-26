@@ -7410,7 +7410,7 @@
             <key key="amenity" value="waste_basket" />
             <combo key="waste" text="Waste" values="trash,dog_excrement" display_values="Trash,Dog excrement" match="none" />
         </item> <!-- Waste Basket/Trash Can -->
-        <item name="Waste Disposal/Dumpster" icon="${ICONPATH}amenity_waste_disposal_12312.${ICONTYPE}" type="node" preset_name_label="true">
+        <item name="Waste Disposal/Dumpster" icon="${ICONPATH}amenity_waste_disposal_12312.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=waste_disposal"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=waste_disposal"
                   es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=waste_disposal"
