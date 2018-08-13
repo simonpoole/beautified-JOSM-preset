@@ -4344,7 +4344,7 @@
             <space />
             <key key="type" value="route" />
             <combo key="route" text="Route type" values="bus,trolleybus" values_searchable="true" match="keyvalue!" />
-            <key key="public_transport:version" value="2" /> <!-- only validate marked relations in order to avoid false positives -->
+            <key key="public_transport:version" text="Version" value="2" /> <!-- only validate marked relations in order to avoid false positives -->
             <reference ref="name_ref" />
             <optional>
                 <reference ref="public_transport_route_optionals" />
