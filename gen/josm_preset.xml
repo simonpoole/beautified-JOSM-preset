@@ -332,7 +332,7 @@
     	<combo key="organic" text="Organic" values="only,yes,no" display_values="Only,Yes,No"/>
     </chunk>
 	<chunk id="cuisine">
-    	<multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;coffee_shop;sushi;steak_house;fish_and_chips;chicken;american;ice_cream;international;seafood;spanish;vietnamese;fish;noodle;barbecue;vegetarian;korean;donut;mediterranean;friture;crepe" display_values="Italian;Chinese;Pizza;Burger;Greek;German;Indian;Regional;Kebab;Turkish;Asian;Thai;Mexican;Japanese;French;Sandwich;Coffee shop;Sushi;Steak house;Fish and chips;Chicken;American;Ice cream;International;Seafood;Spanish;Vietnamese;Fish;Noodle;Barbecue;Vegetarian;Korean;Donut;Mediterranean;Friture;Crepe" values_searchable="true"/>
+    	<multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;coffee_shop;sushi;steak_house;fish_and_chips;chicken;american;ice_cream;international;seafood;spanish;vietnamese;fish;noodle;barbecue;vegetarian;korean;donut;mediterranean;friture;crepe" display_values="Italian;Chinese;Pizza;Burger;Greek;German;Indian;Regional;Kebab;Turkish;Asian;Thai;Mexican;Japanese;French;Sandwich;Coffee shop;Sushi;Steak house;Fish and chips;Chicken;American;Ice cream;International;Seafood;Spanish;Vietnamese;Fish;Noodle;Barbecue;Vegetarian;Korean;Donut;Mediterranean;Friture;Crepe" values_searchable="true" match="key"/>
     </chunk>
     <chunk id="clothes">
     	<multiselect key="clothes" text="Kind of clothes" values_searchable="true" match="key">
