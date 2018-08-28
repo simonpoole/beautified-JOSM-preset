@@ -59,6 +59,10 @@
     <chunk id="layer" >
     	<combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" length="3" match="none" editable="true" />
     </chunk>
+    <chunk id="name_layer">
+        <text key="name" text="Name" />
+        <reference ref="layer" />
+    </chunk>
     <chunk id="tunnel">
         <combo key="tunnel" text="Tunnel" values="yes,building_passage" 
             display_values="Yes,Building passage," values_sort="false" match="key" />
@@ -181,10 +185,6 @@
     	<optional>
     		<reference ref="level" />
     	</optional>
-    </chunk>
-    <chunk id="name_layer">
-        <text key="name" text="Name" />
-        <reference ref="layer" />
     </chunk>
     <chunk id="service_times">
         <combo key="service_times" text="Service Times" delimiter="|" values="18:00|sunset,sunrise|Su 09:30,11:00|Sa,Su,PH 09:00|Sa 18:00; Su 10:45|Fr 08:00-18:00; Apr 10-15 off; Jun 07:00-20:00; Aug off; Dec 24 08:00-24:00|Sa 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true"  match="none" editable="true" />
@@ -906,7 +906,7 @@
                 <text key="destination:ref" text="Destination reference" />
                 <text key="width" text="Width (meters)" />
                 <reference ref="placement" />
-                <checkgroup columns="4">
+                <checkgroup text="Additional attributes" columns="4">
                     <check key="oneway" text="Oneway" default="on" />
                     <check key="bridge" text="Bridge" disable_off="true" />
                     <check key="tunnel" text="Tunnel" disable_off="true" />
@@ -937,7 +937,7 @@
                 <text key="destination:ref" text="Destination reference" />                
                 <text key="width" text="Width (meters)" />
                 <reference ref="placement" />
-                <checkgroup columns="4">
+                <checkgroup text="Additional attributes" columns="4">
                     <check key="oneway" text="Oneway" default="on" />
                     <check key="bridge" text="Bridge" disable_off="true" />
                     <check key="tunnel" text="Tunnel" disable_off="true" />
@@ -974,7 +974,7 @@
                 <text key="destination:ref" text="Destination reference" />
                 <text key="width" text="Width (meters)" />
                 <reference ref="placement" />
-                <checkgroup columns="4">
+                <checkgroup text="Additional attributes" columns="4">
                     <check key="oneway" text="Oneway" default="on" />
                     <check key="motorroad" text="Motorroad" default="on" />
                     <check key="bridge" text="Bridge" disable_off="true" />
@@ -1003,7 +1003,7 @@
                 <text key="destination:ref" text="Destination reference" />
                 <text key="width" text="Width (meters)" />
                 <reference ref="placement" />
-                <checkgroup columns="4">
+                <checkgroup text="Additional attributes" columns="4">
                     <check key="oneway" text="Oneway" default="on" />
                     <check key="motorroad" text="Motorroad" default="on" />
                     <check key="bridge" text="Bridge" disable_off="true" />
@@ -1754,20 +1754,16 @@
                 <reference ref="surface" />
                 <text key="step_count" text="Number of steps" />
                 <space />
-                <checkgroup columns="1" > <!-- workaround -->
+                <checkgroup text="Ramp" columns="1" > <!-- workaround -->
                     <check key="ramp" text="Ramp" disable_off="true" />
-                </checkgroup>
-                <checkgroup columns="2" >
                     <check key="ramp:stroller" text="Stroller ramp" disable_off="true" />
                     <check key="ramp:bicycle" text="Bicycle ramp" disable_off="true" />
                 </checkgroup>
                 <combo key="ramp:wheelchair" text="Wheelchair ramp" values="yes,limited,no" display_values="Yes,Limited,No" />
                 <combo key="ramp:luggage" text="Luggage ramp" values="yes,automatic,manual,no" display_values="Yes,Automatic,Manual,No" />
                 <space />
-                <checkgroup columns="1" > <!-- workaround -->
+                <checkgroup text="Handrail" columns="1" > <!-- workaround -->
                     <check key="handrail" text="Handrail" disable_off="true" />
-                </checkgroup>
-                <checkgroup columns="3" >
                     <check key="handrail:left" text="Left handrail" disable_off="true" />
                     <check key="handrail:center" text="Center handrail" disable_off="true" />
                     <check key="handrail:right" text="Right handrail" disable_off="true" />
@@ -3361,7 +3357,7 @@
                 <reference ref="oh" />
                 <space />
                 <label text="Fuel types:" />
-                <checkgroup columns="2">
+                <checkgroup text="Fuel types" columns="2">
                     <check key="fuel:diesel" text="Diesel"  disable_off="true" />
                     <check key="fuel:biodiesel" text="Bio Diesel" disable_off="true" />
                     <check key="fuel:octane_80" text="Octane 80" disable_off="true" />
@@ -3984,7 +3980,7 @@
                 <reference ref="oh_wheelchair" />
                 <space />
                 <label text="Fuel types:" />
-                <checkgroup columns="2">
+                <checkgroup text="Fuel types" columns="2">
                     <check key="fuel:diesel" text="Diesel" disable_off="true" />
                     <check key="fuel:biodiesel" text="Bio Diesel" disable_off="true" />
                     <check key="fuel:GTL_diesel" text="Diesel (Gas To Liquid - ultimate diesel)" disable_off="true" />
@@ -4009,7 +4005,7 @@
                 <check key="fuel:adblue" text="Diesel Exhaust Fluid (AdBlue/AUS32)" disable_off="true" />
                 <space />
                 <label text="Fuel cards:" />
-                <checkgroup columns="3">
+                <checkgroup text="Fuel cards" columns="3">
                     <check key="payment:dkv" text="DKV" disable_off="true" />
                     <check key="payment:routex" text="Routex" disable_off="true" />
                     <check key="payment:uta" text="UTA" disable_off="true" />
@@ -4036,7 +4032,7 @@
             <combo key="capacity" text="Capacity" values="1,2,3,4,5,6" />
             <space />
             <label text="Types of vehicles which can be charged:" />
-            <checkgroup columns="4">
+            <checkgroup text="Types of vehicles which can be charged" columns="4">
                 <check key="bicycle" text="Bicycle" disable_off="true" />
                 <check key="scooter" text="Scooter" disable_off="true"  />
                 <check key="car" text="Car" disable_off="true" />
@@ -4059,7 +4055,7 @@
             <combo key="socket:nema_5_20" text="NEMA 5-20" values="1,2,3,4,5,6" />
             <space />
             <label text="Authentication:" />
-            <checkgroup columns="4">
+            <checkgroup text="Authentication" columns="4">
                 <check key="authentication:none" text="None" disable_off="true" />
                 <check key="authentication:phone_call" text="Phone call" disable_off="true" />
                 <check key="authentication:short_message" text="Short message" disable_off="true" />
@@ -4409,23 +4405,25 @@
                 <reference ref="tactile_paving" />
             </optional>
 			<space />
-			<checkgroup columns="2">
+			<checkgroup text="Legacy stop types" columns="2">
            		<check key="bus" text="Bus" disable_off="true" />
-           		<check key="highway" value_on="bus_stop" value_off="" text="Bus stop (legacy)" />
+           		<check key="highway" value_on="bus_stop" text="Bus stop (legacy)" disable_off="true" />
             	<check key="tram" text="Tram" disable_off="true" />
-            	<check key="railway" value_on="tram_stop" value_off="" text="Tram stop (legacy)" />
+            	<check key="railway" value_on="tram_stop"  text="Tram stop (legacy)" disable_off="true" />
             	<check key="train" text="Train" disable_off="true" />
-           		<check key="railway" value_on="station" value_off="" text="Railway station (legacy)" />
+           		<check key="railway" value_on="station" text="Railway station (legacy)" disable_off="true" />
+                <check key="railway" value_on="halt" text="Railway halt (legacy)" disable_off="true" />
            	</checkgroup>
-            <check key="railway" value_on="halt" value_off="" text="Railway halt (legacy)" />
-            <check key="trolleybus" text="Trolleybus" disable_off="true" />
-            <check key="share_taxi" text="Share taxi" disable_off="true" />
-            <check key="subway" text="Subway" disable_off="true" />
-            <check key="light_rail" text="Light Rail" />
-            <check key="monorail" text="Monorail" disable_off="true" />
-            <check key="funicular" text="Funicular" disable_off="true" />
-            <check key="aerialway" text="Aerialway" disable_off="true" />
-            <check key="ferry" text="Ferry" disable_off="true" />
+            <checkgroup text="Stop types" columns="2">
+                <check key="trolleybus" text="Trolleybus" disable_off="true" />
+                <check key="share_taxi" text="Share taxi" disable_off="true" />
+                <check key="subway" text="Subway" disable_off="true" />
+                <check key="light_rail" text="Light Rail" disable_off="true" />
+                <check key="monorail" text="Monorail" disable_off="true" />
+                <check key="funicular" text="Funicular" disable_off="true" />
+                <check key="aerialway" text="Aerialway" disable_off="true" />
+                <check key="ferry" text="Ferry" disable_off="true" />
+            </checkgroup>
         </item> <!-- Stop Position -->
         <item name="Platform" type="node,way,closedway,multipolygon" icon="${ICONPATH}transport_platform_32003.${ICONTYPE}" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/Public_Transport#Platform" />
@@ -5028,7 +5026,7 @@
             <key key="tourism" value="camp_site" />
             <reference ref="name_operator" />
             <reference ref="stars" />
-            <checkgroup columns="2">
+            <checkgroup text="Camping type" columns="2">
                 <check key="tents" text="Tents allowed" disable_off="true" />
                 <check key="caravans" text="Caravans allowed" disable_off="true" />
             </checkgroup>
@@ -7254,7 +7252,7 @@
             <key key="amenity" value="toilets" />
             <reference ref="facility_access" />
             <optional>
-                <checkgroup columns="3">
+                <checkgroup text="Gender" columns="3">
                     <check key="female" text="Female" text_context="restroom" disable_off="true" />
                     <check key="male" text="Male" text_context="restroom" disable_off="true" />
                     <check key="unisex" text="Unisex" text_context="restroom" disable_off="true" />
@@ -7280,7 +7278,7 @@
             <key key="amenity" value="shower" />
             <reference ref="facility_access" />
             <optional>
-            	<checkgroup columns="3">
+            	<checkgroup text="Gender" columns="3">
                     <check key="female" text="Female" text_context="restroom" disable_off="true" />
                     <check key="male" text="Male" text_context="restroom" disable_off="true" />
                     <check key="unisex" text="Unisex" text_context="restroom" disable_off="true" />
@@ -7429,7 +7427,7 @@
             <key key="recycling_type" value="container" />
             <reference ref="oh_wheelchair" />
             <space />
-            <checkgroup columns="4">
+            <checkgroup text="Accepted material" columns="4">
                 <check key="recycling:aluminium" text="Aluminium" disable_off="true" />
                 <check key="recycling:batteries" text="Batteries" disable_off="true" />
                 <check key="recycling:cans" text="Cans" disable_off="true" />
@@ -7470,7 +7468,7 @@
             <key key="recycling_type" value="centre" />
             <reference ref="name_operator_oh_wheelchair" />
             <space />
-            <checkgroup columns="4">
+            <checkgroup text="Accepted material" columns="4">
                 <check key="recycling:aluminium" text="Aluminium" disable_off="true" />
                 <check key="recycling:batteries" text="Batteries" disable_off="true" />
                 <check key="recycling:cans" text="Cans" disable_off="true" />
@@ -9238,7 +9236,7 @@
             <key key="man_made" value="monitoring_station" />
             <reference ref="optional_name_operator" />
             <label text="Monitoring:" />
-            <checkgroup columns="3">
+            <checkgroup text="Monitoring type" columns="3">
                 <check key="monitoring:water_level" text="Water level" disable_off="true" />
                 <check key="monitoring:tide_gauge" text="Tide Level" disable_off="true" />
                 <check key="monitoring:groundwater" text="Groundwater" disable_off="true" />
@@ -9253,13 +9251,13 @@
                 <check key="monitoring:seismic_activity" text="Seismic Activity" disable_off="true" />
             </checkgroup>
             <label text="Recording:" />
-            <checkgroup columns="3">
+            <checkgroup text="Recording" columns="3">
                 <check key="recording:automated" text="Automated" disable_off="true" />
                 <check key="recording:manually" text="Manually" disable_off="true" />
                 <check key="recording:remote" text="Remote" disable_off="true" />
             </checkgroup>
             <label text="Display:" />
-            <checkgroup columns="2">
+            <checkgroup text="Display" columns="2">
                 <check key="display:analog" text="Analog" disable_off="true" />
                 <check key="display:digital" text="Digital" disable_off="true" />
             </checkgroup>
@@ -11156,7 +11154,7 @@
             <space />
             <key key="shop" value="hairdresser" />
             <reference ref="name_oh_wheelchair_level" />
-			<checkgroup columns="3">
+			<checkgroup text="Gender" columns="3">
 				<check key="female" text="Female" disable_off="true" />
 				<check key="male" text="Male" disable_off="true" />
 				<check key="unisex" text="Unisex" disable_off="true" />
@@ -11789,14 +11787,14 @@
               ja.href="http://wiki.openstreetmap.org/wiki/JA:Key:payment"
               ru.href="http://wiki.openstreetmap.org/wiki/RU:Key:payment" />
         <space />
-        <combo key="payment:cash" text="Cash" values="yes,no" display_values="Yes,No" match="keyvalue" />
-        <checkgroup columns="4">
+        <check key="payment:cash" text="Cash"  match="keyvalue" />
+        <checkgroup text="Cash type" columns="4">
             <check key="payment:coins" text="Coins" match="keyvalue"  disable_off="true" />
             <check key="payment:notes" text="Notes" text_context="payment" match="keyvalue"  disable_off="true"/>
         </checkgroup>
         <space />
-        <combo key="payment:debit_cards" text="Debit cards" values="yes,no" display_values="Yes,No" match="keyvalue" />
-        <checkgroup columns="4">
+        <check key="payment:debit_cards" text="Debit cards"  match="keyvalue" />
+        <checkgroup text="Debit cards type" columns="4">
             <check key="payment:bankaxess" text="BankAxess" match="keyvalue" disable_off="true" />
             <check key="payment:bancomat" text="Bancomat" match="keyvalue" disable_off="true" />
             <check key="payment:girocard" text="Girocard" match="keyvalue" disable_off="true" />
@@ -11807,8 +11805,8 @@
             <check key="payment:visa_electron" text="Visa Electron" match="keyvalue" disable_off="true" />
         </checkgroup>
         <space />
-        <combo key="payment:credit_cards" text="Credit cards" values="yes,no" display_values="Yes,No" match="keyvalue" />
-        <checkgroup columns="4">
+        <check key="payment:credit_cards" text="Credit cards" match="keyvalue" />
+        <checkgroup text="Credit cards type" columns="4">
             <check key="payment:american_express" text="American Express" match="keyvalue" disable_off="true" />
             <check key="payment:diners_club" text="Diners Club" match="keyvalue" disable_off="true" />
             <check key="payment:discover_card" text="Discover Card" match="keyvalue" disable_off="true" />
@@ -11817,8 +11815,8 @@
             <check key="payment:visa" text="Visa" match="keyvalue" disable_off="true" />
         </checkgroup>
         <space />
-        <combo key="payment:electronic_purses" text="Electronic purses and Charge cards" values="yes,no" display_values="Yes,No" match="keyvalue" />
-        <checkgroup columns="4">
+        <check key="payment:electronic_purses" text="Electronic purses" match="keyvalue" />
+        <checkgroup text="Electronic purses type" columns="4">
             <check key="payment:ep_avant" text="Avant (fi)" match="keyvalue" disable_off="true" />
             <check key="payment:ep_geldkarte" text="Geldkarte (de)" match="keyvalue" disable_off="true" />
             <check key="payment:ep_mep" text="Mep (pt)" match="keyvalue" disable_off="true" />
@@ -11829,8 +11827,8 @@
             <check key="payment:ep_moneo" text="Moneo (fr)" match="keyvalue" disable_off="true" />
         </checkgroup>
         <space />
-        <combo key="payment:cryptocurrencies" text="Cryptocurrencies" values="yes,no" display_values="Yes,No"  match="keyvalue" />
-        <checkgroup columns="4">
+        <check key="payment:cryptocurrencies" text="Cryptocurrencies" match="keyvalue" />
+        <checkgroup text="Cryptocurrencies types" columns="4">
             <check key="payment:bitcoin" text="Bitcoin" match="keyvalue" disable_off="true" />
             <check key="payment:litecoin" text="Litecoin" match="keyvalue" disable_off="true" />
         </checkgroup>
