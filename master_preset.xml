@@ -2300,6 +2300,16 @@
             <key key="barrier" value="spikes" />
             <reference ref="barrier_5" />
         </item> <!-- Spikes -->
+        <item name="Height resctrictor" icon="${ICONPATH}barrier_empty.${ICONTYPE}" type="node" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=height_resctrictor"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=height_resctrictor"
+                  de.href="http://wiki.openstreetmap.org/wiki/De:Tag:barrier=height_resctrictor"
+                  es.href="http://wiki.openstreetmap.org/wiki/Es:Tag:barrier=height_resctrictor"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:barrier=height_resctrictor" />
+            <key key="barrier" value="height_resctrictor" />
+            <text key="maxheight" text="Max. height (meters)" />
+            <reference ref="barrier_5" />
+        </item> <!-- Height resctrictor -->
         <item name="Toll Booth" icon="${ICONPATH}barrier_toll_booth.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=toll_booth"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=toll_booth"
