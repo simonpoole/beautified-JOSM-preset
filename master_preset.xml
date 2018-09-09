@@ -905,7 +905,7 @@
   	</multiselect>
   </chunk>
   <chunk id="additonal_aerialway_tags">
-  	<text key="aerialway:capacity" text="Number of people per hour" />
+  	<text key="aerialway:capacity" text="Number of people per hour" value_type="integer" />
     <text key="aerialway:occupancy" text="Number of people per gondola/chair" />
     <text key="aerialway:duration" text="Typical journey time in minutes" />
     <check key="aerialway:heating" text="Has heating?" disable_off="true" />
@@ -3444,7 +3444,7 @@
             <reference ref="name_operator" />
             <reference ref="oh" />
             <optional>
-            	<text key="capacity" text="Number of boats" />
+            	<text key="capacity" text="Number of boats" value_type="integer" />
             	<check key="motorboat_rental" text="Motorboats" disable_off="true" /> 
             	<check key="houseboat_rental" text="Houseboats" disable_off="true" />
             	<check key="pedalboat_rental" text="Pedalos" disable_off="true" />
@@ -3876,7 +3876,7 @@
             <reference ref="name_ref" />
             <reference ref="oh" />
             <optional>
-                <text key="aerialway:capacity" text="Number of people per hour" />
+                <text key="aerialway:capacity" text="Number of people per hour" value_type="integer" />
                 <text key="aerialway:duration" text="Typical journey time in minutes" />
             </optional>
         </item> <!-- Drag Lift -->
@@ -3891,7 +3891,7 @@
             <reference ref="name_ref" />
             <reference ref="oh" />
             <optional>
-                <text key="aerialway:capacity" text="Number of people per hour" />
+                <text key="aerialway:capacity" text="Number of people per hour" value_type="integer" />
                 <text key="aerialway:duration" text="Typical journey time in minutes" />
             </optional>
         </item> <!-- Magic Carpet -->
@@ -3952,7 +3952,7 @@
             <reference ref="parking_access_fee_operator_surface_smoothness" />
             <text key="maxheight" text="Max. height (meters)" />
             <space />
-            <text key="capacity" text="Capacity (overall)" />
+            <text key="capacity" text="Capacity (overall)" value_type="integer" />
             <combo key="capacity:disabled" text="Spaces for Disabled" values="yes,no,1,2,3" />
             <combo key="capacity:women" text="Spaces for Women" values="yes,no,1,2,3" />
             <combo key="capacity:parent" text="Spaces for Parents" values="yes,no,1,2,3" />
@@ -3974,7 +3974,7 @@
             <space />
             <key key="amenity" value="parking_space" />
             <reference ref="parking_name_type_ref" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="parking_access_fee_operator_surface_smoothness" />
             <reference ref="maxstay" />
             <reference ref="supervised_lit_oh" />
@@ -4075,7 +4075,7 @@
             <space />
             <combo key="voltage" text="Voltage" values="230,400"/>
             <combo key="amperage" text="Amperage" values="16,32" />
-            <combo key="capacity" text="Capacity" values="1,2,3,4,5,6" />
+            <combo key="capacity" text="Capacity" values="1,2,3,4,5,6" value_type="integer" />
             <space />
             <label text="Types of vehicles which can be charged:" />
             <checkgroup text="Types of vehicles which can be charged" columns="4">
@@ -4221,7 +4221,7 @@
             <space />
             <key key="amenity" value="car_sharing" />
             <text key="operator" text="Operator" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="level" />
             <reference ref="name_oh_wheelchair" />
             <text key="website" text="Website" />
@@ -4240,7 +4240,7 @@
             <space />
             <key key="amenity" value="motorcycle_parking" />
             <reference ref="parking_name_type_ref" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="parking_access_fee_operator_surface_smoothness" />
             <reference ref="supervised_lit_oh" />
             <check key="covered" text="Covered (with roof)" disable_off="true" />
@@ -4292,7 +4292,7 @@
             <key key="amenity" value="bicycle_parking" />
             <combo key="bicycle_parking" text="Type" values="anchors,building,ground_slots,informal,lockers,rack,shed,stands,wall_loops" />
             <reference ref="optional_name" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="parking_access_fee_operator_surface_smoothness" />
             <check key="covered" text="Covered" disable_off="true" />
             <reference ref="supervised_lit_oh" />
@@ -5020,7 +5020,7 @@
             <key key="tourism" value="wilderness_hut" />
             <reference ref="name_operator" />
             <reference ref="facility_access" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="fee" />
             <reference ref="toilets" />
             <check key="shower" text="Shower" />
@@ -5048,7 +5048,7 @@
             <text key="beds" text="Beds" />
             <reference ref="wheelchair" />
             <space />
-            <text key="capacity" text="Number of places" />
+            <text key="capacity" text="Number of places" value_type="integer" />
             <reference ref="fee_interval" />
             <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no" />
             <check key="power_supply" text="Power supply" disable_off="true" />
@@ -6214,7 +6214,7 @@
             <optional>
             	<text key="name" text="Name" />
             	<text key="operator" text="Operator" />
-            	<text key="capacity" text="Capacity" />
+            	<text key="capacity" text="Capacity" value_type="integer" />
             	<reference ref="oh" />
             	<combo key="public_bookcase:type" text="Type" 
             		values="building,glass_cabinet,metal_cabinet,movable_cabinet,phone_box,reading_box,sculpture,shelf,shelter,wooden_cabinet" 
@@ -6617,8 +6617,8 @@
             <check key="kindergarten" text="Kindergarten" disable_off="true" />
             <check key="after_school" text="After school care" disable_off="true" />
             <space />
-            <text key="childcare:capacity" text="Childcare capacity" />
-            <text key="after_school:capacity" text="After school capacity" />
+            <text key="childcare:capacity" text="Childcare capacity" value_type="integer" />
+            <text key="after_school:capacity" text="After school capacity" value_type="integer" />
             <space />
             <reference ref="link_contact_address" />
         </item> <!-- Childcare -->
@@ -7116,7 +7116,7 @@
             <key key="social_facility" value="assisted_living" />
             <reference ref="social_facility_for" />
             <reference ref="name_operator_level" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
         <item name="Social Centre" icon="${ICONPATH}amenity_social_centre_12352.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7162,7 +7162,7 @@
             <key key="social_facility" value="group_home" />
             <key key="social_facility:for" value="senior" />
             <reference ref="name_operator_level" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
         <item name="Nursing Home" icon="${ICONPATH}amenity_nursing_home_12093.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7179,7 +7179,7 @@
             <key key="social_facility" value="nursing_home" />
             <reference ref="social_facility_for" />
             <reference ref="name_operator_level" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Nursing Home -->
         <item name="Nursing Home (deprecated)" icon="${ICONPATH}amenity_nursing_home_12093.${ICONTYPE}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
@@ -7208,7 +7208,7 @@
             <key key="social_facility" value="group_home" />
             <reference ref="social_facility_for" />
             <reference ref="name_operator_level" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Group Home -->
         <item name="Outreach" icon="${ICONPATH}amenity_outreach_12252.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7240,7 +7240,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="shelter" />
             <reference ref="name_operator_oh_wheelchair_level_toilets" />
-            <text key="capacity" text="Capacity" />
+            <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Shelter -->
         <item name="Social Club" icon="${ICONPATH}amenity_social_club_21172.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
