@@ -28,6 +28,17 @@
             <list_entry value="impassable" short_description="No wheeled vehicle"/>
         </combo>
     </chunk>
+    <chunk id="mtb_scale">
+        <combo key="mtb:scale" text="MTB Scale">
+            <list_entry value="0" short_description=""/>
+            <list_entry value="1" short_description=""/>
+            <list_entry value="2" short_description=""/>
+            <list_entry value="3" short_description=""/>
+            <list_entry value="4" short_description=""/>
+            <list_entry value="5" short_description=""/>
+            <list_entry value="6" short_description="Not rideable"/>
+        </combo>
+    </chunk>
     <chunk id="riding_surface">
         <combo key="leisure" text="Type" values="horse_riding,pitch,sports_centre,stadium,track" display_values="Horse riding,Pitch,Sports centre,Stadium,Track" values_context="riding"/>
         <combo key="surface" text="Surface" values="grass,sand,clay,dirt,fine_gravel,ground,dirt,mud,unpaved,compacted" display_values="Grass,Sand,Clay,Dirt,Fine gravel,Ground,Mud,Unpaved,Compacted"/>
@@ -184,6 +195,11 @@
     <chunk id="oh">
         <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" match="none" editable="true"/>
     </chunk>
+        <chunk id="optional_oh">
+        <optional>
+            <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" match="none" editable="true"/>
+        </optional>
+    </chunk>
     <chunk id="diaper">
         <combo key="diaper" text="Diaper changing facilities" values_sort="false">
 	      <list_entry value="yes" short_description="Available"/>
@@ -245,14 +261,27 @@
         <text key="name" text="Name"/>
         <reference ref="oh_wheelchair"/>
     </chunk>
+    <chunk id="name_wheelchair">
+        <text key="name" text="Name"/>
+        <reference ref="wheelchair"/>
+    </chunk>
     <chunk id="name_oh_wheelchair_toilets">
         <text key="name" text="Name"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="toilets_with_access"/>
     </chunk>
+        <chunk id="name_wheelchair_toilets">
+        <text key="name" text="Name"/>
+        <reference ref="wheelchair"/>
+        <reference ref="toilets_with_access"/>
+    </chunk>
     <chunk id="name_oh_wheelchair_level">
         <reference ref="name_oh_wheelchair"/>
 		<reference ref="level"/>
+    </chunk>
+       <chunk id="name_wheelchair_level">
+        <reference ref="name_wheelchair"/>
+        <reference ref="level"/>
     </chunk>
     <chunk id="name_oh_wheelchair_level_toilets">
         <reference ref="name_oh_wheelchair"/>
@@ -267,18 +296,25 @@
         <reference ref="name_operator"/>
         <reference ref="oh_wheelchair"/>
     </chunk>
+    <chunk id="name_operator_wheelchair">
+        <reference ref="name_operator"/>
+        <reference ref="oh_wheelchair"/>
+    </chunk>
     <chunk id="name_operator_oh_wheelchair_toilets">
         <reference ref="name_operator"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="toilets_with_access"/>
+    </chunk>
+    <chunk id="name_operator_wheelchair_level">
+        <reference ref="name_operator_oh_wheelchair"/>
+        <reference ref="level"/>
     </chunk>
     <chunk id="name_operator_oh_wheelchair_level">
         <reference ref="name_operator_oh_wheelchair"/>
 		<reference ref="level"/>
     </chunk>
     <chunk id="name_operator_oh_wheelchair_level_toilets">
-        <reference ref="name_operator_oh_wheelchair"/>
-		<reference ref="level"/>
+        <reference ref="name_operator_oh_wheelchair_level"/>
 		<reference ref="toilets_with_access"/>
     </chunk>
     <chunk id="name_brand_operator_oh_wheelchair">
@@ -1308,7 +1344,7 @@
                 <reference ref="name_layer"/>
                 <reference ref="surface_smoothness"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width"/>
-                <combo key="mtb:scale" text="MTB Scale" values="0,1,2,3,4,5"/>
+                <reference ref="mtb_scale"/>
                 <reference ref="road_access_restrictions"/>
             </optional>
         </item> <!-- Track -->
@@ -1327,7 +1363,7 @@
                     <list_entry value="demanding_alpine_hiking" display_value="T5 - difficult alpine trail with climbing" short_description="single plainly climbing up to second grade. Exposed, demanding terrain, jagged rocks, few dangerous glacier and snow"/>
                     <list_entry value="difficult_alpine_hiking" display_value="T6 - hazardous alpine trail with climbing" short_description="climbing up to second grade. Often very exposed, precarious jagged rocks, glacier with danger to slip and fall"/>
                 </combo>
-                <combo key="mtb:scale" text="MTB Scale" values="0,1,2,3,4,5"/>
+                <reference ref="mtb_scale"/>
                 <combo key="trail_visibility" text="Visibility" values="excellent,good,intermediate,bad,horrible,no" display_values="Excellent,Good,Intermediate,Bad,Horrible,Not visible" values_context="trail_visibility" values_sort="false"/>
                 <reference ref="wheelchair"/>
                 <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,no"/>
@@ -4289,7 +4325,8 @@
             <link href="http://wiki.openstreetmap.org/wiki/Proposed_features/childcare2.0"/>
             <space/>
             <key key="amenity" value="childcare"/>
-            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="name_operator_wheelchair_level"/>
+            <reference ref="optional_oh"/>
             <reference ref="education_operator_type"/>
             <optional>
             	<reference ref="religious"/>
@@ -4310,7 +4347,8 @@
 			<space/>
 			<key key="amenity" value="kindergarten"/>
 			<reference ref="isced_level"/>
-			<reference ref="name_operator_oh_wheelchair_level"/>
+			<reference ref="name_operator_wheelchair_level"/>
+            <reference ref="optional_oh"/>
 			<reference ref="min_max_age"/>
 			<reference ref="education_operator_type"/>
 			<optional>
@@ -4324,7 +4362,8 @@
             <space/>
             <key key="amenity" value="school"/>
             <reference ref="isced_level"/>
-            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="name_operator_wheelchair"/>
+            <reference ref="optional_oh"/>
             <reference ref="min_age"/>
             <reference ref="education_operator_type"/>
             <optional>
@@ -4337,7 +4376,8 @@
             <space/>
             <key key="amenity" value="university"/>
             <reference ref="isced_level"/>
-            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="name_operator_wheelchair"/>
+            <reference ref="optional_oh"/>
             <reference ref="education_operator_type"/>
             <optional>
             	<reference ref="religious"/>
@@ -4349,7 +4389,8 @@
             <space/>
             <key key="amenity" value="college"/>
             <reference ref="isced_level"/>
-            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="name_operator_wheelchair"/>
+            <reference ref="optional_oh"/>
             <reference ref="education_operator_type"/>
             <optional>
             	<reference ref="religious"/>
@@ -4360,7 +4401,8 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=driving_school" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=driving_school" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=driving_school" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=driving_school" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=driving_school" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=driving_school" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=driving_school" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=driving_school" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=driving_school"/>
             <space/>
             <key key="amenity" value="driving_school"/>
-            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="name_operator_wheelchair_level"/>
+            <reference ref="optional_oh"/>
             <combo key="license_classes" text="License Classes" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Driving School -->
@@ -5080,7 +5122,7 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=track" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=track" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=track" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=track" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=track" it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:leisure=track" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=track" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=track" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=track" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=track"/>
             <space/>
             <key key="leisure" value="track"/>
-            <text key="name" text="Name"/>
+            <reference ref="optional_name"/>
             <combo key="sport" text="Sport" values="athletics,cycling,dog_racing,equestrian,horse_racing,running,skating,roller_skating,ice_skating" display_values="Athletics,Cycling,Dog racing,Equestrian,Horse racing,Running,Skating,Roller skating,Ice skating" values_context="sport"/>
             <combo key="surface" text="Surface" values="artificial_turf,asphalt,clay,concrete,decoturf,grass,sand,tartan,ground" display_values="Artificial turf,Asphalt,Clay,Concrete,DecoTurf,Grass,Sand,Tartan,Ground" values_context="sport"/>	
         </item> <!-- Racetrack -->
@@ -5297,14 +5339,14 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=skating" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:sport=skating"/>
             <space/>
             <key key="sport" value="skating"/>
-            <text key="name" text="Name"/>
+            <reference ref="optional_name"/>
             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" display_values="Ice rink,Pitch,Sports centre,Stadium" default="ice_rink"/>
         </item> <!-- Skating -->
         <item name="Ice Skating" icon="sport_iceskating.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=ice_skating" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:sport=ice_skating"/>
             <space/>
             <key key="sport" value="ice_skating"/>
-            <text key="name" text="Name"/>
+            <reference ref="optional_name"/>
             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" display_values="Ice rink,Pitch,Sports centre,Stadium" default="ice_rink"/>
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
@@ -5428,28 +5470,28 @@
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=handball"/>
             <space/>
             <key key="sport" value="handball"/>
-            <reference ref="name_operator"/>
+            <reference ref="optional_name_operator"/>
             <reference ref="sport_facility"/>
         </item> <!-- Handball -->
         <item name="Volleyball" icon="sport_volleyball_21073.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=volleyball" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:sport=volleyball"/>
             <space/>
             <key key="sport" value="volleyball"/>
-            <reference ref="name_operator"/>
+            <reference ref="optional_name_operator"/>
             <reference ref="sport_facility"/>
         </item> <!-- Volleyball -->
         <item name="Beach Volleyball" icon="sport_beachvolleyball_21150.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=beachvolleyball" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:sport=beachvolleyball"/>
             <space/>
             <key key="sport" value="beachvolleyball"/>
-            <reference ref="name_operator"/>
+            <reference ref="optional_name_operator"/>
             <reference ref="sport_facility"/>
         </item> <!-- Beach Volleyball -->
         <item name="Billiards" icon="sport_billiards_sp.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:sport=billiards" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:sport=billiards" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:sport=billiards"/>
             <space/>
             <key key="sport" value="billiards"/>
-            <reference ref="name_operator"/>
+            <reference ref="optional_name_operator"/>
             <reference ref="sport_facility"/>
         </item> <!-- Billiards -->
         <item name="Golf" icon="sport_golf.png" type="node,closedway,multipolygon" preset_name_label="true">
