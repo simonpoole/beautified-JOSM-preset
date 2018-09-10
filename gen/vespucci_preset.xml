@@ -4312,13 +4312,15 @@
             <space />
             <key key="shop" value="bicycle" />
             <reference ref="name_oh_wheelchair" />
-            <check key="service:bicycle:retail" text="Bicycles are sold" disable_off="true" />
-            <check key="service:bicycle:second_hand" text="Second-hand bicycles are sold" disable_off="true" />
-            <check key="service:bicycle:repair" text="Bicycles are repaired" disable_off="true" />
-            <check key="service:bicycle:rental" text="Bicycles are rented" disable_off="true" />
-            <check key="service:bicycle:pump" text="Free bicycle pump" disable_off="true" />
-            <check key="service:bicycle:diy" text="Tools for do-it-yourself repair (may be a bike co-operative)" disable_off="true" />
-            <check key="service:bicycle:cleaning" text="Bicycles are washed (for a fee)" disable_off="true" />
+            <checkgroup text="Provided services" columns="1">
+                <check key="service:bicycle:retail" text="Bicycles are sold" />
+                <check key="service:bicycle:second_hand" text="Second-hand bicycles are sold" />
+                <check key="service:bicycle:repair" text="Bicycles are repaired" />
+                <check key="service:bicycle:rental" text="Bicycles are rented" />
+                <check key="service:bicycle:pump" text="Free bicycle pump" />
+                <check key="service:bicycle:diy" text="Tools for do-it-yourself repair (may be a bike co-operative)" />
+                <check key="service:bicycle:cleaning" text="Bicycles are washed (for a fee)"  />
+            </checkgroup>
             <reference ref="link_contact_address_payment" />
         </item> <!-- Bike Dealer -->
         <item name="Rental" icon="transport_rental_bicycle.png" type="node,closedway,multipolygon" preset_name_label="true">
