@@ -1171,9 +1171,9 @@
                   zh_CN.href="http://wiki.openstreetmap.org/wiki/Zh-hans:Tag:highway=tertiary" />
             <space />
             <key key="highway" value="tertiary" />
-            <text key="ref" text="Reference" />
             <text key="name" text="Name" />
             <optional>
+                <text key="ref" text="Reference" />
                 <check key="noname" text="Street has no name" disable_off="true" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
