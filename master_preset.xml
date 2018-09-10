@@ -5762,6 +5762,18 @@
                   sv.href="http://wiki.openstreetmap.org/wiki/Sv:Tag:leisure=fitness_station" />
 			<space />
 			<key key="leisure" value="fitness_station" />
+            <combo key="fitness_station" text="Fitness station" values_searchable="true" match="key" >
+                <list_entry value="balance_beam" display_value="Balance beam" />
+                <list_entry value="box" display_value="Box" />
+                <list_entry value="horizontal_bar" display_value="Horizontal bar" />
+                <list_entry value="horizontal_ladder" display_value="Horizontal ladder" />
+                <list_entry value="parallel_bars" display_value="Parallel bars" />
+                <list_entry value="push-up" display_value="Push-up" />
+                <list_entry value="rings" display_value="Rings" />
+                <list_entry value="sign" display_value="Sign" />
+                <list_entry value="sit-up" display_value="Sit-up" />
+                <list_entry value="stairs" display_value="Stairs" />
+            </combo>
 			<reference ref="name_operator_oh_wheelchair" />
 			<text key="ref" text="Reference" />
 			<text key="description" text="Description" />
