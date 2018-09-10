@@ -3978,7 +3978,7 @@
             <reference ref="parking_access_fee_operator_surface_smoothness" />
             <reference ref="maxstay" />
             <reference ref="supervised_lit_oh" />
-            <check key="covered" text="Covered (with roof)" disable_off="true" />
+            <check key="covered" text="Covered (with roof)" />
         </item> <!-- Parking Space -->
         <item name="Parking Entrance" icon="${ICONPATH}transport_parking_entrance_12098.${ICONTYPE}" type="node" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=parking_entrance"
@@ -3995,7 +3995,7 @@
             <text key="maxheight" text="Max. height (meters)" />
             <reference ref="parking_access_fee_operator_surface_smoothness" />
             <reference ref="supervised_lit_oh" />
-            <check key="covered" text="Covered (with roof)" disable_off="true" />
+            <check key="covered" text="Covered (with roof)" />
         </item> <!-- Parking Entrance -->
         <separator/>
         <item name="Fuel" icon="${ICONPATH}transport_fuel.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4243,7 +4243,7 @@
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="parking_access_fee_operator_surface_smoothness" />
             <reference ref="supervised_lit_oh" />
-            <check key="covered" text="Covered (with roof)" disable_off="true" />
+            <check key="covered" text="Covered (with roof)" />
         </item> <!-- Parking -->
         <item name="Motorcycle Dealer" icon="${ICONPATH}shopping_motorcycle.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=motorcycle"
@@ -4294,7 +4294,7 @@
             <reference ref="optional_name" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="parking_access_fee_operator_surface_smoothness" />
-            <check key="covered" text="Covered" disable_off="true" />
+            <check key="covered" text="Covered" />
             <reference ref="supervised_lit_oh" />
         </item> <!-- Parking -->
         <item name="Bike Dealer" icon="${ICONPATH}shopping_bicycle.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4480,7 +4480,7 @@
             <check key="bench" text="Bench" disable_off="true" />
             <check key="shelter" text="Shelter" disable_off="true" />
             <reference ref="bin" />
-            <check key="covered" text="Covered" disable_off="true" />
+            <check key="covered" text="Covered" />
             <reference ref="wheelchair" />
             <reference ref="tactile_paving" />
             <optional>
@@ -5896,7 +5896,7 @@
                   pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=picnic_table" />
             <space />
             <key key="leisure" value="picnic_table" />
-            <check key="covered" text="Covered" disable_off="true" />
+            <check key="covered" text="Covered" />
         </item> <!-- Picnic Table -->
         <item name="Public Grill" icon="${ICONPATH}tourist_bbq_12006.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bbq"
@@ -5913,7 +5913,7 @@
             <key key="amenity" value="bbq" />
             <reference ref="optional_name" />
             <combo key="fuel" text="Fuel" text_context="grill" values="charcoal,electric,wood" values_context="fuel" />
-            <check key="covered" text="Covered" disable_off="true" />
+            <check key="covered" text="Covered" />
         </item> <!-- Public Grill -->
         <item name="Firepit" icon="${ICONPATH}tourist_firepit_21134.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=firepit"
