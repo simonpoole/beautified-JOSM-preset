@@ -5885,7 +5885,7 @@
             <reference ref="facility_access" />
             <optional>
             	<reference ref="min_max_age" />
-                <check text="baby" key="baby"/>
+                <check text="Baby" key="baby"/>
             	<reference ref="surface" />
             	<reference ref="name_operator_oh_wheelchair" />
                 <checkgroup text="Equipment" columns="3">
@@ -5980,7 +5980,7 @@
             <reference ref="playground_theme" />
             <reference ref="material" />
             <reference ref="min_max_age" />
-            <check text="baby" key="baby"/>
+            <check text="Baby" key="baby"/>
         </item>
         <item name="Slide" icon="${ICONPATH}amenity_slide_30043.${ICONTYPE}" type="node,way,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=playground"
@@ -5998,7 +5998,7 @@
             <reference ref="playground_theme" />
             <reference ref="material" />
             <reference ref="min_max_age" />
-            <check text="baby" key="baby"/>
+            <check text="Baby" key="baby"/>
         </item>
         <item name="Swing" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,way,closedway,multipolygon">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=playground"
@@ -6016,7 +6016,7 @@
             <reference ref="playground_theme" />
             <reference ref="material" />
             <reference ref="min_max_age" />
-            <check text="baby" key="baby"/>
+            <check text="Baby" key="baby"/>
         </item>
     </group>
         <item name="Picnic Site" icon="${ICONPATH}tourist_picnic.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
