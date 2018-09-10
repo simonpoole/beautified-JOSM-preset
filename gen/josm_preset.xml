@@ -33,13 +33,13 @@
     </chunk>
     <chunk id="mtb_scale">
         <combo key="mtb:scale" text="MTB Scale">
-            <list_entry value="0" short_description=""/>
-            <list_entry value="1" short_description=""/>
-            <list_entry value="2" short_description=""/>
-            <list_entry value="3" short_description=""/>
-            <list_entry value="4" short_description=""/>
-            <list_entry value="5" short_description=""/>
-            <list_entry value="6" short_description="Not rideable"/>
+            <list_entry value="0" short_description="0: Solid gravel/packed earth, no obstacles, wide curves"/>
+            <list_entry value="1" short_description="1: Some loose surface, small obstacles, wide curves"/>
+            <list_entry value="2" short_description="2: Much loose surface, large obstacles, easy hairpins"/>
+            <list_entry value="3" short_description="3: Slippery surface, large obstacles, tight hairpins"/>
+            <list_entry value="4" short_description="4: Loose surface or boulders, dangerous hairpins"/>
+            <list_entry value="5" short_description="5: Maximum difficulty, boulder fields, landslides"/>
+            <list_entry value="6" short_description="6: Not rideable"/>
         </combo>
     </chunk>
     <chunk id="riding_surface">

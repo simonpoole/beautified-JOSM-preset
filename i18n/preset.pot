@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-09-10 20:12+0200\n"
+"POT-Creation-Date: 2018-09-10 21:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,10 @@ msgstr ""
 msgid "... other transportation modes possible"
 msgstr ""
 
+#: master_preset.xml:43(list_entry:short_description|value:0)
+msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
+msgstr ""
+
 #: master_preset.xml:1627(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
 msgstr ""
@@ -77,6 +81,10 @@ msgstr ""
 msgid "10°"
 msgstr ""
 
+#: master_preset.xml:44(list_entry:short_description|value:1)
+msgid "1: Some loose surface, small obstacles, wide curves"
+msgstr ""
+
 #: master_preset.xml:1628(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
 msgstr ""
@@ -85,12 +93,20 @@ msgstr ""
 msgid "2 tables"
 msgstr ""
 
+#: master_preset.xml:45(list_entry:short_description|value:2)
+msgid "2: Much loose surface, large obstacles, easy hairpins"
+msgstr ""
+
 #: master_preset.xml:1629(list_entry:display_value|group:Ways|preset:Track|value:grade3)
 msgid "3 - Mix hard and soft"
 msgstr ""
 
 #: master_preset.xml:221(list_entry:short_description|value:3)
 msgid "3 tables"
+msgstr ""
+
+#: master_preset.xml:46(list_entry:short_description|value:3)
+msgid "3: Slippery surface, large obstacles, tight hairpins"
 msgstr ""
 
 #: master_preset.xml:5489(check:text|group:Leisure|preset:Movie_Theater/Cinema|key:cinema:3D)
@@ -105,12 +121,24 @@ msgstr ""
 msgid "4 tables"
 msgstr ""
 
+#: master_preset.xml:47(list_entry:short_description|value:4)
+msgid "4: Loose surface or boulders, dangerous hairpins"
+msgstr ""
+
 #: master_preset.xml:1631(list_entry:display_value|group:Ways|preset:Track|value:grade5)
 msgid "5 - Soft"
 msgstr ""
 
 #: master_preset.xml:223(list_entry:short_description|value:5)
 msgid "5 tables"
+msgstr ""
+
+#: master_preset.xml:48(list_entry:short_description|value:5)
+msgid "5: Maximum difficulty, boulder fields, landslides"
+msgstr ""
+
+#: master_preset.xml:49(list_entry:short_description|value:6)
+msgid "6: Not rideable"
 msgstr ""
 
 #: master_preset.xml:5397(label:text|group:Tourism|preset:Guidepost)
@@ -5079,10 +5107,6 @@ msgstr ""
 
 #: master_preset.xml:217(list_entry:short_description|value:no) master_preset.xml:412(combo:display_values|key:internet_access)
 msgid "Not available"
-msgstr ""
-
-#: master_preset.xml:49(list_entry:short_description|value:6)
-msgid "Not rideable"
 msgstr ""
 
 #: master_preset.xml:14943(item:name|group:Offices|preset:Notary)
