@@ -15,6 +15,9 @@
     <chunk id="incline">
         <combo key="incline" text="Incline" values="10%,-10%,10°,-10°,up,down" display_values="10%,-10%,10°,-10°,Up,Down" values_sort="false" />
     </chunk>
+    <chunk id="material">
+        <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" display_values="Concrete,Metal,Plastic,Stone,Wood" values_context="material" />
+    </chunk>
     <chunk id="surface">
         <combo key="surface" text="Surface"  
         	values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud" 
@@ -620,7 +623,7 @@
     </chunk>
     <chunk id="power_pole">
         <text key="height" text="Height (meters)" />
-        <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" />
+        <reference ref="material" />
         <check key="location:transition" text="Location transition" disable_off="true" />
         <reference ref="ref_operator_branch" />
     </chunk>
@@ -914,7 +917,10 @@
   	<reference ref="additonal_aerialway_tags" />
   	<check key="aerialway:bubble" text="Has bubble?" disable_off="true" />
   </chunk>
-    
+  <chunk id="playground_theme">
+    <combo text="Theme" key="playground:theme" values="barrel,bee,bridge,castle,cat,cow,dog,dragon,helicopter,horse,locomotive,octopus,plane,rocket,ship,spiderweb,tiger,train"
+        display_values="Barrel,Bee,Bridge,Castle,Cat,Cow,Dog,Dragon,Helicopter,Horse,Locomotive,Octopus,Plane,Rocket,Ship,Spiderweb,Tiger,Train" />
+  </chunk>  
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
     <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
@@ -2298,7 +2304,7 @@
             <reference ref="barrier_4" />
             <optional>
                 <text key="maxwidth" text="Max. width (meters)" length="7" />
-                <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" display_values="Concrete,Metal,Plastic,Stone,Wood" values_context="material" />
+                <reference ref="material" />
             </optional>
         </item> <!-- Bollard -->
         <item name="Cycle Barrier" icon="${ICONPATH}barrier_cycle_barrier.${ICONTYPE}" type="node" preset_name_label="true">
@@ -5867,10 +5873,140 @@
             <reference ref="facility_access" />
             <optional>
             	<reference ref="min_max_age" />
+                <check text="baby" key="baby"/>
             	<reference ref="surface" />
             	<reference ref="name_operator_oh_wheelchair" />
-            </optional>
-        </item> <!-- Playground -->
+                <checkgroup text="Equipment" columns="3">
+                    <check text="Activity panel" key="playground:activitypanel" disable_off="true"/>
+                    <check text="Aerial rotator" key="playground:aerialrotator" disable_off="true"/>
+                    <check text="Balance beam" key="playground:balancebeam" disable_off="true"/>
+                    <check text="Basketball backboard" key="playground:basketball_backboard" disable_off="true"/>
+                    <check text="Basket rotator" key="playground:basketrotator" disable_off="true"/>
+                    <check text="Basket swing" key="playground:basketswing" disable_off="true"/>
+                    <check text="Chain ladder" key="playground:chain_ladder" disable_off="true"/>
+                    <check text="Chess table" key="playground:chess_table" disable_off="true"/>
+                    <check text="Climbing frame" key="playground:climbingframe" disable_off="true"/>
+                    <check text="Climbing wall" key="playground:climbingwall" disable_off="true"/>
+                    <check text="Cushion" key="playground:cushion" disable_off="true"/>
+                    <check text="Exercise" key="playground:exercise" disable_off="true"/>
+                    <check text="Hopscotch" key="playground:hopscotch" disable_off="true"/>
+                    <check text="Horizontal bar" key="playground:horizontal_bar" disable_off="true"/>
+                    <check text="Multi play" key="playground:multi_play" disable_off="true"/>
+                    <check text="Playhouse" key="playground:playhouse" disable_off="true"/>
+                    <check text="Soundabout" key="playground:roundabout" disable_off="true"/>
+                    <check text="Sandpit" key="playground:sandpit" disable_off="true"/>
+                    <check text="Seesaw" key="playground:seesaw" disable_off="true"/>
+                    <check text="Skate equipment" key="playground:skate_equipment" disable_off="true"/>
+                    <check text="Sledding" key="playground:sledding" disable_off="true"/>
+                    <check text="Slide" key="playground:slide" disable_off="true"/>
+                    <check text="Gyro twister spinner" key="playground:spinner" disable_off="true"/>
+                    <check text="Splash pad" key="playground:splash_pad" disable_off="true"/>
+                    <check text="Springy" key="playground:springy" disable_off="true"/>
+                    <check text="Stepping stones/pads" key="playground:stepping_stones" disable_off="true"/>
+                    <check text="Structure (playset)" key="playground:structure" disable_off="true"/>
+                    <check text="Swing" key="playground:swing" disable_off="true"/>
+                    <check text="Teen shelter" key="playground:teenshelter" disable_off="true"/>
+                    <check text="Trampoline" key="playground:trampoline" disable_off="true"/>
+                    <check text="Tree house" key="playground:tree_house" disable_off="true"/>
+                    <check text="Tunnel tube" key="playground:tunnel_tube" disable_off="true"/>
+                    <check text="Water" key="playground:water" disable_off="true"/>
+                    <check text="Zigzag twister" key="playground:zigzagtwister" disable_off="true"/>
+                    <check text="Zip wire" key="playground:zipwire" disable_off="true"/>
+            </checkgroup>
+        </optional>
+    </item> <!-- Playground -->
+    <group name="Playground equipment" icon="${ICONPATH}amenity_slide_30043.${ICONTYPE}">
+        <item name="Playground equipment" icon="${ICONPATH}amenity_slide_30043.${ICONTYPE}" type="node,way,closedway,multipolygon">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=playground"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=playground"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=playground"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=playground"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=playground"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:leisure=playground"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=playground"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=playground"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=playground"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=playground" />
+            <space />
+            <combo text="Equipment" key="playground" match="key">
+                <list_entry value="activitypanel" display_value="activity panel"/>
+                <list_entry value="aerialrotator" display_value="aerial rotator"/>
+                <list_entry value="balancebeam" display_value="balance beam" />
+                <list_entry value="basketball_backboard" display_value="basketball backboard" />
+                <list_entry value="basketrotator" display_value="basket rotator"/>
+                <list_entry value="basketswing" display_value="basket swing" />
+                <list_entry value="chain_ladder" display_value="chain ladder" />
+                <list_entry value="chess_table" display_value="chess table" />
+                <list_entry value="climbingframe" display_value="climbing frame" />
+                <list_entry value="climbingwall" display_value="climbing wall" />
+                <list_entry value="cushion" display_value="cushion" />
+                <list_entry value="exercise" display_value="exercise"/>
+                <list_entry value="hopscotch" display_value="hopscotch" />
+                <list_entry value="horizontal_bar" display_value="horizontal_bar"/>
+                <list_entry value="multi_play" display_value="multi play" />
+                <list_entry value="playhouse" display_value="playhouse" />
+                <list_entry value="roundabout" display_value="roundabout" />
+                <list_entry value="sandpit" display_value="sandpit" />
+                <list_entry value="seesaw" jdisplay_value="seesaw" />
+                <list_entry value="skate_equipment" rdisplay_value="skate equipment" />
+                <list_entry value="sledding" display_value="sledding"/>
+                <list_entry value="slide" display_value="slide" />
+                <list_entry value="spinner" display_value="gyro twister spinner"/>
+                <list_entry value="splash_pad" display_value="splash_pad"/>
+                <list_entry value="springy" display_value="springy" />
+                <list_entry value="stepping_stones" display_value="stepping stones/pads"/>
+                <list_entry value="structure" display_value="structure (playset)" />
+                <list_entry value="swing" display_value="swing" />
+                <list_entry value="teenshelter" display_value="teen shelter" />
+                <list_entry value="trampoline" display_value="trampoline" />
+                <list_entry value="tree_house" display_value="tree house"/>
+                <list_entry value="tunnel_tube" display_value="tunnel tube"/>
+                <list_entry value="water" display_value="water" />
+                <list_entry value="zigzagtwister" display_value="zigzag twister"/>
+                <list_entry value="zipwire" display_value="zip wire" />
+            </combo>
+            <reference ref="playground_theme" />
+            <reference ref="material" />
+            <reference ref="min_max_age" />
+            <check text="baby" key="baby"/>
+        </item>
+        <item name="Slide" icon="${ICONPATH}amenity_slide_30043.${ICONTYPE}" type="node,way,closedway,multipolygon">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=playground"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=playground"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=playground"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=playground"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=playground"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:leisure=playground"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=playground"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=playground"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=playground"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=playground" />
+            <space />
+            <key key="playground" value="slide" />
+            <reference ref="playground_theme" />
+            <reference ref="material" />
+            <reference ref="min_max_age" />
+            <check text="baby" key="baby"/>
+        </item>
+        <item name="Swing" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,way,closedway,multipolygon">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:leisure=playground"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:leisure=playground"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:leisure=playground"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:leisure=playground"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:leisure=playground"
+                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:leisure=playground"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:leisure=playground"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:leisure=playground"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:leisure=playground"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:leisure=playground" />
+            <space />
+            <key key="playground" value="swing" />
+            <reference ref="playground_theme" />
+            <reference ref="material" />
+            <reference ref="min_max_age" />
+            <check text="baby" key="baby"/>
+        </item>
+    </group>
         <item name="Picnic Site" icon="${ICONPATH}tourist_picnic.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:tourism=picnic_site"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:tourism=picnic_site"
@@ -7606,7 +7742,7 @@
             <space />
             <key key="amenity" value="bench" />
             <check key="backrest" text="Backrest" disable_off="true" />
-            <combo key="material" text="Material" values="concrete,metal,plastic,stone,wood" values_context="material" />
+            <reference ref="material" />
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
             <combo key="seats" text="Seats count" values="2,3,4,5,6,7,8,9,10" />
         </item> <!-- Bench -->
