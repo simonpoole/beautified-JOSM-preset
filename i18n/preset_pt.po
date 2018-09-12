@@ -9,9 +9,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2018-09-10 19:50+0200\n"
-"PO-Revision-Date: 2018-09-10 17:51+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"POT-Creation-Date: 2018-09-10 21:16+0200\n"
+"PO-Revision-Date: 2018-09-10 19:18+0000\n"
+"Last-Translator: Rui <xymarior@yandex.com>\n"
 "Language-Team: Portuguese (http://www.transifex.com/openstreetmap/presets/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,6 +66,10 @@ msgstr "-10°"
 msgid "... other transportation modes possible"
 msgstr "... outros modos de transporte possíveis"
 
+#: master_preset.xml:43(list_entry:short_description|value:0)
+msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
+msgstr "0: Terreno sólido com cascalho ou terra compactada, com nenhum obstáculo, curvas largas, etc."
+
 #: master_preset.xml:1627(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
 msgstr "1 - Sólido"
@@ -90,6 +94,10 @@ msgstr "10%"
 msgid "10°"
 msgstr "10°"
 
+#: master_preset.xml:44(list_entry:short_description|value:1)
+msgid "1: Some loose surface, small obstacles, wide curves"
+msgstr "1: Algum terreno solto, com pequenos obstáculos, curvas fáceis, etc."
+
 #: master_preset.xml:1628(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
 msgstr "2 - Maioritariamente sólido"
@@ -98,6 +106,10 @@ msgstr "2 - Maioritariamente sólido"
 msgid "2 tables"
 msgstr "2 mesas"
 
+#: master_preset.xml:45(list_entry:short_description|value:2)
+msgid "2: Much loose surface, large obstacles, easy hairpins"
+msgstr "2: Terreno solto, com obstáculos, curvas um pouco difíceis, etc."
+
 #: master_preset.xml:1629(list_entry:display_value|group:Ways|preset:Track|value:grade3)
 msgid "3 - Mix hard and soft"
 msgstr "3 - Mistura de sólido e mole"
@@ -105,6 +117,10 @@ msgstr "3 - Mistura de sólido e mole"
 #: master_preset.xml:221(list_entry:short_description|value:3)
 msgid "3 tables"
 msgstr "3 mesas"
+
+#: master_preset.xml:46(list_entry:short_description|value:3)
+msgid "3: Slippery surface, large obstacles, tight hairpins"
+msgstr "3: Terreno escorregadio, com vários obstáculos, curvas apertadas, etc."
 
 #: master_preset.xml:5489(check:text|group:Leisure|preset:Movie_Theater/Cinema|key:cinema:3D)
 msgid "3D"
@@ -118,6 +134,10 @@ msgstr "4 - Maioritariamente mole"
 msgid "4 tables"
 msgstr "4 mesas"
 
+#: master_preset.xml:47(list_entry:short_description|value:4)
+msgid "4: Loose surface or boulders, dangerous hairpins"
+msgstr "4: Terreno muito solto, com pedregulhos grandes, curvas muito pequenas e perigosas, etc."
+
 #: master_preset.xml:1631(list_entry:display_value|group:Ways|preset:Track|value:grade5)
 msgid "5 - Soft"
 msgstr "5 - Mole"
@@ -125,6 +145,14 @@ msgstr "5 - Mole"
 #: master_preset.xml:223(list_entry:short_description|value:5)
 msgid "5 tables"
 msgstr "5 mesas"
+
+#: master_preset.xml:48(list_entry:short_description|value:5)
+msgid "5: Maximum difficulty, boulder fields, landslides"
+msgstr "5: Deslizamentos de terra, depressões grandes e profundas, etc."
+
+#: master_preset.xml:49(list_entry:short_description|value:6)
+msgid "6: Not rideable"
+msgstr ""
 
 #: master_preset.xml:5397(label:text|group:Tourism|preset:Guidepost)
 msgid ""
@@ -761,6 +789,13 @@ msgstr "Bebés"
 #: master_preset.xml:5549(list_entry:display_value|group:Leisure|preset:Animals|value:baboon)
 msgid "Baboon"
 msgstr "Babuíno"
+
+#: master_preset.xml:5888(check:text|group:Leisure|preset:Playground|key:baby)
+#: master_preset.xml:5983(check:text|group:Playground_equipment|preset:Playground_equipment|key:baby)
+#: master_preset.xml:6001(check:text|group:Playground_equipment|preset:Slide|key:baby)
+#: master_preset.xml:6019(check:text|group:Playground_equipment|preset:Swing|key:baby)
+msgid "Baby"
+msgstr ""
 
 #: master_preset.xml:6980(item:name|group:Health|preset:Baby_Hatch/Safe_Haven)
 msgid "Baby Hatch/Safe Haven"
@@ -3722,6 +3757,7 @@ msgid "Guide"
 msgstr "Guia turístico"
 
 #: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost)
+#: master_preset.xml:734(role:text|key:guidepost)
 msgid "Guidepost"
 msgstr "Poste com direções"
 
@@ -4170,6 +4206,10 @@ msgstr "Acesso a informação por métodos eletrónicos."
 #: master_preset.xml:5440(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Information using headphones or a mobile phone."
 msgstr "Informação utilizando auscutadores ou telemóvel."
+
+#: master_preset.xml:732(role:text|key:)
+msgid "Infrastructure"
+msgstr ""
 
 #: master_preset.xml:13754(item:name|group:Routes|preset:Inline_Skating_Route)
 msgid "Inline Skating Route"
@@ -5646,6 +5686,10 @@ msgstr "Nome nacional"
 msgid "National park"
 msgstr "Parque nacional"
 
+#: master_preset.xml:733(role:text|key:)
+msgid "Natural"
+msgstr "Natural"
+
 #: master_preset.xml:12513(group:name|group:Nature)
 msgid "Nature"
 msgstr "Natureza"
@@ -5808,10 +5852,6 @@ msgstr "Nórdico"
 #: master_preset.xml:412(combo:display_values|key:internet_access)
 msgid "Not available"
 msgstr "Não disponível"
-
-#: master_preset.xml:49(list_entry:short_description|value:6)
-msgid "Not rideable"
-msgstr ""
 
 #: master_preset.xml:14943(item:name|group:Offices|preset:Notary)
 msgid "Notary"
@@ -7745,6 +7785,10 @@ msgstr "Rede de rotas"
 #: master_preset.xml:13473(list_entry:display_value|group:Relations|preset:Relations|value:route_master)
 msgid "Route master"
 msgstr "Rota mestre"
+
+#: master_preset.xml:731(role:text|key:)
+msgid "Route segment"
+msgstr ""
 
 #: master_preset.xml:4376(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:route)
 #: master_preset.xml:4396(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:route)
@@ -10295,13 +10339,6 @@ msgstr "tudo o que seja associado à estrada"
 msgid "area (more than 20m)"
 msgstr "área (mais de 20m)"
 
-#: master_preset.xml:5888(check:text|group:Leisure|preset:Playground|key:baby)
-#: master_preset.xml:5983(check:text|group:Playground_equipment|preset:Playground_equipment|key:baby)
-#: master_preset.xml:6001(check:text|group:Playground_equipment|preset:Slide|key:baby)
-#: master_preset.xml:6019(check:text|group:Playground_equipment|preset:Swing|key:baby)
-msgid "baby"
-msgstr ""
-
 #: master_preset.xml:4592(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:backward_stop)
 msgid "backward halt point"
 msgstr "paragem no sentido inverso"
@@ -10448,10 +10485,6 @@ msgstr "fusão"
 msgid "gasification"
 msgstr "gasificação"
 
-#: master_preset.xml:734(role:text|key:guidepost)
-msgid "guidepost"
-msgstr "poste com direções"
-
 #: master_preset.xml:4590(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:stop)
 msgid "halt point"
 msgstr "ponto de paragem"
@@ -10479,7 +10512,6 @@ msgid "houses belonging to the street"
 msgstr "casas que pertencem à rua"
 
 #: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:732(role:text|key:)
 msgid "infrastructure"
 msgstr "infraestrutura"
 
@@ -10511,7 +10543,6 @@ msgid "members of site"
 msgstr "membros do sítio"
 
 #: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:733(role:text|key:)
 msgid "natural"
 msgstr "natural"
 
@@ -10568,7 +10599,6 @@ msgstr "posição do sinal"
 #: master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:)
 #: master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:)
 #: master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
-#: master_preset.xml:731(role:text|key:)
 msgid "route segment"
 msgstr "segmento de rota"
 

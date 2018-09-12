@@ -5,9 +5,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2018-09-10 20:03+0200\n"
-"PO-Revision-Date: 2018-09-10 18:04+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"POT-Creation-Date: 2018-09-10 21:16+0200\n"
+"PO-Revision-Date: 2018-09-11 20:43+0000\n"
+"Last-Translator: Eduardo Addad de Oliveira <eduardoaddad@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/openstreetmap/presets/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -62,6 +62,10 @@ msgstr ""
 msgid "... other transportation modes possible"
 msgstr ""
 
+#: master_preset.xml:43(list_entry:short_description|value:0)
+msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
+msgstr "0: Cascalho sólido / terra compacta, sem obstáculos, curvas amplas"
+
 #: master_preset.xml:1627(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
 msgstr ""
@@ -86,6 +90,10 @@ msgstr "10%"
 msgid "10°"
 msgstr "10°"
 
+#: master_preset.xml:44(list_entry:short_description|value:1)
+msgid "1: Some loose surface, small obstacles, wide curves"
+msgstr "1: Um pouco de terra solta, pequenos obstáculos, curvas amplas"
+
 #: master_preset.xml:1628(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
 msgstr ""
@@ -94,6 +102,10 @@ msgstr ""
 msgid "2 tables"
 msgstr "2 mesas"
 
+#: master_preset.xml:45(list_entry:short_description|value:2)
+msgid "2: Much loose surface, large obstacles, easy hairpins"
+msgstr "2: Muita terra solta, grandes obstáculos, curvas fechadas fáceis"
+
 #: master_preset.xml:1629(list_entry:display_value|group:Ways|preset:Track|value:grade3)
 msgid "3 - Mix hard and soft"
 msgstr ""
@@ -101,6 +113,10 @@ msgstr ""
 #: master_preset.xml:221(list_entry:short_description|value:3)
 msgid "3 tables"
 msgstr "3 mesas"
+
+#: master_preset.xml:46(list_entry:short_description|value:3)
+msgid "3: Slippery surface, large obstacles, tight hairpins"
+msgstr "3: Superfície escorregadia, grandes obstáculos, curvas fechadas apertadas"
 
 #: master_preset.xml:5489(check:text|group:Leisure|preset:Movie_Theater/Cinema|key:cinema:3D)
 msgid "3D"
@@ -114,6 +130,10 @@ msgstr ""
 msgid "4 tables"
 msgstr ""
 
+#: master_preset.xml:47(list_entry:short_description|value:4)
+msgid "4: Loose surface or boulders, dangerous hairpins"
+msgstr "4: Terra solta ou rochas, curva fechada perigosa"
+
 #: master_preset.xml:1631(list_entry:display_value|group:Ways|preset:Track|value:grade5)
 msgid "5 - Soft"
 msgstr ""
@@ -121,6 +141,14 @@ msgstr ""
 #: master_preset.xml:223(list_entry:short_description|value:5)
 msgid "5 tables"
 msgstr "5 mesas"
+
+#: master_preset.xml:48(list_entry:short_description|value:5)
+msgid "5: Maximum difficulty, boulder fields, landslides"
+msgstr "5: Dificuldade máxima, pedreira, deslizamentos de terra"
+
+#: master_preset.xml:49(list_entry:short_description|value:6)
+msgid "6: Not rideable"
+msgstr ""
 
 #: master_preset.xml:5397(label:text|group:Tourism|preset:Guidepost)
 msgid ""
@@ -3686,7 +3714,7 @@ msgstr "Cultivo de plantas em estufa"
 #: master_preset.xml:835(combo:display_values|key:roof:colour)
 #: master_preset.xml:871(combo:display_values|key:building:colour)
 msgid "Grey"
-msgstr ""
+msgstr "Cinza"
 
 #: master_preset.xml:2245(item:name|preset:Grit_Bin)
 msgid "Grit Bin"
@@ -3725,6 +3753,7 @@ msgid "Guide"
 msgstr "Guia"
 
 #: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost)
+#: master_preset.xml:734(role:text|key:guidepost)
 msgid "Guidepost"
 msgstr ""
 
@@ -4144,7 +4173,7 @@ msgstr ""
 #: master_preset.xml:7135(check:text|group:Emergency|preset:Fire_Hose|key:indoor)
 #: master_preset.xml:7816(check:text|group:Facilities|preset:Drinking_Water|key:indoor)
 msgid "Indoor"
-msgstr ""
+msgstr "Interior"
 
 #: master_preset.xml:8819(item:name|group:Buildings|preset:Industrial_building)
 msgid "Industrial building"
@@ -4172,6 +4201,10 @@ msgstr ""
 
 #: master_preset.xml:5440(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Information using headphones or a mobile phone."
+msgstr ""
+
+#: master_preset.xml:732(role:text|key:)
+msgid "Infrastructure"
 msgstr ""
 
 #: master_preset.xml:13754(item:name|group:Routes|preset:Inline_Skating_Route)
@@ -5649,6 +5682,10 @@ msgstr ""
 msgid "National park"
 msgstr ""
 
+#: master_preset.xml:733(role:text|key:)
+msgid "Natural"
+msgstr "Natural"
+
 #: master_preset.xml:12513(group:name|group:Nature)
 msgid "Nature"
 msgstr ""
@@ -5810,10 +5847,6 @@ msgstr ""
 #: master_preset.xml:217(list_entry:short_description|value:no)
 #: master_preset.xml:412(combo:display_values|key:internet_access)
 msgid "Not available"
-msgstr ""
-
-#: master_preset.xml:49(list_entry:short_description|value:6)
-msgid "Not rideable"
 msgstr ""
 
 #: master_preset.xml:14943(item:name|group:Offices|preset:Notary)
@@ -6246,7 +6279,7 @@ msgstr ""
 
 #: master_preset.xml:10701(item:name|group:Clothes|preset:Outdoor)
 msgid "Outdoor"
-msgstr ""
+msgstr "Exterior"
 
 #: master_preset.xml:5118(check:text|group:Food+Drinks|preset:Restaurant|key:outdoor_seating)
 #: master_preset.xml:5145(check:text|group:Food+Drinks|preset:Fast_Food|key:outdoor_seating)
@@ -7330,7 +7363,7 @@ msgstr "Contêiner de Reciclagem"
 #: master_preset.xml:835(combo:display_values|key:roof:colour)
 #: master_preset.xml:871(combo:display_values|key:building:colour)
 msgid "Red"
-msgstr ""
+msgstr "Vermelho"
 
 #: master_preset.xml:3285(list_entry:short_description|group:Water|preset:Wetland|value:reedbed)
 msgid "Reedbed"
@@ -7747,6 +7780,10 @@ msgstr ""
 
 #: master_preset.xml:13473(list_entry:display_value|group:Relations|preset:Relations|value:route_master)
 msgid "Route master"
+msgstr ""
+
+#: master_preset.xml:731(role:text|key:)
+msgid "Route segment"
 msgstr ""
 
 #: master_preset.xml:4376(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:route)
@@ -10036,7 +10073,7 @@ msgstr ""
 #: master_preset.xml:835(combo:display_values|key:roof:colour)
 #: master_preset.xml:871(combo:display_values|key:building:colour)
 msgid "White"
-msgstr ""
+msgstr "Branco"
 
 #: master_preset.xml:1017(text:text|group:Streets|preset:Trunk|key:width)
 #: master_preset.xml:1046(text:text|group:Streets|preset:Trunk_Link|key:width)
@@ -10200,7 +10237,7 @@ msgstr ""
 #: master_preset.xml:835(combo:display_values|key:roof:colour)
 #: master_preset.xml:871(combo:display_values|key:building:colour)
 msgid "Yellow"
-msgstr ""
+msgstr "Amarelo"
 
 #: master_preset.xml:10558(combo:display_values|group:Food|preset:Fair_Trade|key:fair_trade)
 #: master_preset.xml:10640(combo:display_values|group:Clothes|preset:Clothes|key:second_hand)
@@ -10444,10 +10481,6 @@ msgstr ""
 msgid "gasification"
 msgstr ""
 
-#: master_preset.xml:734(role:text|key:guidepost)
-msgid "guidepost"
-msgstr ""
-
 #: master_preset.xml:4590(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:stop)
 msgid "halt point"
 msgstr ""
@@ -10475,7 +10508,6 @@ msgid "houses belonging to the street"
 msgstr ""
 
 #: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:732(role:text|key:)
 msgid "infrastructure"
 msgstr ""
 
@@ -10507,7 +10539,6 @@ msgid "members of site"
 msgstr ""
 
 #: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:733(role:text|key:)
 msgid "natural"
 msgstr ""
 
@@ -10564,7 +10595,6 @@ msgstr ""
 #: master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:)
 #: master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:)
 #: master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
-#: master_preset.xml:731(role:text|key:)
 msgid "route segment"
 msgstr "segmento de rota"
 
@@ -11381,7 +11411,7 @@ msgstr ""
 #: master_preset.xml:477(combo:display_values|key:parking)
 msgctxt "parking"
 msgid "Rooftop"
-msgstr ""
+msgstr "Telhado"
 
 #: master_preset.xml:477(combo:display_values|key:parking)
 msgctxt "parking"
@@ -11633,7 +11663,7 @@ msgstr ""
 #: master_preset.xml:581(combo:display_values|key:location)
 msgctxt "power"
 msgid "Outdoor"
-msgstr ""
+msgstr "Exterior"
 
 #: master_preset.xml:581(combo:display_values|key:location)
 msgctxt "power"
@@ -11648,7 +11678,7 @@ msgstr ""
 #: master_preset.xml:581(combo:display_values|key:location)
 msgctxt "power"
 msgid "Rooftop"
-msgstr ""
+msgstr "Telhado"
 
 #: master_preset.xml:9922(combo:text|preset:Power_Tower|key:design)
 msgctxt "power"
@@ -13028,7 +13058,7 @@ msgstr ""
 #: master_preset.xml:8149(item:name|group:Golf|preset:Green)
 msgctxt "golf"
 msgid "Green"
-msgstr ""
+msgstr "Verde"
 
 #: master_preset.xml:8084(item:name|group:Golf|preset:Hole)
 msgctxt "golf"
@@ -13439,7 +13469,7 @@ msgstr "Óleo"
 #: master_preset.xml:13134(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
 msgid "Port"
-msgstr ""
+msgstr "Porto"
 
 #: master_preset.xml:13134(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"

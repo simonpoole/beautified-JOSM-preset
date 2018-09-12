@@ -10,9 +10,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2018-09-10 20:03+0200\n"
-"PO-Revision-Date: 2018-09-10 18:04+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"POT-Creation-Date: 2018-09-10 21:16+0200\n"
+"PO-Revision-Date: 2018-09-10 19:18+0000\n"
+"Last-Translator: Albert\n"
 "Language-Team: Spanish (http://www.transifex.com/openstreetmap/presets/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,6 +67,10 @@ msgstr "-10°"
 msgid "... other transportation modes possible"
 msgstr "... otros modos de transporte posibles"
 
+#: master_preset.xml:43(list_entry:short_description|value:0)
+msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
+msgstr "0: Grava sólida/tierra compactada, sin obstáculos, curvas amplias"
+
 #: master_preset.xml:1627(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
 msgstr "1 - Compacta"
@@ -91,6 +95,10 @@ msgstr "10%"
 msgid "10°"
 msgstr "10°"
 
+#: master_preset.xml:44(list_entry:short_description|value:1)
+msgid "1: Some loose surface, small obstacles, wide curves"
+msgstr "1: Poca superficie suelta, pequeños obstáculos, curvas amplias"
+
 #: master_preset.xml:1628(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
 msgstr "2 - Mayormente compacta"
@@ -99,6 +107,10 @@ msgstr "2 - Mayormente compacta"
 msgid "2 tables"
 msgstr "2 mesas"
 
+#: master_preset.xml:45(list_entry:short_description|value:2)
+msgid "2: Much loose surface, large obstacles, easy hairpins"
+msgstr "2: Mucha superficie suelta, grandes obstáculos, giros en U fáciles"
+
 #: master_preset.xml:1629(list_entry:display_value|group:Ways|preset:Track|value:grade3)
 msgid "3 - Mix hard and soft"
 msgstr "3 - Medianamente compacta"
@@ -106,6 +118,10 @@ msgstr "3 - Medianamente compacta"
 #: master_preset.xml:221(list_entry:short_description|value:3)
 msgid "3 tables"
 msgstr "3 mesas"
+
+#: master_preset.xml:46(list_entry:short_description|value:3)
+msgid "3: Slippery surface, large obstacles, tight hairpins"
+msgstr "3: Superficie resbaladiza, grandes obstáculos, giros en U cerrados"
 
 #: master_preset.xml:5489(check:text|group:Leisure|preset:Movie_Theater/Cinema|key:cinema:3D)
 msgid "3D"
@@ -119,6 +135,10 @@ msgstr "4 - Poco compacta"
 msgid "4 tables"
 msgstr "4 mesas"
 
+#: master_preset.xml:47(list_entry:short_description|value:4)
+msgid "4: Loose surface or boulders, dangerous hairpins"
+msgstr "4: Superficie suelta o rocosa, giros en U peligrosos"
+
 #: master_preset.xml:1631(list_entry:display_value|group:Ways|preset:Track|value:grade5)
 msgid "5 - Soft"
 msgstr "5 - Nada compacta"
@@ -126,6 +146,14 @@ msgstr "5 - Nada compacta"
 #: master_preset.xml:223(list_entry:short_description|value:5)
 msgid "5 tables"
 msgstr "5 mesas"
+
+#: master_preset.xml:48(list_entry:short_description|value:5)
+msgid "5: Maximum difficulty, boulder fields, landslides"
+msgstr "5: Dificultad máxima, campo rocoso, derrumbes"
+
+#: master_preset.xml:49(list_entry:short_description|value:6)
+msgid "6: Not rideable"
+msgstr ""
 
 #: master_preset.xml:5397(label:text|group:Tourism|preset:Guidepost)
 msgid ""
@@ -3730,6 +3758,7 @@ msgid "Guide"
 msgstr "Guía"
 
 #: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost)
+#: master_preset.xml:734(role:text|key:guidepost)
 msgid "Guidepost"
 msgstr "Poste indicador"
 
@@ -4178,6 +4207,10 @@ msgstr "Acceso a la información mediante métodos electrónicos."
 #: master_preset.xml:5440(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Information using headphones or a mobile phone."
 msgstr "Información utilizando auriculares o un teléfono móvil."
+
+#: master_preset.xml:732(role:text|key:)
+msgid "Infrastructure"
+msgstr ""
 
 #: master_preset.xml:13754(item:name|group:Routes|preset:Inline_Skating_Route)
 msgid "Inline Skating Route"
@@ -5654,6 +5687,10 @@ msgstr "Nombre nacional"
 msgid "National park"
 msgstr "Parque Nacional"
 
+#: master_preset.xml:733(role:text|key:)
+msgid "Natural"
+msgstr "Natural"
+
 #: master_preset.xml:12513(group:name|group:Nature)
 msgid "Nature"
 msgstr "Naturaleza"
@@ -5816,10 +5853,6 @@ msgstr "Nórdico"
 #: master_preset.xml:412(combo:display_values|key:internet_access)
 msgid "Not available"
 msgstr "No disponible"
-
-#: master_preset.xml:49(list_entry:short_description|value:6)
-msgid "Not rideable"
-msgstr ""
 
 #: master_preset.xml:14943(item:name|group:Offices|preset:Notary)
 msgid "Notary"
@@ -7752,6 +7785,10 @@ msgstr "Red de rutas"
 
 #: master_preset.xml:13473(list_entry:display_value|group:Relations|preset:Relations|value:route_master)
 msgid "Route master"
+msgstr ""
+
+#: master_preset.xml:731(role:text|key:)
+msgid "Route segment"
 msgstr ""
 
 #: master_preset.xml:4376(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:route)
@@ -10449,10 +10486,6 @@ msgstr "fusión"
 msgid "gasification"
 msgstr "gasificación"
 
-#: master_preset.xml:734(role:text|key:guidepost)
-msgid "guidepost"
-msgstr ""
-
 #: master_preset.xml:4590(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:stop)
 msgid "halt point"
 msgstr "Punto de parada"
@@ -10480,7 +10513,6 @@ msgid "houses belonging to the street"
 msgstr "Casas pertenecientes a la calle"
 
 #: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:732(role:text|key:)
 msgid "infrastructure"
 msgstr "infraestructura"
 
@@ -10512,7 +10544,6 @@ msgid "members of site"
 msgstr "miembros del lugar"
 
 #: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:733(role:text|key:)
 msgid "natural"
 msgstr "natural"
 
@@ -10569,7 +10600,6 @@ msgstr "Posición de señal"
 #: master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:)
 #: master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:)
 #: master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
-#: master_preset.xml:731(role:text|key:)
 msgid "route segment"
 msgstr "segmento de ruta"
 

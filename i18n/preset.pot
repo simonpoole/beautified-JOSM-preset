@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-09-10 21:05+0200\n"
+"POT-Creation-Date: 2018-09-12 08:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3393,7 +3393,7 @@ msgstr ""
 msgid "Guide"
 msgstr ""
 
-#: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost)
+#: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost) master_preset.xml:734(role:text|key:guidepost)
 msgid "Guidepost"
 msgstr ""
 
@@ -3803,6 +3803,10 @@ msgstr ""
 
 #: master_preset.xml:5440(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Information using headphones or a mobile phone."
+msgstr ""
+
+#: master_preset.xml:732(role:text|key:)
+msgid "Infrastructure"
 msgstr ""
 
 #: master_preset.xml:13754(item:name|group:Routes|preset:Inline_Skating_Route)
@@ -4995,6 +4999,10 @@ msgstr ""
 
 #: master_preset.xml:13524(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 msgid "National park"
+msgstr ""
+
+#: master_preset.xml:733(role:text|key:)
+msgid "Natural"
 msgstr ""
 
 #: master_preset.xml:12513(group:name|group:Nature)
@@ -6787,6 +6795,10 @@ msgstr ""
 
 #: master_preset.xml:13473(list_entry:display_value|group:Relations|preset:Relations|value:route_master)
 msgid "Route master"
+msgstr ""
+
+#: master_preset.xml:731(role:text|key:)
+msgid "Route segment"
 msgstr ""
 
 #: master_preset.xml:4376(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:route) master_preset.xml:4396(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:route) master_preset.xml:4416(combo:text|group:Public_Transport|preset:Route_Master|key:route_master) master_preset.xml:4574(combo:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:route)
@@ -9145,10 +9157,6 @@ msgstr ""
 msgid "gasification"
 msgstr ""
 
-#: master_preset.xml:734(role:text|key:guidepost)
-msgid "guidepost"
-msgstr ""
-
 #: master_preset.xml:4590(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:stop)
 msgid "halt point"
 msgstr ""
@@ -9173,7 +9181,7 @@ msgstr ""
 msgid "houses belonging to the street"
 msgstr ""
 
-#: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:) master_preset.xml:732(role:text|key:)
+#: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:)
 msgid "infrastructure"
 msgstr ""
 
@@ -9201,7 +9209,7 @@ msgstr ""
 msgid "members of site"
 msgstr ""
 
-#: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:) master_preset.xml:733(role:text|key:)
+#: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:)
 msgid "natural"
 msgstr ""
 
@@ -9241,7 +9249,7 @@ msgstr ""
 msgid "position of sign"
 msgstr ""
 
-#: master_preset.xml:13632(role:text|group:Routes|preset:Bicycle_Route|key:) master_preset.xml:13656(role:text|group:Routes|preset:Mountain_Biking_Route|key:) master_preset.xml:13704(role:text|group:Routes|preset:Riding_Route|key:) master_preset.xml:13723(role:text|group:Routes|preset:Piste_Route|key:) master_preset.xml:13745(role:text|group:Routes|preset:Ski_Route|key:) master_preset.xml:13780(role:text|group:Routes|preset:Detour_Route|key:) master_preset.xml:13791(role:text|group:Routes|preset:Power_Route|key:) master_preset.xml:13807(role:text|group:Routes|preset:Railway_Route|key:) master_preset.xml:13824(role:text|group:Routes|preset:Road_Route|key:) master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:) master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:) master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:) master_preset.xml:731(role:text|key:)
+#: master_preset.xml:13632(role:text|group:Routes|preset:Bicycle_Route|key:) master_preset.xml:13656(role:text|group:Routes|preset:Mountain_Biking_Route|key:) master_preset.xml:13704(role:text|group:Routes|preset:Riding_Route|key:) master_preset.xml:13723(role:text|group:Routes|preset:Piste_Route|key:) master_preset.xml:13745(role:text|group:Routes|preset:Ski_Route|key:) master_preset.xml:13780(role:text|group:Routes|preset:Detour_Route|key:) master_preset.xml:13791(role:text|group:Routes|preset:Power_Route|key:) master_preset.xml:13807(role:text|group:Routes|preset:Railway_Route|key:) master_preset.xml:13824(role:text|group:Routes|preset:Road_Route|key:) master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:) master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:) master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
 msgid "route segment"
 msgstr ""
 

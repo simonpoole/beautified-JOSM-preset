@@ -8,9 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2018-09-10 20:03+0200\n"
-"PO-Revision-Date: 2018-09-10 18:04+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"POT-Creation-Date: 2018-09-10 21:16+0200\n"
+"PO-Revision-Date: 2018-09-10 19:18+0000\n"
+"Last-Translator: Constable\n"
 "Language-Team: Italian (http://www.transifex.com/openstreetmap/presets/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,6 +65,10 @@ msgstr "-10°"
 msgid "... other transportation modes possible"
 msgstr "... altre modalità di trasporto possibili"
 
+#: master_preset.xml:43(list_entry:short_description|value:0)
+msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
+msgstr "0: Ghiaia solida/terra battuta, nessun ostacolo, curve ampie"
+
 #: master_preset.xml:1627(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
 msgstr "1 - Solido"
@@ -89,6 +93,10 @@ msgstr "10%"
 msgid "10°"
 msgstr "10°"
 
+#: master_preset.xml:44(list_entry:short_description|value:1)
+msgid "1: Some loose surface, small obstacles, wide curves"
+msgstr "1: Un po' di terriccio, piccoli ostacoli, curve ampie"
+
 #: master_preset.xml:1628(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
 msgstr "2 - Principalmente solido"
@@ -97,6 +105,10 @@ msgstr "2 - Principalmente solido"
 msgid "2 tables"
 msgstr "2 tabelle"
 
+#: master_preset.xml:45(list_entry:short_description|value:2)
+msgid "2: Much loose surface, large obstacles, easy hairpins"
+msgstr "2: Principalmente terriccio, ostacoli grandi, tornanti ampi"
+
 #: master_preset.xml:1629(list_entry:display_value|group:Ways|preset:Track|value:grade3)
 msgid "3 - Mix hard and soft"
 msgstr "3 - Misto solido e soffice"
@@ -104,6 +116,10 @@ msgstr "3 - Misto solido e soffice"
 #: master_preset.xml:221(list_entry:short_description|value:3)
 msgid "3 tables"
 msgstr "3 tabelle"
+
+#: master_preset.xml:46(list_entry:short_description|value:3)
+msgid "3: Slippery surface, large obstacles, tight hairpins"
+msgstr "3: Superficie scivolosa, ostacoli grandi, tornanti stretti"
 
 #: master_preset.xml:5489(check:text|group:Leisure|preset:Movie_Theater/Cinema|key:cinema:3D)
 msgid "3D"
@@ -117,6 +133,10 @@ msgstr "4 - Principalmente soffice"
 msgid "4 tables"
 msgstr "4 tabelle"
 
+#: master_preset.xml:47(list_entry:short_description|value:4)
+msgid "4: Loose surface or boulders, dangerous hairpins"
+msgstr "4: Terriccio o macigni, tornanti pericolosi"
+
 #: master_preset.xml:1631(list_entry:display_value|group:Ways|preset:Track|value:grade5)
 msgid "5 - Soft"
 msgstr "5- Soffice"
@@ -124,6 +144,14 @@ msgstr "5- Soffice"
 #: master_preset.xml:223(list_entry:short_description|value:5)
 msgid "5 tables"
 msgstr "5 tabelle"
+
+#: master_preset.xml:48(list_entry:short_description|value:5)
+msgid "5: Maximum difficulty, boulder fields, landslides"
+msgstr "5: Difficoltà massima, massi sparsi, frane"
+
+#: master_preset.xml:49(list_entry:short_description|value:6)
+msgid "6: Not rideable"
+msgstr ""
 
 #: master_preset.xml:5397(label:text|group:Tourism|preset:Guidepost)
 msgid ""
@@ -3728,6 +3756,7 @@ msgid "Guide"
 msgstr "Guida"
 
 #: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost)
+#: master_preset.xml:734(role:text|key:guidepost)
 msgid "Guidepost"
 msgstr "Segnavia"
 
@@ -4175,6 +4204,10 @@ msgstr ""
 
 #: master_preset.xml:5440(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Information using headphones or a mobile phone."
+msgstr ""
+
+#: master_preset.xml:732(role:text|key:)
+msgid "Infrastructure"
 msgstr ""
 
 #: master_preset.xml:13754(item:name|group:Routes|preset:Inline_Skating_Route)
@@ -5652,6 +5685,10 @@ msgstr "Nome nazionale"
 msgid "National park"
 msgstr "Parco nazionale"
 
+#: master_preset.xml:733(role:text|key:)
+msgid "Natural"
+msgstr "Naturale"
+
 #: master_preset.xml:12513(group:name|group:Nature)
 msgid "Nature"
 msgstr "Natura"
@@ -5814,10 +5851,6 @@ msgstr "Nordico"
 #: master_preset.xml:412(combo:display_values|key:internet_access)
 msgid "Not available"
 msgstr "Non disponibile"
-
-#: master_preset.xml:49(list_entry:short_description|value:6)
-msgid "Not rideable"
-msgstr ""
 
 #: master_preset.xml:14943(item:name|group:Offices|preset:Notary)
 msgid "Notary"
@@ -7750,6 +7783,10 @@ msgstr ""
 
 #: master_preset.xml:13473(list_entry:display_value|group:Relations|preset:Relations|value:route_master)
 msgid "Route master"
+msgstr ""
+
+#: master_preset.xml:731(role:text|key:)
+msgid "Route segment"
 msgstr ""
 
 #: master_preset.xml:4376(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:route)
@@ -10447,10 +10484,6 @@ msgstr "fusione"
 msgid "gasification"
 msgstr ""
 
-#: master_preset.xml:734(role:text|key:guidepost)
-msgid "guidepost"
-msgstr ""
-
 #: master_preset.xml:4590(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:stop)
 msgid "halt point"
 msgstr ""
@@ -10478,7 +10511,6 @@ msgid "houses belonging to the street"
 msgstr ""
 
 #: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:732(role:text|key:)
 msgid "infrastructure"
 msgstr "infrastruttura"
 
@@ -10510,7 +10542,6 @@ msgid "members of site"
 msgstr "membri del sito"
 
 #: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:733(role:text|key:)
 msgid "natural"
 msgstr "naturale"
 
@@ -10567,7 +10598,6 @@ msgstr ""
 #: master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:)
 #: master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:)
 #: master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
-#: master_preset.xml:731(role:text|key:)
 msgid "route segment"
 msgstr ""
 

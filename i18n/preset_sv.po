@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2018-09-10 19:50+0200\n"
-"PO-Revision-Date: 2018-09-10 17:51+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"POT-Creation-Date: 2018-09-10 21:16+0200\n"
+"PO-Revision-Date: 2018-09-11 12:11+0000\n"
+"Last-Translator: Magnus Österlund\n"
 "Language-Team: Swedish (http://www.transifex.com/openstreetmap/presets/language/sv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -64,6 +64,10 @@ msgstr "-10°"
 msgid "... other transportation modes possible"
 msgstr "... andra transportmedel möjliga"
 
+#: master_preset.xml:43(list_entry:short_description|value:0)
+msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
+msgstr "0: Fast grus/packad jord, inga hinder, breda kurvor"
+
 #: master_preset.xml:1627(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
 msgstr ""
@@ -88,6 +92,10 @@ msgstr "10%"
 msgid "10°"
 msgstr "10°"
 
+#: master_preset.xml:44(list_entry:short_description|value:1)
+msgid "1: Some loose surface, small obstacles, wide curves"
+msgstr "1: Delvis löst underlag, små hinder, breda kurvor"
+
 #: master_preset.xml:1628(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
 msgstr ""
@@ -96,6 +104,10 @@ msgstr ""
 msgid "2 tables"
 msgstr "2 bord"
 
+#: master_preset.xml:45(list_entry:short_description|value:2)
+msgid "2: Much loose surface, large obstacles, easy hairpins"
+msgstr "2: Mycket löst underlag, stora hinder, enkla hårnålar"
+
 #: master_preset.xml:1629(list_entry:display_value|group:Ways|preset:Track|value:grade3)
 msgid "3 - Mix hard and soft"
 msgstr ""
@@ -103,6 +115,10 @@ msgstr ""
 #: master_preset.xml:221(list_entry:short_description|value:3)
 msgid "3 tables"
 msgstr "3 bord"
+
+#: master_preset.xml:46(list_entry:short_description|value:3)
+msgid "3: Slippery surface, large obstacles, tight hairpins"
+msgstr "3: Halt underlag, stora hinder, snäva hårnålar"
 
 #: master_preset.xml:5489(check:text|group:Leisure|preset:Movie_Theater/Cinema|key:cinema:3D)
 msgid "3D"
@@ -116,6 +132,10 @@ msgstr ""
 msgid "4 tables"
 msgstr "4 bord"
 
+#: master_preset.xml:47(list_entry:short_description|value:4)
+msgid "4: Loose surface or boulders, dangerous hairpins"
+msgstr "4: löst underlag eller stenblock, farliga hårnålar"
+
 #: master_preset.xml:1631(list_entry:display_value|group:Ways|preset:Track|value:grade5)
 msgid "5 - Soft"
 msgstr ""
@@ -123,6 +143,14 @@ msgstr ""
 #: master_preset.xml:223(list_entry:short_description|value:5)
 msgid "5 tables"
 msgstr "5 bord"
+
+#: master_preset.xml:48(list_entry:short_description|value:5)
+msgid "5: Maximum difficulty, boulder fields, landslides"
+msgstr "5: Maximal svårighet, blockfält, jordskred"
+
+#: master_preset.xml:49(list_entry:short_description|value:6)
+msgid "6: Not rideable"
+msgstr ""
 
 #: master_preset.xml:5397(label:text|group:Tourism|preset:Guidepost)
 msgid ""
@@ -758,6 +786,13 @@ msgstr ""
 
 #: master_preset.xml:5549(list_entry:display_value|group:Leisure|preset:Animals|value:baboon)
 msgid "Baboon"
+msgstr ""
+
+#: master_preset.xml:5888(check:text|group:Leisure|preset:Playground|key:baby)
+#: master_preset.xml:5983(check:text|group:Playground_equipment|preset:Playground_equipment|key:baby)
+#: master_preset.xml:6001(check:text|group:Playground_equipment|preset:Slide|key:baby)
+#: master_preset.xml:6019(check:text|group:Playground_equipment|preset:Swing|key:baby)
+msgid "Baby"
 msgstr ""
 
 #: master_preset.xml:6980(item:name|group:Health|preset:Baby_Hatch/Safe_Haven)
@@ -3681,7 +3716,7 @@ msgstr "Växthus för trädgårdsväxter"
 #: master_preset.xml:835(combo:display_values|key:roof:colour)
 #: master_preset.xml:871(combo:display_values|key:building:colour)
 msgid "Grey"
-msgstr ""
+msgstr "Grå"
 
 #: master_preset.xml:2245(item:name|preset:Grit_Bin)
 msgid "Grit Bin"
@@ -3720,6 +3755,7 @@ msgid "Guide"
 msgstr ""
 
 #: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost)
+#: master_preset.xml:734(role:text|key:guidepost)
 msgid "Guidepost"
 msgstr "Vägskylt"
 
@@ -4168,6 +4204,10 @@ msgstr ""
 #: master_preset.xml:5440(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Information using headphones or a mobile phone."
 msgstr "Information från hörlurar eller mobiltelefon."
+
+#: master_preset.xml:732(role:text|key:)
+msgid "Infrastructure"
+msgstr ""
 
 #: master_preset.xml:13754(item:name|group:Routes|preset:Inline_Skating_Route)
 msgid "Inline Skating Route"
@@ -5644,6 +5684,10 @@ msgstr ""
 msgid "National park"
 msgstr "Nationalpark"
 
+#: master_preset.xml:733(role:text|key:)
+msgid "Natural"
+msgstr "Natur"
+
 #: master_preset.xml:12513(group:name|group:Nature)
 msgid "Nature"
 msgstr "Natur"
@@ -5806,10 +5850,6 @@ msgstr "Nordisk"
 #: master_preset.xml:412(combo:display_values|key:internet_access)
 msgid "Not available"
 msgstr "Inte möjlig"
-
-#: master_preset.xml:49(list_entry:short_description|value:6)
-msgid "Not rideable"
-msgstr ""
 
 #: master_preset.xml:14943(item:name|group:Offices|preset:Notary)
 msgid "Notary"
@@ -7742,6 +7782,10 @@ msgstr "Ruttnätverk"
 
 #: master_preset.xml:13473(list_entry:display_value|group:Relations|preset:Relations|value:route_master)
 msgid "Route master"
+msgstr ""
+
+#: master_preset.xml:731(role:text|key:)
+msgid "Route segment"
 msgstr ""
 
 #: master_preset.xml:4376(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:route)
@@ -10195,7 +10239,7 @@ msgstr ""
 #: master_preset.xml:835(combo:display_values|key:roof:colour)
 #: master_preset.xml:871(combo:display_values|key:building:colour)
 msgid "Yellow"
-msgstr ""
+msgstr "Gul"
 
 #: master_preset.xml:10558(combo:display_values|group:Food|preset:Fair_Trade|key:fair_trade)
 #: master_preset.xml:10640(combo:display_values|group:Clothes|preset:Clothes|key:second_hand)
@@ -10292,13 +10336,6 @@ msgstr "allt relaterat till gatan"
 #: master_preset.xml:7593(combo:display_values|group:Facilities|preset:Clock|key:visibility)
 msgid "area (more than 20m)"
 msgstr "Yta (mer är 20 m)"
-
-#: master_preset.xml:5888(check:text|group:Leisure|preset:Playground|key:baby)
-#: master_preset.xml:5983(check:text|group:Playground_equipment|preset:Playground_equipment|key:baby)
-#: master_preset.xml:6001(check:text|group:Playground_equipment|preset:Slide|key:baby)
-#: master_preset.xml:6019(check:text|group:Playground_equipment|preset:Swing|key:baby)
-msgid "baby"
-msgstr ""
 
 #: master_preset.xml:4592(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:backward_stop)
 msgid "backward halt point"
@@ -10446,10 +10483,6 @@ msgstr ""
 msgid "gasification"
 msgstr ""
 
-#: master_preset.xml:734(role:text|key:guidepost)
-msgid "guidepost"
-msgstr ""
-
 #: master_preset.xml:4590(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:stop)
 msgid "halt point"
 msgstr "Stoppunkt"
@@ -10477,7 +10510,6 @@ msgid "houses belonging to the street"
 msgstr "husen hör till gatan"
 
 #: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:732(role:text|key:)
 msgid "infrastructure"
 msgstr "Infrastruktur"
 
@@ -10509,7 +10541,6 @@ msgid "members of site"
 msgstr "medlemmar av plats"
 
 #: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:733(role:text|key:)
 msgid "natural"
 msgstr "naturlig"
 
@@ -10566,7 +10597,6 @@ msgstr "Position för skylt"
 #: master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:)
 #: master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:)
 #: master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
-#: master_preset.xml:731(role:text|key:)
 msgid "route segment"
 msgstr "ruttsegment"
 
@@ -13441,7 +13471,7 @@ msgstr ""
 #: master_preset.xml:13134(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
 msgid "Port"
-msgstr ""
+msgstr "Babord"
 
 #: master_preset.xml:13134(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"

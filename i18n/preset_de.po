@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2018-09-10 20:03+0200\n"
-"PO-Revision-Date: 2018-09-10 18:11+0000\n"
+"POT-Creation-Date: 2018-09-10 21:16+0200\n"
+"PO-Revision-Date: 2018-09-10 19:20+0000\n"
 "Last-Translator: Simon Poole <sp8962@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/openstreetmap/presets/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -70,6 +70,10 @@ msgstr "-10°"
 msgid "... other transportation modes possible"
 msgstr "... andere Fortbewegungsarten möglich."
 
+#: master_preset.xml:43(list_entry:short_description|value:0)
+msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
+msgstr "0: Solider Kies/komprimierte Erde, keine Hindernisse, weite Kurven"
+
 #: master_preset.xml:1627(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
 msgstr "1 - Fester Belag"
@@ -94,6 +98,10 @@ msgstr "10%"
 msgid "10°"
 msgstr "10°"
 
+#: master_preset.xml:44(list_entry:short_description|value:1)
+msgid "1: Some loose surface, small obstacles, wide curves"
+msgstr "1: Teilweise lockerer Untergrund, kleine Hindernisse, weite Kurven"
+
 #: master_preset.xml:1628(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
 msgstr "2 - Verdichteter Belag"
@@ -102,6 +110,10 @@ msgstr "2 - Verdichteter Belag"
 msgid "2 tables"
 msgstr "2 Tische"
 
+#: master_preset.xml:45(list_entry:short_description|value:2)
+msgid "2: Much loose surface, large obstacles, easy hairpins"
+msgstr "2: Viel loser Untergrund, große Hindernisse, einfache Haarnadelkurven"
+
 #: master_preset.xml:1629(list_entry:display_value|group:Ways|preset:Track|value:grade3)
 msgid "3 - Mix hard and soft"
 msgstr "3 - Weicher und fester Belag"
@@ -109,6 +121,10 @@ msgstr "3 - Weicher und fester Belag"
 #: master_preset.xml:221(list_entry:short_description|value:3)
 msgid "3 tables"
 msgstr "3 Tische"
+
+#: master_preset.xml:46(list_entry:short_description|value:3)
+msgid "3: Slippery surface, large obstacles, tight hairpins"
+msgstr "3: Rutschige Oberfläche, große Hindernisse, enge Haarnadelkurven"
 
 #: master_preset.xml:5489(check:text|group:Leisure|preset:Movie_Theater/Cinema|key:cinema:3D)
 msgid "3D"
@@ -122,6 +138,10 @@ msgstr "4 - Weicher Belag, unbefestigt"
 msgid "4 tables"
 msgstr "4 Tische"
 
+#: master_preset.xml:47(list_entry:short_description|value:4)
+msgid "4: Loose surface or boulders, dangerous hairpins"
+msgstr "4: Lockere Oberfläche oder Felsbrocken, gefährliche Haarnadelkurven"
+
 #: master_preset.xml:1631(list_entry:display_value|group:Ways|preset:Track|value:grade5)
 msgid "5 - Soft"
 msgstr "5 - Unbefestigt"
@@ -129,6 +149,14 @@ msgstr "5 - Unbefestigt"
 #: master_preset.xml:223(list_entry:short_description|value:5)
 msgid "5 tables"
 msgstr "5 Tische"
+
+#: master_preset.xml:48(list_entry:short_description|value:5)
+msgid "5: Maximum difficulty, boulder fields, landslides"
+msgstr "5: Maximale Schwierigkeit, Geröllfelder, Erdrutsche"
+
+#: master_preset.xml:49(list_entry:short_description|value:6)
+msgid "6: Not rideable"
+msgstr "6: Nicht befahrbar"
 
 #: master_preset.xml:5397(label:text|group:Tourism|preset:Guidepost)
 msgid ""
@@ -3733,6 +3761,7 @@ msgid "Guide"
 msgstr "Fremdenführer"
 
 #: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost)
+#: master_preset.xml:734(role:text|key:guidepost)
 msgid "Guidepost"
 msgstr "Wegweiser"
 
@@ -4181,6 +4210,10 @@ msgstr "Informationszugang mit elektronischen Methoden"
 #: master_preset.xml:5440(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Information using headphones or a mobile phone."
 msgstr "Informationen über Kopfhörer oder Handy"
+
+#: master_preset.xml:732(role:text|key:)
+msgid "Infrastructure"
+msgstr ""
 
 #: master_preset.xml:13754(item:name|group:Routes|preset:Inline_Skating_Route)
 msgid "Inline Skating Route"
@@ -5657,6 +5690,10 @@ msgstr "Nationaler Name"
 msgid "National park"
 msgstr "Nationalpark"
 
+#: master_preset.xml:733(role:text|key:)
+msgid "Natural"
+msgstr "Untergrund"
+
 #: master_preset.xml:12513(group:name|group:Nature)
 msgid "Nature"
 msgstr "Natur"
@@ -5819,10 +5856,6 @@ msgstr "Nordisch"
 #: master_preset.xml:412(combo:display_values|key:internet_access)
 msgid "Not available"
 msgstr "Nicht vorhanden"
-
-#: master_preset.xml:49(list_entry:short_description|value:6)
-msgid "Not rideable"
-msgstr "Nicht befahrbar"
 
 #: master_preset.xml:14943(item:name|group:Offices|preset:Notary)
 msgid "Notary"
@@ -6512,7 +6545,7 @@ msgstr "Pinguin"
 
 #: master_preset.xml:3154(item:name|group:Water|preset:Penstock)
 msgid "Penstock"
-msgstr ""
+msgstr "Druckrohrleitung"
 
 #: master_preset.xml:547(combo:display_values|key:denomination)
 msgid "Pentecostal"
@@ -6871,7 +6904,7 @@ msgstr "Nach Sekundarstufe (4)"
 
 #: master_preset.xml:12005(check:text|preset:Payment_Methods|key:payment:postfinance_card)
 msgid "PostFinance Card (ch)"
-msgstr ""
+msgstr "PostFinance Card (ch)"
 
 #: master_preset.xml:12070(item:name|group:Boundaries|preset:Postal_Code)
 #: master_preset.xml:12080(text:text|group:Boundaries|preset:Postal_Code|key:postal_code)
@@ -7756,6 +7789,10 @@ msgstr "Routennetzwerk"
 #: master_preset.xml:13473(list_entry:display_value|group:Relations|preset:Relations|value:route_master)
 msgid "Route master"
 msgstr "Masterroute"
+
+#: master_preset.xml:731(role:text|key:)
+msgid "Route segment"
+msgstr "Routenteil"
 
 #: master_preset.xml:4376(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:route)
 #: master_preset.xml:4396(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:route)
@@ -10452,10 +10489,6 @@ msgstr "Kernfusion"
 msgid "gasification"
 msgstr "Vergasung"
 
-#: master_preset.xml:734(role:text|key:guidepost)
-msgid "guidepost"
-msgstr ""
-
 #: master_preset.xml:4590(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:stop)
 msgid "halt point"
 msgstr "Haltestelle"
@@ -10483,7 +10516,6 @@ msgid "houses belonging to the street"
 msgstr "Zur Straße gehörende Häuser"
 
 #: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:732(role:text|key:)
 msgid "infrastructure"
 msgstr "Infrastruktur"
 
@@ -10515,7 +10547,6 @@ msgid "members of site"
 msgstr "Anlagenteile"
 
 #: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:733(role:text|key:)
 msgid "natural"
 msgstr "Natur"
 
@@ -10572,7 +10603,6 @@ msgstr "Schildposition"
 #: master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:)
 #: master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:)
 #: master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
-#: master_preset.xml:731(role:text|key:)
 msgid "route segment"
 msgstr "Routenteil"
 
@@ -11706,7 +11736,7 @@ msgstr "Unterirdisch"
 #: master_preset.xml:645(combo:text|key:windings:configuration)
 msgctxt "power_windings"
 msgid "Windings configuration"
-msgstr ""
+msgstr "Windungskonfiguration"
 
 #: master_preset.xml:687(combo:display_values|key:support)
 msgctxt "mounting/support"
@@ -12710,22 +12740,22 @@ msgstr "Typ"
 #: master_preset.xml:3053(combo:display_values|group:Water|preset:Canal|key:usage)
 msgctxt "usage"
 msgid "Headrace"
-msgstr ""
+msgstr "Zufluss"
 
 #: master_preset.xml:3053(combo:display_values|group:Water|preset:Canal|key:usage)
 msgctxt "usage"
 msgid "Irrigation"
-msgstr ""
+msgstr "Bewässerung"
 
 #: master_preset.xml:3053(combo:display_values|group:Water|preset:Canal|key:usage)
 msgctxt "usage"
 msgid "Spillway"
-msgstr ""
+msgstr "Überlauf"
 
 #: master_preset.xml:3053(combo:display_values|group:Water|preset:Canal|key:usage)
 msgctxt "usage"
 msgid "Tailrace"
-msgstr ""
+msgstr "Abfluss"
 
 #: master_preset.xml:3053(combo:display_values|group:Water|preset:Canal|key:usage)
 msgctxt "usage"

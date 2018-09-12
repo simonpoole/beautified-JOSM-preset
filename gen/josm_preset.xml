@@ -73,7 +73,7 @@
     <chunk id="tunnel">
         <combo key="tunnel" text="Tunnel" values="yes,building_passage" display_values="Yes,Building passage," values_sort="false" match="key"/>
             <optional>
-                <reference ref="name_layer"/>
+                <reference ref="layer"/>
                 <text key="width" text="Width (meters)"/>
                 <text key="maxheight" text="Max. height (meters)"/>
                 <reference ref="maxspeed"/>
@@ -702,10 +702,10 @@
   </chunk>
   <chunk id="walking_routes_roles">
      <roles>
-         <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="highway|route=ferry"/>
-         <role key="" text="infrastructure" requisite="optional" type="node,closedway" member_expression="tourism OR amenity"/>
-         <role key="" text="natural" requisite="optional" type="node,closedway" member_expression="natural=peak OR natural=volcano OR mountain_pass=yes OR natural=water OR tourism=viewpoint OR amenity=drinking_water OR natural=spring OR place=locality"/>
-         <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
+         <role key="" text="Route segment" requisite="required" type="way,closedway" member_expression="highway|route=ferry"/>
+         <role key="" text="Infrastructure" requisite="optional" type="node,closedway" member_expression="tourism OR amenity"/>
+         <role key="" text="Natural" requisite="optional" type="node,closedway" member_expression="natural=peak OR natural=volcano OR mountain_pass=yes OR natural=water OR tourism=viewpoint OR amenity=drinking_water OR natural=spring OR place=locality"/>
+         <role key="guidepost" text="Guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
      </roles>
   </chunk>
   <chunk id="kerb">

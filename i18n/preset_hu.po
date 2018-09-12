@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2018-09-10 20:03+0200\n"
-"PO-Revision-Date: 2018-09-10 18:04+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"POT-Creation-Date: 2018-09-10 21:16+0200\n"
+"PO-Revision-Date: 2018-09-10 19:18+0000\n"
+"Last-Translator: Gábor Babos <gabor.babos@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/openstreetmap/presets/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,6 +63,10 @@ msgstr "–10°"
 msgid "... other transportation modes possible"
 msgstr "…más lehetséges közlekedési módok"
 
+#: master_preset.xml:43(list_entry:short_description|value:0)
+msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
+msgstr "0: Szilárd kavicsos / döngölt földes, akadálymentes, széles kanyarok"
+
 #: master_preset.xml:1627(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
 msgstr "1 – Tömör"
@@ -87,6 +91,10 @@ msgstr "10%"
 msgid "10°"
 msgstr "10°"
 
+#: master_preset.xml:44(list_entry:short_description|value:1)
+msgid "1: Some loose surface, small obstacles, wide curves"
+msgstr "1: Kevésbé szilárd felület, kisebb akadályokkal, széles kanyarok"
+
 #: master_preset.xml:1628(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
 msgstr "2 – Többnyire tömör"
@@ -95,6 +103,10 @@ msgstr "2 – Többnyire tömör"
 msgid "2 tables"
 msgstr "2 asztal"
 
+#: master_preset.xml:45(list_entry:short_description|value:2)
+msgid "2: Much loose surface, large obstacles, easy hairpins"
+msgstr "2: Laza talaj, nagyobb akadályok, könnyű hajtűkanyarok"
+
 #: master_preset.xml:1629(list_entry:display_value|group:Ways|preset:Track|value:grade3)
 msgid "3 - Mix hard and soft"
 msgstr "3 – Vegyesen kemény és puha"
@@ -102,6 +114,10 @@ msgstr "3 – Vegyesen kemény és puha"
 #: master_preset.xml:221(list_entry:short_description|value:3)
 msgid "3 tables"
 msgstr "3 asztal"
+
+#: master_preset.xml:46(list_entry:short_description|value:3)
+msgid "3: Slippery surface, large obstacles, tight hairpins"
+msgstr "3: Csúszós felület, nagy akadályok, éles hajtűkanyarok"
 
 #: master_preset.xml:5489(check:text|group:Leisure|preset:Movie_Theater/Cinema|key:cinema:3D)
 msgid "3D"
@@ -115,6 +131,10 @@ msgstr "4 – Többnyire puha"
 msgid "4 tables"
 msgstr "4 asztal"
 
+#: master_preset.xml:47(list_entry:short_description|value:4)
+msgid "4: Loose surface or boulders, dangerous hairpins"
+msgstr "4: Nagyon laza vagy sziklás rész, veszélyes hajtűkanyarok"
+
 #: master_preset.xml:1631(list_entry:display_value|group:Ways|preset:Track|value:grade5)
 msgid "5 - Soft"
 msgstr "5 – Puha"
@@ -122,6 +142,14 @@ msgstr "5 – Puha"
 #: master_preset.xml:223(list_entry:short_description|value:5)
 msgid "5 tables"
 msgstr "5 asztal"
+
+#: master_preset.xml:48(list_entry:short_description|value:5)
+msgid "5: Maximum difficulty, boulder fields, landslides"
+msgstr "5: Maximális nehézség, földcsuszamlások"
+
+#: master_preset.xml:49(list_entry:short_description|value:6)
+msgid "6: Not rideable"
+msgstr ""
 
 #: master_preset.xml:5397(label:text|group:Tourism|preset:Guidepost)
 msgid ""
@@ -3726,6 +3754,7 @@ msgid "Guide"
 msgstr "Idegenvezetői iroda"
 
 #: master_preset.xml:5388(item:name|group:Tourism|preset:Guidepost)
+#: master_preset.xml:734(role:text|key:guidepost)
 msgid "Guidepost"
 msgstr "Útirányjelző tábla"
 
@@ -4174,6 +4203,10 @@ msgstr "Elektronikus módszerekkel történő információszerzés."
 #: master_preset.xml:5440(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Information using headphones or a mobile phone."
 msgstr "Tájékoztatás fejhallgatóval vagy mobiltelefonnal (audioguide)"
+
+#: master_preset.xml:732(role:text|key:)
+msgid "Infrastructure"
+msgstr ""
 
 #: master_preset.xml:13754(item:name|group:Routes|preset:Inline_Skating_Route)
 msgid "Inline Skating Route"
@@ -5650,6 +5683,10 @@ msgstr "Nemzeti név"
 msgid "National park"
 msgstr "Nemzeti park"
 
+#: master_preset.xml:733(role:text|key:)
+msgid "Natural"
+msgstr "Természetes"
+
 #: master_preset.xml:12513(group:name|group:Nature)
 msgid "Nature"
 msgstr "Természet"
@@ -5812,10 +5849,6 @@ msgstr "Sífutás"
 #: master_preset.xml:412(combo:display_values|key:internet_access)
 msgid "Not available"
 msgstr "Nincs"
-
-#: master_preset.xml:49(list_entry:short_description|value:6)
-msgid "Not rideable"
-msgstr ""
 
 #: master_preset.xml:14943(item:name|group:Offices|preset:Notary)
 msgid "Notary"
@@ -7749,6 +7782,10 @@ msgstr "Útvonalhálózat"
 #: master_preset.xml:13473(list_entry:display_value|group:Relations|preset:Relations|value:route_master)
 msgid "Route master"
 msgstr "Tömegközlekedési útvonalhálózat (route master)"
+
+#: master_preset.xml:731(role:text|key:)
+msgid "Route segment"
+msgstr ""
 
 #: master_preset.xml:4376(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:route)
 #: master_preset.xml:4396(combo:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:route)
@@ -10445,10 +10482,6 @@ msgstr "magfúziós"
 msgid "gasification"
 msgstr "gázosítás"
 
-#: master_preset.xml:734(role:text|key:guidepost)
-msgid "guidepost"
-msgstr "útirányjelző tábla"
-
 #: master_preset.xml:4590(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:stop)
 msgid "halt point"
 msgstr "jármű megállásának pontja"
@@ -10476,7 +10509,6 @@ msgid "houses belonging to the street"
 msgstr "az utcához tartozó házak"
 
 #: master_preset.xml:13705(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:732(role:text|key:)
 msgid "infrastructure"
 msgstr "infrastruktúra"
 
@@ -10508,7 +10540,6 @@ msgid "members of site"
 msgstr "telephely tagjai"
 
 #: master_preset.xml:13706(role:text|group:Routes|preset:Riding_Route|key:)
-#: master_preset.xml:733(role:text|key:)
 msgid "natural"
 msgstr "természetes"
 
@@ -10565,7 +10596,6 @@ msgstr "a tábla helye"
 #: master_preset.xml:4389(role:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:)
 #: master_preset.xml:4409(role:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:)
 #: master_preset.xml:4587(role:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:)
-#: master_preset.xml:731(role:text|key:)
 msgid "route segment"
 msgstr "útvonalszakasz"
 
