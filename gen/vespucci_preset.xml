@@ -922,6 +922,12 @@
     <combo text="Theme" key="playground:theme" values="barrel,bee,bridge,castle,cat,cow,dog,dragon,helicopter,horse,locomotive,octopus,plane,rocket,ship,spiderweb,tiger,train"
         display_values="Barrel,Bee,Bridge,Castle,Cat,Cow,Dog,Dragon,Helicopter,Horse,Locomotive,Octopus,Plane,Rocket,Ship,Spiderweb,Tiger,Train" />
   </chunk>  
+  <chunk id="language">
+    <!--  this uses a simply multiselect to specify one or more languages and doesn't use the wikifiddled languagexx scheme -->
+    <multiselect key="language" text="Language" values="af;sq;am;ar;hy;as;az;eu;be;bn;bs;bg;my;ca;zh;hr;cs;da;dv;nl;en;et;mk;fo;fa;fi;fr;gd;gl;ka;de;el;gn;gu;he;hi;hu;is;id;it;ja;kn;ks;kk;km;ko;lo;la;lv;lt;ms;ml;mt;mi;mr;mn;ne;nb;nn;or;pl;pt;pa;rm;ro;ru;sa;sr;tn;sd;si;sk;sl;so;sb;es;sw;sv;tg;ta;tt;te;th;bo;ts;tr;tk;uk;ur;uz;vi;cy;xh;yi;zu" 
+        display_values="Afrikaans;Albanian;Amharic;Arabic;Armenian;Assamese;Azeri;Basque;Belarusian;Bengali;Bosnian;Bulgarian;Burmese;Catalan;Chinese;Croatian;Czech;Danish;Divehi;Dutch;English;Estonian;Macedonian;Faroese;Farsi;Finnish;French;Gaelic;Galician;Georgian;German;Greek;Guarani;Gujarati;Hebrew;Hindi;Hungarian;Icelandic;Indonesian;Italian;Japanese;Kannada;Kashmiri;Kazakh;Khmer;Korean;Lao;Latin;Latvian;Lithuanian;Malay;Malayalam;Maltese;Maori;Marathi;Mongolian;Nepali;Norwegian - Bokml;Norwegian - Nynorsk;Oriya;Polish;Portuguese;Punjabi;Raeto-Romance;Romanian;Russian;Sanskrit;Serbian;Setsuana;Sindhi;Sinhala;Slovak;Slovenian;Somali;Sorbian;Spanish;Swahili;Swedish;Tajik;Tamil;Tatar;Telugu;Thai;Tibetan;Tsonga;Turkish;Turkmen;Ukrainian;Urdu;Uzbek;Vietnamese;Welsh;Xhosa;Yiddish;Zulu"
+        values_searchable="true" match="key" />
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="highway_highway_sp.png">
     <group name="Streets" icon="highway_highway_sp.png">
@@ -2507,7 +2513,7 @@
         </item> <!-- Jersey Barrier -->
         <item name="Ditch" icon="barrier_empty.png" name_context="Barrier" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=ditch"
-            cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=ditch"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=ditch"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=ditch"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:barrier=ditch"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:barrier=ditch"
@@ -4606,7 +4612,9 @@
             <space />
             <key key="amenity" value="vending_machine" />
             <key key="vending" value="public_transport_tickets" />
-            <reference ref="name_operator_level" />
+            <reference ref="optional_name" />
+            <text key="operator" text="Operator" />
+            <reference ref="level" />
             <text key="ref" text="Reference number" />
             <preset_link preset_name="Payment Methods" />
         </item> <!-- Ticket Machine -->
@@ -6948,7 +6956,23 @@
             </optional>
             <reference ref="link_contact_address" />
         </item> <!-- College -->
-         <item name="Driving School" icon="education_driving_school_12041.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Language school" icon="education_school_12242.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=language_school"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=language_school"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=language_school"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=language_school"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=language_school"
+                  pl.href="https://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=language_school"
+                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=language_school" />
+            <space />
+            <key key="amenity" value="language_school" />
+            <reference ref="language" />
+            <reference ref="name_operator_wheelchair_level" />
+            <reference ref="optional_oh" />
+            <reference ref="education_operator_type" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Language school -->
+        <item name="Driving School" icon="education_driving_school_12041.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=driving_school"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=driving_school"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=driving_school"
