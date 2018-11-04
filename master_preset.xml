@@ -2507,7 +2507,7 @@
         </item> <!-- Jersey Barrier -->
         <item name="Ditch" icon="${ICONPATH}barrier_empty.${ICONTYPE}" name_context="Barrier" type="way,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:barrier=ditch"
-            cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=ditch"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:barrier=ditch"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:barrier=ditch"
                   it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:barrier=ditch"
                   ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:barrier=ditch"
@@ -4606,7 +4606,9 @@
             <space />
             <key key="amenity" value="vending_machine" />
             <key key="vending" value="public_transport_tickets" />
-            <reference ref="name_operator_level" />
+            <reference ref="optional_name" />
+            <text key="operator" text="Operator" />
+            <reference ref="level" />
             <text key="ref" text="Reference number" />
             <preset_link preset_name="Payment Methods" />
         </item> <!-- Ticket Machine -->
