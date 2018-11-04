@@ -6500,7 +6500,7 @@
             <key key="amenity" value="studio" />
             <reference ref="name_operator" />
             <reference ref="wheelchair" />
-            <combo key="type" text="Type" values="audio,video" />
+            <combo key="studio" text="Type" values="audio,radio,television,video" display_values="Audio,Radio,Television,Video" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Recording Studio -->
     </group> <!-- Culture -->
