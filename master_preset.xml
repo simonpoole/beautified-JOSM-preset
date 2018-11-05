@@ -895,7 +895,7 @@
 	<reference ref="roof_main" />
   </chunk>
   <chunk id="education_operator_type">
-  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religous" />
+  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious" />
   </chunk>
   <chunk id="isced_level">
   	<multiselect key="isced:level" text="ISCED level" delimiter=";" match="key" editable="true">
@@ -6686,6 +6686,22 @@
             <reference ref="oh_wheelchair" />
             <reference ref="link_contact_address" />
         </item> <!-- Other Place of Worship -->
+        <item name="Monastery" icon="${ICONPATH}place_of_worship_monastery.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=monastery"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=monastery"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=monastery"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=monastery"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=monastery"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=monastery" />
+            <space />
+            <key key="amenity" value="monastery" />
+            <text key="name" text="Name" />
+            <reference ref="religious" /> 
+            <combo key="monastery:type" text="Type" values="monastery,convent,commandry,hermitage" display_values="Monastery,Convent,Commandry,Hermitage" />
+            <combo key="community:gender" text="Gender" values="femaie,male,mixed" display_values="Femaie,Male,Mixed" />          
+            <reference ref="oh_wheelchair" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Monastery -->
     </group> <!-- Place of Worship -->
     <group name="Public Building" icon="${ICONPATH}amenity_public_building2.${ICONTYPE}">
         <item name="Public Building (deprecated)" deprecated="true" icon="${ICONPATH}amenity_public_building2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
