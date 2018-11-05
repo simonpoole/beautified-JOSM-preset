@@ -895,7 +895,7 @@
 	<reference ref="roof_main" />
   </chunk>
   <chunk id="education_operator_type">
-  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religous" />
+  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious" />
   </chunk>
   <chunk id="isced_level">
   	<multiselect key="isced:level" text="ISCED level" delimiter=";" match="key" editable="true">
@@ -4279,6 +4279,20 @@
             <reference ref="name_oh_wheelchair" />
             <text key="website" text="Website" />
         </item> <!-- Sharing -->
+        <item name="Vehicle Inspection" icon="transport_vehicle_inspection.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vehicle_inspection"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=vehicle_inspection"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vehicle_inspection"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=vehicle_inspection"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=vehicle_inspection"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vehicle_inspection"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:amenity=vehicle_inspection" />
+            <space />
+            <key key="amenity" value="vehicle_inspection" />
+            <text key="operator" text="Operator" />
+            <reference ref="name_oh_wheelchair" />
+            <text key="website" text="Website" />
+        </item> <!-- Sharing -->
     </group> <!-- Car -->
     <group name="Motorcycle" icon="transport_motorcycle.png">
         <item name="Parking" icon="transport_motorcycle_parking_12001.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6500,7 +6514,7 @@
             <key key="amenity" value="studio" />
             <reference ref="name_operator" />
             <reference ref="wheelchair" />
-            <combo key="type" text="Type" values="audio,video" />
+            <combo key="studio" text="Type" values="audio,radio,television,video" display_values="Audio,Radio,Television,Video" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Recording Studio -->
     </group> <!-- Culture -->
@@ -6672,6 +6686,22 @@
             <reference ref="oh_wheelchair" />
             <reference ref="link_contact_address" />
         </item> <!-- Other Place of Worship -->
+        <item name="Monastery" icon="place_of_worship_monastery.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=monastery"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=monastery"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=monastery"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=monastery"
+                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=monastery"
+                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=monastery" />
+            <space />
+            <key key="amenity" value="monastery" />
+            <text key="name" text="Name" />
+            <reference ref="religious" /> 
+            <combo key="monastery:type" text="Type" values="monastery,convent,commandry,hermitage" display_values="Monastery,Convent,Commandry,Hermitage" />
+            <combo key="community:gender" text="Gender" values="femaie,male,mixed" display_values="Femaie,Male,Mixed" />          
+            <reference ref="oh_wheelchair" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Monastery -->
     </group> <!-- Place of Worship -->
     <group name="Public Building" icon="amenity_public_building2.png">
         <item name="Public Building (deprecated)" deprecated="true" icon="amenity_public_building2.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6714,6 +6744,16 @@
             <label text="Community Centre" />
             <space />
             <key key="amenity" value="community_centre" />
+            <reference ref="name_operator_oh_wheelchair_toilets" />
+            <reference ref="link_contact_address" />
+        </item> <!-- Community Centre -->
+        <item name="Conference Centre" icon="amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=conference_centre"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=conference_centre"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:amenity=conference_centre" />
+            <label text="Community Centre" />
+            <space />
+            <key key="amenity" value="conference_centre" />
             <reference ref="name_operator_oh_wheelchair_toilets" />
             <reference ref="link_contact_address" />
         </item> <!-- Community Centre -->
@@ -7831,7 +7871,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=waste_disposal" />
             <key key="amenity" value="waste_disposal" />
         </item> <!-- Waste Disposal/Dumpster -->
-        <item name="Sanitary Dump Station" icon="amenity_sanitary_dump_station.png" type="node,closedway" preset_name_label="true">
+        <item name="Sanitary Dump Station" icon="amenity_sanitary_dump_station.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Toilet_Holding_Tank_Disposal"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Toilet_Holding_Tank_Disposal"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Toilet_Holding_Tank_Disposal"
@@ -7869,7 +7909,7 @@
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
             <combo key="seats" text="Seats count" values="2,3,4,5,6,7,8,9,10" />
         </item> <!-- Bench -->
-        <item name="Shelter" icon="accommodation_shelter2.png" type="node,closedway" preset_name_label="true">
+        <item name="Shelter" icon="accommodation_shelter2.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=shelter"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=shelter"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=shelter"
@@ -7949,7 +7989,7 @@
                 <text key="description" text="Description" />
             </optional>
         </item> <!-- Water Point -->
-        <item name="Animal shelter" icon="amenity_animal_shelter_12315.png" type="node,closedway" preset_name_label="true">
+        <item name="Animal shelter" icon="amenity_animal_shelter_12315.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=animal_shelter"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=animal_shelter"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=animal_shelter"
@@ -7970,8 +8010,9 @@
                 <check key="animal_shelter:adoption" text="For adoption" disable_off="true" />
  				<check key="animal_shelter:release" text="For release" disable_off="true" />
             </optional>
+            <reference ref="link_contact_address" />
         </item> <!-- Animal shelter -->
-        <item name="Animal boarding" icon="amenity_animal_boarding_12330.png" type="node,closedway" preset_name_label="true">
+        <item name="Animal boarding" icon="amenity_animal_boarding_12330.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=animal_boarding"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=animal_boarding"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=animal_boarding"
@@ -7989,8 +8030,23 @@
                 <multiselect key="animal_boarding" text="Animals" values="dog;cat;horse;fish;amphibian;reptile;bird;mammal" 
                 	display_values="Dog;Cat;Horse;Fish;Amphibian;Reptile;Bird;Mammal" values_searchable="true" match="key" />
             </optional>
+            <reference ref="link_contact_address" />
         </item> <!-- Animal boarding -->
-        <item name="Animal watering place" icon="amenity_empty.png" type="node,closedway" preset_name_label="true">
+        <item name="Animal breeding" icon="amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=animal_breeding"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=animal_breeding" />
+            <space />
+            <key key="amenity" value="animal_breeding" />
+            <optional>
+                <text key="name" text="Name" />
+                <text key="operator" text="Operator" />
+                <text key="description" text="Description" />
+                <multiselect key="animal_breeding" text="Animals" values="pig;poultry;horse;dog;cow;goat;fish;bird;sheep" 
+                    display_values="Pig;Poultry;Horse;Dog;Cow;Goat;Fish;Bird;Sheep" values_searchable="true" match="key" />
+            </optional>
+            <reference ref="link_contact_address" />
+        </item> <!-- Animal boarding -->
+        <item name="Animal watering place" icon="amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=watering_place"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=watering_place"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=watering_place"
