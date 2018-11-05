@@ -4279,6 +4279,20 @@
             <reference ref="name_oh_wheelchair" />
             <text key="website" text="Website" />
         </item> <!-- Sharing -->
+        <item name="Vehicle Inspection" icon="${ICONPATH}transport_vehicle_inspection.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=vehicle_inspection"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=vehicle_inspection"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=vehicle_inspection"
+                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=vehicle_inspection"
+                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=vehicle_inspection"
+                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=vehicle_inspection"
+                  pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:amenity=vehicle_inspection" />
+            <space />
+            <key key="amenity" value="vehicle_inspection" />
+            <text key="operator" text="Operator" />
+            <reference ref="name_oh_wheelchair" />
+            <text key="website" text="Website" />
+        </item> <!-- Sharing -->
     </group> <!-- Car -->
     <group name="Motorcycle" icon="${ICONPATH}transport_motorcycle.${ICONTYPE}">
         <item name="Parking" icon="${ICONPATH}transport_motorcycle_parking_12001.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
