@@ -7855,7 +7855,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=waste_disposal" />
             <key key="amenity" value="waste_disposal" />
         </item> <!-- Waste Disposal/Dumpster -->
-        <item name="Sanitary Dump Station" icon="${ICONPATH}amenity_sanitary_dump_station.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Sanitary Dump Station" icon="${ICONPATH}amenity_sanitary_dump_station.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Toilet_Holding_Tank_Disposal"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Toilet_Holding_Tank_Disposal"
                   fr.href="http://wiki.openstreetmap.org/wiki/FR:Toilet_Holding_Tank_Disposal"
@@ -7893,7 +7893,7 @@
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true" />
             <combo key="seats" text="Seats count" values="2,3,4,5,6,7,8,9,10" />
         </item> <!-- Bench -->
-        <item name="Shelter" icon="${ICONPATH}accommodation_shelter2.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Shelter" icon="${ICONPATH}accommodation_shelter2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=shelter"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=shelter"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=shelter"
@@ -7973,7 +7973,7 @@
                 <text key="description" text="Description" />
             </optional>
         </item> <!-- Water Point -->
-        <item name="Animal shelter" icon="${ICONPATH}amenity_animal_shelter_12315.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Animal shelter" icon="${ICONPATH}amenity_animal_shelter_12315.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=animal_shelter"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=animal_shelter"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=animal_shelter"
@@ -7994,8 +7994,9 @@
                 <check key="animal_shelter:adoption" text="For adoption" disable_off="true" />
  				<check key="animal_shelter:release" text="For release" disable_off="true" />
             </optional>
+            <reference ref="link_contact_address" />
         </item> <!-- Animal shelter -->
-        <item name="Animal boarding" icon="${ICONPATH}amenity_animal_boarding_12330.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Animal boarding" icon="${ICONPATH}amenity_animal_boarding_12330.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=animal_boarding"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=animal_boarding"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=animal_boarding"
@@ -8013,8 +8014,23 @@
                 <multiselect key="animal_boarding" text="Animals" values="dog;cat;horse;fish;amphibian;reptile;bird;mammal" 
                 	display_values="Dog;Cat;Horse;Fish;Amphibian;Reptile;Bird;Mammal" values_searchable="true" match="key" />
             </optional>
+            <reference ref="link_contact_address" />
         </item> <!-- Animal boarding -->
-        <item name="Animal watering place" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Animal breeding" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=animal_breeding"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=animal_breeding" />
+            <space />
+            <key key="amenity" value="animal_breeding" />
+            <optional>
+                <text key="name" text="Name" />
+                <text key="operator" text="Operator" />
+                <text key="description" text="Description" />
+                <multiselect key="animal_breeding" text="Animals" values="pig;poultry;horse;dog;cow;goat;fish;bird;sheep" 
+                    display_values="Pig;Poultry;Horse;Dog;Cow;Goat;Fish;Bird;Sheep" values_searchable="true" match="key" />
+            </optional>
+            <reference ref="link_contact_address" />
+        </item> <!-- Animal boarding -->
+        <item name="Animal watering place" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=watering_place"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=watering_place"
                   de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=watering_place"
