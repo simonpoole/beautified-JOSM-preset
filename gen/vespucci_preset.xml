@@ -6698,7 +6698,7 @@
             <text key="name" text="Name" />
             <reference ref="religious" /> 
             <combo key="monastery:type" text="Type" values="monastery,convent,commandry,hermitage" display_values="Monastery,Convent,Commandry,Hermitage" />
-            <combo key="community:gender" text="Gender" values="femaie,male,mixed" display_values="Femaie,Male,Mixed" />          
+            <combo key="community:gender" text="Gender" values="female,male,mixed" display_values="Female,Male,Mixed" />          
             <reference ref="oh_wheelchair" />
             <reference ref="link_contact_address" />
         </item> <!-- Monastery -->
