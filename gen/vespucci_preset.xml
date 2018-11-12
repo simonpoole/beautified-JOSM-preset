@@ -5271,7 +5271,7 @@
             <space />
             <key key="amenity" value="cafe" />
             <reference ref="name_operator" />
-            <combo key="cuisine" text="Cuisine" values="ice_cream" />
+            <combo key="cuisine" text="Cuisine" values="ice_cream" display_values="Ice cream" />
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true" />
             <combo key="takeaway" text="Takeaway" values="yes,no,only" values_sort="false" display_values="Yes,No,Only" />
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00" />
