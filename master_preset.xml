@@ -11094,88 +11094,6 @@
             <reference ref="link_contact_address_payment" />
         </item> <!-- Radio and electronics supplies -->
     </group> <!-- Electronics -->
-    <group name="Cash" icon="${ICONPATH}money_bank2.${ICONTYPE}">
-        <item name="Bank" icon="${ICONPATH}money_bank2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bank"
-                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=bank"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bank"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=bank"
-                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=bank"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=bank"
-                  hr.href="http://wiki.openstreetmap.org/wiki/Hr:Tag:amenity=bank"
-                  it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=bank"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=bank"
-                  nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:amenity=bank"
-                  no.href="http://wiki.openstreetmap.org/wiki/No:Tag:amenity=bank"
-                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=bank"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=bank"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bank" />
-            <space />
-            <key key="amenity" value="bank" />
-            <reference ref="name_brand_operator_oh_wheelchair_level" />
-            <check key="atm" text="Automated Teller Machine" default="on" />
-            <text key="ref" text="Reference" />
-            <reference ref="link_contact_address" />
-        </item> <!-- Bank -->
-        <item name="Money Exchange" icon="${ICONPATH}money_currency_exchange.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bureau_de_change"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=bureau_de_change"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bureau_de_change"
-                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=bureau_de_change"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=bureau_de_change"
-                  pl.href="https://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=bureau_de_change"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=bureau_de_change"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bureau_de_change" />
-            <space />
-            <key key="amenity" value="bureau_de_change" />
-            <reference ref="name_oh_wheelchair_level" />
-            <reference ref="link_contact_address" />
-        </item> <!-- Money Exchange -->
-        <item name="Automated Teller Machine" icon="${ICONPATH}money_atm.${ICONTYPE}" type="node" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=atm"
-                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=atm"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=atm"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=atm"
-                  fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=atm"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=atm"
-                  hr.href="http://wiki.openstreetmap.org/wiki/Hr:Tag:amenity=atm"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=atm"
-                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=atm"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=atm"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=atm"
-                  uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=atm" />
-            <space />
-            <key key="amenity" value="atm" />
-            <text key="brand" text="Brand" />
-            <text key="operator" text="Operator" />
-            <reference ref="oh_wheelchair_level" />
-        </item> <!-- Automated Teller Machine -->
-        <item name="Pawnbroker" icon="${ICONPATH}money_pawnbroker_29185.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=pawnbroker"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=pawnbroker"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=pawnbroker"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=pawnbroker"
-                  id.href="http://wiki.openstreetmap.org/wiki/Id:Tag:shop=pawnbroker"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=pawnbroker"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=pawnbroker"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=pawnbroker" />
-            <space />
-            <key key="shop" value="pawnbroker" />
-            <reference ref="name_oh_wheelchair_level" />
-            <reference ref="link_contact_address_payment" />
-        </item> <!-- Pawnbroker -->
-        <item name="Money lender" icon="${ICONPATH}money_money_lender_29184.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=money_lender"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=money_lender"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=money_lender"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=money_lender"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=money_lender" />
-            <space />
-            <key key="shop" value="money_lender" />
-            <reference ref="name_oh_wheelchair_level" />
-            <reference ref="link_contact_address_payment" />
-        </item> <!-- Money lender -->
-    </group> <!-- Cash -->
     <group name="Home furnishing and decoration" icon="${ICONPATH}shopping_interior_decoration_29087.${ICONTYPE}">
         <item name="Furniture" icon="${ICONPATH}shopping_furniture_29068.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=furniture"
@@ -12280,6 +12198,107 @@
         </checkgroup>
     </item> <!-- Payment Methods -->
   </group> <!-- Shops -->
+  <group name="Money" icon="${ICONPATH}money_bank2.${ICONTYPE}">
+    <item name="Bank" icon="${ICONPATH}money_bank2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bank"
+              cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=bank"
+              de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bank"
+              es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=bank"
+              fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=bank"
+              fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=bank"
+              hr.href="http://wiki.openstreetmap.org/wiki/Hr:Tag:amenity=bank"
+              it.href="http://wiki.openstreetmap.org/wiki/IT:Tag:amenity=bank"
+              ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=bank"
+              nl.href="http://wiki.openstreetmap.org/wiki/NL:Tag:amenity=bank"
+              no.href="http://wiki.openstreetmap.org/wiki/No:Tag:amenity=bank"
+              pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=bank"
+              pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=bank"
+              ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bank" />
+        <space />
+        <key key="amenity" value="bank" />
+        <reference ref="name_brand_operator_oh_wheelchair_level" />
+        <check key="atm" text="Automated Teller Machine" default="on" />
+        <text key="ref" text="Reference" />
+        <reference ref="link_contact_address" />
+    </item> <!-- Bank -->
+    <item name="Money Exchange" icon="${ICONPATH}money_currency_exchange.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=bureau_de_change"
+              cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=bureau_de_change"
+              de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=bureau_de_change"
+              fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=bureau_de_change"
+              ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=bureau_de_change"
+              pl.href="https://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=bureau_de_change"
+              pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=bureau_de_change"
+              ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=bureau_de_change" />
+        <space />
+        <key key="amenity" value="bureau_de_change" />
+        <reference ref="name_oh_wheelchair_level" />
+        <reference ref="link_contact_address" />
+    </item> <!-- Money Exchange -->
+    <item name="Automated Teller Machine" icon="${ICONPATH}money_atm.${ICONTYPE}" type="node" preset_name_label="true">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=atm"
+              cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=atm"
+              de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=atm"
+              es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=atm"
+              fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=atm"
+              fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=atm"
+              hr.href="http://wiki.openstreetmap.org/wiki/Hr:Tag:amenity=atm"
+              ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=atm"
+              pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=atm"
+              pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=atm"
+              ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=atm"
+              uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=atm" />
+        <space />
+        <key key="amenity" value="atm" />
+        <text key="brand" text="Brand" />
+        <text key="operator" text="Operator" />
+        <reference ref="oh_wheelchair_level" />
+    </item> <!-- Automated Teller Machine -->
+    <item name="Payment centre" icon="${ICONPATH}money_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=payment_centre"
+              es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=payment_centre"
+              pl.href="http://wiki.openstreetmap.org/wiki/PL:Tag:amenity=payment_centre" />
+        <space />
+        <key key="amenity" value="payment_centre" />
+        <reference ref="name_oh_wheelchair_level" />
+        <reference ref="link_contact_address_payment" />
+    </item> <!-- Payment centre -->
+    <item name="Payment terminal" icon="${ICONPATH}money_payment_terminal.${ICONTYPE}" type="node" preset_name_label="true">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=payment_terminal"
+              es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=payment_terminal"
+              ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=payment_terminal"
+              uk.href="http://wiki.openstreetmap.org/wiki/UK:Tag:amenity=payment_terminal" />
+        <space />
+        <key key="amenity" value="payment_terminal" />
+        <reference ref="name_oh_wheelchair_level" />
+        <reference ref="link_contact_address_payment" />
+    </item> <!-- Payment terminal -->
+    <item name="Pawnbroker" icon="${ICONPATH}money_pawnbroker_29185.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=pawnbroker"
+              cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=pawnbroker"
+              de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=pawnbroker"
+              es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:shop=pawnbroker"
+              id.href="http://wiki.openstreetmap.org/wiki/Id:Tag:shop=pawnbroker"
+              ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=pawnbroker"
+              pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=pawnbroker"
+              ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=pawnbroker" />
+        <space />
+        <key key="shop" value="pawnbroker" />
+        <reference ref="name_oh_wheelchair_level" />
+        <reference ref="link_contact_address_payment" />
+    </item> <!-- Pawnbroker -->
+    <item name="Money lender" icon="${ICONPATH}money_money_lender_29184.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=money_lender"
+              cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=money_lender"
+              ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=money_lender"
+              pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=money_lender"
+              ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=money_lender" />
+        <space />
+        <key key="shop" value="money_lender" />
+        <reference ref="name_oh_wheelchair_level" />
+        <reference ref="link_contact_address_payment" />
+    </item> <!-- Money lender -->
+  </group> <!-- Money -->
   <group name="Geography" icon="${ICONPATH}poi_peak2.${ICONTYPE}">
     <group name="Boundaries" icon="${ICONPATH}poi_boundary_administrative.${ICONTYPE}">
         <item name="Administrative" icon="${ICONPATH}poi_boundary_administrative.${ICONTYPE}" type="way,closedway,relation,multipolygon" preset_name_label="true">
