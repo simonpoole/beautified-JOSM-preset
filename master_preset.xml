@@ -12043,6 +12043,16 @@
             <reference ref="name_operator_oh_wheelchair_level" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Variety Store -->
+        <item name="Party supplies" icon="${ICONPATH}shopping_party.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=party"
+                  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=party"
+                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=party"
+                  es.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=party" />
+            <space />
+            <key key="shop" value="party" />
+            <reference ref="name_operator_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Party supplies -->
         <item name="Bookmaker" icon="${ICONPATH}shopping_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=bookmaker"
                   cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=bookmaker"
