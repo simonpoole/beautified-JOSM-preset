@@ -321,16 +321,23 @@
         <reference ref="name_operator_oh_wheelchair_level"/>
 		<reference ref="toilets_with_access"/>
     </chunk>
+    <chunk id="brand">
+        <text key="brand" text="Brand"/>
+        <optional>
+            <text key="brand:wikipedia" text="Brand wikipedia entry"/>
+            <text key="brand:wikidata" text="Brand wikidata entry"/>
+        </optional>
+    </chunk>
     <chunk id="name_brand_operator_oh_wheelchair">
         <text key="name" text="Name"/>
-        <text key="brand" text="Brand"/>
+        <reference ref="brand"/>
         <text key="operator" text="Operator"/>
         <reference ref="oh_wheelchair"/>
     </chunk>
     <chunk id="optional_name_brand_operator_oh_wheelchair">
         <optional>
             <text key="name" text="Name"/>
-            <text key="brand" text="Brand"/>
+            <reference ref="brand"/>
             <text key="operator" text="Operator"/>
         </optional>
         <reference ref="oh_wheelchair"/>
@@ -351,19 +358,19 @@
     </chunk>
     <chunk id="name_brand_oh_wheelchair_level">
         <text key="name" text="Name"/>
-        <text key="brand" text="Brand"/>
+        <reference ref="brand"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="level"/>
     </chunk>
     <chunk id="name_brand_oh_wheelchair_toilets">
         <text key="name" text="Name"/>
-        <text key="brand" text="Brand"/>
+        <reference ref="brand"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="toilets_with_access"/>
     </chunk>
     <chunk id="name_brand_oh_wheelchair_toilets_level">
         <text key="name" text="Name"/>
-        <text key="brand" text="Brand"/>
+        <reference ref="brand"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="toilets_with_access"/>
         <reference ref="level"/>
@@ -2886,7 +2893,7 @@
             <key key="amenity" value="bicycle_repair_station"/>
             <optional>
             <reference ref="optional_name"/>
-            <text key="brand" text="Brand"/>
+            <reference ref="brand"/>
             <text key="operator" text="Operator"/>
             <reference ref="oh"/>
             <check key="service:bicycle:pump" text="Free bicycle pump" disable_off="true"/>
@@ -7494,7 +7501,7 @@
             <key key="shop" value="baby_goods"/>
             <reference ref="name_oh_wheelchair_level"/>
             <optional>
-               <text key="brand" text="Brand"/>
+               <reference ref="brand"/>
             </optional>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Baby goods -->
@@ -7829,7 +7836,7 @@
         <link href="http://wiki.openstreetmap.org/wiki/Tag:amenity=atm" cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:amenity=atm" de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:amenity=atm" es.href="http://wiki.openstreetmap.org/wiki/ES:Tag:amenity=atm" fi.href="http://wiki.openstreetmap.org/wiki/Fi:Tag:amenity=atm" fr.href="http://wiki.openstreetmap.org/wiki/FR:Tag:amenity=atm" hr.href="http://wiki.openstreetmap.org/wiki/Hr:Tag:amenity=atm" ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:amenity=atm" pl.href="http://wiki.openstreetmap.org/wiki/Pl:Tag:amenity=atm" pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:amenity=atm" ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=atm" uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:amenity=atm"/>
         <space/>
         <key key="amenity" value="atm"/>
-        <text key="brand" text="Brand"/>
+        <reference ref="brand"/>
         <text key="operator" text="Operator"/>
         <reference ref="oh_wheelchair_level"/>
     </item> <!-- Automated Teller Machine -->
