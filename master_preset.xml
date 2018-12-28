@@ -124,6 +124,12 @@
         <reference ref="highway_yesno_incline_oneway_lit_width" />
         <reference ref="sidewalk" />
     </chunk>
+    <chunk id="highway_ref">
+        <text key="ref" text="Reference" />
+        <optional>
+            <text key="unsigned_ref" text="Unsigned reference" />
+        </optional>
+    </chunk>
     <chunk id="crossing_type">    
     	<multiselect key="crossing" text="Crossing type" values_context="transport" >
  			<list_entry value="uncontrolled" short_description="Not controlled" icon="presets/vehicle/crossing.svg" />
@@ -971,7 +977,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=motorway" />
             <space />
             <key key="highway" value="motorway" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
@@ -1041,7 +1047,7 @@
                   vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=trunk" />
             <space />
             <key key="highway" value="trunk" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
@@ -1073,7 +1079,7 @@
                   pl.href="https://wiki.openstreetmap.org/wiki/Pl:Highway_link" />
             <space />
             <key key="highway" value="trunk_link" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <optional>
                 <reference ref="highway_base" />
                 <text key="destination" text="Destination" />
@@ -1110,7 +1116,7 @@
                   vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=primary" />
             <space />
             <key key="highway" value="primary" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
@@ -1134,7 +1140,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)" />
             <key key="highway" value="primary_link" />
             <optional>
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
                 <check key="motorroad" text="Motorroad" disable_off="true" />
@@ -1161,7 +1167,7 @@
                   vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=secondary" />
             <space />
             <key key="highway" value="secondary" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
@@ -1184,7 +1190,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)" />
             <key key="highway" value="secondary_link" />
             <optional>
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
             	<text key="name" text="Name" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
@@ -1214,7 +1220,7 @@
             <key key="highway" value="tertiary" />
             <text key="name" text="Name" />
             <optional>
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
                 <check key="noname" text="Street has no name" disable_off="true" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
@@ -1235,7 +1241,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)" />
             <key key="highway" value="tertiary_link" />
             <optional>
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
             	<text key="name" text="Name" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
@@ -1264,7 +1270,7 @@
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
 		        <check key="trolley_wire" text="Overhead trolley wires"  disable_off="true" />
@@ -1294,7 +1300,7 @@
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
 		        <check key="trolley_wire" text="Overhead trolley wires"  disable_off="true" />
