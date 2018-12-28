@@ -7327,18 +7327,56 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:emergency=fire_hydrant" />
             <space />
             <key key="emergency" value="fire_hydrant" />
-            <combo key="fire_hydrant:type" text="Type" values="underground,pillar,wall,pond" values_context="pipeline" default="pillar" />
-            <combo key="fire_hydrant:diameter" text="Diameter (in mm)" values="50,80,100,150,200,250,300,400" />
+            <combo key="fire_hydrant:type" text="Type" values_searchable="true" values_context="pipeline" default="pillar" >
+                <list_entry value="pillar" display_value="Pillar" short_description="A pillar type hydrant." />
+                <list_entry value="underground" display_value="Underground" short_description="A fire hydrant simple outlet located underground." />
+                <list_entry value="wall" display_value="Wall" short_description="A wall-mounted fire hydrant." />
+                <list_entry value="pipe" display_value="Pipe" short_description="A simple capped pipe, without the usual hydrant shape." />
+            </combo>
+            <combo key="fire_hydrant:diameter" text="Diameter (in mm)" values="50,70,75,80,100,110,125,150,200,250,300,400" />
             <space />
+            <combo key="fire_hydrant:position" text="Hydrant Position" values="lane,parking_lot,sidewalk,green" values_context="hydrant position" />
+            <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="yes,5,6,8,suction" display_values="Pressurized,5,6,8,Suction" values_context="pipeline" />
+            <text key="fire_hydrant:count" text="Count" />
             <text key="ref" text="Reference" />
             <optional>
                 <text key="name" text="Name" />
-                <text key="operator" text="Operator" />
+                <text key="operator" text="Operator" />         
+                <combo key="water_source" text="Water source">
+                    <list_entry value="main" display_value="Mains" />
+                    <list_entry value="groundwater"  display_value="Groundwater" />
+                    <list_entry value="stream" display_value="Stream" />
+                    <list_entry value="river" display_value="River" />
+                    <list_entry value="canal" display_value="Canal" />
+                    <list_entry value="drain" display_value="Drain" />
+                    <list_entry value="ditch" display_value="Ditch" />
+                    <list_entry value="pond" display_value="Pond" />
+                    <list_entry value="lake" display_value="Lake" />
+                    <list_entry value="water_tank" display_value="Water tank" />
+                    <list_entry value="swimming_pool" display_value="Swimming pool" />
+                </combo>
+                <combo key="fire_hydrant:position" text="Hydrant position" values_context="hydrant_position" >
+                    <list_entry value="lane" display_value="Lane" short_description="on the side of a road lane" />
+                    <list_entry value="parking_lot" display_value="Parking lot" short_description="in a parking lot" />
+                    <list_entry value="sidewalk" display_value="Sidewalk" short_description="on a sidewalk" />
+                    <list_entry value="green" display_value="Greem" short_description="in a grassy area" />
+                </combo>
+                <text key="flow_rate" text="Flow rate with unit of measure" />
+                <combo key="pillar:type" text="Pillar type">
+                    <list_entry value="dry_barrel" display_value="Dry barrel" short_description="A pillar hydrant where the water shutoff valve is below ground." />
+                    <list_entry value="wet_barrel" display_value="Wet barrel" short_description="A pillar hydrant where the barrel is pressurized at all times, with individual valves for each outlet." />
+                </combo>
+                <space />
+                <combo key="couplings" text="Number of couplings" values="1,2,3" />
+                <combo key="couplings:type" text="Coupling standard" values="bayonet,barcelona,guillemin,klaue,sprawny,storz,uni" display_values="Bayonet,Barcelona,Guillemin,Klaue,Sprawny,Storz,UNI" />
+                <text key="couplings:diameters" text="Coupling diameters (separated by ;)" />
+                <space />
+                <combo key="colour" text="Colour" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey" />
+                <combo key="bonnet:colour" text="Colour of the top section (bonnet)" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey" />
+                <combo key="cap:colour" text="Colour of the caps" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey"/>
+                <space />
+                <text key="manufacturer" text="Manufacturer" />
             </optional>
-            <space />
-            <combo key="fire_hydrant:position" text="Hydrant Position" values="lane,parking_lot,sidewalk,green" values_context="hydrant position" />
-            <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="5,6,8,suction" />
-            <text key="fire_hydrant:count" text="Count" />
         </item> <!-- Fire Hydrant -->
 		<item name="Water Tank" icon="${ICONPATH}emergency_water_tank_22109.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:emergency=water_tank"
@@ -9386,7 +9424,10 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=crane" />
             <space />
             <key key="man_made" value="crane" />
-            <text key="name" text="Name" />
+            <optional>
+                <combo key="crane:type" text="Type" values="floor-mounted_crane,gantry_crane,portal_crane,travel_lift" display_values="Floor-mounted crane,Gantry crane,Portal crane,Travel lift" />
+                <reference ref="name_operator" />
+            </optional>
         </item> <!-- Crane -->
         <item name="Mineshaft" icon="${ICONPATH}poi_mine.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=mineshaft"
@@ -11827,11 +11868,13 @@
         </item> <!-- Trade supplies -->
         <item name="Gas" icon="${ICONPATH}shopping_gas_29070.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=gas"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=gas"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=gas"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=gas"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=gas"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=gas" />
+            	  cs.href="https://wiki.openstreetmap.org/wiki/Cs:Tag:shop=gas"
+                  de.href="https://wiki.openstreetmap.org/wiki/DE:Tag:shop=gas"
+                  es.href="https://wiki.openstreetmap.org/wiki/ES:Tag:shop=gas"
+                  ja.href="https://wiki.openstreetmap.org/wiki/JA:Tag:shop=gas"
+                  pl.href="https://wiki.openstreetmap.org/wiki/Pl:Tag:shop=gas"
+                  pt.href="https://wiki.openstreetmap.org/wiki/Pt:Tag:shop=gas"
+                  ru.href="https://wiki.openstreetmap.org/wiki/RU:Tag:shop=gas" />
             <space />
             <key key="shop" value="gas" />
             <reference ref="name_oh_wheelchair_level" />
