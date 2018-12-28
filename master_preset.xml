@@ -3305,7 +3305,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:waterway=riverbank" />
             <space />
             <key key="waterway" value="riverbank" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name" />
             <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true" />
         </item> <!-- Riverbank -->
         <separator/>
