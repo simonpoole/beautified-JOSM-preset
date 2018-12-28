@@ -2,7 +2,7 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
     shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version"
-    object_keys="attraction,public_transport,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising" >
+    object_keys="attraction,public_transport,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford" >
 <!--
     Icons have been derived from mainly from
   
@@ -123,6 +123,12 @@
     <chunk id="highway_yesno_incline_oneway_lit_width_sidewalk">
         <reference ref="highway_yesno_incline_oneway_lit_width" />
         <reference ref="sidewalk" />
+    </chunk>
+    <chunk id="highway_ref">
+        <text key="ref" text="Reference" />
+        <optional>
+            <text key="unsigned_ref" text="Unsigned reference" />
+        </optional>
     </chunk>
     <chunk id="crossing_type">    
     	<multiselect key="crossing" text="Crossing type" values_context="transport" >
@@ -310,7 +316,7 @@
     </chunk>
     <chunk id="name_operator_wheelchair">
         <reference ref="name_operator" />
-        <reference ref="oh_wheelchair" />
+        <reference ref="wheelchair" />
     </chunk>
     <chunk id="name_operator_oh_wheelchair_toilets">
         <reference ref="name_operator" />
@@ -318,7 +324,7 @@
         <reference ref="toilets_with_access" />
     </chunk>
     <chunk id="name_operator_wheelchair_level">
-        <reference ref="name_operator_oh_wheelchair" />
+        <reference ref="name_operator_wheelchair" />
         <reference ref="level" />
     </chunk>
     <chunk id="name_operator_oh_wheelchair_level">
@@ -971,7 +977,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:highway=motorway" />
             <space />
             <key key="highway" value="motorway" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
@@ -1041,7 +1047,7 @@
                   vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=trunk" />
             <space />
             <key key="highway" value="trunk" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <optional>
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
@@ -1073,7 +1079,7 @@
                   pl.href="https://wiki.openstreetmap.org/wiki/Pl:Highway_link" />
             <space />
             <key key="highway" value="trunk_link" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <optional>
                 <reference ref="highway_base" />
                 <text key="destination" text="Destination" />
@@ -1110,7 +1116,7 @@
                   vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=primary" />
             <space />
             <key key="highway" value="primary" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
@@ -1134,7 +1140,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)" />
             <key key="highway" value="primary_link" />
             <optional>
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
                 <text key="name" text="Name" />
                 <reference ref="highway_base" />
                 <check key="motorroad" text="Motorroad" disable_off="true" />
@@ -1161,7 +1167,7 @@
                   vi.href="http://wiki.openstreetmap.org/wiki/Vi:Tag:highway=secondary" />
             <space />
             <key key="highway" value="secondary" />
-            <text key="ref" text="Reference" />
+            <reference ref="highway_ref" />
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
@@ -1184,7 +1190,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)" />
             <key key="highway" value="secondary_link" />
             <optional>
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
             	<text key="name" text="Name" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
@@ -1214,7 +1220,7 @@
             <key key="highway" value="tertiary" />
             <text key="name" text="Name" />
             <optional>
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
                 <check key="noname" text="Street has no name" disable_off="true" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
@@ -1235,7 +1241,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Link_(highway)" />
             <key key="highway" value="tertiary_link" />
             <optional>
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
             	<text key="name" text="Name" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
@@ -1264,7 +1270,7 @@
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
 		        <check key="trolley_wire" text="Overhead trolley wires"  disable_off="true" />
@@ -1294,7 +1300,7 @@
             <text key="name" text="Name" />
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true" />
-                <text key="ref" text="Reference" />
+                <reference ref="highway_ref" />
                 <reference ref="highway_base" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk" />
 		        <check key="trolley_wire" text="Overhead trolley wires"  disable_off="true" />
@@ -3322,7 +3328,7 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:waterway=riverbank" />
             <space />
             <key key="waterway" value="riverbank" />
-            <text key="name" text="Name" />
+            <reference ref="optional_name" />
             <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true" />
         </item> <!-- Riverbank -->
         <separator/>
@@ -7321,18 +7327,56 @@
                   uk.href="http://wiki.openstreetmap.org/wiki/Uk:Tag:emergency=fire_hydrant" />
             <space />
             <key key="emergency" value="fire_hydrant" />
-            <combo key="fire_hydrant:type" text="Type" values="underground,pillar,wall,pond" values_context="pipeline" default="pillar" />
-            <combo key="fire_hydrant:diameter" text="Diameter (in mm)" values="50,80,100,150,200,250,300,400" />
+            <combo key="fire_hydrant:type" text="Type" values_searchable="true" values_context="pipeline" default="pillar" >
+                <list_entry value="pillar" display_value="Pillar" short_description="A pillar type hydrant." />
+                <list_entry value="underground" display_value="Underground" short_description="A fire hydrant simple outlet located underground." />
+                <list_entry value="wall" display_value="Wall" short_description="A wall-mounted fire hydrant." />
+                <list_entry value="pipe" display_value="Pipe" short_description="A simple capped pipe, without the usual hydrant shape." />
+            </combo>
+            <combo key="fire_hydrant:diameter" text="Diameter (in mm)" values="50,70,75,80,100,110,125,150,200,250,300,400" />
             <space />
+            <combo key="fire_hydrant:position" text="Hydrant Position" values="lane,parking_lot,sidewalk,green" values_context="hydrant position" />
+            <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="yes,5,6,8,suction" display_values="Pressurized,5,6,8,Suction" values_context="pipeline" />
+            <text key="fire_hydrant:count" text="Count" />
             <text key="ref" text="Reference" />
             <optional>
                 <text key="name" text="Name" />
-                <text key="operator" text="Operator" />
+                <text key="operator" text="Operator" />         
+                <combo key="water_source" text="Water source">
+                    <list_entry value="main" display_value="Mains" />
+                    <list_entry value="groundwater"  display_value="Groundwater" />
+                    <list_entry value="stream" display_value="Stream" />
+                    <list_entry value="river" display_value="River" />
+                    <list_entry value="canal" display_value="Canal" />
+                    <list_entry value="drain" display_value="Drain" />
+                    <list_entry value="ditch" display_value="Ditch" />
+                    <list_entry value="pond" display_value="Pond" />
+                    <list_entry value="lake" display_value="Lake" />
+                    <list_entry value="water_tank" display_value="Water tank" />
+                    <list_entry value="swimming_pool" display_value="Swimming pool" />
+                </combo>
+                <combo key="fire_hydrant:position" text="Hydrant position" values_context="hydrant_position" >
+                    <list_entry value="lane" display_value="Lane" short_description="on the side of a road lane" />
+                    <list_entry value="parking_lot" display_value="Parking lot" short_description="in a parking lot" />
+                    <list_entry value="sidewalk" display_value="Sidewalk" short_description="on a sidewalk" />
+                    <list_entry value="green" display_value="Greem" short_description="in a grassy area" />
+                </combo>
+                <text key="flow_rate" text="Flow rate with unit of measure" />
+                <combo key="pillar:type" text="Pillar type">
+                    <list_entry value="dry_barrel" display_value="Dry barrel" short_description="A pillar hydrant where the water shutoff valve is below ground." />
+                    <list_entry value="wet_barrel" display_value="Wet barrel" short_description="A pillar hydrant where the barrel is pressurized at all times, with individual valves for each outlet." />
+                </combo>
+                <space />
+                <combo key="couplings" text="Number of couplings" values="1,2,3" />
+                <combo key="couplings:type" text="Coupling standard" values="bayonet,barcelona,guillemin,klaue,sprawny,storz,uni" display_values="Bayonet,Barcelona,Guillemin,Klaue,Sprawny,Storz,UNI" />
+                <text key="couplings:diameters" text="Coupling diameters (separated by ;)" />
+                <space />
+                <combo key="colour" text="Colour" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey" />
+                <combo key="bonnet:colour" text="Colour of the top section (bonnet)" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey" />
+                <combo key="cap:colour" text="Colour of the caps" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey"/>
+                <space />
+                <text key="manufacturer" text="Manufacturer" />
             </optional>
-            <space />
-            <combo key="fire_hydrant:position" text="Hydrant Position" values="lane,parking_lot,sidewalk,green" values_context="hydrant position" />
-            <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="5,6,8,suction" />
-            <text key="fire_hydrant:count" text="Count" />
         </item> <!-- Fire Hydrant -->
 		<item name="Water Tank" icon="emergency_water_tank_22109.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:emergency=water_tank"
@@ -7439,7 +7483,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="assisted_living" />
             <reference ref="social_facility_for" />
-            <reference ref="name_operator_level" />
+            <reference ref="name_operator_wheelchair_level" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
@@ -7486,7 +7530,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="group_home" />
             <key key="social_facility:for" value="senior" />
-            <reference ref="name_operator_level" />
+            <reference ref="name_operator_wheelchair_level" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
@@ -7503,7 +7547,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="nursing_home" />
             <reference ref="social_facility_for" />
-            <reference ref="name_operator_level" />
+            <reference ref="name_operator_wheelchair_level" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Nursing Home -->
@@ -7516,7 +7560,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=nursing_home" />
             <space />
             <key key="amenity" value="nursing_home" />
-            <reference ref="name_operator" />
+            <reference ref="name_operator_wheelchair_level" />
             <reference ref="link_contact_address" />
         </item> <!-- Nursing Home (deprecated) -->
         <item name="Group Home" icon="amenity_group_home_12251.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7532,7 +7576,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="group_home" />
             <reference ref="social_facility_for" />
-            <reference ref="name_operator_level" />
+            <reference ref="name_operator_wheelchair_level" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Group Home -->
@@ -9380,7 +9424,10 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:man_made=crane" />
             <space />
             <key key="man_made" value="crane" />
-            <text key="name" text="Name" />
+            <optional>
+                <combo key="crane:type" text="Type" values="floor-mounted_crane,gantry_crane,portal_crane,travel_lift" display_values="Floor-mounted crane,Gantry crane,Portal crane,Travel lift" />
+                <reference ref="name_operator" />
+            </optional>
         </item> <!-- Crane -->
         <item name="Mineshaft" icon="poi_mine.png" type="node,closedway" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:man_made=mineshaft"
@@ -11821,11 +11868,13 @@
         </item> <!-- Trade supplies -->
         <item name="Gas" icon="shopping_gas_29070.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Tag:shop=gas"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Tag:shop=gas"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Tag:shop=gas"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Tag:shop=gas"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Tag:shop=gas"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:shop=gas" />
+            	  cs.href="https://wiki.openstreetmap.org/wiki/Cs:Tag:shop=gas"
+                  de.href="https://wiki.openstreetmap.org/wiki/DE:Tag:shop=gas"
+                  es.href="https://wiki.openstreetmap.org/wiki/ES:Tag:shop=gas"
+                  ja.href="https://wiki.openstreetmap.org/wiki/JA:Tag:shop=gas"
+                  pl.href="https://wiki.openstreetmap.org/wiki/Pl:Tag:shop=gas"
+                  pt.href="https://wiki.openstreetmap.org/wiki/Pt:Tag:shop=gas"
+                  ru.href="https://wiki.openstreetmap.org/wiki/RU:Tag:shop=gas" />
             <space />
             <key key="shop" value="gas" />
             <reference ref="name_oh_wheelchair_level" />
