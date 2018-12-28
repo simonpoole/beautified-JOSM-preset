@@ -316,7 +316,7 @@
     </chunk>
     <chunk id="name_operator_wheelchair">
         <reference ref="name_operator" />
-        <reference ref="oh_wheelchair" />
+        <reference ref="wheelchair" />
     </chunk>
     <chunk id="name_operator_oh_wheelchair_toilets">
         <reference ref="name_operator" />
@@ -324,7 +324,7 @@
         <reference ref="toilets_with_access" />
     </chunk>
     <chunk id="name_operator_wheelchair_level">
-        <reference ref="name_operator_oh_wheelchair" />
+        <reference ref="name_operator_wheelchair" />
         <reference ref="level" />
     </chunk>
     <chunk id="name_operator_oh_wheelchair_level">
@@ -7445,7 +7445,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="assisted_living" />
             <reference ref="social_facility_for" />
-            <reference ref="name_operator_level" />
+            <reference ref="name_operator_wheelchair_level" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
@@ -7492,7 +7492,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="group_home" />
             <key key="social_facility:for" value="senior" />
-            <reference ref="name_operator_level" />
+            <reference ref="name_operator_wheelchair_level" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Retirement Home -->
@@ -7509,7 +7509,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="nursing_home" />
             <reference ref="social_facility_for" />
-            <reference ref="name_operator_level" />
+            <reference ref="name_operator_wheelchair_level" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Nursing Home -->
@@ -7522,7 +7522,7 @@
                   ru.href="http://wiki.openstreetmap.org/wiki/RU:Tag:amenity=nursing_home" />
             <space />
             <key key="amenity" value="nursing_home" />
-            <reference ref="name_operator" />
+            <reference ref="name_operator_wheelchair_level" />
             <reference ref="link_contact_address" />
         </item> <!-- Nursing Home (deprecated) -->
         <item name="Group Home" icon="${ICONPATH}amenity_group_home_12251.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7538,7 +7538,7 @@
             <key key="amenity" value="social_facility" />
             <key key="social_facility" value="group_home" />
             <reference ref="social_facility_for" />
-            <reference ref="name_operator_level" />
+            <reference ref="name_operator_wheelchair_level" />
             <text key="capacity" text="Capacity" value_type="integer" />
             <reference ref="link_contact_address" />
         </item> <!-- Group Home -->
