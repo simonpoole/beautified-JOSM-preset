@@ -935,6 +935,23 @@
         display_values="Afrikaans;Albanian;Amharic;Arabic;Armenian;Assamese;Azeri;Basque;Belarusian;Bengali;Bosnian;Bulgarian;Burmese;Catalan;Chinese;Croatian;Czech;Danish;Divehi;Dutch;English;Estonian;Macedonian;Faroese;Farsi;Finnish;French;Gaelic;Galician;Georgian;German;Greek;Guarani;Gujarati;Hebrew;Hindi;Hungarian;Icelandic;Indonesian;Italian;Japanese;Kannada;Kashmiri;Kazakh;Khmer;Korean;Lao;Latin;Latvian;Lithuanian;Malay;Malayalam;Maltese;Maori;Marathi;Mongolian;Nepali;Norwegian - Bokml;Norwegian - Nynorsk;Oriya;Polish;Portuguese;Punjabi;Raeto-Romance;Romanian;Russian;Sanskrit;Serbian;Setsuana;Sindhi;Sinhala;Slovak;Slovenian;Somali;Sorbian;Spanish;Swahili;Swedish;Tajik;Tamil;Tatar;Telugu;Thai;Tibetan;Tsonga;Turkish;Turkmen;Ukrainian;Urdu;Uzbek;Vietnamese;Welsh;Xhosa;Yiddish;Zulu"
         values_searchable="true" match="key" />
   </chunk>
+  <chunk id="turn_restriction_roles">
+	<roles>
+		<role key="from" text="from way" requisite="required" count="1"
+			type="way" />
+		<role key="via" text="via node or ways" requisite="required"
+			type="way,node" />
+		<role key="to" text="to way" requisite="required" count="1"
+			type="way" />
+	</roles>
+  </chunk>
+  <chunk id="turn_restriction_exceptions">  
+  	<optional>
+		<multiselect key="except" text="Exceptions"
+			values="bicycle;emergency;hgv;motorcar;psv"
+			display_values="Bicycle;Emergency;HGV;Car;PSV" />
+	</optional>
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="icons/png/highway_highway_sp.png">
     <group name="Streets" icon="icons/png/highway_highway_sp.png">
@@ -13837,30 +13854,151 @@ tags.remove('automatic_check_date');"
             </roles>
         </item> <!-- Site -->
         <separator/>
-        <item name="Turn Restriction" icon="icons/png/no_u_turn.png" type="relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
-            	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:restriction"
-                  de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
-                  es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
-                  fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:restriction"
-                  it.href="http://wiki.openstreetmap.org/wiki/IT:Relation:restriction"
-                  ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:restriction"
-                  pl.href="http://wiki.openstreetmap.org/wiki/Pl:Relation:restriction"
-                  pt.href="http://wiki.openstreetmap.org/wiki/Pt:Relation:restriction"
-                  ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
-            <space />
-            <key key="type" value="restriction" />
-            <combo key="restriction" text="Restriction" values="no_left_turn,no_right_turn,no_straight_on,no_u_turn,only_right_turn,only_left_turn,only_straight_on" 
-            	display_values="No left turn,No right turn,No straight on,No u-turn,Only right turn,Only left turn,Only straight on" values_searchable="true" />
-            <optional>
-				<multiselect key="except" text="Exceptions" values="bicycle;emergency;hgv;motorcar;psv" display_values="Bicycle;Emergency;HGV;Car;PSV"/>
-            </optional>
-            <roles>
-                <role key="from" text="from way" requisite="required" count="1" type="way" />
-                <role key="via" text="via node or ways" requisite="required" type="way,node" />
-                <role key="to" text="to way" requisite="required" count="1" type="way" />
-            </roles>
-        </item> <!-- Turn Restriction -->
+		<group name="Turn Restrictions">
+			<item name="Turn Restriction"
+				icon="icons/png/no_u_turn.png" type="relation"
+				preset_name_label="true">
+				<link
+					href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
+					cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:restriction"
+					de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
+					es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
+					fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:restriction"
+					it.href="http://wiki.openstreetmap.org/wiki/IT:Relation:restriction"
+					ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:restriction"
+					pl.href="http://wiki.openstreetmap.org/wiki/Pl:Relation:restriction"
+					pt.href="http://wiki.openstreetmap.org/wiki/Pt:Relation:restriction"
+					ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
+				<space />
+				<key key="type" value="restriction" />
+				<combo key="restriction" text="Restriction"
+					values="no_left_turn,no_right_turn,no_straight_on,no_u_turn,only_right_turn,only_left_turn,only_straight_on"
+					display_values="No left turn,No right turn,No straight on,No u-turn,Only right turn,Only left turn,Only straight on"
+					values_searchable="true" />
+				<reference ref="turn_restriction_exceptions" />  
+				<reference ref="turn_restriction_roles" />
+			</item> <!-- Turn Restriction -->
+			<item name="No left turn"
+				icon="icons/png/no_left_turn.png" type="relation"
+				preset_name_label="true">
+				<link
+					href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
+					cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:restriction"
+					de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
+					es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
+					fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:restriction"
+					it.href="http://wiki.openstreetmap.org/wiki/IT:Relation:restriction"
+					ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:restriction"
+					pl.href="http://wiki.openstreetmap.org/wiki/Pl:Relation:restriction"
+					pt.href="http://wiki.openstreetmap.org/wiki/Pt:Relation:restriction"
+					ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
+				<space />
+				<key key="type" value="restriction" />
+				<key key="restriction" value="no_left_turn" />
+				<reference ref="turn_restriction_exceptions" />
+				<reference ref="turn_restriction_roles" />
+			</item> <!-- No left turn -->
+			<item name="No right turn"
+				icon="icons/png/no_right_turn.png" type="relation"
+				preset_name_label="true">
+				<link
+					href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
+					cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:restriction"
+					de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
+					es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
+					fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:restriction"
+					it.href="http://wiki.openstreetmap.org/wiki/IT:Relation:restriction"
+					ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:restriction"
+					pl.href="http://wiki.openstreetmap.org/wiki/Pl:Relation:restriction"
+					pt.href="http://wiki.openstreetmap.org/wiki/Pt:Relation:restriction"
+					ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
+				<space />
+				<key key="type" value="restriction" />
+				<key key="restriction" value="no_right_turn" />
+				<reference ref="turn_restriction_exceptions" />
+				<reference ref="turn_restriction_roles" />
+			</item> <!-- No right turn -->			
+			<item name="No U turn"
+				icon="icons/png/no_u_turn.png" type="relation"
+				preset_name_label="true">
+				<link
+					href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
+					cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:restriction"
+					de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
+					es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
+					fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:restriction"
+					it.href="http://wiki.openstreetmap.org/wiki/IT:Relation:restriction"
+					ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:restriction"
+					pl.href="http://wiki.openstreetmap.org/wiki/Pl:Relation:restriction"
+					pt.href="http://wiki.openstreetmap.org/wiki/Pt:Relation:restriction"
+					ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
+				<space />
+				<key key="type" value="restriction" />
+				<key key="restriction" value="no_u_turn" />
+				<reference ref="turn_restriction_exceptions" />
+				<reference ref="turn_restriction_roles" />
+			</item> <!-- No U turn -->
+			<item name="Left turn only"
+				icon="icons/png/only_left_turn.png" type="relation"
+				preset_name_label="true">
+				<link
+					href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
+					cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:restriction"
+					de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
+					es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
+					fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:restriction"
+					it.href="http://wiki.openstreetmap.org/wiki/IT:Relation:restriction"
+					ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:restriction"
+					pl.href="http://wiki.openstreetmap.org/wiki/Pl:Relation:restriction"
+					pt.href="http://wiki.openstreetmap.org/wiki/Pt:Relation:restriction"
+					ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
+				<space />
+				<key key="type" value="restriction" />
+				<key key="restriction" value="only_left_turn" />
+				<reference ref="turn_restriction_exceptions" />
+				<reference ref="turn_restriction_roles" />
+			</item> <!-- Left turn only -->
+			<item name="Right turn only"
+				icon="icons/png/only_right_turn.png" type="relation"
+				preset_name_label="true">
+				<link
+					href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
+					cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:restriction"
+					de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
+					es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
+					fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:restriction"
+					it.href="http://wiki.openstreetmap.org/wiki/IT:Relation:restriction"
+					ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:restriction"
+					pl.href="http://wiki.openstreetmap.org/wiki/Pl:Relation:restriction"
+					pt.href="http://wiki.openstreetmap.org/wiki/Pt:Relation:restriction"
+					ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
+				<space />
+				<key key="type" value="restriction" />
+				<key key="restriction" value="only_right_turn" />
+				<reference ref="turn_restriction_exceptions" />
+				<reference ref="turn_restriction_roles" />
+			</item> <!-- Right turn only -->
+			<item name="Straight on only"
+				icon="icons/png/only_straight_on.png" type="relation"
+				preset_name_label="true">
+				<link
+					href="http://wiki.openstreetmap.org/wiki/Relation:restriction"
+					cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:restriction"
+					de.href="http://wiki.openstreetmap.org/wiki/DE:Relation:restriction"
+					es.href="http://wiki.openstreetmap.org/wiki/ES:Relation:restriction"
+					fr.href="http://wiki.openstreetmap.org/wiki/FR:Relation:restriction"
+					it.href="http://wiki.openstreetmap.org/wiki/IT:Relation:restriction"
+					ja.href="http://wiki.openstreetmap.org/wiki/JA:Relation:restriction"
+					pl.href="http://wiki.openstreetmap.org/wiki/Pl:Relation:restriction"
+					pt.href="http://wiki.openstreetmap.org/wiki/Pt:Relation:restriction"
+					ru.href="http://wiki.openstreetmap.org/wiki/RU:Relation:restriction" />
+				<space />
+				<key key="type" value="restriction" />
+				<key key="restriction" value="only_straight_on" />
+				<reference ref="turn_restriction_exceptions" />
+				<reference ref="turn_restriction_roles" />
+			</item> <!-- Straight on only -->
+        </group> <!-- Turn Restrictions -->
         <item name="Enforcement" icon="icons/png/highway_speed_camera_18025.png" type="relation" preset_name_label="true">
             <link href="http://wiki.openstreetmap.org/wiki/Relation:enforcement"
             	  cs.href="http://wiki.openstreetmap.org/wiki/Cs:Relation:enforcement"

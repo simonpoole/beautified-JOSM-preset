@@ -2,9 +2,9 @@
 host = https://www.transifex.com
 
 [presets.presetpot]
-type = PO
 file_filter = i18n/preset_<lang>.po
 lang_map = cs: cs-rCZ, zh_TW: zh-rTW, pt_BR: pt-rBR, zh_CN: zh-rCN, sv_SE: sv-rSE, id: in, he: iw
-source_lang = en
 minimum_perc = 5
+source_lang = en
+type = PO
 
