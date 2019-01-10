@@ -13,11 +13,11 @@ ext {
 	josm_preset_file = 'josm_preset.xml'
 	vespucci_preset_file = 'vespucci_preset.xml'
 	vespucci_preset_build_file = 'vespucci_preset_build.xml'
-    vespucci_preset_version = '1.3'
+    vespucci_preset_version = '1.4'
 }
 
 dependencies {
-	runtime 'ch.poole:preset-utils:0.7.0'
+	runtime 'ch.poole:preset-utils:0.8.0'
 }
 
 defaultTasks 'generateAllPresetTypes'
@@ -33,6 +33,8 @@ task copyResources(type: Copy) {
     include "josm-preset-1.0.xlmns"
     include "vespucci-preset-${vespucci_preset_version}.xlmns"
 	include "toJOSM.xslt"
+    include "href2wiki.xslt"
+    include "wiki2href.xslt"
     into new File(buildDir.getPath() + '/xml')
 }
 
@@ -65,6 +67,21 @@ task updateTranslations(type: Exec) {
 }
 updateTranslations.group = 'transifex'
 updateTranslations.description = 'Update translations by executing the transifex tx utility'
+
+// one time transformation to new format
+task transformHrefToWiki(type: Exec) {
+    def output = 'build/temp/no_href.xml'
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        // remove extensions
+        commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/href2wiki.xslt', 'master_preset.xml'
+    } else {
+        // remove extensions
+        commandLine 'xmlstarlet', 'tr', 'build/xml/href2wiki.xslt', 'master_preset.xml'
+    }
+    doFirst {
+        standardOutput = new FileOutputStream(new File(projectDir, output))
+    }
+}
 
 // tasks to generate a zipped preset for JOSM
 task josmIcons(type: Copy) {
