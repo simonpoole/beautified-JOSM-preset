@@ -17,7 +17,7 @@ ext {
 }
 
 dependencies {
-	runtime 'ch.poole:preset-utils:0.8.0'
+	runtime 'ch.poole:preset-utils:0.8.1'
 }
 
 defaultTasks 'generateAllPresetTypes'
@@ -97,7 +97,7 @@ task josmIcons(type: Copy) {
 }
 
 task transformToJosm(dependsOn: ["josmIcons","copyResources"], type: Exec) {
-	def output = 'gen/' + josm_preset_file
+	def output = 'gen/new_' + josm_preset_file
 	mkdir('gen')
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
 		// remove extensions
@@ -111,7 +111,22 @@ task transformToJosm(dependsOn: ["josmIcons","copyResources"], type: Exec) {
 	}
 }
 
-task generateAndValidateJosm(dependsOn: ["transformToJosm"], type: Exec) {
+task transformToOldJosm(dependsOn: ["josmIcons","copyResources"], type: Exec) {
+    def output = 'gen/' + josm_preset_file
+    mkdir('gen')
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        // remove extensions
+        commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/wiki2href.xslt', 'gen/new_' + josm_preset_file
+    } else {
+        // remove extensions
+        commandLine 'xmlstarlet', 'tr', 'build/xml/wiki2href.xslt', 'gen/new_' + josm_preset_file
+    }
+    doFirst {
+        standardOutput = new FileOutputStream(new File(projectDir, output))
+    }
+}
+
+task generateAndValidateJosm(dependsOn: ["transformToJosm","transformToOldJosm"], type: Exec) {
 	def input = 'gen/' + josm_preset_file
 	if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
     	// validation
