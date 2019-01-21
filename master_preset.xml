@@ -1581,13 +1581,39 @@
             <item name="Traffic Calming" icon="${ICONPATH}transport_speedbump.${ICONTYPE}" type="node,way" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
                 <space/>
-                <key key="traffic_calming" value="bump"/>
-            </item> <!-- Bump -->
+                <combo key="traffic_calming" text="Type" values="bump,hump,table,cushion,rumble_strip,dip,double_dip,chicane,chocker,island,choked_island" display_values="Bump,Hump,Table,Cushion,Rumble strip,Dip,Double dip,Chicane,Chocker,Island,Choked island" match="keyvalue!" />
+            </item> <!-- Traffic Calming -->
             <item name="Bump" icon="${ICONPATH}transport_speedbump.${ICONTYPE}" type="node,way" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
                 <space/>
                 <key key="traffic_calming" value="bump"/>
             </item> <!-- Bump -->
+            <item name="Hump" icon="${ICONPATH}transport_hump_18045.${ICONTYPE}" type="node,way" preset_name_label="true">
+                <link wiki="Key:traffic_calming"/>
+                <space/>
+                <key key="traffic_calming" value="hump"/>
+            </item> <!-- Hump -->
+            <item name="Table" name_context="traffic_calming" icon="${ICONPATH}transport_table_18048.${ICONTYPE}" type="node,way" preset_name_label="true">
+                <link wiki="Key:traffic_calming"/>
+                <space/>
+                <key key="traffic_calming" value="table"/>
+            </item> <!-- Table -->
+            <item name="Cushion" icon="${ICONPATH}transport_cushion_18044.${ICONTYPE}" type="node,way" preset_name_label="true">
+                <link wiki="Key:traffic_calming"/>
+                <space/>
+                <key key="traffic_calming" value="cushion"/>
+            </item> <!-- Cushion -->            
+            <item name="Rumble strip" icon="${ICONPATH}transport_rumble_strip_18047.${ICONTYPE}" type="node,way" preset_name_label="true">
+                <link wiki="Key:traffic_calming"/>
+                <space/>
+                <key key="traffic_calming" value="rumble_strip"/>
+            </item> <!-- Rumble strip -->
+            <item name="Dip" icon="${ICONPATH}transport_dip.${ICONTYPE}" type="node,way" preset_name_label="true">
+                <link wiki="Key:traffic_calming" />
+                <space />
+                <key key="traffic_calming" value="dip" />
+            </item> <!-- Dip -->
+            <separator/>
             <item name="Chicane" icon="${ICONPATH}transport_chicane_18042.${ICONTYPE}" type="node,way" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
                 <space/>
@@ -1598,31 +1624,11 @@
                 <space/>
                 <key key="traffic_calming" value="choker"/>
             </item> <!-- Choker -->
-            <item name="Cushion" icon="${ICONPATH}transport_cushion_18044.${ICONTYPE}" type="node,way" preset_name_label="true">
-                <link wiki="Key:traffic_calming"/>
-                <space/>
-                <key key="traffic_calming" value="cushion"/>
-            </item> <!-- Cushion -->
-            <item name="Hump" icon="${ICONPATH}transport_hump_18045.${ICONTYPE}" type="node,way" preset_name_label="true">
-                <link wiki="Key:traffic_calming"/>
-                <space/>
-                <key key="traffic_calming" value="hump"/>
-            </item> <!-- Hump -->
             <item name="Island" name_context="traffic_calming" icon="${ICONPATH}transport_island_18046.${ICONTYPE}" type="node,way" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
                 <space/>
                 <key key="traffic_calming" value="island" values_context="traffic_calming"/>
             </item> <!-- Island -->
-            <item name="Rumble strip" icon="${ICONPATH}transport_rumble_strip_18047.${ICONTYPE}" type="node,way" preset_name_label="true">
-                <link wiki="Key:traffic_calming"/>
-                <space/>
-                <key key="traffic_calming" value="rumble_strip"/>
-            </item> <!-- Rumble strip -->
-            <item name="Table" name_context="traffic_calming" icon="${ICONPATH}transport_table_18048.${ICONTYPE}" type="node,way" preset_name_label="true">
-                <link wiki="Key:traffic_calming"/>
-                <space/>
-                <key key="traffic_calming" value="table"/>
-            </item> <!-- Table -->
         </group> <!-- Traffic Calming -->
         <item name="Passing Place" icon="${ICONPATH}highway_passing_place_18020.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=passing_place"/>
