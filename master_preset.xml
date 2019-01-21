@@ -3969,7 +3969,7 @@
             <key key="leisure" value="dog_park"/>
             <reference ref="optional_name"/>
             <check key="area" text="Area" disable_off="true" match="none"/>
-            <combo key="barrier" text="Barrier" values="fence,wall"/>
+            <combo key="barrier" text="Barrier" values="fence,wall" display_values="Fence,Wall"/>
             <reference ref="oh_wheelchair"/>
             <check key="lit" text="Lit" disable_off="true"/>
         </item> <!-- Dog Park -->
