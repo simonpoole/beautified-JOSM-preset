@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-01-23 23:17+0100\n"
+"POT-Creation-Date: 2019-02-15 12:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3789,6 +3789,10 @@ msgstr ""
 msgid "Homeopathy"
 msgstr ""
 
+#: master_preset.xml:6523(list_entry:short_description|group:Power_Generator|preset:Tidal_Water_Turbine|value:horizontal_axis)
+msgid "Horizontal axis"
+msgstr ""
+
 #: master_preset.xml:3905(list_entry:display_value|group:Leisure|preset:Fitness_Station|value:horizontal_bar)
 msgid "Horizontal bar"
 msgstr ""
@@ -4159,6 +4163,10 @@ msgstr ""
 
 #: master_preset.xml:895(multiselect:display_values|key:language)
 msgid "Kannada"
+msgstr ""
+
+#: master_preset.xml:6524(list_entry:short_description|group:Power_Generator|preset:Tidal_Water_Turbine|value:kaplan_turbine)
+msgid "Kaplan turbine"
 msgstr ""
 
 #: master_preset.xml:5360(list_entry:short_description|group:Sport_Facilities|preset:Dojo|value:karate)
@@ -9025,6 +9033,10 @@ msgstr ""
 msgid "Version"
 msgstr ""
 
+#: master_preset.xml:6525(list_entry:short_description|group:Power_Generator|preset:Tidal_Water_Turbine|value:vertical_axis)
+msgid "Vertical axis"
+msgstr ""
+
 #: master_preset.xml:4670(item:name|group:Health|preset:Veterinary)
 msgid "Veterinary"
 msgstr ""
@@ -9521,10 +9533,6 @@ msgstr ""
 msgid "backward segment"
 msgstr ""
 
-#: master_preset.xml:6524(list_entry:short_description|group:Power_Generator|preset:Tidal_Water_Turbine|value:kaplan_turbine)
-msgid "barrage"
-msgstr ""
-
 #: master_preset.xml:599(combo:text|key:generator:output:biogas)
 msgid "biogas"
 msgstr ""
@@ -9749,7 +9757,7 @@ msgstr ""
 msgid "spring of waterway"
 msgstr ""
 
-#: master_preset.xml:606(combo:text|key:generator:output:steam) master_preset.xml:6389(combo:text|group:Power|preset:Power_Plant|key:plant:output:steam) master_preset.xml:6523(list_entry:short_description|group:Power_Generator|preset:Tidal_Water_Turbine|value:horizontal_axis) master_preset.xml:6525(list_entry:short_description|group:Power_Generator|preset:Tidal_Water_Turbine|value:vertical_axis)
+#: master_preset.xml:606(combo:text|key:generator:output:steam) master_preset.xml:6389(combo:text|group:Power|preset:Power_Plant|key:plant:output:steam)
 msgid "steam"
 msgstr ""
 
@@ -12684,9 +12692,19 @@ msgctxt "bridge"
 msgid "Yes"
 msgstr ""
 
+#: master_preset.xml:6521(combo:display_values|group:Power_Generator|preset:Tidal_Water_Turbine|key:generator:method)
+msgctxt "generator method"
+msgid "Barrage"
+msgstr ""
+
 #: master_preset.xml:6413(combo:text|group:Power_Generator|preset:Biomass_Power_Generator|key:generator:method) master_preset.xml:6460(combo:text|group:Power_Generator|preset:Nuclear_Reactor|key:generator:method) master_preset.xml:6485(combo:text|group:Power_Generator|preset:Solar_Power_Generator|key:generator:method) master_preset.xml:6496(combo:text|group:Power_Generator|preset:Waste_Power_Generator|key:generator:method) master_preset.xml:6509(combo:text|group:Power_Generator|preset:Water_Turbine|key:generator:method) master_preset.xml:6521(combo:text|group:Power_Generator|preset:Tidal_Water_Turbine|key:generator:method)
 msgctxt "generator method"
 msgid "Method"
+msgstr ""
+
+#: master_preset.xml:6521(combo:display_values|group:Power_Generator|preset:Tidal_Water_Turbine|key:generator:method)
+msgctxt "generator method"
+msgid "Stream"
 msgstr ""
 
 #: master_preset.xml:6763(combo:text|preset:Power_Cable|key:location)
