@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" object_keys="attraction,public_transport,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford">
 <!--
     Icons have been derived from mainly from
   
@@ -4337,8 +4337,9 @@
             <key key="amenity" value="place_of_worship"/>
             <key key="religion" value="christian"/>
             <text key="name" text="Name"/>
-            <combo key="building" text="Building type" values="basilica,cathedral,chapel,church,temple" values_searchable="true" match="none"/>
-            <combo key="denomination" text="Denomination" values="anglican,baptist,catholic,evangelical,greek_catholic,greek_orthodox,jehovahs_witness,lutheran,methodist,mormon,new_apostolic,orthodox,pentecostal,presbyterian,protestant,quaker,roman_catholic,russian_orthodox,seventh_day_adventist,spiritist" display_values="Anglican,Baptist,Catholic,Evangelical,Greek catholic,Greek orthodox,Jehovahs witness,Lutheran,Methodist,Mormon,New apostolic,Orthodox,Pentecostal,Presbyterian,Protestant,Quaker,Roman catholic,Russian orthodox,Seventh day adventist,Spiritist" values_context="christian" values_searchable="true"/> 
+            <combo key="building" text="Building type" values="basilica,cathedral,chapel,church,temple" display_values="Basilica,Cathedral,Chapel,Church,Temple" values_searchable="true" match="none"/>
+            <combo key="denomination" text="Denomination" values="anglican,baptist,catholic,evangelical,greek_catholic,greek_orthodox,jehovahs_witness,lutheran,methodist,mormon,new_apostolic,orthodox,pentecostal,presbyterian,protestant,quaker,roman_catholic,russian_orthodox,seventh_day_adventist,spiritist" 
+                display_values="Anglican,Baptist,Catholic,Evangelical,Greek catholic,Greek orthodox,Jehovahs witness,Lutheran,Methodist,Mormon,New apostolic,Orthodox,Pentecostal,Presbyterian,Protestant,Quaker,Roman catholic,Russian orthodox,Seventh day adventist,Spiritist" values_context="christian" values_searchable="true"/> 
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
@@ -4349,7 +4350,7 @@
             <key key="amenity" value="place_of_worship"/>
             <key key="religion" value="muslim"/>
             <text key="name" text="Name"/>
-            <combo key="building" text="Building type" values="mosque" values_searchable="true" match="none"/>
+            <combo key="building" text="Building type" values="mosque" display_values="Mosque" values_searchable="true" match="none"/>
             <combo key="denomination" text="Denomination" values="ibadi,shia,sunni" display_values="Ibadi,Shia,Sunni" values_searchable="true"/>
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
@@ -4361,7 +4362,7 @@
             <key key="amenity" value="place_of_worship"/>
             <key key="religion" value="jewish"/>
             <text key="name" text="Name"/>
-            <combo key="building" text="Building type" values="synagogue" values_searchable="true" match="none"/>
+            <combo key="building" text="Building type" values="synagogue" display_values="Synagogue" values_searchable="true" match="none"/>
             <combo key="denomination" text="Denomination" values="orthodox,conservative,reform" display_values="Orthodox,Conservative,Reform" values_context="jewish" values_searchable="true"/>
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
@@ -7886,6 +7887,7 @@
         <space/>
         <key key="amenity" value="bank"/>
         <reference ref="name_brand_operator_oh_wheelchair_level"/>
+        <text key="branch" text="Branch"/>
         <check key="atm" text="Automated Teller Machine" default="on"/>
         <text key="ref" text="Reference"/>
         <reference ref="link_contact_address"/>
