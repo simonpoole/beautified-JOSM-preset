@@ -482,7 +482,9 @@
         <reference ref="sport_facility"/>
     </chunk>
     <chunk id="sport">
-        <combo key="sport" text="Sport" values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,martial_arts,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rugby_league,rugby_union,running,safety_training,shooting,skateboard,skating,roller_skating,ice_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" display_values="Multiple,Archery,Athletics,American football,Australian football,Baseball,Basketball,Beach volleyball,Billiards,Boules,Bowls,Canadian football,Canoe,Climbing,Cricket,Croquet,Cycling,Dog racing,Equestrian,Field hockey,Gaelic games,Golf,Gymnastics,Handball,Horse racing,Ice hockey,Karting,Martial arts,Model aerodrome,Motocross,Motor,Pelota,Racquet,RC car,Rugby league,Rugby union,Running,Safety training,Shooting,Skateboard,Skating,Roller skating,Ice skating,Soccer,Swimming,Table tennis,Tennis,Volleyball,9pin,10pin" values_context="sport"/>
+        <combo key="sport" text="Sport" 
+            values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,martial_arts,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rowing,rugby_league,rugby_union,running,safety_training,shooting,skateboard,skating,roller_skating,ice_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" 
+            display_values="Multiple,Archery,Athletics,American football,Australian football,Baseball,Basketball,Beach volleyball,Billiards,Boules,Bowls,Canadian football,Canoe,Climbing,Cricket,Croquet,Cycling,Dog racing,Equestrian,Field hockey,Gaelic games,Golf,Gymnastics,Handball,Horse racing,Ice hockey,Karting,Martial arts,Model aerodrome,Motocross,Motor,Pelota,Racquet,RC car,Rowing,Rugby league,Rugby union,Running,Safety training,Shooting,Skateboard,Skating,Roller skating,Ice skating,Soccer,Swimming,Table tennis,Tennis,Volleyball,9pin,10pin" values_context="sport"/>
     </chunk>
     <chunk id="bin">
         <combo key="bin" text="Bin" values="yes,no" display_values="Yes,No" default=""/>
@@ -561,12 +563,52 @@
             <list_entry value="mixed" display_value="Mixed" short_description="Habitat with evergreen and deciduous vegetation."/>
         </combo>
     </chunk>
-    <chunk id="religious">
-        <combo key="religion" text="Religion" values="bahai,buddhist,christian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,unitarian,zoroastrian" display_values="Bahai,Buddhist,Christian,Hindu,Jain,Jewish,Muslim,Shinto,Sikh,Spiritualist,Taoist,Unitarian,Zoroastrian"/>
-        <combo key="denomination" text="Denomination" values="anglican,baptist,catholic,evangelical,greek_catholic,jehovahs_witness,lutheran,methodist,mormon,old_catholic,orthodox,pentecostal,presbyterian,protestant,quaker,roman_catholic,shia,sunni" display_values="Anglican,Baptist,Catholic,Evangelical,Greek catholic,Jehovahs witness,Lutheran,Methodist,Mormon,Old catholic,Orthodox,Pentecostal,Presbyterian,Protestant,Quaker,Roman catholic,Shia,Sunni"/>
+    <!-- start of religions and denominations -->
+    <chunk id="religious"> <!-- all religions and denominations -->
+        <combo key="religion" text="Religion" 
+            values="bahai,buddhist,caodaism,christian,confucian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,tenrikyo,unitarian_universalist,zoroastrian" 
+            display_values="Bahai,Buddhist,Caodaism,Christian,Confucian,Hindu,Jain,Jewish,Muslim,Shinto,Sikh,Spiritualist,Taoist,Tenrikyo,Unitarian universalist,Zoroastrian"/>
+        <combo key="denomination" text="Denomination" 
+            values="anglican,baptist,catholic,church_of_scotland,conservative,evangelical,greek_catholic,greek_orthodox,ibadi,iglesia_ni_cristo,jehovahs_witness,lutheran,mahayana,methodist,mormon,new_apostolic,nondenominational,old_catholic,orthodox,pentecostal,presbyterian,protestant,quaker,reform,reformed,roman_catholic,romanian_orthodox,russian_orthodox,serbian_orthodox,seventh_day_adventist,shaivism,shaktism,shia,smartism,spiritist,sunni,tibetan,theravada,united,united_methodist,vaishnavism,vajrayana" 
+            display_values="Anglican,Baptist,Catholic,Church of Scotland,Conservative,Evangelical,Greek catholic,Greek orthodox,Ibadi,Iglesia ni cristo,Jehovahs witness,Lutheran,Mahayana,Methodist,Mormon,New apostolic,Nondenominational,Old catholic,Orthodox,Pentecostal,Presbyterian,Protestant,Quaker,Reform,Reformed,Roman catholic,Romanian orthodox,Russian orthodox,Serbian orthodox,Seventh day adventist,Shaivism,Shaktism,Shia,Smartism,Spiritist,Sunni,Tibetan,Theravada,United,United methodist,Vaishnavism,Vajrayana"/>
     </chunk>
+    <chunk id="religious_catholic_christian"> <!-- special case for wayside_shrine and wayside_cross: all religions and catholic denominations with default to catholic christian -->
+        <combo key="religion" text="Religion" 
+            values="bahai,buddhist,caodaism,christian,confucian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,tenrikyo,unitarian_universalist,zoroastrian"
+            display_values="Bahai,Buddhist,Caodaism,Christian,Confucian,Hindu,Jain,Jewish,Muslim,Shinto,Sikh,Spiritualist,Taoist,Tenrikyo,Unitarian universalist,Zoroastrian" 
+            default="christian" values_searchable="true" />
+        <combo key="denomination" text="Denomination" 
+            values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic"
+            display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic" 
+            default="catholic" values_searchable="true" />
+    </chunk>
+    <chunk id="other_religions"> <!-- religions which don't have an own preset -->
+        <combo key="religion" text="Religion" values="bahai,caodaism,confucian,jain,sikh,spiritualist,taoist,tenrikyo,unitarian_universalist,zoroastrian" 
+            display_values="Bahai,Caodaism,Confucian,Jain,Sikh,Spiritualist,Taoist,Tenrikyo,Unitarian universalist,Zoroastrian"
+            match="keyvalue!" values_searchable="true" />
+    </chunk> 
+    <chunk id="christian_denominations"> <!-- christian denominations -->
+        <combo key="denomination" text="Denomination" 
+            values="anglican,baptist,catholic,church_of_scotland,evangelical,greek_catholic,greek_orthodox,iglesia_ni_cristo,jehovahs_witness,lutheran,methodist,mormon,new_apostolic,nondenominational,old_catholic,orthodox,pentecostal,presbyterian,protestant,quaker,reformed,roman_catholic,romanian_orthodox,russian_orthodox,serbian_orthodox,seventh_day_adventist,spiritist,united,united_methodist" 
+            display_values="Anglican,Baptist,Catholic,Church of Scotland,Evangelical,Greek catholic,Greek orthodox,Iglesia ni cristo,Jehovahs witness,Lutheran,Methodist,Mormon,New apostolic,Nondenominational,Old catholic,Orthodox,Pentecostal,Presbyterian,Protestant,Quaker,Reformed,Roman catholic,Romanian orthodox,Russian orthodox,Serbian orthodox,Seventh day adventist,Spiritist,United,United methodist" 
+            values_searchable="true" />
+    </chunk>
+    <chunk id="muslim_denominations"> <!-- muslim denominations -->
+        <combo key="denomination" text="Denomination" values="ibadi,nondenominational,shia,sunni" display_values="Ibadi,Nondenominational,Shia,Sunni" values_searchable="true" />
+    </chunk>
+    <chunk id="jewish_denominations"> <!-- jewish denominations -->
+        <combo key="denomination" text="Denomination" values="orthodox,conservative,nondenominational,reform" display_values="Orthodox,Conservative,Nondenominational,Reform" values_context="jewish" values_searchable="true" /> <!-- values_context because of orthodox, #9629 -->
+    </chunk>
+    <chunk id="buddhist_denominations"> <!-- buddhist denominations -->
+        <combo key="denomination" text="Denomination" values="tibetan,theravada,mahayana,vajrayana" display_values="Tibetan,Theravada,Mahayana,Vajrayana" values_searchable="true" />
+    </chunk>
+    <chunk id="hindu_denominations"> <!-- hindu denominations -->
+        <combo key="denomination" text="Denomination" values="vaishnavism,shaivism,shaktism,smartism" display_values="Vaishnavism,Shaivism,Shaktism,Smartism" values_searchable="true" />
+    </chunk>
+    <!-- shinto and the religions which don't have an own preset don't have denominations (yet) -->
+    <!-- end of religions and denominations --> 
     <chunk id="voltage">
-        <combo key="voltage" text="Voltage in Volts (V)" values="1150000,765000,750000,735000,500000,450000,420000,400000,380000,350000,345000,330000,315000,300000,275000,238000,230000,225000,220000,200000,161000,154000,150000,138000,132000,120000,115000,110000,100000,90000,69000,66000,65000,63000,60000,55000,49000,45000,35000,33000,30000,20000,15000,750000;200000,110000;20000" values_sort="false"/>
+        <combo key="voltage" text="Voltage in Volts (V)" values="1150000,765000,750000,735000,500000,450000,420000,400000,380000,350000,345000,330000,315000,300000,275000,238000,230000,225000,220000,200000,161000,154000,150000,138000,132000,120000,115000,110000,100000,90000,69000,66000,65000,63000,60000,55000,49000,45000,35000,33000,30000,22000,20000,15000,15000;200000,110000;20000" values_sort="false"/>
     </chunk>
     <chunk id="frequency">
         <combo key="frequency" text="Frequency in Hertz (Hz)" values="0,16.67,16.7,50,60" length="5" values_sort="false"/>
@@ -770,6 +812,7 @@
     <text key="network" text="Network"/>
     <text key="description" text="Description"/>
     <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true"/>
+    <combo key="interval" text="Interval (M, MM, HH:MM, or HH:MM:SS)" values="5,10,15,20,30,60,120" values_no_i18n="true" />
   </chunk>
   <chunk id="tactile_paving">
   	<combo key="tactile_paving" text="Tactile paving" values_context="tactile_paving" match="key" values_sort="false">
@@ -926,6 +969,33 @@
 		<multiselect key="except" text="Exceptions" values="bicycle;emergency;hgv;motorcar;psv" display_values="Bicycle;Emergency;HGV;Car;PSV"/>
 	</optional>
   </chunk>
+  <chunk id="climbing_styles">
+    <label text="Climbing styles:" />
+    <checkgroup text="Climbing styles" columns="2">
+      <check key="climbing:boulder" text="Boulders" />
+      <check key="climbing:sport" text="Sport climbing" />
+      <check key="climbing:toprope" text="Top rope" />
+      <check key="climbing:trad" text="Traditional climbing" />
+      <check key="climbing:multipitch" text="Multi-pitch climbing" />
+      <check key="climbing:ice" text="Ice climbing" />
+      <check key="climbing:mixed" text="Mixed climbing" />
+      <check key="climbing:deepwater" text="Deep Water Soloing" />
+    </checkgroup>
+  </chunk>
+  <chunk id="climbing_optional_attributes">
+    <optional>
+      <combo key="climbing:orientation" text="Orientation" values="N,NE,E,SE,S,SW,W,NW" display_values="N,NE,E,SE,S,SW,W,NW" values_no_i18n="true" values_sort="false"/>
+      <combo key="climbing:quality" text="Rock/ice quality" values="fragile,medium,solid" display_values="Fragile,Medium,Solid" />
+      <combo key="climbing:rock" text="Rock type" rows="3" values="limestone,sandstone,granite,basalt,slate" display_values="Limestone,Sandstone,Granite,Basalt,Slate" />
+      <check key="climbing:summit_log" text="Summit/route log/register" />
+      <check key="indoor" text="Climbing routes indoor" />
+      <check key="outdoor" text="Climbing routes outdoor" />          
+      <text key="website" text="Web site" />
+      <combo key="opening_hours" text="Opening Hours" value_type="opening_hours" delimiter="|" values="24/7|sunset-sunrise open; sunrise-sunset closed|Mar-Jun closed; Jul-Feb Mo-Su,PH sunrise-sunset|Mo-Fr 15:00-22:00; Sa-Su 11:00-22:00" values_no_i18n="true"/>
+      <combo key="fee" text="Fee" value_type="opening_hours_mixed" values="yes,no,Sa-Su 08:00-20:00"/>
+      <reference ref="facility_access"/>
+    </optional>
+   </chunk>
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
     <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
@@ -2078,16 +2148,24 @@
         <item name="Other mode restrictions" icon="${ICONPATH}no_walking.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
-            <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,permit,no" match="key"/>
-            <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,permit,no" match="key"/>
-            <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no" match="key"/>
-            <combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,permit,no" match="key"/>
-            <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no" match="key"/>
-            <combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,no" match="keyvalue"/>
-            <combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no" match="key"/>
-            <combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" match="key"/>
-            <combo key="tourist_bus" text="Tourist buses" values="yes,no" match="key"/>
-            <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"/>
+            <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,No" match="key"/>
+            <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,permit,no" 
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Use sidepath,Permit,No" match="key"/>
+            <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,No" match="key"/>
+            <combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,permit,no"
+                display_values="Yes,Official,Designated,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit,No" match="key"/>
+            <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no"
+                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" match="key"/>
+            <combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,no"
+                display_values="Yes,Official,Designated,Destination,No" match="keyvalue"/>
+            <combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no"
+                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" match="key"/>
+            <combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" 
+                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" match="key"/>
+            <combo key="tourist_bus" text="Tourist buses" values="yes,no" display_values="Yes,No" match="key"/>            
+            <combo key="4wd_only" text="4WD only" values="yes,recommended,no" display_values="Yes,Recommended,No" match="key" />
         </item> <!-- Other mode restrictions -->
     </group>  <!-- access restrictions -->
   </group> <!-- Highways -->
@@ -2747,6 +2825,7 @@
                     <check key="fuel:ethanol" text="Ethanol (alcohol)" disable_off="true"/>
                     <check key="fuel:lpg" text="LPG (Liquefied petroleum gas)" disable_off="true"/>
                     <check key="fuel:cng" text="CNG (Compressed Natural Gas)" disable_off="true"/>
+                    <check key="fuel:biogas" text="Biogas" disable_off="true" />
                     <check key="fuel:1_25" text="1/25 mix (mofa/moped)" disable_off="true"/>
                     <check key="fuel:1_50" text="1/50 mix (mofa/moped)" disable_off="true"/>
                 </checkgroup>
@@ -2914,7 +2993,8 @@
             <link wiki="Tag:amenity=bicycle_parking"/>
             <space/>
             <key key="amenity" value="bicycle_parking"/>
-            <combo key="bicycle_parking" text="Type" values="anchors,building,ground_slots,informal,lockers,rack,shed,stands,wall_loops"/>
+            <combo key="bicycle_parking" text="Type" values="anchors,building,bollard,ground_slots,informal,lockers,rack,shed,stands,wall_loops"
+                display_values="Anchors,Building,Bollard,Ground slots,Informal,Lockers,Rack,Shed,Stands,Wall loops" values_context="bicycle" />
             <reference ref="optional_name"/>
             <text key="capacity" text="Capacity" value_type="integer"/>
             <reference ref="parking_access_fee_operator_surface_smoothness"/>
@@ -3628,7 +3708,7 @@
             <key key="information" value="map"/>
             <reference ref="optional_name"/>
             <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" display_values="Topo,Street,Scheme,Toposcope"/>
-            <combo key="map_size" text="Shown Area" values="site,city,region" display_values="Site,City,Region"/>
+            <combo key="map_size" text="Shown Area" values="site,city,region" display_values="Site,City,Region" values_sort="false" />
             <text key="description" text="Detailed description"/>
             <optional text="Routes shown for:">
                 <check key="hiking" text="Hiking" disable_off="true"/>
@@ -3737,6 +3817,8 @@
             <space/>
             <key key="tourism" value="zoo"/>
             <reference ref="name_oh_wheelchair_toilets"/>
+            <combo key="zoo" text="Type" values="aviary,birds,butterfly,enclosure,falconry,petting_zoo,reptile,safari_park,wildlife_park"
+                display_values="Aviary,Birds,Butterfly,Enclosure,Falconry,Petting zoo,Reptile,Safari park,Wildlife park" />
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
             <text key="wikidata" text="Wikidata" value_type="wikidata"/>
             <space/>
@@ -4372,8 +4454,7 @@
             <key key="religion" value="christian"/>
             <text key="name" text="Name"/>
             <combo key="building" text="Building type" values="basilica,cathedral,chapel,church,temple" display_values="Basilica,Cathedral,Chapel,Church,Temple" values_searchable="true" match="none"/>
-            <combo key="denomination" text="Denomination" values="anglican,baptist,catholic,evangelical,greek_catholic,greek_orthodox,jehovahs_witness,lutheran,methodist,mormon,new_apostolic,orthodox,pentecostal,presbyterian,protestant,quaker,roman_catholic,russian_orthodox,seventh_day_adventist,spiritist" 
-                display_values="Anglican,Baptist,Catholic,Evangelical,Greek catholic,Greek orthodox,Jehovahs witness,Lutheran,Methodist,Mormon,New apostolic,Orthodox,Pentecostal,Presbyterian,Protestant,Quaker,Roman catholic,Russian orthodox,Seventh day adventist,Spiritist" values_context="christian" values_searchable="true"/> 
+            <reference ref="christian_denominations" />
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
@@ -4385,7 +4466,7 @@
             <key key="religion" value="muslim"/>
             <text key="name" text="Name"/>
             <combo key="building" text="Building type" values="mosque" display_values="Mosque" values_searchable="true" match="none"/>
-            <combo key="denomination" text="Denomination" values="ibadi,shia,sunni" display_values="Ibadi,Shia,Sunni" values_searchable="true"/>
+            <reference ref="muslim_denominations" />
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
@@ -4397,7 +4478,7 @@
             <key key="religion" value="jewish"/>
             <text key="name" text="Name"/>
             <combo key="building" text="Building type" values="synagogue" display_values="Synagogue" values_searchable="true" match="none"/>
-            <combo key="denomination" text="Denomination" values="orthodox,conservative,reform" display_values="Orthodox,Conservative,Reform" values_context="jewish" values_searchable="true"/>
+            <reference ref="jewish_denominations" />
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
@@ -4408,7 +4489,7 @@
             <key key="amenity" value="place_of_worship"/>
             <key key="religion" value="buddhist"/>
             <text key="name" text="Name"/>
-            <combo key="denomination" text="Denomination" values="theravada,mahayana,vajrayana" display_values="Theravada,Mahayana,Vajrayana" values_searchable="true"/>
+            <reference ref="buddhist_denominations" />
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
@@ -4419,7 +4500,7 @@
             <key key="amenity" value="place_of_worship"/>
             <key key="religion" value="hindu"/>
             <text key="name" text="Name"/>
-            <combo key="denomination" text="Denomination" values="vaishnavism,shaivism,shaktism,smartism" display_values="Vaishnavism,Shaivism,Shaktism,Smartism" values_searchable="true"/>
+            <reference ref="hindu_denominations" />
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
@@ -4439,7 +4520,7 @@
             <space/>
             <key key="amenity" value="place_of_worship"/>
             <text key="name" text="Name"/>
-            <reference ref="religious"/>
+            <reference ref="other_religions" />
             <reference ref="service_times"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
@@ -5548,27 +5629,50 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Running -->
-        <item name="Climbing" icon="${ICONPATH}sport_climbing_21005.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
+        <item name="Climbing site" icon="${ICONPATH}sport_climbing_21005.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=climbing"/>
             <space/>
             <key key="sport" value="climbing"/>
             <text key="name" text="Name"/>
             <check key="leisure" text="Sports centre" disable_off="true" value_on="sports_centre"/>
-            <reference ref="oh"/>
-            <optional>
-            	<check key="climbing:sport" text="Sport climbing" disable_off="true"/>
-				<check key="climbing:boulder" text="Bouldering" disable_off="true"/>
-				<check key="climbing:toprope" text="Top rope" disable_off="true"/>
-				<check key="climbing:trad" text="Traditional" disable_off="true"/>
-				<check key="climbing:multipitch" text="Multi-pitch routes" disable_off="true"/>
-				<check key="climbing:ice" text="Ice climbing" disable_off="true"/>
-				<check key="climbing:mixed" text="Mixed climbing" disable_off="true"/>
-				<check key="climbing:deepwater" text="Deep-Water-Soloing" disable_off="true"/>
-				<combo key="climbing:rock" text="Rock" values="limestone,granite,sandstone,quarzite,gneiss,porphyry,basalt,conglomerate,concrete" display_values="Limestone,Granite,Sandstone,Quarzite,Gneiss,Porphyry,Basalt,Conglomerate,Concrete"/>
-            	<check key="climbing:bolted" text="Bolted" disable_off="true"/>
-            </optional>
+            <reference ref="climbing_styles" />
+            <text key="climbing:routes" text="Number of routes" />
+            <text key="ele" text="Usual elevation at the bottom of the routes" />
+            <space />
+            <combo key="climbing:length" text="Usual route length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
+            <combo key="climbing:length:min" text="Minimal climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
+            <combo key="climbing:length:max" text="Maximum climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
+            <space />
+            <combo key="climbing:grade:UIAA:min" text="UIAA: Simplest route" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" />
+            <combo key="climbing:grade:UIAA:max" text="UIAA: Most difficult route" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" />
+            <combo key="climbing:grade:UIAA:mean" text="UIAA: Main difficulty" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" />
+            <space />
+            <combo key="climbing:grade:french:min" text="French: Simplest route" values="4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" />
+            <combo key="climbing:grade:french:max" text="French: Most difficult route" values="4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" />
+            <combo key="climbing:grade:french:mean" text="French: Main difficulty" values="4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" />
+            <space />
+            <combo key="climbing:grade:saxon:min" text="Saxon: Simplest route" values="IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" />
+            <combo key="climbing:grade:saxon:max" text="Saxon: Most difficult route" values="IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" />
+            <combo key="climbing:grade:saxon:mean" text="Saxon: Main difficulty" values="IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" />
+            <reference ref="climbing_optional_attributes" />
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Climbing -->
+        </item> <!-- Climbing site -->
+        <item name="Climbing route" icon="${ICONPATH}sport_climbing_21005.${ICONTYPE}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:sport=climbing" />
+            <space />
+            <key key="sport" value="climbing" />
+            <key key="climbing" value="route" />
+            <text key="name" text="Name" />
+            <reference ref="climbing_styles" />
+            <combo key="climbing:bolted" text="Bolts" values="yes,no,1,2,3,4,5,6" values_sort="false" values_no_i18n="true" />
+            <combo key="climbing:pitches" text="Pitches" values="1,2,3,4,5,6,7,8" default="1" values_no_i18n="true" />
+            <combo key="climbing:length" text="Route length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" />
+            <space />
+            <combo key="climbing:grade:UIAA" text="UIAA grading" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" />
+            <combo key="climbing:grade:french" text="French grading" values="4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" />
+            <combo key="climbing:grade:saxon" text="Saxon grading" values="IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" />
+            <reference ref="climbing_optional_attributes" />
+        </item> <!-- Climbing route -->
         <item name="Canoeing/Kayaking" icon="${ICONPATH}sport_canoe.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=canoe"/>
             <space/>
@@ -5577,6 +5681,12 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Canoeing/Kayaking -->
+        <item name="Rowing" icon="${ICONPATH}sport_rowing_21113.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:sport=rowing" />
+            <space />
+            <key key="sport" value="rowing" />
+            <text key="name" text="Name" />
+        </item> <!-- Rowing -->
         <item name="Cycling" icon="${ICONPATH}sport_cycling_21098.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=cycling"/>
             <space/>
@@ -5679,7 +5789,7 @@
             <combo key="piste:type" text="Piste type" values="downhill,nordic,skitour,sled,sleigh,snow_park" display_values="Downhill,Nordic,Skitour,Sled,Sleigh,Snow park" match="keyvalue"/>
             <optional>
                 <combo key="piste:difficulty" text="Difficulty" values="novice,easy,intermediate,advanced,expert,freeride" display_values="Novice,Easy,Intermediate,Advanced,Expert,Freeride" values_context="piste:difficulty" values_searchable="true" values_sort="false"/>
-                <combo key="piste:grooming" text="Grooming" values="classic,mogul,skating,classic;skating,scooter,backcountry" display_values="Classic,Mogul,Skating,Classic;Skating,Scooter,Backcountry" values_context="piste:grooming"/>
+                <combo key="piste:grooming" text="Grooming" values="classic,mogul,skating,classic+skating,scooter,backcountry" display_values="Classic,Mogul,Skating,Classic+skating,Scooter,Backcountry" values_context="piste:grooming"/>
             </optional>
         </item> <!-- Skiing -->
         <item name="Shooting" icon="${ICONPATH}sport_shooting.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6885,8 +6995,7 @@
          <space/>
          <key key="historic" value="wayside_cross"/>
          <reference ref="optional_name"/>
-         <combo key="religion" text="Religion" values="christian" display_values="Christian" default="christian"/>
-         <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic" default="catholic"/>
+         <reference ref="religious_catholic_christian" />
          <text key="start_date" text="Start date"/>
          <text key="inscription" text="Inscription"/>
      </item> <!-- Wayside Cross -->
@@ -6895,7 +7004,7 @@
          <space/>
          <key key="historic" value="wayside_shrine"/>
          <reference ref="optional_name"/>
-         <reference ref="religious"/>
+         <reference ref="religious_catholic_christian" />
          <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
          <combo key="building" text="Building" values="wayside_shrine" values_context="building"/>
          <text key="start_date" text="Start date"/>
@@ -8404,7 +8513,7 @@
             <space/>
             <key key="landuse" value="farmland"/>
             <reference ref="optional_name"/>
-            <combo key="crop" text="Crop" values="corn,grass,rice,wheat,hop,tea" display_values="Corn,Grass,Rice,Wheat,Hop,Tea" editable="true" values_context="crop"/>
+            <combo key="crop" text="Crop" values="corn,grass,rice,wheat,hop,cereal,tea" display_values="Corn,Grass,Rice,Wheat,Hop,Cereal,Tea" editable="true" values_context="crop"/>
         </item> <!-- Farmland -->
         <item name="Farm (deprecated)" icon="${ICONPATH}landuse_farm_22120.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true" deprecated="true">
             <link wiki="Tag:landuse=farm"/>
