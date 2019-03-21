@@ -132,7 +132,7 @@
  		</multiselect>
  	</chunk>
     <chunk id="railway_service">
-        <combo key="service" text="Service type" values="yard,siding,spur,crossover"/>
+        <combo key="service" text="Service type" values="yard,siding,spur,crossover" display_values="Yard,Siding,Spur,Crossover" values_context="railway" />
     </chunk>
     <chunk id="railway_electrified">
         <combo key="electrified" text="Electrified" values="contact_line,no,yes,rail" values_context="electrified"/>
@@ -1197,7 +1197,7 @@
             <space/>
             <key key="highway" value="service" values_context="Highway"/>
             <optional>
-                <combo key="service" text="Service way type" values="alley,driveway,parking_aisle,drive-through,emergency_access" display_values="Alley,Driveway,Parking,Parking aisle,Drive-through,Emergency access"/>
+                <combo key="service" text="Service way type" values="alley,driveway,parking_aisle,drive-through,emergency_access" display_values="Alley,Driveway,Parking,Parking aisle,Drive-through,Emergency access" values_context="Highway"/>
                 <text key="name" text="Name"/>
                 <reference ref="highway_base"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
