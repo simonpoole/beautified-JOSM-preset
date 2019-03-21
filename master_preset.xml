@@ -69,6 +69,7 @@
     <chunk id="name_layer">
         <text key="name" text="Name"/>
         <reference ref="layer"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="tunnel">
         <combo key="tunnel" text="Tunnel" values="yes,building_passage" display_values="Yes,Building passage," values_sort="false" match="key"/>
@@ -181,15 +182,18 @@
     <chunk id="name_ref">
         <text key="name" text="Name"/>
         <text key="ref" text="Reference"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_ref_operator">
         <text key="name" text="Name"/>
         <text key="ref" text="Reference"/>
         <text key="operator" text="Operator"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_operator">
         <text key="name" text="Name"/>
         <text key="operator" text="Operator"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="level">
     	<combo text="Level" long_text="For indoor mapping, level 0 is the ground floor" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" values_sort="false" match="none" editable="true"/>
@@ -270,20 +274,24 @@
     <chunk id="name_oh_wheelchair">
         <text key="name" text="Name"/>
         <reference ref="oh_wheelchair"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_wheelchair">
         <text key="name" text="Name"/>
         <reference ref="wheelchair"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_oh_wheelchair_toilets">
         <text key="name" text="Name"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="toilets_with_access"/>
+        <preset_link preset_name="No name"/>
     </chunk>
         <chunk id="name_wheelchair_toilets">
         <text key="name" text="Name"/>
         <reference ref="wheelchair"/>
         <reference ref="toilets_with_access"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_oh_wheelchair_level">
         <reference ref="name_oh_wheelchair"/>
@@ -339,6 +347,7 @@
         <reference ref="brand"/>
         <text key="operator" text="Operator"/>
         <reference ref="oh_wheelchair"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="optional_name_brand_operator_oh_wheelchair">
         <optional>
@@ -347,6 +356,7 @@
             <text key="operator" text="Operator"/>
         </optional>
         <reference ref="oh_wheelchair"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_brand_operator_oh_wheelchair_level">
 		<reference ref="name_brand_operator_oh_wheelchair"/>
@@ -361,18 +371,21 @@
         <text key="name" text="Name"/>
         <text key="brand" text="Brand"/>
         <reference ref="oh_wheelchair"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_brand_oh_wheelchair_level">
         <text key="name" text="Name"/>
         <reference ref="brand"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="level"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_brand_oh_wheelchair_toilets">
         <text key="name" text="Name"/>
         <reference ref="brand"/>
         <reference ref="oh_wheelchair"/>
         <reference ref="toilets_with_access"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="name_brand_oh_wheelchair_toilets_level">
         <text key="name" text="Name"/>
@@ -380,6 +393,7 @@
         <reference ref="oh_wheelchair"/>
         <reference ref="toilets_with_access"/>
         <reference ref="level"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="organic">
     	<combo key="organic" text="Organic" values="only,yes,no" display_values="Only,Yes,No"/>
@@ -440,12 +454,14 @@
         <optional>
             <text key="name" text="Name"/>
         </optional>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="optional_name_operator">
         <optional>
             <text key="name" text="Name"/>
             <text key="operator" text="Operator"/>
          </optional>
+         <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="optional_name_wikipedia">
         <optional>
@@ -453,6 +469,7 @@
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
             <text key="wikidata" text="Wikidata" value_type="wikidata"/>
         </optional>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="sport_facility">
     	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium" display_values="Pitch,Sports centre,Stadium" values_context="sport"/>
@@ -482,6 +499,7 @@
             <text key="name" text="Name"/>
         	<text key="ref" text="Reference number"/>
         </optional>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="parking_access_fee_operator_surface_smoothness">
         <space/>
@@ -511,6 +529,7 @@
         <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
         <text key="wikidata" text="Wikidata" value_type="wikidata"/>
         <preset_link preset_name="Name"/>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="population_postcode_website">
         <text key="population" text="Population"/>
@@ -683,6 +702,7 @@
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
             <text key="wikidata" text="Wikidata" value_type="wikidata"/>
         </optional>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="placement">
         <combo key="placement" text="Placement" values="left_of:1,left_of:2,left_of:3,middle_of:1,middle_of:2,middle_of:3,right_of:1,right_of:2,right_of:3,transition"/>
@@ -1507,6 +1527,7 @@
             <key key="highway" value="motorway_junction"/>
             <text key="name" text="Name"/>
             <text key="ref" text="Number"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Motorway Junction -->
         <item name="Services" icon="${ICONPATH}highway_services_18024.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:highway=services"/>
@@ -2099,6 +2120,7 @@
                 <reference ref="waterway_wikipedia"/>
             </optional>
             <reference ref="water_access"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Stream -->
         <item name="River" icon="${ICONPATH}water_waterway_sp.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:waterway=river"/>
@@ -2110,6 +2132,7 @@
                 <check key="lock" text="Lock" disable_off="true"/>
             </optional>
             <reference ref="water_access"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- River -->
         <item name="Canal" icon="${ICONPATH}water_canal_34001.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:waterway=canal"/>
@@ -2122,6 +2145,7 @@
                 <check key="lock" text="Lock" disable_off="true"/>
             </optional>
             <reference ref="water_access"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Canal -->
         <separator/>
         <item name="Spring" icon="${ICONPATH}water_spring_24021.${ICONTYPE}" type="node,closedway" preset_name_label="true">
@@ -2131,6 +2155,7 @@
             <key key="natural" value="spring"/>
             <text key="name" text="Name"/>
             <check key="drinking_water" text="Drinking Water" disable_off="true"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Spring -->
         <item name="Waterfall" icon="${ICONPATH}water_waterfall_24009.${ICONTYPE}" type="node,way" preset_name_label="true">
             <link wiki="Tag:waterway=waterfall"/>
@@ -2161,6 +2186,7 @@
             <key key="man_made" value="breakwater"/>
             <text key="ref" text="Reference"/>
             <text key="name" text="Name"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Breakwater -->
         <separator/>
         <item name="Culvert" icon="${ICONPATH}water_tunnel_sp.${ICONTYPE}" type="way" preset_name_label="true">
@@ -2220,6 +2246,7 @@
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
             <text key="wikidata" text="Wikidata" value_type="wikidata"/>
             <reference ref="water_access"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Water -->
         <item name="Coastline" icon="presets/coastline.png" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:natural=coastline"/>
@@ -2298,6 +2325,7 @@
             <key key="amenity" value="ferry_terminal"/>
             <text key="name" text="Name"/>
             <combo key="cargo" text="Cargo" values="passengers,vehicle,bicycle,hgv,passengers;vehicle" values_context="cargo"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Ferry Terminal -->
         <item name="Ferry Route" icon="${ICONPATH}water_route_sp.${ICONTYPE}" type="way,closedway,relation" preset_name_label="true">
             <link wiki="Tag:route=ferry"/>
@@ -2313,6 +2341,7 @@
             <key key="leisure" value="marina"/>
             <text key="name" text="Name"/>
             <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Marina -->
         <item name="Marine Fuel" icon="${ICONPATH}transport_fuel.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:waterway=fuel"/>
@@ -2397,12 +2426,14 @@
             <space/>
             <key key="waterway" value="boatyard"/>
             <text key="name" text="Name"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Boatyard -->
         <item name="Dock" icon="${ICONPATH}water_dock_34005.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:waterway=dock"/>
             <space/>
             <key key="waterway" value="dock"/>
             <text key="name" text="Name"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Dock -->
         <item name="Boat storage" icon="${ICONPATH}water_boat_storage_12011.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=boat_storage"/>
@@ -2635,6 +2666,7 @@
             <space/>
             <key key="aerialway" value="station"/>
             <text key="name" text="Name"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Station -->
         <item name="Pylon" icon="${ICONPATH}transport_aerialway_pylon_10009.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:aerialway=pylon"/>
@@ -2874,6 +2906,7 @@
                 <text key="services" text="Other"/>
             </optional>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Motorcycle Dealer -->
     </group> <!-- Motorcycle -->
     <group name="Bicycle" icon="${ICONPATH}transport_bicycle.${ICONTYPE}">
@@ -2910,6 +2943,7 @@
             <key key="amenity" value="bicycle_rental"/>
             <text key="name" text="Name"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Rental -->
         <item name="Public Bicycle Repair Station" icon="${ICONPATH}transport_bicycle_repair_station.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=bicycle_repair_station"/>
@@ -8685,6 +8719,9 @@
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
         	<text key="automatic_check_date" javascript=" function addCheckDate(key) {   df = new java.text.SimpleDateFormat('yyyy-MM-dd');   v = new java.util.ArrayList();   v.add(df.format(new java.util.Date()));   tags.put(key,v); }  for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {   if (key.startsWith('check_date:')) {     addCheckDate(key);   } } addCheckDate('check_date'); tags.remove('automatic_check_date');" text="Automatic check_date generation"/>	
 		</item> <!-- Add or update check date -->
+        <item name="No name" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}" type="node,way,closedway,relation" preset_name_label="true">
+            <check key="noname" text="No name" disable_off="true"/>
+        </item>
     </group> <!-- Annotation -->
   <group name="Relations" icon="${ICONPATH}osm_relation_sp.${ICONTYPE}">
   <item name="Relations" icon="${ICONPATH}osm_relation_sp.${ICONTYPE}" type="relation,multipolygon" preset_name_label="true">
