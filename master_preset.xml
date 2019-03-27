@@ -998,7 +998,7 @@
    </chunk>
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
-    <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
+    <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" items_sort="false" >
         <item name="Motorway" icon="${ICONPATH}highway_dual_sp.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:highway=motorway"/>
             <space/>
@@ -1364,7 +1364,7 @@
             </optional>
         </item> <!-- Ford -->
         <!--  Basic lane attributes -->
-        <group name="Lane attributes" icon="${ICONPATH}spurpfeile2.${ICONTYPE}">
+        <group name="Lane attributes" icon="${ICONPATH}spurpfeile2.${ICONTYPE}" items_sort="false" >
             <item name="Single direction roads" icon="${ICONPATH}spurpfeile1.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             	<link wiki="http://Lanes"/>
             	<combo key="lanes" values="1,2,3,4,5,6,7,8" description="Total number of full width lanes"/>
@@ -1453,7 +1453,7 @@
             <space/>
         </item> <!-- Cycle Lane/Track -->
     </group> <!-- Streets -->
-    <group name="Ways" icon="${ICONPATH}highway_way_sp.${ICONTYPE}">
+    <group name="Ways" icon="${ICONPATH}highway_way_sp.${ICONTYPE}" items_sort="false" >
         <item name="Track" icon="${ICONPATH}highway_agricultural_engines_16001.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=track"/>
             <space/>
@@ -2064,7 +2064,7 @@
             </optional>
         </item> <!-- Avalanche Protector -->
     </group> <!-- Passageways -->
-    <group name="Access Restrictions" icon="${ICONPATH}closed_to_vehicles_in_both_directions.${ICONTYPE}">
+    <group name="Access Restrictions" icon="${ICONPATH}closed_to_vehicles_in_both_directions.${ICONTYPE}" items_sort="false" >
         <item name="All vehicles" icon="${ICONPATH}closed_to_vehicles_in_both_directions.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
@@ -2521,7 +2521,7 @@
     </group> <!-- Shipping -->
   </group> <!-- Water -->
   <group name="Transport" icon="${ICONPATH}transport_train_station2.${ICONTYPE}">
-    <group name="Railway" icon="${ICONPATH}transport_train_station.${ICONTYPE}">
+    <group name="Railway" icon="${ICONPATH}transport_train_station.${ICONTYPE}" items_sort="false" >
         <item name="Rail" icon="${ICONPATH}transport_train_station.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:railway=rail"/>
             <key key="railway" value="rail"/>
@@ -2754,7 +2754,7 @@
         </item> <!-- Pylon -->
     </group> <!-- Aerialway -->
     <separator/>
-    <group name="Car" icon="${ICONPATH}transport_car.${ICONTYPE}">
+    <group name="Car" icon="${ICONPATH}transport_car.${ICONTYPE}" items_sort="false" >
         <item name="Parking" icon="${ICONPATH}transport_parking.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=parking"/>
             <space/>
@@ -8024,7 +8024,7 @@
         </checkgroup>
     </item> <!-- Payment Methods -->
   </group> <!-- Shops -->
-  <group name="Money" icon="${ICONPATH}money_bank2.${ICONTYPE}">
+  <group name="Money" icon="${ICONPATH}money_bank2.${ICONTYPE}" items_sort="false" >
     <item name="Bank" icon="${ICONPATH}money_bank2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:amenity=bank"/>
         <space/>
@@ -8080,7 +8080,7 @@
     </item> <!-- Money lender -->
   </group> <!-- Money -->
   <group name="Geography" icon="${ICONPATH}poi_peak2.${ICONTYPE}">
-    <group name="Boundaries" icon="${ICONPATH}poi_boundary_administrative.${ICONTYPE}">
+    <group name="Boundaries" icon="${ICONPATH}poi_boundary_administrative.${ICONTYPE}" items_sort="false" >
         <item name="Administrative" icon="${ICONPATH}poi_boundary_administrative.${ICONTYPE}" type="way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=administrative"/>
             <space/>
@@ -8130,7 +8130,7 @@
             <text key="name" text="Name"/>
         </item> <!-- Maritime -->
     </group> <!-- Boundaries -->
-    <group name="Places" icon="${ICONPATH}poi_place_city.${ICONTYPE}">
+    <group name="Places" icon="${ICONPATH}poi_place_city.${ICONTYPE}" items_sort="false" >
         <item name="Continent" icon="${ICONPATH}poi_boundary_administrative.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:place=continent"/>
             <space/>
