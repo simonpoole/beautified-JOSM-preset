@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
-<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford">
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+    description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
+    object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club">
 <!--
     Icons have been derived from mainly from
   
@@ -998,7 +1000,7 @@
    </chunk>
   <!--  Groups -->
   <group name="Highways" icon="highway_highway_sp.png">
-    <group name="Streets" icon="highway_highway_sp.png">
+    <group name="Streets" icon="highway_highway_sp.png" items_sort="false" >
         <item name="Motorway" icon="highway_dual_sp.png" type="way" preset_name_label="true">
             <link wiki="Tag:highway=motorway"/>
             <space/>
@@ -1364,7 +1366,7 @@
             </optional>
         </item> <!-- Ford -->
         <!--  Basic lane attributes -->
-        <group name="Lane attributes" icon="spurpfeile2.png">
+        <group name="Lane attributes" icon="spurpfeile2.png" items_sort="false" >
             <item name="Single direction roads" icon="spurpfeile1.png" type="way,closedway" preset_name_label="true">
             	<link wiki="http://Lanes"/>
             	<combo key="lanes" values="1,2,3,4,5,6,7,8" description="Total number of full width lanes"/>
@@ -1453,7 +1455,7 @@
             <space/>
         </item> <!-- Cycle Lane/Track -->
     </group> <!-- Streets -->
-    <group name="Ways" icon="highway_way_sp.png">
+    <group name="Ways" icon="highway_way_sp.png" items_sort="false" >
         <item name="Track" icon="highway_agricultural_engines_16001.png" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=track"/>
             <space/>
@@ -2064,7 +2066,7 @@
             </optional>
         </item> <!-- Avalanche Protector -->
     </group> <!-- Passageways -->
-    <group name="Access Restrictions" icon="closed_to_vehicles_in_both_directions.png">
+    <group name="Access Restrictions" icon="closed_to_vehicles_in_both_directions.png" items_sort="false" >
         <item name="All vehicles" icon="closed_to_vehicles_in_both_directions.png" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
@@ -2521,7 +2523,7 @@
     </group> <!-- Shipping -->
   </group> <!-- Water -->
   <group name="Transport" icon="transport_train_station2.png">
-    <group name="Railway" icon="transport_train_station.png">
+    <group name="Railway" icon="transport_train_station.png" items_sort="false" >
         <item name="Rail" icon="transport_train_station.png" type="way" preset_name_label="true">
             <link wiki="Tag:railway=rail"/>
             <key key="railway" value="rail"/>
@@ -2754,7 +2756,7 @@
         </item> <!-- Pylon -->
     </group> <!-- Aerialway -->
     <separator/>
-    <group name="Car" icon="transport_car.png">
+    <group name="Car" icon="transport_car.png" items_sort="false" >
         <item name="Parking" icon="transport_parking.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=parking"/>
             <space/>
@@ -5100,6 +5102,38 @@
             <reference ref="link_contact_address"/>
         </item> <!-- Youth Centre -->
     </group> <!-- Social Facility -->
+    <group name="Clubs" icon="amenity_club_35000.png">
+        <item name="Club" icon="amenity_club_35000.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:club"/>
+            <space/>
+            <combo key="club" text="Club type" values="sport,scout,freemasonry,automobile,music,social,culture,veterans,charity,motorcycle,fan"
+                display_values="Sport,Scouts,Freemasonry,Automobile,Music,Social,Culture,Veterans,Charity,Motorcycle,Fan" match="keyvalue!"/>           
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Club -->
+        <item name="Sport club" icon="amenity_club_sport_35059.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:club=sport"/>
+            <space/>
+            <key key="club" value="sport"/>
+            <reference ref="sport"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Sport club -->
+        <item name="Scouts" icon="amenity_club_scout_35053.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:club=scout"/>
+            <space/>
+            <key key="club" value="scout"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Scouts -->
+        <item name="Automobile" icon="amenity_club_automobile_35005.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:club=automobile"/>
+            <space/>
+            <key key="club" value="automobile"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Automobile -->
+    </group> <!-- Clubs -->
     <group name="Facilities" icon="amenity_telephone.png">
         <item name="Toilets/Restrooms" icon="amenity_toilets.png" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:amenity=toilets"/>
@@ -6019,7 +6053,9 @@
 		<item name="Building" icon="man_made_house_sp.png" type="node,closedway,multipolygon" preset_name_label="true">
 			<link wiki="Key:building"/>
 			<space/>
-			<combo key="building" text="Building" values="yes,house,garage,apartments,industrial,residential,detached,terrace,bungalow,hut,roof,garages,school,dormitory,hotel,hangar,commercial,service,train_station,barn,stable,cabin,farm,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,kindergarten,manufacture,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction,basilica,cathedral,chapel,church,temple,mosque,synagogue,transformer_tower,public,ruins" display_values="Yes,House,Garage,Apartments,Industrial,Residential,Detached,Terrace,Bungalow,Hut,Roof,Garages,School,Dormitory,Hotel,Hangar,Commercial,Service,Train station,Barn,Stable,Cabin,Farm,Farm auxiliary,Transportation,Greenhouse,Office,University,College,Hospital,Kindergarten,Manufacture,Warehouse,Retail,Shed,Storage tank,Supermarket,Gasometer,Cowshed,Construction,Basilica,Cathedral,Chapel,Church,Temple,Mosque,Synagogue,Transformer tower,Public,Ruins" values_context="building" default="yes" match="keyvalue!" values_searchable="true"/>
+			<combo key="building" text="Building" values="yes,house,garage,apartments,industrial,residential,detached,terrace,bungalow,hut,roof,garages,school,dormitory,hotel,hangar,commercial,service,train_station,barn,stable,cabin,farm,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,kindergarten,manufacture,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction,basilica,cathedral,chapel,church,temple,mosque,synagogue,transformer_tower,public,ruins" 
+                display_values="Yes,House,Garage,Apartments,Industrial,Residential,Detached,Terrace,Bungalow,Hut,Roof,Garages,School,Dormitory,Hotel,Hangar,Commercial,Service,Train station,Barn,Stable,Cabin,Farm,Farm auxiliary,Transportation,Greenhouse,Office,University,College,Hospital,Kindergarten,Manufacture,Warehouse,Retail,Shed,Storage tank,Supermarket,Gasometer,Cowshed,Construction,Basilica,Cathedral,Chapel,Church,Temple,Mosque,Synagogue,Transformer tower,Public,Ruins" 
+                values_context="building" default="yes" match="keyvalue!" values_searchable="true"/>
 			<reference ref="additional_building_tags"/>
 			<preset_link preset_name="Address"/>
 		</item> <!-- Building -->
@@ -8024,7 +8060,7 @@
         </checkgroup>
     </item> <!-- Payment Methods -->
   </group> <!-- Shops -->
-  <group name="Money" icon="money_bank2.png">
+  <group name="Money" icon="money_bank2.png" items_sort="false" >
     <item name="Bank" icon="money_bank2.png" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:amenity=bank"/>
         <space/>
@@ -8080,7 +8116,7 @@
     </item> <!-- Money lender -->
   </group> <!-- Money -->
   <group name="Geography" icon="poi_peak2.png">
-    <group name="Boundaries" icon="poi_boundary_administrative.png">
+    <group name="Boundaries" icon="poi_boundary_administrative.png" items_sort="false" >
         <item name="Administrative" icon="poi_boundary_administrative.png" type="way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=administrative"/>
             <space/>
@@ -8130,7 +8166,7 @@
             <text key="name" text="Name"/>
         </item> <!-- Maritime -->
     </group> <!-- Boundaries -->
-    <group name="Places" icon="poi_place_city.png">
+    <group name="Places" icon="poi_place_city.png" items_sort="false" >
         <item name="Continent" icon="poi_boundary_administrative.png" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:place=continent"/>
             <space/>

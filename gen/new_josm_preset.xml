@@ -5073,6 +5073,37 @@
             <reference ref="link_contact_address"/>
         </item> <!-- Youth Centre -->
     </group> <!-- Social Facility -->
+    <group name="Clubs" icon="amenity_club_35000.png">
+        <item name="Club" icon="amenity_club_35000.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:club"/>
+            <space/>
+            <combo key="club" text="Club type" values="sport,scout,freemasonry,automobile,music,social,culture,veterans,charity,motorcycle,fan" display_values="Sport,Scouts,Freemasonry,Automobile,Music,Social,Culture,Veterans,Charity,Motorcycle,Fan" match="keyvalue!"/>           
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Club -->
+        <item name="Sport club" icon="amenity_club_sport_35059.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:club=sport"/>
+            <space/>
+            <key key="club" value="sport"/>
+            <reference ref="sport"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Sport club -->
+        <item name="Scouts" icon="amenity_club_scout_35053.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:club=scout"/>
+            <space/>
+            <key key="club" value="scout"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Scouts -->
+        <item name="Automobile" icon="amenity_club_automobile_35005.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:club=automobile"/>
+            <space/>
+            <key key="club" value="automobile"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Automobile -->
+    </group> <!-- Clubs -->
     <group name="Facilities" icon="amenity_telephone.png">
         <item name="Toilets/Restrooms" icon="amenity_toilets.png" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:amenity=toilets"/>

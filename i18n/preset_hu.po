@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2019-03-21 17:08+0100\n"
-"PO-Revision-Date: 2019-03-21 16:10+0000\n"
-"Last-Translator: Báthory Péter <bathory86p@gmail.com>\n"
+"PO-Revision-Date: 2019-03-27 14:44+0000\n"
+"Last-Translator: Gábor Babos <gabor.babos@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/openstreetmap/presets/language/hu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2224,7 +2224,7 @@ msgstr "Óvszer"
 #: master_preset.xml:7109(item:name|group:Food|preset:Confectionery)
 #: master_preset.xml:9650(item:name|group:Crafts|preset:Confectionery)
 msgid "Confectionery"
-msgstr "Édességbolt"
+msgstr "Édesség"
 
 #: master_preset.xml:4563(item:name|group:Public_Building|preset:Conference_Centre)
 msgid "Conference Centre"
@@ -2417,7 +2417,7 @@ msgstr "Vasúti átjáró"
 #: master_preset.xml:1630(combo:text|group:Waypoints|preset:Traffic_Signal|key:supervised)
 #: master_preset.xml:1663(combo:text|group:Waypoints|preset:Pedestrian_Crossing|key:supervised)
 msgid "Crossing attendant"
-msgstr "Vasúti jelzőőr"
+msgstr "Jelzőőr"
 
 #: master_preset.xml:2626(combo:text|group:Railway|preset:Crossing|key:crossing)
 msgid "Crossing type"
@@ -2425,11 +2425,11 @@ msgstr "Vasúti átjáró típusa"
 
 #: master_preset.xml:1627(combo:text|group:Waypoints|preset:Traffic_Signal|key:crossing_ref)
 msgid "Crossing type (UK)"
-msgstr "Vasúti átjáró típusa (Egyesült Királyság)"
+msgstr "Jelzőlámpa típusa (Egyesült Királyság)"
 
 #: master_preset.xml:1661(combo:text|group:Waypoints|preset:Pedestrian_Crossing|key:crossing_ref)
 msgid "Crossing type name (UK)"
-msgstr "Vasútiátjáró-típus neve (Egyesült Királyság)"
+msgstr "Gyalogosátkelő típusa (Egyesült Királyság)"
 
 #: master_preset.xml:8361(text:text|group:Nature|preset:Tree|key:diameter_crown)
 msgid "Crown diameter"
@@ -2481,7 +2481,7 @@ msgstr "Párna"
 #: master_preset.xml:508(combo:display_values|key:access)
 #: master_preset.xml:825(combo:display_values|key:access)
 msgid "Customers"
-msgstr "Ügyfeleknek használható"
+msgstr "Ügyfeleknek"
 
 #: master_preset.xml:9776(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Customs"
@@ -2944,7 +2944,7 @@ msgstr "Sárkány"
 #: master_preset.xml:4910(list_entry:display_value|group:Emergency|preset:Fire_Hydrant|value:drain)
 #: master_preset.xml:9221(combo:display_values|preset:Waterway|key:waterway)
 msgid "Drain"
-msgstr "Vízlevezető csatorna"
+msgstr "Vízlevezető árok"
 
 #: master_preset.xml:4341(list_entry:display_value|group:Culture|preset:Theatre|value:drama)
 msgid "Drama"
@@ -3445,7 +3445,7 @@ msgstr "Elsősegélykészlet"
 #: master_preset.xml:5387(multiselect:display_values|group:Facilities|preset:Animal_breeding|key:animal_breeding)
 #: master_preset.xml:8570(combo:display_values|group:Land_use|preset:Aquaculture|key:aquaculture)
 msgid "Fish"
-msgstr "Haltenyésztés"
+msgstr "Hal"
 
 #: master_preset.xml:402(multiselect:display_values|key:cuisine)
 msgid "Fish and chips"
@@ -3595,7 +3595,7 @@ msgstr "Telepített erdő"
 #: master_preset.xml:2158(combo:display_values|group:Access_Restrictions|preset:Other_mode_restrictions|key:goods)
 #: master_preset.xml:9934(item:name|group:Offices|preset:Forestry)
 msgid "Forestry"
-msgstr "Erdészeti iroda"
+msgstr "Erdészet"
 
 #: master_preset.xml:6950(combo:display_values|group:Historic_Places_&_Objects|preset:Archaeological_Site|key:site_type)
 msgid "Fortification"
@@ -3701,7 +3701,7 @@ msgstr "Funkció"
 
 #: master_preset.xml:7902(item:name|group:Other|preset:Funeral_Directors)
 msgid "Funeral Directors"
-msgstr "Temetkezési vállalkozó"
+msgstr "Temetkezési iroda"
 
 #: master_preset.xml:2577(item:name|group:Railway|preset:Funicular)
 #: master_preset.xml:3148(check:text|group:Public_Transport|preset:Stop_Position|key:funicular)
@@ -3974,7 +3974,7 @@ msgstr "Görög"
 #: master_preset.xml:583(combo:display_values|key:denomination)
 #: master_preset.xml:594(combo:display_values|key:denomination)
 msgid "Greek catholic"
-msgstr "Görög katolikus"
+msgstr "Görögkatolikus"
 
 #: master_preset.xml:573(combo:display_values|key:denomination)
 #: master_preset.xml:594(combo:display_values|key:denomination)
@@ -4345,7 +4345,7 @@ msgstr "Kórház"
 
 #: master_preset.xml:3465(item:name|group:Accommodation|preset:Hostel)
 msgid "Hostel"
-msgstr "Ifjúsági szálló"
+msgstr "Turistaszálló"
 
 #: master_preset.xml:3391(item:name|group:Accommodation|preset:Hotel)
 msgid "Hotel"
@@ -4485,7 +4485,7 @@ msgstr "Jelzőlámpa esetén:"
 #: master_preset.xml:2323(check:text|group:Water|preset:Water|key:tidal)
 #: master_preset.xml:714(check:text|key:tidal)
 msgid "In the tidal range"
-msgstr "Árapály-zónában"
+msgstr "Árapályzónában"
 
 #: master_preset.xml:6476(text:text|group:Man_Made|preset:Surveillance_Camera|key:camera:angle)
 msgid "Inclination in degrees"
@@ -12374,7 +12374,7 @@ msgstr "Mélygarázs"
 #: master_preset.xml:6149(combo:text|preset:Entrance|key:access)
 msgctxt "access"
 msgid "Access"
-msgstr "Hozzáférés"
+msgstr "Használat"
 
 #: master_preset.xml:2071(combo:display_values|group:Access_Restrictions|preset:All_vehicles|key:vehicle)
 #: master_preset.xml:2078(combo:display_values|group:Access_Restrictions|preset:Motor_vehicle|key:motor_vehicle)
@@ -12409,7 +12409,7 @@ msgstr "Kenu"
 #: master_preset.xml:527(combo:display_values|key:access)
 msgctxt "access"
 msgid "Customers"
-msgstr "Ügyfeleknek használható"
+msgstr "Ügyfeleknek"
 
 #: master_preset.xml:2071(combo:display_values|group:Access_Restrictions|preset:All_vehicles|key:vehicle)
 #: master_preset.xml:2078(combo:display_values|group:Access_Restrictions|preset:Motor_vehicle|key:motor_vehicle)
@@ -12452,7 +12452,7 @@ msgstr "Csak célforgalom"
 #: master_preset.xml:527(combo:display_values|key:access)
 msgctxt "access"
 msgid "Forestry"
-msgstr "Erdészeti célra használható"
+msgstr "Erdészeti célra"
 
 #: master_preset.xml:527(combo:text|key:access)
 msgctxt "access"
