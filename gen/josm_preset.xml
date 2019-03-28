@@ -227,7 +227,7 @@
 		</combo>
     </chunk>
     <chunk id="toilets">
-    	<check key="toilets" text="Toilets" disable_off="true"/>
+    	<check key="toilets" text="Toilets"/>
     	<reference ref="diaper"/>
     	<combo key="toilets:wheelchair" text="Wheelchair toilets" match="none" values_searchable="true" values_sort="false">
         	<list_entry value="designated" short_description="Dedicated facilities"/>
@@ -3507,8 +3507,8 @@
             <reference ref="name_operator"/>
             <reference ref="stars"/>
             <checkgroup columns="2">
-                <check key="tents" text="Tents allowed" disable_off="true"/>
-                <check key="caravans" text="Caravans allowed" disable_off="true"/>
+                <check key="tents" text="Tents allowed"/>
+                <check key="caravans" text="Caravans allowed"/>
             </checkgroup>
             <checkgroup columns="2">
                 <check key="backcountry" text="Backcountry" disable_off="true"/>
@@ -4504,7 +4504,7 @@
             <key key="amenity" value="monastery"/>
             <text key="name" text="Name"/>
             <reference ref="religious"/> 
-            <combo key="monastery:type" text="Type" values="monastery,convent,commandry,hermitage" display_values="Monastery,Convent,Commandry,Hermitage"/>
+            <combo key="monastery:type" text="Type" values="monastery,convent,commandry,hermitage" display_values="Monastery,Convent,Commandry,Hermitage" values_context="monastery"/>
             <combo key="community:gender" text="Gender" values="female,male,mixed" display_values="Female,Male,Mixed"/>          
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
@@ -6509,7 +6509,7 @@
         <item name="Bridge Support" icon="highway_bridge_sp.png" type="node,closedway" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Key:bridge:support"/>
             <space/>
-            <combo key="bridge:support" text="Type" values="pier,abutment,lift_pier,pivot_pier,pylon" display_values="Pier,Abutment,Lift pier,Pivot pier,Pylon" match="key"/>
+            <combo key="bridge:support" text="Type" values="pier,abutment,lift_pier,pivot_pier,pylon" display_values="Pier,Abutment,Lift pier,Pivot pier,Pylon" match="key" values_context="bridge"/>
         </item> <!-- Bridge Support -->
         <item name="Bridge outline" icon="highway_bridge_sp.png" type="closedway,multipolygon" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Tag:man_made=bridge"/>
@@ -6916,7 +6916,15 @@
         </item> <!-- Power Cable -->
     </group> <!-- Power -->
   </group> <!-- Man Made -->
-  <group name="Historic Places &amp; Objects" icon="tourist_castle2.png">
+  <group name="Historic Places &amp; Objects" icon="tourist_historic_19021.png">
+    <item name="Historic object" icon="tourist_historic_19021.png" type="node,closedway,multipolygon" preset_name_label="true">
+         <link href="https://wiki.openstreetmap.org/wiki/Key:historic"/>
+         <space/>
+         <combo key="historic" text="Type" values="memorial,ruins,archaeological_site,wayside_shrine,monument,castle,building,charcoal_pile,boundary_stone,tomb,citywalls,mine_shaft,mine,railway,manor,hollow_way,milestone,church,fort,city_gate,wreck,house,stone,wayside_chapel,bunker,pa,farm,roman_road,aircraft,bomb_crater,battlefield,cannon,monastery,bridge,tower,ship,industrial,pillory" display_values="Memorial,Ruins,Archaeological site,Wayside shrine,Monument,Castle,Building,Charcoal pile,Boundary stone,Tomb,Citywalls,Mine shaft,Mine,Railway,Manor,Hollow way,Milestone,Church,Fort,City gate,Wreck,House,Stone,Wayside chapel,Bunker,Pa,Farm,Roman road,Aircraft,Bomb crater,Battlefield,Cannon,Monastery,Bridge,Tower,Ship,Industrial,Pillory" match="keyvalue!"/>
+         <reference ref="name_wikipedia"/>
+         <check key="ruins" text="Ruins"/>
+         <reference ref="link_contact_address_payment"/>
+    </item> <!-- Historic object -->
   	<item name="Castle" icon="tourist_castle2.png" type="node,closedway,multipolygon" preset_name_label="true">
          <link href="https://wiki.openstreetmap.org/wiki/Tag:historic=castle"/>
          <space/>
@@ -6925,6 +6933,14 @@
          <check key="ruins" text="Ruins"/>
          <reference ref="link_contact_address_payment"/>
      </item> <!-- Castle -->
+     <item name="Fort" icon="tourist_fort_19020.png" type="node,closedway,multipolygon" preset_name_label="true">
+         <link href="https://wiki.openstreetmap.org/wiki/Tag:historic=fort"/>
+         <space/>
+         <key key="historic" value="fort"/>
+         <reference ref="name_wikipedia"/>
+         <check key="ruins" text="Ruins"/>
+         <reference ref="link_contact_address_payment"/>
+     </item> <!-- Fort -->
      <item name="City gate" icon="tourist_city_gate_19009.png" type="node,closedway,multipolygon" preset_name_label="true">
          <link href="https://wiki.openstreetmap.org/wiki/Tag:historic=city_gate"/>
          <space/>
