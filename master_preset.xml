@@ -229,7 +229,7 @@
 		</combo>
     </chunk>
     <chunk id="toilets">
-    	<check key="toilets" text="Toilets" disable_off="true"/>
+    	<check key="toilets" text="Toilets" />
     	<reference ref="diaper"/>
     	<combo key="toilets:wheelchair" text="Wheelchair toilets" match="none" values_searchable="true" values_sort="false">
         	<list_entry value="designated" short_description="Dedicated facilities"/>
@@ -3535,8 +3535,8 @@
             <reference ref="name_operator"/>
             <reference ref="stars"/>
             <checkgroup text="Camping type" columns="2">
-                <check key="tents" text="Tents allowed" disable_off="true"/>
-                <check key="caravans" text="Caravans allowed" disable_off="true"/>
+                <check key="tents" text="Tents allowed" />
+                <check key="caravans" text="Caravans allowed" />
             </checkgroup>
             <checkgroup columns="2">
                 <check key="backcountry" text="Backcountry" disable_off="true"/>
