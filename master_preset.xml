@@ -997,7 +997,17 @@
       <combo key="fee" text="Fee" value_type="opening_hours_mixed" values="yes,no,Sa-Su 08:00-20:00"/>
       <reference ref="facility_access"/>
     </optional>
-   </chunk>
+  </chunk>
+  <chunk id="diplomatic">
+    <text key="country" text="Country" />
+    <text key="name" text="Name"/>
+    <text key="target" text="Target" />
+    <checkgroup text="Services">
+        <check key="diplomatic:services:non-immigrant_visas" text="Non-immigrant visas" />
+        <check key="diplomatic:services:immigrant_visas" text="Immigrant visas" />
+        <check key="diplomatic:services:citizen_services" text="Citizen services" /> 
+    </checkgroup>
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
     <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" items_sort="false" >
@@ -4570,7 +4580,7 @@
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Community Centre -->
-        <item name="Embassy" icon="${ICONPATH}poi_embassy.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Embassy" icon="${ICONPATH}poi_embassy.${ICONTYPE}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
             <link wiki="Tag:amenity=embassy"/>
             <space/>
             <key key="amenity" value="embassy"/>
@@ -9807,7 +9817,34 @@
             <key key="office" value="advertising_agency"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Advertising agency -->
+        </item> <!-- Advertising agency -->  
+        <item name="Embassy" icon="${ICONPATH}office_government_25006.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=diplomatic"/>
+            <key key="office" value="diplomatic"/>
+            <key key="diplomatic" value="embassy"/>           
+            <combo key="embassy" text="Type" values="branch_embassy,delegation,high_commission,interests_section,mission,nunciature,residence" display_values="Branch embassy,Delegation,High commission,Interests section,Mission,Nunciature,Residence" />
+            <reference ref="diplomatic"/>
+            <reference ref="oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Embassy -->
+        <item name="Consulate" icon="${ICONPATH}office_government_25006.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=diplomatic"/>
+            <key key="office" value="diplomatic"/>
+            <key key="diplomatic" value="consulate"/>
+            <combo key="consulate" text="Type" values="consular_agency,consular_office,consulate_general,honorary_consul" display_values="Consular agency,Consular office,Consulate general,Honorary consul" />
+            <reference ref="diplomatic"/>
+            <reference ref="oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Consulate -->
+        <item name="Liason" icon="${ICONPATH}office_government_25006.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=diplomatic"/>
+            <key key="office" value="diplomatic"/>
+            <key key="diplomatic" value="liason"/>
+            <combo key="liason" text="Type" values="liaison_office,representative_office,subnational" display_values="Liaison office,Representative office,Subnational" />
+            <reference ref="diplomatic"/>
+            <reference ref="oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Consulate -->
         <item name="Employment agency" icon="${ICONPATH}office_employment_agency_25003.${ICONTYPE}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=employment_agency"/>
             <space/>
