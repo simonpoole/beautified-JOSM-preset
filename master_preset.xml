@@ -4015,7 +4015,7 @@
             <space/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Beach Resort -->
-        <item name="Swimming Pool" icon="${ICONPATH}sport_swimming_outdoor.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Swimming Pool" icon="${ICONPATH}sport_swimming_outdoor.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=swimming_pool"/>
             <key key="leisure" value="swimming_pool"/>
             <space/>
@@ -4023,6 +4023,12 @@
             <space/>
             <reference ref="facility_access"/>
         </item> <!-- Swimming Pool -->
+        <item name="Swimming Area" icon="${ICONPATH}sport_swimming_outdoor.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:leisure=swimming_area"/>
+            <key key="leisure" value="swimming_area"/>
+            <space/>
+            <reference ref="facility_access"/>
+        </item> <!-- Swimming Area -->
         <item name="Fitness Station" icon="${ICONPATH}sport_fitness_station_21009.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
 			<link wiki="Tag:leisure=fitness_station"/>
 			<space/>
