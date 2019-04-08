@@ -2750,6 +2750,14 @@
                 <text key="aerialway:duration" text="Typical journey time in minutes"/>
             </optional>
         </item> <!-- Goods -->
+        <item name="Zip Line" icon="${ICONPATH}transport_zip_line_10005.${ICONTYPE}" type="way" preset_name_label="true">
+            <link wiki="Tag:aerialway=zip_line"/>
+            <space/>
+            <key key="aerialway" value="zip_line"/>
+            <reference ref="name_ref"/>
+            <reference ref="oh"/>
+            <reference ref="facility_access" />
+        </item> <!-- Zip Line -->
         <separator/>
         <item name="Station" name_context="aerialway" icon="${ICONPATH}transport_aerialway_station_10010.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:aerialway=station"/>
