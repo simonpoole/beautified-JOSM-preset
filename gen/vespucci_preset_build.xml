@@ -2750,6 +2750,14 @@
                 <text key="aerialway:duration" text="Typical journey time in minutes"/>
             </optional>
         </item> <!-- Goods -->
+        <item name="Zip Line" icon="icons/png/transport_zip_line_10005.png" type="way" preset_name_label="true">
+            <link wiki="Tag:aerialway=zip_line"/>
+            <space/>
+            <key key="aerialway" value="zip_line"/>
+            <reference ref="name_ref"/>
+            <reference ref="oh"/>
+            <reference ref="facility_access" />
+        </item> <!-- Zip Line -->
         <separator/>
         <item name="Station" name_context="aerialway" icon="icons/png/transport_aerialway_station_10010.png" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:aerialway=station"/>
@@ -4015,7 +4023,7 @@
             <space/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Beach Resort -->
-        <item name="Swimming Pool" icon="icons/png/sport_swimming_outdoor.png" type="node,closedway" preset_name_label="true">
+        <item name="Swimming Pool" icon="icons/png/sport_swimming_outdoor.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=swimming_pool"/>
             <key key="leisure" value="swimming_pool"/>
             <space/>
@@ -4023,6 +4031,12 @@
             <space/>
             <reference ref="facility_access"/>
         </item> <!-- Swimming Pool -->
+        <item name="Swimming Area" icon="icons/png/sport_swimming_outdoor.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:leisure=swimming_area"/>
+            <key key="leisure" value="swimming_area"/>
+            <space/>
+            <reference ref="facility_access"/>
+        </item> <!-- Swimming Area -->
         <item name="Fitness Station" icon="icons/png/sport_fitness_station_21009.png" type="node,closedway,multipolygon" preset_name_label="true">
 			<link wiki="Tag:leisure=fitness_station"/>
 			<space/>
@@ -7812,6 +7826,14 @@
             <space/>
             <key key="shop" value="trade"/>
             <combo key="trade" text="Trade" values="building_supplies,plumbing,timber,agricultural_supplies,tiles,windows" display_values="Building supplies,Plumbing,Timber,Agricultural supplies,Tiles,Windows"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Trade supplies -->
+        <item name="Wholesale" icon="icons/png/shopping_wholesale.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=wholesale"/>
+            <space/>
+            <key key="shop" value="wholesale"/>
+            <combo key="wholesale" text="Type" values="general,food,supermarket,electrical,sanitary,paper,florist,pharmacy,seafood,clothes" display_values="General,Food,Supermarket,Electrical,Sanitary,Paper,Florist,Pharmacy,Seafood,Clothes"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Trade supplies -->
