@@ -2131,7 +2131,7 @@
             <text key="maxspeed:hgv:forward" text="Max. speed HGV &#x2192;" long_text="Maximum speed for heavy goods vehicles in way direction specified in km/h" match="key"/>
             <combo key="maxspeed:hgv:forward:conditional" text="Max speed HGV &#x2192; @" long_text="Conditional maximum speed for heavy goods vehicles in way direction specified in km/h" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|0 @ length=0|0 @ width=0" values_sort="false" match="key"/>
             <text key="maxspeed:hgv:backward" text="Max. speed HGV &#x2190;" long_text="Maximum speed for heavy goods vehicles opposite way direction specified in km/h" match="key"/>
-            <combo key="maxspeed:hgv:backwardward:conditional" text="Max speed HGV &#x2190; @" long_text="Conditional maximum speed for heavy goods vehicles opposite way direction specified in km/h" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|0 @ length=0|0 @ width=0" values_sort="false" match="key"/>
+            <combo key="maxspeed:hgv:backward:conditional" text="Max speed HGV &#x2190; @" long_text="Conditional maximum speed for heavy goods vehicles opposite way direction specified in km/h" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|0 @ length=0|0 @ width=0" values_sort="false" match="key"/>
 	        <reference ref="additional_access_tags"/> 
         </item> <!-- Heavy Goods Vehicle -->
         <item name="General access" type="node,way,closedway" preset_name_label="true">
@@ -2155,7 +2155,7 @@
             <text key="maxspeed:forward" text="Max speed &#x2192;" long_text="Maximum speed in way direction specified in km/h"/>
             <combo key="maxspeed:forward:conditional" text="Max speed &#x2192; @" long_text="Conditional maximum speed in way direction specified in km/h" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>
             <text key="maxspeed:backward" text="Max speed &#x2190;" long_text="Maximum speed opposite way direction specified in km/h"/>
-            <combo key="maxspeed:backwardward:conditional" text="Max speed &#x2190; @" long_text="Conditional maximum speed opposite way direction specified in km/h" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>
+            <combo key="maxspeed:backward:conditional" text="Max speed &#x2190; @" long_text="Conditional maximum speed opposite way direction specified in km/h" match="key" delimiter="|" values="0 @ wet|0 @ dry|0 @ rain|0 @ snow|0 @ hazmat|0 @ weight=0|private @ length=0|0 @ width=0"/>
         </item> <!--  Conditional max speed -->
         <item name="Other mode restrictions" icon="${ICONPATH}no_walking.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
