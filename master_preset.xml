@@ -6693,9 +6693,10 @@
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="solar_photovoltaic_panel" short_description="photovoltaic"/>
                     <list_entry value="solar_thermal_collector" short_description="solar thermal"/>
-                    <list_entry value="steam_turbine" short_description="thermal"/>
+                    <list_entry value="steam_turbine" short_description="steam turbine"/>
                 </combo>
                 <reference ref="power_output"/>
+                <combo key="location" text="Location" values="surface, rooftop" values_context="generator location"/>
             </item> <!-- Solar Power Generator -->
             <item name="Waste Power Generator" icon="${ICONPATH}power_generator_waste_26028.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="waste"/>
