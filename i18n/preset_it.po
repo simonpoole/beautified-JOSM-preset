@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2019-04-08 22:59+0200\n"
-"PO-Revision-Date: 2019-05-02 09:25+0000\n"
-"Last-Translator: Marco <marcxosm@gmail.com>\n"
+"PO-Revision-Date: 2019-05-20 14:49+0000\n"
+"Last-Translator: Manuel Tassi <manueltassi91@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/openstreetmap/presets/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1501,7 +1501,7 @@ msgstr "Passaggio sotto edifici"
 
 #: master_preset.xml:8982(role:text|group:Relations|preset:Building|key:level_-?\\d+)
 msgid "Building level"
-msgstr "Piani dell'edificio"
+msgstr "Piano dell'edificio"
 
 #: master_preset.xml:6114(item:name|group:Buildings|preset:Building_part)
 msgid "Building part"
@@ -3657,7 +3657,7 @@ msgstr "Per gruppi"
 
 #: master_preset.xml:201(combo:long_text|key:level)
 msgid "For indoor mapping, level 0 is the ground floor"
-msgstr "Per la mappatura di interni, il livello 0 è il piano terra"
+msgstr "Per la mappatura di interni, il piano 0 è il piano terra"
 
 #: master_preset.xml:5421(check:text|group:Facilities|preset:Animal_shelter|key:animal_shelter:release)
 msgid "For release"
@@ -5114,11 +5114,11 @@ msgstr "Leopardo"
 
 #: master_preset.xml:201(combo:text|key:level)
 msgid "Level"
-msgstr "Livello"
+msgstr "Piano"
 
 #: master_preset.xml:2624(item:name|group:Railway|preset:Level_Crossing)
 msgid "Level Crossing"
-msgstr "Passaggio a livello"
+msgstr "Passaggio a livello a raso"
 
 #: master_preset.xml:9865(combo:display_values|group:Offices|preset:Liason|key:liason)
 msgid "Liaison office"
@@ -13452,7 +13452,7 @@ msgstr ""
 #: master_preset.xml:907(combo:text|key:max_level)
 msgctxt "building"
 msgid "Max. level"
-msgstr "Livello max"
+msgstr "Piano più alto"
 
 #: master_preset.xml:908(combo:display_values|key:building:use)
 msgctxt "building"
@@ -13476,7 +13476,7 @@ msgstr "Placche di metallo"
 #: master_preset.xml:906(combo:text|key:min_level)
 msgctxt "building"
 msgid "Min. level"
-msgstr "Livello min"
+msgstr "Piano più basso"
 
 #: master_preset.xml:897(combo:display_values|key:building:frame:material)
 #: master_preset.xml:898(combo:display_values|key:building:wall:material)
@@ -13641,7 +13641,7 @@ msgstr ""
 #: master_preset.xml:6119(combo:text|group:Buildings|preset:Building_part|key:building:min_level)
 msgctxt "building"
 msgid "Skipped Levels"
-msgstr "Livelli mancanti"
+msgstr "Piani mancanti"
 
 #: master_preset.xml:908(combo:display_values|key:building:use)
 msgctxt "building"
@@ -13766,7 +13766,7 @@ msgstr "Sì"
 #: master_preset.xml:887(combo:text|key:roof:levels)
 msgctxt "roof_levels"
 msgid "Levels (roof)"
-msgstr "Livelli (tetto)"
+msgstr "Piani (tetto)"
 
 #: master_preset.xml:1302(combo:display_values|group:Streets|preset:Service|key:service)
 msgctxt "Highway"
