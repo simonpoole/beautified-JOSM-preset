@@ -3222,6 +3222,7 @@
             <key key="railway" value="subway_entrance"/>
             <optional>
                 <text key="name" text="Name"/>
+                <text key="ref" text="Reference"/>
                 <reference ref="wheelchair"/>
                 <check key="bicycle" text="Bicycle" disable_off="true"/>
             </optional>
