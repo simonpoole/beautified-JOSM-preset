@@ -1688,7 +1688,7 @@
             <item name="Traffic Calming" icon="${ICONPATH}transport_speedbump.${ICONTYPE}" type="node,way" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
                 <space/>
-                <combo key="traffic_calming" text="Type" values="bump,hump,table,cushion,rumble_strip,dip,double_dip,chicane,chocker,island,choked_island" display_values="Bump,Hump,Table,Cushion,Rumble strip,Dip,Double dip,Chicane,Chocker,Island,Choked island" match="keyvalue!" />
+                <combo key="traffic_calming" text="Type" values="bump,hump,table,cushion,rumble_strip,dip,double_dip,chicane,choker,island,choked_island" display_values="Bump,Hump,Table,Cushion,Rumble strip,Dip,Double dip,Chicane,Chocker,Island,Choked island" match="keyvalue!" />
             </item> <!-- Traffic Calming -->
             <item name="Bump" icon="${ICONPATH}transport_speedbump.${ICONTYPE}" type="node,way" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
