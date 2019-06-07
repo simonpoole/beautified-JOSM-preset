@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2019-05-25 20:49+0200\n"
+"POT-Creation-Date: 2019-06-07 14:47+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1793,10 +1793,6 @@ msgstr ""
 msgid "Chiropractic"
 msgstr ""
 
-#: master_preset.xml:1691(combo:display_values|group:Traffic_Calming|preset:Traffic_Calming|key:traffic_calming)
-msgid "Chocker"
-msgstr ""
-
 #: master_preset.xml:7254(item:name|group:Food|preset:Chocolate)
 msgid "Chocolate"
 msgstr ""
@@ -1805,7 +1801,7 @@ msgstr ""
 msgid "Choked island"
 msgstr ""
 
-#: master_preset.xml:1729(item:name|group:Traffic_Calming|preset:Choker)
+#: master_preset.xml:1691(combo:display_values|group:Traffic_Calming|preset:Traffic_Calming|key:traffic_calming) master_preset.xml:1729(item:name|group:Traffic_Calming|preset:Choker)
 msgid "Choker"
 msgstr ""
 
@@ -10637,37 +10633,32 @@ msgid "Sidewalk"
 msgstr ""
 
 #: master_preset.xml:131(multiselect:text|key:crossing)
-msgctxt "transport"
+msgctxt "pedestrian"
 msgid "Crossing type"
 msgstr ""
 
 #: master_preset.xml:134(list_entry:short_description|value:island)
-msgctxt "transport"
+msgctxt "pedestrian"
 msgid "Island"
 msgstr ""
 
 #: master_preset.xml:136(list_entry:short_description|value:no)
-msgctxt "transport"
+msgctxt "pedestrian"
 msgid "No crossing"
 msgstr ""
 
 #: master_preset.xml:132(list_entry:short_description|value:uncontrolled)
-msgctxt "transport"
+msgctxt "pedestrian"
 msgid "Not controlled"
 msgstr ""
 
-#: master_preset.xml:2939(combo:text|group:Car|preset:Car_Dealer|key:second_hand) master_preset.xml:3011(combo:text|group:Motorcycle|preset:Motorcycle_Dealer|key:second_hand)
-msgctxt "transport"
-msgid "Second hand"
-msgstr ""
-
 #: master_preset.xml:133(list_entry:short_description|value:traffic_signals)
-msgctxt "transport"
+msgctxt "pedestrian"
 msgid "Traffic signals"
 msgstr ""
 
 #: master_preset.xml:135(list_entry:short_description|value:unmarked)
-msgctxt "transport"
+msgctxt "pedestrian"
 msgid "Unmarked"
 msgstr ""
 
@@ -12439,6 +12430,11 @@ msgstr ""
 #: master_preset.xml:2776(item:name|group:Aerialway|preset:Station)
 msgctxt "aerialway"
 msgid "Station"
+msgstr ""
+
+#: master_preset.xml:2939(combo:text|group:Car|preset:Car_Dealer|key:second_hand) master_preset.xml:3011(combo:text|group:Motorcycle|preset:Motorcycle_Dealer|key:second_hand)
+msgctxt "transport"
+msgid "Second hand"
 msgstr ""
 
 #: master_preset.xml:2948(multiselect:text|group:Car|preset:Repair|key:service)
