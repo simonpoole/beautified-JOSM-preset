@@ -128,7 +128,7 @@
         </optional>
     </chunk>
     <chunk id="crossing_type">    
-    	<multiselect key="crossing" text="Crossing type" values_context="transport">
+    	<multiselect key="crossing" text="Crossing type" values_context="pedestrian" text_context="pedestrian">
  			<list_entry value="uncontrolled" short_description="Not controlled" icon="presets/vehicle/crossing.svg"/>
  			<list_entry value="traffic_signals" short_description="Traffic signals" icon="presets/vehicle/crossing_traffic_signals.svg"/>
 			<list_entry value="island" short_description="Island" icon="presets/vehicle/crossing_island.svg"/>
