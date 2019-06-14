@@ -5267,7 +5267,7 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="fee"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Company -->
+        </item> <!-- Coworking space -->
         <item name="Internet Cafe" icon="${ICONPATH}amenity_internet_cafe.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=internet_cafe"/>
             <space/>
@@ -10038,7 +10038,10 @@
             <link wiki="Tag:office=company"/>
             <space/>
             <key key="office" value="company"/>
-            <reference ref="name_oh_wheelchair_level"/>
+            <text key="name" text="Name"/>
+            <optional>
+                <reference ref="oh_wheelchair_level"/>
+            </optional>
             <reference ref="link_contact_address"/>
         </item> <!-- Company -->
         <item name="Educational institution" icon="${ICONPATH}office_educational_institution_25028.${ICONTYPE}" type="node,closedway,multipolygon">
