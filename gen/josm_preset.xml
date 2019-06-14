@@ -4824,6 +4824,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Other healthcare facilities -->
+        <item name="Laboratory" icon="health_laboratory_16110.png" type="node,closedway,multipolygon">
+            <link href="https://wiki.openstreetmap.org/wiki/Key:healthcare"/>
+            <space/>
+            <key key="healthcare" value="laboratory"/>
+            <reference ref="name_oh_wheelchair"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Laboratory -->
         <item name="Alternative medicine" icon="health_alternative.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Key:healthcare"/>
             <space/>
@@ -5228,7 +5235,7 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="fee"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Company -->
+        </item> <!-- Coworking space -->
         <item name="Internet Cafe" icon="amenity_internet_cafe.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Tag:amenity=internet_cafe"/>
             <space/>
@@ -9995,7 +10002,10 @@
             <link href="https://wiki.openstreetmap.org/wiki/Tag:office=company"/>
             <space/>
             <key key="office" value="company"/>
-            <reference ref="name_oh_wheelchair_level"/>
+            <text key="name" text="Name"/>
+            <optional>
+                <reference ref="oh_wheelchair_level"/>
+            </optional>
             <reference ref="link_contact_address"/>
         </item> <!-- Company -->
         <item name="Educational institution" icon="office_educational_institution_25028.png" type="node,closedway,multipolygon">
