@@ -9925,11 +9925,11 @@
             <reference ref="oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Consulate -->
-        <item name="Liason" icon="${ICONPATH}office_government_25006.${ICONTYPE}" type="node,closedway,multipolygon">
+        <item name="Liaison" icon="${ICONPATH}office_government_25006.${ICONTYPE}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=diplomatic"/>
             <key key="office" value="diplomatic"/>
-            <key key="diplomatic" value="liason"/>
-            <combo key="liason" text="Type" values="liaison_office,representative_office,subnational" display_values="Liaison office,Representative office,Subnational" />
+            <key key="diplomatic" value="liaison"/>
+            <combo key="liaison" text="Type" values="liaison_office,representative_office,subnational" display_values="Liaison office,Representative office,Subnational" />
             <reference ref="diplomatic"/>
             <reference ref="oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
