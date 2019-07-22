@@ -584,7 +584,7 @@
         <combo key="denomination" text="Denomination" 
             values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic"
             display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic" 
-            default="catholic" values_searchable="true" />
+            default="catholic" values_searchable="true" use_last_as_default="true" />
     </chunk>
     <chunk id="other_religions"> <!-- religions which don't have an own preset -->
         <combo key="religion" text="Religion" values="bahai,caodaism,confucian,jain,sikh,spiritualist,taoist,tenrikyo,unitarian_universalist,zoroastrian" 
