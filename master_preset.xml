@@ -933,7 +933,7 @@
 	<reference ref="roof_main"/>
   </chunk>
   <chunk id="education_operator_type">
-  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious"/>
+  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious" values_context="operator" />
   </chunk>
   <chunk id="isced_level">
   	<multiselect key="isced:level" text="ISCED level" delimiter=";" match="key" editable="true">
@@ -2642,7 +2642,7 @@
                 <check key="supervised" text="Supervised" disable_off="true"/>
                 <check key="crossing:light" text="Traffic lights" disable_off="true"/>
                 <check key="crossing:bell" text="Sound signals" disable_off="true"/>
-                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" values_context="crossing:barrier"/>
+                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
             </optional>
         </item> <!-- Level Crossing -->
         <item name="Crossing" icon="${ICONPATH}level_crossing.${ICONTYPE}" type="node" preset_name_label="true">
