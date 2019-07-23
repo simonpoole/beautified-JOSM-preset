@@ -18,6 +18,12 @@
     <chunk id="surface">
         <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud" display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface"/>
     </chunk>
+    <chunk id="footway_surface">
+        <combo key="footway:surface" text="Segregated footway surface" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud" display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface"/>
+    </chunk>
+    <chunk id="cycleway_surface">
+        <combo key="cycleway:surface" text="Segregated cycleway surface" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud" display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface"/>
+    </chunk>
     <chunk id="surface_smoothness">
         <reference ref="surface"/>
         <combo key="smoothness" text="Smoothness" values_searchable="true" values_sort="false">
@@ -568,7 +574,7 @@
     </chunk>
     <chunk id="religious_catholic_christian"> <!-- special case for wayside_shrine and wayside_cross: all religions and catholic denominations with default to catholic christian -->
         <combo key="religion" text="Religion" values="bahai,buddhist,caodaism,christian,confucian,hindu,jain,jewish,muslim,shinto,sikh,spiritualist,taoist,tenrikyo,unitarian_universalist,zoroastrian" display_values="Bahai,Buddhist,Caodaism,Christian,Confucian,Hindu,Jain,Jewish,Muslim,Shinto,Sikh,Spiritualist,Taoist,Tenrikyo,Unitarian universalist,Zoroastrian" default="christian" values_searchable="true"/>
-        <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic" default="catholic" values_searchable="true"/>
+        <combo key="denomination" text="Denomination" values="catholic,greek_catholic,old_catholic,orthodox,roman_catholic" display_values="Catholic,Greek catholic,Old catholic,Orthodox,Roman catholic" default="catholic" values_searchable="true" use_last_as_default="true"/>
     </chunk>
     <chunk id="other_religions"> <!-- religions which don't have an own preset -->
         <combo key="religion" text="Religion" values="bahai,caodaism,confucian,jain,sikh,spiritualist,taoist,tenrikyo,unitarian_universalist,zoroastrian" display_values="Bahai,Caodaism,Confucian,Jain,Sikh,Spiritualist,Taoist,Tenrikyo,Unitarian universalist,Zoroastrian" match="keyvalue!" values_searchable="true"/>
@@ -912,7 +918,7 @@
 	<reference ref="roof_main"/>
   </chunk>
   <chunk id="education_operator_type">
-  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious"/>
+  	<combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious" values_context="operator"/>
   </chunk>
   <chunk id="isced_level">
   	<multiselect key="isced:level" text="ISCED level" delimiter=";" match="key" editable="true">
@@ -1508,6 +1514,8 @@
             <optional>
                 <reference ref="name_layer"/>
                 <reference ref="surface_smoothness"/>
+                <reference ref="cycleway_surface"/>
+                <reference ref="footway_surface"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width"/>
                 <combo key="foot" text="Pedestrians" values="designated,yes,no" display_values="Designated,Yes,No"/>
                 <check key="segregated" text="Segregated" disable_off="true"/>
@@ -1522,6 +1530,8 @@
             <optional>
                 <reference ref="name_layer"/>
                 <reference ref="surface_smoothness"/>
+                <reference ref="cycleway_surface"/>
+                <reference ref="footway_surface"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width"/>
             </optional>
         </item> <!-- Segregated Foot- and Cycleway -->
@@ -1545,6 +1555,8 @@
                 <combo key="footway" text="Type" values="sidewalk,crossing" display_values="Sidewalk,Crossing" values_context="footway"/>
                 <reference ref="name_layer"/>
                 <reference ref="surface_smoothness"/>
+                <reference ref="cycleway_surface"/>
+                <reference ref="footway_surface"/>
                 <reference ref="highway_yesno_incline"/>
                 <check key="lit" text="Lit" disable_off="true"/>
                 <combo key="bicycle" text="Bicycle" values="designated,yes,no" display_values="Designated,Yes,No"/>
@@ -9889,11 +9901,11 @@
             <reference ref="oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Consulate -->
-        <item name="Liason" icon="office_government_25006.png" type="node,closedway,multipolygon">
+        <item name="Liaison" icon="office_government_25006.png" type="node,closedway,multipolygon">
             <link href="https://wiki.openstreetmap.org/wiki/Tag:office=diplomatic"/>
             <key key="office" value="diplomatic"/>
-            <key key="diplomatic" value="liason"/>
-            <combo key="liason" text="Type" values="liaison_office,representative_office,subnational" display_values="Liaison office,Representative office,Subnational"/>
+            <key key="diplomatic" value="liaison"/>
+            <combo key="liaison" text="Type" values="liaison_office,representative_office,subnational" display_values="Liaison office,Representative office,Subnational"/>
             <reference ref="diplomatic"/>
             <reference ref="oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
