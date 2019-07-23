@@ -21,6 +21,14 @@
         <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud" 
                                     display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface"/>
     </chunk>
+    <chunk id="footway_surface">
+        <combo key="footway:surface" text="Segregated footway surface" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud" 
+                                    display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface"/>
+    </chunk>
+    <chunk id="cycleway_surface">
+        <combo key="cycleway:surface" text="Segregated cycleway surface" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud" 
+                                    display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface"/>
+    </chunk>
     <chunk id="surface_smoothness">
         <reference ref="surface"/>
         <combo key="smoothness" text="Smoothness" values_searchable="true" values_sort="false">
@@ -1529,6 +1537,8 @@
             <optional>
                 <reference ref="name_layer"/>
                 <reference ref="surface_smoothness"/>
+                <reference ref="cycleway_surface"/>
+                <reference ref="footway_surface"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width"/>
                 <combo key="foot" text="Pedestrians" values="designated,yes,no" display_values="Designated,Yes,No"/>
                 <check key="segregated" text="Segregated" disable_off="true"/>
@@ -1543,6 +1553,8 @@
             <optional>
                 <reference ref="name_layer"/>
                 <reference ref="surface_smoothness"/>
+                <reference ref="cycleway_surface"/>
+                <reference ref="footway_surface"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width"/>
             </optional>
         </item> <!-- Segregated Foot- and Cycleway -->
@@ -1566,6 +1578,8 @@
                 <combo key="footway" text="Type" values="sidewalk,crossing" display_values="Sidewalk,Crossing" values_context="footway"/>
                 <reference ref="name_layer"/>
                 <reference ref="surface_smoothness"/>
+                <reference ref="cycleway_surface"/>
+                <reference ref="footway_surface"/>
                 <reference ref="highway_yesno_incline"/>
                 <check key="lit" text="Lit" disable_off="true"/>
                 <combo key="bicycle" text="Bicycle" values="designated,yes,no" display_values="Designated,Yes,No"/>
