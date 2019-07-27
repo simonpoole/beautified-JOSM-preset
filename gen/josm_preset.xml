@@ -2245,7 +2245,7 @@
             <link href="https://wiki.openstreetmap.org/wiki/Tag:waterway=weir"/>
             <space/>
             <key key="waterway" value="weir"/>
-            <text key="name" text="Name"/>
+            <reference ref="optional_name_wikipedia"/>
         </item> <!-- Weir -->
         <item name="Dam" icon="water_dam.png" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Tag:waterway=dam"/>
