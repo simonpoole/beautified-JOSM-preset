@@ -841,10 +841,12 @@
   <!-- Link chunks -->
   <chunk id="link_contact_address">
     <preset_link preset_name="Contact"/>
+    <preset_link preset_name="Contact ('contact:*')"/>
     <preset_link preset_name="Address"/>
   </chunk>
   <chunk id="link_contact_address_payment">
     <preset_link preset_name="Contact"/>
+    <preset_link preset_name="Contact ('contact:*')"/>
     <preset_link preset_name="Address"/>
     <preset_link preset_name="Payment Methods"/>
   </chunk>
