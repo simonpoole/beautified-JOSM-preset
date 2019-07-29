@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming">
+    object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery">
 <!--
     Icons have been derived from mainly from
   
@@ -181,6 +181,10 @@
             <check key="bicycle" text="Bicycle"/>
         </optional>
     </chunk>
+    <chunk id="traffic_signals_direction">
+        <combo key="direction" text="For traffic direction" values="N,E,S,W,0,90,180,270,forward,backward" 
+               display_values="North,East,South,West,0°,90°,180°,270°,Forward,Backward" values_sort="false" /> 
+    </chunk>
     <chunk id="min_age">
         <text key="min_age" text="Minimum age"/>
     </chunk>
@@ -282,6 +286,10 @@
     <chunk id="oh_wheelchair_level">
         <reference ref="oh_wheelchair"/>
 		<reference ref="level"/>
+    </chunk>
+    <chunk id="oh_wheelchair_toilets">
+        <reference ref="oh_wheelchair"/>
+        <reference ref="toilets_with_access"/>
     </chunk>
     <chunk id="name_oh_wheelchair">
         <text key="name" text="Name"/>
@@ -411,7 +419,8 @@
     	<combo key="organic" text="Organic" values="only,yes,no" display_values="Only,Yes,No"/>
     </chunk>
 	<chunk id="cuisine">
-    	<multiselect key="cuisine" text="Cuisine" values="italian;chinese;pizza;burger;greek;german;indian;regional;kebab;turkish;asian;thai;mexican;japanese;french;sandwich;coffee_shop;sushi;steak_house;fish_and_chips;chicken;american;ice_cream;international;seafood;spanish;vietnamese;fish;noodle;barbecue;vegetarian;korean;donut;mediterranean;friture;crepe" display_values="Italian;Chinese;Pizza;Burger;Greek;German;Indian;Regional;Kebab;Turkish;Asian;Thai;Mexican;Japanese;French;Sandwich;Coffee shop;Sushi;Steak house;Fish and chips;Chicken;American;Ice cream;International;Seafood;Spanish;Vietnamese;Fish;Noodle;Barbecue;Vegetarian;Korean;Donut;Mediterranean;Friture;Crepe" values_searchable="true" match="key"/>
+    	<multiselect key="cuisine" text="Cuisine" values="african;american;arab;argentinian;asian;bagel;balkan;barbecue;bavarian;brazilian;burger;cake;caribbean;chicken;chinese;coffee_shop;crepe;curry;danish;donut;ethiopian;fish;fish_and_chips;fondue,french;friture;german;greek;ice_cream;indian;indonesian;international;italian;japanese;kebab;korean;lebanese;mediterranean;mexican;moroccan;noodle;pancake;pasta;peruvian;pizza;polish;portuguese;regional;russian;sandwich;sausage;seafood;spanish;steak_house;sushi;tapas;thai;turkish;vietnamese"
+            display_values="African;American;Arab;Argentinian;Asian;Bagel;Balkan;Barbecue;Bavarian;Brazilian;Burger;Cake;Caribbean;Chicken;Chinese;Coffee shop;Crepe;Curry;Danish;Donut;Ethiopian;Fish;Fish and chips;FondueFrench;Friture;German;Greek;Ice cream;Indian;Indonesian;International;Italian;Japanese;Kebab;korean;Lebanese;Mediterranean;Mexican;Moroccan;Noodle;Pancake;Pasta;Peruvian;Pizza;Polish;Portuguese;Regional;Russian;Sandwich;Sausage;Seafood;Spanish;Steak house;Sushi;Tapas;Thai;Turkish;Vietnamese" values_searchable="true" match="key"/>
     </chunk>
     <chunk id="clothes">
     	<multiselect key="clothes" text="Kind of clothes" values_searchable="true" match="key">
@@ -620,7 +629,7 @@
     <!-- shinto and the religions which don't have an own preset don't have denominations (yet) -->
     <!-- end of religions and denominations --> 
     <chunk id="voltage">
-        <combo key="voltage" text="Voltage in Volts (V)" values="1150000,765000,750000,735000,500000,450000,420000,400000,380000,350000,345000,330000,315000,300000,275000,238000,230000,225000,220000,200000,161000,154000,150000,138000,132000,120000,115000,110000,100000,90000,69000,66000,65000,63000,60000,55000,49000,45000,35000,33000,30000,22000,20000,15000,15000;200000,110000;20000" values_sort="false"/>
+        <combo key="voltage" text="Voltage in Volts (V)" values="1150000,765000,750000,735000,500000,450000,420000,400000,380000,350000,345000,330000,315000,300000,275000,238000,230000,225000,220000,200000,161000,154000,150000,138000,132000,120000,115000,110000,100000,90000,69000,66000,65000,63000,60000,55000,49000,45000,35000,33000,30000,22000,20000,15000,15000,110000;20000" values_sort="false"/>
     </chunk>
     <chunk id="frequency">
         <combo key="frequency" text="Frequency in Hertz (Hz)" values="0,16.67,16.7,50,60" length="5" values_sort="false"/>
@@ -818,6 +827,11 @@
         <list_entry value="rolled" display_value="Rolled"/>
      </combo>
   </chunk>
+  <chunk id="colours">
+    <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" 
+        values="black,blue,brown,gray,green,orange,#CD853F,purple,red,silver,white,yellow"
+        display_values="Black,Blue,Brown,Gray,Green,Orange,Peru,Purple,Red,Silver,White,Yellow" match="none" editable="true"/>
+  </chunk>
   <chunk id="public_transport_route_optionals">
     <text key="from" text="From (initial stop)"/>
     <text key="to" text="To (terminal stop)"/>
@@ -825,7 +839,7 @@
     <text key="operator" text="Operator"/>
     <text key="network" text="Network"/>
     <text key="description" text="Description" length="255"/>
-    <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true"/>
+    <reference ref="colours" />
     <combo key="interval" text="Interval (M, MM, HH:MM, or HH:MM:SS)" values="5,10,15,20,30,60,120" values_no_i18n="true" />
   </chunk>
   <chunk id="tactile_paving">
@@ -1022,6 +1036,13 @@
         <check key="diplomatic:services:citizen_services" text="Citizen services" /> 
     </checkgroup>
   </chunk>
+  <chunk id="nudism">
+    <combo key="nudism" text="Nudism" values="yes,no,obligatory,designated,customary,permissive"
+        display_values="Yes,No,Obligatory,Designated,Customary,Permissive" />
+  </chunk>
+  <chunk id="reservation">
+    <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" display_values="Yes,No,Required,Recommended,Members only" />
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
     <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" items_sort="false" >
@@ -1056,7 +1077,8 @@
             <optional>
                 <reference ref="highway_base"/>
                 <text key="destination" text="Destination"/>
-                <text key="destination:ref" text="Destination reference"/>                
+                <text key="destination:ref" text="Destination reference"/>
+                <text key="junction:ref" text="Junction reference" />                
                 <text key="width" text="Width (meters)"/>
                 <reference ref="placement"/>
                 <checkgroup text="Additional attributes" columns="4">
@@ -1107,6 +1129,7 @@
                 <reference ref="highway_base"/>
                 <text key="destination" text="Destination"/>
                 <text key="destination:ref" text="Destination reference"/>
+                <text key="junction:ref" text="Junction reference" />
                 <text key="width" text="Width (meters)"/>
                 <reference ref="placement"/>
                 <checkgroup text="Additional attributes" columns="4">
@@ -1149,6 +1172,9 @@
                 <reference ref="highway_ref"/>
                 <text key="name" text="Name"/>
                 <reference ref="highway_base"/>
+                <text key="destination" text="Destination" />
+                <text key="destination:ref" text="Destination reference" />
+                <text key="junction:ref" text="Junction reference" />
                 <check key="motorroad" text="Motorroad" disable_off="true"/>
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
                 <reference ref="placement"/>
@@ -1181,6 +1207,8 @@
                 <reference ref="highway_ref"/>
             	<text key="name" text="Name"/>
                 <reference ref="highway_base"/>
+                <text key="destination" text="Destination" />
+                <text key="destination:ref" text="Destination reference" />
                 <reference ref="highway_yesno_incline_oneway_lit_width_sidewalk"/>
                 <reference ref="placement"/>
             </optional>
@@ -1654,7 +1682,7 @@
             <link wiki="Tag:highway=traffic_signals"/>
             <key key="highway" value="traffic_signals"/>
             <optional text="Optional crossing attributes:">
-                <combo key="traffic_signals:direction" text="For traffic direction" values="forward,backward" display_values="Forward,Backward"/>
+                <combo key="traffic_signals:direction" text="For traffic direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
             	<reference ref="crossing_type"/>
                 <combo key="crossing_ref" text="Crossing type (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger"/>
                 <check key="button_operated" text="Button operated" disable_off="true"/>
@@ -1671,13 +1699,17 @@
         <item name="Stop" icon="${ICONPATH}highway_stop_18064.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=stop"/>
             <key key="highway" value="stop"/>
-            <combo key="direction" text="For traffic direction" values="forward,backward" display_values="Forward,Backward"/> 
+            <reference ref="traffic_signals_direction" /> 
         </item> <!-- Stop -->
         <item name="Give Way" icon="${ICONPATH}give_way.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=give_way"/>
             <key key="highway" value="give_way"/>
-            <combo key="direction" text="For traffic direction" values="forward,backward" display_values="Forward,Backward"/>
+            <reference ref="traffic_signals_direction" /> 
         </item> <!-- Give Way -->
+        <item name="Advanced stop line" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:cycleway=asl" />
+            <key key="cycleway" value="asl" />
+        </item> <!-- Advanced stop line -->
         <item name="Mini-Roundabout" icon="${ICONPATH}transport_miniroundabout_clockwise.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=mini_roundabout"/>
             <key key="highway" value="mini_roundabout"/>
@@ -1770,7 +1802,8 @@
             <space/>
             <key key="traffic_sign" value="city_limit"/>
             <text key="name" text="Name"/>
-            <combo key="direction" text="Direction on way" values="forward,backward" display_values="Forward,Backward"/> 
+            <text key="alt_name" text="Alternate name" />
+            <reference ref="traffic_signals_direction" /> 
             <preset_link preset_name="Name"/>
         </item> <!-- City Limit -->
         <item name="Speed Limit Sign" icon="${ICONPATH}speed_limit.${ICONTYPE}" type="node" preset_name_label="true">
@@ -1778,7 +1811,7 @@
             <space/>
             <key key="traffic_sign" value="maxspeed"/>
             <reference ref="maxspeed"/>
-            <combo key="direction" text="Direction on way" values="forward,backward" display_values="Forward,Backward"/> 
+            <reference ref="traffic_signals_direction" /> 
         </item> <!-- Speed Limit -->
         <item name="Traffic Sign Forward" icon="${ICONPATH}traffic_signs.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Key:traffic_sign"/>
@@ -1797,6 +1830,13 @@
                 <text key="maxspeed" text="Max. speed (km/h)"/>
             </optional>
         </item> <!-- Speed Camera -->
+        <item name="Toll gantry" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:highway=toll_gantry" />
+            <key key="highway" value="toll_gantry" />
+            <optional>
+                <text key="operator" text="Operator" />
+            </optional>
+        </item> <!-- Toll gantry -->
         <item name="Traffic Mirror" icon="${ICONPATH}highway_traffic_mirror_18049.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=traffic_mirror"/>
             <key key="highway" value="traffic_mirror"/>
@@ -2314,7 +2354,7 @@
             <key key="man_made" value="pipeline"/>
             <key key="substance" value="water"/>
             <key key="usage" value="penstock"/>
-            <combo key="location" text="Location" values="underground,overground" values_context="pipeline"/>
+            <combo key="location" text="Location" values="overground,underground" display_values="Overground,Underground" values_context="pipeline"/>
             <optional>
                 <text key="name" text="Name"/>
                 <text key="operator" text="Operator"/>
@@ -2380,16 +2420,17 @@
             <key key="natural" value="wetland"/>
             <reference ref="optional_name"/>
             <combo key="wetland" text="Type" values_searchable="true">
-            	<list_entry value="swamp" short_description="Swamp"/>
-            	<list_entry value="bog" short_description="Bog"/>
-            	<list_entry value="marsh" short_description="Marsh"/>
-            	<list_entry value="reedbed" short_description="Reedbed"/>
-            	<list_entry value="saltmarsh" short_description="Saltmarsh"/>
-            	<list_entry value="tidalflat" short_description="Tidalflat"/>
+                <list_entry value="bog" short_description="Bog"/>
+            	<list_entry value="fen" short_description="Fen"/>
             	<list_entry value="mangrove" short_description="Mangrove"/>
-            	<list_entry value="wet_meadow" short_description="Wet meadow"/>
-            	<list_entry value="string_bog" short_description="String bog"/>
+            	<list_entry value="marsh" short_description="Marsh"/>
+                <list_entry value="reedbed" short_description="Reedbed"/>
             	<list_entry value="saltern" short_description="Saltern"/>
+                <list_entry value="saltmarsh" short_description="Saltmarsh"/>
+                <list_entry value="string_bog" short_description="String bog"/>
+                <list_entry value="swamp" short_description="Swamp"/>
+                <list_entry value="tidalflat" short_description="Tidalflat"/>
+                <list_entry value="wet_meadow" short_description="Wet meadow"/>
             </combo>
         </item> <!-- Wetland -->
         <item name="Mud" icon="presets/mud.png" type="closedway,multipolygon" preset_name_label="true">
@@ -2411,6 +2452,7 @@
                 <reference ref="general_access"/>
                 <combo key="surface" text="Surface" values="gravel,pebblestone,sand" display_values="Gravel,Pebblestone,Sand"/>
                 <combo key="sport" text="Sport" values="swimming,surfing" display_values="Swimming,Surfing"/>
+                <reference ref="nudism" />
             </optional>
         </item> <!-- Beach -->
         <item name="Bay" icon="presets/bay.png" type="node,way,closedway,multipolygon" preset_name_label="true">
@@ -2687,9 +2729,17 @@
         <item name="Railway Switch" icon="${ICONPATH}transport_switch_27020.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:railway=switch"/>
             <key key="railway" value="switch"/>
+            <combo key="railway:switch" text="Type" values="abt,default,double_slip,single_slip,three_way,wye"
+                display_values="Abt,Default,Double slip,Single slip,Three way,Wye" values_context="railway" />
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Railway Switch -->
+        <item name="Railway crossing" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:railway=railway_crossing" />
+            <key key="railway" value="railway_crossing" />
+            <text key="ref" text="Reference" />
+            <text key="operator" text="Operator" />
+        </item> <!-- Railway crossing -->
         <item name="Railway Signal" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:railway=signal"/>
             <key key="railway" value="signal"/>
@@ -2988,6 +3038,16 @@
             <reference ref="name_brand_operator_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Rental -->
+        <item name="Pooling" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=car_pooling" />
+            <space />
+            <key key="amenity" value="car_pooling" />
+            <text key="operator" text="Operator" />
+            <text key="network" text="Network" />
+            <text key="capacity" text="Capacity" />
+            <reference ref="name_oh_wheelchair" />
+            <text key="website" text="Website" />
+        </item> <!-- Pooling -->
         <item name="Sharing" icon="${ICONPATH}transport_car_share.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=car_sharing"/>
             <space/>
@@ -3026,14 +3086,14 @@
             <reference ref="motorcycle_brands"/>
             <text key="operator" text="Operator"/>
             <reference ref="oh_wheelchair"/>
-            <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no"/>
+            <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no" diaply_values="Only,Yes,No"/>
             <optional text="Services:">
-                <combo key="sale" text="Sale" values="yes,brand,no"/>
-                <combo key="rental" text="Rental" values="yes,brand,no"/>
-                <combo key="repair" text="Repair" values="yes,brand,oldtimer,no"/>
+                <combo key="sale" text="Sale" values="yes,brand,no" display_values="Yes,Brand,No" values_context="services"/>
+                <combo key="rental" text="Rental" values="yes,brand,no" display_values="Yes,Brand,No" values_context="services"/>
+                <combo key="repair" text="Repair" values="yes,brand,oldtimer,no" display_values="Yes,Brand,Oldtimer,No" values_context="services"/>
                 <combo key="safety_inspection" text="Safety inspection" values="yes,DEKRA,GT&#xDC;,MOT,T&#xDC;V,no"/>
-                <combo key="parts" text="Parts" values="yes,brand,oldtimer,no"/>
-                <combo key="clothes" text="Clothes" values="yes,brand,no"/>
+                <combo key="parts" text="Parts" values="yes,brand,oldtimer,no" display_values="Yes,Brand,Oldtimer,No" values_context="services"/>
+                <combo key="clothes" text="Clothes" values="yes,brand,no" display_values="Yes,Brand,No" values_context="services"/>
                 <text key="services" text="Other"/>
             </optional>
             <reference ref="link_contact_address_payment"/>
@@ -3141,7 +3201,7 @@
             <optional>
                 <text key="operator" text="Operator"/>
                 <text key="network" text="Network"/>
-                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true"/>
+                <reference ref="colours" />
             </optional>
             <roles>
                 <role key="" text="route variant/direction (at least 2)" requisite="required" type="relation" member_expression="type=route"/> <!-- FIXME: at least 2 members are required -->
@@ -3284,7 +3344,7 @@
                 <text key="operator" text="Operator"/>
                 <text key="network" text="Network"/>
                 <text key="description" text="Description" length="255"/>
-                <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true"/>
+                <reference ref="colours" />
             </optional>
             <roles>
                 <role key="" text="route segment" requisite="optional" type="way,closedway"/>
@@ -3481,6 +3541,7 @@
             <reference ref="stars"/>
             <text key="rooms" text="Rooms"/>
             <text key="beds" text="Beds"/>
+            <combo key="guest_house" text="Type" values="agritourism,bed_and_breakfast" display_values="Agritourism,Bed and breakfast" />
             <reference ref="wheelchair"/>
             <reference ref="wheelchair_rooms"/>
             <space/>
@@ -3538,6 +3599,9 @@
             <key key="tourism" value="alpine_hut"/>
             <reference ref="name_operator"/>
             <text key="ele" text="Elevation"/>
+            <text key="rooms" text="Rooms" />
+            <text key="beds" text="Beds" />
+            <reference ref="reservation" />
             <space/>
             <reference ref="internet_smoking"/>
             <space/>
@@ -3554,7 +3618,7 @@
             <reference ref="toilets"/>
             <check key="shower" text="Shower"/>
             <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal"/>
-            <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only"/>
+            <reference ref="reservation" />            
             <text key="ele" text="Elevation"/>
             <text key="description" text="Detailed description" length="255"/>
             <space/>
@@ -3600,6 +3664,7 @@
             <space/>
             <reference ref="internet"/>
             <space/>
+            <reference ref="nudism" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Campsite -->
     </group> <!-- Accommodation -->
@@ -3615,7 +3680,9 @@
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true"/>
             <combo key="takeaway" text="Takeaway" values="yes,no,only" values_sort="false" display_values="Yes,No,Only"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
+            <reference ref="reservation" />
             <reference ref="oh_wheelchair_level"/>
+            <combo key="opening_hours:kitchen" text="Kitchen Opening Hours" value_type="opening_hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" />      
             <reference ref="wheelchair_seating"/>
             <reference ref="stars"/>
             <reference ref="toilets_with_access"/>
@@ -3623,6 +3690,7 @@
             <reference ref="internet_smoking"/>
             <space/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Diet" />
         </item> <!-- Restaurant -->
         <item name="Fast Food" icon="${ICONPATH}food_fastfood2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=fast_food"/>
@@ -3652,6 +3720,7 @@
             <reference ref="internet_smoking"/>
             <space/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Diet" />
         </item> <!-- Food Court -->
         <item name="Cafe" icon="${ICONPATH}food_cafe.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=cafe"/>
@@ -3668,6 +3737,7 @@
             <reference ref="internet_smoking"/>
             <space/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Diet" />
         </item> <!-- Cafe -->
         <item name="Ice cream" icon="${ICONPATH}amenity_ice_cream_12077.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=ice_cream"/>
@@ -3683,6 +3753,7 @@
             <reference ref="internet_smoking"/>
             <space/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Diet" />
         </item> <!-- Ice cream -->
         <item name="Pub" icon="${ICONPATH}food_pub.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=pub"/>
@@ -3699,6 +3770,7 @@
             <reference ref="internet_smoking"/>
             <space/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Diet" />
         </item> <!-- Pub -->
         <item name="Beer Garden" icon="${ICONPATH}food_biergarten.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=biergarten"/>
@@ -3712,6 +3784,7 @@
             <reference ref="internet_smoking"/>
             <space/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Diet" />
         </item> <!-- Beer Garden -->
         <item name="Bar" icon="${ICONPATH}food_bar.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=bar"/>
@@ -3725,14 +3798,36 @@
             <reference ref="internet_smoking"/>
             <space/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Diet" />
         </item> <!-- Bar -->
+        <separator/>
+        <item name="Diet" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:diet" />
+            <space />
+            <combo key="diet:vegetarian" text="Vegetarian" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:vegan" text="Vegan" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:lacto_vegetarian" text="Lacto-vegetarian" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:ovo_vegetarian" text="Ovo-vegetarian" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:pescetarian" text="Pescetarian" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:fruitarian" text="Fruitarian" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:raw" text="Raw" values="yes,no,only" display_values="Yes,No,Only" />
+            <space />
+            <combo key="diet:dairy_free" text="Dairy free" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:gluten_free" text="Gluten free" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:lactose_free" text="Lactose free" values="yes,no,only" display_values="Yes,No,Only" />
+            <space />
+            <combo key="diet:halal" text="Halal" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:kosher" text="Kosher" values="yes,no,only" display_values="Yes,No,Only" />
+        </item> <!-- Diet -->
     </group> <!-- Food+Drinks -->
     <group name="Tourism" icon="${ICONPATH}tourist_attraction.${ICONTYPE}">
         <item name="Attraction" icon="${ICONPATH}tourist_attraction.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:tourism=attraction"/>
             <space/>
             <key key="tourism" value="attraction"/>
-            <reference ref="name_oh_wheelchair_toilets"/>
+            <text key="name" text="Name" />
+            <reference ref="reservation" />
+            <reference ref="oh_wheelchair_toilets"/>
         </item> <!-- Attraction -->
         <item name="Viewpoint" icon="${ICONPATH}tourist_view_point.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:tourism=viewpoint"/>
@@ -4056,6 +4151,7 @@
             <reference ref="name_operator_oh_wheelchair"/>
             <reference ref="fee_interval"/>
             <space/>
+            <reference ref="nudism" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Beach Resort -->
         <item name="Swimming Pool" icon="${ICONPATH}sport_swimming_outdoor.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4625,15 +4721,21 @@
         </item> <!-- Town Hall -->
         <item name="Community Centre" icon="${ICONPATH}amenity_community_centre_12035.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=community_centre"/>
-            <label text="Community Centre"/>
             <space/>
             <key key="amenity" value="community_centre"/>
+            <combo key="community_centre" text="Type" 
+                values="club_home,community_hall,cultural_centre,environment_centre,events_venue,family_centre,language_centre,meeting_room,parish_hall,village_hall,youth_centre"
+                display_values="Club home,Community hall,Cultural centre,Environment centre,Events venue,Family centre,Language centre,Meeting room,Parish hall,Village hall,Youth centre" 
+                values_context="community_centre" />
+            <multiselect key="community_centre:for" text="For" 
+                values="child;juvenile;student;girl;boy;man;woman;senior;family;homosexual;multigeneration;disabled;athlete;immigrant;lgbtq"
+                display_values="Child;Juvenile;Student;Girl;Boy;Man;Woman;Senior;Family;Homosexual;Multigeneration;Disabled;Athlete;Immigrant;LGBTQ"
+                values_context="community_centre" />            
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Community Centre -->
         <item name="Conference Centre" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=conference_centre"/>
-            <label text="Community Centre"/>
             <space/>
             <key key="amenity" value="conference_centre"/>
             <reference ref="name_operator_oh_wheelchair_toilets"/>
@@ -5008,9 +5110,13 @@
                 <combo key="couplings:type" text="Coupling standard" values="bayonet,barcelona,guillemin,klaue,sprawny,storz,uni" display_values="Bayonet,Barcelona,Guillemin,Klaue,Sprawny,Storz,UNI"/>
                 <text key="couplings:diameters" text="Coupling diameters (separated by ;)"/>
                 <space/>
-                <combo key="colour" text="Colour" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey"/>
-                <combo key="bonnet:colour" text="Colour of the top section (bonnet)" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey"/>
-                <combo key="cap:colour" text="Colour of the caps" values="blue,green,red,yellow,grey" display_values="Blue,Green,Red,Yellow,Grey"/>
+                <reference ref="colours" />
+                <combo key="bonnet:colour" text="Colour of the top section (bonnet)" 
+                    values="black,blue,brown,gray,green,orange,#CD853F,purple,red,silver,white,yellow" 
+                    display_values="Black,Blue,Brown,Gray,Green,Orange,Peru,Purple,Red,Silver,White,Yellow" editable="true" values_context="colour" />
+                <combo key="cap:colour" text="Colour of the caps" 
+                    values="black,blue,brown,gray,green,orange,#CD853F,purple,red,silver,white,yellow" 
+                    display_values="Black,Blue,Brown,Gray,Green,Orange,Peru,Purple,Red,Silver,White,Yellow" editable="true" values_context="colour" />
                 <space/>
                 <text key="manufacturer" text="Manufacturer"/>
             </optional>
@@ -5042,8 +5148,10 @@
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
             <space/>
-            <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical"/>
-            <combo key="siren:purpose" text="Purpose" values="tornado,fire,air_raid,civil_defense"/>
+            <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical" display_values="Pneumatic,Electronic,Mechanical" 
+                values_context="siren" />
+            <multiselect key="siren:purpose" text="Purpose" 
+                values="tornado,fire,air_raid,civil_defense" display_values="Tornado,Fire,Air raid,Civil defense" values_context="siren" />
             <text key="siren:range" text="Range (in meters)"/>
         </item> <!-- Siren -->
         <item name="Life ring" icon="${ICONPATH}emergency_life_ring_12080.${ICONTYPE}" type="node" preset_name_label="true">
@@ -5410,7 +5518,7 @@
             <key key="amenity" value="bench"/>
             <check key="backrest" text="Backrest" disable_off="true"/>
             <reference ref="material"/>
-            <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour" values="black,brown,green,red,blue,gray,white,#CD853F" match="none" editable="true"/>
+            <reference ref="colours" />
             <combo key="seats" text="Seats count" values="2,3,4,5,6,7,8,9,10"/>
         </item> <!-- Bench -->
         <item name="Shelter" icon="${ICONPATH}accommodation_shelter2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5896,7 +6004,8 @@
             <space/>
             <key key="sport" value="skiing"/>
             <text key="name" text="Name"/>
-            <combo key="piste:type" text="Piste type" values="downhill,nordic,skitour,sled,sleigh,snow_park" display_values="Downhill,Nordic,Skitour,Sled,Sleigh,Snow park" match="keyvalue"/>
+            <combo key="piste:type" text="Piste type" values="connection,downhill,hike,ice_skate,nordic,playground,skitour,sled,sleigh,snow_park" 
+                display_values="Connection,Downhill,Hike,Ice skate,Nordic,Playground,Skitour,Sled,Sleigh,Snow park" match="keyvalue" values_context="piste"/>
             <optional>
                 <combo key="piste:difficulty" text="Difficulty" values="novice,easy,intermediate,advanced,expert,freeride" display_values="Novice,Easy,Intermediate,Advanced,Expert,Freeride" values_context="piste:difficulty" values_searchable="true" values_sort="false"/>
                 <combo key="piste:grooming" text="Grooming" values="classic,mogul,skating,classic+skating,scooter,backcountry" display_values="Classic,Mogul,Skating,Classic+skating,Scooter,Backcountry" values_context="piste:grooming"/>
@@ -6129,8 +6238,8 @@
 		<item name="Building" icon="${ICONPATH}man_made_house_sp.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
 			<link wiki="Key:building"/>
 			<space/>
-			<combo key="building" text="Building" values="yes,house,garage,apartments,industrial,residential,detached,terrace,bungalow,hut,roof,garages,school,dormitory,hotel,hangar,commercial,service,train_station,barn,stable,cabin,farm,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,kindergarten,manufacture,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction,basilica,cathedral,chapel,church,temple,mosque,synagogue,transformer_tower,public,ruins" 
-                display_values="Yes,House,Garage,Apartments,Industrial,Residential,Detached,Terrace,Bungalow,Hut,Roof,Garages,School,Dormitory,Hotel,Hangar,Commercial,Service,Train station,Barn,Stable,Cabin,Farm,Farm auxiliary,Transportation,Greenhouse,Office,University,College,Hospital,Kindergarten,Manufacture,Warehouse,Retail,Shed,Storage tank,Supermarket,Gasometer,Cowshed,Construction,Basilica,Cathedral,Chapel,Church,Temple,Mosque,Synagogue,Transformer tower,Public,Ruins" 
+			<combo key="building" text="Building" values="yes,house,garage,apartments,industrial,residential,detached,terrace,bungalow,hut,roof,garages,school,dormitory,hotel,hangar,commercial,service,train_station,barn,stable,cabin,farm,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,kindergarten,manufacture,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction,basilica,cathedral,chapel,church,temple,mosque,synagogue,transformer_tower,public,ruins,bakehouse" 
+                display_values="Yes,House,Garage,Apartments,Industrial,Residential,Detached,Terrace,Bungalow,Hut,Roof,Garages,School,Dormitory,Hotel,Hangar,Commercial,Service,Train station,Barn,Stable,Cabin,Farm,Farm auxiliary,Transportation,Greenhouse,Office,University,College,Hospital,Kindergarten,Manufacture,Warehouse,Retail,Shed,Storage tank,Supermarket,Gasometer,Cowshed,Construction,Basilica,Cathedral,Chapel,Church,Temple,Mosque,Synagogue,Transformer tower,Public,Ruins,Bakehouse" 
                 values_context="building" default="yes" match="keyvalue!" values_searchable="true"/>
 			<reference ref="additional_building_tags"/>
 			<preset_link preset_name="Address"/>
@@ -6166,7 +6275,10 @@
 		<item name="Building part" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
 			<link wiki="Key:building:part"/>
 			<space/>
-			<combo key="building:part" text="Building part" values="yes,roof,garage,garages,industrial,school,hangar,commercial,barn,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,warehouse,retail,shed,supermarket,cowshed,construction,ruins" values_context="building" default="yes" match="key" values_searchable="true"/>
+			<combo key="building:part" text="Building part" 
+                values="bakehouse,barn,college,commercial,construction,cowshed,farm_auxiliary,garage,garages,greenhouse,hangar,hospital,industrial,office,retail,roof,ruins,school,shed,supermarket,transportation,university,warehouse,yes" 
+                display_values="Bakehouse,Barn,College,Commercial,Construction,Cowshed,Farm auxiliary,Garage,Garages,Greenhouse,Hangar,Hospital,Industrial,Office,Retail,Roof,Ruins,School,Shed,Supermarket,Transportation,University,Warehouse,Yes" 
+                values_context="building" default="yes" match="key" values_searchable="true"/>
 			<reference ref="additional_building_tags"/>
 			<combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" editable="true" text_context="building"/>
 			<text key="min_height" text="Skipped height (meters)"/>
@@ -6445,7 +6557,25 @@
             <key key="pipeline" value="valve"/>
             <text key="ref" text="Reference"/>
             <reference ref="operator_substance"/>
+            <combo key="valve" text="Valve type" 
+                values="butterfly,globe,ball,plug,gate,needle,spool"
+                display_values="Butterfly,Globe,Ball,Plug,Gate,Needle,Spool" values_context="valve" />
+            <combo key="actuator" text="Actuator" 
+                values="electric_motor,hydraulic_cylinder,manual,pneumatic_cylinder,solenoid,thermostatic" 
+                display_values="Electric motor,Hydraulic cylinder,Manual,Pneumatic cylinder,Solenoid,Thermostatic" values_context="actuator" />
+            <combo key="handle" text="Handle" values="lever,wheel,cross,button" display_values="Lever,Wheel,Cross,Button" values_context="handle" />
+            <combo key="turn_to_close" text="Direction to close" values="clockwise,anti_clockwise" display_values="Clockwise,Anticlockwise" />
+            <combo key="sensor:position" text="Position sensor" values="optical,mechanical,inductive,yes" display_values="Optical,Mechanical,Inductive,Yes" />
         </item> <!-- Pipeline Valve -->
+        <item name="Manhole" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Key:manhole" />
+            <space />
+            <key key="man_made" value="manhole" />
+            <combo key="manhole" text="Type" 
+                values="drain,gas,heat,power,rainwater,sewer,telecom,water"
+                display_values="Drain,Gas,Heat,Power,Rainwater,Sewer,Telecom,Water" values_context="manhole" values_searchable="true" />
+            <reference ref="ref_operator" />
+        </item> <!-- Manhole -->
         <separator/>
         <item name="Water Tower" icon="${ICONPATH}poi_tower_water.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:man_made=water_tower"/>
@@ -6528,6 +6658,18 @@
                 <combo key="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" editable="true" values_no_i18n="true"/>
             </optional>
         </item> <!-- Street Lamp -->
+        <item name="Street cabinet" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:man_made=street_cabinet" />
+            <key key="man_made" value="street_cabinet" />
+            <optional>
+                <combo key="street_cabinet" text="Type" 
+                    values="cable_tv,gas,postal_service,power,street_lighting,telecom,traffic_control,traffic_monitoring,transport_management,waste,water,water_management"
+                    display_values="Cable tv,Gas,Postal service,Power,Street lighting,Telecom,Traffic control,Traffic monitoring,Transport management,Waste,Water,Water management" />
+                <reference ref="ref_operator" />
+                <text key="manufacturer" text="Manufacturer" />
+                <reference ref="colours" />
+             </optional>
+        </item> <!-- Street cabinet -->
         <item name="Monitoring Station" icon="${ICONPATH}man_made_monitoring_station_22042.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=monitoring_station"/>
             <space/>
@@ -6901,8 +7043,12 @@
             <space/>
             <key key="man_made" value="street_cabinet"/>
             <key key="street_cabinet" value="power"/>
-            <combo key="voltage" text="Voltage in Volts (V)" values="600,400,220,110,low"/> <!-- Recheck values -->
-            <reference ref="ref_operator"/>        
+            <optional>
+                <combo key="voltage" text="Voltage in Volts (V)" values="600,400,220,110,low"/> <!-- Recheck values -->           
+                <reference ref="ref_operator"/> 
+                <text key="manufacturer" text="Manufacturer" />
+                <reference ref="colours" />
+            </optional>       
         </item> <!-- Power Street Cabinet -->
         <separator/>
 		<item name="Transformer Tower" icon="styles/standard/power/transformer_tower.svg" type="node,closedway" preset_name_label="true">
@@ -7026,12 +7172,16 @@
         </item> <!-- Power Cable -->
     </group> <!-- Power -->
     <group name="Telecom" icon="presets/telecom/telecom.svg">
-        <item name="Telecom Street Cabinet" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node" preset_name_label="true">
+        <item name="Telecom Street Cabinet" icon="c" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=street_cabinet" />
             <space />
             <key key="man_made" value="street_cabinet" />
             <key key="street_cabinet" value="telecom" />
-            <reference ref="ref_operator" />
+            <optional>    
+                <reference ref="ref_operator"/> 
+                <text key="manufacturer" text="Manufacturer" />
+                <reference ref="colours" />
+            </optional>       
         </item> <!-- Telecom Street Cabinet -->
         <item name="Telephone Exchange" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:telecom=exchange" />
@@ -7520,6 +7670,13 @@
         </item> <!-- Radio and electronics supplies -->
     </group> <!-- Electronics -->
     <group name="Home furnishing and decoration" icon="${ICONPATH}shopping_interior_decoration_29087.${ICONTYPE}">
+        <item name="Doors" icon="${ICONPATH}shopping_doors_13011.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=doors" />
+            <space />
+            <key key="shop" value="doors" />
+            <reference ref="name_brand_operator_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Doors -->
         <item name="Furniture" icon="${ICONPATH}shopping_furniture_29068.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=furniture"/>
             <space/>
@@ -8213,6 +8370,13 @@
         <reference ref="name_oh_wheelchair_level"/>
         <reference ref="link_contact_address"/>
     </item> <!-- Money Exchange -->
+    <item name="Money transfer" icon="${ICONPATH}money_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:amenity=money_transfer" />
+        <space />
+        <key key="amenity" value="money_transfer" />
+        <reference ref="name_oh_wheelchair_level" />
+        <reference ref="link_contact_address" />
+    </item> <!-- Money transfer -->
     <item name="Automated Teller Machine" icon="${ICONPATH}money_atm.${ICONTYPE}" type="node" preset_name_label="true">
         <link wiki="Tag:amenity=atm"/>
         <space/>
@@ -8786,12 +8950,13 @@
             <reference ref="optional_name"/>
         </item> <!-- Recreation Ground -->
         <separator/>
-        <item name="Residential Area" icon="${ICONPATH}landuse_house_sp.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
-            <link wiki="Tag:landuse=residential"/>
+        <item name="Religious" icon="${ICONPATH}landuse_religous.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:landuse=religious"/>
             <space/>
-            <key key="landuse" value="residential" values_context="landuse"/>
+            <key key="landuse" value="religious"/>
             <reference ref="optional_name"/>
-        </item> <!-- Residential Area -->
+            <reference ref="religious"/>
+        </item> <!-- Religious -->
         <item name="Graveyard" icon="${ICONPATH}landuse_grave_yard_12062.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=grave_yard"/>
             <space/>
@@ -8806,13 +8971,22 @@
             <text key="name" text="Name"/>
             <reference ref="religious"/>
         </item> <!-- Cemetery -->
-        <item name="Religious" icon="${ICONPATH}landuse_religous.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:landuse=religious"/>
+        <item name="Cemetery sector" icon="${ICONPATH}landuse_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:cemetery=sector" />
+            <space />
+            <key key="cemetery" value="sector" />
+            <optional>
+                <text key="ref" text="Reference" />
+                <text key="name" text="Name" />
+            </optional>
+        </item> <!-- Cemetery sector-->
+        <separator/>
+        <item name="Residential Area" icon="${ICONPATH}landuse_house_sp.${ICONTYPE}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
+            <link wiki="Tag:landuse=residential"/>
             <space/>
-            <key key="landuse" value="religious"/>
+            <key key="landuse" value="residential" values_context="landuse"/>
             <reference ref="optional_name"/>
-            <reference ref="religious"/>
-        </item> <!-- Religious -->
+        </item> <!-- Residential Area -->
         <item name="Retail" icon="${ICONPATH}landuse_supermarket.${ICONTYPE}" name_context="Landuse" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:landuse=retail"/>
             <space/>
@@ -9142,7 +9316,8 @@
             <link wiki="Relation:enforcement"/>
             <space/>
             <key key="type" value="enforcement"/>
-            <combo key="enforcement" text="Type of enforcement" values="maxheight,maxweight,maxspeed,mindistance,traffic_signals,check" display_values="Max. height,Max. weight,Max. speed,Min. distance,Traffic signals,Check"/>
+            <combo key="enforcement" text="Type of enforcement" values="maxheight,maxweight,maxspeed,mindistance,toll,traffic_signals,check" 
+                display_values="Max. height,Max. weight,Max. speed,Min. distance,Toll,Traffic signals,Check"/>
             <text key="maxheight" text="Max. height (meters, only if enforcement=maxheight)"/>
             <text key="maxweight" text="Max. weight (tonnes, only if enforcement=maxweight)"/>
             <text key="maxspeed" text="Max. speed (km/h, only if enforcement=maxspeed)"/>
@@ -9232,7 +9407,8 @@
                 <key key="type" value="route"/>
                 <key key="route" value="piste"/>
                 <text key="name" text="Name"/>
-                <combo key="piste:type" text="Piste type" values="downhill,nordic,skitour,snow_park" display_values="Downhill,Nordic,Skitour,Snow park" sort_values="false" match="keyvalue!"/>
+                <combo key="piste:type" text="Piste type" values="connection,downhill,hike,ice_skate,nordic,playground,skitour,sled,sleigh,snow_park" 
+                    display_values="Connection,Downhill,Hike,Ice skate,Nordic,Playground,Skitour,Sled,Sleigh,Snow park" match="keyvalue!" values_context="piste"/>
                 <optional>
                     <reference ref="route_hikebike_optionals"/>
                 </optional>
