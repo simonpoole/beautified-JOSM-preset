@@ -1802,7 +1802,7 @@
                 <text key="maxspeed" text="Max. speed (km/h)"/>
             </optional>
         </item> <!-- Speed Camera -->
-        <item name="Toll gantry" icon="transport_empty.png" type="node" preset_name_label="true">
+        <item name="Toll gantry" icon="transport_toll_gantry_18029.png" type="node" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Tag:highway=toll_gantry"/>
             <key key="highway" value="toll_gantry"/>
             <optional>
@@ -2697,7 +2697,7 @@
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Railway Switch -->
-        <item name="Railway crossing" icon="transport_empty.png" type="node" preset_name_label="true">
+        <item name="Railway crossing" icon="transport_railway_crossing_27007.png" type="node" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Tag:railway=railway_crossing"/>
             <key key="railway" value="railway_crossing"/>
             <text key="ref" text="Reference"/>
