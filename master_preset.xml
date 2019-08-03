@@ -716,7 +716,11 @@
     </chunk>
     <chunk id="telecom_medium">
         <combo key="telecom:medium" text="Local loop type" values="copper,fibre,coaxial" display_values="Copper,Fibre,Coaxial" values_context="telecom" />
-     </chunk>
+    </chunk>
+    <chunk id="bridge_details">
+        <combo key="bridge" text="Bridge" values="yes,aqueduct,boardwalk,cantilever,covered,low_water_crossing,trestle,viaduct" display_values="Yes,Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct" match="keyvalue!" default="yes" values_context="bridge"/>
+        <combo key="bridge:structure" text="Structure" values="arch,beam,truss,floating,suspension,cable-stayed,simple-suspension,humpback" display_values="Arch,Beam,Truss,Floating,Suspension,Cable-stayed,Simple-suspension,Humpback" match="key" values_context="bridge"/>
+    </chunk>
     <chunk id="optional_bridge">
         <optional>
             <text key="name" text="Name"/>
@@ -6745,8 +6749,7 @@
         <item name="Bridge" icon="${ICONPATH}highway_bridge_sp.${ICONTYPE}" type="way,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:bridge"/>
             <space/>
-            <combo key="bridge" text="Bridge" values="yes,aqueduct,boardwalk,cantilever,covered,low_water_crossing,trestle,viaduct" display_values="Yes,Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct" match="keyvalue!" default="yes" values_context="bridge"/>
-            <combo key="bridge:structure" text="Structure" values="arch,beam,truss,floating,suspension,cable-stayed,simple-suspension,humpback" display_values="Arch,Beam,Truss,Floating,Suspension,Cable-stayed,Simple-suspension,Humpback" match="key" values_context="bridge"/>
+            <reference ref="bridge_details"/>
             <reference ref="optional_bridge"/>
             <preset_link preset_name="Movable Bridge"/>
             <preset_link preset_name="Movable Support"/>
@@ -6767,9 +6770,12 @@
             <link wiki="Tag:man_made=bridge"/>
             <space/>
             <key key="man_made" value="bridge"/>
+            <reference ref="bridge_details"/>
             <optional>
                 <reference ref="name_layer"/>
             </optional>
+            <preset_link preset_name="Movable Bridge"/>
+            <preset_link preset_name="Movable Support"/>
         </item> <!-- Bridge outline -->
     </group> <!-- Bridges -->
     <group name="Power" icon="${ICONPATH}power_station_coal.${ICONTYPE}">
