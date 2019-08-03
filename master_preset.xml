@@ -2371,6 +2371,7 @@
             <link wiki="Tag:landuse=basin"/>
             <space/>
             <key key="landuse" value="basin"/>
+            <combo key="basin" text="Type" values="infiltration,detention,retention" display_values="Infiltration,Detention,Retention" match="key" values_searchable="true"/>
             <reference ref="optional_name"/>
         </item> <!-- Basin -->
         <item name="Reservoir" icon="${ICONPATH}water_reservoir_22110.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
