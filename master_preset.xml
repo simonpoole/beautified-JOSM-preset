@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery">
+    object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor">
 <!--
     Icons have been derived from mainly from
   
@@ -212,12 +212,15 @@
         <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="level">
-    	<combo text="Level" long_text="For indoor mapping, level 0 is the ground floor" key="level" length="3" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" values_sort="false" match="none" editable="true"/>
+    	<combo text="Level" long_text="For indoor mapping, level 0 is the ground floor" key="level" length="3" values="20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0,-1,-2,-3,-4,-5" values_sort="false" match="none" editable="true"/>
     </chunk>
     <chunk id="optional_level">
     	<optional>
     		<reference ref="level"/>
     	</optional>
+    </chunk>
+    <chunk id="door_type">
+        <combo key="door" text="Door type" values="hinged,sliding,revolving,folding,trapdoor,overhead,loadingdock,no" display_values="Hinged,Sliding,Revolving,Folding,Trapdoor,Overhead,Loadingdock,None" values_context="entrance" match="key"/>
     </chunk>
     <chunk id="service_times">
         <combo key="service_times" text="Service Times" delimiter="|" values="18:00|sunset,sunrise|Su 09:30,11:00|Sa,Su,PH 09:00|Sa 18:00; Su 10:45|Fr 08:00-18:00; Apr 10-15 off; Jun 07:00-20:00; Aug off; Dec 24 08:00-24:00|Sa 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" match="none" editable="true"/>
@@ -6379,7 +6382,7 @@
 			<optional>
 				<reference ref="wheelchair"/>
 				<text key="ref" text="Entrance number"/>
-				<combo key="door" text="Door type" values="hinged,sliding,revolving,folding,trapdoor,overhead,loadingdock,no" display_values="Hinged,Sliding,Revolving,Folding,Trapdoor,Overhead,Loadingdock,None" values_context="entrance" match="key"/>
+				<reference ref="door_type" />
 				<text key="addr:flats" text="Flat numbers"/>
 			</optional>
 			<preset_link preset_name="Address"/>
@@ -6389,6 +6392,45 @@
 			<preset_link preset_name="Address"/>
 		</item> <!-- Entrance (deprecated) -->
 	</group> <!-- Buildings -->
+    <group name="Indoor elements" icon="${ICONPATH}indoor_floorplan.${ICONTYPE}" >
+        <item name="Indoor area" type="closedway,multipolygon" preset_name_label="true">
+            <key key="indoor" value="area" />
+            <reference ref="level" />
+            <text key="name" text="Name" i18n="true" />
+            <text key="ref" text="Room Number" />
+        </item>
+        <item name="Corridor" icon="${ICONPATH}indoor_corridor.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+            <key key="indoor" value="corridor" />
+            <reference ref="level" />
+            <text key="name" text="Name" i18n="true" />
+            <text key="ref" text="Reference Code" />
+            <text key="height" text="Height (Meters)" value_type="integer" />
+        </item>
+        <item name="Indoor door" icon="${ICONPATH}indoor_door_13011.${ICONTYPE}" type="node" preset_name_label="true" >
+            <key key="indoor" value="door" />
+            <reference ref="level" />
+            <text key="ref" text="Reference Code" />
+            <reference ref="door_type" />
+            <reference ref="facility_access" />
+            <text key="width" text="Width (Meters)" value_type="integer" />
+            <text key="height" text="Height (Meters)" value_type="integer" />
+        </item>
+        <item name="Room" icon="${ICONPATH}indoor_room.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+            <key key="indoor" value="room" />
+            <reference ref="level" />
+            <text key="name" text="Name" i18n="true" />
+            <text key="ref" text="Room Number" />
+            <combo key="room" text="Type"
+                values="auditorium,shop,conference,technical,waiting,stairs,hall,office,storage,elevator,Library,entrance,class,gallery,escalator,restaurant,store,toilet,laboratory"
+                display_values="Auditorium,Shop,Conference,Technical,Waiting,Stairs,Hall,Office,Storage,Elevator,Library,Entrance,Class,Gallery,Escalator,Restaurant,Store,Toilet,Laboratory" />
+            <text key="height" text="Height (Meters)" value_type="integer" />
+        </item>
+        <item name="Indoor wall" icon="${ICONPATH}indoor_wall.${ICONTYPE}" type="way" preset_name_label="true">
+            <key key="indoor" value="wall" />
+            <reference ref="level" />
+            <text key="height" text="Height (Meters)" value_type="integer" />
+        </item>
+  </group> <!-- Indoor elements -->
   <group name="Man Made" icon="${ICONPATH}man_made_works_22087.${ICONTYPE}">
     <group name="Man Made" icon="${ICONPATH}man_made_works_22087.${ICONTYPE}">
         <item name="Tower" icon="${ICONPATH}poi_tower_communications.${ICONTYPE}" type="node,closedway" preset_name_label="true">
