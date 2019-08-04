@@ -2604,6 +2604,7 @@
             <link wiki="Tag:waterway=dock"/>
             <space/>
             <key key="waterway" value="dock"/>
+            <combo key="dock" text="Type" values="drydock,floating,tidal" display_values="Dry dock,Floating,Tidal"/>
             <text key="name" text="Name"/>
             <preset_link preset_name="No name"/>
         </item> <!-- Dock -->
