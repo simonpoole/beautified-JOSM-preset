@@ -2620,7 +2620,8 @@
             <link wiki="Tag:railway=rail"/>
             <key key="railway" value="rail"/>
             <optional>
-                <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight"/>
+                <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight"
+                    display_values="Main,Branch,Industrial,Military,Tourism,Freight" />
                 <reference ref="railway_service_gauge_electrified"/>
             </optional>
         </item> <!-- Rail -->
@@ -2628,7 +2629,8 @@
             <link wiki="Tag:railway=narrow_gauge"/>
             <key key="railway" value="narrow_gauge"/>
             <optional>
-                <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight"/>
+                <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight"
+                    display_values="Main,Branch,Industrial,Military,Tourism,Freight" />
                 <reference ref="railway_service_gauge_electrified"/>
             </optional>
         </item> <!-- Narrow Gauge Rail -->
