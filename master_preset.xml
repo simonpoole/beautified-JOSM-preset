@@ -6393,7 +6393,7 @@
 		</item> <!-- Entrance (deprecated) -->
 	</group> <!-- Buildings -->
     <group name="Indoor elements" icon="${ICONPATH}indoor_floorplan.${ICONTYPE}" >
-        <item name="Indoor area" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Indoor area" icon="${ICONPATH}indoor_area.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
             <key key="indoor" value="area" />
             <reference ref="level" />
             <text key="name" text="Name" i18n="true" />
