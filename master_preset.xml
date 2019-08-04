@@ -1689,15 +1689,16 @@
             <link wiki="Tag:highway=traffic_signals"/>
             <key key="highway" value="traffic_signals"/>
             <optional text="Optional crossing attributes:">
+                <combo key="traffic_signals" text="Type" values="blinker,blink_mode,bus_priority,continuos_green,emergency,ramp_meter,tram_priority"
+                    display_values="Blinker,Blink mode,Bus priority,Continuos green,Emergency,Ramp meter,Tram priority" />
                 <combo key="traffic_signals:direction" text="For traffic direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
-            	<reference ref="crossing_type"/>
-                <combo key="crossing_ref" text="Crossing type (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger"/>
                 <check key="button_operated" text="Button operated" disable_off="true"/>
                 <check key="traffic_signals:sound" text="Sound signals" disable_off="true"/>
-                <combo key="supervised" text="Crossing attendant" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none"/>
+                <check key="traffic_signals:vibration" text="Vibration" disable_off="true"/>
+                <check key="traffic_signals:arrow" text="Arrow (tactile)" disable_off="true"/>
+                <check key="traffic_signals:floor_vibration" text="Floor vibration" disable_off="true"/>
                 <reference ref="tactile_paving"/>
-                <check key="bicycle" text="Cross by bicycle" disable_off="true"/>
-                <check key="horse" text="Cross on horseback" disable_off="true"/>
+                <check key="bicycle" text="For bicycles" disable_off="true"/>
             </optional>
             <optional text="Optional values for specific countries">
                 <text key="name" text="Name"/>
