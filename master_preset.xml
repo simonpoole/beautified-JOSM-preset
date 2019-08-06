@@ -5545,6 +5545,11 @@
             <text key="operator" text="Operator"/>
             <reference ref="oh"/>
         </item> <!-- Sanitary Dump Station -->
+        <item name="Lavoir" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=lavoir"/>
+            <key key="amenity" value="lavoir"/>
+            <reference ref="facility_access"/>
+        </item> <!-- Lavoir -->
         <separator/>
         <item name="Bench" icon="${ICONPATH}amenity_bench.${ICONTYPE}" type="node,way" preset_name_label="true">
             <link wiki="Tag:amenity=bench"/>
