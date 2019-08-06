@@ -3501,6 +3501,7 @@
         <item name="Navigation aid" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:aeroway=navigationaid"/>
             <key key="aeroway" value="navigationaid"/>
+            
         </item> <!-- Navigation aid -->
         <item name="Windsock" icon="${ICONPATH}transport_windsock_11009.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:aeroway=windsock"/>
@@ -3640,7 +3641,7 @@
             <reference ref="fee"/>
             <reference ref="toilets"/>
             <check key="shower" text="Shower"/>
-            <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal"/>
+            <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal" display_values="Yes,No,Seasonal" />
             <reference ref="reservation" />            
             <text key="ele" text="Elevation"/>
             <text key="description" text="Detailed description" length="255"/>
