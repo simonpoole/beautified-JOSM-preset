@@ -5299,6 +5299,7 @@
             <space/>
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="shelter"/>
+            <reference ref="social_facility_for"/>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <text key="capacity" text="Capacity" value_type="integer"/>
             <reference ref="link_contact_address"/>
@@ -5708,7 +5709,13 @@
             <reference ref="fee"/>
             <reference ref="bin"/>
             <text key="note" text="Note" length="255"/>
-        </item> <!-- "Excrement sBbag Dispenser -->
+        </item> <!-- Excrement Bags -->
+        <item name="Weighbridge" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:amenity=weighbridge"/>
+            <space/>
+            <key key="amenity" value="weighbridge"/>
+            <text key="operator" text="Operator"/>
+        </item> <!-- Weighbridge -->  
     </group> <!-- Facilities -->
   </group>  <!-- Facilities -->
   <group name="Sports" icon="${ICONPATH}sport_soccer.${ICONTYPE}">
