@@ -4832,6 +4832,13 @@
             <reference ref="name_operator_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Crematorium -->
+        <item name="Mortuary" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=mortuary"/>
+            <space/>
+            <key key="amenity" value="mortuary"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Mortuary -->
     </group> <!-- Public Buildings -->
     <group name="Education" icon="${ICONPATH}education_school.${ICONTYPE}">
         <item name="Childcare" icon="${ICONPATH}education_nursery2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -8366,6 +8373,7 @@
             <list_entry value="animal_food" short_description="Animal food"/>
             <list_entry value="bicycle_tube" short_description="Bicycle tubes"/>
             <list_entry value="cigarettes" short_description="Cigarettes"/>
+            <list_entry value="chewing_gums" short_description="Chewing gums"/>
             <list_entry value="coffee" short_description="Coffee"/>
             <list_entry value="condoms" short_description="Condoms"/>
             <list_entry value="drinks" short_description="Drinks"/>
@@ -8388,6 +8396,7 @@
             <list_entry value="telephone_vouchers" short_description="Telephone vouchers"/>
             <list_entry value="toys" short_description="Toys"/>
             <list_entry value="vouchers" short_description="Vouchers"/> 
+            <list_entry value="water" short_description="Water"/>
         </multiselect>
         <text key="operator" text="Operator"/>
         <text key="ref" text="Reference number"/>
