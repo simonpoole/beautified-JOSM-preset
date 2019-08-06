@@ -5630,6 +5630,15 @@
             </optional>
             <reference ref="link_contact_address"/>
         </item> <!-- Animal boarding -->
+        <item name="Animal feeding place" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=feeding_place"/>
+            <space/>
+            <key key="amenity" value="feeding_place"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="description" text="Description" length="255"/>
+            </optional>
+        </item> <!-- Animal feeding place -->
         <item name="Animal watering place" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=watering_place"/>
             <space/>
