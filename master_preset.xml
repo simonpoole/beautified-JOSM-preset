@@ -7343,6 +7343,9 @@
          <link wiki="Tag:historic=castle"/>
          <space/>
          <key key="historic" value="castle"/>
+         <combo key="castle_type" text="Type" 
+            values="defensive,palace,stately,manor,fortress,castrum,shiro,kremlin" 
+            display_values="Defensive,Palace,Stately,Manor,Fortress,Castrum,Shiro,Kremlin" />
          <reference ref="name_wikipedia"/>
          <check key="ruins" text="Ruins"/>
          <reference ref="link_contact_address_payment"/>
