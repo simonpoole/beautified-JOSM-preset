@@ -8861,7 +8861,8 @@
             <link wiki="Tag:man_made=cutline"/>
             <space/>
             <key key="man_made" value="cutline"/>
-            <combo key="cutline" text="Type" values="border,firebreak,hunting,loggingmachine,pipeline,piste,section" values_context="cutline"/>
+            <combo key="cutline" text="Type" values="border,firebreak,hunting,loggingmachine,pipeline,piste,section"
+                display_values="Border,Firebreak,Hunting,Logging machine,Pipeline,Piste,Section" values_context="cutline"/>
         </item> <!-- Cutline -->
         <item name="Grassland" icon="${ICONPATH}landuse_grass.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:natural=grassland"/>
