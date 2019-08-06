@@ -769,6 +769,7 @@
         <key key="aeroway" value="aerodrome" match="keyvalue"/>
         <text key="name" text="Name"/>
         <optional>
+            <combo key="aerodrome:type" text="Type" values="international,regional,gliding,airfield,private" display_values="International,Regional,Gliding,Airfield,Private"/>
             <text key="iata" text="IATA"/>
             <text key="icao" text="ICAO"/>
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
@@ -1049,6 +1050,16 @@
   </chunk>
   <chunk id="reservation">
     <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" display_values="Yes,No,Required,Recommended,Members only" />
+  </chunk>
+  <chunk id="advertising_optional">
+    <optional>
+        <check key="lit" text="Lit" disable_off="true"/>
+        <check key="luminous" text="Luminous" disable_off="true"/>
+        <combo key="animated" text="Animation" values="no,yes,trivision_blades,winding_posters,revolving,screen,digital_messages,digital_prices,wind" display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
+        <text key="height" text="Height (Meters)" value_type="integer" />
+        <combo key="sides" text="Number of sides" length="3" values="1,2,3,4,5,6" values_sort="false" match="none" editable="true"/>
+        <reference ref="support" />
+    </optional>
   </chunk>
   <!--  Groups -->
   <group name="Highways" icon="icons/png/highway_highway_sp.png">
@@ -3490,6 +3501,7 @@
         <item name="Navigation aid" icon="icons/png/transport_empty.png" type="node" preset_name_label="true">
             <link wiki="Tag:aeroway=navigationaid"/>
             <key key="aeroway" value="navigationaid"/>
+            <combo key="navigationaid" text="Type" values="als,papi,vasi" display_values="Approach lighting system,Precision approach path indicator,Visual Approach Slope Indicator" />
         </item> <!-- Navigation aid -->
         <item name="Windsock" icon="icons/png/transport_windsock_11009.png" type="node" preset_name_label="true">
             <link wiki="Tag:aeroway=windsock"/>
@@ -3629,7 +3641,7 @@
             <reference ref="fee"/>
             <reference ref="toilets"/>
             <check key="shower" text="Shower"/>
-            <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal"/>
+            <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal" display_values="Yes,No,Seasonal" />
             <reference ref="reservation" />            
             <text key="ele" text="Elevation"/>
             <text key="description" text="Detailed description" length="255"/>
@@ -4454,6 +4466,16 @@
             <space/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Casino -->
+        <item name="Gambling" icon="icons/png/tourist_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=gambling"/>
+            <space/>
+            <key key="amenity" value="casino"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <space/>
+            <reference ref="internet_smoking"/>
+            <space/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Gambling -->
         <item name="Love Hotel" icon="icons/png/amenity_love_hotel.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=love_hotel"/>
             <space/>
@@ -4810,6 +4832,13 @@
             <reference ref="name_operator_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Crematorium -->
+        <item name="Mortuary" icon="icons/png/amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=mortuary"/>
+            <space/>
+            <key key="amenity" value="mortuary"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Mortuary -->
     </group> <!-- Public Buildings -->
     <group name="Education" icon="icons/png/education_school.png">
         <item name="Childcare" icon="icons/png/education_nursery2.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5166,6 +5195,23 @@
                 values="tornado,fire,air_raid,civil_defense" display_values="Tornado,Fire,Air raid,Civil defense" values_context="siren" />
             <text key="siren:range" text="Range (in meters)"/>
         </item> <!-- Siren -->
+        <item name="Lifeguard" icon="icons/png/emergency_empty.png" type="node" preset_name_label="true">
+            <link wiki="Tag:emergency=lifeguard"/>
+            <key key="emergency" value="lifeguard"/>
+            <text key="operator" text="Operator"/>
+        </item> <!-- Lifeguard -->
+        <item name="Lifeguard base" icon="icons/png/emergency_empty.png" type="node" preset_name_label="true">
+            <link wiki="Tag:emergency=lifeguard_base"/>
+            <key key="emergency" value="lifeguard_base"/>
+            <text key="ref" text="Reference"/>
+            <text key="operator" text="Operator"/>
+        </item> <!-- Lifeguard base -->
+        <item name="Lifeguard tower" icon="icons/png/emergency_lifeguard_tower_12076.png" type="node" preset_name_label="true">
+            <link wiki="Tag:emergency=lifeguard_tower"/>
+            <key key="emergency" value="lifeguard_tower"/>
+            <text key="ref" text="Reference"/>
+            <text key="operator" text="Operator"/>
+        </item> <!-- Lifeguard tower -->
         <item name="Life ring" icon="icons/png/emergency_life_ring_12080.png" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=life_ring"/>
             <key key="emergency" value="life_ring"/>
@@ -5270,6 +5316,7 @@
             <space/>
             <key key="amenity" value="social_facility"/>
             <key key="social_facility" value="shelter"/>
+            <reference ref="social_facility_for"/>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <text key="capacity" text="Capacity" value_type="integer"/>
             <reference ref="link_contact_address"/>
@@ -5523,6 +5570,11 @@
             <text key="operator" text="Operator"/>
             <reference ref="oh"/>
         </item> <!-- Sanitary Dump Station -->
+        <item name="Lavoir" icon="icons/png/amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=lavoir"/>
+            <key key="amenity" value="lavoir"/>
+            <reference ref="facility_access"/>
+        </item> <!-- Lavoir -->
         <separator/>
         <item name="Bench" icon="icons/png/amenity_bench.png" type="node,way" preset_name_label="true">
             <link wiki="Tag:amenity=bench"/>
@@ -5618,6 +5670,15 @@
             </optional>
             <reference ref="link_contact_address"/>
         </item> <!-- Animal boarding -->
+        <item name="Animal feeding place" icon="icons/png/amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=feeding_place"/>
+            <space/>
+            <key key="amenity" value="feeding_place"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="description" text="Description" length="255"/>
+            </optional>
+        </item> <!-- Animal feeding place -->
         <item name="Animal watering place" icon="icons/png/amenity_empty.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=watering_place"/>
             <space/>
@@ -5637,21 +5698,23 @@
             <multiselect key="valves" text="Valves" values="dunlop;schrader;sclaverand;regina" display_values="Dunlop (Woods);Schrader;Sclaverand (Presta);Regina" values_searchable="true"/>
         </item> <!-- Compressed Air -->
         <separator/>
+        <item name="Advertising" icon="icons/png/amenity_advertising_12451.png" type="node,closedway" preset_name_label="true">
+            <link wiki="Key:advertising"/>
+            <space/>
+            <combo key="advertising" text="Advertising facility" values="billboard,board,column,flag,poster_box,screen,sign,totem" display_values="Billboard,Board,Column,Flag,Poster box,Screen,Sign,Totem" values_context="advertising" values_searchable="true" match="key"/>
+            <reference ref="advertising_optional" />
+        </item> <!-- Advertising -->
         <item name="Advertising Column" icon="icons/png/amenity_advertising_column_12428.png" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:advertising=column"/>
             <space/>
             <key key="advertising" value="column"/>
-            <optional>
-                <check key="lit" text="Lit" disable_off="true"/>
-            </optional>
+            <reference ref="advertising_optional" />
         </item> <!-- Advertising Column -->
         <item name="Billboard" icon="icons/png/amenity_advertising_billboard_12427.png" type="node" preset_name_label="true">
             <link wiki="Tag:advertising=billboard"/>
             <space/>
             <key key="advertising" value="billboard"/>
-            <optional>
-                <check key="lit" text="Lit" disable_off="true"/>
-            </optional>
+            <reference ref="advertising_optional" />
         </item> <!-- Billboard -->  
         <item name="Excrement Bags" icon="icons/png/amenity_vending_excrement_bags_12290.png" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=vending_machine%3Dexcrement_bags"/>
@@ -5663,7 +5726,13 @@
             <reference ref="fee"/>
             <reference ref="bin"/>
             <text key="note" text="Note" length="255"/>
-        </item> <!-- "Excrement sBbag Dispenser -->
+        </item> <!-- Excrement Bags -->
+        <item name="Weighbridge" icon="icons/png/amenity_empty.png" type="node,way" preset_name_label="true">
+            <link wiki="Tag:amenity=weighbridge"/>
+            <space/>
+            <key key="amenity" value="weighbridge"/>
+            <text key="operator" text="Operator"/>
+        </item> <!-- Weighbridge -->  
     </group> <!-- Facilities -->
   </group>  <!-- Facilities -->
   <group name="Sports" icon="icons/png/sport_soccer.png">
@@ -7274,6 +7343,9 @@
          <link wiki="Tag:historic=castle"/>
          <space/>
          <key key="historic" value="castle"/>
+         <combo key="castle_type" text="Type" 
+            values="defensive,palace,stately,manor,fortress,castrum,shiro,kremlin" 
+            display_values="Defensive,Palace,Stately,Manor,Fortress,Castrum,Shiro,Kremlin" />
          <reference ref="name_wikipedia"/>
          <check key="ruins" text="Ruins"/>
          <reference ref="link_contact_address_payment"/>
@@ -8328,6 +8400,7 @@
             <list_entry value="animal_food" short_description="Animal food"/>
             <list_entry value="bicycle_tube" short_description="Bicycle tubes"/>
             <list_entry value="cigarettes" short_description="Cigarettes"/>
+            <list_entry value="chewing_gums" short_description="Chewing gums"/>
             <list_entry value="coffee" short_description="Coffee"/>
             <list_entry value="condoms" short_description="Condoms"/>
             <list_entry value="drinks" short_description="Drinks"/>
@@ -8350,6 +8423,7 @@
             <list_entry value="telephone_vouchers" short_description="Telephone vouchers"/>
             <list_entry value="toys" short_description="Toys"/>
             <list_entry value="vouchers" short_description="Vouchers"/> 
+            <list_entry value="water" short_description="Water"/>
         </multiselect>
         <text key="operator" text="Operator"/>
         <text key="ref" text="Reference number"/>
