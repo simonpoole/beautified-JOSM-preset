@@ -4509,6 +4509,9 @@
             <link wiki="Tag:tourism=museum"/>
             <space/>
             <key key="tourism" value="museum"/>
+            <multiselect key="subject" text="Subject" values="arts,aviation,cars,ceramics,history,maritime,military,music,nature,railway,science,technology,transport" 
+                display_values="Arts,Aviation,Cars,Ceramics,History,Maritime,Military,Music,Nature,Railway,Science,Technology,Transport" values_searchable="true" />
+            <combo key="museum_type" text="Museum scope" values="national,municipial,regional" display_values="National,Municipial,Regional" />
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
             <text key="wikidata" text="Wikidata" value_type="wikidata"/>
