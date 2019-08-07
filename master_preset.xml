@@ -7533,6 +7533,10 @@
             <link wiki="Tag:shop=butcher"/>
             <space/>
             <key key="shop" value="butcher"/>
+            <combo text="Speciality" key="butcher" values="beef,horse,lamb,pork,poultry,game" 
+                display_values="Beef,Horse,Lamb,Pork,Poultry,Game" match="key"/>
+            <combo key="diet:halal" text="Halal" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:kosher" text="Kosher" values="yes,no,only" display_values="Yes,No,Only" />
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Butcher -->
