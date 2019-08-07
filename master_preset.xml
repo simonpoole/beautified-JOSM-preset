@@ -8027,6 +8027,13 @@
             <link wiki="Tag:shop=beauty"/>
             <space/>
             <key key="shop" value="beauty"/>
+            <multiselect key="beauty" text="Type" values_searchable="true" match="key">
+                <list_entry value="cosmetics" short_description="Cosmetics"/>
+                <list_entry value="hair" short_description="Hairdresser"/>
+                <list_entry value="hair_removal" short_description="Hair removal"/>
+                <list_entry value="skin_care" short_description="Skin care"/>
+                <list_entry value="spa" short_description="Spa"/>
+            </multiselect>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Beauty -->
