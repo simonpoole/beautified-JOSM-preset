@@ -5615,10 +5615,14 @@
             <check key="fireplace" text="Fireplace" disable_off="true"/>
             <combo key="shelter_type" text="Type of shelter" values_context="shelter" values_searchable="true">
 				<list_entry value="basic_hut" short_description="Basic hut" icon="presets/accommodation/basic_hut_blue.png"/>
+                <list_entry value="field_shelter" short_description="Field shelter" />
+                <list_entry value="gazebo" short_description="Gazebo" />
 				<list_entry value="lean_to" short_description="lean to" icon="presets/accommodation/shelter_lean_to.svg"/>
 				<list_entry value="picnic_shelter" short_description="Picnic shelter" icon="presets/accommodation/shelter_picnic_brown.png"/>
 				<list_entry value="public_transport" short_description="Public transport" icon="presets/accommodation/shelter_public_transport_brown.png"/>
-				<list_entry value="weather_shelter" short_description="Weather shelter" icon="presets/accommodation/shelter.svg"/>
+				<list_entry value="rock_shelter" short_description="Rock shelter" />
+                <list_entry value="sun_shelter" short_description="Sun schelter" />
+                <list_entry value="weather_shelter" short_description="Weather shelter" icon="presets/accommodation/shelter.svg"/>
 				<list_entry value="wildlife_hide" short_description="Wildlife hide" icon="presets/accommodation/shelter.svg"/>
 			</combo>
 		</item> <!-- Shelter -->
@@ -7842,7 +7846,7 @@
         <item name="Electrical appliances" icon="${ICONPATH}shopping_electrical.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Proposed_features/Appliance_Store#shop.3Dappliance"/>
             <space/>
-            <key key="shop" value="appliances"/>
+            <key key="shop" value="appliance"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Electrical appliances -->
