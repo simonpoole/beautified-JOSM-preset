@@ -3523,6 +3523,12 @@
             <reference ref="optional_level"/>
             <text key="ref" text="Reference"/>
         </item> <!-- Gate -->
+        <item name="Airstrp" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:aeroway=airstrip"/>
+            <key key="aeroway" value="airstrip"/>
+            <text key="operator" text="Operator"/>
+            <text key="ele" text="Elevation"/>
+        </item> <!-- Airstrip -->
     </group> <!-- Airport -->
   </group> <!-- Transport -->
   <group name="Facilities" icon="${ICONPATH}accommodation_hotel2.${ICONTYPE}">
