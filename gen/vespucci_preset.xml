@@ -1061,6 +1061,19 @@
         <reference ref="support" />
     </optional>
   </chunk>
+  <chunk id="scuba">
+      <multiselect key="league" text="League" length="3" values="CMAS;PADI;SSI" values_sort="false" match="none" editable="true"/>
+      <check key="scuba_diving:repair" text="Repairs" />
+      <check key="scuba_diving:courses" text="Courses" />
+      <check key="scuba_diving:rental" text="Equipment rentals" />
+      <checkgroup text="Filling" columns="4">
+        <check key="scuba_diving:filling" text="Fills available" disable_off="true"/>        
+        <check key="scuba_diving:air_filling" text="Air" disable_off="true"/>
+        <check key="scuba_diving:nitrox_filling" text="Nitrox" disable_off="true"/>
+        <check key="scuba_diving:trimix_filling" text="Trimix" disable_off="true"/>
+        <check key="scuba_diving:oxygen_filling" text="Oxygen" disable_off="true"/>
+      </checkgroup>
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="highway_highway_sp.png">
     <group name="Streets" icon="highway_highway_sp.png" items_sort="false" >
@@ -3523,6 +3536,12 @@
             <reference ref="optional_level"/>
             <text key="ref" text="Reference"/>
         </item> <!-- Gate -->
+        <item name="Airstrp" icon="transport_empty.png" type="node" preset_name_label="true">
+            <link wiki="Tag:aeroway=airstrip"/>
+            <key key="aeroway" value="airstrip"/>
+            <text key="operator" text="Operator"/>
+            <text key="ele" text="Elevation"/>
+        </item> <!-- Airstrip -->
     </group> <!-- Airport -->
   </group> <!-- Transport -->
   <group name="Facilities" icon="accommodation_hotel2.png">
@@ -4509,6 +4528,9 @@
             <link wiki="Tag:tourism=museum"/>
             <space/>
             <key key="tourism" value="museum"/>
+            <multiselect key="museum" text="Type" values="archaeological,art,aviation,cars,ceramics,children,history,maritime,military,music,nature,person,railway,science,sport,technology,transport,war" 
+                display_values="Archaeological,Art,Aviation,Cars,Ceramics,Children,History,Maritime,Military,Music,Nature,Person,Railway,Science,Sport,Technology,Transport,War" values_searchable="true" />
+            <combo key="museum_type" text="Museum scope" values="national,municipial,regional" display_values="National,Municipial,Regional" />
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
             <text key="wikidata" text="Wikidata" value_type="wikidata"/>
@@ -5872,6 +5894,14 @@
             <key key="leisure" value="miniature_golf"/>
             <reference ref="name_oh_wheelchair"/>
         </item> <!-- Miniature Golf -->
+        <item name="Dive centre" icon="sport_scuba_diving_21080.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=dive_centre"/>
+            <space/>
+            <key key="amenity" value="dive_centre"/>
+            <reference ref="name_oh_wheelchair"/>
+            <reference ref="scuba" />
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Dive centre -->
     </group> <!-- Sport Facilities -->
     <group name="Sport" icon="sport_rowing_21113.png">
         <item name="Multi" icon="sport_multi_21054.png" type="node,closedway,multipolygon" preset_name_label="true">
@@ -8124,6 +8154,7 @@
             <space/>
             <key key="shop" value="scuba_diving"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="scuba" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Scuba diving -->
         <item name="Sewing" icon="shopping_dressmaker_16111.png" type="node,closedway,multipolygon" preset_name_label="true">
