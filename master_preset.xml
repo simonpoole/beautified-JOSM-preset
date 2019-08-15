@@ -4544,8 +4544,8 @@
             <link wiki="Tag:tourism=museum"/>
             <space/>
             <key key="tourism" value="museum"/>
-            <multiselect key="museum" text="Type" values="archaeological,art,aviation,cars,ceramics,children,history,maritime,military,music,nature,person,railway,science,sport,technology,transport,war" 
-                display_values="Archaeological,Art,Aviation,Cars,Ceramics,Children,History,Maritime,Military,Music,Nature,Person,Railway,Science,Sport,Technology,Transport,War" values_searchable="true" />
+            <multiselect key="museum" text="Type" values="archaeological;art;aviation;cars;ceramics;children;history;maritime;military;music;nature;person;railway;science;sport;technology;transport;war" 
+                display_values="Archaeological;Art;Aviation;Cars;Ceramics;Children;History;Maritime;Military;Music;Nature;Person;Railway;Science;Sport;Technology;Transport;War" values_searchable="true" />
             <combo key="museum_type" text="Museum scope" values="national,municipial,regional" display_values="National,Municipial,Regional" />
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
