@@ -233,8 +233,8 @@
             <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" match="none" editable="true"/>
         </optional>
     </chunk>
-    <chunk id="diaper">
-        <combo key="diaper" text="Diaper changing facilities" values_sort="false">
+    <chunk id="changing_table">
+        <combo key="diaper" text="Diaper changing (deprecated)" values_sort="false">
 	      <list_entry value="yes" short_description="Available"/>
 	      <list_entry value="no" short_description="Not available"/>
 	      <list_entry value="room" short_description="Dedicated room"/>
@@ -244,10 +244,26 @@
 	      <list_entry value="4" short_description="4 tables"/>
 	      <list_entry value="5" short_description="5 tables"/>
 		</combo>
+        <combo key="changing_table" text="Baby changing table" values_sort="false">
+            <list_entry value="yes" short_description="Available"/>
+            <list_entry value="limited" short_description="Inofficial"/>
+            <list_entry value="no" short_description="Not available"/>          
+        </combo>
+        <check key="changing_table:fee" text="Changing table fee"/>
+        <combo key="changing_table:count" text="Changing table count" values="1,2,3,4,5" value_type="integer" />
+        <multiselect key="changing_table:location" text="Changing table location">
+            <list_entry value="wheelchair_toilet" short_description="Wheelchair users toilet"/>
+            <list_entry value="female_toilet" short_description="Womens toilet"/>
+            <list_entry value="male_toilet" short_description="Mens toilet"/>
+            <list_entry value="unisex_toilet" short_description="Unisex toilet"/>
+            <list_entry value="dedicated_room" short_description="Dedicated room"/>
+            <list_entry value="room" short_description="Multi purpose room"/>
+            <list_entry value="sales_area" short_description="Sales area"/>
+        </multiselect>
     </chunk>
     <chunk id="toilets">
     	<check key="toilets" text="Toilets" />
-    	<reference ref="diaper"/>
+    	<reference ref="changing_table"/>
     	<combo key="toilets:wheelchair" text="Wheelchair toilets" match="none" values_searchable="true" values_sort="false">
         	<list_entry value="designated" short_description="Dedicated facilities"/>
         	<list_entry value="yes" short_description="Unrestricted access"/>
@@ -274,12 +290,12 @@
     </chunk>
     <chunk id="wheelchair_rooms">
         <optional>
-			<text key="wheelchair:rooms" text="Number of rooms suitable for wheelchairs"/>
+			<text key="wheelchair:rooms" text="Number of rooms suitable for wheelchairs" alue_type="integer"/>
         </optional>
     </chunk>
     <chunk id="wheelchair_seating">
         <optional>
-            <text key="wheelchair:places" text="Number of wheelchair seating places"/>
+            <text key="wheelchair:places" text="Number of wheelchair seating places" alue_type="integer"/>
         </optional>
     </chunk>
     <chunk id="oh_wheelchair">
@@ -5414,7 +5430,7 @@
                 <combo key="toilets:disposal" text="Type" values="flush,pitlatrine,chemical,bucket"/>
                 <text key="description" text="Description" length="255"/>
                 <reference ref="fee"/>
-                <reference ref="diaper"/>
+                <reference ref="changing_table"/>
                 <text key="operator" text="Operator"/>
                 <combo key="toilets:position" text="Usage Position" values="seated,seated;urinal,squat,urinal"/>
                 <reference ref="oh_wheelchair_level"/>
