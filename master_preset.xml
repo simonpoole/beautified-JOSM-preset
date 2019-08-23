@@ -5236,7 +5236,7 @@
             <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical" display_values="Pneumatic,Electronic,Mechanical" 
                 values_context="siren" />
             <multiselect key="siren:purpose" text="Purpose" 
-                values="tornado,fire,air_raid,civil_defense" display_values="Tornado,Fire,Air raid,Civil defense" values_context="siren" />
+                values="tornado;fire;air_raid;civil_defense" display_values="Tornado;Fire;Air raid;Civil defense" values_context="siren" />
             <text key="siren:range" text="Range (in meters)"/>
         </item> <!-- Siren -->
         <item name="Lifeguard" icon="${ICONPATH}emergency_empty.${ICONTYPE}" type="node" preset_name_label="true">
