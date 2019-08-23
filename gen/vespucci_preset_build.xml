@@ -1861,6 +1861,12 @@
             <reference ref="maxspeed"/>
             <reference ref="traffic_signals_direction" /> 
         </item> <!-- Speed Limit -->
+        <item name="Stop sign" icon="icons/png/highway_stop_18064.png" type="node" preset_name_label="true">
+            <link wiki="Key:traffic_sign"/>
+            <space/>
+            <key key="traffic_sign" value="stop"/>
+            <reference ref="traffic_signals_direction" /> 
+        </item> <!-- Speed Limit -->
         <item name="Traffic Sign Forward" icon="icons/png/traffic_signs.png" type="node" preset_name_label="true">
             <link wiki="Key:traffic_sign"/>
             <space/>
@@ -5230,7 +5236,7 @@
             <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical" display_values="Pneumatic,Electronic,Mechanical" 
                 values_context="siren" />
             <multiselect key="siren:purpose" text="Purpose" 
-                values="tornado,fire,air_raid,civil_defense" display_values="Tornado,Fire,Air raid,Civil defense" values_context="siren" />
+                values="tornado;fire;air_raid;civil_defense" display_values="Tornado;Fire;Air raid;Civil defense" values_context="siren" />
             <text key="siren:range" text="Range (in meters)"/>
         </item> <!-- Siren -->
         <item name="Lifeguard" icon="icons/png/emergency_empty.png" type="node" preset_name_label="true">
@@ -6369,8 +6375,8 @@
 		<item name="Building" icon="icons/png/man_made_house_sp.png" type="node,closedway,multipolygon" preset_name_label="true">
 			<link wiki="Key:building"/>
 			<space/>
-			<combo key="building" text="Building" values="yes,house,garage,apartments,industrial,residential,detached,terrace,bungalow,hut,roof,garages,school,dormitory,hotel,hangar,commercial,service,train_station,barn,stable,cabin,farm,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,kindergarten,manufacture,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction,basilica,cathedral,chapel,church,temple,mosque,synagogue,transformer_tower,public,ruins,bakehouse" 
-                display_values="Yes,House,Garage,Apartments,Industrial,Residential,Detached,Terrace,Bungalow,Hut,Roof,Garages,School,Dormitory,Hotel,Hangar,Commercial,Service,Train station,Barn,Stable,Cabin,Farm,Farm auxiliary,Transportation,Greenhouse,Office,University,College,Hospital,Kindergarten,Manufacture,Warehouse,Retail,Shed,Storage tank,Supermarket,Gasometer,Cowshed,Construction,Basilica,Cathedral,Chapel,Church,Temple,Mosque,Synagogue,Transformer tower,Public,Ruins,Bakehouse" 
+			<combo key="building" text="Building" values="yes,house,garage,apartments,industrial,residential,detached,terrace,bungalow,hut,roof,garages,school,dormitory,hotel,hangar,commercial,service,train_station,barn,stable,cabin,farm,farm_auxiliary,transportation,greenhouse,office,university,college,hospital,kindergarten,manufacture,warehouse,retail,shed,storage_tank,supermarket,gasometer,cowshed,construction,basilica,cathedral,chapel,church,temple,mosque,synagogue,transformer_tower,public,ruins,bakehouse,static_caravan,semidetached_house,ger" 
+                display_values="Yes,House,Garage,Apartments,Industrial,Residential,Detached,Terrace,Bungalow,Hut,Roof,Garages,School,Dormitory,Hotel,Hangar,Commercial,Service,Train station,Barn,Stable,Cabin,Farm,Farm auxiliary,Transportation,Greenhouse,Office,University,College,Hospital,Kindergarten,Manufacture,Warehouse,Retail,Shed,Storage tank,Supermarket,Gasometer,Cowshed,Construction,Basilica,Cathedral,Chapel,Church,Temple,Mosque,Synagogue,Transformer tower,Public,Ruins,Bakehouse,Static caravan,Semidetached house,Ger" 
                 values_context="building" default="yes" match="keyvalue!" values_searchable="true"/>
 			<reference ref="additional_building_tags"/>
 			<preset_link preset_name="Address"/>
@@ -6910,6 +6916,13 @@
             	<text key="operator" text="Operator"/>
             </optional>
         </item> <!-- MDF -->
+        <item name="Beehive" icon="icons/png/man_made_empty.png" name_context="man_made" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=beehive"/>
+            <key key="man_made" value="beehive"/>
+            <optional>
+                <text key="operator" text="Operator"/>
+            </optional>
+        </item> <!-- Beehive -->
     </group> <!-- Man Made -->
     <group name="Bridges" icon="icons/png/highway_bridge_sp.png">
         <item name="Bridge" icon="icons/png/highway_bridge_sp.png" type="way,relation,multipolygon" preset_name_label="true">
@@ -8761,6 +8774,14 @@
             <text key="population" text="Population"/>
             <text key="website" text="Website"/>
         </item> <!-- Neighbourhood -->
+        <item name="City block" icon="presets/places.png" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:place=city_block"/>
+            <space/>
+            <key key="place" value="city_block"/>
+            <reference ref="name_wikipedia"/>
+            <text key="population" text="Population"/>
+            <text key="website" text="Website"/>
+        </item> <!-- City block -->
         <item name="Farm" icon="icons/png/poi_farm_22120.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:place=farm"/>
             <space/>
