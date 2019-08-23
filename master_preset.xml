@@ -6910,6 +6910,13 @@
             	<text key="operator" text="Operator"/>
             </optional>
         </item> <!-- MDF -->
+        <item name="Beehive" icon="${ICONPATH}man_made_empty.${ICONTYPE}" name_context="man_made" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=beehive"/>
+            <key key="man_made" value="beehive"/>
+            <optional>
+                <text key="operator" text="Operator"/>
+            </optional>
+        </item> <!-- Beehive -->
     </group> <!-- Man Made -->
     <group name="Bridges" icon="${ICONPATH}highway_bridge_sp.${ICONTYPE}">
         <item name="Bridge" icon="${ICONPATH}highway_bridge_sp.${ICONTYPE}" type="way,relation,multipolygon" preset_name_label="true">
