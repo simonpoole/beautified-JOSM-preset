@@ -5112,7 +5112,9 @@
             <link wiki="Tag:emergency=emergency_ward_entrance" />
             <space />
             <key key="emergency" value="emergency_ward_entrance" />
-            <reference ref="name_operator" />
+            <optional>
+                <reference ref="name_operator" />
+            </optional>
             <combo key="emergency_ward_entrance" text="Type" values="walk-in,rescue_service,all" display_values="Walk-in,Rescue service,All" values_searchable="true" />
             <reference ref="link_contact_address" />
         </item> <!-- Emergency ward entrance -->
