@@ -5642,6 +5642,14 @@
             <reference ref="colours" />
             <combo key="seats" text="Seats count" values="2,3,4,5,6,7,8,9,10"/>
         </item> <!-- Bench -->
+        <item name="Outdoor seating" icon="${ICONPATH}amenity_outdoor_seating.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:leisure=outdoor_seating"/>
+            <space/>
+            <key key="leisure" value="outdoor_seating"/>
+            <combo key="weather_protection" text="Weather protection" values="awning,canopy,parasol,pavilion,roof,trees" 
+                display_values="Awning,Canopy,Parasol,Pavilion,Roof,Trees" values_searchable="true" match="key"/>
+            <check key="heating" text="Heating" />
+        </item> <!-- Outdoor seating -->
         <item name="Shelter" icon="${ICONPATH}accommodation_shelter2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=shelter"/>
             <space/>
