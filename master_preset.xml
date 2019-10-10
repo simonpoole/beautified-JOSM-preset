@@ -2046,6 +2046,9 @@
         <item name="Gate" icon="${ICONPATH}barrier_gate.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=gate"/>
             <key key="barrier" value="gate"/>
+            <optional>
+                <text key="ref" text="Reference"/>
+            </optional>
             <reference ref="barrier_5"/>
             <reference ref="optional_maxheight_maxwidth"/>
             <reference ref="general_access"/>
