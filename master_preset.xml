@@ -9416,7 +9416,7 @@
             <preset_link preset_name="Note"/>
             <preset_link preset_name="Description"/>
         </item> <!-- Fixme -->
-        <item name="Add or update check date" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}" type="node,way,closedway,relation" preset_name_label="true">
+        <item name="Add or update check date" icon="${ICONPATH}javascript.${ICONTYPE}" type="node,way,closedway,relation" preset_name_label="true">
             <link wiki="Key:check_date"/>
             <!-- originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags 
                  before the PropertyEditor was started, tags are the current values, by removing the key at the 
