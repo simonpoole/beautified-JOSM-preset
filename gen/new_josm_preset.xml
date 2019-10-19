@@ -5708,8 +5708,10 @@
             <link wiki="Tag:amenity=compressed_air"/>
             <space/>
             <key key="amenity" value="compressed_air"/>
-            <reference ref="name_ref"/>
-            <text key="operator" text="Operator"/>
+            <optional>
+                <reference ref="name_ref"/>
+                <text key="operator" text="Operator"/>
+            </optional>
             <reference ref="fee"/>
             <multiselect key="valves" text="Valves" values="dunlop;schrader;sclaverand;regina" display_values="Dunlop (Woods);Schrader;Sclaverand (Presta);Regina" values_searchable="true"/>
         </item> <!-- Compressed Air -->
