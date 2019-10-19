@@ -1705,8 +1705,8 @@
             <link wiki="Tag:highway=traffic_signals"/>
             <key key="highway" value="traffic_signals"/>
             <optional text="Optional signal attributes:">
-                <combo key="traffic_signals" text="Type" values="blinker,blink_mode,bus_priority,continuos_green,emergency,ramp_meter,tram_priority"
-                    display_values="Blinker,Blink mode,Bus priority,Continuos green,Emergency,Ramp meter,Tram priority" />
+                <combo key="traffic_signals" text="Type" values="blinker,blink_mode,bus_priority,continuous_green,emergency,ramp_meter,tram_priority"
+                    display_values="Blinker,Blink mode,Bus priority,Continuous green,Emergency,Ramp meter,Tram priority" />
                 <combo key="traffic_signals:direction" text="For traffic direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
                 <check key="button_operated" text="Button operated" disable_off="true"/>
                 <check key="traffic_signals:sound" text="Sound signals" disable_off="true"/>
