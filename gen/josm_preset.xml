@@ -1677,7 +1677,7 @@
             <link href="https://wiki.openstreetmap.org/wiki/Tag:highway=traffic_signals"/>
             <key key="highway" value="traffic_signals"/>
             <optional text="Optional signal attributes:">
-                <combo key="traffic_signals" text="Type" values="blinker,blink_mode,bus_priority,continuos_green,emergency,ramp_meter,tram_priority" display_values="Blinker,Blink mode,Bus priority,Continuos green,Emergency,Ramp meter,Tram priority"/>
+                <combo key="traffic_signals" text="Type" values="blinker,blink_mode,bus_priority,continuous_green,emergency,ramp_meter,tram_priority" display_values="Blinker,Blink mode,Bus priority,Continuous green,Emergency,Ramp meter,Tram priority"/>
                 <combo key="traffic_signals:direction" text="For traffic direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
                 <check key="button_operated" text="Button operated" disable_off="true"/>
                 <check key="traffic_signals:sound" text="Sound signals" disable_off="true"/>
@@ -5612,7 +5612,7 @@
 				<list_entry value="picnic_shelter" short_description="Picnic shelter" icon="presets/accommodation/shelter_picnic_brown.png"/>
 				<list_entry value="public_transport" short_description="Public transport" icon="presets/accommodation/shelter_public_transport_brown.png"/>
 				<list_entry value="rock_shelter" short_description="Rock shelter"/>
-                <list_entry value="sun_shelter" short_description="Sun schelter"/>
+                <list_entry value="sun_shelter" short_description="Sun shelter"/>
                 <list_entry value="weather_shelter" short_description="Weather shelter" icon="presets/accommodation/shelter.svg"/>
 				<list_entry value="wildlife_hide" short_description="Wildlife hide" icon="presets/accommodation/shelter.svg"/>
 			</combo>
