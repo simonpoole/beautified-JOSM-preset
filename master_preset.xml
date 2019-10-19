@@ -608,6 +608,7 @@
         <text key="website" text="Website"/>
     </chunk>
     <chunk id="route_hikebike_optionals">
+        <check key="network:type" text="Node network" value_on="node_network" disable_off="true" />
         <text key="ref" text="Reference"/>
         <text key="operator" text="Operator"/>
         <text key="distance" text="Distance (km)"/>
