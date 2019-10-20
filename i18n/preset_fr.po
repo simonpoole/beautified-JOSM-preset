@@ -8,8 +8,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2019-10-19 20:23+0200\n"
-"PO-Revision-Date: 2019-10-19 18:24+0000\n"
+"POT-Creation-Date: 2019-10-19 20:38+0200\n"
+"PO-Revision-Date: 2019-10-19 18:40+0000\n"
 "Last-Translator: Simon Poole <sp8962@gmail.com>\n"
 "Language-Team: French (http://www.transifex.com/openstreetmap/presets/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -4643,7 +4643,10 @@ msgstr "Haie"
 msgid "Height (Meters)"
 msgstr " Hauteur (Mètres)"
 
+#: master_preset.xml:6938(text:text|group:Man_Made|preset:Surveillance_Camera|key:height)
+#: master_preset.xml:7300(text:text|preset:Power_Tower|key:height)
 #: master_preset.xml:8938(text:text|group:Nature|preset:Tree|key:height)
+#: master_preset.xml:8958(text:text|group:Nature|preset:Tree_Row|key:height)
 msgid "Height (m)"
 msgstr "Hauteur (m)"
 
@@ -4666,12 +4669,6 @@ msgstr "Hauteur (m)"
 #: master_preset.xml:990(text:text|key:height)
 msgid "Height (meters)"
 msgstr "Hauteur (mètres)"
-
-#: master_preset.xml:6938(text:text|group:Man_Made|preset:Surveillance_Camera|key:height)
-#: master_preset.xml:7300(text:text|preset:Power_Tower|key:height)
-#: master_preset.xml:8958(text:text|group:Nature|preset:Tree_Row|key:height)
-msgid "Height in meter (m)"
-msgstr "Hauteur en mètres (m)"
 
 #: master_preset.xml:1950(item:name|group:Barriers|preset:Height_resctrictor)
 msgid "Height resctrictor"

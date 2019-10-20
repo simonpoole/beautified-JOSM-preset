@@ -2163,14 +2163,14 @@
             <combo key="motor_vehicle:conditional" text="Motor vehicles @" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
 	    	<reference ref="additional_access_tags"/> 
         </item> <!-- Motor vehicle -->
-        <item name="Motor vehicle (CH)" icon="no_motor_vehicles_CH.png" type="node,way,closedway" preset_name_label="true">
+        <item name="Motor vehicle (CH)" region="CH" icon="no_motor_vehicles_CH.png" type="node,way,closedway" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Key:access"/>
             <space/>
             <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" values_sort="false" match="key"/>
             <combo key="motor_vehicle:conditional" text="Motor vehicles @" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
 	    	<reference ref="additional_access_tags"/> 
         </item> <!-- Motor vehicle CH -->
-        <item name="Motorcar and -cycle (CH)" icon="no_motor_vehicles.png" type="node,way,closedway" preset_name_label="true">
+        <item name="Motorcar and -cycle (CH)" region="CH" icon="no_motor_vehicles.png" type="node,way,closedway" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Key:access"/>
             <space/>
             <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,,No access" values_context="access" values_sort="false" match="key"/>
@@ -6861,7 +6861,7 @@
             <optional>
                 <text key="camera:direction" text="Direction in degrees" match="key"/>
                 <text key="camera:angle" text="Inclination in degrees" match="key"/>
-                <text key="height" text="Height in meter (m)"/>
+                <text key="height" text="Height (m)"/>
             </optional>
         </item> <!-- Surveillance Camera -->
         <item name="MDF" icon="man_made_MDF_22029.png" name_context="man_made" type="node,closedway" preset_name_label="true">
@@ -7223,7 +7223,7 @@
             <link href="https://wiki.openstreetmap.org/wiki/Tag:power=tower"/>
             <space/>
             <key key="power" value="tower"/>
-            <text key="height" text="Height in meter (m)"/>
+            <text key="height" text="Height (m)"/>
             <combo key="structure" text="Type of construction" values="lattice,tubular,solid"/>
             <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" values_context="material"/>
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="colour" match="none" editable="true"/>
@@ -8876,7 +8876,7 @@
             <label text="A line of trees."/>
             <space/>
             <key key="natural" value="tree_row"/>
-            <text key="height" text="Height in meter (m)"/>
+            <text key="height" text="Height (m)"/>
             <optional>
             	<reference ref="genus_species_taxon"/>
                 <reference ref="leaf"/>
@@ -9338,13 +9338,7 @@
         <item name="No name" icon="osm_exclamation_mark_sp.png" type="node,way,closedway,relation" preset_name_label="true">
             <check key="noname" text="No name" disable_off="true"/>
         </item>
-        <item name="Add or update check date" icon="javascript.png" type="node,way,closedway,relation" preset_name_label="true">
-            <link href="https://wiki.openstreetmap.org/wiki/Key:check_date"/>
-            <!-- originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags 
-                 before the PropertyEditor was started, tags are the current values, by removing the key at the 
-                 end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
-        	<text key="automatic_check_date" text="Automatic check_date generation"/>	
-		</item> <!-- Add or update check date -->
+         <!-- Add or update check date -->
   </group> <!-- Annotation -->
   <group name="Relations" icon="osm_relation_sp.png">
        <item name="Relations" icon="osm_relation_sp.png" type="relation,multipolygon" preset_name_label="true">
@@ -10567,21 +10561,8 @@
         </item> <!-- Vacant -->
     </group> <!-- Offices -->
     <group name="Lifecycle" icon="lifecycle.png">
-        <item name="Set to disused" icon="javascript.png" type="node,way,closedway,relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Key:check_date"/>
-            <!-- originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags 
-                 before the PropertyEditor was started, tags are the current values, by removing the key at the 
-                 end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
-            <text key="set_to_disused"/>
-        </item>
-        <item name="Set to disused (remove tags)" icon="javascript.png" type="node,way,closedway,relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Key:check_date"/>
-            <!-- This preset will only remove tags on app version 703 and higher (Vespucci 11.1.1)    
-                 originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags 
-                 before the PropertyEditor was started, tags are the current values, by removing the key at the 
-                 end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
-            <text key="set_to_disused_remove_tags"/>
-        </item>
+        
+        
         <item name="Disused amenity" icon="lifecycle.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link href="https://wiki.openstreetmap.org/wiki/Key:disused:"/>
             <space/>
