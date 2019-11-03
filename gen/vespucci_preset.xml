@@ -6315,14 +6315,14 @@
             <key key="sport" value="croquet"/>
             <reference ref="name_leisure_pitch"/>
         </item> <!-- Croquet -->
-        <item name="Field Hockey" icon="presets/field_hockey.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Field Hockey" icon="sport_hockey.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=field_hockey"/>
             <space/>
             <key key="sport" value="field_hockey"/>
             <text key="name" text="Name"/>
             <reference ref="sport_facility"/>
         </item> <!-- Field Hockey -->
-        <item name="Ice Hockey" icon="sport_hockey_21013.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Ice Hockey" icon="sport_ice_hockey_21013.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=ice_hockey"/>
             <space/>
             <key key="sport" value="ice_hockey"/>
