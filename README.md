@@ -7,11 +7,11 @@ The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/intro
 
 The links to original icons remain if they currently don't have a replacement, current count is roughly 90 icons that either have not been replaced or are missing. 
 
-The preset file contained at last count over 880 individual object presets vs 724 in the original. Extensions to the original JOSM schema are documented on the [vespucci site](http://vespucci.io/tutorials/presets/).
+The preset file contained at last count a good 1'000 individual object presets vs 724 in the original. Extensions to the original JOSM schema are documented on the [vespucci site](http://vespucci.io/tutorials/presets/).
 
 Due to the touchy nature of the subject, presets for military objects have been moved out of the default preset to [military preset](http://simonpoole.github.io/military-preset/).
 
-Building the actual preset files is done with gradle and should work on both unixy operationing systems and windows, the "generateAllPresetTypes" task will generate the variants in the `gen` directory.
+Building the actual preset files is done with gradle and should work on both unixy operating systems and windows, the build task will generate the variants in the `gen` directory.
 
 Building requires `xmlstarlet` installed and on your path.
 
