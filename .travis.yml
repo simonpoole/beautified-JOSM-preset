@@ -3,11 +3,8 @@ language: java
 
 jdk:
 - openjdk11
-
-before_install:
- - chmod +x gradlew
  
- script: gradlew build
+ script: gradle build
  
 after_failure:
   - cat /home/travis/build/simonpoole/mapsplit/build/test-results/test/*.xml
