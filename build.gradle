@@ -244,7 +244,7 @@ vespucciNoTranslationsZip.group = 'preset'
 vespucciNoTranslationsZip.description = 'Generate zipped preset file for vespucci without translations'
 
 // this copies the zip files to their legacy location
-task copyToGen(dependsOn: ["vespucciNoTranslationsZip","vespucciZip"]) {
+task copyToGen(dependsOn: ["vespucciNoTranslationsZip", "vespucciZip"]) {
     mkdir('gen')
     copy {
         from new File(buildDir, 'gen')
@@ -253,7 +253,8 @@ task copyToGen(dependsOn: ["vespucciNoTranslationsZip","vespucciZip"]) {
     }
 }
 
-task replaceVersion << {
+task replaceVersion {
+    inputs.file('build.gradle')
     ant.replaceregexp(match:'presets version="([0-9\\.]+)"', replace:"presets version=\"${version}\"", flags:'g', byline:true) {
         fileset(dir: '.', includes: 'master_preset.xml')
     }
@@ -261,12 +262,12 @@ task replaceVersion << {
 
 githubRelease {
     token "${github_token}"
-    owner "simonpoole" 
-    tagName "${version}" 
+    owner "simonpoole"
+    tagName "${version}"
     releaseName "${version}"
-    body "" 
+    body ""
     releaseAssets new File(buildDir, 'gen').listFiles()
-    overwrite true 
+    overwrite true
 }
 
 build {
