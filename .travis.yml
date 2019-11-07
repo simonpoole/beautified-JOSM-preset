@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get -y install xmlstarlet
  
 script: 
-  - gradle build
+  - gradle check
  
 after_failure:
   - cat /home/travis/build/simonpoole/mapsplit/build/test-results/test/*.xml

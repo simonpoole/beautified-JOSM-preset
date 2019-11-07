@@ -281,3 +281,8 @@ build {
     dependsOn "copyToGen"
 }
 
+check {
+    dependsOn "generateAndValidateVespucci"
+    dependsOn "generateAndValidateJosm"
+}
+
