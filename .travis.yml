@@ -3,6 +3,9 @@ language: java
 
 jdk:
   - openjdk11
+  
+before_install:
+  - sudo apt-get -y install xmlstarlet
  
 script: 
   - gradle build
