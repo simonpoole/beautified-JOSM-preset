@@ -2,9 +2,10 @@ language: java
 
 
 jdk:
-- openjdk11
+  - openjdk11
  
- script: gradle build
+script: 
+  - gradle build
  
 after_failure:
   - cat /home/travis/build/simonpoole/mapsplit/build/test-results/test/*.xml
