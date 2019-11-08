@@ -29,6 +29,7 @@ ext {
     vespucci_preset_file = 'vespucci_preset.xml'
     vespucci_preset_build_file = 'vespucci_preset_build.xml'
     vespucci_preset_version = '1.4'
+    generated = 'build/gen/'
     github_token = System.getenv('GITHUB_TOKEN')
 }
 
@@ -130,10 +131,10 @@ task transformToOldJosm(dependsOn: ["josmIcons", "copyResources"], type: Exec) {
     mkdir('gen')
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         // remove extensions
-        commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/wiki2href.xslt', 'build/gen/new_' + josm_preset_file
+        commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/wiki2href.xslt', generated + 'new_' + josm_preset_file
     } else {
         // remove extensions
-        commandLine 'xmlstarlet', 'tr', 'build/xml/wiki2href.xslt', 'build/gen/new_' + josm_preset_file
+        commandLine 'xmlstarlet', 'tr', 'build/xml/wiki2href.xslt', generated + 'new_' + josm_preset_file
     }
     doFirst {
         standardOutput = new FileOutputStream(new File(buildDir, output))
@@ -141,7 +142,7 @@ task transformToOldJosm(dependsOn: ["josmIcons", "copyResources"], type: Exec) {
 }
 
 task generateAndValidateJosm(dependsOn: ["transformToJosm", "transformToOldJosm"], type: Exec) {
-    def input = 'build/gen/' + josm_preset_file
+    def input = generated + josm_preset_file
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         // validation
         commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', 'build/xml/josm-preset-1.0.xlmns', '-e', input
@@ -156,7 +157,7 @@ task josmZip(dependsOn: ["generateAndValidateJosm"], type: Zip) {
     version ''
     destinationDir = new File(buildDir, 'gen')
     from ('icons/png')
-    from ('build/gen/' + josm_preset_file)
+    from (generated + josm_preset_file)
 }
 josmZip.group = 'preset'
 josmZip.description = 'Generate zipped preset file for JOSM'
@@ -175,7 +176,7 @@ task vespucciIcons(type: Copy) {
 }
 
 task generateAndValidateVespucci(dependsOn: ["vespucciIcons", "copyResources"], type: Exec) {
-    def input = 'build/gen/' + vespucci_preset_file
+    def input = generated + vespucci_preset_file
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         // validation
         commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', "build/xml/vespucci-preset-${vespucci_preset_version}.xlmns", '-e', input
@@ -199,7 +200,7 @@ task vespucciBuild(dependsOn: ["replaceVersion"], type: Copy) {
 }
 
 task generateAndValidateVespucciBuild(dependsOn: ["vespucciBuild", "copyResources"], type: Exec) {
-    def input = 'build/gen/' + vespucci_preset_build_file
+    def input = generated + vespucci_preset_build_file
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         // validation
         commandLine 'cmd', '/c', 'xmlstarlet', 'val', '-s', "build/xml/vespucci-preset-${vespucci_preset_version}.xlmns", '-e', input
@@ -214,7 +215,7 @@ task vespucciZip(dependsOn: ["generateAndValidateVespucci", "updateTranslations"
     version ''
     destinationDir = new File(buildDir, 'gen')
     from ('icons/png')
-    from ('build/gen/' + vespucci_preset_file)
+    from (generated + vespucci_preset_file)
     from ('i18n')
     exclude ('*.pot')
 }
@@ -238,7 +239,7 @@ task vespucciNoTranslationsZip(dependsOn: ["generateAndValidateVespucci"], type:
     version ''
     destinationDir = new File(buildDir, 'gen')
     from ('icons/png')
-    from ('build/gen/' + vespucci_preset_file)
+    from (generated + vespucci_preset_file)
 }
 vespucciNoTranslationsZip.group = 'preset'
 vespucciNoTranslationsZip.description = 'Generate zipped preset file for vespucci without translations'
