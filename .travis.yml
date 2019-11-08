@@ -9,6 +9,3 @@ before_install:
  
 script: 
   - gradle check
- 
-after_failure:
-  - cat /home/travis/build/simonpoole/mapsplit/build/test-results/test/*.xml
