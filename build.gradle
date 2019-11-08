@@ -113,7 +113,7 @@ task josmIcons(dependsOn: ["replaceVersion"], type: Copy) {
 
 task transformToJosm(dependsOn: ["josmIcons", "copyResources"], type: Exec) {
     def output = 'gen/new_' + josm_preset_file
-    mkdir('gen')
+    mkdir('build/gen')
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         // remove extensions
         commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/toJOSM.xslt', 'build/temp/' + josm_preset_file
@@ -128,7 +128,7 @@ task transformToJosm(dependsOn: ["josmIcons", "copyResources"], type: Exec) {
 
 task transformToOldJosm(dependsOn: ["josmIcons", "copyResources"], type: Exec) {
     def output = 'gen/' + josm_preset_file
-    mkdir('gen')
+    mkdir('build/gen')
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         // remove extensions
         commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/wiki2href.xslt', generated + 'new_' + josm_preset_file
