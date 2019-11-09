@@ -3765,6 +3765,7 @@
 			<check key="outdoor_seating" text="Outdoor seating" disable_off="true"/>
             <combo key="takeaway" text="Takeaway" values="yes,no,only" values_sort="false" display_values="Yes,No,Only"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
+            <check key="drive_through" text="Drive through" disable_off="true"/>
             <reference ref="oh_wheelchair_level"/>
             <reference ref="toilets_with_access"/>
             <space/>
