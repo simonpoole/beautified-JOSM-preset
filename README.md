@@ -1,4 +1,5 @@
-![Build Status](https://travis-ci.org/simonpoole/beautified-JOSM-preset)
+[![Build Status](https://travis-ci.org/simonpoole/beautified-JOSM-preset.svg?branch=master)](https://travis-ci.org/simonpoole/beautified-JOSM-preset)
+
 
 Beautified JOSM preset
 ======================
