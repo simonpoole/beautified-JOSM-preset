@@ -2,12 +2,12 @@
 # Translators:
 # Andreas Hanzl <andreas.hanzl@gmx.at>, 2018
 # Holger Jeromin <mailgithub@katur.de>, 2019
-# Simon Poole <sp8962@gmail.com>, 2016-2018
+# Simon Poole <sp8962@gmail.com>, 2016-2019
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2019-11-19 22:00+0100\n"
-"PO-Revision-Date: 2019-11-19 21:01+0000\n"
+"PO-Revision-Date: 2019-12-01 15:03+0000\n"
 "Last-Translator: Simon Poole <sp8962@gmail.com>\n"
 "Language-Team: German (Switzerland) (http://www.transifex.com/openstreetmap/presets/language/de_CH/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid ""
 "(Please only use this tag if more detailed mapping using busbars and bays is"
 " impossible!)"
-msgstr ""
+msgstr "(Bitte benutze diesen Tag nur, wenn ein detaillierteres Mappen mit Sammelschienen/busbars und Abzweigen/bays nicht möglich ist!)"
 
 #: master_preset.xml:5294(label:text|group:Emergency|preset:Emergency_Access_Point)
 msgid "(Use number as shown on plate.)"
@@ -65,15 +65,15 @@ msgstr "... andere Fortbewegungsarten möglich."
 
 #: master_preset.xml:47(list_entry:short_description|value:0)
 msgid "0: Solid gravel/packed earth, no obstacles, wide curves"
-msgstr ""
+msgstr "0: Solider Kies/komprimierte Erde, keine Hindernisse, weite Kurven"
 
 #: master_preset.xml:215(combo:display_values|key:direction)
 msgid "0°"
-msgstr ""
+msgstr "0°"
 
 #: master_preset.xml:1540(list_entry:display_value|group:Ways|preset:Track|value:grade1)
 msgid "1 - Solid"
-msgstr ""
+msgstr "1 - Fester Belag"
 
 #: master_preset.xml:270(list_entry:short_description|value:1)
 msgid "1 table"
@@ -97,15 +97,15 @@ msgstr "10°"
 
 #: master_preset.xml:215(combo:display_values|key:direction)
 msgid "180°"
-msgstr ""
+msgstr "180°"
 
 #: master_preset.xml:48(list_entry:short_description|value:1)
 msgid "1: Some loose surface, small obstacles, wide curves"
-msgstr ""
+msgstr "1: Teilweise lockerer Untergrund, kleine Hindernisse, weite Kurven"
 
 #: master_preset.xml:1541(list_entry:display_value|group:Ways|preset:Track|value:grade2)
 msgid "2 - Mostly solid"
-msgstr ""
+msgstr "2 - Verdichteter Belag"
 
 #: master_preset.xml:271(list_entry:short_description|value:2)
 msgid "2 tables"
@@ -2196,7 +2196,7 @@ msgstr "Zirkus"
 
 #: master_preset.xml:1093(check:text|key:diplomatic:services:citizen_services)
 msgid "Citizen services"
-msgstr ""
+msgstr "Bürgerdienste"
 
 #: master_preset.xml:3926(combo:display_values|group:Tourism|preset:Map|key:map_size)
 #: master_preset.xml:7490(combo:display_values|group:Historic_Places_&_Objects|preset:Archaeological_Site|key:site_type)
@@ -5491,7 +5491,7 @@ msgstr "Wäscherei"
 
 #: master_preset.xml:7828(check:text|group:Clothes|preset:Laundry|key:laundry_service)
 msgid "Laundry Service"
-msgstr ""
+msgstr "Wäscherei"
 
 #: master_preset.xml:5640(item:name|group:Facilities|preset:Lavoir)
 msgid "Lavoir"
@@ -8619,7 +8619,7 @@ msgstr ""
 
 #: master_preset.xml:3173(checkgroup:text|group:Bicycle|preset:Bike_Dealer)
 msgid "Provided services"
-msgstr ""
+msgstr "Angebotene Dienste"
 
 #: master_preset.xml:9358(text:text|group:Addresses_and_Contact|preset:Address|key:addr:province)
 msgid "Province"
@@ -8686,7 +8686,7 @@ msgstr "Öffentlicher Bücherschrank"
 
 #: master_preset.xml:10427(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Public service"
-msgstr ""
+msgstr "Öffentlicher Dienst"
 
 #: master_preset.xml:9455(list_entry:display_value|group:Relations|preset:Relations|value:public_transport)
 msgid "Public transport"
@@ -9143,7 +9143,7 @@ msgstr ""
 
 #: master_preset.xml:5124(combo:display_values|group:Emergency|preset:Emergency_ward_entrance|key:emergency_ward_entrance)
 msgid "Rescue service"
-msgstr ""
+msgstr "Rettungsdienst"
 
 #: master_preset.xml:10553(item:name|group:Offices|preset:Research)
 msgid "Research"
@@ -9801,7 +9801,7 @@ msgstr "Seismograf"
 
 #: master_preset.xml:7827(check:text|group:Clothes|preset:Laundry|key:self_service)
 msgid "Self Service"
-msgstr ""
+msgstr "Selbstbedienung"
 
 #: master_preset.xml:2960(check:text|group:Car|preset:Fuel|key:self_service)
 #: master_preset.xml:3049(check:text|group:Car|preset:Wash|key:self_service)
@@ -9836,7 +9836,7 @@ msgstr ""
 
 #: master_preset.xml:7425(item:name|group:Telecom|preset:Service_Device)
 msgid "Service Device"
-msgstr ""
+msgstr "Wartungsgerät"
 
 #: master_preset.xml:255(combo:text|key:service_times)
 msgid "Service Times"
@@ -10207,7 +10207,7 @@ msgstr ""
 
 #: master_preset.xml:10427(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Social services"
-msgstr ""
+msgstr "Sozialdienste"
 
 #: master_preset.xml:7107(item:name|group:Power_Generator|preset:Solar_Power_Generator)
 msgid "Solar Power Generator"
@@ -13442,7 +13442,7 @@ msgstr "Drehtür"
 #: master_preset.xml:6549(combo:display_values|preset:Entrance|key:entrance)
 msgctxt "entrance"
 msgid "Service"
-msgstr "Erschließungsweg"
+msgstr "Betriebseingang"
 
 #: master_preset.xml:252(combo:display_values|key:door)
 msgctxt "entrance"
@@ -14821,7 +14821,7 @@ msgstr "Flachdach"
 #: master_preset.xml:993(combo:display_values|key:building:use)
 msgctxt "building"
 msgid "Foodservice"
-msgstr ""
+msgstr "Gastronomie"
 
 #: master_preset.xml:6476(item:name|group:Roof_type|preset:Gabled)
 #: master_preset.xml:999(list_entry:short_description|value:gabled)
@@ -15168,7 +15168,7 @@ msgstr ""
 #: master_preset.xml:993(combo:display_values|key:building:use)
 msgctxt "building"
 msgid "Service"
-msgstr "Erschließungsweg"
+msgstr "Dienstgebäude"
 
 #: master_preset.xml:6420(combo:display_values|group:Buildings|preset:Building|key:building)
 #: master_preset.xml:6458(combo:display_values|group:Buildings|preset:Building_part|key:building:part)
@@ -15487,7 +15487,7 @@ msgstr "Anliegerstraße"
 #: master_preset.xml:1366(item:name|group:Streets|preset:Service)
 msgctxt "Highway"
 msgid "Service"
-msgstr "Erschließungsweg"
+msgstr "Erschliessungsweg"
 
 #: master_preset.xml:1371(combo:text|group:Streets|preset:Service|key:service)
 msgctxt "Highway"
@@ -15837,7 +15837,7 @@ msgstr "Gebrauchtfahrzeuge"
 #: master_preset.xml:3068(multiselect:text|group:Car|preset:Repair|key:service)
 msgctxt "shop=car_repair"
 msgid "Service"
-msgstr "Erschließungsweg"
+msgstr "Dienste"
 
 #: master_preset.xml:3123(item:name|group:Motorcycle|preset:Parking)
 msgctxt "motorcycle"
