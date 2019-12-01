@@ -1,7 +1,7 @@
 /*
  */
 
-version = '1.3.0'
+version = '1.4.0'
 
 apply plugin: 'java'
 
@@ -28,13 +28,13 @@ ext {
     josm_preset_file = 'josm_preset.xml'
     vespucci_preset_file = 'vespucci_preset.xml'
     vespucci_preset_build_file = 'vespucci_preset_build.xml'
-    vespucci_preset_version = '1.4'
+    vespucci_preset_version = '1.6'
     generated = 'build/gen/'
     github_token = System.getenv('GITHUB_TOKEN')
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.9.0'
+    runtime 'ch.poole:preset-utils:0.10.0'
 }
 
 task copyCss(type: Copy) {
