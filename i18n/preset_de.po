@@ -2,6 +2,7 @@
 # Translators:
 # Andreas Hanzl <andreas.hanzl@gmx.at>, 2018
 # Claus Ruedinger <clausruedinger@gmail.com>, 2019
+# ENT8R <info.ent8r@gmail.com>, 2019
 # hakuchi <heimlikloh@mail.com>, 2016-2018
 # Holger Jeromin <mailgithub@katur.de>, 2015,2017-2019
 # Jacob Bräutigam <barth.jacke@hotmail.de>, 2015
@@ -16,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2019-11-19 22:00+0100\n"
-"PO-Revision-Date: 2019-11-29 17:43+0000\n"
+"PO-Revision-Date: 2019-12-03 22:41+0000\n"
 "Last-Translator: Claus Ruedinger <clausruedinger@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/openstreetmap/presets/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -922,7 +923,7 @@ msgstr "Luftfahrt"
 
 #: master_preset.xml:5667(combo:display_values|group:Facilities|preset:Outdoor_seating|key:weather_protection)
 msgid "Awning"
-msgstr ""
+msgstr "Markise"
 
 #: master_preset.xml:5090(list_entry:short_description|group:Health|preset:Alternative_medicine|value:ayurveda)
 msgid "Ayurveda"
@@ -1874,7 +1875,7 @@ msgstr "Kanus"
 
 #: master_preset.xml:5667(combo:display_values|group:Facilities|preset:Outdoor_seating|key:weather_protection)
 msgid "Canopy"
-msgstr ""
+msgstr "Vordach"
 
 #: master_preset.xml:5564(check:text|group:Facilities|preset:Recycling_Container|key:recycling:cans)
 #: master_preset.xml:5596(check:text|group:Facilities|preset:Recycling_Centre|key:recycling:cans)
@@ -2332,7 +2333,7 @@ msgstr "Kokuspalmen"
 
 #: master_preset.xml:9131(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Coffea plants"
-msgstr ""
+msgstr "Kaffeepflanzen"
 
 #: master_preset.xml:7675(item:name|group:Food|preset:Coffee)
 #: master_preset.xml:8526(list_entry:short_description|preset:Vending_Machine|value:coffee)
@@ -2549,7 +2550,7 @@ msgstr "Kontinent"
 
 #: master_preset.xml:1710(combo:display_values|group:Waypoints|preset:Traffic_Signal|key:traffic_signals)
 msgid "Continuous green"
-msgstr ""
+msgstr "Grüne Welle"
 
 #: master_preset.xml:7578(item:name|group:Food|preset:Convenience_Store)
 msgid "Convenience Store"
@@ -3781,11 +3782,11 @@ msgstr "Figuren/Puppentheater"
 
 #: master_preset.xml:1118(checkgroup:text)
 msgid "Filling"
-msgstr ""
+msgstr "Füllung"
 
 #: master_preset.xml:1119(check:text|key:scuba_diving:filling)
 msgid "Fills available"
-msgstr ""
+msgstr "Füllungen erhältlich"
 
 #: master_preset.xml:10581(item:name|group:Offices|preset:Financial)
 msgid "Financial"
@@ -4190,7 +4191,7 @@ msgstr "Glückspiel"
 
 #: master_preset.xml:7606(combo:display_values|group:Food|preset:Butcher|key:butcher)
 msgid "Game"
-msgstr ""
+msgstr "Wildbret"
 
 #: master_preset.xml:6711(combo:display_values|group:Man_Made|preset:Crane|key:crane:type)
 msgid "Gantry crane"
@@ -5110,7 +5111,7 @@ msgstr "Segment eines inneren Ringes"
 
 #: master_preset.xml:278(list_entry:short_description|value:limited)
 msgid "Inofficial"
-msgstr ""
+msgstr "Nicht offiziell"
 
 #: master_preset.xml:7526(text:text|group:Historic_Places_&_Objects|preset:Memorial|key:inscription)
 #: master_preset.xml:7541(text:text|group:Historic_Places_&_Objects|preset:Wayside_Cross|key:inscription)
@@ -11957,7 +11958,7 @@ msgstr "Wanderroute"
 
 #: master_preset.xml:9780(combo:display_values|group:Routes|preset:Superroute|key:route)
 msgid "Walking route"
-msgstr ""
+msgstr "Walking-Route"
 
 #: master_preset.xml:2001(item:name|group:Barriers|preset:Wall)
 #: master_preset.xml:4310(combo:display_values|group:Leisure|preset:Dog_Park|key:barrier)
@@ -13330,7 +13331,7 @@ msgstr "Standard"
 #: master_preset.xml:2780(combo:display_values|group:Railway|preset:Railway_Switch|key:railway:switch)
 msgctxt "railway"
 msgid "Double slip"
-msgstr ""
+msgstr "Doppelkreuzungsweiche"
 
 #: master_preset.xml:177(combo:text|key:service)
 msgctxt "railway"
@@ -13345,7 +13346,7 @@ msgstr "Überhol-/Ausweichgleis"
 #: master_preset.xml:2780(combo:display_values|group:Railway|preset:Railway_Switch|key:railway:switch)
 msgctxt "railway"
 msgid "Single slip"
-msgstr ""
+msgstr "Einfache Kreuzungsweiche"
 
 #: master_preset.xml:177(combo:display_values|key:service)
 msgctxt "railway"
@@ -13361,7 +13362,7 @@ msgstr "Bahnhof"
 #: master_preset.xml:2780(combo:display_values|group:Railway|preset:Railway_Switch|key:railway:switch)
 msgctxt "railway"
 msgid "Three way"
-msgstr ""
+msgstr "Dreiwegeweiche"
 
 #: master_preset.xml:186(combo:text|key:tracks)
 msgctxt "railway"
@@ -13376,7 +13377,7 @@ msgstr "Typ"
 #: master_preset.xml:2780(combo:display_values|group:Railway|preset:Railway_Switch|key:railway:switch)
 msgctxt "railway"
 msgid "Wye"
-msgstr ""
+msgstr "Y-Weiche"
 
 #: master_preset.xml:177(combo:display_values|key:service)
 msgctxt "railway"
@@ -16908,7 +16909,7 @@ msgstr "Inhalt"
 #: master_preset.xml:6778(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
 msgid "Ball"
-msgstr ""
+msgstr "Kugel"
 
 #: master_preset.xml:6778(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
@@ -16923,27 +16924,27 @@ msgstr "Tor"
 #: master_preset.xml:6778(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
 msgid "Globe"
-msgstr ""
+msgstr "Ringkolben"
 
 #: master_preset.xml:6778(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
 msgid "Needle"
-msgstr ""
+msgstr "Nadel"
 
 #: master_preset.xml:6778(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
 msgid "Plug"
-msgstr ""
+msgstr "Kükenhahn"
 
 #: master_preset.xml:6778(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
 msgid "Spool"
-msgstr ""
+msgstr "Kolben"
 
 #: master_preset.xml:6778(combo:text|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
 msgid "Valve type"
-msgstr ""
+msgstr "Ventiltyp"
 
 #: master_preset.xml:6781(combo:text|group:Man_Made|preset:Pipeline_Valve|key:actuator)
 msgctxt "actuator"
@@ -16958,7 +16959,7 @@ msgstr "Elektrischer Motor"
 #: master_preset.xml:6781(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:actuator)
 msgctxt "actuator"
 msgid "Hydraulic cylinder"
-msgstr ""
+msgstr "Hydraulischer Zylinder"
 
 #: master_preset.xml:6781(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:actuator)
 msgctxt "actuator"
@@ -16968,22 +16969,22 @@ msgstr "Manuell"
 #: master_preset.xml:6781(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:actuator)
 msgctxt "actuator"
 msgid "Pneumatic cylinder"
-msgstr ""
+msgstr "Pneumatischer Zylinder"
 
 #: master_preset.xml:6781(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:actuator)
 msgctxt "actuator"
 msgid "Solenoid"
-msgstr ""
+msgstr "Magnetschalter"
 
 #: master_preset.xml:6781(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:actuator)
 msgctxt "actuator"
 msgid "Thermostatic"
-msgstr ""
+msgstr "Thermostatisch"
 
 #: master_preset.xml:6782(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:handle)
 msgctxt "handle"
 msgid "Button"
-msgstr ""
+msgstr "Knopf"
 
 #: master_preset.xml:6782(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:handle)
 msgctxt "handle"
@@ -16993,12 +16994,12 @@ msgstr "Kreuz"
 #: master_preset.xml:6782(combo:text|group:Man_Made|preset:Pipeline_Valve|key:handle)
 msgctxt "handle"
 msgid "Handle"
-msgstr ""
+msgstr "Handrad"
 
 #: master_preset.xml:6782(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:handle)
 msgctxt "handle"
 msgid "Lever"
-msgstr ""
+msgstr "Hebel"
 
 #: master_preset.xml:6782(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:handle)
 msgctxt "handle"
