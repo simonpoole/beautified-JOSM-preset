@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.4.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.4.2" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -8609,7 +8609,7 @@
         <key key="amenity" value="bank"/>
         <reference ref="name_brand_operator_oh_wheelchair_level"/>
         <text key="branch" text="Branch"/>
-        <check key="atm" text="Automated Teller Machine" default="on"/>
+        <check key="atm" text="Automated Teller Machine" />
         <text key="ref" text="Reference"/>
         <reference ref="link_contact_address"/>
     </item> <!-- Bank -->
