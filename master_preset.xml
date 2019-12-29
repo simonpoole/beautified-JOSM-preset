@@ -944,7 +944,7 @@
   	<preset_link preset_name="Cycle Lane/Track"/>
   </chunk>
   <chunk id="healthcare_speciality">
-    <multiselect key="healthcare:speciality" text="Speciality" values_context="healthcare" values_searchable="true" editable="false">
+    <multiselect key="healthcare:speciality" text="Speciality" text_context="healthcare" values_context="healthcare" values_searchable="true" editable="false">
 	  <list_entry value="general" short_description="General"/>
 	  <list_entry value="abortion" short_description="Abortion"/>
 	  <list_entry value="fertility" short_description="Fertility"/>
@@ -5082,7 +5082,7 @@
             <link wiki="Key:healthcare"/>
             <space/>
             <key key="healthcare" value="alternative"/>
-            <multiselect key="healthcare:speciality" text="Speciality" values_searchable="true">
+            <multiselect key="healthcare:speciality" text="Speciality" text_context="healthcare" values_context="healthcare" values_searchable="true">
 				<list_entry value="acupuncture" short_description="Acupuncture"/>
 				<list_entry value="anthroposophical" short_description="Anthroposophic medicine"/>
 				<list_entry value="applied_kinesiology" short_description="Applied kinesiology"/>
