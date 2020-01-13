@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.4.4" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.5.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -909,6 +909,19 @@
   <chunk id="facility_access">
   	<combo key="access" text="Access" values="yes,permissive,customers,private,permit" display_values="Public,Permissive,Customers,Private,Permit required" match="none"/>
   </chunk>
+  <chunk id="cash_withdrawal">
+    <multiselect key="cash_withdrawal" text="Cash withdrawal" length="3" values="yes" match="none" editable="true"/>
+    <optional>
+        <text key="cash_withdrawal:operator" text="Operator" match="none"/>
+        <combo key="cash_withdrawal:type" text="Type" values="checkout,self_checkout" display_values="Checkout,Self checkout" values_searchable="true" match="none"/>        
+        <text key="cash_withdrawal:limit" text="Limit" match="none" value_type="integer" />
+        <text key="cash_withdrawal:currency" text="Currency" match="none" />
+        <check key="cash_withdrawal:purchse_required" text="Purchase required"  match="none"/>
+        <combo key="cash_withdrawal:fee" text="Fee" values="yes,no,purchase_required" display_values="Yes,No,Purchase required" values_searchable="true" match="none"/>        
+        <combo key="cash_withdrawal:purchase_minimum" text="Minimum pruchase" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
+        <combo key="cash_withdrawal:foreign_cards" text="Foreign cards" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
+    </optional>
+  </chunk>
   <!-- Link chunks -->
   <chunk id="link_contact_address">
     <preset_link preset_name="Contact"/>
@@ -920,6 +933,8 @@
     <preset_link preset_name="Contact ('contact:*')"/>
     <preset_link preset_name="Address"/>
     <preset_link preset_name="Payment Methods"/>
+    <!-- this isn't a link but probably makes most sense here -->
+    <reference ref="cash_withdrawal"/>
   </chunk>
   <chunk id="additional_access_tags">
     <check key="toll" text="Toll" disable_off="true"/>
@@ -1106,7 +1121,7 @@
         <check key="luminous" text="Luminous" disable_off="true"/>
         <combo key="animated" text="Animation" values="no,yes,trivision_blades,winding_posters,revolving,screen,digital_messages,digital_prices,wind" display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
         <text key="height" text="Height (Meters)" value_type="integer" />
-        <combo key="sides" text="Number of sides" length="3" values="1,2,3,4,5,6" values_sort="false" match="none" editable="true"/>
+        <combo key="sides" text="Number of sides" length="3" values="1,2,3,4,5,6" values_sort="false" match="none" editable="true" value_type="integer"/>
         <reference ref="support" />
     </optional>
   </chunk>
