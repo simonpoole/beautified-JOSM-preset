@@ -609,7 +609,7 @@
     <chunk id="population_postcode_website">
         <text key="population" text="Population"/>
         <text key="postal_code" text="Postal code"/>
-        <text key="website" text="Website"/>
+        <text key="website" text="Website" value_type="website"/>
     </chunk>
     <chunk id="route_hikebike_optionals">
         <check key="network:type" text="Node network" value_on="node_network" disable_off="true" />
@@ -1113,7 +1113,7 @@
       <check key="climbing:summit_log" text="Summit/route log/register" />
       <check key="indoor" text="Climbing routes indoor" />
       <check key="outdoor" text="Climbing routes outdoor" />          
-      <text key="website" text="Web site" />
+      <text key="website" text="Website"  value_type="website" />
       <combo key="opening_hours" text="Opening Hours" value_type="opening_hours" delimiter="|" values="24/7|sunset-sunrise open; sunrise-sunset closed|Mar-Jun closed; Jul-Feb Mo-Su,PH sunrise-sunset|Mo-Fr 15:00-22:00; Sa-Su 11:00-22:00" values_no_i18n="true"/>
       <combo key="fee" text="Fee" value_type="opening_hours_mixed" values="yes,no,Sa-Su 08:00-20:00"/>
       <reference ref="facility_access"/>
@@ -3180,7 +3180,7 @@
             <text key="network" text="Network" />
             <text key="capacity" text="Capacity" />
             <reference ref="name_oh_wheelchair" />
-            <text key="website" text="Website" />
+            <text key="website" text="Website"  value_type="website"/>
         </item> <!-- Pooling -->
         <item name="Sharing" icon="${ICONPATH}transport_car_share.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=car_sharing"/>
@@ -3190,7 +3190,7 @@
             <text key="capacity" text="Capacity" value_type="integer"/>
             <reference ref="level"/>
             <reference ref="name_oh_wheelchair"/>
-            <text key="website" text="Website"/>
+            <text key="website" text="Website" value_type="website"/>
         </item> <!-- Sharing -->
         <item name="Vehicle Inspection" icon="${ICONPATH}transport_vehicle_inspection.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=vehicle_inspection"/>
@@ -3198,7 +3198,7 @@
             <key key="amenity" value="vehicle_inspection"/>
             <text key="operator" text="Operator"/>
             <reference ref="name_oh_wheelchair"/>
-            <text key="website" text="Website"/>
+            <text key="website" text="Website" value_type="website"/>
         </item> <!-- Sharing -->
     </group> <!-- Car -->
     <group name="Motorcycle" icon="${ICONPATH}transport_motorcycle.${ICONTYPE}">
@@ -7821,7 +7821,7 @@
             <space/>
             <key key="amenity" value="marketplace"/>
             <reference ref="name_operator_oh_wheelchair"/>
-            <text key="website" text="Website"/>
+            <text key="website" text="Website" value_type="website"/>
             <reference ref="organic"/>
         </item> <!-- Public Market -->
         <item name="Greengrocer" icon="${ICONPATH}shopping_greengrocer.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -8933,7 +8933,7 @@
             <key key="place" value="quarter"/>
             <reference ref="name_wikipedia"/>
             <text key="population" text="Population"/>
-            <text key="website" text="Website"/>
+            <text key="website" text="Website" value_type="website"/>
         </item> <!-- Quarter -->
         <item name="Neighbourhood" icon="presets/places.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:place=neighbourhood"/>
@@ -8941,7 +8941,7 @@
             <key key="place" value="neighbourhood"/>
             <reference ref="name_wikipedia"/>
             <text key="population" text="Population"/>
-            <text key="website" text="Website"/>
+            <text key="website" text="Website" value_type="website"/>
         </item> <!-- Neighbourhood -->
         <item name="City block" icon="presets/places.png" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:place=city_block"/>
@@ -8949,7 +8949,7 @@
             <key key="place" value="city_block"/>
             <reference ref="name_wikipedia"/>
             <text key="population" text="Population"/>
-            <text key="website" text="Website"/>
+            <text key="website" text="Website" value_type="website"/>
         </item> <!-- City block -->
         <item name="Farm" icon="${ICONPATH}poi_farm_22120.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:place=farm"/>
@@ -9509,7 +9509,7 @@
         <item name="Contact" icon="${ICONPATH}osm_contact_sp.${ICONTYPE}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Annotations"/>
             <space/>
-            <text key="website" text="Website" match="key"/>
+            <text key="website" text="Website" match="key" value_type="website"/>
             <text key="email" text="Email Address" match="key"/>
             <space/>
             <text key="phone" text="Phone number" match="key" value_type="phone"/>
@@ -9522,7 +9522,7 @@
         <item name="Contact ('contact:*')" icon="${ICONPATH}osm_contact_sp.${ICONTYPE}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:contact"/>
             <space/>
-            <text key="contact:website" text="Website" match="key"/>
+            <text key="contact:website" text="Website" match="key" value_type="website"/>
             <text key="contact:email" text="Email Address" match="key"/>
             <space/>
             <text key="contact:phone" text="Phone number" match="key" value_type="phone"/>
