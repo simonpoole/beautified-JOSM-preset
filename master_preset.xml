@@ -90,7 +90,7 @@
         <reference ref="layer"/>
     </chunk>
     <chunk id="tunnel">
-        <combo key="tunnel" text="Tunnel" values="yes,building_passage" display_values="Yes,Building passage," values_sort="false" match="key"/>
+        <combo key="tunnel" text="Tunnel" values="yes,building_passage" display_values="Yes,Building passage" values_sort="false" match="key"/>
             <optional>
                 <reference ref="layer"/>
                 <text key="width" text="Width (meters)"/>
@@ -2262,7 +2262,7 @@
         <item name="Motorcar and -cycle (CH)" region="CH" icon="${ICONPATH}no_motor_vehicles.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
-            <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,,No access" values_context="access" values_sort="false" match="key"/>
+            <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
             <combo key="motorcar:conditional" text="Motorcar @" long_text="Conditional restriction for motorcars" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
             <combo key="motorcycle" text="Motorcycle" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
             <combo key="motorcycle:conditional" text="Motorcycle @" long_text="Conditional restriction for motorcycles" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
@@ -8688,7 +8688,7 @@
         <preset_link preset_name="Payment Methods"/>
         <reference ref="optional_level"/>
     </item> <!-- Vending Machine -->
-    <item name="Payment Methods" icon="${ICONPATH}money_payment_methods.${ICONTYPE}" type="node,way,closedway,,multipolygon,relation" preset_name_label="true">
+    <item name="Payment Methods" icon="${ICONPATH}money_payment_methods.${ICONTYPE}" type="node,way,closedway,multipolygon,relation" preset_name_label="true">
         <link wiki="Key:payment"/>
         <space/>
         <check key="payment:cash" text="Cash" match="keyvalue"/>
