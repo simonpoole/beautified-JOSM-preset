@@ -2,12 +2,12 @@
 # Translators:
 # András <poggyasz@gmail.com>, 2018
 # Balázs Meskó <meskobalazs@gmail.com>, 2016-2018
-# Gábor Babos <gabor.babos@gmail.com>, 2016-2019
+# Gábor Babos <gabor.babos@gmail.com>, 2016-2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2020-01-15 11:04+0100\n"
-"PO-Revision-Date: 2020-01-15 10:06+0000\n"
+"PO-Revision-Date: 2020-02-29 21:46+0000\n"
 "Last-Translator: Gábor Babos <gabor.babos@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/openstreetmap/presets/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -346,7 +346,7 @@ msgstr "Közigazgatási központ"
 #: master_preset.xml:8798(item:name|group:Boundaries|preset:Administrative)
 #: master_preset.xml:9619(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 msgid "Administrative"
-msgstr "Közigazgatási"
+msgstr "Közigazgatás"
 
 #: master_preset.xml:10532(item:name|group:Offices|preset:Administrative_(deprecated))
 msgid "Administrative (deprecated)"
@@ -434,7 +434,7 @@ msgstr "Aikido"
 
 #: master_preset.xml:1156(check:text|key:scuba_diving:air_filling)
 msgid "Air"
-msgstr ""
+msgstr "Levegő"
 
 #: master_preset.xml:7024(check:text|group:Man_Made|preset:Monitoring_Station|key:monitoring:air_quality)
 msgid "Air Quality"
@@ -833,7 +833,7 @@ msgstr "Mobiltelefonos audioguide?"
 
 #: master_preset.xml:10594(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Audit"
-msgstr ""
+msgstr "Pénzügyi ellenőrzés"
 
 #: master_preset.xml:6704(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Auditorium"
@@ -1804,7 +1804,7 @@ msgstr "Kávézó"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Cake"
-msgstr ""
+msgstr "sütemény (cake)"
 
 #: master_preset.xml:4159(list_entry:display_value|group:Leisure|preset:Animals|value:camel)
 msgid "Camel"
@@ -1894,7 +1894,7 @@ msgstr "Kapacitás (teljes)"
 
 #: master_preset.xml:1927(text:text|preset:Elevator|key:capacity:persons)
 msgid "Capacity (persons)"
-msgstr ""
+msgstr "Befogadóképesség (személy)"
 
 #: master_preset.xml:2583(item:name|group:Water|preset:Cape)
 msgid "Cape"
@@ -1961,7 +1961,7 @@ msgstr "Készpénz típusa"
 
 #: master_preset.xml:924(multiselect:text|key:cash_withdrawal)
 msgid "Cash withdrawal"
-msgstr ""
+msgstr "Készpénzfelvétel"
 
 #: master_preset.xml:4609(item:name|preset:Casino)
 msgid "Casino"
@@ -2613,7 +2613,7 @@ msgstr "Csatlakozási szabvány"
 
 #: master_preset.xml:1152(check:text|key:scuba_diving:courses)
 msgid "Courses"
-msgstr ""
+msgstr "Tanfolyam"
 
 #: master_preset.xml:4938(item:name|group:Public_Building|preset:Courthouse)
 msgid "Courthouse"
@@ -2753,7 +2753,7 @@ msgstr "Áteresz"
 
 #: master_preset.xml:929(text:text|key:cash_withdrawal:currency)
 msgid "Currency"
-msgstr ""
+msgstr "Pénznem"
 
 #: master_preset.xml:9010(combo:text|group:Geography|preset:Volcano|key:volcano:status)
 msgid "Current Status"
@@ -2843,7 +2843,7 @@ msgstr "dán"
 
 #: master_preset.xml:10594(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Data protection"
-msgstr ""
+msgstr "Adatvédelem"
 
 #: master_preset.xml:3150(multiselect:display_values|group:Car|preset:Repair|key:service)
 msgid "Dealer"
@@ -3579,7 +3579,7 @@ msgstr "Bejárat szélessége (cm)"
 
 #: master_preset.xml:10594(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Environment"
-msgstr ""
+msgstr "Környezetvédelem"
 
 #: master_preset.xml:6212(item:name|group:Sport|preset:Equestrian)
 msgid "Equestrian"
@@ -3591,7 +3591,7 @@ msgstr "Felszerelés"
 
 #: master_preset.xml:1153(check:text|key:scuba_diving:rental)
 msgid "Equipment rentals"
-msgstr ""
+msgstr "Felszerelés kölcsönzése"
 
 #: master_preset.xml:8333(item:name|group:For_the_body|preset:Erotic)
 msgid "Erotic"
@@ -3796,7 +3796,7 @@ msgstr "Bábszínházak"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Filipino"
-msgstr ""
+msgstr "fülöp-szigeteki"
 
 #: master_preset.xml:1154(checkgroup:text)
 msgid "Filling"
@@ -3804,7 +3804,7 @@ msgstr ""
 
 #: master_preset.xml:1155(check:text|key:scuba_diving:filling)
 msgid "Fills available"
-msgstr ""
+msgstr "Töltés elérhető"
 
 #: master_preset.xml:10748(item:name|group:Offices|preset:Financial)
 msgid "Financial"
@@ -4029,7 +4029,7 @@ msgstr "Gázló"
 
 #: master_preset.xml:933(combo:text|key:cash_withdrawal:foreign_cards)
 msgid "Foreign cards"
-msgstr ""
+msgstr "Külföldi kártyák"
 
 #: master_preset.xml:9112(item:name|group:Nature|preset:Forest)
 msgid "Forest"
@@ -4139,7 +4139,7 @@ msgstr "Fagyasztott élelmiszer"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Frozen yogurt"
-msgstr ""
+msgstr "fagyasztott joghurt"
 
 #: master_preset.xml:3966(combo:text|group:Food+Drinks|preset:Diet|key:diet:fruitarian)
 msgid "Fruitarian"
@@ -4756,7 +4756,7 @@ msgstr "Gyógynövénybolt"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Heuriger"
-msgstr ""
+msgstr "heuriger (idei bor)"
 
 #: master_preset.xml:7997(item:name|group:Electronics|preset:Hifi)
 msgid "Hifi"
@@ -4903,7 +4903,7 @@ msgstr "Turistaszálló"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Hot dog"
-msgstr ""
+msgstr "hot dog"
 
 #: master_preset.xml:3659(item:name|group:Accommodation|preset:Hotel)
 msgid "Hotel"
@@ -5743,7 +5743,7 @@ msgstr "mészkő"
 
 #: master_preset.xml:928(text:text|key:cash_withdrawal:limit)
 msgid "Limit"
-msgstr ""
+msgstr "Korlát"
 
 #: master_preset.xml:1695(combo:display_values|group:Ways|preset:Steps|key:ramp:wheelchair)
 msgid "Limited"
@@ -5924,7 +5924,7 @@ msgstr "malajálam"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Malaysian"
-msgstr ""
+msgstr "maláj"
 
 #: master_preset.xml:4889(combo:display_values|group:Place_of_Worship|preset:Monastery|key:community:gender)
 #: master_preset.xml:8291(check:text|group:For_the_body|preset:Hairdresser/Barber|key:male)
@@ -6098,7 +6098,7 @@ msgstr "Sebességkorlátozás → @"
 
 #: master_preset.xml:2308(text:text|group:Access_Restrictions|preset:Physical_restrictions|key:maxaxleload)
 msgid "Max. axle load (tonnes)"
-msgstr ""
+msgstr "Tengelyterhelés-korlátozás (tonna)"
 
 #: master_preset.xml:9722(combo:display_values|preset:Enforcement|key:enforcement)
 msgid "Max. height"
@@ -6250,7 +6250,7 @@ msgstr "Megalit"
 
 #: master_preset.xml:1137(combo:display_values|key:reservation)
 msgid "Members only"
-msgstr ""
+msgstr "Csak tagoknak"
 
 #: master_preset.xml:3123(combo:text|group:Car|preset:Charging_Station|key:authentication:membership_card)
 msgid "Membership card"
@@ -6390,7 +6390,7 @@ msgstr "Alsó korhatár"
 
 #: master_preset.xml:932(combo:text|key:cash_withdrawal:purchase_minimum)
 msgid "Minimum pruchase"
-msgstr ""
+msgstr "Legkisebb vásárlás"
 
 #: master_preset.xml:8721(check:text|preset:Payment_Methods|key:payment:ep_minipay)
 msgid "Minipay (it)"
@@ -6973,7 +6973,7 @@ msgstr "Keskeny nyomtávú vasút"
 
 #: master_preset.xml:2806(combo:display_values|group:Railway|preset:Railway_construction|key:construction)
 msgid "Narrow gauge"
-msgstr ""
+msgstr "Keskeny nyomtávú"
 
 #: master_preset.xml:4664(combo:display_values|group:Culture|preset:Museum|key:museum_type)
 #: master_preset.xml:9878(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network)
@@ -7074,7 +7074,7 @@ msgstr "Teke"
 
 #: master_preset.xml:1157(check:text|key:scuba_diving:nitrox_filling)
 msgid "Nitrox"
-msgstr ""
+msgstr "Nitrox"
 
 #: master_preset.xml:1134(combo:display_values|key:nudism)
 #: master_preset.xml:1137(combo:display_values|key:reservation)
@@ -7884,7 +7884,7 @@ msgstr "Pampa"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Pancake"
-msgstr ""
+msgstr "palacsinta (pancake)"
 
 #: master_preset.xml:4198(list_entry:display_value|group:Leisure|preset:Animals|value:panda)
 msgid "Panda"
@@ -7994,7 +7994,7 @@ msgstr "Kitérőhelyek"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Pasta"
-msgstr ""
+msgstr "tészta (pasta)"
 
 #: master_preset.xml:7776(item:name|group:Food|preset:Pastry)
 msgid "Pastry"
@@ -8118,7 +8118,7 @@ msgstr "Állandó"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Persian"
-msgstr ""
+msgstr "perzsa"
 
 #: master_preset.xml:9260(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Persimmon trees"
@@ -8833,7 +8833,7 @@ msgstr "Paravános bábszínház (puppet)"
 #: master_preset.xml:930(check:text|key:cash_withdrawal:purchse_required)
 #: master_preset.xml:931(combo:display_values|key:cash_withdrawal:fee)
 msgid "Purchase required"
-msgstr ""
+msgstr "Vásárláshoz kötött"
 
 #: master_preset.xml:4344(list_entry:display_value|group:Leisure|preset:Fitness_Station|value:push-up)
 msgid "Push-up"
@@ -9753,7 +9753,7 @@ msgstr "Szauna"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Sausage"
-msgstr ""
+msgstr "kis kolbász (sausage)"
 
 #: master_preset.xml:9132(combo:display_values|group:Nature|preset:Grassland|key:grassland)
 msgid "Savanna"
@@ -11118,7 +11118,7 @@ msgstr "Tesla Supercharger"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Tex-mex"
-msgstr ""
+msgstr "tex-mex"
 
 #: master_preset.xml:1081(multiselect:display_values|key:language)
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
@@ -11531,7 +11531,7 @@ msgstr "Fák"
 
 #: master_preset.xml:1158(check:text|key:scuba_diving:trimix_filling)
 msgid "Trimix"
-msgstr ""
+msgstr "Trimix"
 
 #: master_preset.xml:7448(check:text|preset:Power_Tower|key:triple_tower)
 msgid "Triple tower"
@@ -17510,7 +17510,7 @@ msgstr "Típus"
 #: master_preset.xml:6914(combo:display_values|group:Man_Made|preset:Manhole|key:manhole)
 msgctxt "manhole"
 msgid "Drain"
-msgstr "Vízlevezető árok"
+msgstr "Vízlevezetés"
 
 #: master_preset.xml:6914(combo:display_values|group:Man_Made|preset:Manhole|key:manhole)
 msgctxt "manhole"
@@ -17530,12 +17530,12 @@ msgstr "Villamos energia"
 #: master_preset.xml:6914(combo:display_values|group:Man_Made|preset:Manhole|key:manhole)
 msgctxt "manhole"
 msgid "Rainwater"
-msgstr ""
+msgstr "Esővíz"
 
 #: master_preset.xml:6914(combo:display_values|group:Man_Made|preset:Manhole|key:manhole)
 msgctxt "manhole"
 msgid "Sewer"
-msgstr ""
+msgstr "Szennyvíz"
 
 #: master_preset.xml:6914(combo:display_values|group:Man_Made|preset:Manhole|key:manhole)
 msgctxt "manhole"
