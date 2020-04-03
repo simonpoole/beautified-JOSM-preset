@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.8.4" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.8.5" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -5193,6 +5193,7 @@
         <item name="Physiotherapist" icon="${ICONPATH}health_massage_29103.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:healthcare=physiotherapist"/>
             <space/>
+            <key key="healthcare" value="physiotherapist"/>
             <combo key="healthcare:speciality" text="Type of physiotherapy" values_searchable="true">
                 <list_entry value="chiropractic" short_description="Chiropractic"/>
                 <list_entry value="massage_therapy" short_description="Massage therapy"/>
