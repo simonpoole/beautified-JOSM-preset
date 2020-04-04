@@ -5,7 +5,7 @@ jdk:
   - openjdk11
   
 before_install:
-  - sudo apt-get -y install xmlstarlet
+  - sudo apt-get -y install xmlstarlet  librsvg2-bin
  
 script: 
   - gradle check
