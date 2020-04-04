@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.8.5" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.8.6" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -7190,21 +7190,21 @@
             <item name="Biofuel Power Generator" icon="${ICONPATH}power_generator_biofuel_26006.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="biofuel"/>
                 <reference ref="power_generator"/>
-                <key key="generator:method" value="combustion"/>
+                <key key="generator:method" value="combustion" match="none" />
                 <combo key="generator:type" text="Generator Type" values="gas_turbine,reciprocating_engine,steam_generator"/>
                 <reference ref="power_output"/>
             </item> <!-- Power Generator -->
             <item name="Biogas Power Generator" icon="${ICONPATH}power_generator_biogas_26007.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="biogas"/>
                 <reference ref="power_generator"/>
-                <key key="generator:method" value="combustion"/>
+                <key key="generator:method" value="combustion" match="none" />
                 <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator"/>
                 <reference ref="power_output"/>
             </item> <!-- Biogas Power Generator -->
             <item name="Biomass Power Generator" icon="${ICONPATH}power_generator_biomass_26008.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="biomass"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="anaerobic_digestion,combustion,gasification"/>
+                <combo key="generator:method" text="Method" values_context="generator method" values="anaerobic_digestion,combustion,gasification" match="none" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="bioreactor" short_description="anaerobic_digestion / combustion"/>
                     <list_entry value="pyrolysis" short_description=""/>
@@ -7216,42 +7216,42 @@
             <item name="Coal Power Generator" icon="${ICONPATH}power_station_coal.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="coal"/>
                 <reference ref="power_generator"/>
-                <key key="generator:method" value="combustion"/>
+                <key key="generator:method" value="combustion" match="none" />
                 <combo key="generator:type" text="Generator Type" values="steam_generator,steam_turbine"/>
                 <reference ref="power_output"/>
             </item> <!-- Coal Power Generator -->
             <item name="Gas Power Generator" icon="${ICONPATH}power_station_gas.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="gas"/>
                 <reference ref="power_generator"/>
-                <key key="generator:method" value="combustion"/>
+                <key key="generator:method" value="combustion" match="none" />
                 <combo key="generator:type" text="Generator Type" values="combined_cycle,gas_turbine,reciprocating_engine,steam_generator,steam_turbine"/>
                 <reference ref="power_output"/>
             </item> <!-- Gas Power Generator -->
             <item name="Oil Power Generator" icon="${ICONPATH}power_generator_oil_26025.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="oil"/>
                 <reference ref="power_generator"/>
-                <key key="generator:method" value="combustion"/>
+                <key key="generator:method" value="combustion" match="none" />
                 <combo key="generator:type" text="Generator Type" values="steam_generator,steam_turbine"/>
                 <reference ref="power_output"/>
             </item> <!-- Oil Power Generator -->
             <item name="Diesel Power Generator" icon="${ICONPATH}power_generator_diesel_26025.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="diesel"/>
                 <reference ref="power_generator"/>
-                <key key="generator:method" value="combustion"/>
+                <key key="generator:method" value="combustion" match="none" />
                 <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator"/>
                 <reference ref="power_output"/>
             </item> <!-- Diesel Power Generator -->
             <item name="Gasoline Power Generator" icon="${ICONPATH}power_generator_gasoline_26022.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="gasoline"/>
                 <reference ref="power_generator"/>
-                <key key="generator:method" value="combustion"/>
+                <key key="generator:method" value="combustion" match="none" />
                 <combo key="generator:type" text="Generator Type" values="reciprocating_engine,steam_generator"/>
                 <reference ref="power_output"/>
             </item> <!-- Gasoline Power Generator -->
             <item name="Nuclear Reactor" icon="${ICONPATH}power_generator_nuclear_26024.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="nuclear"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="fission,fusion"/>
+                <combo key="generator:method" text="Method" values_context="generator method" values="fission,fusion" match="none" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="BWR-1" display_value="Boiling Water Reactor 1 (BWR-1)" short_description="fission"/>
                     <list_entry value="BWR-2" display_value="Boiling Water Reactor 2 (BWR-2)" short_description="fission"/>
@@ -7276,7 +7276,7 @@
             <item name="Solar Power Generator" icon="${ICONPATH}power_station_solar.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="solar"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="photovoltaic,thermal"/>
+                <combo key="generator:method" text="Method" values_context="generator method" values="photovoltaic,thermal" match="none" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="solar_photovoltaic_panel" short_description="photovoltaic"/>
                     <list_entry value="solar_thermal_collector" short_description="solar thermal"/>
@@ -7288,7 +7288,7 @@
             <item name="Waste Power Generator" icon="${ICONPATH}power_generator_waste_26028.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="waste"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="combustion,gasification,pyrolysis"/>
+                <combo key="generator:method" text="Method" values_context="generator method" values="combustion,gasification,pyrolysis" match="none" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="bioreactor" short_description="gasification"/>
                     <list_entry value="pyrolysis" short_description=""/>
@@ -7301,7 +7301,7 @@
             <item name="Water Turbine" icon="${ICONPATH}power_station_water.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="hydro"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="run-of-the-river,water-pumped-storage,water-storage"/>
+                <combo key="generator:method" text="Method" values_context="generator method" values="run-of-the-river,water-pumped-storage,water-storage" match="none" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="francis_turbine" short_description="all methods"/>
                     <list_entry value="hydrodynamic_screw" short_description="run-of-the-river"/>
@@ -7313,7 +7313,7 @@
             <item name="Tidal Water Turbine" icon="${ICONPATH}power_generator_tidal_26027.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="tidal"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="barrage,stream" display_values="Barrage,Stream" />
+                <combo key="generator:method" text="Method" values_context="generator method" values="barrage,stream" display_values="Barrage,Stream" match="none" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="horizontal_axis" short_description="Horizontal axis"/>
                     <list_entry value="kaplan_turbine" short_description="Kaplan turbine"/>
@@ -7340,7 +7340,7 @@
             <item name="Wind Turbine" icon="${ICONPATH}power_station_wind.${ICONTYPE}" type="node,closedway" preset_name_label="true">
                 <key key="generator:source" value="wind"/>
                 <reference ref="power_generator"/>
-                <key key="generator:method" value="wind_turbine"/>
+                <key key="generator:method" value="wind_turbine" match="none" />
                 <combo key="generator:type" text="Generator Type" values="horizontal_axis,vertical_axis" display_values="Horizontal axis,Vertical axis"/>
                 <reference ref="power_output"/>
             </item> <!-- Wind Turbine -->
