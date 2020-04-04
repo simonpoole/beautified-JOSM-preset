@@ -255,6 +255,102 @@ task replaceVersion {
     }
 }
 
+task recolour {
+    group "Icons"
+}
+
+task generatePngs { //(dependsOn: ["recolour"]) {
+    group "Icons"
+}
+    
+afterEvaluate{
+    Map<String, String> colours = [
+        accommodation: '#0092DA',
+        amenity: '#734A08',
+        barrier: '#666666',
+        craft: '#ff9933',
+        education: '#39AC39',
+        emergency: '#CE2029',
+        food: '#734A08',
+        health: '#DA0092',
+        highway: '#666666', 
+        indoor: '#000000',
+        landuse: '#999999',
+        money: '#000000',
+        natural: '#999999',
+        man_made: '#8e7409',
+        military: '#556B2F',
+        office: '#ff3333',
+        osm: '#000000',
+        place_of_worship: '#000000',
+        poi: '#000000',    
+        power: '#8e7409',
+        shopping: '#AC39AC',
+        sport: '#39AC39',
+        tourist: '#734A08',
+        transport: '#0092DA',
+        water: '#0092DA'
+    ] 
+    String[] sources = ["svg-osmic","svg-sjjb","svg-osm-icons"]
+    sources.each { source ->
+        new File("$projectDir/icons/$source").eachDir { category ->
+            def categoryName = category.getName()
+            def name="recolour${source.capitalize()}${categoryName.capitalize()}"
+            task(name, type: Copy) {
+                description "recolour svg icons in $source $category"
+                from "$category"
+                into 'build/icons/recoloured'
+                filteringCharset = 'UTF-8'
+                rename '(.*)', categoryName+'_$0'  
+                String colour = colours.get(categoryName)
+                String c1 = colour;
+                String c2 = colour;
+                String c3 = '#ffffff';
+                filter {
+                    String line -> 
+                        line = line.replaceAll('(?i)fill:#111111', 'fill:' + c1)
+                        line = line.replaceAll('(?i)fill:#111;', 'fill:' + c1 + ';')
+                        line = line.replaceAll('(?i)stroke:#eeeeee', 'stroke:' + c2)
+                        line = line.replaceAll('(?i)stroke:#eee;', 'stroke:' + c2 + ';')
+                        line = line.replaceAll('(?i)fill:white', 'fill:' + c3)
+                        line = line.replaceAll('(?i)stroke:white', 'stroke:' + c3)
+                        line = line.replaceAll('(?i)fill:#ffffff', 'fill:' + c3)
+                        line = line.replaceAll('(?i)stroke:#ffffff', 'stroke:' + c3)
+                        line = line.replaceAll('(?i)fill=\"#111111\"', 'fill=\"' + c1 + '\"')
+                        line = line.replaceAll('(?i)fill=\"#111\"', 'fill=\"' + c1 + ' \"')
+                        line = line.replaceAll('(?i)stroke=\"#eeeeee\"', 'stroke=\"' + c2 + '\"')
+                        line = line.replaceAll('(?i)stroke=\"#eee\"', 'stroke=\"' + c2 + '\"')
+                        line = line.replaceAll('(?i)fill=\"white\"', 'fill=\"' + c3 + '\"')
+                        line = line.replaceAll('(?i)stroke=\"white\"', 'stroke=\"' + c3 + '\"')
+                        line = line.replaceAll('(?i)fill=\"#ffffff\"', 'fill=\"' + c3 + '\"')
+                        line = line.replaceAll('(?i)stroke=\"#ffffff\"', 'stroke=\"' + c3 + '\"')
+                }
+            }
+            recolour.dependsOn name
+        }
+    }
+    
+    String[] svgDirs = ["build/icons/recoloured/", "icons/svg-signs/", "icons/svg-roofs/"]
+    svgDirs.each { svgDir ->
+        def name="generatePng${svgDir.capitalize().replace("/","_")}"
+        def size = svgDir.contains("roof") ? 56 : 48 // hack alert
+        task(name) {
+            def windows = System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')
+            fileTree(dir: svgDir).each { svg ->
+                String fileName = svg.getName().replace('.svg','.png');
+                exec {
+                    if (windows) {
+                        commandLine 'cmd', '/c', 'rsvg-convert', '-a', '-f', 'png', '-h', size, '-w', size, '-o', 'icons/png/' + fileName, svg
+                    } else {
+                        commandLine 'rsvg-convert', '-a', '-f', 'png', '-h', size, '-w', size, '-o', 'icons/png/' + fileName, svg
+                    }
+                }
+            }
+        }
+        generatePngs.dependsOn name
+    }
+}
+
 githubRelease {
     token "${github_token}"
     owner "simonpoole"
