@@ -7925,6 +7925,16 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Wine -->
+        <item name="Cannabis" icon="${ICONPATH}shopping_cannabis.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=cannabis"/>
+            <space/>
+            <key key="shop" value="cannabis"/>
+            <combo text="Recreational" key="cannabis:recreational" values="only,yes,no" display_values="Only,Yes,No" match="key"/>
+            <combo text="Medical" key="cannabis:medical" values="only,yes,no" display_values="Only,Yes,No" match="key"/>
+            <combo text="Cannabidiol" key="cannabis:cbd" values="only,yes,no" display_values="Only,Yes,No" match="key"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Cannabis -->
         <item name="Nutrition supplements" icon="${ICONPATH}shopping_nutrition_supplements.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=nutrition_supplements"/>
             <space/>
@@ -10600,7 +10610,7 @@
             <key key="office" value="advertising_agency"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Advertising agency -->  
+        </item> <!-- Advertising agency --> 
         <item name="Embassy" icon="${ICONPATH}office_government_25006.${ICONTYPE}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=diplomatic"/>
             <key key="office" value="diplomatic"/>
