@@ -6559,6 +6559,7 @@
             <space/>
             <key key="highway" value="raceway"/>
             <text key="name" text="Name"/>
+            <multiselect key="sport" text="Sport" values="karting;motor;motocross" display_values="Karting;Motorsport;Motocross"  values_searchable="true" />
         </item> <!-- Raceway -->
     </group> <!-- Motorsport -->
   </group> <!-- Sports -->
