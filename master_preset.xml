@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.8.7" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.8.8" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -556,8 +556,8 @@
     </chunk>
     <chunk id="sport">
         <multiselect key="sport" text="Sport" 
-            values="multi,archery,athletics,american_football,australian_football,baseball,basketball,beachvolleyball,billiards,boules,bowls,canadian_football,canoe,climbing,cricket,croquet,cycling,dog_racing,equestrian,field_hockey,fitness,gaelic_games,golf,gymnastics,handball,horse_racing,ice_hockey,karting,martial_arts,model_aerodrome,motocross,motor,pelota,racquet,rc_car,rowing,rugby_league,rugby_union,running,safety_training,shooting,skateboard,skating,roller_skating,ice_skating,soccer,swimming,table_tennis,tennis,volleyball,9pin,10pin" 
-            display_values="Multiple,Archery,Athletics,American football,Australian football,Baseball,Basketball,Beach volleyball,Billiards,Boules,Bowls,Canadian football,Canoe,Climbing,Cricket,Croquet,Cycling,Dog racing,Equestrian,Field hockey,Fitness,Gaelic games,Golf,Gymnastics,Handball,Horse racing,Ice hockey,Karting,Martial arts,Model aerodrome,Motocross,Motor,Pelota,Racquet,RC car,Rowing,Rugby league,Rugby union,Running,Safety training,Shooting,Skateboard,Skating,Roller skating,Ice skating,Soccer,Swimming,Table tennis,Tennis,Volleyball,9pin,10pin" 
+            values="multi;archery;athletics;american_football;australian_football;baseball;basketball;beachvolleyball;billiards;boules;bowls;canadian_football;canoe;climbing;cricket;croquet;cycling;dog_racing;equestrian;field_hockey;fitness;gaelic_games;golf;gymnastics;handball;horse_racing;ice_hockey;karting;martial_arts;model_aerodrome;motocross;motor;pelota;racquet;rc_car;rowing;rugby_league;rugby_union;running;safety_training;shooting;skateboard;skating;roller_skating;ice_skating;soccer;swimming;table_tennis;tennis;volleyball;9pin;10pin" 
+            display_values="Multiple;Archery;Athletics;American football;Australian football;Baseball;Basketball;Beach volleyball;Billiards;Boules;Bowls;Canadian football;Canoe;Climbing;Cricket;Croquet;Cycling;Dog racing;Equestrian;Field hockey;Fitness;Gaelic games;Golf;Gymnastics;Handball;Horse racing;Ice hockey;Karting;Martial arts;Model aerodrome;Motocross;Motor;Pelota;Racquet;RC car;Rowing;Rugby league;Rugby union;Running;Safety training;Shooting;Skateboard;Skating;Roller skating;Ice skating;Soccer;Swimming;Table tennis;Tennis;Volleyball;9pin;10pin" 
             match="key" values_context="sport"/>
     </chunk>
     <chunk id="bin">
