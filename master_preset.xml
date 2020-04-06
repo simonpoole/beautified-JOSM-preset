@@ -5209,12 +5209,28 @@
             <combo key="healthcare" text="Type of facility" values_searchable="true">
                 <list_entry value="birthing_center" short_description="Birthing center"/>
                 <list_entry value="blood_donation" short_description="Blood donation"/>
+                <list_entry value="counselling" short_description="Counselling"/>
                 <list_entry value="hospice" short_description="Hospice"/>
-                <list_entry value="midwife" short_description="Midwife"/>
+                <list_entry value="rehabilitation" short_description="Rehabilitation"/>
             </combo>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Other healthcare facilities -->
+        <item name="Other healthcare professionals" icon="${ICONPATH}health_healthcare.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:healthcare"/>
+            <space/>
+            <combo key="healthcare" text="Profession" values_searchable="true">
+                <list_entry value="audiologist" short_description="Audiologist"/>
+                <list_entry value="midwife" short_description="Midwife"/>
+                <list_entry value="occupational_therapist" short_description="Occupational therapist" />
+                <list_entry value="optometrist" short_description="Optometrist"/>
+                <list_entry value="podiatrist" short_description="Podiatrist"/>
+                <list_entry value="psychotherapist" short_description="Psychotherapist"/>
+                <list_entry value="speech_therapist" short_description="Speech therapist"/>
+            </combo>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Other healthcare professionals -->
         <item name="Laboratory" icon="${ICONPATH}health_laboratory_16110.${ICONTYPE}" type="node,closedway,multipolygon">
             <link wiki="Key:healthcare"/>
             <space/>
