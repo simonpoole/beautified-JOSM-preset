@@ -1683,7 +1683,7 @@
             <link wiki="Tag:highway=footway"/>
             <key key="highway" value="footway"/>
             <optional>
-                <combo key="footway" text="Type" values="sidewalk,crossing" display_values="Sidewalk,Crossing" values_context="footway"/>
+                <combo key="footway" text="Type" values="sidewalk,crossing,access_aisle" display_values="Sidewalk,Crossing,Access aisle" values_context="footway"/>
                 <reference ref="name"/>
                 <reference ref="surface_smoothness"/>
                 <reference ref="cycleway_surface"/>
