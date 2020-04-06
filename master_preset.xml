@@ -6905,7 +6905,7 @@
             <optional>
                 <reference ref="name_operator"/>
                 <combo key="building" text="Building" values="storage_tank" values_context="building"/>
-                <combo key="content" text="Content" values="fuel,manure,oil,sewage,silage,slurry,water,wine" values_context="content"/>
+                <combo key="content" text="Content" values="fuel,manure,oil,sewage,silage,slurry,water,wine" display_values="Fuel,Manure,Oil,Sewage,Silage,Slurry,Water,Wine" values_context="content"/>
                 <text key="height" text="Height (meters)" length="7"/>
             </optional>
         </item> <!-- Storage Tank -->
