@@ -3254,6 +3254,15 @@
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="No name"/>
         </item> <!-- Motorcycle Dealer -->
+        <item name="Motorcycle repair" icon="${ICONPATH}shopping_motorcycle_repair.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=motorcycle_repair"/>
+            <space/>
+            <key key="shop" value="motorcycle_repair"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="motorcycle_brands"/>
+            <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Motorcycle repair -->
     </group> <!-- Motorcycle -->
     <group name="Bicycle" icon="${ICONPATH}transport_bicycle.${ICONTYPE}">
         <item name="Parking" name_context="bicycle" icon="${ICONPATH}transport_parking_bicycle.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
@@ -3842,6 +3851,22 @@
             <reference ref="nudism" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Campsite -->
+        <item name="Camp pitch" icon="${ICONPATH}accommodation_camp_pitch.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:tourism=camp_pitch" />
+            <space />
+            <key key="tourism" value="camp_pitch" />
+            <text key="ref" text="Reference" />
+            <text key="addr:unit" text="Unit number" />
+            <text key="capacity" text="Number of places" />
+            <reference ref="surface" />
+            <checkgroup columns="2">
+                <check key="tents" text="Tents allowed" />
+                <check key="caravans" text="Caravans allowed" />
+                <check key="drinking_water" text="Drinking water" />
+                <check key="power_supply" text="Power supply" />
+                <check key="permanent_camping" text="Permanent camping only" />
+            </checkgroup>
+        </item> <!-- Camp pitch -->
     </group> <!-- Accommodation -->
     <group name="Food+Drinks" icon="${ICONPATH}food_restaurant.${ICONTYPE}">
         <item name="Restaurant" icon="${ICONPATH}food_restaurant.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7941,6 +7966,13 @@
             <combo text="Fair Trade" key="fair_trade" values="only,yes,no" display_values="Only,Yes,No" match="key"/>
         </item> <!-- Fair Trade -->
         <separator/>
+        <item name="Water" icon="${ICONPATH}shopping_water_24008.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=water"/>
+            <space/>
+            <key key="shop" value="water"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Water -->
         <item name="Alcohol" icon="${ICONPATH}shopping_alcohol.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=alcohol"/>
             <space/>
@@ -8006,6 +8038,14 @@
             <reference ref="clothes"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Boutique -->
+        <item name="Fashion accessories" icon="${ICONPATH}shopping_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=fashion_accessories"/>
+            <space/>
+            <key key="shop" value="fashion_accessories"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="clothes"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Fashion accessories -->
         <item name="Fashion (deprecated)" icon="${ICONPATH}shopping_boutique.${ICONTYPE}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
             <link wiki="Tag:shop=fashion"/>
             <space/>
@@ -9148,7 +9188,7 @@
             <space/>
             <key key="natural" value="geyser"/>
             <reference ref="optional_name_wikipedia"/>
-        </item> <!-- Cliff -->
+        </item> <!-- Geyser -->
         <separator/>
         <item name="Island" icon="presets/island.png" type="node,closedway,multipolygon" preset_name_label="true" name_context="place">
             <link wiki="Tag:place=island"/>
