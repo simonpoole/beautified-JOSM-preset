@@ -8803,7 +8803,7 @@
         <key key="amenity" value="vending_machine"/>
         <multiselect key="vending" text="Vending products" values_searchable="true" match="key">
         	<list_entry value="admission_tickets" short_description="Admission tickets"/>
-            <list_entry value="animal_food" short_description="Animal food"/>
+            <list_entry value="animal_feed" short_description="Animal feed"/>
             <list_entry value="bicycle_tube" short_description="Bicycle tubes"/>
             <list_entry value="cigarettes" short_description="Cigarettes"/>
             <list_entry value="chewing_gums" short_description="Chewing gums"/>
@@ -8822,7 +8822,7 @@
             <list_entry value="photos" short_description="Photos"/>
             <list_entry value="public_transport_plans" short_description="Plans (public transport)"/>
             <list_entry value="public_transport_tickets" short_description="Tickets (public transport)"/>
-            <list_entry value="SIM-cards" short_description="SIM-cards"/>
+            <list_entry value="SIM_cards" short_description="SIM_cards"/>
             <list_entry value="stamps" short_description="Stamps"/>
             <list_entry value="sweets" short_description="Sweets"/>
             <list_entry value="tampons" short_description="Tampons"/>
@@ -10758,8 +10758,8 @@
             <key key="office" value="government"/>
             <text key="name" text="Name"/>
 			<combo key="government" text="Type" 
-                values="administrative,audit,cadaster,culture,customs,data_protection,education,environment,forestry,healthcare,legislative,migration,ministry,pension_fund,prosecutor,public_service,register_office,social_security,social_services,tax,transportation" 
-                display_values="Administrative,Audit,Cadaster,Culture,Customs,Data protection,Education,Environment,Forestry,Healthcare,Legislative,Migration,Ministry,Pension fund,Prosecutor,Public service,Register office,Social security,Social services,Tax,Transportation"/>
+                values="administrative,audit,cadaster,culture,customs,data_protection,education,environment,forestry,healthcare,legislative,migration,ministry,pension_fund,prosecutor,public_service,register_office,social_security,social_services,statistics,tax,transportation" 
+                display_values="Administrative,Audit,Cadaster,Culture,Customs,Data protection,Education,Environment,Forestry,Healthcare,Legislative,Migration,Ministry,Pension fund,Prosecutor,Public service,Register office,Social security,Social services,Statistics,Tax,Transportation"/>
             <reference ref="oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Government -->
