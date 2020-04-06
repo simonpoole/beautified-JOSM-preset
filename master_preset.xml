@@ -7087,7 +7087,7 @@
                 <check key="display:digital" text="Digital" disable_off="true"/>
             </checkgroup>
         </item> <!-- Monitoring Station -->
-        <item name="Survey Point" icon="${ICONPATH}amenity_survey_point.${ICONTYPE}" type="node" preset_name_label="true">
+        <item name="Survey Point" icon="${ICONPATH}man_made_survey_point.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=survey_point"/>
             <space/>
             <key key="man_made" value="survey_point"/>
@@ -10699,6 +10699,20 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Political party -->
+        <item name="Charity" icon="${ICONPATH}office_charity.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=charity"/>
+            <space/>
+            <key key="office" value="charity"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Political party -->
+        <item name="Energy supplier" icon="${ICONPATH}office_energy_supplier.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=energy_supplier"/>
+            <space/>
+            <key key="office" value="energy_supplier"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Energy supplier -->
         <item name="Telecommunication" icon="${ICONPATH}office_telecommunication_25021.${ICONTYPE}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=telecommunication"/>
             <space/>
@@ -10706,6 +10720,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Telecommunication -->
+        <item name="Water utility" icon="${ICONPATH}office_water_utility.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=water_utility"/>
+            <space/>
+            <key key="office" value="water_utility"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Water utility -->
         <item name="Travel agent" icon="${ICONPATH}office_travel_agent_25022.${ICONTYPE}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=travel_agent"/>
             <space/>
@@ -10870,6 +10891,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Publisher -->
+        <item name="Surveyor" icon="${ICONPATH}office_surveyor.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=surveyor"/>
+            <space/>
+            <key key="office" value="surveyor"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Surveyor -->
         <item name="Register (deprecated)" deprecated="true" icon="${ICONPATH}office_register_25053.${ICONTYPE}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=register"/>
             <space/>
