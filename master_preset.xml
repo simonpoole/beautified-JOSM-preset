@@ -5678,6 +5678,13 @@
             <reference ref="fee"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Coworking space -->
+        <item name="Events venue" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:amenits=events_venue"/>
+            <space/>
+            <key key="amenity" value="events_venue"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Events venue -->
         <item name="Internet Cafe" icon="${ICONPATH}amenity_internet_cafe.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=internet_cafe"/>
             <space/>
@@ -7586,8 +7593,8 @@
             </optional>
         </item> <!-- Power Cable -->
     </group> <!-- Power -->
-    <group name="Telecom" icon="presets/telecom/telecom.svg">
-        <item name="Telecom Street Cabinet" icon="c" type="node" preset_name_label="true">
+    <group name="Telecom" icon="${ICONPATH}man_made_empty.${ICONTYPE}">
+        <item name="Telecom Street Cabinet" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=street_cabinet" />
             <space />
             <key key="man_made" value="street_cabinet" />
@@ -7598,27 +7605,33 @@
                 <reference ref="colours" />
             </optional>       
         </item> <!-- Telecom Street Cabinet -->
-        <item name="Telephone Exchange" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Telephone Exchange" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:telecom=exchange" />
             <space />
             <key key="telecom" value="exchange" />
             <reference ref="telecom_medium" />
             <reference ref="ref_operator" />
         </item> <!-- Telephone Exchange -->
-        <item name="Connection Point" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Connection Point" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:telecom=connection_point" />
             <space />
             <key key="telecom" value="connection_point" />
             <reference ref="telecom_medium" />
             <reference ref="ref_operator" />
         </item> <!-- Connection Point -->
-        <item name="Service Device" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+        <item name="Service Device" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:telecom=service_device" />
             <space />
             <key key="telecom" value="service_device" />
             <reference ref="telecom_medium" />
             <reference ref="ref_operator" />
         </item> <!-- Service Device -->
+        <item name="Data center" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:telecom=data_center" />
+            <space />
+            <key key="telecom" value="data_center" />
+            <reference ref="ref_operator" />
+        </item> <!-- Data center -->
     </group> <!-- Telecom -->
   </group> <!-- Man Made -->
   <group name="Historic Places &amp; Objects" icon="${ICONPATH}tourist_historic_19021.${ICONTYPE}" items_sort="false" >
@@ -7780,6 +7793,13 @@
             <reference ref="organic"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Convenience Store -->
+        <item name="General store" icon="${ICONPATH}shopping_convenience.${ICONTYPE}" gtype="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=general"/>
+            <space/>
+            <key key="shop" value="general"/>
+            <reference ref="name_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- General store -->
         <item name="Kiosk" icon="${ICONPATH}shopping_kiosk.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=kiosk"/>
             <space/>
@@ -9123,6 +9143,12 @@
             <reference ref="general_access"/>
             <reference ref="fee"/>
         </item> <!-- Cave Entrance -->
+        <item name="Geyser" icon="${ICONPATH}natural_fountain_12060.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:natural=geyser"/>
+            <space/>
+            <key key="natural" value="geyser"/>
+            <reference ref="optional_name_wikipedia"/>
+        </item> <!-- Cliff -->
         <separator/>
         <item name="Island" icon="presets/island.png" type="node,closedway,multipolygon" preset_name_label="true" name_context="place">
             <link wiki="Tag:place=island"/>
