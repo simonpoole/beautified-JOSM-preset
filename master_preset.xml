@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.8.9" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.8.10" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -1170,6 +1170,12 @@
       <check key="communication:microwave" text="Microwave" />
       <check key="communication:bos" text="BOS" />
     </checkgroup>
+  </chunk>
+  <chunk id="lgbtq">
+    <combo key="lgbtq" text="LGBTQ preference" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
+    <combo key="lgbtq:women" text="LGBTQ women" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
+    <combo key="lgbtq:men" text="LGBTQ men" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />  
+    <combo key="lgbtq:trans" text="LGBTQ transgender" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />     
   </chunk>
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
@@ -3969,6 +3975,10 @@
             <reference ref="toilets_with_access"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <optional>
+                <space/>
+                <reference ref="lgbtq" />
+            </optional>
             <space/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Diet" />
@@ -3997,6 +4007,10 @@
             <reference ref="toilets_with_access"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <optional>
+                <space/>
+                <reference ref="lgbtq" />
+            </optional>
             <space/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Diet" />
@@ -4650,6 +4664,8 @@
             <reference ref="min_age"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <space/>
+            <reference ref="lgbtq" />
             <space/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Night Club -->
@@ -8474,6 +8490,7 @@
             <key key="shop" value="erotic"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="min_age"/>
+            <reference ref="lgbtq" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Erotic -->
     </group> <!-- For the body -->
