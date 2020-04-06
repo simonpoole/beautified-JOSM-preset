@@ -2017,9 +2017,9 @@
             <key key="barrier" value="spikes"/>
             <reference ref="barrier_5"/>
         </item> <!-- Spikes -->
-        <item name="Height resctrictor" icon="${ICONPATH}barrier_empty.${ICONTYPE}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=height_resctrictor"/>
-            <key key="barrier" value="height_resctrictor"/>
+        <item name="Height restrictor" icon="${ICONPATH}barrier_empty.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=height_restrictor"/>
+            <key key="barrier" value="height_restrictor"/>
             <text key="maxheight" text="Max. height (meters)"/>
             <reference ref="barrier_5"/>
         </item> <!-- Height resctrictor -->
