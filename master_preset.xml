@@ -7162,13 +7162,13 @@
             <text key="ele" text="Elevation"/>
             <combo key="material" text="Material" values="andesite,brass,bronze,concrete,granite,metal,steel,stone" display_values="Andesite,Brass,Bronze,Concrete,Granite,Metal,Steel,Stone" values_context="material" />
         </item> <!-- Survey Point -->
-        <item name="Surveillance Camera" icon="${ICONPATH}man_made_surveillance_22063.${ICONTYPE}" type="node" preset_name_label="true">
+        <item name="Surveillance" icon="${ICONPATH}man_made_surveillance_22063.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=surveillance"/>
             <space/>
             <key key="man_made" value="surveillance"/>
-            <key key="surveillance:type" value="camera"/>
-            <combo key="surveillance" text="Type" values="indoor,outdoor,public"/>
-            <combo key="surveillance:zone" text="Zone" values="town,parking,traffic,shop,bank,building"/>
+            <multiselect key="surveillance:type" text="Method" values="ALPR;camera;guard" display_values="ALPR;camera;guard" />
+            <combo key="surveillance" text="Location" values="indoor,outdoor,public" display_values="Indoor,Outdoor,Public" />
+            <combo key="surveillance:zone" text="Zone" values="town,parking,traffic,shop,bank,building" display_values="Town,Parking,Traffic,Shop,Bank,Building"/>
             <text key="operator" text="Operator"/>
             <optional>
                 <text key="name" text="Name"/>
@@ -7177,8 +7177,8 @@
             <space/>
             <label text="Camera"/>
             <space/>
-            <combo key="camera:type" text="Type" values="fixed,panning,dome" values_context="camera:type" match="key"/>
-            <combo key="camera:mount" text="Mounted on" values="wall,pole,ceiling" values_context="camera:mount" match="key"/>
+            <combo key="camera:type" text="Camera type" values="fixed,panning,dome" display_values="Fixed,Panning,Dome" values_context="camera:type" match="key"/>
+            <combo key="camera:mount" text="Mounted on" values="wall,pole,ceiling" display_values="Wall,Pole,Ceiling" values_context="camera:mount" match="key"/>
             <optional>
                 <text key="camera:direction" text="Direction in degrees" match="key"/>
                 <text key="camera:angle" text="Inclination in degrees" match="key"/>
