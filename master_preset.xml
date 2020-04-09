@@ -2768,6 +2768,7 @@
                 <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight"
                     display_values="Main,Branch,Industrial,Military,Tourism,Freight" />
                 <reference ref="railway_service_gauge_electrified"/>
+                <check key="highspeed" text="Highspeed" disable_off="true"/>
             </optional>
         </item> <!-- Rail -->
         <item name="Narrow Gauge Rail" icon="${ICONPATH}transport_train_station.${ICONTYPE}" type="way" preset_name_label="true">
