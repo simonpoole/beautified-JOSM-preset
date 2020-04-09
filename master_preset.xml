@@ -7820,6 +7820,12 @@
          <text key="start_date" text="Start date"/>
          <text key="inscription" text="Inscription" length="255"/>
      </item> <!-- Wayside Shrine -->
+     <item name="Torii" icon="${ICONPATH}tourist_shinto3.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+         <link wiki="Tag:man_made=torii"/>
+         <space/>
+         <key key="man_made" value="torii"/>
+         <reference ref="optional_name"/>
+     </item> <!-- Torii -->
      <item name="Boundary Stone" icon="${ICONPATH}poi_boundary_stone_19004.${ICONTYPE}" type="node,closedway" preset_name_label="true">
          <link wiki="Tag:historic=boundary_stone"/>
          <space/>
