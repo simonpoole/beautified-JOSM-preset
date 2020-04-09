@@ -570,7 +570,7 @@
         <combo key="fee" text="Fee" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_sort="false" editable="true"/>
     </chunk>
     <chunk id="parking_name_type_ref">
-        <combo key="parking" text="Type" values="multi-storey,surface,underground,rooftop" display_values="Multi-storey,Surface,Underground,Rooftop" values_context="parking"/>
+        <combo key="parking" text="Type" values="multi-storey,surface,underground,rooftop,sheds,carports,garage_boxes" display_values="Multi-storey,Surface,Underground,Rooftop,Sheds,Carports,Garage boxes" values_context="parking"/>
         <optional>
             <text key="name" text="Name"/>
         	<text key="ref" text="Reference number"/>
