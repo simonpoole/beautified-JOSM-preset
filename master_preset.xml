@@ -2532,7 +2532,8 @@
             <space/>
             <key key="natural" value="water"/>
             <text key="name" text="Name"/>
-            <combo key="water" text="Water Body" values="canal,basin,fish_pass,lake,lagoon,moat,oxbow,pond,reflecting_pool,reservoir,river,stream_pool,lock,wastewater" match="key" display_values="Canal,Basin,Fish pass,Lake,Lagoon,Moat,Oxbow,Pond,Reflecting pool,Reservoir,River,Stream pool,Lock,Wastewater" values_searchable="true"/>
+            <combo key="water" text="Water Body" values="canal,basin,fish_pass,lake,lagoon,moat,oxbow,pond,reflecting_pool,reservoir,river,stream,stream_pool,lock,wastewater" 
+                display_values="Canal,Basin,Fish pass,Lake,Lagoon,Moat,Oxbow,Pond,Reflecting pool,Reservoir,River,Stream,Stream pool,Lock,Wastewater" match="key" values_searchable="true"/>
             <check key="salt" text="Salt Water" disable_off="true"/>
             <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true"/>
             <check key="tidal" text="In the tidal range" disable_off="true"/>
