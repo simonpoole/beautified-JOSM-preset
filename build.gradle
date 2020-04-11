@@ -1,7 +1,7 @@
 /*
  */
 
-version = '1.8.12'
+version = '1.8.13'
 
 //for Ant filter
 import org.apache.tools.ant.filters.ReplaceTokens
@@ -37,7 +37,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.13.0'
+    runtime 'ch.poole:preset-utils:0.14.0'
 }
 
 task copyCss(type: Copy) {
