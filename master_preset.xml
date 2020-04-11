@@ -10173,6 +10173,13 @@
                     <role key="substation" text="Power Substation" requisite="optional" type="way,closedway,multipolygon" member_expression="power"/>
                 </roles>
             </item> <!-- Power Route -->
+            <item name="Pipeline route" icon="${ICONPATH}osm_route_sp.${ICONTYPE}" type="relation" preset_name_label="true">
+                <link wiki="Tag:route=pipeline"/>
+                <space/>
+                <key key="type" value="route"/>
+                <key key="route" value="pipeline"/>
+                <reference ref="name_ref_operator"/>
+            </item> <!-- Pipeline route -->
             <item name="Railway Route" icon="${ICONPATH}osm_route_sp.${ICONTYPE}" type="relation" preset_name_label="true">
                 <link wiki="Tag:route=railway"/>
                 <space/>
