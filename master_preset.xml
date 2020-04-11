@@ -1469,7 +1469,7 @@
             </optional>
             <reference ref="road_access_restrictions"/>
         </item> <!-- Parking Aisle -->
-        <item name="Escape" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" type="way" preset_name_label="true">
+        <item name="Escape" icon="${ICONPATH}escape.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:highway=escape"/>
             <space/>
             <key key="highway" value="escape"/>
