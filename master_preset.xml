@@ -1936,6 +1936,9 @@
             <key key="highway" value="milestone"/>
             <text key="distance" text="Distance (kilometers)"/>
             <text key="ref" text="Reference"/>
+            <optiona>
+                <combo key="direction" text="For direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
+            </optiona>
         </item> <!-- Highway Milestone -->
         <item name="Named Junction" name_context="junction=yes" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:junction=yes"/>
@@ -2775,6 +2778,9 @@
             <key key="waterway" value="milestone"/>
             <text key="distance" text="Distance (kilometers)"/>
             <text key="ref" text="Reference"/>
+            <optiona>
+                <combo key="direction" text="For direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
+            </optiona>
         </item> <!-- Waterway milestone -->
     </group> <!-- Shipping -->
   </group> <!-- Water -->
