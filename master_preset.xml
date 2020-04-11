@@ -2472,6 +2472,12 @@
             <key key="waterway" value="dam"/>
             <reference ref="name_wikipedia"/>
         </item> <!-- Dam -->
+        <item name="Fish pass" icon="${ICONPATH}water_fish_29063.${ICONTYPE}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:waterway=fish_pass"/>
+            <space/>
+            <key key="waterway" value="fish_pass"/>
+            <reference ref="optional_name"/>
+        </item> <!-- Fish pass -->
         <item name="Groyne" icon="${ICONPATH}water_groyne_34006.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=groyne"/>
             <key key="man_made" value="groyne"/>
