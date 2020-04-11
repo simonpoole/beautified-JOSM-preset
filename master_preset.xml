@@ -2480,6 +2480,9 @@
             <space/>
             <key key="waterway" value="fish_pass"/>
             <reference ref="optional_name"/>
+            <check key="tunnel" text="Tunnel" disable_off="true" />
+            <text key="width" text="Width (Meters)" value_type="integer" />
+            <check key="seasonal" text="Seasonal" />
         </item> <!-- Fish pass -->
         <item name="Groyne" icon="${ICONPATH}water_groyne_34006.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=groyne"/>
