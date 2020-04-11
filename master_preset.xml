@@ -1869,6 +1869,10 @@
             <link wiki="Tag:highway=passing_place"/>
             <key key="highway" value="passing_place"/>
         </item> <!-- Passing Place -->
+        <item name="Emergency bay" icon="${ICONPATH}emergency_bay.${ICONTYPE}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:highway=emergency_bay"/>
+            <key key="highway" value="emergency_bay"/>
+        </item> <!-- Emergency bay -->
         <item name="Turning Circle" icon="${ICONPATH}transport_turning_circle.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=turning_circle"/>
             <key key="highway" value="turning_circle"/>
