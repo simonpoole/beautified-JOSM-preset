@@ -1177,6 +1177,32 @@
     <combo key="lgbtq:men" text="LGBTQ men" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />  
     <combo key="lgbtq:trans" text="LGBTQ transgender" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />     
   </chunk>
+  <chunk id="recycling_accepted_material">
+    <checkgroup text="Accepted material" columns="4">
+        <check key="recycling:aluminium" text="Aluminium" disable_off="true"/>
+        <check key="recycling:batteries" text="Batteries" disable_off="true"/>
+        <check key="recycling:cans" text="Cans" disable_off="true"/>
+        <check key="recycling:cardboard" text="Cardboard" disable_off="true"/>
+        <check key="recycling:clothes" text="Clothes" disable_off="true"/>
+        <check key="recycling:coffee_capsules" text="Coffee capsules" disable_off="true"/>
+        <check key="recycling:cooking_oil" text="Cooking oil" disable_off="true"/>
+        <check key="recycling:drugs" text="Drugs" disable_off="true"/>
+        <check key="recycling:electrical_appliances" text="Electrical Appliances" disable_off="true"/>
+        <check key="recycling:engine_oil" text="Engine oil" disable_off="true"/>
+        <check key="recycling:glass" text="Glass" disable_off="true"/>
+        <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true"/>
+        <check key="recycling:green_waste" text="Green Waste" disable_off="true"/>
+        <check key="recycling:paper" text="Paper" disable_off="true"/>
+        <check key="recycling:PET" text="PET" disable_off="true"/>
+        <check key="recycling:plastic" text="Plastic" disable_off="true"/>
+        <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true"/>
+        <check key="recycling:plastic_packaging" text="Plastic Packaging" disable_off="true"/>
+        <check key="recycling:scrap_metal" text="Scrap Metal" disable_off="true"/>
+        <check key="recycling:shoes" text="Shoes" disable_off="true"/>
+        <check key="recycling:small_appliances" text="Small Appliances" disable_off="true"/>
+        <check key="recycling:waste" text="Waste" disable_off="true"/>
+    </checkgroup>
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
     <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" items_sort="false" >
@@ -5821,30 +5847,7 @@
             <key key="recycling_type" value="container"/>
             <reference ref="oh_wheelchair"/>
             <space/>
-            <checkgroup text="Accepted material" columns="4">
-                <check key="recycling:aluminium" text="Aluminium" disable_off="true"/>
-                <check key="recycling:batteries" text="Batteries" disable_off="true"/>
-                <check key="recycling:cans" text="Cans" disable_off="true"/>
-                <check key="recycling:cardboard" text="Cardboard" disable_off="true"/>
-                <check key="recycling:clothes" text="Clothes" disable_off="true"/>
-                <check key="recycling:coffee_capsules" text="Coffee capsules" disable_off="true"/>
-                <check key="recycling:cooking_oil" text="Cooking oil" disable_off="true"/>
-		        <check key="recycling:drugs" text="Drugs" disable_off="true"/>
-                <check key="recycling:electrical_appliances" text="Electrical Appliances" disable_off="true"/>
-                <check key="recycling:engine_oil" text="Engine oil" disable_off="true"/>
-                <check key="recycling:glass" text="Glass" disable_off="true"/>
-                <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true"/>
-                <check key="recycling:green_waste" text="Green Waste" disable_off="true"/>
-                <check key="recycling:paper" text="Paper" disable_off="true"/>
-                <check key="recycling:PET" text="PET" disable_off="true"/>
-                <check key="recycling:plastic" text="Plastic" disable_off="true"/>
-                <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true"/>
-                <check key="recycling:plastic_packaging" text="Plastic Packaging" disable_off="true"/>
-                <check key="recycling:scrap_metal" text="Scrap Metal" disable_off="true"/>
-                <check key="recycling:shoes" text="Shoes" disable_off="true"/>
-                <check key="recycling:small_appliances" text="Small Appliances" disable_off="true"/>
-                <check key="recycling:waste" text="Waste" disable_off="true"/>
-            </checkgroup>
+            <reference ref="recycling_accepted_material"/>
         </item> <!-- Recycling Container-->
         <item name="Recycling Centre" icon="${ICONPATH}amenity_recycling.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
            <link wiki="Tag:amenity=recycling"/>
@@ -5853,30 +5856,7 @@
             <key key="recycling_type" value="centre"/>
             <reference ref="name_operator_oh_wheelchair"/>
             <space/>
-            <checkgroup text="Accepted material" columns="4">
-                <check key="recycling:aluminium" text="Aluminium" disable_off="true"/>
-                <check key="recycling:batteries" text="Batteries" disable_off="true"/>
-                <check key="recycling:cans" text="Cans" disable_off="true"/>
-                <check key="recycling:cardboard" text="Cardboard" disable_off="true"/>
-                <check key="recycling:clothes" text="Clothes" disable_off="true"/>
-                <check key="recycling:coffee_capsules" text="Coffee capsules" disable_off="true"/>
-                <check key="recycling:cooking_oil" text="Cooking oil" disable_off="true"/>
-		        <check key="recycling:drugs" text="Drugs" disable_off="true"/>
-                <check key="recycling:electrical_appliances" text="Electrical Appliances" disable_off="true"/>
-                <check key="recycling:engine_oil" text="Engine oil" disable_off="true"/>
-                <check key="recycling:glass" text="Glass" disable_off="true"/>
-                <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true"/>
-                <check key="recycling:green_waste" text="Green Waste" disable_off="true"/>
-                <check key="recycling:paper" text="Paper" disable_off="true"/>
-                <check key="recycling:PET" text="PET" disable_off="true"/>
-                <check key="recycling:plastic" text="Plastic" disable_off="true"/>
-                <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true"/>
-                <check key="recycling:plastic_packaging" text="Plastic Packaging" disable_off="true"/>
-                <check key="recycling:scrap_metal" text="Scrap Metal" disable_off="true"/>
-                <check key="recycling:shoes" text="Shoes" disable_off="true"/>
-                <check key="recycling:small_appliances" text="Small Appliances" disable_off="true"/>
-                <check key="recycling:waste" text="Waste" disable_off="true"/>
-            </checkgroup>
+            <reference ref="recycling_accepted_material"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Recycling Centre-->
         <item name="Waste Basket/Trash Can" icon="${ICONPATH}amenity_waste_bin.${ICONTYPE}" type="node" preset_name_label="true">
