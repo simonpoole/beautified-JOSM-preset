@@ -9955,6 +9955,13 @@
 				<reference ref="turn_restriction_roles"/>
 			</item> <!-- Straight on only -->
         </group> <!-- Turn Restrictions -->
+        <item name="Lane connectivity" icon="${ICONPATH}only_straight_on.${ICONTYPE}" type="relation" preset_name_label="true">
+            <link wiki="Relation:connectivity"/>
+            <space/>
+            <key key="type" value="connectivity"/>
+            <multiselect key="connectivity" text="From lane : to lanes" delimiter="|" match="key" editable="true" />
+            <reference ref="turn_restriction_roles"/>
+        </item> <!-- Lane connectivity -->
         <item name="Enforcement" icon="${ICONPATH}highway_speed_camera_18025.${ICONTYPE}" type="relation" preset_name_label="true">
             <link wiki="Relation:enforcement"/>
             <space/>
