@@ -6085,7 +6085,7 @@
             <space/>
             <key key="amenity" value="weighbridge"/>
             <text key="operator" text="Operator"/>
-        </item> <!-- Weighbridge -->  
+        </item> <!-- Weighbridge --> 
     </group> <!-- Facilities -->
   </group>  <!-- Facilities -->
   <group name="Sports" icon="${ICONPATH}sport_soccer.${ICONTYPE}">
@@ -6841,6 +6841,21 @@
 			<key key="building" value="entrance"/>
 			<preset_link preset_name="Address"/>
 		</item> <!-- Entrance (deprecated) -->
+        <item name="Loading dock" icon="${ICONPATH}amenity_forklift.${ICONTYPE}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:amenity=loading_dock"/>
+            <space/>
+            <key key="amenity" value="loading_dock"/>
+            <text key="ref" text="Reference Code" />
+            <text key="operator" text="Operator" />
+            <reference ref="facility_access" />
+            <reference ref="door_type" />
+            <reference ref="colours" />
+            <text key="width" text="Width (Meters)" />
+            <text key="maxwidth" text="Max. width (Meters)" />
+            <text key="height" text="Height (Meters)"  />
+            <text key="maxheight" text="Max. heeight (Meters)" />
+            <check key="automatic_door" text="Automatic door" />
+        </item> <!-- Loading dock -->  
 	</group> <!-- Buildings -->
     <group name="Indoor elements" icon="${ICONPATH}indoor_floorplan.${ICONTYPE}" >
         <item name="Indoor area" icon="${ICONPATH}indoor_area.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
@@ -6862,7 +6877,7 @@
             <text key="ref" text="Reference Code" />
             <reference ref="door_type" />
             <reference ref="facility_access" />
-            <text key="width" text="Width (Meters)" value_type="integer" />
+            <text key="width" text="Width (Meters)" />
             <text key="height" text="Height (Meters)" value_type="integer" />
         </item>
         <item name="Room" icon="${ICONPATH}indoor_room.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
