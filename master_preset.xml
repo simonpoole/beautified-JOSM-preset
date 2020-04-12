@@ -4562,7 +4562,13 @@
             <key key="railway" value="minature"/>
             <reference ref="optional_name"/>
         </item> <!-- Minature railway -->
-        <separator/>
+        <item name="Toy library" icon="${ICONPATH}amenity_toys.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=toy_library"/>
+            <space/>
+            <key key="amenity" value="toy_library"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Tpy library -->
         <separator/>
         <item name="Playground" icon="${ICONPATH}amenity_playground.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=playground"/>
