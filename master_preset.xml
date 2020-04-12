@@ -1169,6 +1169,8 @@
       <check key="communication:television" text="Television" />
       <check key="communication:microwave" text="Microwave" />
       <check key="communication:bos" text="BOS" />
+      <check key="communication:satellite" text="Satellite" />
+      <check key="communication:amateur_radio" text="Amateur radio" />
     </checkgroup>
   </chunk>
   <chunk id="lgbtq">
@@ -6893,6 +6895,17 @@
                 <reference ref="communication_types"/>
             </optional>
         </item> <!-- Tower -->
+        <item name="Antenna" icon="${ICONPATH}man_made_antenna_22088.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:man_made=antenna"/>
+            <space/>
+            <key key="man_made" value="antenna" />
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="height" text="Height (meters)"/>
+                <text key="operator" text="Operator"/>
+                <reference ref="communication_types"/>
+            </optional>
+         </item> <!-- Antenna -->
         <item name="Flagpole" icon="${ICONPATH}man_made_flagpole_22023.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=flagpole"/>
             <key key="man_made" value="flagpole"/>
