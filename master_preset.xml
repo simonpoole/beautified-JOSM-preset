@@ -4906,6 +4906,13 @@
             	<reference ref="oh"/>
             	<combo key="public_bookcase:type" text="Type" values="building,glass_cabinet,metal_cabinet,movable_cabinet,phone_box,reading_box,sculpture,shelf,shelter,wooden_cabinet" display_values="Building,Glass cabinet,Metal cabinet,Movable cabinet,Phone booth,Reading box,Sculpture,Shelf,Shelter,Wooden cabinet"/>
             </optional>
+        </item> <!-- Public bookcase -->
+        <item name="Planetarium" icon="${ICONPATH}amenity_planetarium.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=planetarium"/>
+            <space/>
+            <key key="amenity" value="planetarium"/>
+            <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address_payment"/>
         </item> <!-- Library -->
         <item name="Arts Centre" icon="${ICONPATH}amenity_arts_centre_12001.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=arts_centre"/>
