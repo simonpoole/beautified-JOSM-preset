@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.8.13" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.8.14" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -2980,6 +2980,16 @@
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Derail -->
+        <item name="Yard" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <key key="railway" value="yard" />
+            <text key="operator" text="Operator" />
+            <reference ref="name_ref"/>
+        </item> <!-- Yard -->
+        <item name="Train wash" icon="${ICONPATH}transport_train_wash.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <key key="railway" value="train_wash" />
+            <text key="operator" text="Operator" />
+            <text key="ref" text="Reference"/>
+        </item> <!-- Train wash -->
     </group> <!-- Railway -->
     <group name="Aerialway" icon="${ICONPATH}transport_aerialway_10001.${ICONTYPE}">
         <item name="Cable Car" icon="${ICONPATH}transport_aerialway_10001.${ICONTYPE}" gtype="way" preset_name_label="true">
@@ -6163,7 +6173,14 @@
             <multiselect key="sport" text="Sport" values="curling;ice_hockey;ice_skating" display_values="Curling;Ice hockey;Ice skating" values_context="sport"/>
             <reference ref="name_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Dive centre -->
+        </item> <!-- Ice rink -->
+        <item name="Bowling alley" icon="${ICONPATH}sport_bowling_21179.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:leisure=bowling_alley"/>
+            <space/>
+            <key key="leisure" value="bowling_alley"/>
+            <reference ref="name_oh_wheelchair"/>
+            <reference ref="name_oh_wheelchair_level_toilets"/>
+        </item> <!-- Bowling alley -->
         <group name="Golf" icon="${ICONPATH}sport_golf.${ICONTYPE}">
             <item name="Golf Course" icon="${ICONPATH}sport_golf.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:leisure=golf_course"/>
