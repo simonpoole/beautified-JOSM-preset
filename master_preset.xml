@@ -1205,6 +1205,15 @@
         <check key="recycling:waste" text="Waste" disable_off="true"/>
     </checkgroup>
   </chunk>
+  <chunk id="waste">
+    <multiselect key="waste" text="Accepted waste" delimiter=";" match="key" >
+        <list_entry value="trash" short_description="Trash"/>    
+        <list_entry value="organic" short_description="Organic"/>
+        <list_entry value="plastic" short_description="Plastic"/>
+        <list_entry value="excrements" short_description="Excerements"/>
+        <list_entry value="grey_water" short_description="Grey water"/>
+    </multiselect>
+  </chunk>
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
     <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" items_sort="false" >
@@ -5887,12 +5896,20 @@
         <item name="Waste Basket/Trash Can" icon="${ICONPATH}amenity_waste_bin.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=waste_basket"/>
             <key key="amenity" value="waste_basket"/>
-            <combo key="waste" text="Waste" values="trash,dog_excrement" display_values="Trash,Dog excrement" match="none"/>
+            <combo key="waste" text="Waste" values="trash,dog_excrement,cigarettes" display_values="Trash,Dog excrement,Cigarettes" match="none"/>
         </item> <!-- Waste Basket/Trash Can -->
         <item name="Waste Disposal/Dumpster" icon="${ICONPATH}amenity_waste_disposal_12312.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=waste_disposal"/>
             <key key="amenity" value="waste_disposal"/>
+            <reference ref="waste"/>
+            <reference ref="name_operator_oh_wheelchair"/>
         </item> <!-- Waste Disposal/Dumpster -->
+        <item name="Waste transfer station" icon="${ICONPATH}amenity_garbage_truck.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=waste_transfer_station"/>
+            <key key="amenity" value="waste_transfer_station"/>
+            <reference ref="waste"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+        </item> <!-- Waste transfer station -->
         <item name="Sanitary Dump Station" icon="${ICONPATH}amenity_sanitary_dump_station.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Toilet_Holding_Tank_Disposal"/>
             <space/>
