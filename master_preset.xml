@@ -5874,8 +5874,20 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
         </item> <!-- Photo booth -->
         <separator/>
+        <item name="Bottle return" icon="${ICONPATH}amenity_bottle_return.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:vending=bottle_return"/>
+            <space/>
+            <key key="amenity" value="vending_machine"/>
+            <key key="vending" value="bottle_return"/>
+             <checkgroup text="Accepted bottles" columns="4">
+                <check key="recycling:cans" text="Cans" disable_off="true"/>
+                <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true"/>
+                <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true"/>
+            </checkgroup>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+        </item> <!-- Bottle return -->
         <item name="Recycling Container" icon="${ICONPATH}amenity_recycling.${ICONTYPE}" type="node,closedway" preset_name_label="true">
-           <link wiki="Tag:amenity=recycling"/>
+            <link wiki="Tag:amenity=recycling"/>
             <space/>
             <key key="amenity" value="recycling"/>
             <key key="recycling_type" value="container"/>
