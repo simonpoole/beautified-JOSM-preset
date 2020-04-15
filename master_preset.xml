@@ -5483,6 +5483,12 @@
             <reference ref="level"/>
             <check key="indoor" text="Indoor" match="none"/>
         </item> <!-- Fire Extinguisher -->
+        <item name="Fire Alarm Box" icon="${ICONPATH}emergency_fire_alarm.${ICONTYPE}" type="node" preset_name_label="true">
+            <key key="emergency" value="fire_alarm_box" />
+            <text key="ref" text="Reference Code" />
+            <reference ref="level"/>
+            <check key="indoor" text="Indoor" match="none"/>
+        </item> <!-- Fire Alarm Box -->
         <item name="Fire Hose" icon="${ICONPATH}emergency_fire_hose_17010.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=fire_hose"/>
             <space/>
@@ -5618,6 +5624,10 @@
             <label text="(Use number as shown on plate.)"/>
             <space/>
         </item> <!-- Emergency Access Point -->
+        <item name="Mountain Rescue" icon="${ICONPATH}emergency_mountain_rescue_17040.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <key key="emergency" value="mountain_rescue" />
+            <reference ref="link_contact_address"/>
+        </item> <!-- Mountain Rescue -->
     </group> <!-- Emergency -->
     <group name="Social Facilities" icon="${ICONPATH}amenity_outreach_12252.${ICONTYPE}">
         <item name="Ambulatory Care" icon="${ICONPATH}amenity_ambulatory_care_12248.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -8985,16 +8995,21 @@
         	<list_entry value="admission_tickets" short_description="Admission tickets"/>
             <list_entry value="animal_feed" short_description="Animal feed"/>
             <list_entry value="bicycle_tube" short_description="Bicycle tubes"/>
+            <list_entry value="bread" short_description="Bread"/>
             <list_entry value="cigarettes" short_description="Cigarettes"/>
             <list_entry value="chewing_gums" short_description="Chewing gums"/>
             <list_entry value="coffee" short_description="Coffee"/>
             <list_entry value="condoms" short_description="Condoms"/>
             <list_entry value="drinks" short_description="Drinks"/>
+            <list_entry value="eggs" short_description="Eggs"/>
+            <list_entry value="electronics" short_description="Electronics"/>
             <list_entry value="elongated_coin" short_description="Elongated coin"/>
             <list_entry value="excrement_bags" short_description="Excrement bags"/>
             <list_entry value="feminine_hygiene" short_description="Feminine hygiene articles"/> 
             <list_entry value="food" short_description="Food"/>
             <list_entry value="fuel" short_description="Fuel"/>
+            <list_entry value="ice_cream" short_description="Ice cream"/>
+            <list_entry value="ice_cubes" short_description="Ice cubes"/>
             <list_entry value="milk" short_description="Milk"/>
             <list_entry value="newspapers" short_description="Newspapers"/>
             <list_entry value="parking_tickets" short_description="Parking tickets"/>
