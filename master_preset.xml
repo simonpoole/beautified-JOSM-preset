@@ -4199,6 +4199,12 @@
                 <label text="... other transportation modes possible"/>
             </optional>
         </item> <!-- Guidepost -->
+        <item name="Trailhead" icon="${ICONPATH}tourist_empty.${ICONTYPE}"  type="node" preset_name_label="true">
+            <key key="highway" value="trailhead" />
+            <text key="name" text="Name" i18n="true" />
+            <text key="operator" text="Operator" />
+            <text key="ele" text="Elevation" value_type="integer" />
+        </item> <!-- Trailhead -->
         <item name="Information Terminal" icon="${ICONPATH}tourist_information_terminal_20008.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Key:information"/>
             <label text="Information access via electronic methods."/>
@@ -7373,6 +7379,14 @@
             </multiselect>
             <reference ref="name_wikipedia"/>
         </item> <!-- Observatory -->
+        <item name="Telescope" icon="${ICONPATH}man_made_telescope.${ICONTYPE}" name_context="man_made" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:man_made=telescope"/>
+            <key key="man_made" value="telescope"/>
+            <combo key="telescope:type" text="Type" values="optical,radio,gamma" display_values="Optical,Radio,Gamma ray" />
+            <text key="telescope:diameter" text="Diameter in meters" />
+            <combo key="telescope:construction" text="Construction" values="dish,dome" display_values="Dish,Dome" />
+            <reference ref="name_wikipedia"/>
+        </item> <!-- Telescope -->
     </group> <!-- Man Made -->
     <group name="Bridges" icon="${ICONPATH}highway_bridge_sp.${ICONTYPE}">
         <item name="Bridge" icon="${ICONPATH}highway_bridge_sp.${ICONTYPE}" type="way,relation,multipolygon" preset_name_label="true">
