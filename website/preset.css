@@ -1,0 +1,65 @@
+div.preset{
+    line-height: 22px; text-align: center;
+    vertical-align: bottom;
+    font: 12px arial, sans-serif;
+	padding:5px; 
+}
+
+div.group {
+	clear: both;
+  	margin-bottom:20px;
+}
+
+h1{
+	font: 32px arial, sans-serif;
+}
+
+h2{
+	font: 24px arial, sans-serif;
+	padding-top: 20px;
+}
+
+h3{
+	font: 18px arial, sans-serif;
+	padding-top: 20px;
+}
+
+h4{
+	font: 16px arial, sans-serif;
+	padding-top: 20px;
+}
+
+div.footer{
+	clear: both;
+	font: 10px arial, sans-serif;
+}
+
+div.download {
+	font: 16px arial, sans-serif;
+}
+
+div.container {
+  background: #E0E0E0;
+  position: relative;
+  width:90px; 
+  height:110px; 
+  float:left; 
+  margin:10px;
+
+}
+
+div.container .popup {
+  display: none;
+}
+
+div.container:hover .popup {
+  position: absolute;
+  background: #FFFFFF;
+  display: block;
+  z-index: 9;
+  top: 20px;
+  left: 20px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px; 
+}
