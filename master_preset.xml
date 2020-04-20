@@ -7974,6 +7974,7 @@
          <reference ref="religious_catholic_christian" />
          <text key="start_date" text="Start date"/>
          <text key="inscription" text="Inscription" length="255"/>
+	 <text key="material" text="Material"/>
      </item> <!-- Wayside Cross -->
      <item name="Wayside Shrine" icon="${ICONPATH}tourist_wayside_shrine.${ICONTYPE}" type="node,closedway" preset_name_label="true">
          <link wiki="Tag:historic=wayside_shrine"/>
