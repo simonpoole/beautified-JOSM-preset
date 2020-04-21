@@ -745,6 +745,7 @@
         </optional>
     </chunk>
     <chunk id="power_pole">
+        <combo key="pole:type" text="Pole type" values="termination,branch,transposing,crossing,transition" display_values="Termination,Branch,Transposing,Crossing,Transition" text_context="power" values_context="power"/>
         <text key="height" text="Height (meters)"/>
         <reference ref="material"/>
         <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" display_values="Anchor,Pin,Pulley,Suspension" values_context="power" />
