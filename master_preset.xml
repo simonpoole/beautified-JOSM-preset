@@ -5529,7 +5529,6 @@
             <space/>
             <combo key="fire_hydrant:position" text="Hydrant Position" values="lane,parking_lot,sidewalk,green" values_context="hydrant position"/>
             <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="yes,5,6,8,suction" display_values="Pressurized,5,6,8,Suction" values_context="pipeline"/>
-            <text key="fire_hydrant:count" text="Count"/>
             <text key="ref" text="Reference"/>
             <optional>
                 <text key="name" text="Name"/>
@@ -5571,6 +5570,7 @@
                     values="black,blue,brown,gray,green,orange,#CD853F,purple,red,silver,white,yellow" 
                     display_values="Black,Blue,Brown,Gray,Green,Orange,Peru,Purple,Red,Silver,White,Yellow" editable="true" values_context="colour" />
                 <space/>
+                <text key="fire_hydrant:count" text="Count"/>
                 <text key="manufacturer" text="Manufacturer"/>
             </optional>
         </item> <!-- Fire Hydrant -->
