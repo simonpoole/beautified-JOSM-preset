@@ -97,13 +97,66 @@
     </chunk>
     <chunk id="tunnel">
         <combo key="tunnel" text="Tunnel" values="yes,building_passage" display_values="Yes,Building passage" values_sort="false" match="key"/>
-            <optional>
-                <reference ref="layer"/>
-                <text key="width" text="Width (meters)"/>
-                <text key="maxheight" text="Max. height (meters)"/>
-                <reference ref="maxspeed"/>
-                <reference ref="incline"/>
-            </optional>
+        <optional>
+            <reference ref="layer"/>
+            <text key="width" text="Width (meters)"/>
+            <text key="maxheight" text="Max. height (meters)"/>
+            <reference ref="maxspeed"/>
+            <reference ref="incline"/>
+        </optional>
+    </chunk>
+    <chunk id="parking_lane">
+        <combo key="parking:lane:both" text="Parking both sides" values_context="parking" match="key">
+            <list_entry value="parallel" short_description="Parallel to street"/>
+            <list_entry value="diagonal" short_description="Diagonal"/>
+            <list_entry value="perpendicular" short_description="Perpendicular"/>
+            <list_entry value="marked" short_description="Marked"/>
+            <list_entry value="no_parking" short_description="No parking"/>
+            <list_entry value="no_stopping" short_description="No stopping"/>
+            <list_entry value="fire_lane" short_description="Fire lane"/>
+        </combo>
+        <combo key="parking:condition:both" text="Parking condition both sides" values_context="parking" match="key">
+            <list_entry value="free" short_description="Free"/>
+            <list_entry value="ticket" short_description="Ticket"/>
+            <list_entry value="disc" short_description="Disc"/>
+            <list_entry value="residents" short_description="Residents"/>
+            <list_entry value="customers" short_description="Customers"/>
+            <list_entry value="private" short_description="Private"/>
+        </combo> 
+        <combo key="parking:lane:right" text="Parking right-hand side" values_context="parking" match="key">
+            <list_entry value="parallel" short_description="Parallel to street"/>
+            <list_entry value="diagonal" short_description="Diagonal"/>
+            <list_entry value="perpendicular" short_description="Perpendicular"/>
+            <list_entry value="marked" short_description="Marked"/>
+            <list_entry value="no_parking" short_description="No parking"/>
+            <list_entry value="no_stopping" short_description="No stopping"/>
+            <list_entry value="fire_lane" short_description="Fire lane"/>
+        </combo>
+        <combo key="parking:condition:right" text="Parking condition right-hand side" values_context="parking" match="key">
+            <list_entry value="free" short_description="Free"/>
+            <list_entry value="ticket" short_description="Ticket"/>
+            <list_entry value="disc" short_description="Disc"/>
+            <list_entry value="residents" short_description="Residents"/>
+            <list_entry value="customers" short_description="Customers"/>
+            <list_entry value="private" short_description="Private"/>
+        </combo> 
+        <combo key="parking:lane:left" text="Parking left-hand side" values_context="parking" match="key">
+            <list_entry value="parallel" short_description="Parallel to street"/>
+            <list_entry value="diagonal" short_description="Diagonal"/>
+            <list_entry value="perpendicular" short_description="Perpendicular"/>
+            <list_entry value="marked" short_description="Marked"/>
+            <list_entry value="no_parking" short_description="No parking"/>
+            <list_entry value="no_stopping" short_description="No stopping"/>
+            <list_entry value="fire_lane" short_description="Fire lane"/>
+        </combo>
+        <combo key="parking:condition:left" text="Parking condition left-hand side" values_context="parking" match="key">
+            <list_entry value="free" short_description="Free"/>
+            <list_entry value="ticket" short_description="Ticket"/>
+            <list_entry value="disc" short_description="Disc"/>
+            <list_entry value="residents" short_description="Residents"/>
+            <list_entry value="customers" short_description="Customers"/>
+            <list_entry value="private" short_description="Private"/>
+        </combo> 
     </chunk>
     <chunk id="highway_additional">
         <check key="bridge" text="Bridge" disable_off="true"/>
@@ -1289,6 +1342,7 @@
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
                 <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
                 <reference ref="placement"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1307,6 +1361,7 @@
                 <check key="motorroad" text="Motorroad" disable_off="true"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
                 <reference ref="placement"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1324,6 +1379,7 @@
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
                 <reference ref="placement"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1340,6 +1396,7 @@
                 <text key="destination:ref" text="Destination reference" />
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
                 <reference ref="placement"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1357,6 +1414,7 @@
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
                 <reference ref="placement"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1371,6 +1429,7 @@
                 <reference ref="highway_base"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
                 <reference ref="placement"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1388,6 +1447,7 @@
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
                 <reference ref="placement"/>
                 <check key="passing_places" text="Passing Places" disable_off="true"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1404,6 +1464,7 @@
                 <reference ref="highway_base"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1429,6 +1490,7 @@
                 <check key="lit" text="Lit" disable_off="true"/>
                 <text key="width" text="Width (meters)"/>
                 <reference ref="sidewalk"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1444,6 +1506,7 @@
                 <reference ref="surface_smoothness"/>
                 <reference ref="highway_additional_oneway_lit_width"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
         </item> <!-- Living Street -->
@@ -1475,6 +1538,7 @@
                 <reference ref="highway_additional_oneway_lit_width_sidewalk"/>
                 <check key="covered" text="Covered" disable_off="true"/>
                 <check key="passing_places" text="Passing Places" disable_off="true"/>
+                <reference ref="parking_lane"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="cycle_lanes"/>
