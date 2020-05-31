@@ -7543,7 +7543,7 @@
             <preset_link preset_name="Movable Bridge"/>
             <preset_link preset_name="Movable Support"/>
         </item> <!-- Bridge -->
-        <item name="Movable Bridge" icon="presets/bridge_movable.png" type="way,relation,multipolygon" preset_name_label="true">
+        <item name="Movable Bridge" icon="${ICONPATH}highway_movable_bridge_sp.${ICONTYPE}" type="way,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:bridge:movable"/>
             <space/>
             <key key="bridge" value="movable"/>
