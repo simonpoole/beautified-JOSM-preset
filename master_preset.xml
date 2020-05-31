@@ -7262,6 +7262,11 @@
             <space/>
             <key key="man_made" value="embankment"/>
         </item> <!-- Embankment -->
+        <item name="Cairn" icon="${ICONPATH}man_made_cairn_22005.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=cairn"/>
+            <space/>
+            <key key="man_made" value="cairn"/>
+        </item> <!-- Cairn -->
         <separator/>
         <item name="Pipeline" icon="${ICONPATH}man_made_pipeline.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:man_made=pipeline"/>
