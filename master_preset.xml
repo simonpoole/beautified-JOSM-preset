@@ -10532,6 +10532,11 @@
                 <role key="" text="member" requisite="required" type="relation"/>
             </roles>
         </item> <!-- Route Network -->
+        <item name="Generic route" icon="${ICONPATH}osm_route_sp.${ICONTYPE}" type="relation" preset_name_label="true">
+            <link wiki="Relation:route" />
+            <space/>
+            <key key="type" value="route"/>
+        </item> <!-- Generic route -->
         <separator/>
         <item name="Associated Street" icon="${ICONPATH}osm_housenumber_sp.${ICONTYPE}" type="relation" preset_name_label="true">
             <link wiki="Relation:associatedStreet"/>
