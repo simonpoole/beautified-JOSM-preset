@@ -3,6 +3,7 @@
 # Constable, 2017-2018
 # Giuseppe Pignataro <rogepix@gmail.com>, 2017
 # hakuchi <heimlikloh@mail.com>, 2017
+# Lorenzo Mastrogiacomi <lomastrolo@gmail.com>, 2020
 # Manuel Tassi <manueltassi91@gmail.com>, 2018-2020
 # Marco <marcxosm@gmail.com>, 2019-2020
 # Marco <marcxosm@gmail.com>, 2017-2018
@@ -10,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2020-04-06 16:06+0200\n"
-"PO-Revision-Date: 2020-04-06 14:13+0000\n"
-"Last-Translator: Constable\n"
+"PO-Revision-Date: 2020-05-29 12:12+0000\n"
+"Last-Translator: Marco <marcxosm@gmail.com>\n"
 "Language-Team: Italian (http://www.transifex.com/openstreetmap/presets/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +32,7 @@ msgstr "(Indicare il numero sulla targa)"
 
 #: master_preset.xml:9115(label:text|group:Places|preset:Farm)
 msgid "(please use isolated_dwelling for an isolated farm)"
-msgstr "(per favore utilizza isolated_dwelling nel caso di una fattoria isolata)"
+msgstr "(considerare l'uso di \"Abitazione isolata\" per una fattoria in luogo isolato)"
 
 #: master_preset.xml:857(combo:display_values|key:stars)
 msgid "*"
@@ -193,7 +194,7 @@ msgstr "Un accumulo d'acqua, come un lago o uno stagno."
 
 #: master_preset.xml:9114(label:text|group:Places|preset:Farm)
 msgid "A farm within a bigger settlement"
-msgstr "Una fattoria all'interno di un piccolo insediamento."
+msgstr "Una fattoria all'interno di un insediamento più grande"
 
 #: master_preset.xml:2578(label:text|group:Water|preset:Beach)
 msgid "A flat area of sand, gravel or pebble next to water."
@@ -2253,7 +2254,7 @@ msgstr "Muro città"
 
 #: master_preset.xml:9103(item:name|group:Places|preset:City_block)
 msgid "City block"
-msgstr "Isolato"
+msgstr "Isolato urbano"
 
 #: master_preset.xml:7684(combo:display_values|group:Historic_Places_&_Objects|preset:Historic_object|key:historic)
 #: master_preset.xml:7709(item:name|group:Historic_Places_&_Objects|preset:City_gate)
@@ -2367,12 +2368,12 @@ msgstr ""
 #: master_preset.xml:7933(item:name|group:Food|preset:Coffee)
 #: master_preset.xml:8810(list_entry:short_description|preset:Vending_Machine|value:coffee)
 msgid "Coffee"
-msgstr "Caffé"
+msgstr "Caffè"
 
 #: master_preset.xml:5775(check:text|group:Facilities|preset:Recycling_Container|key:recycling:coffee_capsules)
 #: master_preset.xml:5807(check:text|group:Facilities|preset:Recycling_Centre|key:recycling:coffee_capsules)
 msgid "Coffee capsules"
-msgstr "Capsule del caffé"
+msgstr "Capsule del caffè"
 
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
 msgid "Coffee shop"
@@ -3769,7 +3770,7 @@ msgstr ""
 #: master_preset.xml:7684(combo:display_values|group:Historic_Places_&_Objects|preset:Historic_object|key:historic)
 #: master_preset.xml:9111(item:name|group:Places|preset:Farm)
 msgid "Farm"
-msgstr "Fattoria"
+msgstr "Fattoria o cascina"
 
 #: master_preset.xml:9404(item:name|group:Land_use|preset:Farm_(deprecated))
 msgid "Farm (deprecated)"
@@ -4314,7 +4315,7 @@ msgstr "Selvaggina"
 
 #: master_preset.xml:6444(checkgroup:text|group:Sport_(Ball)|preset:Gaelic_Games)
 msgid "Games"
-msgstr ""
+msgstr "Giochi"
 
 #: master_preset.xml:6443(label:text|group:Sport_(Ball)|preset:Gaelic_Games)
 msgid "Games:"
@@ -4444,7 +4445,7 @@ msgstr "Tedesca"
 
 #: master_preset.xml:9203(item:name|group:Geography|preset:Geyser)
 msgid "Geyser"
-msgstr ""
+msgstr "Geyser"
 
 #: master_preset.xml:8693(item:name|group:Other|preset:Gift/Souvenir)
 msgid "Gift/Souvenir"
@@ -4703,7 +4704,7 @@ msgstr ""
 #: master_preset.xml:9065(item:name|group:Places|preset:Hamlet)
 #: master_preset.xml:9655(text:text|group:Addresses_and_Contact|preset:Address|key:addr:hamlet)
 msgid "Hamlet"
-msgstr "Borgo"
+msgstr "Piccolo borgo"
 
 #: master_preset.xml:2150(item:name|group:Barriers|preset:Hampshire_Gate)
 msgid "Hampshire Gate"
@@ -5345,7 +5346,7 @@ msgstr "Isolato"
 
 #: master_preset.xml:9072(item:name|group:Places|preset:Isolated_Dwelling)
 msgid "Isolated Dwelling"
-msgstr "Insediamento isolato"
+msgstr "Abitazione isolata"
 
 #: master_preset.xml:1083(multiselect:display_values|key:language)
 #: master_preset.xml:475(multiselect:display_values|key:cuisine)
@@ -5917,7 +5918,7 @@ msgstr "Nome locale"
 
 #: master_preset.xml:9121(item:name|group:Places|preset:Locality)
 msgid "Locality"
-msgstr "Località"
+msgstr "Località non popolata"
 
 #: master_preset.xml:5337(check:text|group:Emergency|preset:Automated_Defibrillator|key:indoor)
 #: master_preset.xml:5352(check:text|group:Emergency|preset:First_Aid_Kit|key:indoor)
@@ -5945,7 +5946,7 @@ msgstr "Porta di una chiusa"
 
 #: master_preset.xml:5907(check:text|group:Facilities|preset:Hunting_Stand|key:lockable)
 msgid "Lockable"
-msgstr ""
+msgstr "Bloccabile"
 
 #: master_preset.xml:10411(item:name|group:Crafts|preset:Locksmith)
 #: master_preset.xml:8635(item:name|group:Other|preset:Locksmith)
@@ -7472,7 +7473,7 @@ msgstr "Numero di persone per ora"
 #: master_preset.xml:3828(text:text|group:Accommodation|preset:Caravan_Site/RV_Park|key:capacity)
 #: master_preset.xml:3866(text:text|group:Accommodation|preset:Camp_pitch|key:capacity)
 msgid "Number of places"
-msgstr "Numero di luoghi"
+msgstr "Numero di posti"
 
 #: master_preset.xml:7484(combo:text|preset:Power_Converter|key:poles)
 msgid "Number of poles"
@@ -8435,7 +8436,7 @@ msgstr ""
 
 #: master_preset.xml:6989(item:name|group:Man_Made|preset:Pipeline_Valve)
 msgid "Pipeline Valve"
-msgstr ""
+msgstr "Valvola di Conduttura"
 
 #: master_preset.xml:9996(item:name|group:Routes|preset:Piste_Route)
 msgid "Piste Route"
@@ -8729,7 +8730,7 @@ msgstr ""
 
 #: master_preset.xml:7623(item:name|preset:Power_Cable)
 msgid "Power Cable"
-msgstr ""
+msgstr "Cavo Elettrico"
 
 #: master_preset.xml:7488(item:name|preset:Power_Compensator)
 msgid "Power Compensator"
@@ -11384,7 +11385,7 @@ msgstr "Tipo teatro"
 
 #: master_preset.xml:1079(combo:text|key:playground:theme)
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: master_preset.xml:8418(list_entry:short_description|group:For_the_body|preset:Massage|value:therapeutic)
 msgid "Therapeutic"
@@ -11589,7 +11590,7 @@ msgstr "Tipo torre"
 
 #: master_preset.xml:9051(item:name|group:Places|preset:Town)
 msgid "Town"
-msgstr "Città"
+msgstr "Cittadina"
 
 #: master_preset.xml:4965(item:name|group:Public_Building|preset:Town_Hall)
 msgid "Town Hall"
@@ -13818,7 +13819,7 @@ msgstr "Tipo di attraversamento"
 #: master_preset.xml:170(list_entry:short_description|value:island)
 msgctxt "pedestrian"
 msgid "Island (deprecated)"
-msgstr ""
+msgstr "Isola (obsoleto)"
 
 #: master_preset.xml:172(list_entry:short_description|value:no)
 msgctxt "pedestrian"
@@ -13944,17 +13945,17 @@ msgstr "Pieghevole"
 #: master_preset.xml:255(combo:display_values|key:door)
 msgctxt "entrance"
 msgid "Hinged"
-msgstr ""
+msgstr "A battente"
 
 #: master_preset.xml:6766(combo:display_values|preset:Entrance|key:entrance)
 msgctxt "entrance"
 msgid "Home"
-msgstr "Inizio"
+msgstr "Abitazione"
 
 #: master_preset.xml:255(combo:display_values|key:door)
 msgctxt "entrance"
 msgid "Loadingdock"
-msgstr ""
+msgstr "Per carico merce"
 
 #: master_preset.xml:6766(combo:display_values|preset:Entrance|key:entrance)
 msgctxt "entrance"
@@ -13969,12 +13970,12 @@ msgstr "Nessuno"
 #: master_preset.xml:255(combo:display_values|key:door)
 msgctxt "entrance"
 msgid "Overhead"
-msgstr ""
+msgstr "Basculante verticale"
 
 #: master_preset.xml:255(combo:display_values|key:door)
 msgctxt "entrance"
 msgid "Revolving"
-msgstr ""
+msgstr "Girevole"
 
 #: master_preset.xml:6766(combo:display_values|preset:Entrance|key:entrance)
 msgctxt "entrance"
@@ -13984,7 +13985,7 @@ msgstr "Servizio"
 #: master_preset.xml:255(combo:display_values|key:door)
 msgctxt "entrance"
 msgid "Sliding"
-msgstr ""
+msgstr "Scorrevole"
 
 #: master_preset.xml:6766(combo:display_values|preset:Entrance|key:entrance)
 msgctxt "entrance"
@@ -13994,7 +13995,7 @@ msgstr "Scalinata"
 #: master_preset.xml:255(combo:display_values|key:door)
 msgctxt "entrance"
 msgid "Trapdoor"
-msgstr ""
+msgstr "Botola"
 
 #: master_preset.xml:6766(combo:display_values|preset:Entrance|key:entrance)
 msgctxt "entrance"
@@ -16132,7 +16133,7 @@ msgstr ""
 #: master_preset.xml:1145(combo:display_values|key:animated)
 msgctxt "advertising"
 msgid "Revolving"
-msgstr ""
+msgstr "Girevole"
 
 #: master_preset.xml:1145(combo:display_values|key:animated)
 #: master_preset.xml:6003(combo:display_values|group:Facilities|preset:Advertising|key:advertising)
