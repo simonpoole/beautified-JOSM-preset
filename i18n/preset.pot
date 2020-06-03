@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-06-01 12:27+0200\n"
+"POT-Creation-Date: 2020-06-03 20:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3545,16 +3545,16 @@ msgstr ""
 msgid "Exceptions"
 msgstr ""
 
-#: master_preset.xml:1276(list_entry:short_description|value:excrements)
-msgid "Excerements"
-msgstr ""
-
 #: master_preset.xml:6235(item:name|group:Facilities|preset:Excrement_Bags)
 msgid "Excrement Bags"
 msgstr ""
 
 #: master_preset.xml:9189(list_entry:short_description|preset:Vending_Machine|value:excrement_bags)
 msgid "Excrement bags"
+msgstr ""
+
+#: master_preset.xml:1276(list_entry:short_description|value:excrements)
+msgid "Excrements"
 msgstr ""
 
 #: master_preset.xml:4031(combo:display_values|group:Accommodation|preset:Campsite|key:sanitary_dump_station)
@@ -5881,12 +5881,12 @@ msgstr ""
 msgid "Max. axle load (tonnes)"
 msgstr ""
 
-#: master_preset.xml:7061(text:text|preset:Loading_dock|key:maxheight)
-msgid "Max. heeight (Meters)"
-msgstr ""
-
 #: master_preset.xml:10280(combo:display_values|preset:Enforcement|key:enforcement)
 msgid "Max. height"
+msgstr ""
+
+#: master_preset.xml:7061(text:text|preset:Loading_dock|key:maxheight)
+msgid "Max. height (Meters)"
 msgstr ""
 
 #: master_preset.xml:103(text:text|key:maxheight) master_preset.xml:2142(text:text|group:Barriers|preset:Height_restrictor|key:maxheight) master_preset.xml:2323(text:text|group:Passageways|preset:Tunnel|key:maxheight) master_preset.xml:2337(text:text|group:Passageways|preset:Building_Passage|key:maxheight) master_preset.xml:2455(text:text|group:Access_Restrictions|preset:Physical_restrictions|key:maxheight) master_preset.xml:3195(text:text|group:Car|preset:Parking|key:maxheight) master_preset.xml:3222(text:text|group:Car|preset:Parking_Entrance|key:maxheight) master_preset.xml:581(text:text|key:maxheight)
@@ -14427,14 +14427,9 @@ msgctxt "building"
 msgid "Tin"
 msgstr ""
 
-#: master_preset.xml:6906(combo:display_values|group:Buildings|preset:Building|key:building)
+#: master_preset.xml:6906(combo:display_values|group:Buildings|preset:Building|key:building) master_preset.xml:6944(combo:display_values|group:Buildings|preset:Building_part|key:building:part)
 msgctxt "building"
 msgid "Toilets"
-msgstr ""
-
-#: master_preset.xml:6944(combo:display_values|group:Buildings|preset:Building_part|key:building:part)
-msgctxt "building"
-msgid "ToiletsTransportation"
 msgstr ""
 
 #: master_preset.xml:1083(combo:display_values|key:building:frame:material) master_preset.xml:1084(combo:display_values|key:building:wall:material) master_preset.xml:1096(combo:display_values|key:building:material)
@@ -14452,7 +14447,7 @@ msgctxt "building"
 msgid "Transformer tower"
 msgstr ""
 
-#: master_preset.xml:1094(combo:display_values|key:building:use) master_preset.xml:6906(combo:display_values|group:Buildings|preset:Building|key:building)
+#: master_preset.xml:1094(combo:display_values|key:building:use) master_preset.xml:6906(combo:display_values|group:Buildings|preset:Building|key:building) master_preset.xml:6944(combo:display_values|group:Buildings|preset:Building_part|key:building:part)
 msgctxt "building"
 msgid "Transportation"
 msgstr ""
