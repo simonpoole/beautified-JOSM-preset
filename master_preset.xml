@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.9.2" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.9.3" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -8370,6 +8370,15 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Nutrition supplements -->
+        <item name="Health food" icon="${ICONPATH}shopping_health_food.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=health_food"/>
+            <space/>
+            <key key="shop" value="health_food"/>
+            <reference ref="organic"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Diet" />
+        </item> <!-- Health food -->
         <item name="Spices" icon="${ICONPATH}shopping_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=spices"/>
             <space/>
