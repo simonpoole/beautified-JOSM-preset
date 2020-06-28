@@ -10950,6 +10950,13 @@
             <reference ref="name_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Sculptor -->
+        <item name="Sign maker" icon="${ICONPATH}craft_sign.${ICONTYPE}" type="node,closedway,multipolygon">
+            <link wiki="Tag:craft=signmaker"/>
+            <space/>
+            <key key="craft" value="signmaker"/>
+            <reference ref="name_oh_wheelchair"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Sign maker -->
         <item name="Stand builder" icon="${ICONPATH}craft_stand_builder_16081.${ICONTYPE}" type="node,closedway,multipolygon">
             <link wiki="Tag:craft=stand_builder"/>
             <space/>
