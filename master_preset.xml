@@ -1132,6 +1132,8 @@
   	</multiselect>
   </chunk>
   <chunk id="additonal_aerialway_tags">
+    <text key="operator" text="Operator" />
+    <reference ref="fee" />
   	<text key="aerialway:capacity" text="Number of people per hour" value_type="integer"/>
     <text key="aerialway:occupancy" text="Number of people per gondola/chair"/>
     <text key="aerialway:duration" text="Typical journey time in minutes"/>
@@ -1279,6 +1281,11 @@
         <list_entry value="excrements" short_description="Excrements"/>
         <list_entry value="grey_water" short_description="Grey water"/>
     </multiselect>
+  </chunk>
+  <chunk id="resource">
+    <combo key="resource" text="Resource" 
+        values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon"
+        display_values="Aggregate,Bauxite,Coal,Copper,Dimension stone,Gold,Ilmenite,Iron ore,Lead,Limestone,Nickel,Rutile,Salt,Silver,Tin,Zinc,Zircon" />
   </chunk>
   <!--  Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
@@ -2000,7 +2007,7 @@
             <space/>
             <key key="traffic_sign" value="city_limit"/>
             <text key="name" text="Name"/>
-            <text key="alt_name" text="Alternate name" />
+            <text key="alt_name" text="Alternate name" alternative_autocomplete_keys="name" />
             <reference ref="traffic_signals_direction" /> 
             <preset_link preset_name="Name"/>
         </item> <!-- City Limit -->
@@ -3130,9 +3137,10 @@
             <link wiki="Tag:aerialway=drag_lift"/>
             <space/>
             <combo key="aerialway" text="Type" values="drag_lift,t-bar,j-bar,platter,rope_tow" display_values="Drag lift (generic),T-bar,J-bar,Platter,Rope tow" match="keyvalue"/>
-            <reference ref="name_ref"/>
             <reference ref="oh"/>
             <optional>
+                <reference ref="name_ref_operator"/>
+                <reference ref="fee" />
                 <text key="aerialway:capacity" text="Number of people per hour" value_type="integer"/>
                 <text key="aerialway:duration" text="Typical journey time in minutes"/>
             </optional>
@@ -3141,9 +3149,10 @@
             <link wiki="Tag:aerialway=magic_carpet"/>
             <space/>
             <key key="aerialway" value="magic_carpet"/>
-            <reference ref="name_ref"/>
             <reference ref="oh"/>
             <optional>
+                <reference ref="name_ref_operator"/>
+                <reference ref="fee" />
                 <text key="aerialway:capacity" text="Number of people per hour" value_type="integer"/>
                 <text key="aerialway:duration" text="Typical journey time in minutes"/>
             </optional>
@@ -3151,10 +3160,11 @@
         <item name="Goods" icon="${ICONPATH}transport_aerialway_goods_10007.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:aerialway=goods"/>
             <space/>
-            <key key="aerialway" value="goods"/>
-            <reference ref="name_ref"/>
+            <key key="aerialway" value="goods"/>     
             <reference ref="oh"/>
             <optional>
+                <reference ref="name_ref_operator"/>
+                <reference ref="fee" />
                 <text key="aerialway:duration" text="Typical journey time in minutes"/>
             </optional>
         </item> <!-- Goods -->
@@ -3536,6 +3546,7 @@
             <reference ref="name_ref"/>
             <optional>
                 <reference ref="public_transport_route_optionals"/>
+                <reference ref="reservation"/>
             </optional>
             <roles>
                 <role key="stop" text="stop position" requisite="optional" type="node" member_expression="public_transport=stop_position (bus=yes OR share_taxi=yes OR trolleybus=yes)"/>
@@ -3558,6 +3569,7 @@
                 <text key="operator" text="Operator"/>
                 <text key="network" text="Network"/>
                 <reference ref="colours" />
+                <text key="website" text="Website"  value_type="website"/>
             </optional>
             <roles>
                 <role key="" text="route variant/direction (at least 2)" requisite="required" type="relation" member_expression="type=route"/> <!-- FIXME: at least 2 members are required -->
@@ -3710,6 +3722,10 @@
                 <text key="network" text="Network"/>
                 <text key="description" text="Description" length="255"/>
                 <reference ref="colours" />
+                <reference ref="oh" />
+                <reference ref="fee" />
+                <reference ref="reservation" />
+                <text key="website" text="Website"  value_type="website"/>
             </optional>
             <roles>
                 <role key="" text="route segment" requisite="optional" type="way,closedway"/>
@@ -7235,7 +7251,7 @@
             <key key="man_made" value="water_works"/>
             <reference ref="name_operator"/>
         </item> <!-- Water Works -->
-        <item name="Bunker Silo" icon="styles/standard/bunker_silo.svg" type="node,closedway" preset_name_label="true">
+        <item name="Bunker Silo" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=bunker_silo"/>
             <space/>
             <key key="man_made" value="bunker_silo"/>
@@ -7252,6 +7268,20 @@
                 <reference ref="name_operator"/>
             </optional>
         </item> <!-- Crane -->
+        <item name="Goods conveyor" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="way" preset_name_label="true">
+            <link wiki="Tag:man_made=goods_conveyor" />
+            <space />
+            <key key="man_made" value="goods_conveyor" />
+            <optional>
+                <reference ref="name_operator" />
+                <reference ref="resource" />
+                <checkgroup columns="3">
+                    <check key="covered" text="Covered" />
+                    <check key="bridge" text="Bridge" disable_off="true" />
+                    <check key="tunnel" text="Tunnel" disable_off="true" />
+                </checkgroup>
+            </optional>
+        </item> <!-- Goods conveyor -->
         <item name="Mineshaft" icon="${ICONPATH}poi_mine.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=mineshaft"/>
             <space/>
@@ -7260,7 +7290,7 @@
             <combo key="mineshaft_type" text="Function" values="winding,air"/>
             <text key="depth" text="Depth in meters"/>
             <text key="operator" text="Operator"/>
-            <combo key="resource" text="Resource" values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon"/>
+            <reference ref="resource" />
             <check key="headframe" text="Visible Headframe" disable_off="true"/>
             <check key="disused" text="Disused" disable_off="true"/>
         </item> <!-- Mineshaft -->
@@ -7279,7 +7309,7 @@
             <text key="name" text="Name"/>
             <text key="length" text="Length in meters"/>
             <text key="operator" text="Operator"/>
-            <combo key="resource" text="Resource" values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon"/>
+            <reference ref="resource" />
             <check key="disused" text="Disused" disable_off="true"/>
         </item> <!-- Adit -->
         <item name="Embankment" icon="presets/cliff.png" type="way" preset_name_label="true">
@@ -7304,6 +7334,16 @@
             <combo key="diameter" text="Diameter (mm)" values="800,1000,1200,1500,1600,1800,2200,2300,2400,2500,2600,2800,3200,3300,3400,3500,4000,4200,4300,4800" />
             <text key="pressure" text="Pressure (bar)" />
         </item> <!-- Pipeline -->
+        <item name="Pipeline Substation" icon="${ICONPATH}man_made_pipeline_substation.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:pipeline=substation" />
+            <space />
+            <key key="pipeline" value="substation" />
+            <text key="name" text="Name" />
+            <combo key="substation" text="Type" values="compression,distribution,field_gathering,inspection_gauge,measurement,valve,valve_group" 
+                display_values="Compression,Distribution,Field gathering,Inspection gauge,Measurement,Valve,Valve group" values_context="pipeline" />
+            <text key="ref" text="Reference" />
+            <reference ref="operator_substance" />
+        </item> <!-- Pipeline Substation -->
         <item name="Pipeline Marker" icon="${ICONPATH}man_made_pipeline_marker.${ICONTYPE}" deprecated="true" type="node" preset_name_label="true">
             <link wiki="Tag:pipeline=marker"/>
             <space/>
@@ -9172,6 +9212,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Photo -->
+        <item name="Security" icon="${ICONPATH}shopping_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=security" />
+            <space />
+            <key key="shop" value="security" />
+            <reference ref="name_oh_wheelchair" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Security -->
         <item name="Funeral Directors" icon="${ICONPATH}shopping_funeral_directors_29067.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=funeral_directors"/>
             <space/>
@@ -10044,9 +10091,7 @@
             <link wiki="Tag:landuse=quarry"/>
             <space/>
             <key key="landuse" value="quarry"/>
-            <combo key="resource" text="Resource" 
-                values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon"
-                display_values="Aggregate,Bauxite,Coal,Copper,Dimension stone,Gold,Ilmenite,Iron ore,Lead,Limestone,Nickel,Rutile,Salt,Silver,Tin,Zinc,Zircon" />
+            <reference ref="resource" />
             <reference ref="name_operator"/>
         </item> <!-- Quarry -->
     </group> <!-- Landuse -->
