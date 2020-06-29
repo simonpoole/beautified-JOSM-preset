@@ -1831,7 +1831,7 @@
                     <check key="handrail:right" text="Right handrail" disable_off="true"/>
                 </checkgroup>
                 <space/>
-                <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible"/>
+                <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" display_values="Yes,Forward,Backward,Reversible"/>
                 <space/>
                 <reference ref="highway_additional_oneway_lit_width"/>
             </optional>
@@ -7107,6 +7107,11 @@
             <key key="indoor" value="wall" />
             <reference ref="level" />
             <text key="height" text="Height (Meters)" value_type="integer" />
+        </item>
+        <item name="Highway corridor" icon="${ICONPATH}indoor_highway_corridor.${ICONTYPE}" type="way" preset_name_label="true">
+            <key key="highway" value="corridor" />
+            <reference ref="level" />
+            <combo key="conveying" text="Conveyor" values="yes,forward,backward,reversible" display_values="Yes,Forward,Backward,Reversible"/>
         </item>
   </group> <!-- Indoor elements -->
   <group name="Man Made" icon="${ICONPATH}man_made_works_22087.${ICONTYPE}">
