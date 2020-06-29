@@ -3365,6 +3365,14 @@
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Tires -->
         <separator/>
+        <item name="Caravan Dealer" icon="${ICONPATH}shopping_caravan_30007.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=caravan"/>
+            <space/>
+            <key key="shop" value="caravan"/>
+            <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres" rows="5" />
+            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Caravan Dealer -->
         <item name="Rental" icon="${ICONPATH}transport_rental_car.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=car_rental"/>
             <space/>
