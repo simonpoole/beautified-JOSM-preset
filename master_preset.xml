@@ -3583,7 +3583,7 @@
             <space/>
             <key key="amenity" value="bicycle_parking"/>
             <combo key="bicycle_parking" text="Type" values="anchors,bollard,building,floor,ground_slots,handlebar_holder,informal,lockers,rack,shed,stands,wall_loops"
-                display_values="Anchors,Bollard,Building,Floor (area without racks/stands/...),Ground slots,Handlebar holder,Informal,Lockers,Rack,Shed,Stands,Wall loops" values_context="bicycle" />
+                display_values="Anchors,Bollard,Building,Floor (area without racks/stands/...),Ground slots,Handlebar holder,Informal,Lockers,Rack,Shed,Stands,Wall loops ('wheelbenders')" values_context="bicycle" />
             <reference ref="optional_name"/>
             <text key="capacity" text="Capacity" value_type="integer"/>
             <reference ref="parking_access_fee_operator_surface_smoothness"/>
