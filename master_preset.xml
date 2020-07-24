@@ -3035,7 +3035,7 @@
             <key key="railway" value="rail"/>
             <optional>
                 <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight"
-                    display_values="Main,Branch,Industrial,Military,Tourism,Freight" />
+                    display_values="Main,Branch,Industrial,Military,Tourism,Freight"  values_context="railway" />
                 <reference ref="railway_service_gauge_electrified"/>
                 <check key="highspeed" text="Highspeed" disable_off="true"/>
             </optional>
@@ -3045,7 +3045,7 @@
             <key key="railway" value="narrow_gauge"/>
             <optional>
                 <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight"
-                    display_values="Main,Branch,Industrial,Military,Tourism,Freight" />
+                    display_values="Main,Branch,Industrial,Military,Tourism,Freight"  values_context="railway" />
                 <reference ref="railway_service_gauge_electrified"/>
             </optional>
         </item> <!-- Narrow Gauge Rail -->
@@ -3112,7 +3112,7 @@
             <combo key="construction" text="Railway type" values="rail,narrow_gauge,monorail,preserved,light_rail,subway,tram,funicular"
                 display_values="Rail,Narrow gauge,Monorail,Preserved,Light rail,Subway,Tram,Funicular" />
             <optional>
-                <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight" display_values="Main,Branch,Industrial,Military,Tourism,Freight" />
+                <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight" display_values="Main,Branch,Industrial,Military,Tourism,Freight" values_context="railway"/>
                 <reference ref="railway_service_gauge_electrified" />
             </optional>
         </item> <!-- Railway construction -->
