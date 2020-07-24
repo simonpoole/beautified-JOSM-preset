@@ -220,6 +220,7 @@
         <text key="ref" text="Reference"/>
         <optional>
             <text key="unsigned_ref" text="Unsigned reference"/>
+            <check key="noref" text="No reference" disable_off="true" />
         </optional>
     </chunk>
     <chunk id="crossing_type">    
@@ -249,27 +250,35 @@
         <combo key="gauge" text="Gauge (mm)" values="1668,1676,1674,1600,1524,1520,1495,1435,1067,1000,914,762,760,750" length="4"/>
         <reference ref="railway_electrified"/>
     </chunk>
-    <chunk id="barrier_5">
-        <optional text="Allowed traffic:">
-            <check key="foot" text="Foot"/>
-            <check key="bicycle" text="Bicycle"/>
-            <check key="horse" text="Horse"/>
-            <check key="motorcycle" text="Motorcycle"/>
-            <check key="motorcar" text="Motorcar"/>
+    <chunk id="check_access_nomotor">
+        <optional text="Non-motorized traffic:">
+            <checkgroup columns="3">
+                <check key="foot" text="Foot" />
+                <check key="bicycle" text="Bicycle" />
+                <check key="horse" text="Horse" />
+            </checkgroup>
+            <space />
+            <reference ref="wheelchair" />
         </optional>
     </chunk>
-    <chunk id="barrier_4">
-        <optional text="Allowed traffic:">
-            <check key="foot" text="Foot"/>
-            <check key="bicycle" text="Bicycle"/>
-            <check key="horse" text="Horse"/>
-            <check key="motorcycle" text="Motorcycle"/>
-        </optional>
+    <chunk id="vehicle_access">
+        <combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" 
+            display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
     </chunk>
-    <chunk id="barrier_2">
-        <optional text="Allowed traffic:">
-            <check key="foot" text="Foot"/>
-            <check key="bicycle" text="Bicycle"/>
+    <chunk id="motor_vehicle_access">
+        <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" 
+            display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
+    </chunk>
+    <chunk id="check_access_motor">
+        <optional text="Motor vehicle traffic:">
+            <reference ref="motor_vehicle_access" />
+            <space />
+            <checkgroup columns="2">
+                <check key="motorcar" text="Motorcar" />
+                <check key="motorcycle" text="Motorcycle" />
+                <check key="moped" text="Moped" />
+                <check key="mofa" text="Mofa" />
+            </checkgroup>
         </optional>
     </chunk>
     <chunk id="traffic_signals_direction">
@@ -576,10 +585,13 @@
             <text key="maxwidth" text="Max. width (meters)" length="7"/>
         </optional>
     </chunk>
+    <chunk id="maxheight_maxwidth">
+        <text key="maxheight" text="Max. height (meters)" length="7"/>
+        <text key="maxwidth" text="Max. width (meters)" length="7"/>
+    </chunk>
     <chunk id="optional_maxheight_maxwidth">
         <optional>
-            <text key="maxheight" text="Max. height (meters)" length="7"/>
-            <text key="maxwidth" text="Max. width (meters)" length="7"/>
+            <reference ref="maxheight_maxwidth" />
         </optional>
     </chunk>
     <chunk id="optional_name">
@@ -615,8 +627,8 @@
     </chunk>
     <chunk id="sport">
         <multiselect key="sport" text="Sport" 
-            values="multi;archery;athletics;american_football;australian_football;badminton;baseball;basketball;beachvolleyball;billiards;boules;bowls;canadian_football;canoe;chess;climbing;cricket;croquet;cycling;dog_racing;equestrian;field_hockey;fitness;gaelic_games;golf;gymnastics;handball;horse_racing;horseshoes;ice_hockey;karting;martial_arts;model_aerodrome;motocross;motor;netball;pelota;racquet;rc_car;rowing;rugby_league;rugby_union;running;safety_training;shooting;shuffleboard;skateboard;skating;softball;roller_skating;ice_skating;soccer;swimming;table_tennis;tennis;volleyball;yoga;9pin;10pin" 
-            display_values="Multiple;Archery;Athletics;American football;Australian football;Badminton;Baseball;Basketball;Beach volleyball;Billiards;Boules;Bowls;Canadian football;Canoe;Chess;Climbing;Cricket;Croquet;Cycling;Dog racing;Equestrian;Field hockey;Fitness;Gaelic games;Golf;Gymnastics;Handball;Horse racing;Horseshoes;Ice hockey;Karting;Martial arts;Model aerodrome;Motocross;Motor;Netball;Pelota;Racquet;RC car;Rowing;Rugby league;Rugby union;Running;Safety training;Shooting;Shuffleboard;Skateboard;Skating;Softball;Roller skating;Ice skating;Soccer;Swimming;Table tennis;Tennis;Volleyball;Yoga;9pin;10pin" 
+            values="multi;10pin;9pin;american_football;archery;athletics;australian_football;badminton;baseball;basketball;beachvolleyball;billiards;boules;bowls;canadian_football;canoe;chess;climbing;cricket;croquet;cycling;dog_racing;equestrian;field_hockey;fitness;gaelic_games;golf;gymnastics;handball;horse_racing;horseshoes;ice_hockey;ice_skating;karting;martial_arts;model_aerodrome;motocross;motor;netball;pelota;racquet;rc_car;rowing;rugby_league;rugby_union;running;safety_training;shooting;shuffleboard;skateboard;skating;softball;roller_skating;ice_skating;soccer;swimming;table_tennis;tennis;volleyball;yoga;9pin;10pin" 
+            display_values="Multiple;10pin;9pin;American football;Archery;Athletics;Australian football;Badminton;Baseball;Basketball;Beach volleyball;Billiards;Boules;Bowls;Canadian football;Canoe;Chess;Climbing;Cricket;Croquet;Cycling;Dog racing;Equestrian;Field hockey;Fitness;Gaelic games;Golf;Gymnastics;Handball;Horse racing;Horseshoes;Ice hockey;Ice skating;Karting;Martial arts;Model aerodrome;Motocross;Motor;Netball;Pelota;Racquet;RC car;Rowing;Rugby league;Rugby union;Running;Safety training;Shooting;Shuffleboard;Skateboard;Skating;Softball;Roller skating;Ice skating;Soccer;Swimming;Table tennis;Tennis;Volleyball;Yoga;9pin;10pin" 
             match="key" values_context="sport"/>
     </chunk>
     <chunk id="bin">
@@ -898,7 +910,9 @@
         <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="placement">
-        <combo key="placement" text="Placement" values="left_of:1,left_of:2,left_of:3,middle_of:1,middle_of:2,middle_of:3,right_of:1,right_of:2,right_of:3,transition"/>
+        <combo key="placement" text="Placement" values="left_of:1,left_of:2,left_of:3,left_of:4,left_of:5,middle_of:1,middle_of:2,middle_of:3,middle_of:4,middle_of:5,right_of:1,right_of:2,right_of:3,right_of:4,right_of:5,transition" />
+        <combo key="placement:forward" text="Placement in way direction" values="left_of:1,left_of:2,left_of:3,left_of:4,left_of:5,middle_of:1,middle_of:2,middle_of:3,middle_of:4,middle_of:5,right_of:1,right_of:2,right_of:3,right_of:4,right_of:5" />
+        <combo key="placement:backward" text="Placement opposed to way direction" values="left_of:1,left_of:2,left_of:3,left_of:4,left_of:5,middle_of:1,middle_of:2,middle_of:3,middle_of:4,middle_of:5,right_of:1,right_of:2,right_of:3,right_of:4,right_of:5" />
     </chunk>
   <chunk id="social_facility_for">
     <combo key="social_facility:for" text="For group" match="key">
@@ -984,7 +998,7 @@
      </combo>
   </chunk>
   <chunk id="facility_access">
-  	<combo key="access" text="Access" values="yes,permissive,customers,private,permit,no" display_values="Public,Permissive,Customers,Private,Permit required,No access" match="none"/>
+  	<combo key="access" text="Access" values="yes,permissive,customers,private,permit,no" display_values="Public,Permissive,Customers,Private,Permit required,No access" match="none" values_sort="false"/>
   </chunk>
   <chunk id="cash_withdrawal">
     <multiselect key="cash_withdrawal" text="Cash withdrawal" length="3" values="yes" match="none" editable="true"/>
@@ -1039,6 +1053,19 @@
     <preset_link preset_name="Heavy Goods Vehicle"/>
     <preset_link preset_name="Physical restrictions"/>
     <preset_link preset_name="Other mode restrictions"/>
+  </chunk>
+  <chunk id="path_access_restrictions">
+    <optional>
+        <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
+            display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,No" values_context="access" match="key" values_sort="false"/>
+        <combo key="dog" text="Dog" values="yes,leashed,unleashed,official,designated,permissive,private,no" 
+            display_values="Yes,Leashed,Unleashed,Official,Designated,Permissive,Private,No" values_sort="false" values_context="access"  match="key" />
+        <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,no" display_values="Yes,Official,Designated,Permissive,Private,No" values_context="access" values_sort="false"/>
+        <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,no" 
+            display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,No" values_context="access" values_sort="false"/>
+    </optional>
+    <preset_link preset_name="All vehicles"/>
+    <preset_link preset_name="Motor vehicle"/>
   </chunk>
   <chunk id="lane_presets">
     <preset_link preset_name="Single direction roads"/>
@@ -1239,6 +1266,7 @@
       <check key="communication:bos" text="BOS" />
       <check key="communication:satellite" text="Satellite" />
       <check key="communication:amateur_radio" text="Amateur radio" />
+      <check key="communication:gsm-r" text="GSM-R" />
     </checkgroup>
   </chunk>
   <chunk id="lgbtq">
@@ -1284,10 +1312,10 @@
   </chunk>
   <chunk id="resource">
     <combo key="resource" text="Resource" 
-        values="aggregate,bauxite,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon"
-        display_values="Aggregate,Bauxite,Coal,Copper,Dimension stone,Gold,Ilmenite,Iron ore,Lead,Limestone,Nickel,Rutile,Salt,Silver,Tin,Zinc,Zircon" />
+        values="aggregate,bauxite,clay,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon"
+        display_values="Aggregate,Bauxite,Clay,Coal,Copper,Dimension stone,Gold,Ilmenite,Iron ore,Lead,Limestone,Nickel,Rutile,Salt,Silver,Tin,Zinc,Zircon" />
   </chunk>
-  <!--  Groups -->
+  <!-- Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
     <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" items_sort="false" >
         <item name="Motorway" icon="${ICONPATH}highway_dual_sp.${ICONTYPE}" type="way" preset_name_label="true">
@@ -1306,6 +1334,7 @@
         <item name="Motorway Link" icon="${ICONPATH}highway_dual_sp.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:highway=motorway_link"/>
             <key key="highway" value="motorway_link"/>
+            <reference ref="highway_ref"/>
             <optional>
                 <reference ref="highway_base"/>
                 <reference ref="major_highway_additional"/>
@@ -1729,6 +1758,10 @@
         <item name="Path" icon="${ICONPATH}highway_way_thin_sp.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=path"/>
             <key key="highway" value="path"/>
+            <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,no" 
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,No" values_context="access" values_sort="false" />
+            <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,no" 
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,No" values_context="access" values_sort="false" />
             <optional>
                 <reference ref="name"/>
                 <reference ref="surface_smoothness"/>
@@ -1744,10 +1777,8 @@
                 <reference ref="mtb_scale"/>
                 <combo key="trail_visibility" text="Visibility" values="excellent,good,intermediate,bad,horrible,no" display_values="Excellent,Good,Intermediate,Bad,Horrible,Not visible" values_context="trail_visibility" values_sort="false"/>
                 <reference ref="wheelchair"/>
-                <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,no"/>
-                <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,no" values_context="access"/>
-                <reference ref="road_access_restrictions"/>
             </optional>
+            <reference ref="path_access_restrictions"/>
         </item> <!-- Path -->
         <separator/>
         <item name="Dedicated Bridleway" icon="${ICONPATH}bridleway.${ICONTYPE}" type="way,closedway" preset_name_label="true">
@@ -1759,6 +1790,7 @@
                 <reference ref="surface_smoothness"/>
                 <reference ref="highway_additional_oneway_lit_width"/>
             </optional>
+            <reference ref="path_access_restrictions"/>
         </item> <!-- Dedicated Bridleway -->
         <item name="Dedicated Cycleway" icon="${ICONPATH}cycleway.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=cycleway"/>
@@ -1772,6 +1804,7 @@
                 <combo key="foot" text="Pedestrians" values="designated,yes,no" display_values="Designated,Yes,No"/>
                 <check key="segregated" text="Segregated" disable_off="true"/>
             </optional>
+            <reference ref="path_access_restrictions"/>
         </item> <!-- Dedicated Cycleway -->
         <item name="Segregated Foot- and Cycleway" icon="${ICONPATH}segregated_foot_and_cycleway.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=cycleway"/>
@@ -1786,6 +1819,7 @@
                 <reference ref="footway_surface"/>
                 <reference ref="highway_additional_oneway_lit_width"/>
             </optional>
+            <reference ref="path_access_restrictions"/>
         </item> <!-- Segregated Foot- and Cycleway -->
         <item name="Combined Foot- and Cycleway" icon="${ICONPATH}foot_and_cycleway.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=cycleway"/>
@@ -1799,6 +1833,7 @@
                 <reference ref="highway_additional_oneway_lit_width"/>
                 <check key="passing_places" text="Passing Places" disable_off="true"/>
             </optional>
+            <reference ref="path_access_restrictions"/>
         </item> <!-- Combined Foot- and Cycleway -->
         <item name="Dedicated Footway" icon="${ICONPATH}footway.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:highway=footway"/>
@@ -1817,6 +1852,7 @@
             </optional>
             <preset_link preset_name="Arcade"/>
             <preset_link preset_name="Colonnade"/>
+            <reference ref="path_access_restrictions"/>
         </item> <!-- Dedicated Footway -->
         <item name="Steps" icon="${ICONPATH}barrier_steps.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:highway=steps"/>
@@ -1855,8 +1891,9 @@
             <space/>
             <key key="highway" value="motorway_junction"/>
             <text key="name" text="Name"/>
-            <text key="ref" text="Number"/>
-            <preset_link preset_name="No name"/>
+            <check key="noname" text="Junction has no name" disable_off="true" />
+            <text key="ref" text="Number" />
+            <check key="noref" text="Junction has no reference" disable_off="true" />
         </item> <!-- Motorway Junction -->
         <item name="Services" icon="${ICONPATH}highway_services_18024.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:highway=services"/>
@@ -2108,62 +2145,116 @@
         <item name="Block" icon="${ICONPATH}barrier_blocks.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Tag:barrier=block"/>
             <key key="barrier" value="block"/>
-            <reference ref="barrier_4"/>
             <optional>
-                <text key="maxwidth" text="Max. width (meters)" length="7"/>
+                <reference ref="optional_maxwidth"/>
                 <combo key="material" text="Material" values="concrete,reinforced_concrete,stone" display_values="Concrete,Reinforced concrete,Stone"/>
             </optional>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Block -->
         <item name="Bollard" icon="${ICONPATH}barrier_bollard.${ICONTYPE}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=bollard"/>
             <space/>
             <key key="barrier" value="bollard"/>
-            <combo key="bollard" text="Bollard type" values="rising,removable" display_values="Rising,Removable"/>
-            <reference ref="barrier_4"/>
+            <combo key="bollard" text="Bollard type" values="rising,removable,foldable,fixed" display_values="Rising,Removable,Foldable,Fixed"/>
             <optional>
-                <text key="maxwidth" text="Max. width (meters)" length="7"/>
+                <reference ref="optional_maxwidth"/>
                 <reference ref="material"/>
             </optional>
+            <space />
+            <label text="Tags which are implied and do not need to be set are:" />
+            <label text="`access=no`, `foot=yes` and `bicycle=yes`" />
+            <space />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Bollard -->
         <item name="Cycle Barrier" icon="${ICONPATH}barrier_cycle_barrier.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=cycle_barrier"/>
             <key key="barrier" value="cycle_barrier"/>
-            <reference ref="barrier_4"/>
-            <reference ref="optional_maxwidth"/>
+            <optional>
+                <reference ref="optional_maxwidth"/>
+                <reference ref="material"/>
+            </optional>
+            <reference ref="vehicle_access" />
+            <optional text="Non-motorized traffic:">
+                <checkgroup columns="2">
+                    <check key="foot" text="Foot" icon="${ICONPATH}no_walking.${ICONTYPE}" />
+                    <check key="horse" text="Horse" icon="${ICONPATH}no_riding.${ICONTYPE}" />
+                </checkgroup>
+                <space />
+                <reference ref="wheelchair" />
+                <combo key="bicycle" text="Bicycle" values="dismount,no" display_values="Dismount,No" values_context="access" values_sort="false" />
+            </optional>
+            <reference ref="check_access_motor" />
         </item> <!-- Cycle Barrier -->
         <item name="Cattle Grid" icon="${ICONPATH}barrier_cattle_grid.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=cattle_grid"/>
             <key key="barrier" value="cattle_grid"/>
-            <reference ref="barrier_4"/>
+            <reference ref="optional_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Cattle Grid -->
         <item name="Bus Trap" icon="${ICONPATH}barrier_bus_trap_13006.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=bus_trap"/>
             <key key="barrier" value="bus_trap"/>
             <reference ref="optional_maxwidth"/>
+            <space />
+            <label text="Tags which are implied and do not need to be set are:" />
+            <label text="`motor_vehicle=no`, `psv=yes`, `foot=yes` and `bicycle=yes`" />
+            <space />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Bus Trap -->
         <item name="Spikes" icon="${ICONPATH}barrier_spikes_13032.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=spikes"/>
             <key key="barrier" value="spikes"/>
-            <reference ref="barrier_5"/>
+            <reference ref="optional_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Spikes -->
         <item name="Height restrictor" icon="${ICONPATH}barrier_empty.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=height_restrictor"/>
             <key key="barrier" value="height_restrictor"/>
             <text key="maxheight" text="Max. height (meters)"/>
-            <reference ref="barrier_5"/>
+            <reference ref="optional_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Height resctrictor -->
         <item name="Toll Booth" icon="${ICONPATH}barrier_toll_booth.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:barrier=toll_booth"/>
             <key key="barrier" value="toll_booth"/>
             <optional>
-                <text key="name" text="Name"/>
-                <text key="operator" text="Operator"/>
+                <reference ref="name_ref_operator" />
+                <reference ref="oh" />
+                <reference ref="fee_interval" />
+                <reference ref="lanes" />
+                <reference ref="optional_maxheight_maxwidth"/>
             </optional>
+            <space />            
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+            <preset_link preset_name="Payment Methods" />
         </item> <!-- Toll Booth -->
         <item name="Border Control" icon="${ICONPATH}barrier_border_control_13003.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=border_control"/>
             <key key="barrier" value="border_control"/>
-            <reference ref="barrier_5"/>
+            <optional>
+                <reference ref="name_ref_operator" />
+                <reference ref="oh" />
+                <reference ref="fee_interval" />
+                <reference ref="lanes" />
+                <reference ref="optional_maxheight_maxwidth"/>
+            </optional>
+            <space />            
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Border Control -->
         <separator/> <!-- *** Linear Barriers *** -->
         <item name="Hedge" icon="presets/hedge.png" type="way,closedway,multipolygon" preset_name_label="true">
@@ -2172,7 +2263,7 @@
             <reference ref="leaf"/>
             <optional>
                 <reference ref="genus_species_taxon"/>
-                 <text key="height" text="Height (meters)" length="7"/> 
+                <text key="height" text="Height (meters)" length="7"/> 
             </optional>
         </item> <!-- Hedge -->
         <item name="Fence" icon="${ICONPATH}barrier_fence.${ICONTYPE}" type="way,closedway" preset_name_label="true">
@@ -2248,8 +2339,10 @@
         <item name="Entrance (Barrier Opening)" icon="${ICONPATH}barrier_entrance.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=entrance"/>
             <key key="barrier" value="entrance"/>
-            <reference ref="barrier_5"/>
-            <reference ref="optional_maxwidth"/>
+            <reference ref="optional_maxheight_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Entrance (Barrier Opening) -->
         <item name="Gate" icon="${ICONPATH}barrier_gate.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=gate"/>
@@ -2257,69 +2350,90 @@
             <optional>
                 <text key="ref" text="Reference"/>
             </optional>
-            <reference ref="barrier_5"/>
             <reference ref="optional_maxheight_maxwidth"/>
-            <reference ref="general_access"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Gate -->
         <item name="Lift Gate" icon="${ICONPATH}barrier_lift_gate.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=lift_gate"/>
             <key key="barrier" value="lift_gate"/>
-            <reference ref="barrier_5"/>
-            <reference ref="optional_maxwidth"/>
-            <reference ref="general_access"/>
+            <reference ref="optional_maxheight_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Lift Gate -->
         <item name="Swing Gate" icon="${ICONPATH}barrier_swing_gate_13034.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=swing_gate"/>
             <key key="barrier" value="swing_gate"/>
             <combo key="swing_gate:type" text="Type" values="single,double" display_values="Swing,Double" values_context="swing_gate"/>
-            <reference ref="barrier_5"/>
-            <reference ref="optional_maxwidth"/>
-            <reference ref="general_access"/>
+            <reference ref="optional_maxheight_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Swing Gate -->
         <item name="Hampshire Gate" icon="${ICONPATH}barrier_hampshire_gate_13014.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=hampshire_gate"/>
             <key key="barrier" value="hampshire_gate"/>
-            <reference ref="barrier_5"/>
+            <text key="maxlength" text="Max. length (meters)" match="key" />
             <reference ref="optional_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Hampshire Gate -->
         <item name="Bump Gate" icon="${ICONPATH}barrier_bump_gate_13005.${ICONTYPE}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=bump_gate"/>
-            <key key="barrier" value="bump_gate"/>
-            <reference ref="barrier_5"/>
-            <reference ref="optional_maxwidth"/>
+            <link wiki="Tag:barrier=bump_gate" />
+            <key key="barrier" value="bump_gate" />
+            <text key="maxlength" text="Max. length (meters)" match="key" />
+            <reference ref="optional_maxwidth" />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Bump Gate -->
         <item name="Kissing Gate" icon="${ICONPATH}barrier_kissing_gate.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=kissing_gate"/>
             <key key="barrier" value="kissing_gate"/>
-            <reference ref="barrier_2"/>
             <reference ref="optional_maxwidth"/>
+            <space />
+            <label text="The tag `foot=yes` is implied and does not need to be set." />
+            <space />
+            <reference ref="check_access_nomotor" />
         </item> <!-- Kissing Gate -->
         <item name="Chain" icon="${ICONPATH}barrier_chain_13008.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
-            <link wiki="Tag:barrier=chain"/>
-            <key key="barrier" value="chain"/>
-            <reference ref="barrier_5"/>
-            <reference ref="optional_maxwidth"/>
+            <link wiki="Tag:barrier=chain" />
+            <key key="barrier" value="chain" />
+            <combo key="material" text="Material" values="metal,plastic" display_values="Metal,Plastic" values_context="material" />
+            <reference ref="optional_maxwidth" />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Chain -->
         <item name="Stile" icon="${ICONPATH}barrier_stile.${ICONTYPE}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=stile"/>
+            <link wiki="Tag:barrier=stile" />
             <space/>
-            <key key="barrier" value="stile"/>
-            <combo key="stile" text="Type" values="ladder,squeezer,stepover" display_values="Ladder,Squeezer,Stepover"/>
+            <key key="barrier" value="stile" />
+            <combo key="stile" text="Type" values="ladder,squeezer,stepover" display_values="Ladder,Squeezer,Stepover" values_searchable="true" />
             <optional>
-                <combo key="material" text="Material" values="metal,stone,wood" values_context="material"/>
+                <combo key="material" text="Material" values="metal,stone,wood" display_values="Metal,Stone,Wood" values_context="material"/>
             </optional>
-            <reference ref="barrier_2"/>
+            <reference ref="optional_maxwidth" />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
         </item> <!-- Stile -->
         <item name="Turnstile" icon="${ICONPATH}barrier_turnstile_13037.${ICONTYPE}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=turnstile"/>
-            <key key="barrier" value="turnstile"/>
-            <reference ref="barrier_2"/>
+            <link wiki="Tag:barrier=turnstile" />
+            <key key="barrier" value="turnstile" />
+            <reference ref="optional_maxwidth" />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
         </item> <!-- Turnstile -->
         <item name="Sally Port" icon="${ICONPATH}highway_sally_port_13031.${ICONTYPE}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=sally_port"/>
+            <link wiki="Tag:barrier=sally_port" />
             <key key="barrier" value="sally_port"/>
-            <reference ref="barrier_5"/>
-            <reference ref="optional_maxheight_maxwidth"/>
+            <reference ref="maxheight_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
         </item> <!-- Sally Port -->
     </group> <!-- Barriers -->
     <group name="Passageways" icon="${ICONPATH}highway_tunnel_sp.${ICONTYPE}">
@@ -2397,21 +2511,21 @@
         <item name="All vehicles" icon="${ICONPATH}closed_to_vehicles_in_both_directions.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
-            <combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
+            <reference ref="motor_vehicle_access" />
             <combo key="vehicle:conditional" text="All vehicles @" long_text="Conditional restriction for all types of vehicles" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
 	    	<reference ref="additional_access_tags"/> 
         </item> <!-- All vehicles -->
         <item name="Motor vehicle" icon="${ICONPATH}no_motor_vehicles.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
-            <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
+            <reference ref="motor_vehicle_access" />
             <combo key="motor_vehicle:conditional" text="Motor vehicles @" long_text="Conditional restriction for motor vehicles" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
 	    	<reference ref="additional_access_tags"/> 
         </item> <!-- Motor vehicle -->
         <item name="Motor vehicle (CH)" region="CH" icon="${ICONPATH}no_motor_vehicles_CH.${ICONTYPE}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
-            <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,No access" values_context="access" values_sort="false" match="key"/>
+            <reference ref="motor_vehicle_access" />
             <combo key="motor_vehicle:conditional" text="Motor vehicles @" long_text="Conditional restriction for motor vehicles" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
 	    	<reference ref="additional_access_tags"/> 
         </item> <!-- Motor vehicle CH -->
@@ -2478,23 +2592,21 @@
             <link wiki="Key:access"/>
             <space/>
             <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,permit,use_sidepath,no"
-                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,Use sidepath,No" match="key"/>
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,Use sidepath,No" values_context="access" match="key" values_sort="false"/>
             <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,permit,no" 
-                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Use sidepath,Permit,No" match="key"/>
-            <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
-                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,No" match="key"/>
-            <combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,permit,no"
-                display_values="Yes,Official,Designated,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit,No" match="key"/>
-            <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no"
-                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" match="key"/>
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Use sidepath,Permit,No" values_context="access" match="key" values_sort="false"/>
+          <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no"
+                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" values_context="access" match="key" values_sort="false"/>
             <combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,no"
-                display_values="Yes,Official,Designated,Destination,No" match="keyvalue"/>
+                display_values="Yes,Official,Designated,Destination,No" values_context="access" match="keyvalue" values_sort="false"/>
+            <combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,permit,no"
+                display_values="Yes,Official,Designated,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit,No" values_context="access" match="key" values_sort="false"/>
             <combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no"
-                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" match="key"/>
+                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" values_context="access" match="key" values_sort="false"/>
             <combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" 
-                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" match="key"/>
-            <combo key="tourist_bus" text="Tourist buses" values="yes,no" display_values="Yes,No" match="key"/>            
-            <combo key="4wd_only" text="4WD only" values="yes,recommended,no" display_values="Yes,Recommended,No" match="key" />
+                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" values_context="access" match="key" values_sort="false"/>
+            <combo key="tourist_bus" text="Tourist buses" values="yes,no" display_values="Yes,No" match="key" values_context="access" values_sort="false"/>            
+            <combo key="4wd_only" text="4WD only" values="yes,recommended,no" display_values="Yes,Recommended,No" values_context="access" match="key" values_sort="false"/>
         </item> <!-- Other mode restrictions -->
     </group>  <!-- access restrictions -->
     <item name="Street area" icon="${ICONPATH}street_area.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
@@ -2610,7 +2722,7 @@
             <key key="waterway" value="fish_pass"/>
             <reference ref="optional_name"/>
             <check key="tunnel" text="Tunnel" disable_off="true" />
-            <text key="width" text="Width (Meters)" value_type="integer" />
+            <text key="width" text="Width (Meters)" />
             <check key="seasonal" text="Seasonal" />
         </item> <!-- Fish pass -->
         <item name="Groyne" icon="${ICONPATH}water_groyne_34006.${ICONTYPE}" type="way,closedway,multipolygon" preset_name_label="true">
@@ -4250,7 +4362,6 @@
             <combo key="direction" text="Direction" delimiter="|" values="N|E|S|W|NE|NNE-S|180|90-270|270-90|0-360|70-110;250-290" values_no_i18n="true" values_sort="false" match="none"/>
             <space/>
             <label text="" icon="presets/misc/angles.svg" icon_size="300"/>
-            <!--<check key="man_made" value="tower" text="Look-Out Tower" />-->
         </item> <!-- Viewpoint -->
         <separator/>
         <item name="Information Office" icon="${ICONPATH}tourist_information.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5880,8 +5991,49 @@
         <item name="Club" icon="${ICONPATH}amenity_club_35000.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:club"/>
             <space/>
-            <combo key="club" text="Club type" values="sport,scout,freemasonry,automobile,music,social,culture,veterans,charity,motorcycle,fan"
-                display_values="Sport,Scouts,Freemasonry,Automobile,Music,Social,Culture,Veterans,Charity,Motorcycle,Fan" match="keyvalue!"/>           
+             <combo key="club" text="Club type" match="keyvalue!">
+                 <list_entry value="amateur_radio" display_value="Amateur radio" />
+                 <list_entry value="art" display_value="Art" />
+                 <list_entry value="astronomy" display_value="Astronomy" />
+                 <list_entry value="automobile" display_value="Automobile" />
+                 <list_entry value="board_games" display_value="Board games" />
+                 <list_entry value="card_games" display_value="Card games" />
+                 <list_entry value="charity" display_value="Charity" />
+                 <list_entry value="cinema" display_value="Cinema" />
+                 <list_entry value="computer" display_value="Computer" />
+                 <list_entry value="cooking" display_value="Cooking" />
+                 <list_entry value="culture" display_value="Culture" />
+                 <list_entry value="dog" display_value="Dog" />
+                 <list_entry value="doityourself" display_value="DIY" />
+                 <list_entry value="environment_protection" display_value="Environment protection" />
+                 <list_entry value="ethnic" display_value="Ethnic" />
+                 <list_entry value="fan" display_value="Fan" />
+                 <list_entry value="filmmaking" display_value="Filmmaking" />
+                 <list_entry value="fishing" display_value="Fishing" />
+                 <list_entry value="freemasonry" display_value="Freemasonry" />
+                 <list_entry value="game" display_value="Game" />
+                 <list_entry value="gardening" display_value="Gardening" />
+                 <list_entry value="history" display_value="History" />
+                 <list_entry value="hunting" display_value="Hunting" />
+                 <list_entry value="linux" display_value="Linux" />
+                 <list_entry value="motorcycle" display_value="Motorcycle" />
+                 <list_entry value="music" display_value="Music" />
+                 <list_entry value="nature" display_value="Nature" />
+                 <list_entry value="nudism" display_value="Nudism" />
+                 <list_entry value="photography" display_value="Photography" />
+                 <list_entry value="politics" display_value="Politics" />
+                 <list_entry value="scout" display_value="Scout" />
+                 <list_entry value="smoke" display_value="Smoke" />
+                 <list_entry value="social" display_value="Social" />
+                 <list_entry value="sport" display_value="Sport" />
+                 <list_entry value="student" display_value="Student" />
+                 <list_entry value="surf_life_saving" display_value="Surf life saving" />
+                 <list_entry value="theatre" display_value="Theatre" />
+                 <list_entry value="tourism" display_value="Tourism" />
+                 <list_entry value="veterans" display_value="Veterans" />
+                 <list_entry value="yachting" display_value="Yachting" />
+                 <list_entry value="youth_movement" display_value="Youth movement" />
+            </combo>    
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Club -->
@@ -6337,6 +6489,7 @@
             <multiselect key="sport" text="Sport" values="athletics;cycling;dog_racing;equestrian;horse_racing;running;skating;roller_skating;ice_skating" 
                 display_values="Athletics;Cycling;Dog racing;Equestrian;Horse racing;Running;Skating;Roller skating;Ice skating" values_context="sport"/>
             <reference ref="sport_surface" />
+            <check key="area" text="Area" />
         </item> <!-- Racetrack -->
         <item name="Dive centre" icon="${ICONPATH}sport_scuba_diving_21080.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=dive_centre"/>
@@ -6623,6 +6776,15 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Ice Skating -->
+        <item name="Curling" icon="${ICONPATH}sport_curling.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:sport=curling"/>
+            <space/>
+            <key key="sport" value="curling"/>
+            <reference ref="optional_name"/>
+            <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium" display_values="Ice rink,Pitch,Sports centre,Stadium" default="ice_rink"/>
+            <reference ref="oh"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Curling -->
         <item name="Roller Skating" icon="${ICONPATH}sport_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=roller_skating"/>
             <space/>
@@ -6679,6 +6841,17 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Shooting -->
+        <item name="Chess" icon="${ICONPATH}sport_chess_21153.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:sport=chess" />
+            <space />
+            <key key="sport" value="chess" />
+            <text key="name" text="Name" />
+            <checkgroup text="Type" columns="1">
+                <check key="leisure" text="Pitch" value_on="pitch" disable_off="true" />
+                <check key="leisure" text="Picnic table" value_on="picnic_table" disable_off="true" />
+                <check key="playground" text="Chess table" value_on="chess_table" disable_off="true" />
+            </checkgroup>
+        </item> <!-- Chess -->
     </group> <!-- Sport -->
     <group name="Sport (Ball)" icon="${ICONPATH}sport_soccer.${ICONTYPE}">
         <item name="Soccer" icon="${ICONPATH}sport_soccer.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7597,6 +7770,7 @@
             <text key="telescope:diameter" text="Diameter in meters" />
             <combo key="telescope:construction" text="Construction" values="dish,dome" display_values="Dish,Dome" />
             <reference ref="name_wikipedia"/>
+            <reference ref="facility_access"/>
         </item> <!-- Telescope -->
     </group> <!-- Man Made -->
     <group name="Bridges" icon="${ICONPATH}highway_bridge_sp.${ICONTYPE}">
@@ -8080,9 +8254,47 @@
     <item name="Historic object" icon="${ICONPATH}tourist_historic_19021.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
          <link wiki="Key:historic"/>
          <space/>
-         <combo key="historic" text="Type" 
-            values="memorial,ruins,archaeological_site,wayside_shrine,monument,castle,building,charcoal_pile,boundary_stone,tomb,citywalls,mine_shaft,mine,railway,manor,hollow_way,milestone,church,fort,city_gate,wreck,house,stone,wayside_chapel,bunker,pa,farm,roman_road,aircraft,bomb_crater,battlefield,cannon,monastery,bridge,tower,ship,industrial,pillory" 
-            display_values="Memorial,Ruins,Archaeological site,Wayside shrine,Monument,Castle,Building,Charcoal pile,Boundary stone,Tomb,Citywalls,Mine shaft,Mine,Railway,Manor,Hollow way,Milestone,Church,Fort,City gate,Wreck,House,Stone,Wayside chapel,Bunker,Pa,Farm,Roman road,Aircraft,Bomb crater,Battlefield,Cannon,Monastery,Bridge,Tower,Ship,Industrial,Pillory"  match="keyvalue!"/>
+         <combo key="historic" text="Type" match="keyvalue!">
+           <list_entry value="memorial" display_value="Memorial" />
+           <list_entry value="ruins" display_value="Ruins" />
+           <list_entry value="archaeological_site" display_value="Archaeological site" />
+           <list_entry value="wayside_shrine" display_value="Wayside shrine" />
+           <list_entry value="monument" display_value="Monument" />
+           <list_entry value="castle" display_value="Castle" />
+           <list_entry value="building" display_value="Building" />
+           <list_entry value="charcoal_pile" display_value="Charcoal pile" />
+           <list_entry value="boundary_stone" display_value="Boundary stone" />
+           <list_entry value="tomb" display_value="Tomb" />
+           <list_entry value="citywalls" display_value="Citywalls" />
+           <list_entry value="mine_shaft" display_value="Mine shaft" />
+           <list_entry value="mine" display_value="Mine" />
+           <list_entry value="railway" display_value="Railway" />
+           <list_entry value="manor" display_value="Manor" />
+           <list_entry value="hollow_way" display_value="Hollow way" />
+           <list_entry value="milestone" display_value="Milestone" />
+           <list_entry value="church" display_value="Church" />
+           <list_entry value="fort" display_value="Fort" />
+           <list_entry value="city_gate" display_value="City gate" />
+           <list_entry value="wreck" display_value="Wreck" />
+           <list_entry value="house" display_value="House" />
+           <list_entry value="stone" display_value="Sone" />
+           <list_entry value="wayside_chapel" display_value="Wayside chapel" />
+           <list_entry value="bunker" display_value="Bunker" />
+           <list_entry value="pa" display_value="Pa" />
+           <list_entry value="farm" display_value="Farm" />
+           <list_entry value="roman_road" display_value="Roman road" />
+           <list_entry value="aircraft" display_value="Aircraft" />
+           <list_entry value="bomb_crater" display_value="Bomb crater" />
+           <list_entry value="battlefield" display_value="Battlefield" />
+           <list_entry value="cannon" display_value="Cannon" />
+           <list_entry value="monastery" display_value="Monastery" />
+           <list_entry value="bridge" display_value="Bridge" />
+           <list_entry value="tower" display_value="Tower" />
+           <list_entry value="ship" display_value="Ship" />
+           <list_entry value="industrial" display_value="Industrial" />
+           <list_entry value="pillory" display_value="Pillory" />
+           <list_entry value="shieling" display_value="Shieling" />
+         </combo>
          <reference ref="name_wikipedia"/>
          <text key="description" text="Description" length="255"/>
          <check key="ruins" text="Ruins"/>
@@ -9285,7 +9497,6 @@
             <list_entry value="parking_tickets" short_description="Parking tickets"/>
             <list_entry value="parcel_pickup" short_description="Parcel pickup"/>
             <list_entry value="parcel_mail_in" short_description="Parcel mail in"/>
-            <list_entry value="photos" short_description="Photos"/>
             <list_entry value="public_transport_plans" short_description="Plans (public transport)"/>
             <list_entry value="public_transport_tickets" short_description="Tickets (public transport)"/>
             <list_entry value="SIM_cards" short_description="SIM_cards"/>
@@ -10131,7 +10342,7 @@
                 <text key="addr:subdistrict" text="Subdistrict" use_last_as_default="force" match="key"/>
                 <text key="addr:district" text="District" use_last_as_default="force" match="key"/>
                 <text key="addr:province" text="Province" use_last_as_default="force" match="key"/>
-                <!--  US States as defined in ISO 3166-2 -->
+                <!-- US States as defined in ISO 3166-2 -->
                 <combo key="addr:state" text="State" text_context="addr:" values="AL,AK,AZ,AR,CA,CO,CT,DE,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VT,VA,WA,WV,WI,DC,AS,GU,MP,PR,UM,VI" use_last_as_default="force" match="key"/>
             </optional>
         </item> <!-- Address -->
