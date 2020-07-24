@@ -6434,6 +6434,15 @@
             <reference ref="fee"/>
             <multiselect key="valves" text="Valves" values="dunlop;schrader;sclaverand;regina" display_values="Dunlop (Woods);Schrader;Sclaverand (Presta);Regina" rows="5" values_searchable="true"/>
         </item> <!-- Compressed Air -->
+        <item name="Vacuum cleaner station" icon="${ICONPATH}amenity_vacuum_station.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:amenity=vacuum_cleaner"/>
+            <space/>
+            <key key="amenity" value="vacuum_cleaner"/>
+            <optional>
+                <reference ref="name_ref_operator"/>
+            </optional>
+            <reference ref="fee"/>
+          </item> <!-- Vacuum cleaner station -->
         <separator/>
         <item name="Advertising" icon="${ICONPATH}amenity_advertising_12451.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Key:advertising"/>
