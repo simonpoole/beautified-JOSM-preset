@@ -2217,7 +2217,7 @@
             <reference ref="check_access_nomotor" />
             <reference ref="check_access_motor" />
         </item> <!-- Spikes -->
-        <item name="Height restrictor" icon="${ICONPATH}barrier_empty.${ICONTYPE}" type="node" preset_name_label="true">
+        <item name="Height restrictor" icon="${ICONPATH}barrier_height_restrictor.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=height_restrictor"/>
             <key key="barrier" value="height_restrictor"/>
             <text key="maxheight" text="Max. height (meters)"/>
@@ -2257,7 +2257,7 @@
             <reference ref="check_access_motor" />
         </item> <!-- Border Control -->
         <separator/> <!-- *** Linear Barriers *** -->
-        <item name="Hedge" icon="presets/hedge.png" type="way,closedway,multipolygon" preset_name_label="true">
+        <item name="Hedge" icon="${ICONPATH}barrier_hedge.${ICONTYPE}" type="way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:barrier=hedge"/>
             <key key="barrier" value="hedge"/>
             <reference ref="leaf"/>
@@ -2274,7 +2274,7 @@
                 <text key="height" text="Height (meters)" length="7"/>
             </optional>
         </item> <!-- Fence -->
-        <item name="Guard Rail" type="way,closedway" preset_name_label="true">
+        <item name="Guard Rail" icon="${ICONPATH}barrier_guard_rail.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:barrier=guard_rail"/>
             <key key="barrier" value="guard_rail"/>
             <reference ref="optional_height"/>
@@ -3175,7 +3175,7 @@
             <text key="ref" text="Reference" />
             <text key="operator" text="Operator" />
         </item> <!-- Railway crossing -->
-        <item name="Railway Signal" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node" preset_name_label="true">
+        <item name="Railway Signal" icon="${ICONPATH}transport_railway_signals.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:railway=signal"/>
             <key key="railway" value="signal"/>
             <text key="ref" text="Reference"/>
@@ -3505,7 +3505,7 @@
             <reference ref="name_brand_operator_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Rental -->
-        <item name="Pooling" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Pooling" icon="${ICONPATH}transport_car_pooling.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=car_pooling" />
             <space />
             <key key="amenity" value="car_pooling" />
@@ -6295,7 +6295,7 @@
             <reference ref="colours" />
             <combo key="seats" text="Seats count" values="1,2,3,4,5,6,7,8,9,10"/>
         </item> <!-- Bench -->
-        <item name="Bleachers" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Bleachers" icon="${ICONPATH}amenity_bleachers.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=bleachers"/>
             <space/>
             <key key="leisure" value="bleachers"/>
@@ -6532,7 +6532,7 @@
             <reference ref="sport_surface" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Pitch -->
-        <item name="Racetrack" name_context="sport" icon="presets/stadium.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+        <item name="Racetrack" name_context="sport" icon="${ICONPATH}sport_racetrack.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=track"/>
             <space/>
             <key key="leisure" value="track"/>
@@ -7536,7 +7536,7 @@
             <reference ref="resource" />
             <check key="disused" text="Disused" disable_off="true"/>
         </item> <!-- Adit -->
-        <item name="Embankment" icon="presets/cliff.png" type="way" preset_name_label="true">
+        <item name="Embankment" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:man_made=embankment"/>
             <space/>
             <key key="man_made" value="embankment"/>
@@ -7604,7 +7604,7 @@
                 <combo key="location" text="Location" values="underground,overground" display_values="underground,overground" values_context="pipeline" />
             </optional>
         </item> <!-- Marker -->
-        <item name="Manhole" icon="${ICONPATH}man_made_empty.${ICONTYPE}" type="node" preset_name_label="true">
+        <item name="Manhole" icon="${ICONPATH}man_made_manhole.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Key:manhole" />
             <space />
             <key key="man_made" value="manhole" />
@@ -8734,7 +8734,7 @@
             <reference ref="clothes"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Boutique -->
-        <item name="Fashion accessories" icon="${ICONPATH}shopping_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Fashion accessories" icon="${ICONPATH}shopping_fashion_accessories.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=fashion_accessories"/>
             <space/>
             <key key="shop" value="fashion_accessories"/>
@@ -9911,14 +9911,14 @@
             <reference ref="name_wikipedia"/>
             <text key="ele" text="Elevation (meters)" length="10"/>
         </item> <!-- Ridge -->
-        <item name="Valley" icon="${ICONPATH}poi_empty.${ICONTYPE}" type="way" preset_name_label="true">
+        <item name="Valley" icon="${ICONPATH}poi_valley.${ICONTYPE}" type="way" preset_name_label="true">
             <link wiki="Tag:natural=valley"/>
             <label text="A low area between hills."/>
             <space/>
             <key key="natural" value="valley"/>
             <reference ref="name_wikipedia"/>
         </item> <!-- Valley -->
-        <item name="Cliff" icon="presets/cliff.png" type="node,way,closedway,multipolygon" preset_name_label="true">
+        <item name="Cliff" icon="${ICONPATH}poi_cliff.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:natural=cliff"/>
             <label text="A steep rock face exposure, with a significant vertical, or near vertical (leave the lower face to the right of the way)."/>
             <space/>
@@ -9943,13 +9943,13 @@
             <reference ref="optional_name_wikipedia"/>
         </item> <!-- Geyser -->
         <separator/>
-        <item name="Island" icon="presets/island.png" type="node,closedway,multipolygon" preset_name_label="true" name_context="place">
+        <item name="Island" icon="${ICONPATH}poi_island.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true" name_context="place">
             <link wiki="Tag:place=island"/>
             <space/>
             <key key="place" value="island" values_context="place"/>
             <reference ref="name_wikipedia"/>
         </item> <!-- Island -->
-        <item name="Islet" icon="presets/islet.png" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Islet" icon="${ICONPATH}poi_islet.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:place=islet"/>
             <space/>
             <key key="place" value="islet"/>
