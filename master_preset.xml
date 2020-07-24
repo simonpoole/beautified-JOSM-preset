@@ -5588,9 +5588,27 @@
             <space/>
             <key key="amenity" value="dentist" match="keyvalue"/>
             <key key="healthcare" value="dentist" match="keyvalue"/>
+            <combo key="healthcare:speciality" text="Speciality" values_searchable="true">
+                <list_entry value="dental_oral_maxillo_facial_surgery" display_value="Oral and maxillofacial surgery" />
+                <list_entry value="endodontics" display_value="Endodontics" />
+                <list_entry value="implantology" display_value="Implantology" />
+                <list_entry value="orthodontics" display_value="Orthodontics" />
+                <list_entry value="paediatric_dentistry" display_value="Pediatric dentistry" />
+                <list_entry value="periodontics" display_value="Periodontology" />
+                <list_entry value="stomatology" display_value="Stomatology" />
+            </combo>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Dentist -->
+        <item name="Orthodontist" icon="${ICONPATH}health_dentist.${ICONTYPE}" type="node,closedway,multipolygon" autoapply="false" preset_name_label="true">
+            <link wiki="Tag:healthcare=dentist"/>
+            <space/>
+            <key key="amenity" value="dentist" match="keyvalue" />
+            <key key="healthcare" value="dentist" match="keyvalue" />
+            <key key="healthcare:speciality" value="orthodontics" match="keyvalue" />
+            <reference ref="name_oh_wheelchair_level" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Orthodontist -->
         <item name="Pharmacy" icon="${ICONPATH}health_pharmacy.${ICONTYPE}" type="node,closedway,multipolygon" autoapply="false" min_match="1" preset_name_label="true">
             <link wiki="Tag:amenity=pharmacy"/>
             <space/>
