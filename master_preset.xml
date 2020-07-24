@@ -634,6 +634,9 @@
     <chunk id="bin">
         <combo key="bin" text="Bin" values="yes,no" display_values="Yes,No" default=""/>
     </chunk>
+    <chunk id="facility_access">
+        <combo key="access" text="Access" values="yes,permissive,customers,private,permit,no" display_values="Public,Permissive,Customers,Private,Permit required,No access" match="none" values_sort="false"/>
+    </chunk>
     <chunk id="fee">
         <combo key="fee" text="Fee" values="yes,no" display_values="Yes,No" match="none"/>
     </chunk>
@@ -996,9 +999,6 @@
         <list_entry value="no" display_value="None"/>
         <list_entry value="incorrect" display_value="Incorrect"/>
      </combo>
-  </chunk>
-  <chunk id="facility_access">
-  	<combo key="access" text="Access" values="yes,permissive,customers,private,permit,no" display_values="Public,Permissive,Customers,Private,Permit required,No access" match="none" values_sort="false"/>
   </chunk>
   <chunk id="cash_withdrawal">
     <multiselect key="cash_withdrawal" text="Cash withdrawal" length="3" values="yes" match="none" editable="true"/>
