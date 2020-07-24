@@ -8751,6 +8751,13 @@
             <check key="shoes:repair" text="Repairs" text_context="shoes"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Shoes -->
+        <item name="Shoe repair" icon="${ICONPATH}shopping_shoemaker_16108.${ICONTYPE}" type="node,closedway,multipolygon" name_context="shop" preset_name_label="true">
+            <link wiki="Tag:shop=shoe_repqir"/>
+            <space/>
+            <key key="shop" value="shoe_repair"/>
+            <reference ref="name_oh_wheelchair_level_toilets"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Shoe repair -->
         <item name="Bag" icon="${ICONPATH}shopping_bag_29004.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=bag"/>
             <space/>
