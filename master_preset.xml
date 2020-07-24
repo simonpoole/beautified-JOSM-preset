@@ -3582,8 +3582,20 @@
             <link wiki="Tag:amenity=bicycle_parking"/>
             <space/>
             <key key="amenity" value="bicycle_parking"/>
-            <combo key="bicycle_parking" text="Type" values="anchors,bollard,building,floor,ground_slots,handlebar_holder,informal,lockers,rack,shed,stands,wall_loops"
-                display_values="Anchors,Bollard,Building,Floor (area without racks/stands/...),Ground slots,Handlebar holder,Informal,Lockers,Rack,Shed,Stands,Wall loops ('wheelbenders')" values_context="bicycle" />
+            <combo key="bicycle_parking" text="Type" values_context="bicycle">
+                <list_entry value="anchors" display_value="Anchors" />
+                <list_entry value="bollard" display_value="Bollard" />
+                <list_entry value="building" display_value="Building" />
+                <list_entry value="floor" display_value="Floor" short_description="Area without racks/stands/..." />
+                <list_entry value="ground_slots" display_value="Ground slots" />
+                <list_entry value="handlebar_holder" display_value="Handlebar holder" />
+                <list_entry value="informal" display_value="Informal" />
+                <list_entry value="lockers" display_value="Lockers" />
+                <list_entry value="rack" display_value="Rack" />
+                <list_entry value="shed" display_value="Shed" />
+                <list_entry value="stands" display_value="Stands" />
+                <list_entry value="wall_loops" display_value="Wall loops" short_description="&quot;Wheel benders&quot;" />
+            </combo>
             <reference ref="optional_name"/>
             <text key="capacity" text="Capacity" value_type="integer"/>
             <reference ref="parking_access_fee_operator_surface_smoothness"/>
