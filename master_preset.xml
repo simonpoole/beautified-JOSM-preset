@@ -4272,6 +4272,16 @@
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Diet" />
         </item> <!-- Cafe -->
+        <item name="Bubble Tea Cafe" icon="${ICONPATH}amenity_bubble_tea.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:cuisine=bubble_tea" />
+            <key key="amenity" value="cafe" />
+            <key key="cuisine" value="bubble_tea" />
+            <reference ref="oh_wheelchair_level"/>
+            <reference ref="toilets_with_access"/>
+            <space/>
+            <reference ref="internet_smoking"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Bubble Tea Cafe -->
         <item name="Ice cream" icon="${ICONPATH}amenity_ice_cream_12077.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=ice_cream"/>
             <space/>
