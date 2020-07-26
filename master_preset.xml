@@ -2956,6 +2956,14 @@
             <link wiki="Tag:waterway=sanitary_dump_station"/>
             <key key="waterway" value="sanitary_dump_station"/>
         </item> <!-- Water point -->
+        <item name="Boat shop" icon="${ICONPATH}shopping_boat.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=boat"/>
+            <space/>
+            <key key="shop" value="boat"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no" display_values="Only,Yes,No"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Boat shop -->
         <item name="Boat rental" icon="${ICONPATH}transport_boat_rental.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=boat_rental"/>
             <space/>
