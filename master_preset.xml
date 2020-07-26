@@ -3982,6 +3982,11 @@
             <key key="aeroway" value="parking_position"/>
             <text key="ref" text="Reference"/>
         </item> <!-- Plane Parking Position -->
+        <item name="Jet bridge" icon="${ICONPATH}transport_empty.${ICONTYPE}" type="way,closedway" preset_name_label="true">
+            <link wiki="Tag:aeroway=jet_bridge"/>
+            <key key="aeroway" value="jet_bridge"/>
+            <text key="ref" text="Reference"/>
+        </item> <!-- Jet bridge -->
         <item name="Hangar" icon="${ICONPATH}transport_hangar_11004.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:aeroway=hangar"/>
             <key key="aeroway" value="hangar"/>
