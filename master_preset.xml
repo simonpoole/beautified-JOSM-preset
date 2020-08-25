@@ -250,37 +250,6 @@
         <combo key="gauge" text="Gauge (mm)" values="1668,1676,1674,1600,1524,1520,1495,1435,1067,1000,914,762,760,750" length="4"/>
         <reference ref="railway_electrified"/>
     </chunk>
-    <chunk id="check_access_nomotor">
-        <optional text="Non-motorized traffic:">
-            <checkgroup text="Non-motorized traffic" columns="3">
-                <check key="foot" text="Foot" />
-                <check key="bicycle" text="Bicycle" />
-                <check key="horse" text="Horse" />
-            </checkgroup>
-            <space />
-            <reference ref="wheelchair" />
-        </optional>
-    </chunk>
-    <chunk id="vehicle_access">
-        <combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" 
-            display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
-    </chunk>
-    <chunk id="motor_vehicle_access">
-        <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" 
-            display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
-    </chunk>
-    <chunk id="check_access_motor">
-        <optional text="Motor vehicle traffic:">
-            <reference ref="motor_vehicle_access" />
-            <space />
-            <checkgroup text="Exceptions" columns="2">
-                <check key="motorcar" text="Motorcar" />
-                <check key="motorcycle" text="Motorcycle" />
-                <check key="moped" text="Moped" />
-                <check key="mofa" text="Mofa" />
-            </checkgroup>
-        </optional>
-    </chunk>
     <chunk id="traffic_signals_direction">
         <combo key="direction" text="For traffic direction" values="N,E,S,W,0,90,180,270,forward,backward" 
                display_values="North,East,South,West,0°,90°,180°,270°,Forward,Backward" values_sort="false" /> 
@@ -534,6 +503,27 @@
         <reference ref="level"/>
         <preset_link preset_name="No name"/>
     </chunk>
+    <chunk id="optional_name">
+        <optional>
+            <text key="name" text="Name"/>
+        </optional>
+        <preset_link preset_name="No name"/>
+    </chunk>
+    <chunk id="optional_name_operator">
+        <optional>
+            <text key="name" text="Name"/>
+            <text key="operator" text="Operator"/>
+         </optional>
+         <preset_link preset_name="No name"/>
+    </chunk>
+    <chunk id="optional_name_wikipedia">
+        <optional>
+            <text key="name" text="Name"/>
+            <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
+            <text key="wikidata" text="Wikidata" value_type="wikidata"/>
+        </optional>
+        <preset_link preset_name="No name"/>
+    </chunk>
     <chunk id="organic">
     	<combo key="organic" text="Organic" values="only,yes,no" display_values="Only,Yes,No"/>
     </chunk>
@@ -575,6 +565,37 @@
         <reference ref="internet"/>
         <combo key="smoking" text="Smoking" values="yes,dedicated,separated,isolated,outside,no" display_values="Yes,Dedicated,Separated,Isolated,Outside,No" values_sort="false"/>
     </chunk>
+        <chunk id="check_access_nomotor">
+        <optional text="Non-motorized traffic:">
+            <checkgroup text="Non-motorized traffic" columns="3">
+                <check key="foot" text="Foot" />
+                <check key="bicycle" text="Bicycle" />
+                <check key="horse" text="Horse" />
+            </checkgroup>
+            <space />
+            <reference ref="wheelchair" />
+        </optional>
+    </chunk>
+    <chunk id="vehicle_access">
+        <combo key="vehicle" text="All vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" 
+            display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
+    </chunk>
+    <chunk id="motor_vehicle_access">
+        <combo key="motor_vehicle" text="Motor vehicles" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" 
+            display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
+    </chunk>
+    <chunk id="check_access_motor">
+        <optional text="Motor vehicle traffic:">
+            <reference ref="motor_vehicle_access" />
+            <space />
+            <checkgroup text="Exceptions" columns="2">
+                <check key="motorcar" text="Motorcar" />
+                <check key="motorcycle" text="Motorcycle" />
+                <check key="moped" text="Moped" />
+                <check key="mofa" text="Mofa" />
+            </checkgroup>
+        </optional>
+    </chunk>
     <chunk id="optional_height">
         <optional>
             <text key="height" text="Height (meters)" length="7"/>
@@ -593,27 +614,6 @@
         <optional>
             <reference ref="maxheight_maxwidth" />
         </optional>
-    </chunk>
-    <chunk id="optional_name">
-        <optional>
-            <text key="name" text="Name"/>
-        </optional>
-        <preset_link preset_name="No name"/>
-    </chunk>
-    <chunk id="optional_name_operator">
-        <optional>
-            <text key="name" text="Name"/>
-            <text key="operator" text="Operator"/>
-         </optional>
-         <preset_link preset_name="No name"/>
-    </chunk>
-    <chunk id="optional_name_wikipedia">
-        <optional>
-            <text key="name" text="Name"/>
-            <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
-            <text key="wikidata" text="Wikidata" value_type="wikidata"/>
-        </optional>
-        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="sport_facility">
     	<combo key="leisure" text="Type" values="pitch,sports_centre,stadium" display_values="Pitch,Sports centre,Stadium" values_context="sport"/>
