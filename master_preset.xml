@@ -252,7 +252,7 @@
     </chunk>
     <chunk id="check_access_nomotor">
         <optional text="Non-motorized traffic:">
-            <checkgroup columns="3">
+            <checkgroup text="Non-motorized traffic" columns="3">
                 <check key="foot" text="Foot" />
                 <check key="bicycle" text="Bicycle" />
                 <check key="horse" text="Horse" />
@@ -273,7 +273,7 @@
         <optional text="Motor vehicle traffic:">
             <reference ref="motor_vehicle_access" />
             <space />
-            <checkgroup columns="2">
+            <checkgroup text="Exceptions" columns="2">
                 <check key="motorcar" text="Motorcar" />
                 <check key="motorcycle" text="Motorcycle" />
                 <check key="moped" text="Moped" />
@@ -2179,7 +2179,7 @@
             </optional>
             <reference ref="vehicle_access" />
             <optional text="Non-motorized traffic:">
-                <checkgroup columns="2">
+                <checkgroup text="Non-motorized traffic" columns="2">
                     <check key="foot" text="Foot" icon="${ICONPATH}no_walking.${ICONTYPE}" />
                     <check key="horse" text="Horse" icon="${ICONPATH}no_riding.${ICONTYPE}" />
                 </checkgroup>
@@ -4514,7 +4514,7 @@
             <optional>
                 <reference ref="name_ref_operator" />
                 <text key="ele" text="Elevation (meters)" length="10" />
-                <checkgroup text="Routes shown for:">
+                <checkgroup text="Routes shown for">
                     <check key="hiking" text="Hiking" />
                     <check key="bicycle" text="Cycling" />
                     <check key="mtb" text="Mountainbiking" />
