@@ -37,7 +37,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.21.0'
+    runtime 'ch.poole:preset-utils:0.22.0'
 }
 
 task copyCss(type: Copy) {

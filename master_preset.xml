@@ -4680,6 +4680,8 @@
             <key key="leisure" value="water_park"/>
             <reference ref="name_operator_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Public bath" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Sports Centre" text="Similar but different tags:" alternative="true" />
         </item> <!-- Water Park -->
         <item name="Rides" icon="${ICONPATH}tourist_ride.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:attraction"/>
@@ -4800,6 +4802,8 @@
             <reference ref="fee" />
             <space/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Water Park" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Sports Centre" text="Similar but different tags:" alternative="true" />
         </item> <!-- Public bath -->
         <item name="Tanning Studio" icon="${ICONPATH}amenity_tanning_studio.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=tanning_studio"/>
@@ -5025,6 +5029,11 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Adult gaming centre" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Gambling" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Casino" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Bookmaker" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Lottery" text="Similar but different tags:" alternative="true" />
         </item> <!-- Amusement arcade -->
         <item name="Adult gaming centre" icon="${ICONPATH}amenity_slot_machine.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=adult_gaming_centre"/>
@@ -5035,6 +5044,11 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Amusement arcade" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Gambling" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Casino" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Bookmaker" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Lottery" text="Similar but different tags:" alternative="true" />
         </item> <!-- Adult gaming centre -->
         <item name="Night Club" icon="${ICONPATH}food_bar.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=nightclub"/>
@@ -5056,6 +5070,11 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Adult gaming centre" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Amusement arcade" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Gambling" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Bookmaker" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Lottery" text="Similar but different tags:" alternative="true" />
         </item> <!-- Casino -->
         <item name="Gambling" icon="${ICONPATH}tourist_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=gambling"/>
@@ -5066,6 +5085,11 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Adult gaming centre" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Amusement arcade" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Casino" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Bookmaker" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Lottery" text="Similar but different tags:" alternative="true" />
         </item> <!-- Gambling -->
         <item name="Love Hotel" icon="${ICONPATH}amenity_love_hotel.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=love_hotel"/>
@@ -7385,6 +7409,9 @@
                 <text key="operator" text="Operator"/>
                 <reference ref="communication_types"/>
             </optional>
+            <preset_link preset_name="Antenna" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Mast" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Telescope" text="Similar but different tags:" alternative="true" />
         </item> <!-- Tower -->
         <item name="Mast" icon="${ICONPATH}poi_mast_22028.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=mast"/>
@@ -7397,6 +7424,9 @@
                 <text key="operator" text="Operator"/>
                 <reference ref="communication_types"/>
             </optional>
+            <preset_link preset_name="Antenna" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Telescope" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Tower" text="Similar but different tags:" alternative="true" />
         </item> <!-- Tower -->
         <item name="Utility pole" icon="${ICONPATH}man_made_pole.${ICONTYPE}" type="node" preset_name_label="true" deprecated="true">
             <link wiki="Tag:man_made=utility_pole"/>
@@ -7417,6 +7447,9 @@
                 <text key="operator" text="Operator"/>
                 <reference ref="communication_types"/>
             </optional>
+            <preset_link preset_name="Mast" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Telescope" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Tower" text="Similar but different tags:" alternative="true" />
          </item> <!-- Antenna -->
         <item name="Flagpole" icon="${ICONPATH}man_made_flagpole_22023.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=flagpole"/>
@@ -7836,6 +7869,9 @@
             <combo key="telescope:construction" text="Construction" values="dish,dome" display_values="Dish,Dome" />
             <reference ref="name_wikipedia"/>
             <reference ref="facility_access"/>
+            <preset_link preset_name="Antenna" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Mast" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Tower" text="Similar but different tags:" alternative="true" />
         </item> <!-- Telescope -->
     </group> <!-- Man Made -->
     <group name="Bridges" icon="${ICONPATH}highway_bridge_sp.${ICONTYPE}">
@@ -9457,6 +9493,11 @@
             <key key="shop" value="bookmaker"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Adult gaming centre" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Amusement arcade" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Casino" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Gambling" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Lottery" text="Similar but different tags:" alternative="true" />
         </item> <!-- Bookmaker -->
         <item name="Lottery" icon="${ICONPATH}shopping_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=lottery"/>
@@ -9464,6 +9505,11 @@
             <key key="shop" value="lottery"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Adult gaming centre" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Amusement arcade" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Casino" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Gambling" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Bookmaker" text="Similar but different tags:" alternative="true" />
         </item> <!-- Lottery -->
         <item name="Ticket" icon="${ICONPATH}shopping_ticket_29200.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=ticket"/>
@@ -10438,6 +10484,7 @@
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
             <text key="wikidata" text="Wikidata" value_type="wikidata"/>
             <text key="image" text="Image"/>
+            <preset_link preset_name="Contact ('contact:*')" text="Similar tags but different tagging schema:" text_context="Contact" alternative="true" />
         </item> <!-- Contact (Common Schema) -->
         <item name="Contact ('contact:*')" icon="${ICONPATH}osm_contact_sp.${ICONTYPE}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:contact"/>
@@ -10451,6 +10498,7 @@
             <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
             <text key="wikidata" text="Wikidata" value_type="wikidata"/>
             <text key="image" text="Image"/>
+            <preset_link preset_name="Contact" text="Similar tags but different tagging schema:" text_context="Contact" alternative="true" />
         </item> <!-- Contact (Schema with 'contact:*' Prefix) -->
   </group> <!-- Addresses and Contact -->
   <group name="Annotation" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}">
@@ -10463,8 +10511,8 @@
             <text key="description" text="Description" match="key" length="255"/>
             <space/>
             <label text="Similar but different tags:" text_context="note=*, fixme=*, description=*"/>
-            <preset_link preset_name="Note"/>
-            <preset_link preset_name="Fixme"/>
+            <preset_link preset_name="Note" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Fixme" text="Similar but different tags:" alternative="true" />
         </item> <!-- Description -->
         <item name="Note" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}" name_context="the tag note=*" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:note"/>
@@ -10474,8 +10522,8 @@
             <text key="note" text="Note" text_context="the tag note=*" match="key" length="255"/>
             <space/>
             <label text="Similar but different tags:" text_context="note=*, fixme=*, description=*"/>
-            <preset_link preset_name="Fixme"/>
-            <preset_link preset_name="Description"/>
+            <preset_link preset_name="Fixme" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Description" text="Similar but different tags:" alternative="true" />
         </item> <!-- Note -->
         <item name="Fixme" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:fixme"/>
@@ -10485,8 +10533,8 @@
             <text key="fixme" text="Fixme" match="key" length="255"/>
             <space/>
             <label text="Similar but different tags:" text_context="note=*, fixme=*, description=*"/>
-            <preset_link preset_name="Note"/>
-            <preset_link preset_name="Description"/>
+            <preset_link preset_name="Note" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Description" text="Similar but different tags:" alternative="true" />
         </item> <!-- Fixme -->
         <item name="No name" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}" type="node,way,closedway,relation" preset_name_label="true">
             <check key="noname" text="No name" disable_off="true"/>
