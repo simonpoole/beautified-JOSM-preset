@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.10.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.10.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -7803,7 +7803,7 @@
             <link wiki="Tag:man_made=survey_point"/>
             <space/>
             <key key="man_made" value="survey_point"/>
-            <text key="name_ref" text="Reference"/>
+            <reference ref="name_ref"/>
             <text key="ele" text="Elevation (meters)" length="10"/>
             <combo key="material" text="Material" values="andesite,brass,bronze,concrete,granite,metal,steel,stone" display_values="Andesite,Brass,Bronze,Concrete,Granite,Metal,Steel,Stone" values_context="material" />
         </item> <!-- Survey Point -->
