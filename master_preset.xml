@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.10.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.11.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -2235,6 +2235,12 @@
                 <reference ref="fee_interval" />
                 <reference ref="lanes" />
                 <reference ref="optional_maxheight_maxwidth"/>
+                <checkgroup text="Payment" columns="4">
+                    <check key="payment:coins" text="Coins" match="keyvalue" disable_off="true"/>
+                    <check key="payment:notes" text="Notes" text_context="payment" match="keyvalue" disable_off="true"/>
+                    <check key="payment:e_zpass" text="E-ZPass" match="keyvalue" disable_off="true"/>
+                    <check key="payment:license_plate" text="License plate" match="keyvalue" disable_off="true"/>
+                </checkgroup>
             </optional>
             <space />            
             <reference ref="check_access_nomotor" />
@@ -9642,14 +9648,17 @@
         <space/>
         <check key="payment:debit_cards" text="Debit cards" match="keyvalue"/>
         <checkgroup text="Debit cards type" columns="4">
-            <check key="payment:bankaxess" text="BankAxess" match="keyvalue" disable_off="true"/>
             <check key="payment:bancomat" text="Bancomat" match="keyvalue" disable_off="true"/>
+            <check key="payment:bankaxept" text="BankAxept" match="keyvalue" disable_off="true"/>
             <check key="payment:girocard" text="Girocard" match="keyvalue" disable_off="true"/>
+            <check key="payment:gpn_debit" text="GPN" match="keyvalue" disable_off="true"/>
             <check key="payment:laser" text="Laser" match="keyvalue" disable_off="true"/>
             <check key="payment:maestro" text="Maestro" match="keyvalue" disable_off="true"/>
             <check key="payment:postfinance_card" text="PostFinance Card (ch)" match="keyvalue" disable_off="true"/>
+            <check key="payment:v_pay" text="V Pay" match="keyvalue" disable_off="true"/>
             <check key="payment:visa_debit" text="Visa Debit" match="keyvalue" disable_off="true"/>
             <check key="payment:visa_electron" text="Visa Electron" match="keyvalue" disable_off="true"/>
+            <check key="payment:cb" text="CB" match="keyvalue" disable_off="true"/>
         </checkgroup>
         <space/>
         <check key="payment:credit_cards" text="Credit cards" match="keyvalue"/>
@@ -9667,13 +9676,34 @@
         <check key="payment:electronic_purses" text="Electronic purses" match="keyvalue"/>
         <checkgroup text="Electronic purses type" columns="4">
             <check key="payment:ep_avant" text="Avant (fi)" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_beep" text="Beep" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_brizzi" text="BRIZZI" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_bsbcash" text="BSB Cash" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_flazz" text="Flazz" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_geldkarte" text="Geldkarte (de)" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_mandiri_emoney" text="Mandiri e-money" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_megacash" text="MEGACASH" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_mep" text="Mep (pt)" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_minicash" text="Minicash (lu)" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_minipay" text="Minipay (it)" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_monedero" text="Mondero (ar)" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_monedero4b" text="Mondero 4b (es)" match="keyvalue" disable_off="true"/>
-            <check key="payment:ep_moneo" text="Moneo (fr)" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_nobu_emoney" text="NOBU e-money" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_tapcash" text="TapCash" match="keyvalue" disable_off="true"/>
+        </checkgroup>
+        <space/>
+        <checkgroup text="Digital wallets type" columns="4">
+            <check key="payment:akulaku" text="Akulaku" match="keyvalue" disable_off="true"/>
+            <check key="payment:alipay" text="Alipay" match="keyvalue" disable_off="true"/>
+            <check key="payment:apple_pay" text="Apple Pay" match="keyvalue" disable_off="true"/>
+            <check key="payment:bluepay" text="BluePay" match="keyvalue" disable_off="true"/>
+            <check key="payment:google_pay" text="Google Pay" match="keyvalue" disable_off="true"/>
+            <check key="payment:grabpay" text="GrabPay" match="keyvalue" disable_off="true"/>
+            <check key="payment:huaweipay" text="Huawei Pay" match="keyvalue" disable_off="true"/>
+            <check key="payment:samsung_pay" text="Samsung Pay" match="keyvalue" disable_off="true"/>
+            <check key="payment:satispay" text="Satispay" match="keyvalue" disable_off="true"/>
+            <check key="payment:twint" text="TWINT" match="keyvalue" disable_off="true"/>
+            <check key="payment:wechat" text="WeChat" match="keyvalue" disable_off="true"/>
         </checkgroup>
         <space/>
         <check key="payment:cryptocurrencies" text="Cryptocurrencies" match="keyvalue"/>
