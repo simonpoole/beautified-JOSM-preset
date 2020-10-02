@@ -809,15 +809,15 @@
     </chunk>
     <chunk id="power_output">
         <optional text="Output forms of energy:">
-            <combo key="generator:output:biogas" text="biogas" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
-            <combo key="generator:output:electricity" text="electricity" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
-            <combo key="generator:output:hot_water" text="hot water" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
-            <combo key="generator:output:hot_air" text="hot air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
-            <combo key="generator:output:cold_water" text="cold water" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
-            <combo key="generator:output:cold_air" text="cold air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
-            <combo key="generator:output:compressed_air" text="compressed air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
-            <combo key="generator:output:steam" text="steam" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
-            <combo key="generator:output:vacuum" text="vacuum" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false"/>
+            <combo key="generator:output:biogas" text="biogas" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
+            <combo key="generator:output:electricity" text="electricity" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
+            <combo key="generator:output:hot_water" text="hot water" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
+            <combo key="generator:output:hot_air" text="hot air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
+            <combo key="generator:output:cold_water" text="cold water" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
+            <combo key="generator:output:cold_air" text="cold air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
+            <combo key="generator:output:compressed_air" text="compressed air" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
+            <combo key="generator:output:steam" text="steam" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
+            <combo key="generator:output:vacuum" text="vacuum" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
             <space/>
             <reference ref="voltage_frequency"/>
         </optional>
@@ -7948,14 +7948,14 @@
             <reference ref="name_ref_operator"/>
             <text key="start_date" text="Start date"/>
             <optional text="Output forms of energy (optional):">
-                <combo key="plant:output:electricity" text="electricity" values="yes,2 W,3 kW,5 MW,7 GW"/>
-                <combo key="plant:output:hot_water" text="hot water" values="yes,2 W,3 kW,5 MW,7 GW"/>
-                <combo key="plant:output:hot_air" text="hot air" values="yes,2 W,3 kW,5 MW,7 GW"/>
-                <combo key="plant:output:cold_water" text="cold water" values="yes,2 W,3 kW,5 MW,7 GW"/>
-                <combo key="plant:output:cold_air" text="cold air" values="yes,2 W,3 kW,5 MW,7 GW"/>
-                <combo key="plant:output:compressed_air" text="compressed air" values="yes,2 W,3 kW,5 MW,7 GW"/>
-                <combo key="plant:output:steam" text="steam" values="yes,2 W,3 kW,5 MW,7 GW"/>
-                <combo key="plant:output:vacuum" text="vacuum" values="yes,2 W,3 kW,5 MW,7 GW"/>
+                <combo key="plant:output:electricity" text="electricity" values="yes,2 W,3 kW,5 MW,7 GW" editable="true"/>
+                <combo key="plant:output:hot_water" text="hot water" values="yes,2 W,3 kW,5 MW,7 GW" editable="true"/>
+                <combo key="plant:output:hot_air" text="hot air" values="yes,2 W,3 kW,5 MW,7 GW" editable="true"/>
+                <combo key="plant:output:cold_water" text="cold water" values="yes,2 W,3 kW,5 MW,7 GW" editable="true"/>
+                <combo key="plant:output:cold_air" text="cold air" values="yes,2 W,3 kW,5 MW,7 GW" editable="true"/>
+                <combo key="plant:output:compressed_air" text="compressed air" values="yes,2 W,3 kW,5 MW,7 GW" editable="true"/>
+                <combo key="plant:output:steam" text="steam" values="yes,2 W,3 kW,5 MW,7 GW" editable="true"/>
+                <combo key="plant:output:vacuum" text="vacuum" values="yes,2 W,3 kW,5 MW,7 GW" editable="true"/>
                 <space/>
                 <reference ref="voltage_frequency"/>
             </optional>
