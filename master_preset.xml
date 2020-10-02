@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="1.12.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="1.13.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
 <!--
@@ -1639,9 +1639,8 @@
             <reference ref="highway_types" />
             <optional>
                 <reference ref="name_layer"/>
-                <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" value_type="integer" match="none" values_sort="false" />
-                <reference ref="highway_additional_oneway"/>
-                <text key="width" text="Width (meters)"/>
+                <reference ref="highway_base"/>
+                <reference ref="highway_additional_oneway_lit_width_sidewalk"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="cycle_lanes"/>
@@ -1655,9 +1654,8 @@
             <reference ref="highway_types" />
             <optional>
                 <reference ref="name_layer" />
-                <combo key="lanes" text="Lanes" values="1,2,3,4,5" length="3" value_type="integer" match="none" values_sort="false" />
-                <reference ref="highway_additional_oneway"/>
-                <text key="width" text="Width (meters)"/>
+                <reference ref="highway_base"/>
+                <reference ref="highway_additional_oneway_lit_width_sidewalk"/>
             </optional>
             <reference ref="road_access_restrictions" />
             <reference ref="cycle_lanes"/>
