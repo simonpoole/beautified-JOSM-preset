@@ -5648,7 +5648,7 @@
             <space/>
             <key key="amenity" value="dentist" match="keyvalue"/>
             <key key="healthcare" value="dentist" match="keyvalue"/>
-            <combo key="healthcare:speciality" text="Speciality" values_searchable="true">
+            <combo key="healthcare:speciality" text="Speciality" text_context="healthcare" values_searchable="true">
                 <list_entry value="dental_oral_maxillo_facial_surgery" display_value="Oral and maxillofacial surgery" />
                 <list_entry value="endodontics" display_value="Endodontics" />
                 <list_entry value="implantology" display_value="Implantology" />
@@ -5739,7 +5739,7 @@
             <link wiki="Key:healthcare"/>
             <space/>
             <key key="healthcare" value="laboratory"/>
-            <combo key="healthcare:speciality" text="Speciality" values="biology,blood_check,clinical_pathology" display_values="Biology,Blood check,Clinical pathology" values_context="healthcare" />
+            <combo key="healthcare:speciality" text="Speciality" text_context="healthcare" values="biology,blood_check,clinical_pathology" display_values="Biology,Blood check,Clinical pathology" values_context="healthcare" />
             <reference ref="name_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Laboratory -->
@@ -8612,7 +8612,7 @@
             <space/>
             <key key="shop" value="butcher"/>
             <combo text="Speciality" key="butcher" values="beef,horse,lamb,pork,poultry,game" 
-                display_values="Beef,Horse,Lamb,Pork,Poultry,Game" match="key"/>
+                display_values="Beef,Horse,Lamb,Pork,Poultry,Game" match="key" />
             <combo key="diet:halal" text="Halal" values="yes,no,only" display_values="Yes,No,Only" />
             <combo key="diet:kosher" text="Kosher" values="yes,no,only" display_values="Yes,No,Only" />
             <reference ref="name_oh_wheelchair_level"/>
