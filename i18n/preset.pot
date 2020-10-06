@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-10-05 23:14+0200\n"
+"POT-Creation-Date: 2020-10-06 18:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -625,7 +625,7 @@ msgstr ""
 msgid "An office where you can get information about a town or region."
 msgstr ""
 
-#: master_preset.xml:7829(check:text|group:Man_Made|preset:Monitoring_Station|key:display:analog)
+#: master_preset.xml:6268(combo:display_values|group:Facilities|preset:Clock|key:display) master_preset.xml:7829(check:text|group:Man_Made|preset:Monitoring_Station|key:display:analog)
 msgid "Analog"
 msgstr ""
 
@@ -3089,7 +3089,7 @@ msgstr ""
 msgid "Diet"
 msgstr ""
 
-#: master_preset.xml:7830(check:text|group:Man_Made|preset:Monitoring_Station|key:display:digital)
+#: master_preset.xml:6268(combo:display_values|group:Facilities|preset:Clock|key:display) master_preset.xml:7830(check:text|group:Man_Made|preset:Monitoring_Station|key:display:digital)
 msgid "Digital"
 msgstr ""
 
@@ -4329,6 +4329,10 @@ msgstr ""
 msgid "Geography"
 msgstr ""
 
+#: master_preset.xml:4467(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
+msgid "Geology"
+msgstr ""
+
 #: master_preset.xml:1178(multiselect:display_values|key:language) master_preset.xml:532(multiselect:display_values|key:cuisine)
 msgid "Georgian"
 msgstr ""
@@ -4801,7 +4805,7 @@ msgstr ""
 msgid "Historical name"
 msgstr ""
 
-#: master_preset.xml:5152(multiselect:display_values|group:Culture|preset:Museum|key:museum) master_preset.xml:6122(list_entry:display_value|group:Clubs|preset:Club|value:history)
+#: master_preset.xml:4467(combo:display_values|group:Tourism|preset:Information_Board|key:board_type) master_preset.xml:5152(multiselect:display_values|group:Culture|preset:Museum|key:museum) master_preset.xml:6122(list_entry:display_value|group:Clubs|preset:Club|value:history)
 msgid "History"
 msgstr ""
 
@@ -6753,7 +6757,7 @@ msgstr ""
 msgid "Natural"
 msgstr ""
 
-#: master_preset.xml:10090(group:name|group:Nature) master_preset.xml:5152(multiselect:display_values|group:Culture|preset:Museum|key:museum) master_preset.xml:6127(list_entry:display_value|group:Clubs|preset:Club|value:nature)
+#: master_preset.xml:10090(group:name|group:Nature) master_preset.xml:4467(combo:display_values|group:Tourism|preset:Information_Board|key:board_type) master_preset.xml:5152(multiselect:display_values|group:Culture|preset:Museum|key:museum) master_preset.xml:6127(list_entry:display_value|group:Clubs|preset:Club|value:nature)
 msgid "Nature"
 msgstr ""
 
@@ -6927,6 +6931,10 @@ msgstr ""
 
 #: master_preset.xml:6540(text:text|group:Facilities|preset:Excrement_Bags|key:note)
 msgid "Note"
+msgstr ""
+
+#: master_preset.xml:4467(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
+msgid "Notice"
 msgstr ""
 
 #: master_preset.xml:8023(item:name|group:Power_Generator|preset:Nuclear_Reactor)
@@ -7913,7 +7921,7 @@ msgstr ""
 msgid "Plant Nursery"
 msgstr ""
 
-#: master_preset.xml:1104(combo:display_values|key:roof:material)
+#: master_preset.xml:1104(combo:display_values|key:roof:material) master_preset.xml:4467(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 msgid "Plants"
 msgstr ""
 
@@ -9861,7 +9869,7 @@ msgstr ""
 msgid "Spanish"
 msgstr ""
 
-#: master_preset.xml:5651(combo:text|group:Health|preset:Dentist|key:healthcare:speciality) master_preset.xml:8615(combo:text|group:Food|preset:Butcher|key:butcher)
+#: master_preset.xml:8615(combo:text|group:Food|preset:Butcher|key:butcher)
 msgid "Speciality"
 msgstr ""
 
@@ -10219,6 +10227,10 @@ msgstr ""
 
 #: master_preset.xml:11435(item:name|group:Crafts|preset:Sun_protection)
 msgid "Sun protection"
+msgstr ""
+
+#: master_preset.xml:6268(combo:display_values|group:Facilities|preset:Clock|key:display)
+msgid "Sundial"
 msgstr ""
 
 #: master_preset.xml:726(combo:display_values|key:denomination) master_preset.xml:750(combo:display_values|key:denomination)
@@ -11197,6 +11209,10 @@ msgstr ""
 msgid "Unlimited"
 msgstr ""
 
+#: master_preset.xml:6268(combo:display_values|group:Facilities|preset:Clock|key:display)
+msgid "Unorthodox"
+msgstr ""
+
 #: master_preset.xml:68(combo:display_values|key:surface)
 msgid "Unpaved"
 msgstr ""
@@ -11785,7 +11801,7 @@ msgstr ""
 msgid "Wilderness Hut"
 msgstr ""
 
-#: master_preset.xml:6444(multiselect:display_values|group:Facilities|preset:Animal_shelter|key:animal_shelter)
+#: master_preset.xml:4467(combo:display_values|group:Tourism|preset:Information_Board|key:board_type) master_preset.xml:6444(multiselect:display_values|group:Facilities|preset:Animal_shelter|key:animal_shelter)
 msgid "Wildlife"
 msgstr ""
 
@@ -14263,7 +14279,7 @@ msgctxt "healthcare"
 msgid "Shiatsu"
 msgstr ""
 
-#: master_preset.xml:1078(multiselect:text|key:healthcare:speciality) master_preset.xml:5742(combo:text|group:Health|preset:Laboratory|key:healthcare:speciality) master_preset.xml:5750(multiselect:text|group:Health|preset:Alternative_medicine|key:healthcare:speciality)
+#: master_preset.xml:1078(multiselect:text|key:healthcare:speciality) master_preset.xml:5651(combo:text|group:Health|preset:Dentist|key:healthcare:speciality) master_preset.xml:5742(combo:text|group:Health|preset:Laboratory|key:healthcare:speciality) master_preset.xml:5750(multiselect:text|group:Health|preset:Alternative_medicine|key:healthcare:speciality)
 msgctxt "healthcare"
 msgid "Speciality"
 msgstr ""
