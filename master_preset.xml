@@ -4464,7 +4464,7 @@
             <key key="tourism" value="information"/>
             <key key="information" value="board"/>
             <reference ref="optional_name"/>
-            <combo key="board_type" text="Board Content" values="notice,history,nature,wildlife,plants,geology"/>
+            <combo key="board_type" text="Board Content" values="notice,history,nature,wildlife,plants,geology" display_values="Notice,History,Nature,Wildlife,Plants,Geology" />
             <text key="description" text="Detailed description" length="255"/>
         </item> <!-- Information Board -->
         <item name="Guidepost" icon="${ICONPATH}tourist_guidepost.${ICONTYPE}" type="node" preset_name_label="true">
