@@ -822,13 +822,20 @@
             <reference ref="voltage_frequency"/>
         </optional>
     </chunk>
+    <chunk id="power_line_extra2">
+        <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" display_values="Anchor,Pin,Pulley,Suspension" values_context="power" />
+        <combo key="line_management" text="Line management" values="branch,cross,split,straight,termination,transition,transpose" display_values="Branch,Cross,Split,Straight,Termination,Transition,Transpose" values_context="power" />
+    </chunk>
     <chunk id="power_pole">
-        <combo key="pole:type" text="Pole type" values="termination,branch,transposing,crossing,transition" display_values="Termination,Branch,Transposing,Crossing,Transition" text_context="power" values_context="power"/>
         <text key="height" text="Height (meters)" length="7" />
         <reference ref="material"/>
-        <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" display_values="Anchor,Pin,Pulley,Suspension" values_context="power" />
+        <reference ref="power_line_extra2"/>
         <check key="location:transition" text="Location transition" disable_off="true"/>
         <reference ref="ref_operator"/>
+        <optional>
+            <!-- This tag seems to have been "deprecated" even though it is more popular than the newer proposal -->
+            <combo key="pole:type" text="Pole type" values="termination,branch,transposing,crossing,transition" display_values="Termination,Branch,Transposing,Crossing,Transition" text_context="power" values_context="power"/>
+        </optional>
     </chunk>
     <chunk id="rating_phases">
         <combo key="rating" text="Power rating (kVA/MVA)" values="2700 kVA,12500 kVA,15 MVA,50 MVA,100 MVA"/>
@@ -1748,9 +1755,9 @@
         <item name="Cycle Lane/Track" icon="${ICONPATH}bicycle.${ICONTYPE}" type="way,closedway" preset_name_label="true">
             <link wiki="Bicycle"/>
             <space/>
-            <combo key="cycleway" text="Cycleway" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" display_values="Lane,Track,Opposite lane,Opposite track,Opposite,Share busway,Shared lane" match="none"/>
-            <combo key="cycleway:left" text="Cycleway left" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" display_values="Lane,Track,Opposite lane,Opposite track,Opposite,Share busway,Shared lane" match="none"/>
-            <combo key="cycleway:right" text="Cycleway right" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane" display_values="Lane,Track,Opposite lane,Opposite track,Opposite,Share busway,Shared lane" match="none"/>
+            <combo key="cycleway" text="Cycleway" values_context="cycleway" values="lane,track,opposite_lane,opposite_track,opposite,share_busway,shared_lane,separate" display_values="Lane,Track,Opposite lane,Opposite track,Opposite,Share busway,Shared lane,Separate" match="none"/>
+            <combo key="cycleway:left" text="Cycleway left" values_context="cycleway" values="lane,track,share_busway,shared_lane,separate" display_values="Lane,Track,Share busway,Shared lane,Separate" match="none"/>
+            <combo key="cycleway:right" text="Cycleway right" values_context="cycleway" values="lane,track,share_busway,shared_lane,separate" display_values="Lane,Track,Share busway,Shared lane,Separate" match="none"/>
             <combo key="oneway:bicycle" text="Oneway (bicycle)" values="yes,no" display_values="Yes,No"/>
             <space/>
         </item> <!-- Cycle Lane/Track -->
@@ -3974,6 +3981,9 @@
             <key key="aeroway" value="runway"/>
             <optional>
                 <text key="ref" text="Reference"/>
+                <text key="length" text="Length (meters)" />
+                <combo key="width" text="Width (meters)" values="18,23,30,45,60" />
+                <text key="ele" text="Elevation (meters)" length="10" />
                 <reference ref="surface"/>
             </optional>
         </item> <!-- Runway -->
@@ -3982,6 +3992,8 @@
             <key key="aeroway" value="taxiway"/>
             <optional>
                 <text key="ref" text="Reference"/>
+                <text key="width" text="Width (meters)" />
+                <reference ref="surface" />
             </optional>
         </item> <!-- Taxiway -->
         <item name="Holding Position" icon="${ICONPATH}transport_holding_position_11006.${ICONTYPE}" type="node" preset_name_label="true">
@@ -3995,15 +4007,21 @@
             <link wiki="Tag:aeroway=helipad"/>
             <key key="aeroway" value="helipad"/>
             <optional>
-                <text key="ref" text="Reference"/>
+                <reference ref="name_ref" />
                 <text key="iata" text="IATA" />
                 <text key="icao" text="ICAO" />
+                <text key="ele" text="Elevation (meters)" length="10" />
+                <reference ref="surface"/>
                 <reference ref="wikipedia_wikidata"/>
             </optional>
         </item> <!-- Helipad -->
         <item name="Apron" icon="${ICONPATH}transport_apron_11002.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:aeroway=apron"/>
             <key key="aeroway" value="apron"/>
+            <optional>
+                <reference ref="name_ref" />
+                <reference ref="surface"/>
+            </optional>
         </item> <!-- Apron -->
         <item name="Plane Parking Position" icon="${ICONPATH}transport_parking_position_11007.${ICONTYPE}" type="node,way" preset_name_label="true">
             <link wiki="Tag:aeroway=parking_position"/>
@@ -5388,6 +5406,7 @@
             <combo key="community:gender" text="Gender" values="female,male,mixed" display_values="Female,Male,Mixed"/>          
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
+            <preset_link preset_name="Historic monastery" text="Similar but different tags:" alternative="true" />
         </item> <!-- Monastery -->
     </group> <!-- Place of Worship -->
     <group name="Public Building" icon="${ICONPATH}amenity_public_building2.${ICONTYPE}">
@@ -5904,7 +5923,7 @@
             <key key="emergency" value="water_tank"/>
             <reference ref="name_ref_operator"/>
             <space/>
-            <text key="water_tank:volume" text="Volume (in liters)"/>
+            <text key="water_tank:volume" text="Volume (liters)"/>
         </item> <!-- Water Tank -->
         <item name="Suction point" icon="${ICONPATH}emergency_empty.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=suction_point" />
@@ -5937,7 +5956,7 @@
                 values_context="siren" />
             <multiselect key="siren:purpose" text="Purpose" 
                 values="tornado;fire;air_raid;civil_defense" display_values="Tornado;Fire;Air raid;Civil defense" rows="5" values_context="siren" />
-            <text key="siren:range" text="Range (in meters)"/>
+            <text key="siren:range" text="Range (meters)"/>
         </item> <!-- Siren -->
         <item name="Lifeguard" icon="${ICONPATH}emergency_empty.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=lifeguard"/>
@@ -5987,7 +6006,7 @@
             <reference ref="social_facility_for"/>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Retirement Home -->
+        </item> <!-- Ambulatory Care -->
         <item name="Assisted Living" icon="${ICONPATH}amenity_assisted_living_12249.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:social_facility"/>
             <space/>
@@ -5997,14 +6016,14 @@
             <reference ref="name_operator_wheelchair_level"/>
             <text key="capacity" text="Capacity" value_type="integer"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Retirement Home -->
+        </item> <!-- Assisted Living -->
         <item name="Social Centre" icon="${ICONPATH}amenity_social_centre_12352.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:social_facility"/>
             <space/>
             <key key="amenity" value="social_centre"/>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Retirement Home -->
+        </item> <!-- Social Centre -->
         <item name="Food Bank" icon="${ICONPATH}amenity_food_bank_12250.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:social_facility"/>
             <space/>
@@ -6012,7 +6031,7 @@
             <key key="social_facility" value="food_bank"/>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Retirement Home -->
+        </item> <!-- Food Bank -->
         <item name="Retirement Home" icon="${ICONPATH}amenity_retirement_home_12240.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:social_facility"/>
             <space/>
@@ -6367,6 +6386,11 @@
             <key key="leisure" value="bleachers"/>
             <reference ref="material"/>
             <reference ref="colours" />
+            <check key="backrest" text="Backrest" />
+            <optional>
+                <reference ref="name_operator_oh_wheelchair" />
+            </optional>
+            <reference ref="facility_access" />            
         </item> <!-- Bleachers -->
         <item name="Outdoor seating" icon="${ICONPATH}amenity_outdoor_seating.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=outdoor_seating"/>
@@ -6445,8 +6469,10 @@
                 <!-- The following two tags should be multiselects accroding to the wiki, but values outside of yes and no are hardly used -->
                 <check key="animal_shelter:adoption" text="For adoption" disable_off="true"/>
  				<check key="animal_shelter:release" text="For release" disable_off="true"/>
+                <reference ref="oh_wheelchair" />
             </optional>
             <reference ref="link_contact_address"/>
+            <preset_link preset_name="Payment Methods" />
         </item> <!-- Animal shelter -->
         <item name="Animal boarding" icon="${ICONPATH}amenity_animal_boarding_12330.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=animal_boarding"/>
@@ -6457,8 +6483,10 @@
                 <text key="operator" text="Operator"/>
                 <text key="description" text="Description" length="255"/>
                 <multiselect key="animal_boarding" text="Animals" values="dog;cat;horse;fish;amphibian;reptile;bird;mammal" display_values="Dog;Cat;Horse;Fish;Amphibian;Reptile;Bird;Mammal" values_searchable="true" match="key"/>
+                <reference ref="oh_wheelchair" />
             </optional>
             <reference ref="link_contact_address"/>
+            <preset_link preset_name="Payment Methods" />
         </item> <!-- Animal boarding -->
         <item name="Animal breeding" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=animal_breeding"/>
@@ -7218,8 +7246,8 @@
 			<link wiki="Key:building"/>
 			<space/>
 			<combo key="building" text="Building" 
-                values="allotment_house,apartments,bakehouse,barn,basilica,boathouse,bungalow,bunker,cabin,cathedral,chapel,church,college,commercial,construction,cowshed,detached,dormitory,farm,farm_auxiliary,fire_station,garage,garages,gasometer,ger,grandstand,greenhouse,hangar,hospital,hotel,house,houseboat,hut,industrial,kindergarten,manufacture,mosque,office,parking,pavilion,public,residential,retail,roof,ruins,school,semidetached_house,service,shed,stable,stadium,static_caravan,storage_tank,sty,supermarket,synagogue,temple,terrace,toilets,train_station,transformer_tower,transportation,university,warehouse,yes" 
-                display_values="Allotment house,Apartments,Bakehouse,Barn,Basilica,Boathose,Bungalow,Bunker,Cabin,Cathedral,Chapel,Church,College,Commercial,Construction,Cowshed,Detached,Dormitory,Farm,Farm auxiliary,Fire station,Garage,Garages,Gasometer,Ger,Grandstand,Greenhouse,Hangar,Hospital,Hotel,House,Houseboat,Hut,Industrial,Kindergarten,Manufacture,Mosque,Office,Parking,Pavilion,Public,Residential,Retail,Roof,Ruins,School,Semidetached house,Service,Shed,Stable,Stadium,Static caravan,Storage tank,Sty,Supermarket,Synagogue,Temple,Terrace,Toilets,Train station,Transformer tower,Transportation,University,Warehouse,Yes"
+                values="allotment_house,apartments,bakehouse,barn,basilica,boathouse,bungalow,bunker,cabin,cathedral,chapel,church,college,commercial,construction,cowshed,detached,dormitory,farm,farm_auxiliary,fire_station,garage,garages,gasometer,ger,grandstand,greenhouse,hangar,hospital,hotel,house,houseboat,hut,industrial,kindergarten,manufacture,monastery,mosque,office,parking,pavilion,public,residential,retail,roof,ruins,school,semidetached_house,service,shed,stable,stadium,static_caravan,storage_tank,sty,supermarket,synagogue,temple,terrace,toilets,train_station,transformer_tower,transportation,university,warehouse,yes" 
+                display_values="Allotment house,Apartments,Bakehouse,Barn,Basilica,Boathose,Bungalow,Bunker,Cabin,Cathedral,Chapel,Church,College,Commercial,Construction,Cowshed,Detached,Dormitory,Farm,Farm auxiliary,Fire station,Garage,Garages,Gasometer,Ger,Grandstand,Greenhouse,Hangar,Hospital,Hotel,House,Houseboat,Hut,Industrial,Kindergarten,Manufacture,Monastery,Mosque,Office,Parking,Pavilion,Public,Residential,Retail,Roof,Ruins,School,Semidetached house,Service,Shed,Stable,Stadium,Static caravan,Storage tank,Sty,Supermarket,Synagogue,Temple,Terrace,Toilets,Train station,Transformer tower,Transportation,University,Warehouse,Yes"
                 values_context="building" default="yes" match="keyvalue!" values_searchable="true"/>
 			<reference ref="additional_building_tags"/>
 			<preset_link preset_name="Address"/>
@@ -7349,7 +7377,7 @@
 		<item name="Entrance" icon="${ICONPATH}barrier_entrance.${ICONTYPE}" type="node" preset_name_label="true">
 			<link wiki="Key:entrance"/>
 			<space/>
-			<combo key="entrance" text="Entrance" values="yes,main,service,exit,emergency,staircase,home" display_values="Yes,Main,Service,Exit,Emergency,Staircase,Home" values_context="entrance" default="yes" match="key"/>
+			<combo key="entrance" text="Entrance" values="yes,main,service,exit,emergency,staircase,home,garage" display_values="Yes,Main,Service,Exit,Emergency,Staircase,Home,Garage" values_context="entrance" default="yes" match="key"/>
 			<combo key="access" text="Access" values="yes,delivery,private,customers,permissive,no" display_values="Yes,Delivery,Private,Customers,Permissive,No" values_context="access" match="none"/>
 			<optional>
 				<reference ref="wheelchair"/>
@@ -7587,7 +7615,7 @@
             <key key="man_made" value="mineshaft"/>
             <text key="name" text="Name"/>
             <combo key="mineshaft_type" text="Function" values="winding,air"/>
-            <text key="depth" text="Depth in meters"/>
+            <text key="depth" text="Depth (meters)"/>
             <text key="operator" text="Operator"/>
             <reference ref="resource" />
             <check key="headframe" text="Visible Headframe" disable_off="true"/>
@@ -7606,7 +7634,7 @@
             <space/>
             <key key="man_made" value="adit"/>
             <text key="name" text="Name"/>
-            <text key="length" text="Length in meters"/>
+            <text key="length" text="Length (meters)"/>
             <text key="operator" text="Operator"/>
             <reference ref="resource" />
             <check key="disused" text="Disused" disable_off="true"/>
@@ -8230,7 +8258,7 @@
             <space/>
             <key key="power" value="terminal"/>
             <optional>
-                <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" display_values="Anchor,Pin,Pulley,Suspension" values_context="power" />
+                <reference ref="power_line_extra2"/>
                 <text key="ref" text="Reference"/>
                 <text key="operator" text="Operator"/>
             </optional>
@@ -8245,7 +8273,7 @@
             <reference ref="colours" />
             <reference ref="ref_operator"/>
             <combo key="design" text="Portal design" values="portal,portal_two-level,portal_three-level" values_context="power"/>
-            <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" display_values="Anchor,Pin,Pulley,Suspension" values_context="power" />
+            <reference ref="power_line_extra2"/>
         </item> <!-- Power Portal -->
         <item name="Power Tower" icon="${ICONPATH}power_tower_high2.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:power=tower"/>
@@ -8257,10 +8285,11 @@
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="colour" match="none" editable="true"/>
             <reference ref="ref_operator"/>
             <optional>
+                <!-- tower:type and branch:type are "deprecated" -->
                 <combo key="tower:type" text="Tower type" values="termination,branch,transposing,crossing,transition" display_values="Termination,Branch,Transposing,Crossing,Transition" text_context="power" values_context="power"/>
                 <combo key="branch:type" text="Branch tower type" values="tap,split,loop,cross" display_values="Tap,Split,Loop,Cross"  values_context="power"/>
                 <combo key="design" text="Tower design" values="one-level,two-level,donau,three-level,barrel,asymmetric,triangle,flag,donau;one-level,four-level,six-level,nine-level,delta,delta_two-level,y-frame,x-frame,h-frame,guyed_h-frame,portal,portal_two-level,portal_three-level,guyed_v-frame,bipole,monopolar" values_context="power"/>
-                <combo key="line_attachment" text="Line attachment" values="anchor,pin,pulley,suspension" display_values="Anchor,Pin,Pulley,Suspension" values_context="power" />
+                <reference ref="power_line_extra2"/>
                 <check key="triple_tower" text="Triple tower" disable_off="true"/>
                 <check key="design:incomplete" text="Incomplete tower" disable_off="true"/>
                 <check key="location:transition" text="Location transition" disable_off="true"/>
@@ -8451,6 +8480,18 @@
          <check key="ruins" text="Ruins"/>
          <reference ref="link_contact_address_payment"/>
      </item> <!-- Fort -->
+     <item name="Historic monastery" icon="${ICONPATH}tourist_monastery.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=monastery" />
+        <space />
+        <key key="historic" value="monastery" />
+        <optional>
+            <text key="name" text="Name" />
+            <reference ref="religious" />
+            <reference ref="wikipedia_wikidata" />
+            <reference ref="oh_wheelchair" />
+         </optional>
+        <preset_link preset_name="Monastery" text="Similar but different tags:" alternative="true"/>
+     </item> <!-- Historic monastery -->
      <item name="City gate" icon="${ICONPATH}tourist_city_gate_19009.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
          <link wiki="Tag:historic=city_gate"/>
          <space/>
@@ -10045,6 +10086,8 @@
             <key key="natural" value="sinkhole" />
             <combo key="sinkhole" text="Type" values="bluehole,doline,estavelle,pit,ponor" display_values="Bluehole,Doline,Estavelle,Pit,Ponor" />
             <optional>
+                <check key="anthropogenic" text="Caused by human activity" disable_off="true" />
+                <check key="refitted" text="Modified by human hand" disable_off="true" />
                 <reference ref="name_wikipedia" />
             </optional>
         </item> <!-- Sinkhole -->
@@ -10415,6 +10458,7 @@
             <link wiki="Tag:landuse=residential"/>
             <space/>
             <key key="landuse" value="residential" values_context="landuse"/>
+            <combo key="residential" text="Type" values="apartments,rural,urban" display_values="Apartments,Rural,Urban" values_context="landuse" />
             <reference ref="optional_name"/>
         </item> <!-- Residential Area -->
         <item name="Retail" icon="${ICONPATH}landuse_supermarket.${ICONTYPE}" name_context="Landuse" type="closedway,multipolygon" preset_name_label="true">
@@ -10542,10 +10586,12 @@
             <text key="email" text="Email Address" match="key"/>
             <space/>
             <text key="phone" text="Phone number" match="key" value_type="phone"/>
+            <text key="mobile" text="Mobile phone number" match="key" value_type="phone"/>
             <text key="fax" text="Fax Number" match="key" value_type="phone"/>
             <space/>
             <reference ref="wikipedia_wikidata" />
             <text key="image" text="Image"/>
+            <preset_link preset_name="Social Networks" />
             <preset_link preset_name="Contact ('contact:*')" text="Similar tags but different tagging schema:" text_context="Contact" alternative="true" />
         </item> <!-- Contact (Common Schema) -->
         <item name="Contact ('contact:*')" icon="${ICONPATH}osm_contact_sp.${ICONTYPE}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
@@ -10555,14 +10601,37 @@
             <text key="contact:email" text="Email Address" match="key"/>
             <space/>
             <text key="contact:phone" text="Phone number" match="key" value_type="phone"/>
+            <text key="contact:mobile" text="Mobile phone number" match="key" value_type="phone"/>
             <text key="contact:fax" text="Fax Number" match="key" value_type="phone"/>
             <space/>
             <reference ref="wikipedia_wikidata" />
             <text key="image" text="Image"/>
+            <preset_link preset_name="Social Networks" />
             <preset_link preset_name="Contact" text="Similar tags but different tagging schema:" text_context="Contact" alternative="true" />
         </item> <!-- Contact (Schema with 'contact:*' Prefix) -->
-  </group> <!-- Addresses and Contact -->
-  <group name="Annotation" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}">
+        <item name="Social Networks" icon="presets/misc/social_networks.svg" type="node,way,closedway,multipolygon,relation" preset_name_label="true">
+            <link wiki="Key:contact" />
+            <space />
+            <text key="contact:facebook" text="Facebook" match="key" text_context="social_network" />
+            <text key="contact:foursquare" text="Foursquare" match="key" text_context="social_network" />
+            <text key="contact:instagram" text="Instagram" match="key" text_context="social_network" />
+            <text key="contact:linkedin" text="Linkedin" match="key" text_context="social_network" />
+            <text key="contact:ok" text="Ok" match="key" text_context="social_network" />
+            <text key="contact:pinterest" text="Pinterest" match="key" text_context="social_network" />
+            <text key="contact:skype" text="Skype" match="key" text_context="social_network" />
+            <text key="contact:telegram" text="Telegram" match="key" text_context="social_network" />
+            <text key="contact:tripadvisor" text="Tripadvisor" match="key" text_context="social_network" />
+            <text key="contact:twitter" text="Twitter" match="key" text_context="social_network" />
+            <text key="contact:vk" text="Vk" match="key" text_context="social_network" />
+            <text key="contact:whatsapp" text="Whatsapp" match="key" text_context="social_network" />
+            <text key="contact:xing" text="Xing" match="key" text_context="social_network" />
+            <text key="contact:yelp" text="Yelp" match="key" text_context="social_network" />
+            <text key="contact:youtube" text="Youtube" match="key" text_context="social_network" />
+            <preset_link preset_name="Contact" text_context="Contact" />
+            <preset_link preset_name="Contact ('contact:*')" text_context="Contact" />
+        </item> <!-- Social Networks -->
+    </group> <!-- Addresses and Contact -->
+    <group name="Annotation" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}">
         <item name="Description" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:description"/>
             <space/>
@@ -11014,6 +11083,7 @@
             <link wiki="Relation:route" />
             <space/>
             <key key="type" value="route"/>
+            <combo key="route" text="Route type" values="bicycle,mtb,foot,hiking,walking,inline_skates" match="keyvalue!" values_sort="false"/>
         </item> <!-- Generic route -->
         <separator/>
         <item name="Associated Street" icon="${ICONPATH}osm_housenumber_sp.${ICONTYPE}" type="relation" preset_name_label="true">
@@ -11023,7 +11093,7 @@
             <text key="name" text="Street name"/>
             <roles>
                 <role key="street" text="street" requisite="required" type="way,closedway,multipolygon" member_expression="highway"/>
-                <role key="house" text="house" requisite="required" type="node,way,closedway,multipolygon" member_expression="&quot;addr:housenumber&quot; | &quot;addr:interpolation&quot; | &quot;addr:housename&quot;"/>
+                <role key="house" text="house" requisite="required" type="node,way,closedway,multipolygon" member_expression="&quot;addr:housenumber&quot; | &quot;addr:interpolation&quot; | &quot;addr:housename&quot; | nohousenumber=yes"/>
             </roles>
         </item> <!-- Associated Street -->
         <item name="Street" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" type="relation" preset_name_label="true">
