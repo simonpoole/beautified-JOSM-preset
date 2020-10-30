@@ -1326,6 +1326,9 @@
     <combo key="highway" text="Type" values="motorway,motorway_link,trunk,trunk_link,primary,primary_link,secondary,tertiary,unclassified,residential,living_street,service,bus_guideway,construction" 
         display_values="Motorway,Motorway link,Trunk,Trunk link,Primary,Primary link,Secondary,Tertiary,Unclassified,Residential,Living street,Service,Bus guideway,Construction" values_context="Highway" />
   </chunk>
+  <chunk id="fountain_type">
+        <combo key="fountain" text="Fountain type" values="yes,bubbler,nasone,nozzle,splash_pad" display_values="Yes,Bubbler,Nasone,Nozzle,Splash pad" />
+  </chunk>
   <!-- Groups -->
   <group name="Highways" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}">
     <group name="Streets" icon="${ICONPATH}highway_highway_sp.${ICONTYPE}" items_sort="false" >
@@ -6440,6 +6443,8 @@
             <optional>
                 <text key="name" text="Name"/>
                 <text key="description" text="Description" length="255"/>
+                <reference ref="fountain_type" />
+                <check key="bottle" text="Suitable for bottle filling" disable_off="true"/>
                 <reference ref="level"/>
                 <reference ref="facility_access"/>
             </optional>
@@ -7762,6 +7767,7 @@
             <key key="amenity" value="fountain"/>
             <optional>
             	<text key="name" text="Name"/>
+                <reference ref="fountain_type" />
             </optional>
             <check key="drinking_water" text="Drinking Water" match="key"/>
         </item> <!-- Fountain -->
