@@ -4450,6 +4450,7 @@
             <combo key="direction" text="Direction" delimiter="|" values="N|E|S|W|NE|NNE-S|180|90-270|270-90|0-360|70-110;250-290" values_no_i18n="true" values_sort="false" match="none"/>
             <space/>
             <label text="" icon="presets/misc/angles.svg" icon_size="300"/>
+            <preset_link preset_name="Binoculars"/>
         </item> <!-- Viewpoint -->
         <separator/>
         <item name="Information Office" icon="${ICONPATH}tourist_information.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6448,6 +6449,14 @@
             <check key="hide" text="Hide" text_context="hunting stand" disable_off="true"/>
             <check key="lockable" text="Lockable" disable_off="true"/>
         </item> <!-- Hunting Stand -->
+        <item name="Binoculars" icon="${ICONPATH}amenity_binoculars.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Tag:amenity=binoculars"/>
+            <space/>
+            <key key="amenity" value="binoculars"/>            
+            <reference ref="fee" />
+            <combo key="direction" text="Direction" delimiter="|" values="N|E|S|W|NE|NNE-S|180|90-270|270-90|0-360|70-110;250-290" values_no_i18n="true" values_sort="false" match="none"/>
+            <preset_link preset_name="Viewpoint"/>
+        </item> <!-- Binoculars -->
         <separator/>
         <item name="Drinking Water" icon="${ICONPATH}food_drinkingtap.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=drinking_water"/>
