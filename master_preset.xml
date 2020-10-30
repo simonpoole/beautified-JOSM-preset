@@ -6411,6 +6411,15 @@
                 <reference ref="name_operator_oh_wheelchair" />
             </optional>
         </item> <!-- Outdoor seating -->
+        <item name="Lounger" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:amenity=launger"/>
+            <space/>
+            <key key="amenity" value="lounger"/>
+            <multiselect key="seasonal" text="Seasonal" values="yes,no,spring,summer,autumn,winter,dry_season,wet_season" 
+                display_values="Yes,No,Spring,Summer,Autumn,Winter,Dry season,Wet season" values_searchable="true" match="key"/>
+            <reference ref="material"/>
+            <reference ref="colours" />
+        </item> <!-- Lounger -->
         <item name="Shelter" icon="${ICONPATH}accommodation_shelter2.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=shelter"/>
             <space/>
