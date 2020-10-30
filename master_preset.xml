@@ -3062,7 +3062,11 @@
             <link wiki="Tag:amenity=boat_storage"/>
             <space/>
             <key key="amenity" value="boat_storage"/>
-        </item> <!-- Dock -->
+            <optional>
+                <reference ref="name_operator"/>
+                <reference ref="oh"/>
+            </optional>
+        </item> <!-- Boat storage -->
         <item name="Waterway milestone" icon="${ICONPATH}water_milestone_34008.${ICONTYPE}" type="node" preset_name_label="true">
             <link wiki="Tag:waterway=milestone"/>
             <key key="waterway" value="milestone"/>
