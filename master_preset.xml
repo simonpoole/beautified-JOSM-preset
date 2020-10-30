@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets version="1.14.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="advertising,attraction,cemetery,club,disused:amenity,disused:leisure,disused:man_made,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
+    object_keys="advertising,attraction,cemetery,club,disused:amenity,disused:leisure,disused:man_made,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
     Icons have been derived from mainly from
   
@@ -10674,6 +10674,11 @@
         </item> <!-- Fixme -->
         <item name="No name" icon="${ICONPATH}osm_exclamation_mark_sp.${ICONTYPE}" type="node,way,closedway,relation" preset_name_label="true">
             <check key="noname" text="No name" disable_off="true"/>
+        </item>
+        <item name="No exit" icon="${ICONPATH}osm_deadend.${ICONTYPE}" type="node" preset_name_label="true">
+            <link wiki="Key:noexit"/>
+            <space/>
+            <key key="noexit" text="No exit" value="yes"/>
         </item>
         <item name="Add or update check date" icon="${ICONPATH}javascript.${ICONTYPE}" type="node,way,closedway,relation" preset_name_label="true">
             <link wiki="Key:check_date"/>
