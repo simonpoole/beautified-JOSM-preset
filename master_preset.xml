@@ -6416,8 +6416,8 @@
             <link wiki="Tag:amenity=launger"/>
             <space/>
             <key key="amenity" value="lounger"/>
-            <multiselect key="seasonal" text="Seasonal" values="yes,no,spring,summer,autumn,winter,dry_season,wet_season" 
-                display_values="Yes,No,Spring,Summer,Autumn,Winter,Dry season,Wet season" values_searchable="true" match="key"/>
+            <multiselect key="seasonal" text="Seasonal" values="yes;no;spring;summer;autumn;winter;dry_season;wet_season" 
+                display_values="Yes;No;Spring;Summer;Autumn;Winter;Dry season;Wet season" values_searchable="true" match="key" values_context="seasons"/>
             <reference ref="material"/>
             <reference ref="colours" />
         </item> <!-- Lounger -->
