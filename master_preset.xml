@@ -7575,6 +7575,16 @@
             <key key="man_made" value="windmill"/>
             <text key="name" text="Name"/>
         </item> <!-- Windmill -->
+        <item name="Windpump" icon="${ICONPATH}man_made_windpump.${ICONTYPE}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=windpump"/>
+            <space/>
+            <key key="man_made" value="windpump"/>
+            <optional>
+                <reference ref="name_operator"/>
+                <text key="height" text="Height (meters)" length="7"/>
+                <reference ref="material"/>
+            </optional>
+        </item> <!-- Windpump -->
         <item name="Gasometer" icon="${ICONPATH}man_made_gasometer_22024.${ICONTYPE}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=gasometer"/>
             <space/>
