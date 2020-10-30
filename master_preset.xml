@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets version="1.14.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="attraction,public_transport,traffic_calming,traffic_sign,traffic_sign:forward,traffic_sign:backward,playground,advertising,ford,club,traffic_calming,cemetery,indoor,police,disused:amenity,disused:leisure,disused:shop,disused:man_made">
+    object_keys="advertising,attraction,cemetery,club,disused:amenity,disused:leisure,disused:man_made,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
     Icons have been derived from mainly from
   
@@ -516,6 +516,16 @@
          </optional>
          <preset_link preset_name="No name"/>
     </chunk>
+    <chunk id="wikipedia_wikidata">
+        <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
+        <text key="wikidata" text="Wikidata" value_type="wikidata"/>
+    </chunk>
+    <chunk id="name_wikipedia">
+        <text key="name" text="Name"/>
+        <reference ref="wikipedia_wikidata"/>
+        <preset_link preset_name="Name"/>
+        <preset_link preset_name="No name"/>
+    </chunk>
     <chunk id="optional_name_wikipedia">
         <optional>
             <text key="name" text="Name"/>
@@ -674,16 +684,6 @@
     </chunk>
     <chunk id="general_access">
         <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Customers,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" values_searchable="true" match="none"/>
-    </chunk>
-    <chunk id="wikipedia_wikidata">
-        <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
-        <text key="wikidata" text="Wikidata" value_type="wikidata"/>
-    </chunk>
-    <chunk id="name_wikipedia">
-        <text key="name" text="Name"/>
-        <reference ref="wikipedia_wikidata"/>
-        <preset_link preset_name="Name"/>
-        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="population_postcode_website">
         <text key="population" text="Population"/>
@@ -3486,7 +3486,7 @@
             <combo key="authentication:membership_card" text="Membership card" values="yes"/>
             <preset_link preset_name="Payment Methods"/>
         </item> <!-- Charging Station -->
-        <item name="Wash" icon="${ICONPATH}amenity_car_wash_12018.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Car Wash" icon="${ICONPATH}amenity_car_wash_12018.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=car_wash"/>
             <space/>
             <key key="amenity" value="car_wash"/>
@@ -3498,7 +3498,7 @@
                 </checkgroup>
             </optional>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Wash -->
+        </item> <!-- Car Wash -->
         <separator/>
         <item name="Car Dealer" icon="${ICONPATH}shopping_car.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=car"/>
