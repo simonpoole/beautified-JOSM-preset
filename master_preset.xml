@@ -11132,7 +11132,7 @@
             <link wiki="Relation:route" />
             <space/>
             <key key="type" value="route"/>
-            <combo key="route" text="Route type" values="bicycle,mtb,foot,hiking,walking,inline_skates" match="keyvalue!" values_sort="false"/>
+            <combo key="route" text="Route type" values="bicycle,mtb,foot,hiking,walking,inline_skates,road" display_values="Bicycle,MTB,Foot,Hiking,Walking,Inline skates,Road" match="keyvalue!" values_sort="false"/>
         </item> <!-- Generic route -->
         <separator/>
         <item name="Associated Street" icon="${ICONPATH}osm_housenumber_sp.${ICONTYPE}" type="relation" preset_name_label="true">
