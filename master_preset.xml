@@ -10428,10 +10428,13 @@
                 <reference ref="genus_species_taxon" />
             </optional>
         </item> <!-- Flowerbed -->
-        <item name="Garden" icon="${ICONPATH}landuse_garden_21010.${ICONTYPE}" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Garden" icon="${ICONPATH}landuse_garden_21010.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=garden"/>
             <space/>
             <key key="leisure" value="garden"/>
+            <combo key="garden:type" text="Type" values="arboretum,botanical,community,residential,roof_garden,show_garden" display_values="Arboretum,Botanical,Community,Residential,Roof garden,Show garden" values_context="garden" match="key"/>
+            <combo key="garden:style" text="Style" values="chinese,cottage_garden,english,flower_garden,french,herb_garden,japanese,kitchen,medical_garden,monastery,rosarium,walled_garden,zen" 
+                display_values="Chinese,Cottage garden,English,Flower garden,French,Herb garden,Japanese,Kitchen,Medical garden,Monastery,Rosarium,Walled garden,Zen" values_context="garden" match="key"/>
             <optional>
             	<text key="name" text="Name"/>
             </optional>
