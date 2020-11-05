@@ -3933,7 +3933,7 @@
                 <text key="name" text="Name"/>
             </optional>
         </item> <!-- Tram Stop -->
-        <item name="Railway Platform" icon="presets/platform_rail.png" type="way,closedway,multipolygon" preset_name_label="true">
+        <item name="Railway Platform" icon="${ICONPATH}transport_platform_train.${ICONTYPE}" type="way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:railway=platform"/>
             <space/>
             <key key="railway" value="platform"/>
@@ -3959,7 +3959,7 @@
                 <reference ref="tactile_paving"/>
             </optional>
         </item> <!-- Bus Stop -->
-        <item name="Bus Platform" icon="${ICONPATH}transport_platform_32003.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
+        <item name="Bus Platform" icon="${ICONPATH}transport_platform_bus.${ICONTYPE}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:highway=platform"/>
             <space/>
             <key key="highway" value="platform"/>
@@ -5494,7 +5494,7 @@
             </optional>
             <reference ref="link_contact_address" />
         </item> <!-- Non-public police facility -->
-        <item name="Ranger Station" icon="${ICONPATH}amenity_empty.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Ranger Station" icon="${ICONPATH}amenity_ranger_station.${ICONTYPE}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=ranger_station"/>
             <space/>
             <key key="amenity" value="ranger_station"/>
@@ -10747,7 +10747,7 @@
                 <list_entry value="street" display_value="Street"/>
             </combo>
         </item> <!-- Relations -->
-        <item name="Multipolygon" icon="presets/multipolygon.png" type="relation,multipolygon" preset_name_label="true">
+        <item name="Multipolygon" icon="${ICONPATH}osm_multipolygon.${ICONTYPE}" type="relation,multipolygon" preset_name_label="true">
             <link wiki="Relation:multipolygon"/>
             <key key="type" value="multipolygon"/>
             <optional>
