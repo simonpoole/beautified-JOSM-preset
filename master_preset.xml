@@ -5635,6 +5635,14 @@
             <combo key="operator:type" text="Operator type" values="public,private" display_values="Public,Private"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Music School -->
+        <item name="Dancing school" icon="${education_dancing}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=dancing_school"/>
+            <space/>
+            <key key="amenity" value="dancing_school"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Dancing school -->
         <item name="Tutoring school" icon="${education_funnel}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=prep_school"/>
             <space/>
