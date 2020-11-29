@@ -2651,7 +2651,7 @@
     <item name="Street area" icon="${highway_area}" type="closedway,multipolygon" preset_name_label="true">
         <link wiki="Key:area:highway"/>
         <combo key="area:highway" text="Street type" match="key" values_context="Highway"
-            values="bus_stop,crossing,cycleway,footway,junction,living_street,motorway,motorway_link,,parking_space,parking_lane,pedestrian,primary,primary_link,residential,secondary,secondary_link,service,steps,tertiary,tertiary_link,traffic_island,trunk,trunk_link,unclassified,yes"      
+            values="bus_stop,crossing,cycleway,footway,junction,living_street,motorway,motorway_link,parking_space,parking_lane,pedestrian,primary,primary_link,residential,secondary,secondary_link,service,steps,tertiary,tertiary_link,traffic_island,trunk,trunk_link,unclassified,yes"      
             display_values="Bus stop,Crossing,Cycleway,Footway,Junction,Living street,Motorway,Motorway link,Parking space,Parking lane,Pedestrian,Primary,Primary link,Residential,Secondary,Secondary link,Service,Steps,Tertiary,Tertiary link,Traffic island,Trunk,Trunk link,Unclassified,Yes"/>      
         <reference ref="surface" />
         <reference ref="road_access_restrictions" />
