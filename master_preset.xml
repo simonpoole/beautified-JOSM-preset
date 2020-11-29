@@ -205,7 +205,7 @@
         <reference ref="placement"/>
         <checkgroup text="Additional attributes" columns="4">
             <check key="oneway" text="Oneway" default="on"/>
-            <check key="motorroad" text="Motorroad" default="on"/>
+            <check key="motorroad" text="Motorroad" disable_off="true"/>
             <check key="bridge" text="Bridge" disable_off="true"/>
             <check key="tunnel" text="Tunnel" disable_off="true"/>
             <check key="cutting" text="Cutting" disable_off="true"/>
