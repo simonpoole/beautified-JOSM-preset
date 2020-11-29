@@ -1,7 +1,9 @@
 # 
 # Translators:
+# Antonin Curtit, 2020
 # Jérôme C, 2018-2019
 # Julien Lepiller <transifex@lepiller.eu>, 2018-2019
+# Lucas <lucaslechat@outlook.com>, 2020
 # Roue Libre, 2020
 # Simon Poole <sp8962@gmail.com>, 2017
 # Cybereric, 2017
@@ -10,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2020-11-13 10:56+0100\n"
-"PO-Revision-Date: 2020-11-14 08:01+0000\n"
-"Last-Translator: Jérôme C\n"
+"PO-Revision-Date: 2020-11-27 20:51+0000\n"
+"Last-Translator: Antonin Curtit\n"
 "Language-Team: French (http://www.transifex.com/openstreetmap/presets/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -55,7 +57,7 @@ msgstr "*****"
 
 #: master_preset.xml:15(combo:display_values|key:incline)
 msgid "-10%"
-msgstr "-10%"
+msgstr "-10 %"
 
 #: master_preset.xml:15(combo:display_values|key:incline)
 msgid "-10°"
@@ -92,11 +94,11 @@ msgstr "1 table"
 
 #: master_preset.xml:673(combo:display_values|key:maxstay)
 msgid "1.5 hours"
-msgstr ""
+msgstr "1 heure 30"
 
 #: master_preset.xml:673(combo:display_values|key:maxstay)
 msgid "1.5 years"
-msgstr ""
+msgstr "1 an et demi"
 
 #: master_preset.xml:3434(check:text|group:Car|preset:Fuel|key:fuel:1_25)
 msgid "1/25 mix (mofa/moped)"
@@ -116,7 +118,7 @@ msgstr "10°"
 
 #: master_preset.xml:673(combo:display_values|key:maxstay)
 msgid "180 minutes"
-msgstr ""
+msgstr "180 minutes"
 
 #: master_preset.xml:255(combo:display_values|key:direction)
 msgid "180°"
@@ -136,7 +138,7 @@ msgstr "2 tables"
 
 #: master_preset.xml:673(combo:display_values|key:maxstay)
 msgid "2 weeks"
-msgstr ""
+msgstr "2 semaines"
 
 #: master_preset.xml:255(combo:display_values|key:direction)
 msgid "270°"
@@ -152,7 +154,7 @@ msgstr "3 — Mélange entre solide et mou"
 
 #: master_preset.xml:673(combo:display_values|key:maxstay)
 msgid "3 days"
-msgstr ""
+msgstr "3 jours"
 
 #: master_preset.xml:312(list_entry:short_description|value:3)
 msgid "3 tables"
@@ -160,7 +162,7 @@ msgstr "3 tables"
 
 #: master_preset.xml:673(combo:display_values|key:maxstay)
 msgid "30 minutes"
-msgstr ""
+msgstr "30 minutes"
 
 #: master_preset.xml:53(list_entry:short_description|value:3)
 msgid "3: Slippery surface, large obstacles, tight hairpins"
@@ -176,7 +178,7 @@ msgstr "4 — Plutôt mou"
 
 #: master_preset.xml:673(combo:display_values|key:maxstay)
 msgid "4 months"
-msgstr ""
+msgstr "4 mois"
 
 #: master_preset.xml:313(list_entry:short_description|value:4)
 msgid "4 tables"
@@ -200,7 +202,7 @@ msgstr "5 : Difficulté maximale, champs de blocs, glissements de terrain"
 
 #: master_preset.xml:673(combo:display_values|key:maxstay)
 msgid "60 minutes"
-msgstr ""
+msgstr "60 minutes"
 
 #: master_preset.xml:56(list_entry:short_description|value:6)
 msgid "6: Not rideable"
@@ -245,7 +247,7 @@ msgstr "Une zone basse entre des collines."
 
 #: master_preset.xml:4565(label:text|group:Tourism|preset:Route_marker)
 msgid "A marker along a route."
-msgstr ""
+msgstr "Un marqueur le long d'une route."
 
 #: master_preset.xml:10106(label:text|group:Geography|preset:Ridge)
 msgid "A mountain or hill ridge."
@@ -326,7 +328,7 @@ msgstr "Victimes d'abus sexuels ou de viol"
 
 #: master_preset.xml:6318(checkgroup:text|group:Facilities|preset:Bottle_return)
 msgid "Accepted bottles"
-msgstr ""
+msgstr "Bouteilles acceptées"
 
 #: master_preset.xml:1286(checkgroup:text)
 msgid "Accepted material"
@@ -334,7 +336,7 @@ msgstr "Matériaux acceptés"
 
 #: master_preset.xml:1312(multiselect:text|key:waste)
 msgid "Accepted waste"
-msgstr ""
+msgstr "Déchets acceptés"
 
 #: master_preset.xml:647(combo:text|key:access)
 msgid "Access"
@@ -533,7 +535,7 @@ msgstr "Alcool"
 
 #: master_preset.xml:9806(check:text|preset:Payment_Methods|key:payment:alipay)
 msgid "Alipay"
-msgstr ""
+msgstr "Alipay"
 
 #: master_preset.xml:10624(combo:display_values|group:Addresses_and_Contact|preset:Address_Interpolation|key:addr:interpolation)
 #: master_preset.xml:1972(combo:display_values|group:Waypoints|preset:Stop|key:stop)
@@ -694,7 +696,7 @@ msgstr "Élevage"
 
 #: master_preset.xml:9711(list_entry:short_description|preset:Vending_Machine|value:animal_feed)
 msgid "Animal feed"
-msgstr ""
+msgstr "Nourriture pour animaux"
 
 #: master_preset.xml:6531(item:name|group:Facilities|preset:Animal_feeding_place)
 msgid "Animal feeding place"
@@ -750,7 +752,7 @@ msgstr "Habitations"
 
 #: master_preset.xml:9807(check:text|preset:Payment_Methods|key:payment:apple_pay)
 msgid "Apple Pay"
-msgstr ""
+msgstr "Apple Pay"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Apple trees"
@@ -762,7 +764,7 @@ msgstr "Balisage lumineux d'approche"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Apricot trees"
-msgstr ""
+msgstr "Abricotiers"
 
 #: master_preset.xml:4025(item:name|group:Airport|preset:Apron)
 msgid "Apron"
@@ -910,12 +912,12 @@ msgstr "Association"
 
 #: master_preset.xml:7961(list_entry:short_description|group:Man_Made|preset:Observatory|value:astronomical)
 msgid "Astronomical"
-msgstr ""
+msgstr "Astronomique"
 
 #: master_preset.xml:4494(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 #: master_preset.xml:6131(list_entry:display_value|group:Clubs|preset:Club|value:astronomy)
 msgid "Astronomy"
-msgstr ""
+msgstr "Astronomie"
 
 #: master_preset.xml:4437(item:name|group:Tourism|preset:Attraction)
 msgid "Attraction"
@@ -980,7 +982,7 @@ msgstr "Génération automatique de check_date"
 
 #: master_preset.xml:7440(check:text|preset:Loading_dock|key:automatic_door)
 msgid "Automatic door"
-msgstr ""
+msgstr "Porte automatique"
 
 #: master_preset.xml:6132(list_entry:display_value|group:Clubs|preset:Club|value:automobile)
 #: master_preset.xml:6189(item:name|group:Clubs|preset:Automobile)
@@ -1011,7 +1013,7 @@ msgstr "Aviation"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Avocado trees"
-msgstr ""
+msgstr "Avocatiers"
 
 #: master_preset.xml:6409(combo:display_values|group:Facilities|preset:Outdoor_seating|key:weather_protection)
 msgid "Awning"
@@ -1404,7 +1406,7 @@ msgstr "Corbeille"
 
 #: master_preset.xml:6452(item:name|group:Facilities|preset:Binoculars)
 msgid "Binoculars"
-msgstr ""
+msgstr "Jumelles"
 
 #: master_preset.xml:2966(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:biodiesel)
 #: master_preset.xml:3418(check:text|group:Car|preset:Fuel|key:fuel:biodiesel)
@@ -1687,7 +1689,7 @@ msgstr "Brésilienne"
 
 #: master_preset.xml:9713(list_entry:short_description|preset:Vending_Machine|value:bread)
 msgid "Bread"
-msgstr ""
+msgstr "Pain"
 
 #: master_preset.xml:2771(item:name|group:Water|preset:Breakwater)
 msgid "Breakwater"
@@ -1976,7 +1978,7 @@ msgstr "Télévision par câble"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Cacao trees"
-msgstr ""
+msgstr "Cacaoyers"
 
 #: master_preset.xml:11775(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Cadaster"
@@ -2043,7 +2045,7 @@ msgstr ""
 
 #: master_preset.xml:8849(item:name|group:Food|preset:Cannabis)
 msgid "Cannabis"
-msgstr ""
+msgstr "Cannabis"
 
 #: master_preset.xml:8494(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:cannon)
 msgid "Cannon"
@@ -2094,7 +2096,7 @@ msgstr "Capacité (totale)"
 
 #: master_preset.xml:2143(text:text|preset:Elevator|key:capacity:persons)
 msgid "Capacity (persons)"
-msgstr ""
+msgstr "Capacité (personnes)"
 
 #: master_preset.xml:2907(item:name|group:Water|preset:Cape)
 msgid "Cape"
@@ -2334,7 +2336,7 @@ msgstr "Pharmacie"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Cherimoya trees"
-msgstr ""
+msgstr "Chérimoliers"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Cherry trees"
@@ -2342,7 +2344,7 @@ msgstr "Cerisiers"
 
 #: master_preset.xml:7022(item:name|group:Sport|preset:Chess)
 msgid "Chess"
-msgstr ""
+msgstr "Échecs"
 
 #: master_preset.xml:7030(check:text|group:Sport|preset:Chess|key:playground)
 msgid "Chess table"
@@ -2350,7 +2352,7 @@ msgstr "Échiquier"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Chestnut trees"
-msgstr ""
+msgstr "Châtaigniers"
 
 #: master_preset.xml:9715(list_entry:short_description|preset:Vending_Machine|value:chewing_gums)
 msgid "Chewing gums"
@@ -2444,7 +2446,7 @@ msgstr ""
 
 #: master_preset.xml:10187(text:text|group:Nature|preset:Tree|key:circumference)
 msgid "Circumference (meters)"
-msgstr ""
+msgstr "Circonférence (mètres)"
 
 #: master_preset.xml:5233(list_entry:display_value|group:Culture|preset:Other_theatres|value:circus)
 msgid "Circus"
@@ -3044,7 +3046,7 @@ msgstr ""
 
 #: master_preset.xml:1016(text:text|key:cash_withdrawal:currency)
 msgid "Currency"
-msgstr ""
+msgstr "Devise"
 
 #: master_preset.xml:10100(combo:text|group:Geography|preset:Volcano|key:volcano:status)
 msgid "Current Status"
@@ -3136,11 +3138,11 @@ msgstr "Danois"
 
 #: master_preset.xml:8450(item:name|group:Telecom|preset:Data_center)
 msgid "Data center"
-msgstr ""
+msgstr "Centre de données"
 
 #: master_preset.xml:11775(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Data protection"
-msgstr ""
+msgstr "Protection des données"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Date palms"
@@ -3246,7 +3248,7 @@ msgstr "Grand magasin"
 
 #: master_preset.xml:7661(text:text|group:Man_Made|preset:Mineshaft|key:depth)
 msgid "Depth (meters)"
-msgstr ""
+msgstr "Profondeur (mètres)"
 
 #: master_preset.xml:3240(item:name|group:Railway|preset:Derail)
 msgid "Derail"
@@ -3357,7 +3359,7 @@ msgstr "Diamètre (en mm)"
 
 #: master_preset.xml:7971(text:text|group:Man_Made|preset:Telescope|key:telescope:diameter)
 msgid "Diameter in meters"
-msgstr ""
+msgstr "Diamètre en mètres"
 
 #: master_preset.xml:306(combo:text|key:diaper)
 msgid "Diaper changing (deprecated)"
@@ -3630,7 +3632,7 @@ msgstr "Eau potable"
 
 #: master_preset.xml:4267(check:text|group:Accommodation|preset:Camp_pitch|key:drinking_water)
 msgid "Drinking water"
-msgstr ""
+msgstr "Eau potable"
 
 #: master_preset.xml:9718(list_entry:short_description|preset:Vending_Machine|value:drinks)
 msgid "Drinks"
@@ -3689,7 +3691,7 @@ msgstr "Valve Dunlop"
 
 #: master_preset.xml:2937(combo:text|group:Shipping|preset:Ferry_Route|key:duration)
 msgid "Duration (M, MM, HH:MM, or HH:MM:SS)"
-msgstr ""
+msgstr "Durée (M, MM, HH:MM, or HH:MM:SS)"
 
 #: master_preset.xml:1185(multiselect:display_values|key:language)
 msgid "Dutch"
@@ -3705,7 +3707,7 @@ msgstr "E"
 
 #: master_preset.xml:2272(check:text|group:Barriers|preset:Toll_Booth|key:payment:e_zpass)
 msgid "E-ZPass"
-msgstr ""
+msgstr "E-ZPass"
 
 #: master_preset.xml:2976(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:e10)
 #: master_preset.xml:3428(check:text|group:Car|preset:Fuel|key:fuel:e10)
@@ -3736,7 +3738,7 @@ msgstr "Bureau de l'établissement d'enseignement"
 
 #: master_preset.xml:9719(list_entry:short_description|preset:Vending_Machine|value:eggs)
 msgid "Eggs"
-msgstr ""
+msgstr "Œufs"
 
 #: master_preset.xml:939(list_entry:display_value|value:senior)
 msgid "Elderly"
@@ -3802,7 +3804,7 @@ msgstr "Altitude"
 #: master_preset.xml:4571(text:text|group:Tourism|preset:Route_marker|key:ele)
 #: master_preset.xml:7910(text:text|group:Man_Made|preset:Survey_Point|key:ele)
 msgid "Elevation (meters)"
-msgstr ""
+msgstr "Altitude (mètres)"
 
 #: master_preset.xml:2140(item:name|preset:Elevator)
 #: master_preset.xml:7473(combo:display_values|group:Indoor_elements|preset:Room|key:room)
@@ -3883,7 +3885,7 @@ msgstr ""
 
 #: master_preset.xml:11821(item:name|group:Offices|preset:Energy_supplier)
 msgid "Energy supplier"
-msgstr ""
+msgstr "Fournisseur d'énergie"
 
 #: master_preset.xml:10746(list_entry:display_value|group:Relations|preset:Relations|value:enforcement)
 #: master_preset.xml:10874(item:name|preset:Enforcement)
@@ -3922,11 +3924,11 @@ msgstr "Largeur de l'entrée en cm"
 
 #: master_preset.xml:11775(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Environment"
-msgstr ""
+msgstr "Environnement"
 
 #: master_preset.xml:6142(list_entry:display_value|group:Clubs|preset:Club|value:environment_protection)
 msgid "Environment protection"
-msgstr ""
+msgstr "Protection de l'environnement"
 
 #: master_preset.xml:6914(item:name|group:Sport|preset:Equestrian)
 msgid "Equestrian"
@@ -3963,7 +3965,7 @@ msgstr "Agent immobilier"
 
 #: master_preset.xml:10131(combo:display_values|group:Geography|preset:Sinkhole|key:sinkhole)
 msgid "Estavelle"
-msgstr ""
+msgstr "Estavelle"
 
 #: master_preset.xml:1185(multiselect:display_values|key:language)
 msgid "Estonian"
@@ -4030,7 +4032,7 @@ msgstr "Sacs pour excréments"
 
 #: master_preset.xml:1316(list_entry:short_description|value:excrements)
 msgid "Excrements"
-msgstr ""
+msgstr "Excréments"
 
 #: master_preset.xml:4248(combo:display_values|group:Accommodation|preset:Campsite|key:sanitary_dump_station)
 msgid "Exists"
@@ -4540,7 +4542,7 @@ msgstr "Surgelés"
 
 #: master_preset.xml:542(multiselect:display_values|key:cuisine)
 msgid "Frozen yogurt"
-msgstr ""
+msgstr "Yaourt glacé"
 
 #: master_preset.xml:4425(combo:text|group:Food+Drinks|preset:Diet|key:diet:fruitarian)
 msgid "Fruitarian"
@@ -4585,7 +4587,7 @@ msgstr "Funiculaire"
 
 #: master_preset.xml:551(list_entry:short_description|value:fur)
 msgid "Fur"
-msgstr ""
+msgstr "Fourrure"
 
 #: master_preset.xml:9159(item:name|group:Home_furnishing_and_decoration|preset:Furnace_(deprecated))
 msgid "Furnace (deprecated)"
@@ -4656,7 +4658,7 @@ msgstr ""
 
 #: master_preset.xml:7970(combo:display_values|group:Man_Made|preset:Telescope|key:telescope:type)
 msgid "Gamma ray"
-msgstr ""
+msgstr "Rayon gamma"
 
 #: master_preset.xml:7637(combo:display_values|group:Man_Made|preset:Crane|key:crane:type)
 msgid "Gantry crane"
@@ -4876,7 +4878,7 @@ msgstr ""
 
 #: master_preset.xml:9809(check:text|preset:Payment_Methods|key:payment:google_pay)
 msgid "Google Pay"
-msgstr ""
+msgstr "Google Pay"
 
 #: master_preset.xml:4655(list_entry:display_value|group:Leisure|preset:Animals|value:goose)
 msgid "Goose"
@@ -5425,7 +5427,7 @@ msgstr "Articles ménagers"
 
 #: master_preset.xml:9811(check:text|preset:Payment_Methods|key:payment:huaweipay)
 msgid "Huawei Pay"
-msgstr ""
+msgstr "Huawei Pay"
 
 #: master_preset.xml:2009(combo:display_values|group:Traffic_Calming|preset:Traffic_Calming|key:traffic_calming)
 #: master_preset.xml:2016(item:name|group:Traffic_Calming|preset:Hump)
@@ -5521,7 +5523,7 @@ msgstr "Crème glacée"
 
 #: master_preset.xml:9727(list_entry:short_description|preset:Vending_Machine|value:ice_cubes)
 msgid "Ice cubes"
-msgstr ""
+msgstr "Glaçons"
 
 #: master_preset.xml:6675(item:name|group:Sport_Facilities|preset:Ice_rink)
 #: master_preset.xml:6946(combo:display_values|group:Sport|preset:Skating_(deprecated)|key:leisure)
@@ -6248,7 +6250,7 @@ msgstr "Classes de permis"
 
 #: master_preset.xml:2273(check:text|group:Barriers|preset:Toll_Booth|key:payment:license_plate)
 msgid "License plate"
-msgstr ""
+msgstr "Plaque d'immatriculation"
 
 #: master_preset.xml:5987(item:name|group:Emergency|preset:Life_ring)
 msgid "Life ring"
@@ -6321,7 +6323,7 @@ msgstr "Type de line"
 
 #: master_preset.xml:6152(list_entry:display_value|group:Clubs|preset:Club|value:linux)
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: master_preset.xml:4665(list_entry:display_value|group:Leisure|preset:Animals|value:lion)
 msgid "Lion"
@@ -6546,7 +6548,7 @@ msgstr "Mandrill"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Mango trees"
-msgstr ""
+msgstr "Manguiers"
 
 #: master_preset.xml:2864(list_entry:short_description|group:Water|preset:Wetland|value:mangrove)
 msgid "Mangrove"
@@ -6611,7 +6613,7 @@ msgstr "Maritime"
 
 #: master_preset.xml:7740(item:name|group:Man_Made|preset:Marker)
 msgid "Marker"
-msgstr ""
+msgstr "Marqueur"
 
 #: master_preset.xml:4669(list_entry:display_value|group:Leisure|preset:Animals|value:marmot)
 msgid "Marmot"
@@ -6706,7 +6708,7 @@ msgstr "Hauteur max."
 
 #: master_preset.xml:7439(text:text|preset:Loading_dock|key:maxheight)
 msgid "Max. height (Meters)"
-msgstr ""
+msgstr "Hauteur max. (mètres)"
 
 #: master_preset.xml:103(text:text|key:maxheight)
 #: master_preset.xml:2254(text:text|group:Barriers|preset:Height_restrictor|key:maxheight)
@@ -6769,7 +6771,7 @@ msgstr "Poids maximum (en mètres, seulement si enforcement=maxweight)"
 
 #: master_preset.xml:7437(text:text|preset:Loading_dock|key:maxwidth)
 msgid "Max. width (Meters)"
-msgstr ""
+msgstr "Largeur max. (mètres)"
 
 #: master_preset.xml:2619(text:text|group:Access_Restrictions|preset:Physical_restrictions|key:maxwidth)
 #: master_preset.xml:615(text:text|key:maxwidth)
@@ -6943,7 +6945,7 @@ msgstr "Micro-brasserie"
 
 #: master_preset.xml:1272(check:text|key:communication:microwave)
 msgid "Microwave"
-msgstr ""
+msgstr "Micro-ondes"
 
 #: master_preset.xml:5756(list_entry:short_description|group:Health|preset:Other_healthcare_professionals|value:midwife)
 msgid "Midwife"
@@ -7031,7 +7033,7 @@ msgstr "Ministère"
 
 #: master_preset.xml:1972(combo:display_values|group:Waypoints|preset:Stop|key:stop)
 msgid "Minor"
-msgstr ""
+msgstr "Mineur"
 
 #: master_preset.xml:1491(item:name|group:Streets|preset:Minor_road)
 msgid "Minor road"
@@ -7342,7 +7344,7 @@ msgstr "Multi-polygone"
 
 #: master_preset.xml:5180(combo:display_values|group:Culture|preset:Museum|key:museum_type)
 msgid "Municipal"
-msgstr ""
+msgstr "Municipal"
 
 #: master_preset.xml:9977(item:name|group:Places|preset:Municipality)
 msgid "Municipality"
@@ -7833,7 +7835,7 @@ msgstr "Aucun accès"
 #: master_preset.xml:10719(item:name|group:Annotation|preset:No_exit)
 #: master_preset.xml:10722(key:text|group:Annotation|preset:No_exit|key:noexit)
 msgid "No exit"
-msgstr ""
+msgstr "Sans issue"
 
 #: master_preset.xml:168(check:text|key:noexit)
 msgid "No exit (cul-de-sac)"
@@ -7851,7 +7853,7 @@ msgstr "Pas de nom"
 
 #: master_preset.xml:223(check:text|key:noref)
 msgid "No reference"
-msgstr ""
+msgstr "Pas de référence"
 
 #: master_preset.xml:10814(combo:display_values|group:Turn_Restrictions|preset:Turn_Restriction|key:restriction)
 #: master_preset.xml:10826(item:name|group:Turn_Restrictions|preset:No_right_turn)
@@ -8456,7 +8458,7 @@ msgstr "Orphelins"
 
 #: master_preset.xml:5683(list_entry:display_value|group:Health|preset:Dentist|value:orthodontics)
 msgid "Orthodontics"
-msgstr ""
+msgstr "Orthodontie"
 
 #: master_preset.xml:5691(item:name|group:Health|preset:Orthodontist)
 msgid "Orthodontist"
@@ -8499,7 +8501,7 @@ msgstr "Autre établissement de soins"
 
 #: master_preset.xml:5751(item:name|group:Health|preset:Other_healthcare_professionals)
 msgid "Other healthcare professionals"
-msgstr ""
+msgstr "Autres professionnels de santé"
 
 #: master_preset.xml:2630(item:name|group:Access_Restrictions|preset:Other_mode_restrictions)
 msgid "Other mode restrictions"
@@ -8770,7 +8772,7 @@ msgstr "Prêteur sur gage"
 
 #: master_preset.xml:2269(checkgroup:text|group:Barriers|preset:Toll_Booth)
 msgid "Payment"
-msgstr ""
+msgstr "Paiement"
 
 #: master_preset.xml:9749(item:name|preset:Payment_Methods)
 msgid "Payment Methods"
@@ -8798,7 +8800,7 @@ msgstr "Sommet"
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Pear trees"
-msgstr ""
+msgstr "Poiriers"
 
 #: master_preset.xml:2892(combo:display_values|group:Water|preset:Beach|key:surface)
 msgid "Pebblestone"
@@ -8968,7 +8970,7 @@ msgstr "Laboratoire photographique"
 
 #: master_preset.xml:6157(list_entry:display_value|group:Clubs|preset:Club|value:photography)
 msgid "Photography"
-msgstr ""
+msgstr "Photographie"
 
 #: master_preset.xml:2613(item:name|group:Access_Restrictions|preset:Physical_restrictions)
 msgid "Physical restrictions"
@@ -8992,7 +8994,7 @@ msgstr "Table de pique-nic"
 
 #: master_preset.xml:7029(check:text|group:Sport|preset:Chess|key:leisure)
 msgid "Picnic table"
-msgstr ""
+msgstr "Table de pique-nic"
 
 #: master_preset.xml:3024(item:name|group:Shipping|preset:Pier)
 msgid "Pier"
@@ -9038,7 +9040,7 @@ msgstr ""
 
 #: master_preset.xml:10378(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Pistachio trees"
-msgstr ""
+msgstr "Pistachiers"
 
 #: master_preset.xml:10990(item:name|group:Routes|preset:Piste_Route)
 msgid "Piste Route"
@@ -9669,7 +9671,7 @@ msgstr "Marionnettes"
 #: master_preset.xml:1017(check:text|key:cash_withdrawal:purchse_required)
 #: master_preset.xml:1018(combo:display_values|key:cash_withdrawal:fee)
 msgid "Purchase required"
-msgstr ""
+msgstr "Achat requis"
 
 #: master_preset.xml:4821(list_entry:display_value|group:Leisure|preset:Fitness_Station|value:push-up)
 msgid "Push-up"
@@ -9823,7 +9825,7 @@ msgstr "Relevé"
 
 #: master_preset.xml:542(multiselect:display_values|key:cuisine)
 msgid "Ramen"
-msgstr ""
+msgstr "Ramen"
 
 #: master_preset.xml:1895(checkgroup:text|group:Ways|preset:Steps)
 #: master_preset.xml:1896(check:text|group:Ways|preset:Steps|key:ramp)
@@ -9836,7 +9838,7 @@ msgstr "Régulation d'accès"
 
 #: master_preset.xml:5968(text:text|group:Emergency|preset:Siren|key:siren:range)
 msgid "Range (meters)"
-msgstr ""
+msgstr "Portée (mètres)"
 
 #: master_preset.xml:5497(item:name|group:Public_Building|preset:Ranger_Station)
 msgid "Ranger Station"
@@ -10063,7 +10065,7 @@ msgstr ""
 
 #: master_preset.xml:2181(combo:display_values|group:Barriers|preset:Block|key:material)
 msgid "Reinforced concrete"
-msgstr ""
+msgstr "Béton armé"
 
 #: master_preset.xml:10735(combo:text|group:Relations|preset:Relations|key:type)
 msgid "Relation type"
@@ -10523,7 +10525,7 @@ msgstr "SE"
 
 #: master_preset.xml:9735(list_entry:short_description|preset:Vending_Machine|value:SIM_cards)
 msgid "SIM_cards"
-msgstr ""
+msgstr "Cartes_SIM"
 
 #: master_preset.xml:1214(combo:display_values|key:climbing:orientation)
 msgid "SW"
@@ -10588,7 +10590,7 @@ msgstr "Marais salant"
 
 #: master_preset.xml:9812(check:text|preset:Payment_Methods|key:payment:samsung_pay)
 msgid "Samsung Pay"
-msgstr ""
+msgstr "Samsung Pay"
 
 #: master_preset.xml:10295(item:name|group:Nature|preset:Sand)
 #: master_preset.xml:2892(combo:display_values|group:Water|preset:Beach|key:surface)
@@ -10639,7 +10641,7 @@ msgstr "Sauna"
 
 #: master_preset.xml:542(multiselect:display_values|key:cuisine)
 msgid "Sausage"
-msgstr ""
+msgstr "Saucisse"
 
 #: master_preset.xml:10240(combo:display_values|group:Nature|preset:Grassland|key:grassland)
 msgid "Savanna"
@@ -10806,7 +10808,7 @@ msgstr "Tension électrique du secondaire en Volts (V)"
 
 #: master_preset.xml:9660(item:name|group:Other|preset:Security)
 msgid "Security"
-msgstr ""
+msgstr "Sécurité"
 
 #: master_preset.xml:3376(label:text|group:Car|preset:Parking)
 msgid "See the Wiki for other capacity:[types]=*."
@@ -11094,7 +11096,7 @@ msgstr "Silo"
 
 #: master_preset.xml:1323(combo:display_values|key:resource)
 msgid "Silver"
-msgstr ""
+msgstr "Argent"
 
 #: master_preset.xml:1185(multiselect:display_values|key:language)
 msgid "Sindhi"
@@ -11253,7 +11255,7 @@ msgstr "Services sociaux"
 
 #: master_preset.xml:10659(item:name|group:Addresses_and_Contact|preset:Social_Networks)
 msgid "Social Networks"
-msgstr ""
+msgstr "Réseaux sociaux"
 
 #: master_preset.xml:6108(item:name|group:Social_Facilities|preset:Social_Workshop)
 msgid "Social Workshop"
@@ -11302,7 +11304,7 @@ msgstr "Sud"
 
 #: master_preset.xml:9264(list_entry:short_description|group:For_the_body|preset:Beauty|value:spa)
 msgid "Spa"
-msgstr ""
+msgstr "Spa"
 
 #: master_preset.xml:4084(item:name|preset:Spaceport)
 msgid "Spaceport"
@@ -11567,7 +11569,7 @@ msgstr "Arrêt"
 
 #: master_preset.xml:2090(item:name|preset:Stop_sign)
 msgid "Stop sign"
-msgstr ""
+msgstr "Panneau Stop"
 
 #: master_preset.xml:3792(label:text|group:Public_Transport|preset:Stop_Position)
 #: master_preset.xml:3793(checkgroup:text|group:Public_Transport|preset:Stop_Position)
@@ -11588,7 +11590,7 @@ msgstr "Location d'espace de stockage"
 
 #: master_preset.xml:7473(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Store"
-msgstr ""
+msgstr "Magasin"
 
 #: master_preset.xml:5914(combo:display_values|group:Emergency|preset:Fire_Hydrant|key:couplings:type)
 msgid "Storz"
@@ -11629,7 +11631,7 @@ msgstr ""
 
 #: master_preset.xml:7861(item:name|group:Man_Made|preset:Street_cabinet)
 msgid "Street cabinet"
-msgstr ""
+msgstr "Armoire de rue"
 
 #: master_preset.xml:1392(check:text|group:Streets|preset:Primary|key:noname)
 #: master_preset.xml:1430(check:text|group:Streets|preset:Secondary|key:noname)
@@ -11645,7 +11647,7 @@ msgstr "Rue sans nom"
 #: master_preset.xml:7867(combo:display_values|group:Man_Made|preset:Street_cabinet|key:street_cabinet)
 #: master_preset.xml:862(combo:display_values|key:utility)
 msgid "Street lighting"
-msgstr ""
+msgstr "Éclairage public"
 
 #: master_preset.xml:10602(text:text|group:Addresses_and_Contact|preset:Address|key:addr:street)
 #: master_preset.xml:11145(text:text|preset:Associated_Street|key:name)
@@ -11991,7 +11993,7 @@ msgstr "Salon de tatouage"
 
 #: master_preset.xml:11775(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Tax"
-msgstr ""
+msgstr "Taxe"
 
 #: master_preset.xml:11929(item:name|group:Offices|preset:Tax_advisor)
 msgid "Tax advisor"
@@ -12023,7 +12025,7 @@ msgstr "Cours"
 
 #: master_preset.xml:7473(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Technical"
-msgstr ""
+msgstr "Technique"
 
 #: master_preset.xml:4494(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 #: master_preset.xml:5179(multiselect:display_values|group:Culture|preset:Museum|key:museum)
@@ -12238,7 +12240,7 @@ msgstr "Carreleur"
 #: master_preset.xml:9180(item:name|group:Home_furnishing_and_decoration|preset:Tiles)
 #: master_preset.xml:9469(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Tiles"
-msgstr ""
+msgstr "Tuiles"
 
 #: master_preset.xml:9469(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Timber"
@@ -12498,7 +12500,7 @@ msgstr ""
 
 #: master_preset.xml:3821(check:text|group:Public_Transport|preset:Platform|key:railway)
 msgid "Tram stop"
-msgstr ""
+msgstr "Arrêt de tramway"
 
 #: master_preset.xml:8369(label:text|preset:Pole_with_Transformer)
 msgid "Transformer Attributes:"
@@ -13060,7 +13062,7 @@ msgstr "Via (arrêts intermédiaires)"
 
 #: master_preset.xml:1956(check:text|group:Waypoints|preset:Traffic_Signal|key:traffic_signals:vibration)
 msgid "Vibration"
-msgstr ""
+msgstr "Vibration"
 
 #: master_preset.xml:942(list_entry:display_value|value:victim)
 msgid "Victims"
@@ -13197,7 +13199,7 @@ msgstr "Wapiti"
 
 #: master_preset.xml:5179(multiselect:display_values|group:Culture|preset:Museum|key:museum)
 msgid "War"
-msgstr ""
+msgstr "Guerre"
 
 #: master_preset.xml:8579(combo:display_values|group:Historic_Places_&_Objects|preset:Tomb|key:tomb)
 msgid "War grave"
@@ -13379,7 +13381,7 @@ msgstr "Oratoire"
 
 #: master_preset.xml:9815(check:text|preset:Payment_Methods|key:payment:wechat)
 msgid "WeChat"
-msgstr ""
+msgstr "WeChat"
 
 #: master_preset.xml:9689(item:name|group:Other|preset:Weapons)
 msgid "Weapons"
@@ -13832,7 +13834,7 @@ msgstr "branches (sans les berges)"
 
 #: master_preset.xml:7917(multiselect:display_values|group:Man_Made|preset:Surveillance|key:surveillance:type)
 msgid "camera"
-msgstr ""
+msgstr "caméra"
 
 #: master_preset.xml:1805(list_entry:short_description|group:Ways|preset:Path|value:difficult_alpine_hiking)
 msgid ""
@@ -14366,7 +14368,7 @@ msgstr "grade-fou"
 #: master_preset.xml:21(combo:display_values|key:material)
 msgctxt "material"
 msgid "Reinforced concrete"
-msgstr ""
+msgstr "Béton armé"
 
 #: master_preset.xml:2310(combo:display_values|group:Barriers|preset:Fence|key:fence_type)
 msgctxt "material"
@@ -15564,7 +15566,7 @@ msgstr "Canoë"
 #: master_preset.xml:641(multiselect:display_values|key:sport)
 msgctxt "sport"
 msgid "Chess"
-msgstr ""
+msgstr "Échecs"
 
 #: master_preset.xml:641(multiselect:display_values|key:sport)
 msgctxt "sport"
@@ -16359,7 +16361,7 @@ msgstr "Rouge"
 #: master_preset.xml:991(combo:display_values|key:colour)
 msgctxt "colour"
 msgid "Silver"
-msgstr ""
+msgstr "Argent"
 
 #: master_preset.xml:5920(combo:display_values|group:Emergency|preset:Fire_Hydrant|key:bonnet:colour)
 #: master_preset.xml:5923(combo:display_values|group:Emergency|preset:Fire_Hydrant|key:cap:colour)
