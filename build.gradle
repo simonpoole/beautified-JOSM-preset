@@ -29,6 +29,7 @@ repositories {
 ext {
     preset_file = 'master_preset.xml'
     josm_preset_file = 'josm_preset.xml'
+    mapped_josm_preset_file = 'mapped_josm_preset.xml'
     mapped_vespucci_preset_file = 'mapped_vespucci_preset.xml'
     vespucci_preset_file = 'vespucci_preset.xml'
     vespucci_preset_build_file = 'vespucci_preset_build.xml'
@@ -115,6 +116,21 @@ task josmIcons(dependsOn: ["replaceVersion","mapToBeautifiedIcons"], type: Copy)
     filter(ReplaceTokens, beginToken : '${', endToken : '}', tokens: [ICONPATH: '', ICONTYPE: 'png'])
 }
 
+task transformToJosmOrigIcons(dependsOn: ["mapToJosmIcons", "copyResources"], type: Exec) {
+    def output = 'gen/' + 'josm_preset_orig_icons.xml'
+    mkdir(generated)
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        // remove extensions
+        commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/toJOSM.xslt', 'build/temp/' + mapped_josm_preset_file
+    } else {
+        // remove extensions
+        commandLine 'xmlstarlet', 'tr', 'build/xml/toJOSM.xslt', 'build/temp/' + mapped_josm_preset_file
+    }
+    doFirst {
+        standardOutput = new FileOutputStream(new File(buildDir, output))
+    }
+}
+
 task transformToJosm(dependsOn: ["josmIcons", "copyResources"], type: Exec) {
     def output = 'gen/new_' + josm_preset_file
     mkdir(generated)
@@ -174,8 +190,21 @@ def loadProperties = { filename ->
     return properties
 }
 
-// tasks to generate a zipped preset for vespucci
+// map to JOSM icon set
+task mapToJosmIcons(type: Copy) {
+    inputs.file('josm_icons.txt')
+    from projectDir
+    include preset_file
+    into tempDir
+    filteringCharset = 'UTF-8'
+    rename (preset_file, mapped_josm_preset_file)
+    def map = loadProperties('josm_icons.txt')
+    filter(ReplaceTokens, beginToken : '${', endToken : '}', tokens: map)
+}
+
+// map to beautified icon set
 task mapToBeautifiedIcons(type: Copy) {
+    inputs.file('beautified_icons.txt')
     from projectDir
     include preset_file
     into tempDir
@@ -388,6 +417,7 @@ build {
     dependsOn "vespucciZip"
     dependsOn "vespucciIconsZip"
     dependsOn "generateAndValidateVespucciBuild"
+    dependsOn "transformToJosmOrigIcons"
     dependsOn "josmZip"
     dependsOn "updatePot"
     dependsOn "updateWebsite"
