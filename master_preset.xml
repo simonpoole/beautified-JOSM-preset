@@ -807,6 +807,16 @@
         <text key="branch" text="Branch operator"/>
         <text key="start_date" text="Start date"/>
     </chunk>
+    <chunk id="power_generator_optional_name_ref">
+        <link wiki="Tag:power=generator"/>
+        <space/>
+        <key key="power" value="generator"/>
+        <optional>
+            <reference ref="name_ref_operator"/>
+            <text key="branch" text="Branch operator"/>
+            <text key="start_date" text="Start date"/>
+        </optional>
+    </chunk>
     <chunk id="power_output">
         <optional text="Output forms of energy:">
             <combo key="generator:output:biogas" text="biogas" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
@@ -8127,7 +8137,7 @@
             </item> <!-- Nuclear Reactor -->
             <item name="Solar Power Generator" icon="${power_station_solar}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="solar"/>
-                <reference ref="power_generator"/>
+                <reference ref="power_generator_optional_name_ref"/>
                 <combo key="generator:method" text="Method" values_context="generator method" values="photovoltaic,thermal" match="none" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="solar_photovoltaic_panel" short_description="photovoltaic"/>
