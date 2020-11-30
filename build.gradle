@@ -1,7 +1,7 @@
 /*
  */
 
-version = '2.0.0'
+version = '2.1.0'
 
 //for Ant filter
 import org.apache.tools.ant.filters.ReplaceTokens
@@ -42,7 +42,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.22.0'
+    runtime 'ch.poole:preset-utils:0.23.0'
 }
 
 task copyCss(type: Copy) {
@@ -224,7 +224,14 @@ task vespucciIcons(dependsOn: ["mapToBeautifiedIcons"], type: Copy) {
     filter(ReplaceTokens, beginToken : '${', endToken : '}', tokens: [ICONPATH: '', ICONTYPE: 'png'])
 }
 
-task generateAndValidateVespucci(dependsOn: ["vespucciIcons", "copyResources"], type: Exec) {
+task checkPreset(dependsOn: ["vespucciIcons", "copyResources"], type: JavaExec) {
+    def input = generated + vespucci_preset_file
+    main = "ch.poole.osm.presetutils.CheckPreset"
+    classpath = configurations.runtime
+    args('-i', input)
+}
+
+task generateAndValidateVespucci(dependsOn: ["checkPreset"], type: Exec) {
     def input = generated + vespucci_preset_file
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         // validation
