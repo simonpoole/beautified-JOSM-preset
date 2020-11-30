@@ -6362,7 +6362,7 @@
         <item name="Waste Basket/Trash Can" icon="${amenity_waste_bin}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=waste_basket"/>
             <key key="amenity" value="waste_basket"/>
-            <combo key="waste" text="Waste" values="trash,dog_excrement,cigarettes" display_values="Trash,Dog excrement,Cigarettes" match="none"/>
+            <multiselect key="waste" text="Waste" values="trash;dog_excrement;cigarettes" display_values="Trash;Dog excrement;Cigarettes" match="none"/>
         </item> <!-- Waste Basket/Trash Can -->
         <item name="Waste Disposal/Dumpster" icon="${amenity_waste_disposal}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=waste_disposal"/>
