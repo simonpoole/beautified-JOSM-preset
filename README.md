@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/simonpoole/beautified-JOSM-preset.svg?branch=master)](https://travis-ci.org/simonpoole/beautified-JOSM-preset)
+
+
 Beautified JOSM preset
 ======================
 
@@ -15,7 +18,7 @@ Building the actual preset files is done with gradle and should work on both uni
 
 Building requires `xmlstarlet` installed and on your path.
 
-The icons are currently assumed to be in icons/png, generating the icons from SVG requires `rsvg-convert` to be installed and sh to be present (we will likely move this to gradle too).
+The PNG icons are currently assumed to be in icons/png, generating them from SVG requires `rsvg-convert` to be installed. Currently the `recolour`and `generatePngs`tasks need to executed, when appropriate, manually.
 
 The presets are being translated on transifex [here](https://www.transifex.com/openstreetmap/presets/), to retrieve the translations you will need to install and setup the [transifex command line client](https://docs.transifex.com/client/introduction). You only need the to set up the login, you can and should use the language mapping file from this repository.
 
