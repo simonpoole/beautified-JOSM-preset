@@ -3197,7 +3197,7 @@
                 <check key="supervised" text="Supervised" disable_off="true"/>
                 <check key="crossing:light" text="Traffic lights" disable_off="true"/>
                 <check key="crossing:bell" text="Sound signals" disable_off="true"/>
-                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" values_context="crossing:barrier" />
+                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" display_values="Yes,No,Half,Full,Double half" text_context="railway" values_context="crossing:barrier" />
             </optional>
         </item> <!-- Level Crossing -->
         <item name="Crossing" icon="${transport_railway_crossing}" type="node" preset_name_label="true">
@@ -3210,7 +3210,7 @@
                 <check key="bicycle" text="Cross by bicycle" disable_off="true"/>
                 <check key="crossing:light" text="Traffic lights" disable_off="true"/>
                 <check key="crossing:bell" text="Sound signals" disable_off="true"/>
-                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" display_values="Yes,No,Half,Full,Double half" values_context="crossing:barrier"/>
+                <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" display_values="Yes,No,Half,Full,Double half" text_context="railway" values_context="crossing:barrier"/>
             </optional>
         </item> <!-- Crossing -->
         <item name="Turntable" icon="${transport_railway_turntable}" type="node,closedway" preset_name_label="true">
