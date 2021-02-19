@@ -11843,6 +11843,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Political party -->
+        <item name="Union" icon="${office_union}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=union"/>
+            <space/>
+            <key key="office" value="union"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Union -->
         <item name="Charity" icon="${office_charity}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=charity"/>
             <space/>
