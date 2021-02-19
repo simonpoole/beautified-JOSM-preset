@@ -7873,6 +7873,7 @@
             <combo key="lamp_type" text="Type" values="electric,floodlight,gaslight,led,sodium,solar_lamp" display_values="Electric,Floodlight,Gaslight,LED,Sodium,Solar lamp" values_context="lamp_type" match="key" />
             <combo key="lamp_mount" text="Mounted on" values="bent_mast,high_mast,straight_mast,suspended,wall" display_values="Bent mast,High mast,Straight mast,Suspended,Wall" values_context="lamp_mount" match="key" />
             <optional>
+                <text key="ref" text="Ref"/>
                 <combo key="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" editable="true" values_no_i18n="true"/>
             </optional>
         </item> <!-- Street Lamp -->
