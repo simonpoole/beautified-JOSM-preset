@@ -2090,7 +2090,7 @@
                 <space/>
                 <key key="traffic_calming" value="choker"/>
             </item> <!-- Choker -->
-            <item name="Island" name_context="traffic_calming" icon="${traffic_calming_island}" type="node,way" preset_name_label="true">
+            <item name="Island" name_context="traffic_calming" icon="${traffic_calming_island}" type="node,way,closedway" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
                 <space/>
                 <key key="traffic_calming" value="island" values_context="traffic_calming"/>
