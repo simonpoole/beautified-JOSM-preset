@@ -1353,14 +1353,13 @@
       <combo key="highchair" text="High chair for small children" values="yes,no,1,2,3,4,5,6,7,8,9,10" display_values="Yes,No,1,2,3,4,5,6,7,8,9,10" editable="true" values_sort="false"/>
   </chunk>
   <chunk id="kids_area">
-        <link wiki="Key:kids_area" />
-        <checkgroup text="Kids area" columns="1">
-              <check key="kids_area" text="A kids area is available" />
-              <check key="kids_area:indoor" text="An indoor kids area is available" />
-              <check key="kids_area:outdoor" text="An outdoor kids area is available" />
-              <check key="kids_area:supervised" text="Supervision by an adult" />
-              <check key="kids_area:fee" text="A fee must be paid" />
-        </checkgroup>
+    <checkgroup text="Kids area" columns="1">
+        <check key="kids_area" text="A kids area is available" />
+        <check key="kids_area:indoor" text="An indoor kids area is available" />
+        <check key="kids_area:outdoor" text="An outdoor kids area is available" />
+        <check key="kids_area:supervised" text="Supervision by an adult" />
+        <check key="kids_area:fee" text="A fee must be paid" />
+    </checkgroup>
   </chunk>
   <!-- Groups -->
   <group name="Highways" icon="${highway_group}">
