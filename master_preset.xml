@@ -1021,13 +1021,13 @@
     <multiselect key="cash_withdrawal" text="Cash withdrawal" length="3" values="yes" match="none" editable="true"/>
     <optional>
         <text key="cash_withdrawal:operator" text="Operator" match="none"/>
-        <combo key="cash_withdrawal:type" text="Type" values="checkout,self_checkout" display_values="Checkout,Self checkout" values_searchable="true" match="none"/>        
+        <combo key="cash_withdrawal:type" text="Type" values="checkout,self_checkout" display_values="Checkout,Self checkout" values_searchable="true" match="none"/>
         <text key="cash_withdrawal:limit" text="Limit" match="none" value_type="integer" />
         <text key="cash_withdrawal:currency" text="Currency" match="none" />
         <check key="cash_withdrawal:purchase_required" text="Purchase required"  match="none"/>
-        <combo key="cash_withdrawal:fee" text="Fee" values="yes,no,purchase_required" display_values="Yes,No,Purchase required" values_searchable="true" match="none"/>        
-        <combo key="cash_withdrawal:purchase_minimum" text="Minimum pruchase" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
-        <combo key="cash_withdrawal:foreign_cards" text="Foreign cards" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
+        <combo key="cash_withdrawal:fee" text="Fee" values="yes,no,purchase_required" display_values="Yes,No,Purchase required" values_searchable="true" match="none"/>
+        <combo key="cash_withdrawal:purchase_minimum" text="Minimum purchase" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>
+        <combo key="cash_withdrawal:foreign_cards" text="Foreign cards" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>
     </optional>
   </chunk>
   <chunk id="route_segment_roles">
