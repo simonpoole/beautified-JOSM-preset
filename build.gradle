@@ -399,9 +399,9 @@ task generatePngs (dependsOn: ["recolour"]) {
                 String fileName = svg.getName().replace('.svg','.png');
                 exec {
                     if (windows) {
-                        commandLine 'cmd', '/c', 'rsvg-convert', '-a', '-f', 'png', '-h', size, '-w', size, '-o', 'icons/png/' + fileName, svg
+                        commandLine 'cmd', '/c', 'rsvg-convert', '-a', '-f', 'png', '-h', size, '-o', 'icons/png/' + fileName, svg
                     } else {
-                        commandLine 'rsvg-convert', '-a', '-f', 'png', '-h', size, '-w', size, '-o', 'icons/png/' + fileName, svg
+                        commandLine 'rsvg-convert', '-a', '-f', 'png', '-h', size, '-o', 'icons/png/' + fileName, svg
                     }
                 }
             }
