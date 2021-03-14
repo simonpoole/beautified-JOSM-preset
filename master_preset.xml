@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets version="2.5.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
+    object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
     Icons have been derived from mainly from
   
@@ -202,12 +202,20 @@
         <combo key="placement:forward" text="Placement in way direction" values="left_of:1,left_of:2,left_of:3,left_of:4,left_of:5,middle_of:1,middle_of:2,middle_of:3,middle_of:4,middle_of:5,right_of:1,right_of:2,right_of:3,right_of:4,right_of:5" />
         <combo key="placement:backward" text="Placement opposed to way direction" values="left_of:1,left_of:2,left_of:3,left_of:4,left_of:5,middle_of:1,middle_of:2,middle_of:3,middle_of:4,middle_of:5,right_of:1,right_of:2,right_of:3,right_of:4,right_of:5" />
     </chunk>
+    <chunk id="optional_placement">
+        <optional>
+            <reference ref="placement"/>
+        </optional>
+    </chunk>
+    <chunk id="shoulder">
+        <combo key="shoulder" text="Shoulder" values="yes,no,left,right,both" display_values="Yes,No,Left,Right,Both" />
+    </chunk>
     <chunk id="major_highway_additional">
         <text key="destination" text="Destination"/>
         <text key="destination:ref" text="Destination reference"/>
         <text key="junction:ref" text="Junction reference" />
         <text key="width" text="Width (meters)"/>
-        <reference ref="placement"/>
+        <reference ref="shoulder"/>
         <checkgroup text="Additional attributes" columns="4">
             <check key="oneway" text="Oneway" default="on"/>
             <check key="motorroad" text="Motorroad" disable_off="true"/>
@@ -220,6 +228,7 @@
             <check key="winter_road" text="Winter road" disable_off="true" />
             <check key="ice_road" text="Ice road" disable_off="true" />
         </checkgroup>
+        <reference ref="placement"/>
     </chunk>
     <chunk id="highway_ref">
         <text key="ref" text="Reference"/>
@@ -658,7 +667,7 @@
         <combo key="fee" text="Fee" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_no_i18n="true" values_sort="false" editable="true"/>
     </chunk>
     <chunk id="parking_name_type_ref">
-        <combo key="parking" text="Type" values="multi-storey,surface,underground,rooftop,sheds,street_side,carports,garage_boxes" display_values="Multi-storey,Surface,Underground,Rooftop,Sheds,Street side,Carports,Garage boxes" values_context="parking"/>
+        <combo key="parking" text="Type" values="multi-storey,surface,underground,rooftop,sheds,street_side,carports,garage_boxes,lane" display_values="Multi-storey,Surface,Underground,Rooftop,Sheds,Street side,Carports,Garage boxes,Lane" values_context="parking"/>
         <optional>
             <text key="name" text="Name"/>
         	<text key="ref" text="Reference number"/>
@@ -1254,7 +1263,8 @@
     <optional>
         <check key="lit" text="Lit" disable_off="true"/>
         <check key="luminous" text="Luminous" disable_off="true"/>
-        <combo key="animated" text="Animation" values="no,yes,trivision_blades,winding_posters,revolving,screen,digital_messages,digital_prices,wind" display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
+        <combo key="animated" text="Animation" values="no,yes,trivision_blades,winding_posters,revolving,screen,digital_messages,digital_prices,wind" 
+            display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
         <text key="height" text="Height (Meters)" value_type="integer" />
         <combo key="sides" text="Number of sides" length="3" values="1,2,3,4,5,6" values_sort="false" match="none" editable="true" value_type="integer"/>
         <reference ref="support" />
@@ -1407,12 +1417,13 @@
                 <check key="motorroad" text="Motorroad" disable_off="true"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
                 <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
-                <reference ref="placement"/>
                 <reference ref="parking_lane"/>
+                <reference ref="shoulder"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
             <reference ref="cycle_lanes"/>
+            <reference ref="optional_placement"/>
         </item> <!-- Primary -->
         <item name="Primary Link" icon="${highway_primary_link}" type="way" preset_name_label="true">
             <link wiki="Link_(highway)"/>
@@ -1426,12 +1437,13 @@
                 <text key="junction:ref" text="Junction reference" />
                 <check key="motorroad" text="Motorroad" disable_off="true"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
-                <reference ref="placement"/>
                 <reference ref="parking_lane"/>
+                <reference ref="shoulder"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
             <reference ref="cycle_lanes"/>
+            <reference ref="optional_placement"/>
         </item> <!-- Primary Link -->
         <item name="Secondary" icon="${highway_secondary}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=secondary"/>
@@ -1444,12 +1456,13 @@
                 <reference ref="highway_base"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
-                <reference ref="placement"/>
                 <reference ref="parking_lane"/>
+                <reference ref="shoulder"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
             <reference ref="cycle_lanes"/>
+            <reference ref="optional_placement"/>
         </item> <!-- Secondary -->
         <item name="Secondary Link" icon="${highway_secondary_link}" type="way" preset_name_label="true">
             <link wiki="Link_(highway)"/>
@@ -1461,12 +1474,13 @@
                 <text key="destination" text="Destination" />
                 <text key="destination:ref" text="Destination reference" />
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
-                <reference ref="placement"/>
                 <reference ref="parking_lane"/>
+                <reference ref="shoulder"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
             <reference ref="cycle_lanes"/>
+            <reference ref="optional_placement"/>
         </item> <!-- Secondary Link -->
         <item name="Tertiary" icon="${highway_tertiary}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=tertiary"/>
@@ -1479,12 +1493,13 @@
                 <reference ref="highway_base"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
-                <reference ref="placement"/>
                 <reference ref="parking_lane"/>
+                <reference ref="shoulder"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
             <reference ref="cycle_lanes"/>
+            <reference ref="optional_placement"/>
         </item> <!-- Tertiary -->
         <item name="Tertiary Link" icon="${highway_tertiary_link}" type="way" preset_name_label="true">
             <link wiki="Link_(highway)"/>
@@ -1494,12 +1509,13 @@
             	<text key="name" text="Name"/>
                 <reference ref="highway_base"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
-                <reference ref="placement"/>
                 <reference ref="parking_lane"/>
+                <reference ref="shoulder"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
             <reference ref="cycle_lanes"/>
+            <reference ref="optional_placement"/>
         </item> <!-- Tertiary Link -->
         <item name="Minor road" icon="${highway_unclassified}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=unclassified"/>
@@ -1511,13 +1527,14 @@
                 <reference ref="highway_base"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
-                <reference ref="placement"/>
                 <check key="passing_places" text="Passing Places" disable_off="true"/>
                 <reference ref="parking_lane"/>
+                <reference ref="shoulder"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
             <reference ref="cycle_lanes"/>
+            <reference ref="optional_placement"/>
         </item> <!-- Unclassified -->
         <item name="Residential" icon="${highway_residential}" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=residential"/>
@@ -1531,6 +1548,7 @@
                 <reference ref="highway_additional_oneway_lit_width_sidewalk"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
                 <reference ref="parking_lane"/>
+                <reference ref="shoulder"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1942,8 +1960,7 @@
             <link wiki="Tag:highway=services"/>
             <key key="highway" value="services"/>
             <optional>
-                <text key="name" text="Name"/>
-                <text key="operator" text="Operator"/>
+                <reference ref="name_operator" />
                 <reference ref="toilets"/>
             </optional>
         </item> <!-- Services -->
@@ -2185,6 +2202,34 @@
             </optional>
         </item> <!-- Mountain Pass -->
     </group> <!-- Waypoints -->
+    <item name="Traffic Hazard" icon="${traffic_hazard}" type="node,way" preset_name_label="true">
+        <link wiki="Key:hazard" />
+        <space />
+        <combo key="hazard" text="Hazard" values_context="hazard" >
+            <list_entry value="animal_crossing" short_description="Animal crossing"/>
+            <list_entry value="bump" short_description="Bump"/>
+            <list_entry value="children" short_description="Children"/>
+            <list_entry value="curve" short_description="Curve"/>
+            <list_entry value="curves" short_description="Curves"/>
+            <list_entry value="cyclists" short_description="Cyclists"/>
+            <list_entry value="dangerous_junction" short_description="Dangerous junction"/>
+            <list_entry value="dip" short_description="Dip"/>
+            <list_entry value="falling_rocks" short_description="Falling rocks"/>
+            <list_entry value="frost_heave" short_description="Frost heave"/>
+            <list_entry value="horse_riders" short_description="Horse riders"/>
+            <list_entry value="ice" short_description="Ice"/>
+            <list_entry value="landslide" short_description="Landslide"/>
+            <list_entry value="loose_gravel" short_description="Loose gravel"/>
+            <list_entry value="low_flying_aircraft" short_description="Low flying aircraft"/>
+            <list_entry value="pedestrians" short_description="Pedestrians"/>
+            <list_entry value="queues_likely" short_description="Queues likely"/>
+            <list_entry value="school_zone" short_description="School zone"/>
+            <list_entry value="side_winds" short_description="Side winds"/>
+            <list_entry value="slippery" short_description="Slippery"/>
+            <list_entry value="turn" short_description="Turn"/>
+            <list_entry value="turns" short_description="Turns"/>
+        </combo>
+    </item> <!-- Traffic Hazard -->
     <group name="Barriers" icon="${barrier_group}"> <!-- *** Node Barriers *** -->
         <item name="Block" icon="${barrier_blocks}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Tag:barrier=block"/>
@@ -2807,8 +2852,7 @@
             <key key="usage" value="penstock"/>
             <combo key="location" text="Location" values="overground,underground" display_values="Overground,Underground" values_context="pipeline"/>
             <optional>
-                <text key="name" text="Name"/>
-                <text key="operator" text="Operator"/>
+                <reference ref="name_operator" />
                 <combo key="diameter" text="Diameter (mm)" values="800,1000,1200,1500,1600,1800,2200,2300,2400,2500,2600,2800,3200,3300,3400,3500,4000,4200,4300,4800"/>
                 <combo key="material" text="Material" values="metal,steel" display_values="Metal,Steel"/>
             </optional>
@@ -2903,7 +2947,7 @@
                 <reference ref="oh_wheelchair"/>
                 <reference ref="general_access"/>
                 <combo key="surface" text="Surface" values="gravel,pebblestone,sand" display_values="Gravel,Pebblestone,Sand"/>
-                <combo key="sport" text="Sport" values="swimming,surfing" display_values="Swimming,Surfing"/>
+                <multiselect key="sport" text="Sport" values="swimming;surfing" display_values="Swimming;Surfing"/>
                 <reference ref="nudism" />
             </optional>
         </item> <!-- Beach -->
@@ -3229,32 +3273,28 @@
             <key key="railway" value="switch"/>
             <combo key="railway:switch" text="Type" values="abt,default,double_slip,single_slip,three_way,wye"
                 display_values="Abt,Default,Double slip,Single slip,Three way,Wye" values_context="railway" />
-            <text key="ref" text="Reference"/>
-            <text key="operator" text="Operator"/>
+            <reference ref="ref_operator" />
         </item> <!-- Railway Switch -->
         <item name="Railway crossing" icon="${transport_railway_railway_crossing}" type="node" preset_name_label="true">
             <link wiki="Tag:railway=railway_crossing" />
             <key key="railway" value="railway_crossing" />
-            <text key="ref" text="Reference" />
-            <text key="operator" text="Operator" />
+            <reference ref="ref_operator" />
         </item> <!-- Railway crossing -->
         <item name="Railway Signal" icon="${transport_railway_signals}" type="node" preset_name_label="true">
             <link wiki="Tag:railway=signal"/>
             <key key="railway" value="signal"/>
-            <text key="ref" text="Reference"/>
-            <text key="operator" text="Operator"/>
+            <reference ref="ref_operator" />
         </item> <!-- Railway Signal -->
         <item name="Railway milestone" icon="${transport_railway_milestone}" type="node" preset_name_label="true">
             <link wiki="Tag:railway=milestone"/>
             <key key="railway" value="milestone"/>
-            <text key="distance" text="Distance (kilometers)"/>
+            <text key="railway:position" text="Position (kilometers)" />
             <text key="ref" text="Reference"/>
         </item> <!-- Railway Milestone -->
         <item name="Derail" icon="${transport_railway_derail}" type="node" preset_name_label="true">
             <link wiki="Tag:railway=derail"/>
             <key key="railway" value="derail"/>
-            <text key="ref" text="Reference"/>
-            <text key="operator" text="Operator"/>
+            <reference ref="ref_operator" />
         </item> <!-- Derail -->
         <item name="Yard" icon="${transport_railway_yard}" type="node,closedway,multipolygon" preset_name_label="true">
             <key key="railway" value="yard" />
@@ -3419,8 +3459,7 @@
             <key key="amenity" value="fuel"/>
             <combo key="brand" text="Brand" values="Agip,Aral,Avia,BP,Chevron,Citgo,Eni,Esso,Exxon,Gulf,Mobil,OMV,Petro-Canada,Pioneer,Q8,Repsol,Shell,Socar,Statoil,Sunoco,Tamoil,Texaco,Total,Independent" values_searchable="true"/>
             <optional>
-                <text key="name" text="Name"/>
-                <text key="operator" text="Operator"/>
+                <reference ref="name_operator"/>
                 <check key="self_service" text="Self-service" disable_off="true"/>
                 <combo key="shop" text="With shop" values="yes,convenience,kiosk,no"/>
                 <reference ref="oh_wheelchair"/>
@@ -4019,6 +4058,7 @@
         <item name="Holding Position" icon="${transport_aeroway_holding_position}" type="node" preset_name_label="true">
             <link wiki="Tag:aeroway=holding_position"/>
             <key key="aeroway" value="holding_position"/>
+            <combo key="holding_position:type" text="Type" values="ILS,intermediate,runway" display_values="ILS,Intermediate,Runway" values_context="aeroway holding_position" />
             <optional>
                 <text key="ref" text="Reference"/>
             </optional>
@@ -5434,7 +5474,7 @@
             <text key="name" text="Name"/>
             <reference ref="religious"/> 
             <combo key="monastery:type" text="Type" values="monastery,convent,commandry,hermitage" display_values="Monastery,Convent,Commandry,Hermitage" values_context="monastery" />
-            <combo key="community:gender" text="Gender" values="female,male,mixed" display_values="Female,Male,Mixed"/>          
+            <combo key="community:gender" text="Gender" values="female,male,mixed" display_values="Female,Male,Mixed" values_context="gender" />          
             <reference ref="oh_wheelchair"/>
             <reference ref="link_contact_address"/>
             <preset_link preset_name="Historic monastery" text="Similar but different tags:" alternative="true" />
@@ -5510,10 +5550,7 @@
             <space />
             <combo key="police" text="Type" values="barracks,car_pound,checkpoint,detention,naval_base,offices,range,storage,training_area,yes" 
                 display_values="Barracks,Car pound,Checkpoint,Detention,Naval base,Offices,Range,Storage,Training area,Yes" values_context="police" match="keyvalue!" values_searchable="true" />
-            <optional>
-                <text key="name" text="Name" />
-                <text key="operator" text="Operator" />
-            </optional>
+            <reference ref="optional_name_operator" />
             <reference ref="link_contact_address" />
         </item> <!-- Non-public police facility -->
         <item name="Ranger Station" icon="${amenity_ranger_station}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5877,8 +5914,7 @@
             <link wiki="Tag:emergency=fire_extinguisher"/>
             <space/>
             <key key="emergency" value="fire_extinguisher"/>
-            <text key="ref" text="Reference"/>
-            <text key="operator" text="Operator"/>
+            <reference ref="ref_operator" />
             <reference ref="level"/>
             <check key="indoor" text="Indoor" match="none"/>
         </item> <!-- Fire Extinguisher -->
@@ -5892,8 +5928,7 @@
             <link wiki="Tag:emergency=fire_hose"/>
             <space/>
             <key key="emergency" value="fire_hose"/>
-            <text key="ref" text="Reference"/>
-            <text key="operator" text="Operator"/>
+            <reference ref="ref_operator" />
             <reference ref="level"/>
             <check key="indoor" text="Indoor" match="none"/>
         </item> <!-- Fire Hose -->
@@ -5980,16 +6015,14 @@
         <item name="Emergency Phone" icon="${emergency_emergency_phone}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=phone"/>
             <key key="emergency" value="phone"/>
-			<text key="ref" text="Reference"/>
-			<text key="operator" text="Operator"/>
+			<reference ref="ref_operator" />
             <reference ref="facility_access" />
             <check key="indoor" text="Indoor" />
         </item> <!-- Emergency Phone -->
         <item name="Siren" icon="${emergency_siren}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=siren"/>
             <key key="emergency" value="siren"/>
-            <text key="ref" text="Reference"/>
-            <text key="operator" text="Operator"/>
+            <reference ref="ref_operator" />
             <space/>
             <combo key="siren:type" text="Type" values="pneumatic,electronic,mechanical" display_values="Pneumatic,Electronic,Mechanical" 
                 values_context="siren" />
@@ -6323,7 +6356,7 @@
             <link wiki="Tag:amenity=clock"/>
             <key key="amenity" value="clock"/>
             <optional>
-                <combo key="display" text="Display" values="analog,digital,sundial,unorthodox" display_values="Analog,Digital,Sundial,Unorthodox"/>
+                <combo key="display" text="Display" values="analog,digital,sundial,unorthodox" display_values="Analog,Digital,Sundial,Unorthodox" text_context="clock" />
                 <reference ref="support"/>
                 <combo key="faces" text="Faces" text_context="clock" values="1,2,3,4"/>
                 <combo key="visibility" text="Visibility/readability" values="house,street,area" display_values="house (up to 5m),street (up to 20m),area (more than 20m)"/>
@@ -6614,6 +6647,12 @@
             <key key="advertising" value="billboard"/>
             <reference ref="advertising_optional" />
         </item> <!-- Billboard -->  
+        <item name="Poster box" icon="${amenity_advertising_poster_box}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:advertising=poster_box" />
+            <space />
+            <key key="advertising" value="poster_box" />
+            <reference ref="advertising_optional" />
+        </item> <!-- Poster box -->
         <item name="Excrement Bags" icon="${amenity_vending_excrement_bags}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=vending_machine%3Dexcrement_bags"/>
             <space/>
@@ -6877,17 +6916,17 @@
             <combo key="climbing:length:min" text="Minimal climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
             <combo key="climbing:length:max" text="Maximum climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
             <space />
-            <combo key="climbing:grade:uiaa:min" text="UIAA: Simplest route" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" values_sort="false" />
-            <combo key="climbing:grade:uiaa:max" text="UIAA: Most difficult route" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" values_sort="false" />
-            <combo key="climbing:grade:uiaa:mean" text="UIAA: Main difficulty" values="4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" values_sort="false" />
+            <combo key="climbing:grade:uiaa:min" text="UIAA: Simplest route" values="3,4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" values_sort="false" />
+            <combo key="climbing:grade:uiaa:max" text="UIAA: Most difficult route" values="3,4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" values_sort="false" />
+            <combo key="climbing:grade:uiaa:mean" text="UIAA: Main difficulty" values="3,4,4+,5-,5,5+,6-,6,6+,7-,7,7+,8-,8,8+,9-,9,9+,10-,10,10+,11-,11,11+,12-" values_no_i18n="true" values_sort="false" />
             <space />
-            <combo key="climbing:grade:french:min" text="French: Simplest route" values="4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" values_sort="false" />
-            <combo key="climbing:grade:french:max" text="French: Most difficult route" values="4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" values_sort="false" />
-            <combo key="climbing:grade:french:mean" text="French: Main difficulty" values="4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" values_sort="false" />
+            <combo key="climbing:grade:french:min" text="French: Simplest route" values="3,3a,3b,3c,4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" values_sort="false" />
+            <combo key="climbing:grade:french:max" text="French: Most difficult route" values="3,3a,3b,3c,4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" values_sort="false" />
+            <combo key="climbing:grade:french:mean" text="French: Main difficulty" values="3,3a,3b,3c,4,5a,5b,5c,6a,6a+,6b,6b+,6c,6c+,7a,7a+,7b,7b+,7c,7c+,8a,8a+,8b,8b+,8c,8c+,9a,9a+,9b,9b+" values_no_i18n="true" values_sort="false" />
             <space />
-            <combo key="climbing:grade:saxon:min" text="Saxon: Simplest route" values="IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" values_sort="false" />
-            <combo key="climbing:grade:saxon:max" text="Saxon: Most difficult route" values="IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" values_sort="false" />
-            <combo key="climbing:grade:saxon:mean" text="Saxon: Main difficulty" values="IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" values_sort="false"/>
+            <combo key="climbing:grade:saxon:min" text="Saxon: Simplest route" values="III,IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" values_sort="false" />
+            <combo key="climbing:grade:saxon:max" text="Saxon: Most difficult route" values="III,IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" values_sort="false" />
+            <combo key="climbing:grade:saxon:mean" text="Saxon: Main difficulty" values="III,IV,V,VI,VIIa,VIIb,VIIc,VIIIa,VIIIb,VIIIc,IXa,IXb,IXc,Xa,Xb,Xc,XIa,XIb,XIc" values_no_i18n="true" values_sort="false"/>
             <reference ref="climbing_optional_attributes" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Climbing site -->
@@ -7309,8 +7348,8 @@
 			<link wiki="Key:building"/>
 			<space/>
 			<combo key="building" text="Building" 
-                values="allotment_house,apartments,bakehouse,barn,basilica,boathouse,bungalow,bunker,cabin,cathedral,chapel,church,college,commercial,construction,cowshed,detached,dormitory,farm,farm_auxiliary,fire_station,garage,garages,gasometer,ger,grandstand,greenhouse,hangar,hospital,hotel,house,houseboat,hut,industrial,kindergarten,manufacture,monastery,mosque,office,parking,pavilion,public,residential,retail,roof,ruins,school,semidetached_house,service,shed,stable,stadium,static_caravan,storage_tank,sty,supermarket,synagogue,temple,terrace,toilets,train_station,transformer_tower,transportation,university,warehouse,yes" 
-                display_values="Allotment house,Apartments,Bakehouse,Barn,Basilica,Boathose,Bungalow,Bunker,Cabin,Cathedral,Chapel,Church,College,Commercial,Construction,Cowshed,Detached,Dormitory,Farm,Farm auxiliary,Fire station,Garage,Garages,Gasometer,Ger,Grandstand,Greenhouse,Hangar,Hospital,Hotel,House,Houseboat,Hut,Industrial,Kindergarten,Manufacture,Monastery,Mosque,Office,Parking,Pavilion,Public,Residential,Retail,Roof,Ruins,School,Semidetached house,Service,Shed,Stable,Stadium,Static caravan,Storage tank,Sty,Supermarket,Synagogue,Temple,Terrace,Toilets,Train station,Transformer tower,Transportation,University,Warehouse,Yes"
+                values="allotment_house,apartments,bakehouse,barn,basilica,boathouse,bungalow,bunker,cabin,cathedral,chapel,church,college,commercial,construction,cowshed,detached,digester,dormitory,farm,farm_auxiliary,fire_station,garage,garages,gasometer,gatehouse,ger,grandstand,greenhouse,hangar,hospital,hotel,house,houseboat,hut,industrial,kindergarten,manufacture,monastery,mosque,office,parking,pavilion,public,residential,retail,roof,ruins,school,semidetached_house,service,shed,stable,stadium,static_caravan,storage_tank,sty,supermarket,synagogue,temple,terrace,toilets,train_station,transformer_tower,transportation,university,warehouse,yes" 
+                display_values="Allotment house,Apartments,Bakehouse,Barn,Basilica,Boathose,Bungalow,Bunker,Cabin,Cathedral,Chapel,Church,College,Commercial,Construction,Cowshed,Detached,Digester,Dormitory,Farm,Farm auxiliary,Fire station,Garage,Garages,Gasometer,Gatehouse,Ger,Grandstand,Greenhouse,Hangar,Hospital,Hotel,House,Houseboat,Hut,Industrial,Kindergarten,Manufacture,Monastery,Mosque,Office,Parking,Pavilion,Public,Residential,Retail,Roof,Ruins,School,Semidetached house,Service,Shed,Stable,Stadium,Static caravan,Storage tank,Sty,Supermarket,Synagogue,Temple,Terrace,Toilets,Train station,Transformer tower,Transportation,University,Warehouse,Yes"
                 values_context="building" default="yes" match="keyvalue!" values_searchable="true"/>
 			<reference ref="additional_building_tags"/>
 			<preset_link preset_name="Address"/>
@@ -7950,8 +7989,7 @@
             <combo key="surveillance:zone" text="Zone" values="town,parking,traffic,shop,bank,building" display_values="Town,Parking,Traffic,Shop,Bank,Building"/>
             <text key="operator" text="Operator"/>
             <optional>
-                <text key="name" text="Name"/>
-                <text key="ref" text="Reference"/>
+                <reference ref="name_ref" />
             </optional>
             <space/>
             <label text="Camera"/>
@@ -8333,8 +8371,7 @@
             <key key="power" value="terminal"/>
             <optional>
                 <reference ref="power_line_extra2"/>
-                <text key="ref" text="Reference"/>
-                <text key="operator" text="Operator"/>
+                <reference ref="ref_operator" />
             </optional>
         </item> <!-- Terminal -->
         <item name="Power Portal" icon="${power_portal}" type="node,way" preset_name_label="true">
@@ -8406,8 +8443,7 @@
             <space/>
             <key key="power" value="catenary_mast"/>
             <optional>
-                <text key="ref" text="Reference"/>
-                <text key="operator" text="Operator"/>
+                <reference ref="ref_operator" />
             </optional>
         </item> <!-- Catenary mast -->
         <item name="Insulator" icon="${power_insulator}" type="node,way" preset_name_label="true">
@@ -9956,6 +9992,21 @@
                 <text key="start_date" text="Start date"/>
             </optional>
         </item> <!-- Protected Area -->
+        <item name="Hazardous Area" icon="${geography_boundary_hazardous_area}" type="closedway,relation" preset_name_label="true">
+            <link wiki="Tag:boundary=hazard" />
+            <space />
+            <key key="boundary" value="hazard" />
+            <combo key="hazard" text="Hazard" values_context="hazard" >
+                <list_entry value="contamination" short_description="Contamination" />
+                <list_entry value="minefield" short_description="Minefield" />
+                <list_entry value="nuclear" short_description="Nuclear" />
+                <list_entry value="shooting_range" short_description="Shooting range" />
+                <list_entry value="unexploded_ordnance" short_description="Unexploded ordnance" />
+            </combo>
+            <optional>
+                <text key="related_law" text="Related law" />
+            </optional>
+        </item> <!-- Hazardous Area -->
         <item name="Maritime" icon="${geography_boundary_maritime}" type="way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=maritime"/>
             <space/>
