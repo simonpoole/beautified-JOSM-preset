@@ -1035,7 +1035,7 @@
         <text key="cash_withdrawal:currency" text="Currency" match="none" />
         <check key="cash_withdrawal:purchase_required" text="Purchase required"  match="none"/>
         <combo key="cash_withdrawal:fee" text="Fee" values="yes,no,purchase_required" display_values="Yes,No,Purchase required" values_searchable="true" match="none"/>        
-        <combo key="cash_withdrawal:purchase_minimum" text="Minimum pruchase" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
+        <combo key="cash_withdrawal:purchase_minimum" text="Minimum purchase" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
         <combo key="cash_withdrawal:foreign_cards" text="Foreign cards" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
     </optional>
   </chunk>
