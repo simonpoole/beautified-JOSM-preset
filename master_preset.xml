@@ -2118,6 +2118,7 @@
             <key key="traffic_sign" value="city_limit"/>
             <text key="name" text="Name"/>
             <text key="alt_name" text="Alternate name" alternative_autocomplete_keys="name" />
+            <combo key="city_limit" values="begin,end,both" display_values="Begin,End,Both" values_sort="false" />
             <reference ref="traffic_signals_direction" /> 
             <preset_link preset_name="Name"/>
         </item> <!-- City Limit -->
