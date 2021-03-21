@@ -238,18 +238,14 @@
         </optional>
     </chunk>
     <chunk id="crossing_type">    
-    	<multiselect key="crossing" text="Crossing type" values_context="pedestrian" text_context="pedestrian">
- 			<list_entry value="uncontrolled" short_description="Not controlled" icon="${crossing}"/>
- 			<list_entry value="traffic_signals" short_description="Traffic signals" icon="${crossing_traffic_signals}"/>
-			<list_entry value="island" short_description="Island (deprecated)" icon="${crossing_island}"/>
-			<list_entry value="unmarked" short_description="Unmarked" icon="${crossing_unmarked}"/>
-			<list_entry value="no" short_description="No crossing"/>
- 		</multiselect>
+	<combo key="crossing" text="Crossing type" values_context="pedestrian" text_context="pedestrian" values_sort="false"
+	    values="uncontrolled,traffic_signals,unmarked,no,island"
+	    display_values="Uncontrolled,Traffic signals,Unmarked,No crossing,Island (deprecated)"/>
         <check key="crossing:island" text="With island" />
         <optional>
             <combo key="crossing_ref" text="Crossing type name (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger" values_searchable="true"/>
         </optional>
- 	</chunk>
+    </chunk>
     <chunk id="railway_service">
         <combo key="service" text="Service type" values="yard,siding,spur,crossover" display_values="Yard,Siding,Spur,Crossover" values_context="railway" />
     </chunk>
