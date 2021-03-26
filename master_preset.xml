@@ -311,6 +311,9 @@
     <chunk id="oh">
         <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
     </chunk>
+    <chunk id="ohworkshop">
+        <combo key="opening_hours:workshop" text="Workshop Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+    </chunk>
         <chunk id="optional_oh">
         <optional>
             <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" match="none" editable="true"/>
@@ -383,6 +386,11 @@
     </chunk>
     <chunk id="oh_wheelchair">
         <reference ref="oh"/>
+        <reference ref="wheelchair"/>
+    </chunk>
+    <chunk id="oh_ohworkshop_wheelchair">
+        <reference ref="oh"/>
+        <reference ref="ohworkshop"/>
         <reference ref="wheelchair"/>
     </chunk>
     <chunk id="oh_wheelchair_level">
@@ -3575,8 +3583,9 @@
             <link wiki="Tag:shop=car"/>
             <space/>
             <key key="shop" value="car"/>
-            <reference ref="name_operator_oh_wheelchair"/>
-	        <reference ref="car_brands"/>
+            <reference ref="name_operator"/>
+            <reference ref="oh_ohworkshop_wheelchair"/>
+            <reference ref="car_brands"/>
             <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no" display_values="Only,Yes,No"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Car Dealer -->
@@ -3584,9 +3593,10 @@
             <link wiki="Tag:shop=car_repair"/>
             <space/>
             <key key="shop" value="car_repair"/>
-            <reference ref="name_operator_oh_wheelchair"/>
-	        <reference ref="car_brands"/>
-	        <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres" rows="5" />
+            <reference ref="name_operator"/>
+            <reference ref="oh_ohworkshop_wheelchair"/>
+            <reference ref="car_brands"/>
+            <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres" rows="5" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Repair -->
         <item name="Parts" icon="${shopping_car_parts}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3609,7 +3619,8 @@
             <space/>
             <key key="shop" value="caravan"/>
             <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres" rows="5" />
-            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="name_operator"/>
+            <reference ref="oh_ohworkshop_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Caravan Dealer -->
         <item name="Rental" icon="${transport_rental_car}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -3667,7 +3678,7 @@
             <text key="name" text="Name"/>
             <reference ref="motorcycle_brands"/>
             <text key="operator" text="Operator"/>
-            <reference ref="oh_wheelchair"/>
+            <reference ref="oh_ohworkshop_wheelchair"/>
             <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no" diaply_values="Only,Yes,No"/>
             <optional text="Services:">
                 <combo key="sale" text="Sale" values="yes,brand,no" display_values="Yes,Brand,No" values_context="services"/>
@@ -3720,7 +3731,9 @@
             <link wiki="Tag:shop=bicycle"/>
             <space/>
             <key key="shop" value="bicycle"/>
-            <reference ref="name_oh_wheelchair"/>
+            <text key="name" text="Name"/>
+            <reference ref="oh_ohworkshop_wheelchair"/>
+            <preset_link preset_name="No name"/>
             <checkgroup text="Provided services" columns="1">
                 <check key="service:bicycle:retail" text="Bicycles are sold"/>
                 <check key="service:bicycle:second_hand" text="Second-hand bicycles are sold"/>
