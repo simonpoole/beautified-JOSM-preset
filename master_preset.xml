@@ -1080,12 +1080,15 @@
     <preset_link preset_name="Physical restrictions"/>
     <preset_link preset_name="Other mode restrictions"/>
   </chunk>
+  <chunk id="dog">
+      <combo key="dog" text="Dog" values="yes,leashed,unleashed,official,designated,permissive,private,no"
+          display_values="Yes,Leashed,Unleashed,Official,Designated,Permissive,Private,No" values_sort="false" values_context="access"  match="key" />
+  </chunk>
   <chunk id="path_access_restrictions">
     <optional>
         <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
             display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,No" values_context="access" match="key" values_sort="false"/>
-        <combo key="dog" text="Dog" values="yes,leashed,unleashed,official,designated,permissive,private,no" 
-            display_values="Yes,Leashed,Unleashed,Official,Designated,Permissive,Private,No" values_sort="false" values_context="access"  match="key" />
+        <reference ref="dog"/>
         <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,no" display_values="Yes,Official,Designated,Permissive,Private,No" values_context="access" values_sort="false"/>
         <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,no" 
             display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,No" values_context="access" values_sort="false"/>
