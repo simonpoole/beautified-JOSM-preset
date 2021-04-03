@@ -886,7 +886,6 @@
         <combo key="utility" text="Utility" values="chemical,gas,heating,hydrant,oil,power,sewerage,street_lighting,telecom,television,waste,water" display_values="Chemical,Gas,Heating,Hydrant,Oil,Power,Sewerage,Street lighting,Telecom,Television,Waste,Water" />    
     </chunk>
     <chunk id="bridge_details">
-        <combo key="bridge" text="Bridge" values="yes,aqueduct,boardwalk,cantilever,covered,low_water_crossing,trestle,viaduct" display_values="Yes,Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct" match="keyvalue!" default="yes" values_context="bridge"/>
         <combo key="bridge:structure" text="Structure" values="arch,beam,truss,floating,suspension,cable-stayed,simple-suspension,humpback" display_values="Arch,Beam,Truss,Floating,Suspension,Cable-stayed,Simple-suspension,Humpback" match="key" values_context="bridge"/>
     </chunk>
     <chunk id="maxweight">
@@ -8082,6 +8081,7 @@
         <item name="Bridge" icon="${bridge}" type="way,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:bridge"/>
             <space/>
+            <combo key="bridge" text="Bridge" values="yes,aqueduct,boardwalk,cantilever,covered,low_water_crossing,trestle,viaduct" display_values="Yes,Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct" match="keyvalue!" default="yes" values_context="bridge"/>
             <reference ref="bridge_details"/>
             <reference ref="optional_bridge"/>
             <preset_link preset_name="Movable Bridge"/>
@@ -8103,6 +8103,7 @@
             <link wiki="Tag:man_made=bridge"/>
             <space/>
             <key key="man_made" value="bridge"/>
+            <combo key="bridge" text="Bridge type" values="aqueduct,boardwalk,cantilever,covered,low_water_crossing,trestle,viaduct" display_values="Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct" values_context="bridge"/>
             <reference ref="bridge_details"/>
             <optional>
                 <reference ref="name_layer"/>
