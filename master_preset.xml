@@ -2432,7 +2432,7 @@
                 <text key="width" text="Width (meters)" length="7"/>
             </optional>
         </item> <!-- Ditch -->
-        <item name="Kerb" icon="${barrier_kerb}" type="way,closedway" preset_name_label="true">
+        <item name="Kerb" icon="${barrier_kerb}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Tag:barrier=kerb"/>
             <key key="barrier" value="kerb"/>
             <optional>
