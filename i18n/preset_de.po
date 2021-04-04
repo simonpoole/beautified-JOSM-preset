@@ -8,7 +8,7 @@
 # Holger Jeromin <mailgithub@katur.de>, 2015,2017-2019
 # Jacob Bräutigam <barth.jacke@hotmail.de>, 2015
 # Jonas Meier <meiers.jonas@gmail.com>, 2017
-# kjon kjon <kjon@gmx.de>, 2020
+# kjon kjon <kjon@gmx.de>, 2020-2021
 # Mark, 2017,2019
 # Mephinet Mephinet <mephinet@gmx.net>, 2020
 # Moon Sailer, 2018
@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2021-03-14 16:37+0100\n"
-"PO-Revision-Date: 2021-03-14 15:51+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"PO-Revision-Date: 2021-03-20 15:34+0000\n"
+"Last-Translator: kjon kjon <kjon@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/openstreetmap/presets/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -283,7 +283,7 @@ msgstr "Ein Bauernhof in einer grösseren Siedlung"
 
 #: master_preset.xml:1361(check:text|key:kids_area:fee)
 msgid "A fee must be paid"
-msgstr ""
+msgstr "Eine Gebühr wird erhoben"
 
 #: master_preset.xml:2952(label:text|group:Water|preset:Beach)
 msgid "A flat area of sand, gravel or pebble next to water."
@@ -291,7 +291,7 @@ msgstr "Eine flache Fläche aus Sand, Kies oder Kiesel in der Nähe von Wasserfl
 
 #: master_preset.xml:1357(check:text|key:kids_area)
 msgid "A kids area is available"
-msgstr ""
+msgstr "Spielfläche für Kinder vorhanden"
 
 #: master_preset.xml:10346(label:text|group:Nature|preset:Tree_Row)
 msgid "A line of trees."
@@ -726,7 +726,7 @@ msgstr "Weitgehend von Land umgebene Wasserfläche mit direkter Verbindung zum M
 
 #: master_preset.xml:1358(check:text|key:kids_area:indoor)
 msgid "An indoor kids area is available"
-msgstr ""
+msgstr "Spielfläche für Kinder im Innenraum vorhanden"
 
 #: master_preset.xml:4540(label:text|group:Tourism|preset:Information_Office)
 msgid "An office where you can get information about a town or region."
@@ -734,7 +734,7 @@ msgstr "Eine Auskunftsstelle mit Informationen zum Ort oder Region."
 
 #: master_preset.xml:1359(check:text|key:kids_area:outdoor)
 msgid "An outdoor kids area is available"
-msgstr ""
+msgstr "Spielfläche für Kinder im Außenraum vorhanden"
 
 #: master_preset.xml:6390(combo:display_values|group:Facilities|preset:Clock|key:display)
 #: master_preset.xml:8002(check:text|group:Man_Made|preset:Monitoring_Station|key:display:analog)
@@ -6039,7 +6039,7 @@ msgstr "Khmer"
 
 #: master_preset.xml:1356(checkgroup:text)
 msgid "Kids area"
-msgstr ""
+msgstr "Spielfläche für Kinder"
 
 #: master_preset.xml:7665(item:name|group:Man_Made|preset:Kiln)
 msgid "Kiln"
@@ -11148,7 +11148,7 @@ msgstr "SMS"
 
 #: master_preset.xml:211(combo:text|key:shoulder)
 msgid "Shoulder"
-msgstr ""
+msgstr "Standstreifen"
 
 #: master_preset.xml:4265(check:text|group:Accommodation|preset:Wilderness_Hut|key:shower)
 #: master_preset.xml:4928(check:text|group:Leisure|preset:Public_bath|key:shower)
@@ -11909,7 +11909,7 @@ msgstr "Überwacht"
 
 #: master_preset.xml:1360(check:text|key:kids_area:supervised)
 msgid "Supervision by an adult"
-msgstr ""
+msgstr "Beaufsichtigung durch einen Erwachsenen"
 
 #: master_preset.xml:6257(list_entry:display_value|group:Clubs|preset:Club|value:surf_life_saving)
 msgid "Surf life saving"
@@ -12674,7 +12674,7 @@ msgstr "Verkehr"
 
 #: master_preset.xml:7968(combo:display_values|group:Man_Made|preset:Street_cabinet|key:street_cabinet)
 msgid "Transport management"
-msgstr ""
+msgstr "Verkehrssteuerung"
 
 #: master_preset.xml:11920(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Transportation"
@@ -13457,7 +13457,7 @@ msgstr "Wasserstand"
 
 #: master_preset.xml:7968(combo:display_values|group:Man_Made|preset:Street_cabinet|key:street_cabinet)
 msgid "Water management"
-msgstr ""
+msgstr "Wasserversorgung"
 
 #: master_preset.xml:3053(item:name|group:Shipping|preset:Water_point)
 msgid "Water point"
@@ -14683,7 +14683,7 @@ msgstr "Holz"
 #: master_preset.xml:25(combo:display_values|key:surface)
 msgctxt "surface"
 msgid "Woodchips"
-msgstr ""
+msgstr "Holzschnitzel"
 
 #: master_preset.xml:66(combo:display_values|key:leisure)
 msgctxt "riding"
@@ -14862,7 +14862,7 @@ msgstr "Schuppen"
 #: master_preset.xml:670(combo:display_values|key:parking)
 msgctxt "parking"
 msgid "Street side"
-msgstr ""
+msgstr "Straßenrand"
 
 #: master_preset.xml:670(combo:display_values|key:parking)
 msgctxt "parking"
@@ -16902,7 +16902,7 @@ msgstr "Alleinstehend"
 #: master_preset.xml:7384(combo:display_values|group:Buildings|preset:Building|key:building)
 msgctxt "building"
 msgid "Digester"
-msgstr ""
+msgstr "Fermenter"
 
 #: master_preset.xml:1154(list_entry:short_description|value:dome)
 #: master_preset.xml:7428(item:name|group:Roof_type|preset:Dome)
@@ -16991,7 +16991,7 @@ msgstr "Gasometer"
 #: master_preset.xml:7384(combo:display_values|group:Buildings|preset:Building|key:building)
 msgctxt "building"
 msgid "Gatehouse"
-msgstr ""
+msgstr "Torhaus"
 
 #: master_preset.xml:1150(combo:display_values|key:building:use)
 msgctxt "building"
@@ -17954,7 +17954,7 @@ msgstr "Kreuzung mit Namen"
 #: master_preset.xml:2220(list_entry:short_description|preset:Traffic_Hazard|value:animal_crossing)
 msgctxt "hazard"
 msgid "Animal crossing"
-msgstr ""
+msgstr "Wildwechsel"
 
 #: master_preset.xml:2221(list_entry:short_description|preset:Traffic_Hazard|value:bump)
 msgctxt "hazard"
@@ -17999,12 +17999,12 @@ msgstr "Bodensenke"
 #: master_preset.xml:2228(list_entry:short_description|preset:Traffic_Hazard|value:falling_rocks)
 msgctxt "hazard"
 msgid "Falling rocks"
-msgstr ""
+msgstr "Steinschlag"
 
 #: master_preset.xml:2229(list_entry:short_description|preset:Traffic_Hazard|value:frost_heave)
 msgctxt "hazard"
 msgid "Frost heave"
-msgstr ""
+msgstr "Frosthub"
 
 #: master_preset.xml:10061(combo:text|group:Boundaries|preset:Hazardous_Area|key:hazard)
 #: master_preset.xml:2219(combo:text|preset:Traffic_Hazard|key:hazard)
@@ -18015,7 +18015,7 @@ msgstr "Gefahr"
 #: master_preset.xml:2230(list_entry:short_description|preset:Traffic_Hazard|value:horse_riders)
 msgctxt "hazard"
 msgid "Horse riders"
-msgstr ""
+msgstr "Reiter"
 
 #: master_preset.xml:2231(list_entry:short_description|preset:Traffic_Hazard|value:ice)
 msgctxt "hazard"
@@ -18080,12 +18080,12 @@ msgstr "Rutschgefahr"
 #: master_preset.xml:2240(list_entry:short_description|preset:Traffic_Hazard|value:turn)
 msgctxt "hazard"
 msgid "Turn"
-msgstr ""
+msgstr "Kurve"
 
 #: master_preset.xml:2241(list_entry:short_description|preset:Traffic_Hazard|value:turns)
 msgctxt "hazard"
 msgid "Turns"
-msgstr ""
+msgstr "Kurven"
 
 #: master_preset.xml:10066(list_entry:short_description|group:Boundaries|preset:Hazardous_Area|value:unexploded_ordnance)
 msgctxt "hazard"
