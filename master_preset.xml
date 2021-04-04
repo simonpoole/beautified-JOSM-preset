@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="2.6.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="2.7.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
@@ -1359,6 +1359,35 @@
         <check key="kids_area:supervised" text="Supervision by an adult" />
         <check key="kids_area:fee" text="A fee must be paid" />
     </checkgroup>
+  </chunk>
+  <chunk id="platform">
+    <check key="bench" text="Bench" disable_off="true"/>
+    <check key="shelter" text="Shelter" disable_off="true"/>
+    <check key="covered" text="Covered"/>
+    <reference ref="bin"/>
+    <check key="passenger_information_display" text="Passenger information display" />
+    <text key="route_ref" text="Route references" />            
+    <reference ref="wheelchair"/>
+    <reference ref="tactile_paving"/>
+    <optional>
+        <text key="name" text="Name"/>
+        <text key="ref" text="Reference"/>
+        <text key="uic_ref" text="UIC reference"/>
+        <text key="uic_name" text="UIC name"/>
+        <text key="operator" text="Operator"/>
+        <text key="network" text="Network"/>
+        <space/>
+        <check key="bus" text="Bus" disable_off="true"/>
+        <check key="tram" text="Tram" disable_off="true"/>
+        <check key="train" text="Train" disable_off="true"/>
+        <check key="trolleybus" text="Trolleybus" disable_off="true"/>
+        <check key="share_taxi" text="Share taxi" disable_off="true"/>
+        <check key="subway" text="Subway" disable_off="true"/>
+        <check key="monorail" text="Monorail" disable_off="true"/>
+        <check key="funicular" text="Funicular" disable_off="true"/>
+        <check key="aerialway" text="Aerialway" disable_off="true"/>
+        <check key="ferry" text="Ferry" disable_off="true"/>
+    </optional>
   </chunk>
   <!-- Groups -->
   <group name="Highways" icon="${highway_group}">
@@ -3871,39 +3900,11 @@
             <link wiki="Proposed_features/Public_Transport#Platform"/>
             <space/>
             <key key="public_transport" value="platform"/>
-            <check key="bench" text="Bench" disable_off="true"/>
-            <check key="shelter" text="Shelter" disable_off="true"/>
-            <check key="covered" text="Covered"/>
-            <reference ref="bin"/>
-            <check key="passenger_information_display" text="Passenger information display" />
-            <text key="route_ref" text="Route references" />            
-            <reference ref="wheelchair"/>
-            <reference ref="tactile_paving"/>
+            <reference ref="platform"/>
             <checkgroup text="Legacy stop types" columns="2">
                 <check key="highway" value_on="bus_stop" text="Bus stop" disable_off="true"/>
                 <check key="railway" value_on="tram_stop" text="Tram stop" disable_off="true"/>
             </checkgroup>
-            <optional>
-                <text key="name" text="Name"/>
-                <text key="ref" text="Reference"/>
-                <text key="uic_ref" text="UIC reference"/>
-                <text key="uic_name" text="UIC name"/>
-                <text key="operator" text="Operator"/>
-                <text key="network" text="Network"/>
-                <space/>
-                <check key="bus" text="Bus" disable_off="true"/>
-                <check key="highway" value_on="platform" text="Highway platform (legacy)"/>
-                <check key="tram" text="Tram" disable_off="true"/>
-                <check key="train" text="Train" disable_off="true"/>
-                <check key="railway" value_on="platform" text="Railway platform (legacy)"/>
-                <check key="trolleybus" text="Trolleybus" disable_off="true"/>
-                <check key="share_taxi" text="Share taxi"/>
-                <check key="subway" text="Subway" disable_off="true"/>
-                <check key="monorail" text="Monorail" disable_off="true"/>
-                <check key="funicular" text="funicular" disable_off="true"/>
-                <check key="aerialway" text="aerialway" disable_off="true"/>
-                <check key="ferry" text="ferry" disable_off="true"/>
-            </optional>
         </item> <!-- Platform -->
         <item name="Station" name_context="railway" type="node,closedway,multipolygon" icon="${public_transport_train_station}" preset_name_label="true">
             <link wiki="Tag:public_transport=station"/>
@@ -4000,9 +4001,9 @@
             <link wiki="Tag:railway=platform"/>
             <space/>
             <key key="railway" value="platform"/>
-            <text key="ref" text="Reference (track number)"/>
+            <reference ref="platform"/>
             <text key="width" text="Width (meters)"/>
-            <check key="area" text="Area" disable_off="true"/>
+            <check key="area" text="Area" disable_off="true"/>    
         </item> <!-- Railway Platform -->
         <separator/>
         <item name="Bus Station" icon="${public_transport_bus_station}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -4026,10 +4027,9 @@
             <link wiki="Tag:highway=platform"/>
             <space/>
             <key key="highway" value="platform"/>
-            <text key="ref" text="Reference (track number)"/>
+            <reference ref="platform"/>
             <text key="width" text="Width (meters)"/>
             <check key="area" text="Area" disable_off="true"/>
-            <reference ref="tactile_paving"/>
         </item> <!-- Bus Platform -->
     </group> <!-- Public Transport -->
     <item name="Taxi" icon="${transport_taxi_rank}" type="node,closedway,multipolygon" preset_name_label="true">
