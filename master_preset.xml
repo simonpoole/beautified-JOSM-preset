@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="2.7.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="2.8.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
@@ -187,13 +187,22 @@
         	<list_entry value="separate" short_description="Mapped separately"/>
         </combo>
     </chunk>
+    <chunk id="bus_bay">
+        <combo key="bus_bay" text="Bus bay" values_context="bus_bay" match="key">
+            <list_entry value="both" short_description="Both sides"/>
+            <list_entry value="left" short_description="Only left side"/>
+            <list_entry value="right" short_description="Only right side"/>
+        </combo>
+    </chunk>
     <chunk id="highway_additional_oneway_lit_width_sidewalk">
         <reference ref="highway_additional_oneway_lit_width"/>
         <reference ref="sidewalk"/>
+        <reference ref="bus_bay"/>
     </chunk>
     <chunk id="highway_additional_oneway_lit_width_sidewalk_winter">
         <reference ref="highway_additional_oneway_lit_width_sidewalk"/>
         <reference ref="sidewalk"/>
+        <reference ref="bus_bay"/>
         <check key="winter_road" text="Winter road" disable_off="true" />
         <check key="ice_road" text="Ice road" disable_off="true" />
     </chunk>
@@ -1616,6 +1625,7 @@
                 <text key="width" text="Width (meters)"/>
                 <reference ref="sidewalk"/>
                 <reference ref="parking_lane"/>
+                <reference ref="bus_bay"/>
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -1632,6 +1642,7 @@
                 <reference ref="highway_additional_oneway_lit_width"/>
 		        <check key="trolley_wire" text="Overhead trolley wires" disable_off="true"/>
                 <reference ref="parking_lane"/>
+                <reference ref="bus_bay"/>
             </optional>
             <reference ref="road_access_restrictions"/>
         </item> <!-- Living Street -->
