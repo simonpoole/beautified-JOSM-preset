@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/simonpoole/beautified-JOSM-preset.svg?branch=master)](https://travis-ci.org/simonpoole/beautified-JOSM-preset)
+[![build status](https://github.com/simonpoole/beautified-JOSM-preset/actions/workflows/javalib.yml/badge.svg)](https://github.com/simonpoole/beautified-JOSM-prest/actions)
 
 
 Beautified JOSM preset
