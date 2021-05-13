@@ -19,7 +19,7 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
-    - name: Intsall xmlstarlet
+    - name: Install xmlstarlet
       run: sudo apt-get -y install xmlstarlet  librsvg2-bin
     - name: Check with Gradle
       run: ./gradlew check
