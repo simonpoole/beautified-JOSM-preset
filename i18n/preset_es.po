@@ -5,7 +5,7 @@
 # Albert, 2016
 # Carlos Vigo <carlos@carlos-vigo.com>, 2019
 # ccpr1l <csdpe0810-tf@yahoo.es>, 2017
-# Ignacio L'Episcopo, 2019
+# Ignacio L'Episcopo, 2019,2021
 # Javier O, 2017-2018
 # Jorge Sanz <sanchi2@gmail.com>, 2020-2021
 # Jose Luis Infante <jl@llefia.org>, 2018-2019
@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2021-03-14 16:37+0100\n"
-"PO-Revision-Date: 2021-03-14 15:40+0000\n"
+"PO-Revision-Date: 2021-04-09 13:59+0000\n"
 "Last-Translator: Ignacio L'Episcopo\n"
 "Language-Team: Spanish (http://www.transifex.com/openstreetmap/presets/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -1844,7 +1844,7 @@ msgstr "Búfalo"
 
 #: master_preset.xml:3278(item:name|group:Railway|preset:Buffer_Stop)
 msgid "Buffer Stop"
-msgstr "Tienda de parachoques"
+msgstr "Tope ferroviario"
 
 #: master_preset.xml:11430(item:name|group:Crafts|preset:Builder)
 msgid "Builder"
@@ -7082,7 +7082,7 @@ msgstr "Alminar"
 
 #: master_preset.xml:4990(item:name|group:Leisure|preset:Minature_railway)
 msgid "Minature railway"
-msgstr ""
+msgstr "Ferrocarril en miniatura"
 
 #: master_preset.xml:8572(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:mine)
 msgid "Mine"
@@ -8489,7 +8489,7 @@ msgstr ""
 
 #: master_preset.xml:1991(optional:text|group:Waypoints|preset:Traffic_Signal)
 msgid "Optional signal attributes:"
-msgstr ""
+msgstr "Atributos de señal opcionales:"
 
 #: master_preset.xml:10752(optional:text|group:Addresses_and_Contact|preset:Address)
 #: master_preset.xml:2006(optional:text|group:Waypoints|preset:Traffic_Signal)
@@ -9855,19 +9855,19 @@ msgstr "Raíl"
 #: master_preset.xml:5263(multiselect:display_values|group:Culture|preset:Museum|key:museum)
 #: master_preset.xml:8573(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:railway)
 msgid "Railway"
-msgstr "Vía férrea"
+msgstr "Ferrocarril"
 
 #: master_preset.xml:3985(item:name|group:Public_Transport_(Legacy)|preset:Railway_Halt)
 msgid "Railway Halt"
-msgstr "Parada de trén"
+msgstr "Parada ferroviaria"
 
 #: master_preset.xml:10679(item:name|group:Land_use|preset:Railway_Land)
 msgid "Railway Land"
-msgstr "Tierra de vía férrea"
+msgstr "Terreno de ferrocarril"
 
 #: master_preset.xml:3999(item:name|group:Public_Transport_(Legacy)|preset:Railway_Platform)
 msgid "Railway Platform"
-msgstr "Plataforma de vía férrea"
+msgstr "Plataforma de ferrocarril"
 
 #: master_preset.xml:11225(item:name|group:Routes|preset:Railway_Route)
 msgid "Railway Route"
@@ -9875,7 +9875,7 @@ msgstr "Ruta del ferrocarril"
 
 #: master_preset.xml:3294(item:name|group:Railway|preset:Railway_Signal)
 msgid "Railway Signal"
-msgstr "Signo de vía"
+msgstr "Señal ferroviaria"
 
 #: master_preset.xml:3282(item:name|group:Railway|preset:Railway_Switch)
 msgid "Railway Switch"
@@ -9887,7 +9887,7 @@ msgstr ""
 
 #: master_preset.xml:3289(item:name|group:Railway|preset:Railway_crossing)
 msgid "Railway crossing"
-msgstr ""
+msgstr "Cruce ferroviario"
 
 #: master_preset.xml:3853(check:text|group:Public_Transport|preset:Stop_Position|key:railway)
 #: master_preset.xml:3921(check:text|group:Public_Transport|preset:Station|key:railway)
@@ -9904,16 +9904,16 @@ msgstr "Plataforma de ferrocarril (anticuado)"
 
 #: master_preset.xml:11259(combo:display_values|group:Routes|preset:Superroute|key:route)
 msgid "Railway route"
-msgstr ""
+msgstr "Ruta ferroviaria"
 
 #: master_preset.xml:3852(check:text|group:Public_Transport|preset:Stop_Position|key:railway)
 #: master_preset.xml:3920(check:text|group:Public_Transport|preset:Station|key:railway)
 msgid "Railway station"
-msgstr ""
+msgstr "Estación de ferrocarril"
 
 #: master_preset.xml:3231(combo:text|group:Railway|preset:Railway_construction|key:construction)
 msgid "Railway type"
-msgstr ""
+msgstr "Tipo de ferrocarril"
 
 #: master_preset.xml:1001(list_entry:display_value|value:raised)
 #: master_preset.xml:985(list_entry:display_value|value:raised)
@@ -11688,7 +11688,7 @@ msgstr "Señal de alto"
 
 #: master_preset.xml:3815(item:name|group:Public_Transport|preset:Stop_Area)
 msgid "Stop Area"
-msgstr "Zona de parada"
+msgstr "Zona de detención"
 
 #: master_preset.xml:3829(role:text|group:Public_Transport|preset:Stop_Area|key:stop)
 #: master_preset.xml:3836(item:name|group:Public_Transport|preset:Stop_Position)
@@ -17232,7 +17232,7 @@ msgstr "Piramidal"
 #: master_preset.xml:1150(combo:display_values|key:building:use)
 msgctxt "building"
 msgid "Railway"
-msgstr "Vía férrea"
+msgstr "Ferrocarril"
 
 #: master_preset.xml:1150(combo:display_values|key:building:use)
 msgctxt "building"
