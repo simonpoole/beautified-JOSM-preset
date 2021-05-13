@@ -22,8 +22,7 @@ buildscript {
 apply plugin: "com.github.breadmoirai.github-release"
 
 repositories {
-    jcenter()
-    maven { url 'https://dl.bintray.com/content/simonpoole/osm' }
+    mavenCentral()
 }
 
 ext {
@@ -42,7 +41,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.23.0'
+    runtime 'ch.poole:preset-utils:0.23.1'
 }
 
 task copyCss(type: Copy) {
