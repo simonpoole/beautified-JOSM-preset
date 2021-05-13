@@ -8024,7 +8024,7 @@
             <link wiki="Tag:man_made=surveillance"/>
             <space/>
             <key key="man_made" value="surveillance"/>
-            <multiselect key="surveillance:type" text="Method" values="ALPR;camera;guard" display_values="ALPR;camera;guard" />
+            <multiselect key="surveillance:type" text="Method" values="ALPR;camera;guard" display_values="ALPR;camera;guard" text_context="surveillance" />
             <combo key="surveillance" text="Location" values="indoor,outdoor,public" display_values="Indoor,Outdoor,Public" />
             <combo key="surveillance:zone" text="Zone" values="town,parking,traffic,shop,bank,building" display_values="Town,Parking,Traffic,Shop,Bank,Building"/>
             <text key="operator" text="Operator"/>
@@ -8159,7 +8159,7 @@
             <item name="Biomass Power Generator" icon="${power_generator_biomass}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="biomass"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="anaerobic_digestion,combustion,gasification" display_values="Anaerobic digestion,Combustion,Gasification" match="none" />
+                <combo key="generator:method" text="Method" values_context="generator method" values="anaerobic_digestion,combustion,gasification" display_values="Anaerobic digestion,Combustion,Gasification" match="none" text_context="power" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="bioreactor" short_description="Bioreactor"/>
                     <list_entry value="pyrolysis" short_description="Pyrolysis"/>
@@ -8206,7 +8206,7 @@
             <item name="Nuclear Reactor" icon="${power_generator_nuclear}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="nuclear"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="fission,fusion" display_values="Fission,Fusion" match="none" />
+                <combo key="generator:method" text="Method" values_context="generator method" values="fission,fusion" display_values="Fission,Fusion" match="none" text_context="power" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="BWR-1" display_value="Boiling Water Reactor 1 (BWR-1)" />
                     <list_entry value="BWR-2" display_value="Boiling Water Reactor 2 (BWR-2)" />
@@ -8231,7 +8231,7 @@
             <item name="Solar Power Generator" icon="${power_station_solar}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="solar"/>
                 <reference ref="power_generator_optional_name_ref"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="photovoltaic,thermal" display_values="Photovoltaic,Thermal" match="none" />
+                <combo key="generator:method" text="Method" values_context="generator method" values="photovoltaic,thermal" display_values="Photovoltaic,Thermal" match="none" text_context="power" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="solar_photovoltaic_panel" short_description="Photovoltaic panel"/>
                     <list_entry value="solar_thermal_collector" short_description="Thermal collector"/>
@@ -8243,7 +8243,7 @@
             <item name="Waste Power Generator" icon="${power_generator_waste}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="waste"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="combustion,gasification,pyrolysis" display_values="Combustion,Gasification,Pyrolysis" match="none" />
+                <combo key="generator:method" text="Method" values_context="generator method" values="combustion,gasification,pyrolysis" display_values="Combustion,Gasification,Pyrolysis" match="none" text_context="power" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="bioreactor" short_description="Bioreactor"/>
                     <list_entry value="pyrolysis" short_description="Pyrolysis"/>
@@ -8255,7 +8255,7 @@
             <item name="Water Turbine" icon="${power_station_water}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="hydro"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="run-of-the-river,water-pumped-storage,water-storage" display_values="Run of the river,Water pumped storage,Water storage" match="none" />
+                <combo key="generator:method" text="Method" values_context="generator method" values="run-of-the-river,water-pumped-storage,water-storage" display_values="Run of the river,Water pumped storage,Water storage" match="none" text_context="power" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="francis_turbine" short_description="Francis turbine"/>
                     <list_entry value="hydrodynamic_screw" short_description="Hydrodynamic screw"/>
@@ -8267,7 +8267,7 @@
             <item name="Tidal Water Turbine" icon="${power_generator_tidal}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="generator:source" value="tidal"/>
                 <reference ref="power_generator"/>
-                <combo key="generator:method" text="Method" values_context="generator method" values="barrage,stream" display_values="Barrage,Stream" match="none" />
+                <combo key="generator:method" text="Method" values_context="generator method" values="barrage,stream" display_values="Barrage,Stream" match="none" text_context="power" />
                 <combo key="generator:type" text="Generator Type" values_searchable="true">
                     <list_entry value="horizontal_axis" short_description="Horizontal axis"/>
                     <list_entry value="kaplan_turbine" short_description="Kaplan turbine"/>
