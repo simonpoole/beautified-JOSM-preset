@@ -918,10 +918,14 @@
     </chunk>
     <chunk id="water_access">
         <optional text="Water access rules:">
-            <combo key="ship" text="Ship" values="yes,designated,destination,delivery,permissive,private,permit,no" values_sort="false" values_context="access"/>
-            <combo key="boat" text="Boat" values="yes,designated,destination,delivery,permissive,private,permit,no" values_sort="false" values_context="access"/>
-            <combo key="motorboat" text="Motorboat" values="yes,designated,destination,delivery,permissive,private,permit,no" values_sort="false" values_context="access"/>
-            <combo key="canoe" text="Canoe" values="yes,designated,destination,delivery,permissive,private,permit,no" values_sort="false" values_context="access"/>
+            <combo key="ship" text="Ship" values="yes,designated,destination,delivery,permissive,private,permit,no"
+                display_values="Yes,Designated,Destination,Delivery,Permissive,Private,Permit required,No" values_sort="false" values_context="access"/>
+            <combo key="boat" text="Boat" values="yes,designated,destination,delivery,permissive,private,permit,no" 
+                display_values="Yes,Designated,Destination,Delivery,Permissive,Private,Permit required,No" values_sort="false" values_context="access"/>
+            <combo key="motorboat" text="Motorboat" values="yes,designated,destination,delivery,permissive,private,permit,no" 
+                display_values="Yes,Designated,Destination,Delivery,Permissive,Private,Permit required,No" values_sort="false" values_context="access"/>
+            <combo key="canoe" text="Canoe" values="yes,designated,destination,delivery,permissive,private,permit,no" 
+                display_values="Yes,Designated,Destination,Delivery,Permissive,Private,Permit required,No" values_sort="false" values_context="access"/>
         </optional>
     </chunk>
     <chunk id="operator_substance">
@@ -967,7 +971,7 @@
     <multiselect key="brand" text="Car brand" values="Alfa Romeo;Aston Martin;Audi;Bentley;BMW;Buick;Cadillac;Chevrolet;Chrysler;Citro&#xEB;n;Dacia;Daewoo;Daihatsu;Dodge;Ferrari;Fiat;Ford;GMC;Great Wall;Holden;Honda;Hyundai;Infiniti;Isuzu;Jaguar;Jeep;Kia;Lada;Lancia;Land Rover;Lexus;Lincoln;Lotus;Maserati;Mazda;Mercedes-Benz;Mini;Mitsubishi;Nissan;Opel;Peugeot;Renault;Saab;Seat;&#x160;koda;Smart;SsangYong;Subaru;Suzuki;Toyota;Vauxhall;Volkswagen;Volvo" match="key"/>
   </chunk>
   <chunk id="motorcycle_brands">
-    <multiselect key="brand" text="Motorcycle brand" values="Aprillia;BMW;Ducati;Gilera;Harley-Davidson;Honda;Kawasaki;KTM;Kymco;Piaggio;Peugeot;Piaggio;Suzuki;Triumph;Vespa;Yamaha" match="key"/>
+    <multiselect key="brand" text="Motorcycle brand" values="Aprilia;BMW;Ducati;Gilera;Harley-Davidson;Honda;Kawasaki;KTM;Kymco;Moto Guzzi;Peugeot;Piaggio;Suzuki;Triumph;Vespa;Yamaha" match="key"/>
   </chunk>
   <chunk id="walking_routes_roles">
      <roles>
@@ -1082,12 +1086,12 @@
   <chunk id="path_access_restrictions">
     <optional>
         <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
-            display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,No" values_context="access" match="key" values_sort="false"/>
-        <combo key="dog" text="Dog" values="yes,leashed,unleashed,official,designated,permissive,private,no" 
-            display_values="Yes,Leashed,Unleashed,Official,Designated,Permissive,Private,No" values_sort="false" values_context="access"  match="key" />
-        <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,no" display_values="Yes,Official,Designated,Permissive,Private,No" values_context="access" values_sort="false"/>
-        <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,no" 
-            display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,No" values_context="access" values_sort="false"/>
+            display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" match="key" values_sort="false"/>
+        <combo key="dog" text="Dog" values="yes,leashed,unleashed,official,designated,permissive,private,permit,no" 
+            display_values="Yes,Leashed,Unleashed,Official,Designated,Permissive,Private,Permit required,No" values_sort="false" values_context="access"  match="key" />
+        <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,permit,no" display_values="Yes,Official,Designated,Permissive,Private,Permit required,No" values_context="access" values_sort="false"/>
+        <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,permit,no" 
+            display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" values_sort="false"/>
     </optional>
     <preset_link preset_name="All vehicles"/>
     <preset_link preset_name="Motor vehicle"/>
@@ -1856,10 +1860,10 @@
         <item name="Path" icon="${highway_path}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=path"/>
             <key key="highway" value="path"/>
-            <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,no" 
-                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,No" values_context="access" values_sort="false" />
-            <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,no" 
-                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,No" values_context="access" values_sort="false" />
+            <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,permit,no" 
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" values_sort="false" />
+            <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,permit,no" 
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" values_sort="false" />
             <optional>
                 <reference ref="name"/>
                 <reference ref="surface_smoothness"/>
@@ -2075,7 +2079,7 @@
             <item name="Traffic Calming" icon="${traffic_calming}" type="node,way" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
                 <space/>
-                <combo key="traffic_calming" text="Type" values="bump,hump,table,cushion,rumble_strip,dip,double_dip,chicane,choker,island,choked_island" display_values="Bump,Hump,Table,Cushion,Rumble strip,Dip,Double dip,Chicane,Choker,Island,Choked island" match="keyvalue!" />
+                <combo key="traffic_calming" text="Type" values="bump,hump,table,cushion,rumble_strip,dip,double_dip,chicane,choker,island,choked_island,mini_bumps" display_values="Bump,Hump,Table,Cushion,Rumble strip,Dip,Double dip,Chicane,Choker,Island,Choked island,Mini bumps" match="keyvalue!" />
             </item> <!-- Traffic Calming -->
             <item name="Bump" icon="${traffic_calming_bump}" type="node,way" preset_name_label="true">
                 <link wiki="Key:traffic_calming"/>
@@ -2123,6 +2127,11 @@
                 <space/>
                 <key key="traffic_calming" value="island" values_context="traffic_calming"/>
             </item> <!-- Island -->
+            <item name="Mini bumps" icon="${traffic_calming_mini_bumps}" type="node,way" preset_name_label="true">
+                <link wiki="Key:traffic_calming" />
+                <space />
+                <key key="traffic_calming" value="mini_bumps" />
+            </item> <!-- Mini bumps -->
         </group> <!-- Traffic Calming -->
         <item name="Passing Place" icon="${highway_passing_place}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=passing_place"/>
@@ -2729,19 +2738,19 @@
             <link wiki="Key:access"/>
             <space/>
             <combo key="foot" text="Foot" values="yes,official,designated,permissive,destination,delivery,private,permit,use_sidepath,no"
-                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit,Use sidepath,No" values_context="access" match="key" values_sort="false"/>
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,Use sidepath,No" values_context="access" match="key" values_sort="false"/>
             <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,permit,no" 
-                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Use sidepath,Permit,No" values_context="access" match="key" values_sort="false"/>
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Use sidepath,Permit required,No" values_context="access" match="key" values_sort="false"/>
           <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no"
                 display_values="Yes,Official,Designated,Destination,Permissive,Private,No" values_context="access" match="key" values_sort="false"/>
             <combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,no"
                 display_values="Yes,Official,Designated,Destination,No" values_context="access" match="keyvalue" values_sort="false"/>
             <combo key="goods" text="Light Commercial Vehicles (goods)" values="yes,official,designated,destination,delivery,permissive,private,agricultural,forestry,permit,no"
-                display_values="Yes,Official,Designated,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit,No" values_context="access" match="key" values_sort="false"/>
-            <combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,no"
-                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" values_context="access" match="key" values_sort="false"/>
-            <combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,no" 
-                display_values="Yes,Official,Designated,Destination,Permissive,Private,No" values_context="access" match="key" values_sort="false"/>
+                display_values="Yes,Official,Designated,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No" values_context="access" match="key" values_sort="false"/>
+            <combo key="hov" text="High-occupancy vehicles (hov)" values="yes,official,designated,destination,permissive,private,permit,no"
+                display_values="Yes,Official,Designated,Destination,Permissive,Private,Permit required,No" values_context="access" match="key" values_sort="false"/>
+            <combo key="psv" text="Public Service Vehicles (psv)" values="yes,official,designated,destination,permissive,private,permit,no" 
+                display_values="Yes,Official,Designated,Destination,Permissive,Private,Permit required,No" values_context="access" match="key" values_sort="false"/>
             <combo key="tourist_bus" text="Tourist buses" values="yes,no" display_values="Yes,No" match="key" values_context="access" values_sort="false"/>            
             <combo key="4wd_only" text="4WD only" values="yes,recommended,no" display_values="Yes,Recommended,No" values_context="access" match="key" values_sort="false"/>
         </item> <!-- Other mode restrictions -->
@@ -3123,7 +3132,7 @@
             <space/>
             <key key="man_made" value="pier"/>
             <reference ref="optional_name"/>
-            <combo key="mooring" text="Mooring" values="yes,no,private,commercial"/>
+            <combo key="mooring" text="Mooring" values="yes,no,private,permit,commercial" display_values="Yes,No,Private,Permit required,Commercial"/>
             <check key="floating" text="Floating"/>
         </item> <!-- Pier -->
         <item name="Lock Gate" icon="${water_transport_lock_gate}" type="node,way" preset_name_label="true">
@@ -7511,7 +7520,7 @@
 			<link wiki="Key:entrance"/>
 			<space/>
 			<combo key="entrance" text="Entrance" values="yes,main,service,exit,emergency,staircase,home,garage" display_values="Yes,Main,Service,Exit,Emergency,Staircase,Home,Garage" values_context="entrance" default="yes" match="key"/>
-			<combo key="access" text="Access" values="yes,delivery,private,customers,permissive,no" display_values="Yes,Delivery,Private,Customers,Permissive,No" values_context="access" match="none"/>
+			<combo key="access" text="Access" values="yes,delivery,private,customers,permissive,permit,no" display_values="Yes,Delivery,Private,Customers,Permissive,Permit required,No" values_context="access" match="none"/>
 			<optional>
 				<reference ref="wheelchair"/>
 				<text key="ref" text="Entrance number"/>
