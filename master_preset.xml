@@ -724,10 +724,13 @@
         <text key="symbol" text="Symbol description"/>
         <text key="description" text="Description" length="255" />
     </chunk>
-    <chunk id="genus_species_taxon">
-        <text key="genus" text="Genus"/>
+    <chunk id="species_taxon">
         <text key="species" text="Species"/>
         <text key="taxon" text="Taxon"/>
+    </chunk>
+    <chunk id="genus_species_taxon">
+        <text key="genus" text="Genus"/>
+        <reference ref="species_taxon"/>
     </chunk>
     <chunk id="leaf">
         <combo key="leaf_type" text="Leaf type" values="broadleaved,needleleaved,mixed,leafless" display_values="Broadleaved,Needleleaved,Mixed,Leafless" values_searchable="true"/>
