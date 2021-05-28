@@ -724,10 +724,25 @@
         <text key="symbol" text="Symbol description"/>
         <text key="description" text="Description" length="255" />
     </chunk>
-    <chunk id="genus_species_taxon">
-        <text key="genus" text="Genus"/>
+    <chunk id="species_taxon">
         <text key="species" text="Species"/>
         <text key="taxon" text="Taxon"/>
+    </chunk>
+    <chunk id="genus_species_taxon">
+        <text key="genus" text="Genus"/>
+        <reference ref="species_taxon"/>
+    </chunk>
+    <chunk id="tree_genus">
+        <combo key="genus" text="Genus (first part of scientific name)"
+	    values="Abies,Acer,Aesculus,Ananas,Betula,Carpinus,Cedrus,Celtis,Citrus,Cocos,Cydonia,Elaeis,Eucalyptus,Fraxinus,Ginkgo,Gleditsia,Juglans,Malus,Musa,Olea,Persea,Phoenix,Picea,Pinus,Platanus,Populus,Prunus,Pyrus,Quercus,Robinia,Salix,Sophora,Sorbus,Tilia,Ulmus"
+	    display_values="Abies (Fir),Acer (Maple),Aesculus (Horse chestnut / Buckeye),Ananas (Pineapple),Betula (Birch),Carpinus (Hornbeam),Cedrus (Cedar),Celtis (Hackberry / Nettle tree),Citrus (Citrus fruit),Cocos (Coconut tree),Cydonia (Quince),Elaeis (Oil palm),Eucalyptus,Fraxinus (Ash),Ginkgo,Gleditsia (Honey locust),Juglans (Walnut tree),Malus (Apple),Musa (Banana),Olea (Olive),Persea (Avocado),Phoenix (Date palm),Picea (Spruce),Pinus (Pine),Platanus,Populus (Aspen / Poplar / Cottonwood),Prunus (Plum / Cherry / Peach / Nectarine / Apricot / Almond),Pyrus (Pear),Quercus (Oak),Robinia (Locust),Salix (Willow / Sallow / Osier),Sophora,Sorbus (Whitebeam / Rowan / Service tree / Mountain-ash),Tilia (Linden / Lime / Basswood),Ulmus (Elm)"
+	    use_last_as_default="true"
+	    editable="false"
+	    values_searchable="true"/>
+    </chunk>
+    <chunk id="tree_genus_species_taxon">
+        <reference ref="tree_genus"/>
+        <reference ref="species_taxon"/>
     </chunk>
     <chunk id="leaf">
         <combo key="leaf_type" text="Leaf type" values="broadleaved,needleleaved,mixed,leafless" display_values="Broadleaved,Needleleaved,Mixed,Leafless" values_searchable="true"/>
@@ -10350,7 +10365,7 @@
             </optional>
             <text key="height" text="Height (meters)" length="7" />
             <text key="circumference" text="Circumference (meters)"/>
-            <reference ref="genus_species_taxon"/>
+            <reference ref="tree_genus_species_taxon"/>
             <reference ref="leaf"/>
             <optional>
             	<text key="diameter_crown" text="Crown diameter (meters)"/>
@@ -10370,7 +10385,7 @@
             <key key="natural" value="tree_row"/>
             <text key="height" text="Height (meters)" length="7" />
             <optional>
-            	<reference ref="genus_species_taxon"/>
+                <reference ref="tree_genus_species_taxon"/>
                 <reference ref="leaf"/>
             </optional>
         </item> <!-- Tree Row -->
