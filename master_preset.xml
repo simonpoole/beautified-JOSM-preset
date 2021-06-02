@@ -6455,7 +6455,7 @@
             <key key="amenity" value="recycling"/>
             <key key="recycling_type" value="container"/>
             <optional>
-                <combo key="location" text="Location" values="underground,overground" display_values="underground,overground" values_context="pipeline" />
+                <combo key="location" text="Location" values="underground,overground" display_values="Underground,Overground" values_context="pipeline" />
             </optional>
             <reference ref="oh_wheelchair"/>
             <space/>
