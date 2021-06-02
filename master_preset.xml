@@ -321,7 +321,7 @@
         <combo key="opening_hours" text="Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
     </chunk>
     <chunk id="ohworkshop">
-        <combo key="opening_hours:workshop" text="Workshop Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+        <combo key="opening_hours:workshop" value_type="opening_hours" text="Workshop Opening Hours" delimiter="|" values="24/7|08:30-12:30,15:30-20:00|Sa-Su 00:00-24:00|Mo-Fr 08:30-20:00; Sa,Su 08:00-15:00; PH off|Mo-Fr 08:30-20:00, Tu-Su 08:00-15:00; Sa 08:00-12:00|Mo-Su 08:00-18:00; Apr 10-15 off; Jun 08:00-14:00; Aug off; Dec 25 off|sunrise-sunset|Su 10:00+|week 01-53/2 Fr 09:00-12:00; week 02-52/2 We 09:00-12:00" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
     </chunk>
     <chunk id="optional_oh">
         <optional>
