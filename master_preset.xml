@@ -7414,10 +7414,76 @@
         <item name="Building" icon="${building}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:building"/>
             <space/>
-            <combo key="building" text="Building"
-                values="allotment_house,apartments,bakehouse,barn,basilica,boathouse,bungalow,bunker,cabin,cathedral,chapel,church,college,commercial,construction,cowshed,detached,digester,dormitory,farm,farm_auxiliary,fire_station,garage,garages,gasometer,gatehouse,ger,grandstand,greenhouse,hangar,hospital,hotel,house,houseboat,hut,industrial,kindergarten,manufacture,monastery,mosque,office,parking,pavilion,public,residential,retail,roof,ruins,school,semidetached_house,service,shed,stable,stadium,static_caravan,storage_tank,sty,supermarket,synagogue,temple,terrace,toilets,train_station,transformer_tower,transportation,university,warehouse,yes" 
-                display_values="Allotment house,Apartments,Bakehouse,Barn,Basilica,Boathose,Bungalow,Bunker,Cabin,Cathedral,Chapel,Church,College,Commercial,Construction,Cowshed,Detached,Digester,Dormitory,Farm,Farm auxiliary,Fire station,Garage,Garages,Gasometer,Gatehouse,Ger,Grandstand,Greenhouse,Hangar,Hospital,Hotel,House,Houseboat,Hut,Industrial,Kindergarten,Manufacture,Monastery,Mosque,Office,Parking,Pavilion,Public,Residential,Retail,Roof,Ruins,School,Semidetached house,Service,Shed,Stable,Stadium,Static caravan,Storage tank,Sty,Supermarket,Synagogue,Temple,Terrace,Toilets,Train station,Transformer tower,Transportation,University,Warehouse,Yes"
-                values_context="building" default="yes" match="keyvalue!" values_searchable="true"/>
+            <combo key="building" text="Building" values_context="building" default="yes" match="keyvalue!" values_searchable="true">
+                <list_entry value="allotment_house"    display_value="Allotment house">
+                <list_entry value="apartments"         display_value="Apartments"/>
+                <list_entry value="bakehouse"          display_value="Bakehouse"/>
+                <list_entry value="barn"               display_value="Barn"/>
+                <list_entry value="basilica"           display_value="Basilica"/>
+                <list_entry value="boathouse"          display_value="Boathose"/>
+                <list_entry value="bungalow"           display_value="Bungalow"/>
+                <list_entry value="bunker"             display_value="Bunker"/>
+                <list_entry value="cabin"              display_value="Cabin"/>
+                <list_entry value="cathedral"          display_value="Cathedral"/>
+                <list_entry value="chapel"             display_value="Chapel"/>
+                <list_entry value="church"             display_value="Church"/>
+                <list_entry value="college"            display_value="College"/>
+                <list_entry value="commercial"         display_value="Commercial"/>
+                <list_entry value="construction"       display_value="Construction"/>
+                <list_entry value="cowshed"            display_value="Cowshed"/>
+                <list_entry value="detached"           display_value="Detached"/>
+                <list_entry value="digester"           display_value="Digester"/>
+                <list_entry value="dormitory"          display_value="Dormitory"/>
+                <list_entry value="farm"               display_value="Farm"/>
+                <list_entry value="farm_auxiliary"     display_value="Farm auxiliary"/>
+                <list_entry value="fire_station"       display_value="Fire station"/>
+                <list_entry value="garage"             display_value="Garage"/>
+                <list_entry value="garages"            display_value="Garages"/>
+                <list_entry value="gasometer"          display_value="Gasometer"/>
+                <list_entry value="gatehouse"          display_value="Gatehouse"/>
+                <list_entry value="ger"                display_value="Ger"/>
+                <list_entry value="grandstand"         display_value="Grandstand"/>
+                <list_entry value="greenhouse"         display_value="Greenhouse"/>
+                <list_entry value="hangar"             display_value="Hangar"/>
+                <list_entry value="hospital"           display_value="Hospital"/>
+                <list_entry value="hotel"              display_value="Hotel"/>
+                <list_entry value="house"              display_value="House"/>
+                <list_entry value="houseboat"          display_value="Houseboat"/>
+                <list_entry value="hut"                display_value="Hut"/>
+                <list_entry value="industrial"         display_value="Industrial"/>
+                <list_entry value="kindergarten"       display_value="Kindergarten"/>
+                <list_entry value="manufacture"        display_value="Manufacture"/>
+                <list_entry value="monastery"          display_value="Monastery"/>
+                <list_entry value="mosque"             display_value="Mosque"/>
+                <list_entry value="office"             display_value="Office"/>
+                <list_entry value="parking"            display_value="Parking"/>
+                <list_entry value="pavilion"           display_value="Pavilion"/>
+                <list_entry value="public"             display_value="Public"/>
+                <list_entry value="residential"        display_value="Residential"/>
+                <list_entry value="retail"             display_value="Retail"/>
+                <list_entry value="roof"               display_value="Roof"/>
+                <list_entry value="ruins"              display_value="Ruins"/>
+                <list_entry value="school"             display_value="School"/>
+                <list_entry value="semidetached_house" display_value="Semidetached house"/>
+                <list_entry value="service"            display_value="Service"/>
+                <list_entry value="shed"               display_value="Shed"/>
+                <list_entry value="stable"             display_value="Stable"/>
+                <list_entry value="stadium"            display_value="Stadium"/>
+                <list_entry value="static_caravan"     display_value="Static caravan"/>
+                <list_entry value="storage_tank"       display_value="Storage tank"/>
+                <list_entry value="sty"                display_value="Sty"/>
+                <list_entry value="supermarket"        display_value="Supermarket"/>
+                <list_entry value="synagogue"          display_value="Synagogue"/>
+                <list_entry value="temple"             display_value="Temple"/>
+                <list_entry value="terrace"            display_value="Terrace"/>
+                <list_entry value="toilets"            display_value="Toilets"/>
+                <list_entry value="train_station"      display_value="Train station"/>
+                <list_entry value="transformer_tower"  display_value="Transformer tower"/>
+                <list_entry value="transportation"     display_value="Transportation"/>
+                <list_entry value="university"         display_value="University"/>
+                <list_entry value="warehouse"          display_value="Warehouse"/>
+                <list_entry value="yes"                display_value="Yes"/>
+            </combo>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
         </item> <!-- Building -->
