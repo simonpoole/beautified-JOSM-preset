@@ -19,6 +19,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 11
+    - name: Check for tabs in master_preset.xml
+      run: '! grep -n -P "\t" master_preset.xml'
     - name: Install xmlstarlet
       run: sudo apt-get -y install xmlstarlet  librsvg2-bin
     - name: Check with Gradle
