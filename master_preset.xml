@@ -979,8 +979,8 @@
         <list_entry value="underprivileged" display_value="Underprivileged"/>
         <list_entry value="unemployed" display_value="Unemployed"/>
         <list_entry value="victim" display_value="Victims"/>
- 	</combo>
-  </chunk>
+        </combo>
+    </chunk>
   <chunk id="stars">
       <combo key="stars" text="Stars" values="1,2,3,4,5" display_values="*,**,***,****,*****"/>
   </chunk>
@@ -7456,110 +7456,110 @@
                 values="bakehouse,barn,college,commercial,construction,cowshed,farm_auxiliary,garage,garages,greenhouse,hangar,hospital,industrial,office,parking,retail,roof,ruins,school,shed,supermarket,toilets,transportation,university,warehouse,yes" 
                 display_values="Bakehouse,Barn,College,Commercial,Construction,Cowshed,Farm auxiliary,Garage,Garages,Greenhouse,Hangar,Hospital,Industrial,Office,Parking,Retail,Roof,Ruins,School,Shed,Supermarket,Toilets,Transportation,University,Warehouse,Yes" 
                 values_context="building" default="yes" match="key" values_searchable="true"/>
-			<reference ref="additional_building_tags"/>
-			<combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" editable="true" text_context="building"/>
-			<text key="min_height" text="Skipped height (meters)"/>
-		</item> <!-- Building part -->
-		<group name="Roof type" icon="${hipped}">
-			<item name="Dome" icon="${dome}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="dome" values_context="building"/>
-				<reference ref="roof_main"/>
-			</item> <!-- Roof type dome -->
-			<item name="Flat" icon="${flat}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="flat" values_context="building"/>
-				<reference ref="roof_main"/>
-			</item> <!-- Roof type flat -->
-			<item name="Gabled" icon="${gabled}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="gabled" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type gabled -->
-			<item name="Gambrel" icon="${gambrel}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="gambrel" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type gambrel -->
-			<item name="Half-hipped" icon="${half-hipped}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="half-hipped" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type half-hipped -->
-			<item name="Hipped" icon="${hipped}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="hipped" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type hipped -->
-			<item name="Mansard" icon="${mansard}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="mansard" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type mansard -->
-			<item name="Onion" icon="${onion}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="onion" values_context="building"/>
-				<reference ref="roof_main"/>
-			</item> <!-- Roof type onion -->
-			<item name="Pyramidal" icon="${pyramidal}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="pyramidal" values_context="building"/>
-				<reference ref="roof_main"/>
-			</item> <!-- Roof type pyramidal -->
-			<item name="Round" icon="${round}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="round" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type round -->
-			<item name="Saltbox" icon="${saltbox}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="saltbox" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type saltbox -->
-			<item name="Skillion" icon="${skillion}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="skillion" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type skillion -->
-		</group>
-		<!-- /roof type -->
-		<item name="Entrance" icon="${entrance}" type="node" preset_name_label="true">
-			<link wiki="Key:entrance"/>
-			<space/>
-			<combo key="entrance" text="Entrance" values="yes,main,service,exit,emergency,staircase,home,garage" display_values="Yes,Main,Service,Exit,Emergency,Staircase,Home,Garage" values_context="entrance" default="yes" match="key"/>
-			<combo key="access" text="Access" values="yes,delivery,private,customers,permissive,permit,no" display_values="Yes,Delivery,Private,Customers,Permissive,Permit required,No" values_context="access" match="none"/>
-			<optional>
-				<reference ref="wheelchair"/>
-				<text key="ref" text="Entrance number"/>
-				<reference ref="door_type" />
-				<text key="addr:flats" text="Flat numbers"/>
-			</optional>
-			<preset_link preset_name="Address"/>
-		</item> <!-- Entrance -->
-		<item name="Entrance (deprecated)" deprecated="true" icon="${entrance}" type="node" preset_name_label="true">
-			<key key="building" value="entrance"/>
-			<preset_link preset_name="Address"/>
-		</item> <!-- Entrance (deprecated) -->
+            <reference ref="additional_building_tags"/>
+            <combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" editable="true" text_context="building"/>
+            <text key="min_height" text="Skipped height (meters)"/>
+        </item> <!-- Building part -->
+        <group name="Roof type" icon="${hipped}">
+            <item name="Dome" icon="${dome}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="dome" values_context="building"/>
+                <reference ref="roof_main"/>
+            </item> <!-- Roof type dome -->
+            <item name="Flat" icon="${flat}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="flat" values_context="building"/>
+                <reference ref="roof_main"/>
+            </item> <!-- Roof type flat -->
+            <item name="Gabled" icon="${gabled}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="gabled" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type gabled -->
+            <item name="Gambrel" icon="${gambrel}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="gambrel" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type gambrel -->
+            <item name="Half-hipped" icon="${half-hipped}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="half-hipped" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type half-hipped -->
+            <item name="Hipped" icon="${hipped}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="hipped" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type hipped -->
+            <item name="Mansard" icon="${mansard}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="mansard" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type mansard -->
+            <item name="Onion" icon="${onion}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="onion" values_context="building"/>
+                <reference ref="roof_main"/>
+            </item> <!-- Roof type onion -->
+            <item name="Pyramidal" icon="${pyramidal}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="pyramidal" values_context="building"/>
+                <reference ref="roof_main"/>
+            </item> <!-- Roof type pyramidal -->
+            <item name="Round" icon="${round}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="round" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type round -->
+            <item name="Saltbox" icon="${saltbox}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="saltbox" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type saltbox -->
+            <item name="Skillion" icon="${skillion}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="skillion" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type skillion -->
+        </group>
+        <!-- /roof type -->
+        <item name="Entrance" icon="${entrance}" type="node" preset_name_label="true">
+            <link wiki="Key:entrance"/>
+            <space/>
+            <combo key="entrance" text="Entrance" values="yes,main,service,exit,emergency,staircase,home,garage" display_values="Yes,Main,Service,Exit,Emergency,Staircase,Home,Garage" values_context="entrance" default="yes" match="key"/>
+            <combo key="access" text="Access" values="yes,delivery,private,customers,permissive,permit,no" display_values="Yes,Delivery,Private,Customers,Permissive,Permit required,No" values_context="access" match="none"/>
+            <optional>
+                <reference ref="wheelchair"/>
+                <text key="ref" text="Entrance number"/>
+                <reference ref="door_type" />
+                <text key="addr:flats" text="Flat numbers"/>
+            </optional>
+            <preset_link preset_name="Address"/>
+        </item> <!-- Entrance -->
+        <item name="Entrance (deprecated)" deprecated="true" icon="${entrance}" type="node" preset_name_label="true">
+            <key key="building" value="entrance"/>
+            <preset_link preset_name="Address"/>
+        </item> <!-- Entrance (deprecated) -->
         <item name="Loading dock" icon="${amenity_forklift}" type="node,way" preset_name_label="true">
             <link wiki="Tag:amenity=loading_dock"/>
             <space/>
