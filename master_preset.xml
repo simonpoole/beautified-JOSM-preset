@@ -250,9 +250,9 @@
         <multiselect key="crossing" text="Crossing type" values_context="pedestrian" text_context="pedestrian">
             <list_entry value="uncontrolled" short_description="Not controlled" icon="${crossing}"/>
             <list_entry value="traffic_signals" short_description="Traffic signals" icon="${crossing_traffic_signals}"/>
-            <list_entry value="island" short_description="Island (deprecated)" icon="${crossing_island}"/>
             <list_entry value="unmarked" short_description="Unmarked" icon="${crossing_unmarked}"/>
             <list_entry value="no" short_description="No crossing"/>
+            <list_entry value="island" short_description="Island (deprecated)" icon="${crossing_island}"/>
         </multiselect>
         <check key="crossing:island" text="With island" />
         <optional>
