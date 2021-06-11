@@ -1,7 +1,7 @@
 /*
  */
 
-version = '2.6.0'
+version = '2.8.0'
 
 //for Ant filter
 import org.apache.tools.ant.filters.ReplaceTokens
@@ -22,8 +22,7 @@ buildscript {
 apply plugin: "com.github.breadmoirai.github-release"
 
 repositories {
-    jcenter()
-    maven { url 'https://dl.bintray.com/content/simonpoole/osm' }
+    mavenCentral()
 }
 
 ext {
@@ -42,7 +41,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.23.0'
+    runtime 'ch.poole:preset-utils:0.23.2'
 }
 
 task copyCss(type: Copy) {
