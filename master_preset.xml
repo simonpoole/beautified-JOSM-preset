@@ -381,7 +381,7 @@
             <text key="wheelchair:description" text="Wheelchair access details" length="255" i18n="true"/>
             <text key="wheelchair:entrance_width" text="Entrance width in cm"/>
             <text key="wheelchair:step_height" text="Step height in cm"/>
-         </optional>
+        </optional>
     </chunk>
     <chunk id="wheelchair_rooms">
         <optional>
@@ -436,7 +436,7 @@
         <reference ref="name_oh_wheelchair"/>
         <reference ref="level"/>
     </chunk>
-       <chunk id="name_wheelchair_level">
+    <chunk id="name_wheelchair_level">
         <reference ref="name_wheelchair"/>
         <reference ref="level"/>
     </chunk>
@@ -544,8 +544,8 @@
         <optional>
             <text key="name" text="Name"/>
             <text key="operator" text="Operator"/>
-         </optional>
-         <preset_link preset_name="No name"/>
+        </optional>
+        <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="wikipedia_wikidata">
         <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
@@ -598,8 +598,8 @@
         </multiselect>
     </chunk>
     <chunk id="internet">
-         <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" display_values="Available,WLAN,Wired,Terminal,Not available" values_sort="false"/>
-         <combo key="internet_access:fee" text="Internet access fee" values="yes,no" display_values="Yes,No"/>
+        <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" display_values="Available,WLAN,Wired,Terminal,Not available" values_sort="false"/>
+        <combo key="internet_access:fee" text="Internet access fee" values="yes,no" display_values="Yes,No"/>
     </chunk>
     <chunk id="internet_smoking">
         <reference ref="internet"/>
@@ -883,7 +883,7 @@
         <combo key="phases" text="Phases" values="1,3" length="1"/>
     </chunk>
     <chunk id="optional_rating_phases">
-         <optional>
+        <optional>
             <reference ref="rating_phases"/>
         </optional>
     </chunk>
@@ -965,453 +965,453 @@
     </chunk>
     <chunk id="social_facility_for">
         <combo key="social_facility:for" text="For group" match="key">
-        <list_entry value="abused" display_value="Abused"/>
-        <list_entry value="child" display_value="Children"/>
-        <list_entry value="disabled" display_value="Disabled"/>
-        <list_entry value="diseased" display_value="Diseased"/>
-        <list_entry value="drug_addicted" display_value="Drug addicted"/>
-        <list_entry value="homeless" display_value="Homeless"/>
-        <list_entry value="juvenile" display_value="Juveniles"/>
-        <list_entry value="mental_health" display_value="Mental health"/>
-        <list_entry value="migrant" display_value="Migrants"/>
-        <list_entry value="orphan" display_value="Orphans"/>
-        <list_entry value="senior" display_value="Elderly"/>
-        <list_entry value="underprivileged" display_value="Underprivileged"/>
-        <list_entry value="unemployed" display_value="Unemployed"/>
-        <list_entry value="victim" display_value="Victims"/>
- 	</combo>
-  </chunk>
-  <chunk id="stars">
-      <combo key="stars" text="Stars" values="1,2,3,4,5" display_values="*,**,***,****,*****"/>
-  </chunk>
-  <chunk id="car_brands">
-    <multiselect key="brand" text="Car brand" values="Alfa Romeo;Aston Martin;Audi;Bentley;BMW;Buick;Cadillac;Chevrolet;Chrysler;Citro&#xEB;n;Dacia;Daewoo;Daihatsu;Dodge;Ferrari;Fiat;Ford;GMC;Great Wall;Holden;Honda;Hyundai;Infiniti;Isuzu;Jaguar;Jeep;Kia;Lada;Lancia;Land Rover;Lexus;Lincoln;Lotus;Maserati;Mazda;Mercedes-Benz;Mini;Mitsubishi;Nissan;Opel;Peugeot;Renault;Saab;Seat;&#x160;koda;Smart;SsangYong;Subaru;Suzuki;Toyota;Vauxhall;Volkswagen;Volvo" match="key"/>
-  </chunk>
-  <chunk id="motorcycle_brands">
-    <multiselect key="brand" text="Motorcycle brand" values="Aprilia;BMW;Ducati;Gilera;Harley-Davidson;Honda;Kawasaki;KTM;Kymco;Moto Guzzi;Peugeot;Piaggio;Suzuki;Triumph;Vespa;Yamaha" match="key"/>
-  </chunk>
-  <chunk id="walking_routes_roles">
-     <roles>
-         <role key="" text="Route segment" requisite="required" type="way,closedway" member_expression="highway|route=ferry"/>
-         <role key="" text="Infrastructure" requisite="optional" type="node,closedway" member_expression="tourism OR amenity"/>
-         <role key="" text="Natural" requisite="optional" type="node,closedway" member_expression="natural=peak OR natural=volcano OR mountain_pass=yes OR natural=water OR tourism=viewpoint OR amenity=drinking_water OR natural=spring OR place=locality"/>
-         <role key="guidepost" text="Guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
-     </roles>
-  </chunk>
-  <chunk id="kerb">
-     <combo key="kerb" text="Kerb" match="key" values_sort="false">
-        <list_entry value="yes" display_value="Present"/>
-        <list_entry value="lowered" display_value="Lowered"/>
-        <list_entry value="raised" display_value="Raised"/>
-        <list_entry value="flush" display_value="Flush"/>
-        <list_entry value="rolled" display_value="Rolled"/>
-        <list_entry value="no" display_value="None"/>
-     </combo>
-     <combo key="kerb:left" text="Kerb (left)" match="key" values_sort="false">
-        <list_entry value="yes" display_value="Present"/>
-        <list_entry value="lowered" display_value="Lowered"/>
-        <list_entry value="raised" display_value="Raised"/>
-        <list_entry value="flush" display_value="Flush"/>
-        <list_entry value="rolled" display_value="Rolled"/>
-        <list_entry value="no" display_value="None"/>
-     </combo>
-     <combo key="kerb:right" text="Kerb (right)" match="key" values_sort="false">
-        <list_entry value="yes" display_value="Present"/>
-        <list_entry value="lowered" display_value="Lowered"/>
-        <list_entry value="raised" display_value="Raised"/>
-        <list_entry value="flush" display_value="Flush"/>
-        <list_entry value="rolled" display_value="Rolled"/>
-        <list_entry value="no" display_value="None"/>
-     </combo>
-  </chunk>
-  <chunk id="colours">
-    <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour"
-        values="black,blue,brown,gray,green,orange,#CD853F,purple,red,silver,white,yellow"
-        display_values="Black,Blue,Brown,Gray,Green,Orange,Peru,Purple,Red,Silver,White,Yellow" match="none" editable="true"/>
-  </chunk>
-  <chunk id="public_transport_route_optionals">
-    <text key="from" text="From (initial stop)"/>
-    <text key="to" text="To (terminal stop)"/>
-    <text key="via" text="Via (intermediate stops)"/>
-    <text key="operator" text="Operator"/>
-    <text key="network" text="Network"/>
-    <text key="description" text="Description" length="255"/>
-    <reference ref="colours" />
-    <combo key="interval" text="Interval (M, MM, HH:MM, or HH:MM:SS)" values="5,10,15,20,30,60,120" values_no_i18n="true" />
-  </chunk>
-  <chunk id="tactile_paving">
-      <combo key="tactile_paving" text="Tactile paving" values_context="tactile_paving" match="key" values_sort="false">
-          <list_entry value="yes" display_value="Present"/>
-          <list_entry value="no" display_value="None"/>
-          <list_entry value="incorrect" display_value="Incorrect"/>
-      </combo>
-  </chunk>
-  <chunk id="cash_withdrawal">
-      <multiselect key="cash_withdrawal" text="Cash withdrawal" length="3" values="yes" match="none" editable="true"/>
-      <optional>
-          <text key="cash_withdrawal:operator" text="Operator" match="none"/>
-          <combo key="cash_withdrawal:type" text="Type" values="checkout,self_checkout" display_values="Checkout,Self checkout" values_searchable="true" match="none"/>        
-          <text key="cash_withdrawal:limit" text="Limit" match="none" value_type="integer" />
-          <text key="cash_withdrawal:currency" text="Currency" match="none" />
-          <check key="cash_withdrawal:purchase_required" text="Purchase required"  match="none"/>
-          <combo key="cash_withdrawal:fee" text="Fee" values="yes,no,purchase_required" display_values="Yes,No,Purchase required" values_searchable="true" match="none"/>        
-          <combo key="cash_withdrawal:purchase_minimum" text="Minimum purchase" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
-          <combo key="cash_withdrawal:foreign_cards" text="Foreign cards" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
-      </optional>
-  </chunk>
-  <chunk id="route_segment_roles">
-     <role key="" text="route segment" requisite="optional" type="way,closedway" member_expression="highway|route=ferry|leisure=track"/>
-     <role key="forward" text="forward segment" requisite="optional" type="way,closedway" />
-     <role key="backward" text="backward segment" requisite="optional" type="way,closedway" />
-     <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
-  </chunk>
-  <chunk id="route_start_stop_roles">
-     <role key="start" text="start endpoint" requisite="optional" type="node" />
-     <role key="stop" text="stop endpoint" requisite="optional" type="node" />
-     <role key="start_stop" text="start and stop endpoint" requisite="optional" type="node" />
-  </chunk>
-  <!-- Link chunks -->
-  <chunk id="link_contact_address">
-    <preset_link preset_name="Contact"/>
-    <preset_link preset_name="Contact ('contact:*')"/>
-    <preset_link preset_name="Address"/>
-  </chunk>
-  <chunk id="link_contact_address_payment">
-    <preset_link preset_name="Contact"/>
-    <preset_link preset_name="Contact ('contact:*')"/>
-    <preset_link preset_name="Address"/>
-    <preset_link preset_name="Payment Methods"/>
-    <!-- this isn't a link but probably makes most sense here -->
-    <reference ref="cash_withdrawal"/>
-  </chunk>
-  <chunk id="additional_access_tags">
-    <check key="toll" text="Toll" disable_off="true"/>
-    <text key="minspeed" text="Min. speed (km/h)" match="key"/>
-    <text key="maxspeed:advisory" text="Advisory max. speed (km/h)" />
-  </chunk>
-  <chunk id="road_access_restrictions">
-    <preset_link preset_name="All vehicles"/>
-    <preset_link preset_name="Motor vehicle"/>
-    <preset_link preset_name="Motorcar"/>
-    <preset_link preset_name="Motorcycle"/>
-    <preset_link preset_name="Motor vehicle (CH)"/>
-    <preset_link preset_name="Motorcar and -cycle (CH)"/>
-    <preset_link preset_name="Heavy Goods Vehicle"/>
-    <preset_link preset_name="Physical restrictions"/>
-    <preset_link preset_name="Other mode restrictions"/>
-  </chunk>
-  <chunk id="path_access_restrictions">
-    <optional>
-        <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
-            display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" match="key" values_sort="false"/>
-        <combo key="dog" text="Dog" values="yes,leashed,unleashed,official,designated,permissive,private,permit,no" 
-            display_values="Yes,Leashed,Unleashed,Official,Designated,Permissive,Private,Permit required,No" values_sort="false" values_context="access"  match="key" />
-        <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,permit,no" display_values="Yes,Official,Designated,Permissive,Private,Permit required,No" values_context="access" values_sort="false"/>
-        <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,permit,no" 
-            display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" values_sort="false"/>
-    </optional>
-    <preset_link preset_name="All vehicles"/>
-    <preset_link preset_name="Motor vehicle"/>
-  </chunk>
-  <chunk id="lane_presets">
-    <preset_link preset_name="Single direction roads"/>
-    <preset_link preset_name="Bi-directional roads"/>
-  </chunk>
-  <chunk id="cycle_lanes">
-      <preset_link preset_name="Cycle Lane/Track"/>
-  </chunk>
-  <chunk id="healthcare_speciality">
-    <multiselect key="healthcare:speciality" text="Speciality" text_context="healthcare" values_context="healthcare" values_searchable="true" editable="false">
-      <list_entry value="general" short_description="General"/>
-      <list_entry value="abortion" short_description="Abortion"/>
-      <list_entry value="fertility" short_description="Fertility"/>
-      <list_entry value="allergology" short_description="Allergology"/>
-      <list_entry value="cardiology" short_description="Cardiology"/>
-      <list_entry value="child_psychiatry" short_description="Child psychiatry"/>
-      <list_entry value="chiropractic" short_description="Chiropractic"/>
-      <list_entry value="dermatology" short_description="Dermatology"/>
-      <list_entry value="gynaecology" short_description="Gynaecology"/>
-      <list_entry value="internal" short_description="Internal"/>
-      <list_entry value="neurology" short_description="Neurology"/>
-      <list_entry value="ophthalmology" short_description="Ophthalmology"/>
-      <list_entry value="orthopaedics" short_description="Orthopaedics"/>
-      <list_entry value="otolaryngology" short_description="Otolaryngology"/>
-      <list_entry value="podiatry" short_description="Podiatry"/>
-      <list_entry value="paediatrics" short_description="Paediatrics"/>
-      <list_entry value="plastic_surgery" short_description="Plastic surgery"/>
-      <list_entry value="psychiatry" short_description="Psychiatry"/>
-      <list_entry value="radiology" short_description="Radiology"/>
-      <list_entry value="urology" short_description="Urology"/>
-    </multiselect>
-  </chunk>
-  <chunk id="roof_main">
-    <combo key="roof:colour" text="Roof colour" values="black,blue,brown,red,yellow,white,grey" display_values="Black,Blue,Brown,Red,Yellow,White,Grey" editable="true" text_context="building" match="key"/>
-    <combo key="roof:levels" text="Levels (roof)" values="1,2,3" editable="true" text_context="roof_levels" match="key" value_type="integer" />
-    <combo key="roof:material" text="Roof material" values="acrylic_glass,concrete,copper,eternit,glass,grass,gravel,metal,plants,roof_tiles,shadecloth,slate,stone,tar_paper,thatch,wood" display_values="Acrylic glass,Concrete,Copper,Eternit,Glass,Grass,Gravel,Metal,Plants,Roof tiles,Shadecloth,Slate,Stone,Tar paper,Thatch,Wood" editable="true" text_context="building" values_searchable="true" match="key"/>
-  </chunk>
-  <chunk id="roof_orientation">
-    <combo key="roof:orientation" text="Roof orientation" default="along" editable="false">
-        <list_entry value="along" display_value="Along"/>
-        <list_entry value="across" display_value="Across"/>
-    </combo>
-  </chunk>
-  <chunk id="obm_building_tags">
-    <combo key="building:frame:material" text="Building frame material" values="brick,cement_block,clay,concrete,glass,limestone,masonry,mdf,metal,metal_plates,mirror,mud,plaster,plastic,sandstone,steel,stone,timber_framing,tin,traditional,vinyl,wood" display_values="Brick,Cement block,Clay,Concrete,Glass,Limestone,Masonry,MDF,Metal,Metal plates,Mirror,Mud,Plaster,Plastic,Sandstone,Steel,Stone,Timber framing,Tin,Traditional,Vinyl,Wood" editable="false" values_context="building" values_searchable="true" match="key"/>
-    <combo key="building:wall:material" text="Building wall material" values="brick,cement_block,clay,concrete,glass,limestone,masonry,mdf,metal,metal_plates,mirror,mud,plaster,plastic,sandstone,steel,stone,timber_framing,tin,traditional,vinyl,wood" display_values="Brick,Cement block,Clay,Concrete,Glass,Limestone,Masonry,MDF,Metal,Metal plates,Mirror,Mud,Plaster,Plastic,Sandstone,Steel,Stone,Timber framing,Tin,Traditional,Vinyl,Wood" editable="false" values_context="building" values_searchable="true" match="key"/>
-  </chunk>
-  <chunk id="additional_building_tags">
-    <optional>
-        <text key="name" text="Name"/>
-    </optional>
-    <combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
-    <text key="height" text="Height (meters)" length="7"/>
-    <combo key="min_level" text="Min. level" values="-5,-4,-3,-2,-1,0,1,2,3,4,5" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
-    <combo key="max_level" text="Max. level" values="0,1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
-    <combo key="building:use" text="Building use" values="agricultural,civic,commercial,cultural,education,equestrian,exhibition,foodservice,garage,gathering,government,hotel,industrial,leisure,medical,office,parking,public,railway,religious,research,residential,retail,service,shelter,sport,storage,transportation" display_values="Agricultural,Civic,Commercial,Cultural,Education,Equestrian,Exhibition,Foodservice,Garage,Gathering,Government,Hotel,Industrial,Leisure,Medical,Office,Parking,Public,Railway,Religious,Research,Residential,Retail,Service,Shelter,Sport,Storage,Transportation" editable="false" values_context="building" values_searchable="true" match="key"/>
-    <combo key="building:colour" text="Building colour" values="black,blue,brown,red,yellow,white,grey" display_values="Black,Blue,Brown,Red,Yellow,White,Grey" editable="true" text_context="building" match="key"/>
-    <combo key="building:material" text="Building material" values="brick,cement_block,clay,concrete,glass,limestone,masonry,mdf,metal,metal_plates,mirror,mud,plaster,plastic,sandstone,steel,stone,timber_framing,tin,traditional,vinyl,wood" display_values="Brick,Cement block,Clay,Concrete,Glass,Limestone,Masonry,MDF,Metal,Metal plates,Mirror,Mud,Plaster,Plastic,Sandstone,Steel,Stone,Timber framing,Tin,Traditional,Vinyl,Wood" editable="false" values_context="building" values_searchable="true" match="key"/> 
-    <combo key="roof:shape" text="Roof type" values_searchable="true" editable="false" values_context="building">
-        <list_entry value="dome" short_description="Dome" icon="${dome}"/>
-        <list_entry value="flat" short_description="Flat" icon="${flat}"/>
-        <list_entry value="gabled" short_description="Gabled" icon="${gabled}"/>
-        <list_entry value="gambrel" short_description="Gambrel" icon="${gambrel}"/>
-        <list_entry value="half-hipped" short_description="Half-hipped" icon="${half-hipped}"/>
-        <list_entry value="hipped" short_description="Hipped" icon="${hipped}"/>
-        <list_entry value="mansard" short_description="Mansard" icon="${mansard}"/>
-        <list_entry value="onion" short_description="Onion" icon="${onion}"/>
-        <list_entry value="pyramidal" short_description="Pyramidal" icon="${pyramidal}"/>
-        <list_entry value="round" short_description="Round" icon="${round}"/>
-        <list_entry value="saltbox" short_description="Saltbox" icon="${saltbox}"/>
-        <list_entry value="skillion" short_description="Skillion" icon="${skillion}"/>
-    </combo>
-    <combo key="roof:orientation" text="Roof orientation" editable="false">
-        <list_entry value="along" display_value="Along"/>
-        <list_entry value="across" display_value="Across"/>
-    </combo>
-    <reference ref="roof_main"/>
-  </chunk>
-  <chunk id="education_operator_type">
-      <combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious" values_context="operator" />
-  </chunk>
-  <chunk id="isced_level">
-      <multiselect key="isced:level" text="ISCED level" delimiter=";" match="key" editable="true" rows="6" values_sort="false">
-          <list_entry value="0" short_description="Pre-primary (0)"/>
-          <list_entry value="1" short_description="Primary (1)"/>
-          <list_entry value="2" short_description="Lower secondary (2)"/>
-          <list_entry value="3" short_description="Upper secondary (3)"/>
-          <list_entry value="4" short_description="Post secondars (4)"/>
-          <list_entry value="5" short_description="Lower tertiary education (5)"/>
-          <list_entry value="6" short_description="Upper tertiary education (6)"/>
-      </multiselect>
-  </chunk>
-  <chunk id="additonal_aerialway_tags">
-    <text key="operator" text="Operator" />
-    <reference ref="fee" />
-    <text key="aerialway:capacity" text="Number of people per hour" value_type="integer"/>
-    <text key="aerialway:occupancy" text="Number of people per gondola/chair"/>
-    <text key="aerialway:duration" text="Typical journey time in minutes"/>
-    <check key="aerialway:heating" text="Has heating?" disable_off="true"/>
-  </chunk>
-  <chunk id="additonal_aerialway_tags_with_bubble">
-      <reference ref="additonal_aerialway_tags"/>
-      <check key="aerialway:bubble" text="Has bubble?" disable_off="true"/>
-  </chunk>
-  <chunk id="playground_theme">
-    <combo text="Theme" key="playground:theme" values="barrel,bee,bridge,castle,cat,cow,dog,dragon,helicopter,horse,locomotive,octopus,plane,rocket,ship,spiderweb,tiger,train" display_values="Barrel,Bee,Bridge,Castle,Cat,Cow,Dog,Dragon,Helicopter,Horse,Locomotive,Octopus,Plane,Rocket,Ship,Spiderweb,Tiger,Train"/>
-  </chunk>
-  <chunk id="language">
-    <!--  this uses a simply multiselect to specify one or more languages and doesn't use the wikifiddled languagexx scheme -->
-    <multiselect key="language" text="Language" values="af;sq;am;ar;hy;as;az;eu;be;bn;bs;bg;my;ca;zh;hr;cs;da;dv;nl;en;et;mk;fo;fa;fi;fr;gd;gl;ka;de;el;gn;gu;he;hi;hu;is;id;it;ja;kn;ks;kk;km;ko;lo;la;lv;lt;ms;ml;mt;mi;mr;mn;ne;nb;nn;or;pl;pt;pa;rm;ro;ru;sa;sr;tn;sd;si;sk;sl;so;sb;es;sw;sv;tg;ta;tt;te;th;bo;ts;tr;tk;uk;ur;uz;vi;cy;xh;yi;zu" display_values="Afrikaans;Albanian;Amharic;Arabic;Armenian;Assamese;Azeri;Basque;Belarusian;Bengali;Bosnian;Bulgarian;Burmese;Catalan;Chinese;Croatian;Czech;Danish;Divehi;Dutch;English;Estonian;Macedonian;Faroese;Farsi;Finnish;French;Gaelic;Galician;Georgian;German;Greek;Guarani;Gujarati;Hebrew;Hindi;Hungarian;Icelandic;Indonesian;Italian;Japanese;Kannada;Kashmiri;Kazakh;Khmer;Korean;Lao;Latin;Latvian;Lithuanian;Malay;Malayalam;Maltese;Maori;Marathi;Mongolian;Nepali;Norwegian - Bokml;Norwegian - Nynorsk;Oriya;Polish;Portuguese;Punjabi;Raeto-Romance;Romanian;Russian;Sanskrit;Serbian;Setsuana;Sindhi;Sinhala;Slovak;Slovenian;Somali;Sorbian;Spanish;Swahili;Swedish;Tajik;Tamil;Tatar;Telugu;Thai;Tibetan;Tsonga;Turkish;Turkmen;Ukrainian;Urdu;Uzbek;Vietnamese;Welsh;Xhosa;Yiddish;Zulu" values_searchable="true" match="key"/>
-  </chunk>
-  <chunk id="turn_restriction_roles">
-    <roles>
-        <role key="from" text="from way" requisite="required" count="1" type="way"/>
-        <role key="via" text="via node or ways" requisite="required" type="way,node"/>
-        <role key="to" text="to way" requisite="required" count="1" type="way"/>
-    </roles>
-  </chunk>
-  <chunk id="turn_restriction_exceptions">  
-      <optional>
-          <multiselect key="except" text="Exceptions" values="bicycle;emergency;hgv;motorcar;psv" display_values="Bicycle;Emergency;HGV;Car;PSV"/>
-      </optional>
-  </chunk>
-  <chunk id="climbing_styles">
-    <label text="Climbing styles:" />
-    <checkgroup text="Climbing styles" columns="2">
-      <check key="climbing:boulder" text="Boulders" />
-      <check key="climbing:sport" text="Sport climbing" />
-      <check key="climbing:toprope" text="Top rope" />
-      <check key="climbing:trad" text="Traditional climbing" />
-      <check key="climbing:multipitch" text="Multi-pitch climbing" />
-      <check key="climbing:ice" text="Ice climbing" />
-      <check key="climbing:mixed" text="Mixed climbing" />
-      <check key="climbing:deepwater" text="Deep Water Soloing" />
-    </checkgroup>
-  </chunk>
-  <chunk id="climbing_optional_attributes">
-    <optional>
-      <combo key="climbing:orientation" text="Orientation" values="N,NE,E,SE,S,SW,W,NW" display_values="N,NE,E,SE,S,SW,W,NW" values_no_i18n="true" values_sort="false"/>
-      <combo key="climbing:quality" text="Rock/ice quality" values="fragile,medium,solid" display_values="Fragile,Medium,Solid" />
-      <combo key="climbing:rock" text="Rock type" values="limestone,sandstone,granite,basalt,slate" display_values="Limestone,Sandstone,Granite,Basalt,Slate" />
-      <check key="climbing:summit_log" text="Summit/route log/register" />
-      <check key="indoor" text="Climbing routes indoor" />
-      <check key="outdoor" text="Climbing routes outdoor" />
-      <text key="website" text="Website"  value_type="website" />
-      <combo key="opening_hours" text="Opening Hours" value_type="opening_hours" delimiter="|" values="24/7|sunset-sunrise open; sunrise-sunset closed|Mar-Jun closed; Jul-Feb Mo-Su,PH sunrise-sunset|Mo-Fr 15:00-22:00; Sa-Su 11:00-22:00" values_no_i18n="true"/>
-      <combo key="fee" text="Fee" value_type="opening_hours_mixed" values="yes,no,Sa-Su 08:00-20:00"/>
-      <reference ref="facility_access"/>
-    </optional>
-  </chunk>
-  <chunk id="diplomatic">
-    <text key="country" text="Country" />
-    <text key="name" text="Name"/>
-    <text key="target" text="Target" />
-    <checkgroup text="Services">
-        <check key="diplomatic:services:non-immigrant_visas" text="Non-immigrant visas" />
-        <check key="diplomatic:services:immigrant_visas" text="Immigrant visas" />
-        <check key="diplomatic:services:citizen_services" text="Citizen services" />
-    </checkgroup>
-  </chunk>
-  <chunk id="nudism">
-    <combo key="nudism" text="Nudism" values="yes,no,obligatory,designated,customary,permissive"
-        display_values="Yes,No,Obligatory,Designated,Customary,Permissive" />
-  </chunk>
-  <chunk id="reservation">
-    <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" display_values="Yes,No,Required,Recommended,Members only" />
-  </chunk>
-  <chunk id="advertising_optional">
-    <optional>
-        <check key="lit" text="Lit" disable_off="true"/>
-        <check key="luminous" text="Luminous" disable_off="true"/>
-        <combo key="animated" text="Animation" values="no,yes,trivision_blades,winding_posters,revolving,screen,digital_messages,digital_prices,wind"
-            display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
-        <text key="height" text="Height (Meters)" value_type="integer" />
-        <combo key="sides" text="Number of sides" length="3" values="1,2,3,4,5,6" values_sort="false" match="none" editable="true" value_type="integer"/>
-        <reference ref="support" />
-    </optional>
-  </chunk>
-  <chunk id="scuba">
-      <multiselect key="league" text="League" length="3" values="CMAS;PADI;SSI" values_sort="false" match="none" editable="true"/>
-      <check key="scuba_diving:repair" text="Repairs" />
-      <check key="scuba_diving:courses" text="Courses" />
-      <check key="scuba_diving:rental" text="Equipment rentals" />
-      <checkgroup text="Filling" columns="4">
-        <check key="scuba_diving:filling" text="Fills available" disable_off="true"/>
-        <check key="scuba_diving:air_filling" text="Air" disable_off="true"/>
-        <check key="scuba_diving:nitrox_filling" text="Nitrox" disable_off="true"/>
-        <check key="scuba_diving:trimix_filling" text="Trimix" disable_off="true"/>
-        <check key="scuba_diving:oxygen_filling" text="Oxygen" disable_off="true"/>
-      </checkgroup>
-  </chunk>
-  <chunk id="communication_types">
-    <label text="Communication types:" />
-    <checkgroup text="Communication types" columns="2">
-      <check key="communication:mobile_phone" text="Mobile phone" />
-      <check key="communication:radio" text="Radio" />
-      <check key="communication:television" text="Television" />
-      <check key="communication:microwave" text="Microwave" />
-      <check key="communication:bos" text="BOS" />
-      <check key="communication:satellite" text="Satellite" />
-      <check key="communication:amateur_radio" text="Amateur radio" />
-      <check key="communication:gsm-r" text="GSM-R" />
-    </checkgroup>
-  </chunk>
-  <chunk id="lgbtq">
-    <combo key="lgbtq" text="LGBTQ preference" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
-    <combo key="lgbtq:women" text="LGBTQ women" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
-    <combo key="lgbtq:men" text="LGBTQ men" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
-    <combo key="lgbtq:trans" text="LGBTQ transgender" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
-  </chunk>
-  <chunk id="recycling_accepted_material">
-    <checkgroup text="Accepted material" columns="4">
-        <check key="recycling:aluminium" text="Aluminium" disable_off="true"/>
-        <check key="recycling:batteries" text="Batteries" disable_off="true"/>
-        <check key="recycling:cans" text="Cans" disable_off="true"/>
-        <check key="recycling:cardboard" text="Cardboard" disable_off="true"/>
-        <check key="recycling:clothes" text="Clothes" disable_off="true"/>
-        <check key="recycling:coffee_capsules" text="Coffee capsules" disable_off="true"/>
-        <check key="recycling:cooking_oil" text="Cooking oil" disable_off="true"/>
-        <check key="recycling:drugs" text="Drugs" disable_off="true"/>
-        <check key="recycling:electrical_appliances" text="Electrical Appliances" disable_off="true"/>
-        <check key="recycling:engine_oil" text="Engine oil" disable_off="true"/>
-        <check key="recycling:glass" text="Glass" disable_off="true"/>
-        <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true"/>
-        <check key="recycling:green_waste" text="Green Waste" disable_off="true"/>
-        <check key="recycling:paper" text="Paper" disable_off="true"/>
-        <check key="recycling:PET" text="PET" disable_off="true"/>
-        <check key="recycling:plastic" text="Plastic" disable_off="true"/>
-        <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true"/>
-        <check key="recycling:plastic_packaging" text="Plastic Packaging" disable_off="true"/>
-        <check key="recycling:scrap_metal" text="Scrap Metal" disable_off="true"/>
-        <check key="recycling:shoes" text="Shoes" disable_off="true"/>
-        <check key="recycling:small_appliances" text="Small Appliances" disable_off="true"/>
-        <check key="recycling:waste" text="Waste" disable_off="true"/>
-    </checkgroup>
-  </chunk>
-  <chunk id="waste">
-    <multiselect key="waste" text="Accepted waste" delimiter=";" match="key" >
-        <list_entry value="trash" short_description="Trash"/>
-        <list_entry value="organic" short_description="Organic"/>
-        <list_entry value="plastic" short_description="Plastic"/>
-        <list_entry value="excrements" short_description="Excrements"/>
-        <list_entry value="grey_water" short_description="Grey water"/>
-    </multiselect>
-  </chunk>
-  <chunk id="resource">
-    <combo key="resource" text="Resource"
-        values="aggregate,bauxite,clay,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon"
-        display_values="Aggregate,Bauxite,Clay,Coal,Copper,Dimension stone,Gold,Ilmenite,Iron ore,Lead,Limestone,Nickel,Rutile,Salt,Silver,Tin,Zinc,Zircon" />
-  </chunk>
-  <chunk id="highway_types">
-    <combo key="highway" text="Type" values="motorway,motorway_link,trunk,trunk_link,primary,primary_link,secondary,tertiary,unclassified,residential,living_street,service,bus_guideway,construction"
-        display_values="Motorway,Motorway link,Trunk,Trunk link,Primary,Primary link,Secondary,Tertiary,Unclassified,Residential,Living street,Service,Bus guideway,Construction" values_context="Highway" />
-  </chunk>
-  <chunk id="fountain_type">
-        <combo key="fountain" text="Fountain type" values="yes,bubbler,nasone,nozzle,splash_pad" display_values="Yes,Bubbler,Nasone,Nozzle,Splash pad" />
-  </chunk>
-  <chunk id="highchair">
-      <combo key="highchair" text="High chair for small children" values="yes,no,1,2,3,4,5,6,7,8,9,10" display_values="Yes,No,1,2,3,4,5,6,7,8,9,10" editable="true" values_sort="false"/>
-  </chunk>
-  <chunk id="kids_area">
-    <checkgroup text="Kids area" columns="1">
-        <check key="kids_area" text="A kids area is available" />
-        <check key="kids_area:indoor" text="An indoor kids area is available" />
-        <check key="kids_area:outdoor" text="An outdoor kids area is available" />
-        <check key="kids_area:supervised" text="Supervision by an adult" />
-        <check key="kids_area:fee" text="A fee must be paid" />
-    </checkgroup>
-  </chunk>
-  <chunk id="platform">
-    <check key="bench" text="Bench" disable_off="true"/>
-    <check key="shelter" text="Shelter" disable_off="true"/>
-    <check key="covered" text="Covered"/>
-    <reference ref="bin"/>
-    <check key="passenger_information_display" text="Passenger information display" />
-    <text key="route_ref" text="Route references" />            
-    <reference ref="wheelchair"/>
-    <reference ref="tactile_paving"/>
-    <optional>
-        <text key="name" text="Name"/>
-        <text key="ref" text="Reference"/>
-        <text key="uic_ref" text="UIC reference"/>
-        <text key="uic_name" text="UIC name"/>
+            <list_entry value="abused" display_value="Abused"/>
+            <list_entry value="child" display_value="Children"/>
+            <list_entry value="disabled" display_value="Disabled"/>
+            <list_entry value="diseased" display_value="Diseased"/>
+            <list_entry value="drug_addicted" display_value="Drug addicted"/>
+            <list_entry value="homeless" display_value="Homeless"/>
+            <list_entry value="juvenile" display_value="Juveniles"/>
+            <list_entry value="mental_health" display_value="Mental health"/>
+            <list_entry value="migrant" display_value="Migrants"/>
+            <list_entry value="orphan" display_value="Orphans"/>
+            <list_entry value="senior" display_value="Elderly"/>
+            <list_entry value="underprivileged" display_value="Underprivileged"/>
+            <list_entry value="unemployed" display_value="Unemployed"/>
+            <list_entry value="victim" display_value="Victims"/>
+        </combo>
+    </chunk>
+    <chunk id="stars">
+        <combo key="stars" text="Stars" values="1,2,3,4,5" display_values="*,**,***,****,*****"/>
+    </chunk>
+    <chunk id="car_brands">
+        <multiselect key="brand" text="Car brand" values="Alfa Romeo;Aston Martin;Audi;Bentley;BMW;Buick;Cadillac;Chevrolet;Chrysler;Citro&#xEB;n;Dacia;Daewoo;Daihatsu;Dodge;Ferrari;Fiat;Ford;GMC;Great Wall;Holden;Honda;Hyundai;Infiniti;Isuzu;Jaguar;Jeep;Kia;Lada;Lancia;Land Rover;Lexus;Lincoln;Lotus;Maserati;Mazda;Mercedes-Benz;Mini;Mitsubishi;Nissan;Opel;Peugeot;Renault;Saab;Seat;&#x160;koda;Smart;SsangYong;Subaru;Suzuki;Toyota;Vauxhall;Volkswagen;Volvo" match="key"/>
+    </chunk>
+    <chunk id="motorcycle_brands">
+        <multiselect key="brand" text="Motorcycle brand" values="Aprilia;BMW;Ducati;Gilera;Harley-Davidson;Honda;Kawasaki;KTM;Kymco;Moto Guzzi;Peugeot;Piaggio;Suzuki;Triumph;Vespa;Yamaha" match="key"/>
+    </chunk>
+    <chunk id="walking_routes_roles">
+        <roles>
+            <role key="" text="Route segment" requisite="required" type="way,closedway" member_expression="highway|route=ferry"/>
+            <role key="" text="Infrastructure" requisite="optional" type="node,closedway" member_expression="tourism OR amenity"/>
+            <role key="" text="Natural" requisite="optional" type="node,closedway" member_expression="natural=peak OR natural=volcano OR mountain_pass=yes OR natural=water OR tourism=viewpoint OR amenity=drinking_water OR natural=spring OR place=locality"/>
+            <role key="guidepost" text="Guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
+        </roles>
+    </chunk>
+    <chunk id="kerb">
+        <combo key="kerb" text="Kerb" match="key" values_sort="false">
+            <list_entry value="yes" display_value="Present"/>
+            <list_entry value="lowered" display_value="Lowered"/>
+            <list_entry value="raised" display_value="Raised"/>
+            <list_entry value="flush" display_value="Flush"/>
+            <list_entry value="rolled" display_value="Rolled"/>
+            <list_entry value="no" display_value="None"/>
+        </combo>
+        <combo key="kerb:left" text="Kerb (left)" match="key" values_sort="false">
+            <list_entry value="yes" display_value="Present"/>
+            <list_entry value="lowered" display_value="Lowered"/>
+            <list_entry value="raised" display_value="Raised"/>
+            <list_entry value="flush" display_value="Flush"/>
+            <list_entry value="rolled" display_value="Rolled"/>
+            <list_entry value="no" display_value="None"/>
+        </combo>
+        <combo key="kerb:right" text="Kerb (right)" match="key" values_sort="false">
+            <list_entry value="yes" display_value="Present"/>
+            <list_entry value="lowered" display_value="Lowered"/>
+            <list_entry value="raised" display_value="Raised"/>
+            <list_entry value="flush" display_value="Flush"/>
+            <list_entry value="rolled" display_value="Rolled"/>
+            <list_entry value="no" display_value="None"/>
+        </combo>
+    </chunk>
+    <chunk id="colours">
+        <combo key="colour" text="Color (HTML name or hexadecimal code)" values_context="colour"
+               values="black,blue,brown,gray,green,orange,#CD853F,purple,red,silver,white,yellow"
+               display_values="Black,Blue,Brown,Gray,Green,Orange,Peru,Purple,Red,Silver,White,Yellow" match="none" editable="true"/>
+    </chunk>
+    <chunk id="public_transport_route_optionals">
+        <text key="from" text="From (initial stop)"/>
+        <text key="to" text="To (terminal stop)"/>
+        <text key="via" text="Via (intermediate stops)"/>
         <text key="operator" text="Operator"/>
         <text key="network" text="Network"/>
-        <space/>
-        <check key="bus" text="Bus" disable_off="true"/>
-        <check key="tram" text="Tram" disable_off="true"/>
-        <check key="train" text="Train" disable_off="true"/>
-        <check key="trolleybus" text="Trolleybus" disable_off="true"/>
-        <check key="share_taxi" text="Share taxi" disable_off="true"/>
-        <check key="subway" text="Subway" disable_off="true"/>
-        <check key="monorail" text="Monorail" disable_off="true"/>
-        <check key="funicular" text="Funicular" disable_off="true"/>
-        <check key="aerialway" text="Aerialway" disable_off="true"/>
-        <check key="ferry" text="Ferry" disable_off="true"/>
-    </optional>
-  </chunk>
-  <!-- Groups -->
-  <group name="Highways" icon="${highway_group}">
+        <text key="description" text="Description" length="255"/>
+        <reference ref="colours" />
+        <combo key="interval" text="Interval (M, MM, HH:MM, or HH:MM:SS)" values="5,10,15,20,30,60,120" values_no_i18n="true" />
+    </chunk>
+    <chunk id="tactile_paving">
+        <combo key="tactile_paving" text="Tactile paving" values_context="tactile_paving" match="key" values_sort="false">
+            <list_entry value="yes" display_value="Present"/>
+            <list_entry value="no" display_value="None"/>
+            <list_entry value="incorrect" display_value="Incorrect"/>
+        </combo>
+    </chunk>
+    <chunk id="cash_withdrawal">
+        <multiselect key="cash_withdrawal" text="Cash withdrawal" length="3" values="yes" match="none" editable="true"/>
+        <optional>
+            <text key="cash_withdrawal:operator" text="Operator" match="none"/>
+            <combo key="cash_withdrawal:type" text="Type" values="checkout,self_checkout" display_values="Checkout,Self checkout" values_searchable="true" match="none"/>        
+            <text key="cash_withdrawal:limit" text="Limit" match="none" value_type="integer" />
+            <text key="cash_withdrawal:currency" text="Currency" match="none" />
+            <check key="cash_withdrawal:purchase_required" text="Purchase required"  match="none"/>
+            <combo key="cash_withdrawal:fee" text="Fee" values="yes,no,purchase_required" display_values="Yes,No,Purchase required" values_searchable="true" match="none"/>        
+            <combo key="cash_withdrawal:purchase_minimum" text="Minimum purchase" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
+            <combo key="cash_withdrawal:foreign_cards" text="Foreign cards" values="yes,no,varies" display_values="Yes,No,Varies" values_searchable="true" match="none"/>        
+        </optional>
+    </chunk>
+    <chunk id="route_segment_roles">
+        <role key="" text="route segment" requisite="optional" type="way,closedway" member_expression="highway|route=ferry|leisure=track"/>
+        <role key="forward" text="forward segment" requisite="optional" type="way,closedway" />
+        <role key="backward" text="backward segment" requisite="optional" type="way,closedway" />
+        <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
+    </chunk>
+    <chunk id="route_start_stop_roles">
+        <role key="start" text="start endpoint" requisite="optional" type="node" />
+        <role key="stop" text="stop endpoint" requisite="optional" type="node" />
+        <role key="start_stop" text="start and stop endpoint" requisite="optional" type="node" />
+    </chunk>
+    <!-- Link chunks -->
+    <chunk id="link_contact_address">
+        <preset_link preset_name="Contact"/>
+        <preset_link preset_name="Contact ('contact:*')"/>
+        <preset_link preset_name="Address"/>
+    </chunk>
+    <chunk id="link_contact_address_payment">
+        <preset_link preset_name="Contact"/>
+        <preset_link preset_name="Contact ('contact:*')"/>
+        <preset_link preset_name="Address"/>
+        <preset_link preset_name="Payment Methods"/>
+        <!-- this isn't a link but probably makes most sense here -->
+        <reference ref="cash_withdrawal"/>
+    </chunk>
+    <chunk id="additional_access_tags">
+        <check key="toll" text="Toll" disable_off="true"/>
+        <text key="minspeed" text="Min. speed (km/h)" match="key"/>
+        <text key="maxspeed:advisory" text="Advisory max. speed (km/h)" />
+    </chunk>
+    <chunk id="road_access_restrictions">
+        <preset_link preset_name="All vehicles"/>
+        <preset_link preset_name="Motor vehicle"/>
+        <preset_link preset_name="Motorcar"/>
+        <preset_link preset_name="Motorcycle"/>
+        <preset_link preset_name="Motor vehicle (CH)"/>
+        <preset_link preset_name="Motorcar and -cycle (CH)"/>
+        <preset_link preset_name="Heavy Goods Vehicle"/>
+        <preset_link preset_name="Physical restrictions"/>
+        <preset_link preset_name="Other mode restrictions"/>
+    </chunk>
+    <chunk id="path_access_restrictions">
+        <optional>
+            <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" match="key" values_sort="false"/>
+            <combo key="dog" text="Dog" values="yes,leashed,unleashed,official,designated,permissive,private,permit,no" 
+                display_values="Yes,Leashed,Unleashed,Official,Designated,Permissive,Private,Permit required,No" values_sort="false" values_context="access"  match="key" />
+            <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,permit,no" display_values="Yes,Official,Designated,Permissive,Private,Permit required,No" values_context="access" values_sort="false"/>
+            <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,permit,no" 
+                display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" values_sort="false"/>
+        </optional>
+        <preset_link preset_name="All vehicles"/>
+        <preset_link preset_name="Motor vehicle"/>
+    </chunk>
+    <chunk id="lane_presets">
+        <preset_link preset_name="Single direction roads"/>
+        <preset_link preset_name="Bi-directional roads"/>
+    </chunk>
+    <chunk id="cycle_lanes">
+        <preset_link preset_name="Cycle Lane/Track"/>
+    </chunk>
+    <chunk id="healthcare_speciality">
+        <multiselect key="healthcare:speciality" text="Speciality" text_context="healthcare" values_context="healthcare" values_searchable="true" editable="false">
+            <list_entry value="general" short_description="General"/>
+            <list_entry value="abortion" short_description="Abortion"/>
+            <list_entry value="fertility" short_description="Fertility"/>
+            <list_entry value="allergology" short_description="Allergology"/>
+            <list_entry value="cardiology" short_description="Cardiology"/>
+            <list_entry value="child_psychiatry" short_description="Child psychiatry"/>
+            <list_entry value="chiropractic" short_description="Chiropractic"/>
+            <list_entry value="dermatology" short_description="Dermatology"/>
+            <list_entry value="gynaecology" short_description="Gynaecology"/>
+            <list_entry value="internal" short_description="Internal"/>
+            <list_entry value="neurology" short_description="Neurology"/>
+            <list_entry value="ophthalmology" short_description="Ophthalmology"/>
+            <list_entry value="orthopaedics" short_description="Orthopaedics"/>
+            <list_entry value="otolaryngology" short_description="Otolaryngology"/>
+            <list_entry value="podiatry" short_description="Podiatry"/>
+            <list_entry value="paediatrics" short_description="Paediatrics"/>
+            <list_entry value="plastic_surgery" short_description="Plastic surgery"/>
+            <list_entry value="psychiatry" short_description="Psychiatry"/>
+            <list_entry value="radiology" short_description="Radiology"/>
+            <list_entry value="urology" short_description="Urology"/>
+        </multiselect>
+    </chunk>
+    <chunk id="roof_main">
+        <combo key="roof:colour" text="Roof colour" values="black,blue,brown,red,yellow,white,grey" display_values="Black,Blue,Brown,Red,Yellow,White,Grey" editable="true" text_context="building" match="key"/>
+        <combo key="roof:levels" text="Levels (roof)" values="1,2,3" editable="true" text_context="roof_levels" match="key" value_type="integer" />
+        <combo key="roof:material" text="Roof material" values="acrylic_glass,concrete,copper,eternit,glass,grass,gravel,metal,plants,roof_tiles,shadecloth,slate,stone,tar_paper,thatch,wood" display_values="Acrylic glass,Concrete,Copper,Eternit,Glass,Grass,Gravel,Metal,Plants,Roof tiles,Shadecloth,Slate,Stone,Tar paper,Thatch,Wood" editable="true" text_context="building" values_searchable="true" match="key"/>
+    </chunk>
+    <chunk id="roof_orientation">
+        <combo key="roof:orientation" text="Roof orientation" default="along" editable="false">
+            <list_entry value="along" display_value="Along"/>
+            <list_entry value="across" display_value="Across"/>
+        </combo>
+    </chunk>
+    <chunk id="obm_building_tags">
+        <combo key="building:frame:material" text="Building frame material" values="brick,cement_block,clay,concrete,glass,limestone,masonry,mdf,metal,metal_plates,mirror,mud,plaster,plastic,sandstone,steel,stone,timber_framing,tin,traditional,vinyl,wood" display_values="Brick,Cement block,Clay,Concrete,Glass,Limestone,Masonry,MDF,Metal,Metal plates,Mirror,Mud,Plaster,Plastic,Sandstone,Steel,Stone,Timber framing,Tin,Traditional,Vinyl,Wood" editable="false" values_context="building" values_searchable="true" match="key"/>
+        <combo key="building:wall:material" text="Building wall material" values="brick,cement_block,clay,concrete,glass,limestone,masonry,mdf,metal,metal_plates,mirror,mud,plaster,plastic,sandstone,steel,stone,timber_framing,tin,traditional,vinyl,wood" display_values="Brick,Cement block,Clay,Concrete,Glass,Limestone,Masonry,MDF,Metal,Metal plates,Mirror,Mud,Plaster,Plastic,Sandstone,Steel,Stone,Timber framing,Tin,Traditional,Vinyl,Wood" editable="false" values_context="building" values_searchable="true" match="key"/>
+    </chunk>
+    <chunk id="additional_building_tags">
+        <optional>
+            <text key="name" text="Name"/>
+        </optional>
+        <combo key="building:levels" text="Levels" values="1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
+        <text key="height" text="Height (meters)" length="7"/>
+        <combo key="min_level" text="Min. level" values="-5,-4,-3,-2,-1,0,1,2,3,4,5" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
+        <combo key="max_level" text="Max. level" values="0,1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
+        <combo key="building:use" text="Building use" values="agricultural,civic,commercial,cultural,education,equestrian,exhibition,foodservice,garage,gathering,government,hotel,industrial,leisure,medical,office,parking,public,railway,religious,research,residential,retail,service,shelter,sport,storage,transportation" display_values="Agricultural,Civic,Commercial,Cultural,Education,Equestrian,Exhibition,Foodservice,Garage,Gathering,Government,Hotel,Industrial,Leisure,Medical,Office,Parking,Public,Railway,Religious,Research,Residential,Retail,Service,Shelter,Sport,Storage,Transportation" editable="false" values_context="building" values_searchable="true" match="key"/>
+        <combo key="building:colour" text="Building colour" values="black,blue,brown,red,yellow,white,grey" display_values="Black,Blue,Brown,Red,Yellow,White,Grey" editable="true" text_context="building" match="key"/>
+        <combo key="building:material" text="Building material" values="brick,cement_block,clay,concrete,glass,limestone,masonry,mdf,metal,metal_plates,mirror,mud,plaster,plastic,sandstone,steel,stone,timber_framing,tin,traditional,vinyl,wood" display_values="Brick,Cement block,Clay,Concrete,Glass,Limestone,Masonry,MDF,Metal,Metal plates,Mirror,Mud,Plaster,Plastic,Sandstone,Steel,Stone,Timber framing,Tin,Traditional,Vinyl,Wood" editable="false" values_context="building" values_searchable="true" match="key"/> 
+        <combo key="roof:shape" text="Roof type" values_searchable="true" editable="false" values_context="building">
+            <list_entry value="dome" short_description="Dome" icon="${dome}"/>
+            <list_entry value="flat" short_description="Flat" icon="${flat}"/>
+            <list_entry value="gabled" short_description="Gabled" icon="${gabled}"/>
+            <list_entry value="gambrel" short_description="Gambrel" icon="${gambrel}"/>
+            <list_entry value="half-hipped" short_description="Half-hipped" icon="${half-hipped}"/>
+            <list_entry value="hipped" short_description="Hipped" icon="${hipped}"/>
+            <list_entry value="mansard" short_description="Mansard" icon="${mansard}"/>
+            <list_entry value="onion" short_description="Onion" icon="${onion}"/>
+            <list_entry value="pyramidal" short_description="Pyramidal" icon="${pyramidal}"/>
+            <list_entry value="round" short_description="Round" icon="${round}"/>
+            <list_entry value="saltbox" short_description="Saltbox" icon="${saltbox}"/>
+            <list_entry value="skillion" short_description="Skillion" icon="${skillion}"/>
+        </combo>
+        <combo key="roof:orientation" text="Roof orientation" editable="false">
+            <list_entry value="along" display_value="Along"/>
+            <list_entry value="across" display_value="Across"/>
+        </combo>
+        <reference ref="roof_main"/>
+    </chunk>
+    <chunk id="education_operator_type">
+        <combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious" values_context="operator" />
+    </chunk>
+    <chunk id="isced_level">
+        <multiselect key="isced:level" text="ISCED level" delimiter=";" match="key" editable="true" rows="6" values_sort="false">
+            <list_entry value="0" short_description="Pre-primary (0)"/>
+            <list_entry value="1" short_description="Primary (1)"/>
+            <list_entry value="2" short_description="Lower secondary (2)"/>
+            <list_entry value="3" short_description="Upper secondary (3)"/>
+            <list_entry value="4" short_description="Post secondars (4)"/>
+            <list_entry value="5" short_description="Lower tertiary education (5)"/>
+            <list_entry value="6" short_description="Upper tertiary education (6)"/>
+        </multiselect>
+    </chunk>
+    <chunk id="additonal_aerialway_tags">
+        <text key="operator" text="Operator" />
+        <reference ref="fee" />
+        <text key="aerialway:capacity" text="Number of people per hour" value_type="integer"/>
+        <text key="aerialway:occupancy" text="Number of people per gondola/chair"/>
+        <text key="aerialway:duration" text="Typical journey time in minutes"/>
+        <check key="aerialway:heating" text="Has heating?" disable_off="true"/>
+    </chunk>
+    <chunk id="additonal_aerialway_tags_with_bubble">
+        <reference ref="additonal_aerialway_tags"/>
+        <check key="aerialway:bubble" text="Has bubble?" disable_off="true"/>
+    </chunk>
+    <chunk id="playground_theme">
+        <combo text="Theme" key="playground:theme" values="barrel,bee,bridge,castle,cat,cow,dog,dragon,helicopter,horse,locomotive,octopus,plane,rocket,ship,spiderweb,tiger,train" display_values="Barrel,Bee,Bridge,Castle,Cat,Cow,Dog,Dragon,Helicopter,Horse,Locomotive,Octopus,Plane,Rocket,Ship,Spiderweb,Tiger,Train"/>
+    </chunk>
+    <chunk id="language">
+        <!--  this uses a simply multiselect to specify one or more languages and doesn't use the wikifiddled languagexx scheme -->
+        <multiselect key="language" text="Language" values="af;sq;am;ar;hy;as;az;eu;be;bn;bs;bg;my;ca;zh;hr;cs;da;dv;nl;en;et;mk;fo;fa;fi;fr;gd;gl;ka;de;el;gn;gu;he;hi;hu;is;id;it;ja;kn;ks;kk;km;ko;lo;la;lv;lt;ms;ml;mt;mi;mr;mn;ne;nb;nn;or;pl;pt;pa;rm;ro;ru;sa;sr;tn;sd;si;sk;sl;so;sb;es;sw;sv;tg;ta;tt;te;th;bo;ts;tr;tk;uk;ur;uz;vi;cy;xh;yi;zu" display_values="Afrikaans;Albanian;Amharic;Arabic;Armenian;Assamese;Azeri;Basque;Belarusian;Bengali;Bosnian;Bulgarian;Burmese;Catalan;Chinese;Croatian;Czech;Danish;Divehi;Dutch;English;Estonian;Macedonian;Faroese;Farsi;Finnish;French;Gaelic;Galician;Georgian;German;Greek;Guarani;Gujarati;Hebrew;Hindi;Hungarian;Icelandic;Indonesian;Italian;Japanese;Kannada;Kashmiri;Kazakh;Khmer;Korean;Lao;Latin;Latvian;Lithuanian;Malay;Malayalam;Maltese;Maori;Marathi;Mongolian;Nepali;Norwegian - Bokml;Norwegian - Nynorsk;Oriya;Polish;Portuguese;Punjabi;Raeto-Romance;Romanian;Russian;Sanskrit;Serbian;Setsuana;Sindhi;Sinhala;Slovak;Slovenian;Somali;Sorbian;Spanish;Swahili;Swedish;Tajik;Tamil;Tatar;Telugu;Thai;Tibetan;Tsonga;Turkish;Turkmen;Ukrainian;Urdu;Uzbek;Vietnamese;Welsh;Xhosa;Yiddish;Zulu" values_searchable="true" match="key"/>
+    </chunk>
+    <chunk id="turn_restriction_roles">
+        <roles>
+            <role key="from" text="from way" requisite="required" count="1" type="way"/>
+            <role key="via" text="via node or ways" requisite="required" type="way,node"/>
+            <role key="to" text="to way" requisite="required" count="1" type="way"/>
+        </roles>
+    </chunk>
+    <chunk id="turn_restriction_exceptions">  
+        <optional>
+            <multiselect key="except" text="Exceptions" values="bicycle;emergency;hgv;motorcar;psv" display_values="Bicycle;Emergency;HGV;Car;PSV"/>
+        </optional>
+    </chunk>
+    <chunk id="climbing_styles">
+        <label text="Climbing styles:" />
+        <checkgroup text="Climbing styles" columns="2">
+            <check key="climbing:boulder" text="Boulders" />
+            <check key="climbing:sport" text="Sport climbing" />
+            <check key="climbing:toprope" text="Top rope" />
+            <check key="climbing:trad" text="Traditional climbing" />
+            <check key="climbing:multipitch" text="Multi-pitch climbing" />
+            <check key="climbing:ice" text="Ice climbing" />
+            <check key="climbing:mixed" text="Mixed climbing" />
+            <check key="climbing:deepwater" text="Deep Water Soloing" />
+        </checkgroup>
+    </chunk>
+    <chunk id="climbing_optional_attributes">
+        <optional>
+            <combo key="climbing:orientation" text="Orientation" values="N,NE,E,SE,S,SW,W,NW" display_values="N,NE,E,SE,S,SW,W,NW" values_no_i18n="true" values_sort="false"/>
+            <combo key="climbing:quality" text="Rock/ice quality" values="fragile,medium,solid" display_values="Fragile,Medium,Solid" />
+            <combo key="climbing:rock" text="Rock type" values="limestone,sandstone,granite,basalt,slate" display_values="Limestone,Sandstone,Granite,Basalt,Slate" />
+            <check key="climbing:summit_log" text="Summit/route log/register" />
+            <check key="indoor" text="Climbing routes indoor" />
+            <check key="outdoor" text="Climbing routes outdoor" />
+            <text key="website" text="Website"  value_type="website" />
+            <combo key="opening_hours" text="Opening Hours" value_type="opening_hours" delimiter="|" values="24/7|sunset-sunrise open; sunrise-sunset closed|Mar-Jun closed; Jul-Feb Mo-Su,PH sunrise-sunset|Mo-Fr 15:00-22:00; Sa-Su 11:00-22:00" values_no_i18n="true"/>
+            <combo key="fee" text="Fee" value_type="opening_hours_mixed" values="yes,no,Sa-Su 08:00-20:00"/>
+            <reference ref="facility_access"/>
+        </optional>
+    </chunk>
+    <chunk id="diplomatic">
+        <text key="country" text="Country" />
+        <text key="name" text="Name"/>
+        <text key="target" text="Target" />
+        <checkgroup text="Services">
+            <check key="diplomatic:services:non-immigrant_visas" text="Non-immigrant visas" />
+            <check key="diplomatic:services:immigrant_visas" text="Immigrant visas" />
+            <check key="diplomatic:services:citizen_services" text="Citizen services" />
+        </checkgroup>
+    </chunk>
+    <chunk id="nudism">
+        <combo key="nudism" text="Nudism" values="yes,no,obligatory,designated,customary,permissive"
+               display_values="Yes,No,Obligatory,Designated,Customary,Permissive" />
+    </chunk>
+    <chunk id="reservation">
+        <combo key="reservation" text="Reservation" values="yes,no,required,recommended,members_only" display_values="Yes,No,Required,Recommended,Members only" />
+    </chunk>
+    <chunk id="advertising_optional">
+        <optional>
+            <check key="lit" text="Lit" disable_off="true"/>
+            <check key="luminous" text="Luminous" disable_off="true"/>
+            <combo key="animated" text="Animation" values="no,yes,trivision_blades,winding_posters,revolving,screen,digital_messages,digital_prices,wind"
+                display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
+            <text key="height" text="Height (Meters)" value_type="integer" />
+            <combo key="sides" text="Number of sides" length="3" values="1,2,3,4,5,6" values_sort="false" match="none" editable="true" value_type="integer"/>
+            <reference ref="support" />
+        </optional>
+    </chunk>
+    <chunk id="scuba">
+        <multiselect key="league" text="League" length="3" values="CMAS;PADI;SSI" values_sort="false" match="none" editable="true"/>
+        <check key="scuba_diving:repair" text="Repairs" />
+        <check key="scuba_diving:courses" text="Courses" />
+        <check key="scuba_diving:rental" text="Equipment rentals" />
+        <checkgroup text="Filling" columns="4">
+            <check key="scuba_diving:filling" text="Fills available" disable_off="true"/>
+            <check key="scuba_diving:air_filling" text="Air" disable_off="true"/>
+            <check key="scuba_diving:nitrox_filling" text="Nitrox" disable_off="true"/>
+            <check key="scuba_diving:trimix_filling" text="Trimix" disable_off="true"/>
+            <check key="scuba_diving:oxygen_filling" text="Oxygen" disable_off="true"/>
+        </checkgroup>
+    </chunk>
+    <chunk id="communication_types">
+        <label text="Communication types:" />
+        <checkgroup text="Communication types" columns="2">
+            <check key="communication:mobile_phone" text="Mobile phone" />
+            <check key="communication:radio" text="Radio" />
+            <check key="communication:television" text="Television" />
+            <check key="communication:microwave" text="Microwave" />
+            <check key="communication:bos" text="BOS" />
+            <check key="communication:satellite" text="Satellite" />
+            <check key="communication:amateur_radio" text="Amateur radio" />
+            <check key="communication:gsm-r" text="GSM-R" />
+        </checkgroup>
+    </chunk>
+    <chunk id="lgbtq">
+        <combo key="lgbtq" text="LGBTQ preference" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
+        <combo key="lgbtq:women" text="LGBTQ women" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
+        <combo key="lgbtq:men" text="LGBTQ men" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
+        <combo key="lgbtq:trans" text="LGBTQ transgender" length="3" values="primary,only,no" display_values="Primary,Only,No" values_sort="false" match="none" editable="true" />
+    </chunk>
+    <chunk id="recycling_accepted_material">
+        <checkgroup text="Accepted material" columns="4">
+            <check key="recycling:aluminium" text="Aluminium" disable_off="true"/>
+            <check key="recycling:batteries" text="Batteries" disable_off="true"/>
+            <check key="recycling:cans" text="Cans" disable_off="true"/>
+            <check key="recycling:cardboard" text="Cardboard" disable_off="true"/>
+            <check key="recycling:clothes" text="Clothes" disable_off="true"/>
+            <check key="recycling:coffee_capsules" text="Coffee capsules" disable_off="true"/>
+            <check key="recycling:cooking_oil" text="Cooking oil" disable_off="true"/>
+            <check key="recycling:drugs" text="Drugs" disable_off="true"/>
+            <check key="recycling:electrical_appliances" text="Electrical Appliances" disable_off="true"/>
+            <check key="recycling:engine_oil" text="Engine oil" disable_off="true"/>
+            <check key="recycling:glass" text="Glass" disable_off="true"/>
+            <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true"/>
+            <check key="recycling:green_waste" text="Green Waste" disable_off="true"/>
+            <check key="recycling:paper" text="Paper" disable_off="true"/>
+            <check key="recycling:PET" text="PET" disable_off="true"/>
+            <check key="recycling:plastic" text="Plastic" disable_off="true"/>
+            <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true"/>
+            <check key="recycling:plastic_packaging" text="Plastic Packaging" disable_off="true"/>
+            <check key="recycling:scrap_metal" text="Scrap Metal" disable_off="true"/>
+            <check key="recycling:shoes" text="Shoes" disable_off="true"/>
+            <check key="recycling:small_appliances" text="Small Appliances" disable_off="true"/>
+            <check key="recycling:waste" text="Waste" disable_off="true"/>
+        </checkgroup>
+    </chunk>
+    <chunk id="waste">
+        <multiselect key="waste" text="Accepted waste" delimiter=";" match="key" >
+            <list_entry value="trash" short_description="Trash"/>
+            <list_entry value="organic" short_description="Organic"/>
+            <list_entry value="plastic" short_description="Plastic"/>
+            <list_entry value="excrements" short_description="Excrements"/>
+            <list_entry value="grey_water" short_description="Grey water"/>
+        </multiselect>
+    </chunk>
+    <chunk id="resource">
+        <combo key="resource" text="Resource"
+            values="aggregate,bauxite,clay,coal,copper,dimension_stone,gold,ilmenite,iron_ore,lead,limestone,nickel,rutile,salt,silver,tin,zinc,zircon"
+            display_values="Aggregate,Bauxite,Clay,Coal,Copper,Dimension stone,Gold,Ilmenite,Iron ore,Lead,Limestone,Nickel,Rutile,Salt,Silver,Tin,Zinc,Zircon" />
+    </chunk>
+    <chunk id="highway_types">
+        <combo key="highway" text="Type" values="motorway,motorway_link,trunk,trunk_link,primary,primary_link,secondary,tertiary,unclassified,residential,living_street,service,bus_guideway,construction"
+            display_values="Motorway,Motorway link,Trunk,Trunk link,Primary,Primary link,Secondary,Tertiary,Unclassified,Residential,Living street,Service,Bus guideway,Construction" values_context="Highway" />
+    </chunk>
+    <chunk id="fountain_type">
+        <combo key="fountain" text="Fountain type" values="yes,bubbler,nasone,nozzle,splash_pad" display_values="Yes,Bubbler,Nasone,Nozzle,Splash pad" />
+    </chunk>
+    <chunk id="highchair">
+        <combo key="highchair" text="High chair for small children" values="yes,no,1,2,3,4,5,6,7,8,9,10" display_values="Yes,No,1,2,3,4,5,6,7,8,9,10" editable="true" values_sort="false"/>
+    </chunk>
+    <chunk id="kids_area">
+        <checkgroup text="Kids area" columns="1">
+            <check key="kids_area" text="A kids area is available" />
+            <check key="kids_area:indoor" text="An indoor kids area is available" />
+            <check key="kids_area:outdoor" text="An outdoor kids area is available" />
+            <check key="kids_area:supervised" text="Supervision by an adult" />
+            <check key="kids_area:fee" text="A fee must be paid" />
+        </checkgroup>
+    </chunk>
+    <chunk id="platform">
+        <check key="bench" text="Bench" disable_off="true"/>
+        <check key="shelter" text="Shelter" disable_off="true"/>
+        <check key="covered" text="Covered"/>
+        <reference ref="bin"/>
+        <check key="passenger_information_display" text="Passenger information display" />
+        <text key="route_ref" text="Route references" />            
+        <reference ref="wheelchair"/>
+        <reference ref="tactile_paving"/>
+        <optional>
+            <text key="name" text="Name"/>
+            <text key="ref" text="Reference"/>
+            <text key="uic_ref" text="UIC reference"/>
+            <text key="uic_name" text="UIC name"/>
+            <text key="operator" text="Operator"/>
+            <text key="network" text="Network"/>
+            <space/>
+            <check key="bus" text="Bus" disable_off="true"/>
+            <check key="tram" text="Tram" disable_off="true"/>
+            <check key="train" text="Train" disable_off="true"/>
+            <check key="trolleybus" text="Trolleybus" disable_off="true"/>
+            <check key="share_taxi" text="Share taxi" disable_off="true"/>
+            <check key="subway" text="Subway" disable_off="true"/>
+            <check key="monorail" text="Monorail" disable_off="true"/>
+            <check key="funicular" text="Funicular" disable_off="true"/>
+            <check key="aerialway" text="Aerialway" disable_off="true"/>
+            <check key="ferry" text="Ferry" disable_off="true"/>
+        </optional>
+    </chunk>
+    <!-- Groups -->
+    <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
         <item name="Motorway" icon="${highway_motorway}" type="way" preset_name_label="true">
             <link wiki="Tag:highway=motorway"/>
@@ -1789,10 +1789,10 @@
                     <list_entry value="right;through" short_description="Right and through"/>
                     <list_entry value="right" short_description="Right"/>
                     <list_entry value="sharp_right" short_description="Sharp right"/>
-               </multiselect>
-               <multiselect key="destination:lanes" text="Destinations per lane" delimiter="|" match="key" editable="true" value_count_key="lanes" />
-               <multiselect key="destination:ref:lanes" text="Refs per lane" delimiter="|" match="key" editable="true" value_count_key="lanes" />
-               <multiselect key="maxspeed:lanes" text="Maxspeed per lane" delimiter="|" match="key" editable="true" value_count_key="lanes" />
+                </multiselect>
+                <multiselect key="destination:lanes" text="Destinations per lane" delimiter="|" match="key" editable="true" value_count_key="lanes" />
+                <multiselect key="destination:ref:lanes" text="Refs per lane" delimiter="|" match="key" editable="true" value_count_key="lanes" />
+                <multiselect key="maxspeed:lanes" text="Maxspeed per lane" delimiter="|" match="key" editable="true" value_count_key="lanes" />
             </item> <!-- Single direction roads -->
             <item name="Bi-directional roads" icon="${lane_bi_directional}" type="way,closedway" preset_name_label="true">
                 <link wiki="Lanes"/>
@@ -2760,7 +2760,7 @@
                 display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,Use sidepath,No" values_context="access" match="key" values_sort="false"/>
             <combo key="bicycle" text="Bicycle" values="yes,official,designated,permissive,destination,delivery,private,use_sidepath,permit,no"
                 display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Use sidepath,Permit required,No" values_context="access" match="key" values_sort="false"/>
-          <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no"
+            <combo key="agricultural" text="Agricultural" values="yes,official,designated,destination,permissive,private,no"
                 display_values="Yes,Official,Designated,Destination,Permissive,Private,No" values_context="access" match="key" values_sort="false"/>
             <combo key="emergency" text="Emergency vehicles" values="yes,official,designated,destination,no"
                 display_values="Yes,Official,Designated,Destination,No" values_context="access" match="keyvalue" values_sort="false"/>
@@ -2782,8 +2782,8 @@
         <reference ref="surface" />
         <reference ref="road_access_restrictions" />
     </item> <!-- Street area -->
-  </group> <!-- Highways -->
-  <group name="Water" icon="${water_group}">
+    </group> <!-- Highways -->
+    <group name="Water" icon="${water_group}">
     <group name="Water" icon="${water_group}">
         <item name="River" icon="${water_river}" type="way" preset_name_label="true">
             <link wiki="Tag:waterway=river"/>
@@ -3202,8 +3202,8 @@
             </optional>
         </item> <!-- Waterway milestone -->
     </group> <!-- Shipping -->
-  </group> <!-- Water -->
-  <group name="Transport" icon="${transport_group}">
+    </group> <!-- Water -->
+    <group name="Transport" icon="${transport_group}">
     <group name="Railway" icon="${transport_railway_group}" items_sort="false" >
         <item name="Rail" icon="${transport_railway_rail}" type="way" preset_name_label="true">
             <link wiki="Tag:railway=rail"/>
@@ -3264,7 +3264,7 @@
             <link wiki="Tag:railway=funicular"/>
             <key key="railway" value="funicular"/>
             <optional>
-                 <reference ref="railway_service_gauge_electrified"/>
+                <reference ref="railway_service_gauge_electrified"/>
             </optional>
         </item> <!-- Funicular -->
         <item name="Bus Guideway" icon="${transport_bus_guideway}" type="way" preset_name_label="true">
@@ -4024,7 +4024,7 @@
             </optional>
         </item> <!-- Railway Halt -->
         <item name="Tram Stop" icon="${public_transport_tram_stop}" type="node" preset_name_label="true">
-           <link wiki="Tag:railway=tram_stop"/>
+            <link wiki="Tag:railway=tram_stop"/>
             <key key="railway" value="tram_stop"/>
             <optional>
                 <text key="name" text="Name"/>
@@ -4145,7 +4145,7 @@
         <item name="Beacon" icon="${transport_beacon}" name_context="airmark" type="node" preset_name_label="true">
             <link wiki="Tag:airmark=beacon"/>
             <key key="airmark" value="beacon"/>
-         </item> <!-- Beacon -->
+        </item> <!-- Beacon -->
         <item name="Navigation aid" icon="${transport_aeroway_navigationaid}" type="node" preset_name_label="true">
             <link wiki="Tag:aeroway=navigationaid"/>
             <key key="aeroway" value="navigationaid"/>
@@ -4183,8 +4183,8 @@
         <key key="aeroway" value="spaceport"/>
         <text key="operator" text="Operator"/>
     </item> <!-- Spaceport -->
-  </group> <!-- Transport -->
-  <group name="Facilities" icon="${facilities_group}">
+    </group> <!-- Transport -->
+    <group name="Facilities" icon="${facilities_group}">
     <group name="Accommodation" icon="${accommodation_group}">
         <item name="Hotel" icon="${accommodation_hotel}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:tourism=hotel"/>
@@ -4875,8 +4875,8 @@
                 <list_entry value="train" display_value="Train"/>
                 <list_entry value="trampoline" display_value="Trampoline"/>
                 <list_entry value="water_slide" display_value="Water slide"/>
-           </combo>
-           <optional>
+            </combo>
+            <optional>
                 <text key="name" text="Name"/>
                 <reference ref="oh_wheelchair"/>
                 <reference ref="toilets_with_access"/>
@@ -4960,9 +4960,9 @@
             <check key="bath:open_air" text="Open air" />
             <check key="shower" text="Shower" />
             <checkgroup text="Gender" columns="3">
-                 <check key="female" text="Female" text_context="restroom" />
-                 <check key="male" text="Male" text_context="restroom" />
-                 <check key="unisex" text="Unisex" text_context="restroom" />
+                <check key="female" text="Female" text_context="restroom" />
+                <check key="male" text="Male" text_context="restroom" />
+                <check key="unisex" text="Unisex" text_context="restroom" />
             </checkgroup>
             <reference ref="name_operator_oh_wheelchair"/>
             <reference ref="facility_access"/>
@@ -5359,7 +5359,7 @@
             <reference ref="toilets_with_access"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Other theatres -->
-       <item name="Figure/puppet theatres" icon="${puppet_theatre}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Figure/puppet theatres" icon="${puppet_theatre}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=theatre"/>
             <space/>
             <key key="amenity" value="theatre"/>
@@ -5995,7 +5995,7 @@
             <reference ref="level"/>
             <check key="indoor" text="Indoor" match="none"/>
         </item> <!-- Fire Hose -->
-       <item name="Fire Hydrant" icon="${emergency_fire_hydrant}" type="node" preset_name_label="true">
+        <item name="Fire Hydrant" icon="${emergency_fire_hydrant}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=fire_hydrant"/>
             <space/>
             <key key="emergency" value="fire_hydrant"/>
@@ -6251,48 +6251,48 @@
         <item name="Club" icon="${amenity_club}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:club"/>
             <space/>
-             <combo key="club" text="Club type" match="keyvalue!">
-                 <list_entry value="amateur_radio" display_value="Amateur radio" />
-                 <list_entry value="art" display_value="Art" />
-                 <list_entry value="astronomy" display_value="Astronomy" />
-                 <list_entry value="automobile" display_value="Automobile" />
-                 <list_entry value="board_games" display_value="Board games" />
-                 <list_entry value="card_games" display_value="Card games" />
-                 <list_entry value="charity" display_value="Charity" />
-                 <list_entry value="cinema" display_value="Cinema" />
-                 <list_entry value="computer" display_value="Computer" />
-                 <list_entry value="cooking" display_value="Cooking" />
-                 <list_entry value="culture" display_value="Culture" />
-                 <list_entry value="dog" display_value="Dog" />
-                 <list_entry value="doityourself" display_value="DIY" />
-                 <list_entry value="environment_protection" display_value="Environment protection" />
-                 <list_entry value="ethnic" display_value="Ethnic" />
-                 <list_entry value="fan" display_value="Fan" />
-                 <list_entry value="filmmaking" display_value="Filmmaking" />
-                 <list_entry value="fishing" display_value="Fishing" />
-                 <list_entry value="freemasonry" display_value="Freemasonry" />
-                 <list_entry value="game" display_value="Game" />
-                 <list_entry value="gardening" display_value="Gardening" />
-                 <list_entry value="history" display_value="History" />
-                 <list_entry value="hunting" display_value="Hunting" />
-                 <list_entry value="linux" display_value="Linux" />
-                 <list_entry value="motorcycle" display_value="Motorcycle" />
-                 <list_entry value="music" display_value="Music" />
-                 <list_entry value="nature" display_value="Nature" />
-                 <list_entry value="nudism" display_value="Nudism" />
-                 <list_entry value="photography" display_value="Photography" />
-                 <list_entry value="politics" display_value="Politics" />
-                 <list_entry value="scout" display_value="Scout" />
-                 <list_entry value="smoke" display_value="Smoke" />
-                 <list_entry value="social" display_value="Social" />
-                 <list_entry value="sport" display_value="Sport" />
-                 <list_entry value="student" display_value="Student" />
-                 <list_entry value="surf_life_saving" display_value="Surf life saving" />
-                 <list_entry value="theatre" display_value="Theatre" />
-                 <list_entry value="tourism" display_value="Tourism" />
-                 <list_entry value="veterans" display_value="Veterans" />
-                 <list_entry value="yachting" display_value="Yachting" />
-                 <list_entry value="youth_movement" display_value="Youth movement" />
+            <combo key="club" text="Club type" match="keyvalue!">
+                <list_entry value="amateur_radio" display_value="Amateur radio" />
+                <list_entry value="art" display_value="Art" />
+                <list_entry value="astronomy" display_value="Astronomy" />
+                <list_entry value="automobile" display_value="Automobile" />
+                <list_entry value="board_games" display_value="Board games" />
+                <list_entry value="card_games" display_value="Card games" />
+                <list_entry value="charity" display_value="Charity" />
+                <list_entry value="cinema" display_value="Cinema" />
+                <list_entry value="computer" display_value="Computer" />
+                <list_entry value="cooking" display_value="Cooking" />
+                <list_entry value="culture" display_value="Culture" />
+                <list_entry value="dog" display_value="Dog" />
+                <list_entry value="doityourself" display_value="DIY" />
+                <list_entry value="environment_protection" display_value="Environment protection" />
+                <list_entry value="ethnic" display_value="Ethnic" />
+                <list_entry value="fan" display_value="Fan" />
+                <list_entry value="filmmaking" display_value="Filmmaking" />
+                <list_entry value="fishing" display_value="Fishing" />
+                <list_entry value="freemasonry" display_value="Freemasonry" />
+                <list_entry value="game" display_value="Game" />
+                <list_entry value="gardening" display_value="Gardening" />
+                <list_entry value="history" display_value="History" />
+                <list_entry value="hunting" display_value="Hunting" />
+                <list_entry value="linux" display_value="Linux" />
+                <list_entry value="motorcycle" display_value="Motorcycle" />
+                <list_entry value="music" display_value="Music" />
+                <list_entry value="nature" display_value="Nature" />
+                <list_entry value="nudism" display_value="Nudism" />
+                <list_entry value="photography" display_value="Photography" />
+                <list_entry value="politics" display_value="Politics" />
+                <list_entry value="scout" display_value="Scout" />
+                <list_entry value="smoke" display_value="Smoke" />
+                <list_entry value="social" display_value="Social" />
+                <list_entry value="sport" display_value="Sport" />
+                <list_entry value="student" display_value="Student" />
+                <list_entry value="surf_life_saving" display_value="Surf life saving" />
+                <list_entry value="theatre" display_value="Theatre" />
+                <list_entry value="tourism" display_value="Tourism" />
+                <list_entry value="veterans" display_value="Veterans" />
+                <list_entry value="yachting" display_value="Yachting" />
+                <list_entry value="youth_movement" display_value="Youth movement" />
             </combo>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
@@ -6442,7 +6442,7 @@
             <space/>
             <key key="amenity" value="vending_machine"/>
             <key key="vending" value="bottle_return"/>
-             <checkgroup text="Accepted bottles" columns="4">
+            <checkgroup text="Accepted bottles" columns="4">
                 <check key="recycling:cans" text="Cans" disable_off="true"/>
                 <check key="recycling:glass_bottles" text="Glass Bottles" disable_off="true"/>
                 <check key="recycling:plastic_bottles" text="Plastic Bottles" disable_off="true"/>
@@ -6462,7 +6462,7 @@
             <reference ref="recycling_accepted_material"/>
         </item> <!-- Recycling Container-->
         <item name="Recycling Centre" icon="${recycling_centre}" type="node,closedway,multipolygon" preset_name_label="true">
-           <link wiki="Tag:amenity=recycling"/>
+            <link wiki="Tag:amenity=recycling"/>
             <space/>
             <key key="amenity" value="recycling"/>
             <key key="recycling_type" value="centre"/>
@@ -6694,7 +6694,7 @@
                 <reference ref="name_ref_operator"/>
             </optional>
             <reference ref="fee"/>
-          </item> <!-- Vacuum cleaner station -->
+        </item> <!-- Vacuum cleaner station -->
         <separator/>
         <item name="Advertising" icon="${amenity_advertising}" type="node,closedway" preset_name_label="true">
             <link wiki="Key:advertising"/>
@@ -6738,8 +6738,8 @@
             <text key="operator" text="Operator"/>
         </item> <!-- Weighbridge -->
     </group> <!-- Facilities -->
-  </group>  <!-- Facilities -->
-  <group name="Sports" icon="${sport_group}">
+    </group>  <!-- Facilities -->
+    <group name="Sports" icon="${sport_group}">
     <group name="Sport Facilities" icon="${sport_facilities}">
         <item name="Stadium" icon="${sport_stadium}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=stadium"/>
@@ -6827,9 +6827,9 @@
         <group name="Golf" icon="${sport_golf_group}">
             <item name="Golf Course" icon="${sport_golf_course}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:leisure=golf_course"/>
-                 <space/>
-                 <key key="leisure" value="golf_course"/>
-                 <reference ref="name_oh_wheelchair"/>
+                <space/>
+                <key key="leisure" value="golf_course"/>
+                <reference ref="name_oh_wheelchair"/>
             </item> <!-- Golf Course -->
             <item name="Golf clubhouse" name_context="golf" icon="${sport_golf_clubhouse}" type="node,closedway" preset_name_label="true">
                 <link wiki="Tag:leisure=golf_course"/>
@@ -6866,13 +6866,13 @@
                 <key key="golf" value="bunker"/>
                 <combo key="natural" text="Natural" text_context="golf" values="sand" default="sand"/>
             </item> <!-- Bunker -->
-             <item name="Frontal Water hazard" name_context="golf" icon="${sport_golf_frontal_water_hazard}" type="closedway" preset_name_label="true">
+            <item name="Frontal Water hazard" name_context="golf" icon="${sport_golf_frontal_water_hazard}" type="closedway" preset_name_label="true">
                 <link wiki="Tag:leisure=golf_course"/>
                 <space/>
                 <key key="golf" value="water_hazard"/>
                 <key key="natural" value="water" match="keyvalue"/>
             </item> <!-- Frontal Water hazard -->
-             <item name="Lateral water hazard" name_context="golf" icon="${sport_golf_lateral_water_hazard}" type="closedway" preset_name_label="true">
+            <item name="Lateral water hazard" name_context="golf" icon="${sport_golf_lateral_water_hazard}" type="closedway" preset_name_label="true">
                 <link wiki="Tag:leisure=golf_course"/>
                 <space/>
                 <key key="golf" value="lateral_water_hazard"/>
@@ -7319,7 +7319,7 @@
             <link wiki="Tag:sport=ice_hockey"/>
             <space/>
             <key key="sport" value="ice_hockey"/>
-           <text key="name" text="Name"/>
+            <text key="name" text="Name"/>
             <combo key="leisure" text="Type" values="ice_rink,pitch,sports_centre,stadium"/>
         </item> <!-- Ice Hockey -->
         <item name="Pelota" icon="${sport_pelota}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7409,8 +7409,8 @@
             <reference ref="motorsport_surface" />
         </item> <!-- Raceway -->
     </group> <!-- Motorsport -->
-  </group> <!-- Sports -->
-  <group name="Buildings" icon="${buildings_group}">
+    </group> <!-- Sports -->
+    <group name="Buildings" icon="${buildings_group}">
         <item name="Building" icon="${building}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:building"/>
             <space/>
@@ -7523,110 +7523,110 @@
                 values="bakehouse,barn,college,commercial,construction,cowshed,farm_auxiliary,garage,garages,greenhouse,hangar,hospital,industrial,office,parking,retail,roof,ruins,school,shed,supermarket,toilets,transportation,university,warehouse,yes" 
                 display_values="Bakehouse,Barn,College,Commercial,Construction,Cowshed,Farm auxiliary,Garage,Garages,Greenhouse,Hangar,Hospital,Industrial,Office,Parking,Retail,Roof,Ruins,School,Shed,Supermarket,Toilets,Transportation,University,Warehouse,Yes" 
                 values_context="building" default="yes" match="key" values_searchable="true"/>
-			<reference ref="additional_building_tags"/>
-			<combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" editable="true" text_context="building"/>
-			<text key="min_height" text="Skipped height (meters)"/>
-		</item> <!-- Building part -->
-		<group name="Roof type" icon="${hipped}">
-			<item name="Dome" icon="${dome}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="dome" values_context="building"/>
-				<reference ref="roof_main"/>
-			</item> <!-- Roof type dome -->
-			<item name="Flat" icon="${flat}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="flat" values_context="building"/>
-				<reference ref="roof_main"/>
-			</item> <!-- Roof type flat -->
-			<item name="Gabled" icon="${gabled}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="gabled" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type gabled -->
-			<item name="Gambrel" icon="${gambrel}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="gambrel" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type gambrel -->
-			<item name="Half-hipped" icon="${half-hipped}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="half-hipped" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type half-hipped -->
-			<item name="Hipped" icon="${hipped}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="hipped" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type hipped -->
-			<item name="Mansard" icon="${mansard}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="mansard" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type mansard -->
-			<item name="Onion" icon="${onion}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="onion" values_context="building"/>
-				<reference ref="roof_main"/>
-			</item> <!-- Roof type onion -->
-			<item name="Pyramidal" icon="${pyramidal}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="pyramidal" values_context="building"/>
-				<reference ref="roof_main"/>
-			</item> <!-- Roof type pyramidal -->
-			<item name="Round" icon="${round}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="round" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type round -->
-			<item name="Saltbox" icon="${saltbox}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="saltbox" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type saltbox -->
-			<item name="Skillion" icon="${skillion}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
-				<link wiki="Simple_3D_Buildings"/>
-				<space/>
-				<key key="roof:shape" value="skillion" values_context="building"/>
-				<reference ref="roof_main"/>
-				<reference ref="roof_orientation"/>
-			</item> <!-- Roof type skillion -->
-		</group>
-		<!-- /roof type -->
-		<item name="Entrance" icon="${entrance}" type="node" preset_name_label="true">
-			<link wiki="Key:entrance"/>
-			<space/>
-			<combo key="entrance" text="Entrance" values="yes,main,service,exit,emergency,staircase,home,garage" display_values="Yes,Main,Service,Exit,Emergency,Staircase,Home,Garage" values_context="entrance" default="yes" match="key"/>
-			<combo key="access" text="Access" values="yes,delivery,private,customers,permissive,permit,no" display_values="Yes,Delivery,Private,Customers,Permissive,Permit required,No" values_context="access" match="none"/>
-			<optional>
-				<reference ref="wheelchair"/>
-				<text key="ref" text="Entrance number"/>
-				<reference ref="door_type" />
-				<text key="addr:flats" text="Flat numbers"/>
-			</optional>
-			<preset_link preset_name="Address"/>
-		</item> <!-- Entrance -->
-		<item name="Entrance (deprecated)" deprecated="true" icon="${entrance}" type="node" preset_name_label="true">
-			<key key="building" value="entrance"/>
-			<preset_link preset_name="Address"/>
-		</item> <!-- Entrance (deprecated) -->
+            <reference ref="additional_building_tags"/>
+            <combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" editable="true" text_context="building"/>
+            <text key="min_height" text="Skipped height (meters)"/>
+        </item> <!-- Building part -->
+        <group name="Roof type" icon="${hipped}">
+            <item name="Dome" icon="${dome}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="dome" values_context="building"/>
+                <reference ref="roof_main"/>
+            </item> <!-- Roof type dome -->
+            <item name="Flat" icon="${flat}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="flat" values_context="building"/>
+                <reference ref="roof_main"/>
+            </item> <!-- Roof type flat -->
+            <item name="Gabled" icon="${gabled}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="gabled" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type gabled -->
+            <item name="Gambrel" icon="${gambrel}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="gambrel" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type gambrel -->
+            <item name="Half-hipped" icon="${half-hipped}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="half-hipped" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type half-hipped -->
+            <item name="Hipped" icon="${hipped}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="hipped" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type hipped -->
+            <item name="Mansard" icon="${mansard}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="mansard" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type mansard -->
+            <item name="Onion" icon="${onion}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="onion" values_context="building"/>
+                <reference ref="roof_main"/>
+            </item> <!-- Roof type onion -->
+            <item name="Pyramidal" icon="${pyramidal}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="pyramidal" values_context="building"/>
+                <reference ref="roof_main"/>
+            </item> <!-- Roof type pyramidal -->
+            <item name="Round" icon="${round}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="round" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type round -->
+            <item name="Saltbox" icon="${saltbox}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="saltbox" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type saltbox -->
+            <item name="Skillion" icon="${skillion}" type="node,way,closedway,multipolygon" name_context="building" preset_name_label="true">
+                <link wiki="Simple_3D_Buildings"/>
+                <space/>
+                <key key="roof:shape" value="skillion" values_context="building"/>
+                <reference ref="roof_main"/>
+                <reference ref="roof_orientation"/>
+            </item> <!-- Roof type skillion -->
+        </group>
+        <!-- /roof type -->
+        <item name="Entrance" icon="${entrance}" type="node" preset_name_label="true">
+            <link wiki="Key:entrance"/>
+            <space/>
+            <combo key="entrance" text="Entrance" values="yes,main,service,exit,emergency,staircase,home,garage" display_values="Yes,Main,Service,Exit,Emergency,Staircase,Home,Garage" values_context="entrance" default="yes" match="key"/>
+            <combo key="access" text="Access" values="yes,delivery,private,customers,permissive,permit,no" display_values="Yes,Delivery,Private,Customers,Permissive,Permit required,No" values_context="access" match="none"/>
+            <optional>
+                <reference ref="wheelchair"/>
+                <text key="ref" text="Entrance number"/>
+                <reference ref="door_type" />
+                <text key="addr:flats" text="Flat numbers"/>
+            </optional>
+            <preset_link preset_name="Address"/>
+        </item> <!-- Entrance -->
+        <item name="Entrance (deprecated)" deprecated="true" icon="${entrance}" type="node" preset_name_label="true">
+            <key key="building" value="entrance"/>
+            <preset_link preset_name="Address"/>
+        </item> <!-- Entrance (deprecated) -->
         <item name="Loading dock" icon="${amenity_forklift}" type="node,way" preset_name_label="true">
             <link wiki="Tag:amenity=loading_dock"/>
             <space/>
@@ -7686,8 +7686,8 @@
             <reference ref="level" />
             <combo key="conveying" text="Conveyor" values="yes,forward,backward,reversible" display_values="Yes,Forward,Backward,Reversible"/>
         </item>
-  </group> <!-- Indoor elements -->
-  <group name="Man Made" icon="${man_made_group}">
+    </group> <!-- Indoor elements -->
+    <group name="Man Made" icon="${man_made_group}">
     <group name="Man Made" icon="${man_made_group}">
         <item name="Tower" icon="${man_made_tower}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:man_made=tower"/>
@@ -7742,7 +7742,7 @@
             <preset_link preset_name="Mast" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Telescope" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Tower" text="Similar but different tags:" alternative="true" />
-         </item> <!-- Antenna -->
+        </item> <!-- Antenna -->
         <item name="Flagpole" icon="${man_made_flagpole}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=flagpole"/>
             <key key="man_made" value="flagpole"/>
@@ -7966,7 +7966,7 @@
             <link wiki="Tag:man_made=water_tower"/>
             <space/>
             <key key="man_made" value="water_tower"/>
-             <optional>
+            <optional>
                 <reference ref="name_operator"/>
                 <text key="height" text="Height (meters)" length="7"/>
             </optional>
@@ -7986,7 +7986,7 @@
                 <text key="name" text="Name"/>
             </optional>
         </item> <!-- Watermill -->
-       <item name="Pumping station" icon="${man_made_pumping_station}" type="node,closedway" preset_name_label="true">
+        <item name="Pumping station" icon="${man_made_pumping_station}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=pumping_station"/>
             <space/>
             <key key="man_made" value="pumping_station"/>
@@ -8072,7 +8072,7 @@
                 <reference ref="ref_operator" />
                 <text key="manufacturer" text="Manufacturer" />
                 <reference ref="colours" />
-             </optional>
+            </optional>
         </item> <!-- Street cabinet -->
         <item name="Monitoring Station" icon="${man_made_monitoring_station}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=monitoring_station"/>
@@ -8656,77 +8656,77 @@
             <reference ref="ref_operator" />
         </item> <!-- Data center -->
     </group> <!-- Telecom -->
-  </group> <!-- Man Made -->
-  <group name="Historic Places &amp; Objects" icon="${historic_group}" items_sort="false" >
+    </group> <!-- Man Made -->
+    <group name="Historic Places &amp; Objects" icon="${historic_group}" items_sort="false" >
     <item name="Historic object" icon="${historic}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Key:historic"/>
-         <space/>
-         <combo key="historic" text="Type" match="keyvalue!">
-           <list_entry value="memorial" display_value="Memorial" />
-           <list_entry value="ruins" display_value="Ruins" />
-           <list_entry value="archaeological_site" display_value="Archaeological site" />
-           <list_entry value="wayside_shrine" display_value="Wayside shrine" />
-           <list_entry value="monument" display_value="Monument" />
-           <list_entry value="castle" display_value="Castle" />
-           <list_entry value="building" display_value="Building" />
-           <list_entry value="charcoal_pile" display_value="Charcoal pile" />
-           <list_entry value="boundary_stone" display_value="Boundary stone" />
-           <list_entry value="tomb" display_value="Tomb" />
-           <list_entry value="citywalls" display_value="Citywalls" />
-           <list_entry value="mine_shaft" display_value="Mine shaft" />
-           <list_entry value="mine" display_value="Mine" />
-           <list_entry value="railway" display_value="Railway" />
-           <list_entry value="manor" display_value="Manor" />
-           <list_entry value="hollow_way" display_value="Hollow way" />
-           <list_entry value="milestone" display_value="Milestone" />
-           <list_entry value="church" display_value="Church" />
-           <list_entry value="fort" display_value="Fort" />
-           <list_entry value="city_gate" display_value="City gate" />
-           <list_entry value="wreck" display_value="Wreck" />
-           <list_entry value="house" display_value="House" />
-           <list_entry value="stone" display_value="Sone" />
-           <list_entry value="wayside_chapel" display_value="Wayside chapel" />
-           <list_entry value="bunker" display_value="Bunker" />
-           <list_entry value="pa" display_value="Pa" />
-           <list_entry value="farm" display_value="Farm" />
-           <list_entry value="roman_road" display_value="Roman road" />
-           <list_entry value="aircraft" display_value="Aircraft" />
-           <list_entry value="bomb_crater" display_value="Bomb crater" />
-           <list_entry value="battlefield" display_value="Battlefield" />
-           <list_entry value="cannon" display_value="Cannon" />
-           <list_entry value="monastery" display_value="Monastery" />
-           <list_entry value="bridge" display_value="Bridge" />
-           <list_entry value="tower" display_value="Tower" />
-           <list_entry value="ship" display_value="Ship" />
-           <list_entry value="industrial" display_value="Industrial" />
-           <list_entry value="pillory" display_value="Pillory" />
-           <list_entry value="shieling" display_value="Shieling" />
-         </combo>
-         <reference ref="name_wikipedia"/>
-         <text key="description" text="Description" length="255"/>
-         <check key="ruins" text="Ruins"/>
-         <reference ref="link_contact_address_payment"/>
+        <link wiki="Key:historic"/>
+        <space/>
+        <combo key="historic" text="Type" match="keyvalue!">
+            <list_entry value="memorial" display_value="Memorial" />
+            <list_entry value="ruins" display_value="Ruins" />
+            <list_entry value="archaeological_site" display_value="Archaeological site" />
+            <list_entry value="wayside_shrine" display_value="Wayside shrine" />
+            <list_entry value="monument" display_value="Monument" />
+            <list_entry value="castle" display_value="Castle" />
+            <list_entry value="building" display_value="Building" />
+            <list_entry value="charcoal_pile" display_value="Charcoal pile" />
+            <list_entry value="boundary_stone" display_value="Boundary stone" />
+            <list_entry value="tomb" display_value="Tomb" />
+            <list_entry value="citywalls" display_value="Citywalls" />
+            <list_entry value="mine_shaft" display_value="Mine shaft" />
+            <list_entry value="mine" display_value="Mine" />
+            <list_entry value="railway" display_value="Railway" />
+            <list_entry value="manor" display_value="Manor" />
+            <list_entry value="hollow_way" display_value="Hollow way" />
+            <list_entry value="milestone" display_value="Milestone" />
+            <list_entry value="church" display_value="Church" />
+            <list_entry value="fort" display_value="Fort" />
+            <list_entry value="city_gate" display_value="City gate" />
+            <list_entry value="wreck" display_value="Wreck" />
+            <list_entry value="house" display_value="House" />
+            <list_entry value="stone" display_value="Sone" />
+            <list_entry value="wayside_chapel" display_value="Wayside chapel" />
+            <list_entry value="bunker" display_value="Bunker" />
+            <list_entry value="pa" display_value="Pa" />
+            <list_entry value="farm" display_value="Farm" />
+            <list_entry value="roman_road" display_value="Roman road" />
+            <list_entry value="aircraft" display_value="Aircraft" />
+            <list_entry value="bomb_crater" display_value="Bomb crater" />
+            <list_entry value="battlefield" display_value="Battlefield" />
+            <list_entry value="cannon" display_value="Cannon" />
+            <list_entry value="monastery" display_value="Monastery" />
+            <list_entry value="bridge" display_value="Bridge" />
+            <list_entry value="tower" display_value="Tower" />
+            <list_entry value="ship" display_value="Ship" />
+            <list_entry value="industrial" display_value="Industrial" />
+            <list_entry value="pillory" display_value="Pillory" />
+            <list_entry value="shieling" display_value="Shieling" />
+        </combo>
+        <reference ref="name_wikipedia"/>
+        <text key="description" text="Description" length="255"/>
+        <check key="ruins" text="Ruins"/>
+        <reference ref="link_contact_address_payment"/>
     </item> <!-- Historic object -->
     <item name="Castle" icon="${historic_castle}" type="node,closedway,multipolygon" preset_name_label="true">
-       <link wiki="Tag:historic=castle"/>
-       <space/>
-       <key key="historic" value="castle"/>
-       <combo key="castle_type" text="Type" 
-           values="defensive,palace,stately,manor,fortress,castrum,shiro,kremlin" 
-           display_values="Defensive,Palace,Stately,Manor,Fortress,Castrum,Shiro,Kremlin" />
-       <reference ref="name_wikipedia"/>
-       <check key="ruins" text="Ruins"/>
-       <reference ref="link_contact_address_payment"/>
-     </item> <!-- Castle -->
-     <item name="Fort" icon="${historic_fort}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=fort"/>
-         <space/>
-         <key key="historic" value="fort"/>
-         <reference ref="name_wikipedia"/>
-         <check key="ruins" text="Ruins"/>
-         <reference ref="link_contact_address_payment"/>
-     </item> <!-- Fort -->
-     <item name="Historic monastery" icon="${historic_monastery}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=castle"/>
+        <space/>
+        <key key="historic" value="castle"/>
+        <combo key="castle_type" text="Type" 
+            values="defensive,palace,stately,manor,fortress,castrum,shiro,kremlin" 
+            display_values="Defensive,Palace,Stately,Manor,Fortress,Castrum,Shiro,Kremlin" />
+        <reference ref="name_wikipedia"/>
+        <check key="ruins" text="Ruins"/>
+        <reference ref="link_contact_address_payment"/>
+    </item> <!-- Castle -->
+    <item name="Fort" icon="${historic_fort}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=fort"/>
+        <space/>
+        <key key="historic" value="fort"/>
+        <reference ref="name_wikipedia"/>
+        <check key="ruins" text="Ruins"/>
+        <reference ref="link_contact_address_payment"/>
+    </item> <!-- Fort -->
+    <item name="Historic monastery" icon="${historic_monastery}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:historic=monastery" />
         <space />
         <key key="historic" value="monastery" />
@@ -8735,126 +8735,126 @@
             <reference ref="religious" />
             <reference ref="wikipedia_wikidata" />
             <reference ref="oh_wheelchair" />
-         </optional>
+        </optional>
         <preset_link preset_name="Monastery" text="Similar but different tags:" alternative="true"/>
-     </item> <!-- Historic monastery -->
-     <item name="City gate" icon="${historic_city_gate}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=city_gate"/>
-         <space/>
-         <key key="historic" value="city_gate"/>
-         <reference ref="name_wikipedia"/>
-         <check key="ruins" text="Ruins"/>
-         <reference ref="link_contact_address_payment"/>
-     </item> <!-- City gate -->
-     <item name="Building" icon="${historic_building}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic"/>
-         <space/>
-         <key key="historic" value="building"/>
-         <reference ref="optional_name_wikipedia"/>
-         <check key="ruins" text="Ruins"/>
-         <reference ref="link_contact_address_payment"/>
-     </item> <!-- Building -->
-     <item name="Ruins" icon="${historic_ruin}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=ruins"/>
-         <space/>
-         <key key="historic" value="ruins"/>
-         <reference ref="name_oh_wheelchair"/>
-     </item> <!-- Ruins -->
-     <item name="Archaeological Site" icon="${historic_archaeological}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=archaeological_site"/>
-         <space/>
-         <key key="historic" value="archaeological_site"/>
-         <combo key="site_type" text="Type" values="tumulus,megalith,fortification,settlement,necropolis,city" display_values="Tumulus,Megalith,Fortification,Settlement,Necropolis,City"/>
-         <reference ref="name_oh_wheelchair"/>
-     </item> <!-- Archaeological Site -->
-     <item name="Battlefield" icon="${historic_battlefield}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=battlefield"/>
-         <space/>
-         <key key="historic" value="battlefield"/>
-         <text key="name" text="Name"/>
-     </item> <!-- Battlefield -->
-     <item name="Tomb" icon="${historic_tomb}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=tomb"/>
-         <space/>
-         <key key="historic" value="tomb"/>
-         <text key="name" text="Name"/>
-         <combo key="tomb" text="Tomb type" values="tumulus,rock-cut,hypogeum,war_grave,mausoleum,columbarium,crypt,pyramid,sarcophagus,vault" display_values="Tumulus,Rock-cut,Hypogeum,War grave,Mausoleum,Columbarium,Crypt,Pyramid,Sarcophagus,Vault"/>
-     </item> <!-- Tomb -->
-     <item name="Palaeontological Site" icon="${natural_palaeontological_site}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:geological=palaeontological_site"/>
-         <space/>
-         <key key="geological" value="palaeontological_site"/>
-         <text key="name" text="Name"/>
-     </item> <!-- Palaeontological Site -->
-     <separator/>
-     <item name="Monument" icon="${historic_monument}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=monument"/>
-         <space/>
-         <key key="historic" value="monument"/>
-         <text key="name" text="Name"/>
-     </item> <!-- Monument -->
-     <item name="Memorial" icon="${historic_memorial}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=memorial"/>
-         <space/>
-         <key key="historic" value="memorial"/>
-         <text key="name" text="Name"/>
-         <combo key="memorial" text="Type" values="statue,bust,plaque,stele,stone,war_memorial" display_values="Statue,Bust,Plaque,Stele,Stone,War memorial" values_context="memorial" values_searchable="true"/>
-         <optional>
-             <text key="inscription" text="Inscription"  length="255"/>
-             <text key="artist_name" text="Artist Name"/>
-             <text key="start_date" text="Start date"/>
-             <reference ref="material"/>
-             <reference ref="wikipedia_wikidata"/>
-         </optional>
-     </item> <!-- Memorial -->
-     <item name="Wayside Cross" icon="${historic_wayside_cross}" type="node,closedway" preset_name_label="true">
-         <link wiki="Tag:historic=wayside_cross"/>
-         <space/>
-         <key key="historic" value="wayside_cross"/>
-         <reference ref="optional_name"/>
-         <reference ref="religious_catholic_christian" />
-         <text key="start_date" text="Start date"/>
-         <text key="inscription" text="Inscription" length="255"/>
-         <text key="material" text="Material"/>
-     </item> <!-- Wayside Cross -->
-     <item name="Wayside Shrine" icon="${historic_wayside_shrine}" type="node,closedway" preset_name_label="true">
-         <link wiki="Tag:historic=wayside_shrine"/>
-         <space/>
-         <key key="historic" value="wayside_shrine"/>
-         <reference ref="optional_name"/>
-         <reference ref="religious_catholic_christian" />
-         <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
-         <combo key="building" text="Building" values="wayside_shrine" values_context="building"/>
-         <text key="start_date" text="Start date"/>
-         <text key="inscription" text="Inscription" length="255"/>
-     </item> <!-- Wayside Shrine -->
-     <item name="Torii" icon="${historic_torii}" type="node,closedway" preset_name_label="true">
-         <link wiki="Tag:man_made=torii"/>
-         <space/>
-         <key key="man_made" value="torii"/>
-         <reference ref="optional_name"/>
-     </item> <!-- Torii -->
-     <item name="Boundary Stone" icon="${historic_boundary_stone}" type="node,closedway" preset_name_label="true">
-         <link wiki="Tag:historic=boundary_stone"/>
-         <space/>
-         <key key="historic" value="boundary_stone"/>
-         <text key="name" text="Name"/>
-     </item> <!-- Boundary Stone -->
-     <item name="Pillory" icon="${historic_pillory}" type="node,closedway" preset_name_label="true">
-         <link wiki="Tag:historic=pillory"/>
-         <space/>
-         <key key="historic" value="pillory"/>
-         <text key="description" text="Description" length="255"/>
-     </item> <!-- Pillory -->
-     <item name="Wreck" icon="${historic_wreck}" type="node,closedway,multipolygon" preset_name_label="true">
-         <link wiki="Tag:historic=wreck"/>
-         <space/>
-         <key key="historic" value="wreck"/>
-         <reference ref="name_wikipedia"/>
-         <reference ref="link_contact_address_payment"/>
-     </item> <!-- Wreck -->
-  </group> <!-- Historic Places -->
-  <group name="Shops" icon="${shopping_group}">
+    </item> <!-- Historic monastery -->
+    <item name="City gate" icon="${historic_city_gate}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=city_gate"/>
+        <space/>
+        <key key="historic" value="city_gate"/>
+        <reference ref="name_wikipedia"/>
+        <check key="ruins" text="Ruins"/>
+        <reference ref="link_contact_address_payment"/>
+    </item> <!-- City gate -->
+    <item name="Building" icon="${historic_building}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic"/>
+        <space/>
+        <key key="historic" value="building"/>
+        <reference ref="optional_name_wikipedia"/>
+        <check key="ruins" text="Ruins"/>
+        <reference ref="link_contact_address_payment"/>
+    </item> <!-- Building -->
+    <item name="Ruins" icon="${historic_ruin}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=ruins"/>
+        <space/>
+        <key key="historic" value="ruins"/>
+        <reference ref="name_oh_wheelchair"/>
+    </item> <!-- Ruins -->
+    <item name="Archaeological Site" icon="${historic_archaeological}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=archaeological_site"/>
+        <space/>
+        <key key="historic" value="archaeological_site"/>
+        <combo key="site_type" text="Type" values="tumulus,megalith,fortification,settlement,necropolis,city" display_values="Tumulus,Megalith,Fortification,Settlement,Necropolis,City"/>
+        <reference ref="name_oh_wheelchair"/>
+    </item> <!-- Archaeological Site -->
+    <item name="Battlefield" icon="${historic_battlefield}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=battlefield"/>
+        <space/>
+        <key key="historic" value="battlefield"/>
+        <text key="name" text="Name"/>
+    </item> <!-- Battlefield -->
+    <item name="Tomb" icon="${historic_tomb}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=tomb"/>
+        <space/>
+        <key key="historic" value="tomb"/>
+        <text key="name" text="Name"/>
+        <combo key="tomb" text="Tomb type" values="tumulus,rock-cut,hypogeum,war_grave,mausoleum,columbarium,crypt,pyramid,sarcophagus,vault" display_values="Tumulus,Rock-cut,Hypogeum,War grave,Mausoleum,Columbarium,Crypt,Pyramid,Sarcophagus,Vault"/>
+    </item> <!-- Tomb -->
+    <item name="Palaeontological Site" icon="${natural_palaeontological_site}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:geological=palaeontological_site"/>
+        <space/>
+        <key key="geological" value="palaeontological_site"/>
+        <text key="name" text="Name"/>
+    </item> <!-- Palaeontological Site -->
+    <separator/>
+    <item name="Monument" icon="${historic_monument}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=monument"/>
+        <space/>
+        <key key="historic" value="monument"/>
+        <text key="name" text="Name"/>
+    </item> <!-- Monument -->
+    <item name="Memorial" icon="${historic_memorial}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=memorial"/>
+        <space/>
+        <key key="historic" value="memorial"/>
+        <text key="name" text="Name"/>
+        <combo key="memorial" text="Type" values="statue,bust,plaque,stele,stone,war_memorial" display_values="Statue,Bust,Plaque,Stele,Stone,War memorial" values_context="memorial" values_searchable="true"/>
+        <optional>
+            <text key="inscription" text="Inscription"  length="255"/>
+            <text key="artist_name" text="Artist Name"/>
+            <text key="start_date" text="Start date"/>
+            <reference ref="material"/>
+            <reference ref="wikipedia_wikidata"/>
+        </optional>
+    </item> <!-- Memorial -->
+    <item name="Wayside Cross" icon="${historic_wayside_cross}" type="node,closedway" preset_name_label="true">
+        <link wiki="Tag:historic=wayside_cross"/>
+        <space/>
+        <key key="historic" value="wayside_cross"/>
+        <reference ref="optional_name"/>
+        <reference ref="religious_catholic_christian" />
+        <text key="start_date" text="Start date"/>
+        <text key="inscription" text="Inscription" length="255"/>
+        <text key="material" text="Material"/>
+    </item> <!-- Wayside Cross -->
+    <item name="Wayside Shrine" icon="${historic_wayside_shrine}" type="node,closedway" preset_name_label="true">
+        <link wiki="Tag:historic=wayside_shrine"/>
+        <space/>
+        <key key="historic" value="wayside_shrine"/>
+        <reference ref="optional_name"/>
+        <reference ref="religious_catholic_christian" />
+        <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
+        <combo key="building" text="Building" values="wayside_shrine" values_context="building"/>
+        <text key="start_date" text="Start date"/>
+        <text key="inscription" text="Inscription" length="255"/>
+    </item> <!-- Wayside Shrine -->
+    <item name="Torii" icon="${historic_torii}" type="node,closedway" preset_name_label="true">
+        <link wiki="Tag:man_made=torii"/>
+        <space/>
+        <key key="man_made" value="torii"/>
+        <reference ref="optional_name"/>
+    </item> <!-- Torii -->
+    <item name="Boundary Stone" icon="${historic_boundary_stone}" type="node,closedway" preset_name_label="true">
+        <link wiki="Tag:historic=boundary_stone"/>
+        <space/>
+        <key key="historic" value="boundary_stone"/>
+        <text key="name" text="Name"/>
+    </item> <!-- Boundary Stone -->
+    <item name="Pillory" icon="${historic_pillory}" type="node,closedway" preset_name_label="true">
+        <link wiki="Tag:historic=pillory"/>
+        <space/>
+        <key key="historic" value="pillory"/>
+        <text key="description" text="Description" length="255"/>
+    </item> <!-- Pillory -->
+    <item name="Wreck" icon="${historic_wreck}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=wreck"/>
+        <space/>
+        <key key="historic" value="wreck"/>
+        <reference ref="name_wikipedia"/>
+        <reference ref="link_contact_address_payment"/>
+    </item> <!-- Wreck -->
+    </group> <!-- Historic Places -->
+    <group name="Shops" icon="${shopping_group}">
     <group name="Food" icon="${shopping_food_group}">
         <item name="Supermarket" icon="${shopping_supermarket}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=supermarket"/>
@@ -9581,8 +9581,8 @@
         </item> <!-- Erotic -->
     </group> <!-- For the body -->
     <group name="Sports and hobbies" icon="${shopping_sports_hobbies_group}">
-       <item name="Sports" icon="${shopping_sports}" type="node,closedway,multipolygon" preset_name_label="true">
-             <link wiki="Tag:shop=sports"/>
+        <item name="Sports" icon="${shopping_sports}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=sports"/>
             <space/>
             <key key="shop" value="sports"/>
             <reference ref="sport"/>
@@ -9597,14 +9597,14 @@
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Water sports -->
         <item name="Fishing" icon="${shopping_fishing}" type="node,closedway,multipolygon" preset_name_label="true">
-             <link wiki="Tag:shop=fishing"/>
+            <link wiki="Tag:shop=fishing"/>
             <space/>
             <key key="shop" value="fishing"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Sports -->
         <item name="Hunting" icon="${shopping_hunting}" type="node,closedway,multipolygon" preset_name_label="true">
-             <link wiki="Tag:shop=hunting"/>
+            <link wiki="Tag:shop=hunting"/>
             <space/>
             <key key="shop" value="hunting"/>
             <reference ref="name_oh_wheelchair_level"/>
@@ -9651,7 +9651,7 @@
             <key key="shop" value="baby_goods"/>
             <reference ref="name_oh_wheelchair_level"/>
             <optional>
-               <reference ref="brand"/>
+                <reference ref="brand"/>
             </optional>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
@@ -10053,8 +10053,8 @@
             <check key="payment:litecoin" text="Litecoin" match="keyvalue" disable_off="true"/>
         </checkgroup>
     </item> <!-- Payment Methods -->
-  </group> <!-- Shops -->
-  <group name="Money" icon="${money_group}" items_sort="false" >
+    </group> <!-- Shops -->
+    <group name="Money" icon="${money_group}" items_sort="false" >
     <item name="Bank" icon="${money_bank}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:amenity=bank"/>
         <space/>
@@ -10116,8 +10116,8 @@
         <reference ref="name_oh_wheelchair_level"/>
         <reference ref="link_contact_address_payment"/>
     </item> <!-- Money lender -->
-  </group> <!-- Money -->
-  <group name="Geography" icon="${geography_group}">
+    </group> <!-- Money -->
+    <group name="Geography" icon="${geography_group}">
     <group name="Boundaries" icon="${geography_boundary_group}" items_sort="false" >
         <item name="Administrative" icon="${geography_boundary_administrative}" type="way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=administrative"/>
@@ -10420,8 +10420,8 @@
             <combo key="reef" text="Type" values="coral,oyster,rock,sand"/>
         </item> <!-- Reef -->
     </group> <!-- Geography -->
-  </group> <!-- Geography -->
-  <group name="Land use and nature" icon="${landuse_natural_group}">
+    </group> <!-- Geography -->
+    <group name="Land use and nature" icon="${landuse_natural_group}">
     <group name="Nature" icon="${natural_group}">
         <item name="Tree" icon="${natural_tree}" type="node" preset_name_label="true">
             <link wiki="Tag:natural=tree"/>
@@ -10826,9 +10826,9 @@
             <reference ref="name_operator"/>
         </item> <!-- Quarry -->
     </group> <!-- Landuse -->
-  </group> <!-- Nature and land use -->
-  <group name="Addresses and Contact" icon="${addresses_contact_group}">
-      <item name="Name" icon="${name}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
+    </group> <!-- Nature and land use -->
+    <group name="Addresses and Contact" icon="${addresses_contact_group}">
+        <item name="Name" icon="${name}" type="node,way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Key:name"/>
             <space/>
             <text key="name" text="Name"/>
@@ -10869,7 +10869,7 @@
             </optional>
         </item> <!-- Address -->
         <item name="Address Interpolation" icon="${address_interpolation}" type="way" preset_name_label="true">
-           <link wiki="Key:addr"/>
+            <link wiki="Key:addr"/>
             <space/>
             <combo key="addr:interpolation" text="Numbering scheme" values="odd,even,all,alphabetic" display_values="Odd,Even,All,Alphabetic" sort_values="false" default="odd" match="key"/>
             <optional>
@@ -10978,9 +10978,9 @@
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="automatic_check_date" javascript=" function addCheckDate(key) {   df = new java.text.SimpleDateFormat('yyyy-MM-dd');   v = new java.util.ArrayList();   v.add(df.format(new java.util.Date()));   tags.put(key,v); }  for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {   if (key.startsWith('check_date:')) {     addCheckDate(key);   } } addCheckDate('check_date'); tags.remove('automatic_check_date');" text="Automatic check_date generation"/>
         </item> <!-- Add or update check date -->
-  </group> <!-- Annotation -->
-  <group name="Relations" icon="${relation_group}">
-       <item name="Relations" icon="${relation}" type="relation,multipolygon" preset_name_label="true">
+    </group> <!-- Annotation -->
+    <group name="Relations" icon="${relation_group}">
+        <item name="Relations" icon="${relation}" type="relation,multipolygon" preset_name_label="true">
             <link wiki="Types_of_relation"/>
             <combo key="type" text="Relation type" editable="true" match="key">
                 <list_entry value="multipolygon" display_value="Multipolygon"/>
@@ -11482,7 +11482,7 @@
             </roles>
         </item> <!-- Tunnel -->
     </group> <!-- Relations -->
-  <group name="Crafts" icon="${craft_group}">
+    <group name="Crafts" icon="${craft_group}">
         <item name="Agricultural engines" icon="${craft_agricultural_engines}" type="node,closedway,multipolygon">
             <link wiki="Tag:craft=agricultural_engines"/>
             <space/>
@@ -11959,7 +11959,7 @@
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Photo studio -->
     </group> <!-- Crafts -->
-  <group name="Offices" icon="${office_group}">
+    <group name="Offices" icon="${office_group}">
         <item name="Administrative (deprecated)" deprecated="true" icon="${office_administrative}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=administrative"/>
             <space/>
