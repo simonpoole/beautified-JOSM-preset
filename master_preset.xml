@@ -1109,7 +1109,6 @@
             <combo key="horse" text="Horse" values="yes,official,designated,permissive,destination,delivery,private,permit,no"
                 display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" match="key" values_sort="false"/>
             <reference ref="dog" />
-                display_values="Yes,Leashed,Unleashed,Official,Designated,Permissive,Private,Permit required,No" values_sort="false" values_context="access"  match="key" />
             <combo key="ski" text="Ski" values="yes,official,designated,permissive,private,permit,no" display_values="Yes,Official,Designated,Permissive,Private,Permit required,No" values_context="access" values_sort="false"/>
             <combo key="snowmobile" text="Snowmobile" values="yes,official,designated,permissive,destination,delivery,private,permit,no" 
                 display_values="Yes,Official,Designated,Permissive,Destination,Delivery,Private,Permit required,No" values_context="access" values_sort="false"/>
