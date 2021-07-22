@@ -1959,7 +1959,7 @@
             </optional>
             <reference ref="path_access_restrictions"/>
         </item> <!-- Combined Foot- and Cycleway -->
-        <item name="Dedicated Footway" icon="${highway_footway}" type="way" preset_name_label="true">
+        <item name="Dedicated Footway" icon="${highway_footway}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=footway"/>
             <key key="highway" value="footway"/>
             <optional>
