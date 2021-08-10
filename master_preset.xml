@@ -2115,6 +2115,7 @@
             <combo key="supervised" text="Crossing attendant" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_i18n="false" values_sort="false" />
             <check key="bicycle" text="Cross by bicycle" disable_off="true"/>
             <check key="horse" text="Cross on horseback" disable_off="true"/>
+            <reference ref="tactile_paving"/>
             <reference ref="kerb"/>
             <label text="In case of traffic signals:"/>
             <check key="button_operated" text="Button operated" disable_off="true"/>
