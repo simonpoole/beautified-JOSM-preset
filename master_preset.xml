@@ -5236,6 +5236,8 @@
             <space/>
             <key key="leisure" value="picnic_table"/>
             <reference ref="backrest"/>
+            <reference ref="material"/>
+            <reference ref="colours" />
             <check key="covered" text="Covered"/>
         </item> <!-- Picnic Table -->
         <item name="Public Grill" icon="${tourist_bbq}" type="node,closedway,multipolygon" preset_name_label="true">
