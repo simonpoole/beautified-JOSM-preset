@@ -1437,7 +1437,7 @@
         </optional>
     </chunk>
     <chunk>
-        <check key="backrest" text="Backrest" disable_off="true"/>
+        <check key="backrest" text="Backrest"/>
     </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
@@ -5235,6 +5235,7 @@
             <link wiki="Tag:leisure=picnic_table"/>
             <space/>
             <key key="leisure" value="picnic_table"/>
+            <reference ref="backrest"/>
             <check key="covered" text="Covered"/>
         </item> <!-- Picnic Table -->
         <item name="Public Grill" icon="${tourist_bbq}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6599,9 +6600,9 @@
             <link wiki="Tag:leisure=bleachers"/>
             <space/>
             <key key="leisure" value="bleachers"/>
+            <reference ref="backrest"/>
             <reference ref="material"/>
             <reference ref="colours" />
-            <check key="backrest" text="Backrest" />
             <optional>
                 <reference ref="name_operator_oh_wheelchair" />
             </optional>
