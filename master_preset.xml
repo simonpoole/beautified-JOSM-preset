@@ -6597,6 +6597,9 @@
             <reference ref="material"/>
             <reference ref="colours" />
             <combo key="seats" text="Seats count" values="1,2,3,4,5,6,7,8,9,10"/>
+            <optional>
+                <check key="covered" text="Covered"/>
+            </optional>
         </item> <!-- Bench -->
         <item name="Bleachers" icon="${amenity_bleachers}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=bleachers"/>
