@@ -1436,6 +1436,9 @@
             <check key="ferry" text="Ferry" disable_off="true"/>
         </optional>
     </chunk>
+    <chunk id="backrest">
+        <check key="backrest" text="Backrest"/>
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -5232,6 +5235,9 @@
             <link wiki="Tag:leisure=picnic_table"/>
             <space/>
             <key key="leisure" value="picnic_table"/>
+            <reference ref="backrest"/>
+            <reference ref="material"/>
+            <reference ref="colours" />
             <check key="covered" text="Covered"/>
         </item> <!-- Picnic Table -->
         <item name="Public Grill" icon="${tourist_bbq}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6587,18 +6593,21 @@
             <link wiki="Tag:amenity=bench"/>
             <space/>
             <key key="amenity" value="bench"/>
-            <check key="backrest" text="Backrest" disable_off="true"/>
+            <reference ref="backrest"/>
             <reference ref="material"/>
             <reference ref="colours" />
             <combo key="seats" text="Seats count" values="1,2,3,4,5,6,7,8,9,10"/>
+            <optional>
+                <check key="covered" text="Covered"/>
+            </optional>
         </item> <!-- Bench -->
         <item name="Bleachers" icon="${amenity_bleachers}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=bleachers"/>
             <space/>
             <key key="leisure" value="bleachers"/>
+            <reference ref="backrest"/>
             <reference ref="material"/>
             <reference ref="colours" />
-            <check key="backrest" text="Backrest" />
             <optional>
                 <reference ref="name_operator_oh_wheelchair" />
             </optional>
