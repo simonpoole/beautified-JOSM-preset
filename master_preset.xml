@@ -6086,7 +6086,6 @@
             </combo>
             <combo key="fire_hydrant:diameter" text="Diameter (in mm)" values="50,70,75,80,100,110,125,150,200,250,300,400"/>
             <space/>
-            <combo key="fire_hydrant:position" text="Hydrant Position" values="lane,parking_lot,sidewalk,green" values_context="hydrant position"/>
             <combo key="fire_hydrant:pressure" text="Pressure (in bar)" values="yes,5,6,8,suction" display_values="Pressurized,5,6,8,Suction" values_context="pipeline"/>
             <text key="ref" text="Reference"/>
             <optional>
