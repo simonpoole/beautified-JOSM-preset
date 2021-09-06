@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This started off as a project to rework the [original JOSM preset](https://josm.openstreetmap.de/browser/josm/trunk/data/defaultpresets.xml) to use icons that work better as UI elements for use in [vespucci](https://github.com/MarcusWolschon/osmeditor4android), but has since evolved to be improved in many other aspects.
+This started off as a project to rework the [original JOSM preset](https://josm.openstreetmap.de/browser/josm/trunk/data/defaultpresets.xml) to use icons that work better as UI elements for use in [Vespucci](https://github.com/MarcusWolschon/osmeditor4android), but has since evolved to be improved in many other aspects.
 
 ## Icons
 
@@ -24,7 +24,7 @@ Due to the touchy nature of the subject, presets for military objects have been 
 
 ### Understanding the JOSM schema
 
-Extensions to the original JOSM schema are documented on the [vespucci site](http://vespucci.io/tutorials/presets/).
+Extensions to the original JOSM schema are documented on the [Vespucci site](http://vespucci.io/tutorials/presets/).
 
 ### Building
 
