@@ -14,7 +14,7 @@ The links to original icons remain if they currently don't have a replacement, c
 
 ## Count of object presets
 
-The preset file contained at last count a good 1'000 individual object presets vs 724 in the original. Extensions to the original JOSM schema are documented on the [vespucci site](http://vespucci.io/tutorials/presets/).
+The preset file contained at last count a good 1'000 individual object presets vs 724 in the original.
 
 ## Exclusion of military objects
 
@@ -22,11 +22,19 @@ Due to the touchy nature of the subject, presets for military objects have been 
 
 ## Information for developers
 
+### Understanding the JOSM schema
+
+Extensions to the original JOSM schema are documented on the [vespucci site](http://vespucci.io/tutorials/presets/).
+
+### Building
+
 Building the actual preset files is done with gradle and should work on both unixy operating systems and windows, the build task will generate the variants in the `gen` directory.
 
 Building requires `xmlstarlet` installed and on your path.
 
 The PNG icons are currently assumed to be in icons/png, generating them from SVG requires `rsvg-convert` to be installed. Currently the `recolour`and `generatePngs`tasks need to executed, when appropriate, manually.
+
+### Translations
 
 The presets are being translated on transifex [here](https://www.transifex.com/openstreetmap/presets/), to retrieve the translations you will need to install and setup the [transifex command line client](https://docs.transifex.com/client/introduction). You only need to set up your transifex login, you can and should use the language mapping file from this repository.
 
