@@ -22,11 +22,16 @@ Due to the touchy nature of the subject, presets for military objects have been 
 
 ## Information for developers
 
-### Understanding the JOSM schema
+### Understanding the preset schema
 
-Extensions to the original JOSM schema are documented on the [Vespucci site](http://vespucci.io/tutorials/presets/).
+Vespucci uses JOSM-style tagging presets defined in an XML config file (`master_preset.xml`). Read about the format here:
 
-### Building
+- https://wiki.openstreetmap.org/wiki/Customising_JOSM_Presets
+- https://josm.openstreetmap.de/wiki/TaggingPresets
+
+However, Vespucci ignores some settings and adds some of its own. Differences to the original JOSM schema are documented on the [Vespucci site](http://vespucci.io/tutorials/presets/).
+
+### Building the preset files
 
 Building the actual preset files is done with gradle and should work on both unixy operating systems and windows, the build task will generate the variants in the `gen` directory.
 
