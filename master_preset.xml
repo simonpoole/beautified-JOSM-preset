@@ -284,10 +284,10 @@
                display_values="North,East,South,West,0°,90°,180°,270°,Forward,Backward" values_sort="false" />
     </chunk>
     <chunk id="min_age">
-        <text key="min_age" text="Minimum age" value_type="integer"/>
+        <text key="min_age" text="Minimum age"/>
     </chunk>
     <chunk id="max_age">
-        <text key="max_age" text="Maximum age" value_type="integer"/>
+        <text key="max_age" text="Maximum age"/>
     </chunk>
     <chunk id="min_max_age">
         <reference ref="min_age"/>
