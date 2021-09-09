@@ -8,7 +8,7 @@ This started off as a project to rework the [original JOSM preset](https://josm.
 
 ## Icons
 
-The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/introduction , http://osm-icons.org, https://github.com/gmgeo/osmic and a handful of ones created by myself.
+The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/introduction , http://osm-icons.org, https://github.com/gmgeo/osmic and a handful of ones created by myself. The build process a JOSM compatible version of the preset file with references to the original SVG icons and one with the new icons.
 
 The links to original icons remain if they currently don't have a replacement, current count is roughly 90 icons that either have not been replaced or are missing.
 
@@ -29,7 +29,7 @@ Vespucci uses JOSM-style tagging presets defined in an XML config file (`master_
 - https://wiki.openstreetmap.org/wiki/Customising_JOSM_Presets
 - https://josm.openstreetmap.de/wiki/TaggingPresets
 
-However, Vespucci ignores some settings and adds some of its own. Differences to the original JOSM schema are documented on the [Vespucci site](http://vespucci.io/tutorials/presets/).
+However, Vespucci ignores some settings and adds some of its own. Differences to the original JOSM schema are documented on the [Vespucci site](http://vespucci.io/tutorials/presets/). Note that the build process creates preset files that can be used both with Vespucci and JOSM.
 
 ### Building the preset files
 
