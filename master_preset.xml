@@ -12426,7 +12426,7 @@
     </group> <!-- Offices -->
     <group name="Lifecycle" icon="${lifecycle_group}">
         <item name="Set to disused" icon="${javascript}" type="node,way,closedway,relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Key:check_date" />
+            <link wiki="Key:disused:"/>
             <!-- originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
@@ -12452,7 +12452,7 @@ for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {
 tags.remove('set_to_disused');" />
         </item>
         <item name="Set to disused (remove tags)" icon="${javascript}" type="node,way,closedway,relation" preset_name_label="true">
-            <link href="http://wiki.openstreetmap.org/wiki/Key:check_date" />
+            <link wiki="Key:disused:"/>
             <!-- This preset will only remove tags on app version 703 and higher (Vespucci 11.1.1)
                  originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
