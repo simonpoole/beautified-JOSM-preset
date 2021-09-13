@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2021-09-01 23:31+0200\n"
-"PO-Revision-Date: 2021-09-05 18:26+0000\n"
+"PO-Revision-Date: 2021-09-12 08:39+0000\n"
 "Last-Translator: Abdullah Abdullrhman\n"
 "Language-Team: Arabic (http://www.transifex.com/openstreetmap/presets/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 msgid ""
 "(Please only use this tag if more detailed mapping using busbars and bays is"
 " impossible!)"
-msgstr "(يرجى استخدام هذ السوم فقط في حالة عدم إمكانية رسم خرائط أكثر تفصيلاً باستخدام القضبان والخلجان!)"
+msgstr "(يرجى استخدام هذ الوسم فقط في حالة عدم إمكانية رسم خرائط أكثر تفصيلاً باستخدام القضبان والخلجان!)"
 
 #: master_preset.xml:6205(label:text|group:Emergency|preset:Emergency_Access_Point)
 msgid "(Use number as shown on plate.)"
@@ -963,7 +963,7 @@ msgstr "شارع مترابط"
 
 #: master_preset.xml:12245(item:name|group:Offices|preset:Association)
 msgid "Association"
-msgstr "ترابط"
+msgstr "منظمة غير ربحية/جمعية تطوعية"
 
 #: master_preset.xml:8246(list_entry:short_description|group:Man_Made|preset:Observatory|value:astronomical)
 msgid "Astronomical"
@@ -996,7 +996,7 @@ msgstr "أخصائي السمع"
 
 #: master_preset.xml:12150(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Audit"
-msgstr "مراجع المستند"
+msgstr "مراجعة وتدقيق"
 
 #: master_preset.xml:7758(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Auditorium"
@@ -1025,7 +1025,7 @@ msgstr "مزيل الرجفان (جهاز الصدمات الكهربائية)"
 #: master_preset.xml:10146(check:text|group:Money|preset:Bank|key:atm)
 #: master_preset.xml:10165(item:name|group:Money|preset:Automated_Teller_Machine)
 msgid "Automated Teller Machine"
-msgstr "آلة الصراف الآلي"
+msgstr "آلة صراف آلي"
 
 #: master_preset.xml:2021(combo:display_values|group:Ways|preset:Steps|key:ramp:luggage)
 msgid "Automatic"
@@ -1209,7 +1209,7 @@ msgstr "برشلونه"
 
 #: master_preset.xml:10666(item:name|group:Nature|preset:Bare_Rock)
 msgid "Bare Rock"
-msgstr "مساحة لسطح لصخر أساس (القاعدة الصخرية)"
+msgstr "مساحة لسطح صخر أساس (القاعدة الصخرية)"
 
 #: master_preset.xml:10649(label:text|group:Nature|preset:Heath)
 msgid ""
@@ -1221,7 +1221,7 @@ msgstr "الأراضي العارية المنخفضة غير المزروعة �
 #: master_preset.xml:10638(label:text|group:Nature|preset:Scrub)
 msgid ""
 "Bare lower lying uncultivated land with bushes but little or no tree cover."
-msgstr "عارية بشكل أقل بأرض غير مزروعة وبها شجيرات ولكن الغطاء النباتاتي قليل أو معدوم."
+msgstr "الأرض المنبسطة والمنخفضة والغير مزروعة من قبل البشر وبها شجيرات ولكن درجة تغطية الشجر قليل أو لا تغطي الأرض بالكامل."
 
 #: master_preset.xml:10628(label:text|group:Nature|preset:Fell)
 msgid ""
@@ -1329,7 +1329,7 @@ msgstr "قندس"
 
 #: master_preset.xml:9412(item:name|group:Home_furnishing_and_decoration|preset:Bed)
 msgid "Bed"
-msgstr "غرفة"
+msgstr "مراتب ومنتجات الأسرة"
 
 #: master_preset.xml:4298(combo:display_values|group:Accommodation|preset:Guest_House/Bed_&_Breakfast|key:guest_house)
 msgid "Bed and breakfast"
@@ -1428,7 +1428,7 @@ msgstr "مسار الدراجات"
 
 #: master_preset.xml:10026(list_entry:short_description|preset:Vending_Machine|value:bicycle_tube)
 msgid "Bicycle tubes"
-msgstr "أنابيب الدراجات"
+msgstr "إطارات داخلية للدراجات"
 
 #: master_preset.xml:3858(check:text|group:Bicycle|preset:Bike_Dealer|key:service:bicycle:rental)
 msgid "Bicycles are rented"
@@ -2045,7 +2045,7 @@ msgstr "أشجار الكاكاو"
 
 #: master_preset.xml:12150(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Cadaster"
-msgstr "كاداستر"
+msgstr "المسح العقاري"
 
 #: master_preset.xml:4499(item:name|group:Food+Drinks|preset:Cafe)
 msgid "Cafe"
@@ -2415,7 +2415,7 @@ msgstr "طاولة الشطرنج"
 
 #: master_preset.xml:10734(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Chestnut trees"
-msgstr "أشجار"
+msgstr "أشجار الكستناء"
 
 #: master_preset.xml:10029(list_entry:short_description|preset:Vending_Machine|value:chewing_gums)
 msgid "Chewing gums"
@@ -2509,7 +2509,7 @@ msgstr "تقاطع دائري"
 
 #: master_preset.xml:10527(text:text|group:Nature|preset:Tree|key:circumference)
 msgid "Circumference (meters)"
-msgstr "محيط (متر)"
+msgstr "المحيط (بالمتر)"
 
 #: master_preset.xml:5430(list_entry:display_value|group:Culture|preset:Other_theatres|value:circus)
 msgid "Circus"
@@ -3019,7 +3019,7 @@ msgstr "مساحة عمل مشتركة"
 
 #: master_preset.xml:11610(group:name|group:Crafts)
 msgid "Crafts"
-msgstr "الحرف"
+msgstr "حرف وصنعات"
 
 #: master_preset.xml:7917(item:name|group:Man_Made|preset:Crane)
 msgid "Crane"
@@ -3089,7 +3089,7 @@ msgstr "اسم نوع العبور (المملكة المتحدة)"
 
 #: master_preset.xml:10531(text:text|group:Nature|preset:Tree|key:diameter_crown)
 msgid "Crown diameter (meters)"
-msgstr "قطر القمة (متر)"
+msgstr "قطر القمة (بالمتر)"
 
 #: master_preset.xml:8863(combo:display_values|group:Historic_Places_&_Objects|preset:Tomb|key:tomb)
 msgid "Crypt"
@@ -3392,7 +3392,7 @@ msgstr "لوحات ولافتات الوجهات"
 
 #: master_preset.xml:11542(text:text|preset:Destination_Sign|key:destination)
 msgid "Destination written on sign (w/o distance)"
-msgstr "الوجهة المكتوبة على لافته (بدون المسافة المتبقية)"
+msgstr "الوجهة المكتوبة على الافته (مع أو بدون المسافة المتبقية)"
 
 #: master_preset.xml:1822(multiselect:text|group:Lane_attributes|preset:Single_direction_roads|key:destination:lanes)
 msgid "Destinations per lane"
@@ -3834,7 +3834,7 @@ msgstr "دار المسنين"
 
 #: master_preset.xml:9793(combo:display_values|group:Other|preset:Wholesale|key:wholesale)
 msgid "Electrical"
-msgstr "كهرباء"
+msgstr "إلكترونيات"
 
 #: master_preset.xml:1361(check:text|key:recycling:electrical_appliances)
 msgid "Electrical Appliances"
@@ -3905,7 +3905,7 @@ msgstr "الايائل"
 
 #: master_preset.xml:10035(list_entry:short_description|preset:Vending_Machine|value:elongated_coin)
 msgid "Elongated coin"
-msgstr "عملة نقدية ممددة الشكل"
+msgstr "العملات المعدنية الممدودة"
 
 #: master_preset.xml:10998(text:text|group:Addresses_and_Contact|preset:Contact|key:email)
 #: master_preset.xml:11013(text:text|group:Addresses_and_Contact|preset:Contact_('contact:-')|key:contact:email)
@@ -4424,7 +4424,7 @@ msgstr "مبلط/تبليط/أرضيات"
 #: master_preset.xml:9741(item:name|group:Other|preset:Florist)
 #: master_preset.xml:9793(combo:display_values|group:Other|preset:Wholesale|key:wholesale)
 msgid "Florist"
-msgstr "محل بيع الورود"
+msgstr "ورد وزهور"
 
 #: master_preset.xml:6113(text:text|group:Emergency|preset:Fire_Hydrant|key:flow_rate)
 msgid "Flow rate with unit of measure"
@@ -4484,7 +4484,7 @@ msgstr "للتبني"
 msgid ""
 "For areas of solid visible rock that is sparsely vegetated or not vegetated "
 "at all."
-msgstr "لمناطق الصخور الصلبة المرئية التي هي نباتية قليلة أو غير نباتية على الإطلاق."
+msgstr "لمناطق الصخور الصلبة المرئية القليل فيها النبات أو الغير نباتية على الإطلاق."
 
 #: master_preset.xml:2081(check:text|group:Waypoints|preset:Traffic_Signal|key:bicycle)
 msgid "For bicycles"
@@ -4527,7 +4527,7 @@ msgstr "بطاقات أجنبية"
 
 #: master_preset.xml:10575(item:name|group:Nature|preset:Forest)
 msgid "Forest"
-msgstr "غابة"
+msgstr "غابة يستخدم البشر مواردها"
 
 #: master_preset.xml:12150(combo:display_values|group:Offices|preset:Government|key:government)
 #: master_preset.xml:12339(item:name|group:Offices|preset:Forestry)
@@ -5063,7 +5063,7 @@ msgstr "متجر خضروات"
 
 #: master_preset.xml:10743(item:name|group:Land_use|preset:Greenhouse_Horticulture)
 msgid "Greenhouse Horticulture"
-msgstr "الدفيئات الزراعية"
+msgstr "محمية زراعية"
 
 #: master_preset.xml:1174(combo:display_values|key:roof:colour)
 #: master_preset.xml:1197(combo:display_values|key:building:colour)
@@ -5822,7 +5822,7 @@ msgstr "Interests section"
 
 #: master_preset.xml:9433(item:name|group:Home_furnishing_and_decoration|preset:Interior_Decoration)
 msgid "Interior Decoration"
-msgstr "متجر الديكور الداخلي"
+msgstr "ديكور داخلي"
 
 #: master_preset.xml:2860(check:text|group:Water|preset:Tidal_channel|key:intermittent)
 #: master_preset.xml:949(check:text|key:intermittent)
@@ -7082,7 +7082,7 @@ msgstr "حليب"
 
 #: master_preset.xml:11247(list_entry:display_value|preset:Enforcement|value:mindistance)
 msgid "Min. distance"
-msgstr "الحد الأدنى للمسافة"
+msgstr "الحد الأدنى للمسافة بين المركبة والأخرى"
 
 #: master_preset.xml:1112(text:text|key:minspeed)
 msgid "Min. speed (km/h)"
@@ -7090,7 +7090,7 @@ msgstr "الحد الأدنى للسرعة (كم/ساعة)"
 
 #: master_preset.xml:11254(text:text|preset:Enforcement|key:mindistance)
 msgid "Min. vehicle distance (meters, only if enforcement=mindistance)"
-msgstr "الحد الأدنى لمسافة السيارة (متر، فقط إذا كان الطريق تحت الرصد للمسافة بين المركبات)"
+msgstr "الحد الأدنى للمسافة بين المركبة والأخرى (بالمتر، فقط إذا كان الطريق تحت الرصد للمسافة بين المركبات enforcement=mindistance)"
 
 #: master_preset.xml:7779(combo:display_values|group:Man_Made|preset:Tower|key:tower:type)
 msgid "Minaret"
@@ -8306,7 +8306,7 @@ msgstr "مولد الطاقة النفطية"
 
 #: master_preset.xml:10734(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Oil palms"
-msgstr "زيت النخيل"
+msgstr "نخيل الزيت"
 
 #: master_preset.xml:4865(list_entry:display_value|group:Leisure|preset:Animals|value:okapi)
 msgid "Okapi"
@@ -8737,7 +8737,7 @@ msgstr "موقع الكتابات القديمة"
 
 #: master_preset.xml:10596(combo:display_values|group:Nature|preset:Grassland|key:grassland)
 msgid "Pampas"
-msgstr "بامباس"
+msgstr "البامبا/السهل بالكيشوا"
 
 #: master_preset.xml:578(multiselect:display_values|key:cuisine)
 msgid "Pancake"
@@ -8778,7 +8778,7 @@ msgstr "المظله"
 
 #: master_preset.xml:10046(list_entry:short_description|preset:Vending_Machine|value:parcel_mail_in)
 msgid "Parcel mail in"
-msgstr "بريد الطرود في"
+msgstr "إرسال الطرود البريدية"
 
 #: master_preset.xml:10045(list_entry:short_description|preset:Vending_Machine|value:parcel_pickup)
 msgid "Parcel pickup"
@@ -8970,7 +8970,7 @@ msgstr "Pentecostal"
 
 #: master_preset.xml:9546(item:name|group:For_the_body|preset:Perfumery)
 msgid "Perfumery"
-msgstr "العطور"
+msgstr "عطور"
 
 #: master_preset.xml:5892(list_entry:display_value|group:Health|preset:Dentist|value:periodontics)
 msgid "Periodontology"
@@ -9038,7 +9038,7 @@ msgstr "حديقة الحيوانات الأليفة"
 #: master_preset.xml:5908(item:name|group:Health|preset:Pharmacy)
 #: master_preset.xml:9793(combo:display_values|group:Other|preset:Wholesale|key:wholesale)
 msgid "Pharmacy"
-msgstr "صيدلية"
+msgstr "صيدلانية"
 
 #: master_preset.xml:898(combo:text|key:phases)
 msgid "Phases"
@@ -9590,7 +9590,7 @@ msgstr "تعمل بالطاقة"
 
 #: master_preset.xml:10596(combo:display_values|group:Nature|preset:Grassland|key:grassland)
 msgid "Prairie"
-msgstr "البراري"
+msgstr "البراري/ وهي المراعي الطبيعية في وسط أمريكا الشمالية"
 
 #: master_preset.xml:1224(list_entry:short_description|value:0)
 msgid "Pre-primary (0)"
@@ -9810,7 +9810,7 @@ msgstr "تمرين الضغط"
 
 #: master_preset.xml:10596(combo:display_values|group:Nature|preset:Grassland|key:grassland)
 msgid "Puszta"
-msgstr "بوستزتا"
+msgstr "بوستزتا/ السهول بالمجرية وهي موجوده في وسط أوروبا"
 
 #: master_preset.xml:3542(item:name|group:Aerialway|preset:Pylon)
 msgid "Pylon"
@@ -9836,7 +9836,7 @@ msgstr "منظمة غير حكومية"
 
 #: master_preset.xml:10936(item:name|group:Land_use|preset:Quarry)
 msgid "Quarry"
-msgstr "محجر/مقلع"
+msgstr "كسّارة، مقلع حجارة"
 
 #: master_preset.xml:10350(item:name|group:Places|preset:Quarter)
 msgid "Quarter"
@@ -10734,7 +10734,7 @@ msgstr "خبز/ساندويتش"
 
 #: master_preset.xml:9793(combo:display_values|group:Other|preset:Wholesale|key:wholesale)
 msgid "Sanitary"
-msgstr "تفريغ صحي"
+msgstr "صحية"
 
 #: master_preset.xml:6571(item:name|group:Facilities|preset:Sanitary_Dump_Station)
 msgid "Sanitary Dump Station"
@@ -10770,7 +10770,7 @@ msgstr "سجق"
 
 #: master_preset.xml:10596(combo:display_values|group:Nature|preset:Grassland|key:grassland)
 msgid "Savanna"
-msgstr "السافانا"
+msgstr "سافانا/السهل العشبي بالأسبانية وهي في شرق إفريقيا"
 
 #: master_preset.xml:11890(item:name|group:Crafts|preset:Sawmill)
 msgid "Sawmill"
@@ -11140,7 +11140,7 @@ msgstr "شيرو - القلعة اليابانية"
 
 #: master_preset.xml:12037(item:name|group:Crafts|preset:Shoemaker)
 msgid "Shoemaker"
-msgstr "إسكافي"
+msgstr "إسكافي/ صانع الأحذية"
 
 #: master_preset.xml:1372(check:text|key:recycling:shoes)
 msgid "Shoes"
@@ -11628,7 +11628,7 @@ msgstr "محطة أو مرافق"
 
 #: master_preset.xml:9491(item:name|group:Printed_Material|preset:Stationery)
 msgid "Stationery"
-msgstr "محل بيع أدوات مكتبية"
+msgstr "قرطاسية وأدوات مكتبية"
 
 #: master_preset.xml:12150(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Statistics"
@@ -11681,7 +11681,7 @@ msgstr "درج لتخطي الحاجز"
 
 #: master_preset.xml:10596(combo:display_values|group:Nature|preset:Grassland|key:grassland)
 msgid "Steppe"
-msgstr "السهوب"
+msgstr "السهوب/ أراضي عشبية في وسط أوراسيا"
 
 #: master_preset.xml:1797(combo:display_values|group:Streets|preset:Ford|key:ford)
 msgid "Stepping stones"
@@ -12001,7 +12001,7 @@ msgstr "مساحة سباحة طبيعية"
 
 #: master_preset.xml:4989(item:name|group:Leisure|preset:Swimming_Pool)
 msgid "Swimming Pool"
-msgstr "حوض سباحة"
+msgstr "بركة سباحة"
 
 #: master_preset.xml:6105(list_entry:display_value|group:Emergency|preset:Fire_Hydrant|value:swimming_pool)
 msgid "Swimming pool"
@@ -12373,7 +12373,7 @@ msgstr "التبتية"
 
 #: master_preset.xml:9943(item:name|group:Other|preset:Ticket)
 msgid "Ticket"
-msgstr "تذكرة"
+msgstr "تذاكر"
 
 #: master_preset.xml:4040(item:name|group:Public_Transport|preset:Ticket_Machine)
 msgid "Ticket Machine"
@@ -12573,11 +12573,11 @@ msgstr "نوع المسار"
 
 #: master_preset.xml:9778(combo:text|group:Other|preset:Trade_supplies|key:trade)
 msgid "Trade"
-msgstr "محلات بيع مواد بالجملة"
+msgstr "بيع بالجملة ومفرق"
 
 #: master_preset.xml:9774(item:name|group:Other|preset:Trade_supplies)
 msgid "Trade supplies"
-msgstr "محلات إمدادات مواد بالجملة"
+msgstr "بيع مواد بالجملة ومفرق"
 
 #: master_preset.xml:598(list_entry:short_description|value:traditional)
 msgid "Traditional"
@@ -13212,7 +13212,7 @@ msgstr "فحص مركبات/الفحص الدوري"
 
 #: master_preset.xml:10596(combo:display_values|group:Nature|preset:Grassland|key:grassland)
 msgid "Veld"
-msgstr "أراضي عشبية جنوب أفريقيا"
+msgstr "فيلد/ أراضي عشبية جنوب أفريقيا"
 
 #: master_preset.xml:10019(item:name|preset:Vending_Machine)
 msgid "Vending Machine"
@@ -13661,7 +13661,7 @@ msgstr "دراجة المدينة ، الكرسي المتحرك للمعاقي�
 msgid ""
 "Where vegetation is dominated by grasses (Poaceae) and other herbaceous "
 "(non-woody) plants. Excludes cultivated areas and wetlands."
-msgstr "حيث يهيمن على الغطاء النباتي الأعشاب (نجيلية،الفصيلة القبئية،الفصيلة الكلئية) وغيرها من النباتات العشبية (غير الخشبية). باستثناء المناطق المزروعة والأراضي الرطبة."
+msgstr "حيث يهيمن على الغطاء النباتي الأعشاب الـ (نجيلية،فصيلة قبئية،فصيلة كلئية) وغيرها من النباتات العشبية (غير الخشبية). باستثناء المناطق المزروعة والأراضي الرطبة."
 
 #: master_preset.xml:1174(combo:display_values|key:roof:colour)
 #: master_preset.xml:1197(combo:display_values|key:building:colour)
@@ -14011,7 +14011,7 @@ msgstr "الغاز الحيوي"
 
 #: master_preset.xml:11575(role:text|preset:Waterway|key:side_stream)
 msgid "branch waterways (no riverbank)"
-msgstr "فرع المجاري المائية (لا مجسم النهر)"
+msgstr "المجاري المائية الفرعية (من دون مساحات مجسمات الأنهار riverbank)"
 
 #: master_preset.xml:8203(multiselect:display_values|group:Man_Made|preset:Surveillance|key:surveillance:type)
 msgid "camera"
@@ -14188,7 +14188,7 @@ msgstr "عقدة التقاطع"
 
 #: master_preset.xml:929(role:text|key:from)
 msgid "node on way where enforcement starts"
-msgstr "العقدة في الطريق حيث يبدأ الإنفاذ"
+msgstr "العقدة في الطريق حيث يبدأ الرصد"
 
 #: master_preset.xml:11125(role:text|group:Relations|preset:Multipolygon|key:outer)
 #: master_preset.xml:11139(role:text|group:Relations|preset:Boundary|key:outer)
@@ -14319,7 +14319,7 @@ msgstr "عبر عقدة أو طرق"
 #: master_preset.xml:11573(role:text|preset:Waterway|key:)
 #: master_preset.xml:11574(role:text|preset:Waterway|key:main_stream)
 msgid "waterways (no riverbank)"
-msgstr "المجاري المائية (لا يشمل مساحات الأنهار)"
+msgstr "المجاري المائية (من دون مساحات مجسمات الأنهار riverbank)"
 
 #: master_preset.xml:11591(role:text|preset:Bridge|key:outline)
 #: master_preset.xml:11605(role:text|preset:Tunnel|key:outline)
@@ -14332,7 +14332,7 @@ msgstr "طرق تكون جزءا من شارع"
 
 #: master_preset.xml:931(role:text|key:section)
 msgid "ways forming the section of measurement"
-msgstr "الطرق التي تشكيل جزء القياس"
+msgstr "طرق تشكيل جزء القياس"
 
 #: master_preset.xml:11604(role:text|preset:Tunnel|key:through)
 msgid "ways passing through the tunnel"
@@ -18429,7 +18429,7 @@ msgstr "مياه"
 #: master_preset.xml:10566(item:name|group:Nature|preset:Wood)
 msgctxt "natural"
 msgid "Wood"
-msgstr "خشب"
+msgstr "غابة لا يستخدم مواردها البشر"
 
 #: master_preset.xml:3119(combo:text|group:Shipping|preset:Ferry_Terminal|key:cargo)
 msgctxt "cargo"
@@ -20244,24 +20244,24 @@ msgstr "ولاية/منطقة"
 #: master_preset.xml:10538(list_entry:display_value|group:Nature|preset:Tree|value:agricultural)
 msgctxt "tree denotation"
 msgid "Agricultural"
-msgstr "زراعي"
+msgstr "زراعية"
 
 #: master_preset.xml:10536(list_entry:display_value|group:Nature|preset:Tree|value:avenue)
 msgctxt "tree denotation"
 msgid "Avenue"
-msgstr "الجادة"
+msgstr "على الدرب والجادة"
 
 #: master_preset.xml:10533(combo:text|group:Nature|preset:Tree|key:denotation)
 msgctxt "tree denotation"
 msgid "Denotation"
-msgstr "علامة"
+msgstr "دلالة وماهية الشجر/ة"
 
 #: master_preset.xml:10535(list_entry:short_description|group:Nature|preset:Tree|value:natural_monument)
 msgctxt "tree denotation"
 msgid ""
 "Especially old tree, often with a particular shape. Usually protected for "
 "its uniqueness."
-msgstr "شجرة قديمة خاصة ، وغالبا مع شكل معين. عادة محمية لتفردها."
+msgstr "شجرة قديمة خاصة ، غالبًا ذات شكل معين، وعادة ما تكون محمية لتفردها."
 
 #: master_preset.xml:10534(list_entry:display_value|group:Nature|preset:Tree|value:landmark)
 msgctxt "tree denotation"
@@ -20271,19 +20271,19 @@ msgstr "معلم"
 #: master_preset.xml:10535(list_entry:display_value|group:Nature|preset:Tree|value:natural_monument)
 msgctxt "tree denotation"
 msgid "Natural monument"
-msgstr "معلم طبيعي"
+msgstr "معلم متفرد طبيعي"
 
 #: master_preset.xml:10536(list_entry:short_description|group:Nature|preset:Tree|value:avenue)
 msgctxt "tree denotation"
 msgid "Trees aligned along a road."
-msgstr "الأشجار المحاذية على طول الطريق."
+msgstr "الأشجار المحاذية على طول الطريق أو الجادة أو الدرب."
 
 #: master_preset.xml:10537(list_entry:short_description|group:Nature|preset:Tree|value:urban)
 msgctxt "tree denotation"
 msgid ""
 "Trees found within settlements, e.g. in parks or spread through residential "
 "areas."
-msgstr "الأشجار الموجودة داخل المستوطنات، على سبيل المثال في الحدائق العامة أو تنتشر عبر المناطق السكنية."
+msgstr "الأشجار الموجودة داخل المناطق الحضرية ، على سبيل المثال في الحدائق أو التي تنتشر في المناطق السكنية."
 
 #: master_preset.xml:10538(list_entry:short_description|group:Nature|preset:Tree|value:agricultural)
 msgctxt "tree denotation"
@@ -20295,32 +20295,32 @@ msgctxt "tree denotation"
 msgid ""
 "Trees remarkable due to its size or prominent location, usually visible from"
 " great distances and useful for navigation."
-msgstr "الأشجار الرائعة نظرا لحجمها أو موقع بارز، وعادة ما تكون مرئية من مسافات كبيرة ومفيدة للملاحة."
+msgstr "شجرة أو أشجار رائعة بسبب حجمها أو موقعها البارز ، وعادة ما تكون مرئية من مسافات كبيرة ومفيدة للملاحة."
 
 #: master_preset.xml:10537(list_entry:display_value|group:Nature|preset:Tree|value:urban)
 msgctxt "tree denotation"
 msgid "Urban"
-msgstr "الحضر"
+msgstr "الحضارية"
 
 #: master_preset.xml:10587(combo:display_values|group:Nature|preset:Cutline|key:cutline)
 msgctxt "cutline"
 msgid "Border"
-msgstr "الحدود"
+msgstr "حدودي"
 
 #: master_preset.xml:10587(combo:display_values|group:Nature|preset:Cutline|key:cutline)
 msgctxt "cutline"
 msgid "Firebreak"
-msgstr "كسر النار"
+msgstr "لضمان عدم انتشار النيران"
 
 #: master_preset.xml:10587(combo:display_values|group:Nature|preset:Cutline|key:cutline)
 msgctxt "cutline"
 msgid "Hunting"
-msgstr "صيد"
+msgstr "للصيد"
 
 #: master_preset.xml:10587(combo:display_values|group:Nature|preset:Cutline|key:cutline)
 msgctxt "cutline"
 msgid "Logging machine"
-msgstr "آلة تسجيل الدخول"
+msgstr "لأغراض تسجيل الدخول"
 
 #: master_preset.xml:10587(combo:display_values|group:Nature|preset:Cutline|key:cutline)
 msgctxt "cutline"
@@ -20330,12 +20330,12 @@ msgstr "خط أنابيب"
 #: master_preset.xml:10587(combo:display_values|group:Nature|preset:Cutline|key:cutline)
 msgctxt "cutline"
 msgid "Piste"
-msgstr "الزحلقه"
+msgstr "للتزلج"
 
 #: master_preset.xml:10587(combo:display_values|group:Nature|preset:Cutline|key:cutline)
 msgctxt "cutline"
 msgid "Section"
-msgstr "قسم"
+msgstr "للتقسيم والتجزئة"
 
 #: master_preset.xml:10587(combo:text|group:Nature|preset:Cutline|key:cutline)
 msgctxt "cutline"
@@ -20515,7 +20515,7 @@ msgstr "تجاري"
 #: master_preset.xml:10912(item:name|group:Land_use|preset:Construction_Area)
 msgctxt "Landuse"
 msgid "Construction Area"
-msgstr "منطقة بناء تحت الإنشاء"
+msgstr "مساحة بناء تحت الإنشاء"
 
 #: master_preset.xml:10893(item:name|group:Land_use|preset:Garages)
 msgctxt "Landuse"
@@ -20575,7 +20575,7 @@ msgstr "مصنع الجعة"
 #: master_preset.xml:10891(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
 msgid "Brickyard"
-msgstr "ساحة الطوب"
+msgstr "مصنع الطوب"
 
 #: master_preset.xml:10891(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
