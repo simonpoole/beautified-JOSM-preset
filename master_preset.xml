@@ -2455,7 +2455,7 @@
                     <check key="horse" text="Horse" icon="${no_riding}" />
                 </checkgroup>
                 <space />
-                <reference ref="wheelchair" />
+                <reference ref="essential_wheelchair" />
                 <reference ref="check_access_motor" />
             </optional>
             <combo key="cycle_barrier" text="Type" values_searchable="true" values_sort="false">
