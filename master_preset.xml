@@ -377,10 +377,10 @@
     </chunk>
     <chunk id="wheelchair">
         <combo key="wheelchair" text="Wheelchairs" match="none" values_searchable="true" values_sort="false">
-        <list_entry value="designated" short_description="Dedicated facilities"/>
-        <list_entry value="yes" short_description="Unrestricted access"/>
-        <list_entry value="limited" short_description="Partial access"/>
-        <list_entry value="no" short_description="No access"/>
+            <list_entry value="designated" short_description="Dedicated facilities"/>
+            <list_entry value="yes" short_description="Unrestricted access"/>
+            <list_entry value="limited" short_description="Partial access"/>
+            <list_entry value="no" short_description="No access"/>
         </combo>
         <optional>
             <text key="wheelchair:description" text="Wheelchair access details" length="255" i18n="true"/>
