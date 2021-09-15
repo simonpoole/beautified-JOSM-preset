@@ -376,13 +376,16 @@
         <reference ref="toilets"/>
         <combo key="toilets:access" text="Toilet access" values="yes,permissive,customers,private" display_values="Public,Permissive,Customers,Private" match="none"/>
     </chunk>
-    <chunk id="wheelchair">
+    <chunk id="essential_wheelchair">
         <combo key="wheelchair" text="Wheelchairs" match="none" values_searchable="true" values_sort="false">
             <list_entry value="designated" short_description="Dedicated facilities"/>
             <list_entry value="yes" short_description="Unrestricted access"/>
             <list_entry value="limited" short_description="Partial access"/>
             <list_entry value="no" short_description="No access"/>
         </combo>
+    </chunk>
+    <chunk id="wheelchair">
+        <reference ref="essential_wheelchair"/>
         <optional>
             <text key="wheelchair:description" text="Wheelchair access details" length="255" i18n="true"/>
             <text key="wheelchair:entrance_width" text="Entrance width in cm"/>
