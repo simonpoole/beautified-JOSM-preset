@@ -2441,11 +2441,11 @@
         <item name="Cycle Barrier" icon="${barrier_cycle_barrier}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=cycle_barrier"/>
             <key key="barrier" value="cycle_barrier"/>
-            <optional>
-                <reference ref="optional_maxwidth"/>
-                <reference ref="material"/>
-            </optional>
-            <reference ref="vehicle_access" />
+            <combo key="bicycle" text="Bicycle access" values_context="access" values_sort="false">
+                <list_entry value="yes" display_value="Yes" />
+                <list_entry value="no" display_value="No" />
+                <list_entry value="dismount" display_value="Dismount" />
+            </combo>
             <optional text="Non-motorized traffic:">
                 <checkgroup text="Non-motorized traffic" columns="2">
                     <check key="foot" text="Foot" icon="${no_walking}" />
@@ -2453,9 +2453,29 @@
                 </checkgroup>
                 <space />
                 <reference ref="wheelchair" />
-                <combo key="bicycle" text="Bicycle" values="dismount,no" display_values="Dismount,No" values_context="access" values_sort="false" />
+                <reference ref="check_access_motor" />
             </optional>
-            <reference ref="check_access_motor" />
+            <combo key="cycle_barrier" text="Type" values_searchable="true" values_sort="false">
+                <list_entry value="single" display_value="Single" />
+                <list_entry value="double" display_value="Double" />
+                <list_entry value="triple" display_value="Triple" />
+                <list_entry value="diagonal" display_value="Diagonal" />
+                <list_entry value="squeeze" display_value="Squeeze" />
+            </combo>
+            <combo key="cycle_barrier:installation" text="Installation" values_searchable="true" values_sort="false">
+                <list_entry value="fixed" display_value="Fixed to the ground" />
+                <list_entry value="openable" display_value="Openable (e.g. like swing gate)" />
+                <list_entry value="removable" display_value="Removable" />
+                <list_entry value="foldable" display_value="Foldable (hinge at base)" />
+            </combo>
+            <optional>
+                <reference ref="optional_maxwidth"/>
+                <text key="spacing" text="Spacing between grids (meters)" length="7"/>
+                <text key="opening" text="Opening width of grids (meters)" length="7"/>
+                <text key="overlap" text="Overlap width of grids (meters)" length="7"/>
+                <text key="corners" text="Corners" value_type="integer"/>
+                <reference ref="material"/>
+            </optional>
         </item> <!-- Cycle Barrier -->
         <item name="Cattle Grid" icon="${barrier_cattle_grid}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=cattle_grid"/>
