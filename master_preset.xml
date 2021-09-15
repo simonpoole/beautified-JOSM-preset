@@ -658,6 +658,9 @@
             <text key="height" text="Height (meters)" length="7"/>
         </optional>
     </chunk>
+    <chunk id="maxwidthphysical">
+        <text key="maxwidth:physical" text="Physical max. width (meters)" length="7"/>
+    </chunk>
     <chunk id="optional_maxwidth">
         <optional>
             <text key="maxwidth" text="Max. width (meters)" length="7"/>
@@ -2472,7 +2475,7 @@
                 <list_entry value="foldable" display_value="Foldable (hinge at base)" />
             </combo>
             <optional>
-                <reference ref="optional_maxwidth"/>
+                <reference ref="maxwidthphysical"/>
                 <text key="spacing" text="Spacing between grids (meters)" length="7"/>
                 <text key="opening" text="Opening width of grids (meters)" length="7"/>
                 <text key="overlap" text="Overlap width of grids (meters)" length="7"/>
