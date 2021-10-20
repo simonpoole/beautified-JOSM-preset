@@ -1666,7 +1666,7 @@
             <combo key="highway" text="Highway type" values="residential,service,unclassified,path,cycleway" 
                 display_values="Residential,Service,Unclassified,Path,Cycleway" values_context="Highway" default="cycleway" match="none"/>
             <text key="name" text="Name"/>
-            <combo key="vehicle" text="Vehicle access" values="yes,no,destination" default="no" values_context="access"/>
+            <combo key="motor_vehicle" text="Vehicle access" values="yes,no,destination" values_context="access"/>
             <text key="maxspeed" text="Max. speed" default="30"/>
             <optional>
                 <check key="noname" text="Street has no name" disable_off="true"/>
