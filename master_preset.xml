@@ -618,7 +618,7 @@
         <reference ref="internet"/>
         <combo key="smoking" text="Smoking" values="yes,dedicated,separated,isolated,outside,no" display_values="Yes,Dedicated,Separated,Isolated,Outside,No" values_sort="false"/>
     </chunk>
-        <chunk id="check_access_nomotor">
+    <chunk id="check_access_nomotor">
         <optional text="Non-motorized traffic:">
             <checkgroup text="Non-motorized traffic" columns="3">
                 <check key="foot" text="Foot" />
