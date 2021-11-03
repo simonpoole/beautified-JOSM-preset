@@ -4099,7 +4099,7 @@
                 <role key="platform_entry_only" text="platform (entry only)" requisite="optional" type="node,way,closedway,multipolygon" member_expression="public_transport=platform" />
                 <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="aerialway" />
             </roles>
-        </item> <!-- Public Transport Route (Aerialway) -->
+        </item> <!-- Public Transport Route (Ferry) -->
         <item name="Route Master" icon="${public_transport_route_master}" type="relation" preset_name_label="true">
             <link wiki="Proposed_features/Public_Transport#Route_master"/>
             <space/>
@@ -4287,7 +4287,7 @@
                 <role key="stop" text="halt point" requisite="optional" type="node" member_expression="aerialway=station OR (public_transport=stop_position aerialway=yes)" />
                 <role key="platform" text="platform" requisite="optional" type="node,way,closedway,multipolygon" member_expression="public_transport=platform" />
             </roles>
-        </item> <!-- Public transport route (Legacy) (Aerialway) -->
+        </item> <!-- Public transport route (Legacy) (Ferry) -->
         <separator/>
         <item name="Station" name_context="railway" icon="${public_transport_train_station}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:railway=station"/>
