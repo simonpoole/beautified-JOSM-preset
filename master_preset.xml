@@ -6297,7 +6297,7 @@
             <link wiki="Tag:emergency=fire_hydrant"/>
             <space/>
             <key key="emergency" value="fire_hydrant"/>
-            <combo key="fire_hydrant:type" text="Type" values_searchable="true" values_context="pipeline" default="pillar">
+            <combo key="fire_hydrant:type" text="Type" values_searchable="true" values_context="pipeline" >
                 <list_entry value="pillar" display_value="Pillar" short_description="A pillar type hydrant."/>
                 <list_entry value="underground" display_value="Underground" short_description="A fire hydrant simple outlet located underground."/>
                 <list_entry value="wall" display_value="Wall" short_description="A wall-mounted fire hydrant."/>
