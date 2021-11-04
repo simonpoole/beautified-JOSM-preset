@@ -3981,6 +3981,13 @@
             <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Motorcycle repair -->
+        <item name="Rental" icon="${transport_motorcycle_rental}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=motorcycle_rental"/>
+            <space/>
+            <key key="amenity" value="motorcycle_rental"/>
+            <reference ref="name_brand_operator_oh_wheelchair"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Rental -->
     </group> <!-- Motorcycle -->
     <group name="Bicycle" icon="${transport_bicycle}">
         <item name="Parking" name_context="bicycle" icon="${transport_parking_bicycle}" type="node,way,closedway,multipolygon" preset_name_label="true">
