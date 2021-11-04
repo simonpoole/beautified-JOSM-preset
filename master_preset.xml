@@ -1519,6 +1519,14 @@
     <chunk id="backrest">
         <check key="backrest" text="Backrest"/>
     </chunk>
+    <chunk id="water_body">
+        <check key="salt" text="Salt Water" disable_off="true"/>
+        <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true"/>
+        <check key="tidal" text="In the tidal range" disable_off="true"/>
+        <reference ref="wikipedia_wikidata" />
+        <reference ref="water_access"/>
+        <preset_link preset_name="No name"/>
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -3122,14 +3130,37 @@
             <reference ref="optional_name"/>
         </item> <!-- Covered Reservoir -->
         <separator/>
-        <item name="Water" name_context="natural" icon="${water_water}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=water"/>
+        <item name="Lake" name_context="natural" icon="${water_water_lake}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:natural=water" />
+            <key key="natural" value="water" />
+            <key key="water" value="lake" />
+            <text key="name" text="Name"/>  
+            <space/>        
+            <reference ref="water_body" />
+        </item> <!-- Lake -->
+        <item name="Lagoon" name_context="natural" icon="${water_water_lagoon}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:natural=water" />
+            <key key="natural" value="water" />
+            <key key="water" value="lagoon" />
+            <text key="name" text="Name"/>  
             <space/>
-            <label text="A body of standing water, such as a lake or pond."/>
-            <space/>
-            <key key="natural" value="water"/>
+            <reference ref="water_body" />
+        </item> <!-- Lagoon -->
+        <item name="Pond" name_context="natural" icon="${water_water_pond}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:natural=water" />
+            <key key="natural" value="water" />
+            <key key="water" value="pond" />
             <text key="name" text="Name"/>
-            <combo key="water" text="Water Body" match="key" values_searchable="true" >
+            <space/>
+            <reference ref="water_body" />
+        </item> <!-- Pond -->
+        <item name="Other waterbodies" name_context="natural" icon="${water_waterbody}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:natural=water"/>
+            <key key="natural" value="water"/>
+            <space/>
+            <label text="A body of water, such as a lake or pond."/>
+            <reference ref="optional_name" />
+            <combo key="water" text="Waterbody" match="key" values_searchable="true" >
                 <list_entry value="stream" display_value="Stream" icon="${water_water_stream}" />
                 <list_entry value="river" display_value="River" icon="${water_water_river}" />
                 <list_entry value="canal" display_value="Canal" icon="${water_water_canal}" />
@@ -3148,13 +3179,8 @@
                 <list_entry value="reflecting_pool" display_value="Reflecting pool" />
                 <list_entry value="stream_pool" display_value="Stream pool" />
             </combo>
-            <check key="salt" text="Salt Water" disable_off="true"/>
-            <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true"/>
-            <check key="tidal" text="In the tidal range" disable_off="true"/>
-            <reference ref="wikipedia_wikidata" />
-            <reference ref="water_access"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Water -->
+            <reference ref="water_body" />
+        </item> <!-- Other water bodies -->
         <item name="Coastline" icon="${water_coastline}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:natural=coastline"/>
             <space />
