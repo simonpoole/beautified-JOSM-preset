@@ -841,6 +841,12 @@
         <text key="ref" text="Reference"/>
         <text key="operator" text="Operator"/>
     </chunk>
+    <chunk id="optional_ref_operator">
+        <optional>
+            <text key="ref" text="Reference"/>
+            <text key="operator" text="Operator"/>
+        </optional>
+    </chunk>
     <chunk id="cables">
         <combo key="cables" text="Cable count" values="1,2,3,4,6,9,12" values_sort="false"/>
     </chunk>
@@ -8276,7 +8282,7 @@
             <link wiki="Tag:man_made=pipeline"/>
             <space/>
             <key key="man_made" value="pipeline"/>
-            <reference ref="name_ref_operator"/>
+            <reference ref="optional_name_ref_operator"/>
             <reference ref="substance"/>
             <combo key="location" text="Location" values="overground,overhead,underground,underwater" display_values="Overground,Overhead,Underground,Underwater" values_context="pipeline"/>
             <combo key="diameter" text="Diameter (mm)" values="800,1000,1200,1500,1600,1800,2200,2300,2400,2500,2600,2800,3200,3300,3400,3500,4000,4200,4300,4800" />
@@ -8296,7 +8302,7 @@
             <link wiki="Tag:pipeline=marker"/>
             <space/>
             <key key="pipeline" value="marker"/>
-            <reference ref="ref_operator" />
+            <reference ref="optional_ref_operator" />
             <reference ref="substance" />
             <reference ref="support"/>
         </item> <!-- Pipeline Marker -->
@@ -8304,7 +8310,7 @@
             <link wiki="Tag:pipeline=valve"/>
             <space/>
             <key key="pipeline" value="valve"/>
-            <reference ref="ref_operator" />
+            <reference ref="optional_ref_operator" />
             <reference ref="substance" />
             <combo key="valve" text="Valve type"
                 values="butterfly,globe,ball,plug,gate,needle,spool"
