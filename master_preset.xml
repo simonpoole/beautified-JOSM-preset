@@ -6316,13 +6316,13 @@
             <key key="emergency" value="fire_extinguisher"/>
             <reference ref="ref_operator" />
             <reference ref="level"/>
-            <check key="indoor" text="Indoor" match="none"/>
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
         </item> <!-- Fire Extinguisher -->
         <item name="Fire Alarm Box" icon="${emergency_fire_alarm}" type="node" preset_name_label="true">
             <key key="emergency" value="fire_alarm_box" />
             <text key="ref" text="Reference Code" />
             <reference ref="level"/>
-            <check key="indoor" text="Indoor" match="none"/>
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
         </item> <!-- Fire Alarm Box -->
         <item name="Fire Hose" icon="${emergency_fire_hose}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=fire_hose"/>
@@ -6330,7 +6330,7 @@
             <key key="emergency" value="fire_hose"/>
             <reference ref="ref_operator" />
             <reference ref="level"/>
-            <check key="indoor" text="Indoor" match="none"/>
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
         </item> <!-- Fire Hose -->
         <item name="Fire Hydrant" icon="${emergency_fire_hydrant}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=fire_hydrant"/>
@@ -6416,7 +6416,7 @@
             <key key="emergency" value="phone"/>
             <reference ref="ref_operator" />
             <reference ref="facility_access" />
-            <check key="indoor" text="Indoor" />
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
         </item> <!-- Emergency Phone -->
         <item name="Siren" icon="${emergency_siren}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=siren"/>
@@ -6940,7 +6940,7 @@
             <link wiki="Tag:amenity=drinking_water"/>
             <space/>
             <key key="amenity" value="drinking_water"/>
-            <check key="indoor" text="Indoor" disable_off="true" match="none"/>
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
             <optional>
                 <text key="name" text="Name"/>
                 <text key="description" text="Description" length="255"/>
@@ -6958,7 +6958,7 @@
             <optional>
                 <text key="name" text="Name"/>
                 <text key="description" text="Description" length="255"/>
-                <check key="indoor" text="Indoor" />
+                <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
                 <reference ref="level"/>
                 <reference ref="facility_access"/>
             </optional>
