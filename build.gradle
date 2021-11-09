@@ -1,7 +1,7 @@
 /*
  */
 
-version = '2.14.0'
+version = '3.0.0'
 
 //for Ant filter
 import org.apache.tools.ant.filters.ReplaceTokens
@@ -23,6 +23,7 @@ apply plugin: "com.github.breadmoirai.github-release"
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 ext {
@@ -41,7 +42,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.23.2'
+    runtime 'ch.poole:preset-utils:0.26.0'
 }
 
 task copyCss(type: Copy) {
