@@ -7996,12 +7996,14 @@
     </group> <!-- Buildings -->
     <group name="Indoor elements" icon="${indoor_floorplan}" >
         <item name="Indoor area" icon="${indoor_area}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:indoor=area" />
             <key key="indoor" value="area" />
             <reference ref="level" />
             <text key="name" text="Name" i18n="true" />
             <text key="ref" text="Room Number" />
         </item>
         <item name="Corridor" icon="${indoor_corridor}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:indoor=corridor" />
             <key key="indoor" value="corridor" />
             <reference ref="level" />
             <text key="name" text="Name" i18n="true" />
@@ -8009,6 +8011,7 @@
             <text key="height" text="Height (Meters)" value_type="integer" />
         </item>
         <item name="Indoor door" icon="${indoor_doors}" type="node" preset_name_label="true" >
+            <link wiki="Tag:indoor=door" />
             <key key="indoor" value="door" />
             <reference ref="level" />
             <text key="ref" text="Reference Code" />
@@ -8018,6 +8021,7 @@
             <text key="height" text="Height (Meters)" value_type="integer" />
         </item>
         <item name="Room" icon="${indoor_room}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:indoor=room" />
             <key key="indoor" value="room" />
             <reference ref="level" />
             <text key="name" text="Name" i18n="true" />
@@ -8028,17 +8032,18 @@
             <text key="height" text="Height (Meters)" value_type="integer" />
         </item>
         <item name="Indoor wall" icon="${indoor_wall}" type="way" preset_name_label="true">
+            <link wiki="Tag:indoor=wall" />
             <key key="indoor" value="wall" />
             <reference ref="level" />
             <text key="height" text="Height (Meters)" value_type="integer" />
         </item>
         <item name="Highway corridor" icon="${indoor_highway_corridor}" type="way" preset_name_label="true">
+            <link wiki="Tag:highway=corridor" />
             <key key="highway" value="corridor" />
             <reference ref="level" />
             <combo key="conveying" text="Conveyor" values="yes,forward,backward,reversible" display_values="Yes,Forward,Backward,Reversible"/>
         </item>
     </group> <!-- Indoor elements -->
-    <group name="Man Made" icon="${man_made_group}">
     <group name="Man Made" icon="${man_made_group}">
         <item name="Tower" icon="${man_made_tower}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:man_made=tower"/>
