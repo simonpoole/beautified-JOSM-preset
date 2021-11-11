@@ -3806,6 +3806,8 @@
             <reference ref="name_ref_operator"/>
             <reference ref="oh"/>
             <reference ref="fee"/>
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
+            <reference ref="level"/>
             <space/>
             <combo key="voltage" text="Voltage" values="230,400"/>
             <combo key="amperage" text="Amperage" values="16,32"/>
