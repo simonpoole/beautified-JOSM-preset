@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="3.1.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="3.1.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
@@ -1735,7 +1735,7 @@
             <reference ref="lane_presets"/>
             <reference ref="cycle_lanes"/>
         </item> <!-- Residential -->
-        <item name="Bicycle Road" region="AT,DE" icon="${highway_bicycle_road}" type="way,closedway" preset_name_label="true">
+        <item name="Bicycle Road" regions="AT,DE" icon="${highway_bicycle_road}" type="way,closedway" preset_name_label="true">
             <link wiki="Key:bicycle_road"/>
             <space/>
             <key key="bicycle_road" value="yes"/>
@@ -2873,14 +2873,14 @@
             <combo key="motor_vehicle:conditional" text="Motor vehicles @" long_text="Conditional restriction for motor vehicles" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
             <reference ref="additional_access_tags"/>
         </item> <!-- Motor vehicle -->
-        <item name="Motor vehicle (CH)" region="CH" icon="${access_no_motor_vehicles_CH}" type="node,way,closedway" preset_name_label="true">
+        <item name="Motor vehicle (CH)" regions="CH" icon="${access_no_motor_vehicles_CH}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
             <reference ref="motor_vehicle_access" />
             <combo key="motor_vehicle:conditional" text="Motor vehicles @" long_text="Conditional restriction for motor vehicles" delimiter="|" values="yes @ wet|no @ dry|destination @ rain|delivery @ snow|agricultural @ hazmat|forestry @ weight=0|private @ length=0|no @ width=0" values_sort="false" match="key"/>
             <reference ref="additional_access_tags"/>
         </item> <!-- Motor vehicle CH -->
-        <item name="Motorcar and -cycle (CH)" region="CH" icon="${access_no_motor_vehicles}" type="node,way,closedway" preset_name_label="true">
+        <item name="Motorcar and -cycle (CH)" regions="CH" icon="${access_no_motor_vehicles}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
             <combo key="motorcar" text="Motorcar" values="yes,destination,delivery,permissive,private,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" match="key"/>
