@@ -10521,36 +10521,55 @@
         <key key="amenity" value="vending_machine"/>
         <multiselect key="vending" text="Vending products" values_searchable="true" match="key">
             <list_entry value="admission_tickets" short_description="Admission tickets"/>
-            <list_entry value="animal_feed" short_description="Animal feed"/>
+            <list_entry value="animal_feed" short_description="Animal feed (non-domestic)"/>
+            <list_entry value="art" short_description="Art"/>
             <list_entry value="bicycle_tube" short_description="Bicycle tubes"/>
+            <list_entry value="books" short_description="Books"/>
+            <list_entry value="bottle_return" short_description="Return empty bottles"/>
             <list_entry value="bread" short_description="Bread"/>
+            <list_entry value="candles" short_description="Candle"/>
+            <list_entry value="chemist" short_description="Chemistry or paramedical products"/>
             <list_entry value="cigarettes" short_description="Cigarettes"/>
             <list_entry value="chewing_gums" short_description="Chewing gums"/>
             <list_entry value="coffee" short_description="Coffee"/>
             <list_entry value="condoms" short_description="Condoms"/>
+            <list_entry value="contact_lenses" short_description="Contact lenses"/>
             <list_entry value="drinks" short_description="Drinks"/>
+            <list_entry value="e-cigarettes" short_description="E-cigarettes or e-cigarette refills"/>
             <list_entry value="eggs" short_description="Eggs"/>
             <list_entry value="electronics" short_description="Electronics"/>
             <list_entry value="elongated_coin" short_description="Elongated coin"/>
             <list_entry value="excrement_bags" short_description="Excrement bags"/>
             <list_entry value="feminine_hygiene" short_description="Feminine hygiene articles"/>
+            <list_entry value="fishing_bait" short_description="Fishing bait"/>
+            <list_entry value="fishing_tackle" short_description="Fishing equipment"/>
+            <list_entry value="flowers" short_description="Flowers"/>
             <list_entry value="food" short_description="Food"/>
             <list_entry value="fuel" short_description="Fuel"/>
             <list_entry value="ice_cream" short_description="Ice cream"/>
             <list_entry value="ice_cubes" short_description="Ice cubes"/>
+            <list_entry value="ink_cartridges" short_description="Ink cartridges"/>
+            <list_entry value="laundry_detergent" short_description="Laundry detergent"/>
             <list_entry value="milk" short_description="Milk"/>
             <list_entry value="newspapers" short_description="Newspapers"/>
             <list_entry value="parking_tickets" short_description="Parking tickets"/>
             <list_entry value="parcel_pickup" short_description="Parcel pickup"/>
             <list_entry value="parcel_mail_in" short_description="Parcel mail in"/>
+            <list_entry value="pet_food" short_description="Animal feed (domestic)"/>
+            <list_entry value="pizza" short_description="Pizza"/>
             <list_entry value="public_transport_plans" short_description="Plans (public transport)"/>
             <list_entry value="public_transport_tickets" short_description="Tickets (public transport)"/>
-            <list_entry value="SIM_cards" short_description="SIM_cards"/>
+            <list_entry value="raw_milk" short_description="Milk (raw)"/>
+            <list_entry value="SIM_cards" short_description="SIM cards"/>
+            <list_entry value="sex_toys" short_description="Sex toys"/>
             <list_entry value="stamps" short_description="Stamps"/>
             <list_entry value="sweets" short_description="Sweets"/>
+            <list_entry value="syringes" short_description="Needles"/>
             <list_entry value="tampons" short_description="Tampons"/>
             <list_entry value="telephone_vouchers" short_description="Telephone vouchers"/>
+            <list_entry value="toll" short_description="Road toll tickets"/>
             <list_entry value="toys" short_description="Toys"/>
+            <list_entry value="umbrellas" short_description="Umbrellas"/>
             <list_entry value="vouchers" short_description="Vouchers"/>
             <list_entry value="water" short_description="Water"/>
         </multiselect>
