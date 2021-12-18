@@ -45,7 +45,7 @@ The presets are being translated on transifex [here](https://www.transifex.com/o
 
 ### Area styling
 
-Styling of areas as displayed in Vespucci is defined not in the presets, but by [Vespucci itself](https://github.com/MarcusWolschon/osmeditor4android/blob/master/src/main/assets/styles/) - see `<feature type="way" tags="landuse=forest" minVisibleZoom="10" color="8800BE00" />` in that file.
+Styling of areas as displayed in Vespucci is defined not in the presets, but by [Vespucci itself](https://github.com/MarcusWolschon/osmeditor4android/blob/master/src/main/assets/styles/) - see for example `<feature type="way" tags="landuse=forest" minVisibleZoom="10" color="8800BE00" />` specified in files there.
 
 ## Information on updates
 
