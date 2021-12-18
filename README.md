@@ -43,6 +43,10 @@ The PNG icons are currently assumed to be in icons/png, generating them from SVG
 
 The presets are being translated on transifex [here](https://www.transifex.com/openstreetmap/presets/), to retrieve the translations you will need to install and setup the [transifex command line client](https://docs.transifex.com/client/introduction). You only need to set up your transifex login, you can and should use the language mapping file from this repository.
 
+### Area styling
+
+Styling of areas as displayed in Vespucci is defined not in the presets, but by [Vespucci itself](https://github.com/MarcusWolschon/osmeditor4android/blob/master/src/main/assets/styles/Color-round-no-mp.xml#L62) - see `<feature type="way" tags="landuse=forest" minVisibleZoom="10" color="8800BE00" />` in that file.
+
 ## Information on updates
 
 Please follow us on [twitter](https://twitter.com/search?q=vespucci_editor) for updates.
