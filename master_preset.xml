@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="3.4.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="3.4.2" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
@@ -1799,8 +1799,15 @@
             <link wiki="Tag:highway=service"/>
             <space/>
             <key key="highway" value="service" values_context="Highway"/>
+            <combo key="service" text="Service way type" values_context="Highway">
+                <list_entry value="alley" short_description="Alley" />
+                <list_entry value="driveway" short_description="Driveway" />
+                <list_entry value="parking" short_description="Parking (deprecated)" deprecated="true" />
+                <list_entry value="parking_aisle" short_description="Parking aisle" />
+                <list_entry value="drive-through" short_description="Drive-through" />
+                <list_entry value="emergency_access" short_description="Emergency access" />
+            </combo>
             <optional>
-                <combo key="service" text="Service way type" values="alley,driveway,parking,parking_aisle,drive-through,emergency_access" display_values="Alley,Driveway,Parking,Parking aisle,Drive-through,Emergency access" values_context="Highway"/>
                 <text key="name" text="Name"/>
                 <reference ref="highway_base"/>
                 <reference ref="highway_additional_oneway_lit_width_sidewalk"/>
