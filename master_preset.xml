@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="3.4.2" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="3.4.3" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
@@ -8089,9 +8089,10 @@
             <preset_link preset_name="Telescope" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Tower" text="Similar but different tags:" alternative="true" />
         </item> <!-- Tower -->
-        <item name="Utility pole" icon="${man_made_pole}" type="node" preset_name_label="true" deprecated="true">
+        <item name="Utility pole" icon="${man_made_pole}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=utility_pole"/>
             <space />
+            <key key="man_made" value="utility_pole" />
             <reference ref="pole" />
             <reference ref="utilities" />
             <preset_link preset_name="Pole" text="Similar preset:" alternative="true" />
