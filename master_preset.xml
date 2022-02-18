@@ -10370,6 +10370,23 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Trade supplies -->
+        <item name="Agricultural supplies" icon="${shopping_agricultural_supplies}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=trade"/>
+            <space/>
+            <key key="shop" value="trade"/>
+            <key key="trade" value="agricultural_supplies" />
+            <multiselect key="agricultural_supplies" text="Supplies" values="feed;fertilizer;machine_parts;pesticide;seed;tools" display_values="Feed;Fertilizer;Machine parts;Pesticide;Seed;Tools"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Agricultural supplies -->
+        <item name="Agricultural supplies (deprecated)" icon="${shopping_agricultural_supplies}" type="node,closedway,multipolygon" preset_name_label="true" deprecated="true">
+            <link wiki="Tag:shop=agrarian"/>
+            <space/>
+            <key key="shop" value="agrarian"/>
+            <multiselect key="agrarian" text="Supplies" values="feed;fertilizer;machine_parts;pesticide;seed;tools" display_values="Feed;Fertilizer;Machine parts;Pesticide;Seed;Tools"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Agricultural supplies (deprecated) -->
         <item name="Hairdresser supply" icon="${shopping_hairdresser}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=hairdresser_supply"/>
             <space/>
