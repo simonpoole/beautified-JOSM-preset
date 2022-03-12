@@ -21,8 +21,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2022-03-12 16:22+0100\n"
-"PO-Revision-Date: 2022-03-12 15:25+0000\n"
+"POT-Creation-Date: 2022-03-12 16:30+0100\n"
+"PO-Revision-Date: 2022-03-12 15:41+0000\n"
 "Last-Translator: Simon Poole <sp8962@gmail.com>\n"
 "Language-Team: German (http://www.transifex.com/openstreetmap/presets/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -6309,27 +6309,27 @@ msgstr "Fahrspurverbindungen"
 
 #: master_preset.xml:2002(item:name|preset:Lane_parking_both_sides)
 msgid "Lane parking both sides"
-msgstr ""
+msgstr "Strassenrandparken beidseitig"
 
 #: master_preset.xml:2003(label:text|preset:Lane_parking_both_sides)
 msgid "Lane parking both sides:"
-msgstr ""
+msgstr "Strassenrandparken beidseitig:"
 
 #: master_preset.xml:2062(item:name|preset:Lane_parking_left-hand_side)
 msgid "Lane parking left-hand side"
-msgstr ""
+msgstr "Strassenrandparken links"
 
 #: master_preset.xml:2063(label:text|preset:Lane_parking_left-hand_side)
 msgid "Lane parking left-hand side:"
-msgstr ""
+msgstr "Strassenrandparken links:"
 
 #: master_preset.xml:2032(item:name|preset:Lane_parking_right-hand_side)
 msgid "Lane parking right-hand side"
-msgstr ""
+msgstr "Strassenrandparken rechts"
 
 #: master_preset.xml:2033(label:text|preset:Lane_parking_right-hand_side)
 msgid "Lane parking right-hand side:"
-msgstr ""
+msgstr "Strassenrandparken rechts:"
 
 #: master_preset.xml:71(combo:text|key:lanes)
 msgid "Lanes"
@@ -11510,37 +11510,37 @@ msgstr "Garnelen"
 msgid "Shrub"
 msgstr "Strauch"
 
-#: master_preset.xml:2122(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left:smoothness)
-msgid "Sidewalk left Smoothness"
-msgstr ""
-
 #: master_preset.xml:2121(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left:bicycle)
 msgid "Sidewalk left cycling"
+msgstr "Fahrrad Bürgersteig links"
+
+#: master_preset.xml:2122(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left:smoothness)
+msgid "Sidewalk left smoothness"
 msgstr ""
 
 #: master_preset.xml:2132(text:text|preset:Sidewalk_left-hand_side|key:sidewalk:left:width)
 msgid "Sidewalk left width (m)"
-msgstr ""
+msgstr "Breite Bürgersteig links (m)"
 
 #: master_preset.xml:2113(item:name|preset:Sidewalk_left-hand_side)
 msgid "Sidewalk left-hand side"
-msgstr ""
-
-#: master_preset.xml:2101(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right:smoothness)
-msgid "Sidewalk right Smoothness"
-msgstr ""
+msgstr "Bürgersteig links"
 
 #: master_preset.xml:2100(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right:bicycle)
 msgid "Sidewalk right cycling"
+msgstr "Fahrrad Bürgersteig rechts"
+
+#: master_preset.xml:2101(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right:smoothness)
+msgid "Sidewalk right smoothness"
 msgstr ""
 
 #: master_preset.xml:2111(text:text|preset:Sidewalk_right-hand_side|key:sidewalk:right:width)
 msgid "Sidewalk right width (m)"
-msgstr ""
+msgstr "Breite Bürgersteig rechts (m)"
 
 #: master_preset.xml:2092(item:name|preset:Sidewalk_right-hand_side)
 msgid "Sidewalk right-hand side"
-msgstr ""
+msgstr "Bürgersteig rechts"
 
 #: master_preset.xml:5103(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 msgid "Sight"
@@ -15206,17 +15206,17 @@ msgstr "Pflasterstein"
 #: master_preset.xml:147(combo:text|key:sidewalk:surface)
 msgctxt "surface"
 msgid "Sidewalk surface"
-msgstr ""
+msgstr "Oberfläche Bürgersteig"
 
 #: master_preset.xml:2120(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left:surface)
 msgctxt "surface"
 msgid "Sidewalk surface left"
-msgstr ""
+msgstr "Oberfläche Bürgersteig links"
 
 #: master_preset.xml:2099(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right:surface)
 msgctxt "surface"
 msgid "Sidewalk surface right"
-msgstr ""
+msgstr "Oberfläche Bürgersteig rechts"
 
 #: master_preset.xml:25(combo:text|key:surface)
 msgctxt "surface"
@@ -15335,7 +15335,7 @@ msgstr "Separat erfasst"
 #: master_preset.xml:2116(list_entry:short_description|preset:Sidewalk_left-hand_side|value:no)
 msgctxt "sidewalk"
 msgid "No sidewalk"
-msgstr ""
+msgstr "Kein Bürgersteig"
 
 #: master_preset.xml:141(list_entry:short_description|value:left)
 msgctxt "sidewalk"
@@ -15355,12 +15355,12 @@ msgstr "Gehsteig"
 #: master_preset.xml:2114(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left)
 msgctxt "sidewalk"
 msgid "Sidewalk left"
-msgstr ""
+msgstr "Bürgersteig links"
 
 #: master_preset.xml:2093(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right)
 msgctxt "sidewalk"
 msgid "Sidewalk right"
-msgstr ""
+msgstr "Bürgersteig rechts"
 
 #: master_preset.xml:2094(list_entry:short_description|preset:Sidewalk_right-hand_side|value:yes)
 #: master_preset.xml:2115(list_entry:short_description|preset:Sidewalk_left-hand_side|value:yes)
