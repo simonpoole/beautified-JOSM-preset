@@ -2098,7 +2098,7 @@
             <combo key="sidewalk:right:surface" text="Sidewalk surface right" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,unhewn_cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud"
                 display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Unhewn cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface" match="none" />
             <combo key="sidewalk:right:bicycle" text="Sidewalk right cycling" values="yes,designated,no" display_values="Yes,Designated,No" match="key"/>
-            <combo key="sidewalk:right:smoothness" text="Sidewalk right Smoothness" values_searchable="true" values_sort="false">
+            <combo key="sidewalk:right:smoothness" text="Sidewalk right smoothness" values_searchable="true" values_sort="false">
                 <list_entry value="excellent" short_description="Thin Rollers: rollerblade, skateboard"/>
                 <list_entry value="good" short_description="Thin Wheels: racing bike"/>
                 <list_entry value="intermediate" short_description="Wheels: city bike, wheelchair, scooter"/>
@@ -2119,7 +2119,7 @@
             <combo key="sidewalk:left:surface" text="Sidewalk surface left" values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,unhewn_cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud"
                 display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Unhewn cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" values_sort="false" values_context="surface" match="none" />
             <combo key="sidewalk:left:bicycle" text="Sidewalk left cycling" values="yes,designated,no" display_values="Yes,Designated,No" match="key"/>
-            <combo key="sidewalk:left:smoothness" text="Sidewalk left Smoothness" values_searchable="true" values_sort="false">
+            <combo key="sidewalk:left:smoothness" text="Sidewalk left smoothness" values_searchable="true" values_sort="false">
                 <list_entry value="excellent" short_description="Thin Rollers: rollerblade, skateboard"/>
                 <list_entry value="good" short_description="Thin Wheels: racing bike"/>
                 <list_entry value="intermediate" short_description="Wheels: city bike, wheelchair, scooter"/>
