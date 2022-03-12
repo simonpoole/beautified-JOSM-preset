@@ -6402,6 +6402,7 @@
             <link wiki="Tag:emergency=emergency_ward_entrance" />
             <space />
             <key key="emergency" value="emergency_ward_entrance" />
+            <combo key="entrance" text="Entrance" values="yes,main,emergency" display_values="Yes,Main,Emergency" values_context="entrance" default="yes" match="key"/>
             <optional>
                 <reference ref="name_operator" />
             </optional>
