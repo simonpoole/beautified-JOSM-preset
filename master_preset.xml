@@ -542,7 +542,7 @@
             display_values="African;American;Arab;Argentinian;Asian;Bagel;Balkan;Barbecue;Bavarian;Beef bowl;Brazilian;Burger;Cake;Caribbean;Chicken;Chinese;Coffee shop;Crepe;Curry;Danish;Donut;Ethiopian;Filipino;Fish;Fish and chips;Fondue;French;Friture;Frozen yogurt;German;Georgian;Greek;Heuriger;Hot dog;Ice cream;Indian;Indonesian;International;Italian;Japanese;Juice;Kebab;Korean;Lebanese;Malaysian;Mediterranean;Mexican;Moroccan;Noodle;Pancake;Pasta;Persian;Peruvian;Pizza;Polish;Portuguese;Ramen;Regional;Russian;Sandwich;Sausage;Seafood;Soba;Spanish;Steak house;Sushi;Tex-mex;Tapas;Thai;Turkish;Vietnamese;Wings" values_searchable="true" match="key"/>
     </chunk>
     <chunk id="clothes">
-        <multiselect key="clothes" text="Kind of clothes" values_searchable="true" match="key">
+        <multiselect key="clothes" text="Kind of clothes" values_searchable="true" match="key" values_context="clothes">
             <list_entry value="babies" short_description="Babies"/>
             <list_entry value="children" short_description="Children"/>
             <list_entry value="costumes" short_description="Costumes"/>
