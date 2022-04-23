@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2022-03-12 16:30+0100\n"
-"PO-Revision-Date: 2022-03-15 11:13+0000\n"
-"Last-Translator: danieldegroot2 <danieldegroot18@gmail.com>\n"
+"PO-Revision-Date: 2015-06-19 16:53+0000\n"
+"Last-Translator: danieldegroot2 <danieldegroot18@gmail.com>, 2021-2022\n"
 "Language-Team: Dutch (http://www.transifex.com/openstreetmap/presets/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -646,7 +646,7 @@ msgstr "Amandelbomen"
 msgid ""
 "Almost always an unpaved track lacking hard materials, uncompacted, with "
 "surface of soil/sand/grass"
-msgstr "Bijna altijd een onverharde weg zonder harde materialen, ongecomprimeerd, met een oppervlakte van aarde/zand/gras."
+msgstr "Bijna altijd een onverharde weg zonder harde materialen, ongecomprimeerd, met een oppervlak van aarde/zand/gras."
 
 #: master_preset.xml:2144(list_entry:short_description|group:Ways|preset:Track|value:grade4)
 msgid ""
@@ -1464,7 +1464,7 @@ msgstr "Binnenbanden voor fietsen"
 
 #: master_preset.xml:4200(multiselect:text|group:Bicycle|preset:Rental|key:rental)
 msgid "Bicycle type"
-msgstr ""
+msgstr "Fietstype"
 
 #: master_preset.xml:4183(check:text|group:Bicycle|preset:Bike_Dealer|key:service:bicycle:rental)
 msgid "Bicycles are rented"
@@ -1708,7 +1708,7 @@ msgstr "Bookmaker (gokkantoor)"
 
 #: master_preset.xml:10725(list_entry:short_description|preset:Vending_Machine|value:books)
 msgid "Books"
-msgstr ""
+msgstr "Boeken"
 
 #: master_preset.xml:6899(combo:display_values|group:Facilities|preset:Telephone|key:covered)
 msgid "Booth"
@@ -1761,7 +1761,7 @@ msgstr "Grens"
 
 #: master_preset.xml:10983(item:name|group:Boundaries|preset:Boundary_Marker)
 msgid "Boundary Marker"
-msgstr ""
+msgstr "Grenspaal"
 
 #: master_preset.xml:9586(item:name|group:Historic_Places_&_Objects|preset:Boundary_Stone)
 msgid "Boundary Stone"
@@ -2049,7 +2049,7 @@ msgstr "Met een knop bediend"
 
 #: master_preset.xml:1402(check:text|key:bicycle)
 msgid "By bicycle"
-msgstr ""
+msgstr "Fiets"
 
 #: master_preset.xml:9021(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor|value:CANDU)
 msgid "CANada Deuterium Uranium reactor (CANDU)"
@@ -2165,7 +2165,7 @@ msgstr "Kanaal"
 
 #: master_preset.xml:10728(list_entry:short_description|preset:Vending_Machine|value:candles)
 msgid "Candle"
-msgstr ""
+msgstr "Kaars"
 
 #: master_preset.xml:10148(item:name|group:Home_furnishing_and_decoration|preset:Candles)
 msgid "Candles"
@@ -2271,7 +2271,7 @@ msgstr "Karton"
 
 #: master_preset.xml:4202(list_entry:display_value|group:Bicycle|preset:Rental|value:cargo_bike)
 msgid "Cargo bike"
-msgstr ""
+msgstr "Transportfiets"
 
 #: master_preset.xml:546(multiselect:display_values|key:cuisine)
 msgid "Caribbean"
@@ -2602,7 +2602,7 @@ msgstr "Stadsmuur"
 
 #: master_preset.xml:4201(list_entry:display_value|group:Bicycle|preset:Rental|value:city_bike)
 msgid "City bike"
-msgstr ""
+msgstr "Stadsfiets"
 
 #: master_preset.xml:11094(item:name|group:Places|preset:City_block)
 msgid "City block"
@@ -3268,7 +3268,7 @@ msgstr "Dans"
 
 #: master_preset.xml:6262(item:name|group:Education|preset:Dancing_school)
 msgid "Dancing school"
-msgstr ""
+msgstr "Dansschool"
 
 #: master_preset.xml:1341(multiselect:display_values|key:language)
 #: master_preset.xml:546(multiselect:display_values|key:cuisine)
@@ -3866,7 +3866,7 @@ msgstr "E"
 
 #: master_preset.xml:4203(list_entry:display_value|group:Bicycle|preset:Rental|value:e-bike)
 msgid "E-Bike"
-msgstr ""
+msgstr "E-bike"
 
 #: master_preset.xml:2706(check:text|group:Barriers|preset:Toll_Booth|key:payment:e_zpass)
 msgid "E-ZPass"
@@ -4534,7 +4534,7 @@ msgstr "Bloemenbed"
 
 #: master_preset.xml:10744(list_entry:short_description|preset:Vending_Machine|value:flowers)
 msgid "Flowers"
-msgstr ""
+msgstr "Bloemen"
 
 #: master_preset.xml:1098(list_entry:display_value|value:flush)
 #: master_preset.xml:1106(list_entry:display_value|value:flush)
@@ -4608,7 +4608,7 @@ msgstr "Voor binnenmapping, verdieping 0 is de begane grond"
 #: master_preset.xml:2332(label:text|group:Waypoints|preset:Traffic_Signal)
 #: master_preset.xml:2333(checkgroup:text|group:Waypoints|preset:Traffic_Signal)
 msgid "For pedestrian crossings:"
-msgstr ""
+msgstr "Voor voetgangersoversteekplaatsen:"
 
 #: master_preset.xml:7148(check:text|group:Facilities|preset:Animal_shelter|key:animal_shelter:release)
 msgid "For release"
@@ -4940,11 +4940,11 @@ msgstr "Algemeen"
 
 #: master_preset.xml:3072(item:name|group:Access_Restrictions|preset:General_access)
 msgid "General access"
-msgstr "Algemene toeggang"
+msgstr "Algemene toegang"
 
 #: master_preset.xml:3076(combo:text|group:Access_Restrictions|preset:General_access|key:access:conditional)
 msgid "General access @"
-msgstr "Algemene toeggang @"
+msgstr "Algemene toegang @"
 
 #: master_preset.xml:9638(item:name|group:Food|preset:General_store)
 msgid "General store"
@@ -6294,27 +6294,27 @@ msgstr "Rijstrookverbinding"
 
 #: master_preset.xml:2002(item:name|preset:Lane_parking_both_sides)
 msgid "Lane parking both sides"
-msgstr ""
+msgstr "Parkeren in parkeerstrook beide kanten"
 
 #: master_preset.xml:2003(label:text|preset:Lane_parking_both_sides)
 msgid "Lane parking both sides:"
-msgstr ""
+msgstr "Parkeren in parkeerstrook beide kanten:"
 
 #: master_preset.xml:2062(item:name|preset:Lane_parking_left-hand_side)
 msgid "Lane parking left-hand side"
-msgstr ""
+msgstr "Parkeren in parkeerstrook linkerkant"
 
 #: master_preset.xml:2063(label:text|preset:Lane_parking_left-hand_side)
 msgid "Lane parking left-hand side:"
-msgstr ""
+msgstr "Parkeren in parkeerstrook linkerkant:"
 
 #: master_preset.xml:2032(item:name|preset:Lane_parking_right-hand_side)
 msgid "Lane parking right-hand side"
-msgstr ""
+msgstr "Parkeren in parkeerstrook rechterkant"
 
 #: master_preset.xml:2033(label:text|preset:Lane_parking_right-hand_side)
 msgid "Lane parking right-hand side:"
-msgstr ""
+msgstr "Parkeren in parkeerstrook rechterkant:"
 
 #: master_preset.xml:71(combo:text|key:lanes)
 msgid "Lanes"
@@ -9040,15 +9040,15 @@ msgstr "Parkeerplaats"
 
 #: master_preset.xml:2026(combo:text|preset:Lane_parking_both_sides|key:parking:condition:both:conditional)
 msgid "Parking condition both sides @"
-msgstr ""
+msgstr "Parkeervoorwaarde beide kanten @"
 
 #: master_preset.xml:2086(combo:text|preset:Lane_parking_left-hand_side|key:parking:condition:left:conditional)
 msgid "Parking condition left-hand side @"
-msgstr ""
+msgstr "Parkeervoorwaarde linkerkant @"
 
 #: master_preset.xml:2056(combo:text|preset:Lane_parking_right-hand_side|key:parking:condition:right:conditional)
 msgid "Parking condition right-hand side @"
-msgstr ""
+msgstr "Parkeervoorwaarde rechterkant @"
 
 #: master_preset.xml:10753(list_entry:short_description|preset:Vending_Machine|value:parking_tickets)
 msgid "Parking tickets"
@@ -9501,7 +9501,7 @@ msgstr "Plantenkwekerij"
 
 #: master_preset.xml:894(combo:text|key:generator:plant)
 msgid "Plant generator type"
-msgstr ""
+msgstr "Elektriciteitscentrale-type"
 
 #: master_preset.xml:8782(multiselect:text|group:Power_Plant|preset:Power_Plant|key:plant:source)
 msgid "Plant source"
@@ -11497,7 +11497,7 @@ msgstr "Scrubland"
 
 #: master_preset.xml:2121(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left:bicycle)
 msgid "Sidewalk left cycling"
-msgstr ""
+msgstr "Stoep links fietsen"
 
 #: master_preset.xml:2122(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left:smoothness)
 msgid "Sidewalk left smoothness"
@@ -11509,11 +11509,11 @@ msgstr ""
 
 #: master_preset.xml:2113(item:name|preset:Sidewalk_left-hand_side)
 msgid "Sidewalk left-hand side"
-msgstr ""
+msgstr "Stoep linkerkant"
 
 #: master_preset.xml:2100(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right:bicycle)
 msgid "Sidewalk right cycling"
-msgstr ""
+msgstr "Stoep rechts fietsen"
 
 #: master_preset.xml:2101(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right:smoothness)
 msgid "Sidewalk right smoothness"
@@ -11525,7 +11525,7 @@ msgstr ""
 
 #: master_preset.xml:2092(item:name|preset:Sidewalk_right-hand_side)
 msgid "Sidewalk right-hand side"
-msgstr ""
+msgstr "Stoep rechterkant"
 
 #: master_preset.xml:5103(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 msgid "Sight"
@@ -12438,7 +12438,7 @@ msgstr "Tampons"
 
 #: master_preset.xml:5494(multiselect:display_values|group:Leisure|preset:Dance|key:dance:style)
 msgid "Tango"
-msgstr ""
+msgstr "Tango"
 
 #: master_preset.xml:10243(list_entry:short_description|group:For_the_body|preset:Beauty|value:tanning)
 msgid "Tanning"
@@ -13451,7 +13451,7 @@ msgstr "Ongeplaveid"
 #: master_preset.xml:326(list_entry:short_description|value:yes)
 #: master_preset.xml:338(list_entry:short_description|value:yes)
 msgid "Unrestricted access"
-msgstr "Onbeperkte toeggang"
+msgstr "Onbeperkte toegang"
 
 #: master_preset.xml:206(text:text|key:unsigned_ref)
 msgid "Unsigned reference"
@@ -13734,7 +13734,7 @@ msgstr "Inloop"
 
 #: master_preset.xml:12293(combo:display_values|preset:Generic_route|key:route)
 msgid "Walking"
-msgstr ""
+msgstr "Wandelen"
 
 #: master_preset.xml:12068(item:name|group:Routes|preset:Walking_Route)
 msgid "Walking Route"
@@ -13922,7 +13922,7 @@ msgstr "Afstandspaal aan waterweg"
 
 #: master_preset.xml:8797(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:wave)
 msgid "Wave"
-msgstr ""
+msgstr "Golf"
 
 #: master_preset.xml:9091(item:name|group:Power_Generator|preset:Wave_Energy_Converter)
 msgid "Wave Energy Converter"
@@ -14565,7 +14565,7 @@ msgstr "binnensegment"
 
 #: master_preset.xml:12284(role:text|preset:Node_Network|key:)
 msgid "junction"
-msgstr ""
+msgstr "kruising"
 
 #: master_preset.xml:12329(role:text|preset:Destination_Sign|key:from)
 msgid "last way before junction"
@@ -14644,15 +14644,15 @@ msgstr "positie van bord"
 
 #: master_preset.xml:1135(combo:display_values|key:reservation)
 msgid "recommended"
-msgstr ""
+msgstr "aanbevolen"
 
 #: master_preset.xml:1135(combo:display_values|key:reservation)
 msgid "required"
-msgstr ""
+msgstr "vereist"
 
 #: master_preset.xml:12283(role:text|preset:Node_Network|key:)
 msgid "route"
-msgstr ""
+msgstr "route"
 
 #: master_preset.xml:1177(role:text|key:)
 #: master_preset.xml:12121(role:text|group:Routes|preset:Riding_Route|key:)
@@ -15171,12 +15171,12 @@ msgstr "Zand"
 #: master_preset.xml:33(combo:text|key:cycleway:surface)
 msgctxt "surface"
 msgid "Segregated cycleway surface"
-msgstr "Gescheiden voet- en fietspad"
+msgstr "Gescheiden voet- en fietspadoppervlak"
 
 #: master_preset.xml:29(combo:text|key:footway:surface)
 msgctxt "surface"
 msgid "Segregated footway surface"
-msgstr "Gescheiden voetpad"
+msgstr "Gescheiden voetpadoppervlak"
 
 #: master_preset.xml:147(combo:display_values|key:sidewalk:surface)
 #: master_preset.xml:2099(combo:display_values|preset:Sidewalk_right-hand_side|key:sidewalk:right:surface)
@@ -15191,17 +15191,17 @@ msgstr "Rechthoekig gekapte kasseien"
 #: master_preset.xml:147(combo:text|key:sidewalk:surface)
 msgctxt "surface"
 msgid "Sidewalk surface"
-msgstr ""
+msgstr "Stoepoppervlak"
 
 #: master_preset.xml:2120(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left:surface)
 msgctxt "surface"
 msgid "Sidewalk surface left"
-msgstr ""
+msgstr "Stoepoppervlak links"
 
 #: master_preset.xml:2099(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right:surface)
 msgctxt "surface"
 msgid "Sidewalk surface right"
-msgstr ""
+msgstr "Stoepoppervlak rechts"
 
 #: master_preset.xml:25(combo:text|key:surface)
 msgctxt "surface"
@@ -15320,7 +15320,7 @@ msgstr "Los in kaart gebracht"
 #: master_preset.xml:2116(list_entry:short_description|preset:Sidewalk_left-hand_side|value:no)
 msgctxt "sidewalk"
 msgid "No sidewalk"
-msgstr ""
+msgstr "Geen stoep"
 
 #: master_preset.xml:141(list_entry:short_description|value:left)
 msgctxt "sidewalk"
@@ -15340,12 +15340,12 @@ msgstr "Stoep"
 #: master_preset.xml:2114(combo:text|preset:Sidewalk_left-hand_side|key:sidewalk:left)
 msgctxt "sidewalk"
 msgid "Sidewalk left"
-msgstr ""
+msgstr "Stoep links"
 
 #: master_preset.xml:2093(combo:text|preset:Sidewalk_right-hand_side|key:sidewalk:right)
 msgctxt "sidewalk"
 msgid "Sidewalk right"
-msgstr ""
+msgstr "Stoep rechts"
 
 #: master_preset.xml:2094(list_entry:short_description|preset:Sidewalk_right-hand_side|value:yes)
 #: master_preset.xml:2115(list_entry:short_description|preset:Sidewalk_left-hand_side|value:yes)
@@ -15777,7 +15777,7 @@ msgstr "Fiets"
 #: master_preset.xml:2620(combo:text|group:Barriers|preset:Cycle_Barrier|key:bicycle)
 msgctxt "access"
 msgid "Bicycle access"
-msgstr ""
+msgstr "Fietstoegang"
 
 #: master_preset.xml:1019(combo:text|key:boat)
 msgctxt "access"
@@ -15922,7 +15922,7 @@ msgstr "Algemene toegang"
 #: master_preset.xml:760(combo:display_values|key:access)
 msgctxt "access"
 msgid "General access"
-msgstr "Algemene toeggang"
+msgstr "Algemene toegang"
 
 #: master_preset.xml:3062(combo:text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:hgv)
 msgctxt "access"
@@ -16640,7 +16640,7 @@ msgstr "Parallel aan straat"
 #: master_preset.xml:2004(combo:text|preset:Lane_parking_both_sides|key:parking:lane:both)
 msgctxt "parking"
 msgid "Parking both sides"
-msgstr "Parkeren aan beide kanten"
+msgstr "Parkeren beide kanten"
 
 #: master_preset.xml:2013(multiselect:text|preset:Lane_parking_both_sides|key:parking:condition:both)
 msgctxt "parking"
@@ -18541,7 +18541,7 @@ msgstr "Verbindingsweg van autosnelweg"
 #: master_preset.xml:1818(list_entry:short_description|group:Streets|preset:Service|value:parking)
 msgctxt "Highway"
 msgid "Parking (deprecated)"
-msgstr ""
+msgstr "Parkeren (verouderd)"
 
 #: master_preset.xml:1819(list_entry:short_description|group:Streets|preset:Service|value:parking_aisle)
 msgctxt "Highway"
@@ -18825,22 +18825,22 @@ msgstr ""
 #: master_preset.xml:2564(list_entry:short_description|preset:Traffic_Hazard|value:curve)
 msgctxt "hazard"
 msgid "Curve"
-msgstr ""
+msgstr "Bocht"
 
 #: master_preset.xml:2565(list_entry:short_description|preset:Traffic_Hazard|value:curves)
 msgctxt "hazard"
 msgid "Curves"
-msgstr ""
+msgstr "Bochten"
 
 #: master_preset.xml:2566(list_entry:short_description|preset:Traffic_Hazard|value:cyclists)
 msgctxt "hazard"
 msgid "Cyclists"
-msgstr ""
+msgstr "Fietsers"
 
 #: master_preset.xml:2567(list_entry:short_description|preset:Traffic_Hazard|value:dangerous_junction)
 msgctxt "hazard"
 msgid "Dangerous junction"
-msgstr ""
+msgstr "Gevaarlijke kruising"
 
 #: master_preset.xml:2568(list_entry:short_description|preset:Traffic_Hazard|value:dip)
 msgctxt "hazard"
@@ -18855,7 +18855,7 @@ msgstr ""
 #: master_preset.xml:2570(list_entry:short_description|preset:Traffic_Hazard|value:frail_pedestrians)
 msgctxt "hazard"
 msgid "Frail pedestrians"
-msgstr ""
+msgstr "Kwetsbare voetgangers"
 
 #: master_preset.xml:2571(list_entry:short_description|preset:Traffic_Hazard|value:frost_heave)
 msgctxt "hazard"
@@ -18931,7 +18931,7 @@ msgstr ""
 #: master_preset.xml:10968(list_entry:short_description|group:Boundaries|preset:Hazardous_Area|value:shooting_range)
 msgctxt "hazard"
 msgid "Shooting range"
-msgstr ""
+msgstr "Schietbaan"
 
 #: master_preset.xml:2582(list_entry:short_description|preset:Traffic_Hazard|value:side_winds)
 msgctxt "hazard"
@@ -18946,12 +18946,12 @@ msgstr ""
 #: master_preset.xml:2584(list_entry:short_description|preset:Traffic_Hazard|value:turn)
 msgctxt "hazard"
 msgid "Turn"
-msgstr ""
+msgstr "Afslag"
 
 #: master_preset.xml:2585(list_entry:short_description|preset:Traffic_Hazard|value:turns)
 msgctxt "hazard"
 msgid "Turns"
-msgstr ""
+msgstr "Afslagen"
 
 #: master_preset.xml:10969(list_entry:short_description|group:Boundaries|preset:Hazardous_Area|value:unexploded_ordnance)
 msgctxt "hazard"
@@ -20717,7 +20717,7 @@ msgstr "Reclame"
 #: master_preset.xml:8277(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
 msgid "Athletic"
-msgstr ""
+msgstr "Atletisch"
 
 #: master_preset.xml:8277(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
@@ -20742,7 +20742,7 @@ msgstr "Nationaal"
 #: master_preset.xml:8277(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
 msgid "Organisation"
-msgstr ""
+msgstr "Organisatie"
 
 #: master_preset.xml:8277(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
@@ -21491,12 +21491,12 @@ msgstr "Tarwe"
 #: master_preset.xml:11519(combo:display_values|group:Land_use|preset:Garden|key:garden:type)
 msgctxt "garden"
 msgid "Arboretum"
-msgstr ""
+msgstr "Arboretum"
 
 #: master_preset.xml:11519(combo:display_values|group:Land_use|preset:Garden|key:garden:type)
 msgctxt "garden"
 msgid "Botanical"
-msgstr ""
+msgstr "Botanisch"
 
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
@@ -21506,12 +21506,12 @@ msgstr "Chinees"
 #: master_preset.xml:11519(combo:display_values|group:Land_use|preset:Garden|key:garden:type)
 msgctxt "garden"
 msgid "Community"
-msgstr ""
+msgstr "Buurt"
 
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
 msgid "Cottage garden"
-msgstr ""
+msgstr "Cottage tuin"
 
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
@@ -21521,7 +21521,7 @@ msgstr "Engels"
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
 msgid "Flower garden"
-msgstr ""
+msgstr "Bloementuin"
 
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
@@ -21531,7 +21531,7 @@ msgstr "Frans"
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
 msgid "Herb garden"
-msgstr ""
+msgstr "Kruidentuin"
 
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
@@ -21546,7 +21546,7 @@ msgstr "Keuken"
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
 msgid "Medical garden"
-msgstr ""
+msgstr "Medicinale tuin"
 
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
@@ -21561,17 +21561,17 @@ msgstr "Woongebied"
 #: master_preset.xml:11519(combo:display_values|group:Land_use|preset:Garden|key:garden:type)
 msgctxt "garden"
 msgid "Roof garden"
-msgstr ""
+msgstr "Daktuin"
 
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
 msgid "Rosarium"
-msgstr ""
+msgstr "Rosarium"
 
 #: master_preset.xml:11519(combo:display_values|group:Land_use|preset:Garden|key:garden:type)
 msgctxt "garden"
 msgid "Show garden"
-msgstr ""
+msgstr "Showtuin"
 
 #: master_preset.xml:11521(combo:text|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
@@ -21586,12 +21586,12 @@ msgstr "Type"
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
 msgid "Walled garden"
-msgstr ""
+msgstr "Ommuurde tuin"
 
 #: master_preset.xml:11521(combo:display_values|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
 msgid "Zen"
-msgstr ""
+msgstr "Zen"
 
 #: master_preset.xml:11608(item:name|group:Land_use|preset:Commercial)
 msgctxt "Landuse"
@@ -21870,17 +21870,17 @@ msgstr "Internationaal"
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "International cycling"
-msgstr ""
+msgstr "Internationaal fietsen"
 
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "International riding"
-msgstr ""
+msgstr "Internationaal paardrijden"
 
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "International walking"
-msgstr ""
+msgstr "Internationaal wandelen"
 
 #: master_preset.xml:12035(combo:display_values|group:Routes|preset:Bicycle_Route|key:network)
 #: master_preset.xml:12062(combo:display_values|group:Routes|preset:Hiking_Route|key:network)
@@ -21893,17 +21893,17 @@ msgstr "Lokaal"
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "Local cycling"
-msgstr ""
+msgstr "Lokaal fietsen"
 
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "Local riding"
-msgstr ""
+msgstr "Lokaal paardrijden"
 
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "Local walking"
-msgstr ""
+msgstr "Lokaal wandelen"
 
 #: master_preset.xml:12035(combo:display_values|group:Routes|preset:Bicycle_Route|key:network)
 #: master_preset.xml:12062(combo:display_values|group:Routes|preset:Hiking_Route|key:network)
@@ -21915,17 +21915,17 @@ msgstr "Nationaal"
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "National cycling"
-msgstr ""
+msgstr "Nationaal fietsen"
 
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "National riding"
-msgstr ""
+msgstr "Nationaal paardrijden"
 
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "National walking"
-msgstr ""
+msgstr "Nationaal wandelen"
 
 #: master_preset.xml:12035(combo:text|group:Routes|preset:Bicycle_Route|key:network)
 #: master_preset.xml:12062(combo:text|group:Routes|preset:Hiking_Route|key:network)
@@ -21947,17 +21947,17 @@ msgstr "Regionaal"
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "Regional cycling"
-msgstr ""
+msgstr "Regionaal fietsen"
 
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "Regional riding"
-msgstr ""
+msgstr "Regionaal paardrijden"
 
 #: master_preset.xml:12277(combo:display_values|preset:Node_Network|key:network)
 msgctxt "network"
 msgid "Regional walking"
-msgstr ""
+msgstr "Regionaal wandelen"
 
 #: master_preset.xml:13194(item:name|group:Offices|preset:Religion)
 msgctxt "office"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-03-18 09:49+0100\n"
+"POT-Creation-Date: 2022-04-23 17:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -421,12 +421,8 @@ msgstr ""
 msgid "Administration centre"
 msgstr ""
 
-#: master_preset.xml:10920(item:name|group:Boundaries|preset:Administrative) master_preset.xml:11862(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:12935(combo:display_values|group:Offices|preset:Government|key:government)
+#: master_preset.xml:10920(item:name|group:Boundaries|preset:Administrative) master_preset.xml:11862(combo:display_values|group:Relations|preset:Boundary|key:boundary) master_preset.xml:12873(item:name|group:Offices|preset:Administrative) master_preset.xml:12935(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Administrative"
-msgstr ""
-
-#: master_preset.xml:12873(item:name|group:Offices|preset:Administrative_(deprecated))
-msgid "Administrative (deprecated)"
 msgstr ""
 
 #: master_preset.xml:10925(combo:text|group:Boundaries|preset:Administrative|key:admin_level) master_preset.xml:11864(combo:text|group:Relations|preset:Boundary|key:admin_level)
@@ -497,12 +493,8 @@ msgstr ""
 msgid "Agricultural engines"
 msgstr ""
 
-#: master_preset.xml:10458(combo:display_values|group:Other|preset:Trade_supplies|key:trade) master_preset.xml:10462(item:name|group:Other|preset:Agricultural_supplies)
+#: master_preset.xml:10458(combo:display_values|group:Other|preset:Trade_supplies|key:trade) master_preset.xml:10462(item:name|group:Other|preset:Agricultural_supplies) master_preset.xml:10471(item:name|group:Other|preset:Agricultural_supplies)
 msgid "Agricultural supplies"
-msgstr ""
-
-#: master_preset.xml:10471(item:name|group:Other|preset:Agricultural_supplies_(deprecated))
-msgid "Agricultural supplies (deprecated)"
 msgstr ""
 
 #: master_preset.xml:4718(combo:display_values|group:Accommodation|preset:Guest_House/Bed_&_Breakfast|key:guest_house)
@@ -2817,7 +2809,7 @@ msgstr ""
 msgid "Courthouse"
 msgstr ""
 
-#: master_preset.xml:1510(check:text|key:covered) master_preset.xml:1827(check:text|group:Streets|preset:Service|key:covered) master_preset.xml:2973(key:text|group:Passageways|preset:Arcade|key:covered) master_preset.xml:2984(key:text|group:Passageways|preset:Colonnade|key:covered) master_preset.xml:4169(check:text|group:Bicycle|preset:Parking|key:covered) master_preset.xml:5667(check:text|preset:Picnic_Table|key:covered) master_preset.xml:5675(check:text|preset:Public_Grill|key:covered) master_preset.xml:6899(combo:text|group:Facilities|preset:Telephone|key:covered) master_preset.xml:7038(check:text|group:Facilities|preset:Bench|key:covered) master_preset.xml:8410(check:text|group:Man_Made|preset:Goods_conveyor|key:covered)
+#: master_preset.xml:1510(check:text|key:covered) master_preset.xml:1827(check:text|group:Streets|preset:Service|key:covered) master_preset.xml:4169(check:text|group:Bicycle|preset:Parking|key:covered) master_preset.xml:5667(check:text|preset:Picnic_Table|key:covered) master_preset.xml:5675(check:text|preset:Public_Grill|key:covered) master_preset.xml:6899(combo:text|group:Facilities|preset:Telephone|key:covered) master_preset.xml:7038(check:text|group:Facilities|preset:Bench|key:covered) master_preset.xml:8410(check:text|group:Man_Made|preset:Goods_conveyor|key:covered)
 msgid "Covered"
 msgstr ""
 
@@ -3194,7 +3186,7 @@ msgid "Diameter in meters"
 msgstr ""
 
 #: master_preset.xml:294(combo:text|key:diaper)
-msgid "Diaper changing (deprecated)"
+msgid "Diaper changing"
 msgstr ""
 
 #: master_preset.xml:3472(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:diesel) master_preset.xml:3922(check:text|group:Car|preset:Fuel|key:fuel:diesel) master_preset.xml:8785(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:diesel)
@@ -3713,16 +3705,12 @@ msgstr ""
 msgid "English"
 msgstr ""
 
-#: master_preset.xml:11885(role:text|group:Relations|preset:Building|key:entrance) master_preset.xml:8135(item:name|preset:Entrance) master_preset.xml:8202(combo:display_values|group:Indoor_elements|preset:Room|key:room)
+#: master_preset.xml:11885(role:text|group:Relations|preset:Building|key:entrance) master_preset.xml:8135(item:name|preset:Entrance) master_preset.xml:8148(item:name|preset:Entrance) master_preset.xml:8202(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Entrance"
 msgstr ""
 
 #: master_preset.xml:2830(item:name|group:Barriers|preset:Entrance_(Barrier_Opening))
 msgid "Entrance (Barrier Opening)"
-msgstr ""
-
-#: master_preset.xml:8148(item:name|preset:Entrance_(deprecated))
-msgid "Entrance (deprecated)"
 msgstr ""
 
 #: master_preset.xml:8142(text:text|preset:Entrance|key:ref)
@@ -3857,12 +3845,8 @@ msgstr ""
 msgid "Falconry"
 msgstr ""
 
-#: master_preset.xml:11102(item:name|group:Places|preset:Farm) master_preset.xml:9440(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:farm)
+#: master_preset.xml:11102(item:name|group:Places|preset:Farm) master_preset.xml:11443(item:name|group:Land_use|preset:Farm) master_preset.xml:9440(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:farm)
 msgid "Farm"
-msgstr ""
-
-#: master_preset.xml:11443(item:name|group:Land_use|preset:Farm_(deprecated))
-msgid "Farm (deprecated)"
 msgstr ""
 
 #: master_preset.xml:9767(item:name|group:Food|preset:Farm_Stand)
@@ -3885,8 +3869,8 @@ msgstr ""
 msgid "Farsi"
 msgstr ""
 
-#: master_preset.xml:9879(item:name|group:Clothes|preset:Fashion_(deprecated))
-msgid "Fashion (deprecated)"
+#: master_preset.xml:9879(item:name|group:Clothes|preset:Fashion)
+msgid "Fashion"
 msgstr ""
 
 #: master_preset.xml:9871(item:name|group:Clothes|preset:Fashion_accessories)
@@ -3905,7 +3889,7 @@ msgstr ""
 msgid "Fee"
 msgstr ""
 
-#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies_(deprecated)|key:agrarian)
+#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agrarian)
 msgid "Feed"
 msgstr ""
 
@@ -3941,7 +3925,7 @@ msgstr ""
 msgid "Ferry Terminal"
 msgstr ""
 
-#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies_(deprecated)|key:agrarian)
+#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agrarian)
 msgid "Fertilizer"
 msgstr ""
 
@@ -4357,8 +4341,8 @@ msgstr ""
 msgid "Funicular"
 msgstr ""
 
-#: master_preset.xml:10134(item:name|group:Home_furnishing_and_decoration|preset:Furnace_(deprecated))
-msgid "Furnace (deprecated)"
+#: master_preset.xml:10134(item:name|group:Home_furnishing_and_decoration|preset:Furnace)
+msgid "Furnace"
 msgstr ""
 
 #: master_preset.xml:10021(item:name|group:Home_furnishing_and_decoration|preset:Furniture) master_preset.xml:12794(item:name|group:Crafts|preset:Furniture)
@@ -5213,7 +5197,7 @@ msgstr ""
 msgid "Ice cubes"
 msgstr ""
 
-#: master_preset.xml:7331(item:name|group:Sport_Facilities|preset:Ice_rink) master_preset.xml:7602(combo:display_values|group:Sport|preset:Skating_(deprecated)|key:leisure) master_preset.xml:7609(combo:display_values|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:display_values|group:Sport|preset:Curling|key:leisure)
+#: master_preset.xml:7331(item:name|group:Sport_Facilities|preset:Ice_rink) master_preset.xml:7602(combo:display_values|group:Sport|preset:Skating|key:leisure) master_preset.xml:7609(combo:display_values|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:display_values|group:Sport|preset:Curling|key:leisure)
 msgid "Ice rink"
 msgstr ""
 
@@ -6125,7 +6109,7 @@ msgstr ""
 msgid "Macedonian"
 msgstr ""
 
-#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies_(deprecated)|key:agrarian)
+#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agrarian)
 msgid "Machine parts"
 msgstr ""
 
@@ -7125,7 +7109,7 @@ msgstr ""
 msgid "No entry"
 msgstr ""
 
-#: master_preset.xml:11812(item:name|group:Annotation|preset:No_exit) master_preset.xml:11815(key:text|group:Annotation|preset:No_exit|key:noexit) master_preset.xml:11915(list_entry:display_value|group:Turn_Restrictions|preset:Turn_Restriction|value:no_exit) master_preset.xml:11984(item:name|group:Turn_Restrictions|preset:No_exit)
+#: master_preset.xml:11812(item:name|group:Annotation|preset:No_exit) master_preset.xml:11915(list_entry:display_value|group:Turn_Restrictions|preset:Turn_Restriction|value:no_exit) master_preset.xml:11984(item:name|group:Turn_Restrictions|preset:No_exit)
 msgid "No exit"
 msgstr ""
 
@@ -7361,12 +7345,8 @@ msgstr ""
 msgid "Nursery"
 msgstr ""
 
-#: master_preset.xml:6687(item:name|group:Social_Facilities|preset:Nursing_Home)
+#: master_preset.xml:6687(item:name|group:Social_Facilities|preset:Nursing_Home) master_preset.xml:6697(item:name|group:Social_Facilities|preset:Nursing_Home)
 msgid "Nursing Home"
-msgstr ""
-
-#: master_preset.xml:6697(item:name|group:Social_Facilities|preset:Nursing_Home_(deprecated))
-msgid "Nursing Home (deprecated)"
 msgstr ""
 
 #: master_preset.xml:9826(item:name|group:Food|preset:Nutrition_supplements)
@@ -7601,12 +7581,8 @@ msgstr ""
 msgid "Orchard"
 msgstr ""
 
-#: master_preset.xml:1477(list_entry:short_description|value:organic) master_preset.xml:541(combo:text|key:organic)
+#: master_preset.xml:1477(list_entry:short_description|value:organic) master_preset.xml:541(combo:text|key:organic) master_preset.xml:9777(item:name|group:Food|preset:Organic)
 msgid "Organic"
-msgstr ""
-
-#: master_preset.xml:9777(item:name|group:Food|preset:Organic_(deprecated))
-msgid "Organic (deprecated)"
 msgstr ""
 
 #: master_preset.xml:111(combo:text|key:parking:orientation) master_preset.xml:1370(combo:text|key:climbing:orientation)
@@ -8077,7 +8053,7 @@ msgstr ""
 msgid "Pescetarian"
 msgstr ""
 
-#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies_(deprecated)|key:agrarian)
+#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agrarian)
 msgid "Pesticide"
 msgstr ""
 
@@ -8241,7 +8217,7 @@ msgstr ""
 msgid "Pitaya plants"
 msgstr ""
 
-#: master_preset.xml:7304(item:name|group:Sport_Facilities|preset:Pitch) master_preset.xml:7602(combo:display_values|group:Sport|preset:Skating_(deprecated)|key:leisure) master_preset.xml:7609(combo:display_values|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:display_values|group:Sport|preset:Curling|key:leisure) master_preset.xml:7684(check:text|group:Sport|preset:Chess|key:leisure)
+#: master_preset.xml:7304(item:name|group:Sport_Facilities|preset:Pitch) master_preset.xml:7602(combo:display_values|group:Sport|preset:Skating|key:leisure) master_preset.xml:7609(combo:display_values|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:display_values|group:Sport|preset:Curling|key:leisure) master_preset.xml:7684(check:text|group:Sport|preset:Chess|key:leisure)
 msgid "Pitch"
 msgstr ""
 
@@ -8733,12 +8709,8 @@ msgstr ""
 msgid "Public Bicycle Repair Station"
 msgstr ""
 
-#: master_preset.xml:6047(group:name|group:Public_Building)
+#: master_preset.xml:6047(group:name|group:Public_Building) master_preset.xml:6048(item:name|group:Public_Building|preset:Public_Building)
 msgid "Public Building"
-msgstr ""
-
-#: master_preset.xml:6048(item:name|group:Public_Building|preset:Public_Building_(deprecated))
-msgid "Public Building (deprecated)"
 msgstr ""
 
 #: master_preset.xml:5669(item:name|preset:Public_Grill)
@@ -9137,8 +9109,8 @@ msgstr ""
 msgid "Regional name"
 msgstr ""
 
-#: master_preset.xml:13180(item:name|group:Offices|preset:Register_(deprecated))
-msgid "Register (deprecated)"
+#: master_preset.xml:13180(item:name|group:Offices|preset:Register)
+msgid "Register"
 msgstr ""
 
 #: master_preset.xml:12935(combo:display_values|group:Offices|preset:Government|key:government)
@@ -9833,7 +9805,7 @@ msgstr ""
 msgid "See the Wiki for other capacity:[types]=*."
 msgstr ""
 
-#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies_(deprecated)|key:agrarian)
+#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agrarian)
 msgid "Seed"
 msgstr ""
 
@@ -10169,8 +10141,8 @@ msgstr ""
 msgid "Skateboard"
 msgstr ""
 
-#: master_preset.xml:7597(item:name|group:Sport|preset:Skating_(deprecated))
-msgid "Skating (deprecated)"
+#: master_preset.xml:7597(item:name|group:Sport|preset:Skating)
+msgid "Skating"
 msgstr ""
 
 #: master_preset.xml:12149(item:name|group:Routes|preset:Ski_Route)
@@ -10429,7 +10401,7 @@ msgstr ""
 msgid "Sports and hobbies"
 msgstr ""
 
-#: master_preset.xml:7497(check:text|group:Sport|preset:Climbing_site|key:leisure) master_preset.xml:7602(combo:display_values|group:Sport|preset:Skating_(deprecated)|key:leisure) master_preset.xml:7609(combo:display_values|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:display_values|group:Sport|preset:Curling|key:leisure)
+#: master_preset.xml:7497(check:text|group:Sport|preset:Climbing_site|key:leisure) master_preset.xml:7602(combo:display_values|group:Sport|preset:Skating|key:leisure) master_preset.xml:7609(combo:display_values|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:display_values|group:Sport|preset:Curling|key:leisure)
 msgid "Sports centre"
 msgstr ""
 
@@ -10453,7 +10425,7 @@ msgstr ""
 msgid "Squeezer"
 msgstr ""
 
-#: master_preset.xml:7264(item:name|group:Sport_Facilities|preset:Stadium) master_preset.xml:7602(combo:display_values|group:Sport|preset:Skating_(deprecated)|key:leisure) master_preset.xml:7609(combo:display_values|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:display_values|group:Sport|preset:Curling|key:leisure)
+#: master_preset.xml:7264(item:name|group:Sport_Facilities|preset:Stadium) master_preset.xml:7602(combo:display_values|group:Sport|preset:Skating|key:leisure) master_preset.xml:7609(combo:display_values|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:display_values|group:Sport|preset:Curling|key:leisure)
 msgid "Stadium"
 msgstr ""
 
@@ -10753,7 +10725,7 @@ msgstr ""
 msgid "Supervision by an adult"
 msgstr ""
 
-#: master_preset.xml:10467(multiselect:text|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:text|group:Other|preset:Agricultural_supplies_(deprecated)|key:agrarian)
+#: master_preset.xml:10467(multiselect:text|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:text|group:Other|preset:Agricultural_supplies|key:agrarian)
 msgid "Supplies"
 msgstr ""
 
@@ -11297,7 +11269,7 @@ msgstr ""
 msgid "Tomb type"
 msgstr ""
 
-#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies_(deprecated)|key:agrarian)
+#: master_preset.xml:10467(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies) master_preset.xml:10475(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agrarian)
 msgid "Tools"
 msgstr ""
 
@@ -11633,7 +11605,7 @@ msgstr ""
 msgid "Two-sided"
 msgstr ""
 
-#: master_preset.xml:10237(multiselect:text|group:For_the_body|preset:Beauty|key:beauty) master_preset.xml:10490(combo:text|group:Other|preset:Wholesale|key:wholesale) master_preset.xml:1059(combo:text|key:aerodrome:type) master_preset.xml:11164(combo:text|group:Geography|preset:Volcano|key:volcano:type) master_preset.xml:11197(combo:text|group:Geography|preset:Sinkhole|key:sinkhole) master_preset.xml:11239(combo:text|group:Geography|preset:Reef|key:reef) master_preset.xml:11324(combo:text|group:Nature|preset:Grassland|key:grassland) master_preset.xml:1155(combo:text|key:cash_withdrawal:type) master_preset.xml:12251(combo:text|group:Routes|preset:Superroute|key:route) master_preset.xml:12891(combo:text|group:Offices|preset:Embassy|key:embassy) master_preset.xml:12900(combo:text|group:Offices|preset:Consulate|key:consulate) master_preset.xml:12909(combo:text|group:Offices|preset:Liaison|key:liaison) master_preset.xml:12935(combo:text|group:Offices|preset:Government|key:government) master_preset.xml:2320(combo:text|group:Waypoints|preset:Traffic_Signal|key:traffic_signals) master_preset.xml:2344(combo:text|group:Waypoints|preset:Stop|key:stop) master_preset.xml:2383(combo:text|group:Traffic_Calming|preset:Traffic_Calming|key:traffic_calming) master_preset.xml:2634(combo:text|group:Barriers|preset:Cycle_Barrier|key:cycle_barrier) master_preset.xml:2770(combo:text|group:Barriers|preset:Wall|key:wall) master_preset.xml:2907(combo:text|group:Barriers|preset:Stile|key:stile) master_preset.xml:3275(combo:text|group:Water|preset:Basin|key:basin) master_preset.xml:3282(combo:text|group:Water|preset:Reservoir|key:reservoir_type) master_preset.xml:3366(combo:text|group:Water|preset:Wetland|key:wetland) master_preset.xml:3564(combo:text|group:Shipping|preset:Dock|key:dock) master_preset.xml:3805(combo:text|group:Aerialway|preset:Drag_Lift|key:aerialway) master_preset.xml:4194(multiselect:text|group:Bicycle|preset:Rental|key:bicycle_rental) master_preset.xml:4643(combo:text|group:Airport|preset:Navigation_aid|key:navigationaid) master_preset.xml:4718(combo:text|group:Accommodation|preset:Guest_House/Bed_&_Breakfast|key:guest_house) master_preset.xml:5221(combo:text|group:Leisure|preset:Zoo|key:zoo) master_preset.xml:5757(multiselect:text|preset:Gambling|key:gambling) master_preset.xml:5803(multiselect:text|group:Culture|preset:Museum|key:museum) master_preset.xml:5903(combo:text|group:Culture|preset:Public_bookcase|key:public_bookcase:type) master_preset.xml:5927(combo:text|group:Culture|preset:Artwork|key:artwork_type) master_preset.xml:5941(combo:text|group:Culture|preset:Studio|key:studio) master_preset.xml:6455(combo:text|group:Emergency|preset:Emergency_ward_entrance|key:emergency_ward_entrance) master_preset.xml:6850(combo:text|group:Facilities|preset:Toilets/Restrooms|key:toilets:disposal) master_preset.xml:7013(checkgroup:text|group:Facilities|preset:Sanitary_Dump_Station) master_preset.xml:7602(combo:text|group:Sport|preset:Skating_(deprecated)|key:leisure) master_preset.xml:7609(combo:text|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:text|group:Sport|preset:Curling|key:leisure) master_preset.xml:7647(combo:text|group:Sport|preset:Swimming|key:leisure) master_preset.xml:7683(checkgroup:text|group:Sport|preset:Chess) master_preset.xml:7800(combo:text|group:Sport_(Ball)|preset:Golf|key:leisure) master_preset.xml:7843(combo:text|group:Sport_(Ball)|preset:Ice_Hockey|key:leisure) master_preset.xml:8202(combo:text|group:Indoor_elements|preset:Room|key:room) master_preset.xml:8398(combo:text|group:Man_Made|preset:Crane|key:crane:type) master_preset.xml:8647(combo:text|group:Man_Made|preset:Street_cabinet|key:street_cabinet) master_preset.xml:8749(combo:text|group:Man_Made|preset:Telescope|key:telescope:type) master_preset.xml:9413(combo:text|group:Historic_Places_&_Objects|preset:Historic_object|key:historic) master_preset.xml:9465(combo:text|group:Historic_Places_&_Objects|preset:Castle|key:castle_type) master_preset.xml:9516(combo:text|group:Historic_Places_&_Objects|preset:Archaeological_Site|key:site_type)
+#: master_preset.xml:10237(multiselect:text|group:For_the_body|preset:Beauty|key:beauty) master_preset.xml:10490(combo:text|group:Other|preset:Wholesale|key:wholesale) master_preset.xml:1059(combo:text|key:aerodrome:type) master_preset.xml:11164(combo:text|group:Geography|preset:Volcano|key:volcano:type) master_preset.xml:11197(combo:text|group:Geography|preset:Sinkhole|key:sinkhole) master_preset.xml:11239(combo:text|group:Geography|preset:Reef|key:reef) master_preset.xml:11324(combo:text|group:Nature|preset:Grassland|key:grassland) master_preset.xml:1155(combo:text|key:cash_withdrawal:type) master_preset.xml:12251(combo:text|group:Routes|preset:Superroute|key:route) master_preset.xml:12891(combo:text|group:Offices|preset:Embassy|key:embassy) master_preset.xml:12900(combo:text|group:Offices|preset:Consulate|key:consulate) master_preset.xml:12909(combo:text|group:Offices|preset:Liaison|key:liaison) master_preset.xml:12935(combo:text|group:Offices|preset:Government|key:government) master_preset.xml:2320(combo:text|group:Waypoints|preset:Traffic_Signal|key:traffic_signals) master_preset.xml:2344(combo:text|group:Waypoints|preset:Stop|key:stop) master_preset.xml:2383(combo:text|group:Traffic_Calming|preset:Traffic_Calming|key:traffic_calming) master_preset.xml:2634(combo:text|group:Barriers|preset:Cycle_Barrier|key:cycle_barrier) master_preset.xml:2770(combo:text|group:Barriers|preset:Wall|key:wall) master_preset.xml:2907(combo:text|group:Barriers|preset:Stile|key:stile) master_preset.xml:3275(combo:text|group:Water|preset:Basin|key:basin) master_preset.xml:3282(combo:text|group:Water|preset:Reservoir|key:reservoir_type) master_preset.xml:3366(combo:text|group:Water|preset:Wetland|key:wetland) master_preset.xml:3564(combo:text|group:Shipping|preset:Dock|key:dock) master_preset.xml:3805(combo:text|group:Aerialway|preset:Drag_Lift|key:aerialway) master_preset.xml:4194(multiselect:text|group:Bicycle|preset:Rental|key:bicycle_rental) master_preset.xml:4643(combo:text|group:Airport|preset:Navigation_aid|key:navigationaid) master_preset.xml:4718(combo:text|group:Accommodation|preset:Guest_House/Bed_&_Breakfast|key:guest_house) master_preset.xml:5221(combo:text|group:Leisure|preset:Zoo|key:zoo) master_preset.xml:5757(multiselect:text|preset:Gambling|key:gambling) master_preset.xml:5803(multiselect:text|group:Culture|preset:Museum|key:museum) master_preset.xml:5903(combo:text|group:Culture|preset:Public_bookcase|key:public_bookcase:type) master_preset.xml:5927(combo:text|group:Culture|preset:Artwork|key:artwork_type) master_preset.xml:5941(combo:text|group:Culture|preset:Studio|key:studio) master_preset.xml:6455(combo:text|group:Emergency|preset:Emergency_ward_entrance|key:emergency_ward_entrance) master_preset.xml:6850(combo:text|group:Facilities|preset:Toilets/Restrooms|key:toilets:disposal) master_preset.xml:7013(checkgroup:text|group:Facilities|preset:Sanitary_Dump_Station) master_preset.xml:7602(combo:text|group:Sport|preset:Skating|key:leisure) master_preset.xml:7609(combo:text|group:Sport|preset:Ice_Skating|key:leisure) master_preset.xml:7618(combo:text|group:Sport|preset:Curling|key:leisure) master_preset.xml:7647(combo:text|group:Sport|preset:Swimming|key:leisure) master_preset.xml:7683(checkgroup:text|group:Sport|preset:Chess) master_preset.xml:7800(combo:text|group:Sport_(Ball)|preset:Golf|key:leisure) master_preset.xml:7843(combo:text|group:Sport_(Ball)|preset:Ice_Hockey|key:leisure) master_preset.xml:8202(combo:text|group:Indoor_elements|preset:Room|key:room) master_preset.xml:8398(combo:text|group:Man_Made|preset:Crane|key:crane:type) master_preset.xml:8647(combo:text|group:Man_Made|preset:Street_cabinet|key:street_cabinet) master_preset.xml:8749(combo:text|group:Man_Made|preset:Telescope|key:telescope:type) master_preset.xml:9413(combo:text|group:Historic_Places_&_Objects|preset:Historic_object|key:historic) master_preset.xml:9465(combo:text|group:Historic_Places_&_Objects|preset:Castle|key:castle_type) master_preset.xml:9516(combo:text|group:Historic_Places_&_Objects|preset:Archaeological_Site|key:site_type)
 msgid "Type"
 msgstr ""
 
@@ -11919,10 +11891,6 @@ msgstr ""
 
 #: master_preset.xml:10720(multiselect:text|preset:Vending_Machine|key:vending)
 msgid "Vending products"
-msgstr ""
-
-#: master_preset.xml:4233(key:text|group:Public_Transport|preset:Public_Transport_Route_(Rail)|key:public_transport:version) master_preset.xml:4254(key:text|group:Public_Transport|preset:Public_Transport_Route_(Bus)|key:public_transport:version) master_preset.xml:4438(key:text|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:public_transport:version)
-msgid "Version"
 msgstr ""
 
 #: master_preset.xml:9087(list_entry:short_description|group:Power_Generator|preset:Tidal_Water_Turbine|value:vertical_axis) master_preset.xml:9119(combo:display_values|group:Power_Generator|preset:Wind_Turbine|key:generator:type)
@@ -12505,12 +12473,8 @@ msgstr ""
 msgid "Yiddish"
 msgstr ""
 
-#: master_preset.xml:6749(item:name|group:Social_Facilities|preset:Youth_Centre)
+#: master_preset.xml:6749(item:name|group:Social_Facilities|preset:Youth_Centre) master_preset.xml:6757(item:name|group:Social_Facilities|preset:Youth_Centre)
 msgid "Youth Centre"
-msgstr ""
-
-#: master_preset.xml:6757(item:name|group:Social_Facilities|preset:Youth_Centre_(deprecated))
-msgid "Youth Centre (deprecated)"
 msgstr ""
 
 #: master_preset.xml:5324(list_entry:display_value|group:Leisure|preset:Animals|value:zebra)
@@ -13316,7 +13280,7 @@ msgstr ""
 
 #: master_preset.xml:216(list_entry:short_description|value:island)
 msgctxt "pedestrian"
-msgid "Island (deprecated)"
+msgid "Island"
 msgstr ""
 
 #: master_preset.xml:215(list_entry:short_description|value:no)
@@ -15139,7 +15103,7 @@ msgctxt "building"
 msgid "Allotment house"
 msgstr ""
 
-#: master_preset.xml:7939(list_entry:display_value|group:Buildings|preset:Building|value:apartments) master_preset.xml:8016(key:text|group:Buildings|preset:Apartments|key:building)
+#: master_preset.xml:7939(list_entry:display_value|group:Buildings|preset:Building|value:apartments)
 msgctxt "building"
 msgid "Apartments"
 msgstr ""
@@ -15354,7 +15318,7 @@ msgctxt "building"
 msgid "Gambrel"
 msgstr ""
 
-#: master_preset.xml:1287(combo:display_values|key:building:use) master_preset.xml:7961(list_entry:display_value|group:Buildings|preset:Building|value:garage) master_preset.xml:8030(key:text|group:Buildings|preset:Garage|key:building) master_preset.xml:8047(combo:display_values|group:Buildings|preset:Building_part|key:building:part)
+#: master_preset.xml:1287(combo:display_values|key:building:use) master_preset.xml:7961(list_entry:display_value|group:Buildings|preset:Building|value:garage) master_preset.xml:8047(combo:display_values|group:Buildings|preset:Building_part|key:building:part)
 msgctxt "building"
 msgid "Garage"
 msgstr ""
@@ -15429,7 +15393,7 @@ msgctxt "building"
 msgid "Hotel"
 msgstr ""
 
-#: master_preset.xml:7971(list_entry:display_value|group:Buildings|preset:Building|value:house) master_preset.xml:8023(key:text|group:Buildings|preset:House|key:building)
+#: master_preset.xml:7971(list_entry:display_value|group:Buildings|preset:Building|value:house)
 msgctxt "building"
 msgid "House"
 msgstr ""
@@ -15447,11 +15411,6 @@ msgstr ""
 #: master_preset.xml:1287(combo:display_values|key:building:use) master_preset.xml:7974(list_entry:display_value|group:Buildings|preset:Building|value:industrial) master_preset.xml:8047(combo:display_values|group:Buildings|preset:Building_part|key:building:part)
 msgctxt "building"
 msgid "Industrial"
-msgstr ""
-
-#: master_preset.xml:8037(key:text|group:Buildings|preset:Industrial_building|key:building)
-msgctxt "building"
-msgid "Industrial building"
 msgstr ""
 
 #: master_preset.xml:7975(list_entry:display_value|group:Buildings|preset:Building|value:kindergarten)
@@ -16016,7 +15975,7 @@ msgstr ""
 
 #: master_preset.xml:1818(list_entry:short_description|group:Streets|preset:Service|value:parking)
 msgctxt "Highway"
-msgid "Parking (deprecated)"
+msgid "Parking"
 msgstr ""
 
 #: master_preset.xml:1819(list_entry:short_description|group:Streets|preset:Service|value:parking_aisle)
