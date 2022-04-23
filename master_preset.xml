@@ -2351,7 +2351,7 @@
         </item> <!-- Give Way -->
         <item name="Advanced stop line" icon="${highway_cycleway_asl}" type="node" preset_name_label="true">
             <link wiki="Tag:cycleway=asl" />
-            <key key="cycleway" value="asl" />
+            <key key="cycleway" value="asl" object="true" />
         </item> <!-- Advanced stop line -->
         <item name="Mini-Roundabout" icon="${highway_miniroundabout}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=mini_roundabout"/>
