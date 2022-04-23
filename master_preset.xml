@@ -213,7 +213,7 @@
             <list_entry value="traffic_signals" short_description="Traffic signals" icon="${crossing_traffic_signals}"/>
             <list_entry value="unmarked" short_description="Unmarked" icon="${crossing_unmarked}"/>
             <list_entry value="no" short_description="No crossing"/>
-            <list_entry value="island" short_description="Island (deprecated)" icon="${crossing_island}" deprecated="true" />
+            <list_entry value="island" short_description="Island" icon="${crossing_island}" deprecated="true" />
         </multiselect>
         <check key="crossing:island" text="With island" />
         <optional>
@@ -291,7 +291,7 @@
         </optional>
     </chunk>
     <chunk id="changing_table">
-        <combo key="diaper" text="Diaper changing (deprecated)" values_sort="false" deprecated="true">
+        <combo key="diaper" text="Diaper changing" values_sort="false" deprecated="true">
             <list_entry value="yes" short_description="Available"/>
             <list_entry value="no" short_description="Not available"/>
             <list_entry value="room" short_description="Dedicated room"/>
@@ -1815,7 +1815,7 @@
             <combo key="service" text="Service way type" values_context="Highway">
                 <list_entry value="alley" short_description="Alley" />
                 <list_entry value="driveway" short_description="Driveway" />
-                <list_entry value="parking" short_description="Parking (deprecated)" deprecated="true" />
+                <list_entry value="parking" short_description="Parking" deprecated="true" />
                 <list_entry value="parking_aisle" short_description="Parking aisle" />
                 <list_entry value="drive-through" short_description="Drive-through" />
                 <list_entry value="emergency_access" short_description="Emergency access" />
@@ -6045,7 +6045,7 @@
         </item> <!-- Monastery -->
     </group> <!-- Place of Worship -->
     <group name="Public Building" icon="${amenity_public_building}">
-        <item name="Public Building (deprecated)" deprecated="true" icon="${amenity_public_building}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Public Building" deprecated="true" icon="${amenity_public_building}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=public_building"/>
             <space/>
             <key key="amenity" value="public_building"/>
@@ -6694,13 +6694,13 @@
             <text key="capacity" text="Capacity" value_type="integer"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Nursing Home -->
-        <item name="Nursing Home (deprecated)" icon="${amenity_nursing_home}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
+        <item name="Nursing Home" icon="${amenity_nursing_home}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
             <link wiki="Tag:amenity=nursing_home"/>
             <space/>
             <key key="amenity" value="nursing_home"/>
             <reference ref="name_operator_wheelchair_level"/>
             <reference ref="link_contact_address"/>
-        </item> <!-- Nursing Home (deprecated) -->
+        </item> <!-- Nursing Home -->
         <item name="Group Home" icon="${amenity_group_home}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:social_facility"/>
             <space/>
@@ -6754,7 +6754,7 @@
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Youth Centre -->
-        <item name="Youth Centre (deprecated)" icon="${amenity_youth_centre}" deprecated="true" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Youth Centre" icon="${amenity_youth_centre}" deprecated="true" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:social_facility"/>
             <space/>
             <key key="amenity" value="youth_centre"/>
@@ -7594,7 +7594,7 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Gymnastics -->
-        <item name="Skating (deprecated)" deprecated="true" icon="${sport_iceskating}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Skating" deprecated="true" icon="${sport_iceskating}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=skating"/>
             <space/>
             <key key="sport" value="skating"/>
@@ -8145,10 +8145,10 @@
             </optional>
             <preset_link preset_name="Address"/>
         </item> <!-- Entrance -->
-        <item name="Entrance (deprecated)" deprecated="true" icon="${entrance}" type="node" preset_name_label="true">
+        <item name="Entrance" deprecated="true" icon="${entrance}" type="node" preset_name_label="true">
             <key key="building" value="entrance"/>
             <preset_link preset_name="Address"/>
-        </item> <!-- Entrance (deprecated) -->
+        </item> <!-- Entrance -->
         <item name="Loading dock" icon="${amenity_forklift}" type="node,way" preset_name_label="true">
             <link wiki="Tag:amenity=loading_dock"/>
             <space/>
@@ -9774,7 +9774,7 @@
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Farm Stand -->
         <separator/>
-        <item name="Organic (deprecated)" icon="${shopping_organic}" type="node,closedway,multipolygon" preset_name_label="true" deprecated="true">
+        <item name="Organic" icon="${shopping_organic}" type="node,closedway,multipolygon" preset_name_label="true" deprecated="true">
             <link wiki="Key:organic"/>
             <space/>
             <key key="shop" value="organic"/>
@@ -9876,14 +9876,14 @@
             <reference ref="clothes"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Fashion accessories -->
-        <item name="Fashion (deprecated)" icon="${shopping_boutique}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
+        <item name="Fashion" icon="${shopping_boutique}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
             <link wiki="Tag:shop=fashion"/>
             <space/>
             <key key="shop" value="fashion"/>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="clothes"/>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Fashion (deprecated) -->
+        </item> <!-- Fashion -->
         <item name="Shoes" icon="${shopping_shoes}" type="node,closedway,multipolygon" name_context="shop" preset_name_label="true">
             <link wiki="Tag:shop=shoes"/>
             <space/>
@@ -10131,13 +10131,13 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Vacuum Cleaner -->
-        <item name="Furnace (deprecated)" icon="${shopping_furnace}" deprecated="true" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Furnace" icon="${shopping_furnace}" deprecated="true" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=furnace"/>
             <space/>
             <key key="shop" value="furnace"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Furnace (deprecated) -->
+        </item> <!-- Furnace -->
         <item name="Fireplace" icon="${shopping_fireplace}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=fireplace"/>
             <space/>
@@ -10468,14 +10468,14 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Agricultural supplies -->
-        <item name="Agricultural supplies (deprecated)" icon="${shopping_agricultural_supplies}" type="node,closedway,multipolygon" preset_name_label="true" deprecated="true">
+        <item name="Agricultural supplies" icon="${shopping_agricultural_supplies}" type="node,closedway,multipolygon" preset_name_label="true" deprecated="true">
             <link wiki="Tag:shop=agrarian"/>
             <space/>
             <key key="shop" value="agrarian"/>
             <multiselect key="agrarian" text="Supplies" values="feed;fertilizer;machine_parts;pesticide;seed;tools" display_values="Feed;Fertilizer;Machine parts;Pesticide;Seed;Tools"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Agricultural supplies (deprecated) -->
+        </item> <!-- Agricultural supplies -->
         <item name="Hairdresser supply" icon="${shopping_hairdresser}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=hairdresser_supply"/>
             <space/>
@@ -11440,11 +11440,11 @@
             <combo key="crop" text="Crop" values="barley,cereal,corn,grass,hop,rapeseed,rice,soy,sugarcane,tea,wheat" display_values="Barley,Cereal,Corn,Grass,Hop,Rapeseed,Rice,Soy,Sugarcane,Tea,Wheat" editable="true" values_context="crop"/>
             <check key="irrigation" text="Center pivot irrigation" value_on="pivot" disable_off="true" />
         </item> <!-- Farmland -->
-        <item name="Farm (deprecated)" icon="${landuse_farm}" type="closedway,multipolygon" preset_name_label="true" deprecated="true">
+        <item name="Farm" icon="${landuse_farm}" type="closedway,multipolygon" preset_name_label="true" deprecated="true">
             <link wiki="Tag:landuse=farm"/>
             <space/>
             <key key="landuse" value="farm"/>
-        </item> <!-- Farm (deprecated) -->
+        </item> <!-- Farm -->
         <item name="Meadow" icon="${landuse_meadow}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:landuse=meadow"/>
             <space/>
@@ -12870,7 +12870,7 @@
         </item> <!-- Photo studio -->
     </group> <!-- Crafts -->
     <group name="Offices" icon="${office_group}">
-        <item name="Administrative (deprecated)" deprecated="true" icon="${office_administrative}" type="node,closedway,multipolygon">
+        <item name="Administrative" deprecated="true" icon="${office_administrative}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=administrative"/>
             <space/>
             <key key="office" value="administrative"/>
@@ -13177,7 +13177,7 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Surveyor -->
-        <item name="Register (deprecated)" deprecated="true" icon="${office_register}" type="node,closedway,multipolygon">
+        <item name="Register" deprecated="true" icon="${office_register}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=register"/>
             <space/>
             <key key="office" value="register"/>
