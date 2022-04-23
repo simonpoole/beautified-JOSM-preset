@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="3.7.3" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="4.0.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward">
 <!--
@@ -2970,7 +2970,7 @@
         <item name="Arcade" icon="${passageways_arcade}" type="way" preset_name_label="true">
             <link wiki="Key:covered"/>
             <space/>
-            <key key="covered" text="Covered" value="arcade" match="none"/>
+            <key key="covered" value="arcade" match="none"/>
             <check key="arcade:left" value_on="open" text="Open on left side" disable_off="true" match="none"/>
             <check key="arcade:right" value_on="open" text="Open on right side" disable_off="true" match="none"/>
             <optional>
@@ -2981,7 +2981,7 @@
         <item name="Colonnade" icon="${passageways_colonade}" type="way" preset_name_label="true">
             <link wiki="Key:covered"/>
             <space/>
-            <key key="covered" text="Covered" value="colonnade" match="none"/>
+            <key key="covered" value="colonnade" match="none"/>
             <check key="colonnade:left" value_on="open" text="Open on left side" disable_off="true" match="none"/>
             <check key="colonnade:right" value_on="open" text="Open on right side" disable_off="true" match="none"/>
             <optional>
@@ -4230,7 +4230,7 @@
             <space/>
             <key key="type" value="route"/>
             <combo key="route" text="Route type" values="train,subway,monorail,tram,light_rail" display_values="Train,Subway,Monorail,Tram,Light rail" values_searchable="true" match="keyvalue!"/>
-            <key key="public_transport:version" text="Version" value="2"/> <!-- only validate marked relations in order to avoid false positives -->
+            <key key="public_transport:version" value="2"/> <!-- only validate marked relations in order to avoid false positives -->
             <reference ref="name_ref"/>
             <optional>
                 <reference ref="public_transport_route_optionals"/>
@@ -4251,7 +4251,7 @@
             <space/>
             <key key="type" value="route"/>
             <combo key="route" text="Route type" values="bus,share_taxi,trolleybus" display_values="Bus,Share taxi,Trolleybus" values_searchable="true" match="keyvalue!"/>
-            <key key="public_transport:version" text="Version" value="2"/> <!-- only validate marked relations in order to avoid false positives -->
+            <key key="public_transport:version" value="2"/> <!-- only validate marked relations in order to avoid false positives -->
             <reference ref="name_ref"/>
             <optional>
                 <reference ref="public_transport_route_optionals"/>
@@ -4435,7 +4435,7 @@
             <key key="type" value="route"/>
             <combo key="route" text="Route type" values="train,subway,monorail,tram,bus,trolleybus,share_taxi,aerialway,ferry"
                 display_values="Train,Subway,Monorail,Tram,Bus,Trolleybus,Share taxi,Aerialway,Ferry" values_searchable="true" match="keyvalue!"/>
-            <key key="public_transport:version" text="Version" value="1" match="none"/>  <!-- only validate marked relations in order to avoid false positives -->
+            <key key="public_transport:version" value="1" match="none"/>  <!-- only validate marked relations in order to avoid false positives -->
             <reference ref="name_ref"/>
             <optional>
                 <reference ref="public_transport_route_optionals" />
@@ -8013,28 +8013,28 @@
         <item name="Apartments" icon="${apartments}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:building"/>
             <space/>
-            <key key="building" text="Apartments" value="apartments" values_context="building"/>
+            <key key="building" value="apartments" values_context="building"/>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
         </item> <!-- Apartments -->
         <item name="House" icon="${house}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:building"/>
             <space/>
-            <key key="building" text="House" value="house" values_context="building"/>
+            <key key="building" value="house" values_context="building"/>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
         </item> <!-- House -->
         <item name="Garage" icon="${garage}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:building"/>
             <space/>
-            <key key="building" text="Garage" value="garage" values_context="building"/>
+            <key key="building" value="garage" values_context="building"/>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
         </item> <!-- House -->
         <item name="Industrial building" icon="${industrial_building}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:building"/>
             <space/>
-            <key key="building" text="Industrial building" value="industrial" values_context="building"/>
+            <key key="building" value="industrial" values_context="building"/>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
         </item> <!-- Industrial  building -->
@@ -11812,7 +11812,7 @@
         <item name="No exit" icon="${no_exit}" type="node" preset_name_label="true">
             <link wiki="Key:noexit"/>
             <space/>
-            <key key="noexit" text="No exit" value="yes"/>
+            <key key="noexit" value="yes"/>
         </item>
         <item name="Add or update check date" icon="${javascript}" type="node,way,closedway,relation" preset_name_label="true">
             <link wiki="Key:check_date"/>
