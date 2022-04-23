@@ -1,7 +1,7 @@
 /*
  */
 
-version = '3.7.3'
+version = '4.0.0'
 
 //for Ant filter
 import org.apache.tools.ant.filters.ReplaceTokens
@@ -33,7 +33,7 @@ ext {
     mapped_vespucci_preset_file = 'mapped_vespucci_preset.xml'
     vespucci_preset_file = 'vespucci_preset.xml'
     vespucci_preset_build_file = 'vespucci_preset_build.xml'
-    vespucci_preset_version = '1.12'
+    vespucci_preset_version = '1.14'
     generated = 'build/gen/'
     generatedDir = file(generated)
     temp = 'build/temp/'
@@ -42,7 +42,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.27.2'
+    runtime 'ch.poole:preset-utils:0.28.0'
 }
 
 task copyCss(type: Copy) {
@@ -56,6 +56,7 @@ task copyResources(type: Copy) {
     include "josm-preset-1.0.xlmns"
     include "vespucci-preset-${vespucci_preset_version}.xlmns"
     include "toJOSM.xslt"
+    include "toVespucciOld.xslt"
     include "href2wiki.xslt"
     include "wiki2href.xslt"
     into new File(buildDir.getPath() + '/xml')
@@ -263,8 +264,24 @@ task generateAndValidateVespucciBuild(dependsOn: ["vespucciBuild", "copyResource
     }
 }
 
+task transformToLegacyVespucci(dependsOn: generateAndValidateVespucciBuild, type: Exec) {
+    def input = generated + vespucci_preset_file
+    def output = 'gen/legacy_' + vespucci_preset_file
+    mkdir(generated)
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        // remove extensions
+        commandLine 'cmd', '/c', 'xmlstarlet', 'tr', 'build/xml/toVespucciOld.xslt', input
+    } else {
+        // remove extensions
+        commandLine 'xmlstarlet', 'tr', 'build/xml/toVespucciOld.xslt', input
+    }
+    doFirst {
+        standardOutput = new FileOutputStream(new File(buildDir, output))
+    }
+}
+
 task vespucciZip(dependsOn: ["generateAndValidateVespucci", "updateTranslations"], type: Zip) {
-    baseName 'vespucci_zip'
+    baseName 'vespucci_v4_zip'
     version ''
     destinationDir = generatedDir
     from ('icons/png')
@@ -287,25 +304,17 @@ task vespucciIconsZip(type: Zip) {
 vespucciZip.group = 'preset'
 vespucciZip.description = 'Generate zipped icon file for vespucci'
 
-task vespucciNoTranslationsZip(dependsOn: ["generateAndValidateVespucci"], type: Zip) {
-    baseName 'vespucci_zip_no_translations'
+task vespucciLegacyZip(dependsOn: ["transformToLegacyVespucci"], type: Zip) {
+    baseName 'vespucci_zip'
     version ''
     destinationDir = generatedDir
     from ('icons/png')
-    from (generated + vespucci_preset_file)
+    from (generated + "legacy_" + vespucci_preset_file)
+    from ('i18n')
+    exclude ('*.pot')
 }
-vespucciNoTranslationsZip.group = 'preset'
-vespucciNoTranslationsZip.description = 'Generate zipped preset file for vespucci without translations'
-
-// this copies the zip files to their legacy location
-task copyToGen(dependsOn: ["vespucciNoTranslationsZip", "vespucciZip"]) {
-    mkdir('gen')
-    copy {
-        from generatedDir
-        include 'vespucci_zip_no_translations.zip', 'vespucci_zip.zip'
-        into 'gen'
-    }
-}
+vespucciLegacyZip.group = 'preset'
+vespucciLegacyZip.description = 'Generate zipped preset file for vespucci with automatic generate deprecation warnings'
 
 task replaceVersion {
     inputs.file('build.gradle')
@@ -420,7 +429,7 @@ githubRelease {
 }
 
 build {
-    dependsOn "vespucciNoTranslationsZip"
+    dependsOn "vespucciLegacyZip"
     dependsOn "vespucciZip"
     dependsOn "vespucciIconsZip"
     dependsOn "generateAndValidateVespucciBuild"
@@ -428,11 +437,9 @@ build {
     dependsOn "josmZip"
     dependsOn "updatePot"
     dependsOn "updateWebsite"
-    dependsOn "copyToGen"
 }
 
 check {
     dependsOn "generateAndValidateVespucci"
     dependsOn "generateAndValidateJosm"
 }
-
