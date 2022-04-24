@@ -1,4 +1,4 @@
-[![build status](https://github.com/simonpoole/beautified-JOSM-preset/actions/workflows/javalib.yml/badge.svg)](https://github.com/simonpoole/beautified-JOSM-prest/actions) [![Donate with liberapay]( https://img.shields.io/liberapay/patrons/SimonPoole.svg?logo=liberapay)](https://liberapay.com/SimonPoole/donate)
+[![build status](https://github.com/simonpoole/beautified-JOSM-preset/actions/workflows/preset.yml/badge.svg)](https://github.com/simonpoole/beautified-JOSM-preset/actions) [![Donate with liberapay]( https://img.shields.io/liberapay/patrons/SimonPoole.svg?logo=liberapay)](https://liberapay.com/SimonPoole/donate)
 
 # Beautified JOSM preset
 
