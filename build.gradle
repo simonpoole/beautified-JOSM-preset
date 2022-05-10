@@ -264,9 +264,10 @@ task generateAndValidateVespucciBuild(dependsOn: ["vespucciBuild", "copyResource
     }
 }
 
+
 task transformToLegacyVespucci(dependsOn: generateAndValidateVespucciBuild, type: Exec) {
-    def input = generated + vespucci_preset_file
-    def output = 'gen/legacy_' + vespucci_preset_file
+    def input = generated + vespucci_preset_build_file
+    def output = 'gen/legacy_' + vespucci_preset_build_file
     mkdir(generated)
     if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
         // remove extensions
@@ -433,6 +434,7 @@ build {
     dependsOn "vespucciZip"
     dependsOn "vespucciIconsZip"
     dependsOn "generateAndValidateVespucciBuild"
+    dependsOn "transformToLegacyVespucci"
     dependsOn "transformToJosmOrigIcons"
     dependsOn "josmZip"
     dependsOn "updatePot"
