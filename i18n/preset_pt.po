@@ -10,14 +10,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2022-03-12 16:30+0100\n"
-"PO-Revision-Date: 2022-03-12 15:31+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"PO-Revision-Date: 2015-06-19 16:53+0000\n"
+"Last-Translator: Nuno Caldeira <hello@iamnunocaldeira.com>, 2017-2019\n"
 "Language-Team: Portuguese (http://www.transifex.com/openstreetmap/presets/language/pt/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: pt\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: master_preset.xml:9162(label:text|preset:Power_Switchgear)
 msgid ""
@@ -13625,7 +13625,7 @@ msgstr "Via (paragens intermédias)"
 
 #: master_preset.xml:2323(check:text|group:Waypoints|preset:Traffic_Signal|key:traffic_signals:vibration)
 msgid "Vibration"
-msgstr ""
+msgstr "Vibração"
 
 #: master_preset.xml:1081(list_entry:display_value|value:victim)
 msgid "Victims"

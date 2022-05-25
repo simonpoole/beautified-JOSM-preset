@@ -14,14 +14,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2022-03-12 16:30+0100\n"
-"PO-Revision-Date: 2022-03-12 15:31+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>\n"
+"PO-Revision-Date: 2015-06-19 16:53+0000\n"
+"Last-Translator: Ignacio L'Episcopo, 2019,2021\n"
 "Language-Team: Spanish (http://www.transifex.com/openstreetmap/presets/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: master_preset.xml:9162(label:text|preset:Power_Switchgear)
 msgid ""
@@ -13629,7 +13629,7 @@ msgstr "Via (paradas intermedias)"
 
 #: master_preset.xml:2323(check:text|group:Waypoints|preset:Traffic_Signal|key:traffic_signals:vibration)
 msgid "Vibration"
-msgstr ""
+msgstr "Vibración"
 
 #: master_preset.xml:1081(list_entry:display_value|value:victim)
 msgid "Victims"
@@ -19701,7 +19701,7 @@ msgstr "Historial"
 #: master_preset.xml:5605(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:hopscotch)
 msgctxt "leisure"
 msgid "Hopscotch"
-msgstr ""
+msgstr "Rayuela"
 
 #: master_preset.xml:5563(check:text|group:Leisure|preset:Playground|key:playground:horizontal_bar)
 #: master_preset.xml:5606(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:horizontal_bar)
