@@ -12392,7 +12392,7 @@
                 </roles>
             </item> <!-- Superroute -->
         </group> <!-- Routes -->
-        <item name="Route Network" icon="${relation_network}" type="relation" preset_name_label="true">
+        <item name="Route Network" icon="${relation_network}" type="relation" preset_name_label="true" match_expression="-&quot;network:type&quot;=node_network">
             <link wiki="Relation:network" />
             <space/>
             <key key="type" value="network"/>
