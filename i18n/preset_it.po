@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: it\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: master_preset.xml:9162(label:text|preset:Power_Switchgear)
 msgid ""
@@ -19671,7 +19671,7 @@ msgstr ""
 #: master_preset.xml:6789(list_entry:display_value|group:Clubs|preset:Club|value:game)
 msgctxt "leisure"
 msgid "Game"
-msgstr " \nGioco"
+msgstr "Gioco"
 
 #: master_preset.xml:10562(item:name|group:Other|preset:Games)
 #: master_preset.xml:7727(checkgroup:text|group:Sport_(Ball)|preset:Gaelic_Games)
