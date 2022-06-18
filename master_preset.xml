@@ -2636,7 +2636,7 @@
             <link wiki="Tag:barrier=bollard"/>
             <space/>
             <key key="barrier" value="bollard"/>
-            <combo key="bollard" text="Bollard type" values="rising,removable,foldable,fixed" display_values="Rising,Removable,Foldable,Fixed"/>
+            <combo key="bollard" text="Bollard type" values="rising,removable,foldable,fixed,flexible" display_values="Rising,Removable,Foldable,Fixed,Flexible"/>
             <optional>
                 <reference ref="optional_maxwidth"/>
                 <reference ref="material"/>
