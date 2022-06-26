@@ -10,7 +10,7 @@
 # Mateusz Konieczny <matkoniecz@gmail.com>, 2017-2021
 # Teiron, 2016-2018
 # Piotr Sokół <psokol.l10n@gmail.com>, 2016,2018
-# Piotr Strębski <strebski@gmail.com>, 2019-2020
+# Piotr Strębski <strebski@gmail.com>, 2019-2020,2022
 # Right Path, 2018-2019
 # R Ł <whitep0wer@gmail.com>, 2021
 # Ryszard Mikke <Ryszard.Mikke@gmail.com>, 2016
@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2022-06-19 00:18+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: Mateusz Konieczny <matkoniecz@gmail.com>, 2017-2021\n"
+"Last-Translator: Piotr Strębski <strebski@gmail.com>, 2019-2020,2022\n"
 "Language-Team: Polish (http://www.transifex.com/openstreetmap/presets/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1470,7 +1470,7 @@ msgstr "Dętki rowerowe"
 
 #: master_preset.xml:4246(multiselect:text|group:Bicycle|preset:Rental|key:rental)
 msgid "Bicycle type"
-msgstr ""
+msgstr "Rodzaj roweru"
 
 #: master_preset.xml:4229(check:text|group:Bicycle|preset:Bike_Dealer|key:service:bicycle:rental)
 msgid "Bicycles are rented"
@@ -1714,7 +1714,7 @@ msgstr "Bukmacher"
 
 #: master_preset.xml:10850(list_entry:short_description|preset:Vending_Machine|value:books)
 msgid "Books"
-msgstr ""
+msgstr "Książki"
 
 #: master_preset.xml:6945(combo:display_values|group:Facilities|preset:Telephone|key:covered)
 msgid "Booth"
@@ -1938,7 +1938,7 @@ msgstr "Przejazd przez budynek"
 
 #: master_preset.xml:8098(item:name|group:Buildings|preset:Building_construction)
 msgid "Building construction"
-msgstr ""
+msgstr "Budowa budynku"
 
 #: master_preset.xml:8087(item:name|group:Buildings|preset:Building_part)
 msgid "Building part"
@@ -2175,7 +2175,7 @@ msgstr "Kanał"
 
 #: master_preset.xml:10853(list_entry:short_description|preset:Vending_Machine|value:candles)
 msgid "Candle"
-msgstr ""
+msgstr "Świeczka"
 
 #: master_preset.xml:10273(item:name|group:Home_furnishing_and_decoration|preset:Candles)
 msgid "Candles"
@@ -2264,7 +2264,7 @@ msgstr "Marka samochodu"
 
 #: master_preset.xml:4098(item:name|group:Car|preset:Caravan_Dealer)
 msgid "Caravan Dealer"
-msgstr ""
+msgstr "Dealer karawan"
 
 #: master_preset.xml:4845(item:name|group:Accommodation|preset:Caravan_Site/RV_Park)
 msgid "Caravan Site/RV Park"
@@ -2281,7 +2281,7 @@ msgstr "Karton"
 
 #: master_preset.xml:4248(list_entry:display_value|group:Bicycle|preset:Rental|value:cargo_bike)
 msgid "Cargo bike"
-msgstr ""
+msgstr "Rower cargo"
 
 #: master_preset.xml:557(multiselect:display_values|key:cuisine)
 msgid "Caribbean"
@@ -2612,7 +2612,7 @@ msgstr "Mury miejskie"
 
 #: master_preset.xml:4247(list_entry:display_value|group:Bicycle|preset:Rental|value:city_bike)
 msgid "City bike"
-msgstr ""
+msgstr "Rower miejski"
 
 #: master_preset.xml:11219(item:name|group:Places|preset:City_block)
 msgid "City block"
@@ -2971,7 +2971,7 @@ msgstr "Kontakt ('contact:*')"
 
 #: master_preset.xml:10859(list_entry:short_description|preset:Vending_Machine|value:contact_lenses)
 msgid "Contact lenses"
-msgstr ""
+msgstr "Soczewki kontaktowe"
 
 #: master_preset.xml:10938(check:text|preset:Payment_Methods|key:payment:contactless)
 msgid "Contactless payment"
@@ -3352,7 +3352,7 @@ msgstr "Obronna"
 
 #: master_preset.xml:13028(combo:display_values|group:Offices|preset:Embassy|key:embassy)
 msgid "Delegation"
-msgstr ""
+msgstr "Delegacja"
 
 #: master_preset.xml:9826(item:name|group:Food|preset:Deli_(Fine_Food))
 msgid "Deli (Fine Food)"
@@ -3547,7 +3547,7 @@ msgstr "Elektroniczna"
 
 #: master_preset.xml:10959(checkgroup:text|preset:Payment_Methods)
 msgid "Digital wallets type"
-msgstr ""
+msgstr "Rodzaj portfeli cyfrowych"
 
 #: master_preset.xml:1496(combo:display_values|key:resource)
 msgid "Dimension stone"
@@ -3598,7 +3598,7 @@ msgstr "Chorzy"
 
 #: master_preset.xml:8876(combo:display_values|group:Man_Made|preset:Telescope|key:telescope:construction)
 msgid "Dish"
-msgstr ""
+msgstr "Danie"
 
 #: master_preset.xml:10449(check:text|group:For_the_body|preset:Medical_Supply|key:dispensing)
 #: master_preset.xml:6388(check:text|group:Health|preset:Pharmacy|key:dispensing)
@@ -3682,7 +3682,7 @@ msgstr "Dok"
 
 #: master_preset.xml:4241(list_entry:display_value|group:Bicycle|preset:Rental|value:docking_station)
 msgid "Docking station"
-msgstr ""
+msgstr "Stacja dokująca"
 
 #: master_preset.xml:6345(item:name|group:Health|preset:Doctor's_Office)
 msgid "Doctor's Office"
@@ -3868,7 +3868,7 @@ msgstr "E"
 
 #: master_preset.xml:4249(list_entry:display_value|group:Bicycle|preset:Rental|value:e-bike)
 msgid "E-Bike"
-msgstr ""
+msgstr "Rower elektryczny"
 
 #: master_preset.xml:2741(check:text|group:Barriers|preset:Toll_Booth|key:payment:e_zpass)
 msgid "E-ZPass"
@@ -3974,7 +3974,7 @@ msgstr "Wysokość nad poziomem morza"
 #: master_preset.xml:5229(text:text|group:Tourism|preset:Route_marker|key:ele)
 #: master_preset.xml:8815(text:text|group:Man_Made|preset:Survey_Point|key:ele)
 msgid "Elevation (meters)"
-msgstr ""
+msgstr "Wysokość (metry)"
 
 #: master_preset.xml:2557(item:name|preset:Elevator)
 #: master_preset.xml:8327(combo:display_values|group:Indoor_elements|preset:Room|key:room)
@@ -4330,7 +4330,7 @@ msgstr "Terminal promowy"
 #: master_preset.xml:10592(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agricultural_supplies)
 #: master_preset.xml:10600(multiselect:display_values|group:Other|preset:Agricultural_supplies|key:agrarian)
 msgid "Fertilizer"
-msgstr ""
+msgstr "Nawóz"
 
 #: master_preset.xml:7876(item:name|group:Sport_(Ball)|preset:Field_Hockey)
 msgid "Field Hockey"
@@ -4534,7 +4534,7 @@ msgstr "Kwietnik"
 
 #: master_preset.xml:10869(list_entry:short_description|preset:Vending_Machine|value:flowers)
 msgid "Flowers"
-msgstr ""
+msgstr "Kwiaty"
 
 #: master_preset.xml:1109(list_entry:display_value|value:flush)
 #: master_preset.xml:1117(list_entry:display_value|value:flush)
@@ -8115,7 +8115,7 @@ msgstr "Brak dostępu"
 #: master_preset.xml:12051(list_entry:display_value|group:Turn_Restrictions|preset:Turn_Restriction|value:no_entry)
 #: master_preset.xml:12113(item:name|group:Turn_Restrictions|preset:No_entry)
 msgid "No entry"
-msgstr ""
+msgstr "Brak wejścia"
 
 #: master_preset.xml:11949(item:name|group:Annotation|preset:No_exit)
 #: master_preset.xml:12052(list_entry:display_value|group:Turn_Restrictions|preset:Turn_Restriction|value:no_exit)
@@ -10212,7 +10212,7 @@ msgstr "Stacja kolejowa"
 
 #: master_preset.xml:3707(combo:text|group:Railway|preset:Railway_construction|key:construction)
 msgid "Railway type"
-msgstr ""
+msgstr "Rodzaj kolei"
 
 #: master_preset.xml:1108(list_entry:display_value|value:raised)
 #: master_preset.xml:1116(list_entry:display_value|value:raised)
@@ -10580,7 +10580,7 @@ msgstr "Dom spokojnej starości"
 
 #: master_preset.xml:10851(list_entry:short_description|preset:Vending_Machine|value:bottle_return)
 msgid "Return empty bottles"
-msgstr ""
+msgstr "Zwrot pustych butelek"
 
 #: master_preset.xml:1959(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:reverse)
 #: master_preset.xml:1983(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:reverse)
@@ -11603,7 +11603,7 @@ msgstr "Narciarstwo"
 
 #: master_preset.xml:10366(list_entry:short_description|group:For_the_body|preset:Beauty|value:skin_care)
 msgid "Skin care"
-msgstr ""
+msgstr "Pielęgnacja skóry"
 
 #: master_preset.xml:8096(text:text|group:Buildings|preset:Building_part|key:min_height)
 msgid "Skipped height (meters)"
@@ -11959,7 +11959,7 @@ msgstr "Papierniczy"
 
 #: master_preset.xml:13072(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Statistics"
-msgstr ""
+msgstr "Statystyka"
 
 #: master_preset.xml:5973(combo:display_values|group:Culture|preset:Artwork|key:artwork_type)
 msgid "Statue"
@@ -13150,7 +13150,7 @@ msgstr "Tunel"
 
 #: master_preset.xml:2983(text:text|group:Passageways|preset:Tunnel|key:tunnel:name)
 msgid "Tunnel name"
-msgstr ""
+msgstr "Nazwa tunelu"
 
 #: master_preset.xml:3040(item:name|group:Passageways|preset:Tunnel_outline)
 msgid "Tunnel outline"
@@ -13297,7 +13297,7 @@ msgstr "Rodzaj obiektu"
 
 #: master_preset.xml:6412(combo:text|group:Health|preset:Physiotherapist|key:healthcare:speciality)
 msgid "Type of physiotherapy"
-msgstr ""
+msgstr "Rodzaj fizjoterapii"
 
 #: master_preset.xml:4016(checkgroup:text|group:Car|preset:Charging_Station)
 msgid "Types of vehicles which can be charged"
@@ -13366,11 +13366,11 @@ msgstr "Ukraiński"
 
 #: master_preset.xml:10895(list_entry:short_description|preset:Vending_Machine|value:umbrellas)
 msgid "Umbrellas"
-msgstr ""
+msgstr "Parasole"
 
 #: master_preset.xml:3752(combo:display_values|group:Railway|preset:Crossing|key:crossing)
 msgid "Uncontrolled"
-msgstr ""
+msgstr "Niekontrolowane"
 
 #: master_preset.xml:1090(list_entry:display_value|value:underprivileged)
 msgid "Underprivileged"
@@ -13603,7 +13603,7 @@ msgstr "Przez (przystanki pośrednie)"
 
 #: master_preset.xml:2358(check:text|group:Waypoints|preset:Traffic_Signal|key:traffic_signals:vibration)
 msgid "Vibration"
-msgstr ""
+msgstr "Wibracja"
 
 #: master_preset.xml:1092(list_entry:display_value|value:victim)
 msgid "Victims"
