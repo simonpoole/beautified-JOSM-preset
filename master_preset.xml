@@ -10950,7 +10950,7 @@
             <check key="payment:ep_mep" text="Mep (pt)" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_minicash" text="Minicash (lu)" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_minipay" text="Minipay (it)" match="keyvalue" disable_off="true"/>
-            <check key="payment:ep_monedero" text="Mondero (ar)" match="keyvalue" disable_off="true"/>
+            <check key="payment:ep_monedero" text="Mondero (ar)" match="keyvalue" disable_off="true" deprecated="true"/>
             <check key="payment:ep_monedero4b" text="Mondero 4b (es)" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_nobu_emoney" text="NOBU e-money" match="keyvalue" disable_off="true"/>
             <check key="payment:ep_tapcash" text="TapCash" match="keyvalue" disable_off="true"/>
