@@ -2545,14 +2545,14 @@
                 <combo key="direction" text="For direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
             </optional>
         </item> <!-- Highway Milestone -->
-        <item name="Named Junction" name_context="junction=yes" icon="${highway_junction}" type="node,closedway" preset_name_label="true">
+        <item name="Junction" name_context="junction=yes" icon="${highway_junction}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:junction=yes"/>
             <space />
-            <label text="Used in some countries for a named road junction who.s name serves for local orientation."/>
+            <label text="Used for local orientation, or for references."/>
             <space />
-            <key key="junction" value="yes"/>
-            <text key="name" text="Name"/>
-        </item> <!-- Named Junction -->
+            <key key="junction" value="yes" object="true" />
+            <reference ref="optional_name" />
+        </item> <!-- Junction -->
         <separator/>
         <item name="Elevator" icon="${highway_elevator}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=elevator"/>
@@ -11831,9 +11831,9 @@
             <text key="addr:street" text="Street name" use_last_as_default="force" match="key" alternative_autocomplete_keys="name" />
             <check key="nohousenumber" text="No house number" disable_off="true"/>
             <optional>
-                <text key="addr:place" text="Place name" use_last_as_default="force" match="key" alternative_autocomplete_keys="name" object="true"/>
-                <text key="addr:city" text="City name" use_last_as_default="force" match="key" object="true"/>
-                <text key="addr:postcode" text="Post code" use_last_as_default="force" match="key" object="true"/>
+                <text key="addr:place" text="Place name" use_last_as_default="force" match="key" alternative_autocomplete_keys="name" />
+                <text key="addr:city" text="City name" use_last_as_default="force" match="key" />
+                <text key="addr:postcode" text="Post code" use_last_as_default="force" match="key" />
                 <combo key="addr:country" text="Country code" values_from="java.util.Locale#getISOCountries" use_last_as_default="force" match="key"/>
             </optional>
             <optional text="Optional values for specific countries">
