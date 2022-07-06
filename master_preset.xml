@@ -4211,6 +4211,7 @@
             </combo>
             <reference ref="optional_name"/>
             <text key="capacity" text="Capacity" value_type="integer"/>
+            <text key="capacity:cargo_bike" text="Capacity for cargo bikes" value_type="integer"/>
             <reference ref="parking_access_fee_operator_surface_smoothness"/>
             <check key="covered" text="Covered"/>
             <reference ref="supervised_lit_oh"/>
