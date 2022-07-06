@@ -5868,8 +5868,23 @@
             <key key="amenity" value="theatre"/>
             <optional>
                 <combo key="theatre:genre" text="Theatre type" values_searchable="true">
-                    <list_entry value="drama" display_value="Drama"/>
+                    <list_entry value="ballet" display_value="Ballet theatre"/>
+                    <list_entry value="boulevard" display_value="Boulevard"/>
+                    <list_entry value="cabaret" display_value="Cabaret"/>
+                    <list_entry value="chamber_music" display_value="Chamber music"/>
+                    <list_entry value="circus" display_value="Circus"/>
                     <list_entry value="comedy" display_value="Comedy"/>
+                    <list_entry value="drama" display_value="Drama"/>
+                    <list_entry value="figure" display_value="Figure"/>
+                    <list_entry value="marionette" display_value="Marionette"/>
+                    <list_entry value="musical" display_value="Musical theatre"/>
+                    <list_entry value="opera" display_value="Opera house"/>
+                    <list_entry value="philharmonic" display_value="Ochestral music"/>
+                    <list_entry value="political" display_value="Political"/>
+                    <list_entry value="puppet" display_value="Puppet"/>
+                    <list_entry value="shadow_play" display_value="Shadow play"/>
+                    <list_entry value="stand_up_comedy" display_value="Stand up comedy"/>
+                    <list_entry value="variety" display_value="Variety"/>
                 </combo>
             </optional>
             <reference ref="name_operator"/>
