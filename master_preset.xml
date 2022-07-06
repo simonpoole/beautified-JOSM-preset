@@ -12431,7 +12431,23 @@
             <link wiki="Relation:route" />
             <space/>
             <key key="type" value="route"/>
-            <combo key="route" text="Route type" values="bicycle,mtb,foot,hiking,walking,inline_skates,road" display_values="Bicycle,MTB,Foot,Hiking,Walking,Inline skates,Road" match="keyvalue!" values_sort="false"/>
+            <combo key="route" text="Route type" match="keyvalue!" values_sort="false">
+                <list_entry value="bicycle" display_value="Bicycle" />
+                <list_entry value="fitness_trail" display_value="Fitness trail" />
+                <list_entry value="foot" display_value="Foot" />
+                <list_entry value="hiking" display_value="Hiking" />
+                <list_entry value="horse" display_value="Riding" />
+                <list_entry value="inline_skates" display_value="Inline skates" />
+                <list_entry value="mtb" display_value="MTB" />
+                <list_entry value="piste" display_value="Skiing (piste)" />
+                <list_entry value="running" display_value="Running" />
+                <list_entry value="walking" display_value="Walking" />             
+                <!-- Infrastructure -->
+                <list_entry value="detour" display_value="Detour" />
+                <list_entry value="power" display_value="Power" />
+                <list_entry value="railway" display_value="Railway" />
+                <list_entry value="road" display_value="Road" />
+            </combo>
         </item> <!-- Generic route -->
         <separator/>
         <item name="Associated Street" icon="${relation_associatedstreet}" type="relation" preset_name_label="true">
