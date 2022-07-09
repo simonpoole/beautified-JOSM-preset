@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="4.4.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="4.5.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,telecom">
 <!--
@@ -8311,43 +8311,57 @@
             <link wiki="Tag:indoor=area" />
             <key key="indoor" value="area" />
             <reference ref="level" />
-            <text key="name" text="Name" i18n="true" />
-            <text key="ref" text="Room Number" />
+            <optional>
+                <text key="name" text="Name" i18n="true" />
+                <text key="ref" text="Room Number" />
+            </optional>
         </item>
         <item name="Corridor" icon="${indoor_corridor}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:indoor=corridor" />
             <key key="indoor" value="corridor" />
             <reference ref="level" />
-            <text key="name" text="Name" i18n="true" />
-            <text key="ref" text="Reference Code" />
-            <text key="height" text="Height (Meters)" value_type="integer" />
+            <optional>
+                <text key="name" text="Name" i18n="true" />
+                <text key="ref" text="Reference Code" />
+                <text key="height" text="Height (Meters)" value_type="integer" />
+            </optional>
         </item>
         <item name="Indoor door" icon="${indoor_doors}" type="node" preset_name_label="true" >
             <link wiki="Tag:indoor=door" />
             <key key="indoor" value="door" />
             <reference ref="level" />
-            <text key="ref" text="Reference Code" />
+            <optional>
+                <text key="ref" text="Reference Code" />
+            </optional>
             <reference ref="door_type" />
             <reference ref="facility_access" />
-            <text key="width" text="Width (Meters)" />
-            <text key="height" text="Height (Meters)" value_type="integer" />
+            <optional>
+                <text key="width" text="Width (Meters)" />
+                <text key="height" text="Height (Meters)" value_type="integer" />
+            </optional>
         </item>
         <item name="Room" icon="${indoor_room}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:indoor=room" />
             <key key="indoor" value="room" />
             <reference ref="level" />
-            <text key="name" text="Name" i18n="true" />
-            <text key="ref" text="Room Number" />
+            <optional>
+                <text key="name" text="Name" i18n="true" />
+                <text key="ref" text="Room Number" />
+            </optional>
             <combo key="room" text="Type"
                 values="auditorium,shop,conference,technical,waiting,stairs,hall,office,storage,elevator,library,entrance,class,gallery,escalator,restaurant,store,toilet,laboratory"
                 display_values="Auditorium,Shop,Conference,Technical,Waiting,Stairs,Hall,Office,Storage,Elevator,Library,Entrance,Class,Gallery,Escalator,Restaurant,Store,Toilet,Laboratory" />
-            <text key="height" text="Height (Meters)" value_type="integer" />
+            <optional>
+                <text key="height" text="Height (Meters)" value_type="integer" />
+            </optional>
         </item>
         <item name="Indoor wall" icon="${indoor_wall}" type="way" preset_name_label="true">
             <link wiki="Tag:indoor=wall" />
             <key key="indoor" value="wall" />
             <reference ref="level" />
-            <text key="height" text="Height (Meters)" value_type="integer" />
+            <optional>
+                <text key="height" text="Height (Meters)" value_type="integer" />
+            </optional>
         </item>
         <item name="Highway corridor" icon="${indoor_highway_corridor}" type="way" preset_name_label="true">
             <link wiki="Tag:highway=corridor" />
