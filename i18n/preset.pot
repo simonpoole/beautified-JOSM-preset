@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-07-09 10:05+0200\n"
+"POT-Creation-Date: 2022-07-12 00:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17460,9 +17460,24 @@ msgctxt "restroom"
 msgid "Unisex"
 msgstr ""
 
-#: master_preset.xml:5721(combo:text|preset:Public_Grill|key:fuel)
+#: master_preset.xml:5721(multiselect:text|preset:Public_Grill|key:fuel)
 msgctxt "grill"
 msgid "Fuel"
+msgstr ""
+
+#: master_preset.xml:5721(multiselect:display_values|preset:Public_Grill|key:fuel)
+msgctxt "fuel"
+msgid "Charcoal"
+msgstr ""
+
+#: master_preset.xml:5721(multiselect:display_values|preset:Public_Grill|key:fuel)
+msgctxt "fuel"
+msgid "Electric"
+msgstr ""
+
+#: master_preset.xml:5721(multiselect:display_values|preset:Public_Grill|key:fuel)
+msgctxt "fuel"
+msgid "Wood"
 msgstr ""
 
 #: master_preset.xml:6102(combo:display_values|group:Place_of_Worship|preset:Monastery|key:monastery:type)
