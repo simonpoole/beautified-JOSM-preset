@@ -8876,7 +8876,7 @@
                 <text key="height" text="Height (meters)" length="7" />
             </optional>
         </item> <!-- Surveillance -->
-        <item name="MDF" icon="${man_made_MDF}" name_context="man_made" type="node,closedway" preset_name_label="true">
+        <item name="MDF" icon="${man_made_MDF}" name_context="man_made" type="node,closedway" preset_name_label="true" deprecated="true">
             <link wiki="Tag:man_made=MDF"/>
             <key key="man_made" value="MDF"/>
             <optional>
