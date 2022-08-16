@@ -4259,8 +4259,11 @@
                 <list_entry value="e-bike" display_value="E-Bike" />
             </multiselect>
             <reference ref="optional_name"/>
-            <reference ref="brand"/>
-            <text key="operator" text="Operator"/>
+            <optional>
+                <text key="network" text="Network"/>
+                <reference ref="brand"/>
+                <text key="operator" text="Operator"/>
+            </optional>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="No name"/>
         </item> <!-- Rental -->
