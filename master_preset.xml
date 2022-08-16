@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="4.8.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="4.9.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,telecom">
 <!--
@@ -3405,12 +3405,12 @@
             <key key="natural" value="coastline"/>
             <reference ref="optional_name_wikipedia"/>
         </item> <!-- Coastline -->
-        <item name="Riverbank" icon="${water_riverbank}" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Riverbank" icon="${water_riverbank}" type="closedway,multipolygon" preset_name_label="true" deprecated="true">
             <link wiki="Tag:waterway=riverbank"/>
             <space/>
             <key key="waterway" value="riverbank"/>
             <reference ref="optional_name"/>
-            <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true"/>
+            <check key="intermittent" text="Intermittent (doesn't permanently contain water)" disable_off="true"/>
         </item> <!-- Riverbank -->
         <separator/>
         <item name="Wetland" icon="${natural_wetland}" type="closedway,multipolygon" preset_name_label="true">
@@ -3606,6 +3606,11 @@
             <link wiki="Tag:leisure=slipway"/>
             <key key="leisure" value="slipway"/>
             <reference ref="optional_name"/>
+            <optional>
+                <reference ref="incline" />
+                <reference ref="surface" />
+                <reference ref="fee" />
+            </optional>
         </item> <!-- Slipway -->
         <item name="Boatyard" icon="${water_transport_boatyard}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:waterway=boatyard"/>
@@ -11337,6 +11342,13 @@
                 <combo key="volcano:type" text="Type" values="stratovolcano,shield,scoria"/>
             </optional>
         </item> <!-- Volcano -->
+        <item name="Arête" icon="${geography_arete}" type="way" preset_name_label="true">
+            <link wiki="Tag:natural=arete" />
+            <space />
+            <key key="natural" value="arete" />
+            <reference ref="name_wikipedia" />
+            <preset_link preset_name="Ridge" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Arête -->
         <item name="Ridge" icon="${geography_ridge}" type="way" preset_name_label="true">
             <link wiki="Tag:natural=ridge"/>
             <space />
@@ -11345,6 +11357,7 @@
             <key key="natural" value="ridge"/>
             <reference ref="name_wikipedia"/>
             <text key="ele" text="Elevation (meters)" length="10"/>
+            <preset_link preset_name="Arête" text="Similar but different tags:" alternative="true" />
         </item> <!-- Ridge -->
         <item name="Valley" icon="${geography_valley}" type="way" preset_name_label="true">
             <link wiki="Tag:natural=valley"/>
