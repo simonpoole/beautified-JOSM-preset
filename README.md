@@ -1,14 +1,14 @@
-[![build status](https://github.com/simonpoole/beautified-JOSM-preset/actions/workflows/preset.yml/badge.svg)](https://github.com/simonpoole/beautified-JOSM-preset/actions) [![Donate with liberapay]( https://img.shields.io/liberapay/patrons/SimonPoole.svg?logo=liberapay)](https://liberapay.com/SimonPoole/donate)
+[![build status](https://github.com/simonpoole/beautified-JOSM-preset/actions/workflows/preset.yml/badge.svg)](https://github.com/simonpoole/beautified-JOSM-preset/actions) [![Donate with liberapay](https://img.shields.io/liberapay/patrons/SimonPoole.svg?logo=liberapay)](https://liberapay.com/SimonPoole/donate)
 
 # Beautified JOSM preset
 
 ## Introduction
 
-This started off as a project to rework the [original JOSM preset](https://josm.openstreetmap.de/browser/josm/trunk/data/defaultpresets.xml) to use icons that work better as UI elements for use in [Vespucci](https://github.com/MarcusWolschon/osmeditor4android), but has since evolved to be improved in many other aspects.
+This started off as a project to rework the [original JOSM presets](https://josm.openstreetmap.de/browser/trunk/resources/data/defaultpresets.xml) to use icons that work better as UI elements for use in [Vespucci](https://github.com/MarcusWolschon/osmeditor4android), but has since evolved to be improved in many other aspects.
 
 ## Icons
 
-The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/introduction , http://osm-icons.org, https://github.com/gmgeo/osmic and a handful of ones created by myself. The build process produces JOSM compatible versions of the preset file with references to the original SVG icons and one variant with the replacement icons.
+The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/introduction, http://osm-icons.org, https://github.com/gmgeo/osmic and a handful of ones created by myself. The build process produces JOSM compatible versions of the preset file with references to the original SVG icons and one variant with the replacement icons.
 
 The links to original icons remain if they currently don't have a replacement, current count is roughly 90 icons that either have not been replaced or are missing.
 
