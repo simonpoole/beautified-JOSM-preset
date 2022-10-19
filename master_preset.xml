@@ -3946,9 +3946,9 @@
             <text key="maxheight" text="Max. height (meters)"/>
             <space/>
             <text key="capacity" text="Capacity (overall)" value_type="integer"/>
-            <combo key="capacity:disabled" text="Spaces for Disabled" values="yes,no,1,2,3"/>
-            <combo key="capacity:women" text="Spaces for Women" values="yes,no,1,2,3"/>
-            <combo key="capacity:parent" text="Spaces for Parents" values="yes,no,1,2,3"/>
+            <combo key="capacity:disabled" text="Spaces for Disabled" values="yes,no,0,1,2,3"/>
+            <combo key="capacity:women" text="Spaces for Women" values="yes,no,0,1,2,3"/>
+            <combo key="capacity:parent" text="Spaces for Parents" values="yes,no,0,1,2,3"/>
             <label text="See the Wiki for other capacity:[types]=*."/>
             <space/>
             <reference ref="maxstay"/>
