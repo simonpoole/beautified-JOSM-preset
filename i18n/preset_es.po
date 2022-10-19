@@ -5,7 +5,7 @@
 # Albert, 2016
 # Carlos Vigo <carlos@carlos-vigo.com>, 2019
 # ccpr1l <csdpe0810-tf@yahoo.es>, 2017
-# Ignacio L'Episcopo, 2019,2021
+# Ignacio L'Episcopo, 2019,2021-2022
 # Javier O, 2017-2018
 # Jorge Sanz <sanchi2@gmail.com>, 2020-2021
 # Jose Luis Infante <jl@llefia.org>, 2018-2019
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2022-09-24 13:40+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: Ignacio L'Episcopo, 2019,2021\n"
+"Last-Translator: Ignacio L'Episcopo, 2019,2021-2022\n"
 "Language-Team: Spanish (http://www.transifex.com/openstreetmap/presets/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -299,7 +299,7 @@ msgstr "Un tablón con información."
 
 #: master_preset.xml:3377(label:text|group:Water|preset:Other_waterbodies)
 msgid "A body of water, such as a lake or pond."
-msgstr ""
+msgstr "Un cuerpo de agua, como un lago o estanque."
 
 #: master_preset.xml:11288(label:text|group:Places|preset:Farm)
 msgid "A farm within a bigger settlement"
@@ -307,7 +307,7 @@ msgstr "Una granja con un asentamiento mayor"
 
 #: master_preset.xml:1500(check:text|key:kids_area:fee)
 msgid "A fee must be paid"
-msgstr ""
+msgstr "Se debe pagar una tarifa"
 
 #: master_preset.xml:3448(label:text|group:Water|preset:Beach)
 msgid "A flat area of sand, gravel or pebble next to water."
@@ -315,7 +315,7 @@ msgstr "Un área lisa de arena, grava o guijarros junto al agua"
 
 #: master_preset.xml:1496(check:text|key:kids_area)
 msgid "A kids area is available"
-msgstr ""
+msgstr "Hay una zona para niños"
 
 #: master_preset.xml:11462(label:text|group:Nature|preset:Tree_Row)
 msgid "A line of trees."
@@ -327,7 +327,7 @@ msgstr "Una zona baja entre las colinas."
 
 #: master_preset.xml:5237(label:text|group:Tourism|preset:Route_marker)
 msgid "A marker along a route."
-msgstr ""
+msgstr "Un marcador a lo largo de una ruta."
 
 #: master_preset.xml:11360(label:text|group:Geography|preset:Ridge)
 msgid "A mountain or hill ridge."
@@ -349,11 +349,11 @@ msgstr "Un cuerpo persistente de denso hielo que se mueve constantemente bajo su
 msgid ""
 "A pillar hydrant where the barrel is pressurized at all times, with "
 "individual valves for each outlet."
-msgstr ""
+msgstr "Un hidrante de columna en el que el barril está presurizado en todo momento, con válvulas individuales para cada salida."
 
 #: master_preset.xml:6620(list_entry:short_description|group:Emergency|preset:Fire_Hydrant|value:dry_barrel)
 msgid "A pillar hydrant where the water shutoff valve is below ground."
-msgstr ""
+msgstr "Un hidrante de columna donde la válvula de cierre de agua está debajo del suelo."
 
 #: master_preset.xml:3255(label:text|group:Water|preset:Spring)
 msgid ""
@@ -364,7 +364,7 @@ msgstr "Un punto en el que el agua subterránea fluye naturalmente a la superfic
 #: master_preset.xml:3475(label:text|group:Water|preset:Cape)
 msgid ""
 "A prominent, elevated piece of land sticking out into the sea or large lake."
-msgstr ""
+msgstr "Un pedazo de tierra prominente y elevado que se adentra en el mar o en un gran lago."
 
 #: master_preset.xml:11322(label:text|group:Geography|preset:Saddle)
 msgid "A saddle point between mountains or hills."
@@ -378,7 +378,7 @@ msgstr "Una única roca independiente, la cual podría diferenciarse de la compo
 
 #: master_preset.xml:11474(label:text|group:Nature|preset:Shrub)
 msgid "A single shrub."
-msgstr ""
+msgstr "Un solo arbusto."
 
 #: master_preset.xml:11439(label:text|group:Nature|preset:Tree)
 msgid "A single tree."
@@ -396,11 +396,11 @@ msgstr "Un volcán, ya sea latente, extinto o activo."
 
 #: master_preset.xml:6601(list_entry:short_description|group:Emergency|preset:Fire_Hydrant|value:groundwater)
 msgid "A water well."
-msgstr ""
+msgstr "Un pozo de agua."
 
 #: master_preset.xml:8866(multiselect:display_values|group:Man_Made|preset:Surveillance|key:surveillance:type)
 msgid "ALPR"
-msgstr ""
+msgstr "ALPR (reconocimiento automático de matrículas)"
 
 #: master_preset.xml:3756(item:name|group:Railway|preset:Abandoned_Rail)
 msgid "Abandoned Rail"
@@ -412,7 +412,7 @@ msgstr "Malogrado"
 
 #: master_preset.xml:7037(checkgroup:text|group:Facilities|preset:Bottle_return)
 msgid "Accepted bottles"
-msgstr ""
+msgstr "Botellas aceptadas"
 
 #: master_preset.xml:1445(checkgroup:text)
 msgid "Accepted material"
@@ -420,7 +420,7 @@ msgstr "Material aceptado"
 
 #: master_preset.xml:1471(multiselect:text|key:waste)
 msgid "Accepted waste"
-msgstr ""
+msgstr "Residuos aceptados"
 
 #: master_preset.xml:722(combo:text|key:access)
 msgid "Access"
@@ -449,7 +449,7 @@ msgstr "A través"
 
 #: master_preset.xml:61(list_entry:display_value|value:acrylic)
 msgid "Acrylic"
-msgstr ""
+msgstr "Acrílico"
 
 #: master_preset.xml:1264(combo:display_values|key:roof:material)
 msgid "Acrylic glass"
@@ -465,7 +465,7 @@ msgstr "Atributos adicionales"
 
 #: master_preset.xml:11910(text:text|group:Addresses_and_Contact|preset:Address|key:addr:parentstreet)
 msgid "Additional localisation"
-msgstr ""
+msgstr "Localización adicional"
 
 #: master_preset.xml:4015(label:text|group:Car|preset:Fuel)
 msgid "Additives:"
@@ -509,11 +509,11 @@ msgstr "Boletos de admisión"
 
 #: master_preset.xml:5771(item:name|preset:Adult_gaming_centre)
 msgid "Adult gaming centre"
-msgstr ""
+msgstr "Centro de juegos para adultos"
 
 #: master_preset.xml:2408(item:name|group:Waypoints|preset:Advanced_stop_line)
 msgid "Advanced stop line"
-msgstr ""
+msgstr "Línea de parada avanzada"
 
 #: master_preset.xml:7295(item:name|group:Facilities|preset:Advertising)
 msgid "Advertising"
@@ -529,7 +529,7 @@ msgstr "Agencia de publicidad"
 
 #: master_preset.xml:1201(text:text|key:maxspeed:advisory)
 msgid "Advisory max. speed (km/h)"
-msgstr ""
+msgstr "Velocidad máxima recomendada (km/h)"
 
 #: master_preset.xml:1529(check:text|key:aerialway)
 #: master_preset.xml:3833(group:name|group:Aerialway)
@@ -561,7 +561,7 @@ msgstr "Grupo de edad (es decir: 6-12)"
 
 #: master_preset.xml:1482(combo:display_values|key:resource)
 msgid "Aggregate"
-msgstr ""
+msgstr "Agregar"
 
 #: master_preset.xml:11644(combo:display_values|group:Land_use|preset:Meadow|key:meadow)
 msgid "Agricultural"
@@ -579,7 +579,7 @@ msgstr "Suministros agrícolas"
 
 #: master_preset.xml:4777(combo:display_values|group:Accommodation|preset:Guest_House/Bed_&_Breakfast|key:guest_house)
 msgid "Agritourism"
-msgstr ""
+msgstr "Agroturismo"
 
 #: master_preset.xml:7372(list_entry:short_description|group:Sport_Facilities|preset:Dojo|value:aikido)
 msgid "Aikido"
@@ -611,11 +611,11 @@ msgstr "Terreno de Aeropuerto"
 
 #: master_preset.xml:4724(item:name|group:Airport|preset:Airstrip)
 msgid "Airstrip"
-msgstr ""
+msgstr "Pista de aterrizaje"
 
 #: master_preset.xml:11004(check:text|preset:Payment_Methods|key:payment:akulaku)
 msgid "Akulaku"
-msgstr ""
+msgstr "Akulaku"
 
 #: master_preset.xml:1337(multiselect:display_values|key:language)
 msgid "Albanian"
@@ -655,13 +655,13 @@ msgstr "Almendros"
 msgid ""
 "Almost always an unpaved track lacking hard materials, uncompacted, with "
 "surface of soil/sand/grass"
-msgstr ""
+msgstr "Casi siempre es una pista sin pavimentar que carece de materiales duros, sin compactar, con superficie de tierra/arena/césped"
 
 #: master_preset.xml:2200(list_entry:short_description|group:Ways|preset:Track|value:grade4)
 msgid ""
 "Almost always an unpaved track prominently with soil/sand/grass, but with "
 "some hard materials, or compressed materials"
-msgstr ""
+msgstr "Casi siempre es una pista sin pavimentar en la que predomina la tierra/arena/césped, pero con algunos materiales duros, o materiales comprimidos"
 
 #: master_preset.xml:1268(list_entry:display_value|value:along)
 #: master_preset.xml:1301(list_entry:display_value|value:along)
@@ -702,7 +702,7 @@ msgstr "Aluminio"
 
 #: master_preset.xml:1434(check:text|key:communication:amateur_radio)
 msgid "Amateur radio"
-msgstr ""
+msgstr "Radioaficionados"
 
 #: master_preset.xml:6516(item:name|group:Emergency|preset:Ambulance_Station)
 msgid "Ambulance Station"
@@ -726,7 +726,7 @@ msgstr "Fútbol americano"
 
 #: master_preset.xml:1337(multiselect:display_values|key:language)
 msgid "Amharic"
-msgstr ""
+msgstr "Amárico"
 
 #: master_preset.xml:1574(combo:text|key:amperage)
 msgid "Amperage"
@@ -851,7 +851,7 @@ msgstr "Apartamentos"
 
 #: master_preset.xml:11006(check:text|preset:Payment_Methods|key:payment:apple_pay)
 msgid "Apple Pay"
-msgstr ""
+msgstr "Apple Pay"
 
 #: master_preset.xml:11653(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Apple trees"
@@ -1951,7 +1951,7 @@ msgstr "Edificio (3D)"
 
 #: master_preset.xml:3016(item:name|group:Passageways|preset:Building_Passage)
 msgid "Building Passage"
-msgstr "Pasaje del Edificio"
+msgstr "Pasaje del edificio"
 
 #: master_preset.xml:8128(item:name|group:Buildings|preset:Building_construction)
 msgid "Building construction"
@@ -3602,7 +3602,7 @@ msgstr ""
 
 #: master_preset.xml:10975(check:text|preset:Payment_Methods|key:payment:diners_club)
 msgid "Diners Club"
-msgstr "Club de cena"
+msgstr "Diners Club"
 
 #: master_preset.xml:3582(check:text|group:Shipping|preset:Boat_rental|key:dinghy_rental)
 msgid "Dinghies"
@@ -4586,7 +4586,7 @@ msgstr "Jardín de flores"
 
 #: master_preset.xml:10913(list_entry:short_description|preset:Vending_Machine|value:flowers)
 msgid "Flowers"
-msgstr ""
+msgstr "Flores"
 
 #: master_preset.xml:1109(list_entry:display_value|value:flush)
 #: master_preset.xml:1117(list_entry:display_value|value:flush)
@@ -5075,7 +5075,7 @@ msgstr "Jirafa"
 
 #: master_preset.xml:10961(check:text|preset:Payment_Methods|key:payment:girocard)
 msgid "Girocard"
-msgstr "Transferencia bancaria"
+msgstr "Girocard"
 
 #: master_preset.xml:2403(item:name|group:Waypoints|preset:Give_Way)
 msgid "Give Way"
@@ -6061,7 +6061,7 @@ msgstr "J-bar"
 
 #: master_preset.xml:10977(check:text|preset:Payment_Methods|key:payment:jcb)
 msgid "JCB"
-msgstr "Retroexcavadora"
+msgstr "JCB"
 
 #: master_preset.xml:5332(list_entry:display_value|group:Leisure|preset:Animals|value:jaguar)
 msgid "Jaguar"
@@ -8818,7 +8818,7 @@ msgstr "Huérfanos"
 
 #: master_preset.xml:6393(list_entry:display_value|group:Health|preset:Dentist|value:orthodontics)
 msgid "Orthodontics"
-msgstr ""
+msgstr "Ortodoncia"
 
 #: master_preset.xml:6402(item:name|group:Health|preset:Orthodontist)
 msgid "Orthodontist"
@@ -12078,7 +12078,7 @@ msgstr "Escalones"
 
 #: master_preset.xml:6396(list_entry:display_value|group:Health|preset:Dentist|value:stomatology)
 msgid "Stomatology"
-msgstr ""
+msgstr "Estomatología"
 
 #: master_preset.xml:11606(item:name|group:Nature|preset:Stone)
 #: master_preset.xml:1264(combo:display_values|key:roof:material)
@@ -13589,7 +13589,7 @@ msgstr ""
 
 #: master_preset.xml:10966(check:text|preset:Payment_Methods|key:payment:v_pay)
 msgid "V Pay"
-msgstr ""
+msgstr "V Pay"
 
 #: master_preset.xml:13422(item:name|group:Offices|preset:Vacant)
 msgid "Vacant"
@@ -15294,7 +15294,7 @@ msgstr "Madera"
 #: master_preset.xml:25(combo:display_values|key:surface)
 msgctxt "surface"
 msgid "Woodchips"
-msgstr ""
+msgstr "Astillas de madera"
 
 #: master_preset.xml:77(combo:display_values|key:leisure)
 msgctxt "riding"
@@ -17426,7 +17426,7 @@ msgstr "Ayurveda"
 #: master_preset.xml:6483(combo:display_values|group:Health|preset:Laboratory|key:healthcare:speciality)
 msgctxt "healthcare"
 msgid "Biology"
-msgstr ""
+msgstr "Biología"
 
 #: master_preset.xml:6483(combo:display_values|group:Health|preset:Laboratory|key:healthcare:speciality)
 msgctxt "healthcare"
@@ -19159,7 +19159,7 @@ msgstr ""
 #: master_preset.xml:6978(check:text|group:Facilities|preset:Telephone|key:payment:notes)
 msgctxt "payment"
 msgid "Notes"
-msgstr "Notas"
+msgstr "Papel moneda"
 
 #: master_preset.xml:2868(item:name|group:Barriers|preset:Ditch)
 msgctxt "Barrier"
@@ -19658,7 +19658,7 @@ msgstr ""
 #: master_preset.xml:6846(list_entry:display_value|group:Clubs|preset:Club|value:amateur_radio)
 msgctxt "leisure"
 msgid "Amateur radio"
-msgstr ""
+msgstr "Radioaficionados"
 
 #: master_preset.xml:5421(list_entry:display_value|group:Leisure|preset:Rides|value:amusement_ride)
 msgctxt "leisure"
@@ -21642,7 +21642,7 @@ msgstr "Tipo"
 #: master_preset.xml:11631(combo:display_values|group:Land_use|preset:Farmland|key:crop)
 msgctxt "crop"
 msgid "Barley"
-msgstr ""
+msgstr "Cebada"
 
 #: master_preset.xml:11631(combo:display_values|group:Land_use|preset:Farmland|key:crop)
 msgctxt "crop"
@@ -21667,12 +21667,12 @@ msgstr "Césped"
 #: master_preset.xml:11631(combo:display_values|group:Land_use|preset:Farmland|key:crop)
 msgctxt "crop"
 msgid "Hop"
-msgstr "Salto"
+msgstr "Lúpulo"
 
 #: master_preset.xml:11631(combo:display_values|group:Land_use|preset:Farmland|key:crop)
 msgctxt "crop"
 msgid "Rapeseed"
-msgstr ""
+msgstr "Colza"
 
 #: master_preset.xml:11631(combo:display_values|group:Land_use|preset:Farmland|key:crop)
 msgctxt "crop"
@@ -21682,7 +21682,7 @@ msgstr "Arroz"
 #: master_preset.xml:11631(combo:display_values|group:Land_use|preset:Farmland|key:crop)
 msgctxt "crop"
 msgid "Soy"
-msgstr ""
+msgstr "Soja"
 
 #: master_preset.xml:11631(combo:display_values|group:Land_use|preset:Farmland|key:crop)
 msgctxt "crop"
