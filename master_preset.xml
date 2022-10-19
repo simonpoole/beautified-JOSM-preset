@@ -10265,13 +10265,6 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Bed -->
-        <item name="Carpet" icon="${shopping_carpet}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:shop=carpet"/>
-            <space/>
-            <key key="shop" value="carpet"/>
-            <reference ref="name_oh_wheelchair_level"/>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Carpet -->
         <item name="Bathroom" icon="${shopping_bathroom_furnishing}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=bathroom_furnishing"/>
             <space/>
@@ -10321,6 +10314,13 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Candles -->
+        <item name="Carpet" icon="${shopping_carpet}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=carpet"/>
+            <space/>
+            <key key="shop" value="carpet"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Carpet -->
         <item name="Tiles" icon="${shopping_tiler}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=tiles"/>
             <space/>
@@ -10328,6 +10328,13 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Tiles -->
+        <item name="Flooring" icon="${shopping_flooring}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=flooring"/>
+            <space/>
+            <key key="shop" value="flooring"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Flooring -->
         <item name="Pottery" icon="${shopping_pottery}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=pottery"/>
             <space/>
