@@ -3971,11 +3971,23 @@
             <link wiki="Tag:amenity=parking_entrance"/>
             <space/>
             <key key="amenity" value="parking_entrance"/>
-            <reference ref="parking_name_type_ref"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="ref" text="Reference number"/>
+                <reference ref="layer" />
+                <reference ref="level" />
+            </optional>
+            <combo key="parking" text="Type" values_context="parking">
+                <list_entry value="multi-storey" display_value="Multi-storey" />
+                <list_entry value="rooftop" display_value="Rooftop" />
+                <list_entry value="surface" display_value="Surface" />
+                <list_entry value="underground" display_value="Underground" />
+            </combo>
             <text key="maxheight" text="Max. height (meters)"/>
             <reference ref="parking_access_fee_operator_surface_smoothness"/>
             <reference ref="supervised_lit_oh"/>
             <check key="covered" text="Covered (with roof)"/>
+            <preset_link preset_name="No name"/>
         </item> <!-- Parking Entrance -->
         <separator/>
         <item name="Fuel" icon="${transport_car_fuel}" type="node,closedway,multipolygon" preset_name_label="true">
