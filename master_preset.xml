@@ -1993,12 +1993,40 @@
                 <multiselect key="destination:lanes" text="Destinations per lane" delimiter="|" match="key" editable="true" />
                 <multiselect key="destination:ref:lanes" text="Refs per lane" delimiter="|" match="key" editable="true" />
                 <multiselect key="maxspeed:lanes" text="Maxspeed per lane" delimiter="|" match="key" editable="true" />
+                <optional>
+                    <multiselect key="motor_vehicle:lanes" text="Motor vehicle lane access" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="bus:lanes" text="Bus lane access" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="bicycle:lanes" text="Bicycle lane access" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="psv:lanes" text="PSV lane access" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="hgv:lanes" text="HGV lane access" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                </optional>
             </item> <!-- Single direction roads -->
             <item name="Bi-directional roads" icon="${lane_bi_directional}" type="way,closedway" preset_name_label="true">
                 <link wiki="Lanes"/>
                 <combo key="lanes" values="1,2,3,4,5,6,7,8" description="Total number of full width lanes" value_type="integer" />
                 <combo key="lanes:forward" values="1,2,3,4,5,6,7,8" description="# full width lanes in way direction" value_type="integer" values_sort="false" />
                 <combo key="lanes:backward" values="1,2,3,4,5,6,7,8" description="# full width lanes opposite to way direction" value_type="integer" />
+                <!-- forwards -->
                 <multiselect key="turn:lanes:forward" text="Turning lanes in way direction" delimiter="|" match="key" editable="true">
                     <list_entry value="none" short_description="None"/>
                     <list_entry value="reverse" short_description="Reverse"/>
@@ -2017,6 +2045,34 @@
                 <multiselect key="destination:lanes:forward" text="Destinations per lane in way direction" delimiter="|" match="key" editable="true" />
                 <multiselect key="destination:ref:lanes:forward" text="Refs per lane in way direction" delimiter="|" match="key" editable="true" />
                 <multiselect key="maxspeed:lanes:forward" text="Maxspeed per lane in way direction" delimiter="|" match="key" editable="true" />
+                <optional>
+                    <multiselect key="motor_vehicle:lanes:forward" text="Motor vehicle lane access in way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="bus:lanes:forward" text="Bus lane access in way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="bicycle:lanes:forward" text="Bicycle lane access in way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="psv:lanes:forward" text="PSV lane access in way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="hgv:lanes:forward" text="HGV lane access in way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                </optional>
+                <!-- backwards -->
                 <multiselect key="turn:lanes:backward" text="Turning lanes opposite to way direction" delimiter="|" match="key" editable="true" >
                     <list_entry value="none" short_description="None"/>
                     <list_entry value="reverse" short_description="Reverse"/>
@@ -2035,6 +2091,33 @@
                 <multiselect key="destination:lanes:backward" text="Destinations per lane opposite to way direction" delimiter="|" match="key" editable="true"  />
                 <multiselect key="destination:ref:lanes:backward" text="Refs per lane opposite to way direction" delimiter="|" match="key" editable="true" />
                 <multiselect key="maxspeed:lanes:backward" text="Maxspeed per lane opposite to way direction" delimiter="|" match="key" editable="true" />
+                <optional>
+                    <multiselect key="motor_vehicle:lanes:backward" text="Motor vehicle lane access in way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="bus:lanes:backward" text="Bus lane access opposite to way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="bicycle:lanes:backward" text="Bicycle lane access opposite to way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="psv:lanes:backward" text="PSV lane access opposite to way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                    <multiselect key="hgv:lanes:backward" text="HGV lane access opposite to way direction" delimiter="|" match="key" editable="true">
+                        <list_entry value="yes" short_description="Yes"/>
+                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="no" short_description="No"/>
+                    </multiselect>
+                </optional>
             </item> <!-- Bi-directional roads -->
             <item name="Public transport lanes" icon="${lane_public_transport}" type="way,closedway" preset_name_label="true">
                 <link wiki="http://Lanes"/>
