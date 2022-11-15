@@ -5753,7 +5753,7 @@
     </item> <!-- Playground -->
     <group name="Playground equipment" icon="${leisure_playground_equipment}">
         <item name="Playground equipment" icon="${leisure_playground_equipment}" type="node,way,closedway,multipolygon">
-            <link wiki="Tag:leisure=playground"/>
+            <link wiki="Key:playground"/>
             <space/>
             <combo text="Equipment" key="playground" match="key" values_context="leisure">
                 <list_entry value="activitypanel" display_value="Activity panel"/>
@@ -5762,6 +5762,7 @@
                 <list_entry value="basketball_backboard" display_value="Basketball backboard"/>
                 <list_entry value="basketrotator" display_value="Basket rotator"/>
                 <list_entry value="basketswing" display_value="Basket swing"/>
+                <list_entry value="bridge" display_value="Bridge"/>
                 <list_entry value="chain_ladder" display_value="Chain ladder"/>
                 <list_entry value="chess_table" display_value="Chess table"/>
                 <list_entry value="climbingframe" display_value="Climbing frame"/>
@@ -5798,7 +5799,7 @@
             <check text="Baby" key="baby"/>
         </item>
         <item name="Slide" icon="${leisure_playground_slide}" type="node,way,closedway,multipolygon" name_context="leisure">
-            <link wiki="Tag:leisure=playground"/>
+            <link wiki="Tag:playground=slide"/>
             <space/>
             <key key="playground" value="slide"/>
             <reference ref="playground_theme"/>
