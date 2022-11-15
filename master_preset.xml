@@ -1546,7 +1546,12 @@
         <link wiki="Tag:amenity=charging_station"/>
         <space/>
         <key key="amenity" value="charging_station"/>
-        <reference ref="name_ref_operator"/>
+        <reference ref="brand"/>
+        <optional>
+            <text key="name" text="Name"/>
+            <text key="ref" text="Reference"/>  
+            <text key="operator" text="Operator"/>
+        </optional>
         <reference ref="oh"/>
         <reference ref="fee"/>
         <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
