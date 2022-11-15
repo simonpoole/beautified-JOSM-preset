@@ -2001,7 +2001,7 @@
                 <optional>
                     <multiselect key="motor_vehicle:lanes" text="Motor vehicle lane access" delimiter="|" match="key" editable="true">
                         <list_entry value="yes" short_description="Yes"/>
-                        <list_entry value="designated" short_description="Desginated"/>
+                        <list_entry value="designated" short_description="Designated"/>
                         <list_entry value="no" short_description="No"/>
                     </multiselect>
                     <multiselect key="bus:lanes" text="Bus lane access" delimiter="|" match="key" editable="true">
@@ -2097,7 +2097,7 @@
                 <multiselect key="destination:ref:lanes:backward" text="Refs per lane opposite to way direction" delimiter="|" match="key" editable="true" />
                 <multiselect key="maxspeed:lanes:backward" text="Maxspeed per lane opposite to way direction" delimiter="|" match="key" editable="true" />
                 <optional>
-                    <multiselect key="motor_vehicle:lanes:backward" text="Motor vehicle lane access in way direction" delimiter="|" match="key" editable="true">
+                    <multiselect key="motor_vehicle:lanes:backward" text="Motor vehicle lane access opposite to way direction" delimiter="|" match="key" editable="true">
                         <list_entry value="yes" short_description="Yes"/>
                         <list_entry value="designated" short_description="Desginated"/>
                         <list_entry value="no" short_description="No"/>
@@ -2453,7 +2453,7 @@
                 <reference ref="toilets"/>
                 <check key="drinking_water" text="Drinking Water" disable_off="true"/>
                 <reference ref="bin"/>
-                <check key="picnic_table" text="Picnix table" disable_off="true"/>
+                <check key="picnic_table" text="Picnic table" disable_off="true"/>
                 <combo key="caravan" text="Caravan access" values="yes,no" display_values="Yes,No"/>
             </optional>
             <reference ref="kids_area" />
