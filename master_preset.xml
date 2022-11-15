@@ -2447,6 +2447,9 @@
                 <text key="name" text="Name"/>
                 <reference ref="toilets"/>
                 <check key="drinking_water" text="Drinking Water" disable_off="true"/>
+                <reference ref="bin"/>
+                <check key="picnic_table" text="Picnix table" disable_off="true"/>
+                <combo key="caravan" text="Caravan access" values="yes,no" display_values="Yes,No"/>
             </optional>
             <reference ref="kids_area" />
         </item> <!-- Rest Area -->
