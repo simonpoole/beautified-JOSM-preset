@@ -3553,7 +3553,7 @@
             <key key="natural" value="mud"/>
             <reference ref="optional_name"/>
         </item> <!-- Mud -->
-        <item name="Beach" icon="${natural_beach}" type="closedway,multipolygon" preset_name_label="true">
+        <item name="Beach" icon="${natural_beach}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:natural=beach"/>
             <space />
             <label text="A flat area of sand, gravel or pebble next to water."/>
