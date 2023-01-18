@@ -1583,6 +1583,13 @@
         <space/>
         <preset_link preset_name="Payment Methods"/>
     </chunk>
+    <chunk id="historic_optional">
+        <optional>
+            <text key="historic:civilization" text="Civilization"/>
+            <text key="historic:period" text="Period"/>
+            <text key="historic:era" text="Era"/>
+        </optional>
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -9815,7 +9822,39 @@
         <link wiki="Tag:historic=archaeological_site"/>
         <space/>
         <key key="historic" value="archaeological_site"/>
-        <combo key="site_type" text="Type" values="tumulus,megalith,fortification,settlement,necropolis,city" display_values="Tumulus,Megalith,Fortification,Settlement,Necropolis,City"/>
+        <combo key="site_type" text="Type" deprecated="true">
+            <list_entry value="tumulus" short_description="Tumulus" />
+            <list_entry value="megalith" short_description="Megalith" />
+            <list_entry value="fortification" short_description="Fortification" />
+            <list_entry value="settlement" short_description="Settlement" />
+            <list_entry value="necropolis" short_description="Necropolis" />
+            <list_entry value="city" short_description="City" />
+            <list_entry value="grave_field" short_description="Grave field" />
+            <list_entry value="petroglyph" short_description="Petroglyph" />
+            <list_entry value="hut_circle" short_description="Hut circle" />
+            <list_entry value="roman_villa" short_description="Roman villa" />
+            <list_entry value="roman_circus" short_description="Roman circus" />
+            <list_entry value="crannog" short_description="Crannog" />
+            <list_entry value="enclosure" short_description="Enclosure" />
+            <list_entry value="baths" short_description="Baths" />
+        </combo>
+        <combo key="archaeological_site" text="Type">
+            <list_entry value="tumulus" short_description="Tumulus" />
+            <list_entry value="megalith" short_description="Megalith" />
+            <list_entry value="fortification" short_description="Fortification" />
+            <list_entry value="settlement" short_description="Settlement" />
+            <list_entry value="necropolis" short_description="Necropolis" />
+            <list_entry value="city" short_description="City" />
+            <list_entry value="grave_field" short_description="Grave field" />
+            <list_entry value="petroglyph" short_description="Petroglyph" />
+            <list_entry value="hut_circle" short_description="Hut circle" />
+            <list_entry value="roman_villa" short_description="Roman villa" />
+            <list_entry value="roman_circus" short_description="Roman circus" />
+            <list_entry value="crannog" short_description="Crannog" />
+            <list_entry value="enclosure" short_description="Enclosure" />
+            <list_entry value="baths" short_description="Baths" />
+        </combo>
+        <reference ref="historic_optional"/>
         <reference ref="name_oh_wheelchair"/>
     </item> <!-- Archaeological Site -->
     <item name="Battlefield" icon="${historic_battlefield}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -9823,6 +9862,7 @@
         <space/>
         <key key="historic" value="battlefield"/>
         <text key="name" text="Name"/>
+        <reference ref="historic_optional"/>
     </item> <!-- Battlefield -->
     <item name="Tomb" icon="${historic_tomb}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:historic=tomb"/>
@@ -9830,6 +9870,7 @@
         <key key="historic" value="tomb"/>
         <text key="name" text="Name"/>
         <combo key="tomb" text="Tomb type" values="tumulus,rock-cut,hypogeum,war_grave,mausoleum,columbarium,crypt,pyramid,sarcophagus,vault" display_values="Tumulus,Rock-cut,Hypogeum,War grave,Mausoleum,Columbarium,Crypt,Pyramid,Sarcophagus,Vault"/>
+        <reference ref="historic_optional"/>
     </item> <!-- Tomb -->
     <item name="Palaeontological Site" icon="${natural_palaeontological_site}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:geological=palaeontological_site"/>
@@ -9843,6 +9884,7 @@
         <space/>
         <key key="historic" value="monument"/>
         <text key="name" text="Name"/>
+        <reference ref="historic_optional"/>
     </item> <!-- Monument -->
     <item name="Memorial" icon="${historic_memorial}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:historic=memorial"/>
@@ -9857,6 +9899,7 @@
             <reference ref="material"/>
             <reference ref="wikipedia_wikidata"/>
         </optional>
+        <reference ref="historic_optional"/>
     </item> <!-- Memorial -->
     <item name="Wayside Cross" icon="${historic_wayside_cross}" type="node,closedway" preset_name_label="true">
         <link wiki="Tag:historic=wayside_cross"/>
@@ -9867,6 +9910,7 @@
         <text key="start_date" text="Start date"/>
         <text key="inscription" text="Inscription" length="255"/>
         <text key="material" text="Material"/>
+        <reference ref="historic_optional"/>
     </item> <!-- Wayside Cross -->
     <item name="Wayside Shrine" icon="${historic_wayside_shrine}" type="node,closedway" preset_name_label="true">
         <link wiki="Tag:historic=wayside_shrine"/>
@@ -9878,6 +9922,7 @@
         <combo key="building" text="Building" values="wayside_shrine" values_context="building"/>
         <text key="start_date" text="Start date"/>
         <text key="inscription" text="Inscription" length="255"/>
+        <reference ref="historic_optional"/>
     </item> <!-- Wayside Shrine -->
     <item name="Torii" icon="${historic_torii}" type="node,closedway" preset_name_label="true">
         <link wiki="Tag:man_made=torii"/>
