@@ -3135,7 +3135,7 @@
                 <reference ref="incline"/>
             </optional>
         </item> <!-- Building Passage -->
-        <item name="Arcade" icon="${passageways_arcade}" type="way" preset_name_label="true">
+        <item name="Arcade" icon="${passageways_arcade}" type="way" preset_name_label="true" name_context="Highway">
             <link wiki="Key:covered"/>
             <space/>
             <key key="covered" value="arcade" match="none"/>
@@ -5880,7 +5880,7 @@
             <reference ref="name_ref_operator"/>
         </item> <!-- Bird Hide -->
         <separator/>
-        <item name="Amusement arcade" icon="${amenity_video_games}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Amusement arcade" icon="${amenity_video_games}" type="node,closedway,multipolygon" preset_name_label="true" name_context="Leisure">
             <link wiki="Tag:leisure=amusement_arcade"/>
             <space/>
             <key key="leisure" value="amusement_arcade"/>
