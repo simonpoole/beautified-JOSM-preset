@@ -122,9 +122,9 @@
         <combo key="parking:orientation" text="Orientation" values="diagonal,parallel,perpendicular" display_values="Diagonal,Parallel,Perpendicular" />
     </chunk>
     <chunk id="parking_lane">
-        <preset_link preset_name="Lane parking both sides" />
-        <preset_link preset_name="Lane parking right-hand side" />
-        <preset_link preset_name="Lane parking left-hand side" />
+        <preset_link preset_name="Street parking both sides" />
+        <preset_link preset_name="Street parking right-hand side" />
+        <preset_link preset_name="Street parking left-hand side" />
     </chunk>
     <chunk id="highway_additional">
         <check key="bridge" text="Bridge" disable_off="true"/>
@@ -2163,9 +2163,65 @@
             <combo key="oneway:bicycle" text="Oneway (bicycle)" values="yes,no" display_values="Yes,No"/>
             <space/>
         </item> <!-- Cycle Lane/Track -->
-        <item name="Lane parking both sides" icon="${lane_parking_both}" type="way,closedway" preset_name_label="true">
-            <label text="Lane parking both sides:" />
-            <combo key="parking:lane:both" text="Parking both sides" values_context="parking" match="key">
+        <item name="Street parking both sides" icon="${lane_parking_both}" type="way,closedway" preset_name_label="true">
+            <label text="Street parking both sides:" />
+            <combo key="parking:both" text="Parking both sides" values_context="parking" match="key">
+                <list_entry value="lane" short_description="Parking on street"/>
+                <list_entry value="street_side" short_description="Parking bays"/>
+                <list_entry value="on_kerb" short_description="Parking on pavement"/>
+                <list_entry value="half_on_kerb" short_description="Parking partially on pavement"/>
+                <list_entry value="shoulder" short_description="Parking on shoulder"/>
+                <list_entry value="no" short_description="No parking" deprecated="true" />
+                <list_entry value="yes" short_description="Parking is allowed" deprecated="true" />
+                <list_entry value="separate" short_description="Parking is mapped separately" deprecated="true" />
+            </combo>
+            <combo key="parking:both:orientation" text="Parking orientation both sides" values_context="parking" match="none">
+                <list_entry value="parallel" short_description="Parallel"/>
+                <list_entry value="diagonal" short_description="Diagonal"/>
+                <list_entry value="perpendicular" short_description="Perpendicular"/>
+            </combo>
+            <multiselect key="parking:both:zone" text="Parking zone both sides" values="blue" display_values="Blue" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/> 
+            <check key="parking:both:authentication:disc" text="Parking disc both sides" value_on="yes" value_off="no" match="none"/>
+            <check key="parking:both:markings" text="Parking markings both sides" value_on="yes" value_off="no" match="none"/>
+            <optional>
+                <combo key="parking:both:direction" text="Parking direction both sides" values_context="parking" match="none"
+                     values="back_in,head_in" display_values="Back in,Head in"/>
+                <combo key="parking:both:surface" text="Parking surface both sides" values_context="parking" match="none" 
+                    values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,unhewn_cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud"
+                    display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Unhewn cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" 
+                    values_sort="false"/>
+               <text key="parking:both:width" text="Parking both sides width (m)" match="none"/>
+               <text key="parking:both:capacity" text="Parking both sides capacity" value_type="integer" match="none"/>
+            </optional>
+            <combo key="parking:both:access" text="Parking access both sides" match="none">
+                <list_entry value="private" short_description="Private"/>
+                <list_entry value="customers" short_description="Customers"/>
+            </combo>
+            <combo key="parking:both:access:conditional" text="Parking access both sides @" delimiter="|" 
+                values="private @ (Mo-Fr 09:00-19:00) | customers @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:both:restriction" text="Parking restrictions both sides" match="none">
+                <list_entry value="no_parking" short_description="No parking"/>
+                <list_entry value="no_standing" short_description="No standing"/>
+                <list_entry value="no_stopping" short_description="No stopping"/>
+                <list_entry value="loading_only" short_description="Loading only"/>
+                <list_entry value="charging_only" short_description="Charging only"/>
+            </combo>
+            <combo key="parking:both:restriction:conditional" text="Parking restrictions both sides @" delimiter="|" 
+                values="no_parking @ (Mo-Fr 09:00-19:00) | no_standing @ (Mo-Fr 09:00-19:00) | no_stopping @ (Mo-Fr 09:00-19:00) | loading_only @ (Mo-Fr 09:00-19:00) | charging_only @ (Mo-Fr 09:00-19:00) | none @ (Sa-Su)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:both:maxstay" text="Time Limit both sides" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:both:maxstay:conditional" text="Time Limit both sides @" delimiter="|" 
+                values="30 minutes @ (Mo-Fr 09:00-19:00) | 60 minutes @ (Mo-Fr 09:00-19:00) | 180 minutes @ (Mo-Fr 09:00-19:00) | 1 hour @ (Mo-Fr 09:00-19:00) | 1.5 hours @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <check key="parking:both:fee" text="Parking fee both sides" value_on="yes" value_off="no" match="none"/>
+            <combo key="parking:both:fee:conditional" text="Parking fee both sides @" delimiter="|" 
+                values="yes @ (Mo-Fr 09:00-19:00) |  no @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <!-- Deprecated variant -->
+            <combo key="parking:lane:both" text="Parking both sides" values_context="parking" match="key" deprecated="true">
                 <list_entry value="parallel" short_description="Parallel to street"/>
                 <list_entry value="diagonal" short_description="Diagonal"/>
                 <list_entry value="perpendicular" short_description="Perpendicular"/>
@@ -2174,7 +2230,7 @@
                 <list_entry value="no_stopping" short_description="No stopping" deprecated="true" />
                 <list_entry value="fire_lane" short_description="Fire lane" deprecated="true" />
             </combo>
-            <multiselect key="parking:condition:both" text="Parking condition both sides" values_context="parking" match="key">
+            <multiselect key="parking:condition:both" text="Parking condition both sides" values_context="parking" match="key" deprecated="true">
                 <list_entry value="free" short_description="Free"/>
                 <list_entry value="ticket" short_description="Ticket"/>
                 <list_entry value="disc" short_description="Disc"/>
@@ -2187,15 +2243,72 @@
             </multiselect>
             <combo key="parking:condition:both:conditional" text="Parking condition both sides @" delimiter="|" 
                 values="free @ (Mo-Fr 09:00-19:00) | ticket @ (Mo-Fr 09:00-19:00) | disc @ (Mo-Fr 09:00-19:00) | residents @ (Mo-Fr 09:00-19:00) | customers @ (Mo-Fr 09:00-19:00) | private @ (Mo-Fr 09:00-19:00) | no_parking @ (Mo-Fr 09:00-19:00) | no_standing @ (Mo-Fr 09:00-19:00) | no_stopping @ (Mo-Fr 09:00-19:00)" 
-                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
-            <combo key="parking:condition:both:maxstay" text="Time Limit both sides" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
+            <combo key="parking:condition:both:maxstay" text="Time Limit both sides" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
             <combo key="parking:condition:both:maxstay:conditional" text="Time Limit both sides @" delimiter="|" 
                 values="30 minutes @ (Mo-Fr 09:00-19:00) | 60 minutes @ (Mo-Fr 09:00-19:00) | 180 minutes @ (Mo-Fr 09:00-19:00) | 1 hour @ (Mo-Fr 09:00-19:00) | 1.5 hours @ (Mo-Fr 09:00-19:00) | unlimited @ (Mo-Fr 09:00-19:00) | no @ (Mo-Fr 09:00-19:00) | load-unload @ (Mo-Fr 09:00-19:00)" 
-                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
         </item>
-        <item name="Lane parking right-hand side" icon="${lane_parking_right}" type="way,closedway" preset_name_label="true">
-            <label text="Lane parking right-hand side:" />
-            <combo key="parking:lane:right" text="Parking right-hand side" values_context="parking" match="key">
+        <item name="Street parking right-hand side" icon="${lane_parking_right}" type="way,closedway" preset_name_label="true">
+            <label text="Street parking right-hand side:" />
+            <combo key="parking:right" text="Parking right" values_context="parking" match="key">
+                <list_entry value="lane" short_description="Parking on street"/>
+                <list_entry value="street_side" short_description="Parking bays"/>
+                <list_entry value="on_kerb" short_description="Parking on pavement"/>
+                <list_entry value="half_on_kerb" short_description="Parking partially on pavement"/>
+                <list_entry value="shoulder" short_description="Parking on shoulder"/>
+                <list_entry value="no" short_description="No parking" deprecated="true" />
+                <list_entry value="yes" short_description="Parking is allowed" deprecated="true" />
+                <list_entry value="separate" short_description="Parking is mapped separately" deprecated="true" />
+            </combo>
+            <combo key="parking:right:orientation" text="Parking orientation right" values_context="parking" match="none">
+                <list_entry value="parallel" short_description="Parallel"/>
+                <list_entry value="diagonal" short_description="Diagonal"/>
+                <list_entry value="perpendicular" short_description="Perpendicular"/>
+            </combo>
+            <multiselect key="parking:right:zone" text="Parking zone right" values="blue" display_values="Blue" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/> 
+            <check key="parking:right:authentication:disc" text="Parking disc right" value_on="yes" value_off="no" match="none"/>
+            <check key="parking:right:markings" text="Parking markings right" value_on="yes" value_off="no" match="none"/>
+            <optional>
+                <combo key="parking:right:direction" text="Parking direction right" values_context="parking" match="none"
+                     values="back_in,head_in" display_values="Back in,Head in"/>
+                <combo key="parking:right:surface" text="Parking surface right" values_context="parking" match="none" 
+                    values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,unhewn_cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud"
+                    display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Unhewn cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" 
+                    values_sort="false"/>
+               <text key="parking:right:width" text="Parking width right (m)" match="none"/>
+               <text key="parking:right:capacity" text="Parking capacity right" value_type="integer" match="none"/>
+            </optional>
+            <combo key="parking:right:access" text="Parking access right" match="none">
+                <list_entry value="private" short_description="Private"/>
+                <list_entry value="customers" short_description="Customers"/>
+            </combo>
+            <combo key="parking:right:access:conditional" text="Parking access right @" delimiter="|" 
+                values="private @ (Mo-Fr 09:00-19:00) | customers @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:right:restriction" text="Parking restrictions right" match="none">
+                <list_entry value="no_parking" short_description="No parking"/>
+                <list_entry value="no_standing" short_description="No standing"/>
+                <list_entry value="no_stopping" short_description="No stopping"/>
+                <list_entry value="loading_only" short_description="Loading only"/>
+                <list_entry value="charging_only" short_description="Charging only"/>
+            </combo>
+            <combo key="parking:right:restriction:conditional" text="Parking restrictions right @" delimiter="|" 
+                values="no_parking @ (Mo-Fr 09:00-19:00) | no_standing @ (Mo-Fr 09:00-19:00) | no_stopping @ (Mo-Fr 09:00-19:00) | loading_only @ (Mo-Fr 09:00-19:00) | charging_only @ (Mo-Fr 09:00-19:00) | none @ (Sa-Su)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:right:maxstay" text="Time Limit right" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:right:maxstay:conditional" text="Time Limit right @" delimiter="|" 
+                values="30 minutes @ (Mo-Fr 09:00-19:00) | 60 minutes @ (Mo-Fr 09:00-19:00) | 180 minutes @ (Mo-Fr 09:00-19:00) | 1 hour @ (Mo-Fr 09:00-19:00) | 1.5 hours @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <check key="parking:right:fee" text="Parking fee right" value_on="yes" value_off="no" match="none"/>
+            <combo key="parking:right:fee:conditional" text="Parking fee right @" delimiter="|" 
+                values="yes @ (Mo-Fr 09:00-19:00) |  no @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <!-- Deprecated variant -->
+            <combo key="parking:lane:right" text="Parking right-hand side" values_context="parking" match="key" deprecated="true">
                 <list_entry value="parallel" short_description="Parallel to street"/>
                 <list_entry value="diagonal" short_description="Diagonal"/>
                 <list_entry value="perpendicular" short_description="Perpendicular"/>
@@ -2204,7 +2317,7 @@
                 <list_entry value="no_stopping" short_description="No stopping" deprecated="true" />
                 <list_entry value="fire_lane" short_description="Fire lane" deprecated="true" />
             </combo>
-            <multiselect key="parking:condition:right" text="Parking condition right-hand side" values_context="parking" match="key">
+            <multiselect key="parking:condition:right" text="Parking condition right-hand side" values_context="parking" match="key" deprecated="true">
                 <list_entry value="free" short_description="Free"/>
                 <list_entry value="ticket" short_description="Ticket"/>
                 <list_entry value="disc" short_description="Disc"/>
@@ -2217,15 +2330,72 @@
             </multiselect>
             <combo key="parking:condition:right:conditional" text="Parking condition right-hand side @" delimiter="|" 
                 values="free @ (Mo-Fr 09:00-19:00) | ticket @ (Mo-Fr 09:00-19:00) | disc @ (Mo-Fr 09:00-19:00) | residents @ (Mo-Fr 09:00-19:00) | customers @ (Mo-Fr 09:00-19:00) | private @ (Mo-Fr 09:00-19:00) | no_parking @ (Mo-Fr 09:00-19:00) | no_standing @ (Mo-Fr 09:00-19:00) | no_stopping @ (Mo-Fr 09:00-19:00)" 
-                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
-            <combo key="parking:condition:right:maxstay" text="Time Limit right-hand side" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
+            <combo key="parking:condition:right:maxstay" text="Time Limit right-hand side" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
             <combo key="parking:condition:right:maxstay:conditional" text="Time Limit right-hand side @" delimiter="|" 
                 values="30 minutes @ (Mo-Fr 09:00-19:00) | 60 minutes @ (Mo-Fr 09:00-19:00) | 180 minutes @ (Mo-Fr 09:00-19:00) | 1 hour @ (Mo-Fr 09:00-19:00) | 1.5 hours @ (Mo-Fr 09:00-19:00) | unlimited @ (Mo-Fr 09:00-19:00) | no @ (Mo-Fr 09:00-19:00) | load-unload @ (Mo-Fr 09:00-19:00)" 
-                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
         </item>
-        <item name="Lane parking left-hand side" icon="${lane_parking_left}" type="way,closedway" preset_name_label="true">
-            <label text="Lane parking left-hand side:" />
-            <combo key="parking:lane:left" text="Parking left-hand side" values_context="parking" match="key">
+        <item name="Street parking left-hand side" icon="${lane_parking_left}" type="way,closedway" preset_name_label="true">
+            <label text="Street parking left-hand side:" />
+            <combo key="parking:left" text="Parking left" values_context="parking" match="key">
+                <list_entry value="lane" short_description="Parking on street"/>
+                <list_entry value="street_side" short_description="Parking bays"/>
+                <list_entry value="on_kerb" short_description="Parking on pavement"/>
+                <list_entry value="half_on_kerb" short_description="Parking partially on pavement"/>
+                <list_entry value="shoulder" short_description="Parking on shoulder"/>
+                <list_entry value="no" short_description="No parking" deprecated="true" />
+                <list_entry value="yes" short_description="Parking is allowed" deprecated="true" />
+                <list_entry value="separate" short_description="Parking is mapped separately" deprecated="true" />
+            </combo>
+            <combo key="parking:left:orientation" text="Parking orientation left" values_context="parking" match="none">
+                <list_entry value="parallel" short_description="Parallel"/>
+                <list_entry value="diagonal" short_description="Diagonal"/>
+                <list_entry value="perpendicular" short_description="Perpendicular"/>
+            </combo>
+            <multiselect key="parking:left:zone" text="Parking zone left" values="blue" display_values="Blue" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/> 
+            <check key="parking:left:authentication:disc" text="Parking disc left" value_on="yes" value_off="no" match="none"/>
+            <check key="parking:left:markings" text="Parking markings left" value_on="yes" value_off="no" match="none"/>
+            <optional>
+                <combo key="parking:left:direction" text="Parking direction left" values_context="parking" match="none"
+                     values="back_in,head_in" display_values="Back in,Head in"/>
+                <combo key="parking:left:surface" text="Parking surface left" values_context="parking" match="none" 
+                    values="paved,unpaved,asphalt,concrete,concrete:plates,concrete:lanes,metal,wood,paving_stones,sett,cobblestone,unhewn_cobblestone,gravel,fine_gravel,pebblestone,compacted,grass_paver,grass,sand,ground,dirt,mud"
+                    display_values="Paved,Unpaved,Asphalt,Concrete,Concrete plates,Concrete lanes,Metal,Wood,Paving stones,Sett,Cobblestone,Unhewn cobblestone,Gravel,Fine gravel,Pebblestone,Compacted,Grass paver,Grass,Sand,Ground,Dirt,Mud" 
+                    values_sort="false"/>
+               <text key="parking:left:width" text="Parking width left (m)" match="none"/>
+               <text key="parking:left:capacity" text="Parking capacity left" value_type="integer" match="none"/>
+            </optional>
+            <combo key="parking:left:access" text="Parking access left" match="none">
+                <list_entry value="private" short_description="Private"/>
+                <list_entry value="customers" short_description="Customers"/>
+            </combo>
+            <combo key="parking:left:access:conditional" text="Parking access left @" delimiter="|" 
+                values="private @ (Mo-Fr 09:00-19:00) | customers @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:left:restriction" text="Parking restrictions left" match="none">
+                <list_entry value="no_parking" short_description="No parking"/>
+                <list_entry value="no_standing" short_description="No standing"/>
+                <list_entry value="no_stopping" short_description="No stopping"/>
+                <list_entry value="loading_only" short_description="Loading only"/>
+                <list_entry value="charging_only" short_description="Charging only"/>
+            </combo>
+            <combo key="parking:left:restriction:conditional" text="Parking restrictions left @" delimiter="|" 
+                values="no_parking @ (Mo-Fr 09:00-19:00) | no_standing @ (Mo-Fr 09:00-19:00) | no_stopping @ (Mo-Fr 09:00-19:00) | loading_only @ (Mo-Fr 09:00-19:00) | charging_only @ (Mo-Fr 09:00-19:00) | none @ (Sa-Su)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:left:maxstay" text="Time Limit left" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <combo key="parking:left:maxstay:conditional" text="Time Limit left @" delimiter="|" 
+                values="30 minutes @ (Mo-Fr 09:00-19:00) | 60 minutes @ (Mo-Fr 09:00-19:00) | 180 minutes @ (Mo-Fr 09:00-19:00) | 1 hour @ (Mo-Fr 09:00-19:00) | 1.5 hours @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <check key="parking:left:fee" text="Parking fee left" value_on="yes" value_off="no" match="none"/>
+            <combo key="parking:left:fee:conditional" text="Parking fee left @" delimiter="|" 
+                values="yes @ (Mo-Fr 09:00-19:00) |  no @ (Mo-Fr 09:00-19:00)" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+            <!-- Deprecated variant -->
+            <combo key="parking:lane:left" text="Parking left-hand side" values_context="parking" match="key" deprecated="true">
                 <list_entry value="parallel" short_description="Parallel to street"/>
                 <list_entry value="diagonal" short_description="Diagonal"/>
                 <list_entry value="perpendicular" short_description="Perpendicular"/>
@@ -2234,7 +2404,7 @@
                 <list_entry value="no_stopping" short_description="No stopping" deprecated="true" />
                 <list_entry value="fire_lane" short_description="Fire lane" deprecated="true" />
             </combo>
-            <multiselect key="parking:condition:left" text="Parking condition left-hand side" values_context="parking" match="key">
+            <multiselect key="parking:condition:left" text="Parking condition left-hand side" values_context="parking" match="key" deprecated="true">
                 <list_entry value="free" short_description="Free"/>
                 <list_entry value="ticket" short_description="Ticket"/>
                 <list_entry value="disc" short_description="Disc"/>
@@ -2247,11 +2417,12 @@
             </multiselect>
             <combo key="parking:condition:left:conditional" text="Parking condition left-hand side @" delimiter="|" 
                 values="free @ (Mo-Fr 09:00-19:00) | ticket @ (Mo-Fr 09:00-19:00) | disc @ (Mo-Fr 09:00-19:00) | residents @ (Mo-Fr 09:00-19:00) | customers @ (Mo-Fr 09:00-19:00) | private @ (Mo-Fr 09:00-19:00) | no_parking @ (Mo-Fr 09:00-19:00) | no_standing @ (Mo-Fr 09:00-19:00) | no_stopping @ (Mo-Fr 09:00-19:00)" 
-                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
-            <combo key="parking:condition:left:maxstay" text="Time Limit left-hand side" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
+            <combo key="parking:condition:left:maxstay" text="Time Limit left-hand side" values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,unlimited" display_values="30 minutes,60 minutes,180 minutes,1 hour,1.5 hours,1 day,3 days,2 weeks,4 months,1.5 years,Unlimited" 
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
             <combo key="parking:condition:left:maxstay:conditional" text="Time Limit left-hand side @" delimiter="|" 
                 values="30 minutes @ (Mo-Fr 09:00-19:00) | 60 minutes @ (Mo-Fr 09:00-19:00) | 180 minutes @ (Mo-Fr 09:00-19:00) | 1 hour @ (Mo-Fr 09:00-19:00) | 1.5 hours @ (Mo-Fr 09:00-19:00) | unlimited @ (Mo-Fr 09:00-19:00) | no @ (Mo-Fr 09:00-19:00) | load-unload @ (Mo-Fr 09:00-19:00)" 
-                values_no_i18n="true" values_sort="false" match="none" editable="true"/>
+                values_no_i18n="true" values_sort="false" match="none" editable="true" deprecated="true"/>
         </item>
         <item name="Sidewalk right-hand side" icon="${sidewalk_right}" type="way,closedway" preset_name_label="true">
             <combo key="sidewalk:right" text="Sidewalk right" values_context="sidewalk" match="key">
