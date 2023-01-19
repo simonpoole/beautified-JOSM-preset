@@ -74,8 +74,7 @@
         <combo key="surface" text="Surface" values="asphalt,concrete,ground" display_values="Asphalt,Concrete,Ground" match="none" />
     </chunk>
     <chunk id="riding_surface">
-        <combo key="leisure" text="Type" values="horse_riding,pitch,sports_centre,stadium,track" display_values="Horse riding,Pitch,Sports centre,Stadium,Track" values_context="riding"/>
-        <combo key="surface" text="Surface" values="grass,sand,clay,dirt,fine_gravel,ground,mud,unpaved,compacted"
+          <combo key="surface" text="Surface" values="grass,sand,clay,dirt,fine_gravel,ground,mud,unpaved,compacted"
                                     display_values="Grass,Sand,Clay,Dirt,Fine gravel,Ground,Mud,Unpaved,Compacted" match="none" />
     </chunk>
     <chunk id="lanes">
@@ -222,7 +221,7 @@
         <multiselect key="crossing" text="Crossing type" values_context="pedestrian" text_context="pedestrian">
             <list_entry value="uncontrolled" short_description="Not controlled" icon="${crossing}"/>
             <list_entry value="traffic_signals" short_description="Traffic signals" icon="${crossing_traffic_signals}"/>
-            <list_entry value="unmarked" short_description="Unmarked" icon="${crossing_unmarked}"/>
+            <list_entry value="unmarked" short_description="Unmarked" icon="${crossing_unmarked}" deprecated="true"/>
             <list_entry value="no" short_description="No crossing"/>
             <list_entry value="island" short_description="Island" icon="${crossing_island}" deprecated="true" />
         </multiselect>
@@ -231,6 +230,25 @@
             <combo key="crossing_ref" text="Crossing type name (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger" values_searchable="true"/>
         </optional>
     </chunk>
+    <chunk id="crossing_markings">
+        <multiselect key="crossing:markings" text="Markings" values_sort="false" values_context="crossing:markings">
+            <list_entry value="no" short_description="Unmarked" />
+            <list_entry value="yes" short_description="Marked" />
+            <list_entry value="surface" short_description="Surface" />
+            <list_entry value="lines" short_description="Lines" />
+            <list_entry value="lines:paired" short_description="Paired lines" />
+            <list_entry value="dashes" short_description="Dashes" />
+            <list_entry value="dots" short_description="Dots" />
+            <list_entry value="zebra" short_description="Zebra" />
+            <list_entry value="zebra:double" short_description="Double zebra" />
+            <list_entry value="zebra:paired" short_description="Paired zebra" />
+            <list_entry value="zebra:bicolor" short_description="Bicolor zebra" />
+            <list_entry value="ladder" short_description="Ladder" />
+            <list_entry value="ladder:skewed" short_description="Skewed ladder" />
+            <list_entry value="ladder:paired" short_description="Paired ladder" />
+            <list_entry value="pictograms" short_description="Pictograms" />
+        </multiselect>
+     </chunk>
     <chunk id="railway_service">
         <combo key="service" text="Service type" values="yard,siding,spur,crossover" display_values="Yard,Siding,Spur,Crossover" values_context="railway" />
     </chunk>
@@ -2665,6 +2683,7 @@
             </optional>
             <optional text="Optional crossing attributes">
                 <reference ref="crossing_type" />
+                <reference ref="crossing_markings" />
             </optional>
             <reference ref="check_crossing_access" />
             <label text="For pedestrian crossings:" />
@@ -2704,6 +2723,7 @@
             <space/>
             <key key="highway" value="crossing"/>
             <reference ref="crossing_type"/>
+            <reference ref="crossing_markings" />
             <combo key="supervised" text="Crossing attendant" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_i18n="false" values_sort="false" />
             <reference ref="check_crossing_access" />
             <reference ref="tactile_paving"/>
@@ -4070,6 +4090,7 @@
                 <check key="crossing:light" text="Traffic lights" disable_off="true"/>
                 <check key="crossing:bell" text="Sound signals" disable_off="true"/>
                 <combo key="crossing:barrier" text="Barrier" values="yes,no,half,full,double_half" display_values="Yes,No,Half,Full,Double half" text_context="railway" values_context="crossing:barrier"/>
+                <reference ref="crossing_markings" />
             </optional>
         </item> <!-- Crossing -->
         <item name="Turntable" icon="${transport_railway_turntable}" type="node,closedway" preset_name_label="true">
@@ -5867,7 +5888,9 @@
             <key key="leisure" value="horse_riding"/>
             <reference ref="name_operator_oh_wheelchair"/>
             <text key="fee" text="Fee"/>
-            <reference ref="link_contact_address_payment"/>
+            <reference ref="link_contact_address_payment"/>          
+            <preset_link preset_name="Equestrian Sport" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Horse Racing" text="Similar but different tags:" alternative="true" />
         </item> <!-- Horse Riding -->
         <item name="Hackerspace" icon="${leisure_hackerspace}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=hackerspace" />
@@ -7555,7 +7578,7 @@
                 <text key="name" text="Name"/>
                 <text key="operator" text="Operator"/>
                 <text key="description" text="Description" length="255"/>
-                <multiselect key="animal_breeding" text="Animals" values="pig;poultry;horse;dog;cow;goat;fish;bird;sheep" display_values="Pig;Poultry;Horse;Dog;Cow;Goat;Fish;Bird;Sheep" values_searchable="true" match="key"/>
+                <multiselect key="animal_breeding" text="Animals" values="alpaca;bird;cat;cow;dog;donkey;fish;goat;horse;pig;poultry;rabbit;sheep" display_values="Alpaca;Bird;Cat;Cow;Dog;Donkey;Fish;Goat;Horse;Pig;Poultry;Rabbit;Sheep" values_searchable="true" match="key"/>
             </optional>
             <reference ref="link_contact_address"/>
         </item> <!-- Animal boarding -->
@@ -7948,23 +7971,39 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Dog Racing -->
-        <item name="Equestrian" icon="${sport_equestrian}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Equestrian Sport" icon="${sport_equestrian}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=equestrian"/>
             <space/>
             <key key="sport" value="equestrian"/>
-            <text key="name" text="Name"/>
-            <reference ref="riding_surface"/>
+            <text key="name" text="Name"/>     
+            <combo key="leisure" text="Type" default="pitch" values_context="riding" values_sort="false">
+                <list_entry value="pitch" display_value="Horse Riding Arena" icon="${sport_pitch}" />
+                <list_entry value="horse_riding" display_value="Horse Riding Centre" icon="${leisure_horse_riding}" />
+                <list_entry value="sports_centre" display_value="Sports Centre" icon="${sport_centre}" />
+                <list_entry value="stadium" display_value="Stadium" icon="${sport_stadium}" />
+                <list_entry value="track" display_value="Racetrack" icon="${sport_racetrack}" />
+            </combo>
+            <reference ref="riding_surface" />
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Horse Riding" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Horse Racing" text="Similar but different tags:" alternative="true" />
         </item> <!-- Equestrian -->
         <item name="Horse Racing" icon="${sport_horse_racing}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=horse_racing"/>
             <space/>
             <key key="sport" value="horse_racing"/>
             <text key="name" text="Name"/>
-            <reference ref="riding_surface"/>
+            <combo key="leisure" text="Type" values_context="riding" values_sort="false">
+                <list_entry value="sports_centre" display_value="Sports Centre" icon="${sport_centre}" />
+                <list_entry value="stadium" display_value="Stadium" icon="${sport_stadium}" />
+                <list_entry value="track" display_value="Racetrack" icon="${sport_racetrack}" />
+            </combo>        
+            <reference ref="riding_surface" />
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Equestrian Sport" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Horse Riding" text="Similar but different tags:" alternative="true" />
         </item> <!-- Horse Racing -->
         <item name="Gymnastics" icon="${sport_gymnasium}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=gymnastics"/>
@@ -8370,6 +8409,7 @@
                 <list_entry value="semidetached_house" display_value="Semidetached house"/>
                 <list_entry value="service"            display_value="Service"/>
                 <list_entry value="shed"               display_value="Shed"/>
+                <list_entry value="sports_hall"        display_value="Sports hall"/>
                 <list_entry value="stable"             display_value="Stable"/>
                 <list_entry value="stadium"            display_value="Stadium"/>
                 <list_entry value="static_caravan"     display_value="Static caravan"/>
@@ -8488,6 +8528,7 @@
                 <list_entry value="semidetached_house" display_value="Semidetached house"/>
                 <list_entry value="service"            display_value="Service"/>
                 <list_entry value="shed"               display_value="Shed"/>
+                <list_entry value="sports_hall"        display_value="Sports hall"/>
                 <list_entry value="stable"             display_value="Stable"/>
                 <list_entry value="stadium"            display_value="Stadium"/>
                 <list_entry value="static_caravan"     display_value="Static caravan"/>
