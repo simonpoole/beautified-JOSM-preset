@@ -2189,9 +2189,9 @@
                 <list_entry value="on_kerb" short_description="Parking on pavement"/>
                 <list_entry value="half_on_kerb" short_description="Parking partially on pavement"/>
                 <list_entry value="shoulder" short_description="Parking on shoulder"/>
-                <list_entry value="no" short_description="No parking" deprecated="true" />
-                <list_entry value="yes" short_description="Parking is allowed" deprecated="true" />
-                <list_entry value="separate" short_description="Parking is mapped separately" deprecated="true" />
+                <list_entry value="no" short_description="No parking possible"/>
+                <list_entry value="yes" short_description="Parking possible"/>
+                <list_entry value="separate" short_description="Parking is mapped separately"/>
             </combo>
             <combo key="parking:both:orientation" text="Parking orientation both sides" values_context="parking" match="none">
                 <list_entry value="parallel" short_description="Parallel"/>
@@ -2276,9 +2276,9 @@
                 <list_entry value="on_kerb" short_description="Parking on pavement"/>
                 <list_entry value="half_on_kerb" short_description="Parking partially on pavement"/>
                 <list_entry value="shoulder" short_description="Parking on shoulder"/>
-                <list_entry value="no" short_description="No parking" deprecated="true" />
-                <list_entry value="yes" short_description="Parking is allowed" deprecated="true" />
-                <list_entry value="separate" short_description="Parking is mapped separately" deprecated="true" />
+                <list_entry value="no" short_description="No parking possible"/>
+                <list_entry value="yes" short_description="Parking possible"/>
+                <list_entry value="separate" short_description="Parking is mapped separately"/>
             </combo>
             <combo key="parking:right:orientation" text="Parking orientation right" values_context="parking" match="none">
                 <list_entry value="parallel" short_description="Parallel"/>
@@ -2363,9 +2363,9 @@
                 <list_entry value="on_kerb" short_description="Parking on pavement"/>
                 <list_entry value="half_on_kerb" short_description="Parking partially on pavement"/>
                 <list_entry value="shoulder" short_description="Parking on shoulder"/>
-                <list_entry value="no" short_description="No parking" deprecated="true" />
-                <list_entry value="yes" short_description="Parking is allowed" deprecated="true" />
-                <list_entry value="separate" short_description="Parking is mapped separately" deprecated="true" />
+                <list_entry value="no" short_description="No parking possible"/>
+                <list_entry value="yes" short_description="Parking possible"/>
+                <list_entry value="separate" short_description="Parking is mapped separately"/>
             </combo>
             <combo key="parking:left:orientation" text="Parking orientation left" values_context="parking" match="none">
                 <list_entry value="parallel" short_description="Parallel"/>
