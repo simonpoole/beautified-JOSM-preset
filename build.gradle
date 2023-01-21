@@ -1,7 +1,7 @@
 /*
  */
 
-version = '4.13.2'
+version = '5.0.0'
 
 //for Ant filter
 import org.apache.tools.ant.filters.ReplaceTokens
@@ -42,7 +42,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.28.0'
+    runtime 'ch.poole:preset-utils:0.30.0'
 }
 
 task copyCss(type: Copy) {
@@ -59,6 +59,7 @@ task copyResources(type: Copy) {
     include "toVespucciOld.xslt"
     include "href2wiki.xslt"
     include "wiki2href.xslt"
+    include "expandListEntryChunks.xslt"
     into new File(buildDir.getPath() + '/xml')
 }
 
