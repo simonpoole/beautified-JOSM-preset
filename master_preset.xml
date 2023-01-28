@@ -2087,6 +2087,13 @@
     <chunk id="takeaway">
         <combo key="takeaway" text="Takeaway" values="yes,no,only" values_sort="false" display_values="Yes,No,Only"/>
     </chunk>
+    <chunk id="takeaway_with_reusable_packaging">
+        <reference ref="takeaway"/>
+        <optional>
+            <combo key="reusable_packaging:accept" text="Place accepts reusable packaging" values="yes,no,only" values_sort="false" display_values="Yes,No,Only"/>
+            <combo key="reusable_packaging:offer" text="Place offers reusable packaging" values="yes,no,only" values_sort="false" display_values="Yes,No,Only"/>
+        </optional>
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -5633,7 +5640,7 @@
             <check key="self_service" text="Self-service" disable_off="true"/>
             <check key="microbrewery" text="Microbrewery" disable_off="true"/>
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true"/>
-            <reference ref="takeaway"/>
+            <reference ref="takeaway_with_reusable_packaging"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
             <reference ref="reservation" />
             <reference ref="oh_wheelchair_level"/>
@@ -5655,7 +5662,7 @@
             <reference ref="name_operator"/>
             <reference ref="cuisine"/>            
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true"/>
-            <reference ref="takeaway"/>
+            <reference ref="takeaway_with_reusable_packaging"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
             <check key="drive_through" text="Drive through" disable_off="true"/>
             <optional>
@@ -5691,7 +5698,7 @@
             <reference ref="name_operator"/>
             <combo key="cuisine" text="Cuisine" values="ice_cream" display_values="Ice cream"/>
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true"/>
-            <reference ref="takeaway"/>
+            <reference ref="takeaway_with_reusable_packaging"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
             <reference ref="oh_wheelchair_level"/>
             <reference ref="toilets_with_access"/>
@@ -5721,7 +5728,7 @@
             <key key="amenity" value="ice_cream"/>
             <reference ref="name_operator"/>
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true"/>
-            <reference ref="takeaway"/>
+            <reference ref="takeaway_with_reusable_packaging"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="toilets_with_access"/>
@@ -5739,7 +5746,7 @@
             <reference ref="name_operator"/>
             <check key="microbrewery" text="Microbrewery" disable_off="true"/>
             <check key="outdoor_seating" text="Outdoor seating" disable_off="true"/>
-            <reference ref="takeaway"/>
+            <reference ref="takeaway_with_reusable_packaging"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
             <reference ref="oh_wheelchair_level"/>
             <reference ref="toilets_with_access"/>
