@@ -6516,6 +6516,9 @@
             <reference ref="material"/>
             <reference ref="colours" />
             <check key="covered" text="Covered"/>
+            <optional>
+                <text key="operator" text="Operator"/>
+            </optional>
         </item> <!-- Picnic Table -->
         <item name="Public Grill" icon="${tourist_bbq}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=bbq"/>
