@@ -407,7 +407,6 @@ task generatePngs (dependsOn: ["recolour"]) {
 }
 
 githubRelease {
-    dryRun true
     token "${github_token}"
     owner "simonpoole"
     tagName "${version}"
