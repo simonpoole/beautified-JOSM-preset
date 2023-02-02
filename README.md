@@ -12,6 +12,8 @@ The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/intro
 
 The links to original icons remain if they currently don't have a replacement, current count is roughly 90 icons that either have not been replaced or are missing.
 
+To make using the presets easier with the original JOSM icons we've added one level of indirection in that instead of directly containing a reference to an icon, we reference entries in beautified_icons.txt and josm_icons.txt that contain references to out and JOSM icons respectively.
+
 ## Count of object presets
 
 The preset file contained at last count a good 1'000 individual object presets vs 724 in the original.
@@ -35,7 +37,7 @@ However, Vespucci ignores some settings and adds some of its own. Differences to
 
 Building the actual preset files is done with gradle and should work on both unixy operating systems and windows, the build task will generate the variants in the `gen` directory.
 
-Building requires `xmlstarlet` installed and on your path.
+Building requires `xmlstarlet` and a perl installation, both shoule be on your path
 
 The PNG icons are currently assumed to be in icons/png, generating them from SVG requires `rsvg-convert` to be installed. Currently the `recolour`and `generatePngs`tasks need to executed, when appropriate, manually.
 
