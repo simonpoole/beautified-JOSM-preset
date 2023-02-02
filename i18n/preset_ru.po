@@ -8,13 +8,13 @@
 # 4004 <transifex.4004@mailhero.io>, 2017-2018
 # Yury Lebedev, 2018,2021
 # Андрей Коваленко, 2021
-# Михаил Девиченский <140mic@gmail.com>, 2021-2022
+# Михаил Девиченский <140mic@gmail.com>, 2021-2023
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-01-19 13:56+0100\n"
+"POT-Creation-Date: 2023-01-20 21:19+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: Михаил Девиченский <140mic@gmail.com>, 2021-2022\n"
+"Last-Translator: Михаил Девиченский <140mic@gmail.com>, 2021-2023\n"
 "Language-Team: Russian (http://www.transifex.com/openstreetmap/presets/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17305,17 +17305,21 @@ msgctxt "parking"
 msgid "Multi-storey"
 msgstr ""
 
-#: master_preset.xml:2192(list_entry:short_description|preset:Street_parking_both_sides|value:no)
 #: master_preset.xml:2247(list_entry:short_description|preset:Street_parking_both_sides|value:no_parking)
 #: master_preset.xml:2258(list_entry:short_description|preset:Street_parking_both_sides|value:no_parking)
-#: master_preset.xml:2279(list_entry:short_description|preset:Street_parking_right-hand_side|value:no)
 #: master_preset.xml:2334(list_entry:short_description|preset:Street_parking_right-hand_side|value:no_parking)
 #: master_preset.xml:2345(list_entry:short_description|preset:Street_parking_right-hand_side|value:no_parking)
-#: master_preset.xml:2366(list_entry:short_description|preset:Street_parking_left-hand_side|value:no)
 #: master_preset.xml:2421(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_parking)
 #: master_preset.xml:2432(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_parking)
 msgctxt "parking"
 msgid "No parking"
+msgstr ""
+
+#: master_preset.xml:2192(list_entry:short_description|preset:Street_parking_both_sides|value:no)
+#: master_preset.xml:2279(list_entry:short_description|preset:Street_parking_right-hand_side|value:no)
+#: master_preset.xml:2366(list_entry:short_description|preset:Street_parking_left-hand_side|value:no)
+msgctxt "parking"
+msgid "No parking possible"
 msgstr ""
 
 #: master_preset.xml:2259(list_entry:short_description|preset:Street_parking_both_sides|value:no_standing)
@@ -17392,13 +17396,6 @@ msgctxt "parking"
 msgid "Parking direction right"
 msgstr ""
 
-#: master_preset.xml:2193(list_entry:short_description|preset:Street_parking_both_sides|value:yes)
-#: master_preset.xml:2280(list_entry:short_description|preset:Street_parking_right-hand_side|value:yes)
-#: master_preset.xml:2367(list_entry:short_description|preset:Street_parking_left-hand_side|value:yes)
-msgctxt "parking"
-msgid "Parking is allowed"
-msgstr ""
-
 #: master_preset.xml:2194(list_entry:short_description|preset:Street_parking_both_sides|value:separate)
 #: master_preset.xml:2281(list_entry:short_description|preset:Street_parking_right-hand_side|value:separate)
 #: master_preset.xml:2368(list_entry:short_description|preset:Street_parking_left-hand_side|value:separate)
@@ -17457,6 +17454,13 @@ msgstr ""
 #: master_preset.xml:2364(list_entry:short_description|preset:Street_parking_left-hand_side|value:half_on_kerb)
 msgctxt "parking"
 msgid "Parking partially on pavement"
+msgstr ""
+
+#: master_preset.xml:2193(list_entry:short_description|preset:Street_parking_both_sides|value:yes)
+#: master_preset.xml:2280(list_entry:short_description|preset:Street_parking_right-hand_side|value:yes)
+#: master_preset.xml:2367(list_entry:short_description|preset:Street_parking_left-hand_side|value:yes)
+msgctxt "parking"
+msgid "Parking possible"
 msgstr ""
 
 #: master_preset.xml:2273(combo:text|preset:Street_parking_right-hand_side|key:parking:right)
@@ -21357,7 +21361,7 @@ msgstr "Есть"
 #: master_preset.xml:6944(list_entry:display_value|group:Emergency|preset:Fire_Hydrant|value:green)
 msgctxt "hydrant_position"
 msgid "Green"
-msgstr "Зелёный"
+msgstr "На газоне"
 
 #: master_preset.xml:6940(combo:text|group:Emergency|preset:Fire_Hydrant|key:fire_hydrant:position)
 msgctxt "hydrant_position"

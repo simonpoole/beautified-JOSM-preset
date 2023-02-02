@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: Presets\n"
 "POT-Creation-Date: 2023-01-20 21:19+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: Simon Poole <sp8962@gmail.com>, 2015-2023\n"
+"Last-Translator: kjon kjon <kjon@gmx.de>, 2020-2023\n"
 "Language-Team: German (http://www.transifex.com/openstreetmap/presets/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -603,7 +603,7 @@ msgstr "Altersgruppe (z.B.: 6-12)"
 
 #: master_preset.xml:1501(combo:display_values|key:resource)
 msgid "Aggregate"
-msgstr "Zusammenfügen"
+msgstr "Gesteinskörnung"
 
 #: master_preset.xml:12048(combo:display_values|group:Land_use|preset:Meadow|key:meadow)
 msgid "Agricultural"
@@ -5706,7 +5706,7 @@ msgstr "Kilometerstein"
 
 #: master_preset.xml:1612(group:name|group:Highways)
 msgid "Highways"
-msgstr "Strassen"
+msgstr "Straßen"
 
 #: master_preset.xml:12904(list_entry:display_value|preset:Generic_route|value:hiking)
 #: master_preset.xml:5470(check:text|group:Tourism|preset:Map|key:hiking)
@@ -9387,7 +9387,7 @@ msgstr "Parkgebühr beidseitg @"
 
 #: master_preset.xml:2411(check:text|preset:Street_parking_left-hand_side|key:parking:left:fee)
 msgid "Parking fee left"
-msgstr "Parkgebuhr links"
+msgstr "Parkgebühr links"
 
 #: master_preset.xml:2414(combo:text|preset:Street_parking_left-hand_side|key:parking:left:fee:conditional)
 msgid "Parking fee left @"
@@ -15077,7 +15077,7 @@ msgstr "Warmwasser"
 
 #: master_preset.xml:12926(role:text|preset:Associated_Street|key:house)
 msgid "house"
-msgstr "Gebäude"
+msgstr "Wohnhaus"
 
 #: master_preset.xml:7346(combo:display_values|group:Facilities|preset:Clock|key:visibility)
 msgid "house (up to 5m)"
@@ -15921,7 +15921,7 @@ msgstr "Zebra zweifarbig"
 #: master_preset.xml:240(list_entry:short_description|value:dashes)
 msgctxt "crossing:markings"
 msgid "Dashes"
-msgstr ""
+msgstr "Striche"
 
 #: master_preset.xml:241(list_entry:short_description|value:dots)
 msgctxt "crossing:markings"
@@ -15956,17 +15956,17 @@ msgstr "Markierungen"
 #: master_preset.xml:248(list_entry:short_description|value:ladder:paired)
 msgctxt "crossing:markings"
 msgid "Paired ladder"
-msgstr ""
+msgstr "Leiter paarweise"
 
 #: master_preset.xml:239(list_entry:short_description|value:lines:paired)
 msgctxt "crossing:markings"
 msgid "Paired lines"
-msgstr ""
+msgstr "Linien paarweise"
 
 #: master_preset.xml:244(list_entry:short_description|value:zebra:paired)
 msgctxt "crossing:markings"
 msgid "Paired zebra"
-msgstr ""
+msgstr "Zebrastreifen paarweise"
 
 #: master_preset.xml:249(list_entry:short_description|value:pictograms)
 msgctxt "crossing:markings"
@@ -15976,7 +15976,7 @@ msgstr "Piktogramme"
 #: master_preset.xml:247(list_entry:short_description|value:ladder:skewed)
 msgctxt "crossing:markings"
 msgid "Skewed ladder"
-msgstr ""
+msgstr "Schräge Leiter"
 
 #: master_preset.xml:237(list_entry:short_description|value:surface)
 msgctxt "crossing:markings"
@@ -17450,17 +17450,17 @@ msgstr "Parken auf der Strasse"
 #: master_preset.xml:2196(combo:text|preset:Street_parking_both_sides|key:parking:both:orientation)
 msgctxt "parking"
 msgid "Parking orientation both sides"
-msgstr "Parkfeldausrichtung beidsetig"
+msgstr "Parkstreifenausrichtung beidseitig"
 
 #: master_preset.xml:2370(combo:text|preset:Street_parking_left-hand_side|key:parking:left:orientation)
 msgctxt "parking"
 msgid "Parking orientation left"
-msgstr "Parkfeldausrichtung links"
+msgstr "Parkstreifenausrichtung links"
 
 #: master_preset.xml:2283(combo:text|preset:Street_parking_right-hand_side|key:parking:right:orientation)
 msgctxt "parking"
 msgid "Parking orientation right"
-msgstr "Parkfeldausrichtung rechts"
+msgstr "Parkstreifenausrichtung rechts"
 
 #: master_preset.xml:2190(list_entry:short_description|preset:Street_parking_both_sides|value:half_on_kerb)
 #: master_preset.xml:2277(list_entry:short_description|preset:Street_parking_right-hand_side|value:half_on_kerb)

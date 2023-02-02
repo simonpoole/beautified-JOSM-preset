@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-01-19 13:56+0100\n"
+"POT-Creation-Date: 2023-01-20 21:19+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Aapo S., 2018\n"
 "Language-Team: Finnish (http://www.transifex.com/openstreetmap/presets/language/fi/)\n"
@@ -1032,7 +1032,7 @@ msgstr ""
 
 #: master_preset.xml:5488(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 msgid "Astronomy"
-msgstr ""
+msgstr "Tähtitiede"
 
 #: master_preset.xml:5428(item:name|group:Tourism|preset:Attraction)
 msgid "Attraction"
@@ -1648,7 +1648,7 @@ msgstr ""
 
 #: master_preset.xml:13040(item:name|group:Crafts|preset:Blacksmith)
 msgid "Blacksmith"
-msgstr ""
+msgstr "Rautaseppä"
 
 #: master_preset.xml:7445(item:name|group:Facilities|preset:Bleachers)
 msgid "Bleachers"
@@ -1769,7 +1769,7 @@ msgstr ""
 
 #: master_preset.xml:13054(item:name|group:Crafts|preset:Bookbinder)
 msgid "Bookbinder"
-msgstr ""
+msgstr "Kirjasitomo"
 
 #: master_preset.xml:11189(item:name|group:Other|preset:Bookmaker)
 msgid "Bookmaker"
@@ -1899,7 +1899,7 @@ msgstr ""
 
 #: master_preset.xml:13061(item:name|group:Crafts|preset:Brewery)
 msgid "Brewery"
-msgstr ""
+msgstr "Olutpanimo"
 
 #: master_preset.xml:3129(list_entry:display_value|group:Barriers|preset:Wall|value:brick)
 msgid "Brick"
@@ -2459,7 +2459,7 @@ msgstr ""
 
 #: master_preset.xml:13096(item:name|group:Crafts|preset:Caterer)
 msgid "Caterer"
-msgstr ""
+msgstr "Pitopalvelu"
 
 #: master_preset.xml:6355(combo:display_values|group:Place_of_Worship|preset:Church|key:building)
 msgid "Cathedral"
@@ -2723,7 +2723,7 @@ msgstr ""
 
 #: master_preset.xml:3143(item:name|group:Barriers|preset:City_Wall)
 msgid "City Wall"
-msgstr ""
+msgstr "Kaupunginmuuri"
 
 #: master_preset.xml:4579(list_entry:display_value|group:Bicycle|preset:Rental|value:city_bike)
 msgid "City bike"
@@ -4484,7 +4484,7 @@ msgstr ""
 #: master_preset.xml:3098(item:name|group:Barriers|preset:Fence)
 #: master_preset.xml:5908(combo:display_values|group:Leisure|preset:Dog_Park|key:barrier)
 msgid "Fence"
-msgstr ""
+msgstr "Aita"
 
 #: master_preset.xml:1549(check:text|key:ferry)
 #: master_preset.xml:4698(combo:display_values|group:Public_Transport|preset:Route_Master|key:route_master)
@@ -5171,7 +5171,7 @@ msgstr ""
 
 #: master_preset.xml:5488(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 msgid "Geology"
-msgstr ""
+msgstr "Geologia"
 
 #: master_preset.xml:1356(multiselect:display_values|key:language)
 #: master_preset.xml:575(multiselect:display_values|key:cuisine)
@@ -6472,7 +6472,7 @@ msgstr ""
 #: master_preset.xml:3695(list_entry:display_value|group:Water|preset:Other_waterbodies|value:lake)
 #: master_preset.xml:6936(list_entry:display_value|group:Emergency|preset:Fire_Hydrant|value:lake)
 msgid "Lake"
-msgstr ""
+msgstr "Järvi"
 
 #: master_preset.xml:12023(group:name|group:Land_use)
 msgid "Land use"
@@ -8157,7 +8157,7 @@ msgstr "Luonto"
 #: master_preset.xml:5488(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 #: master_preset.xml:6191(multiselect:display_values|group:Culture|preset:Museum|key:museum)
 msgid "Nature"
-msgstr ""
+msgstr "Luonto"
 
 #: master_preset.xml:11921(item:name|group:Nature|preset:Nature_Reserve)
 msgid "Nature Reserve"
@@ -9907,7 +9907,7 @@ msgstr ""
 #: master_preset.xml:1283(combo:display_values|key:roof:material)
 #: master_preset.xml:5488(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 msgid "Plants"
-msgstr ""
+msgstr "Kasvit"
 
 #: master_preset.xml:816(list_entry:short_description|value:deciduous)
 msgid "Plants that are leafless for a certain period during the year."
@@ -14247,7 +14247,7 @@ msgstr ""
 #: master_preset.xml:3124(item:name|group:Barriers|preset:Wall)
 #: master_preset.xml:5908(combo:display_values|group:Leisure|preset:Dog_Park|key:barrier)
 msgid "Wall"
-msgstr ""
+msgstr "Seinä"
 
 #: master_preset.xml:12057(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Walnut trees"
@@ -17298,17 +17298,21 @@ msgctxt "parking"
 msgid "Multi-storey"
 msgstr ""
 
-#: master_preset.xml:2192(list_entry:short_description|preset:Street_parking_both_sides|value:no)
 #: master_preset.xml:2247(list_entry:short_description|preset:Street_parking_both_sides|value:no_parking)
 #: master_preset.xml:2258(list_entry:short_description|preset:Street_parking_both_sides|value:no_parking)
-#: master_preset.xml:2279(list_entry:short_description|preset:Street_parking_right-hand_side|value:no)
 #: master_preset.xml:2334(list_entry:short_description|preset:Street_parking_right-hand_side|value:no_parking)
 #: master_preset.xml:2345(list_entry:short_description|preset:Street_parking_right-hand_side|value:no_parking)
-#: master_preset.xml:2366(list_entry:short_description|preset:Street_parking_left-hand_side|value:no)
 #: master_preset.xml:2421(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_parking)
 #: master_preset.xml:2432(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_parking)
 msgctxt "parking"
 msgid "No parking"
+msgstr ""
+
+#: master_preset.xml:2192(list_entry:short_description|preset:Street_parking_both_sides|value:no)
+#: master_preset.xml:2279(list_entry:short_description|preset:Street_parking_right-hand_side|value:no)
+#: master_preset.xml:2366(list_entry:short_description|preset:Street_parking_left-hand_side|value:no)
+msgctxt "parking"
+msgid "No parking possible"
 msgstr ""
 
 #: master_preset.xml:2259(list_entry:short_description|preset:Street_parking_both_sides|value:no_standing)
@@ -17385,13 +17389,6 @@ msgctxt "parking"
 msgid "Parking direction right"
 msgstr ""
 
-#: master_preset.xml:2193(list_entry:short_description|preset:Street_parking_both_sides|value:yes)
-#: master_preset.xml:2280(list_entry:short_description|preset:Street_parking_right-hand_side|value:yes)
-#: master_preset.xml:2367(list_entry:short_description|preset:Street_parking_left-hand_side|value:yes)
-msgctxt "parking"
-msgid "Parking is allowed"
-msgstr ""
-
 #: master_preset.xml:2194(list_entry:short_description|preset:Street_parking_both_sides|value:separate)
 #: master_preset.xml:2281(list_entry:short_description|preset:Street_parking_right-hand_side|value:separate)
 #: master_preset.xml:2368(list_entry:short_description|preset:Street_parking_left-hand_side|value:separate)
@@ -17450,6 +17447,13 @@ msgstr ""
 #: master_preset.xml:2364(list_entry:short_description|preset:Street_parking_left-hand_side|value:half_on_kerb)
 msgctxt "parking"
 msgid "Parking partially on pavement"
+msgstr ""
+
+#: master_preset.xml:2193(list_entry:short_description|preset:Street_parking_both_sides|value:yes)
+#: master_preset.xml:2280(list_entry:short_description|preset:Street_parking_right-hand_side|value:yes)
+#: master_preset.xml:2367(list_entry:short_description|preset:Street_parking_left-hand_side|value:yes)
+msgctxt "parking"
+msgid "Parking possible"
 msgstr ""
 
 #: master_preset.xml:2273(combo:text|preset:Street_parking_right-hand_side|key:parking:right)
@@ -20521,7 +20525,7 @@ msgstr "Taide"
 #: master_preset.xml:7176(list_entry:display_value|group:Clubs|preset:Club|value:astronomy)
 msgctxt "leisure"
 msgid "Astronomy"
-msgstr ""
+msgstr "Tähtitiede"
 
 #: master_preset.xml:5745(combo:text|group:Leisure|preset:Rides|key:attraction)
 msgctxt "leisure"
@@ -20795,7 +20799,7 @@ msgstr ""
 #: master_preset.xml:7200(list_entry:display_value|group:Clubs|preset:Club|value:nature)
 msgctxt "leisure"
 msgid "Nature"
-msgstr ""
+msgstr "Luonto"
 
 #: master_preset.xml:7201(list_entry:display_value|group:Clubs|preset:Club|value:nudism)
 msgctxt "leisure"
@@ -21039,7 +21043,7 @@ msgstr "Järvi"
 #: master_preset.xml:5847(combo:display_values|group:Leisure|preset:Public_bath|key:bath:type)
 msgctxt "bath:type"
 msgid "Onsen"
-msgstr ""
+msgstr "Onsen-kylpylä"
 
 #: master_preset.xml:5847(combo:display_values|group:Leisure|preset:Public_bath|key:bath:type)
 msgctxt "bath:type"

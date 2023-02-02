@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-01-19 13:56+0100\n"
+"POT-Creation-Date: 2023-01-20 21:19+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Gábor Babos <gabor.babos@gmail.com>, 2016-2022\n"
 "Language-Team: Hungarian (http://www.transifex.com/openstreetmap/presets/language/hu/)\n"
@@ -17300,18 +17300,22 @@ msgctxt "parking"
 msgid "Multi-storey"
 msgstr "Parkolóház"
 
-#: master_preset.xml:2192(list_entry:short_description|preset:Street_parking_both_sides|value:no)
 #: master_preset.xml:2247(list_entry:short_description|preset:Street_parking_both_sides|value:no_parking)
 #: master_preset.xml:2258(list_entry:short_description|preset:Street_parking_both_sides|value:no_parking)
-#: master_preset.xml:2279(list_entry:short_description|preset:Street_parking_right-hand_side|value:no)
 #: master_preset.xml:2334(list_entry:short_description|preset:Street_parking_right-hand_side|value:no_parking)
 #: master_preset.xml:2345(list_entry:short_description|preset:Street_parking_right-hand_side|value:no_parking)
-#: master_preset.xml:2366(list_entry:short_description|preset:Street_parking_left-hand_side|value:no)
 #: master_preset.xml:2421(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_parking)
 #: master_preset.xml:2432(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_parking)
 msgctxt "parking"
 msgid "No parking"
 msgstr "Várakozni tilos"
+
+#: master_preset.xml:2192(list_entry:short_description|preset:Street_parking_both_sides|value:no)
+#: master_preset.xml:2279(list_entry:short_description|preset:Street_parking_right-hand_side|value:no)
+#: master_preset.xml:2366(list_entry:short_description|preset:Street_parking_left-hand_side|value:no)
+msgctxt "parking"
+msgid "No parking possible"
+msgstr ""
 
 #: master_preset.xml:2259(list_entry:short_description|preset:Street_parking_both_sides|value:no_standing)
 #: master_preset.xml:2346(list_entry:short_description|preset:Street_parking_right-hand_side|value:no_standing)
@@ -17387,13 +17391,6 @@ msgctxt "parking"
 msgid "Parking direction right"
 msgstr ""
 
-#: master_preset.xml:2193(list_entry:short_description|preset:Street_parking_both_sides|value:yes)
-#: master_preset.xml:2280(list_entry:short_description|preset:Street_parking_right-hand_side|value:yes)
-#: master_preset.xml:2367(list_entry:short_description|preset:Street_parking_left-hand_side|value:yes)
-msgctxt "parking"
-msgid "Parking is allowed"
-msgstr ""
-
 #: master_preset.xml:2194(list_entry:short_description|preset:Street_parking_both_sides|value:separate)
 #: master_preset.xml:2281(list_entry:short_description|preset:Street_parking_right-hand_side|value:separate)
 #: master_preset.xml:2368(list_entry:short_description|preset:Street_parking_left-hand_side|value:separate)
@@ -17452,6 +17449,13 @@ msgstr ""
 #: master_preset.xml:2364(list_entry:short_description|preset:Street_parking_left-hand_side|value:half_on_kerb)
 msgctxt "parking"
 msgid "Parking partially on pavement"
+msgstr ""
+
+#: master_preset.xml:2193(list_entry:short_description|preset:Street_parking_both_sides|value:yes)
+#: master_preset.xml:2280(list_entry:short_description|preset:Street_parking_right-hand_side|value:yes)
+#: master_preset.xml:2367(list_entry:short_description|preset:Street_parking_left-hand_side|value:yes)
+msgctxt "parking"
+msgid "Parking possible"
 msgstr ""
 
 #: master_preset.xml:2273(combo:text|preset:Street_parking_right-hand_side|key:parking:right)
@@ -21957,7 +21961,7 @@ msgstr "Pillangó"
 #: master_preset.xml:9031(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
 msgid "Gate"
-msgstr ""
+msgstr "Kapu"
 
 #: master_preset.xml:9031(combo:display_values|group:Man_Made|preset:Pipeline_Valve|key:valve)
 msgctxt "valve"
