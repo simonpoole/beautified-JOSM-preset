@@ -83,7 +83,7 @@ task copyResources(type: Copy) {
 task updateWebsite(dependsOn: ["copyCss",'vespucciIcons'], type: JavaExec) {
     main = "ch.poole.osm.presetutils.Preset2Html"
     classpath = configurations.runtime
-    args('-input',    temp + mapped_vespucci_preset_file,
+    args('-input',       temp + legacy_vespucci_preset_file,
             '-output',   'index.html',
             '-vespucci', 'https://github.com/simonpoole/' + project.name + '/releases/latest/download/vespucci_zip.zip',
             '-josm',     'https://github.com/simonpoole/' + project.name + '/releases/latest/download/josm.zip')
@@ -93,10 +93,10 @@ updateWebsite.description = 'Update the website'
 
 // TRANSLATIONS
 
-task updatePot(type: JavaExec) {
+task updatePot(dependsOn: ['expandListEntryChunks'], type: JavaExec) {
     main = "ch.poole.osm.presetutils.Preset2Pot"
     classpath = configurations.runtime
-    args('-input',  preset_file, '-output', 'i18n/preset.pot')
+    args('-input',  temp + legacy_vespucci_preset_file, '-output', 'i18n/preset.pot')
 }
 updatePot.group = 'preset utils'
 updatePot.description = 'Update the translation template'
