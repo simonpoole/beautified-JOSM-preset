@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: *Sociologist Abedi*, 2022-2023\n"
 "Language-Team: Persian (http://www.transifex.com/openstreetmap/presets/language/fa/)\n"
@@ -937,7 +937,7 @@ msgstr "نوعی سیستم روشنایی"
 
 #: build/temp/v4.xml:1194(role:text|key:approach)
 msgid "Approach segment"
-msgstr ""
+msgstr "بخش رویکرد"
 
 #: build/temp/v4.xml:11790(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Apricot trees"
@@ -1042,7 +1042,7 @@ msgstr "اثر هنری"
 
 #: build/temp/v4.xml:11490(item:name|group:Geography|preset:Arête)
 msgid "Arête"
-msgstr ""
+msgstr "استخوان ماهی"
 
 #: build/temp/v4.xml:838(text:text|key:ascent)
 msgid "Ascent (m)"
@@ -1273,7 +1273,7 @@ msgstr "نانوایی"
 
 #: build/temp/v4.xml:8567(combo:display_values|group:Man_Made|preset:Works|key:product)
 msgid "Bakery products"
-msgstr ""
+msgstr "محصولات نانوایی"
 
 #: build/temp/v4.xml:5715(list_entry:display_value|group:Leisure|preset:Fitness_Station|value:balance_beam)
 #: build/temp/v4.xml:5835(check:text|group:Leisure|preset:Playground|key:playground:balancebeam)
@@ -1405,7 +1405,7 @@ msgstr "حمام"
 #: build/temp/v4.xml:9795(list_entry:short_description|group:Historic_Places_&_Objects|preset:Archaeological_Site|value:baths)
 #: build/temp/v4.xml:9811(list_entry:short_description|group:Historic_Places_&_Objects|preset:Archaeological_Site|value:baths)
 msgid "Baths"
-msgstr ""
+msgstr "حمام/حمام‌ها"
 
 #: build/temp/v4.xml:1476(check:text|key:recycling:batteries)
 msgid "Batteries"
@@ -1492,7 +1492,7 @@ msgstr "بیپ_نوعی کارت هوشمند فیلیپینی"
 
 #: build/temp/v4.xml:8567(combo:display_values|group:Man_Made|preset:Works|key:product)
 msgid "Beer"
-msgstr ""
+msgstr "آبجو"
 
 #: build/temp/v4.xml:5271(item:name|group:Food+Drinks|preset:Beer_Garden)
 msgid "Beer Garden"
@@ -1553,7 +1553,7 @@ msgstr "مسیر دوچرخه سواری"
 
 #: build/temp/v4.xml:2040(multiselect:text|group:Lane_attributes|preset:Single_direction_roads|key:bicycle:lanes)
 msgid "Bicycle lane access"
-msgstr ""
+msgstr "دسترسی به مسیر دوچرخه"
 
 #: build/temp/v4.xml:2070(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bicycle:lanes:forward)
 msgid "Bicycle lane access in way direction"
@@ -1577,7 +1577,7 @@ msgstr "لاستیک تویی دوچرخه / تویوب دوچرخه"
 
 #: build/temp/v4.xml:4477(multiselect:text|group:Bicycle|preset:Rental|key:rental)
 msgid "Bicycle type"
-msgstr ""
+msgstr "نوع دوچرخه"
 
 #: build/temp/v4.xml:4460(check:text|group:Bicycle|preset:Bike_Dealer|key:service:bicycle:rental)
 msgid "Bicycles are rented"
@@ -1609,7 +1609,7 @@ msgstr "بیلیارد"
 
 #: build/temp/v4.xml:769(combo:text|key:bin)
 msgid "Bin"
-msgstr ""
+msgstr "سطل زباله"
 
 #: build/temp/v4.xml:6040(multiselect:display_values|preset:Gambling|key:gambling)
 msgid "Bingo"
@@ -10591,10 +10591,6 @@ msgstr "کوانگو / سازمان غیر دولتی شبه مستقل"
 msgid "Quarry"
 msgstr "معدن"
 
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "ربع"
-
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
 msgstr "اتومبیل های کنترل رادیویی"
@@ -12398,10 +12394,6 @@ msgstr ""
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr "چشمه"
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "میدان"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -22404,6 +22396,16 @@ msgstr "تعمیرات"
 msgctxt "place"
 msgid "Island"
 msgstr "جزیره"
+
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "ناحیه"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "فضای عمومی باز (احاطه شده با ساختمان)\nمیدان\nمیدانگاه"
 
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"

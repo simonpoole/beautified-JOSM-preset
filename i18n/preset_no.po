@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: danieldegroot2 <danieldegroot18@gmail.com>, 2021\n"
 "Language-Team: Norwegian (http://www.transifex.com/openstreetmap/presets/language/no/)\n"
@@ -10588,10 +10588,6 @@ msgstr ""
 msgid "Quarry"
 msgstr ""
 
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "Kvartal"
-
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
 msgstr ""
@@ -12395,10 +12391,6 @@ msgstr ""
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr ""
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "Rett opp hjørner"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -22401,6 +22393,16 @@ msgstr ""
 msgctxt "place"
 msgid "Island"
 msgstr "Øy"
+
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "Kvartal"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "Torg"
 
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"

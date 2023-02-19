@@ -25,9 +25,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: kjon kjon <kjon@gmx.de>, 2020-2023\n"
+"Last-Translator: Simon Poole <sp8962@gmail.com>, 2015-2023\n"
 "Language-Team: German (http://www.transifex.com/openstreetmap/presets/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -10609,10 +10609,6 @@ msgstr "Halbstaatliche Organisation"
 msgid "Quarry"
 msgstr "Tagebau"
 
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "Quartier"
-
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
 msgstr "Modellauto Platz"
@@ -12416,10 +12412,6 @@ msgstr "Sprawny"
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr "Quelle"
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "Rechtwinklig machen"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -22422,6 +22414,16 @@ msgstr "Reparatur"
 msgctxt "place"
 msgid "Island"
 msgstr "Insel"
+
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "Quartier"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "Platz"
 
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"

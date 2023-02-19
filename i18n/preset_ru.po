@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Михаил Девиченский <140mic@gmail.com>, 2021-2023\n"
 "Language-Team: Russian (http://www.transifex.com/openstreetmap/presets/language/ru/)\n"
@@ -10596,10 +10596,6 @@ msgstr ""
 msgid "Quarry"
 msgstr ""
 
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "Квартал"
-
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
 msgstr ""
@@ -12403,10 +12399,6 @@ msgstr ""
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr ""
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "Площадь"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -22409,6 +22401,16 @@ msgstr ""
 msgctxt "place"
 msgid "Island"
 msgstr "Остров"
+
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "Квартал"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "Сделать прямоугольником"
 
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"

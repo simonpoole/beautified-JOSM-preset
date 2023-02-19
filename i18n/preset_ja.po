@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Nozomu KURASAWA <nabetaro@caldron.jp>, 2018,2021\n"
 "Language-Team: Japanese (http://www.transifex.com/openstreetmap/presets/language/ja/)\n"
@@ -6875,7 +6875,7 @@ msgstr ""
 
 #: build/temp/v4.xml:11436(item:name|group:Places|preset:Locality)
 msgid "Locality"
-msgstr ""
+msgstr "無居住地域・通称地名"
 
 #: build/temp/v4.xml:1583(check:text|key:indoor)
 #: build/temp/v4.xml:6755(check:text|group:Emergency|preset:Automated_Defibrillator|key:indoor)
@@ -10588,10 +10588,6 @@ msgstr ""
 msgid "Quarry"
 msgstr ""
 
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "大字"
-
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
 msgstr ""
@@ -12395,10 +12391,6 @@ msgstr ""
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr ""
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "広場（都心部）"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -16354,7 +16346,7 @@ msgstr "スポーツ"
 #: build/temp/v4.xml:621(list_entry:short_description|value:suits)
 msgctxt "clothes"
 msgid "Suits"
-msgstr ""
+msgstr "スーツ"
 
 #: build/temp/v4.xml:622(list_entry:short_description|value:swimwear)
 msgctxt "clothes"
@@ -22402,6 +22394,16 @@ msgctxt "place"
 msgid "Island"
 msgstr "島"
 
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "大字"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "直角化"
+
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"
 msgid "State"
@@ -22816,7 +22818,7 @@ msgstr ""
 #: build/temp/v4.xml:11946(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
 msgid "Depot"
-msgstr ""
+msgstr "車両基地"
 
 #: build/temp/v4.xml:11946(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"

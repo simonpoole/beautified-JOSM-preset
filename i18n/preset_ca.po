@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: jmaspons <joanmaspons@gmail.com>, 2021-2022\n"
 "Language-Team: Catalan (http://www.transifex.com/openstreetmap/presets/language/ca/)\n"
@@ -1602,7 +1602,7 @@ msgstr ""
 
 #: build/temp/v4.xml:7514(item:name|group:Facilities|preset:Billboard)
 msgid "Billboard"
-msgstr ""
+msgstr "Tana publicitària"
 
 #: build/temp/v4.xml:8109(item:name|group:Sport_(Ball)|preset:Billiards)
 msgid "Billiards"
@@ -4488,7 +4488,7 @@ msgstr ""
 
 #: build/temp/v4.xml:11759(item:name|group:Land_use|preset:Farmyard)
 msgid "Farmyard"
-msgstr ""
+msgstr "Terrenys de Granja"
 
 #: build/temp/v4.xml:1368(multiselect:display_values|key:language)
 msgid "Faroese"
@@ -9816,7 +9816,7 @@ msgstr ""
 
 #: build/temp/v4.xml:13508(item:name|group:Offices|preset:Physician)
 msgid "Physician"
-msgstr ""
+msgstr "Metge"
 
 #: build/temp/v4.xml:6649(item:name|group:Health|preset:Physiotherapist)
 msgid "Physiotherapist"
@@ -10591,10 +10591,6 @@ msgstr ""
 #: build/temp/v4.xml:12003(item:name|group:Land_use|preset:Quarry)
 msgid "Quarry"
 msgstr "Pedrera"
-
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "Quarter"
 
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
@@ -11960,7 +11956,7 @@ msgstr ""
 
 #: build/temp/v4.xml:222(combo:text|key:shoulder)
 msgid "Shoulder"
-msgstr ""
+msgstr "Voral"
 
 #: build/temp/v4.xml:5068(check:text|group:Accommodation|preset:Wilderness_Hut|key:shower)
 #: build/temp/v4.xml:5745(check:text|group:Leisure|preset:Public_bath|key:shower)
@@ -12399,10 +12395,6 @@ msgstr ""
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr ""
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "Quadrar"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -18001,7 +17993,7 @@ msgstr ""
 #: build/temp/v4.xml:1107(combo:display_values|key:support)
 msgctxt "mounting/support"
 msgid "Billboard"
-msgstr ""
+msgstr "Tana publicitària"
 
 #: build/temp/v4.xml:1107(combo:display_values|key:support)
 msgctxt "mounting/support"
@@ -22405,6 +22397,16 @@ msgstr ""
 msgctxt "place"
 msgid "Island"
 msgstr "Illa"
+
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "Quarter"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "Plaça"
 
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"

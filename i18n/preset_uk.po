@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Михаил Девиченский <140mic@gmail.com>, 2022-2023\n"
 "Language-Team: Ukrainian (http://www.transifex.com/openstreetmap/presets/language/uk/)\n"
@@ -6639,7 +6639,7 @@ msgstr ""
 #: build/temp/v4.xml:3162(combo:text|group:Passageways|preset:Tunnel|key:layer)
 #: build/temp/v4.xml:3519(combo:text|group:Water|preset:Culvert|key:layer)
 msgid "Layer"
-msgstr ""
+msgstr "Рівень"
 
 #: build/temp/v4.xml:1509(combo:display_values|key:resource)
 msgid "Lead"
@@ -6951,7 +6951,7 @@ msgstr "Готель кохання"
 
 #: build/temp/v4.xml:1344(list_entry:short_description|value:2)
 msgid "Lower secondary (2)"
-msgstr ""
+msgstr "Неповна середня освіта (2)"
 
 #: build/temp/v4.xml:1347(list_entry:short_description|value:5)
 msgid "Lower tertiary education (5)"
@@ -10591,10 +10591,6 @@ msgstr ""
 msgid "Quarry"
 msgstr ""
 
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "Квартал"
-
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
 msgstr ""
@@ -11703,15 +11699,15 @@ msgstr ""
 
 #: build/temp/v4.xml:1715(item:name|group:Streets|preset:Secondary)
 msgid "Secondary"
-msgstr "Додатковий вхід"
+msgstr "Другорядна дорога"
 
 #: build/temp/v4.xml:1735(item:name|group:Streets|preset:Secondary_Link)
 msgid "Secondary Link"
-msgstr ""
+msgstr "З’їзд з/на другорядну дорогу"
 
 #: build/temp/v4.xml:902(combo:text|key:voltage:secondary)
 msgid "Secondary voltage in Volts (V)"
-msgstr ""
+msgstr "Вторинна напруга у вольтах (В)"
 
 #: build/temp/v4.xml:10980(item:name|group:Other|preset:Security)
 msgid "Security"
@@ -12398,10 +12394,6 @@ msgstr ""
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr "Джерело"
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "Майдан"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -14048,7 +14040,7 @@ msgstr "Меблівник"
 
 #: build/temp/v4.xml:1345(list_entry:short_description|value:3)
 msgid "Upper secondary (3)"
-msgstr ""
+msgstr "Повна середня освіта (3)"
 
 #: build/temp/v4.xml:1348(list_entry:short_description|value:6)
 msgid "Upper tertiary education (6)"
@@ -16357,7 +16349,7 @@ msgstr "Спорт"
 #: build/temp/v4.xml:621(list_entry:short_description|value:suits)
 msgctxt "clothes"
 msgid "Suits"
-msgstr ""
+msgstr "Костюми"
 
 #: build/temp/v4.xml:622(list_entry:short_description|value:swimwear)
 msgctxt "clothes"
@@ -19566,12 +19558,12 @@ msgstr ""
 #: build/temp/v4.xml:3388(combo:display_values|preset:Street_area|key:area:highway)
 msgctxt "Highway"
 msgid "Secondary"
-msgstr "Додатковий вхід"
+msgstr "Другорядна дорога"
 
 #: build/temp/v4.xml:3388(combo:display_values|preset:Street_area|key:area:highway)
 msgctxt "Highway"
 msgid "Secondary link"
-msgstr ""
+msgstr "З’їзд з/на другорядну дорогу"
 
 #: build/temp/v4.xml:1512(combo:display_values|key:highway)
 #: build/temp/v4.xml:1835(combo:display_values|group:Streets|preset:Bicycle_Road|key:highway)
@@ -22405,6 +22397,16 @@ msgctxt "place"
 msgid "Island"
 msgstr "Острів"
 
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "Квартал"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "Випрямити кути"
+
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"
 msgid "State"
@@ -22819,7 +22821,7 @@ msgstr ""
 #: build/temp/v4.xml:11946(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
 msgid "Depot"
-msgstr ""
+msgstr "Депо"
 
 #: build/temp/v4.xml:11946(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"

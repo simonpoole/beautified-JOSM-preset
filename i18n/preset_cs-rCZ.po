@@ -1,8 +1,8 @@
 # 
 # Translators:
 # Aleš Fiala <f.ales1@seznam.cz>, 2022-2023
-# trendspotter <jirka.p@volny.cz>, 2022
-# trendspotter <jirka.p@volny.cz>, 2020
+# Jiří Podhorecký, 2022
+# Jiří Podhorecký, 2020
 # leschek <leschekleschek@post.cz>, 2016-2017
 # Petr Schönmann <pschonmann@gmail.com>, 2019
 # Roman Horník <roman.hornik@debian-linux.cz>, 2018
@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Aleš Fiala <f.ales1@seznam.cz>, 2022-2023\n"
 "Language-Team: Czech (http://www.transifex.com/openstreetmap/presets/language/cs/)\n"
@@ -10594,10 +10594,6 @@ msgstr "Nevládní organizace"
 msgid "Quarry"
 msgstr "Lom"
 
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "Čtvrť"
-
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
 msgstr "RC modely"
@@ -12401,10 +12397,6 @@ msgstr "Účinná"
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr "Pramen"
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "Náměstí"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -22407,6 +22399,16 @@ msgstr "Opravy"
 msgctxt "place"
 msgid "Island"
 msgstr "Ostrov"
+
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "Čtvrť"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "Zpravoúhlit"
 
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"

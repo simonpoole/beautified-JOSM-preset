@@ -10,7 +10,7 @@
 # Mateusz Konieczny <matkoniecz@gmail.com>, 2017-2022
 # Teiron, 2016-2018
 # Piotr Sokół <psokol.l10n@gmail.com>, 2016,2018
-# Piotr Strębski <strebski@gmail.com>, 2019-2020,2022
+# Piotr Strębski <strebski@gmail.com>, 2019-2020,2022-2023
 # Right Path, 2018-2019
 # R Ł <whitep0wer@gmail.com>, 2021
 # Ryszard Mikke <Ryszard.Mikke@gmail.com>, 2016
@@ -19,9 +19,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: Mateusz Konieczny <matkoniecz@gmail.com>, 2017-2022\n"
+"Last-Translator: Piotr Strębski <strebski@gmail.com>, 2019-2020,2022-2023\n"
 "Language-Team: Polish (http://www.transifex.com/openstreetmap/presets/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -538,7 +538,7 @@ msgstr "Poprzez"
 
 #: build/temp/v4.xml:89(list_entry:display_value|value:acrylic)
 msgid "Acrylic"
-msgstr ""
+msgstr "Akryl"
 
 #: build/temp/v4.xml:1289(combo:display_values|key:roof:material)
 msgid "Acrylic glass"
@@ -554,7 +554,7 @@ msgstr "Dodatkowe atrybuty"
 
 #: build/temp/v4.xml:12046(text:text|group:Addresses_and_Contact|preset:Address|key:addr:parentstreet)
 msgid "Additional localisation"
-msgstr ""
+msgstr "Dodatkowa lokalizacja"
 
 #: build/temp/v4.xml:4236(label:text|group:Car|preset:Fuel)
 msgid "Additives:"
@@ -650,7 +650,7 @@ msgstr "Przedział wiekowy (np.6-12)"
 
 #: build/temp/v4.xml:1509(combo:display_values|key:resource)
 msgid "Aggregate"
-msgstr ""
+msgstr "Agregat"
 
 #: build/temp/v4.xml:11783(combo:display_values|group:Land_use|preset:Meadow|key:meadow)
 msgid "Agricultural"
@@ -1183,7 +1183,7 @@ msgstr "Dostępne"
 #: build/temp/v4.xml:4251(label:text|group:Car|preset:Charging_Station)
 #: build/temp/v4.xml:4269(label:text|group:Car|preset:Charging_Station)
 msgid "Available Sockets/Cables:"
-msgstr ""
+msgstr "Dostępne gniazda/kable:"
 
 #: build/temp/v4.xml:3206(item:name|group:Passageways|preset:Avalanche_Protector)
 msgid "Avalanche Protector"
@@ -1285,7 +1285,7 @@ msgstr "Piekarnia"
 
 #: build/temp/v4.xml:8567(combo:display_values|group:Man_Made|preset:Works|key:product)
 msgid "Bakery products"
-msgstr ""
+msgstr "Produkty piekarnicze"
 
 #: build/temp/v4.xml:5715(list_entry:display_value|group:Leisure|preset:Fitness_Station|value:balance_beam)
 #: build/temp/v4.xml:5835(check:text|group:Leisure|preset:Playground|key:playground:balancebeam)
@@ -1504,7 +1504,7 @@ msgstr "Beep"
 
 #: build/temp/v4.xml:8567(combo:display_values|group:Man_Made|preset:Works|key:product)
 msgid "Beer"
-msgstr ""
+msgstr "Piwo"
 
 #: build/temp/v4.xml:5271(item:name|group:Food+Drinks|preset:Beer_Garden)
 msgid "Beer Garden"
@@ -1534,7 +1534,7 @@ msgstr "Bangalski"
 
 #: build/temp/v4.xml:6040(multiselect:display_values|preset:Gambling|key:gambling)
 msgid "Betting"
-msgstr ""
+msgstr "Zakłady"
 
 #: build/temp/v4.xml:10104(item:name|group:Food|preset:Beverages)
 msgid "Beverages"
@@ -1565,15 +1565,15 @@ msgstr "Trasa rowerowa"
 
 #: build/temp/v4.xml:2040(multiselect:text|group:Lane_attributes|preset:Single_direction_roads|key:bicycle:lanes)
 msgid "Bicycle lane access"
-msgstr ""
+msgstr "Dostęp do ścieżki rowerowej"
 
 #: build/temp/v4.xml:2070(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bicycle:lanes:forward)
 msgid "Bicycle lane access in way direction"
-msgstr ""
+msgstr "Dostęp do ścieżki rowerowej w kierunku jazdy"
 
 #: build/temp/v4.xml:2094(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bicycle:lanes:backward)
 msgid "Bicycle lane access opposite to way direction"
-msgstr ""
+msgstr "Dostęp do ścieżki rowerowej przeciwnej do kierunku jazdy"
 
 #: build/temp/v4.xml:2467(check:text|group:Ways|preset:Steps|key:ramp:bicycle)
 msgid "Bicycle ramp"
@@ -1625,7 +1625,7 @@ msgstr "Kosz"
 
 #: build/temp/v4.xml:6040(multiselect:display_values|preset:Gambling|key:gambling)
 msgid "Bingo"
-msgstr ""
+msgstr "Bingo"
 
 #: build/temp/v4.xml:7385(item:name|group:Facilities|preset:Binoculars)
 msgid "Binoculars"
@@ -1646,7 +1646,7 @@ msgstr " \t\nGenerator na biopaliwo"
 
 #: build/temp/v4.xml:9074(item:name|group:Power_Plant|preset:Biofuel_Power_Plant)
 msgid "Biofuel Power Plant"
-msgstr ""
+msgstr "Elektrownia biopaliwowa"
 
 #: build/temp/v4.xml:4231(check:text|group:Car|preset:Fuel|key:fuel:biogas)
 #: build/temp/v4.xml:9058(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:biogas)
@@ -1659,7 +1659,7 @@ msgstr "Generator na biogaz"
 
 #: build/temp/v4.xml:9081(item:name|group:Power_Plant|preset:Biogas_Power_Plant)
 msgid "Biogas Power Plant"
-msgstr ""
+msgstr "Elektrownia biogazowa"
 
 #: build/temp/v4.xml:9060(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:biomass)
 msgid "Biomass"
@@ -1671,7 +1671,7 @@ msgstr "Generator na biomasę"
 
 #: build/temp/v4.xml:9088(item:name|group:Power_Plant|preset:Biomass_Power_Plant)
 msgid "Biomass Power Plant"
-msgstr ""
+msgstr "Elektrownia na biomasę"
 
 #: build/temp/v4.xml:9223(list_entry:short_description|group:Power_Generator|preset:Biomass_Power_Generator|value:bioreactor)
 #: build/temp/v4.xml:9323(list_entry:short_description|group:Power_Generator|preset:Waste_Power_Generator|value:bioreactor)
@@ -1698,7 +1698,7 @@ msgstr "Porodówka"
 
 #: build/temp/v4.xml:6667(list_entry:short_description|group:Health|preset:Other_healthcare_facilities|value:birthing_centre)
 msgid "Birthing centre"
-msgstr ""
+msgstr "Porodówka"
 
 #: build/temp/v4.xml:5527(list_entry:display_value|group:Leisure|preset:Animals|value:bison)
 msgid "Bison"
@@ -1824,7 +1824,7 @@ msgstr " \t\nRodzaj słupka"
 
 #: build/temp/v4.xml:7827(combo:text|group:Sport|preset:Climbing_route|key:climbing:bolted)
 msgid "Bolts"
-msgstr ""
+msgstr "Śruby"
 
 #: build/temp/v4.xml:9710(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:bomb_crater)
 msgid "Bomb crater"
@@ -1876,7 +1876,7 @@ msgstr "Skup butelek"
 
 #: build/temp/v4.xml:1385(check:text|key:climbing:boulder)
 msgid "Boulders"
-msgstr ""
+msgstr "Głazy"
 
 #: build/temp/v4.xml:8123(item:name|group:Sport_(Ball)|preset:Boule)
 msgid "Boule"
@@ -1898,7 +1898,7 @@ msgstr "Granica"
 
 #: build/temp/v4.xml:11306(item:name|group:Boundaries|preset:Boundary_Marker)
 msgid "Boundary Marker"
-msgstr ""
+msgstr "Znacznik graniczny"
 
 #: build/temp/v4.xml:9889(item:name|group:Historic_Places_&_Objects|preset:Boundary_Stone)
 msgid "Boundary Stone"
@@ -2153,15 +2153,15 @@ msgstr "Pułapka autobusowa"
 
 #: build/temp/v4.xml:2037(multiselect:text|group:Lane_attributes|preset:Single_direction_roads|key:bus:lanes)
 msgid "Bus lane access"
-msgstr ""
+msgstr "Dostęp do pasa autobusowego"
 
 #: build/temp/v4.xml:2067(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bus:lanes:forward)
 msgid "Bus lane access in way direction"
-msgstr ""
+msgstr "Dostęp do pasa autobusowego w kierunku jazdy"
 
 #: build/temp/v4.xml:2091(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bus:lanes:backward)
 msgid "Bus lane access opposite to way direction"
-msgstr ""
+msgstr "Dostęp do pasa autobusowego przeciwnego do kierunku jazdy"
 
 #: build/temp/v4.xml:2110(combo:text|group:Lane_attributes|preset:Public_transport_lanes|key:lanes:bus)
 msgid "Bus lanes"
@@ -2404,7 +2404,7 @@ msgstr "Pojemność (osób)"
 
 #: build/temp/v4.xml:4444(text:text|group:Bicycle|preset:Parking|key:capacity:cargo_bike)
 msgid "Capacity for cargo bikes"
-msgstr ""
+msgstr "Pojemność dla rowerów towarowych"
 
 #: build/temp/v4.xml:3683(item:name|group:Water|preset:Cape)
 msgid "Cape"
@@ -2624,7 +2624,7 @@ msgstr "Stacja ładowania"
 #: build/temp/v4.xml:2220(list_entry:short_description|preset:Street_parking_right-hand_side|value:charging_only)
 #: build/temp/v4.xml:2280(list_entry:short_description|preset:Street_parking_left-hand_side|value:charging_only)
 msgid "Charging only"
-msgstr ""
+msgstr "Tylko ładowanie"
 
 #: build/temp/v4.xml:10839(item:name|group:Other|preset:Charity)
 #: build/temp/v4.xml:13330(item:name|group:Offices|preset:Charity)
@@ -2657,7 +2657,7 @@ msgstr "Drogeria"
 
 #: build/temp/v4.xml:11038(list_entry:short_description|preset:Vending_Machine|value:chemist)
 msgid "Chemistry or paramedical products"
-msgstr ""
+msgstr "Produkty chemiczne lub paramedyczne"
 
 #: build/temp/v4.xml:11790(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Cherimoya trees"
@@ -2815,7 +2815,7 @@ msgstr "Mury miejskie"
 
 #: build/temp/v4.xml:1613(text:text|key:historic:civilization)
 msgid "Civilization"
-msgstr ""
+msgstr "Cywilizacja"
 
 #: build/temp/v4.xml:8477(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Class"
@@ -2900,7 +2900,7 @@ msgstr "Elektrownia węglowa"
 
 #: build/temp/v4.xml:9096(item:name|group:Power_Plant|preset:Coal_Power_Plant)
 msgid "Coal Power Plant"
-msgstr ""
+msgstr "Elektrownia węglowa"
 
 #: build/temp/v4.xml:3611(item:name|group:Water|preset:Coastline)
 msgid "Coastline"
@@ -3291,7 +3291,7 @@ msgstr "Dźwig"
 #: build/temp/v4.xml:9793(list_entry:short_description|group:Historic_Places_&_Objects|preset:Archaeological_Site|value:crannog)
 #: build/temp/v4.xml:9809(list_entry:short_description|group:Historic_Places_&_Objects|preset:Archaeological_Site|value:crannog)
 msgid "Crannog"
-msgstr ""
+msgstr "Kranog"
 
 #: build/temp/v4.xml:11112(check:text|preset:Payment_Methods|key:payment:credit_cards)
 msgid "Credit cards"
@@ -3536,7 +3536,7 @@ msgstr "Dedykowane pomieszczenie"
 
 #: build/temp/v4.xml:1392(check:text|key:climbing:deepwater)
 msgid "Deep Water Soloing"
-msgstr ""
+msgstr "Solówka w głębokiej wodzie"
 
 #: build/temp/v4.xml:5536(list_entry:display_value|group:Leisure|preset:Animals|value:deer)
 msgid "Deer"
@@ -3690,7 +3690,7 @@ msgstr "Szczegółowy opis"
 
 #: build/temp/v4.xml:3543(combo:display_values|group:Water|preset:Basin|key:basin)
 msgid "Detention"
-msgstr ""
+msgstr "Retencyjny (suchy)"
 
 #: build/temp/v4.xml:12640(list_entry:display_value|preset:Generic_route|value:detour)
 msgid "Detour"
@@ -3724,7 +3724,7 @@ msgstr "Średnica w metrach"
 
 #: build/temp/v4.xml:353(combo:text|key:diaper)
 msgid "Diaper changing"
-msgstr ""
+msgstr "Zmiana pieluch"
 
 #: build/temp/v4.xml:3740(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:diesel)
 #: build/temp/v4.xml:4215(check:text|group:Car|preset:Fuel|key:fuel:diesel)
@@ -3746,7 +3746,7 @@ msgstr "Generator Diesla"
 
 #: build/temp/v4.xml:9117(item:name|group:Power_Plant|preset:Diesel_Power_Plant)
 msgid "Diesel Power Plant"
-msgstr ""
+msgstr "Elektrownia diesla"
 
 #: build/temp/v4.xml:4218(check:text|group:Car|preset:Fuel|key:fuel:HGV_diesel)
 msgid "Diesel for Heavy Good Vehicles"
@@ -3767,7 +3767,7 @@ msgstr "Rodzaj portfeli cyfrowych"
 
 #: build/temp/v4.xml:1509(combo:display_values|key:resource)
 msgid "Dimension stone"
-msgstr ""
+msgstr "Kamień wymiarowy"
 
 #: build/temp/v4.xml:11115(check:text|preset:Payment_Methods|key:payment:diners_club)
 msgid "Diners Club"
@@ -4679,7 +4679,7 @@ msgstr "Rybołówstwo "
 
 #: build/temp/v4.xml:11051(list_entry:short_description|preset:Vending_Machine|value:fishing_bait)
 msgid "Fishing bait"
-msgstr ""
+msgstr "Przynęta na ryby"
 
 #: build/temp/v4.xml:11052(list_entry:short_description|preset:Vending_Machine|value:fishing_tackle)
 msgid "Fishing equipment"
@@ -5039,7 +5039,7 @@ msgstr "Typy paliw:"
 
 #: build/temp/v4.xml:3136(item:name|group:Barriers|preset:Full-Height_Turnstile)
 msgid "Full-Height Turnstile"
-msgstr ""
+msgstr "Bramka obrotowa (wysoka)"
 
 #: build/temp/v4.xml:8702(combo:text|group:Man_Made|preset:Mineshaft|key:mineshaft_type)
 msgid "Function"
@@ -5104,7 +5104,7 @@ msgstr "Sygnały Galileo"
 
 #: build/temp/v4.xml:8477(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Gallery"
-msgstr ""
+msgstr "Galeria"
 
 #: build/temp/v4.xml:6036(item:name|preset:Gambling)
 msgid "Gambling"
@@ -5897,7 +5897,7 @@ msgstr "Hot-dogi"
 
 #: build/temp/v4.xml:1082(combo:display_values|key:substance)
 msgid "Hot water"
-msgstr ""
+msgstr "Gorąca woda"
 
 #: build/temp/v4.xml:4959(item:name|group:Accommodation|preset:Hotel)
 msgid "Hotel"
@@ -6142,7 +6142,7 @@ msgstr "Bezwładnościowa fuzja jądrowa (ICF)"
 
 #: build/temp/v4.xml:3543(combo:display_values|group:Water|preset:Basin|key:basin)
 msgid "Infiltration"
-msgstr ""
+msgstr "Infiltracyjny"
 
 #: build/temp/v4.xml:5377(item:name|group:Tourism|preset:Information_Board)
 msgid "Information Board"
@@ -6170,7 +6170,7 @@ msgstr "Infrastruktura"
 
 #: build/temp/v4.xml:11058(list_entry:short_description|preset:Vending_Machine|value:ink_cartridges)
 msgid "Ink cartridges"
-msgstr ""
+msgstr "Wkłady atramentowe"
 
 #: build/temp/v4.xml:12508(item:name|group:Routes|preset:Inline_Skating_Route)
 msgid "Inline Skating Route"
@@ -6328,7 +6328,7 @@ msgstr "Zapora"
 
 #: build/temp/v4.xml:4905(item:name|group:Airport|preset:Jet_bridge)
 msgid "Jet bridge"
-msgstr ""
+msgstr "Rękaw lotniczy"
 
 #: build/temp/v4.xml:3791(check:text|group:Shipping|preset:Boat_rental|key:jetski_rental)
 msgid "Jetskis"
@@ -8434,7 +8434,7 @@ msgstr "Ślepa (sięgacz)"
 
 #: build/temp/v4.xml:12033(check:text|group:Addresses_and_Contact|preset:Address|key:nohousenumber)
 msgid "No house number"
-msgstr ""
+msgstr "Brak numeru domu"
 
 #: build/temp/v4.xml:12246(list_entry:display_value|group:Turn_Restrictions|preset:Turn_Restriction|value:no_left_turn)
 #: build/temp/v4.xml:12259(item:name|group:Turn_Restrictions|preset:No_left_turn)
@@ -8469,7 +8469,7 @@ msgstr "Zakaz skrętu w prawo"
 #: build/temp/v4.xml:2280(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_standing)
 #: build/temp/v4.xml:2303(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_standing)
 msgid "No standing"
-msgstr ""
+msgstr "Zakaz postoju"
 
 #: build/temp/v4.xml:2160(list_entry:short_description|preset:Street_parking_both_sides|value:no_stopping)
 #: build/temp/v4.xml:2220(list_entry:short_description|preset:Street_parking_right-hand_side|value:no_stopping)
@@ -8496,11 +8496,11 @@ msgstr "Nie dla pojazdów kołowych"
 
 #: build/temp/v4.xml:12607(item:name|preset:Node_Network)
 msgid "Node Network"
-msgstr ""
+msgstr "Sieć węzłów"
 
 #: build/temp/v4.xml:834(check:text|key:network:type)
 msgid "Node network"
-msgstr ""
+msgstr "Sieć węzłów"
 
 #: build/temp/v4.xml:8936(check:text|group:Man_Made|preset:Monitoring_Station|key:monitoring:noise)
 msgid "Noise"
@@ -8577,7 +8577,7 @@ msgstr "Notatka"
 
 #: build/temp/v4.xml:5385(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 msgid "Notice"
-msgstr ""
+msgstr "Ogłoszenie"
 
 #: build/temp/v4.xml:1515(combo:display_values|key:fountain)
 msgid "Nozzle"
@@ -8585,7 +8585,7 @@ msgstr "Dysza"
 
 #: build/temp/v4.xml:9063(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:nuclear)
 msgid "Nuclear"
-msgstr ""
+msgstr "Jądrowa"
 
 #: build/temp/v4.xml:9131(item:name|group:Power_Plant|preset:Nuclear_Power_Plant)
 msgid "Nuclear Power Plant"
@@ -8681,7 +8681,7 @@ msgstr "Liczba ekranów"
 
 #: build/temp/v4.xml:1437(combo:text|key:sides)
 msgid "Number of sides"
-msgstr ""
+msgstr "Liczba stron"
 
 #: build/temp/v4.xml:2462(text:text|group:Ways|preset:Steps|key:step_count)
 msgid "Number of steps"
@@ -8718,7 +8718,7 @@ msgstr "Suplementy diety"
 
 #: build/temp/v4.xml:9010(multiselect:text|group:Man_Made|preset:Observatory|key:observatory:type)
 msgid "Obervatory type"
-msgstr ""
+msgstr "Typ obserwatorium"
 
 #: build/temp/v4.xml:1420(combo:display_values|key:nudism)
 msgid "Obligatory"
@@ -8758,7 +8758,7 @@ msgstr "Benzyna 87"
 
 #: build/temp/v4.xml:3744(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:octane_89)
 msgid "Octane 89"
-msgstr ""
+msgstr "Benzyna 89"
 
 #: build/temp/v4.xml:3745(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:octane_91)
 #: build/temp/v4.xml:4221(check:text|group:Car|preset:Fuel|key:fuel:octane_91)
@@ -8772,7 +8772,7 @@ msgstr "Benzyna 92"
 
 #: build/temp/v4.xml:3747(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:octane_93)
 msgid "Octane 93"
-msgstr ""
+msgstr "Benzyna 93"
 
 #: build/temp/v4.xml:3748(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:octane_95)
 #: build/temp/v4.xml:4223(check:text|group:Car|preset:Fuel|key:fuel:octane_95)
@@ -8823,7 +8823,7 @@ msgstr "Elektrownia olejowa"
 
 #: build/temp/v4.xml:9110(item:name|group:Power_Plant|preset:Oil_Power_Plant)
 msgid "Oil Power Plant"
-msgstr ""
+msgstr "Elektrownia naftowa"
 
 #: build/temp/v4.xml:11790(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Oil palms"
@@ -8907,7 +8907,7 @@ msgstr "Tylko"
 
 #: build/temp/v4.xml:147(label:text)
 msgid "Only for street side parking: "
-msgstr ""
+msgstr "Tylko w przypadku parkowania od strony ulicy:"
 
 #: build/temp/v4.xml:1089(optional:text)
 msgid "Only in case of manual actuator or manual mechanical drive: "
@@ -9101,7 +9101,7 @@ msgstr "Sieroty"
 
 #: build/temp/v4.xml:6605(list_entry:display_value|group:Health|preset:Dentist|value:orthodontics)
 msgid "Orthodontics"
-msgstr ""
+msgstr "Ortodoncja"
 
 #: build/temp/v4.xml:6614(item:name|group:Health|preset:Orthodontist)
 msgid "Orthodontist"
@@ -10602,10 +10602,6 @@ msgstr "Quango"
 #: build/temp/v4.xml:12003(item:name|group:Land_use|preset:Quarry)
 msgid "Quarry"
 msgstr "Kamieniołom"
-
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "Dzielnica"
 
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
@@ -12410,10 +12406,6 @@ msgstr ""
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr "Źródło"
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "Plac"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -17246,7 +17238,7 @@ msgstr ""
 #: build/temp/v4.xml:2300(list_entry:short_description|preset:Street_parking_left-hand_side|value:no_standing)
 msgctxt "parking"
 msgid "No standing"
-msgstr ""
+msgstr "Zakaz postoju"
 
 #: build/temp/v4.xml:2177(list_entry:short_description|preset:Street_parking_both_sides|value:no_stopping)
 #: build/temp/v4.xml:2180(list_entry:short_description|preset:Street_parking_both_sides|value:no_stopping)
@@ -18192,7 +18184,7 @@ msgstr "Ajurweda"
 #: build/temp/v4.xml:6695(combo:display_values|group:Health|preset:Laboratory|key:healthcare:speciality)
 msgctxt "healthcare"
 msgid "Biology"
-msgstr ""
+msgstr "Biologia"
 
 #: build/temp/v4.xml:6695(combo:display_values|group:Health|preset:Laboratory|key:healthcare:speciality)
 msgctxt "healthcare"
@@ -19892,7 +19884,7 @@ msgstr ""
 #: build/temp/v4.xml:11290(list_entry:short_description|group:Boundaries|preset:Hazardous_Area|value:nuclear)
 msgctxt "hazard"
 msgid "Nuclear"
-msgstr ""
+msgstr "Jądrowa"
 
 #: build/temp/v4.xml:2783(list_entry:short_description|preset:Traffic_Hazard|value:other)
 msgctxt "hazard"
@@ -20986,7 +20978,7 @@ msgstr "Zjazd linowy"
 #: build/temp/v4.xml:5743(combo:display_values|group:Leisure|preset:Public_bath|key:bath:type)
 msgctxt "bath:type"
 msgid "Hammam"
-msgstr ""
+msgstr "Hammam"
 
 #: build/temp/v4.xml:5743(combo:display_values|group:Leisure|preset:Public_bath|key:bath:type)
 msgctxt "bath:type"
@@ -21001,7 +20993,7 @@ msgstr "Jezioro"
 #: build/temp/v4.xml:5743(combo:display_values|group:Leisure|preset:Public_bath|key:bath:type)
 msgctxt "bath:type"
 msgid "Onsen"
-msgstr ""
+msgstr "Onsen"
 
 #: build/temp/v4.xml:5743(combo:display_values|group:Leisure|preset:Public_bath|key:bath:type)
 msgctxt "bath:type"
@@ -21272,7 +21264,7 @@ msgstr "Wojskowy punkt kontrolny"
 #: build/temp/v4.xml:6404(combo:display_values|group:Public_Building|preset:Police_facility|key:police)
 msgctxt "police"
 msgid "Detention"
-msgstr ""
+msgstr "Retencyjny (suchy)"
 
 #: build/temp/v4.xml:6404(combo:display_values|group:Public_Building|preset:Police_facility|key:police)
 msgctxt "police"
@@ -22416,6 +22408,16 @@ msgstr "Naprawa"
 msgctxt "place"
 msgid "Island"
 msgstr "Wyspa"
+
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "Dzielnica"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "Plac"
 
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"

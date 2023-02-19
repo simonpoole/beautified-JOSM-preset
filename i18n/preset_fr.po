@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2023-02-02 15:19+0100\n"
+"POT-Creation-Date: 2023-02-19 17:12+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: 😇 <the_mahabarata@yahoo.fr>, 2022\n"
 "Language-Team: French (http://www.transifex.com/openstreetmap/presets/language/fr/)\n"
@@ -10597,10 +10597,6 @@ msgstr "Autorité administrative indépendante"
 msgid "Quarry"
 msgstr "Carrière"
 
-#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
-msgid "Quarter"
-msgstr "Quartier (division urbaine)"
-
 #: build/temp/v4.xml:8236(item:name|group:Motorsport|preset:RC_Car)
 msgid "RC Car"
 msgstr "Automodélisme"
@@ -12404,10 +12400,6 @@ msgstr "Sprawny"
 #: build/temp/v4.xml:3463(item:name|group:Water|preset:Spring)
 msgid "Spring"
 msgstr "Source"
-
-#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
-msgid "Square"
-msgstr "Place"
 
 #: build/temp/v4.xml:2845(list_entry:display_value|group:Barriers|preset:Cycle_Barrier|value:squeeze)
 msgid "Squeeze"
@@ -16363,12 +16355,12 @@ msgstr "Sports"
 #: build/temp/v4.xml:621(list_entry:short_description|value:suits)
 msgctxt "clothes"
 msgid "Suits"
-msgstr ""
+msgstr "Costumes"
 
 #: build/temp/v4.xml:622(list_entry:short_description|value:swimwear)
 msgctxt "clothes"
 msgid "Swimwear"
-msgstr ""
+msgstr "Maillots de bain"
 
 #: build/temp/v4.xml:623(list_entry:short_description|value:traditional)
 msgctxt "clothes"
@@ -16393,7 +16385,7 @@ msgstr "Femmes"
 #: build/temp/v4.xml:627(list_entry:short_description|value:workwear)
 msgctxt "clothes"
 msgid "Workwear"
-msgstr ""
+msgstr "Vêtement de travail"
 
 #: build/temp/v4.xml:3383(combo:text|group:Access_Restrictions|preset:Other_mode_restrictions|key:4wd_only)
 msgctxt "access"
@@ -22411,6 +22403,16 @@ msgctxt "place"
 msgid "Island"
 msgstr "Île"
 
+#: build/temp/v4.xml:11401(item:name|group:Places|preset:Quarter)
+msgctxt "place"
+msgid "Quarter"
+msgstr "Quartier (division urbaine)"
+
+#: build/temp/v4.xml:11442(item:name|group:Places|preset:Square)
+msgctxt "place"
+msgid "Square"
+msgstr "Square"
+
 #: build/temp/v4.xml:11331(item:name|group:Places|preset:State)
 msgctxt "place"
 msgid "State"
@@ -22825,7 +22827,7 @@ msgstr ""
 #: build/temp/v4.xml:11946(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
 msgid "Depot"
-msgstr ""
+msgstr "Dépôt"
 
 #: build/temp/v4.xml:11946(combo:display_values|group:Land_use|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
