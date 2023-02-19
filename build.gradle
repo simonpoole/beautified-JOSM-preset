@@ -19,7 +19,7 @@ plugins {
 apply plugin: 'java'
 apply plugin: "com.github.breadmoirai.github-release"
 
-version = '5.0.1'
+version = '5.0.2'
 
 import static groovy.io.FileType.*
 //for Ant filter
