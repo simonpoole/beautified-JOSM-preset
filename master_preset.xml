@@ -5948,8 +5948,8 @@
             <key key="tourism" value="information"/>
             <key key="information" value="board"/>
             <reference ref="optional_name_ref_operator" />
-            <combo key="board_type" text="Board Content" values="art,astronomy,geography,geology,history,nature,notice,planet_walk,plants,public_transport,sight,sport,technology,welcome_sign,wildlife"
-                display_values="Art,Astronomy,Geography,Geology,History,Nature,Notice,Planet walk,Plants,Public transport,Sight,Sport,Technology,Welcome sign,Wildlife"  />
+            <combo key="board_type" text="Board Content" values="art,astronomy,geography,geology,history,nature,notice,planet_walk,plants,public_transport,rules,sight,sport,technology,welcome_sign,wildlife"
+                display_values="Art,Astronomy,Geography,Geology,History,Nature,Notice,Planet walk,Plants,Public transport,Rules,Sight,Sport,Technology,Welcome sign,Wildlife"  />
             <text key="description" text="Detailed description" length="255"/>
         </item> <!-- Information Board -->
         <item name="Guidepost" icon="${tourist_guidepost}" type="node" preset_name_label="true">
