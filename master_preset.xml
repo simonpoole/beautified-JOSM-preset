@@ -573,8 +573,8 @@
         <combo key="tunnel" text="Tunnel" values="yes,building_passage" display_values="Yes,Building passage" values_sort="false" match="key"/>
         <optional>
             <reference ref="layer"/>
-            <text key="width" text="Width (meters)"/>
-            <text key="maxheight" text="Max. height (meters)"/>
+            <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
+            <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
             <reference ref="maxspeed"/>
             <reference ref="incline"/>
         </optional>
@@ -607,7 +607,7 @@
     <chunk id="highway_additional_oneway_lit_width">
         <reference ref="highway_additional_oneway"/>
         <check key="lit" text="Lit" disable_off="true"/>
-        <text key="width" text="Width (meters)"/>
+        <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
     </chunk>
     <chunk id="sidewalk">
         <combo key="sidewalk" text="Sidewalk" values_context="sidewalk" match="key">
@@ -662,7 +662,7 @@
         <text key="destination" text="Destination"/>
         <text key="destination:ref" text="Destination reference"/>
         <text key="junction:ref" text="Junction reference" />
-        <text key="width" text="Width (meters)"/>
+        <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
         <reference ref="shoulder"/>
         <checkgroup text="Additional attributes" columns="4">
             <check key="oneway" text="Oneway" default="on"/>
@@ -841,8 +841,8 @@
         <reference ref="essential_wheelchair"/>
         <optional>
             <text key="wheelchair:description" text="Wheelchair access details" length="255" i18n="true"/>
-            <text key="wheelchair:entrance_width" text="Entrance width in cm"/>
-            <text key="wheelchair:step_height" text="Step height in cm"/>
+            <text key="wheelchair:entrance_width" text="Entrance width in cm" value_type="dimension_horizontal"/>
+            <text key="wheelchair:step_height" text="Step height in cm" value_type="dimension_vertical"/>
         </optional>
     </chunk>
     <chunk id="wheelchair_rooms">
@@ -1184,7 +1184,7 @@
     </chunk>
     <chunk id="optional_height">
         <optional>
-            <text key="height" text="Height (meters)" length="7"/>
+            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
         </optional>
     </chunk>
     <chunk id="maxwidthphysical">
@@ -1192,12 +1192,12 @@
     </chunk>
     <chunk id="optional_maxwidth">
         <optional>
-            <text key="maxwidth" text="Max. width (meters)" length="7"/>
+            <text key="maxwidth" text="Max. width (meters)" length="7" value_type="dimension_horizontal"/>
         </optional>
     </chunk>
     <chunk id="maxheight_maxwidth">
-        <text key="maxheight" text="Max. height (meters)" length="7"/>
-        <text key="maxwidth" text="Max. width (meters)" length="7"/>
+        <text key="maxheight" text="Max. height (meters)" length="7" value_type="dimension_vertical"/>
+        <text key="maxwidth" text="Max. width (meters)" length="7" value_type="dimension_horizontal"/>
     </chunk>
     <chunk id="optional_maxheight_maxwidth">
         <optional>
@@ -1514,7 +1514,7 @@
             display_values="Chemical,Gas,Heating,Hydrant,Oil,Power,Sewerage,Street lighting,Telecom,Television,Waste,Water" values_searchable="true"/>
     </chunk>
     <chunk id="pole">
-        <text key="height" text="Height (meters)" length="7" />
+        <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
         <reference ref="material"/>
         <reference ref="ref_operator" />
     </chunk>
@@ -1579,7 +1579,7 @@
             <space/>
             <reference ref="maxweight"/>
             <reference ref="incline"/>
-            <text key="width" text="Width (meters)"/>
+            <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             <check key="toll" text="Toll" disable_off="true"/>
         </optional>
     </chunk>
@@ -1589,7 +1589,7 @@
         <check key="seasonal" text="Seasonal" disable_off="true"/>
         <check key="tidal" text="In the tidal range" disable_off="true"/>
         <combo key="tunnel" text="Tunnel" values="culvert,flooded,yes" display_values="Culvert,Flooded,Yes"/>
-        <text key="width" text="Width (meters)"/>
+        <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
     </chunk>
     <chunk id="waterway_wikipedia">
         <reference ref="waterway"/>
@@ -1843,7 +1843,7 @@
         <reference ref="optional_name_operator"/>
         <combo key="building:levels" text="Levels above ground" values="1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
         <combo key="building:levels:underground" text="Levels below ground" values="1,2,3,4,5,6,7,8,9,10,11" text_context="building" match="key" value_type="integer" />
-        <text key="height" text="Height (meters)" length="7"/>
+        <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
         <combo key="min_level" text="Min. level" values="-5,-4,-3,-2,-1,0,1,2,3,4,5" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
         <combo key="max_level" text="Max. level" values="0,1,2,3,4,5,6,7,8,9,10,11" editable="true" values_sort="false" text_context="building" match="key" value_type="integer"/>
         <combo key="building:use" text="Building use" values="agricultural,civic,commercial,cultural,education,equestrian,exhibition,foodservice,garage,gathering,government,hotel,industrial,leisure,medical,office,parking,public,railway,religious,research,residential,retail,service,shelter,sport,storage,transportation" display_values="Agricultural,Civic,Commercial,Cultural,Education,Equestrian,Exhibition,Foodservice,Garage,Gathering,Government,Hotel,Industrial,Leisure,Medical,Office,Parking,Public,Railway,Religious,Research,Residential,Retail,Service,Shelter,Sport,Storage,Transportation" editable="false" values_context="building" values_searchable="true" match="key"/>
@@ -1972,7 +1972,7 @@
             <check key="luminous" text="Luminous" disable_off="true"/>
             <combo key="animated" text="Animation" values="no,yes,trivision_blades,winding_posters,revolving,screen,digital_messages,digital_prices,wind"
                 display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
-            <text key="height" text="Height (Meters)" value_type="integer" />
+            <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
             <combo key="sides" text="Number of sides" length="3" values="1,2,3,4,5,6" values_sort="false" match="none" editable="true" value_type="integer"/>
             <reference ref="support" />
         </optional>
@@ -2398,7 +2398,7 @@
                 <check key="oneway:bicycle" text="Oneway for bicycle" disable_off="true"/>
                 <reference ref="highway_additional"/>
                 <check key="lit" text="Lit" disable_off="true"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
                 <reference ref="sidewalk"/>
                 <reference ref="parking_lane"/>
                 <reference ref="bus_bay"/>
@@ -2436,7 +2436,7 @@
                 <check key="area" text="Area" disable_off="true"/>
                 <reference ref="highway_additional"/>
                 <check key="lit" text="Lit" disable_off="true"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
             <reference ref="road_access_restrictions"/>
         </item> <!-- Pedestrian -->
@@ -2482,7 +2482,7 @@
             <label text="Emergency lane beside long descending slopes for trucks and other vehicles to stop safely after brake failure."/>
             <optional>
                 <reference ref="surface"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
                 <check key="lit" text="Lit" disable_off="true"/>
             </optional>
         </item> <!-- Escape -->
@@ -2701,7 +2701,7 @@
                 <combo key="parking:both:surface" text="Parking surface both sides" values_context="parking" match="none" values_sort="false">
                     <reference ref="surface_values"/>
                 </combo>
-               <text key="parking:both:width" text="Parking both sides width (m)" match="none"/>
+               <text key="parking:both:width" text="Parking both sides width (m)" match="none" value_type="dimension_horizontal"/>
                <text key="parking:both:capacity" text="Parking both sides capacity" value_type="integer" match="none"/>
             </optional>
             <combo key="parking:both:access" text="Parking access both sides" match="none">
@@ -2762,7 +2762,7 @@
                 <combo key="parking:right:surface" text="Parking surface right" values_context="parking" match="none" values_sort="false">
                     <reference ref="surface_values"/>
                 </combo>
-               <text key="parking:right:width" text="Parking width right (m)" match="none"/>
+               <text key="parking:right:width" text="Parking width right (m)" match="none" value_type="dimension_horizontal"/>
                <text key="parking:right:capacity" text="Parking capacity right" value_type="integer" match="none"/>
             </optional>
             <combo key="parking:right:access" text="Parking access right" match="none">
@@ -2823,7 +2823,7 @@
                 <combo key="parking:left:surface" text="Parking surface left" values_context="parking" match="none" values_sort="false">
                     <reference ref="surface_values"/>
                 </combo>
-               <text key="parking:left:width" text="Parking width left (m)" match="none"/>
+               <text key="parking:left:width" text="Parking width left (m)" match="none" value_type="dimension_horizontal"/>
                <text key="parking:left:capacity" text="Parking capacity left" value_type="integer" match="none"/>
             </optional>
             <combo key="parking:left:access" text="Parking access left" match="none">
@@ -2876,7 +2876,7 @@
             <combo key="sidewalk:right:smoothness" text="Sidewalk right smoothness" values_searchable="true" values_sort="false">
                 <reference ref="smoothness_values"/>
             </combo>
-            <text key="sidewalk:right:width" text="Sidewalk right width (m)"/>
+            <text key="sidewalk:right:width" text="Sidewalk right width (m)" value_type="dimension_horizontal"/>
         </item>
         <item name="Sidewalk left-hand side" icon="${sidewalk_left}" type="way,closedway" preset_name_label="true">
             <combo key="sidewalk:left" text="Sidewalk left" values_context="sidewalk" match="key">
@@ -2889,7 +2889,7 @@
             <combo key="sidewalk:left:smoothness" text="Sidewalk left smoothness" values_searchable="true" values_sort="false">
                 <reference ref="smoothness_values"/>
             </combo>
-            <text key="sidewalk:left:width" text="Sidewalk left width (m)"/>
+            <text key="sidewalk:left:width" text="Sidewalk left width (m)" value_type="dimension_horizontal"/>
         </item>
     </group> <!-- Streets -->
     <group name="Ways" icon="${highway_ways_group}" items_sort="false" >
@@ -3005,7 +3005,7 @@
                 <check key="lit" text="Lit" disable_off="true"/>
                 <combo key="bicycle" text="Bicycle" values="designated,yes,no" display_values="Designated,Yes,No"/>
                 <combo key="segregated" text="Segregated" values="yes,no" display_values="Yes,No" default=""/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
             <preset_link preset_name="Arcade"/>
             <preset_link preset_name="Colonnade"/>
@@ -3411,9 +3411,9 @@
             </combo>
             <optional>
                 <reference ref="maxwidthphysical"/>
-                <text key="spacing" text="Spacing between grids (meters)" length="7"/>
-                <text key="opening" text="Opening width of grids (meters)" length="7"/>
-                <text key="overlap" text="Overlap width of grids (meters)" length="7"/>
+                <text key="spacing" text="Spacing between grids (meters)" length="7" value_type="dimension_horizontal"/>
+                <text key="opening" text="Opening width of grids (meters)" length="7" value_type="dimension_horizontal"/>
+                <text key="overlap" text="Overlap width of grids (meters)" length="7" value_type="dimension_horizontal"/>
                 <text key="corners" text="Corners" value_type="integer"/>
                 <reference ref="material"/>
             </optional>
@@ -3449,7 +3449,7 @@
         <item name="Height restrictor" icon="${barrier_height_restrictor}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=height_restrictor"/>
             <key key="barrier" value="height_restrictor"/>
-            <text key="maxheight" text="Max. height (meters)"/>
+            <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
             <reference ref="optional_maxwidth"/>
             <reference ref="vehicle_access" />
             <reference ref="check_access_nomotor" />
@@ -3499,7 +3499,7 @@
             <reference ref="leaf"/>
             <optional>
                 <reference ref="genus_species_taxon"/>
-                <text key="height" text="Height (meters)" length="7"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Hedge -->
         <item name="Fence" icon="${barrier_fence}" type="way,closedway" preset_name_label="true">
@@ -3507,7 +3507,7 @@
             <key key="barrier" value="fence"/>
             <optional>
                 <combo key="fence_type" text="Type" values="barbed_wire,bars,chain_link,concrete,electric,metal,pole,railing,split_rail,wire,wood" display_values="Barbed wire,Bars,Chain link,Concrete,Electric,Metal,Pole,Railing,Split rail,Wire,Wood" values_context="material"/>
-                <text key="height" text="Height (meters)" length="7"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Fence -->
         <item name="Guard Rail" icon="${barrier_guard_rail}" type="way,closedway" preset_name_label="true">
@@ -3578,7 +3578,7 @@
             <link wiki="Tag:barrier=ditch"/>
             <key key="barrier" value="ditch"/>
             <optional>
-                <text key="width" text="Width (meters)" length="7"/>
+                <text key="width" text="Width (meters)" length="7" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Ditch -->
         <item name="Kerb" icon="${barrier_kerb}" type="node,way,closedway" preset_name_label="true">
@@ -3635,7 +3635,7 @@
         <item name="Hampshire Gate" icon="${barrier_hampshire_gate}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=hampshire_gate"/>
             <key key="barrier" value="hampshire_gate"/>
-            <text key="maxlength" text="Max. length (meters)" match="key" />
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
             <reference ref="optional_maxwidth"/>
             <reference ref="vehicle_access" />
             <reference ref="check_access_nomotor" />
@@ -3645,7 +3645,7 @@
         <item name="Bump Gate" icon="${barrier_bump_gate}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=bump_gate" />
             <key key="barrier" value="bump_gate" />
-            <text key="maxlength" text="Max. length (meters)" match="key" />
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
             <reference ref="optional_maxwidth" />
             <reference ref="vehicle_access" />
             <reference ref="check_access_nomotor" />
@@ -3688,7 +3688,7 @@
             <link wiki="Tag:barrier=turnstile" />
             <key key="barrier" value="turnstile" />
             <reference ref="optional_maxwidth" />
-            <text key="maxlength" text="Max. length (meters)" match="key"/>
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
             <reference ref="vehicle_access" />
             <reference ref="check_access_nomotor" />
         </item> <!-- Turnstile -->
@@ -3696,7 +3696,7 @@
             <link wiki="Tag:barrier=full-height_turnstile" />
             <key key="barrier" value="full-height_turnstile" />
             <reference ref="optional_maxheight_maxwidth" />
-            <text key="maxlength" text="Max. length (meters)" match="key" />
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
             <space />
             <reference ref="vehicle_access" />
             <reference ref="check_access_nomotor" />
@@ -3719,9 +3719,9 @@
                 <text key="name" text="Name"/>
                 <text key="tunnel:name" text="Tunnel name" />
                 <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" default="-1" length="3" match="none" editable="true"/>
-                <text key="width" text="Width (meters)"/>
-                <text key="maxheight" text="Max. height (meters)"/>
-                <text key="maxwidth" text="Max. width (meters)" />
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
+                <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
+                <text key="maxwidth" text="Max. width (meters)" value_type="dimension_horizontal"/>
                 <space/>
                 <reference ref="maxspeed"/>
                 <space/>
@@ -3734,8 +3734,8 @@
             <key key="tunnel" value="building_passage" match="none"/>
             <optional>
                 <reference ref="name_layer"/>
-                <text key="width" text="Width (meters)"/>
-                <text key="maxheight" text="Max. height (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
+                <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
                 <reference ref="maxspeed"/>
                 <reference ref="incline"/>
             </optional>
@@ -3748,7 +3748,7 @@
             <check key="arcade:right" value_on="open" text="Open on right side" disable_off="true" match="none"/>
             <optional>
                 <reference ref="name_layer"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Arcade -->
         <item name="Colonnade" icon="${passageways_colonade}" type="way" preset_name_label="true">
@@ -3759,7 +3759,7 @@
             <check key="colonnade:right" value_on="open" text="Open on right side" disable_off="true" match="none"/>
             <optional>
                 <reference ref="name_layer"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Colonnade -->
         <item name="Avalanche Protector" icon="${passageways_avalanche_protector}" type="way" preset_name_label="true">
@@ -3770,7 +3770,7 @@
             <check key="avalanche_protector:right" value_on="open" text="Open on right side" disable_off="true" match="none"/>
             <optional>
                 <reference ref="name_layer"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
                 <reference ref="incline"/>
             </optional>
         </item> <!-- Avalanche Protector -->
@@ -3895,9 +3895,9 @@
             <space/>
             <reference ref="maxweight"/>
             <text key="maxaxleload" text="Max. axle load (tonnes)" match="key"/>
-            <text key="maxheight" text="Max. height (meters)" match="key"/>
-            <text key="maxwidth" text="Max. width (meters)" match="key"/>
-            <text key="maxlength" text="Max. length (meters)" match="key"/>
+            <text key="maxheight" text="Max. height (meters)" match="key" value_type="dimension_vertical"/>
+            <text key="maxwidth" text="Max. width (meters)" match="key" value_type="dimension_horizontal"/>
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
         </item> <!-- Physical restrictions -->
         <item name="Cond. &amp; direct. max speed" icon="${access_speed_limit}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Conditional_restrictions"/>
@@ -3986,7 +3986,7 @@
                 <check key="salt" text="Salt Water" disable_off="true" />
                 <check key="intermittent" text="Intermittent" disable_off="true" />
                 <check key="seasonal" text="Seasonal" disable_off="true" />
-                <text key="width" text="Width (meters)" />
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
                 <reference ref="waterway_wikipedia"/>
             </optional>
         </item> <!-- Tidal channel -->
@@ -4037,7 +4037,7 @@
             <space/>
             <key key="waterway" value="waterfall"/>
             <reference ref="name_wikipedia"/>
-            <text key="height" text="Height (meters)" length="7" />
+            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
         </item> <!-- Waterfall -->
         <item name="Weir" icon="${water_weir}" type="node,way" preset_name_label="true">
             <link wiki="Tag:waterway=weir"/>
@@ -4057,7 +4057,7 @@
             <key key="waterway" value="fish_pass"/>
             <reference ref="optional_name"/>
             <check key="tunnel" text="Tunnel" disable_off="true" />
-            <text key="width" text="Width (Meters)" />
+            <text key="width" text="Width (Meters)" value_type="dimension_horizontal"/>
             <check key="seasonal" text="Seasonal" />
         </item> <!-- Fish pass -->
         <item name="Groyne" icon="${water_groyne}" type="way,closedway,multipolygon" preset_name_label="true">
@@ -4079,7 +4079,7 @@
             <optional>
                 <text key="name" text="Name"/>
                 <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" default="-1" length="3" motch="none" editable="true"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Culvert -->
         <item name="Penstock" icon="${water_penstock}" type="way" preset_name_label="true">
@@ -4496,7 +4496,7 @@
                 <reference ref="layer"/>
                 <reference ref="surface_smoothness"/>
                 <reference ref="maxspeed"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Bus Guideway -->
         <separator/>
@@ -4717,7 +4717,7 @@
             <reference ref="parking_name_type_ref"/>
             <combo key="park_ride" text="Park and Ride" values="yes,no,bus,train,tram,metro,ferry"/>
             <reference ref="parking_access_fee_operator_surface_smoothness"/>
-            <text key="maxheight" text="Max. height (meters)"/>
+            <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
             <space/>
             <text key="capacity" text="Capacity (overall)" value_type="integer"/>
             <combo key="capacity:disabled" text="Spaces for Disabled" values="yes,no,0,1,2,3"/>
@@ -4757,7 +4757,7 @@
                 <list_entry value="surface" display_value="Surface" />
                 <list_entry value="underground" display_value="Underground" />
             </combo>
-            <text key="maxheight" text="Max. height (meters)"/>
+            <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
             <reference ref="parking_access_fee_operator_surface_smoothness"/>
             <reference ref="supervised_lit_oh"/>
             <check key="covered" text="Covered (with roof)"/>
@@ -5371,7 +5371,7 @@
             <space/>
             <key key="railway" value="platform"/>
             <reference ref="platform"/>
-            <text key="width" text="Width (meters)"/>
+            <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             <check key="area" text="Area" disable_off="true"/>    
         </item> <!-- Railway Platform -->
         <separator/>
@@ -5397,7 +5397,7 @@
             <space/>
             <key key="highway" value="platform"/>
             <reference ref="platform"/>
-            <text key="width" text="Width (meters)"/>
+            <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             <check key="area" text="Area" disable_off="true"/>
         </item> <!-- Bus Platform -->
     </group> <!-- Public Transport -->
@@ -5420,8 +5420,8 @@
             <key key="aeroway" value="runway"/>
             <optional>
                 <text key="ref" text="Reference"/>
-                <text key="length" text="Length (meters)" />
-                <combo key="width" text="Width (meters)" values="18,23,30,45,60" />
+                <text key="length" text="Length (meters)" value_type="dimension_horizontal"/>
+                <combo key="width" text="Width (meters)" values="18,23,30,45,60" value_type="dimension_horizontal"/>
                 <text key="ele" text="Elevation (meters)" length="10" />
                 <reference ref="surface"/>
             </optional>
@@ -5431,7 +5431,7 @@
             <key key="aeroway" value="taxiway"/>
             <optional>
                 <text key="ref" text="Reference"/>
-                <text key="width" text="Width (meters)" />
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
                 <reference ref="surface" />
             </optional>
         </item> <!-- Taxiway -->
@@ -7965,7 +7965,7 @@
             <link wiki="Tag:amenity=hunting_stand"/>
             <space/>
             <key key="amenity" value="hunting_stand"/>
-            <combo key="height" text="Height (meters)" values="low,half,full,5,10,15,20" values_context="height" length="7" editable="true" />
+            <combo key="height" text="Height (meters)" values="low,half,full,5,10,15,20" values_context="height" length="7" editable="true" value_type="dimension_vertical"/>
             <check key="shelter" text="Shelter" disable_off="true"/>
             <check key="hide" text="Hide" text_context="hunting stand" disable_off="true"/>
             <check key="lockable" text="Lockable" disable_off="true"/>
@@ -8895,7 +8895,7 @@
             </combo>
             <reference ref="additional_building_tags"/>
             <combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" editable="true" text_context="building"/>
-            <text key="min_height" text="Skipped height (meters)"/>
+            <text key="min_height" text="Skipped height (meters)" value_type="dimension_vertical"/>
         </item> <!-- Building part -->
          <item name="Building construction" icon="${building_construction}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:building=construction" />
@@ -9016,10 +9016,10 @@
             <reference ref="facility_access" />
             <reference ref="door_type" />
             <reference ref="colours" />
-            <text key="width" text="Width (Meters)" />
-            <text key="maxwidth" text="Max. width (Meters)" />
-            <text key="height" text="Height (Meters)"  />
-            <text key="maxheight" text="Max. height (Meters)" />
+            <text key="width" text="Width (Meters)" value_type="dimension_horizontal"/>
+            <text key="maxwidth" text="Max. width (Meters)" value_type="dimension_horizontal"/>
+            <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
+            <text key="maxheight" text="Max. height (Meters)" value_type="dimension_vertical"/>
             <check key="automatic_door" text="Automatic door" />
         </item> <!-- Loading dock -->  
     </group> <!-- Buildings -->
@@ -9040,7 +9040,7 @@
             <optional>
                 <text key="name" text="Name" i18n="true" />
                 <text key="ref" text="Reference Code" />
-                <text key="height" text="Height (Meters)" value_type="integer" />
+                <text key="height" text="Height (Meters)"  value_type="dimension_vertical"/>
             </optional>
         </item>
         <item name="Indoor door" icon="${indoor_doors}" type="node" preset_name_label="true" >
@@ -9053,8 +9053,8 @@
             <reference ref="door_type" />
             <reference ref="facility_access" />
             <optional>
-                <text key="width" text="Width (Meters)" />
-                <text key="height" text="Height (Meters)" value_type="integer" />
+                <text key="width" text="Width (Meters)" value_type="dimension_horizontal"/>
+                <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
             </optional>
         </item>
         <item name="Room" icon="${indoor_room}" type="closedway,multipolygon" preset_name_label="true">
@@ -9069,7 +9069,7 @@
                 values="auditorium,shop,conference,technical,waiting,stairs,hall,office,storage,elevator,library,entrance,class,gallery,escalator,restaurant,store,toilet,laboratory"
                 display_values="Auditorium,Shop,Conference,Technical,Waiting,Stairs,Hall,Office,Storage,Elevator,Library,Entrance,Class,Gallery,Escalator,Restaurant,Store,Toilet,Laboratory" />
             <optional>
-                <text key="height" text="Height (Meters)" value_type="integer" />
+                <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
             </optional>
         </item>
         <item name="Indoor wall" icon="${indoor_wall}" type="way" preset_name_label="true">
@@ -9077,7 +9077,7 @@
             <key key="indoor" value="wall" />
             <reference ref="level" />
             <optional>
-                <text key="height" text="Height (Meters)" value_type="integer" />
+                <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
             </optional>
         </item>
         <item name="Highway corridor" icon="${indoor_highway_corridor}" type="way" preset_name_label="true">
@@ -9097,7 +9097,7 @@
                 display_values="Bell tower,Communication,Cooling,Defensive,Minaret,Observation,Pagoda,Radar,Watchtower" editable="true" match="key" values_searchable="true"/>
             <optional>
                 <text key="name" text="Name"/>
-                <text key="height" text="Height (meters)" length="7" />
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
                 <text key="operator" text="Operator"/>
                 <reference ref="communication_types"/>
             </optional>
@@ -9112,7 +9112,7 @@
             <combo key="tower:type" text="Tower type" values="communication,observation,lighting" display_values="Communication,Observation,Lighting" editable="true" match="key" values_context="tower" />
             <optional>
                 <text key="name" text="Name"/>
-                <text key="height" text="Height (meters)" length="7" />
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
                 <text key="operator" text="Operator"/>
                 <reference ref="communication_types"/>
             </optional>
@@ -9134,7 +9134,7 @@
             <key key="man_made" value="antenna" />
             <optional>
                 <text key="name" text="Name"/>
-                <text key="height" text="Height (meters)" length="7" />
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
                 <text key="operator" text="Operator"/>
                 <reference ref="communication_types"/>
             </optional>
@@ -9168,7 +9168,7 @@
             <space/>
             <key key="man_made" value="chimney"/>
             <reference ref="optional_name_ref_operator"/>
-            <text key="height" text="Height (meters)"/>
+            <text key="height" text="Height (meters)" value_type="dimension_vertical"/>
         </item> <!-- Chimney -->
         <item name="Kiln" icon="${man_made_kiln}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=kiln"/>
@@ -9189,7 +9189,7 @@
             <key key="man_made" value="windpump"/>
             <reference ref="substance" />
             <optional>
-                <text key="height" text="Height (meters)" length="7"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
                 <reference ref="material"/>
                 <reference ref="pumpMechanism" />
                 <reference ref="mechCoupling" />
@@ -9230,7 +9230,7 @@
             <optional>
                 <reference ref="name_ref_operator"/>
                 <combo key="building" text="Building" values="gasometer" values_context="building"/>
-                <text key="height" text="Height (meters)" length="7"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Gasometer -->
         <item name="Silo" icon="${man_made_silo}" type="node,closedway" preset_name_label="true">
@@ -9240,7 +9240,7 @@
             <optional>
                 <reference ref="name_ref_operator"/>
                 <combo key="building" text="Building" values="silo" values_context="building"/>
-                <text key="height" text="Height (meters)" length="7"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Silo -->
         <item name="Storage Tank" icon="${man_made_storage_tank}" type="node,closedway">
@@ -9250,7 +9250,7 @@
                 <reference ref="name_ref_operator"/>
                 <combo key="building" text="Building" values="storage_tank" values_context="building"/>
                 <combo key="content" text="Content" values="fuel,manure,oil,sewage,silage,slurry,water,wine" display_values="Fuel,Manure,Oil,Sewage,Silage,Slurry,Water,Wine" values_context="content"/>
-                <text key="height" text="Height (meters)" length="7"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Storage Tank -->
         <item name="Water Works" icon="${man_made_water_works}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -9326,7 +9326,7 @@
             <space/>
             <key key="man_made" value="adit"/>
             <text key="name" text="Name"/>
-            <text key="length" text="Length (meters)"/>
+            <text key="length" text="Length (meters)" value_type="dimension_horizontal"/>
             <text key="operator" text="Operator"/>
             <reference ref="resource" />
             <check key="disused" text="Disused" disable_off="true"/>
@@ -9413,7 +9413,7 @@
             <key key="man_made" value="water_tower"/>
             <optional>
                 <reference ref="name_operator"/>
-                <text key="height" text="Height (meters)" length="7"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Water Tower -->
         <item name="Wastewater Treatment Plant" icon="${man_made_wastewater_plant}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -9586,7 +9586,7 @@
             <optional>
                 <text key="camera:direction" text="Direction in degrees" match="key"/>
                 <text key="camera:angle" text="Inclination in degrees" match="key"/>
-                <text key="height" text="Height (meters)" length="7" />
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Surveillance -->
         <item name="MDF" icon="${man_made_MDF}" name_context="man_made" type="node,closedway" preset_name_label="true" deprecated="true">
@@ -10002,8 +10002,8 @@
                 <optional>
                     <text key="ref" text="Reference" />
                     <text key="start_date" text="Start date" />
-                    <text key="height" text="Height (meters)" length="7" />
-                    <text key="width" text="Width (meters)" />
+                    <text key="height" text="Height (meters)" length="7"  value_type="dimension_vertical"/>
+                    <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
                 </optional>
             </item> <!-- Heliostat -->
         </group> <!-- Power Generator -->
@@ -10114,7 +10114,7 @@
             <link wiki="Tag:building=transformer_tower"/>
             <space/>
             <key key="building" value="transformer_tower"/>
-            <text key="height" text="Height (meters)"/>
+            <text key="height" text="Height (meters)" value_type="dimension_vertical"/>
             <reference ref="ref_operator"/>
             <preset_link preset_name="Power Substation"/>
         </item> <!-- Transformer Tower -->
@@ -10131,7 +10131,7 @@
             <link wiki="Tag:power=portal"/>
             <space/>
             <key key="power" value="portal"/>
-            <text key="height" text="Height (meters)"/>
+            <text key="height" text="Height (meters)" value_type="dimension_vertical"/>
             <combo key="structure" text="Type of construction" values="lattice,tubular,solid" display_values="Lattice,Tubular,Solid"/>
             <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" display_values="Metal,Plastic,Steel,Stone,Wood,Concrete" values_context="material"/>
             <reference ref="colours" />
@@ -10143,7 +10143,7 @@
             <link wiki="Tag:power=tower"/>
             <space/>
             <key key="power" value="tower"/>
-            <text key="height" text="Height (m)"/>
+            <text key="height" text="Height (m)" value_type="dimension_vertical"/>
             <combo key="structure" text="Type of construction" values="lattice,tubular,solid" display_values="Lattice,Tubular,Solid"/>
             <combo key="material" text="Material" values="metal,plastic,steel,stone,wood,concrete" display_values="Metal,Plastic,Steel,Stone,Wood,Concrete" values_context="material"/>
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="colour" match="none" editable="true"/>
@@ -12133,7 +12133,7 @@
             <space/>
             <key key="natural" value="cliff"/>
             <reference ref="optional_name_wikipedia"/>
-            <text key="height" text="Height (meters)" length="7" />
+            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
         </item> <!-- Cliff -->
         <item name="Sinkhole" icon="${geography_sinkhole}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:natural=sinkhole" />
@@ -12196,7 +12196,7 @@
             <optional>
                 <text key="name" text="Name"/>
             </optional>
-            <text key="height" text="Height (meters)" length="7" />
+            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             <text key="circumference" text="Circumference (meters)"/>
             <reference ref="genus_species_taxon"/>
             <reference ref="leaf"/>
@@ -12216,7 +12216,7 @@
             <label text="A line of trees."/>
             <space/>
             <key key="natural" value="tree_row"/>
-            <text key="height" text="Height (meters)" length="7" />
+            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             <optional>
                 <reference ref="genus_species_taxon"/>
                 <reference ref="leaf"/>
@@ -12230,8 +12230,8 @@
             <key key="natural" value="shrub"/>
             <reference ref="genus_species_taxon"/>
             <optional>
-                <text key="height" text="Height (m)" length="7" />
-                <text key="width" text="Width (m)" length="7"/>
+                <text key="height" text="Height (m)" length="7" value_type="dimension_vertical"/>
+                <text key="width" text="Width (m)" length="7" value_type="dimension_horizontal"/>
                 <text key="start_date" text="Start date" />
             </optional>
         </item> <!-- Shrub -->
@@ -12365,8 +12365,8 @@
             <key key="natural" value="stone"/>
             <optional>
                 <reference ref="name_wikipedia"/>
-                <text key="height" text="Height (meters)" length="7"/>
-                <text key="width" text="Width (meters)"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Stone -->
     </group> <!-- Nature -->
@@ -13337,8 +13337,8 @@
             <optional>
                 <reference ref="name_ref"/>
                 <reference ref="bridge_details"/>
-                <text key="height" text="Height (meters)" length="7"/>
-                <text key="length" text="Length (meters)"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
+                <text key="length" text="Length (meters)" value_type="dimension_horizontal"/>
                 <text key="operator" text="Operator"/>
             </optional>
             <roles>
@@ -13355,7 +13355,7 @@
             <reference ref="layer"/>
             <optional>
                 <reference ref="name_ref"/>
-                <text key="length" text="Length (meters)"/>
+                <text key="length" text="Length (meters)" value_type="dimension_horizontal"/>
                 <text key="operator" text="Operator"/>
             </optional>
             <roles>
