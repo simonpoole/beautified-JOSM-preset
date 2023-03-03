@@ -581,8 +581,12 @@
     </chunk>
     <chunk id="parking_orientation">
         <space />
-        <label text="Only for street side parking: "/>
-        <combo key="parking:orientation" text="Orientation" values="diagonal,parallel,perpendicular" display_values="Diagonal,Parallel,Perpendicular" />
+        <combo key="orientation" text="Orientation">
+            <reference ref="street_parking_orientation"/>
+        </combo>
+        <combo key="parking:orientation" text="Orientation" deprecated="true">
+            <reference ref="street_parking_orientation"/>
+        </combo>
     </chunk>
     <chunk id="parking_lane">
         <preset_link preset_name="Street parking both sides" />
