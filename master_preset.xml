@@ -12744,7 +12744,6 @@
             <space/>
             <text key="description" text="Description" match="key" length="255"/>
             <space/>
-            <label text="Similar but different tags:" text_context="note=*, fixme=*, description=*"/>
             <preset_link preset_name="Note" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Fixme" text="Similar but different tags:" alternative="true" />
         </item> <!-- Description -->
@@ -12755,7 +12754,6 @@
             <space/>
             <text key="note" text="Note" text_context="the tag note=*" match="key" length="255"/>
             <space/>
-            <label text="Similar but different tags:" text_context="note=*, fixme=*, description=*"/>
             <preset_link preset_name="Fixme" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Description" text="Similar but different tags:" alternative="true" />
         </item> <!-- Note -->
@@ -12766,7 +12764,6 @@
             <space/>
             <text key="fixme" text="Fixme" match="key" length="255"/>
             <space/>
-            <label text="Similar but different tags:" text_context="note=*, fixme=*, description=*"/>
             <preset_link preset_name="Note" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Description" text="Similar but different tags:" alternative="true" />
         </item> <!-- Fixme -->
