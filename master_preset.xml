@@ -2143,8 +2143,8 @@
             <check key="authentication:phone_call" text="Phone call" disable_off="true"/>
             <check key="authentication:short_message" text="Short message" disable_off="true"/>
             <check key="authentication:nfc" text="NFC" disable_off="true"/>
+            <check key="authentication:membership_card" text="Membership card" disable_off="true"/>
         </checkgroup>
-        <combo key="authentication:membership_card" text="Membership card" values="yes"/>
         <space/>
         <optional>
             <combo key="voltage" text="Voltage" values="230,400"/>
