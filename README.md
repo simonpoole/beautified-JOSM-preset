@@ -37,7 +37,7 @@ However, Vespucci ignores some settings and adds some of its own. Differences to
 
 Building the actual preset files is done with gradle and should work on both unixy operating systems and windows, the build task will generate the variants in the `gen` directory.
 
-Building requires `xmlstarlet` and a perl installation, both shoule be on your path
+Building requires `xmlstarlet` and a perl installation, both should be on your path
 
 The PNG icons are currently assumed to be in icons/png, generating them from SVG requires `rsvg-convert` to be installed. Currently the `recolour`and `generatePngs`tasks need to executed, when appropriate, manually.
 
