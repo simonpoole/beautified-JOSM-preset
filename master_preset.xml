@@ -2106,9 +2106,12 @@
     <chunk id="backrest">
         <check key="backrest" text="Backrest"/>
     </chunk>
+    <chunk id="intermittent">
+        <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true"/>
+    </chunk>
     <chunk id="water_body">
         <check key="salt" text="Salt Water" disable_off="true"/>
-        <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true"/>
+        <reference ref="intermittent"/>
         <check key="tidal" text="In the tidal range" disable_off="true"/>
         <reference ref="wikipedia_wikidata" />
         <reference ref="water_access"/>
@@ -4111,6 +4114,14 @@
             <reference ref="optional_name"/>
         </item> <!-- Basin -->
         <item name="Reservoir" icon="${water_reservoir}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:natural=water"/>
+            <space/>
+            <key key="natural" value="water"/>
+            <key key="water" value="reservoir"/>
+            <combo key="reservoir_type" text="Type" values="evaporator,sewage,tailings,water_storage" display_values="Evaporator,Sewage,Tailings,Water storage"/>
+            <reference ref="optional_name"/>
+        </item> <!-- Reservoir -->
+        <item name="Reservoir" icon="${water_reservoir}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
             <link wiki="Tag:landuse=reservoir"/>
             <space/>
             <key key="landuse" value="reservoir"/>
@@ -4147,6 +4158,13 @@
             <text key="name" text="Name"/>
             <space/>
             <reference ref="water_body" />
+        </item> <!-- Pond -->
+        <item name="Tailings Pond" icon="${man_made_tailings_pond}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:man_made=tailings_pond" />
+            <key key="man_made" value="tailings_pond" />
+            <space/>
+            <reference ref="intermittent"/>
+            <check key="hazard" text="Contaminated" value_on="contamination" disable_off="true" />
         </item> <!-- Pond -->
         <item name="Other waterbodies" name_context="natural" icon="${water_waterbody}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:natural=water"/>
