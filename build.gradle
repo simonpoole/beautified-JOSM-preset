@@ -42,7 +42,7 @@ ext {
     vespucci_preset_v5_file = 'vespucci_preset_v5.xml'
     vespucci_preset_build_file = 'vespucci_preset_build.xml'
     vespucci_preset_build_v5_file = 'vespucci_preset_build_v5.xml'
-    vespucci_preset_version = '1.15'
+    vespucci_preset_version = '1.16'
     generated = 'build/gen/'
     generatedDir = file(generated)
     temp = 'build/temp/'
@@ -51,7 +51,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.31.0'
+    runtime 'ch.poole:preset-utils:0.33.0'
 }
 
 def loadProperties = { filename -> 
