@@ -7514,8 +7514,8 @@
             <link wiki="Tag:emergency=lifeguard"/>
             <key key="emergency" value="lifeguard"/>
             <combo key="lifeguard" text="Type">
-                <list_entry vaule="base" display_value="Base" icon="${emergency_lifeguard_base}" />
-                <list_entry vaule="tower" display_value="Tower"  icon="${emergency_lifeguard_tower}" />
+                <list_entry value="base" display_value="Base" icon="${emergency_lifeguard_base}" />
+                <list_entry value="tower" display_value="Tower"  icon="${emergency_lifeguard_tower}" />
              </combo>
             <text key="operator" text="Operator"/>
         </item> <!-- Lifeguard -->
