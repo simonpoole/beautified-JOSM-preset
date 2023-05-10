@@ -2100,8 +2100,8 @@
         </checkgroup>
     </chunk>
     <chunk id="platform">
-        <check key="bench" text="Bench" disable_off="true"/>
-        <check key="shelter" text="Shelter" disable_off="true"/>
+        <check key="bench" text="Bench" />
+        <check key="shelter" text="Shelter" />
         <check key="covered" text="Covered"/>
         <reference ref="bin"/>
         <check key="passenger_information_display" text="Passenger information display" />
@@ -5438,8 +5438,8 @@
             <key key="highway" value="bus_stop"/>
             <text key="name" text="Name"/>
             <optional>
-                <check key="shelter" text="Shelter" disable_off="true"/>
-                <check key="bench" text="Bench" disable_off="true"/>
+                <check key="shelter" text="Shelter" />
+                <check key="bench" text="Bench" />
                 <reference ref="tactile_paving"/>
             </optional>
         </item> <!-- Bus Stop -->
@@ -8086,7 +8086,7 @@
             <space/>
             <key key="amenity" value="hunting_stand"/>
             <combo key="height" text="Height (meters)" values="low,half,full,5,10,15,20" values_context="height" length="7" editable="true" value_type="dimension_vertical"/>
-            <check key="shelter" text="Shelter" disable_off="true"/>
+            <check key="shelter" text="Shelter" />
             <check key="hide" text="Hide" text_context="hunting stand" disable_off="true"/>
             <check key="lockable" text="Lockable" disable_off="true"/>
         </item> <!-- Hunting Stand -->
