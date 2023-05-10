@@ -7513,15 +7513,19 @@
         <item name="Lifeguard" icon="${emergency_lifeguard}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=lifeguard"/>
             <key key="emergency" value="lifeguard"/>
+            <combo key="lifeguard" text="Type">
+                <list_entry vaule="base" display_value="Base" icon="${emergency_lifeguard_base}" />
+                <list_entry vaule="tower" display_value="Tower"  icon="${emergency_lifeguard_tower}" />
+             </combo>
             <text key="operator" text="Operator"/>
         </item> <!-- Lifeguard -->
-        <item name="Lifeguard base" icon="${emergency_lifeguard_base}" type="node" preset_name_label="true">
+        <item name="Lifeguard base" icon="${emergency_lifeguard_base}" type="node" preset_name_label="true" deprecated="true">
             <link wiki="Tag:emergency=lifeguard_base"/>
             <key key="emergency" value="lifeguard_base"/>
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Lifeguard base -->
-        <item name="Lifeguard tower" icon="${emergency_lifeguard_tower}" type="node" preset_name_label="true">
+        <item name="Lifeguard tower" icon="${emergency_lifeguard_tower}" type="node" preset_name_label="true" deprecated="true">
             <link wiki="Tag:emergency=lifeguard_tower"/>
             <key key="emergency" value="lifeguard_tower"/>
             <text key="ref" text="Reference"/>
@@ -10194,9 +10198,8 @@
             <combo key="colour" text="Color (HTML name or hexadecimal code)" values="black,red,white,gray,red/white" values_context="colour" match="none" editable="true"/>
             <reference ref="ref_operator"/>
             <optional>
-                <!-- tower:type and branch:type are "deprecated" -->
-                <combo key="tower:type" text="Tower type" values="termination,branch,transposing,crossing,transition" display_values="Termination,Branch,Transposing,Crossing,Transition" text_context="power" values_context="power"/>
-                <combo key="branch:type" text="Branch tower type" values="tap,split,loop,cross" display_values="Tap,Split,Loop,Cross"  values_context="power"/>
+                <combo key="tower:type" text="Tower type" values="termination,branch,transposing,crossing,transition" display_values="Termination,Branch,Transposing,Crossing,Transition" text_context="power" values_context="power" deprecated="true"/>
+                <combo key="branch:type" text="Branch tower type" values="tap,split,loop,cross" display_values="Tap,Split,Loop,Cross"  values_context="power" deprecated="true"/>
                 <combo key="design" text="Tower design" values="one-level,two-level,donau,three-level,barrel,asymmetric,triangle,flag,donau;one-level,four-level,six-level,nine-level,delta,delta_two-level,y-frame,x-frame,h-frame,guyed_h-frame,portal,portal_two-level,portal_three-level,guyed_v-frame,bipole,monopolar" values_context="power"/>
                 <reference ref="power_line_extra2"/>
                 <check key="triple_tower" text="Triple tower" disable_off="true"/>
