@@ -7530,9 +7530,23 @@
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Lifeguard base -->
+        <item name="Lifeguard base" icon="${emergency_lifeguard_base}" type="node" preset_name_label="true" >
+            <link wiki="Tag:emergency=lifeguard"/>
+            <key key="emergency" value="lifeguard"/>
+            <key key="lifeguard" value="base"/>
+            <text key="ref" text="Reference"/>
+            <text key="operator" text="Operator"/>
+        </item> <!-- Lifeguard base -->
         <item name="Lifeguard tower" icon="${emergency_lifeguard_tower}" type="node" preset_name_label="true" deprecated="true">
             <link wiki="Tag:emergency=lifeguard_tower"/>
             <key key="emergency" value="lifeguard_tower"/>
+            <text key="ref" text="Reference"/>
+            <text key="operator" text="Operator"/>
+        </item> <!-- Lifeguard tower -->
+        <item name="Lifeguard tower" icon="${emergency_lifeguard_tower}" type="node" preset_name_label="true" >
+            <link wiki="Tag:emergency=lifeguard"/>
+            <key key="emergency" value="lifeguard_tower"/>
+            <key key="lifeguard" value="tower"/>
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Lifeguard tower -->
