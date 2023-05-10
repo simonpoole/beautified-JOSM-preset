@@ -550,6 +550,14 @@
     <chunk id="maxspeed">
         <text key="maxspeed" text="Max speed" long_text="Maximum speed in km/h if no units specified"/>
     </chunk>
+    <chunk id="handrail">
+        <checkgroup text="Handrail" columns="1"> <!-- workaround -->
+            <check key="handrail" text="Handrail" disable_off="true"/>
+            <check key="handrail:left" text="Left handrail" disable_off="true"/>
+            <check key="handrail:center" text="Center handrail" disable_off="true"/>
+            <check key="handrail:right" text="Right handrail" disable_off="true"/>
+        </checkgroup>
+    </chunk>            
     <chunk id="highway_base">
         <reference ref="maxspeed"/>
         <preset_link preset_name="Cond. &amp; direct. max speed"/>
@@ -2961,6 +2969,7 @@
                 <reference ref="mtb_scale"/>
                 <combo key="trail_visibility" text="Visibility" values="excellent,good,intermediate,bad,horrible,no" display_values="Excellent,Good,Intermediate,Bad,Horrible,Not visible" values_context="trail_visibility" values_sort="false"/>
                 <reference ref="wheelchair"/>
+                <reference ref="handrail"/>
             </optional>
             <reference ref="path_access_restrictions"/>
         </item> <!-- Path -->
@@ -3033,6 +3042,7 @@
                 <combo key="bicycle" text="Bicycle" values="designated,yes,no" display_values="Designated,Yes,No"/>
                 <combo key="segregated" text="Segregated" values="yes,no" display_values="Yes,No" default=""/>
                 <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
+                <reference ref="handrail"/>
             </optional>
             <preset_link preset_name="Arcade"/>
             <preset_link preset_name="Colonnade"/>
@@ -3054,12 +3064,7 @@
                 <combo key="ramp:wheelchair" text="Wheelchair ramp" values="yes,limited,no" display_values="Yes,Limited,No"/>
                 <combo key="ramp:luggage" text="Luggage ramp" values="yes,automatic,manual,no" display_values="Yes,Automatic,Manual,No"/>
                 <space/>
-                <checkgroup text="Handrail" columns="1"> <!-- workaround -->
-                    <check key="handrail" text="Handrail" disable_off="true"/>
-                    <check key="handrail:left" text="Left handrail" disable_off="true"/>
-                    <check key="handrail:center" text="Center handrail" disable_off="true"/>
-                    <check key="handrail:right" text="Right handrail" disable_off="true"/>
-                </checkgroup>
+                <reference ref="handrail"/>
                 <space/>
                 <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" display_values="Yes,Forward,Backward,Reversible"/>
                 <space/>
