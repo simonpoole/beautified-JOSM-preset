@@ -3231,6 +3231,9 @@
             <text key="alt_name" text="Alternate name" alternative_autocomplete_keys="name" />
             <combo key="city_limit" values="begin,end,both" display_values="Begin,End,Both" values_sort="false" />
             <reference ref="traffic_signals_direction" />
+            <combo key="colour:back" text="Background colour" values_context="colour" >
+                <reference ref="colour_values"/>
+            </combo>
             <preset_link preset_name="Name"/>
         </item> <!-- City Limit -->
         <item name="Speed Limit Sign" icon="${traffic_sign_speed_limit}" type="node" preset_name_label="true">
@@ -7245,13 +7248,6 @@
             <reference ref="link_contact_address"/>
         </item> <!-- Baby Hatch/Safe Haven -->
         <separator/>
-        <item name="Veterinary" icon="${health_veterinary}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=veterinary"/>
-            <space/>
-            <key key="amenity" value="veterinary"/>
-            <reference ref="name_oh_wheelchair"/>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Veterinary -->
         <item name="Physiotherapist" icon="${health_massage}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:healthcare=physiotherapist"/>
             <space/>
@@ -7729,6 +7725,78 @@
             <reference ref="link_contact_address"/>
         </item> <!-- Automobile -->
     </group> <!-- Clubs -->
+    <group name="Animal" icon="${amenity_animal}">
+        <item name="Veterinary" icon="${health_veterinary}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=veterinary"/>
+            <space/>
+            <key key="amenity" value="veterinary"/>
+            <reference ref="name_oh_wheelchair"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Veterinary -->
+        <item name="Animal shelter" icon="${amenity_animal_shelter}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=animal_shelter"/>
+            <space/>
+            <key key="amenity" value="animal_shelter"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="operator" text="Operator"/>
+                <text key="description" text="Description" length="255"/>
+                <multiselect key="animal_shelter" text="Animals" values="dog;cat;horse;wildlife;fish;amphibian;reptile;bird;mammal;sea_mammal;sea_animal" 
+                    display_values="Dog;Cat;Horse;Wildlife;Fish;Amphibian;Reptile;Bird;Mammal;Sea mammal;Sea animal" values_searchable="true" match="key"/>
+                <!-- The following two tags should be multiselects accroding to the wiki, but values outside of yes and no are hardly used -->
+                <check key="animal_shelter:adoption" text="For adoption" disable_off="true"/>
+                <check key="animal_shelter:release" text="For release" disable_off="true"/>
+                <reference ref="oh_wheelchair" />
+            </optional>
+            <reference ref="link_contact_address"/>
+            <preset_link preset_name="Payment Methods" />
+        </item> <!-- Animal shelter -->
+        <item name="Animal boarding" icon="${amenity_animal_boarding}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=animal_boarding"/>
+            <space/>
+            <key key="amenity" value="animal_boarding"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="operator" text="Operator"/>
+                <text key="description" text="Description" length="255"/>
+                <multiselect key="animal_boarding" text="Animals" values="dog;cat;horse;fish;amphibian;reptile;bird;mammal;wildlife" 
+                    display_values="Dog;Cat;Horse;Fish;Amphibian;Reptile;Bird;Mammal;Wildlife" values_searchable="true" match="key" rows="9" />
+                <reference ref="oh_wheelchair" />
+            </optional>
+            <reference ref="link_contact_address"/>
+            <preset_link preset_name="Payment Methods" />
+        </item> <!-- Animal boarding -->
+        <item name="Animal breeding" icon="${amenity_animal_breeding}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=animal_breeding"/>
+            <space/>
+            <key key="amenity" value="animal_breeding"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="operator" text="Operator"/>
+                <text key="description" text="Description" length="255"/>
+                <multiselect key="animal_breeding" text="Animals" values="alpaca;bird;cat;cow;dog;donkey;fish;goat;horse;pig;poultry;rabbit;sheep" display_values="Alpaca;Bird;Cat;Cow;Dog;Donkey;Fish;Goat;Horse;Pig;Poultry;Rabbit;Sheep" values_searchable="true" match="key"/>
+            </optional>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Animal boarding -->
+        <item name="Animal feeding place" icon="${amenity_feeding_place}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=feeding_place"/>
+            <space/>
+            <key key="amenity" value="feeding_place"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="description" text="Description" length="255"/>
+            </optional>
+        </item> <!-- Animal feeding place -->
+        <item name="Animal watering place" icon="${amenity_watering_place}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=watering_place"/>
+            <space/>
+            <key key="amenity" value="watering_place"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="description" text="Description" length="255"/>
+            </optional>
+        </item> <!-- Animal watering place -->
+    </group> <!-- Animal -->
     <group name="Facilities" icon="${amenity_telephone}">
         <item name="Toilets/Restrooms" icon="${amenity_toilets}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:amenity=toilets"/>
@@ -8029,68 +8097,6 @@
                 <reference ref="facility_access"/>
             </optional>
         </item> <!-- Water Point -->
-        <item name="Animal shelter" icon="${amenity_animal_shelter}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=animal_shelter"/>
-            <space/>
-            <key key="amenity" value="animal_shelter"/>
-            <optional>
-                <text key="name" text="Name"/>
-                <text key="operator" text="Operator"/>
-                <text key="description" text="Description" length="255"/>
-                <multiselect key="animal_shelter" text="Animals" values="dog;cat;horse;wildlife;fish;amphibian;reptile;bird;mammal;sea_mammal;sea_animal" display_values="Dog;Cat;Horse;Wildlife;Fish;Amphibian;Reptile;Bird;Mammal;Sea mammal;Sea animal" values_searchable="true" match="key"/>
-                <!-- The following two tags should be multiselects accroding to the wiki, but values outside of yes and no are hardly used -->
-                <check key="animal_shelter:adoption" text="For adoption" disable_off="true"/>
-                <check key="animal_shelter:release" text="For release" disable_off="true"/>
-                <reference ref="oh_wheelchair" />
-            </optional>
-            <reference ref="link_contact_address"/>
-            <preset_link preset_name="Payment Methods" />
-        </item> <!-- Animal shelter -->
-        <item name="Animal boarding" icon="${amenity_animal_boarding}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=animal_boarding"/>
-            <space/>
-            <key key="amenity" value="animal_boarding"/>
-            <optional>
-                <text key="name" text="Name"/>
-                <text key="operator" text="Operator"/>
-                <text key="description" text="Description" length="255"/>
-                <multiselect key="animal_boarding" text="Animals" values="dog;cat;horse;fish;amphibian;reptile;bird;mammal;wildlife" 
-                    display_values="Dog;Cat;Horse;Fish;Amphibian;Reptile;Bird;Mammal;Wildlife" values_searchable="true" match="key" rows="9" />
-                <reference ref="oh_wheelchair" />
-            </optional>
-            <reference ref="link_contact_address"/>
-            <preset_link preset_name="Payment Methods" />
-        </item> <!-- Animal boarding -->
-        <item name="Animal breeding" icon="${amenity_animal_breeding}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=animal_breeding"/>
-            <space/>
-            <key key="amenity" value="animal_breeding"/>
-            <optional>
-                <text key="name" text="Name"/>
-                <text key="operator" text="Operator"/>
-                <text key="description" text="Description" length="255"/>
-                <multiselect key="animal_breeding" text="Animals" values="alpaca;bird;cat;cow;dog;donkey;fish;goat;horse;pig;poultry;rabbit;sheep" display_values="Alpaca;Bird;Cat;Cow;Dog;Donkey;Fish;Goat;Horse;Pig;Poultry;Rabbit;Sheep" values_searchable="true" match="key"/>
-            </optional>
-            <reference ref="link_contact_address"/>
-        </item> <!-- Animal boarding -->
-        <item name="Animal feeding place" icon="${amenity_feeding_place}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=feeding_place"/>
-            <space/>
-            <key key="amenity" value="feeding_place"/>
-            <optional>
-                <text key="name" text="Name"/>
-                <text key="description" text="Description" length="255"/>
-            </optional>
-        </item> <!-- Animal feeding place -->
-        <item name="Animal watering place" icon="${amenity_watering_place}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=watering_place"/>
-            <space/>
-            <key key="amenity" value="watering_place"/>
-            <optional>
-                <text key="name" text="Name"/>
-                <text key="description" text="Description" length="255"/>
-            </optional>
-        </item> <!-- Animal watering place -->
         <item name="Compressed Air" icon="${amenity_compressed_air}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=compressed_air"/>
             <space/>
@@ -10485,7 +10491,21 @@
         <space/>
         <key key="historic" value="memorial"/>
         <text key="name" text="Name"/>
-        <combo key="memorial" text="Type" values="statue,bust,plaque,stele,stone,war_memorial" display_values="Statue,Bust,Plaque,Stele,Stone,War memorial" values_context="memorial" values_searchable="true"/>
+        <combo key="memorial" text="Type" values_context="memorial" values_searchable="true">
+            <list_entry value="bust" display_value="Bust" short_description="Like a statue, but only showing the upper half of a person." />
+            <list_entry value="plaque" display_value="Plaque" short_description="A commemorative sign, often mounted on a wall." />
+            <list_entry value="statue" display_value="Statue" short_description="A statue representing a person." />
+            <list_entry value="stele" display_value="Stele" short_description="An upright slab engraved or painted with decorations or inscriptions." />
+            <list_entry value="stone" display_value="Stone" short_description="A stone with an inscription, picture, or similar." />
+            <list_entry value="war_memorial" display_value="War memorial" short_description="A building, monument, statue or other edifice celebrating a victory or commemorating those who died or were injured in a war." />
+            <list_entry value="sculpture" display_value="Sculpture" short_description="A non figurative sculpture which does not match any of the other categories." />
+            <list_entry value="cross" display_value="Cross" short_description="A cross-shaped memorial." />
+            <list_entry value="blue_plaque" display_value="Blue plaque (UK)" short_description="A blue plaque commemorating a historical link to that location. (UK)" />
+            <list_entry value="obelisk" display_value="Obelisk" short_description="An obelisk." />
+            <list_entry value="ghost_bike" display_value="Ghost bike" short_description="A bicycle painted white permanently placed as memorial for a victim of a road accident (usually cyclists)." />
+            <list_entry value="stolperstein" display_value="Stolperstein" short_description="10cm × 10cm brass plaque commemorating victims of Nazi persecution. (EU,RU)" />
+            <list_entry value="bench" display_value="Bench" short_description="A bench placed in memory of someone or something; usually has a plaque, and sometimes a statue sitting on (part of) it." />
+        </combo>
         <optional>
             <text key="inscription" text="Inscription"  length="255"/>
             <text key="artist_name" text="Artist Name"/>
@@ -12259,7 +12279,29 @@
                 <text key="width" text="Width (m)" length="7" value_type="dimension_horizontal"/>
                 <text key="start_date" text="Start date" />
             </optional>
+             <preset_link preset_name="Shrubbery" text="Similar but different tags:" alternative="true" />
         </item> <!-- Shrub -->
+        <item name="Shrubbery" icon="${natural_shrubbery}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:natural=shrubbery" />
+            <space />
+            <label text="An area of shrubbery that is actively maintained or pruned by humans." />
+            <space />
+            <key key="natural" value="shrubbery" />
+            <optional>
+                <combo key="shrubbery:density" text="Effective density" values_searchable="true" values_sort="false">
+                    <list_entry value="sparse" icon="${natural_shrubbery_density_sparse}" display_value="Sparse" short_description="Sparsely planted shrubbery. Generally speaking able-bodied persons could walk through them (although this is usually not desirable)." />
+                    <list_entry value="medium" icon="${shrubbery_density_medium}" display_value="Medium" short_description="Shrubbery with a medium density. Able-bodied persons might be able to barge through it, but it takes some effort and might result in scratches or soiled clothing." />
+                    <list_entry value="dense" icon="${shrubbery_density_dense}" display_value="Dense" short_description="Densely planted shrubbery. Effectively impassible without damaging the shrubbery (which at this point often acts as a hedge) and getting your clothes torn." />
+                </combo>
+                <text key="height" text="(Average) height" length="7" />
+                <text key="shrubbery:shape" text="Shape (useful for hedges etc.)" />
+                <space />
+                <reference ref="genus_species_taxon"/>
+                <space />
+                <reference ref="leaf"/>
+            </optional>
+            <preset_link preset_name="Shrub" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Shrubbery -->
         <separator />
         <item name="Wood" icon="${natural_wood}" type="closedway,multipolygon" preset_name_label="true" name_context="natural">
             <link wiki="Tag:natural=wood"/>
@@ -12429,7 +12471,9 @@
             <reference ref="optional_name"/>
             <combo key="trees" text="Trees"
                 values="almond_trees,apple_trees,apricot_trees,avocado_trees,banana_plants,blueberry_plants,cacao_trees,cherimoya_trees,cherry_trees,chestnut_trees,coconut_palms,coffea_plants,date_palms,hazel_plants,hop_plants,lemon_trees,macadamia_trees,mango_trees,oil_palms,olive_trees,orange_trees,papaya_trees,peach_trees,pear_trees,pecan_trees,persimmon_trees,pineapple_plants,pistachio_trees,pitaya_plants,plum_trees,pomegranate_trees,tea_plants,walnut_trees"
-                display_values="Almond trees,Apple trees,Apricot trees,Avocado trees,Banana plants,Blueberry plants,Cacao trees,Cherimoya trees,Cherry trees,Chestnut trees,Coconut palms,Coffea plants,Date palms,Hazel plants,Hop plants,Lemon trees,Macadamia trees,Mango trees,Oil palms,Olive trees,Orange trees,Papaya trees,Peach trees,Pear trees,Pecan trees,Persimmon trees,Pineapple plants,Pistachio trees,Pitaya plants,Plum trees,Pomegranate trees,Tea plants,Walnut trees" />
+                display_values="Almond trees,Apple trees,Apricot trees,Avocado trees,Banana plants,Blueberry plants,Cacao trees,Cherimoya trees,Cherry trees,Chestnut trees,Coconut palms,Coffea plants,Date palms,Hazel plants,Hop plants,Lemon trees,Macadamia trees,Mango trees,Oil palms,Olive trees,Orange trees,Papaya trees,Peach trees,Pear trees,Pecan trees,Persimmon trees,Pineapple plants,Pistachio trees,Pitaya plants,Plum trees,Pomegranate trees,Tea plants,Walnut trees" 
+                values_searchable="true"
+                />
         </item> <!-- Orchard -->
         <item name="Vineyard" icon="${landuse_vineyard}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:landuse=vineyard"/>
@@ -12481,17 +12525,21 @@
                 <text key="operator" text="Operator" />
                 <reference ref="genus_species_taxon" />
             </optional>
+            <preset_link preset_name="Garden" text="Similar but different tags:" alternative="true" />
         </item> <!-- Flowerbed -->
         <item name="Garden" icon="${landuse_garden}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=garden"/>
             <space/>
             <key key="leisure" value="garden"/>
-            <combo key="garden:type" text="Type" values="arboretum,botanical,community,residential,roof_garden,show_garden" display_values="Arboretum,Botanical,Community,Residential,Roof garden,Show garden" values_context="garden" match="key"/>
+            <combo key="garden:type" text="Type" values="arboretum,botanical,community,residential,roof_garden,show_garden" 
+                display_values="Arboretum,Botanical,Community,Residential,Roof garden,Show garden" values_context="garden" match="key"/>
             <combo key="garden:style" text="Style" values="chinese,cottage_garden,english,flower_garden,french,herb_garden,japanese,kitchen,medical_garden,monastery,rosarium,walled_garden,zen"
                 display_values="Chinese,Cottage garden,English,Flower garden,French,Herb garden,Japanese,Kitchen,Medical garden,Monastery,Rosarium,Walled garden,Zen" values_context="garden" match="key"/>
             <optional>
-                <text key="name" text="Name"/>
+                <reference ref="name_operator" />
+                <reference ref="facility_access" />
             </optional>
+             <preset_link preset_name="Flowerbed" text="Similar but different tags:" alternative="true" />
         </item> <!-- Garden -->
         <item name="Grass" icon="${landuse_grass}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:landuse=grass"/>
