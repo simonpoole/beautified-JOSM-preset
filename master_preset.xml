@@ -11907,7 +11907,7 @@
             <list_entry value="newspapers" short_description="Newspapers"/>
             <list_entry value="parking_tickets" short_description="Parking tickets"/>
             <list_entry value="parcel_pickup" short_description="Parcel pickup" deprecated="true"/>
-            <list_entry value="parcel_mail_in" short_description="Parcel mail in"/>
+            <list_entry value="parcel_mail_in" short_description="Parcel mail in" deprecated="true"/>
             <list_entry value="pet_food" short_description="Animal feed (domestic)"/>
             <list_entry value="pizza" short_description="Pizza"/>
             <list_entry value="public_transport_plans" short_description="Plans (public transport)"/>
@@ -11938,6 +11938,7 @@
             <text key="brand" text="Parcel service brand"/>
             <text key="operator" text="Machine operator"/>
             <text key="ref" text="Reference number"/>
+            <combo key="parcel_mail_in" text="Parcel mail in" values="yes,no,returns_only" display_values="Yes,No,Return only"/>
             <combo key="parcel_pickup" text="Parcel pickup" values="yes,no" display_values="Yes,No"/>
             <combo key="refrigerated" text="Refrigerated" values="yes,no" display_values="Yes,No"/>
             <reference ref="colours"/>
