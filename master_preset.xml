@@ -8211,6 +8211,20 @@
             <key key="amenity" value="weighbridge"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Weighbridge -->
+        <item name="Letter box" icon="${amenity_letter_box}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:amenity=letter_box"/>
+            <space/>
+            <key key="amenity" value="letter_box"/>
+            <optional>
+                <text key="post:housenumber" text="House number" match="key"/>
+                <text key="post:flats" text="Flats" match="key"/>
+                <text key="post:unit" text="Unit" match="key"/>
+                <text key="post:street" text="Street" match="key"/>
+                <text key="post:postcode" text="Post code" match="key"/>
+                <text key="post:city" text="City" match="key"/>
+                <text key="post:state" text="State" match="key"/>
+            </optional>
+        </item> <!-- Weighbridge -->
     </group> <!-- Facilities -->
     </group>  <!-- Facilities -->
     <group name="Sports" icon="${sport_group}">
