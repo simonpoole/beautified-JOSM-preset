@@ -7491,12 +7491,6 @@
             <reference ref="name_ref_operator" />
         </item> <!-- Suction point -->
         <separator/>
-        <item name="Assembly Point" icon="${emergency_assembly_point_sp}" type="node" preset_name_label="true">
-            <link wiki="Tag:emergency=assembly_point"/>
-            <space/>
-            <key key="emergency" value="assembly_point"/>
-            <reference ref="name_ref_operator"/>
-        </item> <!-- Assembly Point -->
         <item name="Emergency Phone" icon="${emergency_emergency_phone}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=phone"/>
             <key key="emergency" value="phone"/>
@@ -7571,6 +7565,21 @@
             <key key="emergency" value="mountain_rescue" />
             <reference ref="link_contact_address"/>
         </item> <!-- Mountain Rescue -->
+        <separator/>
+        <item name="Assembly Point" icon="${emergency_assembly_point}" type="node" preset_name_label="true">
+            <link wiki="Tag:emergency=assembly_point"/>
+            <space/>
+            <key key="emergency" value="assembly_point"/>
+            <reference ref="name_ref_operator"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Assembly Point -->
+        <item name="Disaster Help Point" icon="${emergency_disaster_help_point}" type="node" preset_name_label="true">
+            <link wiki="Tag:emergency=disaster_help_point"/>
+            <space/>
+            <key key="emergency" value="disaster_help_point"/>
+            <reference ref="name_ref_operator"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Assembly Point -->
     </group> <!-- Emergency -->
     <group name="Social Facilities" icon="${social_facilities_group}">
         <item name="Ambulatory Care" icon="${amenity_ambulatory_care}" type="node,closedway,multipolygon" preset_name_label="true">
