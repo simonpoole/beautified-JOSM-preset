@@ -13223,14 +13223,11 @@
                     <reference ref="route_hikebike_optionals"/>
                 </optional>
                 <roles>
-                    <role key="" text="route segment" requisite="optional" type="way"/>
-                    <role key="forward" text="forward segment" requisite="optional" type="way"/>
-                    <role key="backward" text="backward segment" requisite="optional" type="way"/>
+                    <reference ref="route_segment_roles" />
                     <role key="link" text="link segment" requisite="optional" type="way"/>
                     <role key="shortcut" text="shortcut segment" requisite="optional" type="way"/>
                     <role key="variant" text="variant segment" requisite="optional" type="way"/>
                     <role key="start" text="entry points" requisite="optional" type="node"/>
-                    <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
                 </roles>
             </item> <!-- Piste Route -->
             <item name="Ski Route" icon="${relation_route_ski}" type="relation" preset_name_label="true">
@@ -13244,14 +13241,11 @@
                     <reference ref="route_hikebike_optionals"/>
                 </optional>
                 <roles>
-                    <role key="" text="route segment" requisite="optional" type="way"/>
-                    <role key="forward" text="forward segment" requisite="optional" type="way"/>
-                    <role key="backward" text="backward segment" requisite="optional" type="way"/>
+                    <reference ref="route_segment_roles" />
                     <role key="link" text="link segment" requisite="optional" type="way"/>
                     <role key="shortcut" text="shortcut segment" requisite="optional" type="way"/>
                     <role key="variant" text="variant segment" requisite="optional" type="way"/>
                     <role key="start" text="entry points" requisite="optional" type="node"/>
-                    <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
                 </roles>
             </item> <!-- Ski Route -->
             <item name="Inline Skating Route" icon="${relation_route_inline_skates}" type="relation" preset_name_label="true">
@@ -13264,7 +13258,10 @@
                 <optional>
                     <reference ref="route_hikebike_optionals"/>
                 </optional>
-            </item> <!-- Walking Route -->
+                <roles>
+                    <reference ref="route_segment_roles" />
+                </roles>
+            </item> <!-- Inline Skating Route -->
             <separator/>
             <item name="Detour Route" icon="${relation_route_detour}" type="relation" preset_name_label="true">
                 <link wiki="Tag:route=detour"/>
