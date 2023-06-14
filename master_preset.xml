@@ -245,11 +245,11 @@
         <list_entry value="right" short_description="Only right side"/>
     </chunk>
     <chunk id="cycleway_values">
-        <list_entry value="lane" display_values="Lane"/>
-        <list_entry value="track" display_values="Track"/>
-        <list_entry value="share_busway" display_values="Share busway"/>
-        <list_entry value="shared_lane" display_values="Shared lane"/>
-        <list_entry value="separate" display_values="Separate"/>
+        <list_entry value="lane" display_value="Lane"/>
+        <list_entry value="track" display_value="Track"/>
+        <list_entry value="share_busway" display_value="Share busway"/>
+        <list_entry value="shared_lane" display_value="Shared lane"/>
+        <list_entry value="separate" display_value="Separate"/>
     </chunk>
     <chunk id="building_values">
         <list_entry value="allotment_house"    display_value="Allotment house"/>
@@ -346,7 +346,7 @@
         <list_entry value="tin" display_value="Tin"/>
         <list_entry value="traditional" display_value="Traditional"/>
         <list_entry value="vinyl" display_value="Vinly"/>
-        <list_entry value="wood" display_values="Wood"/>
+        <list_entry value="wood" display_value="Wood"/>
     </chunk>
     <chunk id="colour_values">
         <list_entry value="black" display_value="Black"/>
@@ -363,20 +363,20 @@
         <list_entry value="yellow" display_value="Yellow"/>
     </chunk>
     <chunk id="base_access_values">
-        <list_entry value="yes" display_values="Public access"/>
-        <list_entry value="official" display_values="Official" deprecated="true"/>
-        <list_entry value="designated" display_values="Designated"/>
-        <list_entry value="destination" display_values="Destination"/>
-        <list_entry value="delivery" display_values="Delivery"/>
-        <list_entry value="customer" display_values="Customers"/>
-        <list_entry value="permissive" display_values="Permissive"/>
-        <list_entry value="private" display_values="Private"/>
-        <list_entry value="permit" display_values="Permit required"/>
-        <list_entry value="no" display_values="No access"/>
+        <list_entry value="yes" display_value="Public access"/>
+        <list_entry value="official" display_value="Official" deprecated="true"/>
+        <list_entry value="designated" display_value="Designated"/>
+        <list_entry value="destination" display_value="Destination"/>
+        <list_entry value="delivery" display_value="Delivery"/>
+        <list_entry value="customer" display_value="Customers"/>
+        <list_entry value="permissive" display_value="Permissive"/>
+        <list_entry value="private" display_value="Private"/>
+        <list_entry value="permit" display_value="Permit required"/>
+        <list_entry value="no" display_value="No access"/>
     </chunk>
     <chunk id="purpose_based_access_values">
-        <list_entry value="agricultural" display_values="Agricultural"/>
-        <list_entry value="forestry" display_values="Forestry"/>
+        <list_entry value="agricultural" display_value="Agricultural"/>
+        <list_entry value="forestry" display_value="Forestry"/>
     </chunk>
     <chunk id="conditional_vehicle_restriciton_values">
         <list_entry value="yes @ wet"/>
@@ -523,15 +523,15 @@
     <chunk id="sport_surface">
         <combo key="surface" text="Surface" match="none"> 
             <list_entry value="acrylic" display_value="Acrylic" />
-            <list_entry value="artificial_turf" display_values="Artificial turf" />
-            <list_entry value="asphalt" display_values="Asphalt" />
-            <list_entry value="clay" display_values="Clay" />
-            <list_entry value="concrete" display_values="Concrete" />
-            <list_entry value="decoturf" display_values="DecoTurf" deprecated="true" />
-            <list_entry value="grass" display_values="Grass" />
-            <list_entry value="sand" display_values="Sand" />
-            <list_entry value="tartan" display_values="Tartan" />
-            <list_entry value="ground" display_values="Ground" />
+            <list_entry value="artificial_turf" display_value="Artificial turf" />
+            <list_entry value="asphalt" display_value="Asphalt" />
+            <list_entry value="clay" display_value="Clay" />
+            <list_entry value="concrete" display_value="Concrete" />
+            <list_entry value="decoturf" display_value="DecoTurf" deprecated="true" />
+            <list_entry value="grass" display_value="Grass" />
+            <list_entry value="sand" display_value="Sand" />
+            <list_entry value="tartan" display_value="Tartan" />
+            <list_entry value="ground" display_value="Ground" />
         </combo>
     </chunk>
     <chunk id="motorsport_surface">
