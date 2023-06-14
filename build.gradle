@@ -19,7 +19,7 @@ plugins {
 apply plugin: 'java'
 apply plugin: "com.github.breadmoirai.github-release"
 
-version = '5.7.1'
+version = '5.7.2'
 
 import static groovy.io.FileType.*
 //for Ant filter
@@ -51,7 +51,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.33.0'
+    runtime 'ch.poole:preset-utils:0.34.0'
 }
 
 def loadProperties = { filename -> 
