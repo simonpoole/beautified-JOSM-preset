@@ -6388,8 +6388,8 @@
             <preset_link preset_name="Water Park" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Sports Centre" text="Similar but different tags:" alternative="true" />
         </item> <!-- Public bath -->
-        <item name="Tanning Studio" icon="${amenity_tanning_studio}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:leisure=tanning_studio"/>
+        <item name="Tanning Salon" icon="${amenity_tanning_studio}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:leisure=tanning_salon"/>
             <space/>
             <key key="leisure" value="tanning_salon"/>
             <check key="self_service" text="Self-service" disable_off="true"/>
@@ -6398,7 +6398,7 @@
             <reference ref="facility_access"/>
             <space/>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Tanning Studio -->
+        </item> <!-- Tanning Salon -->
         <item name="Dance" icon="${amenity_dance}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=dance"/>
             <space/>
