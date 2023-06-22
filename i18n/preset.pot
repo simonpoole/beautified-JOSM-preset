@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-17 10:36+0200\n"
+"POT-Creation-Date: 2023-06-22 18:57+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -10237,7 +10237,7 @@ msgstr ""
 msgid "Self checkout"
 msgstr ""
 
-#: build/temp/v4.xml:10422(check:text|group:Clothes|preset:Laundry|key:self_service) build/temp/v4.xml:4337(check:text|group:Car|preset:Fuel|key:self_service) build/temp/v4.xml:4415(check:text|group:Car|preset:Car_Wash|key:self_service) build/temp/v4.xml:5276(check:text|group:Food+Drinks|preset:Restaurant|key:self_service) build/temp/v4.xml:5893(check:text|group:Leisure|preset:Tanning_Studio|key:self_service)
+#: build/temp/v4.xml:10422(check:text|group:Clothes|preset:Laundry|key:self_service) build/temp/v4.xml:4337(check:text|group:Car|preset:Fuel|key:self_service) build/temp/v4.xml:4415(check:text|group:Car|preset:Car_Wash|key:self_service) build/temp/v4.xml:5276(check:text|group:Food+Drinks|preset:Restaurant|key:self_service) build/temp/v4.xml:5893(check:text|group:Leisure|preset:Tanning_Salon|key:self_service)
 msgid "Self-service"
 msgstr ""
 
@@ -11353,8 +11353,8 @@ msgstr ""
 msgid "Tanning"
 msgstr ""
 
-#: build/temp/v4.xml:5889(item:name|group:Leisure|preset:Tanning_Studio)
-msgid "Tanning Studio"
+#: build/temp/v4.xml:5889(item:name|group:Leisure|preset:Tanning_Salon)
+msgid "Tanning Salon"
 msgstr ""
 
 #: build/temp/v4.xml:947(combo:display_values|key:religion) build/temp/v4.xml:951(combo:display_values|key:religion) build/temp/v4.xml:955(combo:display_values|key:religion)
@@ -15130,17 +15130,12 @@ msgctxt "jewish"
 msgid "Reform"
 msgstr ""
 
-#: build/temp/v4.xml:1055(list_entry:display_value|value:straight) build/temp/v4.xml:1056(list_entry:display_value|value:branch) build/temp/v4.xml:1057(list_entry:display_value|value:split) build/temp/v4.xml:1058(list_entry:display_value|value:transpose) build/temp/v4.xml:1059(list_entry:display_value|value:cross) build/temp/v4.xml:1060(list_entry:display_value|value:transition) build/temp/v4.xml:1061(list_entry:display_value|value:termination)
-msgctxt "power"
-msgid "Abused"
-msgstr ""
-
 #: build/temp/v4.xml:1065(combo:display_values|key:line_attachment) build/temp/v4.xml:9778(combo:display_values|preset:Insulator|key:line_attachment)
 msgctxt "power"
 msgid "Anchor"
 msgstr ""
 
-#: build/temp/v4.xml:1098(combo:display_values|key:pole:type) build/temp/v4.xml:9715(combo:display_values|preset:Power_Tower|key:tower:type)
+#: build/temp/v4.xml:1056(list_entry:display_value|value:branch) build/temp/v4.xml:1098(combo:display_values|key:pole:type) build/temp/v4.xml:9715(combo:display_values|preset:Power_Tower|key:tower:type)
 msgctxt "power"
 msgid "Branch"
 msgstr ""
@@ -15155,7 +15150,7 @@ msgctxt "power"
 msgid "Connection"
 msgstr ""
 
-#: build/temp/v4.xml:9716(combo:display_values|preset:Power_Tower|key:branch:type)
+#: build/temp/v4.xml:1059(list_entry:display_value|value:cross) build/temp/v4.xml:9716(combo:display_values|preset:Power_Tower|key:branch:type)
 msgctxt "power"
 msgid "Cross"
 msgstr ""
@@ -15235,9 +15230,14 @@ msgctxt "power"
 msgid "Roof"
 msgstr ""
 
-#: build/temp/v4.xml:9716(combo:display_values|preset:Power_Tower|key:branch:type)
+#: build/temp/v4.xml:1057(list_entry:display_value|value:split) build/temp/v4.xml:9716(combo:display_values|preset:Power_Tower|key:branch:type)
 msgctxt "power"
 msgid "Split"
+msgstr ""
+
+#: build/temp/v4.xml:1055(list_entry:display_value|value:straight)
+msgctxt "power"
+msgid "Straight"
 msgstr ""
 
 #: build/temp/v4.xml:1014(combo:display_values|key:location) build/temp/v4.xml:9486(combo:display_values|group:Power_Generator|preset:Solar_Power_Generator|key:location)
@@ -15255,7 +15255,7 @@ msgctxt "power"
 msgid "Tap"
 msgstr ""
 
-#: build/temp/v4.xml:1098(combo:display_values|key:pole:type) build/temp/v4.xml:9715(combo:display_values|preset:Power_Tower|key:tower:type)
+#: build/temp/v4.xml:1061(list_entry:display_value|value:termination) build/temp/v4.xml:1098(combo:display_values|key:pole:type) build/temp/v4.xml:9715(combo:display_values|preset:Power_Tower|key:tower:type)
 msgctxt "power"
 msgid "Termination"
 msgstr ""
@@ -15270,9 +15270,14 @@ msgctxt "power"
 msgid "Tower type"
 msgstr ""
 
-#: build/temp/v4.xml:1098(combo:display_values|key:pole:type) build/temp/v4.xml:9715(combo:display_values|preset:Power_Tower|key:tower:type)
+#: build/temp/v4.xml:1060(list_entry:display_value|value:transition) build/temp/v4.xml:1098(combo:display_values|key:pole:type) build/temp/v4.xml:9715(combo:display_values|preset:Power_Tower|key:tower:type)
 msgctxt "power"
 msgid "Transition"
+msgstr ""
+
+#: build/temp/v4.xml:1058(list_entry:display_value|value:transpose)
+msgctxt "power"
+msgid "Transpose"
 msgstr ""
 
 #: build/temp/v4.xml:1098(combo:display_values|key:pole:type) build/temp/v4.xml:9715(combo:display_values|preset:Power_Tower|key:tower:type)
