@@ -1523,13 +1523,13 @@
     </chunk>
     <chunk id="line_management">
         <combo key="line_management" text="Line management" text_context="power" values_context="power">
-            <list_entry value="straight" display_value="Abused"/>
-            <list_entry value="branch" display_value="Abused"/>
-            <list_entry value="split" display_value="Abused"/>
-            <list_entry value="transpose" display_value="Abused"/>
-            <list_entry value="cross" display_value="Abused"/>
-            <list_entry value="transition" display_value="Abused"/>
-            <list_entry value="termination" display_value="Abused"/>
+            <list_entry value="straight" display_value="Straight"/>
+            <list_entry value="branch" display_value="Branch"/>
+            <list_entry value="split" display_value="Split"/>
+            <list_entry value="transpose" display_value="Transpose"/>
+            <list_entry value="cross" display_value="Cross"/>
+            <list_entry value="transition" display_value="Transition"/>
+            <list_entry value="termination" display_value="Termination"/>
         </combo>
     </chunk>
     <chunk id="power_line_extra2">
