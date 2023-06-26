@@ -12100,7 +12100,7 @@
             <reference ref="population_postcode_website"/>
         </item> <!-- City -->
         <item name="Municipality" icon="${geography_places_municipality}" type="node,closedway,,multipolygon,relation" preset_name_label="true">
-            <link wiki="Tag:place=city"/>
+            <link wiki="Tag:place=municipality"/>
             <space/>
             <key key="place" value="municipality"/>
             <reference ref="name_wikipedia"/>
