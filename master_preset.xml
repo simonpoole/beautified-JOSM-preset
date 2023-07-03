@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="5.8.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="5.9.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,telecom">
 <!--
@@ -676,7 +676,7 @@
         <text key="junction:ref" text="Junction reference" />
         <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
         <reference ref="shoulder"/>
-        <checkgroup text="Additional attributes" columns="4">
+        <checkgroup text="Additional attributes" columns="5">
             <check key="oneway" text="Oneway" default="on"/>
             <check key="motorroad" text="Motorroad" disable_off="true"/>
             <check key="bridge" text="Bridge" disable_off="true"/>
@@ -685,6 +685,7 @@
             <check key="embankment" text="Embankment" disable_off="true"/>
             <check key="lit" text="Lit" disable_off="true"/>
             <check key="toll" text="Toll" disable_off="true"/>
+            <check key="lane_markings" text="Lane markings" />
             <check key="winter_road" text="Winter road" disable_off="true" />
             <check key="ice_road" text="Ice road" disable_off="true" />
         </checkgroup>
@@ -3061,7 +3062,14 @@
             <link wiki="Tag:highway=footway"/>
             <key key="highway" value="footway"/>
             <optional>
-                <combo key="footway" text="Type" values="sidewalk,crossing,access_aisle" display_values="Sidewalk,Crossing,Access aisle" values_context="footway"/>
+                <combo key="footway" text="Type" values_context="footway" >
+                    <list_entry value="access_aisle" display_value="Access aisle" short_description="Marked footpath in a parking lot" />
+                    <list_entry value="crossing" display_value="Pedestrian crossing" short_description="A pedestrian crossing"/>
+                    <list_entry value="sidewalk" display_value="Sidewalk" short_description="A footway alongside a street"/>
+                    <list_entry value="link" display_value="Link" short_description="Footway sections that do not exist but are necessary for routing"/>
+                    <list_entry value="traffic_island" display_value="Traffic island" short_description="Footway sections inside a crossing island"/>
+                    <list_entry value="alley" display_value="Alley" short_description="Access for back entrances and/or emergency access"/>
+                </combo>
                 <reference ref="name"/>
                 <reference ref="surface_smoothness"/>
                 <reference ref="cycleway_surface"/>
@@ -6464,6 +6472,9 @@
             <link wiki="Tag:railway=miniature"/>
             <key key="railway" value="miniature"/>
             <reference ref="optional_name"/>
+            <optional>
+                <reference ref="railway_service_gauge_electrified" />
+            </optional>
         </item> <!-- Minature railway -->
         <item name="Toy library" icon="${amenity_toy_library}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=toy_library"/>
@@ -9467,6 +9478,15 @@
             <space/>
             <key key="man_made" value="embankment"/>
         </item> <!-- Embankment -->
+        <item name="Avalanche Protection" icon="${man_made_avalanche_protector}" type="node,way,closed_way" preset_name_label="true">
+            <link wiki="Tag:man_made=avalanche_protection" />
+            <space />
+            <key key="man_made" value="avalanche_protection" />
+            <optional>
+                <combo key="avalanche_protection" text="Avalance protection" values="snow_bridge,dam,berm,mound,shed,gas_ignition" display_values="Snow bridge,Dam,Berm,Mound,Shed,Gas ignition" />
+                <check key="barrier" value_on="fence" text="Fence"/>
+            </optional>
+        </item> <!-- Avalanche Protection -->
         <item name="Cairn" icon="${man_made_cairn}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=cairn"/>
             <space/>
@@ -10535,6 +10555,7 @@
             <list_entry value="baths" short_description="Baths" />
         </combo>
         <combo key="archaeological_site" text="Type">
+            <list_entry value="baths" short_description="Baths" />
             <list_entry value="tumulus" short_description="Tumulus" />
             <list_entry value="megalith" short_description="Megalith" />
             <list_entry value="fortification" short_description="Fortification" />
@@ -10553,6 +10574,24 @@
         <reference ref="historic_optional"/>
         <reference ref="name_oh_wheelchair"/>
     </item> <!-- Archaeological Site -->
+    <item name="Fortification Site" icon="${historic_fortification}" type="node,closedway,multipolygon" preset_name_label="true">
+        <link wiki="Tag:historic=archaeological_site"/>
+        <space/>
+        <key key="historic" value="archaeological_site"/>
+        <key key="archaeological_site" value="fortification"/>
+        <combo key="fortification_type" text="Fortification type">
+            <list_entry value="hill_fort" display_value="Hill fort" short_description="Forts using a rise of elevation"/>
+            <list_entry value="limes" display_value="Limes" short_description="Fortifications for border defense"/>
+            <list_entry value="sconce" display_value="Sconce" short_description="A small protective fortification"/>
+            <list_entry value="ring_ditch" display_value="Ring ditch" short_description="Circular ditched enclosures"/>
+            <list_entry value="ringfort" display_value="Ringfort" short_description="Circular fortified settlement"/>
+            <list_entry value="motte" display_value="Motte" short_description="Raised area of ground for a castle"/>
+            <list_entry value="watchtower" display_value="Watchtower" short_description="Military observation"/>
+            <list_entry value="battery" display_value="Battery" short_description="A group of artillary (cannon) in a fixed fortification"/>
+        </combo>
+        <reference ref="historic_optional"/>
+        <reference ref="name_oh_wheelchair"/>
+    </item> <!-- Battlefield -->
     <item name="Battlefield" icon="${historic_battlefield}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:historic=battlefield"/>
         <space/>
@@ -10619,7 +10658,7 @@
         <reference ref="religious_catholic_christian" />
         <text key="start_date" text="Start date"/>
         <text key="inscription" text="Inscription" length="255"/>
-        <text key="material" text="Material"/>
+        <reference ref="material"/>
         <reference ref="historic_optional"/>
     </item> <!-- Wayside Cross -->
     <item name="Wayside Shrine" icon="${historic_wayside_shrine}" type="node,closedway" preset_name_label="true">
@@ -11302,13 +11341,16 @@
                 <list_entry value="cosmetics" short_description="Cosmetics"/>
                 <list_entry value="hair" short_description="Hairdresser"/>
                 <list_entry value="hair_removal" short_description="Hair removal"/>
+                <list_entry value="waxing" short_description="Waxing"/>
                 <list_entry value="skin_care" short_description="Skin care"/>
                 <list_entry value="spa" short_description="Spa"/>
-                <list_entry value="tanning" short_description="Tanning"/>
+                <list_entry value="tanning" short_description="Tanning"/>              
+                <list_entry value="eyelash" short_description="Eyelashes"/>
             </multiselect>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
+            <preset_link preset_name="Hairdresser/Barber" text="Similar but different tags:" alternative="true"/>
         </item> <!-- Beauty -->
         <item name="Nail salon" icon="${shopping_nail_salon}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=beauty"/>
@@ -11356,6 +11398,7 @@
                 <check key="unisex" text="Unisex" disable_off="true"/>
             </checkgroup>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Beauty" text="Similar but different tags:" alternative="true"/>
         </item> <!-- Hairdresser/Barber -->
         <item name="Tattoo" icon="${shopping_tattoo}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=tattoo"/>
@@ -12623,6 +12666,15 @@
             </optional>
             <preset_link preset_name="Garden" text="Similar but different tags:" alternative="true" />
         </item> <!-- Flowerbed -->
+        <item  name="Planter" icon="${man_made_planter}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:man_made=planter"/>
+            <space />
+            <key key="man_made" value="planter"/>
+            <optional>
+                <reference ref="material"/>
+                <check key="barrier" value_on="planter" text="Planter barrier" disable_off="true"/>
+            </optional>
+        </item>
         <item name="Garden" icon="${landuse_garden}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=garden"/>
             <space/>
@@ -12730,7 +12782,8 @@
             <space/>
             <key key="landuse" value="industrial"/>
             <reference ref="optional_name"/>
-            <combo key="industrial" text="Type" values="bakery,brewery,brickyard,depot,distributor,factory,grinding_mill,heating_station,machine_shop,mine,oil,port,salt_pond,sawmill,scrap_yard,shipyard,slaughterhouse,warehouse" display_values="Bakery,Brewery,Brickyard,Depot,Distributor,Factory,Grinding mill,Heating station,Machine shop,Mine,Oil,Port,Salt pond,Sawmill,Scrap yard,Shipyard,Slaughterhouse,Warehouse" editable="true" values_context="industrial" match="key"/>
+            <combo key="industrial" text="Type" values="bakery,brewery,brickyard,depot,distributor,factory,grinding_mill,heating_station,machine_shop,mine,oil,port,salt_pond,sawmill,scrap_yard,shipyard,slaughterhouse,warehouse,wellsite" 
+                display_values="Bakery,Brewery,Brickyard,Depot,Distributor,Factory,Grinding mill,Heating station,Machine shop,Mine,Oil,Port,Salt pond,Sawmill,Scrap yard,Shipyard,Slaughterhouse,Warehouse,Well site" editable="true" values_context="industrial" match="key"/>
         </item> <!-- Industrial area -->
         <item name="Garages" icon="${landuse_garages}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link wiki="Tag:landuse=garages"/>
