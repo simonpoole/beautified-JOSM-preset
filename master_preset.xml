@@ -1030,8 +1030,8 @@
         <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="image_tags">
-        <text key="image" text="Image" value_type="image_url" match="none"/>
-        <text key="mapillary" text="Mapillary image" value_type="image_url" match="none"/>
+        <text key="image" text="Image" match="none"/>
+        <text key="mapillary" text="Mapillary image" match="none"/>
         <text key="wikimedia_commons" text="Wikimedia commons" match="none"/>
     </chunk>
     <chunk id="wikipedia_wikidata">
