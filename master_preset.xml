@@ -1354,10 +1354,16 @@
         <text key="postal_code" text="Postal code"/>
         <text key="website" text="Website" value_type="website"/>
     </chunk>
+    <chunk id="route_from_via_to">
+        <text key="from" text="From (start)"/>
+        <text key="to" text="To (end)"/>
+        <text key="via" text="Via (intermediate point)"/>
+    </chunk>
     <chunk id="route_hikebike_optionals">
         <check key="network:type" text="Node network" value_on="node_network" disable_off="true" />
         <text key="ref" text="Reference"/>
         <text key="operator" text="Operator"/>
+        <reference ref="route_from_via_to"/>
         <text key="distance" text="Distance (km)"/>
         <text key="ascent" text="Ascent (m)"/>
         <text key="descent" text="Descent (m)"/>
@@ -4328,7 +4334,8 @@
             <combo key="cargo" text="Cargo" values="passengers,vehicle,bicycle,hgv,passengers;vehicle" values_context="cargo"/>
             <preset_link preset_name="No name"/>
         </item> <!-- Ferry Terminal -->
-        <item name="Ferry Route" icon="${water_transport_ferry_route}" type="way,closedway,relation" preset_name_label="true">
+        <item name="Ferry Route" icon="${water_transport_ferry_route}" type="way,closedway,relation" preset_name_label="true"
+            name_template="Ferry ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
             <link wiki="Tag:route=ferry"/>
             <key key="route" value="ferry"/>
             <optional>
@@ -5154,7 +5161,8 @@
                 <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="railway|route=ferry"/>
             </roles>
         </item> <!-- Public Transport Route (Rail) -->
-        <item name="Public Transport Route (Bus)" icon="${public_transport_bus_route}" type="relation" preset_name_label="true">
+        <item name="Public Transport Route (Bus)" icon="${public_transport_bus_route}" type="relation" preset_name_label="true"
+            name_template="Bus ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
             <link wiki="Tag:route=bus"/>
             <space/>
             <key key="type" value="route"/>
@@ -5176,7 +5184,8 @@
                 <role key="hail_and_ride" text="hail and ride route segment" requisite="optional" type="way,closedway" member_expression="highway" />
             </roles>
         </item> <!-- Public Transport Route (Bus) -->
-        <item name="Public Transport Route (Ferry)" icon="${public_transport_ferry_route}" type="relation" preset_name_label="true">
+        <item name="Public Transport Route (Ferry)" icon="${public_transport_ferry_route}" type="relation" preset_name_label="true"
+            name_template="Ferry ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
             <link wiki="Tag:route=ferry" />
             <key key="type" value="route" />
             <key key="route" value="ferry" />
@@ -5197,7 +5206,8 @@
                 <role key="" text="route segment" requisite="required" type="way,closedway" member_expression="route=ferry" />
             </roles>
         </item> <!-- Public Transport Route (Ferry) -->
-        <item name="Public Transport Route (Aerialway)" icon="${public_transport_route}" type="relation" preset_name_label="true">
+        <item name="Public Transport Route (Aerialway)" icon="${public_transport_route}" type="relation" preset_name_label="true"
+            name_template="Aerial ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
             <link wiki="Public_transport" />
             <space />
             <key key="type" value="route" />
@@ -5359,7 +5369,8 @@
                 <role key="platform" text="platform" requisite="optional" type="node,way,closedway" member_expression="highway=platform OR railway=platform"/>
             </roles>
         </item> <!-- Public transport route (Legacy) -->
-         <item name="Public transport route (Legacy) (Ferry)" icon="${public_transport_ferry_route}" type="relation" preset_name_label="true">
+         <item name="Public transport route (Legacy) (Ferry)" icon="${public_transport_ferry_route}" type="relation" preset_name_label="true"
+            name_template="Ferry ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
             <link wiki="Tag:route=ferry" />
             <space />
             <key key="type" value="route" />
@@ -5384,7 +5395,8 @@
                 <role key="platform" text="platform" requisite="optional" type="node,way,closedway,multipolygon" member_expression="man_made=pier OR (public_transport=platform ferry=yes)" />
             </roles>
         </item> <!-- Public transport route (Legacy) (Ferry) -->
-        <item name="Public transport route (Legacy) (Aerialway)" icon="${public_transport_route}" type="relation" preset_name_label="true">
+        <item name="Public transport route (Legacy) (Aerialway)" icon="${public_transport_route}" type="relation" preset_name_label="true"
+            name_template="Aerial ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
             <link wiki="Public_transport" />
             <space />
             <key key="type" value="route" />
@@ -13126,7 +13138,8 @@
         </item> <!-- Enforcement (average speed) -->
         <separator/>
         <group name="Routes" icon="${relation_route_group}">
-            <item name="Bicycle Route" icon="${relation_route_bicycle}" type="relation" preset_name_label="true">
+            <item name="Bicycle Route" icon="${relation_route_bicycle}" type="relation" preset_name_label="true"
+                name_template="Bicycle route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Tag:route=bicycle"/>
                 <space/>
                 <key key="type" value="route"/>
@@ -13140,7 +13153,8 @@
                     <reference ref="route_segment_roles" />
                 </roles>
             </item> <!-- Bicycle Route -->
-            <item name="Mountain Biking Route" icon="${relation_route_mtb}" type="relation" preset_name_label="true">
+            <item name="Mountain Biking Route" icon="${relation_route_mtb}" type="relation" preset_name_label="true"
+                name_template="MTB route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Mountain_biking"/>
                 <space/>
                 <key key="type" value="route"/>
@@ -13153,7 +13167,8 @@
                     <reference ref="route_segment_roles" />
                 </roles>
             </item> <!-- Mountain Biking Route -->
-            <item name="Hiking Route" icon="${relation_route_hiking}" type="relation" preset_name_label="true">
+            <item name="Hiking Route" icon="${relation_route_hiking}" type="relation" preset_name_label="true"
+                name_template="Hiking route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Tag:route=hiking#Tagging_walking_and_hiking_Route_Networks"/>
                 <space/>
                 <key key="type" value="route"/>
@@ -13165,7 +13180,8 @@
                 </optional>
                 <reference ref="walking_routes_roles"/>
             </item> <!-- Hiking Route -->
-            <item name="Walking Route" icon="${relation_route_foot}" type="relation" preset_name_label="true">
+            <item name="Walking Route" icon="${relation_route_foot}" type="relation" preset_name_label="true"
+                name_template="Walking route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Tag:route=foot"/>
                 <space/>
                 <key key="type" value="route"/>
@@ -13177,7 +13193,8 @@
                 </optional>
                 <reference ref="walking_routes_roles"/>
             </item> <!-- Walking Route -->
-            <item name="Running Route" icon="${relation_route_running}" type="relation" preset_name_label="true">
+            <item name="Running Route" icon="${relation_route_running}" type="relation" preset_name_label="true"
+                name_template="Running route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Tag:route=running" />
                 <space/>
                 <key key="type" value="route"/>
@@ -13207,7 +13224,8 @@
                     <role key="station" text="fitness station" requisite="optional" type="node,way,closedway" member_expression="leisure=fitness_station" />
                 </roles>
             </item> <!-- Fitness Trail -->
-            <item name="Riding Route" icon="${relation_route_horse}" type="relation" preset_name_label="true">
+            <item name="Riding Route" icon="${relation_route_horse}" type="relation" preset_name_label="true"
+                name_template="Riding route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Tag:route=horse"/>
                 <space/>
                 <key key="type" value="route"/>
@@ -13224,7 +13242,8 @@
                     <role key="guidepost" text="guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
                 </roles>
             </item> <!-- Riding Route -->
-            <item name="Piste Route" icon="${relation_route_piste}" type="relation" preset_name_label="true">
+            <item name="Piste Route" icon="${relation_route_piste}" type="relation" preset_name_label="true"
+                name_template="Piste (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Tag:route=piste"/>
                 <space/>
                 <key key="type" value="route"/>
@@ -13243,7 +13262,8 @@
                     <role key="start" text="entry points" requisite="optional" type="node"/>
                 </roles>
             </item> <!-- Piste Route -->
-            <item name="Ski Route" icon="${relation_route_ski}" type="relation" preset_name_label="true">
+            <item name="Ski Route" icon="${relation_route_ski}" type="relation" preset_name_label="true"
+                name_template="Ski route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Tag:route=ski"/>
                 <space/>
                 <key key="type" value="route"/>
@@ -13261,7 +13281,8 @@
                     <role key="start" text="entry points" requisite="optional" type="node"/>
                 </roles>
             </item> <!-- Ski Route -->
-            <item name="Inline Skating Route" icon="${relation_route_inline_skates}" type="relation" preset_name_label="true">
+            <item name="Inline Skating Route" icon="${relation_route_inline_skates}" type="relation" preset_name_label="true"
+                name_template="Inline skating route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
                 <link wiki="Tag:route=inline_skates"/>
                 <space/>
                 <key key="type" value="route"/>
