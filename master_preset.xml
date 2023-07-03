@@ -1029,20 +1029,29 @@
         </optional>
         <preset_link preset_name="No name"/>
     </chunk>
+    <chunk id="image_tags">
+        <text key="image" text="Image" value_type="image_url" match="none"/>
+        <text key="mapillary" text="Mapillary image" value_type="image_url" match="none"/>
+        <text key="wikimedia_commons" text="Wikimedia commons" match="none"/>
+    </chunk>
     <chunk id="wikipedia_wikidata">
-        <text key="wikipedia" text="Wikipedia" value_type="wikipedia"/>
-        <text key="wikidata" text="Wikidata" value_type="wikidata"/>
+        <text key="wikipedia" text="Wikipedia" value_type="wikipedia" match="none"/>
+        <text key="wikidata" text="Wikidata" value_type="wikidata" match="none"/>
+    </chunk>
+    <chunk id="wikipedia_wikidata_images">
+        <reference ref="wikipedia_wikidata"/>
+        <reference ref="image_tags"/>
     </chunk>
     <chunk id="name_wikipedia">
         <text key="name" text="Name"/>
-        <reference ref="wikipedia_wikidata"/>
+        <reference ref="wikipedia_wikidata_images"/>
         <preset_link preset_name="Name"/>
         <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="optional_name_wikipedia">
         <optional>
             <text key="name" text="Name"/>
-            <reference ref="wikipedia_wikidata" />
+            <reference ref="wikipedia_wikidata_images" />
         </optional>
         <preset_link preset_name="No name"/>
     </chunk>
@@ -1644,7 +1653,7 @@
     </chunk>
     <chunk id="waterway_wikipedia">
         <reference ref="waterway"/>
-        <reference ref="wikipedia_wikidata"/>
+        <reference ref="wikipedia_wikidata_images"/>
     </chunk>
     <chunk id="water_access">
         <optional text="Water access rules:">
@@ -1698,7 +1707,7 @@
             <combo key="aerodrome:type" text="Type" values="international,regional,gliding,airfield,private" display_values="International,Regional,Gliding,Airfield,Private"/>
             <text key="iata" text="IATA"/>
             <text key="icao" text="ICAO"/>
-            <reference ref="wikipedia_wikidata" />
+            <reference ref="wikipedia_wikidata_images" />
         </optional>
         <preset_link preset_name="No name"/>
     </chunk>
@@ -2160,7 +2169,7 @@
         <check key="salt" text="Salt Water" disable_off="true"/>
         <reference ref="intermittent"/>
         <check key="tidal" text="In the tidal range" disable_off="true"/>
-        <reference ref="wikipedia_wikidata" />
+        <reference ref="wikipedia_wikidata_images" />
         <reference ref="water_access"/>
         <preset_link preset_name="No name"/>
     </chunk>
@@ -3370,7 +3379,7 @@
             <optional>
                 <text key="name" text="Name"/>
                 <text key="ele" text="Elevation (meters)" length="10"/>
-                <reference ref="wikipedia_wikidata" />
+                <reference ref="wikipedia_wikidata_images" />
             </optional>
         </item> <!-- Mountain Pass -->
     </group> <!-- Waypoints -->
@@ -6146,7 +6155,7 @@
             <reference ref="name_oh_wheelchair_toilets"/>
             <combo key="zoo" text="Type" values="aviary,birds,butterfly,enclosure,falconry,petting_zoo,reptile,safari_park,wildlife_park"
                 display_values="Aviary,Birds,Butterfly,Enclosure,Falconry,Petting zoo,Reptile,Safari park,Wildlife park" />
-            <reference ref="wikipedia_wikidata"/>
+            <reference ref="wikipedia_wikidata_images"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Zoo -->
         <item name="Aquarium" icon="${tourist_aquarium}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6154,7 +6163,7 @@
             <space/>
             <key key="tourism" value="aquarium"/>
             <reference ref="name_oh_wheelchair_toilets"/>
-            <reference ref="wikipedia_wikidata" />
+            <reference ref="wikipedia_wikidata_images" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Aquarium -->
         <item name="Animals" icon="${tourist_animals}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6254,7 +6263,7 @@
                 <text key="species" text="Species"/>
                 <reference ref="oh_wheelchair"/>
                 <reference ref="toilets_with_access"/>
-                <reference ref="wikipedia_wikidata" />
+                <reference ref="wikipedia_wikidata_images" />
             </optional>
         </item> <!-- Animals -->
         <separator/>
@@ -6310,7 +6319,7 @@
                 <text key="name" text="Name"/>
                 <reference ref="oh_wheelchair"/>
                 <reference ref="toilets_with_access"/>
-                <reference ref="wikipedia_wikidata" />
+                <reference ref="wikipedia_wikidata_images" />
             </optional>
         </item> <!-- Rides -->
         <item name="Escape game" icon="${leisure_escape_game}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6736,7 +6745,7 @@
                 display_values="Archaeological;Art;Aviation;Cars;Ceramics;Children;History;Maritime;Military;Music;Nature;Person;Railway;Science;Sport;Technology;Transport;War" values_searchable="true" />
             <combo key="museum_type" text="Museum scope" values="national,municipal,regional" display_values="National,Municipal,Regional" />
             <reference ref="name_operator_oh_wheelchair_toilets"/>
-            <reference ref="wikipedia_wikidata"/>
+            <reference ref="wikipedia_wikidata_images"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Museum -->
@@ -6745,7 +6754,7 @@
             <space/>
             <key key="tourism" value="gallery"/>
             <reference ref="name_operator_oh_wheelchair_toilets"/>
-            <reference ref="wikipedia_wikidata" />
+            <reference ref="wikipedia_wikidata_images" />
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Art gallery -->
         <item name="Theatre" icon="${tourist_theatre}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -10478,7 +10487,7 @@
         <optional>
             <text key="name" text="Name" />
             <reference ref="religious" />
-            <reference ref="wikipedia_wikidata" />
+            <reference ref="wikipedia_wikidata_images" />
             <reference ref="oh_wheelchair" />
         </optional>
         <preset_link preset_name="Monastery" text="Similar but different tags:" alternative="true"/>
@@ -10598,7 +10607,7 @@
             <text key="artist_name" text="Artist Name"/>
             <text key="start_date" text="Start date"/>
             <reference ref="material"/>
-            <reference ref="wikipedia_wikidata"/>
+            <reference ref="wikipedia_wikidata_images"/>
         </optional>
         <reference ref="historic_optional"/>
     </item> <!-- Memorial -->
@@ -12022,7 +12031,7 @@
             <optional>
                 <reference ref="name_operator"/>
                 <reference ref="oh"/>
-                <reference ref="wikipedia_wikidata"/>
+                <reference ref="wikipedia_wikidata_images"/>
                 <text key="start_date" text="Start date"/>
             </optional>
         </item> <!-- Protected Area -->
@@ -12849,7 +12858,7 @@
             <text key="mobile" text="Mobile phone number" match="key" value_type="phone"/>
             <text key="fax" text="Fax Number" match="key" value_type="phone"/>
             <space/>
-            <reference ref="wikipedia_wikidata" />
+            <reference ref="wikipedia_wikidata_images" />
             <text key="image" text="Image"/>
             <preset_link preset_name="Social Networks" />
             <preset_link preset_name="Contact ('contact:*')" text="Similar tags but different tagging schema:" text_context="Contact" alternative="true" />
@@ -12864,7 +12873,7 @@
             <text key="contact:mobile" text="Mobile phone number" match="key" value_type="phone"/>
             <text key="contact:fax" text="Fax Number" match="key" value_type="phone"/>
             <space/>
-            <reference ref="wikipedia_wikidata" />
+            <reference ref="wikipedia_wikidata_images" />
             <text key="image" text="Image"/>
             <preset_link preset_name="Social Networks" />
             <preset_link preset_name="Contact" text="Similar tags but different tagging schema:" text_context="Contact" alternative="true" />
@@ -13483,7 +13492,7 @@
                 <text key="ref:regine" text="Reference REGINE (NO)"/>
                 <text key="ref:gnis" text="Reference GNIS (USA)"/>
                 <text key="ref:gnbc" text="Reference GNBC (CA)"/>
-                <reference ref="wikipedia_wikidata" />
+                <reference ref="wikipedia_wikidata_images" />
             </optional>
             <roles>
                 <role key="" text="waterways (no riverbank)" requisite="optional" type="way" member_expression="waterway -waterway:riverbank"/>
