@@ -12092,14 +12092,14 @@
             <reference ref="population_postcode_website"/>
         </item> <!-- County -->
         <separator/>
-        <item name="City" icon="${geography_places_city}" type="node,closedway,,multipolygon,relation" preset_name_label="true">
+        <item name="City" icon="${geography_places_city}" type="node,closedway,multipolygon,relation" preset_name_label="true">
             <link wiki="Tag:place=city"/>
             <space/>
             <key key="place" value="city"/>
             <reference ref="name_wikipedia"/>
             <reference ref="population_postcode_website"/>
         </item> <!-- City -->
-        <item name="Municipality" icon="${geography_places_municipality}" type="node,closedway,,multipolygon,relation" preset_name_label="true">
+        <item name="Municipality" icon="${geography_places_municipality}" type="node,closedway,multipolygon,relation" preset_name_label="true">
             <link wiki="Tag:place=municipality"/>
             <space/>
             <key key="place" value="municipality"/>
