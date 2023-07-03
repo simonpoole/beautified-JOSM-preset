@@ -51,7 +51,7 @@ ext {
 }
 
 dependencies {
-    runtime 'ch.poole:preset-utils:0.34.0'
+    runtime 'ch.poole:preset-utils:0.35.0'
 }
 
 def loadProperties = { filename -> 
