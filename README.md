@@ -43,7 +43,7 @@ The PNG icons are currently assumed to be in icons/png, generating them from SVG
 
 ### Translations
 
-The presets are being translated on transifex [here](https://www.transifex.com/openstreetmap/presets/), to retrieve the translations you will need to install and setup the [transifex command line client](https://docs.transifex.com/client/introduction). You only need to set up your transifex login, you can and should use the language mapping file from this repository.
+The presets are being translated on transifex [here](https://app.transifex.com/openstreetmap/presets), to retrieve the translations you will need to install and setup the [transifex command line client](https://docs.transifex.com/client/introduction). You only need to set up your transifex login, you can and should use the language mapping file from this repository.
 
 ## Information on updates
 
