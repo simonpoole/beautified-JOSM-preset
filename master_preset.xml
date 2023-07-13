@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets version="5.9.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,telecom">
+    object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,telecom,mountain_pass">
 <!--
     Icons have been derived from mainly from
   
@@ -3383,7 +3383,7 @@
         <separator/>
         <item name="Mountain Pass" icon="${mountain_pass}" type="node" preset_name_label="true">
             <link wiki="Key:mountain_pass"/>
-            <key key="mountain_pass" value="yes"/>
+            <key key="mountain_pass" value="yes" />
             <optional>
                 <text key="name" text="Name"/>
                 <text key="ele" text="Elevation (meters)" length="10"/>
