@@ -5573,7 +5573,10 @@
         <item name="Hangar" icon="${transport_aeroway_hangar}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:aeroway=hangar"/>
             <key key="aeroway" value="hangar"/>
-            <combo key="building" text="Building" values="hangar" values_context="building" default="hangar" values_searchable="true" match="keyvalue"/>
+            <check key="building" value_on="hangar" text="Hangar building" default="on" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
+            <optional>
+                <reference ref="additional_building_tags"/>
+            </optional>
         </item> <!-- Hangar -->
         <item name="Beacon" icon="${transport_beacon}" name_context="airmark" type="node" preset_name_label="true">
             <link wiki="Tag:airmark=beacon"/>
@@ -9374,8 +9377,9 @@
             <key key="man_made" value="gasometer"/>
             <optional>
                 <reference ref="name_ref_operator"/>
-                <combo key="building" text="Building" values="gasometer" values_context="building"/>
+                <check key="building" value_on="gasometer" text="Gasometer building" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
+                <reference ref="additional_building_tags"/>
             </optional>
         </item> <!-- Gasometer -->
         <item name="Silo" icon="${man_made_silo}" type="node,closedway" preset_name_label="true">
@@ -9384,8 +9388,9 @@
             <key key="man_made" value="silo"/>
             <optional>
                 <reference ref="name_ref_operator"/>
-                <combo key="building" text="Building" values="silo" values_context="building"/>
+                <check key="building" value_on="silo" text="Silo building" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
+                <reference ref="additional_building_tags"/>
             </optional>
         </item> <!-- Silo -->
         <item name="Storage Tank" icon="${man_made_storage_tank}" type="node,closedway">
@@ -9393,9 +9398,10 @@
             <key key="man_made" value="storage_tank"/>
             <optional>
                 <reference ref="name_ref_operator"/>
-                <combo key="building" text="Building" values="storage_tank" values_context="building"/>
+                <check key="building" value_on="storage_tank" text="Storage tank building" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
                 <combo key="content" text="Content" values="fuel,manure,oil,sewage,silage,slurry,water,wine" display_values="Fuel,Manure,Oil,Sewage,Silage,Slurry,Water,Wine" values_context="content"/>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
+                <reference ref="additional_building_tags"/>
             </optional>
         </item> <!-- Storage Tank -->
         <item name="Water Works" icon="${man_made_water_works}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -10671,10 +10677,13 @@
         <reference ref="optional_name"/>
         <reference ref="religious_catholic_christian" />
         <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
-        <combo key="building" text="Building" values="wayside_shrine" values_context="building"/>
+        <check key="building" value_on="wayside_shrine" text="Wayside shrine building" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
         <text key="start_date" text="Start date"/>
         <text key="inscription" text="Inscription" length="255"/>
         <reference ref="historic_optional"/>
+        <optional>
+            <reference ref="additional_building_tags"/>
+        </optional>
     </item> <!-- Wayside Shrine -->
     <item name="Torii" icon="${historic_torii}" type="node,closedway" preset_name_label="true">
         <link wiki="Tag:man_made=torii"/>
