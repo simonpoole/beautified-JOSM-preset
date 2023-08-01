@@ -2232,6 +2232,9 @@
             <combo key="reusable_packaging:offer" text="Offers reusable packaging" values="yes,no,only" values_sort="false" display_values="Yes,No,Only"/>
         </optional>
     </chunk>
+    <chunk id="sanitary_dump_station">
+        <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no" display_values="Available,Public,Customers,Not available" match="none"/>
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -4373,7 +4376,7 @@
             <space/>
             <key key="leisure" value="marina"/>
             <text key="name" text="Name"/>
-            <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no"/>
+            <reference ref="sanitary_dump_station"/>
             <preset_link preset_name="No name"/>
         </item> <!-- Marina -->
         <item name="Marine Fuel" icon="${water_transport_fuel}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5748,7 +5751,7 @@
             <reference ref="reservation" />
             <text key="capacity" text="Number of places" value_type="integer"/>
             <reference ref="fee_interval"/>
-            <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no"/>
+            <reference ref="sanitary_dump_station"/>
             <check key="power_supply" text="Power supply" disable_off="true"/>
             <check key="tents" text="Tents allowed" disable_off="true"/>
             <space/>
@@ -5772,7 +5775,7 @@
                 <check key="backcountry" text="Backcountry" disable_off="true"/>
                 <check key="group_only" text="Group only access" disable_off="true"/>
             </checkgroup>
-            <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no" display_values="Exists,Public,Customers,Private" match="none"/>
+            <reference ref="sanitary_dump_station"/>
             <reference ref="wheelchair"/>
             <space/>
             <reference ref="internet"/>
