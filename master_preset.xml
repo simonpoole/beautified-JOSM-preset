@@ -10530,7 +10530,7 @@
         <reference ref="link_contact_address_payment"/>
     </item> <!-- City gate -->
     <item name="Building" icon="${historic_building}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic"/>
+        <link wiki="Tag:historic=building"/>
         <space/>
         <key key="historic" value="building"/>
         <reference ref="optional_name_wikipedia"/>
