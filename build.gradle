@@ -8,7 +8,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "com.github.breadmoirai:github-release:2.2.12"
+        classpath "com.github.breadmoirai:github-release:2.4.1"
     }
 }
 
@@ -19,18 +19,12 @@ plugins {
 apply plugin: 'java'
 apply plugin: "com.github.breadmoirai.github-release"
 
-version = '5.12.0'
-
 import static groovy.io.FileType.*
 //for Ant filter
 import org.apache.tools.ant.filters.ReplaceTokens
 import de.undercouch.gradle.tasks.download.Download
 
-configurations {
-    resoveableRuntimeOnly.extendsFrom runtimeOnly {
-        canBeResolved = true
-    }
-}
+
 
 repositories {
     mavenCentral()
@@ -38,6 +32,7 @@ repositories {
 }
 
 ext {
+    version = '5.12.0'
     preset_file = 'master_preset.xml'
     mapped_josm_preset_file = 'mapped_josm_preset.xml'
     mapped_vespucci_preset_file = 'mapped_vespucci_preset.xml'
@@ -52,7 +47,12 @@ ext {
     generated = 'build/gen/'
     generatedDir = file(generated)
     tempDir = file('build/temp/')
-    github_token = System.getenv('GITHUB_TOKEN')
+}
+
+configurations {
+    resoveableRuntimeOnly.extendsFrom runtimeOnly {
+        canBeResolved = true
+    }
 }
 
 dependencies {
@@ -212,7 +212,7 @@ task vespucciBuildV5(dependsOn: ["replaceVersion","mapToBeautifiedIcons"], type:
 }
 
 task generateAndValidateVespucciBuild(dependsOn: ["vespucciBuild", "vespucciBuildV5", "copyResources"], type: Exec) {
-    def input = generated + vespucci_preset_build_file
+    def input = generated + vespucci_preset_build_v5_file
     // validation
     commandLine 'xmlstarlet', 'val', '-s', "build/xml/vespucci-preset-${vespucci_preset_version}.xlmns", '-e', input
 }
@@ -322,7 +322,8 @@ josmZip.description = 'Generate zipped preset file for JOSM for use with the ori
 
 task replaceVersion {
     inputs.file('build.gradle')
-    ant.replaceregexp(match:'presets version="([0-9\\.]+)"', replace:"presets version=\"${version}\"", flags:'g', byline:true) {
+    // note that this will only replace the version if it is already a valid version string
+    ant.replaceregexp(match:'presets version="([0-9\\.]+)"', replace:"presets version=\"${project.ext.version}\"", flags:'g', byline:true) {
         fileset(dir: '.', includes: 'master_preset.xml')
     }
 }
@@ -418,10 +419,10 @@ task generatePngs (dependsOn: ["recolour"]) {
 }
 
 githubRelease {
-    token "${github_token}"
+    token System.getenv('GITHUB_TOKEN')
     owner "simonpoole"
-    tagName "${version}"
-    releaseName "${version}"
+    tagName project.ext.version
+    releaseName project.ext.version
     body '''\
 ## Files
     
