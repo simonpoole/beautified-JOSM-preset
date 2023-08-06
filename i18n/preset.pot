@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-08-04 14:45+0200\n"
+"POT-Creation-Date: 2023-08-06 11:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1406,7 +1406,7 @@ msgid "Bicycle route"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12683(item:name_template|group:Routes|preset:Bicycle_Route)
-msgid "Bicycle route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "Bicycle route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11309(list_entry:short_description|preset:Vending_Machine|value:bicycle_tube)
@@ -4145,7 +4145,11 @@ msgstr ""
 msgid "Ferry"
 msgstr ""
 
-#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3879(item:name_template|group:Shipping|preset:Ferry_Route) C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4724(item:name_template|group:Public_Transport|preset:Public_Transport_Route_(Ferry)) C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4906(item:name_template|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)_(Ferry))
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3879(item:name_template|group:Shipping|preset:Ferry_Route)
+msgid "Ferry ({operator} ?{'{name} ' | ''}{ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgstr ""
+
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4724(item:name_template|group:Public_Transport|preset:Public_Transport_Route_(Ferry)) C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4906(item:name_template|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)_(Ferry))
 msgid "Ferry ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
 msgstr ""
 
@@ -5262,7 +5266,7 @@ msgid "Hiking route"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12710(item:name_template|group:Routes|preset:Hiking_Route)
-msgid "Hiking route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "Hiking route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10058(list_entry:display_value|group:Historic_Places_&_Objects|preset:Fortification_Site|value:hill_fort)
@@ -5646,7 +5650,7 @@ msgid "Inline skating"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12817(item:name_template|group:Routes|preset:Inline_Skating_Route)
-msgid "Inline skating route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "Inline skating route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12536(role:text|group:Relations|preset:Building|key:part)
@@ -6414,7 +6418,7 @@ msgid "MTB Scale"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12697(item:name_template|group:Routes|preset:Mountain_Biking_Route)
-msgid "MTB route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "MTB route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12096(combo:display_values|group:Land_use|preset:Orchard|key:trees)
@@ -8730,7 +8734,7 @@ msgid "Pistachio trees"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12781(item:name_template|group:Routes|preset:Piste_Route)
-msgid "Piste (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "Piste (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12781(item:name|group:Routes|preset:Piste_Route)
@@ -9818,7 +9822,7 @@ msgid "Riding route"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12764(item:name_template|group:Routes|preset:Riding_Route)
-msgid "Riding route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "Riding route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13310(item:name|group:Crafts|preset:Rigger)
@@ -10078,7 +10082,7 @@ msgid "Running Route"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12734(item:name_template|group:Routes|preset:Running_Route)
-msgid "Running route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "Running route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5025(item:name|group:Airport|preset:Runway)
@@ -10758,7 +10762,7 @@ msgid "Ski route"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12799(item:name_template|group:Routes|preset:Ski_Route)
-msgid "Ski route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "Ski route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5547(check:text|group:Tourism|preset:Map|key:ski) C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5577(check:text|group:Tourism|preset:Guidepost|key:ski) C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5647(check:text|group:Tourism|preset:Route_marker|key:ski) C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8206(item:name|group:Sport|preset:Skiing)
@@ -12758,7 +12762,7 @@ msgid "Walking route"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12722(item:name_template|group:Routes|preset:Walking_Route)
-msgid "Walking route (?{'{ref} ' | ''} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
+msgid "Walking route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3123(item:name|group:Barriers|preset:Wall) C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5981(combo:display_values|group:Leisure|preset:Dog_Park|key:barrier)
