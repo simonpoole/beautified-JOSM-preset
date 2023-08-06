@@ -423,6 +423,7 @@ githubRelease {
     owner "simonpoole"
     tagName project.ext.version
     releaseName project.ext.version
+    targetCommitish "master" 
     body '''\
 ## Files
     
