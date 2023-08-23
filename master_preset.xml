@@ -1398,6 +1398,15 @@
             <list_entry value="mixed" display_value="Mixed" short_description="Habitat with evergreen and deciduous vegetation."/>
         </combo>
     </chunk>
+    <chunk id="denotation">
+        <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation">
+            <list_entry value="landmark" display_value="Landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation."/>
+            <list_entry value="natural_monument" display_value="Natural monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness."/>
+            <list_entry value="avenue" display_value="Avenue" short_description="Trees aligned along a road."/>
+            <list_entry value="urban" display_value="Urban" short_description="Trees found within settlements, e.g. in parks or spread through residential areas."/>
+            <list_entry value="agricultural" display_value="Agricultural" short_description="Trees in agricultural use."/>
+        </combo>
+    </chunk>
     <!-- start of religions and denominations -->
     <chunk id="religious"> <!-- all religions and denominations -->
         <combo key="religion" text="Religion"
@@ -12423,13 +12432,7 @@
             <optional>
                 <text key="diameter_crown" text="Crown diameter (meters)"/>
             </optional>
-            <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation">
-                <list_entry value="landmark" display_value="Landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation."/>
-                <list_entry value="natural_monument" display_value="Natural monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness."/>
-                <list_entry value="avenue" display_value="Avenue" short_description="Trees aligned along a road."/>
-                <list_entry value="urban" display_value="Urban" short_description="Trees found within settlements, e.g. in parks or spread through residential areas."/>
-                <list_entry value="agricultural" display_value="Agricultural" short_description="Trees in agricultural use."/>
-            </combo>
+            <reference ref="denotation"/>
         </item> <!-- Tree -->
         <item name="Tree Row" icon="${natural_tree_row}" type="way" preset_name_label="true">
             <link wiki="Tag:natural=tree_row"/>
@@ -12440,6 +12443,7 @@
             <optional>
                 <reference ref="genus_species_taxon"/>
                 <reference ref="leaf"/>
+                <reference ref="denotation"/>
             </optional>
         </item> <!-- Tree Row -->
         <item name="Shrub" icon="${natural_shrub}" type="node" preset_name_label="true">
