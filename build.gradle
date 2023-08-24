@@ -47,6 +47,7 @@ ext {
     generated = 'build/gen/'
     generatedDir = file(generated)
     tempDir = file('build/temp/')
+    githubToken = System.getenv('GITHUB_TOKEN')
 }
 
 configurations {
@@ -419,12 +420,13 @@ task generatePngs (dependsOn: ["recolour"]) {
 }
 
 githubRelease {
-    token System.getenv('GITHUB_TOKEN')
+	token project.ext.githubToken == null ? "" : project.ext.githubToken    
     owner "simonpoole"
     tagName project.ext.version
     releaseName project.ext.version
     targetCommitish "master" 
-    body '''\
+    generateReleaseNotes true 
+    body provider { """\
 ## Files
     
 ### Vespucci
@@ -443,7 +445,8 @@ _vespucci_preset_build_v5.xml_ - current preset for building Vespucci 19 and lat
 _vespucci_preset_build.xml_ - current preset for building Vespucci pre version 19
 _vespucci_icons.zip_ - icons from this project
     
-'''
+"""
+}
     releaseAssets new File(buildDir, 'gen').listFiles()
     overwrite true
 }
