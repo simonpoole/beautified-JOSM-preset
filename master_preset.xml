@@ -4933,6 +4933,7 @@
             <text key="socket:type2_combo:output" text="CCS - Type 2 output (kW)" /> 
             <combo key="socket:type3" text="Type 3 (SCAME)" values="1,2,3,4,5,6"/>
             <combo key="socket:chademo" text="CHAdeMO" values="1,2,3,4,5,6"/>
+            <text key="socket:chademo:output" text="CHAdeMO output (kW)" /> 
             <combo key="socket:tesla_supercharger" text="Tesla Supercharger" values="1,2,3,4,5,6"/>
             <combo key="socket:schuko" text="Schuko" values="1,2,3,4,5,6"/>
             <combo key="socket:cee_blue" text="CEE blue" values="1,2,3,4,5,6"/>
@@ -4948,6 +4949,7 @@
             <combo key="socket:type1_combo" text="CCS - Type 1 - SAE J1772 Combo (DC)" values="1,2,3,4,5,6"/>
             <text key="socket:type1_combo:output" text="CCS - Type 1 output (kW)" />       
             <combo key="socket:chademo" text="CHAdeMO" values="1,2,3,4,5,6"/>
+            <text key="socket:chademo:output" text="CHAdeMO output (kW)" /> 
             <combo key="socket:tesla_supercharger" text="Tesla Supercharger" values="1,2,3,4,5,6"/>
             <combo key="socket:nema_5_15" text="NEMA 5-15" values="1,2,3,4,5,6"/>
             <combo key="socket:nema_5_20" text="NEMA 5-20" values="1,2,3,4,5,6"/>
