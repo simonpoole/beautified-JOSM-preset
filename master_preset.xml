@@ -13119,7 +13119,7 @@
                 <link wiki="Relation:restriction"/>
                 <space/>
                 <key key="type" value="restriction"/>
-                <combo key="restriction" text="Restriction" values_searchable="true" values_sort="false">
+                <combo key="restriction" text="Restriction" values_searchable="true" values_sort="false" values_context="restriction">
                     <list_entry value="no_left_turn" display_value="No left turn" icon="${relation_turn_restriction_no_left_turn}" />
                     <list_entry value="no_right_turn" display_value="No right turn" icon="${relation_turn_restriction_no_right_turn}" />
                     <list_entry value="no_u_turn" display_value="No u-turn" icon="${relation_turn_restriction_no_u_turn}" />
@@ -13189,7 +13189,7 @@
                 <reference ref="turn_restriction_exceptions"/>
                 <reference ref="turn_restriction_roles"/>
             </item> <!-- No straight on -->
-            <item name="No entry" icon="${relation_turn_restriction_no_entry}" type="relation" preset_name_label="true">
+            <item name="No entry" icon="${relation_turn_restriction_no_entry}" type="relation" preset_name_label="true" name_context="restriction">
                 <link wiki="Relation:restriction"/>
                 <space/>
                 <key key="type" value="restriction"/>
