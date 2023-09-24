@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="5.14.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="5.15.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,telecom,mountain_pass,marker">
 <!--
@@ -799,6 +799,9 @@
         <optional>
            <reference ref="oh"/>
         </optional>
+    </chunk>
+    <chunk id="collection_times">
+        <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" match="none" editable="true"/>
     </chunk>
     <chunk id="changing_table">
         <combo key="diaper" text="Diaper changing" values_sort="false" deprecated="true">
@@ -7990,9 +7993,23 @@
             <key key="amenity" value="post_box"/>
             <text key="operator" text="Operator"/>
             <text key="ref" text="Reference number"/>
-            <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" match="none" editable="true"/>
+            <reference ref="collection_times"/>
             <check key="drive_through" text="Drive through" disable_off="true"/>
         </item> <!-- Post Box -->
+        <item name="Parcel Locker" icon="${amenity_parcel_locker}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:amenity=parcel_locker"/>
+            <space/>
+            <key key="amenity" value="parcel_locker"/>
+            <text key="brand" text="Parcel service brand"/>
+            <text key="operator" text="Machine operator"/>
+            <text key="ref" text="Reference number"/>
+            <combo key="parcel_mail_in" text="Parcel mail in" values="yes,no,returns_only" display_values="Yes,No,Returns only"/>
+            <combo key="parcel_pickup" text="Parcel pickup" values="yes,no" display_values="Yes,No"/>
+            <combo key="refrigerated" text="Refrigerated" values="yes,no" display_values="Yes,No"/>
+            <reference ref="colours"/>
+            <reference ref="collection_times"/>
+            <reference ref="essential_wheelchair"/>
+        </item> <!-- Parcel Locker -->
         <item name="Telephone" icon="${amenity_telephone}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=telephone"/>
             <space/>
@@ -11906,8 +11923,8 @@
             <list_entry value="milk" short_description="Milk"/>
             <list_entry value="newspapers" short_description="Newspapers"/>
             <list_entry value="parking_tickets" short_description="Parking tickets"/>
-            <list_entry value="parcel_pickup" short_description="Parcel pickup"/>
-            <list_entry value="parcel_mail_in" short_description="Parcel mail in"/>
+            <list_entry value="parcel_pickup" short_description="Parcel pickup" deprecated="true"/>
+            <list_entry value="parcel_mail_in" short_description="Parcel mail in" deprecated="true"/>
             <list_entry value="pet_food" short_description="Animal feed (domestic)"/>
             <list_entry value="pizza" short_description="Pizza"/>
             <list_entry value="public_transport_plans" short_description="Plans (public transport)"/>
@@ -11931,6 +11948,20 @@
         <preset_link preset_name="Payment Methods"/>
         <reference ref="optional_level"/>
     </item> <!-- Vending Machine -->
+    <item name="Parcel Locker" icon="icons/png/shopping_vending_machine.png" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:amenity=parcel_locker"/>
+            <space/>
+            <key key="amenity" value="parcel_locker"/>
+            <text key="brand" text="Parcel service brand"/>
+            <text key="operator" text="Machine operator"/>
+            <text key="ref" text="Reference number"/>
+            <combo key="parcel_mail_in" text="Parcel mail in" values="yes,no,returns_only" display_values="Yes,No,Return only"/>
+            <combo key="parcel_pickup" text="Parcel pickup" values="yes,no" display_values="Yes,No"/>
+            <combo key="refrigerated" text="Refrigerated" values="yes,no" display_values="Yes,No"/>
+            <reference ref="colours"/>
+            <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" match="none" editable="true"/>
+            <reference ref="essential_wheelchair"/>
+        </item> <!-- Parcel Locker -->
     <item name="Payment Methods" icon="${money_payment_methods}" type="node,way,closedway,multipolygon,relation" preset_name_label="true">
         <link wiki="Key:payment"/>
         <space/>
