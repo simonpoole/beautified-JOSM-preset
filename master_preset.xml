@@ -800,6 +800,9 @@
            <reference ref="oh"/>
         </optional>
     </chunk>
+    <chunk id="collection_times">
+        <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" match="none" editable="true"/>
+    </chunk>
     <chunk id="changing_table">
         <combo key="diaper" text="Diaper changing" values_sort="false" deprecated="true">
             <list_entry value="yes" short_description="Available"/>
@@ -7990,9 +7993,23 @@
             <key key="amenity" value="post_box"/>
             <text key="operator" text="Operator"/>
             <text key="ref" text="Reference number"/>
-            <combo key="collection_times" text="Collection times" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" match="none" editable="true"/>
+            <reference ref="collection_times"/>
             <check key="drive_through" text="Drive through" disable_off="true"/>
         </item> <!-- Post Box -->
+        <item name="Parcel Locker" icon="${amenity_parcel_locker}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:amenity=parcel_locker"/>
+            <space/>
+            <key key="amenity" value="parcel_locker"/>
+            <text key="brand" text="Parcel service brand"/>
+            <text key="operator" text="Machine operator"/>
+            <text key="ref" text="Reference number"/>
+            <combo key="parcel_mail_in" text="Parcel mail in" values="yes,no,returns_only" display_values="Yes,No,Returns only"/>
+            <combo key="parcel_pickup" text="Parcel pickup" values="yes,no" display_values="Yes,No"/>
+            <combo key="refrigerated" text="Refrigerated" values="yes,no" display_values="Yes,No"/>
+            <reference ref="colours"/>
+            <reference ref="collection_times"/>
+            <reference ref="essential_wheelchair"/>
+        </item> <!-- Parcel Locker -->
         <item name="Telephone" icon="${amenity_telephone}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=telephone"/>
             <space/>
