@@ -5389,6 +5389,16 @@
             <text key="ref" text="Reference number"/>
             <preset_link preset_name="Payment Methods"/>
         </item> <!-- Ticket Machine -->
+        <item name="Ticket Validator" icon="${public_transport_ticket_validator}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:amenity=ticket_validator"/>
+            <space/>
+            <key key="amenity" value="ticket_validator"/>
+            <text key="operator" text="Operator"/>
+            <reference ref="level"/>
+            <combo key="barrier" value="turnstile,full_height_turnstile,gate" display_values="Turnstile,Full height turnstile,Gate"/>
+            <reference ref="wheelchair"/>
+            <combo key="capacity" text="Capacity" values="1,2,3,4,5,6" value_type="integer"/>
+        </item> <!-- Ticket Validator -->
     </group> <!-- Public Transport -->
     <group name="Public Transport (Legacy)" icon="${public_transport}">
         <item name="Public transport route (Legacy)" icon="${public_transport_route}" type="relation" preset_name_label="true">
