@@ -1968,6 +1968,43 @@
             <list_entry value="across" display_value="Across"/>
         </combo>
         <reference ref="roof_main"/>
+        <optional>
+            <multiselect key="building:architecture" text="Architectural style">
+                <list_entry value="romanesque" display_value="Romanesque architecture"/>
+                <list_entry value="gothic" display_value="Gothic architecture"/>
+                <list_entry value="renaissance" display_value="Renaissance architecture"/>
+                <list_entry value="mannerism" display_value="Mannerism"/>
+                <list_entry value="ottoman" display_value="Ottoman architecture"/>
+                <list_entry value="baroque" display_value="Baroque architecture"/>
+                <list_entry value="rococo" display_value="Rococo"/>
+                <list_entry value="empire" display_value="Empire style"/>
+                <list_entry value="moorish revival" display_value="Moorish revival"/>
+                <list_entry value="neoclassicism" display_value="Neoclassical architecture"/>
+                <list_entry value="georgian" display_value="Georgian architecture"/>
+                <list_entry value="victorian" display_value="Victorian architecture"/>
+                <list_entry value="historicism" display_value="Historicism (art)"/>
+                <list_entry value="neo-romanesque" display_value="Romanesque Revival architecture"/>
+                <list_entry value="neo-byzantine" display_value="Byzantine Revival architecture"/>
+                <list_entry value="neo-gothic" display_value="Gothic Revival architecture"/>
+                <list_entry value="neo-renaissance" display_value="Renaissance Revival architecture"/>
+                <list_entry value="neo-baroque" display_value="Baroque Revival architecture"/>
+                <list_entry value="art_nouveau" display_value="Art Nouveau"/>
+                <list_entry value="eclectic" display_value="Eclecticism in architecture"/>
+                <list_entry value="functionalism" display_value="Functionalism"/>
+                <list_entry value="cubism" display_value="Cubism"/>
+                <list_entry value="new_objectivity" display_value="New Objectivity"/>
+                <list_entry value="art_deco" display_value="Art Deco"/>
+                <list_entry value="modern" display_value="Modern architecture"/>
+                <list_entry value="amsterdam_school" display_value="Amsterdam School"/>
+                <list_entry value="international_style" display_value="International Style"/>
+                <list_entry value="constructivism" display_value="Constructivism"/>
+                <list_entry value="stalinist_neoclassicism" display_value="Stalinist architecture"/>
+                <list_entry value="brutalist" display_value="Brutalist architecture"/>
+                <list_entry value="postmodern" display_value="Postmodern architecture"/>
+                <list_entry value="contemporary" display_value="Contemporary architecture"/>
+                <list_entry value="vernacular" display_value="Vernacular architecture"/> 
+            </multiselect>
+        </optional>
     </chunk>
     <chunk id="education_operator_type">
         <combo key="operator:type" text="Operator type" values="public,private,religious" display_values="Public,Private,Religious" values_context="operator" />
