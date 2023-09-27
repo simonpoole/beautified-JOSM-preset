@@ -11975,6 +11975,14 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Fireworks -->
+        <item name="Vacant" icon="${shopping_vacant}" type="node,closedway,multipolygon" deprecated="true">
+            <link wiki="Tag:shop=vacant"/>
+            <space/>
+            <key key="shop" value="vacant"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+            <preset_link preset_name="Shop disused" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Vacant -->
     </group> <!-- Other -->
     <separator/>
     <item name="Vending Machine" icon="${shopping_vending_machine}" type="node" preset_name_label="true">
