@@ -3877,6 +3877,12 @@
             <reference ref="check_access_nomotor" />
             <preset_link preset_name="Access Restrictions" />
         </item> <!-- Full-Height Turnstile -->
+        <item name="Wicket gate" icon="${barrier_wicket_gate}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=wicket_gate" />
+            <key key="barrier" value="wicket_gate" />
+            <reference ref="optional_maxwidth" />
+            <reference ref="check_access_nomotor" />
+        </item> <!-- Turnstile -->
         <item name="Sally Port" icon="${barrier_sally_port}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=sally_port" />
             <key key="barrier" value="sally_port"/>
