@@ -11984,6 +11984,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Fireworks -->
+        <item name="Outpost / Pickup" icon="${shopping_outpost}" type="node,closedway,multipolygon" deprecated="true">
+            <link wiki="Tag:shop=outpost"/>
+            <space/>
+            <key key="shop" value="outpost"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Outpost / Pickup -->
         <item name="Vacant" icon="${shopping_vacant}" type="node,closedway,multipolygon" deprecated="true">
             <link wiki="Tag:shop=vacant"/>
             <space/>
