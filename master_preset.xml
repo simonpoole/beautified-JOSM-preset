@@ -3079,6 +3079,7 @@
             <optional>
                 <reference ref="name"/>
                 <reference ref="surface_smoothness"/>
+                <check key="informal" text="Informal" disable_off="true"/>
                 <reference ref="highway_additional_oneway_lit_width"/>
                 <combo key="sac_scale" text="SAC Scale" values_searchable="true" values_sort="false">
                     <list_entry value="hiking" display_value="T1 - hiking trail" short_description="Trail well cleared. Area flat or slightly sloped, no fall hazard"/>
