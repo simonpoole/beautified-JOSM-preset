@@ -4122,488 +4122,490 @@
     </item> <!-- Street area -->
     </group> <!-- Highways -->
     <group name="Water" icon="${water_group}">
-    <group name="Water" icon="${water_group}">
-        <item name="River" icon="${water_river}" type="way" preset_name_label="true">
-            <link wiki="Tag:waterway=river"/>
-            <space/>
-            <key key="waterway" value="river"/>
-            <text key="name" text="Name"/>
-            <optional>
-                <reference ref="waterway_wikipedia"/>
-                <check key="lock" text="Lock" disable_off="true"/>
-            </optional>
-            <reference ref="water_access"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- River -->
-        <item name="Stream" icon="${water_stream}" type="way" preset_name_label="true">
-            <link wiki="Tag:waterway=stream"/>
-            <space/>
-            <key key="waterway" value="stream"/>
-            <text key="name" text="Name"/>
-            <optional>
-                <reference ref="waterway_wikipedia"/>
-            </optional>
-            <reference ref="water_access"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Stream -->
-        <item name="Tidal channel" icon="${water_tidal_channel}" type="way" preset_name_label="true">
-            <link wiki="Tag:waterway=tidal_channel" />
-            <space />
-            <key key="waterway" value="tidal_channel" />
-            <optional>
-                <text key="name" text="Name" />
-                <check key="salt" text="Salt Water" disable_off="true" />
-                <check key="intermittent" text="Intermittent" disable_off="true" />
-                <check key="seasonal" text="Seasonal" disable_off="true" />
-                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
-                <reference ref="waterway_wikipedia"/>
-            </optional>
-        </item> <!-- Tidal channel -->
-        <item name="Canal" icon="${water_canal}" type="way" preset_name_label="true">
-            <link wiki="Tag:waterway=canal"/>
-            <space/>
-            <key key="waterway" value="canal"/>
-            <text key="name" text="Name"/>
-            <optional>
-                <combo key="usage" text="Usage" values="transportation,transmission,irrigation,headrace,tailrace,spillway" display_values="Transportation,Transmission,Irrigation,Headrace,Tailrace,Spillway" values_context="usage"/>
-                <reference ref="waterway_wikipedia"/>
-                <check key="lock" text="Lock" disable_off="true"/>
-            </optional>
-            <reference ref="water_access"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Canal -->
-        <item name="Drain" icon="${water_drain}" type="way" preset_name_label="true">
-            <link wiki="Tag:waterway=drain"/>
-            <space/>
-            <key key="waterway" value="drain"/>
-            <optional>
-                <text key="name" text="Name"/>
-                <reference ref="waterway"/>
-            </optional>
-        </item> <!-- Drain -->
-        <item name="Ditch" icon="${water_ditch}" type="way" preset_name_label="true">
-            <link wiki="Tag:waterway=ditch"/>
-            <space/>
-            <key key="waterway" value="ditch"/>
-            <optional>
-                <text key="name" text="Name"/>
-                <reference ref="waterway"/>
-            </optional>
-        </item> <!-- Ditch -->
-        <separator/>
-        <item name="Spring" icon="${water_spring}" type="node,closedway" preset_name_label="true">
-            <link wiki="Tag:natural=spring"/>
-            <space/>
-            <label text="A point where groundwater naturally flows to the surface of the earth from underground."/>
-            <space/>
-            <key key="natural" value="spring"/>
-            <text key="name" text="Name"/>
-            <check key="drinking_water" text="Drinking Water" disable_off="true"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Spring -->
-        <item name="Waterfall" icon="${water_waterfall}" type="node,way" preset_name_label="true">
-            <link wiki="Tag:waterway=waterfall"/>
-            <space/>
-            <key key="waterway" value="waterfall"/>
-            <reference ref="name_wikipedia"/>
-            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
-        </item> <!-- Waterfall -->
-        <item name="Weir" icon="${water_weir}" type="node,way" preset_name_label="true">
-            <link wiki="Tag:waterway=weir"/>
-            <space/>
-            <key key="waterway" value="weir"/>
-            <reference ref="optional_name_wikipedia"/>
-        </item> <!-- Weir -->
-        <item name="Dam" icon="${water_dam}" type="node,way,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:waterway=dam"/>
-            <space/>
-            <key key="waterway" value="dam"/>
-            <reference ref="name_wikipedia"/>
-        </item> <!-- Dam -->
-        <item name="Fish pass" icon="${water_fish}" type="node,way" preset_name_label="true">
-            <link wiki="Tag:waterway=fish_pass"/>
-            <space/>
-            <key key="waterway" value="fish_pass"/>
-            <reference ref="optional_name"/>
-            <check key="tunnel" text="Tunnel" disable_off="true" />
-            <text key="width" text="Width (Meters)" value_type="dimension_horizontal"/>
-            <check key="seasonal" text="Seasonal" />
-        </item> <!-- Fish pass -->
-        <item name="Groyne" icon="${water_groyne}" type="way,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:man_made=groyne"/>
-            <key key="man_made" value="groyne"/>
-        </item> <!-- Groyne -->
-        <item name="Breakwater" icon="${water_breakwater}" type="way,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:man_made=breakwater"/>
-            <space/>
-            <key key="man_made" value="breakwater"/>
-            <text key="ref" text="Reference"/>
-            <text key="name" text="Name"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Breakwater -->
-        <separator/>
-        <item name="Culvert" icon="${water_culvert}" type="way" preset_name_label="true">
-            <link wiki="Tag:tunnel=culvert"/>
-            <key key="tunnel" value="culvert"/>
-            <optional>
-                <text key="name" text="Name"/>
-                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" default="-1" length="3" match="none" editable="true"/>
-                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
-            </optional>
-        </item> <!-- Culvert -->
-        <item name="Penstock" icon="${water_penstock}" type="way" preset_name_label="true">
-            <link wiki="Tag:usage=penstock"/>
-            <key key="waterway" value="pressurised"/>
-            <key key="man_made" value="pipeline"/>
-            <key key="substance" value="water"/>
-            <key key="usage" value="penstock"/>
-            <combo key="location" text="Location" values="overground,overhead,surface,underground,underwater" display_values="Overground,Overhead,Surface,Underground,Underwater" values_context="pipeline"/>
-            <optional>
-                <reference ref="name_operator" />
-                <combo key="diameter" text="Diameter (mm)" values="800,1000,1200,1500,1600,1800,2200,2300,2400,2500,2600,2800,3200,3300,3400,3500,4000,4200,4300,4800"/>
-                <text key="pressure" text="Pressure (bar)" />
-                <text key="flow_rate" text="Flow rate with unit of measure" />
-                <combo key="material" text="Material" values="metal,steel" display_values="Metal,Steel"/>
-            </optional>
-        </item> <!-- Penstock -->
-        <separator/>
-        <item name="Basin" icon="${water_basin}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:landuse=basin"/>
-            <space/>
-            <key key="landuse" value="basin"/>
-            <combo key="basin" text="Type" values="infiltration,detention,retention" display_values="Infiltration,Detention,Retention" match="key" values_searchable="true"/>
-            <reference ref="optional_name"/>
-        </item> <!-- Basin -->
-        <item name="Reservoir" icon="${water_reservoir}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=water"/>
-            <space/>
-            <key key="natural" value="water"/>
-            <key key="water" value="reservoir"/>
-            <combo key="reservoir_type" text="Type" values="evaporator,sewage,tailings,water_storage" display_values="Evaporator,Sewage,Tailings,Water storage"/>
-            <reference ref="optional_name"/>
-        </item> <!-- Reservoir -->
-        <item name="Reservoir" icon="${water_reservoir}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
-            <link wiki="Tag:landuse=reservoir"/>
-            <space/>
-            <key key="landuse" value="reservoir"/>
-            <combo key="reservoir_type" text="Type" values="evaporator,sewage,tailings,water_storage" display_values="Evaporator,Sewage,Tailings,Water storage"/>
-            <reference ref="optional_name"/>
-        </item> <!-- Reservoir -->
-        <item name="Covered Reservoir" icon="${water_reservoir_covered}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:man_made=reservoir_covered"/>
-            <space/>
-            <key key="man_made" value="reservoir_covered"/>
-            <reference ref="optional_name"/>
-        </item> <!-- Covered Reservoir -->
-        <separator/>
-        <item name="Lake" name_context="natural" icon="${water_water_lake}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=water" />
-            <key key="natural" value="water" />
-            <key key="water" value="lake" />
-            <text key="name" text="Name"/>  
-            <space/>        
-            <reference ref="water_body" />
-        </item> <!-- Lake -->
-        <item name="Lagoon" name_context="natural" icon="${water_water_lagoon}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=water" />
-            <key key="natural" value="water" />
-            <key key="water" value="lagoon" />
-            <text key="name" text="Name"/>  
-            <space/>
-            <reference ref="water_body" />
-        </item> <!-- Lagoon -->
-        <item name="Pond" name_context="natural" icon="${water_water_pond}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=water" />
-            <key key="natural" value="water" />
-            <key key="water" value="pond" />
-            <text key="name" text="Name"/>
-            <space/>
-            <reference ref="water_body" />
-        </item> <!-- Pond -->
-        <item name="Tailings Pond" icon="${man_made_tailings_pond}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:man_made=tailings_pond" />
-            <key key="man_made" value="tailings_pond" />
-            <space/>
-            <reference ref="intermittent"/>
-            <check key="hazard" text="Contaminated" value_on="contamination" disable_off="true" />
-        </item> <!-- Pond -->
-        <item name="Other waterbodies" name_context="natural" icon="${water_waterbody}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=water"/>
-            <key key="natural" value="water"/>
-            <space/>
-            <label text="A body of water, such as a lake or pond."/>
-            <reference ref="optional_name" />
-            <combo key="water" text="Waterbody" match="key" values_searchable="true" >
-                <list_entry value="stream" display_value="Stream" icon="${water_water_stream}" />
-                <list_entry value="river" display_value="River" icon="${water_water_river}" />
-                <list_entry value="canal" display_value="Canal" icon="${water_water_canal}" />
-                <list_entry value="drain" display_value="Drain" icon="${water_water_drain}" />
-                <list_entry value="ditch" display_value="Ditch" icon="${water_water_ditch}" />
-                <list_entry value="pond" display_value="Pond" />
-                <list_entry value="lake" display_value="Lake" />
-                <list_entry value="lagoon" display_value="Lagoon" />
-                <list_entry value="moat" display_value="Moat" />
-                <list_entry value="oxbow" display_value="Oxbow" />
-                <list_entry value="lock" display_value="Lock" icon="${water_water_lock}" />
-                <list_entry value="basin" display_value="Basin" icon="${water_water_basin}" />
-                <list_entry value="reservoir" display_value="Reservoir" icon="${water_water_reservoir}" />
-                <list_entry value="fish_pass" display_value="Fish pass" />
-                <list_entry value="wastewater" display_value="Wastewater" />
-                <list_entry value="reflecting_pool" display_value="Reflecting pool" />
-                <list_entry value="stream_pool" display_value="Stream pool" />
-            </combo>
-            <reference ref="water_body" />
-        </item> <!-- Other water bodies -->
-        <item name="Coastline" icon="${water_coastline}" type="way,closedway" preset_name_label="true">
-            <link wiki="Tag:natural=coastline"/>
-            <space />
-            <label text="Line between the sea and land (with the water on the right side of the way)."/>
-            <space/>
-            <key key="natural" value="coastline"/>
-            <reference ref="optional_name_wikipedia"/>
-        </item> <!-- Coastline -->
-        <item name="Riverbank" icon="${water_riverbank}" type="closedway,multipolygon" preset_name_label="true" deprecated="true">
-            <link wiki="Tag:waterway=riverbank"/>
-            <space/>
-            <key key="waterway" value="riverbank"/>
-            <reference ref="optional_name"/>
-            <check key="intermittent" text="Intermittent (doesn't permanently contain water)" disable_off="true"/>
-        </item> <!-- Riverbank -->
-        <separator/>
-        <item name="Wetland" icon="${natural_wetland}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=wetland"/>
-            <space />
-            <label text="Waterlogged area, either permanently or seasonally with vegetation."/>
-            <space/>
-            <key key="natural" value="wetland"/>
-            <reference ref="optional_name"/>
-            <combo key="wetland" text="Type" values_searchable="true">
-                <list_entry value="bog" short_description="Bog"/>
-                <list_entry value="fen" short_description="Fen"/>
-                <list_entry value="mangrove" short_description="Mangrove"/>
-                <list_entry value="marsh" short_description="Marsh"/>
-                <list_entry value="reedbed" short_description="Reedbed"/>
-                <list_entry value="saltern" short_description="Saltern"/>
-                <list_entry value="saltmarsh" short_description="Saltmarsh"/>
-                <list_entry value="string_bog" short_description="String bog"/>
-                <list_entry value="swamp" short_description="Swamp"/>
-                <list_entry value="tidalflat" short_description="Tidalflat"/>
-                <list_entry value="wet_meadow" short_description="Wet meadow"/>
-            </combo>
-        </item> <!-- Wetland -->
-        <item name="Mud" icon="${natural_mud}" type="closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=mud"/>
-            <space />
-            <label text="Large area covered with mud."/>
-            <space/>
-            <key key="natural" value="mud"/>
-            <reference ref="optional_name"/>
-        </item> <!-- Mud -->
-        <item name="Beach" icon="${natural_beach}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=beach"/>
-            <space />
-            <label text="A flat area of sand, gravel or pebble next to water."/>
-            <space/>
-            <key key="natural" value="beach"/>
-            <reference ref="optional_name_wikipedia"/>
-            <optional>
-                <reference ref="supervised"/>
-                <reference ref="oh_wheelchair"/>
-                <reference ref="general_access"/>
-                <combo key="surface" text="Surface" values="gravel,pebblestone,sand" display_values="Gravel,Pebblestone,Sand"/>
-                <multiselect key="sport" text="Sport" values="swimming;surfing" display_values="Swimming;Surfing" rows="2"/>
-                <reference ref="nudism" />
-            </optional>
-        </item> <!-- Beach -->
-        <item name="Bay" icon="${natural_bay}" type="node,way,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=bay"/>
-            <space />
-            <label text="An area of water mostly surrounded by land but with level connection to the ocean or a lake."/>
-            <space/>
-            <key key="natural" value="bay"/>
-            <optional>
-                <check key="bay" text="Fjord" value_on="fjord" disable_off="true" />
-            </optional>
-            <reference ref="optional_name_wikipedia"/>
-        </item> <!-- Bay -->
-        <item name="Cape" icon="${natural_cape}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=cape"/>
-            <space />
-            <label text="A prominent, elevated piece of land sticking out into the sea or large lake."/>
-            <space/>
-            <key key="natural" value="cape"/>
-            <reference ref="optional_name_wikipedia"/>
-        </item> <!-- Cape -->
-        <item name="Strait" icon="${natural_straight}" type="node,way,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:natural=strait" />
-            <space />
-            <key key="natural" value="strait" />
-            <reference ref="optional_name_wikipedia"/>
-        </item> <!-- Strait -->
-    </group> <!-- Water -->
-    <group name="Shipping" icon="${water_transport_group}">
-        <item name="Ferry Terminal" icon="${water_transport_ferry_terminal}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=ferry_terminal"/>
-            <space/>
-            <key key="amenity" value="ferry_terminal"/>
-            <text key="name" text="Name"/>
-            <combo key="cargo" text="Cargo" values="passengers,vehicle,bicycle,hgv,passengers;vehicle" values_context="cargo"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Ferry Terminal -->
-        <item name="Ferry Route" icon="${water_transport_ferry_route}" type="way,closedway,relation" preset_name_label="true"
-            name_template="Ferry ({operator} ?{'{name} ' | ''}{ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
-            <link wiki="Tag:route=ferry"/>
-            <key key="route" value="ferry"/>
-            <optional>
-                <reference ref="name_ref_operator" />
-                <reference ref="oh_wheelchair" />
-                <space />
-                <combo key="ferry" text="Highway type connected" values="trunk,primary,secondary,tertiary,unclassified" values_context="Highway" values_sort="false" />
-                <check key="ferry:cable" text="Reaction ferry" />
-                <reference ref="public_transport_route_optionals_2" />
-            </optional>
-            <reference ref="road_access_restrictions"/>
-        </item> <!-- Ferry Route -->
-        <separator/>
-        <item name="Marina" icon="${water_transport_marina}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:leisure=marina"/>
-            <space/>
-            <key key="leisure" value="marina"/>
-            <text key="name" text="Name"/>
-            <reference ref="sanitary_dump_station"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Marina -->
-        <item name="Marine Fuel" icon="${water_transport_fuel}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:waterway=fuel"/>
-            <space/>
-            <key key="waterway" value="fuel"/>
-            <optional>
-                <combo key="brand" text="Brand" values="Agip,Aral,Avia,BP,Chevron,Citgo,Eni,Esso,Exxon,Gulf,Mobil,OMV,Petro-Canada,Pioneer,Q8,Repsol,Shell,Socar,Statoil,Sunoco,Tamoil,Texaco,Total,Independent" values_searchable="true"/>
-                <reference ref="name_operator"/>
-                <reference ref="oh"/>
+        <group name="Water" icon="${water_group}">
+            <item name="River" icon="${water_river}" type="way" preset_name_label="true">
+                <link wiki="Tag:waterway=river"/>
                 <space/>
-                <label text="Fuel types:"/>
-                <checkgroup text="Fuel types" columns="2">
-                    <check key="fuel:diesel" text="Diesel" disable_off="true"/>
-                    <check key="fuel:biodiesel" text="Bio Diesel" disable_off="true"/>
-                    <check key="fuel:octane_80" text="Octane 80" disable_off="true"/>
-                    <check key="fuel:octane_87" text="Octane 87" disable_off="true"/>
-                    <check key="fuel:octane_89" text="Octane 89" disable_off="true"/>
-                    <check key="fuel:octane_91" text="Octane 91" disable_off="true"/>
-                    <check key="fuel:octane_92" text="Octane 92" disable_off="true"/>
-                    <check key="fuel:octane_93" text="Octane 93" disable_off="true"/>
-                    <check key="fuel:octane_95" text="Octane 95" disable_off="true"/>
-                    <check key="fuel:octane_98" text="Octane 98" disable_off="true"/>
-                    <check key="fuel:octane_100" text="Octane 100" disable_off="true"/>
-                    <check key="fuel:e10" text="E10 (10% Ethanol mix)" disable_off="true"/>
-                    <check key="fuel:e85" text="E85 (85% Ethanol mix)" disable_off="true"/>
-                    <check key="fuel:ethanol" text="Ethanol (alcohol)" disable_off="true"/>
-                    <check key="fuel:lpg" text="LPG (Liquefied petroleum gas)" disable_off="true"/>
-                    <check key="fuel:cng" text="CNG (Compressed Natural Gas)" disable_off="true"/>
-                </checkgroup>
-            </optional>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Marine Fuel -->
-        <item name="Water point" icon="${water_transport_water_point}" type="node" preset_name_label="true">
-            <link wiki="Tag:waterway=water_point"/>
-            <key key="waterway" value="water_point"/>
-            <check key="drinking_water" text="Drinking Water"/>
-            <optional>
-                <reference ref="facility_access"/>
-            </optional>
-        </item> <!-- Water point -->
-        <item name="Sanitary dump station" icon="${water_transport_sanitary_dump_station}" type="node" preset_name_label="true">
-            <link wiki="Tag:waterway=sanitary_dump_station"/>
-            <key key="waterway" value="sanitary_dump_station"/>
-        </item> <!-- Water point -->
-        <item name="Boat shop" icon="${water_transport_boat_shop}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:shop=boat"/>
-            <space/>
-            <key key="shop" value="boat"/>
-            <reference ref="name_operator_oh_wheelchair"/>
-            <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no" display_values="Only,Yes,No"/>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Boat shop -->
-        <item name="Boat rental" icon="${water_transport_boat_rental}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=boat_rental"/>
-            <space/>
-            <key key="amenity" value="boat_rental"/>
-            <reference ref="name_operator"/>
-            <reference ref="oh"/>
-            <optional>
-                <text key="capacity" text="Number of boats" value_type="integer"/>
-                <check key="motorboat_rental" text="Motorboats" disable_off="true"/>
-                <check key="houseboat_rental" text="Houseboats" disable_off="true"/>
-                <check key="pedalboat_rental" text="Pedalos" disable_off="true"/>
-                <check key="jetski_rental" text="Jetskis" disable_off="true"/>
-                <check key="sailboat_rental" text="Sailing boats" disable_off="true"/>
-                <check key="dinghy_rental" text="Dinghies" disable_off="true"/>
-                <check key="kayak_rental" text="Kayaks" disable_off="true"/>
-                <check key="canoe_rental" text="Canoes" disable_off="true"/>
-            </optional>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Boat rental -->
-        <item name="Pier" icon="${water_transport_pier}" type="node,way,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:man_made=pier"/>
-            <space/>
-            <key key="man_made" value="pier"/>
-            <reference ref="optional_name"/>
-            <combo key="mooring" text="Mooring" values="yes,no,private,permit,commercial" display_values="Yes,No,Private,Permit required,Commercial"/>
-            <check key="floating" text="Floating"/>
-        </item> <!-- Pier -->
-        <item name="Lock Gate" icon="${water_transport_lock_gate}" type="node,way" preset_name_label="true">
-            <link wiki="Tag:waterway=lock_gate"/>
-            <key key="waterway" value="lock_gate"/>
-        </item> <!-- Lock Gate -->
-        <item name="Turning Point" icon="${water_transport_turning_point}" type="node" preset_name_label="true">
-            <link wiki="Tag:waterway=turning_point"/>
-            <key key="waterway" value="turning_point"/>
-        </item> <!-- Turning Point -->
-        <separator/>
-        <item name="Slipway" icon="${water_transport_slipway}" type="node" preset_name_label="true">
-            <link wiki="Tag:leisure=slipway"/>
-            <key key="leisure" value="slipway"/>
-            <reference ref="optional_name"/>
-            <optional>
-                <reference ref="incline" />
-                <reference ref="surface" />
-                <reference ref="fee" />
-            </optional>
-        </item> <!-- Slipway -->
-        <item name="Boatyard" icon="${water_transport_boatyard}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:waterway=boatyard"/>
-            <space/>
-            <key key="waterway" value="boatyard"/>
-            <text key="name" text="Name"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Boatyard -->
-        <item name="Dock" icon="${water_transport_dock}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:waterway=dock"/>
-            <space/>
-            <key key="waterway" value="dock"/>
-            <combo key="dock" text="Type" values="drydock,floating,tidal" display_values="Dry dock,Floating,Tidal"/>
-            <text key="name" text="Name"/>
-            <preset_link preset_name="No name"/>
-        </item> <!-- Dock -->
-        <item name="Boat storage" icon="${water_transport_boat_storage}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=boat_storage"/>
-            <space/>
-            <key key="amenity" value="boat_storage"/>
-            <optional>
+                <key key="waterway" value="river"/>
+                <text key="name" text="Name"/>
+                <optional>
+                    <reference ref="waterway_wikipedia"/>
+                    <check key="lock" text="Lock" disable_off="true"/>
+                </optional>
+                <reference ref="water_access"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- River -->
+            <item name="Stream" icon="${water_stream}" type="way" preset_name_label="true">
+                <link wiki="Tag:waterway=stream"/>
+                <space/>
+                <key key="waterway" value="stream"/>
+                <text key="name" text="Name"/>
+                <optional>
+                    <check key="intermittent" text="Intermittent" disable_off="true" />
+                    <check key="seasonal" text="Seasonal" disable_off="true" />
+                    <reference ref="waterway_wikipedia"/>
+                </optional>
+                <reference ref="water_access"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- Stream -->
+            <item name="Tidal channel" icon="${water_tidal_channel}" type="way" preset_name_label="true">
+                <link wiki="Tag:waterway=tidal_channel" />
+                <space />
+                <key key="waterway" value="tidal_channel" />
+                <optional>
+                    <text key="name" text="Name" />
+                    <check key="salt" text="Salt Water" disable_off="true" />
+                    <check key="intermittent" text="Intermittent" disable_off="true" />
+                    <check key="seasonal" text="Seasonal" disable_off="true" />
+                    <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
+                    <reference ref="waterway_wikipedia"/>
+                </optional>
+            </item> <!-- Tidal channel -->
+            <item name="Canal" icon="${water_canal}" type="way" preset_name_label="true">
+                <link wiki="Tag:waterway=canal"/>
+                <space/>
+                <key key="waterway" value="canal"/>
+                <text key="name" text="Name"/>
+                <optional>
+                    <combo key="usage" text="Usage" values="transportation,transmission,irrigation,headrace,tailrace,spillway" display_values="Transportation,Transmission,Irrigation,Headrace,Tailrace,Spillway" values_context="usage"/>
+                    <reference ref="waterway_wikipedia"/>
+                    <check key="lock" text="Lock" disable_off="true"/>
+                </optional>
+                <reference ref="water_access"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- Canal -->
+            <item name="Drain" icon="${water_drain}" type="way" preset_name_label="true">
+                <link wiki="Tag:waterway=drain"/>
+                <space/>
+                <key key="waterway" value="drain"/>
+                <optional>
+                    <text key="name" text="Name"/>
+                    <reference ref="waterway"/>
+                </optional>
+            </item> <!-- Drain -->
+            <item name="Ditch" icon="${water_ditch}" type="way" preset_name_label="true">
+                <link wiki="Tag:waterway=ditch"/>
+                <space/>
+                <key key="waterway" value="ditch"/>
+                <optional>
+                    <text key="name" text="Name"/>
+                    <reference ref="waterway"/>
+                </optional>
+            </item> <!-- Ditch -->
+            <separator/>
+            <item name="Spring" icon="${water_spring}" type="node,closedway" preset_name_label="true">
+                <link wiki="Tag:natural=spring"/>
+                <space/>
+                <label text="A point where groundwater naturally flows to the surface of the earth from underground."/>
+                <space/>
+                <key key="natural" value="spring"/>
+                <text key="name" text="Name"/>
+                <check key="drinking_water" text="Drinking Water" disable_off="true"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- Spring -->
+            <item name="Waterfall" icon="${water_waterfall}" type="node,way" preset_name_label="true">
+                <link wiki="Tag:waterway=waterfall"/>
+                <space/>
+                <key key="waterway" value="waterfall"/>
+                <reference ref="name_wikipedia"/>
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
+            </item> <!-- Waterfall -->
+            <item name="Weir" icon="${water_weir}" type="node,way" preset_name_label="true">
+                <link wiki="Tag:waterway=weir"/>
+                <space/>
+                <key key="waterway" value="weir"/>
+                <reference ref="optional_name_wikipedia"/>
+            </item> <!-- Weir -->
+            <item name="Dam" icon="${water_dam}" type="node,way,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:waterway=dam"/>
+                <space/>
+                <key key="waterway" value="dam"/>
+                <reference ref="name_wikipedia"/>
+            </item> <!-- Dam -->
+            <item name="Fish pass" icon="${water_fish}" type="node,way" preset_name_label="true">
+                <link wiki="Tag:waterway=fish_pass"/>
+                <space/>
+                <key key="waterway" value="fish_pass"/>
+                <reference ref="optional_name"/>
+                <check key="tunnel" text="Tunnel" disable_off="true" />
+                <text key="width" text="Width (Meters)" value_type="dimension_horizontal"/>
+                <check key="seasonal" text="Seasonal" />
+            </item> <!-- Fish pass -->
+            <item name="Groyne" icon="${water_groyne}" type="way,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:man_made=groyne"/>
+                <key key="man_made" value="groyne"/>
+            </item> <!-- Groyne -->
+            <item name="Breakwater" icon="${water_breakwater}" type="way,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:man_made=breakwater"/>
+                <space/>
+                <key key="man_made" value="breakwater"/>
+                <text key="ref" text="Reference"/>
+                <text key="name" text="Name"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- Breakwater -->
+            <separator/>
+            <item name="Culvert" icon="${water_culvert}" type="way" preset_name_label="true">
+                <link wiki="Tag:tunnel=culvert"/>
+                <key key="tunnel" value="culvert"/>
+                <optional>
+                    <text key="name" text="Name"/>
+                    <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" default="-1" length="3" match="none" editable="true"/>
+                    <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
+                </optional>
+            </item> <!-- Culvert -->
+            <item name="Penstock" icon="${water_penstock}" type="way" preset_name_label="true">
+                <link wiki="Tag:usage=penstock"/>
+                <key key="waterway" value="pressurised"/>
+                <key key="man_made" value="pipeline"/>
+                <key key="substance" value="water"/>
+                <key key="usage" value="penstock"/>
+                <combo key="location" text="Location" values="overground,overhead,surface,underground,underwater" display_values="Overground,Overhead,Surface,Underground,Underwater" values_context="pipeline"/>
+                <optional>
+                    <reference ref="name_operator" />
+                    <combo key="diameter" text="Diameter (mm)" values="800,1000,1200,1500,1600,1800,2200,2300,2400,2500,2600,2800,3200,3300,3400,3500,4000,4200,4300,4800"/>
+                    <text key="pressure" text="Pressure (bar)" />
+                    <text key="flow_rate" text="Flow rate with unit of measure" />
+                    <combo key="material" text="Material" values="metal,steel" display_values="Metal,Steel"/>
+                </optional>
+            </item> <!-- Penstock -->
+            <separator/>
+            <item name="Basin" icon="${water_basin}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:landuse=basin"/>
+                <space/>
+                <key key="landuse" value="basin"/>
+                <combo key="basin" text="Type" values="infiltration,detention,retention" display_values="Infiltration,Detention,Retention" match="key" values_searchable="true"/>
+                <reference ref="optional_name"/>
+            </item> <!-- Basin -->
+            <item name="Reservoir" icon="${water_reservoir}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=water"/>
+                <space/>
+                <key key="natural" value="water"/>
+                <key key="water" value="reservoir"/>
+                <combo key="reservoir_type" text="Type" values="evaporator,sewage,tailings,water_storage" display_values="Evaporator,Sewage,Tailings,Water storage"/>
+                <reference ref="optional_name"/>
+            </item> <!-- Reservoir -->
+            <item name="Reservoir" icon="${water_reservoir}" type="node,closedway,multipolygon" deprecated="true" preset_name_label="true">
+                <link wiki="Tag:landuse=reservoir"/>
+                <space/>
+                <key key="landuse" value="reservoir"/>
+                <combo key="reservoir_type" text="Type" values="evaporator,sewage,tailings,water_storage" display_values="Evaporator,Sewage,Tailings,Water storage"/>
+                <reference ref="optional_name"/>
+            </item> <!-- Reservoir -->
+            <item name="Covered Reservoir" icon="${water_reservoir_covered}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:man_made=reservoir_covered"/>
+                <space/>
+                <key key="man_made" value="reservoir_covered"/>
+                <reference ref="optional_name"/>
+            </item> <!-- Covered Reservoir -->
+            <separator/>
+            <item name="Lake" name_context="natural" icon="${water_water_lake}" type="closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=water" />
+                <key key="natural" value="water" />
+                <key key="water" value="lake" />
+                <text key="name" text="Name"/>  
+                <space/>        
+                <reference ref="water_body" />
+            </item> <!-- Lake -->
+            <item name="Lagoon" name_context="natural" icon="${water_water_lagoon}" type="closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=water" />
+                <key key="natural" value="water" />
+                <key key="water" value="lagoon" />
+                <text key="name" text="Name"/>  
+                <space/>
+                <reference ref="water_body" />
+            </item> <!-- Lagoon -->
+            <item name="Pond" name_context="natural" icon="${water_water_pond}" type="closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=water" />
+                <key key="natural" value="water" />
+                <key key="water" value="pond" />
+                <text key="name" text="Name"/>
+                <space/>
+                <reference ref="water_body" />
+            </item> <!-- Pond -->
+            <item name="Tailings Pond" icon="${man_made_tailings_pond}" type="closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:man_made=tailings_pond" />
+                <key key="man_made" value="tailings_pond" />
+                <space/>
+                <reference ref="intermittent"/>
+                <check key="hazard" text="Contaminated" value_on="contamination" disable_off="true" />
+            </item> <!-- Pond -->
+            <item name="Other waterbodies" name_context="natural" icon="${water_waterbody}" type="closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=water"/>
+                <key key="natural" value="water"/>
+                <space/>
+                <label text="A body of water, such as a lake or pond."/>
+                <reference ref="optional_name" />
+                <combo key="water" text="Waterbody" match="key" values_searchable="true" >
+                    <list_entry value="stream" display_value="Stream" icon="${water_water_stream}" />
+                    <list_entry value="river" display_value="River" icon="${water_water_river}" />
+                    <list_entry value="canal" display_value="Canal" icon="${water_water_canal}" />
+                    <list_entry value="drain" display_value="Drain" icon="${water_water_drain}" />
+                    <list_entry value="ditch" display_value="Ditch" icon="${water_water_ditch}" />
+                    <list_entry value="pond" display_value="Pond" />
+                    <list_entry value="lake" display_value="Lake" />
+                    <list_entry value="lagoon" display_value="Lagoon" />
+                    <list_entry value="moat" display_value="Moat" />
+                    <list_entry value="oxbow" display_value="Oxbow" />
+                    <list_entry value="lock" display_value="Lock" icon="${water_water_lock}" />
+                    <list_entry value="basin" display_value="Basin" icon="${water_water_basin}" />
+                    <list_entry value="reservoir" display_value="Reservoir" icon="${water_water_reservoir}" />
+                    <list_entry value="fish_pass" display_value="Fish pass" />
+                    <list_entry value="wastewater" display_value="Wastewater" />
+                    <list_entry value="reflecting_pool" display_value="Reflecting pool" />
+                    <list_entry value="stream_pool" display_value="Stream pool" />
+                </combo>
+                <reference ref="water_body" />
+            </item> <!-- Other water bodies -->
+            <item name="Coastline" icon="${water_coastline}" type="way,closedway" preset_name_label="true">
+                <link wiki="Tag:natural=coastline"/>
+                <space />
+                <label text="Line between the sea and land (with the water on the right side of the way)."/>
+                <space/>
+                <key key="natural" value="coastline"/>
+                <reference ref="optional_name_wikipedia"/>
+            </item> <!-- Coastline -->
+            <item name="Riverbank" icon="${water_riverbank}" type="closedway,multipolygon" preset_name_label="true" deprecated="true">
+                <link wiki="Tag:waterway=riverbank"/>
+                <space/>
+                <key key="waterway" value="riverbank"/>
+                <reference ref="optional_name"/>
+                <check key="intermittent" text="Intermittent (doesn't permanently contain water)" disable_off="true"/>
+            </item> <!-- Riverbank -->
+            <separator/>
+            <item name="Wetland" icon="${natural_wetland}" type="closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=wetland"/>
+                <space />
+                <label text="Waterlogged area, either permanently or seasonally with vegetation."/>
+                <space/>
+                <key key="natural" value="wetland"/>
+                <reference ref="optional_name"/>
+                <combo key="wetland" text="Type" values_searchable="true">
+                    <list_entry value="bog" short_description="Bog"/>
+                    <list_entry value="fen" short_description="Fen"/>
+                    <list_entry value="mangrove" short_description="Mangrove"/>
+                    <list_entry value="marsh" short_description="Marsh"/>
+                    <list_entry value="reedbed" short_description="Reedbed"/>
+                    <list_entry value="saltern" short_description="Saltern"/>
+                    <list_entry value="saltmarsh" short_description="Saltmarsh"/>
+                    <list_entry value="string_bog" short_description="String bog"/>
+                    <list_entry value="swamp" short_description="Swamp"/>
+                    <list_entry value="tidalflat" short_description="Tidalflat"/>
+                    <list_entry value="wet_meadow" short_description="Wet meadow"/>
+                </combo>
+            </item> <!-- Wetland -->
+            <item name="Mud" icon="${natural_mud}" type="closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=mud"/>
+                <space />
+                <label text="Large area covered with mud."/>
+                <space/>
+                <key key="natural" value="mud"/>
+                <reference ref="optional_name"/>
+            </item> <!-- Mud -->
+            <item name="Beach" icon="${natural_beach}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=beach"/>
+                <space />
+                <label text="A flat area of sand, gravel or pebble next to water."/>
+                <space/>
+                <key key="natural" value="beach"/>
+                <reference ref="optional_name_wikipedia"/>
+                <optional>
+                    <reference ref="supervised"/>
+                    <reference ref="oh_wheelchair"/>
+                    <reference ref="general_access"/>
+                    <combo key="surface" text="Surface" values="gravel,pebblestone,sand" display_values="Gravel,Pebblestone,Sand"/>
+                    <multiselect key="sport" text="Sport" values="swimming;surfing" display_values="Swimming;Surfing" rows="2"/>
+                    <reference ref="nudism" />
+                </optional>
+            </item> <!-- Beach -->
+            <item name="Bay" icon="${natural_bay}" type="node,way,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=bay"/>
+                <space />
+                <label text="An area of water mostly surrounded by land but with level connection to the ocean or a lake."/>
+                <space/>
+                <key key="natural" value="bay"/>
+                <optional>
+                    <check key="bay" text="Fjord" value_on="fjord" disable_off="true" />
+                </optional>
+                <reference ref="optional_name_wikipedia"/>
+            </item> <!-- Bay -->
+            <item name="Cape" icon="${natural_cape}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=cape"/>
+                <space />
+                <label text="A prominent, elevated piece of land sticking out into the sea or large lake."/>
+                <space/>
+                <key key="natural" value="cape"/>
+                <reference ref="optional_name_wikipedia"/>
+            </item> <!-- Cape -->
+            <item name="Strait" icon="${natural_straight}" type="node,way,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:natural=strait" />
+                <space />
+                <key key="natural" value="strait" />
+                <reference ref="optional_name_wikipedia"/>
+            </item> <!-- Strait -->
+        </group> <!-- Water -->
+        <group name="Shipping" icon="${water_transport_group}">
+            <item name="Ferry Terminal" icon="${water_transport_ferry_terminal}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:amenity=ferry_terminal"/>
+                <space/>
+                <key key="amenity" value="ferry_terminal"/>
+                <text key="name" text="Name"/>
+                <combo key="cargo" text="Cargo" values="passengers,vehicle,bicycle,hgv,passengers;vehicle" values_context="cargo"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- Ferry Terminal -->
+            <item name="Ferry Route" icon="${water_transport_ferry_route}" type="way,closedway,relation" preset_name_label="true"
+                name_template="Ferry ({operator} ?{'{name} ' | ''}{ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})">
+                <link wiki="Tag:route=ferry"/>
+                <key key="route" value="ferry"/>
+                <optional>
+                    <reference ref="name_ref_operator" />
+                    <reference ref="oh_wheelchair" />
+                    <space />
+                    <combo key="ferry" text="Highway type connected" values="trunk,primary,secondary,tertiary,unclassified" values_context="Highway" values_sort="false" />
+                    <check key="ferry:cable" text="Reaction ferry" />
+                    <reference ref="public_transport_route_optionals_2" />
+                </optional>
+                <reference ref="road_access_restrictions"/>
+            </item> <!-- Ferry Route -->
+            <separator/>
+            <item name="Marina" icon="${water_transport_marina}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:leisure=marina"/>
+                <space/>
+                <key key="leisure" value="marina"/>
+                <text key="name" text="Name"/>
+                <reference ref="sanitary_dump_station"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- Marina -->
+            <item name="Marine Fuel" icon="${water_transport_fuel}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:waterway=fuel"/>
+                <space/>
+                <key key="waterway" value="fuel"/>
+                <optional>
+                    <combo key="brand" text="Brand" values="Agip,Aral,Avia,BP,Chevron,Citgo,Eni,Esso,Exxon,Gulf,Mobil,OMV,Petro-Canada,Pioneer,Q8,Repsol,Shell,Socar,Statoil,Sunoco,Tamoil,Texaco,Total,Independent" values_searchable="true"/>
+                    <reference ref="name_operator"/>
+                    <reference ref="oh"/>
+                    <space/>
+                    <label text="Fuel types:"/>
+                    <checkgroup text="Fuel types" columns="2">
+                        <check key="fuel:diesel" text="Diesel" disable_off="true"/>
+                        <check key="fuel:biodiesel" text="Bio Diesel" disable_off="true"/>
+                        <check key="fuel:octane_80" text="Octane 80" disable_off="true"/>
+                        <check key="fuel:octane_87" text="Octane 87" disable_off="true"/>
+                        <check key="fuel:octane_89" text="Octane 89" disable_off="true"/>
+                        <check key="fuel:octane_91" text="Octane 91" disable_off="true"/>
+                        <check key="fuel:octane_92" text="Octane 92" disable_off="true"/>
+                        <check key="fuel:octane_93" text="Octane 93" disable_off="true"/>
+                        <check key="fuel:octane_95" text="Octane 95" disable_off="true"/>
+                        <check key="fuel:octane_98" text="Octane 98" disable_off="true"/>
+                        <check key="fuel:octane_100" text="Octane 100" disable_off="true"/>
+                        <check key="fuel:e10" text="E10 (10% Ethanol mix)" disable_off="true"/>
+                        <check key="fuel:e85" text="E85 (85% Ethanol mix)" disable_off="true"/>
+                        <check key="fuel:ethanol" text="Ethanol (alcohol)" disable_off="true"/>
+                        <check key="fuel:lpg" text="LPG (Liquefied petroleum gas)" disable_off="true"/>
+                        <check key="fuel:cng" text="CNG (Compressed Natural Gas)" disable_off="true"/>
+                    </checkgroup>
+                </optional>
+                <reference ref="link_contact_address_payment"/>
+            </item> <!-- Marine Fuel -->
+            <item name="Water point" icon="${water_transport_water_point}" type="node" preset_name_label="true">
+                <link wiki="Tag:waterway=water_point"/>
+                <key key="waterway" value="water_point"/>
+                <check key="drinking_water" text="Drinking Water"/>
+                <optional>
+                    <reference ref="facility_access"/>
+                </optional>
+            </item> <!-- Water point -->
+            <item name="Sanitary dump station" icon="${water_transport_sanitary_dump_station}" type="node" preset_name_label="true">
+                <link wiki="Tag:waterway=sanitary_dump_station"/>
+                <key key="waterway" value="sanitary_dump_station"/>
+            </item> <!-- Water point -->
+            <item name="Boat shop" icon="${water_transport_boat_shop}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:shop=boat"/>
+                <space/>
+                <key key="shop" value="boat"/>
+                <reference ref="name_operator_oh_wheelchair"/>
+                <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no" display_values="Only,Yes,No"/>
+                <reference ref="link_contact_address_payment"/>
+            </item> <!-- Boat shop -->
+            <item name="Boat rental" icon="${water_transport_boat_rental}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:amenity=boat_rental"/>
+                <space/>
+                <key key="amenity" value="boat_rental"/>
                 <reference ref="name_operator"/>
                 <reference ref="oh"/>
-            </optional>
-        </item> <!-- Boat storage -->
-        <item name="Waterway milestone" icon="${water_transport_milestone}" type="node" preset_name_label="true">
-            <link wiki="Tag:waterway=milestone"/>
-            <key key="waterway" value="milestone"/>
-            <text key="distance" text="Distance (kilometers)"/>
-            <text key="ref" text="Reference"/>
-            <optional>
-                <combo key="direction" text="For direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
-            </optional>
-        </item> <!-- Waterway milestone -->
-    </group> <!-- Shipping -->
+                <optional>
+                    <text key="capacity" text="Number of boats" value_type="integer"/>
+                    <check key="motorboat_rental" text="Motorboats" disable_off="true"/>
+                    <check key="houseboat_rental" text="Houseboats" disable_off="true"/>
+                    <check key="pedalboat_rental" text="Pedalos" disable_off="true"/>
+                    <check key="jetski_rental" text="Jetskis" disable_off="true"/>
+                    <check key="sailboat_rental" text="Sailing boats" disable_off="true"/>
+                    <check key="dinghy_rental" text="Dinghies" disable_off="true"/>
+                    <check key="kayak_rental" text="Kayaks" disable_off="true"/>
+                    <check key="canoe_rental" text="Canoes" disable_off="true"/>
+                </optional>
+                <reference ref="link_contact_address_payment"/>
+            </item> <!-- Boat rental -->
+            <item name="Pier" icon="${water_transport_pier}" type="node,way,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:man_made=pier"/>
+                <space/>
+                <key key="man_made" value="pier"/>
+                <reference ref="optional_name"/>
+                <combo key="mooring" text="Mooring" values="yes,no,private,permit,commercial" display_values="Yes,No,Private,Permit required,Commercial"/>
+                <check key="floating" text="Floating"/>
+            </item> <!-- Pier -->
+            <item name="Lock Gate" icon="${water_transport_lock_gate}" type="node,way" preset_name_label="true">
+                <link wiki="Tag:waterway=lock_gate"/>
+                <key key="waterway" value="lock_gate"/>
+            </item> <!-- Lock Gate -->
+            <item name="Turning Point" icon="${water_transport_turning_point}" type="node" preset_name_label="true">
+                <link wiki="Tag:waterway=turning_point"/>
+                <key key="waterway" value="turning_point"/>
+            </item> <!-- Turning Point -->
+            <separator/>
+            <item name="Slipway" icon="${water_transport_slipway}" type="node" preset_name_label="true">
+                <link wiki="Tag:leisure=slipway"/>
+                <key key="leisure" value="slipway"/>
+                <reference ref="optional_name"/>
+                <optional>
+                    <reference ref="incline" />
+                    <reference ref="surface" />
+                    <reference ref="fee" />
+                </optional>
+            </item> <!-- Slipway -->
+            <item name="Boatyard" icon="${water_transport_boatyard}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:waterway=boatyard"/>
+                <space/>
+                <key key="waterway" value="boatyard"/>
+                <text key="name" text="Name"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- Boatyard -->
+            <item name="Dock" icon="${water_transport_dock}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:waterway=dock"/>
+                <space/>
+                <key key="waterway" value="dock"/>
+                <combo key="dock" text="Type" values="drydock,floating,tidal" display_values="Dry dock,Floating,Tidal"/>
+                <text key="name" text="Name"/>
+                <preset_link preset_name="No name"/>
+            </item> <!-- Dock -->
+            <item name="Boat storage" icon="${water_transport_boat_storage}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:amenity=boat_storage"/>
+                <space/>
+                <key key="amenity" value="boat_storage"/>
+                <optional>
+                    <reference ref="name_operator"/>
+                    <reference ref="oh"/>
+                </optional>
+            </item> <!-- Boat storage -->
+            <item name="Waterway milestone" icon="${water_transport_milestone}" type="node" preset_name_label="true">
+                <link wiki="Tag:waterway=milestone"/>
+                <key key="waterway" value="milestone"/>
+                <text key="distance" text="Distance (kilometers)"/>
+                <text key="ref" text="Reference"/>
+                <optional>
+                    <combo key="direction" text="For direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
+                </optional>
+            </item> <!-- Waterway milestone -->
+        </group> <!-- Shipping -->
     </group> <!-- Water -->
     <group name="Transport" icon="${transport_group}">
     <group name="Railway" icon="${transport_railway_group}" items_sort="false" >
