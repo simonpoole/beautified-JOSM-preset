@@ -8568,6 +8568,17 @@
                 <space/>
                 <key key="golf" value="rough"/>
             </item> <!-- Rough -->
+            <item name="Golf cartpath" name_context="golf" icon="${sport_golf_cartpath}" type="way" preset_name_label="true" deprecated="true">
+                <link wiki="Tag:golf=cartpath"/>
+                <space/>
+                <key key="golf" value="cartpath"/>
+            </item> <!-- Golf cartpath -->
+            <separator/>
+            <item name="Golf path" name_context="golf" icon="${sport_golf_path}" type="way" preset_name_label="true" deprecated="true">
+                <link wiki="Tag:golf=path"/>
+                <space/>
+                <key key="golf" value="path"/>
+            </item> <!-- Golf path -->
             <separator/>
             <item name="Driving range" name_context="golf" icon="${sport_golf_driving_range}" type="node,closedway" preset_name_label="true">
                 <link wiki="Tag:leisure=golf_course"/>
