@@ -9300,7 +9300,7 @@
         <item name="Entrance" icon="${entrance}" type="node" preset_name_label="true">
             <link wiki="Key:entrance"/>
             <space/>
-            <combo key="entrance" text="Entrance" values="yes,main,service,shop,exit,emergency,staircase,home,garage" display_values="Yes,Main,Service,Shop,Exit,Emergency,Staircase,Home,Garage" values_context="entrance" default="yes" match="key"/>
+            <combo key="entrance" text="Entrance" values="yes,main,service,shop,exit,emergency,secondary,staircase,home,garage" display_values="Yes,Main,Service,Shop,Exit,Emergency,Secondary,Staircase,Home,Garage" values_context="entrance" default="yes" match="key"/>
             <combo key="access" text="Access" values="yes,delivery,private,customers,permissive,permit,no" display_values="Yes,Delivery,Private,Customers,Permissive,Permit required,No" values_context="access" match="none"/>
             <optional>
                 <reference ref="wheelchair"/>
