@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets version="5.16.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,disused:amenity,disused:leisure,disused:man_made,golf,hazard,noexit,disused:shop,ford,indoor,playground,pipeline,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,telecom,mountain_pass,marker">
+    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,hazard,noexit,indoor,playground,pipeline,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom">
 <!--
     Icons have been derived from mainly from
   
@@ -8601,6 +8601,33 @@
                 <key key="golf" value="driving_range"/>
             </item> <!-- Driving range -->
         </group> <!-- Golf -->
+        <group name="Disc golf" icon="${sport_disc_golf_group}">
+            <item name="Disc golf course" icon="${sport_disc_golf_course}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:leisure=disc_golf_course"/>
+                <space/>
+                <key key="leisure" value="disc_golf_course"/>
+                <reference ref="name_oh_wheelchair"/>
+            </item> <!-- Golf Course -->
+            <separator/>
+            <item name="Tee" name_context="disc_golf" icon="${sport_disc_golf_tee}" type="node,closedway" preset_name_label="true">
+                <link wiki="Tag:leisure=disc_golf_course"/>
+                <space/>
+                <key key="disc_golf" value="tee"/>
+            </item> <!-- Tee -->
+            <item name="Hole" name_context="disc_golf" icon="${sport_disc_golf_hole}" type="way" preset_name_label="true">
+                <link wiki="Tag:leisure=disc_golf_course"/>
+                <space/>
+                <key key="disc_golf" value="hole"/>
+                <optional>
+                    <text key="name" text="Name"/>
+                </optional>
+            </item> <!-- Hole -->
+            <item name="Basket" name_context="disc_golf" icon="${sport_disc_golf_basket}" type="node,closedway" preset_name_label="true">
+                <link wiki="Tag:leisure=disc_golf_course"/>
+                <space/>
+                <key key="disc_golf" value="basket"/>
+            </item> <!-- Basket -->
+        </group> <!-- Disc golf -->
         <item name="Miniature Golf" icon="${sport_minature_golf}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=miniature_golf"/>
             <space/>
