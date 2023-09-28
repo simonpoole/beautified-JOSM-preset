@@ -9667,6 +9667,15 @@
                 <reference ref="layer" />
             </optional>
         </item> <!-- Goods conveyor -->
+        <item name="Gantry" icon="${man_made_gantry}" type="way,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=gantry"/>
+            <space/>
+            <key key="man_made" value="gantry"/>
+            <optional>
+                <text key="maxheight:physical" text="Max. clearance (meters)" value_type="dimension_vertical"/>
+                <reference ref="name_ref_operator"/>
+            </optional>
+        </item> <!-- Gantry -->
         <item name="Mineshaft" icon="${man_made_mineshaft}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=mineshaft"/>
             <space/>
