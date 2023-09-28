@@ -251,6 +251,17 @@
         <list_entry value="shared_lane" display_value="Shared lane"/>
         <list_entry value="separate" display_value="Separate"/>
     </chunk>
+    <chunk id="traffic_sign_values">
+        <list_entry value="give_way" display_value="Give way" icon="${traffic_sign_give_way}"/>
+        <list_entry value="hazard" display_value="Hazard" icon="${traffic_sign_hazard}"/>
+        <list_entry value="maxheight" display_value="Max. height" icon="${traffic_max_width}"/>
+        <list_entry value="maxweight" display_value="Max. weight" icon="${traffic_max_weight}"/>
+        <list_entry value="maxwidth" display_value="Max. width" icon="${traffic_max_width}"/>
+        <list_entry value="signals_ahead" display_value="Signals ahead"/>
+        <list_entry value="stop_ahead" display_value="Stop ahead"/>
+        <list_entry value="variable_message" display_value="Variable message"/>
+        <list_entry value="yield_ahead" display_value="Yield ahead"/>
+    </chunk>
     <chunk id="building_values">
         <list_entry value="allotment_house"    display_value="Allotment house"/>
         <list_entry value="apartments"         display_value="Apartments"/>
@@ -3414,15 +3425,29 @@
             <key key="traffic_sign" value="stop"/>
             <reference ref="traffic_signals_direction" />
         </item> <!-- Stop sign -->
+        <item name="Traffic sign" icon="${traffic_sign}" type="node" preset_name_label="true">
+            <link wiki="Key:traffic_sign"/>
+            <space/>
+            <combo key="traffic_sign" match="key" editable="true">
+                <reference ref="traffic_sign_values"/>
+            </combo>
+            <reference ref="traffic_signals_direction" />
+        </item> <!-- Traffic sign -->
         <item name="Traffic Sign Forward" icon="${traffic_sign_forward}" type="node" preset_name_label="true">
             <link wiki="Key:traffic_sign"/>
             <space/>
-            <text key="traffic_sign:forward" match="key"/>
+            <combo key="traffic_sign:forward" match="key" editable="true">
+                <list_entry value="maxspeed" display_value="Max. speed" icon="${traffic_sign_speed_limit}"/>
+                <reference ref="traffic_sign_values"/>
+            </combo>
         </item> <!-- Traffic Sign Forward -->
         <item name="Traffic Sign Backward" icon="${traffic_sign_backward}" type="node" preset_name_label="true">
             <link wiki="Key:traffic_sign"/>
             <space/>
-            <text key="traffic_sign:backward" match="key"/>
+            <combo key="traffic_sign:backward" match="key" editable="true">
+                <list_entry value="maxspeed" display_value="Max. speed" icon="${traffic_sign_speed_limit}"/>
+                <reference ref="traffic_sign_values"/>
+            </combo>
         </item> <!-- Traffic Sign Forward -->
         <item name="Speed Camera" icon="${highway_speed_camera}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=speed_camera"/>
