@@ -7167,6 +7167,13 @@
             <link wiki="Tag:amenity=townhall"/>
             <space/>
             <key key="amenity" value="townhall"/>
+            <combo key="townhall:type" values_context="townhall">
+                <list_entry value="city" display_value="City" />
+                <list_entry value="town" display_value="Town" />
+                <list_entry value="municipality" display_value="Municipality" />
+                <list_entry value="village" display_value="Village" />
+                <list_entry value="barangay" display_value="Barangay" />
+            </combo>
             <reference ref="name_oh_wheelchair_toilets"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Town Hall -->
