@@ -8222,6 +8222,16 @@
             <key key="amenity" value="photo_booth"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
         </item> <!-- Photo booth -->
+        <item name="Trolley bay" icon="${amenity_trolley_bay}" type="node,way,closedway" preset_name_label="true">
+            <link wiki="Tag:amenity=trolley_bay"/>
+            <space/>
+            <key key="amenity" value="trolley_bay"/>
+            <text key="operator" text="Operator"/>
+            <reference ref="fee"/>
+            <check key="covered" text="Covered"/>
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
+            <reference ref="level" />
+        </item> <!-- Trolley bay -->
         <separator/>
         <item name="Bottle return" icon="${amenity_bottle_return}" type="node" preset_name_label="true">
             <link wiki="Tag:vending=bottle_return"/>
