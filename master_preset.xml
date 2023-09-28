@@ -8103,12 +8103,12 @@
                     <check key="male" text="Male" text_context="restroom" disable_off="true"/>
                     <check key="unisex" text="Unisex" text_context="restroom" disable_off="true"/>
                 </checkgroup>
-                <combo key="toilets:disposal" text="Type" values="flush,pitlatrine,chemical,bucket"/>
+                <combo key="toilets:disposal" text="Type" values="flush,pitlatrine,chemical,bucket" display_values="Flush,Pit latrine,Chemical,Bucket"/>
                 <text key="description" text="Description" length="255"/>
                 <reference ref="fee"/>
                 <reference ref="changing_table"/>
                 <text key="operator" text="Operator"/>
-                <combo key="toilets:position" text="Usage Position" values="seated,seated;urinal,squat,urinal"/>
+                <combo key="toilets:position" text="Usage Position" values="seated,seated;urinal,squat,urinal" display_values="Seated,Seated urinal,Squat,Urinal"/>
                 <reference ref="oh_wheelchair_level"/>
                 <check key="drinking_water" text="Drinking Water"/>
             </optional>
