@@ -7713,6 +7713,12 @@
             <key key="emergency" value="suction_point" />
             <reference ref="name_ref_operator" />
         </item> <!-- Suction point -->
+        <item name="Fire water pond" icon="${emergency_fire_water_pond}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:emergency=fire_water_pond" />
+            <space />
+            <key key="emergency" value="fire_water_pond" />
+            <reference ref="name_ref_operator" />
+        </item> <!-- Fire water pond -->
         <separator/>
         <item name="Emergency Phone" icon="${emergency_emergency_phone}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=phone"/>
@@ -7812,6 +7818,12 @@
             <reference ref="name_ref_operator"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Assembly Point -->
+        <item name="Landing site" icon="${emergency_landing_site}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:emergency=landing_site" />
+            <space />
+            <key key="emergency" value="landing_site" />
+            <reference ref="name_ref_operator" />
+        </item> <!-- Landing site -->
     </group> <!-- Emergency -->
     <group name="Social Facilities" icon="${social_facilities_group}">
         <item name="Ambulatory Care" icon="${amenity_ambulatory_care}" type="node,closedway,multipolygon" preset_name_label="true">
