@@ -12724,6 +12724,13 @@
                 <reference ref="denotation"/>
             </optional>
         </item> <!-- Tree Row -->
+        <item name="Tree Stump" icon="${natural_tree_stump}" type="node" preset_name_label="true">
+            <link wiki="Tag:natural=tree_stump"/>
+            <space />
+            <label text="A tree stump."/>
+            <space/>
+            <key key="natural" value="tree_stump"/>
+        </item> <!-- Tree Stump-->
         <item name="Shrub" icon="${natural_shrub}" type="node" preset_name_label="true">
             <link wiki="Tag:natural=shrub"/>
             <space/>
