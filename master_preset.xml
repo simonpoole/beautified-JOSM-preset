@@ -12670,6 +12670,18 @@
             <key key="natural" value="geyser"/>
             <reference ref="optional_name_wikipedia"/>
         </item> <!-- Geyser -->
+        <item name="Hot spring" icon="${geography_hot_spring}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:natural=hot_spring"/>
+            <space/>
+            <key key="natural" value="hot_spring"/>
+            <reference ref="optional_name_wikipedia"/>
+            <combo key="water_characteristic">
+            	<list_entry value="sulfuric" display_value="Contains sulfuric acid"/>
+            	<list_entry value="sulfurous" display_value="Contains sulfur"/>
+            	<list_entry value="mud" display_value="Mud"/>
+            </combo>
+			<text key="temperature" text="Temperature (°C)"/> 
+        </item> <!-- Geyser -->
         <separator/>
         <item name="Island" icon="${geography_island}" type="node,closedway,multipolygon" preset_name_label="true" name_context="place">
             <link wiki="Tag:place=island"/>
