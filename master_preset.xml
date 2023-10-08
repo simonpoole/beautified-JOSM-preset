@@ -12427,10 +12427,12 @@
             <space />
             <key key="boundary" value="hazard" />
             <combo key="hazard" text="Hazard" values_context="hazard" >
+                <list_entry value="biohazard" short_description="Biohazard" />
                 <list_entry value="contamination" short_description="Contamination" />
                 <list_entry value="minefield" short_description="Minefield" />
                 <list_entry value="nuclear" short_description="Nuclear" />
                 <list_entry value="shooting_range" short_description="Shooting range" />
+                <list_entry value="quicksane" short_description="Quicksand" />
                 <list_entry value="unexploded_ordnance" short_description="Unexploded ordnance" />
             </combo>
             <optional>
