@@ -8161,6 +8161,11 @@
             <text key="ref" text="Reference number"/>
             <reference ref="collection_times"/>
             <check key="drive_through" text="Drive through" disable_off="true"/>
+            <combo key="post_box:type" text="Type" values_context="post box">
+                <list_entry value="pillar" text="Pillar"/>
+                <list_entry value="lamp" text="Lamp"/>
+                <list_entry value="wall" text="Wall"/>
+            </combo>
         </item> <!-- Post Box -->
         <item name="Parcel Locker" icon="${amenity_parcel_locker}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:amenity=parcel_locker"/>
