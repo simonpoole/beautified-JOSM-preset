@@ -7080,8 +7080,18 @@
             <link wiki="Tag:tourism=artwork"/>
             <space/>
             <key key="tourism" value="artwork"/>
-            <combo key="artwork_type" text="Type" values="architecture,mural,painting,sculpture,statue,bust,stone,installation,graffiti"
-                display_values="Architecture,Mural,Painting,Sculpture,Statue,Bust,Stone,Installation,Graffiti" values_searchable="true"/>
+            <combo key="artwork_type" text="Type" values_searchable="true">
+                <list_entry value="architecture" display_value="Architecture" />
+                <list_entry value="bust" display_value="Bust" />
+                <list_entry value="graffiti" display_value="Graffiti" />
+                <list_entry value="installation" display_value="Installation" />
+                <list_entry value="mosaic" display_value="Mosaic" />
+                <list_entry value="mural" display_value="Mural" />
+                <list_entry value="painting" display_value="Painting" />
+                <list_entry value="sculpture" display_value="Sculpture" />
+                <list_entry value="statue" display_value="Statue" />
+                <list_entry value="stone" display_value="Stone" />
+            </combo>
             <text key="name" text="Name"/>
             <text key="artwork_subject" text="Subject"/>
             <text key="artist_name" text="Artist Name"/>
