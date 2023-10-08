@@ -8528,7 +8528,14 @@
                 <text key="post:city" text="City" match="key"/>
                 <text key="post:state" text="State" match="key"/>
             </optional>
-        </item> <!-- Weighbridge -->
+        </item> <!-- Letter box -->
+        <item name="Research institute" icon="${amenity_research_institute}" type="node,closedway,multipolygon">
+            <link wiki="Tag:amenity=research_institute"/>
+            <space/>
+            <key key="amenity" value="research_institute"/>
+            <reference ref="name_operator"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Research institute -->
     </group> <!-- Facilities -->
     </group>  <!-- Facilities -->
     <group name="Sports" icon="${sport_group}">
