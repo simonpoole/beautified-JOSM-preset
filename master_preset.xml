@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets version="5.20.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom">
+    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,harbour,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom">
 <!--
     Icons have been derived from mainly from
   
@@ -4526,6 +4526,13 @@
                 <reference ref="sanitary_dump_station"/>
                 <preset_link preset_name="No name"/>
             </item> <!-- Marina -->
+            <item name="Harbour" icon="${water_transport_harbour}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Key:harbour"/>
+                <space/>
+                <key key="harbour" value="yes"/>
+                <reference ref="name_operator"/>
+                <reference ref="link_contact_address"/>
+            </item>
             <item name="Marine Fuel" icon="${water_transport_fuel}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:waterway=fuel"/>
                 <space/>
