@@ -12,7 +12,7 @@ The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/intro
 
 The links to original icons remain if they currently don't have a replacement, current count is roughly 90 icons that either have not been replaced or are missing.
 
-To make using the presets easier with the original JOSM icons we've added one level of indirection in that instead of directly containing a reference to an icon, we reference entries in beautified_icons.txt and josm_icons.txt that contain references to out and JOSM icons respectively.
+To make using the presets easier with the original JOSM icons we've added one level of indirection in that instead of directly containing a reference to an icon, we reference entries in beautified_icons.mapping and josm_icons.mapping that contain references to our and JOSM icons respectively.
 
 ## Count of object presets
 

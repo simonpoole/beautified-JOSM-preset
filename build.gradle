@@ -146,13 +146,13 @@ task generateLang(dependsOn: ['patchLangScript'], type: Exec) {
 
 // map to beautified icon set
 task mapToBeautifiedIcons(type: Copy) {
-    inputs.file('beautified_icons.txt')
+    inputs.file('beautified_icons.mapping')
     from projectDir
     include preset_file
     into tempDir
     filteringCharset = 'UTF-8'
     rename (preset_file, mapped_vespucci_preset_file)
-    def map = loadProperties('beautified_icons.txt')
+    def map = loadProperties('beautified_icons.mapping')
     filter(ReplaceTokens, beginToken : '${', endToken : '}', tokens: map)
 }
 
@@ -272,13 +272,13 @@ task transformToJosm(dependsOn: ["mapToBeautifiedIcons", "vespucciIcons", "copyR
 task mapToJosmIcons(type: Copy) {
     // this suppresses bogus errors from gradle
     mustRunAfter "vespucciBuildV5", "vespucciBuild", "vespucciIcons", "josmZip"    
-    inputs.file('josm_icons.txt')
+    inputs.file('josm_icons.mapping')
     from projectDir
     include preset_file
     into tempDir
     filteringCharset = 'UTF-8'
     rename (preset_file, mapped_josm_preset_file)
-    def map = loadProperties('josm_icons.txt')
+    def map = loadProperties('josm_icons.mapping')
     filter(ReplaceTokens, beginToken : '${', endToken : '}', tokens: map)
 }
 
