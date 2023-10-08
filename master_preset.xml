@@ -4499,7 +4499,8 @@
                 <space/>
                 <key key="amenity" value="ferry_terminal"/>
                 <text key="name" text="Name"/>
-                <combo key="cargo" text="Cargo" values="passengers,vehicle,bicycle,hgv,passengers;vehicle" values_context="cargo"/>
+                <multiselect key="cargo" text="Cargo" values="passengers;vehicle;bicycle;hgv;container;dry_bulk;liquid_bulk"
+                    display_values="Passengers;Vehicles;Bicycles;HGVs;Containers;Dry bulk goods;Liquid bulk goods" values_context="cargo"/>
                 <preset_link preset_name="No name"/>
             </item> <!-- Ferry Terminal -->
             <item name="Ferry Route" icon="${water_transport_ferry_route}" type="way,closedway,relation" preset_name_label="true"
