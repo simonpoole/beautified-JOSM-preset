@@ -12243,6 +12243,8 @@
         </checkgroup>
         <space/>
         <check key="payment:contactless" text="Contactless payment" match="keyvalue" />
+        <check key="payment:qr_code" text="QR Code" match="keyvalue" />
+        <check key="payment:app" text="Dedicated app" match="keyvalue" />
         <space/>
         <check key="payment:electronic_purses" text="Electronic purses" match="keyvalue"/>
         <checkgroup text="Electronic purses type" columns="4">
