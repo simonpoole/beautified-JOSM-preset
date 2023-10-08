@@ -3736,6 +3736,11 @@
             <key key="barrier" value="cable_barrier" />
             <reference ref="optional_height" />
         </item> <!-- Cable barrier -->
+        <item name="Rope" icon="${barrier_rope}" type="node,way,closedway" preset_name_label="true">
+            <link wiki="Tag:barrier=rope" />
+            <key key="barrier" value="rope" />
+            <reference ref="optional_height" />
+        </item> <!-- Rope -->
         <item name="Wall" icon="${barrier_wall}" type="way,multipolygon,closedway" preset_name_label="true">
             <link wiki="Tag:barrier=wall"/>
             <key key="barrier" value="wall"/>
