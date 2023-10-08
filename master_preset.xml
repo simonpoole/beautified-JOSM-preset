@@ -14503,6 +14503,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Estate agent -->
+        <item name="Property management" icon="${office_property_management}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=property_management"/>
+            <space/>
+            <key key="office" value="property_management"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Property management -->
         <item name="Government" icon="${office_government}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=government"/>
             <space/>
