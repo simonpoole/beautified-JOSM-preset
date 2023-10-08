@@ -3508,7 +3508,7 @@
                 <combo key="goods" text="Freight elevator" values="yes,designated,no" display_values="Yes,Designated,No" />
                 <reference ref="facility_access" />
                 <combo key="surveillance" text="Surveillance Camera" values="indoor,outdoor" display_values="Indoor,Outdoor" 
-                	values_context="surveillance"/>
+                    values_context="surveillance"/>
             </optional>
         </item> <!-- Elevator -->
         <separator/>
@@ -12692,11 +12692,11 @@
             <key key="natural" value="hot_spring"/>
             <reference ref="optional_name_wikipedia"/>
             <combo key="water_characteristic">
-            	<list_entry value="sulfuric" display_value="Contains sulfuric acid"/>
-            	<list_entry value="sulfurous" display_value="Contains sulfur"/>
-            	<list_entry value="mud" display_value="Mud"/>
+                <list_entry value="sulfuric" display_value="Contains sulfuric acid"/>
+                <list_entry value="sulfurous" display_value="Contains sulfur"/>
+                <list_entry value="mud" display_value="Mud"/>
             </combo>
-			<text key="temperature" text="Temperature (°C)"/> 
+            <text key="temperature" text="Temperature (°C)"/> 
         </item> <!-- Geyser -->
         <separator/>
         <item name="Island" icon="${geography_island}" type="node,closedway,multipolygon" preset_name_label="true" name_context="place">
