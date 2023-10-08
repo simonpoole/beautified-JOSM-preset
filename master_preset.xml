@@ -3319,6 +3319,11 @@
             <reference ref="check_crossing_access" />
             <reference ref="tactile_paving"/>
             <reference ref="kerb"/>
+            <optional>
+                <text key="kerb:height" text="Kerb height (both sides)" value_type="dimension_vertical"/>
+                <text key="kerb:right:height" text="Kerb height (right)" value_type="dimension_vertical"/>
+                <text key="kerb:left:height" text="Kerb height (left)" value_type="dimension_vertical"/>
+            </optional>
             <label text="In case of traffic signals:"/>
             <checkgroup text="In case of traffic signals:" columns="2">  
                 <check key="button_operated" text="Button operated" disable_off="true"/>
