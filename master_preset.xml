@@ -14676,6 +14676,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Tax advisor -->
+        <item name="Financial advisor" icon="${office_financial_advisor}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=financial_advisor"/>
+            <space/>
+            <key key="office" value="financial_advisor"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Financial advisor -->
         <item name="Consulting" icon="${office_consulting}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=consulting"/>
             <space/>
