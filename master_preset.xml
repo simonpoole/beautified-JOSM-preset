@@ -8124,6 +8124,8 @@
                 <combo key="toilets:position" text="Usage Position" values="seated,seated;urinal,squat,urinal" display_values="Seated,Seated urinal,Squat,Urinal"/>
                 <reference ref="oh_wheelchair_level"/>
                 <check key="drinking_water" text="Drinking Water"/>
+                <check key="toilets:handwashing" text="Handwashing facilities"/>
+                <check key="toilets:paper_supplied" text="Wiping paper supplied"/>
             </optional>
         </item> <!-- Toilets/Restrooms -->
         <item name="Shower" icon="${amenity_shower}" type="node,closedway" preset_name_label="true">
