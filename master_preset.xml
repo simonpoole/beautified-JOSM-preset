@@ -14824,7 +14824,7 @@
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_disused" javascript="
-var objects = ['shop','amenity','leisure','military','man_made','tourism'];
+var objects = ['amenity','aeroway','highway','leisure','man_made','military','railway','shop'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -14851,7 +14851,7 @@ tags.remove('set_to_disused');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_disused_remove_tags" javascript="
-var objects = ['shop','amenity','leisure','military'];
+var objects = ['amenity','aeroway','highway','leisure','man_made','military','railway','shop'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -14883,15 +14883,121 @@ tags.remove('set_to_disused_remove_tags');" />
             <space/>
             <text key="disused:amenity" match="key" />
         </item> <!-- Disused amenity -->
+        <item name="Disused aeroway" icon="${disused_aeroway}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:disused:"/>
+            <space/>
+            <text key="disused:aeroway" match="key" />
+        </item> <!-- Disused aeroway -->
+        <item name="Disused building" icon="${disused_building}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:disused:"/>
+            <space/>
+            <text key="disused:building" match="key" />
+        </item> <!-- Disused building --> 
+        <item name="Disused highway" icon="${disused_highway}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:disused:"/>
+            <space/>
+            <text key="disused:highway" match="key" />
+        </item> <!-- Disused highway -->
         <item name="Disused leisure" icon="${disused_leisure}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:disused:"/>
             <space/>
             <text key="disused:leisure" match="key" />
         </item> <!-- Disused leisure -->
+        <item name="Disused military object" icon="${disused_military}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:disused:"/>
+            <space/>
+            <text key="disused:military" match="key" />
+        </item> <!-- Disused military object -->
+        <item name="Disused railway" icon="${disused_railway}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:disused:"/>
+            <space/>
+            <text key="disused:railway" match="key" />
+        </item> <!-- Disused railway -->
         <item name="Disused shop" icon="${disused_shop}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:disused:"/>
             <space/>
             <text key="disused:shop" match="key" />
         </item> <!-- Disused shop -->
+        <separator/>
+        <item name="Set to abandoned" icon="${javascript}" type="node,way,closedway,relation" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <!-- originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags
+                 before the PropertyEditor was started, tags are the current values, by removing the key at the
+                 end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
+            <text key="set_to_abandoned" javascript="
+var objects = ['amenity','aeroway','highway','leisure','man_made','military','railway','shop'];
+
+function isObject(key) {
+  var objectsLength = objects.length;
+  for (var i = 0; i &lt; objectsLength; i++) {
+    if (objects[i].equals(key)) {
+            return true;
+    }
+  }
+  return false;
+}
+
+for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {
+  if (isObject(key)) {
+    tags.put('abandoned:'+key,tags.get(key));
+    tags.remove(key);
+  }
+}
+tags.remove('set_to_abandoned');" />
+        </item>
+        <item name="Set to abandoned (remove tags)" icon="${javascript}" type="node,way,closedway,relation" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <!-- This preset will only remove tags on app version 703 and higher (Vespucci 11.1.1)
+                 originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags
+                 before the PropertyEditor was started, tags are the current values, by removing the key at the
+                 end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
+            <text key="set_to_abandoned_remove_tags" javascript="
+var objects = ['amenity','aeroway','highway','leisure','man_made','military','railway','shop'];
+
+function isObject(key) {
+  var objectsLength = objects.length;
+  for (var i = 0; i &lt; objectsLength; i++) {
+    if (objects[i].equals(key)) {
+            return true;
+    }
+  }
+  return false;
+}
+
+var presetItem = null;
+for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {
+  if (isObject(key)) {
+    tags.put('abandoned:'+key,tags.get(key));
+    presetItem = key2PresetItem.get(key);
+    tags.remove(key);
+  }
+  if (typeof versionCode !== 'undefined' &amp;&amp; versionCode &gt; 703) {
+    if (presetItem !== null &amp;&amp; presetItem.equals(key2PresetItem.get(key))) {
+      tags.remove(key);
+    }
+  }
+}
+tags.remove('set_to_abandoned_remove_tags');" />
+        </item>
+        <item name="Abandoned aeroway" icon="${abandoned_aeroway}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <space/>
+            <text key="abandoned:aeroway" match="key" />
+        </item> <!-- Abandoned aeroway -->
+        <item name="Abandoned building" icon="${abandoned_building}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <space/>
+            <text key="abandoned:building" match="key" />
+        </item> <!-- Abandoned building -->
+        <item name="Abandoned highway" icon="${abandoned_highway}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <space/>
+            <text key="abandoned:highway" match="key" />
+        </item> <!-- Abandoned highway -->
+        <item name="Abandoned railway" icon="${abandoned_railway}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <space/>
+            <text key="abandoned:railway" match="key" />
+        </item> <!-- Abandoned railway -->
     </group>
 </presets>
