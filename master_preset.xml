@@ -2055,7 +2055,8 @@
         <check key="aerialway:bubble" text="Has bubble?" disable_off="true"/>
     </chunk>
     <chunk id="playground_theme">
-        <combo text="Theme" key="playground:theme" values="barrel,bee,bridge,castle,cat,cow,dog,dragon,helicopter,horse,locomotive,octopus,plane,rocket,ship,spiderweb,tiger,train" display_values="Barrel,Bee,Bridge,Castle,Cat,Cow,Dog,Dragon,Helicopter,Horse,Locomotive,Octopus,Plane,Rocket,Ship,Spiderweb,Tiger,Train"/>
+        <combo text="Theme" key="playground:theme" values="barrel,bee,bridge,castle,cat,cow,dog,dragon,helicopter,horse,locomotive,octopus,plane,rocket,ship,spiderweb,tiger,train" 
+            display_values="Barrel,Bee,Bridge,Castle,Cat,Cow,Dog,Dragon,Helicopter,Horse,Locomotive,Octopus,Plane,Rocket,Ship,Spiderweb,Tiger,Train"/>
     </chunk>
     <chunk id="language">
         <!--  this uses a simple multiselect to specify one or more languages and doesn't use the wikifiddled languagexx scheme -->
@@ -6697,8 +6698,10 @@
                     <check text="Climbing wall" key="playground:climbingwall" disable_off="true" text_context="leisure"/>
                     <check text="Cushion" key="playground:cushion" disable_off="true" text_context="leisure"/>
                     <check text="Exercise" key="playground:exercise" disable_off="true" text_context="leisure"/>
+                    <check text="Funnel ball" key="playground:funnel_ball" disable_off="true" text_context="leisure"/>
                     <check text="Hopscotch" key="playground:hopscotch" disable_off="true" text_context="leisure"/>
                     <check text="Horizontal bar" key="playground:horizontal_bar" disable_off="true" text_context="leisure"/>
+                    <check text="Map" key="playground:map" disable_off="true" text_context="leisure"/>
                     <check text="Multi play" key="playground:multi_play" disable_off="true" text_context="leisure"/>
                     <check text="Playhouse" key="playground:playhouse" disable_off="true" text_context="leisure"/>
                     <check text="Roundabout" key="playground:roundabout" disable_off="true" text_context="leisure"/>
@@ -6741,8 +6744,10 @@
                 <list_entry value="climbingwall" display_value="Climbing wall"/>
                 <list_entry value="cushion" display_value="Cushion"/>
                 <list_entry value="exercise" display_value="Exercise"/>
+                <list_entry value="funnel_ball" display_value="Funnel ball"/>
                 <list_entry value="hopscotch" display_value="Hopscotch"/>
                 <list_entry value="horizontal_bar" display_value="Horizontal bar"/>
+                <list_entry value="map" display_value="Map"/>
                 <list_entry value="multi_play" display_value="Multi play"/>
                 <list_entry value="playhouse" display_value="Playhouse"/>
                 <list_entry value="roundabout" display_value="Roundabout"/>
