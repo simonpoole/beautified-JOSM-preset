@@ -14676,6 +14676,20 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Architect -->
+        <item name="Engineer" icon="${office_engineer}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=engineer"/>
+            <space/>
+            <key key="office" value="engineer"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Engineer -->
+        <item name="Construction company" icon="${office_construction_company}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=construction_company"/>
+            <space/>
+            <key key="office" value="construction_company"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Construction company -->
         <item name="Association" icon="${office_association}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=association"/>
             <space/>
@@ -14791,6 +14805,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Logistics -->
+        <item name="Courier" icon="${office_courier}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=courier"/>
+            <space/>
+            <key key="office" value="courier"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Courier -->
         <item name="Notary" icon="${office_notary}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=notary"/>
             <space/>
