@@ -8230,6 +8230,14 @@
             <reference ref="collection_times"/>
             <reference ref="essential_wheelchair"/>
         </item> <!-- Parcel Locker -->
+        <item name="Post Depot" icon="${amenity_post_depot}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:amenity=post_depot"/>
+            <space/>
+            <key key="amenity" value="post_depot"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <text key="ref" text="Reference number"/>
+            <reference ref="essential_wheelchair"/>
+        </item> <!-- Post Depot -->
         <item name="Telephone" icon="${amenity_telephone}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=telephone"/>
             <space/>
