@@ -8194,6 +8194,25 @@
                 <reference ref="oh_wheelchair_level"/>
             </optional>
         </item> <!-- Shower -->
+        <item name="Dressing room" icon="${amenity_dressing_room}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=dressing_rooom"/>
+            <space/>
+            <key key="amenity" value="dressing_room"/>
+            <reference ref="facility_access"/>
+            <optional>
+                <checkgroup text="Gender" columns="3">
+                    <check key="female" text="Female" text_context="restroom" disable_off="true"/>
+                    <check key="male" text="Male" text_context="restroom" disable_off="true"/>
+                    <check key="unisex" text="Unisex" text_context="restroom" disable_off="true"/>
+                </checkgroup>
+                <check key="locker" text="Lockers" />
+                <text key="description" text="Description" length="255"/>
+                <reference ref="fee"/>
+                <text key="operator" text="Operator"/>
+                <reference ref="supervised"/>
+                <reference ref="oh_wheelchair_level"/>
+            </optional>
+        </item> <!-- Dressing room -->
         <item name="Smoking area" icon="${amenity_tobacco}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:amenity=smoking_area"/>
             <space/>
