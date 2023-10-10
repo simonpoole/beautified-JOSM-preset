@@ -12169,6 +12169,15 @@
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
         </item> <!-- Security -->
+       <item name="Repair" icon="${shopping_repair}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=repair" />
+            <space />
+            <key key="shop" value="repair" />
+            <multiselect key="repair" values="assisted_self_service;appliance;computer;electronics;mobile_phone;motorcycle;shoes;tv;tyres"
+                display_values="Assisted self service;Appliances;Computers;Electronics;Mobile phones;Motorcycles;Shoes;TVs;Tyres"/>
+            <reference ref="name_oh_wheelchair" />
+            <reference ref="link_contact_address_payment" />
+        </item> <!-- Repair -->
         <item name="Funeral Directors" icon="${shopping_funeral_directors}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=funeral_directors"/>
             <space/>
