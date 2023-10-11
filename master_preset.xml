@@ -3471,6 +3471,13 @@
                 <text key="maxspeed" text="Max. speed (km/h)"/>
             </optional>
         </item> <!-- Speed Camera -->
+        <item name="Speed display" icon="${highway_speed_display}" type="node" preset_name_label="true">
+            <link wiki="Tag:highway=speed_display"/>
+            <key key="highway" value="speed_display"/>
+            <optional>
+                <text key="maxspeed" text="Max. speed (km/h)"/>
+            </optional>
+        </item> <!-- Speed display -->
         <item name="Toll gantry" icon="${highway_toll_gantry}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=toll_gantry" />
             <key key="highway" value="toll_gantry" />
