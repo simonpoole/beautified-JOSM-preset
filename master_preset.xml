@@ -10166,6 +10166,13 @@
                 <text key="operator" text="Operator"/>
             </optional>
         </item> <!-- Beehive -->
+        <item name="Dovecote" icon="${man_made_dovecote}" name_context="man_made" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=dovecote"/>
+            <key key="man_made" value="dovecote"/>
+            <optional>
+                <text key="operator" text="Operator"/>
+            </optional>
+        </item> <!-- Dovecote -->
         <item name="Insect hotel" icon="${man_made_insect_hotel}" name_context="man_made" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=insect_hotel"/>
             <key key="man_made" value="insect_hotel"/>
