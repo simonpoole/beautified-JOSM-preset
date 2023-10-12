@@ -1358,11 +1358,19 @@
     <chunk id="facility_access">
         <combo key="access" text="Access" values="yes,permissive,customers,private,permit,no" display_values="Public,Permissive,Customers,Private,Permit required,No access" match="none" values_sort="false"/>
     </chunk>
+    <chunk id="conditional_fee">
+        <combo key="fee:conditional" text="Fee @" match="none">
+            <list_entry value="yes @ Mo-Fr 09:00-19:00"/> 
+            <list_entry value="no @ stay &lt; 1 hour"/>
+        </combo>
+    </chunk>
     <chunk id="fee">
         <combo key="fee" text="Fee" values="yes,no" display_values="Yes,No" match="none"/>
+        <reference ref="conditional_fee"/>
     </chunk>
     <chunk id="fee_interval">
         <combo key="fee" text="Fee" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_no_i18n="true" values_sort="false" editable="true"/>
+        <reference ref="conditional_fee"/>
     </chunk>
     <chunk id="parking_name_type_ref">
         <combo key="parking" text="Type" values_context="parking">
