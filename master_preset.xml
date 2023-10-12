@@ -1092,6 +1092,9 @@
     <chunk id="organic">
         <combo key="organic" text="Organic" values="only,yes,no" display_values="Only,Yes,No"/>
     </chunk>
+    <chunk id="bulk_purchase">
+        <combo key="bulk_purchase" text="Bulk purchase (no packaging)" values="only,yes" display_values="Only,Yes"/>
+    </chunk>
     <chunk id="cuisine">
         <multiselect key="cuisine" text="Cuisine" values_searchable="true" match="key">
             <list_entry value="african" display_value="African" />
@@ -11165,6 +11168,7 @@
             <key key="shop" value="supermarket"/>
             <reference ref="name_oh_wheelchair_level_toilets"/>
             <reference ref="organic"/>
+            <reference ref="bulk_purchase"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Supermarket -->
@@ -11174,6 +11178,7 @@
             <key key="shop" value="convenience"/>
             <reference ref="name_oh_wheelchair_level_toilets"/>
             <reference ref="organic"/>
+            <reference ref="bulk_purchase"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Convenience Store -->
         <item name="General store" icon="${shopping_general_store}" gtype="node,closedway,multipolygon" preset_name_label="true">
@@ -11376,6 +11381,7 @@
             <space/>
             <key key="shop" value="health_food"/>
             <reference ref="organic"/>
+            <reference ref="bulk_purchase"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Diet" />
@@ -11384,6 +11390,8 @@
             <link wiki="Tag:shop=spices"/>
             <space/>
             <key key="shop" value="spices"/>
+            <reference ref="organic"/>
+            <reference ref="bulk_purchase"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Spices -->
