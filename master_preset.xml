@@ -1937,17 +1937,21 @@
     </chunk>
     <chunk id="healthcare_speciality">
         <multiselect key="healthcare:speciality" text="Speciality" text_context="healthcare" values_context="healthcare" values_searchable="true" editable="false">
-            <list_entry value="general" short_description="General"/>
+            <list_entry value="general" short_description="General"/>         
             <list_entry value="abortion" short_description="Abortion"/>
-            <list_entry value="fertility" short_description="Fertility"/>
             <list_entry value="allergology" short_description="Allergology"/>
             <list_entry value="cardiology" short_description="Cardiology"/>
             <list_entry value="child_psychiatry" short_description="Child psychiatry"/>
             <list_entry value="chiropractic" short_description="Chiropractic"/>
             <list_entry value="dermatology" short_description="Dermatology"/>
+            <list_entry value="endocrinology" short_description="Endocrinology"/>
+            <list_entry value="fertility" short_description="Fertility"/>
+            <list_entry value="gastroenterology" short_description="Gastroenterology"/>
             <list_entry value="gynaecology" short_description="Gynaecology"/>
             <list_entry value="internal" short_description="Internal"/>
+            <list_entry value="neonatology" short_description="Neonatology"/>
             <list_entry value="neurology" short_description="Neurology"/>
+            <list_entry value="oncology" short_description="Oncology"/>
             <list_entry value="ophthalmology" short_description="Ophthalmology"/>
             <list_entry value="orthopaedics" short_description="Orthopaedics"/>
             <list_entry value="otolaryngology" short_description="Otolaryngology"/>
@@ -1955,8 +1959,13 @@
             <list_entry value="paediatrics" short_description="Paediatrics"/>
             <list_entry value="plastic_surgery" short_description="Plastic surgery"/>
             <list_entry value="psychiatry" short_description="Psychiatry"/>
+            <list_entry value="pulmonology" short_description="Respiratory Medicine"/>
+            <list_entry value="transplant" short_description="Transplant"/>
+            <list_entry value="trauma" short_description="Trauma"/>
+            <list_entry value="tropical" short_description="Tropical"/>         
             <list_entry value="radiology" short_description="Radiology"/>
             <list_entry value="urology" short_description="Urology"/>
+            <list_entry value="venereology" short_description="Venereology"/>
         </multiselect>
     </chunk>
     <chunk id="roof_main">
