@@ -1199,6 +1199,19 @@
             <list_entry value="workwear" short_description="Workwear"/>
         </multiselect>
     </chunk>
+    <chunk id="post_office">
+        <combo key="post_office" text="Post office type" values_searchable="true">
+            <list_entry value="bureau" short_description="Full post office"/>
+            <list_entry value="post_annex" short_description="Full post office operated by 3rd party"/>
+            <list_entry value="post_partner" short_description="Postal services provided"/>
+        </combo>
+        <text key="post_office:brand" text="Postal services brand" />
+    </chunk>
+    <chunk id="post_office_optional">
+        <optional>
+            <reference ref="post_office"/>
+        </optional>
+    </chunk>
     <chunk id="internet">
         <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" display_values="Available,WLAN,Wired,Terminal,Not available" values_sort="false"/>
         <combo key="internet_access:fee" text="Internet access fee" values="yes,no" display_values="Yes,No"/>
@@ -7500,6 +7513,7 @@
             <link wiki="Tag:amenity=post_office"/>
             <space/>
             <key key="amenity" value="post_office"/>
+            <reference ref="post_office"/>
             <reference ref="name_operator_oh_wheelchair"/>
             <text key="ref" text="Reference"/>
             <reference ref="link_contact_address_payment"/>
@@ -11303,6 +11317,7 @@
             <reference ref="name_oh_wheelchair_level_toilets"/>
             <reference ref="organic"/>
             <reference ref="bulk_purchase"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Supermarket -->
@@ -11313,6 +11328,7 @@
             <reference ref="name_oh_wheelchair_level_toilets"/>
             <reference ref="organic"/>
             <reference ref="bulk_purchase"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Convenience Store -->
         <item name="General store" icon="${shopping_general_store}" gtype="node,closedway,multipolygon" preset_name_label="true">
@@ -11320,6 +11336,7 @@
             <space/>
             <key key="shop" value="general"/>
             <reference ref="name_oh_wheelchair_level_toilets"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- General store -->
         <item name="Kiosk" icon="${shopping_kiosk}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -11327,6 +11344,7 @@
             <space/>
             <key key="shop" value="kiosk"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Kiosk -->
         <separator/>
@@ -11606,6 +11624,7 @@
             <space/>
             <key key="shop" value="dry_cleaning"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Dry Cleaning -->
         <item name="Laundry" icon="${shopping_laundry}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -11615,6 +11634,7 @@
             <reference ref="name_oh_wheelchair_level"/>
             <check key="self_service" text="Self-service"/>
             <check key="laundry_service" text="Laundry Service"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Laundry -->
@@ -11870,6 +11890,7 @@
             <space/>
             <key key="shop" value="copyshop"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Copy Shop -->
@@ -11887,6 +11908,7 @@
             <space/>
             <key key="shop" value="newsagent"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Newspaper Stand -->
         <item name="Anime" icon="${shopping_anime}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -11966,6 +11988,7 @@
             <space/>
             <key key="shop" value="tobacco"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Tobacco -->
         <item name="e-cigarette" icon="${shopping_e-cigarette}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12105,6 +12128,7 @@
             <space/>
             <key key="shop" value="department_store"/>
             <reference ref="name_operator_oh_wheelchair_toilets"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Department Store -->
@@ -12176,6 +12200,7 @@
             <key key="trade" value="agricultural_supplies" />
             <multiselect key="agricultural_supplies" text="Supplies" values="feed;fertilizer;machine_parts;pesticide;seed;tools" display_values="Feed;Fertilizer;Machine parts;Pesticide;Seed;Tools"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Agricultural supplies -->
         <item name="Agricultural supplies" icon="${shopping_agricultural_supplies}" type="node,closedway,multipolygon" preset_name_label="true" deprecated="true">
@@ -12184,6 +12209,7 @@
             <key key="shop" value="agrarian"/>
             <multiselect key="agrarian" text="Supplies" values="feed;fertilizer;machine_parts;pesticide;seed;tools" display_values="Feed;Fertilizer;Machine parts;Pesticide;Seed;Tools"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Agricultural supplies -->
         <item name="Hairdresser supply" icon="${shopping_hairdresser}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12200,7 +12226,7 @@
             <combo key="wholesale" text="Type" values="general,food,supermarket,electrical,sanitary,paper,florist,pharmacy,seafood,clothes" display_values="General,Food,Supermarket,Electrical,Sanitary,Paper,Florist,Pharmacy,Seafood,Clothes"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Trade supplies -->
+        </item> <!-- Wholesale -->
         <item name="Gas" icon="${shopping_gas}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=gas"/>
             <space/>
@@ -12463,6 +12489,7 @@
             <space/>
             <key key="shop" value="outpost"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Outpost / Pickup -->
         <item name="Vacant" icon="${shopping_vacant}" type="node,closedway,multipolygon" deprecated="true">
@@ -12647,6 +12674,7 @@
         <space/>
         <key key="amenity" value="bureau_de_change"/>
         <reference ref="name_oh_wheelchair_level"/>
+        <reference ref="post_office_optional"/>
         <reference ref="link_contact_address"/>
     </item> <!-- Money Exchange -->
     <item name="Money transfer" icon="${money_transfer}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12654,6 +12682,7 @@
         <space />
         <key key="amenity" value="money_transfer" />
         <reference ref="name_oh_wheelchair_level" />
+        <reference ref="post_office_optional"/>
         <reference ref="link_contact_address" />
     </item> <!-- Money transfer -->
     <item name="Automated Teller Machine" icon="${money_atm}" type="node" preset_name_label="true">
@@ -12673,6 +12702,7 @@
         <space/>
         <key key="amenity" value="payment_centre"/>
         <reference ref="name_oh_wheelchair_level"/>
+        <reference ref="post_office_optional"/>
         <reference ref="link_contact_address_payment"/>
     </item> <!-- Payment centre -->
     <item name="Payment terminal" icon="${money_payment_terminal}" type="node" preset_name_label="true">
