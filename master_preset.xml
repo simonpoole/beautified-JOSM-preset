@@ -5151,7 +5151,7 @@
                 <space/>
                 <key key="amenity" value="parking"/>
                 <reference ref="parking_name_type_ref"/>
-                <combo key="park_ride" text="Park and Ride" values="yes,no,bus,train,tram,metro,ferry"/>
+                <multiselect key="park_ride" text="Park and Ride" values="yes;no;bus;train;tram;metro;ferry" display_values="Yes;No;Bus;Train;Tram;Metro;Ferry"/>
                 <reference ref="parking_access_fee_operator_surface_smoothness"/>
                 <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
                 <space/>
@@ -5169,6 +5169,18 @@
                 <link wiki="Tag:amenity=parking_space"/>
                 <space/>
                 <key key="amenity" value="parking_space"/>
+                <combo key="parking_space" text="Type" values_context="parking">
+                    <list_entry value="normal" display_value="Normal" />
+                    <list_entry value="disabled" display_value="Disabled" />
+                    <list_entry value="private" display_value="Private" />
+                    <list_entry value="charging" display_value="Charging" />
+                    <list_entry value="bus" display_value="Bus" />
+                    <list_entry value="hgv" display_value="HGV" />
+                    <list_entry value="staff" display_value="Staff" />
+                    <list_entry value="parent" display_value="Parent" />
+                    <list_entry value="motorcycle" display_value="Motorcycle" />
+                    <list_entry value="delivery" display_value="Delivery" />
+                </combo>
                 <reference ref="parking_name_type_ref"/>
                 <text key="capacity" text="Capacity" value_type="integer"/>
                 <reference ref="parking_access_fee_operator_surface_smoothness"/>
