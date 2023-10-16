@@ -14895,6 +14895,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- It -->
+        <item name="Graphic design" icon="${office_graphic_design}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=graphic_design"/>
+            <space/>
+            <key key="office" value="graphic_design"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Graphic design -->
         <item name="Lawyer" icon="${office_lawyer}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=lawyer"/>
             <space/>
@@ -14902,6 +14909,13 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Lawyer -->
+        <item name="Private investigator" icon="${office_private_investigator}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=private_investigator"/>
+            <space/>
+            <key key="office" value="private_investigator"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Private investigator -->
         <item name="Ngo" icon="${office_ngo}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=ngo"/>
             <space/>
