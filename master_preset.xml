@@ -9885,7 +9885,21 @@
         <item name="Cross" icon="${man_made_cross}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=cross"/>
             <key key="man_made" value="cross"/>
+            <reference ref="material"/>
+            <text key="height" text="Height (meters)" value_type="dimension_vertical"/>
+            <reference ref="historic_optional"/>
+            <preset_link preset_name="Monument" />
+            <preset_link preset_name="Memorial" />          
         </item> <!-- Cross -->
+        <item name="Obelisk" icon="${man_made_obelisk}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=obelisk"/>
+            <key key="man_made" value="obelisk"/>
+            <reference ref="material"/>
+            <text key="height" text="Height (meters)" value_type="dimension_vertical"/>
+            <reference ref="historic_optional"/>
+            <preset_link preset_name="Monument" />
+            <preset_link preset_name="Memorial" />
+        </item> <!-- Obelisk -->
         <separator/>
         <item name="Works" icon="${man_made_works}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:man_made=works"/>
