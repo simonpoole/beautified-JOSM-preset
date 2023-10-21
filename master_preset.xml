@@ -6027,7 +6027,7 @@
             <key key="aeroway" value="spaceport"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Spaceport -->
-        <item name="Departures board" type="node" preset_name_label="true">
+        <item name="Departures board" icon="${transport_departures_board}" type="node" preset_name_label="true">
             <link wiki="Key:departures_board"/>
             <reference ref="departures_board"/>
         </item>
