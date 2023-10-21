@@ -3701,6 +3701,90 @@
                 <reference ref="material"/>
             </optional>
         </item> <!-- Cycle Barrier -->
+        <item name="Motorcycle Barrier" icon="${barrier_motorcycle_barrier}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:barrier=motorcycle_barrier"/>
+            <space/>
+            <key key="barrier" value="motorcycle_barrier"/>
+            <optional>
+                <reference ref="optional_maxwidth"/>
+                <reference ref="material"/>
+            </optional>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+        </item> <!-- Motorcycle Barrier -->
+        <item name="Gate" icon="${barrier_gate}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=gate"/>
+            <key key="barrier" value="gate"/>
+            <optional>
+                <text key="ref" text="Reference"/>
+            </optional>
+            <reference ref="optional_maxheight_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+            <check key="locked" text="Usually locked"/>
+        </item> <!-- Gate -->
+        <item name="Lift Gate" icon="${barrier_lift_gate}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=lift_gate"/>
+            <key key="barrier" value="lift_gate"/>
+            <combo key="lift_gate:type" text="Type" values="single,double" display_values="Single,Double" values_context="lift_gate"/>
+            <reference ref="optional_maxheight_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+            <check key="locked" text="Usually locked"/>
+        </item> <!-- Lift Gate -->
+        <item name="Swing Gate" icon="${barrier_swing_gate}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=swing_gate"/>
+            <key key="barrier" value="swing_gate"/>
+            <combo key="swing_gate:type" text="Type" values="single,double" display_values="Single,Double" values_context="swing_gate"/>
+            <reference ref="optional_maxheight_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+            <check key="locked" text="Usually locked"/>
+        </item> <!-- Swing Gate -->
+        <item name="Hampshire Gate" icon="${barrier_hampshire_gate}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=hampshire_gate"/>
+            <key key="barrier" value="hampshire_gate"/>
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
+            <reference ref="optional_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+            <check key="locked" text="Usually locked"/>
+        </item> <!-- Hampshire Gate -->
+        <item name="Bump Gate" icon="${barrier_bump_gate}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=bump_gate" />
+            <key key="barrier" value="bump_gate" />
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
+            <reference ref="optional_maxwidth" />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+            <check key="locked" text="Usually locked"/>
+        </item> <!-- Bump Gate -->
+        <item name="Kissing Gate" icon="${barrier_kissing_gate}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=kissing_gate"/>
+            <key key="barrier" value="kissing_gate"/>
+            <reference ref="optional_maxwidth"/>
+            <space />
+            <label text="The tag `foot=yes` is implied and does not need to be set." />
+            <space />
+            <reference ref="check_access_nomotor" />
+            <check key="locked" text="Usually locked"/>
+        </item> <!-- Kissing Gate -->
+        <item name="Height restrictor" icon="${barrier_height_restrictor}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=height_restrictor"/>
+            <key key="barrier" value="height_restrictor"/>
+            <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
+            <reference ref="optional_maxwidth"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+            <preset_link preset_name="Access Restrictions" />
+        </item> <!-- Height resctrictor -->
         <item name="Cattle Grid" icon="${barrier_cattle_grid}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=cattle_grid"/>
             <key key="barrier" value="cattle_grid"/>
@@ -3729,16 +3813,51 @@
             <reference ref="check_access_nomotor" />
             <reference ref="check_access_motor" />
         </item> <!-- Spikes -->
-        <item name="Height restrictor" icon="${barrier_height_restrictor}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=height_restrictor"/>
-            <key key="barrier" value="height_restrictor"/>
-            <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
-            <reference ref="optional_maxwidth"/>
+        <item name="Stile" icon="${barrier_stile}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=stile" />
+            <space/>
+            <key key="barrier" value="stile" />
+            <combo key="stile" text="Type" values="ladder,squeezer,stepover" display_values="Ladder,Squeezer,Stepover" values_searchable="true" />
+            <optional>
+                <combo key="material" text="Material" values="metal,stone,wood" display_values="Metal,Stone,Wood" values_context="material"/>
+            </optional>
+            <reference ref="optional_maxwidth" />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+        </item> <!-- Stile -->
+        <item name="Turnstile" icon="${barrier_turnstile}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=turnstile" />
+            <key key="barrier" value="turnstile" />
+            <reference ref="optional_maxwidth" />
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+        </item> <!-- Turnstile -->
+        <item name="Full-Height Turnstile" icon="${barrier_full-height_turnstile}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=full-height_turnstile" />
+            <key key="barrier" value="full-height_turnstile" />
+            <reference ref="optional_maxheight_maxwidth" />
+            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
+            <space />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <preset_link preset_name="Access Restrictions" />
+        </item> <!-- Full-Height Turnstile -->
+        <item name="Wicket gate" icon="${barrier_wicket_gate}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=wicket_gate" />
+            <key key="barrier" value="wicket_gate" />
+            <reference ref="optional_maxwidth" />
+            <reference ref="check_access_nomotor" />
+        </item> <!-- Turnstile -->
+        <item name="Sally Port" icon="${barrier_sally_port}" type="node" preset_name_label="true">
+            <link wiki="Tag:barrier=sally_port" />
+            <key key="barrier" value="sally_port"/>
+            <reference ref="maxheight_maxwidth"/>
             <reference ref="vehicle_access" />
             <reference ref="check_access_nomotor" />
             <reference ref="check_access_motor" />
-            <preset_link preset_name="Access Restrictions" />
-        </item> <!-- Height resctrictor -->
+        </item> <!-- Sally Port -->
+        <separator/> <!-- end of highway access barriers -->
         <item name="Toll Booth" icon="${barrier_toll_booth}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:barrier=toll_booth"/>
             <key key="barrier" value="toll_booth"/>
@@ -3753,6 +3872,7 @@
                     <check key="payment:notes" text="Notes" text_context="payment" match="keyvalue" disable_off="true"/>
                     <check key="payment:e_zpass" text="E-ZPass" match="keyvalue" disable_off="true"/>
                     <check key="payment:license_plate" text="License plate" match="keyvalue" disable_off="true"/>
+                    <check key="payment:credit_cards" text="Credit cards" match="keyvalue" disable_off="true"/>
                 </checkgroup>
             </optional>
             <space />
@@ -3775,7 +3895,7 @@
             <reference ref="check_access_nomotor" />
             <reference ref="check_access_motor" />
         </item> <!-- Border Control -->
-        <separator/> <!-- *** Linear Barriers *** -->
+        <separator/> <!-- *** Start Linear Barriers *** -->
         <item name="Hedge" icon="${barrier_hedge}" type="way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:barrier=hedge"/>
             <key key="barrier" value="hedge"/>
@@ -3816,6 +3936,16 @@
             <key key="barrier" value="rope" />
             <reference ref="optional_height" />
         </item> <!-- Rope -->
+        <item name="Chain" icon="${barrier_chain}" type="node,way,closedway" preset_name_label="true">
+            <link wiki="Tag:barrier=chain" />
+            <key key="barrier" value="chain" />
+            <combo key="material" text="Material" values="metal,plastic" display_values="Metal,Plastic" values_context="material" />
+            <reference ref="optional_maxwidth" />
+            <reference ref="vehicle_access" />
+            <reference ref="check_access_nomotor" />
+            <reference ref="check_access_motor" />
+            <check key="locked" text="Usually locked"/>
+        </item> <!-- Chain -->
         <item name="Wall" icon="${barrier_wall}" type="way,multipolygon,closedway" preset_name_label="true">
             <link wiki="Tag:barrier=wall"/>
             <key key="barrier" value="wall"/>
@@ -3888,122 +4018,6 @@
             <reference ref="check_access_nomotor" />
             <reference ref="check_access_motor" />
         </item> <!-- Entrance (Barrier Opening) -->
-        <item name="Gate" icon="${barrier_gate}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=gate"/>
-            <key key="barrier" value="gate"/>
-            <optional>
-                <text key="ref" text="Reference"/>
-            </optional>
-            <reference ref="optional_maxheight_maxwidth"/>
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-            <reference ref="check_access_motor" />
-            <check key="locked" text="Usually locked"/>
-        </item> <!-- Gate -->
-        <item name="Lift Gate" icon="${barrier_lift_gate}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=lift_gate"/>
-            <key key="barrier" value="lift_gate"/>
-            <combo key="lift_gate:type" text="Type" values="single,double" display_values="Single,Double" values_context="lift_gate"/>
-            <reference ref="optional_maxheight_maxwidth"/>
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-            <reference ref="check_access_motor" />
-            <check key="locked" text="Usually locked"/>
-        </item> <!-- Lift Gate -->
-        <item name="Swing Gate" icon="${barrier_swing_gate}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=swing_gate"/>
-            <key key="barrier" value="swing_gate"/>
-            <combo key="swing_gate:type" text="Type" values="single,double" display_values="Single,Double" values_context="swing_gate"/>
-            <reference ref="optional_maxheight_maxwidth"/>
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-            <reference ref="check_access_motor" />
-            <check key="locked" text="Usually locked"/>
-        </item> <!-- Swing Gate -->
-        <item name="Hampshire Gate" icon="${barrier_hampshire_gate}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=hampshire_gate"/>
-            <key key="barrier" value="hampshire_gate"/>
-            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
-            <reference ref="optional_maxwidth"/>
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-            <reference ref="check_access_motor" />
-            <check key="locked" text="Usually locked"/>
-        </item> <!-- Hampshire Gate -->
-        <item name="Bump Gate" icon="${barrier_bump_gate}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=bump_gate" />
-            <key key="barrier" value="bump_gate" />
-            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
-            <reference ref="optional_maxwidth" />
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-            <reference ref="check_access_motor" />
-            <check key="locked" text="Usually locked"/>
-        </item> <!-- Bump Gate -->
-        <item name="Kissing Gate" icon="${barrier_kissing_gate}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=kissing_gate"/>
-            <key key="barrier" value="kissing_gate"/>
-            <reference ref="optional_maxwidth"/>
-            <space />
-            <label text="The tag `foot=yes` is implied and does not need to be set." />
-            <space />
-            <reference ref="check_access_nomotor" />
-            <check key="locked" text="Usually locked"/>
-        </item> <!-- Kissing Gate -->
-        <item name="Chain" icon="${barrier_chain}" type="node,way,closedway" preset_name_label="true">
-            <link wiki="Tag:barrier=chain" />
-            <key key="barrier" value="chain" />
-            <combo key="material" text="Material" values="metal,plastic" display_values="Metal,Plastic" values_context="material" />
-            <reference ref="optional_maxwidth" />
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-            <reference ref="check_access_motor" />
-            <check key="locked" text="Usually locked"/>
-        </item> <!-- Chain -->
-        <item name="Stile" icon="${barrier_stile}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=stile" />
-            <space/>
-            <key key="barrier" value="stile" />
-            <combo key="stile" text="Type" values="ladder,squeezer,stepover" display_values="Ladder,Squeezer,Stepover" values_searchable="true" />
-            <optional>
-                <combo key="material" text="Material" values="metal,stone,wood" display_values="Metal,Stone,Wood" values_context="material"/>
-            </optional>
-            <reference ref="optional_maxwidth" />
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-        </item> <!-- Stile -->
-        <item name="Turnstile" icon="${barrier_turnstile}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=turnstile" />
-            <key key="barrier" value="turnstile" />
-            <reference ref="optional_maxwidth" />
-            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-        </item> <!-- Turnstile -->
-        <item name="Full-Height Turnstile" icon="${barrier_full-height_turnstile}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=full-height_turnstile" />
-            <key key="barrier" value="full-height_turnstile" />
-            <reference ref="optional_maxheight_maxwidth" />
-            <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
-            <space />
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-            <preset_link preset_name="Access Restrictions" />
-        </item> <!-- Full-Height Turnstile -->
-        <item name="Wicket gate" icon="${barrier_wicket_gate}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=wicket_gate" />
-            <key key="barrier" value="wicket_gate" />
-            <reference ref="optional_maxwidth" />
-            <reference ref="check_access_nomotor" />
-        </item> <!-- Turnstile -->
-        <item name="Sally Port" icon="${barrier_sally_port}" type="node" preset_name_label="true">
-            <link wiki="Tag:barrier=sally_port" />
-            <key key="barrier" value="sally_port"/>
-            <reference ref="maxheight_maxwidth"/>
-            <reference ref="vehicle_access" />
-            <reference ref="check_access_nomotor" />
-            <reference ref="check_access_motor" />
-        </item> <!-- Sally Port -->
     </group> <!-- Barriers -->
     <group name="Passageways" icon="${passageways_group}">
         <item name="Tunnel" icon="${passageways_tunnel}" type="way" preset_name_label="true">
