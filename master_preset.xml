@@ -1482,6 +1482,19 @@
             <list_entry value="agricultural" display_value="Agricultural" short_description="Trees in agricultural use."/>
         </combo>
     </chunk>
+    <chunk id="tree_base">
+        <link wiki="Tag:natural=tree"/>
+        <key key="natural" value="tree"/>
+        <optional>
+            <text key="name" text="Name"/>
+        </optional>
+        <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
+        <text key="circumference" text="Circumference (meters)"/>
+        <reference ref="denotation" />
+        <optional>
+            <text key="diameter_crown" text="Crown diameter (meters)"/>    
+        </optional>
+    </chunk>
     <!-- start of religions and denominations -->
     <chunk id="religious"> <!-- all religions and denominations -->
         <combo key="religion" text="Religion"
@@ -13146,142 +13159,32 @@
     <group name="Land use and nature" icon="${landuse_natural_group}">
     <group name="Nature" icon="${natural_group}">
         <item name="Tree" icon="${natural_tree}" type="node" preset_name_label="true">
-            <link wiki="Tag:natural=tree"/>
             <space />
             <label text="A single tree."/>
             <space/>
-            <key key="natural" value="tree"/>
-            <optional>
-                <text key="name" text="Name"/>
-            </optional>
-            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
-            <text key="circumference" text="Circumference (meters)"/>
+            <reference ref="tree_base"/>
             <reference ref="genus_species_taxon"/>
-            <reference ref="leaf"/>
-            <optional>
-                <text key="diameter_crown" text="Crown diameter (meters)"/>
-            </optional>
-            <reference ref="denotation"/>
+            <reference ref="leaf"/> 
         </item> <!-- Tree -->
-        <item name="Peepal tree"
-              icon="${natural_tree}"
-              regions="IN"
-              type="node"
-              preset_name_label="true">
-            <link wiki="Tag:natural=tree"/>
-            <space />
-            <label text="A single tree."/>
-            <space/>
-            <key key="natural" value="tree"/>
+        <item name="Peepal tree" icon="${natural_tree}" regions="IN" type="node" preset_name_label="true">
+            <reference ref="tree_base"/>
             <key key="species" value="ficus religiosa"/>
             <key key="species:wikidata" value="Q3071706"/>
-            <optional>
-                <text key="name" text="Name"/>
-            </optional>
-            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
-            <text key="circumference" text="Circumference (meters)"/>
-            <reference ref="genus_species_taxon"/>
-            <reference ref="leaf"/>
-            <optional>
-                <text key="diameter_crown" text="Crown diameter (meters)"/>
-            </optional>
-            <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation">
-                <list_entry value="landmark" display_value="Landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation."/>
-                <list_entry value="natural_monument" display_value="Natural monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness."/>
-                <list_entry value="avenue" display_value="Avenue" short_description="Trees aligned along a road."/>
-                <list_entry value="urban" display_value="Urban" short_description="Trees found within settlements, e.g. in parks or spread through residential areas."/>
-                <list_entry value="agricultural" display_value="Agricultural" short_description="Trees in agricultural use."/>
-            </combo>
         </item> <!-- Peepal tree -->
-        <item name="Neem tree"
-              icon="${natural_tree}"
-              regions="IN"
-              type="node"
-              preset_name_label="true">
-            <link wiki="Tag:natural=tree"/>
-            <space />
-            <label text="A single tree."/>
-            <space/>
-            <key key="natural" value="tree"/>
+        <item name="Neem tree" icon="${natural_tree}" regions="IN" type="node" preset_name_label="true">
+            <reference ref="tree_base"/>
             <key key="species" value="azadirachta indica"/>
             <key key="species:wikidata" value="Q170461"/>
-            <optional>
-                <text key="name" text="Name"/>
-            </optional>
-            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
-            <text key="circumference" text="Circumference (meters)"/>
-            <reference ref="genus_species_taxon"/>
-            <reference ref="leaf"/>
-            <optional>
-                <text key="diameter_crown" text="Crown diameter (meters)"/>
-            </optional>
-            <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation">
-                <list_entry value="landmark" display_value="Landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation."/>
-                <list_entry value="natural_monument" display_value="Natural monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness."/>
-                <list_entry value="avenue" display_value="Avenue" short_description="Trees aligned along a road."/>
-                <list_entry value="urban" display_value="Urban" short_description="Trees found within settlements, e.g. in parks or spread through residential areas."/>
-                <list_entry value="agricultural" display_value="Agricultural" short_description="Trees in agricultural use."/>
-            </combo>
         </item> <!-- Neem tree -->
-        <item name="Ashok tree"
-              icon="${natural_tree}"
-              regions="IN"
-              type="node"
-              preset_name_label="true">
-            <link wiki="Tag:natural=tree"/>
-            <space />
-            <label text="A single tree."/>
-            <space/>
-            <key key="natural" value="tree"/>
+        <item name="Ashok tree" icon="${natural_tree}" regions="IN" type="node" preset_name_label="true">
+            <reference ref="tree_base"/>
             <key key="species" value="monoon longifolium"/>
             <key key="species:wikidata" value="Q42707873"/>
-            <optional>
-                <text key="name" text="Name"/>
-            </optional>
-            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
-            <text key="circumference" text="Circumference (meters)"/>
-            <reference ref="genus_species_taxon"/>
-            <reference ref="leaf"/>
-            <optional>
-                <text key="diameter_crown" text="Crown diameter (meters)"/>
-            </optional>
-            <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation">
-                <list_entry value="landmark" display_value="Landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation."/>
-                <list_entry value="natural_monument" display_value="Natural monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness."/>
-                <list_entry value="avenue" display_value="Avenue" short_description="Trees aligned along a road."/>
-                <list_entry value="urban" display_value="Urban" short_description="Trees found within settlements, e.g. in parks or spread through residential areas."/>
-                <list_entry value="agricultural" display_value="Agricultural" short_description="Trees in agricultural use."/>
-            </combo>
         </item> <!-- Ashok tree -->
-        <item name="Banyan tree"
-              icon="${natural_tree}"
-              regions="IN"
-              type="node"
-              preset_name_label="true">
-            <link wiki="Tag:natural=tree"/>
-            <space />
-            <label text="A single tree."/>
-            <space/>
-            <key key="natural" value="tree"/>
+        <item name="Banyan tree" icon="${natural_tree}" regions="IN" type="node" preset_name_label="true">
+            <reference ref="tree_base"/>
             <key key="species" value="ficus benghalensis"/>
             <key key="species:wikidata" value="Q1405636"/>
-            <optional>
-                <text key="name" text="Name"/>
-            </optional>
-            <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
-            <text key="circumference" text="Circumference (meters)"/>
-            <reference ref="genus_species_taxon"/>
-            <reference ref="leaf"/>
-            <optional>
-                <text key="diameter_crown" text="Crown diameter (meters)"/>
-            </optional>
-            <combo key="denotation" text="Denotation" values_searchable="true" values_context="tree denotation">
-                <list_entry value="landmark" display_value="Landmark" short_description="Trees remarkable due to its size or prominent location, usually visible from great distances and useful for navigation."/>
-                <list_entry value="natural_monument" display_value="Natural monument" short_description="Especially old tree, often with a particular shape. Usually protected for its uniqueness."/>
-                <list_entry value="avenue" display_value="Avenue" short_description="Trees aligned along a road."/>
-                <list_entry value="urban" display_value="Urban" short_description="Trees found within settlements, e.g. in parks or spread through residential areas."/>
-                <list_entry value="agricultural" display_value="Agricultural" short_description="Trees in agricultural use."/>
-            </combo>
         </item> <!-- Banyan tree -->
         <item name="Tree Row" icon="${natural_tree_row}" type="way" preset_name_label="true">
             <link wiki="Tag:natural=tree_row"/>
