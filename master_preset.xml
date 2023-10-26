@@ -2282,10 +2282,11 @@
         </checkgroup>
     </chunk>
     <chunk id="departures_board">
-        <multiselect key="departures_board">
+        <multiselect key="departures_board" text="Departures board" match="key">
             <list_entry value="yes" display_values="Available"/>
             <list_entry value="timetable" display_values="Timetable"/>
             <list_entry value="realtime" display_values="Realtime display"/>
+            <list_entry value="delay" display_values="Delay display"/>
             <list_entry value="no" display_values="None"/>
         </multiselect>
     </chunk>
