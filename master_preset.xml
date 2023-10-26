@@ -1209,8 +1209,8 @@
     <chunk id="post_office_optional">
         <optional>
             <reference ref="post_office"/>
+            <text key="post_office:brand" text="Postal services brand" />
         </optional>
-        <text key="post_office:brand" text="Postal services brand" />
     </chunk>
     <chunk id="internet">
         <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" display_values="Available,WLAN,Wired,Terminal,Not available" values_sort="false"/>
@@ -2283,11 +2283,11 @@
     </chunk>
     <chunk id="departures_board">
         <multiselect key="departures_board" text="Departures board" match="key">
-            <list_entry value="yes" display_values="Available"/>
-            <list_entry value="timetable" display_values="Timetable"/>
-            <list_entry value="realtime" display_values="Realtime display"/>
-            <list_entry value="delay" display_values="Delay display"/>
-            <list_entry value="no" display_values="None"/>
+            <list_entry value="yes" display_value="Available"/>
+            <list_entry value="timetable" display_value="Timetable"/>
+            <list_entry value="realtime" display_value="Realtime display"/>
+            <list_entry value="delay" display_value="Delay display"/>
+            <list_entry value="no" display_value="None"/>
         </multiselect>
     </chunk>
     <chunk id="platform">
