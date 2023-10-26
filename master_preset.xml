@@ -1205,12 +1205,12 @@
             <list_entry value="post_annex" short_description="Full post office operated by 3rd party"/>
             <list_entry value="post_partner" short_description="Postal services provided"/>
         </combo>
-        <text key="post_office:brand" text="Postal services brand" />
     </chunk>
     <chunk id="post_office_optional">
         <optional>
             <reference ref="post_office"/>
         </optional>
+        <text key="post_office:brand" text="Postal services brand" />
     </chunk>
     <chunk id="internet">
         <combo key="internet_access" text="Internet access" values="yes,wlan,wired,terminal,no" display_values="Available,WLAN,Wired,Terminal,Not available" values_sort="false"/>
