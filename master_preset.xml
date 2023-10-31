@@ -1422,6 +1422,11 @@
             <list_entry value="no" display_value="None" />
             <list_entry value="load-unload" display_value="Loading and unloading only" />
         </combo>
+        <combo key="maxstay:conditional" text="Time Limit" values_no_i18n="true" values_sort="false" match="none" editable="true">
+            <reference ref="maxstay_conditional_values"/>
+            <list_entry value="no @ (Mo-Fr 09:00-19:00)"/> 
+            <list_entry value="load-unload @ (Mo-Fr 09:00-19:00)"/> 
+        </combo>
     </chunk>
     <chunk id="supervised">
         <combo key="supervised" text="Supervised" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" values_i18n="false" values_sort="false" match="none" editable="true"/>
