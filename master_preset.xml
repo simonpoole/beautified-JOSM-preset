@@ -390,7 +390,7 @@
         <list_entry value="agricultural" display_value="Agricultural"/>
         <list_entry value="forestry" display_value="Forestry"/>
     </chunk>
-    <chunk id="conditional_vehicle_restriciton_values">
+    <chunk id="conditional_vehicle_restriction_values">
         <list_entry value="yes @ wet"/>
         <list_entry value="no @ dry"/>
         <list_entry value="destination @ rain"/>
@@ -4117,7 +4117,7 @@
             <space/>
             <reference ref="vehicle_access" />
             <combo key="vehicle:conditional" text="All vehicles @" long_text="Conditional restriction for all types of vehicles" delimiter="|" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>
+                <reference ref="conditional_vehicle_restriction_values"/>
             </combo>
             <reference ref="additional_access_tags"/>
         </item> <!-- All vehicles -->
@@ -4126,7 +4126,7 @@
             <space/>
             <reference ref="motor_vehicle_access" />
             <combo key="motor_vehicle:conditional" text="Motor vehicles @" long_text="Conditional restriction for motor vehicles" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>
+                <reference ref="conditional_vehicle_restriction_values"/>
             </combo>
             <reference ref="additional_access_tags"/>
         </item> <!-- Motor vehicle -->
@@ -4135,7 +4135,7 @@
             <space/>
             <reference ref="motor_vehicle_access" />
             <combo key="motor_vehicle:conditional" text="Motor vehicles @" long_text="Conditional restriction for motor vehicles" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>
+                <reference ref="conditional_vehicle_restriction_values"/>
             </combo>
             <reference ref="additional_access_tags"/>
         </item> <!-- Motor vehicle CH -->
@@ -4147,14 +4147,14 @@
                 <reference ref="purpose_based_access_values"/>
             </combo>
             <combo key="motorcar:conditional" text="Motorcar @" long_text="Conditional restriction for motorcars" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>
+                <reference ref="conditional_vehicle_restriction_values"/>
             </combo>
             <combo key="motorcycle" text="Motorcycle" values_context="access" values_sort="false" match="key">
                 <reference ref="base_access_values"/>
                 <reference ref="purpose_based_access_values"/>
             </combo>
             <combo key="motorcycle:conditional" text="Motorcycle @" long_text="Conditional restriction for motorcycles" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>
+                <reference ref="conditional_vehicle_restriction_values"/>
             </combo>
             <reference ref="additional_access_tags"/>
         </item> <!-- Motor vehicle -->
@@ -4166,7 +4166,7 @@
                 <reference ref="purpose_based_access_values"/>
             </combo>
             <combo key="motorcar:conditional" text="Motorcar @" long_text="Conditional restriction for motorcars" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>
+                <reference ref="conditional_vehicle_restriction_values"/>
             </combo>
             <reference ref="additional_access_tags"/>
         </item> <!-- Motorcar -->
@@ -4178,7 +4178,7 @@
                 <reference ref="purpose_based_access_values"/>
             </combo>
             <combo key="motorcycle:conditional" text="Motorcycle @" long_text="Conditional restriction for motorcycles" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>
+                <reference ref="conditional_vehicle_restriction_values"/>
             </combo>
             <reference ref="additional_access_tags"/>
         </item> <!-- Motorcycles -->
@@ -4190,7 +4190,7 @@
                 <reference ref="purpose_based_access_values"/>
             </combo>
             <combo key="hgv:conditional" text="HGV @" long_text="Conditional restriction for heavy goods vehicles" delimiter="|" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>
+                <reference ref="conditional_vehicle_restriction_values"/>
             </combo>
             <text key="maxspeed:hgv" text="Max. speed HGV" long_text="Maximum speed for heavy goods vehicles specified in km/h" match="key"/>
             <combo key="maxspeed:hgv:conditional" text="Max speed HGV @" values_sort="false" match="key">
@@ -4214,7 +4214,7 @@
                 <reference ref="purpose_based_access_values"/>
             </combo>
             <combo key="access:conditional" text="General access @" values_sort="false" match="key">
-                <reference ref="conditional_vehicle_restriciton_values"/>    
+                <reference ref="conditional_vehicle_restriction_values"/>    
             </combo>
         </item> <!-- General access -->
         <item name="Physical restrictions" icon="${access_maximum_width}" type="node,way,closedway,multipolygon,relation" preset_name_label="true">
@@ -8463,7 +8463,7 @@
             </optional>
         </item> <!-- Shower -->
         <item name="Dressing room" icon="${amenity_dressing_room}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=dressing_rooom"/>
+            <link wiki="Tag:amenity=dressing_room"/>
             <space/>
             <key key="amenity" value="dressing_room"/>
             <reference ref="facility_access"/>
