@@ -2328,6 +2328,19 @@
         </multiselect>
     </chunk>
     <chunk id="platform">
+        <text key="name" text="Name"/>
+        <checkgroup text="Transportation type" columns="3">
+          <check key="bus" text="Bus" disable_off="true"/>
+          <check key="tram" text="Tram" disable_off="true"/>
+          <check key="train" text="Train" disable_off="true"/>
+          <check key="trolleybus" text="Trolleybus" disable_off="true"/>
+          <check key="share_taxi" text="Share taxi" disable_off="true"/>
+          <check key="subway" text="Subway" disable_off="true"/>
+          <check key="monorail" text="Monorail" disable_off="true"/>
+          <check key="funicular" text="Funicular" disable_off="true"/>
+          <check key="aerialway" text="Aerialway" disable_off="true"/>
+          <check key="ferry" text="Ferry" disable_off="true"/>
+        </checkgroup>
         <check key="bench" text="Bench" />
         <check key="shelter" text="Shelter" />
         <check key="covered" text="Covered"/>
@@ -2338,25 +2351,12 @@
         <reference ref="wheelchair"/>
         <reference ref="tactile_paving"/>
         <optional>
-            <text key="name" text="Name"/>
             <text key="ref" text="Reference"/>
             <text key="uic_ref" text="UIC reference"/>
             <text key="uic_name" text="UIC name"/>
             <text key="operator" text="Operator"/>
             <text key="network" text="Network"/>
             <space/>
-            <checkgroup text="Transportation type" columns="3">
-                <check key="bus" text="Bus" disable_off="true"/>
-                <check key="tram" text="Tram" disable_off="true"/>
-                <check key="train" text="Train" disable_off="true"/>
-                <check key="trolleybus" text="Trolleybus" disable_off="true"/>
-                <check key="share_taxi" text="Share taxi" disable_off="true"/>
-                <check key="subway" text="Subway" disable_off="true"/>
-                <check key="monorail" text="Monorail" disable_off="true"/>
-                <check key="funicular" text="Funicular" disable_off="true"/>
-                <check key="aerialway" text="Aerialway" disable_off="true"/>
-                <check key="ferry" text="Ferry" disable_off="true"/>
-            </checkgroup>
         </optional>
     </chunk>
     <chunk id="backrest">
