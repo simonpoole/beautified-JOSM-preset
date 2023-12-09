@@ -5768,10 +5768,12 @@
                 <space/>
                 <key key="public_transport" value="platform"/>
                 <reference ref="platform"/>
-                <checkgroup text="Legacy stop types" columns="2">
+                <optional>
+                  <checkgroup text="Legacy stop types" columns="2">
                     <check key="highway" value_on="bus_stop" text="Bus stop" disable_off="true"/>
                     <check key="railway" value_on="tram_stop" text="Tram stop" disable_off="true"/>
-                </checkgroup>
+                  </checkgroup>
+                </optional>
             </item> <!-- Platform -->
             <item name="Station" name_context="railway" type="node,closedway,multipolygon" icon="${public_transport_train_station}" preset_name_label="true">
                 <link wiki="Tag:public_transport=station"/>
