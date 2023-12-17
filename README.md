@@ -38,8 +38,9 @@ these will always return the current release of the specified file.
 
 Vespucci uses JOSM-style tagging presets defined in an XML config file (`master_preset.xml`). Read about the format here:
 
-- https://wiki.openstreetmap.org/wiki/Customising_JOSM_Presets
-- https://josm.openstreetmap.de/wiki/TaggingPresets
+https://wiki.openstreetmap.org/wiki/Customising_JOSM_Presets
+
+https://josm.openstreetmap.de/wiki/TaggingPresets
 
 However, Vespucci ignores some settings and adds some of its own. Differences to the original JOSM schema are documented on the [Vespucci site](http://vespucci.io/tutorials/presets/). Note that the build process creates preset files that can be used both with Vespucci and JOSM.
 
