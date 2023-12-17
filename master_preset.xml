@@ -3325,6 +3325,19 @@
             <preset_link preset_name="Arcade"/>
             <preset_link preset_name="Colonnade"/>
         </item> <!-- Steps -->
+        <item name="Ladder" icon="${highway_ladder}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:highway=ladder"/>
+            <key key="highway" value="ladder"/>
+            <optional>
+                <reference ref="layer"/>
+                <reference ref="material"/>
+                <text key="step_count" text="Number of steps"/>
+                <reference ref="incline"/>
+                <check key="lit" text="Lit" disable_off="true"/>
+                <text key="height" text="Height (meters)" value_type="dimension_vertical"/>
+                <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
+            </optional>
+        </item> <!-- Ladder -->
     </group> <!-- Ways -->
     <group name="Waypoints" icon="${highway_way_points_group}">
         <item name="Motorway Junction" icon="${highway_motorway_junction}" type="node" preset_name_label="true">
