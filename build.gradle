@@ -444,6 +444,12 @@ _josm_preset_orig_icons.xml_ - current preset for JOSM using icons distributed w
 _vespucci_preset_build_v5.xml_ - current preset for building Vespucci 19 and later
 _vespucci_preset_build.xml_ - current preset for building Vespucci pre version 19
 _vespucci_icons.zip_ - icons from this project
+
+## URLs
+
+You can link to the files, for example for inclusion in JOSM, by using URLs of the form 
+https&#58;//github&#46;com/simonpoole/beautified-JOSM-preset/releases/latest/download/_filename_ 
+these will always return the current release of the specified file. 
     
 """
 }

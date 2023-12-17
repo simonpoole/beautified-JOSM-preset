@@ -12,7 +12,7 @@ The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/intro
 
 The links to original icons remain if they currently don't have a replacement, current count is roughly 90 icons that either have not been replaced or are missing.
 
-To make using the presets easier with the original JOSM icons we've added one level of indirection in that instead of directly containing a reference to an icon, we reference entries in beautified_icons.mapping and josm_icons.mapping that contain references to our and JOSM icons respectively.
+To make using the presets easier with the original JOSM icons we've added one level of indirection in that instead of directly containing a reference to an icon, we reference entries in _beautified_icons.mapping_ and _josm_icons.mapping_ that contain references to our and JOSM icons respectively.
 
 ## Count of object presets
 
@@ -21,6 +21,16 @@ The preset file contained at last count a good 1'000 individual object presets v
 ## Exclusion of military objects
 
 Due to the touchy nature of the subject, presets for military objects have been moved out of the default preset to [military preset](http://simonpoole.github.io/military-preset/).
+
+## Using in JOSM
+
+You can link to the presets by using one of
+ 
+https&#58;//github&#46;com/simonpoole/beautified-JOSM-preset/releases/latest/download/josm.zip 
+
+https&#58;//github&#46;com/simonpoole/beautified-JOSM-preset/releases/latest/download/josm_orig_icons.zip (for a version that uses the JOSM icons) 
+
+these will always return the current release of the specified file. 
 
 ## Information for developers
 
@@ -47,4 +57,4 @@ The presets are being translated on transifex [here](https://app.transifex.com/o
 
 ## Information on updates
 
-Please follow us on [twitter](https://twitter.com/search?q=vespucci_editor) for updates.
+Please follow us on [mastodon](https://en.osm.town/@vespucci_editor) for updates.
