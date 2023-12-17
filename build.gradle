@@ -8,7 +8,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "com.github.breadmoirai:github-release:2.4.1"
+        classpath "com.github.breadmoirai:github-release:2.5.2"
     }
 }
 
@@ -421,12 +421,12 @@ task generatePngs (dependsOn: ["recolour"]) {
 
 githubRelease {
 	token project.ext.githubToken == null ? "" : project.ext.githubToken    
-    owner "simonpoole"
-    tagName project.ext.version
-    releaseName project.ext.version
-    targetCommitish "master" 
-    generateReleaseNotes true 
-    body provider { """\
+    owner = "simonpoole"
+    tagName = project.ext.version
+    releaseName = project.ext.version
+    targetCommitish = "master" 
+    generateReleaseNotes = true 
+    body = provider { """\
 ## Files
     
 ### Vespucci
@@ -454,7 +454,7 @@ these will always return the current release of the specified file.
 """
 }
     releaseAssets new File(buildDir, 'gen').listFiles()
-    overwrite true
+    overwrite = true
 }
 
 build {
