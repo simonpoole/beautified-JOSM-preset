@@ -10146,9 +10146,10 @@
             <link wiki="Tag:man_made=gantry"/>
             <space/>
             <key key="man_made" value="gantry"/>
+            <reference ref="layer" />
             <optional>
                 <text key="maxheight:physical" text="Max. clearance (meters)" value_type="dimension_vertical"/>
-                <reference ref="name_ref_operator"/>
+                <reference ref="name_ref_operator"/>              
             </optional>
         </item> <!-- Gantry -->
         <item name="Mineshaft" icon="${man_made_mineshaft}" type="node,closedway" preset_name_label="true">
