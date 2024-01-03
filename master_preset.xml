@@ -6453,7 +6453,7 @@
         </item> <!-- Diet -->
     </group> <!-- Food+Drinks -->
     <group name="Tourism" icon="${tourist_attraction}">
-        <item name="Attraction" icon="${tourist_attraction}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Attraction" icon="${tourist_attraction}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:tourism=attraction"/>
             <space/>
             <key key="tourism" value="attraction"/>
