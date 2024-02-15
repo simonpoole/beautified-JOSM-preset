@@ -2787,7 +2787,7 @@
             </optional>
             <reference ref="road_access_restrictions"/>
         </item> <!-- Road (Unknown Type) -->
-        <item name="Highway construction" icon="${highway_construction}" name_context="Highway" type="way,closedway" preset_name_label="true">
+        <item name="Road construction" icon="${highway_construction}" name_context="Highway" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:highway=construction"/>
             <key key="highway" value="construction"/>
             <combo key="construction" text="Highway type" values_sort="false" values_context="Highway">
@@ -2801,7 +2801,7 @@
                 <combo key="junction" text="Junction" values="roundabout,jughandle,yes"/>
             </optional>
             <reference ref="road_access_restrictions"/>
-        </item> <!-- Highway construction -->
+        </item> <!-- Road construction -->
         <separator/>
         <item name="Roundabout" icon="${highway_junction_roundabout}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Tag:junction=roundabout"/>
