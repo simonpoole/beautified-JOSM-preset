@@ -24,8 +24,6 @@ import static groovy.io.FileType.*
 import org.apache.tools.ant.filters.ReplaceTokens
 import de.undercouch.gradle.tasks.download.Download
 
-
-
 repositories {
     mavenCentral()
     mavenLocal()
@@ -43,7 +41,7 @@ ext {
     vespucci_preset_v5_file = 'vespucci_preset_v5.xml'
     vespucci_preset_build_file = 'vespucci_preset_build.xml'
     vespucci_preset_build_v5_file = 'vespucci_preset_build_v5.xml'
-    vespucci_preset_version = '1.16'
+    vespucci_preset_version = '1.17'
     generated = 'build/gen/'
     generatedDir = file(generated)
     tempDir = file('build/temp/')
@@ -57,7 +55,7 @@ configurations {
 }
 
 dependencies {
-    resoveableRuntimeOnly 'ch.poole:preset-utils:0.38.0'
+    resoveableRuntimeOnly 'ch.poole:preset-utils:0.39.0'
 }
 
 def loadProperties = { filename -> 
