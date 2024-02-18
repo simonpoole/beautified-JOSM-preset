@@ -5799,7 +5799,7 @@
                 <space/>
                 <key key="public_transport" value="platform"/>
                 <checkgroup text="Transportation type" columns="3">
-                  <check key="bus" text="Bus" default="on" match="keyvalue" disable_off="true"/>
+                  <check key="bus" text="Bus" default="on" match="keyvalue!" disable_off="true"/>
                   <check key="tram" text="Tram" disable_off="true"/>
                   <check key="train" text="Train" disable_off="true"/>
                   <check key="trolleybus" text="Trolleybus" disable_off="true"/>
@@ -5818,7 +5818,7 @@
                 <space/>
                 <key key="public_transport" value="station"/>
                 <checkgroup text="Transportation type" columns="3">
-                  <check key="bus" text="Bus" default="on" match="keyvalue" disable_off="true"/>
+                  <check key="bus" text="Bus" default="on" match="keyvalue!" disable_off="true"/>
                   <check key="tram" text="Tram" disable_off="true"/>
                   <check key="train" text="Train" disable_off="true"/>
                   <check key="trolleybus" text="Trolleybus" disable_off="true"/>
@@ -5868,7 +5868,7 @@
                 <checkgroup text="Transportation type" columns="3">
                   <check key="bus" text="Bus" disable_off="true"/>
                   <check key="tram" text="Tram" disable_off="true"/>
-                  <check key="train" text="Train" default="on" match="keyvalue" disable_off="true"/>
+                  <check key="train" text="Train" default="on" match="keyvalue!" disable_off="true"/>
                   <check key="trolleybus" text="Trolleybus" disable_off="true"/>
                   <check key="share_taxi" text="Share taxi" disable_off="true"/>
                   <check key="subway" text="Subway" disable_off="true"/>
@@ -5887,7 +5887,7 @@
                 <checkgroup text="Transportation type" columns="3">
                   <check key="bus" text="Bus" disable_off="true"/>
                   <check key="tram" text="Tram" disable_off="true"/>
-                  <check key="train" text="Train" default="on" match="keyvalue" disable_off="true"/>
+                  <check key="train" text="Train" default="on" match="keyvalue!" disable_off="true"/>
                   <check key="trolleybus" text="Trolleybus" disable_off="true"/>
                   <check key="share_taxi" text="Share taxi" disable_off="true"/>
                   <check key="subway" text="Subway" disable_off="true"/>
@@ -5919,7 +5919,7 @@
                   <check key="train" text="Train" disable_off="true"/>
                   <check key="trolleybus" text="Trolleybus" disable_off="true"/>
                   <check key="share_taxi" text="Share taxi" disable_off="true"/>
-                  <check key="subway" text="Subway" default="on" match="keyvalue" disable_off="true"/>
+                  <check key="subway" text="Subway" default="on" match="keyvalue!" disable_off="true"/>
                   <check key="monorail" text="Monorail" disable_off="true"/>
                   <check key="funicular" text="Funicular" disable_off="true"/>
                   <check key="aerialway" text="Aerialway" disable_off="true"/>
@@ -5939,7 +5939,7 @@
                   <check key="train" text="Train" disable_off="true"/>
                   <check key="trolleybus" text="Trolleybus" disable_off="true"/>
                   <check key="share_taxi" text="Share taxi" disable_off="true"/>
-                  <check key="subway" text="Subway" default="on" match="keyvalue" disable_off="true"/>
+                  <check key="subway" text="Subway" default="on" match="keyvalue!" disable_off="true"/>
                   <check key="monorail" text="Monorail" disable_off="true"/>
                   <check key="funicular" text="Funicular" disable_off="true"/>
                   <check key="aerialway" text="Aerialway" disable_off="true"/>
