@@ -13,7 +13,7 @@ buildscript {
 }
 
 plugins {
-    id "de.undercouch.download" version "4.1.2"
+    id "de.undercouch.download" version "4.1.0"
 }
 
 apply plugin: 'java'
@@ -30,7 +30,7 @@ repositories {
 }
 
 ext {
-    version = '5.34.0'
+    version = '5.35.0'
     preset_file = 'master_preset.xml'
     mapped_josm_preset_file = 'mapped_josm_preset.xml'
     mapped_vespucci_preset_file = 'mapped_vespucci_preset.xml'
