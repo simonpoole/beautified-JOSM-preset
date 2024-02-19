@@ -8760,8 +8760,8 @@
                 <reference ref="name_operator_oh_wheelchair" />
             </optional>
         </item> <!-- Outdoor seating -->
-        <item name="Lounger" icon="${amenity_lounger}" type="node,way" preset_name_label="true">
-            <link wiki="Tag:amenity=launger"/>
+        <item name="Lounger" icon="${amenity_lounger}" type="node,way,closedway" preset_name_label="true">
+            <link wiki="Tag:amenity=lounger"/>
             <space/>
             <key key="amenity" value="lounger"/>
             <multiselect key="seasonal" text="Seasonal" values="yes;no;spring;summer;autumn;winter;dry_season;wet_season"
