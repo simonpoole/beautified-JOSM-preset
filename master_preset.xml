@@ -11599,7 +11599,7 @@
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Herbalist -->
         <separator/>
-        <item name="Public Market" icon="${shopping_marketplace}" type="node,way,closedway" preset_name_label="true">
+        <item name="Public Market" icon="${shopping_marketplace}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=marketplace"/>
             <space/>
             <key key="amenity" value="marketplace"/>
