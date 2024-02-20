@@ -2328,6 +2328,9 @@
         </multiselect>
     </chunk>
     <chunk id="platform">
+        <link wiki="Proposed_features/Public_Transport#Platform"/>
+        <space/>
+        <key key="public_transport" value="platform"/>
         <text key="name" text="Name"/>
         <checkgroup text="Transportation type" columns="3">
           <check key="bus" text="Bus" disable_off="true"/>
@@ -5765,9 +5768,6 @@
                 </checkgroup>
             </item> <!-- Stop Position -->
             <item name="Platform" type="node,way,closedway,multipolygon" icon="${public_transport_platform}" preset_name_label="true">
-                <link wiki="Proposed_features/Public_Transport#Platform"/>
-                <space/>
-                <key key="public_transport" value="platform"/>
                 <reference ref="platform"/>
                 <optional>
                   <checkgroup text="Legacy stop types" columns="2">
@@ -5795,9 +5795,7 @@
 
             <separator/> <!-- *** Road-based modes *** -->
             <item name="Bus stop" type="node,way,closedway,multipolygon" icon="transport_platform_32003.png" preset_name_label="true">
-                <link wiki="Proposed_features/Public_Transport#Platform"/>
-                <space/>
-                <key key="public_transport" value="platform"/>
+                <reference ref="platform"/>
                 <checkgroup text="Transportation type" columns="3">
                   <check key="bus" text="Bus" default="on" match="keyvalue!" disable_off="true"/>
                   <check key="tram" text="Tram" disable_off="true"/>
@@ -5811,7 +5809,6 @@
                   <check key="ferry" text="Ferry" disable_off="true"/>
                 </checkgroup>
                 <text key="name" text="Name"/>
-                <reference ref="platform"/>
             </item> <!-- Bus stop -->
             <item name="Bus station" type="node,closedway,multipolygon" icon="transport_bus_station.png" preset_name_label="true">
                 <link wiki="Tag:public_transport=station"/>
@@ -5842,9 +5839,7 @@
                 </optional>
             </item> <!-- Bus station -->
             <item name="Share taxi stop" type="node,way,closedway,multipolygon" icon="transport_platform_32003.png" preset_name_label="true">
-                <link wiki="Proposed_features/Public_Transport#Platform"/>
-                <space/>
-                <key key="public_transport" value="platform"/>
+                <reference ref="platform"/>
                 <checkgroup text="Transportation type" columns="3">
                   <check key="bus" text="Bus" disable_off="true"/>
                   <check key="tram" text="Tram" disable_off="true"/>
@@ -5862,9 +5857,7 @@
 
             <separator/> <!-- *** Railway-based modes *** -->
             <item name="Railway platform" type="node,way,closedway,multipolygon" icon="transport_platform_32003.png" preset_name_label="true">
-                <link wiki="Proposed_features/Public_Transport#Platform"/>
-                <space/>
-                <key key="public_transport" value="platform"/>
+                <reference ref="platform"/>
                 <checkgroup text="Transportation type" columns="3">
                   <check key="bus" text="Bus" disable_off="true"/>
                   <check key="tram" text="Tram" disable_off="true"/>
@@ -5878,7 +5871,6 @@
                   <check key="ferry" text="Ferry" disable_off="true"/>
                 </checkgroup>
                 <text key="ref" text="Reference"/>
-                <reference ref="platform"/>
             </item> <!-- Railway platform -->
             <item name="Railway station" name_context="railway" type="node,closedway,multipolygon" icon="transport_train_station2.png" preset_name_label="true">
                 <link wiki="Tag:public_transport=station"/>
@@ -5910,9 +5902,7 @@
                 </optional>
             </item> <!-- Railway station -->
             <item name="Subway platform" type="node,way,closedway,multipolygon" icon="transport_platform_32003.png" preset_name_label="true">
-                <link wiki="Proposed_features/Public_Transport#Platform"/>
-                <space/>
-                <key key="public_transport" value="platform"/>
+                <reference ref="platform"/>
                 <checkgroup text="Transportation type" columns="3">
                   <check key="bus" text="Bus" disable_off="true"/>
                   <check key="tram" text="Tram" disable_off="true"/>
@@ -5926,7 +5916,6 @@
                   <check key="ferry" text="Ferry" disable_off="true"/>
                 </checkgroup>
                 <text key="ref" text="Reference"/>
-                <reference ref="platform"/>
             </item> <!-- Subway platform -->
             <item name="Subway station" name_context="railway" type="node,closedway,multipolygon" icon="transport_train_station2.png" preset_name_label="true">
                 <link wiki="Tag:public_transport=station"/>
