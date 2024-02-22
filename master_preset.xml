@@ -4108,7 +4108,7 @@
                 <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Arcade -->
-        <item name="Colonnade" icon="${passageways_colonade}" type="way" preset_name_label="true">
+        <item name="Colonnade" icon="${passageways_colonnade}" type="way" preset_name_label="true">
             <link wiki="Key:covered"/>
             <space/>
             <key key="covered" value="colonnade" match="none"/>
