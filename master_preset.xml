@@ -5832,7 +5832,7 @@
                   <check key="ferry" text="Ferry" disable_off="true"/>
                 </checkgroup>
             </item> <!-- Bus station -->
-            <item name="Share taxi stop" type="node,way,closedway,multipolygon" icon="transport_platform_32003.png" preset_name_label="true">
+            <item name="Share taxi stop" type="node,way,closedway,multipolygon" icon="${public_transport_share_taxi_stop}" preset_name_label="true">
                 <reference ref="platform"/>
                 <checkgroup text="Transportation type" columns="3">
                   <check key="bus" text="Bus" disable_off="true"/>
