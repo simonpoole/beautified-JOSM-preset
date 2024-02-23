@@ -5898,7 +5898,7 @@
                 </checkgroup>
                 <text key="ref" text="Reference"/>
             </item> <!-- Subway platform -->
-            <item name="Subway station" name_context="railway" type="node,closedway,multipolygon" icon="transport_train_station2.png" preset_name_label="true">
+            <item name="Subway station" name_context="railway" type="node,closedway,multipolygon" icon="${public_transport_subway_station}" preset_name_label="true">
                 <reference ref="station"/>
                 <checkgroup text="Transportation type" columns="3">
                   <check key="bus" text="Bus" disable_off="true"/>
