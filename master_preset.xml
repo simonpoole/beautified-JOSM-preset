@@ -3541,6 +3541,14 @@
         <item name="Turning Circle" icon="${highway_turning_circle}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=turning_circle"/>
             <key key="highway" value="turning_circle"/>
+            <combo key="turning_circle" text="Shape" values_context="highway" >
+                <list_entry value="circle" short_description="Circle"/>
+                <list_entry value="oval" short_description="Oval"/>
+                <list_entry value="knuckle" short_description="Knuckle"/>
+                <list_entry value="hammer" short_description="Hammer"/>
+                <list_entry value="square" short_description="Square"/>
+            </combo>
+            <text key="diameter" text="Diameter in meters" value_type="dimension_vertical" />
         </item> <!-- Turning Circle -->
         <item name="Turning Loop" icon="${highway_turning_loop}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=turning_loop"/>
