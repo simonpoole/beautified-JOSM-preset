@@ -14612,6 +14612,7 @@
                 <role key="main_stream" text="waterways (no riverbank)" requisite="optional" type="way" member_expression="waterway -waterway:riverbank"/>
                 <role key="side_stream" text="branch waterways (no riverbank)" requisite="optional" type="way" member_expression="waterway -waterway:riverbank"/>
                 <role key="spring" text="spring of waterway" requisite="optional" type="node"/>
+                <role key="mouth" text="place where waterway ends" requisite="optional" type="node" />
             </roles>
         </item> <!-- Waterway -->
         <item name="Bridge" icon="${relation_bridge}" type="relation" preset_name_label="true">
