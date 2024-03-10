@@ -802,6 +802,19 @@
         <combo key="gauge" text="Gauge (mm)" values="1676,1668,1638,1600,1588,1581,1524,1520,1495,1458,1450,1435,1372,1219,1067,1000,914,900,891,762,760,750,610,600" length="4"/>
         <reference ref="railway_electrified"/>
     </chunk>
+    <chunk id="railway_base">
+        <optional>
+            <space/>
+            <check key="bridge" text="Bridge" disable_off="true"/>
+            <text key="bridge:name" text="Bridge name" />
+            <reference ref="bridge_details"/>
+            <space/>
+            <reference ref="tunnel"/>
+            <reference ref="layer"/>
+            <check key="cutting" text="Cutting" disable_off="true"/>
+            <check key="embankment" text="Embankment" disable_off="true"/>
+        </optional>
+    </chunk>
     <chunk id="traffic_signals_direction">
         <combo key="direction" text="For traffic direction" values="N,E,S,W,0,90,180,270,forward,backward"
                display_values="North,East,South,West,0°,90°,180°,270°,Forward,Backward" values_sort="false" />
@@ -4988,6 +5001,7 @@
                     <reference ref="railway_service_gauge_electrified"/>
                     <check key="highspeed" text="Highspeed" disable_off="true"/>
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Rail -->
             <item name="Narrow Gauge Rail" icon="${transport_railway_narrow_gauge}" type="way" preset_name_label="true">
                 <link wiki="Tag:railway=narrow_gauge"/>
@@ -4999,6 +5013,7 @@
                      <combo key="gauge" text="Gauge (mm)" values="1372,1219,1067,1000,914,900,891,762,760,750,610,600" length="4" />
                      <reference ref="railway_electrified" />
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Narrow Gauge Rail -->
             <item name="Monorail" icon="${transport_railway_monorail}" type="way" preset_name_label="true">
                 <link wiki="Tag:railway=monorail"/>
@@ -5014,6 +5029,7 @@
                 <optional>
                     <reference ref="railway_service_gauge_electrified"/>
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Preserved -->
             <item name="Light Rail" icon="${transport_railway_light_rail}" type="way" preset_name_label="true">
                 <link wiki="Tag:railway=light_rail"/>
@@ -5021,6 +5037,7 @@
                 <optional>
                     <reference ref="railway_service_gauge_electrified"/>
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Light Rail -->
             <item name="Subway" icon="${transport_railway_subway}" type="way" preset_name_label="true">
                 <link wiki="Tag:railway=subway"/>
@@ -5035,6 +5052,7 @@
                 <optional>
                     <reference ref="railway_service_gauge_electrified"/>
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Tram -->
             <item name="Funicular" icon="${transport_railway_funicular}" type="way" preset_name_label="true">
                 <link wiki="Tag:railway=funicular"/>
@@ -5074,6 +5092,7 @@
                     <combo key="usage" text="Usage" values="main,branch,industrial,military,tourism,freight" display_values="Main,Branch,Industrial,Military,Tourism,Freight" values_context="railway"/>
                     <reference ref="railway_service_gauge_electrified" />
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Railway construction -->
             <item name="Disused Rail" icon="${transport_railway_disused}" type="way" preset_name_label="true">
                 <link wiki="Tag:railway=disused"/>
@@ -5082,6 +5101,7 @@
                     <reference ref="railway_service"/>
                     <reference ref="layer" />
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Disused Rail -->
             <item name="Abandoned Rail" icon="${transport_railway_abandoned}" type="way" preset_name_label="true">
                 <link wiki="Tag:railway=abandoned"/>
@@ -5090,6 +5110,7 @@
                     <reference ref="railway_service"/>
                     <reference ref="layer" />
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Abandoned Rail -->
             <item name="Level Crossing" icon="${transport_railway_level_crossing}" type="node" preset_name_label="true">
                 <link wiki="Tag:railway=level_crossing"/>
