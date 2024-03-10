@@ -5199,6 +5199,7 @@
                 <key key="aerialway" value="chair_lift"/>
                 <reference ref="name_ref"/>
                 <reference ref="oh"/>
+                <check key="oneway" text="Bidirectional" value_on="no" disable_off="true"/>
                 <optional>
                     <reference ref="additonal_aerialway_tags_with_bubble"/>
                 </optional>
