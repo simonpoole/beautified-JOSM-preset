@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="5.37.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="5.38.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,harbour,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom">
 <!--
@@ -787,6 +787,16 @@
             <list_entry value="pictograms" short_description="Pictograms" icon="${crossing_markings_pictograms}"/>
         </multiselect>
      </chunk>
+     <chunk id="bridge_details">
+        <combo key="bridge" text="Bridge" values="aqueduct,boardwalk,cantilever,covered,low_water_crossing,trestle,viaduct,yes" 
+            display_values="Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct,Yes" default="yes" match="keyvalue!" values_context="bridge"/>
+        <combo key="bridge:structure" text="Structure" values="arch,beam,truss,floating,suspension,cable-stayed,simple-suspension,humpback" 
+            display_values="Arch,Beam,Truss,Floating,Suspension,Cable-stayed,Simple suspension,Humpback" match="key" values_context="bridge"/>
+        <combo key="bridge:movable" text="Moveable bridge type" values="bascule,drawbridge,lift,submersible,swing,transporter,retractable,tilt" 
+            display_values="Bascule,Drawbridge,Lift,Submersible,Swing,Transporter,Retractable,Tilt" match="key" values_context="bridge"/>
+        <combo key="bridge:support" text="Bridge support type" values="pier,abutment,lift_pier,pivot_pier,pylon" 
+            display_values="Pier,Abutment,Lift pier,Pivot pier,Pylon" match="key" values_context="bridge" />
+    </chunk>
     <chunk id="railway_service">
         <combo key="service" text="Service type" values="yard,siding,spur,crossover" display_values="Yard,Siding,Spur,Crossover" values_context="railway" />
     </chunk>
@@ -1759,16 +1769,6 @@
     </chunk>
     <chunk id="telecom_medium">
         <combo key="telecom:medium" text="Local loop type" values="copper,fibre,coaxial" display_values="Copper,Fibre,Coaxial" values_context="telecom" />
-    </chunk>
-    <chunk id="bridge_details">
-        <combo key="bridge" text="Bridge" values="aqueduct,boardwalk,cantilever,covered,low_water_crossing,trestle,viaduct,yes" 
-            display_values="Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct,Yes" default="yes" match="keyvalue!" values_context="bridge"/>
-        <combo key="bridge:structure" text="Structure" values="arch,beam,truss,floating,suspension,cable-stayed,simple-suspension,humpback" 
-            display_values="Arch,Beam,Truss,Floating,Suspension,Cable-stayed,Simple suspension,Humpback" match="key" values_context="bridge"/>
-        <combo key="bridge:movable" text="Moveable bridge type" values="bascule,drawbridge,lift,submersible,swing,transporter,retractable,tilt" 
-            display_values="Bascule,Drawbridge,Lift,Submersible,Swing,Transporter,Retractable,Tilt" match="key" values_context="bridge"/>
-        <combo key="bridge:support" text="Bridge support type" values="pier,abutment,lift_pier,pivot_pier,pylon" 
-            display_values="Pier,Abutment,Lift pier,Pivot pier,Pylon" match="key" values_context="bridge" />
     </chunk>
     <chunk id="maxweight">
         <text key="maxweight" text="Max. weight (tonnes)" match="key" />
