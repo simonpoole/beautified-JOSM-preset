@@ -9398,6 +9398,21 @@
             <space/>
             <key key="sport" value="athletics"/>
             <text key="name" text="Name"/>
+            <optional>
+                <multiselect key="athletics" text="Type" values_searchable="true" match="key"> 
+                    <list_entry value="discus_throw" display_value="Discus throw" />
+                    <list_entry value="hammer_throw" display_value="Hammer throw" />
+                    <list_entry value="high_jump" display_value="High jump" />
+                    <list_entry value="javelin_throw" display_value="Javelin throw" />
+                    <list_entry value="long_jump" display_value="Long jump" />
+                    <list_entry value="pole_vault" display_value="Pole vault" />
+                    <list_entry value="running" display_value="Running" />
+                    <list_entry value="shot_put" display_value="Shot put" />
+                    <list_entry value="sprint" display_value="Sprint" />
+                    <list_entry value="steeplechase" display_value="Steeplechase" />
+                    <list_entry value="triple_jump" display_value="Triple jump" />
+                </multiselect>
+            </optional>
             <reference ref="sport_facility_track"/>
             <reference ref="sport_surface" />
             <reference ref="oh"/>
