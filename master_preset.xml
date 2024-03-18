@@ -6122,6 +6122,14 @@
             <link wiki="Tag:amenity=taxi"/>
             <space/>
             <key key="amenity" value="taxi"/>
+            <optional>
+                <multiselect key="taxi_vehicle" text="Vehicle tyoe" values_searchable="true">
+                    <list_entry value="auto_rickshaw" display_value="Auto rickshaw"/>
+                    <list_entry value="cycle_rickshaw" display_value="Cycle rickshaw"/>
+                    <list_entry value="motorcar" display_value="Car"/>
+                    <list_entry value="motorcycle" display_value="Motorcycle"/>
+                </multiselect>
+            </optional>
             <reference ref="optional_name"/>
         </item> <!-- Taxi -->
         <separator/>
