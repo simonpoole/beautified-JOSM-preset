@@ -12559,6 +12559,8 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Agricultural supplies" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Country store" text="Similar but different tags:" alternative="true" />
         </item> <!-- Agricultural supplies -->
         <item name="Agricultural supplies" icon="${shopping_agricultural_supplies}" type="node,closedway,multipolygon" preset_name_label="true" deprecated="true">
             <link wiki="Tag:shop=agrarian"/>
@@ -12568,7 +12570,17 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Country store" text="Similar but different tags:" alternative="true" />
         </item> <!-- Agricultural supplies -->
+        <item name="Country store" icon="${shopping_country_store}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=country_store"/>
+            <space/>
+            <key key="shop" value="country_store"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="post_office_optional"/>
+            <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Agricultural supplies" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Country store -->
         <item name="Hairdresser supply" icon="${shopping_hairdresser}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=hairdresser_supply"/>
             <space/>
