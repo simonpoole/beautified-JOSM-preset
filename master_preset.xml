@@ -8728,13 +8728,21 @@
                 <reference ref="oh_wheelchair_level"/>
             </optional>
         </item> <!-- Lost property office -->
-        <item name="Smoking area" icon="${amenity_tobacco}" type="node,closedway" preset_name_label="true">
+        <separator/>
+        <item name="Smoking area" icon="${amenity_smoking_area}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:amenity=smoking_area"/>
             <space/>
             <key key="amenity" value="smoking_area"/>
             <reference ref="facility_access"/>
             <reference ref="level"/>
         </item> <!-- Smoking area -->
+        <item name="Hookah lounge" icon="${amenity_hookah_lounge}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:amenity=hookah_lounge"/>
+            <space/>
+            <key key="amenity" value="hookah_lounge"/>
+            <reference ref="facility_access"/>
+            <reference ref="level"/>
+        </item> <!-- Hookah lounge -->
         <separator/>
         <item name="Post Box" icon="${amenity_post_box}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=post_box"/>
