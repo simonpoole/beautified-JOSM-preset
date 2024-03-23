@@ -1540,6 +1540,14 @@
             <list_entry value="agricultural" display_value="Agricultural" short_description="Trees in agricultural use."/>
         </combo>
     </chunk>
+    <chunk id="tree_form">
+        <combo key="tree_form" text="Tree form" values_searchable="true" values_context="tree_form">
+            <list_entry value="natural" display_value="Natural" short_description="Uncropped."/>
+            <list_entry value="symmetric" display_value="Symmetric" short_description="Cropped in a symmetric fashion."/>
+            <list_entry value="pollard" display_value="Pollard" short_description="Pollard cropping."/>
+            <list_entry value="unbalanced" display_value="Unbalanced" />
+        </combo>
+    </chunk>
     <chunk id="tree_base">
         <link wiki="Tag:natural=tree"/>
         <key key="natural" value="tree"/>
@@ -1551,6 +1559,7 @@
         <reference ref="denotation" />
         <optional>
             <text key="diameter_crown" text="Crown diameter (meters)"/>    
+            <reference ref="tree_form" />
         </optional>
     </chunk>
     <!-- start of religions and denominations -->
@@ -13576,6 +13585,7 @@
                 <reference ref="genus_species_taxon"/>
                 <reference ref="leaf"/>
                 <reference ref="denotation"/>
+                <reference ref="tree_form" />
             </optional>
         </item> <!-- Tree Row -->
         <item name="Tree Stump" icon="${natural_tree_stump}" type="node" preset_name_label="true">
