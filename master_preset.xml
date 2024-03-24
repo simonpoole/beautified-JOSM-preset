@@ -7311,7 +7311,7 @@
                 <check text="Baby" key="baby"/>
             </item> <!-- Swing -->
         </group>
-        <item name="Indoor play" icon="${leisure_indoor_play}" type="node,closedway,multipolygon" name_context="leisure">
+        <item name="Indoor playing" icon="${leisure_indoor_play}" type="node,closedway,multipolygon" name_context="leisure">
             <link wiki="Tag:leisure=indoor_play"/>
             <space/>
             <key key="leisure" value="indoor_play"/>
@@ -7320,7 +7320,7 @@
             <reference ref="min_max_age"/>
             <check text="Baby" key="baby"/>
             <reference ref="playground_theme"/>
-        </item> <!--  Indoor play -->
+        </item> <!--  Indoor playing -->
         <item name="Picnic Site" icon="${tourist_picnic}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:tourism=picnic_site"/>
             <space/>
