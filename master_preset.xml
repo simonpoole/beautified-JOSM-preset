@@ -7183,6 +7183,15 @@
             <reference ref="oh_wheelchair"/>
             <check key="lit" text="Lit" disable_off="true"/>
         </item> <!-- Dog Park -->
+        <item name="Dog toilet" icon="${amenity_dog_toilet}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=dog_toilet"/>
+            <space/>
+            <key key="amenity" value="dog_toilet"/>
+            <reference ref="optional_name"/>
+            <combo key="barrier" text="Barrier" values="fence,wall" display_values="Fence,Wall"/>
+            <reference ref="oh_wheelchair"/>
+            <check key="lit" text="Lit" disable_off="true"/>
+        </item> <!-- Dog toilet -->
         <item name="Miniature railway" icon="${tourist_disused_railway}" type="way" preset_name_label="true">
             <link wiki="Tag:railway=miniature"/>
             <key key="railway" value="miniature"/>
