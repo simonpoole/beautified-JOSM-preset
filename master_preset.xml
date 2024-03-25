@@ -8754,6 +8754,7 @@
                 <check key="drinking_water" text="Drinking Water"/>
                 <check key="toilets:handwashing" text="Handwashing facilities"/>
                 <check key="toilets:paper_supplied" text="Wiping paper supplied"/>
+                <combo key="toilets:menstrual_products" text="Free menstrual proucts" values="yes,limited,no" display_values="Yes,Limited,No"/>
             </optional>
         </item> <!-- Toilets/Restrooms -->
         <item name="Shower" icon="${amenity_shower}" type="node,closedway" preset_name_label="true">
