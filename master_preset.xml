@@ -696,6 +696,8 @@
     </chunk>
     <chunk id="highway_additional_oneway_lit_width_sidewalk_winter">
         <reference ref="highway_additional_oneway_lit_width_sidewalk"/>
+        <check key="cyclestreet" text="Cycle street" disable_off="true" regions="BE,FI,NL"/>
+        <check key="priority_road" text="Road with priority" disable_off="true" exclude_regions="true" regions="US,CA"/>
         <reference ref="sidewalk"/>
         <reference ref="bus_bay"/>
         <check key="winter_road" text="Winter road" disable_off="true" />
