@@ -2118,6 +2118,8 @@
         </combo>
         <reference ref="roof_main"/>
         <optional>
+            <reference ref="wikipedia_wikidata_images" />
+            <text key="architect" text="Architect" />
             <multiselect key="building:architecture" text="Architectural style">
                 <list_entry value="romanesque" display_value="Romanesque architecture"/>
                 <list_entry value="gothic" display_value="Gothic architecture"/>
