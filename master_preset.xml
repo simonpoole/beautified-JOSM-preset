@@ -535,6 +535,13 @@
         <list_entry value="no" display_value="None" />
     </chunk>
     <!-- Item chunks -->
+    <chunk id="optional_speech_output">
+        <optional>
+            <combo key="speech_output" text="Speech output" match="key" >
+                <reference ref="speech_output_values" />
+            </combo>
+        </optional>
+    </chunk>
     <chunk id="incline">
         <combo key="incline" text="Incline" values="10%,-10%,10&#xB0;,-10&#xB0;,up,down" display_values="10%,-10%,10&#xB0;,-10&#xB0;,Up,Down" values_sort="false"/>
     </chunk>
@@ -2365,6 +2372,9 @@
             <list_entry value="delay" display_value="Delay display"/>
             <list_entry value="no" display_value="None"/>
         </multiselect>
+    </chunk>
+    <chunk id="departures_board_speech">
+        <reference ref="departures_board" />
         <optional>
             <combo key="departures_board:speech_output" text="Speech (departures board)" match="key">
                 <reference ref="speech_output_values" />
@@ -2396,7 +2406,7 @@
         <check key="covered" text="Covered"/>
         <check key="sign" text="Sign"/>
         <reference ref="bin"/>
-        <reference ref="departures_board"/>
+        <reference ref="departures_board_speech"/>
         <check key="passenger_information_display" text="Passenger information display" deprecated="true"/>
         <optional>
             <combo key="passenger_information_display:speech_output" text="Speech (information display)" match="key" deprecated="true">
@@ -6044,11 +6054,7 @@
                 <text key="operator" text="Operator"/>
                 <reference ref="level"/>
                 <text key="ref" text="Reference number"/>
-                <optional>
-                    <combo key="speech_output" text="Speech output" match="key" >
-                        <reference ref="speech_output_values" />
-                    </combo>
-                </optional>
+                <reference ref="optional_speech_output"/>
                 <preset_link preset_name="Payment Methods"/>
             </item> <!-- Ticket Machine -->
             <item name="Ticket Validator" icon="${public_transport_ticket_validator}" type="node,way" preset_name_label="true">
@@ -6344,6 +6350,7 @@
         <item name="Departures board" icon="${transport_departures_board}" type="node" preset_name_label="true">
             <link wiki="Key:departures_board"/>
             <reference ref="departures_board"/>
+            <reference ref="optional_speech_output"/>
         </item>
     </group> <!-- Transport -->
     <group name="Facilities" icon="${facilities_group}">
@@ -13077,11 +13084,7 @@
         </multiselect>
         <text key="operator" text="Operator"/>
         <text key="ref" text="Reference number"/>
-        <optional>
-            <combo key="speech_output" text="Speech output" match="key" >
-                <reference ref="speech_output_values" />
-            </combo>
-        </optional>
+        <reference ref="optional_speech_output"/>
         <preset_link preset_name="Payment Methods"/>
         <reference ref="optional_level"/>
     </item> <!-- Vending Machine -->
@@ -13216,10 +13219,7 @@
             <combo key="cash_in" text="Cash deposits" values="yes,no,customers" display_values="Yes,No,Customers" />
             <check key="cash_in:coins" text="Coin deposits" />
         </optional>
-        <optional>
-            <combo key="speech_output" text="Speech output" match="key">
-                <reference ref="speech_output_values" />
-            </combo>
+        <reference ref="optional_speech_output"/>
         </optional>
     </item> <!-- Automated Teller Machine -->
     <item name="Payment centre" icon="${money_payment_centre}" type="node,closedway,multipolygon" preset_name_label="true">
