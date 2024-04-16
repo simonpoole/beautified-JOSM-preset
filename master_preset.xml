@@ -530,7 +530,7 @@
         <list_entry value="steps" display_value="Steps" icon="${highway_steps}" />
     </chunk>
     <chunk id="speech_output_values">
-        <list_entry value="yes" display_value="Avalilable" />
+        <list_entry value="yes" display_value="Available" />
         <list_entry value="on_button_press" display_value="On button press" />
         <list_entry value="no" display_value="None" />
     </chunk>
@@ -6197,7 +6197,7 @@
             <space/>
             <key key="amenity" value="taxi"/>
             <optional>
-                <multiselect key="taxi_vehicle" text="Vehicle tyoe" values_searchable="true">
+                <multiselect key="taxi_vehicle" text="Vehicle type" values_searchable="true">
                     <list_entry value="auto_rickshaw" display_value="Auto rickshaw"/>
                     <list_entry value="cycle_rickshaw" display_value="Cycle rickshaw"/>
                     <list_entry value="motorcar" display_value="Car"/>
@@ -8778,7 +8778,7 @@
                 <check key="drinking_water" text="Drinking Water"/>
                 <check key="toilets:handwashing" text="Handwashing facilities"/>
                 <check key="toilets:paper_supplied" text="Wiping paper supplied"/>
-                <combo key="toilets:menstrual_products" text="Free menstrual proucts" values="yes,limited,no" display_values="Yes,Limited,No"/>
+                <combo key="toilets:menstrual_products" text="Free menstrual products" values="yes,limited,no" display_values="Yes,Limited,No"/>
             </optional>
         </item> <!-- Toilets/Restrooms -->
         <item name="Shower" icon="${amenity_shower}" type="node,closedway" preset_name_label="true">
