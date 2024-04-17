@@ -1166,6 +1166,9 @@
     <chunk id="bulk_purchase">
         <combo key="bulk_purchase" text="Bulk purchase (no packaging)" values="only,yes" display_values="Only,Yes"/>
     </chunk>
+    <chunk id="air_conditioning">
+        <check key="air_conditioning" text="Air conditioning" />
+    </chunk>
     <chunk id="outdoor_seating">
         <check key="outdoor_seating" text="Outdoor seating" disable_off="true"/> 
     </chunk>
@@ -6403,6 +6406,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Building" />
         </item> <!-- Hotel -->
@@ -6418,6 +6422,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Building" />
         </item> <!-- Motel -->
@@ -6434,6 +6439,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Building" />
         </item> <!-- Guest House/Bed & Breakfast -->
@@ -6448,6 +6454,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Apartment -->
         <item name="Chalet" icon="${accommodation_chalet}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6462,6 +6469,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Chalet -->
         <item name="Hostel" icon="${accommodation_hostel}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6476,6 +6484,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Hostel -->
         <item name="Alpine Hut" icon="${accommodation_alpinehut}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6592,6 +6601,7 @@
             <reference ref="toilets_with_access"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="highchair" />
             <reference ref="kids_area" />
@@ -6614,6 +6624,7 @@
             <reference ref="toilets_with_access"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="highchair" />
             <reference ref="kids_area" />
@@ -6628,6 +6639,7 @@
             <reference ref="toilets_with_access"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="highchair" />
             <reference ref="kids_area" />
@@ -6646,6 +6658,7 @@
             <reference ref="toilets_with_access"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="highchair" />
             <reference ref="kids_area" />
@@ -6661,6 +6674,7 @@
             <reference ref="toilets_with_access"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="highchair" />
             <reference ref="kids_area" />
@@ -6677,6 +6691,7 @@
             <reference ref="toilets_with_access"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="highchair" />
             <reference ref="kids_area" />
@@ -6699,6 +6714,7 @@
                 <space/>
                 <reference ref="lgbtq" />
             </optional>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="highchair" />
             <reference ref="kids_area" />
@@ -6734,6 +6750,7 @@
                 <reference ref="lgbtq" />
                 <check key="cocktails" text="Cocktails"/>
             </optional>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="highchair" />
             <reference ref="kids_area" />
@@ -6930,6 +6947,7 @@
             <check key="cinema:3D" text="3D" disable_off="true"/>
             <text key="screen" text="Number of screens"/>
             <reference ref="min_age"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Movie Theater/Cinema -->
         <item name="Bandstand" icon="${leisure_bandstand}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7223,6 +7241,7 @@
             <reference ref="name_operator_oh_wheelchair"/>
             <reference ref="level"/>
             <reference ref="facility_access"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Dance -->
         <item name="Horse Riding" icon="${leisure_horse_riding}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7461,6 +7480,7 @@
             <reference ref="min_age" />
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Adult gaming centre" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Gambling" text="Similar but different tags:" alternative="true" />
@@ -7475,6 +7495,7 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Karaoke box -->
         <item name="Adult gaming centre" icon="${amenity_slot_machine}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7485,6 +7506,7 @@
             <reference ref="min_age" />
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Amusement arcade" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Gambling" text="Similar but different tags:" alternative="true" />
@@ -7502,6 +7524,7 @@
             <reference ref="seating"/>
             <reference ref="internet_smoking"/>
             <reference ref="lgbtq" />
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Night Club -->
         <item name="Casino" icon="${casino}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7512,6 +7535,7 @@
             <reference ref="min_age" />
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Adult gaming centre" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Amusement arcade" text="Similar but different tags:" alternative="true" />
@@ -7529,6 +7553,7 @@
             <reference ref="min_age" />
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Adult gaming centre" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Amusement arcade" text="Similar but different tags:" alternative="true" />
@@ -7574,6 +7599,7 @@
             <combo key="museum_type" text="Museum scope" values="national,municipal,regional" display_values="National,Municipal,Regional" />
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <reference ref="wikipedia_wikidata_images"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Museum -->
@@ -7583,6 +7609,7 @@
             <key key="tourism" value="gallery"/>
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <reference ref="wikipedia_wikidata_images" />
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Art gallery -->
         <item name="Theatre" icon="${tourist_theatre}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7614,6 +7641,7 @@
             <reference ref="wheelchair"/>
             <reference ref="wheelchair_seating"/>
             <reference ref="toilets_with_access"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Theatre -->
         <item name="Music theatres" icon="${tourist_concert_hall}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7631,6 +7659,7 @@
             <reference ref="wheelchair"/>
             <reference ref="wheelchair_seating"/>
             <reference ref="toilets_with_access"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Music theatres -->
         <item name="Other theatres" icon="${other_theatres}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7649,6 +7678,7 @@
             <reference ref="wheelchair"/>
             <reference ref="wheelchair_seating"/>
             <reference ref="toilets_with_access"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Other theatres -->
         <item name="Figure/puppet theatres" icon="${puppet_theatre}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7665,6 +7695,7 @@
             <reference ref="wheelchair"/>
             <reference ref="wheelchair_seating"/>
             <reference ref="toilets_with_access"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Figure/puppet theatres -->
         <item name="Library" icon="${amenity_library}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7672,6 +7703,7 @@
             <space/>
             <key key="amenity" value="library"/>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
+            <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Library -->
