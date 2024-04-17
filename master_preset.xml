@@ -251,6 +251,11 @@
         <list_entry value="shared_lane" display_value="Shared lane"/>
         <list_entry value="separate" display_value="Separate"/>
     </chunk>
+    <chunk id="cycleway_lane_values">
+        <list_entry value="exclusive" display_value="Exclusive"/>
+        <list_entry value="advisory" display_value="Advisory"/>
+        <list_entry value="pictogram" display_value="Pictogram"/>
+    </chunk>
     <chunk id="traffic_sign_values">
         <list_entry value="give_way" display_value="Give way" icon="${traffic_sign_give_way}"/>
         <list_entry value="hazard" display_value="Hazard" icon="${traffic_sign_hazard}"/>
@@ -3077,14 +3082,30 @@
             <space/>
             <combo key="cycleway" text="Cycleway" values_context="cycleway" match="none">
                 <reference ref="cycleway_values"/>
-                <list_entry value="opposite_track" display_value="Opposite track"/>
-                <list_entry value="opposite" display_value="Opposite"/>
+                <list_entry value="opposite_track" display_value="Opposite track" deprecated="true"/>
+                <list_entry value="opposite" display_value="Opposite" deprecated="true"/>
+            </combo>
+            <combo key="cycleway:lane" text="Bicycle lane type" values_context="cycleway" match="none" >
+                <reference ref="cycleway_lane_values"/>
+            </combo>
+            <!-- the following two items are SCisms that are forced on everybody -->
+            <combo key="cycleway:both" text="Cycleway" values_context="cycleway" match="none" deprecated="true">
+                <reference ref="cycleway_values"/>
+            </combo>
+            <combo key="cycleway:both:lane" text="Bicycle lane type" values_context="cycleway" match="none" deprecated="true">
+                <reference ref="cycleway_lane_values"/>
             </combo>
             <combo key="cycleway:left" text="Cycleway left" values_context="cycleway" match="none">
                 <reference ref="cycleway_values"/>
             </combo>
-            <combo key="cycleway:right" text="Cycleway right" values_context="cycleway" display_values="Lane,Track,Share busway,Shared lane,Separate" match="none">
+            <combo key="cycleway:left:lane" text="Bicycle lane type left" values_context="cycleway" match="none" >
+                <reference ref="cycleway_lane_values"/>
+            </combo>
+            <combo key="cycleway:right" text="Cycleway right" values_context="cycleway" match="none">
                 <reference ref="cycleway_values"/>
+            </combo>
+            <combo key="cycleway:right:lane" text="Bicycle lane type right" values_context="cycleway" match="none" >
+                <reference ref="cycleway_lane_values"/>
             </combo>
             <combo key="oneway:bicycle" text="Oneway (bicycle)" values="yes,no" display_values="Yes,No"/>
             <space/>
