@@ -10046,33 +10046,43 @@
             <preset_link preset_name="Address"/>
         </item> <!-- Building -->
         <item name="Apartments" icon="${apartments}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Key:building"/>
+            <link wiki="Tag:building=apartments"/>
             <space/>
             <key key="building" value="apartments" values_context="building"/>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
         </item> <!-- Apartments -->
         <item name="House" icon="${house}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Key:building"/>
+            <link wiki="Tag:building=house"/>
             <space/>
             <key key="building" value="house" values_context="building"/>
             <reference ref="additional_building_tags"/>
+            <label text="Use of house subtypes depends on region"/>
+            <combo key="house" text="House type" values_searchable="true" values_context="building">
+                <list_entry value="bungalow" display_value="Bungalow"/>
+                <list_entry value="detached" display_value="Detached"/>
+                <list_entry value="link-detached" display_value="Link-detached"/>
+                <list_entry value="maisonette" display_value="Maisonette"/>
+                <list_entry value="semi-detached" display_value="Semi-detached"/>
+                <list_entry value="terraced" display_value="Terrace unit"/> 
+                <list_entry value="terrace" display_value="Terrace"/> 
+            </combo>
             <preset_link preset_name="Address"/>
         </item> <!-- House -->
         <item name="Garage" icon="${garage}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Key:building"/>
+            <link wiki="Tag:building=garage"/>
             <space/>
             <key key="building" value="garage" values_context="building"/>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
-        </item> <!-- House -->
+        </item> <!-- Garage -->
         <item name="School building" icon="${school_building}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:building"/>
             <space/>
             <key key="building" value="school" values_context="building"/>
             <reference ref="additional_building_tags"/>
             <preset_link preset_name="Address"/>
-        </item> <!-- House -->
+        </item> <!-- School building -->
         <item name="Industrial building" icon="${industrial_building}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:building"/>
             <space/>
