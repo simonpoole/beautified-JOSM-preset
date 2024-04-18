@@ -1801,7 +1801,7 @@
     </chunk>
     <chunk id="rating_phases">
         <combo key="rating" text="Power rating (kVA/MVA)" values="2700 kVA,12500 kVA,15 MVA,50 MVA,100 MVA"/>
-        <combo key="phases" text="Phases" values="1,3" length="1" value_type="integer"/>
+        <combo key="phases" text="Phases" values="1,3" length="1"/>
     </chunk>
     <chunk id="optional_rating_phases">
         <optional>
@@ -10819,8 +10819,19 @@
             <link wiki="Tag:highway=street_lamp"/>
             <space/>
             <key key="highway" value="street_lamp"/>
-            <combo key="lamp_type" text="Type" values="electric,floodlight,gaslight,led,sodium,solar_lamp" display_values="Electric,Floodlight,Gaslight,LED,Sodium,Solar lamp" values_context="lamp_type" match="key" />
-            <combo key="lamp_mount" text="Mounted on" values="bent_mast,high_mast,straight_mast,suspended,wall" display_values="Bent mast,High mast,Straight mast,Suspended,Wall" values_context="lamp_mount" match="key" />
+            <combo key="lamp_type" text="Type"  values_context="lamp_type" match="key" >
+                <list_entry value="electric" display_value="Electric (generic)"/>
+                <list_entry value="floodlight" display_value="Floodlight (generic)"/>
+                <list_entry value="fluorescent" display_value="Fluorescent"/>
+                <list_entry value="gaslight" display_value="Gaslight"/>
+                <list_entry value="high_pressue_sodium" display_value="High pressue sodium"/>
+                <list_entry value="led" display_value="LED"/>
+                <list_entry value="low_pressue_sodium" display_value="Low pressue sodium"/>
+                <list_entry value="mercury" display_value="Mercury"/>
+                <list_entry value="sodium" display_value="Sodium (generic)"/>
+                <list_entry value="solar_lamp" display_value="Solar lamp (generic)"/>
+            </combo>
+            <combo key="lamp_mount" text="Mounted on" values="bent_mast,high_mast,pole,straight_mast,suspended,wall" display_values="Bent mast,High mast,Pole,Straight mast,Suspended,Wall" values_context="lamp_mount" match="key" />
             <optional>
                 <text key="ref" text="Ref"/>
                 <combo key="opening_hours" value_type="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" editable="true" values_no_i18n="true"/>
