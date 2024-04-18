@@ -699,6 +699,10 @@
         <combo key="sidewalk:surface" text="Sidewalk surface" values_sort="false" values_context="surface" match="none" >
             <reference ref="surface_values"/>
         </combo>
+        <!-- S(h)Cism -->
+        <combo key="sidewalk:both:surface" text="Sidewalk surface" values_sort="false" values_context="surface" match="none" deprecated="true">
+            <reference ref="surface_values"/>
+        </combo>
         <preset_link preset_name="Sidewalk right-hand side" />
         <preset_link preset_name="Sidewalk left-hand side" />
     </chunk>
