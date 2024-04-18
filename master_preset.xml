@@ -540,6 +540,25 @@
         <list_entry value="on_button_press" display_value="On button press" />
         <list_entry value="no" display_value="None" />
     </chunk>
+    <chunk id="produce_fruit_vegetables">
+        <list_entry value="apple" display_value="Apples"/>
+        <list_entry value="asparagus" display_value="Asparagus"/>
+        <list_entry value="banana" display_value="Bananas"/>
+        <list_entry value="cherry" display_value="Cherries"/>
+        <list_entry value="grape" display_value="Grapes"/>
+        <list_entry value="olive" display_value="Olives"/>   
+        <list_entry value="orange" display_value="Oranges"/> 
+        <list_entry value="nut" display_value="Nuts"/>  
+        <list_entry value="onion" display_value="Onions"/>  
+        <list_entry value="peach" display_value="Peaches"/>
+        <list_entry value="pear" display_value="Pears"/>
+        <list_entry value="plum" display_value="Plums"/>
+        <list_entry value="potatoes" display_value="Potatoes"/>
+    </chunk>
+    <chunk id="produce_animal">
+        <list_entry value="eggs" display_value="Eggs"/>
+        <list_entry value="milk" display_value="Milk"/>
+    </chunk>
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
         <optional>
@@ -699,7 +718,7 @@
         <combo key="sidewalk:surface" text="Sidewalk surface" values_sort="false" values_context="surface" match="none" >
             <reference ref="surface_values"/>
         </combo>
-        <!-- S(h)Cism -->
+        <!-- SChism -->
         <combo key="sidewalk:both:surface" text="Sidewalk surface" values_sort="false" values_context="surface" match="none" deprecated="true">
             <reference ref="surface_values"/>
         </combo>
@@ -3096,7 +3115,7 @@
             <combo key="cycleway:lane" text="Bicycle lane type" values_context="cycleway" match="none" >
                 <reference ref="cycleway_lane_values"/>
             </combo>
-            <!-- the following two items are SCisms that are forced on everybody -->
+            <!-- the following two items are SChisms that are forced on everybody -->
             <combo key="cycleway:both" text="Cycleway" values_context="cycleway" match="none" deprecated="true">
                 <reference ref="cycleway_values"/>
             </combo>
@@ -12071,6 +12090,10 @@
             <link wiki="Tag:shop=farm"/>
             <space/>
             <key key="shop" value="farm"/>
+            <multiselect key="produce" text="Produce">
+                <reference ref="produce_fruit_vegetables"/>
+                <reference ref="produce_animal"/>
+            </multiselect>
             <reference ref="name_oh_wheelchair"/>
             <text key="description" text="Description" length="255"/>
             <reference ref="organic"/>
@@ -13948,7 +13971,8 @@
             <space/>
             <key key="landuse" value="farmland"/>
             <reference ref="optional_name"/>
-            <combo key="crop" text="Crop" values="barley,cereal,corn,grass,hop,rapeseed,rice,soy,sugarcane,tea,wheat" display_values="Barley,Cereal,Corn,Grass,Hop,Rapeseed,Rice,Soy,Sugarcane,Tea,Wheat" editable="true" values_context="crop"/>
+            <combo key="crop" text="Crop" values="asparagus,barley,cereal,corn,grass,hop,potatoes,rapeseed,rice,soy,sugarcane,tea,wheat" 
+                display_values="Asparagus,Barley,Cereal,Corn,Grass,Hop,Potatoes,Rapeseed,Rice,Soy,Sugarcane,Tea,Wheat" editable="true" values_context="crop"/>
             <check key="irrigation" text="Center pivot irrigation" value_on="pivot" disable_off="true" />
         </item> <!-- Farmland -->
         <item name="Farm" icon="${landuse_farm}" type="closedway,multipolygon" preset_name_label="true" deprecated="true">
@@ -15855,7 +15879,7 @@ var objects = ['amenity','aeroway','highway','leisure','man_made','military','ra
 function isObject(key) {
   var objectsLength = objects.length;
   for (var i = 0; i &lt; objectsLength; i++) {
-    if (objects[i].equals(key)) {
+    if (objects[i].equalckey)) {
             return true;
     }
   }
