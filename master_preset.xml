@@ -11401,6 +11401,8 @@
                 <reference ref="power_generator"/>
                 <key key="generator:method" value="wind_turbine" match="none" />
                 <combo key="generator:type" text="Generator Type" values="horizontal_axis,vertical_axis" display_values="Horizontal axis,Vertical axis"/>
+                <text key="height:hub" text="Hub height (meters)" length="7"  value_type="dimension_vertical"/>
+                <text key="rotor:diameter" text="Rotor diameter (meters)" value_type="dimension_horizontal"/>
                 <reference ref="power_output"/>
             </item> <!-- Wind Turbine -->
             <item name="Heliostat" icon="${power_heliostat}" type="node" preset_name_label="true">
