@@ -8997,10 +8997,22 @@
             <reference ref="collection_times"/>
             <check key="drive_through" text="Drive through" disable_off="true"/>
             <combo key="post_box:type" text="Type" values_context="post box">
-                <list_entry value="pillar" text="Pillar"/>
-                <list_entry value="lamp" text="Lamp"/>
-                <list_entry value="wall" text="Wall"/>
+                <list_entry value="pillar" display_value="Pillar"/>
+                <list_entry value="lamp" display_value="Lamp"/>
+                <list_entry value="wall" display_value="Wall"/>
             </combo>
+            <combo key="royal_cypher" text="Royal cypher" regions="GB" values_context="post box">
+                <list_entry value="VR" display_value="VR - Victoria"/>
+                <list_entry value="EVIIR" display_value="EVIIR - Edward VII"/>
+                <list_entry value="GR" display_value="GR - George V"/>
+                <list_entry value="EVIIIR" display_value="EVIIIR - Edward VIII"/>
+                <list_entry value="GVIR" display_value="GVIR - George VI"/>
+                <list_entry value="EIIR" display_value="EIIR - Elizabeth II"/>
+                <list_entry value="CIIIR" display_value="CIIIR - Charles III"/>
+                <list_entry value="scottish_crown" display_value="Crown of Scotland"/>
+                <list_entry value="no" display_value="None"/>
+            </combo>
+            <text key="royal_cypher:wikidata" text="Royal cypher wikidata" regions="GB"/>
             <preset_link preset_name="Letter box" text="Similar but different tags:" alternative="true" />
         </item> <!-- Post Box -->
         <item name="Parcel Locker" icon="${amenity_parcel_locker}" type="node,closedway" preset_name_label="true">
