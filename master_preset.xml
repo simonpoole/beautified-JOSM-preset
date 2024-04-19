@@ -927,6 +927,13 @@
     <chunk id="collection_times">
         <combo key="collection_times" text="Collection times" value_type="opening_hours" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" match="none" editable="true"/>
     </chunk>
+    <chunk id="baby_feeding">
+        <combo key="baby_feeding" text="Baby feeding space" values_sort="false" values_context="baby_feeding">
+            <list_entry value="yes" short_description="Available"/>
+            <list_entry value="room" short_description="Room"/>
+            <list_entry value="no" short_description="None"/>
+        </combo>
+    </chunk>
     <chunk id="changing_table">
         <combo key="diaper" text="Diaper changing" values_sort="false" deprecated="true">
             <list_entry value="yes" short_description="Available"/>
@@ -3547,6 +3554,7 @@
             <optional>
                 <reference ref="name_operator" />
                 <reference ref="toilets"/>
+                <reference ref="baby_feeding" />
             </optional>
             <reference ref="kids_area" />
         </item> <!-- Services -->
@@ -6653,6 +6661,7 @@
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
             <preset_link preset_name="Diet" />
@@ -6676,6 +6685,7 @@
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
         </item> <!-- Fast Food -->
@@ -6691,6 +6701,7 @@
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
             <preset_link preset_name="Diet" />
@@ -6711,6 +6722,7 @@
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
             <preset_link preset_name="Diet" />
@@ -6727,6 +6739,7 @@
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
         </item> <!-- Bubble Tea Cafe -->
@@ -6744,6 +6757,7 @@
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
             <preset_link preset_name="Diet" />
@@ -6767,6 +6781,7 @@
             </optional>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
             <preset_link preset_name="Diet" />
@@ -6784,6 +6799,7 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
             <preset_link preset_name="Diet" />
@@ -6804,6 +6820,7 @@
             </optional>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="highchair" />
             <reference ref="kids_area" />
             <preset_link preset_name="Diet" />
@@ -7135,6 +7152,7 @@
             <key key="tourism" value="theme_park"/>
             <reference ref="name_operator_oh_wheelchair"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Amusement/Theme Park -->
         <item name="Water Park" icon="${leisure_water_park}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7355,6 +7373,7 @@
             <key key="amenity" value="toy_library"/>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Toy library -->
         <separator/>
@@ -7662,6 +7681,7 @@
             <reference ref="wikipedia_wikidata_images"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Museum -->
         <item name="Art gallery" icon="${tourist_gallery}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7766,6 +7786,7 @@
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Library -->
         <item name="Public bookcase" icon="${public_bookcase}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7968,6 +7989,7 @@
                 values_context="community_centre" />
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <reference ref="link_contact_address"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Community Centre -->
         <item name="Conference Centre" icon="${amenity_conference_centre}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -8205,6 +8227,7 @@
             <key key="healthcare" value="hospital" match="keyvalue"/>
             <reference ref="name_operator"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Hospital -->
         <item name="Clinic" icon="${health_clinic}" type="node,closedway,multipolygon" autoapply="false" min_match="1" preset_name_label="true">
@@ -8215,6 +8238,7 @@
             <reference ref="healthcare_speciality"/>
             <reference ref="name_operator_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Clinic -->
         <item name="Doctor's Office" icon="${health_doctors}" type="node,closedway,multipolygon" autoapply="false" min_match="1" preset_name_label="true">
@@ -8225,6 +8249,7 @@
             <reference ref="healthcare_speciality"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Doctor's Office -->
         <item name="Dentist" icon="${health_dentist}" type="node,closedway,multipolygon" autoapply="false" min_match="1" preset_name_label="true">
@@ -8243,6 +8268,7 @@
             </combo>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Dentist -->
         <item name="Orthodontist" icon="${health_orthodontist}" type="node,closedway,multipolygon" autoapply="false" preset_name_label="true">
@@ -8262,6 +8288,7 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <check key="dispensing" text="Dispensing" disable_off="true"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Pharmacy -->
         <separator/>
@@ -9075,6 +9102,7 @@
             <key key="amenity" value="events_venue"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
             <preset_link preset_name="Building" />
         </item> <!-- Events venue -->
@@ -12001,6 +12029,7 @@
             <reference ref="bulk_purchase"/>
             <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Supermarket -->
         <item name="Convenience Store" icon="${shopping_convenience}" gtype="node,closedway,multipolygon" preset_name_label="true">
@@ -12036,6 +12065,7 @@
             <key key="shop" value="bakery"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Bakery -->
         <item name="Butcher" icon="${shopping_butcher}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12244,6 +12274,7 @@
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No"/>
             <reference ref="organic"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Clothes -->
         <item name="Boutique" icon="${shopping_boutique}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12253,6 +12284,7 @@
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="clothes"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Boutique -->
         <item name="Fashion accessories" icon="${shopping_fashion_accessories}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12280,6 +12312,7 @@
             <reference ref="organic"/>
             <check key="shoes:repair" text="Repairs" text_context="shoes"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Shoes -->
         <item name="Shoe repair" icon="${shopping_shoemaker}" type="node,closedway,multipolygon" name_context="shop" preset_name_label="true">
@@ -12302,6 +12335,7 @@
             <key key="shop" value="outdoor"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Outdoor -->
         <separator/>
@@ -12323,6 +12357,7 @@
             <check key="laundry_service" text="Laundry Service"/>
             <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Laundry -->
         <item name="Tailor" icon="${shopping_tailor}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12414,6 +12449,7 @@
             <key key="shop" value="furniture"/>
             <reference ref="name_brand_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Furniture -->
         <item name="Electrical appliances" icon="${shopping_electrical}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12579,6 +12615,7 @@
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Copy Shop -->
         <item name="Book Store" icon="${shopping_book}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12588,6 +12625,7 @@
             <reference ref="name_brand_oh_wheelchair_level"/>
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Book Store -->
         <item name="Newspaper Stand" icon="${shopping_kiosk}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12613,6 +12651,7 @@
             <key key="shop" value="chemist"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Chemist -->
         <item name="Cosmetics" icon="${shopping_cosmetics}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12646,6 +12685,7 @@
             </multiselect>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
             <preset_link preset_name="Hairdresser/Barber" text="Similar but different tags:" alternative="true"/>
         </item> <!-- Beauty -->
@@ -12711,6 +12751,7 @@
             <key key="shop" value="optician"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Optician -->
         <item name="Hearing Aids" icon="${shopping_hearing_aids}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12791,6 +12832,7 @@
             <key key="shop" value="sewing"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Sewing -->
         <item name="Collectable items" icon="${shopping_collector}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12818,6 +12860,7 @@
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Department Store -->
         <item name="Mall" icon="${shopping_mall}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -12826,6 +12869,7 @@
             <key key="shop" value="mall"/>
             <reference ref="name_operator_oh_wheelchair_toilets"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Mall -->
         <separator/>
@@ -12838,6 +12882,7 @@
                 <reference ref="brand"/>
             </optional>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Baby goods -->
         <item name="Florist" icon="${shopping_florist}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -13021,6 +13066,7 @@
             <key key="shop" value="toys"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Toys -->
         <item name="Games" icon="${shopping_games}" type="node,closedway,multipolygon" preset_name_label="true" name_context="leisure">
@@ -13054,6 +13100,7 @@
                 <reference ref="religious"/>
             </optional>
             <reference ref="link_contact_address_payment"/>
+            <reference ref="baby_feeding" />
             <reference ref="kids_area" />
         </item> <!-- Gift/Souvenir -->
         <item name="Variety Store" icon="${shopping_variety_store}" type="node,closedway,multipolygon" preset_name_label="true">
