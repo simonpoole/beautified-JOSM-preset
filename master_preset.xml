@@ -1482,6 +1482,15 @@
             <list_entry value="yoga" display_value="Yoga" />
         </multiselect>
     </chunk>
+    <chunk id="swimming_pool_facility">
+        <combo key="swimming_pool" text="Swimming pool"  values_context="sport">
+            <list_entry value="yes" display_value="Available" />
+            <list_entry value="indoor" display_value="Indoor" />
+            <list_entry value="inground" display_value="In-ground" />
+            <list_entry value="outdoor" display_value="Outdoor" />
+            <list_entry value="no" display_value="None" />
+        </combo>
+    </chunk>
     <chunk id="bin">
         <combo key="bin" text="Bin" values="yes,no" display_values="Yes,No" default=""/>
     </chunk>
@@ -6430,6 +6439,7 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Building" />
         </item> <!-- Hotel -->
@@ -6446,6 +6456,7 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Building" />
         </item> <!-- Motel -->
@@ -6463,6 +6474,7 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Building" />
         </item> <!-- Guest House/Bed & Breakfast -->
@@ -6478,6 +6490,7 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Apartment -->
         <item name="Chalet" icon="${accommodation_chalet}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6493,6 +6506,7 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Chalet -->
         <item name="Hostel" icon="${accommodation_hostel}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6508,6 +6522,7 @@
             <space/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Hostel -->
         <item name="Alpine Hut" icon="${accommodation_alpinehut}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6560,6 +6575,7 @@
             <check key="tents" text="Tents allowed" disable_off="true"/>
             <space/>
             <reference ref="internet_smoking"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Caravan Site/RV Park -->
         <item name="Campsite" icon="${accommodation_camping}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6585,6 +6601,7 @@
             <reference ref="internet"/>
             <space/>
             <reference ref="nudism" />
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Campsite -->
         <item name="Camp pitch" icon="${accommodation_camp_pitch}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -7187,6 +7204,15 @@
             <space/>
             <label text="Used for the water area only."/>
             <space/>
+            <combo key="swimming_pool" text="Pool type"  values_context="sport">
+                <list_entry value="kids" display_value="Childrens pool" />
+                <list_entry value="lazy_river" display_value="Lazy river" />
+                <list_entry value="plunge" display_value="Plunge" />
+                <list_entry value="spa" display_value="Spa" />
+                <list_entry value="swimming" display_value="Swimming" />
+                <list_entry value="wading" display_value="Wading" />
+                <list_entry value="wave_pool" display_value="Wave pool" />
+            </combo>
             <reference ref="facility_access"/>
         </item> <!-- Swimming Pool -->
         <item name="Swimming Area" icon="${leisure_swimming_area}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -9354,6 +9380,7 @@
             <key key="leisure" value="sports_centre"/>
             <text key="name" text="Name"/>
             <reference ref="sport"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Sports Centre -->
         <item name="Sports Hall" icon="${sport_hall}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -9372,6 +9399,7 @@
             <text key="name" text="Name"/>
             <reference ref="sport"/>
             <reference ref="optional_level"/>
+            <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Building"/>
         </item> <!-- Fitness Centre -->
