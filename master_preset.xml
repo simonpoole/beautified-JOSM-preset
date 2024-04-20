@@ -15984,7 +15984,7 @@ var objects = ['amenity','aeroway','highway','leisure','man_made','military','ra
 function isObject(key) {
   var objectsLength = objects.length;
   for (var i = 0; i &lt; objectsLength; i++) {
-    if (objects[i].equalckey)) {
+    if (objects[i].equals(key)) {
             return true;
     }
   }
