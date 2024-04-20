@@ -7019,6 +7019,48 @@
                 </checkgroup>
             </optional>
         </item> <!-- Route marker -->
+        <group name="Node network junctions" > 
+            <item name="Regional cycle network junction" icon="${tourist_regional_cycle_network_junction}" type="node" preset_name_label="true">
+                <link wiki="Tag:network:type=node_network"/>
+                <key key="network:type" value="node_network" object="true"/>
+                <text key="rcn_ref" match="key"/>
+                <optional>
+                    <text key="expected_rcn_route_relations" match="none" value_type="integer"/>
+                </optional>
+            </item>
+            <item name="Local cycle network junction" icon="${tourist_local_cycle_network_junction}" type="node" preset_name_label="true">
+                <link wiki="Tag:network:type=node_network"/>
+                <key key="network:type" value="node_network" object="true"/>
+                <text key="lcn_ref" match="key"/>
+                <optional>
+                    <text key="expected_lcn_route_relations" match="none" value_type="integer"/>
+                </optional>
+            </item>
+            <item name="Regional walking network junction" icon="${tourist_regional_walking_network_junction}" type="node" preset_name_label="true">
+                <link wiki="Tag:network:type=node_network"/>
+                <key key="network:type" value="node_network" object="true"/>
+                <text key="rwn_ref" match="key"/>
+                <optional>
+                    <text key="expected_rwn_route_relations" match="none" value_type="integer"/>
+                </optional>
+            </item>
+            <item name="Local walking network junction" icon="${tourist_regional_walking_network_junction}" type="node" preset_name_label="true">
+                <link wiki="Tag:network:type=node_network"/>
+                <key key="network:type" value="node_network" object="true"/>
+                <text key="lwn_ref" match="key"/>
+                <optional>
+                    <text key="expected_lwn_route_relations" match="none" value_type="integer"/>
+                </optional>
+            </item>
+            <item name="Regional hiking network junction" icon="${tourist_regional_hiking_network_junction}" type="node" preset_name_label="true">
+                <link wiki="Tag:network:type=node_network"/>
+                <key key="network:type" value="node_network" object="true"/>
+                <text key="rhn_ref" match="key"/>
+                <optional>
+                    <text key="expected_rhn_route_relations" match="none" value_type="integer"/>
+                </optional>
+            </item>
+        </group> <!-- Node network junctions -->
     </group> <!-- Tourism -->
     <group name="Leisure" icon="${leisure}">
         <item name="Movie Theater/Cinema" icon="${leisure_cinema}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -14735,6 +14777,7 @@
                 <combo key="network" text="Network" values="icn,ncn,rcn,lcn" match="keyvalue!" display_values="International,National,Regional,Local" values_context="network" values_sort="false"/>
                 <optional>
                     <reference ref="route_hikebike_optionals"/>
+                    <text key="cycle_network" text="Cycle network"/>
                 </optional>
                 <roles>
                     <reference ref="route_segment_roles" />
@@ -14973,16 +15016,17 @@
                 <role key="" text="member" requisite="required" type="relation"/>
             </roles>
         </item> <!-- Route Network -->
-         <item name="Node Network" icon="${relation_route_group}" type="relation" preset_name_label="true">
+        <item name="Node Network" icon="${relation_route_group}" type="relation" preset_name_label="true">
             <link wiki="Cycle_Node_Network_Tagging#(C)_Network_tagging" />
             <space />
             <key key="type" value="network" />
             <key key="network:type" value="node_network" />
-            <combo key="network" text="Network" values="icn,ncn,rcn,lcn,ihn,nhn,rhn,lhn,iwn,nwn,rwn,lwn" 
-                display_values="International cycling,National cycling,Regional cycling,Local cycling,International riding,National riding,Regional riding,Local riding,International walking,National walking,Regional walking,Local walking" values_context="network" values_sort="false"/>
+            <combo key="network" text="Network" values="icn,ncn,rcn,lcn,ihn,nhn,rhn,lhn,iwn,nwn,rwn,lwn,rpn,lpn" 
+                display_values="International cycling,National cycling,Regional cycling,Local cycling,International riding,National riding,Regional riding,Local riding,International walking,National walking,Regional walking,Local walking,Regional canoe,Local canoe" values_context="network" values_sort="false"/>
             <optional>
                 <text key="name" text="Name" />
                 <text key="operator" text="Operator" />
+                <text key="cycle_network" text="Cycle network"/>
             </optional>
             <roles>
                 <role key="" text="route" requisite="required" type="relation" member_expression="&quot;network:type&quot;=node_network (type=route|type=network)" />
