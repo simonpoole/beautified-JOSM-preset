@@ -29,7 +29,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2024-04-20 12:45+0200\n"
+"POT-Creation-Date: 2024-04-20 14:57+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Simon Poole <sp8962@gmail.com>, 2015-2024\n"
 "Language-Team: German (http://app.transifex.com/openstreetmap/presets/language/de/)\n"
@@ -5859,6 +5859,14 @@ msgstr "Ausflugssegment"
 msgid "Exhibition Centre"
 msgstr "Ausstellungsgelände"
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6439(text:text|group:Node_network_junctions|preset:Regional_cycle_network_junction|key:expected_rcn_route_relations)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6447(text:text|group:Node_network_junctions|preset:Local_cycle_network_junction|key:expected_lcn_route_relations)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6455(text:text|group:Node_network_junctions|preset:Regional_walking_network_junction|key:expected_rwn_route_relations)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6463(text:text|group:Node_network_junctions|preset:Local_walking_network_junction|key:expected_lwn_route_relations)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6471(text:text|group:Node_network_junctions|preset:Regional_hiking_network_junction|key:expected_rhn_route_relations)
+msgid "Expected route count"
+msgstr "Erwartete Anzahl Routen"
+
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13151(list_entry:display_value|group:Geography|preset:Volcano|value:extinct)
 msgid "Extinct"
 msgstr "Erloschen"
@@ -7133,11 +7141,11 @@ msgstr "Abgespannt"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9903(combo:display_values|group:Man_Made|preset:Tower|key:tower:construction)
 msgid "Guyed lattice"
-msgstr ""
+msgstr "Abgespannter Gittermast"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9903(combo:display_values|group:Man_Made|preset:Tower|key:tower:construction)
 msgid "Guyed tube"
-msgstr ""
+msgstr "Abgespannter Rohrturm"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9298(item:name|group:Sport|preset:Gymnastics)
 msgid "Gymnastics"
@@ -12544,7 +12552,7 @@ msgstr "Stromroute"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10974(item:name|preset:Power_Street_Cabinet)
 msgid "Power Street Cabinet"
-msgstr "Stromschaltkasten Straße"
+msgstr "Stromverteilerkasten"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10885(item:name|preset:Power_Substation)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14300(role:text|group:Routes|preset:Power_Route|key:substation)
@@ -13238,6 +13246,11 @@ msgstr "Referenz des Weges der eine Umleitung ist zu"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5800(text:text|group:Airport|preset:Jet_bridge|key:ref)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5845(text:text|group:Airport|preset:Gate|key:ref)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6055(text:text|group:Accommodation|preset:Camp_pitch|key:ref)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6437(text:text|group:Node_network_junctions|preset:Regional_cycle_network_junction|key:rcn_ref)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6445(text:text|group:Node_network_junctions|preset:Local_cycle_network_junction|key:lcn_ref)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6453(text:text|group:Node_network_junctions|preset:Regional_walking_network_junction|key:rwn_ref)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6461(text:text|group:Node_network_junctions|preset:Local_walking_network_junction|key:lwn_ref)
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6469(text:text|group:Node_network_junctions|preset:Regional_hiking_network_junction|key:rhn_ref)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:653(text:text|key:ref)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6739(text:text|group:Leisure|preset:Fitness_Station|key:ref)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7521(text:text|group:Public_Building|preset:Post_Office|key:ref)
@@ -13864,7 +13877,7 @@ msgstr "Rudern"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8506(text:text|group:Facilities|preset:Post_Box|key:royal_cypher:wikidata)
 msgid "Royal cypher wikidata"
-msgstr ""
+msgstr "Königliches Monogramm Wikidata"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9446(item:name|group:Sport_(Ball)|preset:Rugby_League)
 msgid "Rugby League"
@@ -15400,7 +15413,7 @@ msgstr "Strassenfläche"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10380(item:name|group:Man_Made|preset:Street_cabinet)
 msgid "Street cabinet"
-msgstr "Straßenverteiler"
+msgstr "Verteilerkasten"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2132(check:text|group:Streets|preset:Primary|key:noname)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2175(check:text|group:Streets|preset:Secondary|key:noname)
@@ -20492,7 +20505,7 @@ msgstr "Kartsport"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6706(list_entry:display_value|group:Leisure|preset:Swimming_Pool|value:lazy_river)
 msgctxt "sport"
 msgid "Lazy river"
-msgstr ""
+msgstr "Strömungskanal"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:949(list_entry:display_value|value:martial_arts)
 msgctxt "sport"
@@ -20747,7 +20760,7 @@ msgstr "Volleyball"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6710(list_entry:display_value|group:Leisure|preset:Swimming_Pool|value:wading)
 msgctxt "sport"
 msgid "Wading"
-msgstr ""
+msgstr "Planschbecken"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6711(list_entry:display_value|group:Leisure|preset:Swimming_Pool|value:wave_pool)
 msgctxt "sport"
@@ -25848,42 +25861,42 @@ msgstr "Obdachlosenunterkunft"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8502(list_entry:display_value|group:Facilities|preset:Post_Box|value:CIIIR)
 msgctxt "post box"
 msgid "CIIIR - Charles III"
-msgstr ""
+msgstr "CIIIR - Charles III"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8503(list_entry:display_value|group:Facilities|preset:Post_Box|value:scottish_crown)
 msgctxt "post box"
 msgid "Crown of Scotland"
-msgstr ""
+msgstr "Krone Schottlands"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8501(list_entry:display_value|group:Facilities|preset:Post_Box|value:EIIR)
 msgctxt "post box"
 msgid "EIIR - Elizabeth II"
-msgstr ""
+msgstr "EIIR - Elizabeth II"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8499(list_entry:display_value|group:Facilities|preset:Post_Box|value:EVIIIR)
 msgctxt "post box"
 msgid "EVIIIR - Edward VIII"
-msgstr ""
+msgstr "EVIIIR - Edward VIII"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8497(list_entry:display_value|group:Facilities|preset:Post_Box|value:EVIIR)
 msgctxt "post box"
 msgid "EVIIR - Edward VII"
-msgstr ""
+msgstr "EVIIR - Edward VII"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8498(list_entry:display_value|group:Facilities|preset:Post_Box|value:GR)
 msgctxt "post box"
 msgid "GR - George V"
-msgstr ""
+msgstr "GR - George V"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8500(list_entry:display_value|group:Facilities|preset:Post_Box|value:GVIR)
 msgctxt "post box"
 msgid "GVIR - George VI"
-msgstr ""
+msgstr "GVIR - George VI"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8492(list_entry:display_value|group:Facilities|preset:Post_Box|value:lamp)
 msgctxt "post box"
 msgid "Lamp"
-msgstr ""
+msgstr "Laterne"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8504(list_entry:display_value|group:Facilities|preset:Post_Box|value:no)
 msgctxt "post box"
@@ -25898,7 +25911,7 @@ msgstr "Säule"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8495(combo:text|group:Facilities|preset:Post_Box|key:royal_cypher)
 msgctxt "post box"
 msgid "Royal cypher"
-msgstr ""
+msgstr "Königliches Monogramm"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8490(combo:text|group:Facilities|preset:Post_Box|key:post_box:type)
 msgctxt "post box"
@@ -25908,7 +25921,7 @@ msgstr "Typ"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8496(list_entry:display_value|group:Facilities|preset:Post_Box|value:VR)
 msgctxt "post box"
 msgid "VR - Victoria"
-msgstr ""
+msgstr "VR - Victoria"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8493(list_entry:display_value|group:Facilities|preset:Post_Box|value:wall)
 msgctxt "post box"
