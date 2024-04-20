@@ -559,6 +559,11 @@
         <list_entry value="eggs" display_value="Eggs"/>
         <list_entry value="milk" display_value="Milk"/>
     </chunk>
+    <chunk id="oneway_values">
+        <list_entry value="yes" display_value="In way direction"/>
+        <list_entry value="-1" display_value="Against way direction"/>
+        <list_entry value="no" display_value="Not oneway"/>
+    </chunk>
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
         <optional>
@@ -699,8 +704,13 @@
         <check key="noexit" text="No exit (cul-de-sac)" disable_off="true"/>
         <check key="narrow" text="Narrow" disable_off="true"/>
     </chunk>
-    <chunk id="highway_additional_oneway">
-        <check key="oneway" text="Oneway" disable_off="true"/>
+    <chunk id="oneway">
+        <combo key="oneway" text="Oneway" values_sort="false">
+            <reference ref="oneway_values"/>
+        </combo>
+    </chunk>
+    <chunk id="highway_additional_oneway">  
+        <reference ref="oneway"/> 
         <reference ref="highway_additional"/>
         <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes,Both directions,In way direction,Opposite to way direction,No" values_sort="false" values_context="overtaking" match="key"/>
     </chunk>
@@ -770,8 +780,10 @@
         <text key="junction:ref" text="Junction reference" />
         <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
         <reference ref="shoulder"/>
+        <combo key="oneway" text="Oneway" default="yes" values_sort="false">
+            <reference ref="oneway_values"/>
+        </combo>
         <checkgroup text="Additional attributes" columns="5">
-            <check key="oneway" text="Oneway" default="on"/>
             <check key="motorroad" text="Motorroad" disable_off="true"/>
             <check key="bridge" text="Bridge" disable_off="true"/>
             <check key="tunnel" text="Tunnel" disable_off="true"/>
@@ -2852,8 +2864,10 @@
                 <reference ref="lanes"/>
                 <reference ref="layer"/>
                 <reference ref="surface_smoothness"/>
-                <check key="oneway" text="Oneway" disable_off="true"/>
-                <check key="oneway:bicycle" text="Oneway for bicycle" disable_off="true"/>
+                <reference ref="oneway"/>
+                <combo key="oneway:bicycle" text="Oneway for bicycles" values_sort="false">
+                    <reference ref="oneway_values"/>
+                </combo>
                 <reference ref="highway_additional"/>
                 <check key="lit" text="Lit" disable_off="true"/>
                 <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
@@ -2929,7 +2943,7 @@
             <key key="service" value="parking_aisle"/>
             <optional>
                 <reference ref="surface_smoothness"/>
-                <check key="oneway" text="Oneway" disable_off="true"/>
+                <reference ref="oneway"/>
                 <check key="lit" text="Lit" disable_off="true"/>
             </optional>
             <reference ref="road_access_restrictions"/>
@@ -3153,8 +3167,9 @@
             <combo key="cycleway:right:lane" text="Bicycle lane type right" values_context="cycleway" match="none" >
                 <reference ref="cycleway_lane_values"/>
             </combo>
-            <combo key="oneway:bicycle" text="Oneway (bicycle)" values="yes,no" display_values="Yes,No"/>
-            <space/>
+            <combo key="oneway:bicycle" text="Oneway (bicycle)" values_sort="false">
+                <reference ref="oneway_values"/>
+            </combo>
         </item> <!-- Cycle Lane/Track -->
         <item name="Street parking both sides" icon="${lane_parking_both}" type="way,closedway" preset_name_label="true">
             <label text="Street parking both sides:" />
@@ -5229,7 +5244,7 @@
                 <optional>
                     <text key="name" text="Name"/>
                     <reference ref="highway_additional_oneway"/>
-                    <check key="oneway" text="Oneway" />
+                    <reference ref="oneway"/>
                     <reference ref="layer"/>
                     <reference ref="surface_smoothness"/>
                     <reference ref="maxspeed"/>
