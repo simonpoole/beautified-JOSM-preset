@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets version="5.51.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,harbour,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom">
+    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,harbour,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom,roller_coaster">
 <!--
     Icons have been derived from mainly from
   
@@ -7275,6 +7275,19 @@
                 <reference ref="wikipedia_wikidata_images" />
             </optional>
         </item> <!-- Rides -->
+        <item name="Roller coaster components" icon="${tourist_roller_coaster}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:roller_coaster"/>
+            <space/>
+            <combo key="roller_coaster" text="Component" values_searchable="true" values_context="leisure" match="keyvalue">
+                <list_entry value="track" display_value="Track"/>
+                <list_entry value="station" display_value="Station"/>
+                <list_entry value="support" display_value="Support"/>
+            </combo>
+            <optional>
+                <text key="name" text="Name"/>
+                <reference ref="layer" />
+            </optional>
+        </item>
         <item name="Escape game" icon="${leisure_escape_game}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=escape_game"/>
             <space/>
