@@ -1030,6 +1030,14 @@
             <text key="wheelchair:places" text="Number of wheelchair seating places" alue_type="integer"/>
         </optional>
     </chunk>
+    <chunk id="footway_accessibility">
+        <reference ref="essential_wheelchair"/>
+        <combo key="stroller" text="Stroller access" match="none" values_searchable="true" values_sort="false">
+            <list_entry value="yes" short_description="Unrestricted access"/>
+            <list_entry value="limited" short_description="Partial access"/>
+            <list_entry value="no" short_description="No access"/>
+        </combo>
+    </chunk>
     <chunk id="oh_wheelchair">
         <reference ref="oh"/>
         <reference ref="wheelchair"/>
@@ -3443,7 +3451,7 @@
                 <reference ref="mtb_scale"/>
                 <reference ref="trailblazed" />
                 <combo key="trail_visibility" text="Visibility" values="excellent,good,intermediate,bad,horrible,no" display_values="Excellent,Good,Intermediate,Bad,Horrible,Not visible" values_context="trail_visibility" values_sort="false"/>
-                <reference ref="wheelchair"/>
+                <reference ref="footway_accessibility"/>
                 <reference ref="handrail"/>
             </optional>
             <reference ref="path_access_restrictions"/>
@@ -3471,6 +3479,7 @@
                 <reference ref="highway_additional_oneway_lit_width"/>
                 <combo key="foot" text="Pedestrians" values="designated,yes,no" display_values="Designated,Yes,No"/>
                 <check key="segregated" text="Segregated" disable_off="true"/>
+                <reference ref="footway_accessibility"/>
             </optional>
             <reference ref="path_access_restrictions"/>
         </item> <!-- Dedicated Cycleway -->
@@ -3486,6 +3495,7 @@
                 <reference ref="cycleway_surface"/>
                 <reference ref="footway_surface"/>
                 <reference ref="highway_additional_oneway_lit_width"/>
+                <reference ref="footway_accessibility"/>
             </optional>
             <reference ref="path_access_restrictions"/>
         </item> <!-- Segregated Foot- and Cycleway -->
@@ -3500,6 +3510,7 @@
                 <reference ref="surface_smoothness"/>
                 <reference ref="highway_additional_oneway_lit_width"/>
                 <check key="passing_places" text="Passing Places" disable_off="true"/>
+                <reference ref="footway_accessibility"/>
             </optional>
             <reference ref="path_access_restrictions"/>
         </item> <!-- Combined Foot- and Cycleway -->
@@ -3524,6 +3535,7 @@
                 <combo key="bicycle" text="Bicycle" values="designated,yes,no" display_values="Designated,Yes,No"/>
                 <combo key="segregated" text="Segregated" values="yes,no" display_values="Yes,No" default=""/>
                 <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
+                <reference ref="footway_accessibility"/>
                 <reference ref="handrail"/>
             </optional>
             <preset_link preset_name="Arcade"/>
@@ -3550,6 +3562,7 @@
                 <space/>
                 <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" display_values="Yes,Forward,Backward,Reversible"/>
                 <space/>
+                <reference ref="footway_accessibility"/>
                 <reference ref="highway_additional_oneway_lit_width"/>
             </optional>
             <preset_link preset_name="Arcade"/>
