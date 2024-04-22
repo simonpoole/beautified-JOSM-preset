@@ -3680,6 +3680,13 @@
                 <text key="kerb:height" text="Kerb height (both sides)" value_type="dimension_vertical"/>
                 <text key="kerb:right:height" text="Kerb height (right)" value_type="dimension_vertical"/>
                 <text key="kerb:left:height" text="Kerb height (left)" value_type="dimension_vertical"/>
+                <combo key="flashing_lights" text="Flashing lights" values_context="crossing">
+                    <list_entry value="always" display_value="Always on"/>
+                    <list_entry value="button" display_value="Button operated"/>
+                    <list_entry value="sensor" display_value="Sensor operated"/>
+                    <list_entry value="yes" display_value="Present"/>
+                    <list_entry value="no" display_value="None"/>
+                </combo>
             </optional>
             <label text="In case of traffic signals:"/>
             <checkgroup text="In case of traffic signals:" columns="2">  
