@@ -939,6 +939,22 @@
     <chunk id="collection_times">
         <combo key="collection_times" text="Collection times" value_type="opening_hours" delimiter="|" values="Mo-Sa 09:00|Mo-Fr 17:30; Sa 12:00|Mo-Fr 15:00,19:00; Sa 15:10; Su 10:30" values_no_i18n="true" match="none" editable="true"/>
     </chunk>
+    <chunk id="books">
+        <multiselect key="books" text="Kind of books">
+            <list_entry value="academic" short_description="Academic"/>
+            <list_entry value="anarchism" short_description="Anarchism"/>
+            <list_entry value="antiquarian" short_description="Antiquarian"/>
+            <list_entry value="children" short_description="Children"/>
+            <list_entry value="comic" short_description="Comic"/>
+            <list_entry value="discount" short_description="Discount"/>
+            <list_entry value="erotic" short_description="Erotic"/>
+            <list_entry value="law" short_description="Law"/>
+            <list_entry value="music" short_description="Music"/>
+            <list_entry value="religion" short_description="Religion"/>
+            <list_entry value="textbook" short_description="Textbook"/>
+            <list_entry value="travel" short_description="Travel"/>
+        </multiselect>   
+    </chunk>
     <chunk id="baby_feeding">
         <combo key="baby_feeding" text="Baby feeding space" values_sort="false" values_context="baby_feeding">
             <list_entry value="yes" short_description="Available"/>
@@ -7840,6 +7856,9 @@
             <link wiki="Tag:amenity=library"/>
             <space/>
             <key key="amenity" value="library"/>
+            <optional>
+                <reference ref="books"/>
+            </optional>
             <reference ref="name_operator_oh_wheelchair_level_toilets"/>
             <reference ref="air_conditioning"/>
             <reference ref="link_contact_address_payment"/>
@@ -7851,6 +7870,7 @@
             <space/>
             <key key="amenity" value="public_bookcase"/>
             <optional>
+                <reference ref="books"/>
                 <text key="name" text="Name"/>
                 <text key="operator" text="Operator"/>
                 <text key="capacity" text="Capacity" value_type="integer"/>
@@ -12680,6 +12700,9 @@
             <space/>
             <key key="shop" value="books"/>
             <reference ref="name_brand_oh_wheelchair_level"/>
+            <optional>
+                <reference ref="books"/>
+            </optional>
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="baby_feeding" />
