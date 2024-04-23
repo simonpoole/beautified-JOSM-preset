@@ -5516,7 +5516,7 @@
         </group> <!-- Aerialway -->
         <separator/>
         <group name="Car" icon="${transport_car_group}" items_sort="false" >
-            <item name="Parking" icon="${transport_car_parking}" type="node,closedway,multipolygon" preset_name_label="true">
+            <item name="Car Parking" icon="${transport_car_parking}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=parking"/>
                 <space/>
                 <key key="amenity" value="parking"/>
@@ -5534,8 +5534,8 @@
                 <reference ref="maxstay"/>
                 <reference ref="supervised_lit_oh"/>
                 <reference ref="parking_orientation"/>
-            </item> <!-- Parking -->
-            <item name="Parking Space" icon="${transport_car_parking_space}" type="node,closedway" preset_name_label="true">
+            </item> <!-- Car Parking -->
+            <item name="Car Parking Space" icon="${transport_car_parking_space}" type="node,closedway" preset_name_label="true">
                 <link wiki="Tag:amenity=parking_space"/>
                 <space/>
                 <key key="amenity" value="parking_space"/>
@@ -5558,8 +5558,8 @@
                 <reference ref="supervised_lit_oh"/>
                 <check key="covered" text="Covered (with roof)"/>
                 <reference ref="parking_orientation"/>
-            </item> <!-- Parking Space -->
-            <item name="Parking Entrance/Exit" icon="${transport_car_parking_entrance}" type="node" preset_name_label="true">
+            </item> <!-- Car Parking Space -->
+            <item name="Car Parking Entrance/Exit" icon="${transport_car_parking_entrance}" type="node" preset_name_label="true">
                 <link wiki="Tag:amenity=parking_entrance"/>
                 <space/>
                 <key key="amenity" value="parking_entrance"/>
@@ -5580,7 +5580,7 @@
                 <reference ref="supervised_lit_oh"/>
                 <check key="covered" text="Covered (with roof)"/>
                 <preset_link preset_name="No name"/>
-            </item> <!-- Parking Entrance/Exit -->
+            </item> <!-- Car Parking Entrance/Exit -->
             <separator/>
             <item name="Fuel" icon="${transport_car_fuel}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=fuel"/>
@@ -5692,7 +5692,7 @@
                 <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no" display_values="Only,Yes,No"/>
                 <reference ref="link_contact_address_payment"/>
             </item> <!-- Car Dealer -->
-            <item name="Repair" icon="${shopping_car_repair}" type="node,closedway,multipolygon" preset_name_label="true">
+            <item name="Car Repair" icon="${shopping_car_repair}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:shop=car_repair"/>
                 <space/>
                 <key key="shop" value="car_repair"/>
@@ -5701,14 +5701,14 @@
                 <reference ref="car_brands"/>
                 <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres" rows="5" />
                 <reference ref="link_contact_address_payment"/>
-            </item> <!-- Repair -->
-            <item name="Parts" icon="${shopping_car_parts}" type="node,closedway,multipolygon" preset_name_label="true">
+            </item> <!-- Car Repair -->
+            <item name="Car Parts" icon="${shopping_car_parts}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:shop=car_parts"/>
                 <space/>
                 <key key="shop" value="car_parts"/>
                 <reference ref="name_brand_operator_oh_wheelchair"/>
                 <reference ref="link_contact_address_payment"/>
-            </item> <!-- Parts -->
+            </item> <!-- Car Parts -->
             <item name="Tires" icon="${shopping_tyres}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:shop=tyres"/>
                 <space/>
@@ -5726,14 +5726,14 @@
                 <reference ref="oh_ohworkshop_wheelchair"/>
                 <reference ref="link_contact_address_payment"/>
             </item> <!-- Caravan Dealer -->
-            <item name="Rental" icon="${transport_rental_car}" type="node,closedway,multipolygon" preset_name_label="true">
+            <item name="Car Rental" icon="${transport_rental_car}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=car_rental"/>
                 <space/>
                 <key key="amenity" value="car_rental"/>
                 <reference ref="name_brand_operator_oh_wheelchair"/>
                 <reference ref="link_contact_address_payment"/>
-            </item> <!-- Rental -->
-            <item name="Pooling" icon="${transport_car_pooling}" type="node,closedway,multipolygon" preset_name_label="true">
+            </item> <!-- Car Rental -->
+            <item name="Car Pooling" icon="${transport_car_pooling}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=car_pooling" />
                 <space />
                 <key key="amenity" value="car_pooling" />
@@ -5742,8 +5742,8 @@
                 <text key="capacity" text="Capacity" />
                 <reference ref="name_oh_wheelchair" />
                 <text key="website" text="Website"  value_type="website"/>
-            </item> <!-- Pooling -->
-            <item name="Sharing" icon="${transport_car_share}" type="node,closedway,multipolygon" preset_name_label="true">
+            </item> <!-- Car Pooling -->
+            <item name="Car Sharing" icon="${transport_car_share}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=car_sharing"/>
                 <space/>
                 <key key="amenity" value="car_sharing"/>
@@ -5752,7 +5752,7 @@
                 <reference ref="level"/>
                 <reference ref="name_oh_wheelchair"/>
                 <text key="website" text="Website" value_type="website"/>
-            </item> <!-- Sharing -->
+            </item> <!-- Car Sharing -->
             <item name="Vehicle Inspection" icon="${transport_vehicle_inspection}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=vehicle_inspection"/>
                 <space/>
@@ -5760,10 +5760,10 @@
                 <text key="operator" text="Operator"/>
                 <reference ref="name_oh_wheelchair"/>
                 <text key="website" text="Website" value_type="website"/>
-            </item> <!-- Sharing -->
+            </item> <!-- Vehicle Inspection -->
         </group> <!-- Car -->
         <group name="Motorcycle" icon="${transport_motorcycle}">
-            <item name="Parking" name_context="motorcycle" icon="${transport_motorcycle_parking}" type="node,closedway,multipolygon" preset_name_label="true">
+            <item name="Motorcycle Parking" name_context="motorcycle" icon="${transport_motorcycle_parking}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=motorcycle_parking"/>
                 <space/>
                 <key key="amenity" value="motorcycle_parking"/>
@@ -5773,7 +5773,7 @@
                 <reference ref="supervised_lit_oh"/>
                 <reference ref="maxstay"/>
                 <check key="covered" text="Covered (with roof)"/>
-            </item> <!-- Parking -->
+            </item> <!-- Motorcycle Parking -->
             <item name="Motorcycle Dealer" icon="${shopping_motorcycle}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:shop=motorcycle"/>
                 <space/>
@@ -5804,16 +5804,16 @@
                 <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres" rows="4"/>
                 <reference ref="link_contact_address_payment"/>
             </item> <!-- Motorcycle repair -->
-            <item name="Rental" icon="${transport_motorcycle_rental}" type="node,closedway,multipolygon" preset_name_label="true">
+            <item name="Motorcycle Rental" icon="${transport_motorcycle_rental}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=motorcycle_rental"/>
                 <space/>
                 <key key="amenity" value="motorcycle_rental"/>
                 <reference ref="name_brand_operator_oh_wheelchair"/>
                 <reference ref="link_contact_address_payment"/>
-            </item> <!-- Rental -->
+            </item> <!-- Motorcycle Rental -->
         </group> <!-- Motorcycle -->
         <group name="Bicycle" icon="${transport_bicycle}">
-            <item name="Parking" name_context="bicycle" icon="${transport_parking_bicycle}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <item name="Bicycle Parking" name_context="bicycle" icon="${transport_parking_bicycle}" type="node,way,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=bicycle_parking"/>
                 <space/>
                 <key key="amenity" value="bicycle_parking"/>
@@ -5838,8 +5838,8 @@
                 <reference ref="parking_access_fee_operator_surface_smoothness"/>
                 <check key="covered" text="Covered"/>
                 <reference ref="supervised_lit_oh"/>
-            </item> <!-- Parking -->
-            <item name="Bike Dealer" icon="${shopping_bicycle}" type="node,closedway,multipolygon" preset_name_label="true">
+            </item> <!-- Bicycle Parking -->
+            <item name="Bicycle Dealer" icon="${shopping_bicycle}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:shop=bicycle"/>
                 <space/>
                 <key key="shop" value="bicycle"/>
@@ -5856,8 +5856,8 @@
                     <check key="service:bicycle:cleaning" text="Bicycles are washed (for a fee)"/>
                 </checkgroup>
                 <reference ref="link_contact_address_payment"/>
-            </item> <!-- Bike Dealer -->
-            <item name="Rental" icon="${transport_rental_bicycle}" type="node,closedway,multipolygon" preset_name_label="true">
+            </item> <!-- Bicycle Dealer -->
+            <item name="Bicycle Rental" icon="${transport_rental_bicycle}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=bicycle_rental"/>
                 <space/>
                 <key key="amenity" value="bicycle_rental"/>
@@ -5880,7 +5880,7 @@
                 </optional>
                 <reference ref="link_contact_address_payment"/>
                 <preset_link preset_name="No name"/>
-            </item> <!-- Rental -->
+            </item> <!-- Bicycle Rental -->
             <item name="Public Bicycle Repair Station" icon="${transport_bicycle_repair_station}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:amenity=bicycle_repair_station"/>
                 <space/>
