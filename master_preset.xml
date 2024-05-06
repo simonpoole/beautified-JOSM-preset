@@ -10584,8 +10584,8 @@
             <key key="man_made" value="tower"/>
             <combo key="tower:type" text="Tower type" values="bell_tower,communication,cooling,defensive,diving,minaret,observation,pagoda,radar,watchtower"
                 display_values="Bell tower,Communication,Cooling,Defensive,Diving,Minaret,Observation,Pagoda,Radar,Watchtower" editable="true" match="key" values_searchable="true"/>
-            <combo key="tower:construction" text="Tower construction" values="freestanding,guyed_lattice,guyed_tube,lattice"
-                display_values="Freestanding,Guyed lattice,Guyed tube,Lattice" editable="true" match="key" values_searchable="true"/>
+            <combo key="tower:construction" text="Tower construction" values="dish,dome,freestanding,lattice"
+                display_values="Dish,Dome,Freestanding,Lattice" editable="true" match="key" values_searchable="true"/> 
             <optional>
                 <text key="name" text="Name"/>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
@@ -10601,8 +10601,8 @@
             <space/>
             <key key="man_made" value="mast"/>
             <combo key="tower:type" text="Tower type" values="communication,observation,lighting" display_values="Communication,Observation,Lighting" editable="true" match="key" values_context="tower" />
-            <combo key="tower:construction" text="Tower construction" values="dish,dome,freestanding,lattice"
-                display_values="Dish,Dome,Freestanding,Lattice" editable="true" match="key" values_searchable="true"/> 
+            <combo key="tower:construction" text="Tower construction" values="freestanding,guyed_lattice,guyed_tube,lattice"
+                display_values="Freestanding,Guyed lattice,Guyed tube,Lattice" editable="true" match="key" values_searchable="true"/>
             <optional>
                 <text key="name" text="Name"/>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
@@ -10612,7 +10612,7 @@
             <preset_link preset_name="Antenna" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Telescope" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Tower" text="Similar but different tags:" alternative="true" />
-        </item> <!-- Tower -->
+        </item> <!-- Mast -->
         <item name="Utility pole" icon="${man_made_pole}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=utility_pole"/>
             <space />
