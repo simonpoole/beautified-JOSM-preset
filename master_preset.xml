@@ -1989,7 +1989,15 @@
         <reference ref="mechCoupling" />
      </chunk>
     <chunk id="support">
-        <combo key="support" text="Support" values="pole,wall_mounted,billboard,ground" display_values="Pole,Wall mounted,Billboard,Ground" values_context="mounting/support"/>
+        <combo key="support" text="Support" values_context="mounting/support">
+            <list_entry value="billboard" display_value="Billboard" />
+            <list_entry value="ceiling" display_value="Ceiling" />         
+            <list_entry value="ground" display_values="Ground" />
+            <list_entry value="pedestal" display_value="Pedestal" />
+            <list_entry value="pole" display_value="Pole" />
+            <list_entry value="wall" display_value="Wall" />
+            <list_entry value="wall_mounted" display_value="Wall mounted" />
+        </combo>
     </chunk>
     <chunk id="aerodrome">
         <key key="aeroway" value="aerodrome" match="keyvalue"/>
@@ -11067,8 +11075,22 @@
                 <list_entry value="sodium" display_value="Sodium (generic)"/>
                 <list_entry value="solar_lamp" display_value="Solar lamp (generic)"/>
             </combo>
+            <combo key="light:method" text="Method"  values_context="lamp_type" match="key" deprecated="true">
+                <list_entry value="electric" display_value="Electric (generic)"/>
+                <list_entry value="floodlight" display_value="Floodlight (generic)"/>
+                <list_entry value="fluorescent" display_value="Fluorescent"/>
+                <list_entry value="gaslight" display_value="Gaslight"/>
+                <list_entry value="high_pressue_sodium" display_value="High pressue sodium"/>
+                <list_entry value="LED" display_value="LED"/>
+                <list_entry value="low_pressue_sodium" display_value="Low pressue sodium"/>
+                <list_entry value="mercury" display_value="Mercury"/>
+                <list_entry value="sodium" display_value="Sodium (generic)"/>
+            </combo>
             <combo key="lamp_mount" text="Mounted on" values="bent_mast,high_mast,pole,straight_mast,suspended,wall" display_values="Bent mast,High mast,Pole,Straight mast,Suspended,Wall" values_context="lamp_mount" match="key" />
             <optional>
+                <reference ref="support"/>
+                <text key="light:direction" text="Direction in degrees" match="key"/>
+                <text key="light:count" text="Number of lamps" match="key" value_type="integer"/>
                 <text key="ref" text="Ref"/>
                 <combo key="opening_hours" value_type="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" editable="true" values_no_i18n="true"/>
             </optional>
