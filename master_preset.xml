@@ -3824,12 +3824,12 @@
         <item name="Traffic sign" icon="${traffic_sign}" type="node" preset_name_label="true">
             <link wiki="Key:traffic_sign"/>
             <space/>
-            <combo key="traffic_sign" match="key" editable="true">
+            <combo key="traffic_sign" text="Traffic sign" match="key" editable="true">
                 <reference ref="traffic_sign_values"/>
             </combo>
             <reference ref="traffic_signals_direction" />
         </item> <!-- Traffic sign -->
-        <item name="Traffic Sign Forward" icon="${traffic_sign_forward}" type="node" preset_name_label="true">
+        <item name="Traffic Sign Forward" text="Traffic sign forward" icon="${traffic_sign_forward}" type="node" preset_name_label="true">
             <link wiki="Key:traffic_sign"/>
             <space/>
             <combo key="traffic_sign:forward" match="key" editable="true">
@@ -3837,7 +3837,7 @@
                 <reference ref="traffic_sign_values"/>
             </combo>
         </item> <!-- Traffic Sign Forward -->
-        <item name="Traffic Sign Backward" icon="${traffic_sign_backward}" type="node" preset_name_label="true">
+        <item name="Traffic Sign Backward" text="Traffic sign backward" icon="${traffic_sign_backward}" type="node" preset_name_label="true">
             <link wiki="Key:traffic_sign"/>
             <space/>
             <combo key="traffic_sign:backward" match="key" editable="true">
