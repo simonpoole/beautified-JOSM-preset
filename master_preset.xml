@@ -882,8 +882,8 @@
         </optional>
     </chunk>
     <chunk id="traffic_signals_direction">
-        <combo key="direction" text="For traffic direction" values="N,E,S,W,0,90,180,270,forward,backward"
-               display_values="North,East,South,West,0°,90°,180°,270°,Forward,Backward" values_sort="false" />
+        <combo key="direction" text="For traffic direction" values="forward,backward,N,E,S,W,0,90,180,270"
+               display_values="Forward,Backward,North,East,South,West,0°,90°,180°,270°" values_sort="false" />
     </chunk>
     <chunk id="min_age">
         <text key="min_age" text="Minimum age"/>
@@ -1022,12 +1022,12 @@
     </chunk>
     <chunk id="wheelchair_rooms">
         <optional>
-            <text key="wheelchair:rooms" text="Number of rooms suitable for wheelchairs" alue_type="integer"/>
+            <text key="wheelchair:rooms" text="Number of rooms suitable for wheelchairs" value_type="integer"/>
         </optional>
     </chunk>
     <chunk id="wheelchair_seating">
         <optional>
-            <text key="wheelchair:places" text="Number of wheelchair seating places" alue_type="integer"/>
+            <text key="wheelchair:places" text="Number of wheelchair seating places" value_type="integer"/>
         </optional>
     </chunk>
     <chunk id="footway_accessibility">
