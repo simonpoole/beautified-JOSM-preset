@@ -2671,7 +2671,7 @@
         <combo key="license_classes" text="License Classes" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E"/>
     </chunk>
     <chunk id="school_common">
-        <combo key="school:gender" values="mixed,male,female,separated" display_values="Mixed,Male,Female,Separated" text="Student gender"/>
+        <combo key="school:gender" values="mixed,male,female,separated" display_values="Mixed,Male,Female,Separated" values_context="gender" text="Student gender"/>
     </chunk>
     <chunk id="trailblazed">
         <combo key="trailblazed" text="Trail markings" values="yes,poles,cairns,symbols,no" display_values="Yes,Poles,Cairns,Symbols,No" match="key" />
