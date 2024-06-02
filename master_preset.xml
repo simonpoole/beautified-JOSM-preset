@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<presets version="5.53.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="5.54.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,harbour,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom,roller_coaster">
+    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,harbour,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom,roller_coaster,climbing">
 <!--
     Icons have been derived from mainly from
   
@@ -9860,74 +9860,88 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Running -->
-        <item name="Climbing site" icon="${sport_climbing_site}" type="node,way,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:sport=climbing"/>
-            <space/>
-            <key key="sport" value="climbing"/>
-            <text key="name" text="Name"/>
-            <check key="leisure" text="Sports centre" disable_off="true" value_on="sports_centre"/>
-            <reference ref="climbing_styles" />
-            <text key="climbing:routes" text="Number of routes" />
-            <text key="ele" text="Usual elevation at the bottom of the routes" length="10" />
-            <space />
-            <combo key="climbing:length" text="Usual route length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
-            <combo key="climbing:length:min" text="Minimal climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
-            <combo key="climbing:length:max" text="Maximum climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
-            <space />
-            <combo key="climbing:grade:uiaa:min" text="UIAA: Simplest route" values_no_i18n="true" values_sort="false">
-                <reference ref="uiaa_climbing_grades"/>
-            </combo>
-            <combo key="climbing:grade:uiaa:max" text="UIAA: Most difficult route" values_no_i18n="true" values_sort="false">
-                <reference ref="uiaa_climbing_grades"/>
-            </combo>
-            <combo key="climbing:grade:uiaa:mean" text="UIAA: Main difficulty" values_no_i18n="true" values_sort="false">
-                <reference ref="uiaa_climbing_grades"/>
-            </combo>
-            <space />
-            <combo key="climbing:grade:french:min" text="French: Simplest route" values_no_i18n="true" values_sort="false">
-                <reference ref="french_climbing_grades"/>
-            </combo>
-            <combo key="climbing:grade:french:max" text="French: Most difficult route" values_no_i18n="true" values_sort="false">
-                <reference ref="french_climbing_grades"/>
-            </combo>
-            <combo key="climbing:grade:french:mean" text="French: Main difficulty" values_no_i18n="true" values_sort="false">
-                <reference ref="french_climbing_grades"/>
-            </combo>
-            <space />
-            <combo key="climbing:grade:saxon:min" text="Saxon: Simplest route"  values_no_i18n="true" values_sort="false">
-                <reference ref="saxon_climbing_grades"/>
-            </combo>
-            <combo key="climbing:grade:saxon:max" text="Saxon: Most difficult route" values_no_i18n="true" values_sort="false">
-                <reference ref="saxon_climbing_grades"/>
-            </combo>
-            <combo key="climbing:grade:saxon:mean" text="Saxon: Main difficulty" values_no_i18n="true" values_sort="false">
-                <reference ref="saxon_climbing_grades"/>
-            </combo>
-            <reference ref="climbing_optional_attributes" />
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Climbing site -->
-        <item name="Climbing route" icon="${sport_climbing_route}" type="node,way" preset_name_label="true">
-            <link wiki="Tag:sport=climbing" />
-            <space />
-            <key key="sport" value="climbing" />
-            <key key="climbing" value="route" />
-            <text key="name" text="Name" />
-            <reference ref="climbing_styles" />
-            <combo key="climbing:bolted" text="Bolts" values="yes,no,1,2,3,4,5,6" values_sort="false" values_no_i18n="true" value_type="integer"/>
-            <combo key="climbing:pitches" text="Pitches" values="1,2,3,4,5,6,7,8" default="1" values_no_i18n="true" values_sort="false" value_type="integer"/>
-            <combo key="climbing:length" text="Route length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
-            <space />
-            <combo key="climbing:grade:UIAA" text="UIAA grading" values_no_i18n="true" values_sort="false">
-                <reference ref="uiaa_climbing_grades"/>
-            </combo>
-            <combo key="climbing:grade:french" text="French grading" values_no_i18n="true" values_sort="false">
-                <reference ref="french_climbing_grades"/>
-            </combo>
-            <combo key="climbing:grade:saxon" text="Saxon grading" values_no_i18n="true" values_sort="false">
-                <reference ref="saxon_climbing_grades"/>
-            </combo>
-            <reference ref="climbing_optional_attributes" />
-        </item> <!-- Climbing route -->
+        <group name="Climbing" icon="${sport_climbing_site}">
+            <item name="Climbing site" icon="${sport_climbing_site}" type="node,way,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Key:climbing"/>
+                <space/>
+                <key key="sport" value="climbing"/>
+                <text key="name" text="Name"/>
+                <check key="leisure" text="Sports centre" disable_off="true" value_on="sports_centre"/>
+                <reference ref="climbing_styles" />
+                <text key="climbing:routes" text="Number of routes" />
+                <text key="ele" text="Usual elevation at the bottom of the routes" length="10" />
+                <space />
+                <combo key="climbing:length" text="Usual route length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
+                <combo key="climbing:length:min" text="Minimal climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
+                <combo key="climbing:length:max" text="Maximum climbing length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
+                <space />
+                <combo key="climbing:grade:uiaa:min" text="UIAA: Simplest route" values_no_i18n="true" values_sort="false">
+                    <reference ref="uiaa_climbing_grades"/>
+                </combo>
+                <combo key="climbing:grade:uiaa:max" text="UIAA: Most difficult route" values_no_i18n="true" values_sort="false">
+                    <reference ref="uiaa_climbing_grades"/>
+                </combo>
+                <combo key="climbing:grade:uiaa:mean" text="UIAA: Main difficulty" values_no_i18n="true" values_sort="false">
+                    <reference ref="uiaa_climbing_grades"/>
+                </combo>
+                <space />
+                <combo key="climbing:grade:french:min" text="French: Simplest route" values_no_i18n="true" values_sort="false">
+                    <reference ref="french_climbing_grades"/>
+                </combo>
+                <combo key="climbing:grade:french:max" text="French: Most difficult route" values_no_i18n="true" values_sort="false">
+                    <reference ref="french_climbing_grades"/>
+                </combo>
+                <combo key="climbing:grade:french:mean" text="French: Main difficulty" values_no_i18n="true" values_sort="false">
+                    <reference ref="french_climbing_grades"/>
+                </combo>
+                <space />
+                <combo key="climbing:grade:saxon:min" text="Saxon: Simplest route"  values_no_i18n="true" values_sort="false">
+                    <reference ref="saxon_climbing_grades"/>
+                </combo>
+                <combo key="climbing:grade:saxon:max" text="Saxon: Most difficult route" values_no_i18n="true" values_sort="false">
+                    <reference ref="saxon_climbing_grades"/>
+                </combo>
+                <combo key="climbing:grade:saxon:mean" text="Saxon: Main difficulty" values_no_i18n="true" values_sort="false">
+                    <reference ref="saxon_climbing_grades"/>
+                </combo>
+                <reference ref="climbing_optional_attributes" />
+                <reference ref="link_contact_address_payment"/>
+            </item> <!-- Climbing site -->
+            <item name="Climbing route" icon="${sport_climbing_route}" type="node,way" preset_name_label="true">
+                <link wiki="Key:climbing" />
+                <space />
+                <key key="sport" value="climbing" />
+                <key key="climbing" value="route" />
+                <text key="name" text="Name" />
+                <reference ref="climbing_styles" />
+                <combo key="climbing:bolted" text="Bolts" values="yes,no,1,2,3,4,5,6" values_sort="false" values_no_i18n="true" value_type="integer"/>
+                <combo key="climbing:pitches" text="Pitches" values="1,2,3,4,5,6,7,8" default="1" values_no_i18n="true" values_sort="false" value_type="integer"/>
+                <combo key="climbing:length" text="Route length (m)" values="8,10,12,15,20,25,30,35,40" values_no_i18n="true" values_sort="false" />
+                <space />
+                <combo key="climbing:grade:UIAA" text="UIAA grading" values_no_i18n="true" values_sort="false">
+                    <reference ref="uiaa_climbing_grades"/>
+                </combo>
+                <combo key="climbing:grade:french" text="French grading" values_no_i18n="true" values_sort="false">
+                    <reference ref="french_climbing_grades"/>
+                </combo>
+                <combo key="climbing:grade:saxon" text="Saxon grading" values_no_i18n="true" values_sort="false">
+                    <reference ref="saxon_climbing_grades"/>
+                </combo>
+                <reference ref="climbing_optional_attributes" />
+            </item> <!-- Climbing route -->
+            <item name="Climbing route bottom" icon="${sport_climbing_route_bottom}" type="node" preset_name_label="true">
+                <link wiki="Key:climbing" />
+                <space />
+                <key key="sport" value="climbing" />
+                <key key="climbing" value="route_bottom" /> 
+            </item> <!-- Climbing route bottom -->
+            <item name="Climbing route top" icon="${sport_climbing_route_top}" type="node" preset_name_label="true">
+                <link wiki="Key:climbing" />
+                <space />
+                <key key="sport" value="climbing" />
+                <key key="climbing" value="route_top" />
+            </item> <!-- Climbing route top -->
+        </group> <!-- Climbing -->
         <item name="Canoeing/Kayaking" icon="${sport_canoe}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=canoe"/>
             <space/>
