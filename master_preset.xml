@@ -11119,6 +11119,7 @@
                 <text key="light:direction" text="Direction in degrees" match="key"/>
                 <text key="light:count" text="Number of lamps" match="key" value_type="integer"/>
                 <text key="ref" text="Ref"/>
+                <text key="operator" text="Operator"/>
                 <combo key="opening_hours" value_type="opening_hours" text="Operation times" values="Mo-Fr 22:00-05:00" match="none" editable="true" values_no_i18n="true"/>
             </optional>
         </item> <!-- Street Lamp -->
