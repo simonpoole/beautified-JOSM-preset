@@ -45,11 +45,11 @@ div.container {
   height:110px; 
   float:left; 
   margin:10px;
-
 }
 
 div.container .popup {
   display: none;
+  overflow:auto;
 }
 
 div.container:hover .popup {
@@ -62,4 +62,8 @@ div.container:hover .popup {
   border-style: solid;
   border-width: 1px;
   padding: 5px; 
+}
+
+div.no_break {
+  white-space: nowrap;
 }
