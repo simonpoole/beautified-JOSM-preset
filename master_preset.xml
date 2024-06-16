@@ -1545,7 +1545,7 @@
     </chunk>
     <chunk id="conditional_fee">
         <combo key="fee:conditional" text="Fee @" match="none">
-            <list_entry value="yes @ Mo-Fr 09:00-19:00"/> 
+            <list_entry value="yes @ Mo-Fr 09:00-19:00"/>
             <list_entry value="no @ stay &lt; 1 hour"/>
         </combo>
     </chunk>
@@ -1593,8 +1593,8 @@
         </combo>
         <combo key="maxstay:conditional" text="Time Limit" values_no_i18n="true" values_sort="false" match="none" editable="true">
             <reference ref="maxstay_conditional_values"/>
-            <list_entry value="no @ (Mo-Fr 09:00-19:00)"/> 
-            <list_entry value="load-unload @ (Mo-Fr 09:00-19:00)"/> 
+            <list_entry value="no @ (Mo-Fr 09:00-19:00)"/>
+            <list_entry value="load-unload @ (Mo-Fr 09:00-19:00)"/>
         </combo>
     </chunk>
     <chunk id="supervised">
