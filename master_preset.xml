@@ -1722,6 +1722,19 @@
     </chunk>
     <!-- shinto and the religions which don't have an own preset don't have denominations (yet) -->
     <!-- end of religions and denominations -->
+    <chunk id="sauna_type">
+        <multiselect key="sauna" text="Sauna" values_searchable="true">
+            <list_entry value="yes" display_value="Available (unspecified type)" short_description="A sauna is available but its type is not specified."/>
+            <list_entry value="no" display_value="Not available" short_description="A sauna is not available."/>
+            <list_entry value="hot" display_value="Hot/Finnish" short_description="A Finnish-style sauna with a temperature of over 60°C because of the water thrown on the rocks of the stove. This kind of sauna is relatively dry because of the high temperature."/>
+            <list_entry value="steam" display_value="Steam/Turkish" short_description="A Turkish-style steam sauna with a lower temperature and limited visibility because of the steam generated."/>
+            <list_entry value="infrared" display_value="Infrared" short_description="A sauna-like construction that is used for infrared therapy."/>
+            <list_entry value="dry" display_value="Dry" short_description="A non-steam dry sauna in which water is not thrown on the stove."/>
+            <list_entry value="smoke" display_value="Smoke" short_description="A Finnish-style hot sauna in which the stove has no chimney but instead the smoke fills the room when the sauna is prepared, and the smoke is then ventilated out when the sauna is ready."/>
+            <list_entry value="hanjeungmak" display_value="Hanjeungmak/Korean" short_description="A Korean-style hot and dry sauna, in which water is not thrown on the stove."/>
+            <list_entry value="aroma" display_value="Aroma" short_description="A sauna that constantly has an aroma, NOT a Finnish sauna with occasional aroma liquid added to the water."/>
+        </multiselect>
+    </chunk>
     <chunk id="voltage">
         <combo key="voltage" text="Voltage in Volts (V)" values="1150000,765000,750000,735000,500000,450000,420000,400000,380000,350000,345000,330000,315000,300000,275000,238000,230000,225000,220000,200000,161000,154000,150000,138000,132000,120000,115000,110000,100000,90000,69000,66000,65000,63000,60000,55000,49000,45000,35000,33000,30000,22000,20000,16000,15000,110000;20000" values_sort="false" match="none"/>
     </chunk>
@@ -9598,10 +9611,12 @@
             <link wiki="Tag:leisure=fitness_centre"/>
             <space/>
             <key key="leisure" value="fitness_centre"/>
-            <text key="name" text="Name"/>
+            <reference ref="name_brand_operator_oh_wheelchair_level_toilets"/>
             <reference ref="sport"/>
-            <reference ref="optional_level"/>
+            <reference ref="kids_area"/>
+            <reference ref="sauna_type"/>
             <reference ref="swimming_pool_facility"/>
+            <reference ref="optional_level"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Building"/>
         </item> <!-- Fitness Centre -->
