@@ -16202,7 +16202,7 @@
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_disused" javascript="
-var objects = ['amenity','aeroway','highway','leisure','man_made','military','railway','shop'];
+var objects = ['amenity','aeroway','building','highway','leisure','man_made','military','railway','shop'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -16229,7 +16229,7 @@ tags.remove('set_to_disused');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_disused_remove_tags" javascript="
-var objects = ['amenity','aeroway','highway','leisure','man_made','military','railway','shop'];
+var objects = ['amenity','aeroway','building','highway','leisure','man_made','military','railway','shop'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -16308,7 +16308,7 @@ tags.remove('set_to_disused_remove_tags');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_abandoned" javascript="
-var objects = ['amenity','aeroway','highway','leisure','man_made','military','place','railway','shop'];
+var objects = ['amenity','aeroway','building','highway','leisure','man_made','military','place','railway','shop'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -16335,7 +16335,7 @@ tags.remove('set_to_abandoned');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_abandoned_remove_tags" javascript="
-var objects = ['amenity','aeroway','highway','leisure','man_made','military','place','railway','shop'];
+var objects = ['amenity','aeroway','building', 'highway','leisure','man_made','military','place','railway','shop'];
 
 function isObject(key) {
   var objectsLength = objects.length;
