@@ -11952,289 +11952,296 @@
     </group> <!-- Telecom -->
     </group> <!-- Man Made -->
     <group name="Historic Places &amp; Objects" icon="${historic_group}" items_sort="false" >
-    <item name="Historic object" icon="${historic}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Key:historic"/>
-        <space/>
-        <combo key="historic" text="Type" match="keyvalue!">
-            <list_entry value="memorial" display_value="Memorial" />
-            <list_entry value="ruins" display_value="Ruins" />
-            <list_entry value="archaeological_site" display_value="Archaeological site" />
-            <list_entry value="wayside_shrine" display_value="Wayside shrine" />
-            <list_entry value="monument" display_value="Monument" />
-            <list_entry value="castle" display_value="Castle" />
-            <list_entry value="building" display_value="Building" />
-            <list_entry value="charcoal_pile" display_value="Charcoal pile" />
-            <list_entry value="boundary_stone" display_value="Boundary stone" />
-            <list_entry value="tomb" display_value="Tomb" />
-            <list_entry value="citywalls" display_value="Citywalls" />
-            <list_entry value="mine_shaft" display_value="Mine shaft" />
-            <list_entry value="mine" display_value="Mine" />
-            <list_entry value="railway" display_value="Railway" />
-            <list_entry value="manor" display_value="Manor" />
-            <list_entry value="hollow_way" display_value="Hollow way" />
-            <list_entry value="milestone" display_value="Milestone" />
-            <list_entry value="church" display_value="Church" />
-            <list_entry value="fort" display_value="Fort" />
-            <list_entry value="city_gate" display_value="City gate" />
-            <list_entry value="wreck" display_value="Wreck" />
-            <list_entry value="house" display_value="House" />
-            <list_entry value="stone" display_value="Stone" />
-            <list_entry value="wayside_chapel" display_value="Wayside chapel" />
-            <list_entry value="bunker" display_value="Bunker" />
-            <list_entry value="pa" display_value="Pa" />
-            <list_entry value="farm" display_value="Farm" />
-            <list_entry value="roman_road" display_value="Roman road" />
-            <list_entry value="aircraft" display_value="Aircraft" />
-            <list_entry value="bomb_crater" display_value="Bomb crater" />
-            <list_entry value="battlefield" display_value="Battlefield" />
-            <list_entry value="cannon" display_value="Cannon" />
-            <list_entry value="monastery" display_value="Monastery" />
-            <list_entry value="bridge" display_value="Bridge" />
-            <list_entry value="tower" display_value="Tower" />
-            <list_entry value="ship" display_value="Ship" />
-            <list_entry value="industrial" display_value="Industrial" />
-            <list_entry value="pillory" display_value="Pillory" />
-            <list_entry value="shieling" display_value="Shieling" />
-        </combo>
-        <reference ref="name_wikipedia"/>
-        <text key="description" text="Description" length="255"/>
-        <check key="ruins" text="Ruins"/>
-        <reference ref="link_contact_address_payment"/>
-    </item> <!-- Historic object -->
-    <item name="Castle" icon="${historic_castle}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=castle"/>
-        <space/>
-        <key key="historic" value="castle"/>
-        <combo key="castle_type" text="Type" 
-            values="defensive,palace,stately,manor,fortress,castrum,shiro,kremlin" 
-            display_values="Defensive,Palace,Stately,Manor,Fortress,Castrum,Shiro,Kremlin" />
-        <reference ref="name_wikipedia"/>
-        <check key="ruins" text="Ruins"/>
-        <reference ref="link_contact_address_payment"/>
-    </item> <!-- Castle -->
-    <item name="Fort" icon="${historic_fort}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=fort"/>
-        <space/>
-        <key key="historic" value="fort"/>
-        <reference ref="name_wikipedia"/>
-        <check key="ruins" text="Ruins"/>
-        <reference ref="link_contact_address_payment"/>
-    </item> <!-- Fort -->
-    <item name="Historic monastery" icon="${historic_monastery}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=monastery" />
-        <space />
-        <key key="historic" value="monastery" />
-        <optional>
-            <text key="name" text="Name" />
-            <reference ref="religious" />
-            <reference ref="wikipedia_wikidata_images" />
-            <reference ref="oh_wheelchair" />
-        </optional>
-        <preset_link preset_name="Monastery" text="Similar but different tags:" alternative="true"/>
-    </item> <!-- Historic monastery -->
-    <item name="City gate" icon="${historic_city_gate}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=city_gate"/>
-        <space/>
-        <key key="historic" value="city_gate"/>
-        <reference ref="name_wikipedia"/>
-        <check key="ruins" text="Ruins"/>
-        <reference ref="link_contact_address_payment"/>
-    </item> <!-- City gate -->
-    <item name="Building" icon="${historic_building}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=building"/>
-        <space/>
-        <key key="historic" value="building"/>
-        <reference ref="optional_name_wikipedia"/>
-        <check key="ruins" text="Ruins"/>
-        <reference ref="link_contact_address_payment"/>
-        <preset_link preset_name="Building"/>
-    </item> <!-- Building -->
-    <item name="Ruins" icon="${historic_ruin}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=ruins"/>
-        <space/>
-        <key key="historic" value="ruins"/>
-        <reference ref="name_oh_wheelchair"/>
-    </item> <!-- Ruins -->
-    <item name="Archaeological Site" icon="${historic_archaeological}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=archaeological_site"/>
-        <space/>
-        <key key="historic" value="archaeological_site"/>
-        <combo key="site_type" text="Type" deprecated="true">
-            <list_entry value="tumulus" short_description="Tumulus" />
-            <list_entry value="megalith" short_description="Megalith" />
-            <list_entry value="fortification" short_description="Fortification" />
-            <list_entry value="settlement" short_description="Settlement" />
-            <list_entry value="necropolis" short_description="Necropolis" />
-            <list_entry value="city" short_description="City" />
-            <list_entry value="grave_field" short_description="Grave field" />
-            <list_entry value="petroglyph" short_description="Petroglyph" />
-            <list_entry value="hut_circle" short_description="Hut circle" />
-            <list_entry value="roman_villa" short_description="Roman villa" />
-            <list_entry value="roman_circus" short_description="Roman circus" />
-            <list_entry value="crannog" short_description="Crannog" />
-            <list_entry value="enclosure" short_description="Enclosure" />
-            <list_entry value="baths" short_description="Baths" />
-        </combo>
-        <combo key="archaeological_site" text="Type">
-            <list_entry value="baths" short_description="Baths" />
-            <list_entry value="tumulus" short_description="Tumulus" />
-            <list_entry value="megalith" short_description="Megalith" />
-            <list_entry value="fortification" short_description="Fortification" />
-            <list_entry value="settlement" short_description="Settlement" />
-            <list_entry value="necropolis" short_description="Necropolis" />
-            <list_entry value="city" short_description="City" />
-            <list_entry value="grave_field" short_description="Grave field" />
-            <list_entry value="petroglyph" short_description="Petroglyph" />
-            <list_entry value="hut_circle" short_description="Hut circle" />
-            <list_entry value="roman_villa" short_description="Roman villa" />
-            <list_entry value="roman_circus" short_description="Roman circus" />
-            <list_entry value="crannog" short_description="Crannog" />
-            <list_entry value="enclosure" short_description="Enclosure" />
-            <list_entry value="baths" short_description="Baths" />
-        </combo>
-        <reference ref="historic_optional"/>
-        <reference ref="name_oh_wheelchair"/>
-    </item> <!-- Archaeological Site -->
-    <item name="Fortification Site" icon="${historic_fortification}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=archaeological_site"/>
-        <space/>
-        <key key="historic" value="archaeological_site"/>
-        <key key="archaeological_site" value="fortification"/>
-        <combo key="fortification_type" text="Fortification type">
-            <list_entry value="hill_fort" display_value="Hill fort" short_description="Forts using a rise of elevation"/>
-            <list_entry value="limes" display_value="Limes" short_description="Fortifications for border defense"/>
-            <list_entry value="sconce" display_value="Sconce" short_description="A small protective fortification"/>
-            <list_entry value="ring_ditch" display_value="Ring ditch" short_description="Circular ditched enclosures"/>
-            <list_entry value="ringfort" display_value="Ringfort" short_description="Circular fortified settlement"/>
-            <list_entry value="motte" display_value="Motte" short_description="Raised area of ground for a castle"/>
-            <list_entry value="watchtower" display_value="Watchtower" short_description="Military observation"/>
-            <list_entry value="battery" display_value="Battery" short_description="A group of artillary (cannon) in a fixed fortification"/>
-        </combo>
-        <reference ref="historic_optional"/>
-        <reference ref="name_oh_wheelchair"/>
-    </item> <!-- Battlefield -->
-    <item name="Battlefield" icon="${historic_battlefield}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=battlefield"/>
-        <space/>
-        <key key="historic" value="battlefield"/>
-        <text key="name" text="Name"/>
-        <reference ref="historic_optional"/>
-    </item> <!-- Battlefield -->
-    <item name="Tomb" icon="${historic_tomb}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=tomb"/>
-        <space/>
-        <key key="historic" value="tomb"/>
-        <text key="name" text="Name"/>
-        <combo key="tomb" text="Tomb type" values="tumulus,rock-cut,hypogeum,war_grave,mausoleum,columbarium,crypt,pyramid,sarcophagus,vault" display_values="Tumulus,Rock-cut,Hypogeum,War grave,Mausoleum,Columbarium,Crypt,Pyramid,Sarcophagus,Vault"/>
-        <reference ref="historic_optional"/>
-    </item> <!-- Tomb -->
-    <item name="Palaeontological Site" icon="${natural_palaeontological_site}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:geological=palaeontological_site"/>
-        <space/>
-        <key key="geological" value="palaeontological_site"/>
-        <text key="name" text="Name"/>
-    </item> <!-- Palaeontological Site -->
-    <separator/>
-    <item name="Monument" icon="${historic_monument}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=monument"/>
-        <space/>
-        <key key="historic" value="monument"/>
-        <text key="name" text="Name"/>
-        <reference ref="historic_optional"/>
-    </item> <!-- Monument -->
-    <item name="Memorial" icon="${historic_memorial}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=memorial"/>
-        <space/>
-        <key key="historic" value="memorial"/>
-        <text key="name" text="Name"/>
-        <combo key="memorial" text="Type" values_context="memorial" values_searchable="true">
-            <list_entry value="bust" display_value="Bust" short_description="Like a statue, but only showing the upper half of a person." />
-            <list_entry value="plaque" display_value="Plaque" short_description="A commemorative sign, often mounted on a wall." />
-            <list_entry value="statue" display_value="Statue" short_description="A statue representing a person." />
-            <list_entry value="stele" display_value="Stele" short_description="An upright slab engraved or painted with decorations or inscriptions." />
-            <list_entry value="stone" display_value="Stone" short_description="A stone with an inscription, picture, or similar." />
-            <list_entry value="war_memorial" display_value="War memorial" short_description="A building, monument, statue or other edifice celebrating a victory or commemorating those who died or were injured in a war." />
-            <list_entry value="sculpture" display_value="Sculpture" short_description="A non figurative sculpture which does not match any of the other categories." />
-            <list_entry value="cross" display_value="Cross" short_description="A cross-shaped memorial." />
-            <list_entry value="blue_plaque" display_value="Blue plaque (UK)" short_description="A blue plaque commemorating a historical link to that location. (UK)" regions="GB" />
-            <list_entry value="obelisk" display_value="Obelisk" short_description="An obelisk." />
-            <list_entry value="ghost_bike" display_value="Ghost bike" short_description="A bicycle painted white permanently placed as memorial for a victim of a road accident (usually cyclists)." />
-            <list_entry value="stolperstein" display_value="Stolperstein" short_description="10cm × 10cm brass plaque commemorating victims of Nazi persecution. (EU,RU)" regions="EU,RU" />
-            <list_entry value="bench" display_value="Bench" short_description="A bench placed in memory of someone or something; usually has a plaque, and sometimes a statue sitting on (part of) it." />
-        </combo>
-        <optional>
-            <text key="inscription" text="Inscription"  length="255"/>
-            <text key="artist_name" text="Artist Name"/>
+        <item name="Historic object" icon="${historic}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:historic"/>
+            <space/>
+            <combo key="historic" text="Type" match="keyvalue!">
+                <list_entry value="aircraft" display_value="Aircraft" />
+                <list_entry value="aqueduct" display_value="Aqueduct" />
+                <list_entry value="archaeological_site" display_value="Archaeological site" />
+                <list_entry value="battlefield" display_value="Battlefield" />
+                <list_entry value="bomb_crater" display_value="Bomb crater" />
+                <list_entry value="boundary_stone" display_value="Boundary stone" />
+                <list_entry value="bridge" display_value="Bridge" />
+                <list_entry value="building" display_value="Building" />
+                <list_entry value="bunker" display_value="Bunker" />
+                <list_entry value="cannon" display_value="Cannon" />
+                <list_entry value="castle" display_value="Castle" />
+                <list_entry value="cemetery" display_value="Cemetery" />
+                <list_entry value="chapel" display_value="Chapel" />
+                <list_entry value="charcoal_pile" display_value="Charcoal pile" />
+                <list_entry value="church" display_value="Church" />
+                <list_entry value="city_gate" display_value="City gate" />
+                <list_entry value="citywalls" display_value="Citywalls" />
+                <list_entry value="farm" display_value="Farm" />
+                <list_entry value="fort" display_value="Fort" />
+                <list_entry value="grave" display_value="Grave" />
+                <list_entry value="hollow_way" display_value="Hollow way" />
+                <list_entry value="house" display_value="House" />
+                <list_entry value="industrial" display_value="Industrial" />
+                <list_entry value="locomotive" display_value="Locomotive" />
+                <list_entry value="manor" display_value="Manor" />
+                <list_entry value="memorial" display_value="Memorial" />
+                <list_entry value="milestone" display_value="Milestone" />
+                <list_entry value="millstone" display_value="Millstone" />               
+                <list_entry value="mine" display_value="Mine" />
+                <list_entry value="mine_shaft" display_value="Mine shaft" />
+                <list_entry value="monastery" display_value="Monastery" />
+                <list_entry value="monument" display_value="Monument" />
+                <list_entry value="pa" display_value="Pa" />
+                <list_entry value="pillory" display_value="Pillory" />
+                <list_entry value="railway" display_value="Railway" />
+                <list_entry value="roman_road" display_value="Roman road" />
+                <list_entry value="ruins" display_value="Ruins" />
+                <list_entry value="shieling" display_value="Shieling" />
+                <list_entry value="ship" display_value="Ship" />
+                <list_entry value="stone" display_value="Stone" />
+                <list_entry value="tomb" display_value="Tomb" />
+                <list_entry value="tower" display_value="Tower" />
+                <list_entry value="wall" display_value="Wall" />
+                <list_entry value="wayside_chapel" display_value="Wayside chapel" />
+                <list_entry value="wayside_shrine" display_value="Wayside shrine" />
+                <list_entry value="wreck" display_value="Wreck" />
+            </combo>
+            <reference ref="name_wikipedia"/>
+            <text key="description" text="Description" length="255"/>
+            <check key="ruins" text="Ruins"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Historic object -->
+        <item name="Castle" icon="${historic_castle}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=castle"/>
+            <space/>
+            <key key="historic" value="castle"/>
+            <combo key="castle_type" text="Type" 
+                values="defensive,palace,stately,manor,fortress,castrum,shiro,kremlin" 
+                display_values="Defensive,Palace,Stately,Manor,Fortress,Castrum,Shiro,Kremlin" />
+            <reference ref="name_wikipedia"/>
+            <check key="ruins" text="Ruins"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Castle -->
+        <item name="Fort" icon="${historic_fort}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=fort"/>
+            <space/>
+            <key key="historic" value="fort"/>
+            <reference ref="name_wikipedia"/>
+            <check key="ruins" text="Ruins"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Fort -->
+        <item name="Historic monastery" icon="${historic_monastery}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=monastery" />
+            <space />
+            <key key="historic" value="monastery" />
+            <optional>
+                <text key="name" text="Name" />
+                <reference ref="religious" />
+                <reference ref="wikipedia_wikidata_images" />
+                <reference ref="oh_wheelchair" />
+            </optional>
+            <preset_link preset_name="Monastery" text="Similar but different tags:" alternative="true"/>
+        </item> <!-- Historic monastery -->
+        <item name="City gate" icon="${historic_city_gate}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=city_gate"/>
+            <space/>
+            <key key="historic" value="city_gate"/>
+            <reference ref="name_wikipedia"/>
+            <check key="ruins" text="Ruins"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- City gate -->
+        <item name="Building" icon="${historic_building}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=building"/>
+            <space/>
+            <key key="historic" value="building"/>
+            <reference ref="optional_name_wikipedia"/>
+            <check key="ruins" text="Ruins"/>
+            <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Building"/>
+        </item> <!-- Building -->
+        <item name="Ruins" icon="${historic_ruin}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=ruins"/>
+            <space/>
+            <key key="historic" value="ruins"/>
+            <reference ref="name_oh_wheelchair"/>
+        </item> <!-- Ruins -->
+        <item name="Archaeological Site" icon="${historic_archaeological}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=archaeological_site"/>
+            <space/>
+            <key key="historic" value="archaeological_site"/>
+            <combo key="site_type" text="Type" deprecated="true">
+                <list_entry value="tumulus" short_description="Tumulus" />
+                <list_entry value="megalith" short_description="Megalith" />
+                <list_entry value="fortification" short_description="Fortification" />
+                <list_entry value="settlement" short_description="Settlement" />
+                <list_entry value="necropolis" short_description="Necropolis" />
+                <list_entry value="city" short_description="City" />
+                <list_entry value="grave_field" short_description="Grave field" />
+                <list_entry value="petroglyph" short_description="Petroglyph" />
+                <list_entry value="hut_circle" short_description="Hut circle" />
+                <list_entry value="roman_villa" short_description="Roman villa" />
+                <list_entry value="roman_circus" short_description="Roman circus" />
+                <list_entry value="crannog" short_description="Crannog" />
+                <list_entry value="enclosure" short_description="Enclosure" />
+                <list_entry value="baths" short_description="Baths" />
+            </combo>
+            <combo key="archaeological_site" text="Type">
+                <list_entry value="baths" short_description="Baths" />
+                <list_entry value="tumulus" short_description="Tumulus" />
+                <list_entry value="megalith" short_description="Megalith" />
+                <list_entry value="fortification" short_description="Fortification" />
+                <list_entry value="settlement" short_description="Settlement" />
+                <list_entry value="necropolis" short_description="Necropolis" />
+                <list_entry value="city" short_description="City" />
+                <list_entry value="grave_field" short_description="Grave field" />
+                <list_entry value="petroglyph" short_description="Petroglyph" />
+                <list_entry value="hut_circle" short_description="Hut circle" />
+                <list_entry value="roman_villa" short_description="Roman villa" />
+                <list_entry value="roman_circus" short_description="Roman circus" />
+                <list_entry value="crannog" short_description="Crannog" />
+                <list_entry value="enclosure" short_description="Enclosure" />
+                <list_entry value="baths" short_description="Baths" />
+            </combo>
+            <reference ref="historic_optional"/>
+            <reference ref="name_oh_wheelchair"/>
+        </item> <!-- Archaeological Site -->
+        <item name="Fortification Site" icon="${historic_fortification}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=archaeological_site"/>
+            <space/>
+            <key key="historic" value="archaeological_site"/>
+            <key key="archaeological_site" value="fortification"/>
+            <combo key="fortification_type" text="Fortification type">
+                <list_entry value="hill_fort" display_value="Hill fort" short_description="Forts using a rise of elevation"/>
+                <list_entry value="limes" display_value="Limes" short_description="Fortifications for border defense"/>
+                <list_entry value="sconce" display_value="Sconce" short_description="A small protective fortification"/>
+                <list_entry value="ring_ditch" display_value="Ring ditch" short_description="Circular ditched enclosures"/>
+                <list_entry value="ringfort" display_value="Ringfort" short_description="Circular fortified settlement"/>
+                <list_entry value="motte" display_value="Motte" short_description="Raised area of ground for a castle"/>
+                <list_entry value="watchtower" display_value="Watchtower" short_description="Military observation"/>
+                <list_entry value="battery" display_value="Battery" short_description="A group of artillary (cannon) in a fixed fortification"/>
+            </combo>
+            <reference ref="historic_optional"/>
+            <reference ref="name_oh_wheelchair"/>
+        </item> <!-- Battlefield -->
+        <item name="Battlefield" icon="${historic_battlefield}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=battlefield"/>
+            <space/>
+            <key key="historic" value="battlefield"/>
+            <text key="name" text="Name"/>
+            <reference ref="historic_optional"/>
+        </item> <!-- Battlefield -->
+        <item name="Tomb" icon="${historic_tomb}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=tomb"/>
+            <space/>
+            <key key="historic" value="tomb"/>
+            <text key="name" text="Name"/>
+            <combo key="tomb" text="Tomb type" values="tumulus,rock-cut,hypogeum,war_grave,mausoleum,columbarium,crypt,pyramid,sarcophagus,vault" display_values="Tumulus,Rock-cut,Hypogeum,War grave,Mausoleum,Columbarium,Crypt,Pyramid,Sarcophagus,Vault"/>
+            <reference ref="historic_optional"/>
+        </item> <!-- Tomb -->
+        <item name="Palaeontological Site" icon="${natural_palaeontological_site}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:geological=palaeontological_site"/>
+            <space/>
+            <key key="geological" value="palaeontological_site"/>
+            <text key="name" text="Name"/>
+        </item> <!-- Palaeontological Site -->
+        <separator/>
+        <item name="Monument" icon="${historic_monument}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=monument"/>
+            <space/>
+            <key key="historic" value="monument"/>
+            <text key="name" text="Name"/>
+            <reference ref="historic_optional"/>
+        </item> <!-- Monument -->
+        <item name="Memorial" icon="${historic_memorial}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=memorial"/>
+            <space/>
+            <key key="historic" value="memorial"/>
+            <text key="name" text="Name"/>
+            <combo key="memorial" text="Type" values_context="memorial" values_searchable="true">
+                <list_entry value="bust" display_value="Bust" short_description="Like a statue, but only showing the upper half of a person." />
+                <list_entry value="plaque" display_value="Plaque" short_description="A commemorative sign, often mounted on a wall." />
+                <list_entry value="statue" display_value="Statue" short_description="A statue representing a person." />
+                <list_entry value="stele" display_value="Stele" short_description="An upright slab engraved or painted with decorations or inscriptions." />
+                <list_entry value="stone" display_value="Stone" short_description="A stone with an inscription, picture, or similar." />
+                <list_entry value="war_memorial" display_value="War memorial" short_description="A building, monument, statue or other edifice celebrating a victory or commemorating those who died or were injured in a war." />
+                <list_entry value="sculpture" display_value="Sculpture" short_description="A non figurative sculpture which does not match any of the other categories." />
+                <list_entry value="cross" display_value="Cross" short_description="A cross-shaped memorial." />
+                <list_entry value="blue_plaque" display_value="Blue plaque (UK)" short_description="A blue plaque commemorating a historical link to that location. (UK)" regions="GB" />
+                <list_entry value="obelisk" display_value="Obelisk" short_description="An obelisk." />
+                <list_entry value="ghost_bike" display_value="Ghost bike" short_description="A bicycle painted white permanently placed as memorial for a victim of a road accident (usually cyclists)." />
+                <list_entry value="stolperstein" display_value="Stolperstein" short_description="10cm × 10cm brass plaque commemorating victims of Nazi persecution. (EU,RU)" regions="EU,RU" />
+                <list_entry value="bench" display_value="Bench" short_description="A bench placed in memory of someone or something; usually has a plaque, and sometimes a statue sitting on (part of) it." />
+            </combo>
+            <optional>
+                <text key="inscription" text="Inscription"  length="255"/>
+                <text key="artist_name" text="Artist Name"/>
+                <text key="start_date" text="Start date"/>
+                <reference ref="material"/>
+                <reference ref="wikipedia_wikidata_images"/>
+            </optional>
+            <reference ref="historic_optional"/>
+        </item> <!-- Memorial -->
+        <item name="Wayside Cross" icon="${historic_wayside_cross}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:historic=wayside_cross"/>
+            <space/>
+            <key key="historic" value="wayside_cross"/>
+            <reference ref="optional_name"/>
+            <reference ref="religious_catholic_christian" />
             <text key="start_date" text="Start date"/>
+            <text key="inscription" text="Inscription" length="255"/>
             <reference ref="material"/>
-            <reference ref="wikipedia_wikidata_images"/>
-        </optional>
-        <reference ref="historic_optional"/>
-    </item> <!-- Memorial -->
-    <item name="Wayside Cross" icon="${historic_wayside_cross}" type="node,closedway" preset_name_label="true">
-        <link wiki="Tag:historic=wayside_cross"/>
-        <space/>
-        <key key="historic" value="wayside_cross"/>
-        <reference ref="optional_name"/>
-        <reference ref="religious_catholic_christian" />
-        <text key="start_date" text="Start date"/>
-        <text key="inscription" text="Inscription" length="255"/>
-        <reference ref="material"/>
-        <reference ref="historic_optional"/>
-    </item> <!-- Wayside Cross -->
-    <item name="Wayside Shrine" icon="${historic_wayside_shrine}" type="node,closedway" preset_name_label="true">
-        <link wiki="Tag:historic=wayside_shrine"/>
-        <space/>
-        <key key="historic" value="wayside_shrine"/>
-        <reference ref="optional_name"/>
-        <reference ref="religious_catholic_christian" />
-        <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
-        <check key="building" value_on="wayside_shrine" text="Wayside shrine building" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
-        <text key="start_date" text="Start date"/>
-        <text key="inscription" text="Inscription" length="255"/>
-        <reference ref="historic_optional"/>
-        <optional>
-            <reference ref="additional_building_tags"/>
-        </optional>
-    </item> <!-- Wayside Shrine -->
-    <item name="Torii" icon="${historic_torii}" type="node,closedway" preset_name_label="true">
-        <link wiki="Tag:man_made=torii"/>
-        <space/>
-        <key key="man_made" value="torii"/>
-        <reference ref="optional_name"/>
-    </item> <!-- Torii -->
-    <item name="Boundary Stone" icon="${historic_boundary_stone}" type="node,closedway" preset_name_label="true">
-        <link wiki="Tag:historic=boundary_stone"/>
-        <space/>
-        <key key="historic" value="boundary_stone"/>
-        <optional>
-            <text key="name" text="Name" />
-            <text key="inscription" text="Inscription" />
-        </optional>
-        <preset_link preset_name="Boundary Marker" text="Similar but different tags:" alternative="true" />
-    </item> <!-- Boundary Stone -->
-    <item name="Milestone" icon="${historic_milestone}" type="node" preset_name_label="true">
-        <link wiki="Tag:historic=milestone" />
-        <space />
-        <key key="historic" value="milestone" />
-        <optional>
-            <text key="name" text="Name" />
-            <text key="inscription" text="Inscription" />
-        </optional>
-    </item> <!-- Milestone -->
-    <item name="Pillory" icon="${historic_pillory}" type="node,closedway" preset_name_label="true">
-        <link wiki="Tag:historic=pillory"/>
-        <space/>
-        <key key="historic" value="pillory"/>
-        <text key="description" text="Description" length="255"/>
-    </item> <!-- Pillory -->
-    <item name="Wreck" icon="${historic_wreck}" type="node,closedway,multipolygon" preset_name_label="true">
-        <link wiki="Tag:historic=wreck"/>
-        <space/>
-        <key key="historic" value="wreck"/>
-        <reference ref="name_wikipedia"/>
-        <reference ref="link_contact_address_payment"/>
-    </item> <!-- Wreck -->
+            <reference ref="historic_optional"/>
+        </item> <!-- Wayside Cross -->
+        <item name="Wayside Shrine" icon="${historic_wayside_shrine}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:historic=wayside_shrine"/>
+            <space/>
+            <key key="historic" value="wayside_shrine"/>
+            <reference ref="optional_name"/>
+            <reference ref="religious_catholic_christian" />
+            <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
+            <check key="building" value_on="wayside_shrine" text="Wayside shrine building" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
+            <text key="start_date" text="Start date"/>
+            <text key="inscription" text="Inscription" length="255"/>
+            <reference ref="historic_optional"/>
+            <optional>
+                <reference ref="additional_building_tags"/>
+            </optional>
+        </item> <!-- Wayside Shrine -->
+        <item name="Torii" icon="${historic_torii}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=torii"/>
+            <space/>
+            <key key="man_made" value="torii"/>
+            <reference ref="optional_name"/>
+        </item> <!-- Torii -->
+        <item name="Boundary Stone" icon="${historic_boundary_stone}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:historic=boundary_stone"/>
+            <space/>
+            <key key="historic" value="boundary_stone"/>
+            <optional>
+                <text key="name" text="Name" />
+                <text key="inscription" text="Inscription" />
+            </optional>
+            <preset_link preset_name="Boundary Marker" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Boundary Stone -->
+        <item name="Milestone" icon="${historic_milestone}" type="node" preset_name_label="true">
+            <link wiki="Tag:historic=milestone" />
+            <space />
+            <key key="historic" value="milestone" />
+            <optional>
+                <text key="name" text="Name" />
+                <text key="inscription" text="Inscription" />
+            </optional>
+        </item> <!-- Milestone -->
+        <item name="Pillory" icon="${historic_pillory}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:historic=pillory"/>
+            <space/>
+            <key key="historic" value="pillory"/>
+            <text key="description" text="Description" length="255"/>
+        </item> <!-- Pillory -->
+        <item name="Wreck" icon="${historic_wreck}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:historic=wreck"/>
+            <space/>
+            <key key="historic" value="wreck"/>
+            <reference ref="name_wikipedia"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Wreck -->
     </group> <!-- Historic Places -->
     <group name="Shops" icon="${shopping_group}">
     <group name="Food" icon="${shopping_food_group}">
