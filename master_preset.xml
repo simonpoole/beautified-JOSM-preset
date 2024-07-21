@@ -12963,6 +12963,7 @@
                 <check key="male" text="Male" disable_off="true"/>
                 <check key="unisex" text="Unisex" disable_off="true"/>
             </checkgroup>
+            <check key="hairdresser" text="Barber" value_on="barber" disable_off="true"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Beauty" text="Similar but different tags:" alternative="true"/>
         </item> <!-- Hairdresser/Barber -->
