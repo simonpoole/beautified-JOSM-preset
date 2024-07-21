@@ -3589,6 +3589,15 @@
                 <combo key="ramp:wheelchair" text="Wheelchair ramp" values="yes,limited,no" display_values="Yes,Limited,No"/>
                 <combo key="ramp:luggage" text="Luggage ramp" values="yes,automatic,manual,no" display_values="Yes,Automatic,Manual,No"/>
                 <space/>
+                <combo key="platform_lift" text="Platform lift" values="yes,inclined,vertical,no" display_values="Yes,Inclined,Vertical,No" values_context="wheelchair"/>
+                <checkgroup text="Platform lift details" columns="1"> <!-- workaround -->
+                    <check key="platform_lift:portable" text="Portable" disable_off="true"/>
+                    <check key="platform_lift:seat" text="Seat" disable_off="true"/>
+                    <check key="platform_lift:supervised" text="Supervised" disable_off="true"/>
+                </checkgroup>
+                <text key="platform_lift:maxwidth:physical" text="Max.available width (meters)" value_type="dimension_horizontal"/>
+                <text key="platform_lift:maxlength:physical" text="Max.available length (meters)" value_type="dimension_horizontal"/>         
+                <space/>
                 <reference ref="handrail"/>
                 <space/>
                 <combo key="conveying" text="Escalator" values="yes,forward,backward,reversible" display_values="Yes,Forward,Backward,Reversible"/>
