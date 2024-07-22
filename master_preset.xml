@@ -2573,8 +2573,9 @@
             <text key="network" text="Network"/>
         </optional>
     </chunk>
-    <chunk id="backrest">
+    <chunk id="back_and_armrest">
         <check key="backrest" text="Backrest"/>
+        <check key="armrest" text="Armrest"/>
     </chunk>
     <chunk id="intermittent">
         <check key="intermittent" text="Is the water body intermittent (doesn't permanently contain water)?" disable_off="true"/>
@@ -7698,7 +7699,7 @@
             <link wiki="Tag:leisure=picnic_table"/>
             <space/>
             <key key="leisure" value="picnic_table"/>
-            <reference ref="backrest"/>
+            <reference ref="back_and_armrest"/>
             <reference ref="material"/>
             <reference ref="colours" />
             <check key="covered" text="Covered"/>
@@ -9412,7 +9413,7 @@
             <link wiki="Tag:amenity=bench"/>
             <space/>
             <key key="amenity" value="bench"/>
-            <reference ref="backrest"/>
+            <reference ref="back_and_armrest"/>
             <reference ref="material"/>
             <reference ref="colours" />
             <combo key="seats" text="Seats count" values="1,2,3,4,5,6,7,8,9,10" value_type="integer"/>
@@ -9425,7 +9426,7 @@
             <link wiki="Tag:leisure=bleachers"/>
             <space/>
             <key key="leisure" value="bleachers"/>
-            <reference ref="backrest"/>
+            <reference ref="back_and_armrest"/>
             <reference ref="material"/>
             <reference ref="colours" />
             <optional>
