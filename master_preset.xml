@@ -2690,6 +2690,9 @@
     <chunk id="trailblazed">
         <combo key="trailblazed" text="Trail markings" values="yes,poles,cairns,symbols,no" display_values="Yes,Poles,Cairns,Symbols,No" match="key" />
     </chunk>
+    <chunk id="facility_visibility">
+        <combo key="visibility" text="Visibility" values="house,street,area" display_values="House (up to 5m),Street (up to 20m),Area (more than 20m)"/>
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -9312,7 +9315,7 @@
                 <combo key="display" text="Display" values="analog,digital,sundial,unorthodox" display_values="Analog,Digital,Sundial,Unorthodox" text_context="clock" />
                 <reference ref="support"/>
                 <combo key="faces" text="Faces" text_context="clock" values="1,2,3,4" value_type="integer"/>
-                <combo key="visibility" text="Visibility/readability" values="house,street,area" display_values="house (up to 5m),street (up to 20m),area (more than 20m)"/>
+                <reference ref="facility_visibility"/>
                 <check key="date" text="Shows current date" disable_off="true"/>
                 <check key="thermometer" text="Shows temperature" disable_off="true"/>
                 <check key="barometer" text="Shows barometric pressure" disable_off="true"/>
@@ -10918,6 +10921,16 @@
             <preset_link preset_name="Windpump" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Pump" text="Similar but different tags:" alternative="true" />
         </item> <!-- Petroleum well -->
+        <item name="Gas flare" icon="${man_made_flare}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=flare" />
+            <space />
+            <key key="man_made" value="flare" />
+            <optional>
+                <reference ref="name_ref_operator" />
+                <text key="height" text="Height (meters)" value_type="dimension_vertical"/>
+                <reference ref="facility_visibility"/>
+            </optional>
+        </item> <!-- Gas flare -->
         <item name="Adit" icon="${man_made_adit}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=adit"/>
             <space/>
