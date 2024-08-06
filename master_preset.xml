@@ -15760,7 +15760,7 @@
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Confectionery -->
         <item name="Electronics repair" icon="${craft_electronics}" type="node,closedway,multipolygon">
-            <link wiki="Tag:craft=electronics"/>
+            <link wiki="Tag:craft=electronics_repair"/>
             <space/>
             <key key="craft" value="electronics_repair"/>
             <reference ref="name_oh_wheelchair"/>
@@ -15773,7 +15773,7 @@
               </checkgroup>
               </optional>
             <reference ref="link_contact_address_payment"/>
-        </item> <!-- Electronics -->
+        </item> <!-- Electronics repair -->
         <item name="Furniture" icon="${craft_furniture}" type="node,closedway,multipolygon">
             <link wiki="Tag:craft=furniture"/>
             <space/>
