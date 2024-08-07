@@ -284,6 +284,7 @@
         <list_entry value="civic"              display_value="Civic" deprecated="true"/>
         <list_entry value="college"            display_value="College"/>
         <list_entry value="commercial"         display_value="Commercial"/>
+        <list_entry value="container"          display_value="Container"/>
         <list_entry value="cowshed"            display_value="Cowshed"/>
         <list_entry value="detached"           display_value="Detached"/>
         <list_entry value="digester"           display_value="Digester"/>
@@ -564,6 +565,18 @@
         <list_entry value="-1" display_value="Against way direction"/>
         <list_entry value="no" display_value="Not oneway"/>
     </chunk>
+    <chunk id="leaf_type_values">
+        <list_entry value="broadleaved" display_value="Broadleaved" />
+        <list_entry value="needleleaved" display_value="Needleleaved" />          
+        <list_entry value="leafless" display_value="Leafless" />
+        <list_entry value="palm" display_value="Palm" deprecated="true" />
+    </chunk>
+    <chunk id="leaf_cycle_values">
+        <list_entry value="deciduous" display_value="Deciduous" short_description="Plants that are leafless for a certain period during the year."/>
+        <list_entry value="evergreen" display_value="Evergreen" short_description="Plants that are never entirely without green foliage."/>
+        <list_entry value="semi_deciduous" display_value="Semi deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting."/>
+        <list_entry value="semi_evergreen" display_value="Semi evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year."/>
+    </chunk>
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
         <optional>
@@ -625,14 +638,15 @@
             <list_entry value="sand" display_value="Sand" />
             <list_entry value="tartan" display_value="Tartan" />
             <list_entry value="ground" display_value="Ground" />
+            <list_entry value="woodchips" display_value="Woodchips" />
         </combo>
     </chunk>
     <chunk id="motorsport_surface">
         <combo key="surface" text="Surface" values="asphalt,concrete,ground" display_values="Asphalt,Concrete,Ground" match="none" />
     </chunk>
     <chunk id="riding_surface">
-          <combo key="surface" text="Surface" values="grass,sand,clay,dirt,fine_gravel,ground,mud,unpaved,compacted"
-                                    display_values="Grass,Sand,Clay,Dirt,Fine gravel,Ground,Mud,Unpaved,Compacted" match="none" />
+          <combo key="surface" text="Surface" values="grass,sand,clay,dirt,fine_gravel,ground,mud,unpaved,compacted,woodchips"
+                                    display_values="Grass,Sand,Clay,Dirt,Fine gravel,Ground,Mud,Unpaved,Compacted,Woodchips" match="none" />
     </chunk>
     <chunk id="lanes">
         <combo key="lanes" text="Lanes" values="1,2,3,4,5,6" length="3" match="none" value_type="integer"/>
@@ -1638,12 +1652,20 @@
         <text key="taxon" text="Taxon"/>
     </chunk>
     <chunk id="leaf">
-        <combo key="leaf_type" text="Leaf type" values="broadleaved,needleleaved,mixed,leafless" display_values="Broadleaved,Needleleaved,Mixed,Leafless" values_searchable="true"/>
+        <combo key="leaf_type" text="Leaf type" values_searchable="true">
+            <reference ref="leaf_type_values" />
+        </combo>
         <combo key="leaf_cycle" text="Leaf cycle" values_searchable="true">
-            <list_entry value="deciduous" display_value="Deciduous" short_description="Plants that are leafless for a certain period during the year."/>
-            <list_entry value="evergreen" display_value="Evergreen" short_description="Plants that are never entirely without green foliage."/>
-            <list_entry value="semi_deciduous" display_value="Semi deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting."/>
-            <list_entry value="semi_evergreen" display_value="Semi evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year."/>
+            <reference ref="leaf_cycle_values" />
+        </combo>
+    </chunk>
+    <chunk id="leaf_with_mixed">
+        <combo key="leaf_type" text="Leaf type" values_searchable="true">
+            <reference ref="leaf_type_values" />
+            <list_entry value="mixed" display_value="Mixed" />
+        </combo>
+        <combo key="leaf_cycle" text="Leaf cycle" values_searchable="true">
+            <reference ref="leaf_cycle_values" />
             <list_entry value="mixed" display_value="Mixed" short_description="Habitat with evergreen and deciduous vegetation."/>
         </combo>
     </chunk>
@@ -2693,6 +2715,9 @@
     <chunk id="facility_visibility">
         <combo key="visibility" text="Visibility" values="house,street,area" display_values="House (up to 5m),Street (up to 20m),Area (more than 20m)"/>
     </chunk>
+    <chunk id="aerialway_usage">
+        <multiselect key="usage" text="Usage" values="industrial;freight;tourism" display_values="Freight;Industrial;Tourism" values_context="usage" values_searchable="true" />
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -2763,6 +2788,7 @@
                 <reference ref="highway_public_transport" />
                 <reference ref="parking_lane"/>
                 <reference ref="shoulder"/>
+                <check key="frontage_road" text="Frontage road" disable_off="true" />
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -2805,6 +2831,7 @@
                 <reference ref="highway_public_transport"/>
                 <reference ref="parking_lane"/>
                 <reference ref="shoulder"/>
+                <check key="frontage_road" text="Frontage road" disable_off="true" />
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -2845,6 +2872,7 @@
                 <reference ref="highway_public_transport" />
                 <reference ref="parking_lane"/>
                 <reference ref="shoulder"/>
+                <check key="frontage_road" text="Frontage road" disable_off="true" />
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -2903,6 +2931,7 @@
                 <reference ref="highway_public_transport" />
                 <reference ref="parking_lane"/>
                 <reference ref="shoulder"/>
+                <check key="frontage_road" text="Frontage road" disable_off="true" />
             </optional>
             <reference ref="road_access_restrictions"/>
             <reference ref="lane_presets"/>
@@ -2983,6 +3012,7 @@
                 <list_entry value="parking_aisle" short_description="Parking aisle" />
                 <list_entry value="drive-through" short_description="Drive-through" />
                 <list_entry value="emergency_access" short_description="Emergency access" />
+                <list_entry value="slipway" short_description="Slipway" />
             </combo>
             <optional>
                 <text key="name" text="Name"/>
@@ -3800,10 +3830,12 @@
         <item name="Passing Place" icon="${highway_passing_place}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=passing_place"/>
             <key key="highway" value="passing_place"/>
+            <preset_link preset_name="Emergency Bay" text="Similar but different tags:" alternative="true"/>
         </item> <!-- Passing Place -->
         <item name="Emergency bay" icon="${highway_emergency_bay}" type="node,way" preset_name_label="true">
             <link wiki="Tag:highway=emergency_bay"/>
             <key key="highway" value="emergency_bay"/>
+            <preset_link preset_name="Passing Place" text="Similar but different tags:" alternative="true"/>
         </item> <!-- Emergency bay -->
         <item name="Turning Circle" icon="${highway_turning_circle}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=turning_circle"/>
@@ -4061,7 +4093,7 @@
             <reference ref="check_access_nomotor" />
             <reference ref="check_access_motor" />
         </item> <!-- Motorcycle Barrier -->
-        <item name="Gate" icon="${barrier_gate}" type="node" preset_name_label="true">
+        <item name="Gate" icon="${barrier_gate}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=gate"/>
             <key key="barrier" value="gate"/>
             <optional>
@@ -4073,7 +4105,7 @@
             <reference ref="check_access_motor" />
             <check key="locked" text="Usually locked"/>
         </item> <!-- Gate -->
-        <item name="Lift Gate" icon="${barrier_lift_gate}" type="node" preset_name_label="true">
+        <item name="Lift Gate" icon="${barrier_lift_gate}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=lift_gate"/>
             <key key="barrier" value="lift_gate"/>
             <combo key="lift_gate:type" text="Type" values="single,double" display_values="Single,Double" values_context="lift_gate"/>
@@ -4083,7 +4115,7 @@
             <reference ref="check_access_motor" />
             <check key="locked" text="Usually locked"/>
         </item> <!-- Lift Gate -->
-        <item name="Swing Gate" icon="${barrier_swing_gate}" type="node" preset_name_label="true">
+        <item name="Swing Gate" icon="${barrier_swing_gate}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=swing_gate"/>
             <key key="barrier" value="swing_gate"/>
             <combo key="swing_gate:type" text="Type" values="single,double" display_values="Single,Double" values_context="swing_gate"/>
@@ -4093,7 +4125,7 @@
             <reference ref="check_access_motor" />
             <check key="locked" text="Usually locked"/>
         </item> <!-- Swing Gate -->
-        <item name="Hampshire Gate" icon="${barrier_hampshire_gate}" type="node" preset_name_label="true">
+        <item name="Hampshire Gate" icon="${barrier_hampshire_gate}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=hampshire_gate"/>
             <key key="barrier" value="hampshire_gate"/>
             <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
@@ -4103,7 +4135,7 @@
             <reference ref="check_access_motor" />
             <check key="locked" text="Usually locked"/>
         </item> <!-- Hampshire Gate -->
-        <item name="Bump Gate" icon="${barrier_bump_gate}" type="node" preset_name_label="true">
+        <item name="Bump Gate" icon="${barrier_bump_gate}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=bump_gate" />
             <key key="barrier" value="bump_gate" />
             <text key="maxlength" text="Max. length (meters)" match="key" value_type="dimension_horizontal"/>
@@ -4113,7 +4145,7 @@
             <reference ref="check_access_motor" />
             <check key="locked" text="Usually locked"/>
         </item> <!-- Bump Gate -->
-        <item name="Kissing Gate" icon="${barrier_kissing_gate}" type="node" preset_name_label="true">
+        <item name="Kissing Gate" icon="${barrier_kissing_gate}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=kissing_gate"/>
             <key key="barrier" value="kissing_gate"/>
             <reference ref="optional_maxwidth"/>
@@ -4123,7 +4155,7 @@
             <reference ref="check_access_nomotor" />
             <check key="locked" text="Usually locked"/>
         </item> <!-- Kissing Gate -->
-        <item name="Height restrictor" icon="${barrier_height_restrictor}" type="node" preset_name_label="true">
+        <item name="Height restrictor" icon="${barrier_height_restrictor}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=height_restrictor"/>
             <key key="barrier" value="height_restrictor"/>
             <text key="maxheight" text="Max. height (meters)" value_type="dimension_vertical"/>
@@ -4191,11 +4223,14 @@
             <reference ref="check_access_nomotor" />
             <preset_link preset_name="All vehicles" />
         </item> <!-- Full-Height Turnstile -->
-        <item name="Wicket gate" icon="${barrier_wicket_gate}" type="node" preset_name_label="true">
+        <item name="Wicket gate" icon="${barrier_wicket_gate}" type="node,way" preset_name_label="true">
             <link wiki="Tag:barrier=wicket_gate" />
+            <label text="A pedestrian door or gate near a larger gate"/>
             <key key="barrier" value="wicket_gate" />
             <reference ref="optional_maxwidth" />
+            <label text="The tag `foot=yes` is implied and does not need to be set." />
             <reference ref="check_access_nomotor" />
+            <check key="locked" text="Usually locked"/>
         </item> <!-- Turnstile -->
         <item name="Sally Port" icon="${barrier_sally_port}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=sally_port" />
@@ -4247,7 +4282,7 @@
         <item name="Hedge" icon="${barrier_hedge}" type="way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:barrier=hedge"/>
             <key key="barrier" value="hedge"/>
-            <reference ref="leaf"/>
+            <reference ref="leaf_with_mixed"/>
             <optional>
                 <reference ref="genus_species_taxon"/>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
@@ -4301,6 +4336,7 @@
                 <combo key="wall" text="Type" values_searchable="true">
                     <list_entry value="brick" display_value="Brick" />
                     <list_entry value="castle_wall" display_value="Castle wall" />
+                    <list_entry value="concrete" display_value="Concrete" />
                     <list_entry value="dry_stone" display_value="Dry stone" />
                     <list_entry value="flood_wall" display_value="Flood wall" />
                     <list_entry value="gabion" display_value="Gabion" />
@@ -5452,6 +5488,7 @@
                 <reference ref="oh"/>
                 <optional>
                     <reference ref="additonal_aerialway_tags"/>
+                    <reference ref="aerialway_usage"/>
                 </optional>
             </item> <!-- Cable Car -->
             <item name="Chair Lift" icon="${transport_aerialway_chair_lift}" type="way" preset_name_label="true">
@@ -5463,6 +5500,7 @@
                 <check key="oneway" text="Bidirectional" value_on="no" disable_off="true"/>
                 <optional>
                     <reference ref="additonal_aerialway_tags_with_bubble"/>
+                    <reference ref="aerialway_usage"/>
                 </optional>
             </item> <!-- Chair Lift -->
             <item name="Gondola" icon="${transport_aerialway_gondola}" type="way" preset_name_label="true">
@@ -5518,6 +5556,7 @@
                     <reference ref="name_ref_operator"/>
                     <reference ref="fee" />
                     <text key="aerialway:duration" text="Typical journey time in minutes"/>
+                    <reference ref="aerialway_usage"/>
                 </optional>
             </item> <!-- Goods -->
             <item name="Zip Line" icon="${transport_aerialway_zip_line}" type="way" preset_name_label="true">
@@ -5531,6 +5570,7 @@
                     <reference ref="fee" />
                     <reference ref="min_age" />
                     <reference ref="maxweight"/>
+                    <reference ref="aerialway_usage"/>
                 </optional>
             </item> <!-- Zip Line -->
             <separator/>
@@ -5540,12 +5580,18 @@
                 <key key="aerialway" value="station"/>
                 <text key="name" text="Name"/>
                 <preset_link preset_name="No name"/>
+                <optional>
+                    <reference ref="aerialway_usage"/>
+                </optional>
             </item> <!-- Station -->
             <item name="Pylon" icon="${transport_aerialway_pylon}" type="node" preset_name_label="true">
                 <link wiki="Tag:aerialway=pylon"/>
                 <space/>
                 <key key="aerialway" value="pylon"/>
                 <reference ref="optional_name"/>
+                <optional>
+                    <reference ref="aerialway_usage"/>
+                </optional>
             </item> <!-- Pylon -->
         </group> <!-- Aerialway -->
         <separator/>
@@ -5735,7 +5781,32 @@
                 <reference ref="name_operator"/>
                 <reference ref="oh_ohworkshop_wheelchair"/>
                 <reference ref="car_brands"/>
-                <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres" display_values="Dealer;Repair;Parts;Tyres" rows="5" />
+                <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres;inspection" 
+                    display_values="Dealer;Repair;Parts;Tyres;Inspection" rows="5" />
+                <optional text="Alternate service tagging">
+                    <checkgroup columns="4">
+                        <check key="service:vehicle:car_repair" text="Car repair" text_context="shop=car_repair"/>
+                        <check key="service:vehicle:truck_repair" text="Truck repair" text_context="shop=car_repair"/>
+                        <check key="service:vehicle:new_car_sales" text="Sells new cars" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:used_car_sales" text="Sells used cars" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:air_conditioning" text="Repairs AC" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:alignment" text="Aligns tyres" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:batteries" text="Repairs/replaces batteries" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:body_repair" text="Repairs body" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:brakes" text="Services brakes" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:car_parts" text="Sells car parts" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:diagnostics" text="Performs diagnostics" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:electrical" text="Repairs electrical" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:glass" text="Repairs glass" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:inspection" text="State mandated inspections" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:motor" text="Repairs motor" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:muffler" text="Repairs muffler" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:oil_change" text="Performs oil changes" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:painting" text="Paints exterior" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:transmission" text="Repairs transmission" text_context="shop=car_repair" disable_off="true"/>
+                        <check key="service:vehicle:tyres" text="Replaces tires" text_context="shop=car_repair" disable_off="true"/>
+                    </checkgroup>
+                </optional>
                 <reference ref="link_contact_address_payment"/>
             </item> <!-- Repair -->
             <item name="Parts" icon="${shopping_car_parts}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -13284,6 +13355,7 @@
             <link wiki="Tag:shop=craft"/>
             <space/>
             <key key="shop" value="craft"/>
+            <check key="training" text="Provides classes" text_context="Tag:shop=craft" />
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Arts and craft supplies -->
@@ -14148,7 +14220,7 @@
             <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             <optional>
                 <reference ref="genus_species_taxon"/>
-                <reference ref="leaf"/>
+                <reference ref="leaf_with_mixed"/>
                 <reference ref="denotation"/>
                 <reference ref="tree_form" />
             </optional>
@@ -14191,7 +14263,7 @@
                 <space />
                 <reference ref="genus_species_taxon"/>
                 <space />
-                <reference ref="leaf"/>
+                <reference ref="leaf_with_mixed"/>
             </optional>
             <preset_link preset_name="Shrub" text="Similar but different tags:" alternative="true" />
         </item> <!-- Shrubbery -->
@@ -14203,14 +14275,14 @@
             <space/>
             <key key="natural" value="wood"/>
             <reference ref="optional_name"/>
-            <reference ref="leaf"/>
+            <reference ref="leaf_with_mixed"/>
         </item> <!-- Wood -->
         <item name="Forest" icon="${landuse_forest}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:landuse=forest"/>
             <space/>
             <key key="landuse" value="forest"/>
             <reference ref="optional_name"/>
-            <reference ref="leaf"/>
+            <reference ref="leaf_with_mixed"/>
         </item> <!-- Forest -->
         <item name="Cutline" icon="${man_made_cutline}" type="way" preset_name_label="true">
             <link wiki="Tag:man_made=cutline"/>
@@ -14273,7 +14345,7 @@
             <key key="natural" value="scrub"/>
             <optional>
                 <text key="name" text="Name"/>
-                <reference ref="leaf"/>
+                <reference ref="leaf_with_mixed"/>
             </optional>
         </item> <!-- Scrub -->
         <item name="Heath" icon="${natural_heath}" type="closedway,multipolygon" preset_name_label="true">
@@ -14388,7 +14460,7 @@
             <key key="landuse" value="plant_nursery"/>
             <reference ref="optional_name_operator"/>
             <space/>
-            <reference ref="leaf"/>
+            <reference ref="leaf_with_mixed"/>
             <reference ref="genus_species_taxon"/>
         </item> <!-- Plant Nursery -->
         <item name="Salt Pond" icon="${landuse_salt_pond}" type="closedway,multipolygon" preset_name_label="true">
