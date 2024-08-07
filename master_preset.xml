@@ -9905,6 +9905,16 @@
             <key key="leisure" value="miniature_golf"/>
             <reference ref="name_oh_wheelchair"/>
         </item> <!-- Miniature Golf -->
+        <item name="Bike park" icon="${sport_bike_park}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:leisure"/>
+            <space/>
+            <key key="leisure" value="bike_park"/>
+            <key key="sport" value="mtb"/>
+            <text key="name" text="Name"/>
+            <reference ref="oh"/>
+            <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Pump track" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Bike park -->
         <item name="Pump track" icon="${sport_pump_track}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:cycling=pump_track"/>
             <space/>
@@ -9915,6 +9925,7 @@
             <reference ref="sport_surface" />
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Bike park" text="Similar but different tags:" alternative="true" />
         </item> <!-- Pump track -->
     </group> <!-- Sport Facilities -->
     <group name="Sport" icon="${sport_rowing}">
@@ -10196,7 +10207,7 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Skateboard -->
-        <item name="BMX" icon="${sport_pump_track}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="BMX" icon="${sport_bmx}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=bmx"/>
             <space/>
             <key key="sport" value="bmx"/>
