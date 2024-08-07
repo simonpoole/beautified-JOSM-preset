@@ -625,6 +625,14 @@
             <list_entry value="5" short_description="5: Maximum difficulty, boulder fields, landslides"/>
             <list_entry value="6" short_description="6: Not rideable"/>
         </combo>
+        <combo key="mtb:scale:uphill" text="Uphill MTB Scale">
+            <list_entry value="0" short_description="0: Graveled or hardened earth. Good Grip. Avg. incline 10%"/>
+            <list_entry value="1" short_description="1: Graveled or hardened earth. Good Grip. Avg. incline 15%"/>
+            <list_entry value="2" short_description="2: Mostly stable, unsurfaced, partly washed out"/>
+            <list_entry value="3" short_description="3: Variable Surface, tight corners, small steps, surface rocks, earth or grass."/>
+            <list_entry value="4" short_description="4: Way is very steep, or in bad condition for pedalling uphill. Steps, trees, roots, tight corners."/>
+            <list_entry value="5" short_description="5: Way is too steep and/or too difficult to ride uphill."/>
+        </combo>
     </chunk>
     <chunk id="sport_surface">
         <combo key="surface" text="Surface" match="none"> 
@@ -9897,6 +9905,17 @@
             <key key="leisure" value="miniature_golf"/>
             <reference ref="name_oh_wheelchair"/>
         </item> <!-- Miniature Golf -->
+        <item name="Pump track" icon="${sport_pump_track}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:cycling=pump_track"/>
+            <space/>
+            <key key="cycling" value="pump_track"/>
+            <multiselect key="sport" values="bmx;skateboard" display_values="BMX;Skateboard" values_context="sport"/>
+            <text key="name" text="Name"/>
+            <reference ref="sport_facility_track"/>
+            <reference ref="sport_surface" />
+            <reference ref="oh"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Pump track -->
     </group> <!-- Sport Facilities -->
     <group name="Sport" icon="${sport_rowing}">
         <item name="Multi" icon="${sport_multi}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -10177,6 +10196,16 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Skateboard -->
+        <item name="BMX" icon="${sport_pump_track}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:sport=bmx"/>
+            <space/>
+            <key key="sport" value="bmx"/>
+            <text key="name" text="Name"/>
+            <reference ref="sport_facility_track"/>
+            <reference ref="sport_surface" />
+            <reference ref="oh"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Pump track -->
         <item name="Swimming" icon="${sport_swimming}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:sport=swimming"/>
             <space/>
