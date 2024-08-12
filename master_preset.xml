@@ -14252,7 +14252,7 @@
             <key key="species" value="ficus benghalensis"/>
             <key key="species:wikidata" value="Q1405636"/>
         </item> <!-- Banyan tree -->
-        <item name="Tree Row" icon="${natural_tree_row}" type="way" preset_name_label="true">
+        <item name="Tree Row" icon="${natural_tree_row}" type="way,closedway" preset_name_label="true">
             <link wiki="Tag:natural=tree_row"/>
             <label text="A line of trees."/>
             <space/>
