@@ -8834,6 +8834,7 @@
             <key key="lifeguard" value="base"/>
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
+            <check key="seasonal" text="Seasonal" disable_off="true" />
         </item> <!-- Lifeguard base -->
         <item name="Lifeguard tower" icon="${emergency_lifeguard_tower}" type="node" preset_name_label="true" deprecated="true">
             <link wiki="Tag:emergency=lifeguard_tower"/>
@@ -8847,12 +8848,16 @@
             <key key="lifeguard" value="tower"/>
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
+            <check key="seasonal" text="Seasonal" disable_off="true" />
         </item> <!-- Lifeguard tower -->
         <item name="Life ring" icon="${emergency_life_ring}" type="node" preset_name_label="true">
             <link wiki="Tag:emergency=life_ring"/>
             <key key="emergency" value="life_ring"/>
             <text key="ref" text="Reference"/>
             <text key="operator" text="Operator"/>
+            <combo key="support" text="Support" values="pole,pillar,wall_mounted,fence" 
+                display_values="Pole,Pillar,Wall mounted,Fence" values_context="mounting/support" />
+            <reference ref="colours" />
         </item> <!-- Life ring -->
         <item name="Emergency Access Point (highway variant)" icon="${emergency_emergency_access_point}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:highway=emergency_access_point"/>
@@ -11070,6 +11075,7 @@
             <link wiki="Tag:man_made=cairn"/>
             <space/>
             <key key="man_made" value="cairn"/>
+            <text key="height" text="Height (meters)" value_type="dimension_vertical"/>
         </item> <!-- Cairn -->
         <separator/>
         <item name="Pipeline" icon="${man_made_pipeline}" type="way" preset_name_label="true">
@@ -13794,6 +13800,7 @@
         <text key="ref" text="Reference"/>
         <reference ref="link_contact_address"/>
         <reference ref="kids_area" />
+        <preset_link preset_name="Financial institute" text="Similar but different tags:" alternative="true" />
     </item> <!-- Bank -->
     <item name="Money Exchange" icon="${money_currency_exchange}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:amenity=bureau_de_change"/>
@@ -16237,6 +16244,14 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Financial advisor -->
+        <item name="Financial institute" icon="${office_financial_institute}" type="node,closedway,multipolygon">
+            <link wiki="Tag:office=financial"/>
+            <space/>
+            <key key="office" value="financial"/>
+            <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+            <preset_link preset_name="Bank" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Financial institute-->
         <item name="Consulting" icon="${office_consulting}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=consulting"/>
             <space/>
