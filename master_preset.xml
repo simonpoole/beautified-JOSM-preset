@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="5.60.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="5.60.1" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,disused:amenity,disused:leisure,disused:man_made,disused:shop,golf,ford,harbour,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom,roller_coaster,climbing">
 <!--
@@ -13800,7 +13800,7 @@
         <text key="ref" text="Reference"/>
         <reference ref="link_contact_address"/>
         <reference ref="kids_area" />
-        <preset_link preset_name="Financial institute" text="Similar but different tags:" alternative="true" />
+        <preset_link preset_name="Financial" text="Similar but different tags:" alternative="true" />
     </item> <!-- Bank -->
     <item name="Money Exchange" icon="${money_currency_exchange}" type="node,closedway,multipolygon" preset_name_label="true">
         <link wiki="Tag:amenity=bureau_de_change"/>
@@ -16244,14 +16244,14 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Financial advisor -->
-        <item name="Financial institute" icon="${office_financial_institute}" type="node,closedway,multipolygon">
+        <item name="Financial" icon="${office_financial}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=financial"/>
             <space/>
             <key key="office" value="financial"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
             <preset_link preset_name="Bank" text="Similar but different tags:" alternative="true" />
-        </item> <!-- Financial institute-->
+        </item> <!-- Financial -->
         <item name="Consulting" icon="${office_consulting}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=consulting"/>
             <space/>
@@ -16266,13 +16266,6 @@
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Cooperative -->
-        <item name="Financial" icon="${office_financial}" type="node,closedway,multipolygon">
-            <link wiki="Tag:office=financial"/>
-            <space/>
-            <key key="office" value="financial"/>
-            <reference ref="name_oh_wheelchair_level"/>
-            <reference ref="link_contact_address"/>
-        </item> <!-- Financial -->
         <item name="Forestry" icon="${office_forestry}" type="node,closedway,multipolygon">
             <link wiki="Tag:office=forestry"/>
             <space/>
