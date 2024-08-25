@@ -6340,7 +6340,7 @@
                 <key key="amenity" value="ticket_validator"/>
                 <text key="operator" text="Operator"/>
                 <reference ref="level"/>
-                <combo key="barrier" value="turnstile,full_height_turnstile,gate" display_values="Turnstile,Full height turnstile,Gate"/>
+                <combo key="barrier" text="Barrier" value="turnstile,full_height_turnstile,gate" display_values="Turnstile,Full height turnstile,Gate"/>
                 <reference ref="wheelchair"/>
                 <combo key="capacity" text="Capacity" values="1,2,3,4,5,6" value_type="integer"/>
             </item> <!-- Ticket Validator -->
