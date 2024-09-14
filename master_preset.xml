@@ -2002,6 +2002,12 @@
             <list_entry value="private" display_value="Private"/>
             <list_entry value="no" display_value="Not allowed"/>          
         </combo>
+    </chunk>
+    <chunk id="managed">
+        <optional>
+            <combo key="managed" text="Managed" values="no,yes,grazing,undergrowth,mowing,scientific" 
+                display_values="No,Yes,Grazing,Undergrowth,Mowing,Scientific" values_context="Key:managed" />
+        </optional>
     </chunk> 
     <chunk id="substance">
         <combo key="substance" text="Substance" values="water,hot_water,steam,sewage,gas,oil" 
@@ -4946,6 +4952,8 @@
                     <list_entry value="tidalflat" short_description="Tidalflat"/>
                     <list_entry value="wet_meadow" short_description="Wet meadow"/>
                 </combo>
+                <check key="seasonal" text="Seasonal" disable_off="true" />
+                <reference ref="managed" />
             </item> <!-- Wetland -->
             <item name="Mud" icon="${natural_mud}" type="closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:natural=mud"/>
@@ -4954,6 +4962,7 @@
                 <space/>
                 <key key="natural" value="mud"/>
                 <reference ref="optional_name"/>
+                <check key="seasonal" text="Seasonal" disable_off="true" />
             </item> <!-- Mud -->
             <item name="Beach" icon="${natural_beach}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:natural=beach"/>
@@ -14323,6 +14332,7 @@
             <key key="natural" value="wood"/>
             <reference ref="optional_name"/>
             <reference ref="leaf_with_mixed"/>
+            <reference ref="managed" />
         </item> <!-- Wood -->
         <item name="Forest" icon="${landuse_forest}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:landuse=forest"/>
@@ -14383,6 +14393,7 @@
             <optional>
                 <text key="name" text="Name"/>
             </optional>
+            <reference ref="managed" />
         </item> <!-- Fell -->
         <item name="Scrub" icon="${natural_scrub}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:natural=scrub"/>
@@ -14404,6 +14415,7 @@
             <optional>
                 <text key="name" text="Name"/>
             </optional>
+            <reference ref="managed" />
         </item> <!-- Heath -->
         <item name="Sand" icon="${natural_sand}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:natural=sand"/>
