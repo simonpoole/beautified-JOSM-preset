@@ -3174,9 +3174,9 @@
             </item> <!-- Single direction roads -->
             <item name="Bi-directional roads" icon="${lane_bi_directional}" type="way,closedway" preset_name_label="true">
                 <link wiki="Lanes"/>
-                <combo key="lanes" values="1,2,3,4,5,6,7,8" description="Total number of full width lanes" value_type="integer" />
-                <combo key="lanes:forward" values="1,2,3,4,5,6,7,8" description="# full width lanes in way direction" value_type="integer" values_sort="false" />
-                <combo key="lanes:backward" values="1,2,3,4,5,6,7,8" description="# full width lanes opposite to way direction" value_type="integer" />
+                <combo key="lanes" values="1,2,3,4,5,6,7,8" text="Total number of full width lanes" value_type="integer" />
+                <combo key="lanes:forward" values="1,2,3,4,5,6,7,8" text="# full width lanes in way direction" value_type="integer" values_sort="false" />
+                <combo key="lanes:backward" values="1,2,3,4,5,6,7,8" text="# full width lanes opposite to way direction" value_type="integer" />
                 <!-- forwards -->
                 <multiselect key="turn:lanes:forward" text="Turning lanes in way direction" delimiter="|" match="key" editable="true">
                     <reference ref="turn_lanes_values"/>
@@ -13378,7 +13378,7 @@
             <link wiki="Tag:shop=fuel"/>
             <space/>
             <key key="shop" value="fuel"/>
-            <multiselect key="fuel" values="wood;gas;charcoal" display_values="Wood;Gas;Charcoal" deprecated="true"/>
+            <multiselect key="fuel" text="Fuel types" values="wood;gas;charcoal" display_values="Wood;Gas;Charcoal" deprecated="true"/>
             <checkgroup text="Fuel types" columns="2">
                 <check key="fuel:alcohol" text="Alcohol" disable_off="true"/>
                 <check key="fuel:anthracite" text="Anthracite" disable_off="true"/>
@@ -13585,7 +13585,7 @@
             <link wiki="Tag:shop=repair" />
             <space />
             <key key="shop" value="repair" />
-            <multiselect key="repair" values="assisted_self_service;appliance;computer;electronics;mobile_phone;motorcycle;shoes;tv;tyres"
+            <multiselect key="repair" text="Repair types" values="assisted_self_service;appliance;computer;electronics;mobile_phone;motorcycle;shoes;tv;tyres"
                 display_values="Assisted self service;Appliances;Computers;Electronics;Mobile phones;Motorcycles;Shoes;TVs;Tyres"/>
             <reference ref="name_oh_wheelchair" />
             <reference ref="link_contact_address_payment" />
@@ -14211,7 +14211,7 @@
             <space/>
             <key key="natural" value="hot_spring"/>
             <reference ref="optional_name_wikipedia"/>
-            <combo key="water_characteristic">
+            <combo key="water_characteristic" text="Water characteristic">
                 <list_entry value="sulfuric" display_value="Contains sulfuric acid"/>
                 <list_entry value="sulfurous" display_value="Contains sulfur"/>
                 <list_entry value="mud" display_value="Mud"/>
