@@ -16552,7 +16552,7 @@ tags.remove('set_to_abandoned_remove_tags');" />
         <item name="Abandoned amenity" icon="${abandoned_amenity}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:abandoned:"/>
             <space/>
-            <text key="abandoned:aeroway" match="key" />
+            <text key="abandoned:amenity" match="key" />
         </item> <!-- Abandoned amenity -->
         <item name="Abandoned aeroway" icon="${abandoned_aeroway}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:abandoned:"/>
