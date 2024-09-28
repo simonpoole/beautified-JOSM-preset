@@ -725,6 +725,7 @@
         <reference ref="incline"/>
         <check key="noexit" text="No exit (cul-de-sac)" disable_off="true"/>
         <check key="narrow" text="Narrow" disable_off="true"/>
+        <check key="flood_prone" text="Flood prone" disable_off="true" />
     </chunk>
     <chunk id="oneway">
         <combo key="oneway" text="Oneway" values_sort="false">
