@@ -9516,6 +9516,8 @@
             <reference ref="material"/>
             <reference ref="colours" />
             <combo key="seats" text="Seats count" values="1,2,3,4,5,6,7,8,9,10" value_type="integer"/>
+            <combo key="direction" text="Seat direction" values="N,E,S,W,0,90,180,270"
+                display_values="North,East,South,West,0°,90°,180°,270°" values_sort="false" />
             <optional>
                 <check key="covered" text="Covered"/>
                 <text key="operator" text="Operator"/>
