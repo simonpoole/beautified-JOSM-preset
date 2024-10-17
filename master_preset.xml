@@ -906,7 +906,7 @@
     </chunk>
     <chunk id="traffic_signals_direction">
         <combo key="direction" text="For traffic direction" values="forward,backward,N,E,S,W,0,90,180,270"
-               display_values="Forward,Backward,North,East,South,West,0°,90°,180°,270°" values_sort="false" />
+               display_values="Forward,Backward,North,East,South,West,0°,90°,180°,270°" values_sort="false" value_type="cardinal_direction" />
     </chunk>
     <chunk id="min_age">
         <text key="min_age" text="Minimum age"/>
@@ -9518,7 +9518,7 @@
             <reference ref="colours" />
             <combo key="seats" text="Seats count" values="1,2,3,4,5,6,7,8,9,10" value_type="integer"/>
             <combo key="direction" text="Seat direction" values="N,E,S,W,0,90,180,270"
-                display_values="North,East,South,West,0°,90°,180°,270°" values_sort="false" />
+                display_values="North,East,South,West,0°,90°,180°,270°" values_sort="false" value_type="cardinal_direction" />
             <optional>
                 <check key="covered" text="Covered"/>
                 <text key="operator" text="Operator"/>
@@ -11300,7 +11300,7 @@
             <combo key="lamp_mount" text="Mounted on" values="bent_mast,high_mast,pole,straight_mast,suspended,wall" display_values="Bent mast,High mast,Pole,Straight mast,Suspended,Wall" values_context="lamp_mount" match="key" />
             <optional>
                 <reference ref="support"/>
-                <text key="light:direction" text="Direction in degrees" match="key"/>
+                <text key="light:direction" text="Direction in degrees" match="key" value_type="cardinal_direction" />
                 <text key="light:count" text="Number of lamps" match="key" value_type="integer"/>
                 <text key="ref" text="Ref"/>
                 <text key="operator" text="Operator"/>
@@ -11402,7 +11402,7 @@
             <combo key="camera:type" text="Camera type" values="fixed,panning,dome" display_values="Fixed,Panning,Dome" values_context="camera:type" match="key"/>
             <combo key="camera:mount" text="Mounted on" values="wall,pole,ceiling" display_values="Wall,Pole,Ceiling" values_context="camera:mount" match="key"/>
             <optional>
-                <text key="camera:direction" text="Direction in degrees" match="key"/>
+                <text key="camera:direction" text="Direction in degrees" match="key" value_type="cardinal_direction" />
                 <text key="camera:angle" text="Inclination in degrees" match="key"/>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
