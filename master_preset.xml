@@ -2520,7 +2520,19 @@
         </combo>
     </chunk>
     <chunk id="fountain_type">
-        <combo key="fountain" text="Fountain type" values="yes,bubbler,nasone,nozzle,splash_pad" display_values="Yes,Bubbler,Nasone,Nozzle,Splash pad" />
+        <combo key="fountain" text="Fountain type">
+            <list_entry value="bubbler" display_value="Bubbler" />
+            <list_entry value="nasone" display_value="Nasone" />
+            <list_entry value="nozzle" display_value="Nozzle" />
+            <list_entry value="splash_pad" display_value="Splash pad" />
+            <list_entry value="stone_block" display_value="Stone block" />
+            <list_entry value="bottle_refill" display_value="Bottle refill" />
+            <list_entry value="toret" display_value="Toret" />
+            <list_entry value="roman_wolf" display_value="Roman wolf" />
+            <list_entry value="sebilj" display_value="Sebilj" />
+            <list_entry value="viktorija_zdenac" display_value="Viktorija zdenac" />
+            <list_entry value="wallace" display_value="Wallace" />
+        </combo>      
     </chunk>
     <chunk id="highchair">
         <combo key="highchair" text="High chair for small children" values="yes,no,1,2,3,4,5,6,7,8,9,10" display_values="Yes,No,1,2,3,4,5,6,7,8,9,10" editable="true" values_sort="false"/>
@@ -9598,14 +9610,20 @@
             <space/>
             <key key="amenity" value="drinking_water"/>
             <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
+            <reference ref="fountain_type" />
             <optional>
                 <text key="name" text="Name"/>
-                <text key="description" text="Description" length="255"/>
-                <reference ref="fountain_type" />
-                <check key="bottle" text="Suitable for bottle filling" disable_off="true"/>
+                <text key="description" text="Description" length="255"/>       
+                <checkgroup columns="2">
+                    <check key="bottle" text="Suitable for bottle filling" disable_off="true"/>
+                    <check key="seasonal" text="Seasonal availability" disable_off="true"/>
+                    <check key="dog" text="Dog usage" value_on="designated" />
+                    <check key="historic" text="Historic" />
+                </checkgroup>
                 <reference ref="level"/>
                 <reference ref="facility_access"/>
             </optional>
+            
         </item> <!-- Drinking Water -->
         <item name="Water Point" icon="${amenity_water_point}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=water_point"/>
