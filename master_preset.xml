@@ -7257,10 +7257,10 @@
                     <text key="expected_lwn_route_relations" text="Expected route count" match="none" value_type="integer"/>
                 </optional>
             </item>
-            <item name="Regional hiking network junction" icon="${tourist_regional_hiking_network_junction}" type="node" preset_name_label="true">
+            <item name="Regional riding network junction" icon="${tourist_regional_riding_network_junction}" type="node" preset_name_label="true">
                 <link wiki="Tag:network:type=node_network"/>
                 <key key="network:type" value="node_network" object="true"/>
-                <text key="rwn_ref" text="Reference" match="key"/>
+                <text key="rhn_ref" text="Reference" match="key"/>
                 <optional>
                     <text key="expected_rhn_route_relations" text="Expected route count" match="none" value_type="integer"/>
                 </optional>
