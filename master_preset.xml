@@ -3763,28 +3763,17 @@
                 <text key="name" text="Name"/>
             </optional>
         </item> <!-- Traffic Signal -->
-        <item name="Stop" icon="${highway_stop}" type="node" preset_name_label="true" match_expression="child highway=*">
+        <item name="Stop" icon="${highway_stop}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=stop"/>
             <key key="highway" value="stop"/>
             <combo key="stop" text="Type" values="all,minor" display_values="All,Minor"/>
             <reference ref="traffic_sign_direction" />
         </item> <!-- Stop -->
-        <item name="Stop (separate)" icon="${highway_stop}" type="node" preset_name_label="true" match_expression="-child highway=*">
-            <link wiki="Tag:highway=stop"/>
-            <key key="highway" value="stop"/>
-            <combo key="stop" text="Type" values="all,minor" display_values="All,Minor"/>
-            <reference ref="traffic_sign_direction_standalone" />
-        </item> <!-- Stop (separate)-->
-        <item name="Give Way" icon="${highway_give_way}" type="node" preset_name_label="true" match_expression="child highway=*">
+        <item name="Give Way" icon="${highway_give_way}" type="node" preset_name_label="true">
             <link wiki="Tag:highway=give_way"/>
             <key key="highway" value="give_way"/>
             <reference ref="traffic_sign_direction" />
         </item> <!-- Give Way -->
-        <item name="Give Way (separate)" icon="${highway_give_way}" type="node" preset_name_label="true" match_expression="-child highway=*">
-            <link wiki="Tag:highway=give_way"/>
-            <key key="highway" value="give_way"/>
-            <reference ref="traffic_sign_direction_standalone" />
-        </item> <!-- Give Way (separate) -->
         <item name="Advanced stop line" icon="${highway_cycleway_asl}" type="node" preset_name_label="true">
             <link wiki="Tag:cycleway=asl" />
             <key key="cycleway" value="asl" object="true" />
