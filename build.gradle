@@ -89,7 +89,7 @@ task updateWebsite(dependsOn: ["copyCss",'vespucciIcons'], type: JavaExec) {
     classpath = configurations.resoveableRuntimeOnly
     args('-input',       tempDir.getPath() + "/" + legacy_vespucci_preset_file,
             '-output',   'index.html',
-            '-vespucci', 'https://github.com/simonpoole/' + project.name + '/releases/latest/download/vespucci_zip.zip',
+            '-vespucci', 'https://github.com/simonpoole/' + project.name + '/releases/latest/download/vespucci_v5.zip',
             '-josm',     'https://github.com/simonpoole/' + project.name + '/releases/latest/download/josm.zip')
 }
 updateWebsite.group = 'preset utils'
