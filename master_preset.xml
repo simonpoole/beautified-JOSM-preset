@@ -2446,6 +2446,9 @@
             <check key="bicycle" text="By bicycle" disable_off="true"/>
         </checkgroup>
     </chunk>
+    <chunk id="facility_visibility">
+        <combo key="visibility" text="Visibility" values="house,street,area" display_values="House (up to 5m),Street (up to 20m),Area (more than 20m)"/>
+    </chunk>
     <chunk id="advertising_optional">
         <optional>
             <check key="lit" text="Lit" disable_off="true"/>
@@ -2454,6 +2457,10 @@
                 display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
             <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
             <combo key="sides" text="Number of sides" length="3" values="1,2,3,4,5,6" values_sort="false" match="none" editable="true" value_type="integer"/>
+            <combo key="direction" text="Facing" values="N,E,S,W,0,90,180,270"
+               display_values="North,East,South,West,0°,90°,180°,270°" values_sort="false" match="key" value_type="cardinal_direction" />
+            <combo key="orientation" text="Orientation" values="front,medium,parallel,opposite,multi" display_values="Front,Medium,Parallel,Opposite,Multi" />
+            <reference ref="facility_visibility" />
             <reference ref="support" />
         </optional>
     </chunk>
@@ -2757,9 +2764,6 @@
     </chunk>
     <chunk id="trailblazed">
         <combo key="trailblazed" text="Trail markings" values="yes,poles,cairns,symbols,no" display_values="Yes,Poles,Cairns,Symbols,No" match="key" />
-    </chunk>
-    <chunk id="facility_visibility">
-        <combo key="visibility" text="Visibility" values="house,street,area" display_values="House (up to 5m),Street (up to 20m),Area (more than 20m)"/>
     </chunk>
     <chunk id="aerialway_usage">
         <multiselect key="usage" text="Usage" values="industrial;freight;tourism" display_values="Freight;Industrial;Tourism" values_context="usage" values_searchable="true" />
@@ -3283,25 +3287,30 @@
             <combo key="cycleway:lane" text="Bicycle lane type" values_context="cycleway" match="none" >
                 <reference ref="cycleway_lane_values"/>
             </combo>
-            <!-- the following two items are SChisms that are forced on everybody -->
+            <check key="cycleway:buffer" text="Buffer between cars and cycleway" match="none" />
+            <!-- the following two items are Schisms that are forced on everybody -->
             <combo key="cycleway:both" text="Cycleway" values_context="cycleway" match="none" deprecated="true">
                 <reference ref="cycleway_values"/>
             </combo>
             <combo key="cycleway:both:lane" text="Bicycle lane type" values_context="cycleway" match="none" deprecated="true">
                 <reference ref="cycleway_lane_values"/>
             </combo>
+            <check key="cycleway:both:buffer" text="Buffer between cars and cycleway" match="none" deprecated="true" />
+            <!-- -->
             <combo key="cycleway:left" text="Cycleway left" values_context="cycleway" match="none">
                 <reference ref="cycleway_values"/>
             </combo>
             <combo key="cycleway:left:lane" text="Bicycle lane type left" values_context="cycleway" match="none" >
                 <reference ref="cycleway_lane_values"/>
             </combo>
+            <check key="cycleway:left:buffer" text="Buffer between cars and left cycleway" match="none" />
             <combo key="cycleway:right" text="Cycleway right" values_context="cycleway" match="none">
                 <reference ref="cycleway_values"/>
             </combo>
             <combo key="cycleway:right:lane" text="Bicycle lane type right" values_context="cycleway" match="none" >
                 <reference ref="cycleway_lane_values"/>
             </combo>
+            <check key="cycleway:right:buffer" text="Buffer between cars and right cycleway" match="none" />
             <combo key="oneway:bicycle" text="Oneway (bicycle)" values_sort="false">
                 <reference ref="oneway_values"/>
             </combo>
@@ -9690,30 +9699,7 @@
             <reference ref="fee"/>
         </item> <!-- Vacuum cleaner station -->
         <separator/>
-        <item name="Advertising" icon="${amenity_advertising}" type="node,closedway" preset_name_label="true">
-            <link wiki="Key:advertising"/>
-            <space/>
-            <combo key="advertising" text="Advertising facility" values="billboard,board,column,flag,poster_box,screen,sign,totem" display_values="Billboard,Board,Column,Flag,Poster box,Screen,Sign,Totem" values_context="advertising" values_searchable="true" match="key"/>
-            <reference ref="advertising_optional" />
-        </item> <!-- Advertising -->
-        <item name="Advertising Column" icon="${amenity_advertising_column}" type="node,closedway" preset_name_label="true">
-            <link wiki="Tag:advertising=column"/>
-            <space/>
-            <key key="advertising" value="column"/>
-            <reference ref="advertising_optional" />
-        </item> <!-- Advertising Column -->
-        <item name="Billboard" icon="${amenity_advertising_billboard}" type="node" preset_name_label="true">
-            <link wiki="Tag:advertising=billboard"/>
-            <space/>
-            <key key="advertising" value="billboard"/>
-            <reference ref="advertising_optional" />
-        </item> <!-- Billboard -->
-        <item name="Poster box" icon="${amenity_advertising_poster_box}" type="node,way" preset_name_label="true">
-            <link wiki="Tag:advertising=poster_box" />
-            <space />
-            <key key="advertising" value="poster_box" />
-            <reference ref="advertising_optional" />
-        </item> <!-- Poster box -->
+ 
         <item name="Excrement Bags" icon="${amenity_vending_excrement_bags}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=vending_machine%3Dexcrement_bags"/>
             <space/>
@@ -9753,7 +9739,45 @@
             <reference ref="name_operator"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Research institute -->
-    </group> <!-- Facilities -->
+        </group> <!-- Facilities -->
+           <group name="Advertising" icon="${amenity_advertising}">
+            <item name="Advertising" icon="${amenity_advertising}" type="node,closedway" preset_name_label="true">
+                <link wiki="Key:advertising"/>
+                <space/>
+                <combo key="advertising" text="Advertising facility" values="billboard,board,column,flag,poster_box,screen,sign,totem" display_values="Billboard,Board,Column,Flag,Poster box,Screen,Sign,Totem" values_context="advertising" values_searchable="true" match="key"/>
+                <reference ref="advertising_optional" />
+            </item> <!-- Advertising -->
+            <item name="Advertising Column" icon="${amenity_advertising_column}" type="node,closedway" preset_name_label="true">
+                <link wiki="Tag:advertising=column"/>
+                <space/>
+                <key key="advertising" value="column"/>
+                <reference ref="advertising_optional" />
+            </item> <!-- Advertising Column -->
+            <item name="Billboard" icon="${amenity_advertising_billboard}" type="node" preset_name_label="true">
+                <link wiki="Tag:advertising=billboard"/>
+                <space/>
+                <key key="advertising" value="billboard"/>
+                <reference ref="advertising_optional" />
+            </item> <!-- Billboard -->
+            <item name="Poster box" icon="${amenity_advertising_poster_box}" type="node,way" preset_name_label="true">
+                <link wiki="Tag:advertising=poster_box" />
+                <space />
+                <key key="advertising" value="poster_box" />
+                <reference ref="advertising_optional" />
+            </item> <!-- Poster box -->
+            <item name="Totem" icon="${amenity_advertising_totem}" type="node,way" preset_name_label="true">
+                <link wiki="Tag:advertising=totem"/>
+                <space />
+                <key key="advertising" value="totem" />
+                <combo key="message" text="Message type" values="commercial,local,safety,legal,map,political,showbiz,non_profit,opinion,religion"
+                    display_values="Commercial,Local,Safety,Legal,Map,Political,Showbiz,Non profit,Opinion,Religion" />
+                <optional>
+                    <reference ref="ref_operator"/>
+                    <reference ref="advertising_optional" />
+                    <text key="width" text="Width (meters)" />
+                </optional>
+            </item> <!-- Totem -->
+        </group> <!-- Advertising -->
     </group>  <!-- Facilities -->
     <group name="Sports" icon="${sport_group}">
     <group name="Sport Facilities" icon="${sport_facilities}">
@@ -12389,7 +12413,7 @@
                 <list_entry value="bench" display_value="Bench" short_description="A bench placed in memory of someone or something; usually has a plaque, and sometimes a statue sitting on (part of) it." />
             </combo>
             <optional>
-                <text key="inscription" text="Inscription"  length="255"/>
+                <text key="inscription" text="Inscription" multiline="true" length="255"/>
                 <text key="artist_name" text="Artist Name"/>
                 <text key="start_date" text="Start date"/>
                 <reference ref="material"/>
@@ -12404,7 +12428,7 @@
             <reference ref="optional_name"/>
             <reference ref="religious_catholic_christian" />
             <text key="start_date" text="Start date"/>
-            <text key="inscription" text="Inscription" length="255"/>
+            <text key="inscription" text="Inscription"  multiline="true" length="255"/>
             <reference ref="material"/>
             <reference ref="historic_optional"/>
         </item> <!-- Wayside Cross -->
@@ -12417,7 +12441,7 @@
             <check key="amenity" text="Place of worship" value_on="place_of_worship" disable_off="true"/>
             <check key="building" value_on="wayside_shrine" text="Wayside shrine building" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
             <text key="start_date" text="Start date"/>
-            <text key="inscription" text="Inscription" length="255"/>
+            <text key="inscription" text="Inscription" multiline="true" length="255"/>
             <reference ref="historic_optional"/>
             <optional>
                 <reference ref="additional_building_tags"/>
@@ -12435,7 +12459,7 @@
             <key key="historic" value="boundary_stone"/>
             <optional>
                 <text key="name" text="Name" />
-                <text key="inscription" text="Inscription" />
+                <text key="inscription" text="Inscription" multiline="true" length="255"/>
             </optional>
             <preset_link preset_name="Boundary Marker" text="Similar but different tags:" alternative="true" />
         </item> <!-- Boundary Stone -->
@@ -12445,7 +12469,7 @@
             <key key="historic" value="milestone" />
             <optional>
                 <text key="name" text="Name" />
-                <text key="inscription" text="Inscription" />
+                <text key="inscription" text="Inscription" multiline="true" length="255"/>
             </optional>
         </item> <!-- Milestone -->
         <item name="Pillory" icon="${historic_pillory}" type="node,closedway" preset_name_label="true">
@@ -14000,7 +14024,7 @@
             <key key="boundary" value="marker" />
             <optional>
                 <reference ref="name_ref" />
-                <text key="inscription" text="Inscription" />
+                <text key="inscription" text="Inscription" multiline="true" length="255"/>
                 <reference ref="material" />
             </optional>
             <preset_link preset_name="Boundary Stone" text="Similar but different tags:" alternative="true" />
