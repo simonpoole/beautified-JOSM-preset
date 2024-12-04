@@ -2768,6 +2768,21 @@
     <chunk id="aerialway_usage">
         <multiselect key="usage" text="Usage" values="industrial;freight;tourism" display_values="Freight;Industrial;Tourism" values_context="usage" values_searchable="true" />
     </chunk>
+    <chunk id="map_base">
+        <reference ref="optional_name_ref_operator" />
+        <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" display_values="Topo,Street,Scheme,Toposcope"/>
+        <combo key="map_size" text="Shown Area" values="site,city,region" display_values="Site,City,Region" values_sort="false" />
+        <text key="description" text="Detailed description" length="255"/>
+        <optional text="Routes shown for:">
+            <check key="hiking" text="Hiking" disable_off="true"/>
+            <check key="bicycle" text="Cycling" disable_off="true"/>
+            <check key="mtb" text="Mountainbiking" disable_off="true"/>
+            <check key="ski" text="Skiing" disable_off="true"/>
+            <check key="horse" text="Riding" disable_off="true"/>
+            <space/>
+            <label text="... other transportation modes possible"/>
+        </optional>
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -7144,20 +7159,18 @@
             <space/>
             <key key="tourism" value="information"/>
             <key key="information" value="map"/>
-            <reference ref="optional_name_ref_operator" />
-            <combo key="map_type" text="Detail Grade" values="topo,street,scheme,toposcope" display_values="Topo,Street,Scheme,Toposcope"/>
-            <combo key="map_size" text="Shown Area" values="site,city,region" display_values="Site,City,Region" values_sort="false" />
-            <text key="description" text="Detailed description" length="255"/>
-            <optional text="Routes shown for:">
-                <check key="hiking" text="Hiking" disable_off="true"/>
-                <check key="bicycle" text="Cycling" disable_off="true"/>
-                <check key="mtb" text="Mountainbiking" disable_off="true"/>
-                <check key="ski" text="Skiing" disable_off="true"/>
-                <check key="horse" text="Riding" disable_off="true"/>
-                <space/>
-                <label text="... other transportation modes possible"/>
-            </optional>
+            <reference ref="map_base" />
         </item> <!-- Map -->
+        <item name="Tactile map" icon="${tourist_information_tactile_map}" type="node" preset_name_label="true">
+            <link wiki="Tag:information=tactile_map"/>
+            <space />
+            <label text="A tactile map."/>
+            <space/>
+            <key key="tourism" value="information"/>
+            <key key="information" value="tactile_map"/>
+            <reference ref="map_base" />
+            <text key="blind:description" text="Description for visiually impaired" i18n="true"/>          
+        </item> <!-- Tactile map -->
         <item name="Information Board" icon="${tourist_information_board}" type="node" preset_name_label="true">
             <link wiki="Key:information=board"/>
             <space/>
@@ -7237,6 +7250,15 @@
             <label text="Audioguide via mobile phone?"/>
             <text key="phone" text="Phone number" value_type="phone"/>
         </item> <!-- Audio Guide -->
+        <item name="Tactile model" icon="${tourist_information_tactile_model}" type="node" preset_name_label="true">
+            <link wiki="Tag:information=tactile_model"/>
+            <space />
+            <label text="A tactile model."/>
+            <space/>
+            <key key="tourism" value="information"/>
+            <key key="information" value="tactile_model"/>
+            <text key="blind:description" text="Description for visiually impaired" i18n="true"/>          
+        </item> <!-- Tactile model -->
         <item name="Other Information Point" icon="${tourist_other_information_point}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:tourism=information"/>
             <space/>
