@@ -3836,7 +3836,7 @@
             <checkgroup text="In case of traffic signals:" columns="2">  
                 <check key="button_operated" text="Button operated" disable_off="true"/>
                 <check key="traffic_signals:sound" text="Sound signals" disable_off="true"/>
-                <check key="traffic_signals:minimap" text="Tactile map" disable_off="true"/>
+                <check key="traffic_signals:minimap" text="Tactile mini map" disable_off="true"/>
             </checkgroup>
         </item> <!-- Pedestrian Crossing -->
         <group name="Traffic Calming" icon="${traffic_calming_group}">
