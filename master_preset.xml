@@ -5793,6 +5793,10 @@
                         <check key="fuel:biogas" text="Biogas" disable_off="true" />
                         <check key="fuel:1_25" text="1/25 mix (mofa/moped)" disable_off="true"/>
                         <check key="fuel:1_50" text="1/50 mix (mofa/moped)" disable_off="true"/>
+                        <check key="fuel:LH2" text="Liquid hydrogen" disable_off="true"/>
+                        <check key="fuel:h35" text="Hydrogen gas (350 bar)" disable_off="true"/>
+                        <check key="fuel:h50" text="Hydrogen gas (500 bar)" disable_off="true"/>
+                        <check key="fuel:h70" text="Hydrogen gas (700 bar)" disable_off="true"/>
                     </checkgroup>
                     <space/>
                     <label text="Additives:"/>
