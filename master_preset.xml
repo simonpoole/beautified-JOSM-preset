@@ -8553,6 +8553,7 @@
                 <reference ref="school_common"/>
             </optional>
             <reference ref="link_contact_address"/>
+            <preset_link preset_name="Driver training" text="Similar but different tags:"  alternative="true" />
         </item> <!-- Driving School -->
         <item name="Driver training" icon="${education_driver_training}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=driver_training"/>
@@ -8562,6 +8563,7 @@
             <reference ref="optional_oh"/>
             <reference ref="licence_classes"/>
             <reference ref="link_contact_address"/>
+            <preset_link preset_name="Driving School" text="Similar but different tags:"  alternative="true" />
         </item> <!-- Driver training -->
         <item name="Music School" icon="${education_musical_instrument}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=music_school"/>
@@ -14232,7 +14234,7 @@
             <reference ref="name_wikipedia"/>
             <text key="ele" text="Elevation (meters)" length="10"/>
             <optional>
-            <combo key="volcano:status" text="Current Status">
+            <combo key="volcano:status" text="Current Status" values_context="volcano" >
                 <list_entry value="active" display_value="Active" />
                 <list_entry value="dormant" display_value="Dormant" short_description="Was active in historical times" />
                 <list_entry value="extinct" display_value="Extinct" short_description="Not erupted in recorded history"/>
