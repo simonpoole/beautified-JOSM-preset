@@ -14315,6 +14315,14 @@
             <reference ref="general_access"/>
             <reference ref="fee"/>
         </item> <!-- Cave Entrance -->
+        <item name="Arch" icon="${geography_arch}" type="node,way,closedway,multipolygon" preset_name_label="true" name_context="natural">
+            <link wiki="Tag:natural=arch"/>
+            <space />
+            <label text="A rock arch naturally formed by erosion, with an opening underneath."/>
+            <space/>
+            <key key="natural" value="arch"/>
+            <reference ref="optional_name_wikipedia"/>
+        </item> <!-- Arch -->
         <item name="Geyser" icon="${geography_geyser}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:natural=geyser"/>
             <space/>
