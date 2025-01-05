@@ -14235,18 +14235,25 @@
             <reference ref="name_wikipedia"/>
             <text key="ele" text="Elevation (meters)" length="10"/>
             <optional>
-            <combo key="volcano:status" text="Current Status" values_context="volcano" >
-                <list_entry value="active" display_value="Active" />
-                <list_entry value="dormant" display_value="Dormant" short_description="Was active in historical times" />
-                <list_entry value="extinct" display_value="Extinct" short_description="Not erupted in recorded history"/>
-            </combo>
-            <combo key="volcano:type" text="Type">
-                <list_entry value="scoria" display_value="Scoria (volcanic cone)" />
-                <list_entry value="shield" display_value="Shield volcano (low profile)" />
-                <list_entry value="stratovolcano" display_value="Stratovolcano (composite volcano)" />
-            </combo>
-        </optional>
+                <combo key="volcano:status" text="Current Status" values_context="volcano" >
+                    <list_entry value="active" display_value="Active" />
+                    <list_entry value="dormant" display_value="Dormant" short_description="Was active in historical times" />
+                    <list_entry value="extinct" display_value="Extinct" short_description="Not erupted in recorded history"/>
+                </combo>
+                <combo key="volcano:type" text="Type">
+                    <list_entry value="scoria" display_value="Scoria (volcanic cone)" />
+                    <list_entry value="shield" display_value="Shield volcano (low profile)" />
+                    <list_entry value="stratovolcano" display_value="Stratovolcano (composite volcano)" />
+                </combo>
+            </optional>
         </item> <!-- Volcano -->
+        <item name="Hill" icon="${geography_hill}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:natural=hill"/>
+            <space/>
+            <key key="natural" value="hill"/>
+            <reference ref="name_wikipedia"/>
+            <text key="ele" text="Elevation (meters)" length="10"/>
+        </item> <!-- Hill -->
         <item name="Arête" icon="${geography_arete}" type="way" preset_name_label="true">
             <link wiki="Tag:natural=arete" />
             <space />
