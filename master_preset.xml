@@ -5570,7 +5570,15 @@
                 <text key="railway:ref" text="Reference"/>
                 <combo key="railway:signal_box" text="Type" values="electric,electronic,mechanical,track_diagram"
                     display_values="Electric,Electronic,Mechanical,Track diagram" values_context="railway" />
-            </item> <!-- Train wash -->
+            </item> <!-- Signal box -->
+            <item name="Railway junction" icon="${transport_railway_junction}" type="node" preset_name_label="true">
+                <key key="railway" value="junction" />
+                <space />
+                <label text="A junction where railways diverge or converge." />
+                <space />
+                <text key="operator" text="Operator" />
+                <reference ref="name_ref"/>
+            </item> <!-- Railway junction -->
             <item name="Train wash" icon="${transport_railway_train_wash}" type="node,closedway,multipolygon" preset_name_label="true">
                 <key key="railway" value="train_wash" />
                 <text key="operator" text="Operator" />
