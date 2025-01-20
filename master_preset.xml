@@ -2177,9 +2177,11 @@
         <preset_link preset_name="Address"/>
     </chunk>
     <chunk id="link_contact_address_payment">
+        <!-- this should likely be renamed to contact_commercial or similar -->
         <preset_link preset_name="Contact"/>
         <preset_link preset_name="Contact ('contact:*')"/>
         <preset_link preset_name="Address"/>
+        <text key="ref:vatin" text="VAT code (international)" />
         <preset_link preset_name="Payment Methods"/>
         <preset_link preset_name="Cash withdrawal"/>
     </chunk>
