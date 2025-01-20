@@ -11429,11 +11429,25 @@
         <item name="Street cabinet" icon="${man_made_street_cabinet}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:man_made=street_cabinet" />
             <key key="man_made" value="street_cabinet" />
+            <reference ref="utilities" />
             <optional>
-                <combo key="street_cabinet" text="Type"
-                    values="cable_tv,gas,postal_service,power,street_lighting,telecom,traffic_control,traffic_monitoring,transport_management,waste,water,water_management"
-                    display_values="Cable tv,Gas,Postal service,Power,Street lighting,Telecom,Traffic control,Traffic monitoring,Transport management,Waste,Water,Water management" />
-                <reference ref="ref_operator" />
+                <combo key="street_cabinet" text="Type">
+                    <list_entry value="cable_tv" display_value="Cable tv" deprecated="true" />
+                    <list_entry value="gas" display_value="Gas" deprecated="true" />
+                    <list_entry value="postal_service" display_value="Postal service" />
+                    <list_entry value="power" display_value="Power" deprecated="true" />
+                    <list_entry value="street_lighting" display_value="Street lighting" deprecated="true" />
+                    <list_entry value="telecom" display_value="Telecom" deprecated="true" />
+                    <list_entry value="traffic_control" display_value="Traffic control" />
+                    <list_entry value="traffic_monitoring" display_value="Traffic monitoring" />
+                    <list_entry value="transport_management" display_value="Transport management" />
+                    <list_entry value="waste" display_value="Waste" />
+                    <list_entry value="water" display_value="Water" deprecated="true" />
+                    <list_entry value="water_management" display_value="Water management" deprecated="true" />
+                </combo>
+            </optional>
+            <reference ref="ref_operator" />
+            <optional>    
                 <text key="manufacturer" text="Manufacturer" />
                 <reference ref="colours" />
             </optional>
