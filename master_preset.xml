@@ -2547,17 +2547,19 @@
     </chunk>
     <chunk id="fountain_type">
         <combo key="fountain" text="Fountain type">
+            <list_entry value="bottle_refill" display_value="Bottle refill" />
             <list_entry value="bubbler" display_value="Bubbler" />
             <list_entry value="nasone" display_value="Nasone" />
             <list_entry value="nozzle" display_value="Nozzle" />
-            <list_entry value="splash_pad" display_value="Splash pad" />
-            <list_entry value="stone_block" display_value="Stone block" />
-            <list_entry value="bottle_refill" display_value="Bottle refill" />
-            <list_entry value="toret" display_value="Toret" />
             <list_entry value="roman_wolf" display_value="Roman wolf" />
             <list_entry value="sebilj" display_value="Sebilj" />
+            <list_entry value="splash_pad" display_value="Splash pad" />
+            <list_entry value="stone_block" display_value="Stone block" />            
+            <list_entry value="toret" display_value="Toret" />            
             <list_entry value="viktorija_zdenac" display_value="Viktorija zdenac" />
             <list_entry value="wallace" display_value="Wallace" />
+            <list_entry value="drinking" display_value="Generic drinking fountain" />
+            <list_entry value="decorative" display_value="Generic decorative fountain" />
         </combo>      
     </chunk>
     <chunk id="highchair">
