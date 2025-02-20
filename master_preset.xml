@@ -10043,6 +10043,32 @@
                 <key key="disc_golf" value="basket"/>
             </item> <!-- Basket -->
         </group> <!-- Disc golf -->
+        <group name="Free flying" icon="${sport_free_flying_group}">
+            <item name="Takeoff" icon="${sport_free_flying_takeoff}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:sport=free_flying"/>
+                <space/>
+                <key key="sport" value="free_flying"/>
+                <key key="free_flying:site" value="takeoff"/>
+                <check key="free_flying:paragliding" text="Paragliding" />    
+                <check key="free_flying:hanggliding" text="Hanggliding" />
+                <combo key="direction" text="Facing" values="N,E,S,W,0,90,180,270"
+                    display_values="North,East,South,West,0°,90°,180°,270°" values_sort="false" match="key" value_type="cardinal_direction" />
+                <text key="name" text="Name"/>
+                <reference ref="oh"/>
+            </item> <!-- Takeoff -->
+            <item name="Landing" icon="${sport_free_flying_landing}" type="node,closedway,multipolygon" preset_name_label="true">
+                <link wiki="Tag:sport=free_flying"/>
+                <space/>
+                <key key="sport" value="free_flying"/>
+                <key key="free_flying:site" value="landing"/>
+                <check key="free_flying:paragliding" text="Paragliding" />    
+                <check key="free_flying:hanggliding" text="Hanggliding" />
+                <combo key="direction" text="Facing" values="N,E,S,W,0,90,180,270"
+                    display_values="North,East,South,West,0°,90°,180°,270°" values_sort="false" match="key" value_type="cardinal_direction" />
+                <text key="name" text="Name"/>
+                <reference ref="oh"/>
+            </item> <!-- Landing -->
+        </group> <!-- Free flying -->
         <item name="Miniature Golf" icon="${sport_minature_golf}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=miniature_golf"/>
             <space/>
