@@ -10,8 +10,6 @@ This started off as a project to rework the [original JOSM presets](https://josm
 
 The icons have been replaced with ones from http://www.sjjb.co.uk/mapicons/introduction, http://osm-icons.org, https://github.com/gmgeo/osmic and a handful of ones created by myself. The build process produces JOSM compatible versions of the preset file with references to the original SVG icons and one variant with the replacement icons.
 
-The links to original icons remain if they currently don't have a replacement, current count is roughly 90 icons that either have not been replaced or are missing.
-
 To make using the presets easier with the original JOSM icons we've added one level of indirection in that instead of directly containing a reference to an icon, we reference entries in _beautified_icons.mapping_ and _josm_icons.mapping_ that contain references to our and JOSM icons respectively.
 
 ## Count of object presets
