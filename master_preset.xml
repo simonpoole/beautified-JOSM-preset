@@ -536,6 +536,13 @@
         <list_entry value="footway" display_value="Dedicated Footway" icon="${highway_footway}" />
         <list_entry value="steps" display_value="Steps" icon="${highway_steps}" />
     </chunk>
+    <chunk id="highway_overtaking_values">
+         <list_entry value="yes" display_value="Allowed" />
+         <list_entry value="both" display_value="Both directions" deprecated="true" />
+         <list_entry value="forward" display_value="In way direction" />
+         <list_entry value="backward" display_value="Opposite to way direction" />
+         <list_entry value="no" display_values="Not allowed" /> 
+    </chunk>
     <chunk id="speech_output_values">
         <list_entry value="yes" display_value="Available" />
         <list_entry value="on_button_press" display_value="On button press" />
@@ -732,10 +739,24 @@
             <reference ref="oneway_values"/>
         </combo>
     </chunk>
+    <chunk id="highway_overtaking">
+        <combo key="overtaking" text="Overtaking" values_sort="false" values_context="overtaking" match="key">
+            <reference ref="highway_overtaking_values"/>
+        </combo>
+        <optional>
+            <combo key="overtaking:hgv" text="HGV Overtaking" values_sort="false" values_context="overtaking" match="key">
+                <reference ref="highway_overtaking_values"/>
+            </combo>
+            <combo key="overtaking:hgv:conditional" text="HGV Overtaking @" values_sort="false" values_context="overtaking" match="key">
+                <list_entry value="no @ weight>7.5"/>
+                <list_entry value="no @ 06:00-19:00"/>
+            </combo>
+        </optional>
+    </chunk>
     <chunk id="highway_additional_oneway">  
         <reference ref="oneway"/> 
+        <reference ref="highway_overtaking"/>
         <reference ref="highway_additional"/>
-        <combo key="overtaking" text="Overtaking" values="yes,both,forward,backward,no" display_values="Yes,Both directions,In way direction,Opposite to way direction,No" values_sort="false" values_context="overtaking" match="key"/>
     </chunk>
     <chunk id="highway_additional_oneway_lit_width">
         <reference ref="highway_additional_oneway"/>
@@ -806,6 +827,7 @@
         <combo key="oneway" text="Oneway" default="yes" values_sort="false">
             <reference ref="oneway_values"/>
         </combo>
+        <reference ref="highway_overtaking" />
         <checkgroup text="Additional attributes" columns="5">
             <check key="motorroad" text="Motorroad" disable_off="true"/>
             <check key="bridge" text="Bridge" disable_off="true"/>
