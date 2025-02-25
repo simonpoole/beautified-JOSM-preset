@@ -926,6 +926,7 @@
             <check key="cutting" text="Cutting" disable_off="true"/>
             <check key="embankment" text="Embankment" disable_off="true"/>
         </optional>
+        <check key="railway:preserved" text="Preserved" disable_off="true"/>
     </chunk>
     <chunk id="traffic_sign_direction">
         <combo key="direction" text="For traffic direction" values="forward,backward"
@@ -5436,8 +5437,9 @@
                     <reference ref="railway_service"/>
                     <reference ref="railway_electrified"/>
                 </optional>
+                <reference ref="railway_base" />
             </item> <!-- Monorail -->
-            <item name="Preserved" icon="${transport_railway_preserved}" type="way" preset_name_label="true">
+            <item name="Preserved" icon="${transport_railway_preserved}" type="way" preset_name_label="true" deprecated="true">
                 <link wiki="Tag:railway=preserved"/>
                 <key key="railway" value="preserved"/>
                 <optional>
@@ -5474,6 +5476,7 @@
                 <optional>
                     <reference ref="railway_service_gauge_electrified"/>
                 </optional>
+                <check key="railway:preserved" text="Preserved" disable_off="true"/>
             </item> <!-- Funicular -->
             <item name="Bus Guideway" icon="${transport_bus_guideway}" type="way" preset_name_label="true">
                 <link wiki="Tag:highway=bus_guideway"/>
