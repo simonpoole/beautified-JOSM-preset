@@ -12987,13 +12987,23 @@
             <reference ref="name_oh_wheelchair_level_toilets"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Computer -->
-        <item name="Mobile Phone" icon="${shopping_mobile_phone}" type="node,closedway" preset_name_label="true">
+        <item name="Mobile Phone" icon="${shopping_mobile_phone}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=mobile_phone"/>
             <space/>
             <key key="shop" value="mobile_phone"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Telecommunication" text="Similar but different tags:" alternative="true"/>
         </item> <!-- Mobile Phone -->
+        <item name="Telecommunication" icon="${shopping_telecommunication}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:shop=telecommunication"/>
+            <space/>
+            <label text="Shop that sells more than just mobile phone related goods and services."/>
+            <key key="shop" value="telecommunication"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+            <preset_link preset_name="Mobile Phone" text="Similar but different tags:" alternative="true"/>
+        </item> <!-- Telecommunication -->
         <item name="Hifi" icon="${shopping_hifi}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:shop=hifi"/>
             <space/>
