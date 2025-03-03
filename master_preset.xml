@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <presets version="5.73.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
-    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,golf,ford,harbour,hazard,noexit,indoor,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom,roller_coaster,climbing,disused:amenity,disused:building,disused:highway,disused:leisure,disused:man_made,disused:military,disused:railway,disused:shop,abandoned:amenity,abandoned:building,abandoned:highway,abandoned:leisure,abandoned:man_made,abandoned:military,abandoned:railway,abandoned:shop,">
+    object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,golf,ford,harbour,hazard,noexit,indoor,indoormark,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom,roller_coaster,climbing,disused:amenity,disused:building,disused:highway,disused:leisure,disused:man_made,disused:military,disused:railway,disused:shop,abandoned:amenity,abandoned:building,abandoned:highway,abandoned:leisure,abandoned:man_made,abandoned:military,abandoned:railway,abandoned:shop,">
 <!--
     Icons have been derived from mainly from
   
@@ -10957,6 +10957,18 @@
             <key key="highway" value="corridor" />
             <reference ref="level" />
             <combo key="conveying" text="Conveyor" values="yes,forward,backward,reversible" display_values="Yes,Forward,Backward,Reversible"/>
+        </item>
+        <separator/>
+        <item name="Indoor beacon" icon="${indoor_beacon}" type="node" preset_name_label="true">
+            <link wiki="Tag:indoormark=beacon" />
+            <key key="indoormark" value="beacon" />
+            <reference ref="level" />
+            <combo key="beacon:type" text="Type" values="bluetooth,nfc" display_values="Bluetooth,NFC"/>
+            <text key="beacon:uuid" text="UUID"/>
+            <optional>
+                <text key="beacon:minor" text="ibeacon minor number"/>
+                <text key="beacon:major" text="ibeacon major number"/>
+            </optional>
         </item>
     </group> <!-- Indoor elements -->
     <group name="Man Made" icon="${man_made_group}">
