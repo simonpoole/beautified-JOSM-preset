@@ -584,6 +584,35 @@
         <list_entry value="semi_deciduous" display_value="Semi deciduous" short_description="Plants that lose their foliage for a very short period, when old leaves fall off and new foliage growth is starting."/>
         <list_entry value="semi_evergreen" display_value="Semi evergreen" short_description="Plants that lose most, but not all, of their foliage for a fraction of the year."/>
     </chunk>
+    <chunk id="destination_symbol_values">
+        <list_entry value="airport" display_value="Airport" icon="${destination_symbol_airport}" />
+        <list_entry value="bus_station" display_value="Bus station" icon="${destination_symbol_bus_station}" />
+        <list_entry value="cable_car" display_value="Cable car" icon="${destination_symbol_cable_car}" />
+        <list_entry value="camp_site" display_value="Camp site" icon="${destination_symbol_camp_site}" />
+        <list_entry value="caravan_site" display_value="Caravan site" icon="${destination_symbol_caravan_site}" />
+        <list_entry value="castle" display_value="Castle" icon="${destination_symbol_castle}" />
+        <list_entry value="centre" display_value="Centre" icon="${destination_symbol_centre}" />
+        <list_entry value="church" display_value="Church" icon="${destination_symbol_church}" />
+        <list_entry value="ferry" display_value="Ferry" icon="${destination_symbol_ferry}" />
+        <list_entry value="food" display_value="Food" icon="${destination_symbol_food}" />
+        <list_entry value="fuel" display_value="Fuel" icon="${destination_symbol_fuel}" />
+        <list_entry value="harbour" display_value="Harbour" icon="${destination_symbol_harbour}" />
+        <list_entry value="hospital" display_value="Hospital" icon="${destination_symbol_hospital}" />
+        <list_entry value="industrial" display_value="Industrial" icon="${destination_symbol_industrial}" />
+        <list_entry value="info" display_value="Info" icon="${destination_symbol_info}" />
+        <list_entry value="lodging" display_value="Lodging" icon="${destination_symbol_lodging}" />
+        <list_entry value="motorroad" display_value="Motorroad" icon="${destination_symbol_motorroad}" />
+        <list_entry value="motorway" display_value="Motorway" icon="${destination_symbol_motorway}" />
+        <list_entry value="parking" display_value="Parking" icon="${destination_symbol_parking}" />
+        <list_entry value="police" display_value="Police" icon="${destination_symbol_police}" />
+        <list_entry value="rest_area" display_value="Rest area" icon="${destination_symbol_rest_area}" />
+        <list_entry value="stadium" display_value="Stadium" icon="${destination_symbol_stadium}" />
+        <list_entry value="toilets" display_value="Toilets" icon="${destination_symbol_toilets}" />
+        <list_entry value="toll" display_value="Toll" icon="${destination_symbol_toll}" />
+        <list_entry value="train_station" display_value="Train station" icon="${destination_symbol_train_Station}" />
+        <list_entry value="tunnel" display_value="Tunnel" icon="${destination_symbol_tunnel}" />
+        <list_entry value="viewpoint" display_value="Viewpoint" icon="${destination_symbol_viewpoint}" />
+    </chunk>
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
         <optional>
@@ -818,9 +847,27 @@
     <chunk id="shoulder">
         <combo key="shoulder" text="Shoulder" values="yes,no,left,right,both" display_values="Yes,No,Left,Right,Both" values_sort="false" />
     </chunk>
+    <chunk id="destination">
+        <text key="destination" text="Destination" />
+        <text key="destination:ref" text="Destination reference" />
+        <multiselect key="destination:symbol" text="Destination symbol">
+            <reference ref="destination_symbol_values" />
+        </multiselect>
+        <optional>
+            <text key="destination:forward" text="Destination in way direction" />
+            <text key="destination:ref:forward" text="Destination ref in way direction" />
+            <multiselect key="destination:symbol:forward" text="Destination symbol in way direction">
+                <reference ref="destination_symbol_values" />
+            </multiselect>
+            <text key="destination:backward" text="Destination opposite way direction" />
+            <text key="destination:ref:backward" text="Destination ref opposite way direction" />
+            <multiselect key="destination:symbol:backward" text="Destination symbol opposite way direction">
+                <reference ref="destination_symbol_values" />
+            </multiselect>
+        </optional>
+    </chunk>
     <chunk id="major_highway_additional">
-        <text key="destination" text="Destination"/>
-        <text key="destination:ref" text="Destination reference"/>
+        <reference ref="destination" />
         <text key="junction:ref" text="Junction reference" />
         <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
         <reference ref="shoulder"/>
@@ -2895,8 +2942,7 @@
                 <reference ref="highway_ref"/>
                 <text key="name" text="Name"/>
                 <reference ref="highway_base"/>
-                <text key="destination" text="Destination" />
-                <text key="destination:ref" text="Destination reference" />
+                <reference ref="destination" />
                 <text key="junction:ref" text="Junction reference" />
                 <check key="motorroad" text="Motorroad" disable_off="true"/>
                 <check key="dual_carriageway" text="Divided highway" disable_off="true" />
@@ -2939,8 +2985,7 @@
                 <text key="name" text="Name"/>
                 <check key="dual_carriageway" text="Divided highway" disable_off="true" />
                 <reference ref="highway_base"/>
-                <text key="destination" text="Destination" />
-                <text key="destination:ref" text="Destination reference" />
+                <reference ref="destination" />
                 <reference ref="highway_additional_oneway_lit_width_sidewalk_winter"/>
                 <reference ref="highway_public_transport" />
                 <reference ref="parking_lane"/>
@@ -3227,6 +3272,10 @@
                 </multiselect>
                 <multiselect key="destination:lanes" text="Destinations per lane" delimiter="|" match="key" editable="true" />
                 <multiselect key="destination:ref:lanes" text="Refs per lane" delimiter="|" match="key" editable="true" />
+                <multiselect key="destination:symbol:lanes" text="Destination symbol per lane" delimiter="|" match="key" editable="true" >
+                    <list_entry value="" display_value="None" icon="" />
+                    <reference ref="destination_symbol_values" />
+                </multiselect>
                 <multiselect key="maxspeed:lanes" text="Maxspeed per lane" delimiter="|" match="key" editable="true" />
                 <optional>
                     <multiselect key="motor_vehicle:lanes" text="Motor vehicle lane access" delimiter="|" match="key" editable="true">
@@ -3260,6 +3309,10 @@
                 </multiselect>
                 <multiselect key="destination:lanes:forward" text="Destinations per lane in way direction" delimiter="|" match="key" editable="true" />
                 <multiselect key="destination:ref:lanes:forward" text="Refs per lane in way direction" delimiter="|" match="key" editable="true" />
+                <multiselect key="destination:symbol:lanes:forward" text="Destination symbol per lane in way direction" delimiter="|" match="key" editable="true" >
+                    <list_entry value="" display_value="None" icon="" />
+                    <reference ref="destination_symbol_values" />
+                </multiselect>
                 <multiselect key="maxspeed:lanes:forward" text="Maxspeed per lane in way direction" delimiter="|" match="key" editable="true" />
                 <optional>
                     <multiselect key="motor_vehicle:lanes:forward" text="Motor vehicle lane access in way direction" delimiter="|" match="key" editable="true">
@@ -3287,6 +3340,10 @@
                 </multiselect>
                 <multiselect key="destination:lanes:backward" text="Destinations per lane opposite to way direction" delimiter="|" match="key" editable="true"  />
                 <multiselect key="destination:ref:lanes:backward" text="Refs per lane opposite to way direction" delimiter="|" match="key" editable="true" />
+                <multiselect key="destination:symbol:lanes:backward" text="Destination symbol per lane opposite to way direction" delimiter="|" match="key" editable="true" >
+                    <list_entry value="" display_value="None" icon="" />
+                    <reference ref="destination_symbol_values" />
+                </multiselect>
                 <multiselect key="maxspeed:lanes:backward" text="Maxspeed per lane opposite to way direction" delimiter="|" match="key" editable="true" />
                 <optional>
                     <multiselect key="motor_vehicle:lanes:backward" text="Motor vehicle lane access opposite to way direction" delimiter="|" match="key" editable="true">
