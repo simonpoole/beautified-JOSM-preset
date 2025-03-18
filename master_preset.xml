@@ -4104,7 +4104,7 @@
             <link wiki="Tag:highway=milestone"/>
             <key key="highway" value="milestone"/>
             <text key="distance" text="Distance (kilometers)"/>
-            <text key="ref" text="Reference"/>
+            <reference ref="highway_ref" />
             <optional>
                 <combo key="direction" text="For direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
             </optional>
