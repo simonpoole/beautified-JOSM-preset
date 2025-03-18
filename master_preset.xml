@@ -14437,6 +14437,14 @@
             <key key="natural" value="valley"/>
             <reference ref="name_wikipedia"/>
         </item> <!-- Valley -->
+        <item name="Mountain range" icon="${geography_mountain_range}" type="way" preset_name_label="true">
+            <link wiki="Tag:natural=mountain_range"/>
+            <space />
+            <label text="A series of high ridges and mountain peaks ranged in a line and connected by high ground."/>
+            <space/>
+            <key key="natural" value="mountain_range"/>
+            <reference ref="name_wikipedia"/>
+        </item> <!-- Mountain range -->
         <item name="Cliff" icon="${geography_cliff}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:natural=cliff"/>
             <space />
