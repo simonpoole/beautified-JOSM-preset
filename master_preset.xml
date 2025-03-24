@@ -613,6 +613,21 @@
         <list_entry value="tunnel" display_value="Tunnel" icon="${destination_symbol_tunnel}" />
         <list_entry value="viewpoint" display_value="Viewpoint" icon="${destination_symbol_viewpoint}" />
     </chunk>
+    <chunk id="place_values">
+        <!-- Typical non-administrative places -->
+        <list_entry value="city" display_value="City" />
+        <list_entry value="town" display_value="Town" />
+        <list_entry value="village" display_value="Village" />
+        <list_entry value="hamlet" display_value="Hamlet" />
+        <list_entry value="isolated_dwelling" display_value="Isolated dwelling" />
+        <list_entry value="suburb" display_value="Suburb" />
+        <list_entry value="quarter" display_value="Quarter" />
+        <list_entry value="neighbourhood" display_value="Neighbourhood" />
+        <list_entry value="city_block" display_value="City block" />
+        <list_entry value="farm" display_value="Farm" />
+        <list_entry value="locality" display_value="Locality" />
+        <list_entry value="square" display_value="Square" />
+    </chunk>
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
         <optional>
@@ -14162,6 +14177,7 @@
             <text key="name" text="Name"/>
             <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" value_type="integer"/>
             <check key="maritime" text="Maritime" disable_off="true"/>
+            <reference ref="wikipedia_wikidata"/>
         </item> <!-- Administrative -->
         <item name="Political" icon="${geography_boundary_political}" type="closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=political"/>
@@ -14169,6 +14185,7 @@
             <key key="boundary" value="political"/>
             <combo key="political_division" text="Division" values="canton,linguistic_community,ward" display_values="Canton,Linguistic community,Ward"/>
             <text key="name" text="Name"/>
+            <reference ref="wikipedia_wikidata"/>
         </item> <!-- Political -->
         <item name="Postal Code" icon="${geography_boundary_postal_code}" type="way,closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=postal_code"/>
@@ -14181,6 +14198,7 @@
             <space/>
             <key key="boundary" value="national_park"/>
             <text key="name" text="Name"/>
+            <reference ref="wikipedia_wikidata_images"/>
         </item> <!-- National Park -->
         <item name="Protected Area" icon="${geography_boundary_protected_area}" type="closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=protected_area"/>
@@ -15252,15 +15270,18 @@
             <space/>
             <key key="type" value="boundary"/>
             <text key="name" text="Name"/>
-            <combo key="boundary" text="Boundary type" values="administrative,maritime,national_park,political,postal_code,protected_area" display_values="Administrative,Maritime,National park,Political,Postal code,Protected area" sort_values="false" values_searchable="true"/>
+            <combo key="boundary" text="Boundary type" values="administrative,maritime,national_park,place,political,postal_code,protected_area" display_values="Administrative,Maritime,National park,Place,Political,Postal code,Protected area" sort_values="false" values_searchable="true"/>
             <optional>
-                <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" sort_values="false"/>
+                <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" sort_values="false" match_expression="boundary=administrative"/>     
+                <combo key="place" text="Place type" match_expression="boundary=place">
+                    <reference ref="place_values" />
+                </combo>
             </optional>
             <roles>
                 <role key="outer" text="outer segment" requisite="required" type="way,closedway"/>
                 <role key="inner" text="inner segment" requisite="optional" type="way,closedway"/>
                 <role key="subarea" text="Sub area" requisite="optional" type="relation"/>
-                <role key="admin_centre" text="Administration centre" requisite="optional" type="node" count="1"/>
+                <role key="admin_centre" text="Administration centre" requisite="optional" type="node" count="1" member_expression="boundary=administrative"/>
                 <role key="label" text="Label point" requisite="optional" type="node" count="1"/>
             </roles>
         </item> <!-- Boundary -->
