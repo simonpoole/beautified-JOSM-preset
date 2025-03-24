@@ -912,6 +912,7 @@
             <list_entry value="island" short_description="Island" icon="${crossing_island}" deprecated="true" />
         </multiselect>
         <check key="crossing:island" text="With island" />
+        <check key="crossing:signals" text="With signals" />
         <optional>
             <combo key="crossing_ref" text="Crossing type name (UK)" values="zebra,pelican,toucan,puffin,pegasus,tiger" 
                 display_values="Zebra,Pelican,Toucan,Puffin,Pegasus,Tiger" values_searchable="true" values_context="crossing:markings" regions="GB"/>
@@ -5825,6 +5826,7 @@
                     <list_entry value="parent" display_value="Parent" />
                     <list_entry value="motorcycle" display_value="Motorcycle" />
                     <list_entry value="delivery" display_value="Delivery" />
+                    <list_entry value="women" display_value="Women" />
                 </combo>
                 <reference ref="parking_name_type_ref"/>
                 <text key="capacity" text="Capacity" value_type="integer"/>
@@ -6470,6 +6472,12 @@
                 </checkgroup>
                 <text key="ref" text="Reference"/>
             </item> <!-- Railway platform -->
+            <item name="Railway platform edge" icon="${public_transport_railway_platform_edge}" type="way" preset_name_label="true">
+                <link wiki="Tag:railway=platform_edge" />
+                <space />
+                <key key="railway" value="platform_edge" />
+                <text key="ref" text="Reference (track number)" />
+            </item> <!-- Railway platform edge -->
             <item name="Subway station" name_context="railway" type="node,closedway,multipolygon" icon="${public_transport_subway_station}" preset_name_label="true">
                 <reference ref="station"/>
                 <checkgroup text="Transportation type" columns="3">
