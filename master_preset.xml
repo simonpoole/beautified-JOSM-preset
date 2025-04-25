@@ -2849,7 +2849,7 @@
         <combo key="sanitary_dump_station" text="Dump Station" values="yes,public,customers,no" display_values="Available,Public,Customers,Not available" match="none"/>
     </chunk>
     <chunk id="licence_classes">
-        <combo key="license_classes" text="License Classes" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E"/>
+        <multiselect key="license_classes" text="License Classes" values="A;A1;B;BE;C,A;A1;B;B1;C;C1;D;D1;BE;CE;C1E;DE;D1E" values_sort="false" values_no_i18n="true"/>
     </chunk>
     <chunk id="school_common">
         <combo key="school:gender" values="mixed,male,female,separated" display_values="Mixed,Male,Female,Separated" values_context="gender" text="Student gender"/>
@@ -12236,7 +12236,7 @@
             <reference ref="ref_operator"/>
             <preset_link preset_name="Power Substation"/>
         </item> <!-- Transformer Tower -->
-        <item name="Terminal" icon="${power_terminal}" type="node" preset_name_label="true">
+        <item name="Terminal" icon="${power_terminal}" type="node" preset_name_label="true" name_context="power">
             <link wiki="Tag:power=terminal"/>
             <space/>
             <key key="power" value="terminal"/>
