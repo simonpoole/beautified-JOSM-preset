@@ -1311,6 +1311,13 @@
         </optional>
         <preset_link preset_name="No name"/>
     </chunk>
+    <chunk id="optional_name_ref">
+        <optional>
+            <text key="name" text="Name"/>
+            <text key="ref" text="Reference"/>
+        </optional>
+        <preset_link preset_name="No name"/>
+    </chunk>
     <chunk id="optional_name_operator">
         <optional>
             <text key="name" text="Name"/>
@@ -6199,7 +6206,7 @@
                     <list_entry value="cargo_bike" display_value="Cargo bike" />
                     <list_entry value="e-bike" display_value="E-Bike" />
                 </multiselect>
-                <reference ref="optional_name"/>
+                <reference ref="optional_name_ref"/>
                 <optional>
                     <text key="network" text="Network"/>
                     <reference ref="brand"/>
