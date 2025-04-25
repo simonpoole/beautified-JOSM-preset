@@ -15054,6 +15054,23 @@
             <key key="landuse" value="railway"/>
             <reference ref="optional_name"/>
         </item> <!-- Railway Land -->
+        <item name="Port" icon="${landuse_port}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
+            <link wiki="Tag:industrial=port"/>
+            <space/>
+            <key key="landuse" value="industrial"/>
+            <key key="industrial" value="port"/>
+            <reference ref="optional_name"/>
+            <multiselect key="port" text="Port type" values="cargo;container;fishing;passenger;roro" 
+                display_values="Cargo;Container;Fishing;Passenger;Roll-on roll-off" values_context="industrial" match="key"/>
+            <preset_link preset_name="Harbour area" text="Similar tags but different tagging schema:" text_context="landuse" alternative="true" />
+        </item> <!-- Port -->
+        <item name="Harbour area" icon="${landuse_harbour}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
+            <link wiki="Tag:landuse=harbour"/>
+            <space/>
+            <key key="landuse" value="harbour"/>
+            <reference ref="optional_name"/>
+            <preset_link preset_name="Port" text="Similar tags but different tagging schema:" text_context="landuse" alternative="true" />
+        </item> <!-- Harbour area -->
         <item name="Military" icon="${landuse_military}" type="closedway,multipolygon" name_context="Landuse" preset_name_label="true">
             <link wiki="Tag:landuse=military"/>
             <space/>
