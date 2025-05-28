@@ -1424,6 +1424,7 @@
             <list_entry value="greek" display_value="Greek" />
             <list_entry value="heuriger" display_value="Heuriger" />
             <list_entry value="hot_dog" display_value="Hot dog" />
+            <list_entry value="hotpot" display_value="Hot pot" />
             <list_entry value="ice_cream" display_value="Ice cream" />
             <list_entry value="indian" display_value="Indian" />
             <list_entry value="indonesian" display_value="Indonesian" />
@@ -1459,6 +1460,7 @@
             <list_entry value="spanish" display_value="Spanish" />
             <list_entry value="steak_house" display_value="Steak house" />
             <list_entry value="sushi" display_value="Sushi" />
+            <list_entry value="syrian" display_value="Syrian" />
             <list_entry value="taiwanese" display_value="Taiwanese" />
             <list_entry value="tapas" display_value="Tapas" />
             <list_entry value="tex-mex" display_value="Tex-mex" />
@@ -2247,7 +2249,7 @@
     <chunk id="walking_routes_roles">
         <roles>
             <role key="" text="Route segment" requisite="required" type="way,closedway" member_expression="highway|route=ferry"/>
-             <role key="alternative" text="alternative segment" requisite="optional" type="way,closedway,relation" member_expression="highway|route=ferry" />
+            <role key="alternative" text="alternative segment" requisite="optional" type="way,closedway,relation" member_expression="highway|route=ferry" />
             <role key="approach" text="Approach segment" requisite="optional" type="way,closedway,relation" member_expression="highway|route=ferry" />
             <role key="excursion" text="Excursion segment" requisite="optional" type="way,closedway,relation" member_expression="highway|route=ferry" />
             <role key="connection" text="Connection segment" requisite="optional" type="way,closedway,relation" member_expression="highway|route=ferry" />
