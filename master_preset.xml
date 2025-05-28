@@ -2887,6 +2887,19 @@
             <label text="... other transportation modes possible"/>
         </optional>
     </chunk>
+    <chunk id="recording_and_display">
+        <label text="Recording:"/>
+        <checkgroup text="Recording" columns="3">
+            <check key="recording:automated" text="Automated" disable_off="true"/>
+            <check key="recording:manually" text="Manually" disable_off="true"/>
+            <check key="recording:remote" text="Remote" disable_off="true"/>
+        </checkgroup>
+        <label text="Display:"/>
+        <checkgroup text="Display" columns="2">
+            <check key="display:analog" text="Analog" disable_off="true"/>
+            <check key="display:digital" text="Digital" disable_off="true"/>
+        </checkgroup>
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -11625,7 +11638,7 @@
                 <reference ref="colours" />
             </optional>
         </item> <!-- Street cabinet -->
-        <item name="Monitoring Station" icon="${man_made_monitoring_station}" type="node,closedway" preset_name_label="true">
+        <item name="Monitoring Station" icon="${man_made_monitoring_station}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:man_made=monitoring_station"/>
             <space/>
             <key key="man_made" value="monitoring_station"/>
@@ -11647,18 +11660,45 @@
                 <check key="monitoring:radiation" text="Radiation" disable_off="true"/>
                 <check key="monitoring:seismic_activity" text="Seismic Activity" disable_off="true"/>
             </checkgroup>
-            <label text="Recording:"/>
-            <checkgroup text="Recording" columns="3">
-                <check key="recording:automated" text="Automated" disable_off="true"/>
-                <check key="recording:manually" text="Manually" disable_off="true"/>
-                <check key="recording:remote" text="Remote" disable_off="true"/>
-            </checkgroup>
-            <label text="Display:"/>
-            <checkgroup text="Display" columns="2">
-                <check key="display:analog" text="Analog" disable_off="true"/>
-                <check key="display:digital" text="Digital" disable_off="true"/>
-            </checkgroup>
+            <reference ref="recording_and_display"/>
         </item> <!-- Monitoring Station -->
+        <item name="Weather Station" icon="${man_made_weather_station}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:monitoring:weather"/>
+            <space/>
+            <key key="man_made" value="monitoring_station"/>
+            <key key="monitoring:weather" value="yes"/>
+            <reference ref="optional_name_operator"/>
+            <text key="ele" text="Elevation (meters)" length="10"/>
+            <text key="ref:wmo" text="WMO reference" />
+            <text key="ref:wigos" text="WIGOS reference" />
+            <text key="ref:icao" text="ICAO reference (airports)" />
+            <checkgroup text="Instruments" columns="4">                
+                <check key="weather:anemometer" text="Anemometer - wind speed and direction" disable_off="true"/>
+                <check key="weather:wind_vane" text="Wind vane - wind direction" disable_off="true"/>
+                <check key="weather:barometer" text="Barometer - atmospheric pressure" disable_off="true"/>
+                <check key="weather:thermometer" text="Thermometer - air temperature" disable_off="true"/>
+                <check key="weather:soil_thermometer" text="Soil thermometer - soil temperature" disable_off="true"/>
+                <check key="weather:grass_minimum_thermometer" text="Grass minimum thermometer - ground temperature" disable_off="true"/>
+                <check key="weather:rain_gauge" text="Rain gauge - rainfall " disable_off="true"/>
+                <check key="weather:ombrometer" text="Ombrometer - rain fall" disable_off="true" deprecated="true"/>
+                <check key="weather:radar" text="Weather radar" disable_off="true"/>
+                <check key="weather:snow_height_sensor" text="Snow height sensor" disable_off="true"/>
+                <check key="weather:ultrasonic_snow_depth" text="Ultrasonic snow depth" disable_off="true" deprecated="true"/>
+                <check key="weather:snow_stick" text="Snow stick" disable_off="true" deprecated="true"/>
+                <check key="weather:precipitation_indicator" text="Precipitation indicator" disable_off="true"/>
+                <check key="weather:humidity_sensor" text="Humidity sensor" disable_off="true"/>
+                <check key="weather:hygrometer" text="Hygrometer - relative humidity" disable_off="true"/>
+                <check key="weather:psychrometer" text="Psychrometer - relative humidity" disable_off="true"/>
+                <check key="weather:sunshine_recorder" text="Sunshine recorder" disable_off="true"/>
+                <check key="weather:pyranometer" text="Pyranometer - short wave length sun radiation" disable_off="true"/>
+                <check key="weather:pyrheliometer" text="Pyrheliometer - sun radiation" disable_off="true"/>
+                <check key="weather:ceilometer" text="Ceilometer - height of cloud base" disable_off="true"/>
+                <check key="weather:lightning_detector" text="Lightning detector" disable_off="true"/>
+                <check key="weather:radiosonde" text="Radiosonde - warather balloon" disable_off="true"/>
+                <check key="weather:forward_scatter_sensor" text="Forward scatter sensor - visibility" disable_off="true"/>
+            </checkgroup>
+            <reference ref="recording_and_display"/>
+        </item> <!-- Weather Station -->
         <item name="Survey Point" icon="${man_made_survey_point}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=survey_point"/>
             <space/>
