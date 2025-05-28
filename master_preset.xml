@@ -11672,7 +11672,7 @@
             <text key="ref:wmo" text="WMO reference" />
             <text key="ref:wigos" text="WIGOS reference" />
             <text key="ref:icao" text="ICAO reference (airports)" />
-            <checkgroup text="Instruments" columns="4">                
+            <checkgroup text="Instruments" columns="4" text_context="man_made"  >                
                 <check key="weather:anemometer" text="Anemometer - wind speed and direction" disable_off="true"/>
                 <check key="weather:wind_vane" text="Wind vane - wind direction" disable_off="true"/>
                 <check key="weather:barometer" text="Barometer - atmospheric pressure" disable_off="true"/>
