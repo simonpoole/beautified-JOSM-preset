@@ -628,6 +628,39 @@
         <list_entry value="locality" display_value="Locality" />
         <list_entry value="square" display_value="Square" />
     </chunk>
+    <chunk id="christian_trinitarian_denominations_values">
+       <list_entry value="anglican" display_value="Anglican"/>
+       <list_entry value="baptist" display_value="Baptist"/>
+       <list_entry value="catholic" display_value="Catholic"/>
+       <list_entry value="church_of_scotland" display_value="Church of Scotland"/>
+       <list_entry value="evangelical" display_value="Evangelical"/>
+       <list_entry value="greek_catholic" display_value="Greek Catholic"/>
+       <list_entry value="greek_orthodox" display_value="Greek Orthodox"/>
+       <list_entry value="lutheran" display_value="Lutheran"/>
+       <list_entry value="methodist" display_value="Methodist"/>
+       <list_entry value="new_apostolic" display_value="New Apostolic"/>
+       <list_entry value="nondenominational" display_value="Nondenominational"/>
+       <list_entry value="old_catholic" display_value="Old Catholic"/>
+       <list_entry value="orthodox" display_value="Orthodox"/>
+       <list_entry value="pentecostal" display_value="Pentecostal"/>
+       <list_entry value="presbyterian" display_value="Presbyterian"/>
+       <list_entry value="protestant" display_value="Protestant"/>
+       <list_entry value="quaker" display_value="Quaker"/>
+       <list_entry value="reformed" display_value="Reformed"/>
+       <list_entry value="roman_catholic" display_value="Roman Catholic"/>
+       <list_entry value="romanian_orthodox" display_value="Romanian Orthodox"/>
+       <list_entry value="russian_orthodox" display_value="Russian Orthodox"/>
+       <list_entry value="serbian_orthodox" display_value="Serbian Orthodox"/>
+       <list_entry value="seventh_day_adventist" display_value="Seventh-day Adventist"/>
+       <list_entry value="spiritist" display_value="Spiritist"/>
+       <list_entry value="united" display_value="United"/>
+       <list_entry value="united_methodist" display_value="United Methodist"/>
+    </chunk>
+    <chunk id="christian_nontrinitarian_denominations_values"> 
+        <list_entry value="iglesia_ni_cristo" display_value="Iglesia ni Cristo"/>
+        <list_entry value="jehovahs_witness" display_value="Jehovah's Witnesses"/>
+        <list_entry value="mormon" display_value="Mormon"/>
+    </chunk> 
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
         <optional>
@@ -1846,14 +1879,15 @@
             display_values="Bahai,Caodaism,Confucian,Jain,Sikh,Spiritualist,Taoist,Tenrikyo,Unitarian universalist,Zoroastrian"
             match="keyvalue!" values_searchable="true" />
     </chunk>
-    <chunk id="christian_denominations"> <!-- christian denominations -->
-        <combo key="denomination" text="Denomination"
-            values="anglican,baptist,catholic,church_of_scotland,evangelical,greek_catholic,greek_orthodox,lutheran,methodist,new_apostolic,nondenominational,old_catholic,orthodox,pentecostal,presbyterian,protestant,quaker,reformed,roman_catholic,romanian_orthodox,russian_orthodox,serbian_orthodox,seventh_day_adventist,spiritist,united,united_methodist"
-            display_values="Anglican,Baptist,Catholic,Church of Scotland,Evangelical,Greek catholic,Greek orthodox,Lutheran,Methodist,New apostolic,Nondenominational,Old catholic,Orthodox,Pentecostal,Presbyterian,Protestant,Quaker,Reformed,Roman catholic,Romanian orthodox,Russian orthodox,Serbian orthodox,Seventh day adventist,Spiritist,United,United methodist"
-            values_searchable="true" />
-    </chunk>
+        <chunk id="christian_denominations"> <!-- christian denominations -->
+        <combo key="denomination" text="Denomination" values_searchable="true">
+            <reference ref="christian_trinitarian_denominations_values"/>
+        </combo>
+   </chunk>
    <chunk id="nontrinitarian_denominations"> <!--nontrinitarian denominations -->
-        <combo key="denomination" text="Denomination" values="iglesia_ni_cristo,jehovahs_witness,mormon" display_values="Iglesia ni cristo,Jehovahs witness,Mormon" values_searchable="true" />
+        <combo key="denomination" text="Denomination" default="mormon" values_searchable="true" match="keyvalue!">
+            <reference ref="christian_nontrinitarian_denominations_values"/>
+        </combo>
     </chunk>
     <chunk id="muslim_denominations"> <!-- muslim denominations -->
         <combo key="denomination" text="Denomination" values="ibadi,nondenominational,shia,sunni" display_values="Ibadi,Nondenominational,Shia,Sunni" values_searchable="true" />
