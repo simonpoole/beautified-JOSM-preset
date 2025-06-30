@@ -9643,6 +9643,21 @@
             <text key="ref" text="Reference number"/>
             <reference ref="essential_wheelchair"/>
         </item> <!-- Post Depot -->
+        <item name="Letter box" icon="${amenity_letter_box}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:amenity=letter_box"/>
+            <space/>
+            <key key="amenity" value="letter_box"/>
+            <optional>
+                <text key="post:housenumber" text="House number" match="key"/>
+                <text key="post:flats" text="Flats" match="key"/>
+                <text key="post:unit" text="Unit" match="key"/>
+                <text key="post:street" text="Street" match="key"/>
+                <text key="post:postcode" text="Post code" match="key"/>
+                <text key="post:city" text="City" match="key"/>
+                <text key="post:state" text="State" match="key"/>
+            </optional>
+            <preset_link preset_name="Post Box" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Letter box -->
         <item name="Telephone" icon="${amenity_telephone}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=telephone"/>
             <space/>
@@ -9655,31 +9670,6 @@
             <check key="payment:telephone_cards" text="Telephone cards" disable_off="true"/>
             <preset_link preset_name="Payment Methods"/>
         </item> <!-- Telephone -->
-        <item name="Coworking space" icon="${amenity_coworking}" type="node,closedway,multipolygon">
-            <link wiki="Tag:amenity=coworking_space"/>
-            <space/>
-            <key key="amenity" value="coworking_space"/>
-            <reference ref="name_operator_oh_wheelchair_level"/>
-            <reference ref="fee"/>
-            <reference ref="link_contact_address"/>
-        </item> <!-- Coworking space -->
-        <item name="Events venue" icon="${events_venue}" type="node,closedway,multipolygon">
-            <link wiki="Tag:amenity=events_venue"/>
-            <space/>
-            <key key="amenity" value="events_venue"/>
-            <reference ref="name_operator_oh_wheelchair_level"/>
-            <reference ref="link_contact_address"/>
-            <reference ref="baby_feeding" />
-            <reference ref="kids_area" />
-            <preset_link preset_name="Building" />
-        </item> <!-- Events venue -->
-        <item name="Internet Cafe" icon="${amenity_internet_cafe}" type="node,closedway,multipolygon" preset_name_label="true">
-            <link wiki="Tag:amenity=internet_cafe"/>
-            <space/>
-            <key key="amenity" value="internet_cafe"/>
-            <reference ref="name_operator_oh_wheelchair_level"/>
-            <reference ref="link_contact_address_payment"/>
-        </item> <!-- Internet Cafe -->
         <item name="Internet Access" icon="${amenity_internet}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:internet_access"/>
             <space/>
@@ -9788,6 +9778,15 @@
             <key key="amenity" value="lavoir"/>
             <reference ref="facility_access"/>
         </item> <!-- Lavoir -->
+        <item name="Vacuum cleaner station" icon="${amenity_vacuum_station}" type="node" preset_name_label="true">
+            <link wiki="Tag:amenity=vacuum_cleaner"/>
+            <space/>
+            <key key="amenity" value="vacuum_cleaner"/>
+            <optional>
+                <reference ref="name_ref_operator"/>
+            </optional>
+            <reference ref="fee"/>
+        </item> <!-- Vacuum cleaner station -->
         <separator/>
         <item name="Bench" icon="${amenity_bench}" type="node,way" preset_name_label="true">
             <link wiki="Tag:amenity=bench"/>
@@ -9916,17 +9915,28 @@
             <reference ref="fee"/>
             <multiselect key="valves" text="Valves" values="dunlop;schrader;sclaverand;regina" display_values="Dunlop (Woods);Schrader;Sclaverand (Presta);Regina" rows="4" values_searchable="true"/>
         </item> <!-- Compressed Air -->
-        <item name="Vacuum cleaner station" icon="${amenity_vacuum_station}" type="node" preset_name_label="true">
-            <link wiki="Tag:amenity=vacuum_cleaner"/>
+        <item name="Device Charging Station" icon="${amenity_device_charging_station}" type="node" preset_name_label="true">
+            <link wiki="Tag:amenity=device_charging_station"/>
             <space/>
-            <key key="amenity" value="vacuum_cleaner"/>
+            <key key="amenity" value="device_charging_station"/>
             <optional>
-                <reference ref="name_ref_operator"/>
+                <reference ref="ref_operator"/>
+                <reference ref="oh"/>
+                <combo key="capacity" text="Capacity" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" editable="true" value_type="integer"/>
+                <check key="lockable" text="Lockable" />
+                <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
+                <reference ref="facility_access"/>
             </optional>
             <reference ref="fee"/>
-        </item> <!-- Vacuum cleaner station -->
+            <combo key="socket:device:USB-A" text="USB-A socket" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" value_type="integer"/>         
+            <combo key="socket:device:micro-b" text="USB-B micro connector cable" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" value_type="integer"/>
+            <combo key="socket:device:USB-C" text="USB-C socket" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" value_type="integer"/>
+            <combo key="socket:device:USB-C_cable" text="USB-C cable" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" value_type="integer"/> 
+            <combo key="socket:device:lightning" text="Apple Lightning socket" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" value_type="integer"/>
+            <combo key="socket:device:qi-wireless" text="QI wireless pad" values="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15" value_type="integer"/>
+            <preset_link preset_name="Payment Methods"/>
+        </item> <!-- Device Charging Station -->
         <separator/>
- 
         <item name="Excrement Bags" icon="${amenity_vending_excrement_bags}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=vending_machine%3Dexcrement_bags"/>
             <space/>
@@ -9944,21 +9954,32 @@
             <key key="amenity" value="weighbridge"/>
             <text key="operator" text="Operator"/>
         </item> <!-- Weighbridge -->
-        <item name="Letter box" icon="${amenity_letter_box}" type="node,way" preset_name_label="true">
-            <link wiki="Tag:amenity=letter_box"/>
+        <separator/>
+        <item name="Coworking space" icon="${amenity_coworking}" type="node,closedway,multipolygon">
+            <link wiki="Tag:amenity=coworking_space"/>
             <space/>
-            <key key="amenity" value="letter_box"/>
-            <optional>
-                <text key="post:housenumber" text="House number" match="key"/>
-                <text key="post:flats" text="Flats" match="key"/>
-                <text key="post:unit" text="Unit" match="key"/>
-                <text key="post:street" text="Street" match="key"/>
-                <text key="post:postcode" text="Post code" match="key"/>
-                <text key="post:city" text="City" match="key"/>
-                <text key="post:state" text="State" match="key"/>
-            </optional>
-            <preset_link preset_name="Post Box" text="Similar but different tags:" alternative="true" />
-        </item> <!-- Letter box -->
+            <key key="amenity" value="coworking_space"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="fee"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Coworking space -->
+        <item name="Events venue" icon="${events_venue}" type="node,closedway,multipolygon">
+            <link wiki="Tag:amenity=events_venue"/>
+            <space/>
+            <key key="amenity" value="events_venue"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="link_contact_address"/>
+            <reference ref="baby_feeding" />
+            <reference ref="kids_area" />
+            <preset_link preset_name="Building" />
+        </item> <!-- Events venue -->
+        <item name="Internet Cafe" icon="${amenity_internet_cafe}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=internet_cafe"/>
+            <space/>
+            <key key="amenity" value="internet_cafe"/>
+            <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Internet Cafe -->
         <item name="Research institute" icon="${amenity_research_institute}" type="node,closedway,multipolygon">
             <link wiki="Tag:amenity=research_institute"/>
             <space/>
