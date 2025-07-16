@@ -2238,13 +2238,13 @@
         <multiselect key="brand" text="Motorcycle brand" values="Aprilia;BMW;Ducati;Gilera;Harley-Davidson;Honda;Kawasaki;KTM;Kymco;Moto Guzzi;Peugeot;Piaggio;Suzuki;Triumph;Vespa;Yamaha" match="key"/>
     </chunk>
     <chunk id="kerb">
-        <combo key="kerb" text="Kerb" match="key" values_sort="false">
+        <combo key="kerb" text="Kerb" match="key" values_sort="false" values_context="highway">
             <reference ref="kerb_values"/>    
         </combo>
-        <combo key="kerb:left" text="Kerb (left)" match="key" values_sort="false">
+        <combo key="kerb:left" text="Kerb (left)" match="key" values_sort="false" values_context="highway">
             <reference ref="kerb_values"/> 
         </combo>
-        <combo key="kerb:right" text="Kerb (right)" match="key" values_sort="false">
+        <combo key="kerb:right" text="Kerb (right)" match="key" values_sort="false" values_context="highway">
             <reference ref="kerb_values"/> 
         </combo>
     </chunk>
@@ -9505,7 +9505,7 @@
                     <check key="male" text="Male" text_context="restroom" disable_off="true"/>
                     <check key="unisex" text="Unisex" text_context="restroom" disable_off="true"/>
                 </checkgroup>
-                <combo key="toilets:disposal" text="Type" values="flush,pitlatrine,chemical,bucket" display_values="Flush,Pit latrine,Chemical,Bucket"/>
+                <combo key="toilets:disposal" text="Type" values="flush,pitlatrine,chemical,bucket" display_values="Flush,Pit latrine,Chemical,Bucket" values_context="restroom"/>
                 <text key="description" text="Description" length="255"/>
                 <reference ref="fee"/>
                 <reference ref="changing_table"/>
