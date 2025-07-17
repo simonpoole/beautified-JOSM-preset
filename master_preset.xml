@@ -14191,7 +14191,8 @@
             <check key="payment:huawei_pay" text="Huawei Pay" match="keyvalue" disable_off="true"/>
             <check key="payment:samsung_pay" text="Samsung Pay" match="keyvalue" disable_off="true"/>
             <check key="payment:satispay" text="Satispay" match="keyvalue" disable_off="true"/>
-            <check key="payment:twint" text="TWINT" match="keyvalue" disable_off="true"/>
+            <check key="payment:twint" text="TWINT" match="keyvalue" disable_off="true" regions="CH,LI"/>
+            <check key="payment:upi" text="UPI" match="keyvalue" disable_off="true" regions="IN"/>
             <check key="payment:wechat" text="WeChat" match="keyvalue" disable_off="true"/>
         </checkgroup>
         <space/>
