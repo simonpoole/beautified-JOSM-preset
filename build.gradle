@@ -55,7 +55,7 @@ configurations {
 }
 
 dependencies {
-    resoveableRuntimeOnly 'ch.poole:preset-utils:0.42.0'
+    resoveableRuntimeOnly 'ch.poole:preset-utils:0.43.0'
 }
 
 def loadProperties = { filename -> 
