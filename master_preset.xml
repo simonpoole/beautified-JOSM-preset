@@ -1081,7 +1081,7 @@
         <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="level">
-        <combo text="Level" long_text="For indoor mapping, level 0 is the ground floor" key="level" length="3" values="20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0,-1,-2,-3,-4,-5" values_sort="false" match="none" editable="true" value_type="integer"/>
+        <combo text="Level" long_text="For indoor mapping, level 0 is the ground floor" key="level" length="3" values="20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0,-1,-2,-3,-4,-5" values_sort="false" match="none" editable="true" />
     </chunk>
     <chunk id="optional_level">
         <optional>
