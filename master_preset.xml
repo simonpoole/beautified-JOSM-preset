@@ -671,6 +671,26 @@
         <list_entry value="sharks_teeth" display_value="Sharks teeth"/>
         <list_entry value="zigzag" display_value="Zigzag"/>
     </chunk>
+    <chunk id="crop_values">
+        <list_entry value="asparagus" display_value="Asparagus"/>
+        <list_entry value="barley" display_value="Barley"/>
+        <list_entry value="cereal" display_value="Cereal"/>
+        <list_entry value="coffee" display_value="Coffee" />
+        <list_entry value="corn" display_value="Corn"/>
+        <list_entry value="cranberries" display_value="cranberries"/>
+        <list_entry value="grape" display_value="Grapes"/>
+        <list_entry value="grass" display_value="Grass"/>
+        <list_entry value="hop" display_value="Hop"/>
+        <list_entry value="lavender" display_value="Lavender"/>
+        <list_entry value="potatoes" display_value="Potatoes"/>
+        <list_entry value="rapeseed" display_value="Rapeseed"/>
+        <list_entry value="rice" display_value="Rice"/>
+        <list_entry value="soy" display_value="Soy"/>
+        <list_entry value="strawberry" display_value="Strawberries"/>
+        <list_entry value="sugarcane" display_value="Sugarcane"/>
+        <list_entry value="tea" display_value="Tea"/>
+        <list_entry value="wheat" display_value="Wheat"/> 
+    </chunk>
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
         <optional>
@@ -1892,6 +1912,10 @@
             <text key="diameter_crown" text="Crown diameter (meters)"/>    
             <reference ref="tree_form" />
         </optional>
+    </chunk>
+    <chunk id="irrigation">
+        <check key="irrigated" text="Irrigated" />
+        <combo key="irrigation" text="Irrigation method" values="flood,pivot" display_values="Flooding,Center pivot" />
     </chunk>
     <!-- start of religions and denominations -->
     <chunk id="religious"> <!-- all religions and denominations -->
@@ -15074,9 +15098,10 @@
             <space/>
             <key key="landuse" value="farmland"/>
             <reference ref="optional_name"/>
-            <combo key="crop" text="Crop" values="asparagus,barley,cereal,corn,grass,hop,potatoes,rapeseed,rice,soy,sugarcane,tea,wheat" 
-                display_values="Asparagus,Barley,Cereal,Corn,Grass,Hop,Potatoes,Rapeseed,Rice,Soy,Sugarcane,Tea,Wheat" editable="true" values_context="crop"/>
-            <check key="irrigation" text="Center pivot irrigation" value_on="pivot" disable_off="true" />
+            <combo key="crop" text="Crop" editable="true" values_context="crop">
+                <reference ref="crop_values"/>
+            </combo>
+            <reference ref="irrigation"/>
         </item> <!-- Farmland -->
         <item name="Farm" icon="${landuse_farm}" type="closedway,multipolygon" preset_name_label="true" deprecated="true">
             <link wiki="Tag:landuse=farm"/>
@@ -15100,6 +15125,7 @@
                 display_values="Almond trees,Apple trees,Apricot trees,Avocado trees,Banana plants,Blueberry plants,Cacao trees,Cherimoya trees,Cherry trees,Chestnut trees,Coconut palms,Coffea plants,Date palms,Hazel plants,Hop plants,Lemon trees,Macadamia trees,Mango trees,Oil palms,Olive trees,Orange trees,Papaya trees,Peach trees,Pear trees,Pecan trees,Persimmon trees,Pineapple plants,Pistachio trees,Pitaya plants,Plum trees,Pomegranate trees,Tea plants,Walnut trees" 
                 values_searchable="true"
                 />
+            <reference ref="irrigation"/>
         </item> <!-- Orchard -->
         <item name="Vineyard" icon="${landuse_vineyard}" type="closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:landuse=vineyard"/>
