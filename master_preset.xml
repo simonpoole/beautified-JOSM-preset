@@ -1786,6 +1786,34 @@
             <reference ref="oh"/>
         </optional>
     </chunk>
+    <chunk id="car_service">
+        <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres;inspection" 
+                    display_values="Dealer;Repair;Parts;Tyres;Inspection" rows="5" />
+        <optional text="Alternate service tagging">
+            <checkgroup columns="4">
+                <check key="service:vehicle:car_repair" text="Car repair" text_context="shop=car_repair"/>
+                <check key="service:vehicle:truck_repair" text="Truck repair" text_context="shop=car_repair"/>
+                <check key="service:vehicle:new_car_sales" text="Sells new cars" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:used_car_sales" text="Sells used cars" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:air_conditioning" text="Repairs AC" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:alignment" text="Aligns tyres" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:batteries" text="Repairs/replaces batteries" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:body_repair" text="Repairs body" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:brakes" text="Services brakes" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:car_parts" text="Sells car parts" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:diagnostics" text="Performs diagnostics" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:electrical" text="Repairs electrical" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:glass" text="Repairs glass" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:inspection" text="State mandated inspections" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:motor" text="Repairs motor" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:muffler" text="Repairs muffler" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:oil_change" text="Performs oil changes" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:painting" text="Paints exterior" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:transmission" text="Repairs transmission" text_context="shop=car_repair" disable_off="true"/>
+                <check key="service:vehicle:tyres" text="Replaces tires" text_context="shop=car_repair" disable_off="true"/>
+            </checkgroup>
+        </optional>
+    </chunk>
     <chunk id="general_access">
         <combo key="access" text="General Access" values="yes,destination,delivery,permissive,private,customers,agricultural,forestry,permit,no" display_values="General access,Destination,Delivery,Permissive,Private,Customers,Agricultural,Forestry,Permit required,No access" values_context="access" values_sort="false" values_searchable="true" match="none"/>
     </chunk>
@@ -6198,6 +6226,9 @@
                 <reference ref="oh_ohworkshop_wheelchair"/>
                 <reference ref="car_brands"/>
                 <combo key="second_hand" text="Second hand" text_context="transport" values="only,yes,no" display_values="Only,Yes,No"/>
+                <optional>
+                    <reference ref="car_service"/>
+                </optional>
                 <reference ref="link_contact_address_payment"/>
             </item> <!-- Car Dealer -->
             <item name="Repair" icon="${shopping_car_repair}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -6207,32 +6238,7 @@
                 <reference ref="name_operator"/>
                 <reference ref="oh_ohworkshop_wheelchair"/>
                 <reference ref="car_brands"/>
-                <multiselect key="service" text="Service" text_context="shop=car_repair" values="dealer;repair;parts;tyres;inspection" 
-                    display_values="Dealer;Repair;Parts;Tyres;Inspection" rows="5" />
-                <optional text="Alternate service tagging">
-                    <checkgroup columns="4">
-                        <check key="service:vehicle:car_repair" text="Car repair" text_context="shop=car_repair"/>
-                        <check key="service:vehicle:truck_repair" text="Truck repair" text_context="shop=car_repair"/>
-                        <check key="service:vehicle:new_car_sales" text="Sells new cars" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:used_car_sales" text="Sells used cars" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:air_conditioning" text="Repairs AC" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:alignment" text="Aligns tyres" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:batteries" text="Repairs/replaces batteries" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:body_repair" text="Repairs body" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:brakes" text="Services brakes" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:car_parts" text="Sells car parts" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:diagnostics" text="Performs diagnostics" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:electrical" text="Repairs electrical" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:glass" text="Repairs glass" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:inspection" text="State mandated inspections" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:motor" text="Repairs motor" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:muffler" text="Repairs muffler" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:oil_change" text="Performs oil changes" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:painting" text="Paints exterior" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:transmission" text="Repairs transmission" text_context="shop=car_repair" disable_off="true"/>
-                        <check key="service:vehicle:tyres" text="Replaces tires" text_context="shop=car_repair" disable_off="true"/>
-                    </checkgroup>
-                </optional>
+                <reference ref="car_service"/>
                 <reference ref="link_contact_address_payment"/>
             </item> <!-- Repair -->
             <item name="Parts" icon="${shopping_car_parts}" type="node,closedway,multipolygon" preset_name_label="true">
