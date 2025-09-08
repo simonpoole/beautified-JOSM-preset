@@ -12956,11 +12956,29 @@
                 <reference ref="additional_building_tags"/>
             </optional>
         </item> <!-- Wayside Shrine -->
-        <item name="Torii" icon="${historic_torii}" type="node,closedway" preset_name_label="true">
+         <item name="Ceremonial gate" icon="${historic_ceremonial_gate}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:man_made=ceremonial_gate"/>
+            <space/>
+            <key key="man_made" value="ceremonial_gate"/>
+            <combo key="ceremonial_gate" text="Type" values_context="ceremonial_gate" values_searchable="true">
+                <list_entry value="torii" display_value="Torii" />
+                <list_entry value="paifang" display_value="Paifang" />
+                <list_entry value="hongsalmun" display_value="Hongsalmun" />
+                <list_entry value="iljumun" display_value="Iljumun" />
+                <list_entry value="tam_quan" display_value="Tam quan" />
+            </combo>
+            <reference ref="name_wikipedia"/>
+            <reference ref="material"/>
+            <optional>
+                <reference ref="religious" />
+            </optional>
+            <reference ref="historic_optional"/>
+        </item> <!-- Ceremonial gate -->
+        <item name="Torii" icon="${historic_torii}" type="node,closedway" preset_name_label="true" deprecated="true">
             <link wiki="Tag:man_made=torii"/>
             <space/>
             <key key="man_made" value="torii"/>
-            <reference ref="optional_name"/>
+            <reference ref="name_wikipedia"/>
         </item> <!-- Torii -->
         <item name="Boundary Stone" icon="${historic_boundary_stone}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:historic=boundary_stone"/>
