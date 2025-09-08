@@ -15601,7 +15601,7 @@
                 <role key="outer" text="outer segment" requisite="required" type="way,closedway"/>
                 <role key="inner" text="inner segment" requisite="optional" type="way,closedway"/>
                 <role key="subarea" text="Sub area" requisite="optional" type="relation"/>
-                <role key="admin_centre" text="Administration centre" requisite="optional" type="node" count="1" member_expression="boundary=administrative"/>
+                <role key="admin_centre" text="Administration centre" requisite="optional" type="node" count="1" member_expression="place=*"/>
                 <role key="label" text="Label point" requisite="optional" type="node" count="1"/>
             </roles>
         </item> <!-- Boundary -->
