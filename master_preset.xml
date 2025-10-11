@@ -14781,6 +14781,7 @@
             <space/>
             <key key="natural" value="valley"/>
             <reference ref="name_wikipedia"/>
+            <preset_link preset_name="Gully" text="Similar but different tags:" alternative="true" />
         </item> <!-- Valley -->
         <item name="Mountain range" icon="${geography_mountain_range}" type="way" preset_name_label="true">
             <link wiki="Tag:natural=mountain_range"/>
@@ -14799,6 +14800,17 @@
             <reference ref="optional_name_wikipedia"/>
             <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
         </item> <!-- Cliff -->
+        <item name="Gully" icon="${geography_gully}" type="way" preset_name_label="true">
+            <link wiki="Tag:natural=gully"/>
+            <space />
+            <label text="Small-scale landform incised into surrounding terrain through erosion by flowing water."/>
+            <space/>
+            <key key="natural" value="gully"/>
+            <optional>
+                <reference ref="name_wikipedia"/>
+            </optional>
+            <preset_link preset_name="Valley" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Gully -->
         <item name="Earth bank" icon="${geography_earth_bank}" type="way" preset_name_label="true">
             <link wiki="Tag:natural=earth_bank" />
             <space />
