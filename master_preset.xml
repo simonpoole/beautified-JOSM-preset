@@ -10169,6 +10169,15 @@
             <reference ref="name_operator"/>
             <reference ref="link_contact_address"/>
         </item> <!-- Research institute -->
+        <separator/>
+        <item name="Give box" icon="${amenity_give_box}" type="node" preset_name_label="true">
+            <link wiki="Tag:amenity=give_box"/>
+            <space/>
+            <key key="amenity" value="give_box"/>
+            <reference ref="optional_level"/>
+            <reference ref="optional_oh"/>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Give box -->
         </group> <!-- Facilities -->
            <group name="Advertising" icon="${amenity_advertising}">
             <item name="Advertising" icon="${amenity_advertising}" type="node,closedway" preset_name_label="true">
