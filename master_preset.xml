@@ -1398,9 +1398,12 @@
         <preset_link preset_name="No name"/>
     </chunk>
     <chunk id="image_tags">
-        <text key="image" text="Image" match="none"/>
-        <text key="mapillary" text="Mapillary image" match="none"/>
-        <text key="wikimedia_commons" text="Wikimedia commons" match="none"/>
+        <text key="image" text="Image" match="none" value_type="image_reference"/>
+        <text key="mapillary" text="Mapillary image" match="none" value_type="image_reference"/>
+        <text key="panoramax" text="Panoramax image" match="none" value_type="image_reference"/>
+        <text key="wikimedia_commons" text="Wikimedia commons" match="none" value_type="image_reference"/>
+        <text key="kartaview" text="Kartaview image" match="none" value_type="image_reference"/>
+        <text key="flickr" text="Flickr image" match="none" value_type="image_reference"/>
     </chunk>
     <chunk id="wikipedia_wikidata">
         <text key="wikipedia" text="Wikipedia" value_type="wikipedia" match="none"/>
