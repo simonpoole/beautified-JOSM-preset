@@ -8012,6 +8012,7 @@
             <key key="amenity" value="public_bath"/>
             <combo key="bath:type" text="Type" values="hammam,hot_spring,lake,onsen,river,sento,thermal" display_values="Hammam,Hot spring,Lake,Onsen,River,Sento,Thermal" values_context="bath:type" />
             <check key="bath:open_air" text="Open air" />
+            <check key="bath:sand_bath" text="Sand bath" regions="JP" />
             <check key="shower" text="Shower" />
             <checkgroup text="Gender" columns="3">
                 <check key="female" text="Female" text_context="restroom" />
