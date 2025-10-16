@@ -955,6 +955,7 @@
         <reference ref="highway_overtaking" />
         <checkgroup text="Additional attributes" columns="5">
             <check key="motorroad" text="Motorroad" disable_off="true"/>
+            <check key="expressway" text="Expressway" disable_off="true" regions="GB,PL,US"/>
             <check key="bridge" text="Bridge" disable_off="true"/>
             <check key="tunnel" text="Tunnel" disable_off="true"/>
             <check key="cutting" text="Cutting" disable_off="true"/>
