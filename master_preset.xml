@@ -10726,7 +10726,7 @@
             <reference ref="oh"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Gymnastics -->
-        <item name="Skating" deprecated="true" icon="${sport_iceskating}" type="node,closedway,multipolygon" preset_name_label="true">
+        <item name="Skating" deprecated="true" icon="${sport_iceskating}" type="node,closedway,multipolygon" preset_name_label="true" name_context="ice_skating" >
             <link wiki="Tag:sport=skating"/>
             <space/>
             <key key="sport" value="skating"/>
