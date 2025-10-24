@@ -778,6 +778,10 @@
     </chunk>
     <chunk id="maxspeed">
         <text key="maxspeed" text="Max speed" long_text="Maximum speed in km/h if no units specified"/>
+        <optional>
+            <combo key="maxspeed:variable" text="Variable max. speed" values="yes,environment,peak_traffic,school_zone,weather"
+                display_values="Yes,Environment,Peak traffic,School zone,Weather" match="none" />
+        </optional>
     </chunk>
     <chunk id="handrail">
         <checkgroup text="Handrail" columns="1"> <!-- workaround -->
