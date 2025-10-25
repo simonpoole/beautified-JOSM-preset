@@ -2555,13 +2555,15 @@
     </chunk>
     <chunk id="isced_level">
         <multiselect key="isced:level" text="ISCED level" delimiter=";" match="key" editable="true" rows="6" values_sort="false">
-            <list_entry value="0" short_description="Pre-primary (0)"/>
+            <list_entry value="0" short_description="Early childhood (0)"/>
             <list_entry value="1" short_description="Primary (1)"/>
             <list_entry value="2" short_description="Lower secondary (2)"/>
             <list_entry value="3" short_description="Upper secondary (3)"/>
-            <list_entry value="4" short_description="Post secondars (4)"/>
-            <list_entry value="5" short_description="Lower tertiary education (5)"/>
-            <list_entry value="6" short_description="Upper tertiary education (6)"/>
+            <list_entry value="4" short_description="Post-secondary non-tertiary (4)"/>
+            <list_entry value="5" short_description="Short-cycle tertiary (5)"/>
+            <list_entry value="6" short_description="Bachelor's level (6)"/>
+            <list_entry value="7" short_description="Master's level (7)"/>
+            <list_entry value="8" short_description="Doctoral level (8)"/>
         </multiselect>
     </chunk>
     <chunk id="additonal_aerialway_tags">
