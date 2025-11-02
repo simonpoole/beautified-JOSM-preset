@@ -9700,7 +9700,7 @@
                 <text key="name" text="Name"/>
                 <text key="operator" text="Operator"/>
                 <text key="description" text="Description" length="255"/>
-                <multiselect key="animal_training" text="Animals" values="dog;horse" display_values="Dog;Horse" values_searchable="true" match="key"/>
+                <multiselect key="animal_training" text="Trained animals" values="dog;horse" display_values="Dog;Horse" values_searchable="true" match="key"/>
             </optional>
             <reference ref="link_contact_address"/>
         </item> <!-- Animal training -->
