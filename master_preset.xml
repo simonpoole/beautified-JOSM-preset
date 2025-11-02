@@ -9683,9 +9683,22 @@
                 <text key="operator" text="Operator"/>
                 <text key="description" text="Description" length="255"/>
                 <multiselect key="animal_breeding" text="Animals" values="alpaca;bird;cat;cow;dog;donkey;fish;goat;horse;pig;poultry;rabbit;sheep" display_values="Alpaca;Bird;Cat;Cow;Dog;Donkey;Fish;Goat;Horse;Pig;Poultry;Rabbit;Sheep" values_searchable="true" match="key"/>
+                <multiselect key="animal_training" text="Training" values="yes;dog;horse;no" display_values="Yes;Dog;Horse;No" values_searchable="true" match="key"/>
             </optional>
             <reference ref="link_contact_address"/>
         </item> <!-- Animal boarding -->
+       <item name="Animal training" icon="${amenity_animal_training}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=animal_training"/>
+            <space/>
+            <key key="amenity" value="animal_training"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <text key="operator" text="Operator"/>
+                <text key="description" text="Description" length="255"/>
+                <multiselect key="animal_training" text="Animals" values="dog;horse" display_values="Dog;Horse" values_searchable="true" match="key"/>
+            </optional>
+            <reference ref="link_contact_address"/>
+        </item> <!-- Animal training -->
         <item name="Animal feeding place" icon="${amenity_feeding_place}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=feeding_place"/>
             <space/>
