@@ -4586,7 +4586,7 @@
             <label text="The tag `foot=yes` is implied and does not need to be set." />
             <reference ref="check_access_nomotor" />
             <check key="locked" text="Usually locked"/>
-        </item> <!-- Turnstile -->
+        </item> <!-- Wicket gate -->
         <item name="Sally Port" icon="${barrier_sally_port}" type="node" preset_name_label="true">
             <link wiki="Tag:barrier=sally_port" />
             <key key="barrier" value="sally_port"/>
