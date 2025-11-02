@@ -214,8 +214,7 @@
         <list_entry value="rolled" display_value="Rolled"/>
         <list_entry value="no" display_value="None"/>
     </chunk>
-    <chunk id="turn_lanes_values">
-        <list_entry value="none" short_description="None"/>
+    <chunk id="turn_lanes_values_base">
         <list_entry value="reverse" short_description="Reverse"/>
         <list_entry value="sharp_left" short_description="Sharp left"/>
         <list_entry value="left" short_description="Left"/>
@@ -228,6 +227,9 @@
         <list_entry value="through;right" short_description="Through and right"/>
         <list_entry value="right" short_description="Right"/>
         <list_entry value="sharp_right" short_description="Sharp right"/>
+    </chunk>
+    <chunk id="turn_lanes_values_none">
+        <list_entry value="none" short_description="None"/>
     </chunk>
     <chunk id="lane_access_values">
         <list_entry value="yes" short_description="Yes"/>
@@ -700,6 +702,17 @@
         <list_entry value="alpine_hiking" display_value="T4 - difficult, exposed, steep alpine trail" short_description="sometimes need for hand use to get ahead. Terrain quite exposed, precarious grassy acclivities, jagged rocks, facile snow-free glaciers"/>
         <list_entry value="demanding_alpine_hiking" display_value="T5 - difficult alpine trail with climbing" short_description="single plainly climbing up to second grade. Exposed, demanding terrain, jagged rocks, few dangerous glacier and snow"/>
         <list_entry value="difficult_alpine_hiking" display_value="T6 - hazardous alpine trail with climbing" short_description="climbing up to second grade. Often very exposed, precarious jagged rocks, glacier with danger to slip and fall"/>
+    </chunk>
+    <chunk id="turn_restriction_values">
+        <list_entry value="no_left_turn" display_value="No left turn" icon="${relation_turn_restriction_no_left_turn}" />
+        <list_entry value="no_right_turn" display_value="No right turn" icon="${relation_turn_restriction_no_right_turn}" />
+        <list_entry value="no_u_turn" display_value="No u-turn" icon="${relation_turn_restriction_no_u_turn}" />
+        <list_entry value="only_right_turn" display_value="Only right turn" icon="${relation_turn_restriction_only_right_turn}" />
+        <list_entry value="only_left_turn" display_value="Only left turn" icon="${relation_turn_restriction_only_left_turn}" />
+        <list_entry value="only_straight_on" display_value="Only straight on" icon="${relation_turn_restriction_only_straight_on}" />
+        <list_entry value="no_straight_on" display_value="No straight on" icon="${relation_turn_restriction_no_straight_on}" />
+        <list_entry value="no_entry" display_value="No entry" icon="${relation_turn_restriction_no_entry}" />
+        <list_entry value="no_exit" display_value="No exit" icon="${relation_turn_restriction_no_exit}" />
     </chunk>
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
@@ -2602,15 +2615,7 @@
     </chunk>
     <chunk id="turn_restrictions">
         <combo key="restriction" text="Restriction" values_searchable="true" values_sort="false" values_context="restriction">
-            <list_entry value="no_left_turn" display_value="No left turn" icon="${relation_turn_restriction_no_left_turn}" />
-            <list_entry value="no_right_turn" display_value="No right turn" icon="${relation_turn_restriction_no_right_turn}" />
-            <list_entry value="no_u_turn" display_value="No u-turn" icon="${relation_turn_restriction_no_u_turn}" />
-            <list_entry value="only_right_turn" display_value="Only right turn" icon="${relation_turn_restriction_only_right_turn}" />
-            <list_entry value="only_left_turn" display_value="Only left turn" icon="${relation_turn_restriction_only_left_turn}" />
-            <list_entry value="only_straight_on" display_value="Only straight on" icon="${relation_turn_restriction_only_straight_on}" />
-            <list_entry value="no_straight_on" display_value="No straight on" icon="${relation_turn_restriction_no_straight_on}" />
-            <list_entry value="no_entry" display_value="No entry" icon="${relation_turn_restriction_no_entry}" />
-            <list_entry value="no_exit" display_value="No exit" icon="${relation_turn_restriction_no_exit}" />
+            <reference ref="turn_restriction_values"/>
         </combo>
     </chunk>
     <chunk id="turn_restriction_roles">
@@ -3442,7 +3447,8 @@
                 <link wiki="Lanes"/>
                 <combo key="lanes" values="1,2,3,4,5,6,7,8" description="Total number of full width lanes" value_type="integer" values_sort="false" />
                 <multiselect key="turn:lanes" text="Turning lanes" delimiter="|" match="key" editable="true">
-                    <reference ref="turn_lanes_values"/>    
+                    <reference ref="turn_lanes_values_none"/>
+                    <reference ref="turn_lanes_values_base"/>    
                 </multiselect>
                 <multiselect key="destination:lanes" text="Destinations per lane" delimiter="|" match="key" editable="true" />
                 <multiselect key="destination:ref:lanes" text="Refs per lane" delimiter="|" match="key" editable="true" />
@@ -3479,7 +3485,8 @@
                 <combo key="lanes:backward" values="1,2,3,4,5,6,7,8" text="# full width lanes opposite to way direction" value_type="integer" />
                 <!-- forwards -->
                 <multiselect key="turn:lanes:forward" text="Turning lanes in way direction" delimiter="|" match="key" editable="true">
-                    <reference ref="turn_lanes_values"/>
+                    <reference ref="turn_lanes_values_none"/>
+                    <reference ref="turn_lanes_values_base"/>    
                 </multiselect>
                 <multiselect key="destination:lanes:forward" text="Destinations per lane in way direction" delimiter="|" match="key" editable="true" />
                 <multiselect key="destination:ref:lanes:forward" text="Refs per lane in way direction" delimiter="|" match="key" editable="true" />
@@ -3510,7 +3517,8 @@
                 </optional>
                 <!-- backwards -->
                 <multiselect key="turn:lanes:backward" text="Turning lanes opposite to way direction" delimiter="|" match="key" editable="true" >
-                    <reference ref="turn_lanes_values"/>
+                    <reference ref="turn_lanes_values_none"/>
+                    <reference ref="turn_lanes_values_base"/>    
                 </multiselect>
                 <multiselect key="destination:lanes:backward" text="Destinations per lane opposite to way direction" delimiter="|" match="key" editable="true"  />
                 <multiselect key="destination:ref:lanes:backward" text="Refs per lane opposite to way direction" delimiter="|" match="key" editable="true" />
@@ -5090,13 +5098,10 @@
                 <combo key="colour" text="Color" values_context="colour" default="white" match="none" >
                     <reference ref="colour_values"/>
                 </combo>
-                <label text="Use either arrow or restriction type"/>
                 <multiselect key="arrow" text="Arrow" match="none">
-                    <list_entry value="left" display_value="Left"/>
-                    <list_entry value="right" display_value="Right"/>
-                    <list_entry value="through" display_value="Through"/>
+                    <reference ref="turn_lanes_values_base"/>    
+                    <reference ref="turn_restriction_values"/>
                 </multiselect>
-                <reference ref="turn_restrictions"/> 
             </item> <!-- Arrow -->
             <item name="Traffic sign" icon="${road_markings_traffic_sign}" type="node" preset_name_label="true">
                 <link wiki="Key:road_marking"/>
