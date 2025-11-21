@@ -10137,6 +10137,21 @@
                 <reference ref="facility_access"/>
             </optional>
         </item> <!-- Water Point -->
+        <item name="Kitchen" icon="${amenity_kitchen}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:amenity=kitchen"/>
+            <space/>
+            <key key="amenity" value="kitchen"/>
+            <check key="drinking_water" text="Drinking Water"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <reference ref="ref_operator"/>
+                <reference ref="oh"/>
+                <text key="description" text="Description" length="255"/>
+                <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
+                <reference ref="level"/>
+                <reference ref="facility_access"/>
+            </optional>
+        </item> <!-- Kitchen -->
         <item name="Compressed Air" icon="${amenity_compressed_air}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=compressed_air"/>
             <space/>
