@@ -17142,7 +17142,7 @@
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_disused" javascript="
-var objects = ['amenity','aeroway','building','highway','leisure','man_made','military','railway','shop'];
+var objects = ['amenity','aeroway','building','healthcare','highway','leisure','man_made','military','office','railway','shop'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -17169,7 +17169,7 @@ tags.remove('set_to_disused');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_disused_remove_tags" javascript="
-var objects = ['amenity','aeroway','building','highway','leisure','man_made','military','railway','shop'];
+var objects = ['amenity','aeroway','building','healthcare','highway','leisure','man_made','military','office','railway','shop'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -17211,6 +17211,11 @@ tags.remove('set_to_disused_remove_tags');" />
             <space/>
             <text key="disused:building" match="key" />
         </item> <!-- Disused building --> 
+        <item name="Disused healthcare facility" icon="${disused_office}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:disused:"/>
+            <space/>
+            <text key="disused:healthcare" match="key" />
+        </item> <!-- Disused healthcare facility -->
         <item name="Disused highway" icon="${disused_highway}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:disused:"/>
             <space/>
@@ -17231,6 +17236,11 @@ tags.remove('set_to_disused_remove_tags');" />
             <space/>
             <text key="disused:military" match="key" />
         </item> <!-- Disused military object -->
+        <item name="Disused office" icon="${disused_office}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:disused:"/>
+            <space/>
+            <text key="disused:office" match="key" />
+        </item> <!-- Disused office -->
         <item name="Disused railway" icon="${disused_railway}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:disused:"/>
             <space/>
@@ -17248,7 +17258,7 @@ tags.remove('set_to_disused_remove_tags');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_abandoned" javascript="
-var objects = ['amenity','aeroway','building','highway','leisure','man_made','military','place','railway','shop'];
+var objects = ['amenity','aerialway''aeroway','bridge','building','highway','leisure','man_made','military','place','railway','shop','tourism'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -17275,7 +17285,7 @@ tags.remove('set_to_abandoned');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_abandoned_remove_tags" javascript="
-var objects = ['amenity','aeroway','building', 'highway','leisure','man_made','military','place','railway','shop'];
+var objects = ['amenity','aerialway''aeroway','bridge','building','highway','leisure','man_made','military','place','railway','shop','tourism'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -17307,11 +17317,21 @@ tags.remove('set_to_abandoned_remove_tags');" />
             <space/>
             <text key="abandoned:amenity" match="key" />
         </item> <!-- Abandoned amenity -->
+        <item name="Abandoned aerialway" icon="${abandoned_aerialway}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <space/>
+            <text key="abandoned:aerialway" match="key" />
+        </item> <!-- Abandoned aerialway -->
         <item name="Abandoned aeroway" icon="${abandoned_aeroway}" type="node,way,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:abandoned:"/>
             <space/>
             <text key="abandoned:aeroway" match="key" />
         </item> <!-- Abandoned aeroway -->
+        <item name="Abandoned bridge" icon="${abandoned_bridge}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <space/>
+            <text key="abandoned:bridge" match="key" />
+        </item> <!-- Abandoned bridge -->
         <item name="Abandoned building" icon="${abandoned_building}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Key:abandoned:"/>
             <space/>
@@ -17352,5 +17372,86 @@ tags.remove('set_to_abandoned_remove_tags');" />
             <space/>
             <text key="abandoned:shop" match="key" />
         </item> <!-- Abandoned shop -->
+        <item name="Abandoned tourism" icon="${abandoned_tourism}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:abandoned:"/>
+            <space/>
+            <text key="abandoned:tourism" match="key" />
+        </item> <!-- Abandoned tourism -->
+        <separator/>
+        <item name="Set to demolished" icon="${javascript}" type="node,way,closedway,relation" preset_name_label="true">
+            <link wiki="Key:demolished:"/>
+            <!-- originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags
+                 before the PropertyEditor was started, tags are the current values, by removing the key at the
+                 end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
+            <text key="set_to_demolished" javascript="
+var objects = ['building','highway','power'];
+
+function isObject(key) {
+  var objectsLength = objects.length;
+  for (var i = 0; i &lt; objectsLength; i++) {
+    if (objects[i].equals(key)) {
+            return true;
+    }
+  }
+  return false;
+}
+
+for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {
+  if (isObject(key)) {
+    tags.put('demolished:'+key,tags.get(key));
+    tags.remove(key);
+  }
+}
+tags.remove('set_to_demolished');" />
+        </item>
+        <item name="Set to demolished (remove tags)" icon="${javascript}" type="node,way,closedway,relation" preset_name_label="true">
+            <link wiki="Key:demolished:"/>
+            <!-- This preset will only remove tags on app version 703 and higher (Vespucci 11.1.1)
+                 originalTags and tags are java.util.Map<String,ArrayList<String>>, originalTags are the tags
+                 before the PropertyEditor was started, tags are the current values, by removing the key at the
+                 end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
+            <text key="set_to_demolished_remove_tags" javascript="
+var objects = ['building', 'highway','power'];
+
+function isObject(key) {
+  var objectsLength = objects.length;
+  for (var i = 0; i &lt; objectsLength; i++) {
+    if (objects[i].equals(key)) {
+            return true;
+    }
+  }
+  return false;
+}
+
+var presetItem = null;
+for (var key in Iterator(new java.util.HashSet(tags.keySet()))) {
+  if (isObject(key)) {
+    tags.put('demolished:'+key,tags.get(key));
+    presetItem = key2PresetItem.get(key);
+    tags.remove(key);
+  }
+  if (typeof versionCode !== 'undefined' &amp;&amp; versionCode &gt; 703) {
+    if (presetItem !== null &amp;&amp; presetItem.equals(key2PresetItem.get(key))) {
+      tags.remove(key);
+    }
+  }
+}
+tags.remove('set_to_demolished_remove_tags');" />
+        </item>
+        <item name="Demolished building" icon="${demolished_building}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:demolished:"/>
+            <space/>
+            <text key="demolished:building" match="key" />
+        </item> <!-- Demolished building -->
+        <item name="Demolished highway" icon="${demolished_highway}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:demolished:"/>
+            <space/>
+            <text key="demolished:highway" match="key" />
+        </item> <!-- Demolished highway -->
+        <item name="Demolished power facility" icon="${demolished_power}" type="node,way,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Key:demolished:"/>
+            <space/>
+            <text key="demolished:power" match="key" />
+        </item> <!-- Demolished power -->
     </group>
 </presets>
