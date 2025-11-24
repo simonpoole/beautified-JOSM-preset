@@ -15238,6 +15238,7 @@
                 display_values="Almond trees,Apple trees,Apricot trees,Avocado trees,Banana plants,Blueberry plants,Cacao trees,Cherimoya trees,Cherry trees,Chestnut trees,Coconut palms,Coffea plants,Date palms,Hazel plants,Hop plants,Lemon trees,Macadamia trees,Mango trees,Oil palms,Olive trees,Orange trees,Papaya trees,Peach trees,Pear trees,Pecan trees,Persimmon trees,Pineapple plants,Pistachio trees,Pitaya plants,Plum trees,Pomegranate trees,Tea plants,Walnut trees" 
                 values_searchable="true"
                 />
+            <check key="orchard" value_on="meadow_orchard" text="Meadow orchard" disable_off="true"/>
             <reference ref="irrigation"/>
         </item> <!-- Orchard -->
         <item name="Vineyard" icon="${landuse_vineyard}" type="closedway,multipolygon" preset_name_label="true">
