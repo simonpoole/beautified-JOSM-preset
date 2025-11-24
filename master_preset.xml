@@ -4226,6 +4226,7 @@
             <link wiki="Key:traffic_sign"/>
             <space/>
             <key key="traffic_sign" value="stop"/>
+            <combo key="stop" text="Type" values="all,minor" display_values="All,Minor"/>
             <reference ref="traffic_sign_direction" />
         </item> <!-- Stop sign -->
         <item name="Stop sign (separate)" icon="${traffic_sign_stop}" type="node" preset_name_label="true" match_expression="-child highway=*">
