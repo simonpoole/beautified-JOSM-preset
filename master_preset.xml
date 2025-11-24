@@ -11195,6 +11195,13 @@
             <space/>
             <combo key="building:part" text="Building part" values_context="building" default="yes" match="key" values_searchable="true">
                 <reference ref="building_values"/>
+                <list_entry value="balcony"      display_value="Balcony"/>
+                <list_entry value="column"       display_value="Column"/>
+                <list_entry value="conservatory" display_value="conservatory" />
+                <list_entry value="deck"         display_value="Deck"/>
+                <list_entry value="elevator"     display_value="Elevator"/>
+                <list_entry value="porch"        display_value="Porch"/>
+                <list_entry value="steps"        display_value="Steps"/>
             </combo>
             <reference ref="additional_building_tags"/>
             <combo key="building:min_level" text="Skipped Levels" values="1,2,3,4,5,6,7,8,9,10" editable="true" text_context="building" value_type="integer"/>
