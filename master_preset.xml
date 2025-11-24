@@ -16197,7 +16197,9 @@
             <link wiki="Relation:waterway"/>
             <space/>
             <key key="type" value="waterway"/>
-            <combo key="waterway" text="Subtype of waterway (largest one of members)" values="river,stream,canal,drain,ditch" display_values="River,Stream,Canal,Drain,Ditch" values_sort="false" values_searchable="true"/>
+            <combo key="waterway" text="Subtype of waterway (largest one of members)" 
+                values="river,stream,canal,drain,ditch,weir,rapids,tidal_channel" 
+                display_values="River,Stream,Canal,Drain,Ditch,Weir,Rapids,Tidal channel" values_sort="false" values_searchable="true"/>
             <text key="name" text="Name"/>
             <optional>
                 <text key="destination" text="Name of river/lake/sea/ocean it runs into"/>
