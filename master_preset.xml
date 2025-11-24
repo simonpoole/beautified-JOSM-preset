@@ -4041,8 +4041,8 @@
             <link wiki="Tag:highway=traffic_signals"/>
             <key key="highway" value="traffic_signals"/>
             <optional text="Optional signal attributes:">
-                <combo key="traffic_signals" text="Type" values="blinker,blink_mode,bus_priority,continuous_green,emergency,ramp_meter,tram_priority"
-                    display_values="Blinker,Blink mode,Bus priority,Continuous green,Emergency,Ramp meter,Tram priority" />
+                <combo key="traffic_signals" text="Type" values="blinker,blink_mode,bus_priority,continuous_green,emergency,pedestrian_crossing,ramp_meter,tram_priority"
+                    display_values="Blinker,Blink mode,Bus priority,Continuous green,Emergency,Pedestrian crossing,Ramp meter,Tram priority" />
                 <combo key="traffic_signals:direction" text="For traffic direction" values="forward,backward,both" display_values="Forward,Backward,Both"/>
                 <check key="traffic_signals:sound" text="Sound signals" disable_off="true"/>
                 <check key="traffic_signals:vibration" text="Vibration" disable_off="true"/>
