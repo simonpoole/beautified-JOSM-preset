@@ -5984,7 +5984,7 @@
                 <reference ref="name_ref"/>
             </item> <!-- Railway junction -->
             <item name="Train wash" icon="${transport_railway_train_wash}" type="node,closedway,multipolygon" preset_name_label="true">
-                <key key="railway" value="train_wash" />
+                <key key="railway" value="wash" />
                 <text key="operator" text="Operator" />
                 <text key="railway:ref" text="Reference"/>
             </item> <!-- Train wash -->
