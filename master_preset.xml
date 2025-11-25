@@ -7287,13 +7287,19 @@
             <key key="tourism" value="camp_site"/>
             <reference ref="name_operator"/>
             <reference ref="stars"/>
+            <combo key="camp_site" text="Type"
+                values="basic,standard,serviced,deluxe"
+                display_values="Basic (only tent/vehicle spots),Standard (offers toilets and water),Serviced (offers showers and electricity),Deluxe (offers laundry or swimming pool etc.)" />
             <reference ref="oh_wheelchair" />
             <reference ref="reservation" />
-            <text key="capacity" text="Number of places" />
             <checkgroup text="Camping type" columns="2">
                 <check key="tents" text="Tents allowed" />
                 <check key="caravans" text="Caravans allowed" />
+                <check key="static_caravans" text="Mobile Homes" />
             </checkgroup>
+            <text key="capacity" text="Capacity (total)"  value_type="integer" />
+            <text key="capacity:tents" text="Capacity (tents)" value_type="integer" />
+            <text key="capacity:caravans" text="Capacity (caravans)" value_type="integer" />
             <checkgroup columns="2">
                 <check key="backcountry" text="Backcountry" disable_off="true"/>
                 <check key="group_only" text="Group only access" disable_off="true"/>
