@@ -11364,6 +11364,12 @@
             <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
             <text key="maxheight" text="Max. height (Meters)" value_type="dimension_vertical"/>
             <check key="automatic_door" text="Automatic door" />
+            <optional>
+                <text key="dock:height" text="Dock Height (Meters)" value_type="dimension_vertical" />
+                <text key="dock:width" text="Dock Width (Meters)" value_type="dimension_horizontal" />
+                <text key="door:height" text="Door Height (Meters)" value_type="dimension_vertical" />
+                <text key="door:width" text="Door Width (Meters)" value_type="dimension_horizontal" />
+            </optional>
         </item> <!-- Loading dock -->  
     </group> <!-- Buildings -->
     <group name="Indoor elements" icon="${indoor_floorplan}" >
