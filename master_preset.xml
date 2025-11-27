@@ -9900,7 +9900,7 @@
                 <list_entry value="scottish_crown" display_value="Crown of Scotland"/>
                 <list_entry value="no" display_value="None"/>
             </combo>
-            <text key="royal_cypher:wikidata" text="Royal cypher wikidata" regions="GB"/>
+            <text key="royal_cypher:wikidata" text="Royal cypher wikidata" value_type="wikipedia" regions="GB"/>
             <preset_link preset_name="Letter box" text="Similar but different tags:" alternative="true" />
         </item> <!-- Post Box -->
         <item name="Parcel Locker" icon="${amenity_parcel_locker}" type="node,closedway" preset_name_label="true">
@@ -11561,6 +11561,9 @@
             <key key="man_made" value="flagpole"/>
             <combo key="flag:type" text="Type" values="advertising,athletic,governmental,military,municipal,national,organisation,regional,religious,signal" 
                 display_values="Advertising,Athletic,Governmental,Military,Municipal,National,Organisation,Regional,Religious,Signal" values_context="flag" match="keyvalue!" values_searchable="true" />
+            <text key="flag:name" text="Name of the flag"/>
+            <text key="flag:wikidata" text="Flag wikidata entry" value_type="wikidata" match="none"/>
+            <text key="flag:wikipedia" text="Flag wikipedia entry" value_type="wikipedia" match="none"/>
         </item> <!-- Flagpole -->
         <item name="Cross" icon="${man_made_cross}" type="node" preset_name_label="true">
             <link wiki="Tag:man_made=cross"/>
