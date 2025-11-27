@@ -3038,6 +3038,40 @@
             <check key="display:digital" text="Digital" disable_off="true"/>
         </checkgroup>
     </chunk>
+    <chunk id="phone_booth_type">       
+        <combo key="booth" text="Phone booth type" regions="DE,GB,IE,NO">                 
+            <list_entry value="FeH_26" display_value="FeH 26" regions="DE" /> 
+            <list_entry value="FeH_32" display_value="FeH 32" regions="DE" /> 
+            <list_entry value="FeH_55" display_value="FeH 55" regions="DE" />
+            <list_entry value="TelH_72" display_value="TelH 72" regions="DE" />
+            <list_entry value="TelH_78" display_value="TelH 78" regions="DE" /> 
+            <list_entry value="TelH_90" display_value="TelH 90" regions="DE" /> 
+            <list_entry value="TelH_90_Sh" display_value="TelH 90 Sh" regions="DE" />
+            <list_entry value="TelH_90_Sm" display_value="TelH 90 Sm" regions="DE" /> 
+            <list_entry value="TelH_08" display_value="TelH 08" regions="DE" /> 
+            <list_entry value="K1" display_value="K1" regions="GB,IE" />
+            <list_entry value="K2" display_value="K2" regions="GB" />
+            <list_entry value="K3" display_value="K3" regions="GB" />
+            <list_entry value="K4␣Post␣Office" display_value="K4 Post Office" regions="GB" />
+            <list_entry value="K6" display_value="K6" regions="GB" />
+            <list_entry value="K8" display_value="K8" regions="GB" />
+            <list_entry value="KX100" display_value="KX100" regions="GB" />
+            <list_entry value="KX200" display_value="KX200" regions="GB" />
+            <list_entry value="KX300" display_value="KX300" regions="GB" />
+            <list_entry value="KX410" display_value="KX410" regions="GB" />
+            <list_entry value="KX420" display_value="KX420" regions="GB" />
+            <list_entry value="KXPlus" display_value="KX Plus" regions="GB" />
+            <list_entry value="oakham" display_value="Oakham" regions="GB" />
+            <list_entry value="ST6" display_value="ST6" regions="GB" />
+            <list_entry value="Inlink" display_value="InLink" regions="GB" />
+            <list_entry value="NWPyramid" display_value="NW Pyramid" regions="GB" />
+            <list_entry value="NWCapped" display_value="NW Capped" regions="GB" />
+            <list_entry value="Telefon" display_value="Telefon" regions="IE" />
+            <list_entry value="Eircom" display_value="Eircom" regions="IE" />
+            <list_entry value="Teileafon" display_value="Teileafon" regions="IE" />
+            <list_entry value="Riks" display_value="Riks" regions="NO" />
+        </combo>    
+    </chunk>
     <!-- Groups -->
     <group name="Highways" icon="${highway_group}">
     <group name="Streets" icon="${highway_group}" items_sort="false" >
@@ -8577,6 +8611,7 @@
                 <reference ref="oh_wheelchair"/>
                 <combo key="public_bookcase:type" text="Type" values="building,glass_cabinet,metal_cabinet,movable_cabinet,phone_box,reading_box,sculpture,shelf,shelter,wooden_cabinet"
                     display_values="Building,Glass cabinet,Metal cabinet,Movable cabinet,Phone booth,Reading box,Sculpture,Shelf,Shelter,Wooden cabinet"/>
+                <reference ref="phone_booth_type" />
                 <reference ref="facility_access" />
             </optional>
             <preset_link preset_name="Contact"/>
@@ -9911,6 +9946,9 @@
             <check key="payment:coins" text="Coins" disable_off="true"/>
             <check key="payment:notes" text="Notes" text_context="payment" disable_off="true"/>
             <check key="payment:telephone_cards" text="Telephone cards" disable_off="true"/>
+            <optional>
+                <reference ref="phone_booth_type" />
+            </optional>
             <preset_link preset_name="Payment Methods"/>
         </item> <!-- Telephone -->
         <item name="Internet Access" icon="${amenity_internet}" type="node,closedway,multipolygon" preset_name_label="true">
