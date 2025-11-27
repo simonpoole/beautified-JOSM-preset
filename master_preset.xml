@@ -7304,6 +7304,8 @@
             <reference ref="stars"/>
             <text key="rooms" text="Rooms"/>
             <text key="beds" text="Beds"/>
+            <check key="cabins" text="Cabins available" />
+            <text key="capacity:cabins" text="Number of cabins" value_type="integer" />
             <reference ref="wheelchair"/>
             <space/>
             <reference ref="reservation" />
@@ -7336,6 +7338,8 @@
             <text key="capacity" text="Capacity (total)"  value_type="integer" />
             <text key="capacity:tents" text="Capacity (tents)" value_type="integer" />
             <text key="capacity:caravans" text="Capacity (caravans)" value_type="integer" />
+            <check key="cabins" text="Cabins available" />
+            <text key="capacity:cabins" text="Number of cabins" value_type="integer" />
             <checkgroup columns="2">
                 <check key="backcountry" text="Backcountry" disable_off="true"/>
                 <check key="group_only" text="Group only access" disable_off="true"/>
