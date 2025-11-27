@@ -4657,7 +4657,8 @@
             <link wiki="Tag:barrier=fence"/>
             <key key="barrier" value="fence"/>
             <optional>
-                <combo key="fence_type" text="Type" values="barbed_wire,bars,chain_link,concrete,electric,metal,pole,railing,split_rail,wire,wood" display_values="Barbed wire,Bars,Chain link,Concrete,Electric,Metal,Pole,Railing,Split rail,Wire,Wood" values_context="material"/>
+                <combo key="fence_type" text="Type" values="barbed_wire,bars,chain_link,concrete,electric,metal,pole,railing,split_rail,wire,wood" 
+                    display_values="Barbed wire,Bars,Chain link,Concrete,Electric,Metal,Pole,Railing,Split rail,Wire,Wood" values_context="material"/>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Fence -->
@@ -6434,6 +6435,7 @@
                     <list_entry value="stands" display_value="Stands" />
                     <list_entry value="wall_loops" display_value="Wall loops" short_description="Wheel benders" />
                 </combo>
+                <check key="bike_ride" text="Bike+Ride"/>
                 <reference ref="optional_name"/>
                 <text key="capacity" text="Capacity" value_type="integer"/>
                 <text key="capacity:cargo_bike" text="Capacity for cargo bikes" value_type="integer"/>
