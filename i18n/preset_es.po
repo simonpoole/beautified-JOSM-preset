@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2025-11-25 15:12+0100\n"
+"POT-Creation-Date: 2025-11-25 15:22+0100\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Ignacio L'Episcopo, 2019,2021-2025\n"
 "Language-Team: Spanish (http://app.transifex.com/openstreetmap/presets/language/es/)\n"
@@ -3649,7 +3649,7 @@ msgstr "Capacidad"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6571(text:text|group:Accommodation|preset:Campsite|key:capacity:caravans)
 msgid "Capacity (caravans)"
-msgstr ""
+msgstr "Capacidad (casas rodantes)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5396(text:text|group:Car|preset:Parking|key:capacity)
 msgid "Capacity (overall)"
@@ -3661,11 +3661,11 @@ msgstr "Capacidad (personas)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6570(text:text|group:Accommodation|preset:Campsite|key:capacity:tents)
 msgid "Capacity (tents)"
-msgstr ""
+msgstr "Capacidad (carpas)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6569(text:text|group:Accommodation|preset:Campsite|key:capacity)
 msgid "Capacity (total)"
-msgstr ""
+msgstr "Capacidad (total)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5716(text:text|group:Bicycle|preset:Parking|key:capacity:cargo_bike)
 msgid "Capacity for cargo bikes"
@@ -5160,7 +5160,7 @@ msgstr "Entrega"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6561(combo:display_values|group:Accommodation|preset:Campsite|key:camp_site)
 msgid "Deluxe (offers laundry or swimming pool etc.)"
-msgstr ""
+msgstr "De lujo (ofrece lavandería o piscina, etc.)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16548(item:name|group:Lifecycle|preset:Demolished_building)
 msgid "Demolished building"
@@ -15956,19 +15956,19 @@ msgstr "Ruta de esquí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10125(item:name|group:Ski_jumping|preset:Ski_jump_piste)
 msgid "Ski jump piste"
-msgstr ""
+msgstr "Pista de salto de esquí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10144(item:name|group:Ski_jumping|preset:Ski_jump_takeoff_point)
 msgid "Ski jump takeoff point"
-msgstr ""
+msgstr "Punto de despegue de salto de esquí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10124(group:name|group:Ski_jumping)
 msgid "Ski jumping"
-msgstr ""
+msgstr "Salto de esquí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10137(item:name|group:Ski_jumping|preset:Ski_jumping_tower)
 msgid "Ski jumping tower"
-msgstr ""
+msgstr "Torre de salto de esquí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15339(combo:display_values|group:Routes|preset:Superroute|key:route)
 msgid "Ski route"
@@ -22455,7 +22455,7 @@ msgstr "Patinaje"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1090(list_entry:display_value|value:ski_jumping)
 msgctxt "sport"
 msgid "Ski jumping"
-msgstr ""
+msgstr "Salto de esquí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1089(list_entry:display_value|value:skiing)
 msgctxt "sport"
@@ -24262,7 +24262,7 @@ msgstr "Panadería"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10474(list_entry:display_value|group:Buildings|preset:Building_part|value:balcony)
 msgctxt "building"
 msgid "Balcony"
-msgstr ""
+msgstr "Balcón"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10419(list_entry:display_value|group:Buildings|preset:Building|value:barn)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10473(list_entry:display_value|group:Buildings|preset:Building_part|value:barn)
@@ -24426,6 +24426,11 @@ msgctxt "building"
 msgid "Concrete"
 msgstr "Hormigón"
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10476(list_entry:display_value|group:Buildings|preset:Building_part|value:conservatory)
+msgctxt "building"
+msgid "Conservatory"
+msgstr "Invernadero"
+
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10490(combo:text|group:Buildings|preset:Building_construction|key:construction)
 msgctxt "building"
 msgid "Construction type"
@@ -24453,7 +24458,7 @@ msgstr "Cultural"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10477(list_entry:display_value|group:Buildings|preset:Building_part|value:deck)
 msgctxt "building"
 msgid "Deck"
-msgstr ""
+msgstr "Terraza"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10419(list_entry:display_value|group:Buildings|preset:Building|value:detached)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10439(list_entry:display_value|group:Buildings|preset:House|value:detached)
@@ -24875,7 +24880,7 @@ msgstr "Plástico"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10479(list_entry:display_value|group:Buildings|preset:Building_part|value:porch)
 msgctxt "building"
 msgid "Porch"
-msgstr ""
+msgstr "Porche"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10419(list_entry:display_value|group:Buildings|preset:Building|value:public)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10473(list_entry:display_value|group:Buildings|preset:Building_part|value:public)
@@ -25243,11 +25248,6 @@ msgstr "Madera"
 msgctxt "building"
 msgid "Yes"
 msgstr "Sí"
-
-#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10476(list_entry:display_value|group:Buildings|preset:Building_part|value:conservatory)
-msgctxt "building"
-msgid "conservatory"
-msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1794(combo:text|key:roof:levels)
 msgctxt "roof_levels"
