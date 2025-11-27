@@ -11081,6 +11081,8 @@
             <link wiki="Tag:sport=boules"/>
             <space/>
             <key key="sport" value="boules"/>
+            <combo key="boules" text="Type" values="petanque,lyonnaise,bocce,boule_de_fort,breton" 
+                display_values="Pétanque,Boule lyonnaise,Bocce,Boule de fort,Boule bretonne" text_context="sport" />
             <reference ref="name_leisure_pitch"/>
             <reference ref="sport_surface" />
         </item> <!-- Boule -->
