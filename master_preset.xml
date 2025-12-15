@@ -10154,6 +10154,9 @@
             <check key="shelter" text="Shelter" />
             <check key="hide" text="Hide" text_context="hunting stand" disable_off="true"/>
             <check key="lockable" text="Lockable" disable_off="true"/>
+            <optional>
+                <combo key="hunting_stand" text="Type" values="grouse_butt,raised_hide,tree_stand" display_values="Grouse butt,Raised hide,Tree stand" />
+            </optional>
         </item> <!-- Hunting Stand -->
         <item name="Binoculars" icon="${amenity_binoculars}" type="node" preset_name_label="true">
             <link wiki="Tag:amenity=binoculars"/>
