@@ -15842,6 +15842,18 @@
             <link wiki="Relation:site"/>
             <space/>
             <key key="type" value="site"/>
+            <optional>
+                <combo key="site" text="Site type" editable="true" match="key">
+                    <list_entry value="geodesic" display_value="Geodesic" />
+                    <list_entry value="stop_area" display_value="Stop area" deprecated="true" />
+                    <list_entry value="parking" display_value="Parking" />
+                    <list_entry value="wind_farm" display_value="Wind farm" />
+                    <list_entry value="traffic_signals" display_value="Traffic signals" />
+                    <list_entry value="mall" display_value="Mall" />
+                    <list_entry value="piste" display_value="Skiing" />
+                    <list_entry value="housing" display_value="Housing" />
+                </combo>
+            </optional>
             <text key="name" text="Site name"/>
             <roles>
                 <role key="label" text="where to place the label" requisite="optional" type="node"/>
