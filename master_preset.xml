@@ -9342,6 +9342,7 @@
                 <text key="fire_hydrant:count" text="Count"/>
                 <text key="manufacturer" text="Manufacturer"/>
             </optional>
+            <preset_link preset_name="Hydrant" text="Similar but different tags:" alternative="true" />
         </item> <!-- Fire Hydrant -->
         <item name="Water Tank" icon="${emergency_water_tank}" type="node,closedway" preset_name_label="true">
             <link wiki="Tag:emergency=water_tank"/>
@@ -10199,7 +10200,30 @@
                 <reference ref="level"/>
                 <reference ref="facility_access"/>
             </optional>
+            <preset_link preset_name="Hydrant" text="Similar but different tags:" alternative="true" />
         </item> <!-- Water Point -->
+        <item name="Hydrant" icon="${amenity_hydrant}" type="node" preset_name_label="true">
+            <link wiki="Tag:amenity=hydrant"/>
+            <space/>
+            <label text="Hydrant for non-emergency purposes" />
+            <key key="amenity" value="hydrant"/>
+            <combo key="hydrant:type" text="Type" values_searchable="true" values_context="pipeline" >
+                <list_entry value="pillar" display_value="Pillar" short_description="A pillar type hydrant."/>
+                <list_entry value="underground" display_value="Underground" short_description="A hydrant outlet located underground."/>
+                <list_entry value="wall" display_value="Wall" short_description="A wall-mounted hydrant."/>
+                <list_entry value="pipe" display_value="Pipe" short_description="A simple capped pipe, without the usual hydrant shape."/>
+            </combo>
+            <text key="ref" text="Reference"/>
+            <reference ref="facility_access"/>
+            <check key="drinking_water" text="Drinking Water"/>
+            <optional>
+                <text key="operator" text="Operator"/>
+                <reference ref="colours" />
+                <reference ref="fee"/>
+            </optional>
+            <preset_link preset_name="Fire Hydrant" text="Similar but different tags:" alternative="true" />
+            <preset_link preset_name="Water Point" text="Similar but different tags:" alternative="true" />
+        </item> <!-- Hydrant -->
         <item name="Kitchen" icon="${amenity_kitchen}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:amenity=kitchen"/>
             <space/>
