@@ -15800,8 +15800,8 @@
             <link wiki="Relation:multipolygon"/>
             <key key="type" value="multipolygon"/>
             <roles>
-                <role key="outer" text="outer segment" requisite="required" type="way,closedway"/>
-                <role key="inner" text="inner segment" requisite="optional" type="way,closedway"/>
+                <role key="outer" text="outer segment" requisite="required" type="way,closedway,area" member_expression="-type=multipolygon"/>
+                <role key="inner" text="inner segment" requisite="optional" type="way,closedway,area" member_expression="-type=multipolygon"/>
             </roles>
         </item> <!-- Multipolygon -->
         <item name="Boundary" icon="${relation_boundary}" type="relation,multipolygon" preset_name_label="true">
@@ -15817,8 +15817,8 @@
                 </combo>
             </optional>
             <roles>
-                <role key="outer" text="outer segment" requisite="required" type="way,closedway"/>
-                <role key="inner" text="inner segment" requisite="optional" type="way,closedway"/>
+                <role key="outer" text="outer segment" requisite="required" type="way,closedway,area" member_expression="-type=multipolygon"/>
+                <role key="inner" text="inner segment" requisite="optional" type="way,closedway,area" member_expression="-type=multipolygon"/>
                 <role key="subarea" text="Sub area" requisite="optional" type="relation"/>
                 <role key="admin_centre" text="Administration centre" requisite="optional" type="node" count="1" member_expression="place=*"/>
                 <role key="label" text="Label point" requisite="optional" type="node" count="1"/>
@@ -15857,7 +15857,7 @@
             <text key="name" text="Site name"/>
             <roles>
                 <role key="label" text="where to place the label" requisite="optional" type="node"/>
-                <role key="perimeter" text="perimeter of the site" requisite="optional" count="1" type="closedway,multipolygon" />
+                <role key="perimeter" text="perimeter of the site" requisite="optional" count="1" type="closedway,multipolygon,area" />
                 <role key="entrance" text="entrances to the site, on the perimeter" requisite="optional" type="node"/>
                 <role key="" text="members of site" requisite="optional" type="node,way,closedway,multipolygon"/>
             </roles>
