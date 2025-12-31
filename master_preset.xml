@@ -9907,7 +9907,7 @@
                 <list_entry value="scottish_crown" display_value="Crown of Scotland"/>
                 <list_entry value="no" display_value="None"/>
             </combo>
-            <text key="royal_cypher:wikidata" text="Royal cypher wikidata" value_type="wikipedia" regions="GB"/>
+            <text key="royal_cypher:wikidata" text="Royal cypher wikidata" value_type="wikidata" regions="GB"/>
             <preset_link preset_name="Letter box" text="Similar but different tags:" alternative="true" />
         </item> <!-- Post Box -->
         <item name="Parcel Locker" icon="${amenity_parcel_locker}" type="node,closedway" preset_name_label="true">
