@@ -2098,7 +2098,9 @@
         </optional>
     </chunk>
     <chunk id="power_output">
-        <combo key="generator:plant" text="Plant generator type" values="output,intermediate" />
+        <optional>
+            <combo key="generator:plant" text="Plant generator type" values="output,intermediate"  display_values="Output,Intermediate" />
+        </optional>
         <optional text="Energy output:">
             <combo key="generator:output:biogas" text="Biogas" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
             <combo key="generator:output:electricity" text="Electricity" values="yes,2 W,3 kW,5 MW,7 GW" values_sort="false" editable="true"/>
