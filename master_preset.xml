@@ -2855,7 +2855,7 @@
         <check key="bench" text="Bench" />
         <check key="shelter" text="Shelter" />
         <check key="covered" text="Covered"/>
-        <check key="sign" text="Sign"/>
+        <check key="sign" text="Sign" text_context="public transport" />
         <reference ref="bin"/>
         <reference ref="departures_board_speech"/>
         <check key="passenger_information_display" text="Passenger information display" deprecated="true"/>
@@ -8073,7 +8073,7 @@
             <link wiki="Tag:leisure=fitness_station"/>
             <space/>
             <key key="leisure" value="fitness_station"/>
-            <combo key="fitness_station" text="Fitness station" values_searchable="true" match="key">
+            <combo key="fitness_station" text="Fitness station" values_searchable="true" match="key" values_context="leisure">
                 <list_entry value="balance_beam" display_value="Balance beam"/>
                 <list_entry value="box" display_value="Box"/>
                 <list_entry value="horizontal_bar" display_value="Horizontal bar"/>
