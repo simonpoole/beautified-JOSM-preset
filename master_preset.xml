@@ -10105,7 +10105,7 @@
             <space/>
             <key key="amenity" value="trolley_bay"/>
             <text key="operator" text="Operator"/>
-            <reference ref="fee"/>
+            <check key="trolley:deposit" text="Coin deposit"/>
             <check key="covered" text="Covered"/>
             <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
             <reference ref="level" />
