@@ -1485,6 +1485,9 @@
     <chunk id="bar">
         <check key="bar" text="Has a bar" /> 
     </chunk>
+    <chunk id="fast_food">
+        <combo key="fast_food" text="Fast food service" values="cafeteria,yes" display_values="Cafeteria,Yes"/> 
+    </chunk>
     <chunk id="cuisine">
         <multiselect key="cuisine" text="Cuisine" values_searchable="true" match="key">
             <list_entry value="african" display_value="African" />
@@ -6228,6 +6231,7 @@
                     <reference ref="name_operator"/>
                     <check key="self_service" text="Self-service" disable_off="true"/>
                     <combo key="shop" text="With shop" values="yes,convenience,kiosk,no" display_values="Yes,Convenience,Kiosk,No"/>
+                    <reference ref="fast_food"/>
                     <reference ref="oh_wheelchair"/>
                     <space/>
                     <label text="Fuel types:"/>
@@ -13357,6 +13361,7 @@
             <key key="shop" value="convenience"/>
             <reference ref="name_oh_wheelchair_level_toilets"/>
             <reference ref="organic"/>
+            <reference ref="fast_food"/>
             <reference ref="bulk_purchase"/>
             <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
@@ -13373,6 +13378,7 @@
             <link wiki="Tag:shop=kiosk"/>
             <space/>
             <key key="shop" value="kiosk"/>
+            <reference ref="fast_food"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="post_office_optional"/>
             <reference ref="link_contact_address_payment"/>
