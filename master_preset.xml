@@ -9914,6 +9914,13 @@
                 <reference ref="oh_wheelchair_level"/>
                 <check key="drinking_water" text="Drinking Water"/>
                 <check key="toilets:handwashing" text="Handwashing facilities"/>
+                <combo key="toilets:hands_drying" text="Hands drying facilities " values_context="restroom">
+                    <list_entry value="electric_hand_dryer" display_value="Electric hand dryer"/>
+                    <list_entry value="paper_towel" display_value="Paper towels"/>
+                    <list_entry value="towel_cabinet" display_value="Towel cabinet"/>
+                    <list_entry value="towel" display_value="Towel"/>
+                    <list_entry value="no" display_value="None"/>
+                </combo>
                 <check key="toilets:paper_supplied" text="Wiping paper supplied"/>
                 <combo key="toilets:menstrual_products" text="Free menstrual products" values="yes,limited,no" display_values="Yes,Limited,No"/>
             </optional>
