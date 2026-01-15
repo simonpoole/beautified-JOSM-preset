@@ -17528,7 +17528,7 @@ tags.remove('set_to_disused_remove_tags');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_abandoned" javascript="
-var objects = ['amenity','aerialway''aeroway','bridge','building','highway','leisure','man_made','military','place','railway','shop','tourism'];
+var objects = ['amenity','aerialway','aeroway','bridge','building','highway','leisure','man_made','military','place','railway','shop','tourism'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -17555,7 +17555,7 @@ tags.remove('set_to_abandoned');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_abandoned_remove_tags" javascript="
-var objects = ['amenity','aerialway''aeroway','bridge','building','highway','leisure','man_made','military','place','railway','shop','tourism'];
+var objects = ['amenity','aerialway','aeroway','bridge','building','highway','leisure','man_made','military','place','railway','shop','tourism'];
 
 function isObject(key) {
   var objectsLength = objects.length;
@@ -17681,7 +17681,7 @@ tags.remove('set_to_demolished');" />
                  before the PropertyEditor was started, tags are the current values, by removing the key at the
                  end of the script it can be re-run without manually reseting the value, &, <, > need to be escaped -->
             <text key="set_to_demolished_remove_tags" javascript="
-var objects = ['building', 'highway','power'];
+var objects = ['building','highway','power'];
 
 function isObject(key) {
   var objectsLength = objects.length;
