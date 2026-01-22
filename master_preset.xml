@@ -1489,7 +1489,7 @@
         <combo key="fast_food" text="Fast food service" values="cafeteria,yes" display_values="Cafeteria,Yes"/> 
     </chunk>
     <chunk id="cuisine">
-        <multiselect key="cuisine" text="Cuisine" values_searchable="true" match="key">
+        <multiselect key="cuisine" text="Cuisine" values_searchable="true" match="key" values_context="cuisine">
             <list_entry value="african" display_value="African" />
             <list_entry value="american" display_value="American" />
             <list_entry value="arab" display_value="Arab" />
