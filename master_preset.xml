@@ -2201,6 +2201,10 @@
     <chunk id="maxweight">
         <text key="maxweight" text="Max. weight (tonnes)" match="key" />
     </chunk>
+    <chunk id="vehicle_maxweight">
+        <text key="maxweight" text="Max. actual vehical weight (tonnes)" match="key" exclude_regions="true" regions="FR" />
+        <text key="maxweightrating" text="Max. rated vehical weight (tonnes)" match="key" />
+    </chunk>
     <chunk id="enforcement_roles">
         <roles>
             <role key="device" text="location of enforcement device" requisite="required" type="node,way,closedway" />
@@ -2216,7 +2220,7 @@
             <space/>
             <reference ref="maxspeed"/>
             <space/>
-            <reference ref="maxweight"/>
+            <reference ref="vehicle_maxweight"/>
             <reference ref="incline"/>
             <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             <check key="toll" text="Toll" disable_off="true"/>
@@ -4999,7 +5003,7 @@
         <item name="Physical restrictions" icon="${access_maximum_width}" type="node,way,closedway,multipolygon,relation" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
-            <reference ref="maxweight"/>
+            <reference ref="vehicle_maxweight"/>
             <text key="maxaxleload" text="Max. axle load (tonnes)" match="key"/>
             <text key="maxheight" text="Max. height (meters)" match="key" value_type="dimension_vertical"/>
             <text key="maxwidth" text="Max. width (meters)" match="key" value_type="dimension_horizontal"/>
