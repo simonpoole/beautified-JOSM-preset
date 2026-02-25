@@ -7589,10 +7589,14 @@
             <combo key="diet:pescetarian" text="Pescetarian" values="yes,no,only" display_values="Yes,No,Only" />
             <combo key="diet:fruitarian" text="Fruitarian" values="yes,no,only" display_values="Yes,No,Only" />
             <combo key="diet:raw" text="Raw" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:keto" text="Keto" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:carnivore" text="Carnivore" values="yes,no,only" display_values="Yes,No,Only" />
             <space />
             <combo key="diet:dairy_free" text="Dairy free" values="yes,no,only" display_values="Yes,No,Only" />
             <combo key="diet:gluten_free" text="Gluten free" values="yes,no,only" display_values="Yes,No,Only" />
             <combo key="diet:lactose_free" text="Lactose free" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:alcohol_free" text="Alcohol free" values="yes,no,only" display_values="Yes,No,Only" />
+            <combo key="diet:excipient_free" text="Excipient free" values="yes,no,only" display_values="Yes,No,Only" />
             <space />
             <combo key="diet:halal" text="Halal" values="yes,no,only" display_values="Yes,No,Only" />
             <combo key="diet:kosher" text="Kosher" values="yes,no,only" display_values="Yes,No,Only" />
@@ -9245,6 +9249,7 @@
             <space/>
             <key key="amenity" value="pharmacy"/>
             <key key="healthcare" value="pharmacy"/>
+            <combo key="diet:excipient_free" text="Excipient free" values="yes,no,only" display_values="Yes,No,Only" />
             <reference ref="name_operator_oh_wheelchair_level"/>
             <check key="dispensing" text="Dispensing" disable_off="true"/>
             <reference ref="link_contact_address_payment"/>
@@ -13573,6 +13578,7 @@
             <link wiki="Tag:shop=nutrition_supplements"/>
             <space/>
             <key key="shop" value="nutrition_supplements"/>
+            <combo key="diet:excipient_free" text="Excipient free" values="yes,no,only" display_values="Yes,No,Only" />
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Nutrition supplements -->
