@@ -2440,6 +2440,8 @@
         <preset_link preset_name="Motor vehicle (CH)"/>
         <preset_link preset_name="Motorcar and -cycle (CH)"/>
         <preset_link preset_name="Heavy Goods Vehicle"/>
+        <preset_link preset_name="Motorhome"/>
+        <preset_link preset_name="Trailer"/>
         <preset_link preset_name="Physical restrictions"/>
         <preset_link preset_name="Other mode restrictions"/>
     </chunk>
@@ -4965,6 +4967,18 @@
             </combo>
             <reference ref="additional_access_tags"/>
         </item> <!-- Motorcycles -->
+        <item name="Motorhome" icon="${access_no_motorhomes}" type="node,way,closedway" preset_name_label="true">
+            <link wiki="Key:access"/>
+            <space/>
+            <combo key="motorhome" text="Motorhome" values_context="access" values_sort="false" match="key">
+                <reference ref="base_access_values"/>
+                <reference ref="purpose_based_access_values"/>
+            </combo>
+            <combo key="motorhome:conditional" text="Motorhome @" long_text="Conditional restriction for motorhomes" values_sort="false" match="key">
+                <reference ref="conditional_vehicle_restriction_values"/>
+            </combo>
+            <reference ref="additional_access_tags"/>
+        </item> <!-- Motorhome -->
         <item name="Heavy Goods Vehicle" icon="${access_no_hgv}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
@@ -4989,6 +5003,18 @@
             </combo>
             <reference ref="additional_access_tags"/>
         </item> <!-- Heavy Goods Vehicle -->
+        <item name="Trailer" icon="${access_no_trailers}" type="node,way,closedway" preset_name_label="true">
+            <link wiki="Key:access"/>
+            <space/>
+            <combo key="trailer" text="Trailer" values_context="access" values_sort="false" match="key">
+                <reference ref="base_access_values"/>
+                <reference ref="purpose_based_access_values"/>
+            </combo>
+            <combo key="trailer:conditional" text="Trailer @" long_text="Conditional restriction for motorhomes" values_sort="false" match="key">
+                <reference ref="conditional_vehicle_restriction_values"/>
+            </combo>
+            <reference ref="additional_access_tags"/>
+        </item> <!-- Trailer -->
         <item name="General access" icon="${access_general_access}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:access"/>
             <space/>
