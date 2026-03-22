@@ -1485,6 +1485,9 @@
     <chunk id="bar">
         <check key="bar" text="Has a bar" /> 
     </chunk>
+    <chunk id="food">
+        <combo key="food" text="Food available" values="yes,no,snacks,prepared_meals" display_values="Yes,No,Snacks,Prepared meals"/> 
+    </chunk>
     <chunk id="fast_food">
         <combo key="fast_food" text="Fast food service" values="cafeteria,yes" display_values="Cafeteria,Yes"/> 
     </chunk>
@@ -7218,6 +7221,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="bar"/>
+            <reference ref="food"/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="swimming_pool_facility"/>
@@ -7236,6 +7240,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="bar"/>
+            <reference ref="food"/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="swimming_pool_facility"/>
@@ -7255,6 +7260,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="bar"/>
+            <reference ref="food"/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="swimming_pool_facility"/>
@@ -7288,6 +7294,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="bar"/>
+            <reference ref="food"/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="swimming_pool_facility"/>
@@ -7305,6 +7312,7 @@
             <reference ref="wheelchair_rooms"/>
             <space/>
             <reference ref="bar"/>
+            <reference ref="food"/>
             <reference ref="internet_smoking"/>
             <reference ref="air_conditioning"/>
             <reference ref="swimming_pool_facility"/>
@@ -7318,6 +7326,7 @@
             <text key="ele" text="Elevation (meters)" length="10" />
             <text key="rooms" text="Rooms" />
             <text key="beds" text="Beds" />
+            <reference ref="food"/>
             <reference ref="reservation" />
             <space/>
             <reference ref="internet_smoking"/>
@@ -7334,6 +7343,7 @@
             <reference ref="toilets"/>
             <check key="shower" text="Shower"/>
             <combo key="drinking_water" text="Drinking Water" values="yes,no,seasonal" display_values="Yes,No,Seasonal" />
+            <reference ref="food"/>
             <reference ref="reservation" />
             <text key="ele" text="Elevation (meters)" length="10" />
             <text key="description" text="Detailed description" length="255"/>
@@ -7396,6 +7406,7 @@
             <reference ref="internet"/>
             <space/>
             <reference ref="bar"/>
+            <reference ref="food"/>
             <reference ref="nudism" />
             <reference ref="swimming_pool_facility"/>
             <reference ref="link_contact_address_payment"/>
@@ -7492,6 +7503,7 @@
             <reference ref="name_operator"/>
             <combo key="cuisine" text="Cuisine" values="ice_cream" display_values="Ice cream"/>
             <reference ref="bar"/>
+            <reference ref="food"/>
             <reference ref="seating"/>
             <reference ref="takeaway_with_reusable_packaging"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
@@ -7512,6 +7524,7 @@
             <key key="cuisine" value="bubble_tea" />
             <reference ref="name_operator"/>
             <reference ref="seating"/>
+            <reference ref="food"/>
             <reference ref="oh_wheelchair_level"/>
             <reference ref="toilets_with_access"/>
             <space/>
@@ -7548,6 +7561,7 @@
             <reference ref="name_operator"/>
             <check key="microbrewery" text="Microbrewery" disable_off="true"/>
             <reference ref="seating"/>
+            <reference ref="food"/>
             <reference ref="takeaway_with_reusable_packaging"/>
             <combo key="delivery" text="Delivery" values="yes,no,only,Mo-Su 12:00-22:00" value_type="opening_hours_mixed" values_sort="false" display_values="Yes,No,Only,Mo-Su 12:00-22:00"/>
             <reference ref="oh_wheelchair_level"/>
@@ -7572,6 +7586,7 @@
             <reference ref="name_operator"/>
             <check key="microbrewery" text="Microbrewery" disable_off="true"/>
             <reference ref="bar"/>
+            <reference ref="food"/>
             <reference ref="indoor_seating"/>
             <reference ref="oh_wheelchair"/>
             <reference ref="toilets_with_access"/>
@@ -7589,6 +7604,7 @@
             <key key="amenity" value="bar"/>
             <reference ref="name_operator"/>
             <reference ref="seating"/>
+            <reference ref="food"/>
             <reference ref="oh_wheelchair_level"/>
             <reference ref="toilets_with_access"/>
             <space/>
