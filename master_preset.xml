@@ -8491,6 +8491,14 @@
             <check text="Baby" key="baby"/>
             <reference ref="playground_theme"/>
         </item> <!--  Indoor playing -->
+        <item name="Traffic park" icon="${amenity_traffic_park}" type="node,closedway,multipolygon" name_context="leisure">
+            <link wiki="Tag:amenity=traffic_park"/>
+            <space/>
+            <key key="amenity" value="traffic_park"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <combo key="fee" text="Fee" values="yes,no" display_values="Yes,No" match="none"/>
+            <reference ref="min_max_age"/>
+        </item> <!--  Traffic park -->
         <item name="Picnic Site" icon="${tourist_picnic}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:tourism=picnic_site"/>
             <space/>
