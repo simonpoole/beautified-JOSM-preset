@@ -1601,6 +1601,9 @@
             <list_entry value="workwear" short_description="Workwear"/>
         </multiselect>
     </chunk>
+    <chunk id="piercing">
+        <check key="piercing" text="Piercing service" />
+    </chunk>
     <chunk id="post_office">
         <combo key="post_office" text="Post office type" values_searchable="true">
             <list_entry value="bureau" short_description="Full post office"/>
@@ -14141,6 +14144,7 @@
             <link wiki="Tag:shop=tattoo"/>
             <space/>
             <key key="shop" value="tattoo"/>
+            <reference ref="piercing"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Tattoo -->
@@ -14174,6 +14178,7 @@
             <link wiki="Tag:shop=jewelry"/>
             <space/>
             <key key="shop" value="jewelry"/>
+            <reference ref="piercing"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Jewellery -->
