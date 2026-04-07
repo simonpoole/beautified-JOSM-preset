@@ -14912,10 +14912,12 @@
             <link wiki="Tag:boundary=administrative"/>
             <space/>
             <key key="boundary" value="administrative"/>
-            <text key="name" text="Name"/>
-            <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" value_type="integer"/>
-            <check key="maritime" text="Maritime" disable_off="true"/>
-            <reference ref="wikipedia_wikidata"/>
+            <optional>
+                <text key="name" text="Name"/>
+                <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" value_type="integer"/>
+                <check key="maritime" text="Maritime" disable_off="true"/>
+                <reference ref="wikipedia_wikidata"/>
+            </optional>
         </item> <!-- Administrative -->
         <item name="Political" icon="${geography_boundary_political}" type="closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=political"/>
@@ -16035,14 +16037,18 @@
                 <role key="inner" text="inner segment" requisite="optional" type="way,closedway,area" member_expression="-type=multipolygon"/>
             </roles>
         </item> <!-- Multipolygon -->
-        <item name="Boundary" icon="${relation_boundary}" type="relation,multipolygon" preset_name_label="true">
+        <item name="Boundary" icon="${relation_boundary}" type="relation,multipolygon" preset_name_label="true"
+                name_template="?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' {admin_level})' | ')'}">
             <link wiki="Relation:boundary"/>
             <space/>
             <key key="type" value="boundary"/>
             <text key="name" text="Name"/>
-            <combo key="boundary" text="Boundary type" values="administrative,maritime,national_park,place,political,postal_code,protected_area" display_values="Administrative,Maritime,National park,Place,Political,Postal code,Protected area" sort_values="false" values_searchable="true"/>
+            <reference ref="wikipedia_wikidata"/>
+            <combo key="boundary" text="Boundary type" values="administrative,maritime,national_park,place,political,postal_code,protected_area,statistical" 
+                display_values="Administrative,Maritime,National park,Place,Political,Postal code,Protected area,Statistical" values_searchable="true"/>
             <optional>
-                <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" sort_values="false" match_expression="boundary=administrative"/>     
+                <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" sort_values="false" match_expression="boundary=administrative"/>    
+                <text key="postal_code" text="Postal code" match_expression="boundary=postal_code"/> 
                 <combo key="place" text="Place type" match_expression="boundary=place">
                     <reference ref="place_values" />
                 </combo>
