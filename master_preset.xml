@@ -8069,9 +8069,19 @@
             <space/>
             <key key="leisure" value="escape_game"/>
             <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="min_age" />
             <reference ref="fee_interval"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Escape game -->
+        <item name="Trampoline park" icon="${leisure_trampoline_park}" type="node,closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:leisure=trampoline_park"/>
+            <space/>
+            <key key="leisure" value="trampoline_park"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="min_age" />
+            <reference ref="fee_interval"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Trampline park -->
         <separator/>
         <item name="Resort" icon="${leisure_resort}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=resort"/>
