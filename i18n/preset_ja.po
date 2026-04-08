@@ -1,14 +1,15 @@
 # 
 # Translators:
 # 3icw, 2023-2024
+# HayaKoh, 2026
 # Nozomu KURASAWA <nabetaro@caldron.jp>, 2018,2021,2024-2026
 # Takinogawa Momiji, 2025
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: Nozomu KURASAWA <nabetaro@caldron.jp>, 2018,2021,2024-2026\n"
+"Last-Translator: HayaKoh, 2026\n"
 "Language-Team: Japanese (http://app.transifex.com/openstreetmap/presets/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -444,8 +445,8 @@ msgstr "90°"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
@@ -532,14 +533,14 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4735(label:text|group:Water|preset:Other_waterbodies)
 msgid "A body of water, such as a lake or pond."
-msgstr ""
+msgstr "湖や池などの水域のことです。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5045(list_entry:short_description|group:Shipping|preset:Seamark|value:buoy_special_purpose)
 msgid ""
 "A buoy primarily used to indicate an area or feature, the nature of which is"
 " apparent from reference to a chart, Sailing Directions or Notices to "
 "Mariners."
-msgstr ""
+msgstr "主にエリアや特徴を示すために使用されるブイ。意味は海図、水路誌、水路通報を参照のこと"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5042(list_entry:short_description|group:Shipping|preset:Seamark|value:buoy_isolated_danger)
 msgid ""
@@ -587,11 +588,11 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5085(list_entry:short_description|group:Shipping|preset:Seamark|value:oil_barrier)
 msgid "A construction to dam oil flow on water."
-msgstr ""
+msgstr "水上の油の流出を防ぐための構造物。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5123(list_entry:short_description|group:Shipping|preset:Seamark|value:separation_crossing)
 msgid "A defined area where traffic lanes cross."
-msgstr ""
+msgstr "交通車線が交差する、明確に区切られた区域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5030(list_entry:short_description|group:Shipping|preset:Seamark|value:anchor_berth)
 msgid ""
@@ -601,11 +602,11 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5113(list_entry:short_description|group:Shipping|preset:Seamark|value:seaplane_landing_area)
 msgid ""
 "A designated portion of water for the landing and take-off of sea-planes."
-msgstr ""
+msgstr "水上飛行機の離着陸のために指定された水域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5098(list_entry:short_description|group:Shipping|preset:Seamark|value:radar_reflector)
 msgid "A device capable of, or intended for, reflecting radar signals."
-msgstr ""
+msgstr "レーダー信号を反射する能力を持つ、または反射することを目的とした装置。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5056(list_entry:short_description|group:Shipping|preset:Seamark|value:distance_mark)
 msgid ""
@@ -622,7 +623,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14324(label:text|group:Places|preset:Farm)
 msgid "A farm within a bigger settlement"
-msgstr ""
+msgstr "大きな集落の中にある農場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2116(check:text|key:kids_area:fee)
 msgid "A fee must be paid"
@@ -649,7 +650,7 @@ msgstr ""
 msgid ""
 "A geographically defined part of the sea or other navigable waters. It may "
 "be specified within its limits by its proper name."
-msgstr ""
+msgstr "海またはその他の航行可能な水域のうち、地理的に区切られた領域。その領域内は、固有名詞によって特定される場合がある。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12493(list_entry:short_description|group:Historic_Places_&_Objects|preset:Fortification_Site|value:battery)
 msgid "A group of artillary (cannon) in a fixed fortification"
@@ -657,7 +658,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5338(label:text|group:Railway|preset:Railway_junction)
 msgid "A junction where railways diverge or converge."
-msgstr ""
+msgstr "鉄道が分岐または合流する地点。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2112(check:text|key:kids_area)
 msgid "A kids area is available"
@@ -665,7 +666,7 @@ msgstr "あり"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5120(list_entry:short_description|group:Shipping|preset:Seamark|value:submarine_transit_lane)
 msgid "A lane where submarines may navigate under water or at the surface."
-msgstr ""
+msgstr "潜水艦が水中または水上を航行できる航路。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5109(list_entry:short_description|group:Shipping|preset:Seamark|value:sand_waves)
 msgid ""
@@ -678,7 +679,7 @@ msgstr ""
 msgid ""
 "A large storage structure used for storing loose materials, liquids and/or "
 "gases."
-msgstr ""
+msgstr "ばら積み物、液体、および／または気体を貯蔵するために使用される大型の貯蔵施設。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14569(label:text|group:Nature|preset:Tree_Row)
 msgid "A line of trees."
@@ -733,7 +734,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5062(list_entry:short_description|group:Shipping|preset:Seamark|value:wall)
 msgid "A man-made barrier used as an enclosure or boundary or for protection."
-msgstr ""
+msgstr "囲いや境界、あるいは保護のために使用される人工の障壁。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7059(label:text|group:Tourism|preset:Route_marker)
 msgid "A marker along a route."
@@ -748,27 +749,27 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14411(label:text|group:Geography|preset:Ridge)
 msgid "A mountain or hill ridge."
-msgstr ""
+msgstr "山や丘の尾根。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5036(list_entry:short_description|group:Shipping|preset:Seamark|value:berth)
 msgid "A named or numbered place where a vessel is moored at a wharf."
-msgstr ""
+msgstr "埠頭において、船舶が係留される、名称または番号が付けられた場所。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5119(list_entry:short_description|group:Shipping|preset:Seamark|value:spring)
 msgid ""
 "A natural issue of water or other substances from the earth. One on the "
 "bottom of the sea is called a 'submarine spring'."
-msgstr ""
+msgstr "地中から自然に湧き出る水やその他の物質。海底にあるものは「海底泉」と呼ばれる。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1344(list_entry:short_description|value:dry)
 msgid "A non-steam dry sauna in which water is not thrown on the stove."
-msgstr ""
+msgstr "蒸気を使わないドライサウナで、ストーブに水をかけることはありません。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14738(label:text|group:Nature|preset:Rock)
 msgid ""
 "A notable rock or group of rocks, with at least one of them firmly attached "
 "to the underlying bedrock."
-msgstr ""
+msgstr "目立つ岩、または岩群で、少なくとも1つは下層の岩盤にしっかりと付着しているもの。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5083(list_entry:short_description|group:Shipping|preset:Seamark|value:notice)
 msgid ""
@@ -780,19 +781,19 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3935(label:text|group:Barriers|preset:Wicket_gate)
 msgid "A pedestrian door or gate near a larger gate"
-msgstr ""
+msgstr "より大きな門の近くにある歩行者用の扉または門"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5086(list_entry:short_description|group:Shipping|preset:Seamark|value:platform)
 msgid ""
 "A permanent offshore structure, either fixed or floating, used in the "
 "production of oil or natural gas."
-msgstr ""
+msgstr "石油または天然ガスの生産に使用される、固定式または浮体式の恒久的な海洋構造物。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14367(label:text|group:Geography|preset:Glacier)
 msgid ""
 "A persistent body of dense ice that is constantly moving under its own "
 "weight."
-msgstr ""
+msgstr "自身の重みで絶えず移動する、密度の高い氷の塊。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8764(list_entry:short_description|group:Emergency|preset:Fire_Hydrant|value:wet_barrel)
 msgid ""
@@ -808,50 +809,50 @@ msgstr ""
 msgid ""
 "A place at which a service generally of interest to small craft or pleasure "
 "boats is available."
-msgstr ""
+msgstr "小型船舶やレジャーボートにとって一般的に有益なサービスが利用できる場所。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5102(list_entry:short_description|group:Shipping|preset:Seamark|value:radio_station)
 msgid "A place equipped to transmit radio waves."
-msgstr ""
+msgstr "電波を送信する設備を備えた場所。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5106(list_entry:short_description|group:Shipping|preset:Seamark|value:rescue_station)
 msgid ""
 "A place where equipment for saving life at sea is maintained. Also called "
 "life saving station."
-msgstr ""
+msgstr "海上での人命救助に必要な装備を整備する場所。救命ステーションとも呼ばれる。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5133(list_entry:short_description|group:Shipping|preset:Seamark|value:vehicle_transfer)
 msgid ""
 "A place where vehicles can be loaded or unloaded from the inland vessel with"
 " onboard or on-shore facilities."
-msgstr ""
+msgstr "船上または岸壁の設備を利用して、内陸水路を航行する船舶への荷物の積み下ろしができる場所。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5054(list_entry:short_description|group:Shipping|preset:Seamark|value:control_point)
 msgid ""
 "A point on the ground where position (horizontal and vertical) is used as a "
 "base for a dependent survey. Also referred to as a control station."
-msgstr ""
+msgstr "地上の測量における基準点（水平方向および垂直方向の位置）として用いられる地点。基準点とも呼ばれる。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4584(label:text|group:Water|preset:Spring)
 msgid ""
 "A point where groundwater naturally flows to the surface of the earth from "
 "underground."
-msgstr ""
+msgstr "地下水が自然に地表に湧き出る地点。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5072(list_entry:short_description|group:Shipping|preset:Seamark|value:landmark)
 msgid ""
 "A prominent object at a fixed location which can be used in determining a "
 "location or a direction."
-msgstr ""
+msgstr "特定の場所に固定された目印となる物体で、位置や方向を特定するために利用できるもの。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4836(label:text|group:Water|preset:Cape)
 msgid ""
 "A prominent, elevated piece of land sticking out into the sea or large lake."
-msgstr ""
+msgstr "海や大きな湖に突き出た、目立つ高台の土地。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5049(list_entry:short_description|group:Shipping|preset:Seamark|value:causeway)
 msgid "A raised way across low or wet ground or water."
-msgstr ""
+msgstr "低い地面や湿地、あるいは水面を横切るように作られた、一段高い通路。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5103(list_entry:short_description|group:Shipping|preset:Seamark|value:recommended_route_centreline)
 msgid ""
@@ -870,24 +871,24 @@ msgstr ""
 msgid ""
 "A relatively permanent structure, roofed and usually walled. It is designed "
 "for some particular use which it may be important to indicate."
-msgstr ""
+msgstr "比較的恒久的な構造物で、屋根があり、通常は壁で囲まれている。特定の用途のために設計されており、その用途を明記することが重要である場合がある。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14492(label:text|group:Geography|preset:Arch)
 msgid "A rock arch naturally formed by erosion, with an opening underneath."
-msgstr ""
+msgstr "浸食によって自然に形成された岩のアーチで、下部に開口部がある。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5061(list_entry:short_description|group:Shipping|preset:Seamark|value:ferry_route)
 msgid ""
 "A route in a body of water where a ferry crosses from one shoreline to "
 "another."
-msgstr ""
+msgstr "フェリーが一方の岸からもう一方の岸へと渡る、水域内の航路。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5104(list_entry:short_description|group:Shipping|preset:Seamark|value:recommended_track)
 msgid ""
 "A route which has been specially examined to ensure so far as possible that "
 "it is free of dangers and along which ships are advised to navigate. That "
 "portion of a 'navigation line' that a ship should use for navigation."
-msgstr ""
+msgstr "危険が可能な限り排除されていることを確認するために特別に調査された航路であり、船舶が航行するよう推奨されている航路。船舶が航行に使用すべき「航路」の一部。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5126(list_entry:short_description|group:Shipping|preset:Seamark|value:separation_roundabout)
 msgid ""
@@ -895,7 +896,7 @@ msgid ""
 " and a circular traffic lane within defined limits. Traffic within the "
 "roundabout is separated by moving in a counter clockwise direction around "
 "the separation point or zone."
-msgstr ""
+msgstr "分離点または円形の分離ゾーンと、所定の範囲内に設けられた円形の車線からなる交通誘導措置。ロータリー内の交通は、分離点または分離ゾーンを反時計回りに周回することで分離される。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5094(list_entry:short_description|group:Shipping|preset:Seamark|value:precautionary_area)
 msgid ""
@@ -914,7 +915,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14358(label:text|group:Geography|preset:Saddle)
 msgid "A saddle point between mountains or hills."
-msgstr ""
+msgstr "山や丘の間の鞍部。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1339(list_entry:short_description|value:yes)
 msgid "A sauna is available but its type is not specified."
@@ -922,54 +923,54 @@ msgstr "サウナが有効ですが、種類が指定されていません。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1340(list_entry:short_description|value:no)
 msgid "A sauna is not available."
-msgstr ""
+msgstr "このサウナは利用できません。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1347(list_entry:short_description|value:aroma)
 msgid ""
 "A sauna that constantly has an aroma, NOT a Finnish sauna with occasional "
 "aroma liquid added to the water."
-msgstr ""
+msgstr "常に香りが漂っているサウナ。水に時折アロマ液を加えるフィンランド式サウナとは異なる。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1343(list_entry:short_description|value:infrared)
 msgid "A sauna-like construction that is used for infrared therapy."
-msgstr ""
+msgstr "赤外線療法に用いられる、サウナのような構造物。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5058(list_entry:short_description|group:Shipping|preset:Seamark|value:dumping_ground)
 msgid ""
 "A sea area where dredged material or other potentially more harmful "
 "material, e.g. explosives, chemical waste, is deliberately deposited."
-msgstr ""
+msgstr "浚渫土砂や、爆発物、化学廃棄物など、より有害な可能性のある物質が意図的に投棄される海域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14430(label:text|group:Geography|preset:Mountain_range)
 msgid ""
 "A series of high ridges and mountain peaks ranged in a line and connected by"
 " high ground."
-msgstr ""
+msgstr "一連の高い尾根や山々が一列に連なり、高台によってつながっている場所。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14749(label:text|group:Nature|preset:Stone)
 msgid ""
 "A single notable free-standing rock, which may differ from the composition "
 "of the terrain it lies in."
-msgstr ""
+msgstr "周囲の地形の構成とは異なる、目立つ独立した岩石。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14590(label:text|group:Nature|preset:Shrub)
 msgid "A single shrub."
-msgstr ""
+msgstr "単一の低木。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14541(label:text|group:Nature|preset:Tree)
 msgid "A single tree."
-msgstr "単一の木"
+msgstr "単一の木。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12488(list_entry:short_description|group:Historic_Places_&_Objects|preset:Fortification_Site|value:sconce)
 msgid "A small protective fortification"
-msgstr ""
+msgstr "小さな防御要塞"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5107(list_entry:short_description|group:Shipping|preset:Seamark|value:restricted_area)
 msgid ""
 "A specified area on land or water designated by an appropriate authority "
 "within which access or navigation is restricted in accordance with certain "
 "specified conditions."
-msgstr ""
+msgstr "適切な当局によって指定された、陸上または水上の特定区域であり、その区域内では、特定の条件に従って立ち入りまたは航行が制限される。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5100(list_entry:short_description|group:Shipping|preset:Seamark|value:radar_station)
 msgid ""
@@ -980,19 +981,19 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5038(list_entry:short_description|group:Shipping|preset:Seamark|value:bunker_station)
 msgid "A station, at which a ship is able to bunker fuel, water or ballast."
-msgstr ""
+msgstr "船舶が燃料、水、またはバラストを補給できるステーション。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14458(label:text|group:Geography|preset:Earth_bank)
 msgid ""
 "A steep earth bank, with a significant vertical, or near vertical (leave the"
 " lower face to the right of the way)."
-msgstr ""
+msgstr "急勾配の土手。かなり垂直、もしくはほぼ垂直（下側の斜面は右側に残す）。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14438(label:text|group:Geography|preset:Cliff)
 msgid ""
 "A steep rock face exposure, with a significant vertical, or near vertical "
 "(leave the lower face to the right of the way)."
-msgstr ""
+msgstr "急峻な岩壁の区間。かなり垂直、もしくはほぼ垂直（下側の斜面は右側に残す）。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5082(list_entry:short_description|group:Shipping|preset:Seamark|value:navigation_line)
 msgid ""
@@ -1005,13 +1006,13 @@ msgstr ""
 msgid ""
 "A structure erected over a body of water, railroad, etc. to provide a "
 "roadway for vehicles, pedestrians or to carry utility services."
-msgstr ""
+msgstr "水域や鉄道などの上に建設され、車両や歩行者のための通路を提供したり、公共サービスを提供したりする構造物。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5065(list_entry:short_description|group:Shipping|preset:Seamark|value:fishing_facility)
 msgid ""
 "A structure in shallow water for fishing purposes which can be an "
 "obstruction to ships in general."
-msgstr ""
+msgstr "浅瀬に設置された漁業用の構造物で、一般的に船舶の航行の妨げとなる可能性がある。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5067(list_entry:short_description|group:Shipping|preset:Seamark|value:gridiron)
 msgid ""
@@ -1024,21 +1025,21 @@ msgstr ""
 msgid ""
 "A structure that is specifically designed or reinforced to provide for "
 "defence from armed attack."
-msgstr ""
+msgstr "武装攻撃からの防御を目的として特別に設計または強化された構造物。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5066(list_entry:short_description|group:Shipping|preset:Seamark|value:gate)
 msgid ""
 "A structure that may be swung, drawn, or lowered to block an entrance or "
 "passageway."
-msgstr ""
+msgstr "入り口や通路を塞ぐために、振り下ろしたり、引き出したり、下げたりすることができる構造物。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6953(label:text|group:Tourism|preset:Tactile_map)
 msgid "A tactile map."
-msgstr ""
+msgstr "触地図。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7041(label:text|group:Tourism|preset:Tactile_model)
 msgid "A tactile model."
-msgstr ""
+msgstr "触覚模型。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5105(list_entry:short_description|group:Shipping|preset:Seamark|value:recommended_traffic_lane)
 msgid ""
@@ -1052,7 +1053,7 @@ msgstr ""
 msgid ""
 "A traffic signal station is a place on shore from which signals are made to "
 "regulate the movement of traffic."
-msgstr ""
+msgstr "交通信号所とは、交通の流れを規制するための信号を発信する、陸上にある場所のことです。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5099(list_entry:short_description|group:Shipping|preset:Seamark|value:radar_transponder)
 msgid ""
@@ -1063,37 +1064,37 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14583(label:text|group:Nature|preset:Tree_Stump)
 msgid "A tree stump."
-msgstr ""
+msgstr "木の切り株。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5095(list_entry:short_description|group:Shipping|preset:Seamark|value:pylon)
 msgid ""
 "A vertical construction consisting, for example, of a steel framework or "
 "pre-stressed concrete to carry cables, a bridge, etc."
-msgstr ""
+msgstr "ケーブルや橋などを支えるための鉄骨構造やプレストレストコンクリートからなる垂直構造物。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14376(label:text|group:Geography|preset:Volcano)
 msgid "A volcano, either dormant, extinct or active."
-msgstr ""
+msgstr "休火山、死火山、活火山のいずれか。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5117(list_entry:short_description|group:Shipping|preset:Seamark|value:signal_station_warning)
 msgid ""
 "A warning signal station is a place on shore from which warning signals are "
 "made to ships at sea."
-msgstr ""
+msgstr "警報信号所とは、陸上にある場所から、海上を航行する船舶に向けて警報信号を発信する場所のことです。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5063(list_entry:short_description|group:Shipping|preset:Seamark|value:fog_signal)
 msgid ""
 "A warning signal transmitted by a vessel, or aid to navigation, during "
 "periods of low visibility."
-msgstr ""
+msgstr "視界不良時に船舶または航行援助施設が発信する警告信号。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8744(list_entry:short_description|group:Emergency|preset:Fire_Hydrant|value:groundwater)
 msgid "A water well."
-msgstr ""
+msgstr "井戸。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5135(list_entry:short_description|group:Shipping|preset:Seamark|value:waterway_gauge)
 msgid "A waterway gauge is an instrument for measuring water levels."
-msgstr ""
+msgstr "水路水位計は、水位を測定するための機器です。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5127(list_entry:short_description|group:Shipping|preset:Seamark|value:separation_zone)
 msgid ""
@@ -1176,7 +1177,7 @@ msgstr "虐待被害者"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:502(list_entry:short_description|value:academic)
 msgid "Academic"
-msgstr ""
+msgstr "学術的"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9457(checkgroup:text|group:Facilities|preset:Bottle_return)
 msgid "Accepted bottles"
@@ -1200,7 +1201,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4186(group:name|group:Access_Restrictions)
 msgid "Access Restrictions"
-msgstr ""
+msgstr "アクセス制限"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6478(group:name|group:Accommodation)
 msgid "Accommodation"
@@ -1221,11 +1222,11 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:126(list_entry:display_value|value:acrylic)
 msgid "Acrylic"
-msgstr ""
+msgstr "アクリル"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1812(combo:display_values|key:roof:material)
 msgid "Acrylic glass"
-msgstr ""
+msgstr "アクリルガラス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13492(list_entry:display_value|group:Sports_and_hobbies|preset:Collectable_items|value:action_figures)
 msgid "Action figures"
@@ -1237,11 +1238,11 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15214(item:name|group:Annotation|preset:Add_or_update_check_date)
 msgid "Add or update check date"
-msgstr ""
+msgstr "チェック日を追加または更新する"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:331(checkgroup:text)
 msgid "Additional attributes"
-msgstr ""
+msgstr "追加属性"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15104(text:text|group:Addresses_and_Contact|preset:Address|key:addr:parentstreet)
 msgid "Additional localisation"
@@ -1281,7 +1282,7 @@ msgstr "行政事務所"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14137(combo:text|group:Boundaries|preset:Administrative|key:admin_level)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15259(combo:text|group:Relations|preset:Boundary|key:admin_level)
 msgid "Administrative level"
-msgstr ""
+msgstr "管理レベル"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13905(list_entry:short_description|preset:Vending_Machine|value:admission_tickets)
 msgid "Admission tickets"
@@ -1317,7 +1318,7 @@ msgstr ""
 msgid ""
 "Aerial ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | "
 "'{from}' | '{to}'})"
-msgstr ""
+msgstr "索道 ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2147(check:text|key:aerialway)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5349(group:name|group:Aerialway)
@@ -1332,7 +1333,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6156(check:text|group:Public_Transport|preset:Subway_platform|key:aerialway)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6198(combo:display_values|group:Public_Transport_(Legacy)|preset:Public_transport_route_(Legacy)|key:route)
 msgid "Aerialway"
-msgstr ""
+msgstr "索道"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1930(multiselect:display_values|key:language)
 msgid "Afrikaans"
@@ -1373,7 +1374,7 @@ msgstr "農業機械"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13578(item:name|group:Other|preset:Agricultural_supplies)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13590(item:name|group:Other|preset:Agricultural_supplies)
 msgid "Agricultural supplies"
-msgstr ""
+msgstr "農業資材"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6525(combo:display_values|group:Accommodation|preset:Guest_House/Bed_&_Breakfast|key:guest_house)
 msgid "Agritourism"
@@ -1394,7 +1395,7 @@ msgstr "大気"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:804(check:text|key:air_conditioning)
 msgid "Air conditioning"
-msgstr ""
+msgstr "空調"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12336(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:aircraft)
 msgid "Aircraft"
@@ -1406,7 +1407,7 @@ msgstr "飛行場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1592(combo:display_values|key:pump_mechanism)
 msgid "Airlift"
-msgstr ""
+msgstr "空輸"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2801(list_entry:display_value|group:Lane_attributes|preset:Single_direction_roads|value:airport)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2839(list_entry:display_value|group:Lane_attributes|preset:Bi-directional_roads|value:airport)
@@ -1421,11 +1422,11 @@ msgstr "空港"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6338(item:name|group:Airport|preset:Airport_Grounds)
 msgid "Airport Grounds"
-msgstr ""
+msgstr "空港の敷地"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6459(item:name|group:Airport|preset:Airstrip)
 msgid "Airstrip"
-msgstr ""
+msgstr "飛行場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14022(check:text|preset:Payment_Methods|key:payment:akulaku)
 msgid "Akulaku"
@@ -1453,11 +1454,11 @@ msgstr "すべて"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4187(item:name|group:Access_Restrictions|preset:All_vehicles)
 msgid "All vehicles"
-msgstr ""
+msgstr "すべての車両"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4191(combo:text|group:Access_Restrictions|preset:All_vehicles|key:vehicle:conditional)
 msgid "All vehicles @"
-msgstr ""
+msgstr "すべての車両 @"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14833(item:name|group:Land_use|preset:Allotments)
 msgid "Allotments"
@@ -1475,13 +1476,13 @@ msgstr "アーモンドの木"
 msgid ""
 "Almost always an unpaved track lacking hard materials, uncompacted, with "
 "surface of soil/sand/grass"
-msgstr ""
+msgstr "ほとんどの場合、舗装されていない道で、硬い素材がなく、固められておらず、表面は土/砂/草で覆われている。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3160(list_entry:short_description|group:Ways|preset:Track|value:grade4)
 msgid ""
 "Almost always an unpaved track prominently with soil/sand/grass, but with "
 "some hard materials, or compressed materials"
-msgstr ""
+msgstr "ほとんどの場合、土、砂、草が目立つ未舗装の道だが、一部に硬い素材や圧縮された素材も見られる。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1816(list_entry:display_value|value:along)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1855(list_entry:display_value|value:along)
@@ -1503,11 +1504,11 @@ msgstr "アルペン"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6588(item:name|group:Accommodation|preset:Alpine_Hut)
 msgid "Alpine Hut"
-msgstr ""
+msgstr "山小屋"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:439(text:text|key:alt_name)
 msgid "Alternate name"
-msgstr ""
+msgstr "別名"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1193(optional:text)
 msgid "Alternate service tagging"
@@ -1515,7 +1516,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8630(item:name|group:Health|preset:Alternative_medicine)
 msgid "Alternative medicine"
-msgstr ""
+msgstr "代替医療"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15076(text:text|group:Addresses_and_Contact|preset:Name|key:alt_name)
 msgid "Alternative name"
@@ -1531,7 +1532,7 @@ msgstr "アマチュア無線"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8659(item:name|group:Emergency|preset:Ambulance_Station)
 msgid "Ambulance Station"
-msgstr ""
+msgstr "救急車の基地"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8928(item:name|group:Social_Facilities|preset:Ambulatory_Care)
 msgid "Ambulatory Care"
@@ -1551,7 +1552,7 @@ msgstr "アムハラ語"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2252(combo:text|key:amperage)
 msgid "Amperage"
-msgstr ""
+msgstr "電流"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9149(multiselect:display_values|group:Animal|preset:Animal_shelter|key:animal_shelter)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9166(multiselect:display_values|group:Animal|preset:Animal_boarding|key:animal_boarding)
@@ -1560,11 +1561,11 @@ msgstr "両生類"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1888(list_entry:display_value|value:amsterdam_school)
 msgid "Amsterdam School"
-msgstr ""
+msgstr "アムステルダム派"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7258(item:name|group:Leisure|preset:Amusement/Theme_Park)
 msgid "Amusement/Theme Park"
-msgstr ""
+msgstr "遊園地・テーマパーク"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5132(list_entry:short_description|group:Shipping|preset:Seamark|value:virtual_aton)
 msgid ""
@@ -1575,23 +1576,23 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14665(label:text|group:Nature|preset:Scree)
 msgid "An accumulation of loose rocks."
-msgstr ""
+msgstr "ばらばらの岩石が堆積している。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14675(label:text|group:Nature|preset:Shingle)
 msgid "An accumulation of loose rounded rocks on a beach or riverbed."
-msgstr ""
+msgstr "海岸や川底に堆積した、丸みを帯びた小石の集まり。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5087(list_entry:short_description|group:Shipping|preset:Seamark|value:production_area)
 msgid "An area at sea within which there are production facilities."
-msgstr ""
+msgstr "生産施設が設置されている海域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5090(list_entry:short_description|group:Shipping|preset:Seamark|value:pipeline_area)
 msgid "An area containing one or more pipelines."
-msgstr ""
+msgstr "1本以上のパイプラインが存在する区域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5029(list_entry:short_description|group:Shipping|preset:Seamark|value:anchorage)
 msgid "An area in which vessels anchor or may anchor."
-msgstr ""
+msgstr "船舶が停泊する、または停泊する可能性のある区域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4721(label:text|group:Water|preset:Tailings_Pond)
 msgid ""
@@ -1607,27 +1608,27 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14604(label:text|group:Nature|preset:Shrubbery)
 msgid "An area of shrubbery that is actively maintained or pruned by humans."
-msgstr ""
+msgstr "人間が積極的に維持管理や剪定を行っている低木地帯。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5057(list_entry:short_description|group:Shipping|preset:Seamark|value:dredged_area)
 msgid ""
 "An area of the bottom of a body of water which has been deepened by "
 "dredging."
-msgstr ""
+msgstr "浚渫によって水深が深くなった水底の領域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4825(label:text|group:Water|preset:Bay)
 msgid ""
 "An area of water mostly surrounded by land but with level connection to the "
 "ocean or a lake."
-msgstr ""
+msgstr "陸地に囲まれているが、海や湖と水平に繋がっている水域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5128(list_entry:short_description|group:Shipping|preset:Seamark|value:turning_basin)
 msgid "An area of water or enlargement of a channel used for turning vessels."
-msgstr ""
+msgstr "船舶の方向転換に用いられる水域、または水路の拡張部分。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5046(list_entry:short_description|group:Shipping|preset:Seamark|value:cable_area)
 msgid "An area which contains one or more submarine cables."
-msgstr ""
+msgstr "1本以上の海底ケーブルが存在する区域。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5124(list_entry:short_description|group:Shipping|preset:Seamark|value:separation_lane)
 msgid ""
@@ -1638,19 +1639,19 @@ msgstr ""
 msgid ""
 "An area within which naval, military or aerial exercises are carried out. "
 "Also called an 'exercise area'."
-msgstr ""
+msgstr "海軍、陸軍、または航空の演習が行われる区域。「演習区域」とも呼ばれる。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5079(list_entry:short_description|group:Shipping|preset:Seamark|value:marine_farm)
 msgid ""
 "An assemblage of cages, nets, rafts and floats or posts where fish, "
 "including shellfish, are artificially cultivated."
-msgstr ""
+msgstr "貝類を含む魚類を人工的に養殖するための、檻、網、筏、浮き、または支柱などの集合体。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5048(list_entry:short_description|group:Shipping|preset:Seamark|value:cable_submarine)
 msgid ""
 "An assembly of wires or fibres, or a wire rope or chain which has been laid "
 "underwater or buried beneath the seabed."
-msgstr ""
+msgstr "水中に敷設された、または海底に埋設された、ワイヤーや繊維の集合体、あるいはワイヤーロープやチェーン。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5068(list_entry:short_description|group:Shipping|preset:Seamark|value:harbour_basin)
 msgid ""
@@ -1683,7 +1684,7 @@ msgstr "街や地域の情報を得られる案内所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5050(list_entry:short_description|group:Shipping|preset:Seamark|value:checkpoint)
 msgid "An official place to register, declare or check goods and people."
-msgstr ""
+msgstr "商品や人の登録、申告、検査を行うための公式な場所。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2114(check:text|key:kids_area:outdoor)
 msgid "An outdoor kids area is available"
@@ -1709,7 +1710,7 @@ msgstr "アナログ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:503(list_entry:short_description|value:anarchism)
 msgid "Anarchism"
-msgstr ""
+msgstr "無政府主義者"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5030(list_entry:display_value|group:Shipping|preset:Seamark|value:anchor_berth)
 msgid "Anchor berth"
@@ -1721,12 +1722,12 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11544(check:text|group:Man_Made|preset:Weather_Station|key:weather:anemometer)
 msgid "Anemometer - wind speed and direction"
-msgstr ""
+msgstr "風速計 - 風速と風向"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:anglican)
 msgid "Anglican"
-msgstr ""
+msgstr "聖公会"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7161(multiselect:text|group:Leisure|preset:Animals|key:animal)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9133(group:name|group:Animal)
@@ -1739,7 +1740,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9172(item:name|group:Animal|preset:Animal_breeding)
 msgid "Animal breeding"
-msgstr ""
+msgstr "動物の繁殖"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13940(list_entry:short_description|preset:Vending_Machine|value:pet_food)
 msgid "Animal feed (domestic)"
@@ -1751,19 +1752,19 @@ msgstr "動物の餌"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9208(item:name|group:Animal|preset:Animal_feeding_place)
 msgid "Animal feeding place"
-msgstr ""
+msgstr "動物の給餌場所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9141(item:name|group:Animal|preset:Animal_shelter)
 msgid "Animal shelter"
-msgstr ""
+msgstr "動物保護施設"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9185(item:name|group:Animal|preset:Animal_training)
 msgid "Animal training"
-msgstr ""
+msgstr "動物の訓練"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9217(item:name|group:Animal|preset:Animal_watering_place)
 msgid "Animal watering place"
-msgstr ""
+msgstr "動物の水飲み場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13820(multiselect:text|group:Other|preset:Pet_grooming|key:pet)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7157(item:name|group:Leisure|preset:Animals)
@@ -1779,7 +1780,7 @@ msgstr "アニメ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15174(group:name|group:Annotation)
 msgid "Annotation"
-msgstr ""
+msgstr "注釈"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7163(list_entry:display_value|group:Leisure|preset:Animals|value:anteater)
 msgid "Anteater"
@@ -1795,11 +1796,11 @@ msgstr "アンテナ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13639(check:text|group:Other|preset:Fuel|key:fuel:anthracite)
 msgid "Anthracite"
-msgstr ""
+msgstr "無煙炭"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1587(combo:display_values|key:turn_to_close)
 msgid "Anticlockwise"
-msgstr ""
+msgstr "反時計回り"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:504(list_entry:short_description|value:antiquarian)
 msgid "Antiquarian"
@@ -1807,7 +1808,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13175(item:name|group:Home_furnishing_and_decoration|preset:Antiques)
 msgid "Antiques"
-msgstr ""
+msgstr "古美術品"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5136(list_entry:short_description|group:Shipping|preset:Seamark|value:weed)
 msgid ""
@@ -1832,7 +1833,7 @@ msgstr "集合住宅"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9716(combo:text|group:Facilities|preset:Device_Charging_Station|key:socket:device:lightning)
 msgid "Apple Lightning socket"
-msgstr ""
+msgstr "Apple Lightning のコンセント"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14024(check:text|preset:Payment_Methods|key:payment:apple_pay)
 msgid "Apple Pay"
@@ -1844,15 +1845,15 @@ msgstr "リンゴの木"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12808(list_entry:display_value|group:Food|preset:Farm_Stand|value:apple)
 msgid "Apples"
-msgstr ""
+msgstr "リンゴ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13843(multiselect:display_values|group:Other|preset:Repair|key:repair)
 msgid "Appliances"
-msgstr ""
+msgstr "家電"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6437(combo:display_values|group:Airport|preset:Navigation_aid|key:navigationaid)
 msgid "Approach lighting system"
-msgstr ""
+msgstr "進入誘導灯システム"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1698(role:text|key:approach)
 msgid "Approach segment"
@@ -1864,7 +1865,7 @@ msgstr "アンズの木"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6396(item:name|group:Airport|preset:Apron)
 msgid "Apron"
-msgstr ""
+msgstr "エプロン"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14825(item:name|group:Land_use|preset:Aquaculture)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14830(combo:text|group:Land_use|preset:Aquaculture|key:aquaculture)
@@ -1893,7 +1894,7 @@ msgstr "遺跡"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12338(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:archaeological_site)
 msgid "Archaeological site"
-msgstr ""
+msgstr "遺跡"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10116(item:name|group:Sport|preset:Archery)
 msgid "Archery"
@@ -1906,7 +1907,7 @@ msgstr "建築家"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1862(multiselect:text|key:building:architecture)
 msgid "Architectural style"
-msgstr ""
+msgstr "建築様式"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8094(list_entry:display_value|group:Culture|preset:Artwork|value:architecture)
 msgid "Architecture"
@@ -1931,20 +1932,20 @@ msgstr "アルメニア語"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2200(check:text|key:armrest)
 msgid "Armrest"
-msgstr ""
+msgstr "肘掛け"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1347(list_entry:display_value|value:aroma)
 msgid "Aroma"
-msgstr ""
+msgstr "香り"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4461(item:name|group:Road_markings|preset:Arrow)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4467(multiselect:text|group:Road_markings|preset:Arrow|key:arrow)
 msgid "Arrow"
-msgstr ""
+msgstr "矢印"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3389(check:text|group:Waypoints|preset:Traffic_Signal|key:traffic_signals:arrow)
 msgid "Arrow (tactile)"
-msgstr ""
+msgstr "矢印（触覚）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13140(item:name|group:Home_furnishing_and_decoration|preset:Art)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13907(list_entry:short_description|preset:Vending_Machine|value:art)
@@ -1955,11 +1956,11 @@ msgstr "アート"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1886(list_entry:display_value|value:art_deco)
 msgid "Art Deco"
-msgstr ""
+msgstr "アール・デコ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1881(list_entry:display_value|value:art_nouveau)
 msgid "Art Nouveau"
-msgstr ""
+msgstr "アール・ヌーヴォー"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7951(item:name|group:Culture|preset:Art_gallery)
 msgid "Art gallery"
@@ -1971,7 +1972,7 @@ msgstr "ホッキョクギツネ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4595(check:text|group:Water|preset:Waterfall|key:artificial)
 msgid "Artificial"
-msgstr ""
+msgstr "人工的"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:127(list_entry:display_value|value:artificial_turf)
 msgid "Artificial turf"
@@ -1980,7 +1981,7 @@ msgstr "人工芝"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12549(text:text|group:Historic_Places_&_Objects|preset:Memorial|key:artist_name)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8107(text:text|group:Culture|preset:Artwork|key:artist_name)
 msgid "Artist Name"
-msgstr ""
+msgstr "作者名"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8082(item:name|group:Culture|preset:Arts_Centre)
 msgid "Arts Centre"
@@ -1988,7 +1989,7 @@ msgstr "アートセンター"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13666(item:name|group:Other|preset:Arts_and_craft_supplies)
 msgid "Arts and craft supplies"
-msgstr ""
+msgstr "美術工芸用品"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8089(item:name|group:Culture|preset:Artwork)
 msgid "Artwork"
@@ -1996,15 +1997,15 @@ msgstr "芸術作品（屋外）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14401(item:name|group:Geography|preset:Arête)
 msgid "Arête"
-msgstr ""
+msgstr "稜線"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1237(text:text|key:ascent)
 msgid "Ascent (m)"
-msgstr ""
+msgstr "標高差（m）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14557(item:name|group:Nature|preset:Ashok_tree)
 msgid "Ashok tree"
-msgstr ""
+msgstr "ムユウジュ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12808(list_entry:display_value|group:Food|preset:Farm_Stand|value:asparagus)
 msgid "Asparagus"
@@ -2030,7 +2031,7 @@ msgstr "ケアハウス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13843(multiselect:display_values|group:Other|preset:Repair|key:repair)
 msgid "Assisted self service"
-msgstr ""
+msgstr "スタッフ付きセルフサービス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15755(item:name|preset:Associated_Street)
 msgid "Associated Street"
@@ -2046,7 +2047,7 @@ msgstr "協会"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11656(list_entry:short_description|group:Man_Made|preset:Observatory|value:astronomical)
 msgid "Astronomical"
-msgstr ""
+msgstr "天文学的"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6968(combo:display_values|group:Tourism|preset:Information_Board|key:board_type)
 msgid "Astronomy"
@@ -2066,11 +2067,11 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7020(item:name|group:Tourism|preset:Audio_Guide)
 msgid "Audio Guide"
-msgstr ""
+msgstr "音声ガイド"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7035(label:text|group:Tourism|preset:Audio_Guide)
 msgid "Audioguide via mobile phone?"
-msgstr ""
+msgstr "携帯電話で音声ガイドを利用できますか？"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8611(list_entry:short_description|group:Health|preset:Other_healthcare_professionals|value:audiologist)
 msgid "Audiologist"
@@ -2094,11 +2095,11 @@ msgstr "認証"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2240(label:text)
 msgid "Authentication:"
-msgstr ""
+msgstr "認証："
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6328(list_entry:display_value|preset:Taxi|value:auto_rickshaw)
 msgid "Auto rickshaw"
-msgstr ""
+msgstr "三輪タクシー"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12079(check:text|preset:Power_Transformer|key:windings:auto)
 msgid "Auto-transformer (windings type)"
@@ -2120,7 +2121,7 @@ msgstr "ATM"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3298(combo:display_values|group:Ways|preset:Steps|key:ramp:luggage)
 msgid "Automatic"
-msgstr ""
+msgstr "自動"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15219(text:text|group:Annotation|preset:Add_or_update_check_date|key:automatic_check_date)
 msgid "Automatic check_date generation"
@@ -2128,7 +2129,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10887(check:text|preset:Loading_dock|key:automatic_door)
 msgid "Automatic door"
-msgstr ""
+msgstr "自動ドア"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9125(item:name|group:Clubs|preset:Automobile)
 msgid "Automobile"
@@ -2153,15 +2154,15 @@ msgstr "利用可能 (種類未指定)"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2258(label:text)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2275(label:text)
 msgid "Available Sockets/Cables:"
-msgstr ""
+msgstr "利用可能なコンセント・ケーブル："
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11265(combo:text|group:Man_Made|preset:Avalanche_Protection|key:avalanche_protection)
 msgid "Avalance protection"
-msgstr ""
+msgstr "雪崩対策"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11260(item:name|group:Man_Made|preset:Avalanche_Protection)
 msgid "Avalanche Protection"
-msgstr ""
+msgstr "雪崩対策"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4164(item:name|group:Passageways|preset:Avalanche_Protector)
 msgid "Avalanche Protector"
@@ -2169,11 +2170,11 @@ msgstr "雪崩防護施設"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14004(check:text|preset:Payment_Methods|key:payment:ep_avant)
 msgid "Avant (fi)"
-msgstr "Avant (フィンランド)"
+msgstr "アバント (フィンランド)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7145(combo:display_values|group:Leisure|preset:Zoo|key:zoo)
 msgid "Aviary"
-msgstr ""
+msgstr "鳥小屋"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7942(multiselect:display_values|group:Culture|preset:Museum|key:museum)
 msgid "Aviation"
@@ -2185,11 +2186,11 @@ msgstr "アボカドの木"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9564(combo:display_values|group:Facilities|preset:Outdoor_seating|key:weather_protection)
 msgid "Awning"
-msgstr ""
+msgstr "日除け"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1592(combo:display_values|key:pump_mechanism)
 msgid "Axial flow"
-msgstr ""
+msgstr "軸流"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1930(multiselect:display_values|key:language)
 msgid "Azeri"
@@ -2201,7 +2202,7 @@ msgstr "BMX"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2034(check:text|key:communication:bos)
 msgid "BOS"
-msgstr ""
+msgstr "BOS"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14006(check:text|preset:Payment_Methods|key:payment:ep_brizzi)
 msgid "BRIZZI"
@@ -2221,7 +2222,7 @@ msgstr "ヒヒ"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7753(check:text|group:Playground_equipment|preset:Swing|key:baby)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7763(check:text|preset:Indoor_playing|key:baby)
 msgid "Baby"
-msgstr ""
+msgstr "乳幼児"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8569(item:name|group:Health|preset:Baby_Hatch/Safe_Haven)
 msgid "Baby Hatch/Safe Haven"
@@ -2233,7 +2234,7 @@ msgstr "おむつ交換台"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13525(item:name|group:Other|preset:Baby_goods)
 msgid "Baby goods"
-msgstr ""
+msgstr "ベビー用品"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6665(check:text|group:Accommodation|preset:Campsite|key:backcountry)
 msgid "Backcountry"
@@ -2261,7 +2262,7 @@ msgstr "かばん"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1307(combo:display_values|key:religion)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1311(combo:display_values|key:religion)
 msgid "Bahai"
-msgstr ""
+msgstr "バハイ教"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12682(item:name|group:Food|preset:Bakery)
 msgid "Bakery"
@@ -2269,11 +2270,11 @@ msgstr "パン屋"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11062(combo:display_values|group:Man_Made|preset:Works|key:product)
 msgid "Bakery products"
-msgstr ""
+msgstr "ベーカリー製品"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7544(check:text|group:Leisure|preset:Playground|key:playground:balancebeam)
 msgid "Balance beam"
-msgstr ""
+msgstr "平均台"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7966(list_entry:display_value|group:Culture|preset:Theatre|value:ballet)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7999(list_entry:display_value|group:Culture|preset:Music_theatres|value:ballet)
@@ -2290,7 +2291,7 @@ msgstr "バナナの木"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12808(list_entry:display_value|group:Food|preset:Farm_Stand|value:banana)
 msgid "Bananas"
-msgstr ""
+msgstr "バナナ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13975(check:text|preset:Payment_Methods|key:payment:bancomat)
 msgid "Bancomat"
@@ -2311,12 +2312,12 @@ msgstr "BankAxept"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14562(item:name|group:Nature|preset:Banyan_tree)
 msgid "Banyan tree"
-msgstr ""
+msgstr "ガジュマル"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:baptist)
 msgid "Baptist"
-msgstr ""
+msgstr "バプテスト"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6866(item:name|group:Food+Drinks|preset:Bar)
 msgid "Bar"
@@ -2332,33 +2333,33 @@ msgstr "理髪店"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8768(combo:display_values|group:Emergency|preset:Fire_Hydrant|key:couplings:type)
 msgid "Barcelona"
-msgstr ""
+msgstr "バルセロナ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14725(item:name|group:Nature|preset:Bare_Rock)
 msgid "Bare Rock"
-msgstr ""
+msgstr "岩場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14707(label:text|group:Nature|preset:Heath)
 msgid ""
 "Bare lower lying uncultivated land with a shrubland habitat found mainly on "
 "free-draining infertile, acidic soils, and is characterised by open, low-"
 "growing woody vegetation."
-msgstr ""
+msgstr "主に排水性の良い不毛な酸性土壌に見られる、低地の未耕作地で、低木林が広がる。特徴としては、開けた場所に背の低い木本植物が生えている。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14696(label:text|group:Nature|preset:Scrub)
 msgid ""
 "Bare lower lying uncultivated land with bushes but little or no tree cover."
-msgstr ""
+msgstr "低地の未耕作地で、低木は生えているが、樹木はほとんど、あるいは全くない。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14685(label:text|group:Nature|preset:Fell)
 msgid ""
 "Bare upper lying uncultivated land principally covered with grass and often "
 "grazed."
-msgstr ""
+msgstr "草で覆われ、しばしば放牧される、耕作されていない高地の裸地。"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11546(check:text|group:Man_Made|preset:Weather_Station|key:weather:barometer)
 msgid "Barometer - atmospheric pressure"
-msgstr ""
+msgstr "気圧計 - 大気圧"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1880(list_entry:display_value|value:neo-baroque)
 msgid "Baroque Revival architecture"
@@ -2370,7 +2371,7 @@ msgstr "バロック建築"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1926(combo:display_values|key:playground:theme)
 msgid "Barrel"
-msgstr ""
+msgstr "樽"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6190(combo:text|group:Public_Transport|preset:Ticket_Validator|key:barrier)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7496(combo:text|group:Leisure|preset:Dog_Park|key:barrier)
@@ -2385,7 +2386,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1966(combo:display_values|key:climbing:rock)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2083(combo:display_values|key:resource)
 msgid "Basalt"
-msgstr ""
+msgstr "玄武岩"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8825(list_entry:display_value|group:Emergency|preset:Lifeguard|value:base)
 msgid "Base"
@@ -2406,7 +2407,7 @@ msgstr "基本的（テント・乗り物の場所のみ）"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8128(combo:display_values|group:Place_of_Worship|preset:Church|key:building)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8206(combo:display_values|group:Place_of_Worship|preset:Nontrinitarian_Church|key:building)
 msgid "Basilica"
-msgstr ""
+msgstr "バシリカ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4665(item:name|group:Water|preset:Basin)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4749(list_entry:display_value|group:Water|preset:Other_waterbodies|value:basin)
@@ -2431,7 +2432,7 @@ msgstr "コウモリ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7387(item:name|group:Leisure|preset:Bathing_place)
 msgid "Bathing place"
-msgstr ""
+msgstr "水浴び場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13161(item:name|group:Home_furnishing_and_decoration|preset:Bathroom)
 msgid "Bathroom"
@@ -2458,7 +2459,7 @@ msgstr "古戦場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2083(combo:display_values|key:resource)
 msgid "Bauxite"
-msgstr ""
+msgstr "ボーキサイト"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4822(item:name|group:Water|preset:Bay)
 msgid "Bay"
@@ -2466,7 +2467,7 @@ msgstr "湾"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8768(combo:display_values|group:Emergency|preset:Fire_Hydrant|key:couplings:type)
 msgid "Bayonet"
-msgstr ""
+msgstr "銃剣"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4806(item:name|group:Water|preset:Beach)
 msgid "Beach"
@@ -2482,15 +2483,15 @@ msgstr "ビーチバレー"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6437(combo:display_values|group:Airport|preset:Navigation_aid|key:navigationaid)
 msgid "Beaconing runway edge"
-msgstr ""
+msgstr "滑走路端の誘導灯"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6437(combo:display_values|group:Airport|preset:Navigation_aid|key:navigationaid)
 msgid "Beaconing taxiway centreline"
-msgstr ""
+msgstr "誘導路中心線の誘導灯"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6437(combo:display_values|group:Airport|preset:Navigation_aid|key:navigationaid)
 msgid "Beaconing taxiway edge"
-msgstr ""
+msgstr "誘導路端の誘導灯"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7168(list_entry:display_value|group:Leisure|preset:Animals|value:bear)
 msgid "Bear"
@@ -2506,7 +2507,7 @@ msgstr "ビーバー"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13154(item:name|group:Home_furnishing_and_decoration|preset:Bed)
 msgid "Bed"
-msgstr ""
+msgstr "ベッド"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6525(combo:display_values|group:Accommodation|preset:Guest_House/Bed_&_Breakfast|key:guest_house)
 msgid "Bed and breakfast"
@@ -2520,7 +2521,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6595(text:text|group:Accommodation|preset:Alpine_Hut|key:beds)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6629(text:text|group:Accommodation|preset:Caravan_Site/RV_Park|key:beds)
 msgid "Beds"
-msgstr ""
+msgstr "ベッド"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1926(combo:display_values|key:playground:theme)
 msgid "Bee"
@@ -2536,7 +2537,7 @@ msgstr "Beep"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11062(combo:display_values|group:Man_Made|preset:Works|key:product)
 msgid "Beer"
-msgstr ""
+msgstr "ビール"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6847(item:name|group:Food+Drinks|preset:Beer_Garden)
 msgid "Beer Garden"
@@ -2552,7 +2553,7 @@ msgstr "ベラルーシ語"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10976(combo:display_values|group:Man_Made|preset:Tower|key:tower:type)
 msgid "Bell tower"
-msgstr ""
+msgstr "鐘楼"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1595(combo:display_values|key:mechanical_coupling)
 msgid "Belt"
@@ -2570,15 +2571,15 @@ msgstr "ベンガル語"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11265(combo:display_values|group:Man_Made|preset:Avalanche_Protection|key:avalanche_protection)
 msgid "Berm"
-msgstr ""
+msgstr "土塁"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5036(list_entry:display_value|group:Shipping|preset:Seamark|value:berth)
 msgid "Berth"
-msgstr ""
+msgstr "係留施設"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7896(multiselect:display_values|preset:Gambling|key:gambling)
 msgid "Betting"
-msgstr ""
+msgstr "賭け事"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2050(check:text|key:recycling:beverage_cartons)
 msgid "Beverage cartons"
@@ -2590,7 +2591,7 @@ msgstr "飲料"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2825(item:name|group:Lane_attributes|preset:Bi-directional_roads)
 msgid "Bi-directional roads"
-msgstr ""
+msgstr "対面通行の道路"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15737(list_entry:display_value|preset:Generic_route|value:bicycle)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1946(multiselect:display_values|key:except)
@@ -2606,7 +2607,7 @@ msgstr "自転車"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2602(item:name|group:Streets|preset:Bicycle_Road)
 msgid "Bicycle Road"
-msgstr ""
+msgstr "自転車専用道路"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15430(item:name|group:Routes|preset:Bicycle_Route)
 msgid "Bicycle Route"
@@ -2618,15 +2619,15 @@ msgstr "自転車洗車場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2811(multiselect:text|group:Lane_attributes|preset:Single_direction_roads|key:bicycle:lanes)
 msgid "Bicycle lane access"
-msgstr ""
+msgstr "自転車レーンへの進入"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2849(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bicycle:lanes:forward)
 msgid "Bicycle lane access in way direction"
-msgstr ""
+msgstr "自転車レーンへの進入方向"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2881(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bicycle:lanes:backward)
 msgid "Bicycle lane access opposite to way direction"
-msgstr ""
+msgstr "自転車レーンへの進入が道路の進行方向とは逆方向である"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3295(check:text|group:Ways|preset:Steps|key:ramp:bicycle)
 msgid "Bicycle ramp"
@@ -2634,13 +2635,13 @@ msgstr "自転車用スロープ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15683(list_entry:display_value|preset:Superroute|value:bicycle)
 msgid "Bicycle route"
-msgstr ""
+msgstr "自転車ルート"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15430(item:name_template|group:Routes|preset:Bicycle_Route)
 msgid ""
 "Bicycle route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | "
 "'{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
-msgstr ""
+msgstr "自転車ルート (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13908(list_entry:short_description|preset:Vending_Machine|value:bicycle_tube)
 msgid "Bicycle tubes"
@@ -2656,35 +2657,35 @@ msgstr "自転車"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5814(check:text|group:Bicycle|preset:Bike_Dealer|key:service:bicycle:rental)
 msgid "Bicycles are rented"
-msgstr ""
+msgstr "自転車のレンタルを行っている"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5813(check:text|group:Bicycle|preset:Bike_Dealer|key:service:bicycle:repair)
 msgid "Bicycles are repaired"
-msgstr ""
+msgstr "自転車の修理を行っている"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5811(check:text|group:Bicycle|preset:Bike_Dealer|key:service:bicycle:retail)
 msgid "Bicycles are sold"
-msgstr ""
+msgstr "自転車を販売している"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5817(check:text|group:Bicycle|preset:Bike_Dealer|key:service:bicycle:cleaning)
 msgid "Bicycles are washed (for a fee)"
-msgstr ""
+msgstr "自転車の洗車を行っている（無料）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5367(check:text|group:Aerialway|preset:Chair_Lift|key:oneway)
 msgid "Bidirectional"
-msgstr ""
+msgstr "双方向"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5803(item:name|group:Bicycle|preset:Bike_Dealer)
 msgid "Bike Dealer"
-msgstr ""
+msgstr "自転車販売店"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10062(item:name|preset:Bike_park)
 msgid "Bike park"
-msgstr ""
+msgstr "駐輪場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5794(check:text|group:Bicycle|preset:Parking|key:bike_ride)
 msgid "Bike+Ride"
-msgstr ""
+msgstr "駐輪+ライド"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9794(item:name|group:Advertising|preset:Billboard)
 msgid "Billboard"
@@ -2696,15 +2697,15 @@ msgstr "ビリヤード"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1122(combo:text|key:bin)
 msgid "Bin"
-msgstr ""
+msgstr "ゴミ箱"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7896(multiselect:display_values|preset:Gambling|key:gambling)
 msgid "Bingo"
-msgstr ""
+msgstr "ビンゴ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9609(item:name|group:Facilities|preset:Binoculars)
 msgid "Binoculars"
-msgstr ""
+msgstr "双眼鏡"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4900(check:text|group:Shipping|preset:Marine_Fuel|key:fuel:biodiesel)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5550(check:text|group:Car|preset:Fuel|key:fuel:biodiesel)
@@ -2714,7 +2715,7 @@ msgstr "バイオディーゼル"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11698(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:biofuel)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11831(list_entry:display_value|group:Power_Generator|preset:Power_Generator|value:biofuel)
 msgid "Biofuel"
-msgstr ""
+msgstr "バイオ燃料"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11837(item:name|group:Power_Generator|preset:Biofuel_Power_Generator)
 msgid "Biofuel Power Generator"
@@ -2722,7 +2723,7 @@ msgstr "バイオ燃料発電機"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11703(item:name|group:Power_Plant|preset:Biofuel_Power_Plant)
 msgid "Biofuel Power Plant"
-msgstr ""
+msgstr "バイオ燃料発電所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11698(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:biogas)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11831(list_entry:display_value|group:Power_Generator|preset:Power_Generator|value:biogas)
@@ -2737,7 +2738,7 @@ msgstr "バイオガス発電機"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11710(item:name|group:Power_Plant|preset:Biogas_Power_Plant)
 msgid "Biogas Power Plant"
-msgstr ""
+msgstr "バイオガス発電所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11698(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:biomass)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11831(list_entry:display_value|group:Power_Generator|preset:Power_Generator|value:biomass)
@@ -2750,16 +2751,16 @@ msgstr "バイオマス発電機"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11717(item:name|group:Power_Plant|preset:Biomass_Power_Plant)
 msgid "Biomass Power Plant"
-msgstr ""
+msgstr "バイオマス発電所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11862(list_entry:short_description|group:Power_Generator|preset:Biomass_Power_Generator|value:bioreactor)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11975(list_entry:short_description|group:Power_Generator|preset:Waste_Power_Generator|value:bioreactor)
 msgid "Bioreactor"
-msgstr ""
+msgstr "バイオリアクター"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12128(combo:display_values|preset:Power_Converter|key:poles)
 msgid "Bipole"
-msgstr ""
+msgstr "双極"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9149(multiselect:display_values|group:Animal|preset:Animal_shelter|key:animal_shelter)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9166(multiselect:display_values|group:Animal|preset:Animal_boarding|key:animal_boarding)
@@ -2769,7 +2770,7 @@ msgstr "鳥"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7814(item:name|preset:Bird_Hide)
 msgid "Bird Hide"
-msgstr ""
+msgstr "野鳥観察舎"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7145(combo:display_values|group:Leisure|preset:Zoo|key:zoo)
 msgid "Birds"
@@ -2806,11 +2807,11 @@ msgstr "観覧席"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3385(combo:display_values|group:Waypoints|preset:Traffic_Signal|key:traffic_signals)
 msgid "Blink mode"
-msgstr ""
+msgstr "点滅モード"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3385(combo:display_values|group:Waypoints|preset:Traffic_Signal|key:traffic_signals)
 msgid "Blinker"
-msgstr ""
+msgstr "点滅信号"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15102(text:text|group:Addresses_and_Contact|preset:Address|key:addr:block)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3723(item:name|group:Barriers|preset:Block)
@@ -2843,11 +2844,11 @@ msgstr "ブルーベリーの木"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14471(combo:display_values|group:Geography|preset:Sinkhole|key:sinkhole)
 msgid "Bluehole"
-msgstr ""
+msgstr "ブルーホール"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10962(combo:display_values|group:Indoor_elements|preset:Indoor_beacon|key:beacon:type)
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7171(list_entry:display_value|group:Leisure|preset:Animals|value:boar)
 msgid "Boar"
@@ -2859,7 +2860,7 @@ msgstr "掲示内容"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4939(item:name|group:Shipping|preset:Boat_rental)
 msgid "Boat rental"
-msgstr ""
+msgstr "貸しボート"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4931(item:name|group:Shipping|preset:Boat_shop)
 msgid "Boat shop"
@@ -2867,7 +2868,7 @@ msgstr "ボート店"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5007(item:name|group:Shipping|preset:Boat_storage)
 msgid "Boat storage"
-msgstr ""
+msgstr "ボート置き場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15884(item:name|group:Crafts|preset:Boatbuilder)
 msgid "Boatbuilder"
@@ -2895,7 +2896,7 @@ msgstr "泥地"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11912(combo:display_values|group:Power_Generator|preset:Gasoline_Power_Generator|key:generator:type)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11976(list_entry:short_description|group:Power_Generator|preset:Waste_Power_Generator|value:boiler)
 msgid "Boiler"
-msgstr ""
+msgstr "ボイラー"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11922(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor|value:BWR-1)
 msgid "Boiling Water Reactor 1 (BWR-1)"
@@ -2931,11 +2932,11 @@ msgstr "ボラードの種類"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10214(combo:text|group:Climbing|preset:Climbing_route|key:climbing:bolted)
 msgid "Bolts"
-msgstr ""
+msgstr "ボルト"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12340(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:bomb_crater)
 msgid "Bomb crater"
-msgstr ""
+msgstr "爆撃跡"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13257(item:name|group:Printed_Material|preset:Book_Store)
 msgid "Book Store"
@@ -2947,7 +2948,7 @@ msgstr "製本所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13777(item:name|group:Other|preset:Bookmaker)
 msgid "Bookmaker"
-msgstr ""
+msgstr "公営競技投票券売り場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13909(list_entry:short_description|preset:Vending_Machine|value:books)
 msgid "Books"
@@ -2959,7 +2960,7 @@ msgstr "ブース"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3973(item:name|group:Barriers|preset:Border_Control)
 msgid "Border Control"
-msgstr ""
+msgstr "国境検問所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14198(combo:text|group:Boundaries|preset:Maritime|key:border_type)
 msgid "Border type"
@@ -2979,15 +2980,15 @@ msgstr "両方"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2092(list_entry:display_value|value:bottle_refill)
 msgid "Bottle refill"
-msgstr ""
+msgstr "ボトルの詰め替え"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9452(item:name|group:Facilities|preset:Bottle_return)
 msgid "Bottle return"
-msgstr ""
+msgstr "ボトルの回収"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1952(check:text|key:climbing:boulder)
 msgid "Boulders"
-msgstr ""
+msgstr "巨岩"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10560(item:name|group:Sport_(Ball)|preset:Boule)
 msgid "Boule"
@@ -3029,7 +3030,7 @@ msgstr "境界標"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12341(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:boundary_stone)
 msgid "Boundary stone"
-msgstr ""
+msgstr "境界標"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:text|group:Relations|preset:Boundary|key:boundary)
 msgid "Boundary type"
@@ -3037,7 +3038,7 @@ msgstr "境界の種類"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12906(item:name|group:Clothes|preset:Boutique)
 msgid "Boutique"
-msgstr ""
+msgstr "ブティック"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9909(item:name|group:Sport_Facilities|preset:Bowling_alley)
 msgid "Bowling alley"
@@ -3054,11 +3055,11 @@ msgstr "大使館支部"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1400(text:text|key:branch)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1409(text:text|key:branch)
 msgid "Branch operator"
-msgstr ""
+msgstr "支店管理者"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15617(combo:display_values|group:Power|preset:Power_circuit|key:topology)
 msgid "Branched"
-msgstr ""
+msgstr "分岐している"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4893(combo:text|group:Shipping|preset:Marine_Fuel|key:brand)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5539(combo:text|group:Car|preset:Fuel|key:brand)
@@ -3069,11 +3070,11 @@ msgstr "ブランド"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:684(text:text|key:brand:wikidata)
 msgid "Brand wikidata entry"
-msgstr ""
+msgstr "ブランドのwikidata記事"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:683(text:text|key:brand:wikipedia)
 msgid "Brand wikipedia entry"
-msgstr ""
+msgstr "ブランドのwikipedia記事"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13911(list_entry:short_description|preset:Vending_Machine|value:bread)
 msgid "Bread"
@@ -3116,7 +3117,7 @@ msgstr "橋名"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11682(item:name|group:Bridges|preset:Bridge_outline)
 msgid "Bridge outline"
-msgstr ""
+msgstr "橋の輪郭"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11675(group:name|group:Bridges)
 msgid "Bridges"
@@ -3163,7 +3164,7 @@ msgstr "仏教"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8158(item:name|group:Place_of_Worship|preset:Buddhist_Temple)
 msgid "Buddhist Temple"
-msgstr ""
+msgstr "仏教寺院"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7173(list_entry:display_value|group:Leisure|preset:Animals|value:buffalo)
 msgid "Buffalo"
@@ -3176,15 +3177,15 @@ msgstr "車止め（鉄道）"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2916(check:text|preset:Cycle_Lane/Track|key:cycleway:buffer)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2924(check:text|preset:Cycle_Lane/Track|key:cycleway:both:buffer)
 msgid "Buffer between cars and cycleway"
-msgstr ""
+msgstr "自動車と自転車道の間の緩衝地帯"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2932(check:text|preset:Cycle_Lane/Track|key:cycleway:left:buffer)
 msgid "Buffer between cars and left cycleway"
-msgstr ""
+msgstr "自動車と左側の自転車道の間の緩衝地帯"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2939(check:text|preset:Cycle_Lane/Track|key:cycleway:right:buffer)
 msgid "Buffer between cars and right cycleway"
-msgstr ""
+msgstr "自動車と右側の自転車道の間の緩衝地帯"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15905(item:name|group:Crafts|preset:Builder)
 msgid "Builder"
@@ -3203,7 +3204,7 @@ msgstr "建物"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15239(list_entry:display_value|group:Relations|preset:Relations|value:building)
 msgid "Building (3D)"
-msgstr ""
+msgstr "建物（3D）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4131(item:name|group:Passageways|preset:Building_Passage)
 msgid "Building Passage"
@@ -3215,7 +3216,7 @@ msgstr "建築中の建物"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10747(item:name|group:Buildings|preset:Building_part)
 msgid "Building part"
-msgstr ""
+msgstr "建物の一部分"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:185(combo:display_values|key:tunnel)
 msgid "Building passage"
@@ -3223,7 +3224,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13574(combo:display_values|group:Other|preset:Trade_supplies|key:trade)
 msgid "Building supplies"
-msgstr ""
+msgstr "建築資材"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8128(combo:text|group:Place_of_Worship|preset:Church|key:building)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8140(combo:text|group:Place_of_Worship|preset:Mosque|key:building)
@@ -3263,7 +3264,7 @@ msgstr "バンカーサイロ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5038(list_entry:display_value|group:Shipping|preset:Seamark|value:bunker_station)
 msgid "Bunker station"
-msgstr ""
+msgstr "燃料積込地"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1930(multiselect:display_values|key:language)
 msgid "Burmese"
@@ -3289,7 +3290,7 @@ msgstr "バス"
 msgid ""
 "Bus ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}'"
 " | '{to}'})"
-msgstr ""
+msgstr "バス ({operator} {ref} ?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}'})"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5214(item:name|group:Railway|preset:Bus_Guideway)
 msgid "Bus Guideway"
@@ -3313,31 +3314,31 @@ msgstr "バストラップ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2808(multiselect:text|group:Lane_attributes|preset:Single_direction_roads|key:bus:lanes)
 msgid "Bus lane access"
-msgstr ""
+msgstr "バスレーンへの進入"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2846(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bus:lanes:forward)
 msgid "Bus lane access in way direction"
-msgstr ""
+msgstr "バスレーンへの進入方向"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2878(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:bus:lanes:backward)
 msgid "Bus lane access opposite to way direction"
-msgstr ""
+msgstr "バスレーンへの進入が道路の進行方向とは逆方向である"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2900(combo:text|group:Lane_attributes|preset:Public_transport_lanes|key:lanes:bus)
 msgid "Bus lanes"
-msgstr ""
+msgstr "バスレーン"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2902(combo:text|group:Lane_attributes|preset:Public_transport_lanes|key:lanes:bus:backward)
 msgid "Bus lanes ←"
-msgstr ""
+msgstr "バスレーン ←"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2901(combo:text|group:Lane_attributes|preset:Public_transport_lanes|key:lanes:bus:forward)
 msgid "Bus lanes →"
-msgstr ""
+msgstr "バスレーン →"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3385(combo:display_values|group:Waypoints|preset:Traffic_Signal|key:traffic_signals)
 msgid "Bus priority"
-msgstr ""
+msgstr "バス優先"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2801(list_entry:display_value|group:Lane_attributes|preset:Single_direction_roads|value:bus_station)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2839(list_entry:display_value|group:Lane_attributes|preset:Bi-directional_roads|value:bus_station)
@@ -3372,7 +3373,7 @@ msgstr "チョウ"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3400(check:text|group:Waypoints|preset:Traffic_Signal|key:button_operated)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3457(check:text|group:Waypoints|preset:Pedestrian_Crossing|key:button_operated)
 msgid "Button operated"
-msgstr ""
+msgstr "ボタン操作式"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1995(check:text|key:bicycle)
 msgid "By bicycle"
@@ -3449,7 +3450,7 @@ msgstr "家具師"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6630(check:text|group:Accommodation|preset:Caravan_Site/RV_Park|key:cabins)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6662(check:text|group:Accommodation|preset:Campsite|key:cabins)
 msgid "Cabins available"
-msgstr ""
+msgstr "空室あり"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5350(item:name|group:Aerialway|preset:Cable_Car)
 msgid "Cable Car"
@@ -3457,11 +3458,11 @@ msgstr "ケーブルカー"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5046(list_entry:display_value|group:Shipping|preset:Seamark|value:cable_area)
 msgid "Cable area"
-msgstr ""
+msgstr "ケーブルエリア"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4019(item:name|group:Barriers|preset:Cable_barrier)
 msgid "Cable barrier"
-msgstr ""
+msgstr "ケーブルバリア"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2801(list_entry:display_value|group:Lane_attributes|preset:Single_direction_roads|value:cable_car)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2839(list_entry:display_value|group:Lane_attributes|preset:Bi-directional_roads|value:cable_car)
@@ -3471,7 +3472,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:318(list_entry:display_value|value:cable_car)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4499(list_entry:display_value|group:Road_markings|preset:Symbol|value:cable_car)
 msgid "Cable car"
-msgstr ""
+msgstr "ケーブルカー"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1383(combo:text|key:cables)
 msgid "Cable count"
@@ -3479,7 +3480,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11489(list_entry:display_value|group:Man_Made|preset:Street_cabinet|value:cable_tv)
 msgid "Cable tv"
-msgstr ""
+msgstr "ケーブルテレビ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14793(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Cacao trees"
@@ -3503,7 +3504,7 @@ msgstr "ケルン"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2315(combo:display_values|key:trailblazed)
 msgid "Cairns"
-msgstr ""
+msgstr "ケアンズ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5101(list_entry:display_value|group:Shipping|preset:Seamark|value:calling-in_point)
 msgid "Calling-in point"
@@ -3537,7 +3538,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:318(list_entry:display_value|value:camp_site)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4499(list_entry:display_value|group:Road_markings|preset:Symbol|value:camp_site)
 msgid "Camp site"
-msgstr ""
+msgstr "キャンプサイト"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16546(item:name|group:Offices|preset:Camping)
 msgid "Camping"
@@ -3549,7 +3550,7 @@ msgstr "キャンプの種類"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6645(item:name|group:Accommodation|preset:Campsite)
 msgid "Campsite"
-msgstr ""
+msgstr "キャンプサイト"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10470(item:name|group:Sport_(Ball)|preset:Canadian_Football)
 msgid "Canadian Football"
@@ -3568,15 +3569,15 @@ msgstr "ろうそく"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13203(item:name|group:Home_furnishing_and_decoration|preset:Candles)
 msgid "Candles"
-msgstr ""
+msgstr "ろうそく"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12862(combo:text|group:Food|preset:Cannabis|key:cannabis:cbd)
 msgid "Cannabidiol"
-msgstr ""
+msgstr "カンナビジオール"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12856(item:name|group:Food|preset:Cannabis)
 msgid "Cannabis"
-msgstr ""
+msgstr "大麻"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12345(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:cannon)
 msgid "Cannon"
@@ -3588,11 +3589,11 @@ msgstr "カヌー・カヤック"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4954(check:text|group:Shipping|preset:Boat_rental|key:canoe_rental)
 msgid "Canoes"
-msgstr ""
+msgstr "カヌー"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9564(combo:display_values|group:Facilities|preset:Outdoor_seating|key:weather_protection)
 msgid "Canopy"
-msgstr ""
+msgstr "天蓋"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2051(check:text|key:recycling:cans)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9458(check:text|group:Facilities|preset:Bottle_return|key:recycling:cans)
@@ -3601,13 +3602,13 @@ msgstr "カン"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14146(combo:display_values|group:Boundaries|preset:Political|key:political_division)
 msgid "Canton"
-msgstr ""
+msgstr "カントン"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1303(combo:display_values|key:religion)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1307(combo:display_values|key:religion)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1311(combo:display_values|key:religion)
 msgid "Caodaism"
-msgstr ""
+msgstr "カオダイ教"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2222(combo:text|key:capacity)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5504(text:text|group:Car|preset:Parking_Space|key:capacity)
@@ -3627,31 +3628,31 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9304(combo:text|group:Facilities|preset:Luggage_locker|key:capacity)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9706(combo:text|group:Facilities|preset:Device_Charging_Station|key:capacity)
 msgid "Capacity"
-msgstr ""
+msgstr "収容数"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6661(text:text|group:Accommodation|preset:Campsite|key:capacity:caravans)
 msgid "Capacity (caravans)"
-msgstr ""
+msgstr "収容数（キャンピングカー）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5475(text:text|group:Car|preset:Parking|key:capacity)
 msgid "Capacity (overall)"
-msgstr ""
+msgstr "収容数（全体）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3659(text:text|preset:Elevator|key:capacity:persons)
 msgid "Capacity (persons)"
-msgstr ""
+msgstr "収容数（人数）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6660(text:text|group:Accommodation|preset:Campsite|key:capacity:tents)
 msgid "Capacity (tents)"
-msgstr ""
+msgstr "収容数（テント）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6659(text:text|group:Accommodation|preset:Campsite|key:capacity)
 msgid "Capacity (total)"
-msgstr ""
+msgstr "収容数（合計）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5797(text:text|group:Bicycle|preset:Parking|key:capacity:cargo_bike)
 msgid "Capacity for cargo bikes"
-msgstr ""
+msgstr "カーゴバイクの収容数"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4833(item:name|group:Water|preset:Cape)
 msgid "Cape"
@@ -3674,19 +3675,19 @@ msgstr "洗車場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1646(multiselect:text|key:brand)
 msgid "Car brand"
-msgstr ""
+msgstr "自動車ブランド"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5678(item:name|group:Car|preset:Caravan_Dealer)
 msgid "Caravan Dealer"
-msgstr ""
+msgstr "キャンピングカー販売店"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6622(item:name|group:Accommodation|preset:Caravan_Site/RV_Park)
 msgid "Caravan Site/RV Park"
-msgstr ""
+msgstr "車中泊スペース・RVパーク"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3376(combo:text|group:Waypoints|preset:Rest_Area|key:caravan)
 msgid "Caravan access"
-msgstr ""
+msgstr "キャンピングカーのアクセス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2801(list_entry:display_value|group:Lane_attributes|preset:Single_direction_roads|value:caravan_site)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2839(list_entry:display_value|group:Lane_attributes|preset:Bi-directional_roads|value:caravan_site)
@@ -3696,12 +3697,12 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:318(list_entry:display_value|value:caravan_site)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4499(list_entry:display_value|group:Road_markings|preset:Symbol|value:caravan_site)
 msgid "Caravan site"
-msgstr ""
+msgstr "車中泊スペース"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6656(check:text|group:Accommodation|preset:Campsite|key:caravans)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6689(check:text|group:Accommodation|preset:Camp_pitch|key:caravans)
 msgid "Caravans allowed"
-msgstr ""
+msgstr "キャンピングカーの乗り入れが可能"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2052(check:text|key:recycling:cardboard)
 msgid "Cardboard"
@@ -3713,11 +3714,11 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5040(list_entry:display_value|group:Shipping|preset:Seamark|value:buoy_cardinal)
 msgid "Cardinal buoy"
-msgstr ""
+msgstr "水路用のブイ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5833(list_entry:display_value|group:Bicycle|preset:Rental|value:cargo_bike)
 msgid "Cargo bike"
-msgstr ""
+msgstr "カーゴバイク"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6900(combo:text|group:Food+Drinks|preset:Diet|key:diet:carnivore)
 msgid "Carnivore"
@@ -3729,7 +3730,7 @@ msgstr "工務店"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13210(item:name|group:Home_furnishing_and_decoration|preset:Carpet)
 msgid "Carpet"
-msgstr ""
+msgstr "カーペット"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15926(item:name|group:Crafts|preset:Carpet_layer)
 msgid "Carpet layer"
@@ -3741,7 +3742,7 @@ msgstr "自動車"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9512(check:text|group:Facilities|preset:Sanitary_Dump_Station|key:sanitary_dump_station:basin)
 msgid "Casette or Elsan Disposal"
-msgstr ""
+msgstr "カセットまたはエルサン廃棄"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13967(check:text|preset:Payment_Methods|key:payment:cash)
 msgid "Cash"
@@ -3749,7 +3750,7 @@ msgstr "現金"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14094(combo:text|group:Money|preset:Automated_Teller_Machine|key:cash_in)
 msgid "Cash deposits"
-msgstr ""
+msgstr "現金預け入れ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13968(checkgroup:text|preset:Payment_Methods)
 msgid "Cash type"
@@ -3758,7 +3759,7 @@ msgstr "現金の種類"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14042(item:name|preset:Cash_withdrawal)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14044(multiselect:text|preset:Cash_withdrawal|key:cash_withdrawal)
 msgid "Cash withdrawal"
-msgstr ""
+msgstr "現金引き出し"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7876(item:name|preset:Casino)
 msgid "Casino"
@@ -3779,7 +3780,7 @@ msgstr "城"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4045(list_entry:display_value|group:Barriers|preset:Wall|value:castle_wall)
 msgid "Castle wall"
-msgstr ""
+msgstr "城壁"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12392(combo:display_values|group:Historic_Places_&_Objects|preset:Castle|key:castle_type)
 msgid "Castrum"
@@ -3799,11 +3800,11 @@ msgstr "カタルーニャ語"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1566(list_entry:display_value|value:catch_and_release)
 msgid "Catch and release"
-msgstr ""
+msgstr "キャッチアンドリリース"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12239(item:name|preset:Catenary_mast)
 msgid "Catenary mast"
-msgstr ""
+msgstr "架線柱"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15933(item:name|group:Crafts|preset:Caterer)
 msgid "Caterer"
@@ -3818,7 +3819,7 @@ msgstr "大聖堂"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1308(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:catholic)
 msgid "Catholic"
-msgstr ""
+msgstr "カトリック"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3875(item:name|group:Barriers|preset:Cattle_Grid)
 msgid "Cattle Grid"
@@ -3826,11 +3827,11 @@ msgstr "家畜脱出防止溝"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14473(check:text|group:Geography|preset:Sinkhole|key:anthropogenic)
 msgid "Caused by human activity"
-msgstr ""
+msgstr "人間の活動によって引き起こされた"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5049(list_entry:display_value|group:Shipping|preset:Seamark|value:causeway)
 msgid "Causeway"
-msgstr ""
+msgstr "土手道"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14478(item:name|group:Geography|preset:Cave_Entrance)
 msgid "Cave Entrance"
@@ -3838,7 +3839,7 @@ msgstr "出入口（洞窟）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11563(check:text|group:Man_Made|preset:Weather_Station|key:weather:ceilometer)
 msgid "Ceilometer - height of cloud base"
-msgstr ""
+msgstr "雲高計 - 雲底の高さ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12347(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:cemetery)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14923(item:name|group:Cemetery_and_graves|preset:Cemetery)
@@ -3847,11 +3848,11 @@ msgstr "霊園（土地区画）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14915(group:name|group:Cemetery_and_graves)
 msgid "Cemetery and graves"
-msgstr ""
+msgstr "霊園と墓"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14937(item:name|group:Cemetery_and_graves|preset:Cemetery_sector)
 msgid "Cemetery sector"
-msgstr ""
+msgstr "霊園区画"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:161(check:text|key:handrail:center)
 msgid "Center handrail"
@@ -3859,7 +3860,7 @@ msgstr "中央"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1299(combo:display_values|key:irrigation)
 msgid "Center pivot"
-msgstr ""
+msgstr "センターピボット"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2801(list_entry:display_value|group:Lane_attributes|preset:Single_direction_roads|value:centre)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2839(list_entry:display_value|group:Lane_attributes|preset:Bi-directional_roads|value:centre)
@@ -3869,11 +3870,11 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:318(list_entry:display_value|value:centre)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4499(list_entry:display_value|group:Road_markings|preset:Symbol|value:centre)
 msgid "Centre"
-msgstr ""
+msgstr "中心"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1592(combo:display_values|key:pump_mechanism)
 msgid "Centrifugal"
-msgstr ""
+msgstr "遠心"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7942(multiselect:display_values|group:Culture|preset:Museum|key:museum)
 msgid "Ceramics"
@@ -3881,7 +3882,7 @@ msgstr "陶磁器"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12582(item:name|group:Historic_Places_&_Objects|preset:Ceremonial_gate)
 msgid "Ceremonial gate"
-msgstr ""
+msgstr "象徴的な門"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4029(item:name|group:Barriers|preset:Chain)
 msgid "Chain"
@@ -3889,11 +3890,11 @@ msgstr "チェーン"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5857(check:text|group:Bicycle|preset:Public_Bicycle_Repair_Station|key:service:bicycle:chain_tool)
 msgid "Chain tool"
-msgstr ""
+msgstr "チェーンツール"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5361(item:name|group:Aerialway|preset:Chair_Lift)
 msgid "Chair Lift"
-msgstr ""
+msgstr "チェアリフト"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6552(item:name|group:Accommodation|preset:Chalet)
 msgid "Chalet"
@@ -3930,27 +3931,27 @@ msgstr "木炭"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12349(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:charcoal_pile)
 msgid "Charcoal pile"
-msgstr ""
+msgstr "炭焼き窯"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5595(item:name|group:Car|preset:Charge_point)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5615(item:name|group:Car|preset:Charge_point)
 msgid "Charge point"
-msgstr ""
+msgstr "充電スポット"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2219(text:text|key:network)
 msgid "Charging Network"
-msgstr ""
+msgstr "充電ネットワーク"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5586(item:name|group:Car|preset:Charging_Station)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5606(item:name|group:Car|preset:Charging_Station)
 msgid "Charging Station"
-msgstr ""
+msgstr "充電ステーション"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2972(list_entry:short_description|preset:Street_parking_both_sides|value:charging_only)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3032(list_entry:short_description|preset:Street_parking_right-hand_side|value:charging_only)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3092(list_entry:short_description|preset:Street_parking_left-hand_side|value:charging_only)
 msgid "Charging only"
-msgstr ""
+msgstr "充電専用"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13689(item:name|group:Other|preset:Charity)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16476(item:name|group:Offices|preset:Charity)
@@ -3963,7 +3964,7 @@ msgstr "小切手"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14047(combo:display_values|preset:Cash_withdrawal|key:cash_withdrawal:type)
 msgid "Checkout"
-msgstr ""
+msgstr "チェックアウト"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5050(list_entry:display_value|group:Shipping|preset:Seamark|value:checkpoint)
 msgid "Checkpoint"
@@ -3996,7 +3997,7 @@ msgstr "チェリモヤの木"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12808(list_entry:display_value|group:Food|preset:Farm_Stand|value:cherry)
 msgid "Cherries"
-msgstr ""
+msgstr "サクランボ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14793(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Cherry trees"
@@ -4008,11 +4009,11 @@ msgstr "チェス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10444(check:text|preset:Chess|key:playground)
 msgid "Chess table"
-msgstr ""
+msgstr "チェス台"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4457(list_entry:display_value|group:Road_markings|preset:Restriction|value:chessboard)
 msgid "Chessboard"
-msgstr ""
+msgstr "チェス盤"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14793(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Chestnut trees"
@@ -4020,7 +4021,7 @@ msgstr "クリの木"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4455(list_entry:display_value|group:Road_markings|preset:Restriction|value:chevron)
 msgid "Chevron"
-msgstr ""
+msgstr "逆V字"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13915(list_entry:short_description|preset:Vending_Machine|value:chewing_gums)
 msgid "Chewing gums"
@@ -4029,15 +4030,15 @@ msgstr "チューインガム"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3466(combo:display_values|group:Traffic_Calming|preset:Traffic_Calming|key:traffic_calming)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3499(item:name|group:Traffic_Calming|preset:Chicane)
 msgid "Chicane"
-msgstr ""
+msgstr "シケイン"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8356(item:name|group:Education|preset:Childcare)
 msgid "Childcare"
-msgstr ""
+msgstr "保育サービス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8372(text:text|group:Education|preset:Childcare|key:childcare:capacity)
 msgid "Childcare capacity"
-msgstr ""
+msgstr "保育施設の収容能力"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1627(list_entry:display_value|value:child)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:505(list_entry:short_description|value:children)
@@ -4100,7 +4101,7 @@ msgstr "教会"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:church_of_scotland)
 msgid "Church of Scotland"
-msgstr ""
+msgstr "スコットランド国教会"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13914(list_entry:short_description|preset:Vending_Machine|value:cigarettes)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9489(multiselect:display_values|group:Facilities|preset:Waste_Basket/Trash_Can|key:waste)
@@ -4129,11 +4130,11 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2765(item:name|group:Streets|preset:Circular_junction)
 msgid "Circular junction"
-msgstr ""
+msgstr "円形交差点"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1290(text:text|key:circumference)
 msgid "Circumference (meters)"
-msgstr ""
+msgstr "円周（メートル）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7970(list_entry:display_value|group:Culture|preset:Theatre|value:circus)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8017(list_entry:display_value|group:Culture|preset:Other_theatres|value:circus)
@@ -4142,7 +4143,7 @@ msgstr "サーカス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1983(check:text|key:diplomatic:services:citizen_services)
 msgid "Citizen services"
-msgstr ""
+msgstr "市民サービス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12450(list_entry:short_description|group:Historic_Places_&_Objects|preset:Archaeological_Site|value:city)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12467(list_entry:short_description|group:Historic_Places_&_Objects|preset:Archaeological_Site|value:city)
@@ -4164,16 +4165,16 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14313(item:name|group:Places|preset:City_block)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15262(list_entry:display_value|group:Relations|preset:Boundary|value:city_block)
 msgid "City block"
-msgstr ""
+msgstr "街区(日本では未定義)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12351(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:city_gate)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12417(item:name|group:Historic_Places_&_Objects|preset:City_gate)
 msgid "City gate"
-msgstr ""
+msgstr "城門"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3546(item:name|preset:City_limit)
 msgid "City limit"
-msgstr ""
+msgstr "市域"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3550(item:name|preset:City_limit_(separate))
 msgid "City limit (separate)"
@@ -4185,15 +4186,15 @@ msgstr "市区町村"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12352(list_entry:display_value|group:Historic_Places_&_Objects|preset:Historic_object|value:citywalls)
 msgid "Citywalls"
-msgstr ""
+msgstr "城壁"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2290(text:text|key:historic:civilization)
 msgid "Civilization"
-msgstr ""
+msgstr "文明"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10938(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Class"
-msgstr ""
+msgstr "クラス"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:129(list_entry:display_value|value:clay)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:143(combo:display_values|key:surface)
@@ -4215,35 +4216,35 @@ msgstr "クライミング"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10207(item:name|group:Climbing|preset:Climbing_route)
 msgid "Climbing route"
-msgstr ""
+msgstr "クライミングルート"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10229(item:name|group:Climbing|preset:Climbing_route_bottom)
 msgid "Climbing route bottom"
-msgstr ""
+msgstr "クライミングルートの下部"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10235(item:name|group:Climbing|preset:Climbing_route_top)
 msgid "Climbing route top"
-msgstr ""
+msgstr "クライミングルートの上部"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1968(check:text|key:indoor)
 msgid "Climbing routes indoor"
-msgstr ""
+msgstr "屋内のクライミングルート"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1969(check:text|key:outdoor)
 msgid "Climbing routes outdoor"
-msgstr ""
+msgstr "屋外のクライミングルート"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10161(item:name|group:Climbing|preset:Climbing_site)
 msgid "Climbing site"
-msgstr ""
+msgstr "クライミング場所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1951(checkgroup:text)
 msgid "Climbing styles"
-msgstr ""
+msgstr "クライミングのスタイル"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1950(label:text)
 msgid "Climbing styles:"
-msgstr ""
+msgstr "クライミングのスタイル："
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8507(item:name|group:Health|preset:Clinic)
 msgid "Clinic"
@@ -4294,15 +4295,15 @@ msgstr "石炭発電機"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11725(item:name|group:Power_Plant|preset:Coal_Power_Plant)
 msgid "Coal Power Plant"
-msgstr ""
+msgstr "石炭火力発電所"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13642(check:text|group:Other|preset:Fuel|key:fuel:coal_briquette)
 msgid "Coal briquettes"
-msgstr ""
+msgstr "練炭"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5051(list_entry:display_value|group:Shipping|preset:Seamark|value:coastguard_station)
 msgid "Coastguard station"
-msgstr ""
+msgstr "沿岸警備隊基地"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4758(item:name|group:Water|preset:Coastline)
 msgid "Coastline"
@@ -4310,7 +4311,7 @@ msgstr "海岸線"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6879(check:text|group:Food+Drinks|preset:Bar|key:cocktails)
 msgid "Cocktails"
-msgstr ""
+msgstr "カクテル"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14793(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Coconut palms"
@@ -4346,12 +4347,12 @@ msgstr "硬貨"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13643(check:text|group:Other|preset:Fuel|key:fuel:coke)
 msgid "Coke"
-msgstr ""
+msgstr "コーラ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1423(combo:text|key:generator:output:cold_air)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1462(combo:text|key:plant:output:cold_air)
 msgid "Cold air"
-msgstr ""
+msgstr "冷空"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11929(list_entry:display_value|group:Power_Generator|preset:Nuclear_Reactor|value:cold-fusion)
 msgid "Cold fusion"
@@ -4360,7 +4361,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1422(combo:text|key:generator:output:cold_water)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1461(combo:text|key:plant:output:cold_water)
 msgid "Cold water"
-msgstr ""
+msgstr "冷水"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13487(item:name|group:Sports_and_hobbies|preset:Collectable_items)
 msgid "Collectable items"
@@ -4376,19 +4377,19 @@ msgstr "短大・高専・専門学校"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4153(item:name|group:Passageways|preset:Colonnade)
 msgid "Colonnade"
-msgstr ""
+msgstr "柱廊"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15784(text:text|preset:Destination_Sign|key:colour:back)
 msgid "Colour of background"
-msgstr ""
+msgstr "背景の色"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15786(text:text|preset:Destination_Sign|key:colour:arrow)
 msgid "Colour of border/arrow"
-msgstr ""
+msgstr "枠線・矢印の色"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15785(text:text|preset:Destination_Sign|key:colour:text)
 msgid "Colour of text"
-msgstr ""
+msgstr "テキストの色"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12510(combo:display_values|group:Historic_Places_&_Objects|preset:Tomb|key:tomb)
 msgid "Columbarium"
@@ -4396,11 +4397,11 @@ msgstr "納骨堂"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3241(item:name|group:Ways|preset:Combined_Foot-_and_Cycleway)
 msgid "Combined Foot- and Cycleway"
-msgstr ""
+msgstr "歩行者・自転車共用道路"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11885(combo:display_values|group:Power_Generator|preset:Gas_Power_Generator|key:generator:type)
 msgid "Combined cycle"
-msgstr ""
+msgstr "コンバインドサイクル"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1599(combo:display_values|key:mechanical_driver)
 msgid "Combustion engine"
@@ -4412,7 +4413,7 @@ msgstr "喜劇"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:506(list_entry:short_description|value:comic)
 msgid "Comic"
-msgstr ""
+msgstr "マンガ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13494(list_entry:display_value|group:Sports_and_hobbies|preset:Collectable_items|value:comics)
 msgid "Comics"
@@ -4433,11 +4434,11 @@ msgstr "一般略称"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10976(combo:display_values|group:Man_Made|preset:Tower|key:tower:type)
 msgid "Communication"
-msgstr ""
+msgstr "コミュニケーション"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5052(list_entry:display_value|group:Shipping|preset:Seamark|value:communication_area)
 msgid "Communication area"
-msgstr ""
+msgstr "コミュニケーションエリア"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2029(checkgroup:text)
 msgid "Communication types"
@@ -4492,31 +4493,31 @@ msgstr "コンクリート"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4325(item:name|group:Access_Restrictions|preset:Cond._&_direct._max_speed)
 msgid "Cond. & direct. max speed"
-msgstr ""
+msgstr "条件付きおよび直接の最高速度"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4284(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:forward:conditional)
 msgid ""
 "Conditional maximum speed for heavy goods vehicles in way direction "
 "specified in km/h"
-msgstr ""
+msgstr "指定された進行方向における大型貨物車両の条件付き最高速度（km/h）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4288(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:maxspeed:hgv:backward:conditional)
 msgid ""
 "Conditional maximum speed for heavy goods vehicles opposite way direction "
 "specified in km/h"
-msgstr ""
+msgstr "逆方向における大型貨物車両の条件付き最高速度（km/h）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4331(combo:long_text|group:Access_Restrictions|preset:Cond._&_direct._max_speed|key:maxspeed:forward:conditional)
 msgid "Conditional maximum speed in way direction specified in km/h"
-msgstr ""
+msgstr "指定された進行方向における条件付き最高速度（km/h）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4335(combo:long_text|group:Access_Restrictions|preset:Cond._&_direct._max_speed|key:maxspeed:backward:conditional)
 msgid "Conditional maximum speed opposite way direction specified in km/h"
-msgstr ""
+msgstr "逆方向における条件付き最高速度（km/h）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4327(combo:long_text|group:Access_Restrictions|preset:Cond._&_direct._max_speed|key:maxspeed:conditional)
 msgid "Conditional maximum speed specified in km/h"
-msgstr ""
+msgstr "条件付き最高速度（km/h）"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4191(combo:long_text|group:Access_Restrictions|preset:All_vehicles|key:vehicle:conditional)
 msgid "Conditional restriction for all types of vehicles"
@@ -4524,27 +4525,27 @@ msgstr "全種類の車両に対する条件付き制限"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4276(combo:long_text|group:Access_Restrictions|preset:Heavy_Goods_Vehicle|key:hgv:conditional)
 msgid "Conditional restriction for heavy goods vehicles"
-msgstr ""
+msgstr "大型貨物車両に対する条件付き制限"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4200(combo:long_text|group:Access_Restrictions|preset:Motor_vehicle|key:motor_vehicle:conditional)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4209(combo:long_text|group:Access_Restrictions|preset:Motor_vehicle_(CH)|key:motor_vehicle:conditional)
 msgid "Conditional restriction for motor vehicles"
-msgstr ""
+msgstr "自動車に対する条件付き制限"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4221(combo:long_text|group:Access_Restrictions|preset:Motorcar_and_-cycle_(CH)|key:motorcar:conditional)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4240(combo:long_text|group:Access_Restrictions|preset:Motorcar|key:motorcar:conditional)
 msgid "Conditional restriction for motorcars"
-msgstr ""
+msgstr "乗用車に対する条件付き制限"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4228(combo:long_text|group:Access_Restrictions|preset:Motorcar_and_-cycle_(CH)|key:motorcycle:conditional)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4252(combo:long_text|group:Access_Restrictions|preset:Motorcycle|key:motorcycle:conditional)
 msgid "Conditional restriction for motorcycles"
-msgstr ""
+msgstr "バイクに対する条件付き制限"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4264(combo:long_text|group:Access_Restrictions|preset:Motorhome|key:motorhome:conditional)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4300(combo:long_text|group:Access_Restrictions|preset:Trailer|key:trailer:conditional)
 msgid "Conditional restriction for motorhomes"
-msgstr ""
+msgstr "キャンピングカーに対する条件付き制限"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13917(list_entry:short_description|preset:Vending_Machine|value:condoms)
 msgid "Condoms"
@@ -4557,11 +4558,11 @@ msgstr "菓子店"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10938(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Conference"
-msgstr ""
+msgstr "会議"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8268(item:name|group:Public_Building|preset:Conference_Centre)
 msgid "Conference Centre"
-msgstr ""
+msgstr "会議場"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1303(combo:display_values|key:religion)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1307(combo:display_values|key:religion)
@@ -4575,15 +4576,15 @@ msgstr "接続点"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1700(role:text|key:connection)
 msgid "Connection segment"
-msgstr ""
+msgstr "接続セグメント"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15101(text:text|group:Addresses_and_Contact|preset:Address|key:addr:conscriptionnumber)
 msgid "Conscription number"
-msgstr ""
+msgstr "徴兵番号"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 msgid "Conservative"
-msgstr ""
+msgstr "保守的"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11667(combo:text|group:Man_Made|preset:Telescope|key:telescope:construction)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2821(list_entry:display_value|group:Lane_attributes|preset:Single_direction_roads|value:construction)
@@ -4599,7 +4600,7 @@ msgstr "建設会社"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1890(list_entry:display_value|value:constructivism)
 msgid "Constructivism"
-msgstr ""
+msgstr "構成主義"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16368(combo:display_values|group:Offices|preset:Consulate|key:consulate)
 msgid "Consular agency"
@@ -4643,15 +4644,15 @@ msgstr "非接触決済"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14510(list_entry:display_value|group:Geography|preset:Hot_spring|value:sulfurous)
 msgid "Contains sulfur"
-msgstr ""
+msgstr "硫黄を含む"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14509(list_entry:display_value|group:Geography|preset:Hot_spring|value:sulfuric)
 msgid "Contains sulfuric acid"
-msgstr ""
+msgstr "硫酸を含む"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4729(check:text|group:Water|preset:Tailings_Pond|key:hazard)
 msgid "Contaminated"
-msgstr ""
+msgstr "汚染されている"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1894(list_entry:display_value|value:contemporary)
 msgid "Contemporary architecture"
@@ -4659,7 +4660,7 @@ msgstr "現代建築"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14198(combo:display_values|group:Boundaries|preset:Maritime|key:border_type)
 msgid "Contiguous"
-msgstr ""
+msgstr "連続している"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14215(item:name|group:Places|preset:Continent)
 msgid "Continent"
@@ -4671,7 +4672,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5054(list_entry:display_value|group:Shipping|preset:Seamark|value:control_point)
 msgid "Control point"
-msgstr ""
+msgstr "制御点"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5543(combo:display_values|group:Car|preset:Fuel|key:shop)
 msgid "Convenience"
@@ -4683,7 +4684,7 @@ msgstr "コンビニエンスストア"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10955(combo:text|group:Indoor_elements|preset:Highway_corridor|key:conveying)
 msgid "Conveyor"
-msgstr ""
+msgstr "コンベア"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2055(check:text|key:recycling:cooking_oil)
 msgid "Cooking oil"
@@ -4691,7 +4692,7 @@ msgstr "食用油"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10976(combo:display_values|group:Man_Made|preset:Tower|key:tower:type)
 msgid "Cooling"
-msgstr ""
+msgstr "冷却"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16634(item:name|group:Offices|preset:Cooperative)
 msgid "Cooperative"
@@ -4700,7 +4701,7 @@ msgstr "協同組合"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1812(combo:display_values|key:roof:material)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2083(combo:display_values|key:resource)
 msgid "Copper"
-msgstr ""
+msgstr "銅"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13247(item:name|group:Printed_Material|preset:Copy_Shop)
 msgid "Copy Shop"
@@ -4708,15 +4709,15 @@ msgstr "コピー店"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14533(combo:display_values|group:Geography|preset:Reef|key:reef)
 msgid "Coral"
-msgstr ""
+msgstr "サンゴ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3786(text:text|group:Barriers|preset:Cycle_Barrier|key:corners)
 msgid "Corners"
-msgstr ""
+msgstr "角"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10906(item:name|group:Indoor_elements|preset:Corridor)
 msgid "Corridor"
-msgstr ""
+msgstr "廊下"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13296(item:name|group:For_the_body|preset:Cosmetics)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13315(list_entry:short_description|group:For_the_body|preset:Beauty|value:cosmetics)
@@ -8125,6 +8126,7 @@ msgstr "ヒンドゥー教寺院"
 msgid "Hippopotamus"
 msgstr "カバ"
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr "歴史的"
@@ -23860,7 +23862,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1327(combo:display_values|key:denomination)
 msgctxt "jewish"
 msgid "Conservative"
-msgstr ""
+msgstr "保守的"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1327(combo:text|key:denomination)
 msgctxt "jewish"
@@ -24262,7 +24264,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1505(combo:display_values|key:telecom:medium)
 msgctxt "telecom"
 msgid "Copper"
-msgstr ""
+msgstr "銅"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1505(combo:display_values|key:telecom:medium)
 msgctxt "telecom"
@@ -24796,7 +24798,7 @@ msgstr "納屋"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10769(list_entry:display_value|group:Buildings|preset:Building_construction|value:basilica)
 msgctxt "building"
 msgid "Basilica"
-msgstr ""
+msgstr "バシリカ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10697(list_entry:display_value|group:Buildings|preset:Building|value:boathouse)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10751(list_entry:display_value|group:Buildings|preset:Building_part|value:boathouse)
@@ -24835,7 +24837,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10750(combo:text|group:Buildings|preset:Building_part|key:building:part)
 msgctxt "building"
 msgid "Building part"
-msgstr ""
+msgstr "建物の一部分"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1835(combo:text|key:building:use)
 msgctxt "building"
@@ -26636,7 +26638,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3449(list_entry:display_value|group:Waypoints|preset:Pedestrian_Crossing|value:button)
 msgctxt "crossing"
 msgid "Button operated"
-msgstr ""
+msgstr "ボタン操作式"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3447(combo:text|group:Waypoints|preset:Pedestrian_Crossing|key:flashing_lights)
 msgctxt "crossing"
@@ -27550,7 +27552,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7645(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:balancebeam)
 msgctxt "leisure"
 msgid "Balance beam"
-msgstr ""
+msgstr "平均台"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7543(check:text|group:Leisure|preset:Playground|key:playground:balance)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7644(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:balance)
@@ -27656,7 +27658,7 @@ msgstr "チャリティー"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7655(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:chess_table)
 msgctxt "leisure"
 msgid "Chess table"
-msgstr ""
+msgstr "チェス台"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7555(check:text|group:Leisure|preset:Playground|key:playground:chute)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7656(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:chute)
@@ -29399,7 +29401,7 @@ msgstr "スケーティング"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10992(combo:display_values|group:Man_Made|preset:Mast|key:tower:type)
 msgctxt "tower"
 msgid "Communication"
-msgstr ""
+msgstr "コミュニケーション"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10992(combo:display_values|group:Man_Made|preset:Mast|key:tower:type)
 msgctxt "tower"
