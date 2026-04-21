@@ -700,6 +700,7 @@
         <list_entry value="wheat" display_value="Wheat"/> 
     </chunk>
     <chunk id="sac_scale_values_easy">
+        <list_entry value="strolling" display_value="Smooth strolling trail" short_description="Smooth trail with no obstacles usually wide enough to be walked side-by-side. No exposed areas. Terrain level; no risk of falling or tripping over minor obstacles." />
         <list_entry value="hiking" display_value="T1 - hiking trail" short_description="Trail well cleared. Area flat or slightly sloped, no fall hazard"/>
         <list_entry value="mountain_hiking" display_value="T2 - mountain hiking trail" short_description="Trail with continuous line and balanced ascent. Terrain partially steep, fall hazard possible"/>
     </chunk>
@@ -4881,7 +4882,7 @@
                 <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Colonnade -->
-        <item name="Avalanche Protector" icon="${passageways_avalanche_protector}" type="way" preset_name_label="true">
+        <item name="Avalanche Protector" icon="${passageways_avalanche_protector}" type="node,way,closedway" preset_name_label="true">
             <link wiki="Key:tunnel"/>
             <space/>
             <key key="tunnel" value="avalanche_protector" match="none"/>
