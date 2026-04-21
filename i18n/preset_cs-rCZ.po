@@ -1,5 +1,6 @@
 # 
 # Translators:
+# Aleš Fiala <ales.fiala.yakari1@seznam.cz>, 2026
 # Aleš Fiala <ales.fiala.yakari1@seznam.cz>, 2022-2024,2026
 # Jiří Podhorecký <jirka.p@volny.cz>, 2023,2025-2026
 # Jiří Podhorecký <jirka.p@volny.cz>, 2022
@@ -11,9 +12,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: Aleš Fiala <ales.fiala.yakari1@seznam.cz>, 2022-2024,2026\n"
+"Last-Translator: Aleš Fiala <ales.fiala.yakari1@seznam.cz>, 2026\n"
 "Language-Team: Czech (http://app.transifex.com/openstreetmap/presets/language/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -449,9 +450,9 @@ msgstr "90 °"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
-msgstr ""
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
+msgstr "?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | ''} ?{'({admin_level})' | ''}"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
 msgid ""
@@ -3726,7 +3727,7 @@ msgstr "Nákladní kolo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6900(combo:text|group:Food+Drinks|preset:Diet|key:diet:carnivore)
 msgid "Carnivore"
-msgstr ""
+msgstr "Masožravec"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15919(item:name|group:Crafts|preset:Carpenter)
 msgid "Carpenter"
@@ -4549,7 +4550,7 @@ msgstr "Podmíněná omezení pro motocykly"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4264(combo:long_text|group:Access_Restrictions|preset:Motorhome|key:motorhome:conditional)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4300(combo:long_text|group:Access_Restrictions|preset:Trailer|key:trailer:conditional)
 msgid "Conditional restriction for motorhomes"
-msgstr ""
+msgstr "Podmíněná omezení pro obytné automobily"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13917(list_entry:short_description|preset:Vending_Machine|value:condoms)
 msgid "Condoms"
@@ -5317,15 +5318,15 @@ msgstr "Symbol cíle proti směru cesty"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2799(multiselect:text|group:Lane_attributes|preset:Single_direction_roads|key:destination:symbol:lanes)
 msgid "Destination symbol per lane"
-msgstr ""
+msgstr "Symbol cíle pro každý jízdní pruh"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2837(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:destination:symbol:lanes:forward)
 msgid "Destination symbol per lane in way direction"
-msgstr ""
+msgstr "Symbol cíle pro každý jízdní pruh ve směru jízdy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2869(multiselect:text|group:Lane_attributes|preset:Bi-directional_roads|key:destination:symbol:lanes:backward)
 msgid "Destination symbol per lane opposite to way direction"
-msgstr ""
+msgstr "Symbol cíle pro každý jízdní pruh proti směru jízdy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15781(text:text|preset:Destination_Sign|key:destination)
 msgid "Destination written on sign (w/o distance)"
@@ -5599,7 +5600,7 @@ msgstr "Nevyužívaná budova"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16766(item:name|group:Lifecycle|preset:Disused_healthcare_facility)
 msgid "Disused healthcare facility"
-msgstr ""
+msgstr "Nepoužívané zdravotní zařízení"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16771(item:name|group:Lifecycle|preset:Disused_highway)
 msgid "Disused highway"
@@ -5764,7 +5765,7 @@ msgstr "Dvojitá"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4420(list_entry:display_value|group:Road_markings|preset:Edge_line|value:double_dashed)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4432(list_entry:display_value|group:Road_markings|preset:Crossing_edge|value:double_dashed)
 msgid "Double dashed"
-msgstr ""
+msgstr "Dvojitá čárkovaná"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3466(combo:display_values|group:Traffic_Calming|preset:Traffic_Calming|key:traffic_calming)
 msgid "Double dip"
@@ -5775,7 +5776,7 @@ msgstr "Dvojitá prohlubeň"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4420(list_entry:display_value|group:Road_markings|preset:Edge_line|value:double_solid)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4432(list_entry:display_value|group:Road_markings|preset:Crossing_edge|value:double_solid)
 msgid "Double solid"
-msgstr ""
+msgstr "Dvojitě plná"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:76(combo:display_values|key:incline)
 msgid "Down"
@@ -5980,7 +5981,7 @@ msgstr "Eklekticismus v architektuře"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4412(item:name|group:Road_markings|preset:Edge_line)
 msgid "Edge line"
-msgstr ""
+msgstr "Hrana"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14965(item:name|preset:Education)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16408(combo:display_values|group:Offices|preset:Government|key:government)
@@ -6007,7 +6008,7 @@ msgstr "Vejce"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2380(list_entry:display_value|value:Eircom)
 msgid "Eircom"
-msgstr ""
+msgstr "Eircom"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1636(list_entry:display_value|value:senior)
 msgid "Elderly"
@@ -6729,11 +6730,11 @@ msgstr "Fjord"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11034(text:text|group:Man_Made|preset:Flagpole|key:flag:wikidata)
 msgid "Flag wikidata entry"
-msgstr ""
+msgstr "Vlajka zadání wikidat"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11035(text:text|group:Man_Made|preset:Flagpole|key:flag:wikipedia)
 msgid "Flag wikipedia entry"
-msgstr ""
+msgstr "Vlajka zadání wikipedie"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11029(item:name|group:Man_Made|preset:Flagpole)
 msgid "Flagpole"
@@ -6858,7 +6859,7 @@ msgstr "Jídelní plocha"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:824(combo:text|key:food)
 msgid "Food available"
-msgstr ""
+msgstr "Jídlo dostupné"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6696(group:name|group:Food+Drinks)
 msgid "Food+Drinks"
@@ -6979,7 +6980,7 @@ msgstr "Dopředu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11566(check:text|group:Man_Made|preset:Weather_Station|key:weather:forward_scatter_sensor)
 msgid "Forward scatter sensor - visibility"
-msgstr ""
+msgstr "Snímač rozptylu vpřed - viditelnost"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13495(list_entry:display_value|group:Sports_and_hobbies|preset:Collectable_items|value:fossils)
 msgid "Fossils"
@@ -7406,7 +7407,7 @@ msgstr "Rod"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15293(list_entry:display_value|group:Relations|preset:Site|value:geodesic)
 msgid "Geodesic"
-msgstr ""
+msgstr "Geodetické"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14129(group:name|group:Geography)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14345(group:name|group:Geography)
@@ -7465,7 +7466,7 @@ msgstr "Dát přednost"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9772(item:name|group:Facilities|preset:Give_box)
 msgid "Give box"
-msgstr ""
+msgstr "Dát krabici"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3585(list_entry:display_value|preset:Traffic_sign|value:give_way)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3593(list_entry:display_value|preset:Traffic_sign__(separate)|value:give_way)
@@ -7594,7 +7595,7 @@ msgstr "Tráva"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11549(check:text|group:Man_Made|preset:Weather_Station|key:weather:grass_minimum_thermometer)
 msgid "Grass minimum thermometer - ground temperature"
-msgstr ""
+msgstr "Minimální teploměr pro trávu - teplota země"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14646(item:name|group:Nature|preset:Grassland)
 msgid "Grassland"
@@ -7625,7 +7626,7 @@ msgstr "Pohřebiště"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11658(list_entry:short_description|group:Man_Made|preset:Observatory|value:gravitational)
 msgid "Gravitational"
-msgstr ""
+msgstr "Gravitační"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9511(check:text|group:Facilities|preset:Sanitary_Dump_Station|key:sanitary_dump_station:round_drain)
 msgid "Gravity drain for hose"
@@ -7707,7 +7708,7 @@ msgstr "Přístup pouze pro skupiny"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9606(combo:display_values|group:Facilities|preset:Hunting_Stand|key:hunting_stand)
 msgid "Grouse butt"
-msgstr ""
+msgstr "Zadek tetřeva"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4627(item:name|group:Water|preset:Groyne)
 msgid "Groyne"
@@ -7865,7 +7866,7 @@ msgstr "Zařízení na mytí rukou"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10039(check:text|group:Free_flying|preset:Takeoff|key:free_flying:hanggliding)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10050(check:text|group:Free_flying|preset:Landing|key:free_flying:hanggliding)
 msgid "Hang-gliding"
-msgstr ""
+msgstr "Závěsné létání"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6414(item:name|group:Airport|preset:Hangar)
 msgid "Hangar"
@@ -8130,6 +8131,7 @@ msgstr "Hinduistický chrám"
 msgid "Hippopotamus"
 msgstr "Hroch"
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr "Historické"
@@ -8222,7 +8224,7 @@ msgstr "Jízda na koni"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9197(item:name|group:Animal|preset:Horse_walker)
 msgid "Horse walker"
-msgstr ""
+msgstr "Venkovský koňák"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8600(list_entry:short_description|group:Health|preset:Other_healthcare_facilities|value:hospice)
 msgid "Hospice"
@@ -8294,7 +8296,7 @@ msgstr "Domácí potřeby"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15300(list_entry:display_value|group:Relations|preset:Site|value:housing)
 msgid "Housing"
-msgstr ""
+msgstr "Bydlení"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14028(check:text|preset:Payment_Methods|key:payment:huawei_pay)
 msgid "Huawei Pay"
@@ -8349,7 +8351,7 @@ msgstr "Hydrant"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9655(label:text|group:Facilities|preset:Hydrant)
 msgid "Hydrant for non-emergency purposes"
-msgstr ""
+msgstr "Hydrant pro nenouzové účely"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11698(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:hydro)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11831(list_entry:display_value|group:Power_Generator|preset:Power_Generator|value:hydro)
@@ -8378,7 +8380,7 @@ msgstr "Plynný vodík (700 barů)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11558(check:text|group:Man_Made|preset:Weather_Station|key:weather:hygrometer)
 msgid "Hygrometer - relative humidity"
-msgstr ""
+msgstr "Vlhkoměr - relativní vlhkost"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12510(combo:display_values|group:Historic_Places_&_Objects|preset:Tomb|key:tomb)
 msgid "Hypogeum"
@@ -8398,7 +8400,7 @@ msgstr "ICAO"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11542(text:text|group:Man_Made|preset:Weather_Station|key:ref:icao)
 msgid "ICAO reference (airports)"
-msgstr ""
+msgstr "Referenční číslo ICAO (letiště)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1903(multiselect:text|key:isced:level)
 msgid "ISCED level"
@@ -8458,7 +8460,7 @@ msgstr "Islandština"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1320(list_entry:display_value|value:iglesia_ni_cristo)
 msgid "Iglesia ni Cristo"
-msgstr ""
+msgstr "Kostel Krista"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 msgid "Iglesia ni cristo"
@@ -8509,7 +8511,7 @@ msgstr "Ve směru"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2376(list_entry:display_value|value:Inlink)
 msgid "InLink"
-msgstr ""
+msgstr "InLink"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11620(text:text|group:Man_Made|preset:Surveillance|key:camera:angle)
 msgid "Inclination in degrees"
@@ -8553,7 +8555,7 @@ msgstr "Vnitřní plocha"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10958(item:name|group:Indoor_elements|preset:Indoor_beacon)
 msgid "Indoor beacon"
-msgstr ""
+msgstr "Vnitřní maják"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10916(item:name|group:Indoor_elements|preset:Indoor_door)
 msgid "Indoor door"
@@ -8770,7 +8772,7 @@ msgstr "Železná ruda"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1298(check:text|key:irrigated)
 msgid "Irrigated"
-msgstr ""
+msgstr "Zavlažované"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1299(combo:text|key:irrigation)
 msgid "Irrigation method"
@@ -8806,7 +8808,7 @@ msgstr "Izolovaná bóje nebezpečí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15262(list_entry:display_value|group:Relations|preset:Boundary|value:isolated_dwelling)
 msgid "Isolated dwelling"
-msgstr ""
+msgstr "Samota"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1930(multiselect:display_values|key:language)
 msgid "Italian"
@@ -8923,7 +8925,7 @@ msgstr "K3"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2365(list_entry:display_value|value:K4␣Post␣Office)
 msgid "K4 Post Office"
-msgstr ""
+msgstr "Pošta K4"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2366(list_entry:display_value|value:K6)
 msgid "K6"
@@ -8984,7 +8986,7 @@ msgstr "Motokárové závody"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:773(text:text|key:kartaview)
 msgid "Kartaview image"
-msgstr ""
+msgstr "Obrázek Kartaview"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10687(multiselect:display_values|group:Motorsport|preset:Raceway|key:sport)
 msgid "Karting"
@@ -9024,7 +9026,7 @@ msgstr "Výška obrubníku (napravo)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6899(combo:text|group:Food+Drinks|preset:Diet|key:diet:keto)
 msgid "Keto"
-msgstr ""
+msgstr "Keto"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16023(item:name|group:Crafts|preset:Key_cutter)
 msgid "Key cutter"
@@ -9162,7 +9164,7 @@ msgstr "Skládka"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10044(item:name|group:Free_flying|preset:Landing)
 msgid "Landing"
-msgstr ""
+msgstr "Přistání"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8912(item:name|group:Emergency|preset:Landing_site)
 msgid "Landing site"
@@ -9182,7 +9184,7 @@ msgstr "Propojení jízdních pruhů"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4393(item:name|group:Road_markings|preset:Lane_divider)
 msgid "Lane divider"
-msgstr ""
+msgstr "Dělicí prvek jízdních pruhů"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:341(check:text|key:lane_markings)
 msgid "Lane markings"
@@ -9473,7 +9475,7 @@ msgstr "Maják"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11564(check:text|group:Man_Made|preset:Weather_Station|key:weather:lightning_detector)
 msgid "Lightning detector"
-msgstr ""
+msgstr "Detektor blesku"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13648(check:text|group:Other|preset:Fuel|key:fuel:lignite)
 msgid "Lignite"
@@ -9516,7 +9518,7 @@ msgstr "Typ linie"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15617(combo:display_values|group:Power|preset:Power_circuit|key:topology)
 msgid "Linear"
-msgstr ""
+msgstr "Lineární"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14146(combo:display_values|group:Boundaries|preset:Political|key:political_division)
 msgid "Linguistic community"
@@ -9579,7 +9581,7 @@ msgstr "Pouze nakládání"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4446(list_entry:display_value|group:Road_markings|preset:Restriction|value:loading_zone)
 msgid "Loading zone"
-msgstr ""
+msgstr "Nakládací zóna"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15570(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9810(combo:display_values|group:Advertising|preset:Totem|key:message)
@@ -9667,7 +9669,7 @@ msgstr "Lokomitiva"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:318(list_entry:display_value|value:lodging)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4499(list_entry:display_value|group:Road_markings|preset:Symbol|value:lodging)
 msgid "Lodging"
-msgstr ""
+msgstr "Ubytování"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4077(item:name|group:Barriers|preset:Log)
 msgid "Log"
@@ -9998,7 +10000,7 @@ msgstr "Maximální rychlost → @"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1511(text:text|key:maxweight)
 msgid "Max. actual vehical weight (tonnes)"
-msgstr ""
+msgstr "Max. skutečná hmotnost vozidla (tuny)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4320(text:text|group:Access_Restrictions|preset:Physical_restrictions|key:maxaxleload)
 msgid "Max. axle load (tonnes)"
@@ -10046,7 +10048,7 @@ msgstr "Max. délka (v metrech)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1512(text:text|key:maxweightrating)
 msgid "Max. rated vehical weight (tonnes)"
-msgstr ""
+msgstr "Max. jmenovitá hmotnost vozidla (tuny)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15408(list_entry:display_value|preset:Enforcement|value:maxspeed)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2610(text:text|group:Streets|preset:Bicycle_Road|key:maxspeed)
@@ -10175,7 +10177,7 @@ msgstr "Louka"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14794(check:text|group:Land_use|preset:Orchard|key:orchard)
 msgid "Meadow orchard"
-msgstr ""
+msgstr "Luční sad"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14786(combo:text|group:Land_use|preset:Meadow|key:meadow)
 msgid "Meadow type"
@@ -10715,11 +10717,11 @@ msgstr "Motocykly"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4257(item:name|group:Access_Restrictions|preset:Motorhome)
 msgid "Motorhome"
-msgstr ""
+msgstr "Obytný vůz"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4264(combo:text|group:Access_Restrictions|preset:Motorhome|key:motorhome:conditional)
 msgid "Motorhome @"
-msgstr ""
+msgstr "Obytný vůz @"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2449(check:text|group:Streets|preset:Primary|key:motorroad)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2471(check:text|group:Streets|preset:Primary_Link|key:motorroad)
@@ -10785,7 +10787,7 @@ msgstr "Trasa pro horská kola"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14427(item:name|group:Geography|preset:Mountain_range)
 msgid "Mountain range"
-msgstr ""
+msgstr "Pohoří"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2331(check:text|key:mtb)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6983(check:text|group:Tourism|preset:Guidepost|key:mtb)
@@ -10887,11 +10889,11 @@ msgstr "S"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2283(combo:text|key:socket:nacs)
 msgid "NACS"
-msgstr ""
+msgstr "NACS"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2284(text:text|key:socket:nacs:output)
 msgid "NACS output (kW)"
-msgstr ""
+msgstr "NACS výstup (kW)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1964(combo:display_values|key:climbing:orientation)
 msgid "NE"
@@ -10920,11 +10922,11 @@ msgstr "SZ"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2378(list_entry:display_value|value:NWCapped)
 msgid "NW Capped"
-msgstr ""
+msgstr "SZ omezeno"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2377(list_entry:display_value|value:NWPyramid)
 msgid "NW Pyramid"
-msgstr ""
+msgstr "SZ Pyramida"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13331(item:name|group:For_the_body|preset:Nail_salon)
 msgid "Nail salon"
@@ -11158,7 +11160,7 @@ msgstr "Název řeky/jezera/moře/oceánu, do kterého teče"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11033(text:text|group:Man_Made|preset:Flagpole|key:flag:name)
 msgid "Name of the flag"
-msgstr ""
+msgstr "Název vlajky"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:216(check:text|key:narrow)
 msgid "Narrow"
@@ -11268,7 +11270,7 @@ msgstr "Síť"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:new_apostolic)
 msgid "New Apostolic"
-msgstr ""
+msgstr "Nová apoštolská"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1885(list_entry:display_value|value:new_objectivity)
 msgid "New Objectivity"
@@ -11565,7 +11567,7 @@ msgstr "Nic"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8200(item:name|group:Place_of_Worship|preset:Nontrinitarian_Church)
 msgid "Nontrinitarian Church"
-msgstr ""
+msgstr "Netrinitářská církev"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15553(combo:display_values|group:Routes|preset:Ski_Route|key:piste:type)
 msgid "Nordic"
@@ -11671,7 +11673,7 @@ msgstr "Počet autobusových pruhů proti směru jízdy"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6631(text:text|group:Accommodation|preset:Caravan_Site/RV_Park|key:capacity:cabins)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6663(text:text|group:Accommodation|preset:Campsite|key:capacity:cabins)
 msgid "Number of cabins"
-msgstr ""
+msgstr "Počet kajut"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1387(combo:text|key:circuits)
 msgid "Number of circuits"
@@ -11772,7 +11774,7 @@ msgstr "Ořechy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2374(list_entry:display_value|value:oakham)
 msgid "Oakham"
-msgstr ""
+msgstr "Oakham"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11046(item:name|group:Man_Made|preset:Obelisk)
 msgid "Obelisk"
@@ -11911,7 +11913,7 @@ msgstr "Okapi"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:old_catholic)
 msgid "Old Catholic"
-msgstr ""
+msgstr "Staré katolictví"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1308(combo:display_values|key:denomination)
@@ -11928,7 +11930,7 @@ msgstr "Olivy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11551(check:text|group:Man_Made|preset:Weather_Station|key:weather:ombrometer)
 msgid "Ombrometer - rain fall"
-msgstr ""
+msgstr "Ombrometr - déšť"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2132(list_entry:display_value|value:on_button_press)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2166(list_entry:display_value|value:on_button_press)
@@ -12320,7 +12322,7 @@ msgstr "Stanoviště / Vyzvednutí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1415(combo:display_values|key:generator:plant)
 msgid "Output"
-msgstr ""
+msgstr "Výstup"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9009(item:name|group:Social_Facilities|preset:Outreach)
 msgid "Outreach"
@@ -12372,7 +12374,7 @@ msgstr "Ústřice"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12809(list_entry:display_value|group:Food|preset:Farm_Stand|value:oysters)
 msgid "Oysters"
-msgstr ""
+msgstr "Ústřice"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2015(multiselect:display_values|key:league)
 msgid "PADI"
@@ -12465,7 +12467,7 @@ msgstr "Panda"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:771(text:text|key:panoramax)
 msgid "Panoramax image"
-msgstr ""
+msgstr "Panoramatický obrázek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7215(list_entry:display_value|group:Leisure|preset:Animals|value:panther)
 msgid "Panther"
@@ -12487,7 +12489,7 @@ msgstr "Par"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10038(check:text|group:Free_flying|preset:Takeoff|key:free_flying:paragliding)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10049(check:text|group:Free_flying|preset:Landing|key:free_flying:paragliding)
 msgid "Paragliding"
-msgstr ""
+msgstr "Paragliding"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:197(list_entry:short_description|value:parallel)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:200(list_entry:short_description|value:parallel)
@@ -12763,7 +12765,7 @@ msgstr "Cesta"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4452(combo:text|group:Road_markings|preset:Restriction|key:pattern)
 msgid "Pattern"
-msgstr ""
+msgstr "Vzor"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9564(combo:display_values|group:Facilities|preset:Outdoor_seating|key:weather_protection)
 msgid "Pavilion"
@@ -12807,7 +12809,7 @@ msgstr "Vrchol"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:154(combo:display_values|key:maxspeed:variable)
 msgid "Peak traffic"
-msgstr ""
+msgstr "Dopravní špička"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14793(combo:display_values|group:Land_use|preset:Orchard|key:trees)
 msgid "Pear trees"
@@ -12986,7 +12988,7 @@ msgstr "Telefonní budka"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2352(combo:text|key:booth)
 msgid "Phone booth type"
-msgstr ""
+msgstr "Typ telefonní budky"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2244(check:text|key:authentication:phone_call)
 msgid "Phone call"
@@ -13057,7 +13059,7 @@ msgstr "Molo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:940(check:text|key:piercing)
 msgid "Piercing service"
-msgstr ""
+msgstr "Piercingové služby"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7221(list_entry:display_value|group:Leisure|preset:Animals|value:pig)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9180(multiselect:display_values|group:Animal|preset:Animal_breeding|key:animal_breeding)
@@ -13179,7 +13181,7 @@ msgstr "Místo modlitby"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15261(combo:text|group:Relations|preset:Boundary|key:place)
 msgid "Place type"
-msgstr ""
+msgstr "Typ místa"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:284(combo:text|key:placement)
 msgid "Placement"
@@ -13630,11 +13632,11 @@ msgstr "Energetický transformátor"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15609(item:name|group:Power|preset:Power_circuit)
 msgid "Power circuit"
-msgstr ""
+msgstr "Napájecí obvod"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15627(item:name|group:Power|preset:Power_line_section)
 msgid "Power line section"
-msgstr ""
+msgstr "Úsek elektrického vedení"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12129(combo:text|preset:Power_Converter|key:rating)
 msgid "Power rating (MVA)"
@@ -13676,7 +13678,7 @@ msgstr "Preventivní oblast"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11556(check:text|group:Man_Made|preset:Weather_Station|key:weather:precipitation_indicator)
 msgid "Precipitation indicator"
-msgstr ""
+msgstr "Ukazatel srážek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6437(combo:display_values|group:Airport|preset:Navigation_aid|key:navigationaid)
 msgid "Precision approach path indicator"
@@ -13684,7 +13686,7 @@ msgstr "Indikátor přesného přiblížení dráhy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:824(combo:display_values|key:food)
 msgid "Prepared meals"
-msgstr ""
+msgstr "Hotová jídla"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:presbyterian)
@@ -13825,7 +13827,7 @@ msgstr "Psychoterapeut"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11559(check:text|group:Man_Made|preset:Weather_Station|key:weather:psychrometer)
 msgid "Psychrometer - relative humidity"
-msgstr ""
+msgstr "Psychrometr - relativní vlhkost"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6822(item:name|group:Food+Drinks|preset:Pub)
 msgid "Pub"
@@ -13966,11 +13968,11 @@ msgstr "Pyramida"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11561(check:text|group:Man_Made|preset:Weather_Station|key:weather:pyranometer)
 msgid "Pyranometer - short wave length sun radiation"
-msgstr ""
+msgstr "Pyranometr - krátkovlnné sluneční záření"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11562(check:text|group:Man_Made|preset:Weather_Station|key:weather:pyrheliometer)
 msgid "Pyrheliometer - sun radiation"
-msgstr ""
+msgstr "Pyrheliometr - sluneční záření"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11864(list_entry:short_description|group:Power_Generator|preset:Biomass_Power_Generator|value:pyrolysis)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11977(list_entry:short_description|group:Power_Generator|preset:Waste_Power_Generator|value:pyrolysis)
@@ -13979,11 +13981,11 @@ msgstr "Pyrolýza"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10564(combo:display_values|group:Sport_(Ball)|preset:Boule|key:boules)
 msgid "Pétanque"
-msgstr ""
+msgstr "Pétanque"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9717(combo:text|group:Facilities|preset:Device_Charging_Station|key:socket:device:qi-wireless)
 msgid "QI wireless pad"
-msgstr ""
+msgstr "Bezdrátová podložka QI"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13999(check:text|preset:Payment_Methods|key:payment:qr_code)
 msgid "QR Code"
@@ -14075,7 +14077,7 @@ msgstr "Radiostanice"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11565(check:text|group:Man_Made|preset:Weather_Station|key:weather:radiosonde)
 msgid "Radiosonde - warather balloon"
-msgstr ""
+msgstr "Radiosonda - válečný balón"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1930(multiselect:display_values|key:language)
 msgid "Raeto-Romance"
@@ -14136,7 +14138,7 @@ msgstr "Železniční zastávka"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5335(item:name|group:Railway|preset:Railway_junction)
 msgid "Railway junction"
-msgstr ""
+msgstr "Železniční uzel"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5312(item:name|group:Railway|preset:Railway_milestone)
 msgid "Railway milestone"
@@ -14148,7 +14150,7 @@ msgstr "Železniční nástupiště"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6124(item:name|group:Public_Transport|preset:Railway_platform_edge)
 msgid "Railway platform edge"
-msgstr ""
+msgstr "Okraj železničního nástupiště"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15691(list_entry:display_value|preset:Superroute|value:railway)
 msgid "Railway route"
@@ -14165,7 +14167,7 @@ msgstr "Typ železnice"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11550(check:text|group:Man_Made|preset:Weather_Station|key:weather:rain_gauge)
 msgid "Rain gauge - rainfall "
-msgstr ""
+msgstr "Srážkoměr - srážky "
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12491(list_entry:short_description|group:Historic_Places_&_Objects|preset:Fortification_Site|value:motte)
 msgid "Raised area of ground for a castle"
@@ -14173,7 +14175,7 @@ msgstr "Vyvýšená plocha pro hrad"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9606(combo:display_values|group:Facilities|preset:Hunting_Stand|key:hunting_stand)
 msgid "Raised hide"
-msgstr ""
+msgstr "Zvýšená kůže"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1592(combo:display_values|key:pump_mechanism)
 msgid "Ram"
@@ -14229,7 +14231,7 @@ msgstr "Zobrazení v reálném čase"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4442(combo:text|group:Road_markings|preset:Restriction|key:reason)
 msgid "Reason"
-msgstr ""
+msgstr "Důvod"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11843(combo:display_values|group:Power_Generator|preset:Biofuel_Power_Generator|key:generator:type)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11852(combo:display_values|group:Power_Generator|preset:Biogas_Power_Generator|key:generator:type)
@@ -14374,7 +14376,7 @@ msgstr "Odkaz"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6128(text:text|group:Public_Transport|preset:Railway_platform_edge|key:ref)
 msgid "Reference (track number)"
-msgstr ""
+msgstr "Referenční číslo (číslo trati)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10878(text:text|preset:Loading_dock|key:ref)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10912(text:text|group:Indoor_elements|preset:Corridor|key:ref)
@@ -14628,7 +14630,7 @@ msgstr "Odpočívadlo"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:318(list_entry:display_value|value:rest_area)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4499(list_entry:display_value|group:Road_markings|preset:Symbol|value:rest_area)
 msgid "Rest area"
-msgstr ""
+msgstr "Odpočívka"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10938(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6697(item:name|group:Food+Drinks|preset:Restaurant)
@@ -14739,7 +14741,7 @@ msgstr "Pouze odbočování doprava"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2382(list_entry:display_value|value:Riks)
 msgid "Riks"
-msgstr ""
+msgstr "Riks"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12489(list_entry:display_value|group:Historic_Places_&_Objects|preset:Fortification_Site|value:ring_ditch)
 msgid "Ring ditch"
@@ -14778,7 +14780,7 @@ msgstr "Silniční trasa"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4380(group:name|group:Road_markings)
 msgid "Road markings"
-msgstr ""
+msgstr "Dopravní značení"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15692(list_entry:display_value|preset:Superroute|value:road)
 msgid "Road route"
@@ -14834,7 +14836,7 @@ msgstr "Součástky horské dráhy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:roman_catholic)
 msgid "Roman Catholic"
-msgstr ""
+msgstr "Římské katolictví"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1308(combo:display_values|key:denomination)
@@ -14873,7 +14875,7 @@ msgstr "Rumunština"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:romanian_orthodox)
 msgid "Romanian Orthodox"
-msgstr ""
+msgstr "Rumunský ortodox"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 msgid "Romanian orthodox"
@@ -15077,7 +15079,7 @@ msgstr "Ruská"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:russian_orthodox)
 msgid "Russian Orthodox"
-msgstr ""
+msgstr "Ruský ortodox"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 msgid "Russian orthodox"
@@ -15200,7 +15202,7 @@ msgstr "Písek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7435(check:text|group:Leisure|preset:Public_bath|key:bath:sand_bath)
 msgid "Sand bath"
-msgstr ""
+msgstr "Písečná koupel"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5109(list_entry:display_value|group:Shipping|preset:Seamark|value:sand_waves)
 msgid "Sand waves"
@@ -15289,7 +15291,7 @@ msgstr "Budova školy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:154(combo:display_values|key:maxspeed:variable)
 msgid "School zone"
-msgstr ""
+msgstr "Školní zóna"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9697(multiselect:display_values|group:Facilities|preset:Compressed_Air|key:valves)
 msgid "Schrader"
@@ -15325,7 +15327,7 @@ msgstr "Skauti"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3332(item:name|group:Ways|preset:Scramble)
 msgid "Scramble"
-msgstr ""
+msgstr "Tahanice"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2067(check:text|key:recycling:scrap_metal)
 msgid "Scrap Metal"
@@ -15480,7 +15482,7 @@ msgstr "Sekundární napětí ve Voltech (V)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15639(role:text|group:Power|preset:Power_line_section|key:line)
 msgid "Section segment"
-msgstr ""
+msgstr "Segment sekce"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13832(item:name|group:Other|preset:Security)
 msgid "Security"
@@ -15497,7 +15499,7 @@ msgstr "Semeno"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3335(label:text|group:Ways|preset:Scramble)
 msgid "Segment of a passage that requires use of hands"
-msgstr ""
+msgstr "Úsek pasáže, který vyžaduje použití rukou"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3220(check:text|group:Ways|preset:Dedicated_Cycleway|key:segregated)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3275(combo:text|group:Ways|preset:Dedicated_Footway|key:segregated)
@@ -15572,7 +15574,7 @@ msgstr "Srbština"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:serbian_orthodox)
 msgid "Serbian Orthodox"
-msgstr ""
+msgstr "Srbský ortodox"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 msgid "Serbian orthodox"
@@ -15609,11 +15611,11 @@ msgstr "Nastavit na opuštěné (odstranit tagy)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16888(item:name|group:Lifecycle|preset:Set_to_demolished)
 msgid "Set to demolished"
-msgstr ""
+msgstr "Nastavit jako zbourané"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16895(item:name|group:Lifecycle|preset:Set_to_demolished_(remove_tags))
 msgid "Set to demolished (remove tags)"
-msgstr ""
+msgstr "Nastavit na zbourané (odstranit tagy)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16736(item:name|group:Lifecycle|preset:Set_to_disused)
 msgid "Set to disused"
@@ -15642,7 +15644,7 @@ msgstr "Adventisté sedmého dne"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:seventh_day_adventist)
 msgid "Seventh-day Adventist"
-msgstr ""
+msgstr "Adventisté sedmého dne"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1578(combo:display_values|key:substance)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4677(combo:display_values|group:Water|preset:Reservoir|key:reservoir_type)
@@ -15717,7 +15719,7 @@ msgstr "Žralok"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4420(list_entry:display_value|group:Road_markings|preset:Edge_line|value:sharks_teeth)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4432(list_entry:display_value|group:Road_markings|preset:Crossing_edge|value:sharks_teeth)
 msgid "Sharks teeth"
-msgstr ""
+msgstr "Žraločí zuby"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2795(list_entry:short_description|group:Lane_attributes|preset:Single_direction_roads|value:sharp_left)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2833(list_entry:short_description|group:Lane_attributes|preset:Bi-directional_roads|value:sharp_left)
@@ -15819,7 +15821,7 @@ msgstr "Obchod"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13032(label:text|group:Electronics|preset:Telecommunication)
 msgid ""
 "Shop that sells more than just mobile phone related goods and services."
-msgstr ""
+msgstr "Obchod, který prodává více než jen zboží a služby související s mobilními telefony."
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12639(group:name|group:Shops)
 msgid "Shops"
@@ -15997,7 +15999,7 @@ msgstr "Název sítě"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15292(combo:text|group:Relations|preset:Site|key:site)
 msgid "Site type"
-msgstr ""
+msgstr "Typ stanoviště"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10354(item:name|preset:Skateboard)
 msgid "Skateboard"
@@ -16009,19 +16011,19 @@ msgstr "Lyžařská trasa"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10402(item:name|group:Ski_jumping|preset:Ski_jump_piste)
 msgid "Ski jump piste"
-msgstr ""
+msgstr "Sjezdovka pro skokanský můstek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10421(item:name|group:Ski_jumping|preset:Ski_jump_takeoff_point)
 msgid "Ski jump takeoff point"
-msgstr ""
+msgstr "Místo startu pro skokanský můstek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10401(group:name|group:Ski_jumping)
 msgid "Ski jumping"
-msgstr ""
+msgstr "Skoky na lyžích"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10414(item:name|group:Ski_jumping|preset:Ski_jumping_tower)
 msgid "Ski jumping tower"
-msgstr ""
+msgstr "Věž skoku na lyžích"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15693(list_entry:display_value|preset:Superroute|value:ski)
 msgid "Ski route"
@@ -16104,7 +16106,7 @@ msgstr "Zařízení pro malé řemeslo"
 msgid ""
 "Small-scale landform incised into surrounding terrain through erosion by "
 "flowing water."
-msgstr ""
+msgstr "Drobný útvar zařezaný do okolního terénu erozí tekoucí vodou."
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1333(combo:display_values|key:denomination)
@@ -16129,7 +16131,7 @@ msgstr "Hladkost"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:824(combo:display_values|key:food)
 msgid "Snacks"
-msgstr ""
+msgstr "Svačiny"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7234(list_entry:display_value|group:Leisure|preset:Animals|value:snake)
 msgid "Snake"
@@ -16141,7 +16143,7 @@ msgstr "Sněhový most"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11553(check:text|group:Man_Made|preset:Weather_Station|key:weather:snow_height_sensor)
 msgid "Snow height sensor"
-msgstr ""
+msgstr "Snímač výšky sněhu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7235(list_entry:display_value|group:Leisure|preset:Animals|value:snow_leopard)
 msgid "Snow leopard"
@@ -16149,7 +16151,7 @@ msgstr "Sněžný leopard"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11555(check:text|group:Man_Made|preset:Weather_Station|key:weather:snow_stick)
 msgid "Snow stick"
-msgstr ""
+msgstr "Sněhová hůl"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10449(item:name|group:Sport_(Ball)|preset:Soccer)
 msgid "Soccer"
@@ -16185,7 +16187,7 @@ msgstr "Sociální služby"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11548(check:text|group:Man_Made|preset:Weather_Station|key:weather:soil_thermometer)
 msgid "Soil thermometer - soil temperature"
-msgstr ""
+msgstr "Půdní teploměr - teplota půdy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11698(list_entry:display_value|group:Power_Plant|preset:Power_Plant|value:solar)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11831(list_entry:display_value|group:Power_Generator|preset:Power_Generator|value:solar)
@@ -16518,7 +16520,7 @@ msgstr "Kancelářské potřeby"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 msgid "Statistical"
-msgstr ""
+msgstr "Statistický"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16408(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Statistics"
@@ -16640,11 +16642,11 @@ msgstr "Zastávka vepředu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15294(list_entry:display_value|group:Relations|preset:Site|value:stop_area)
 msgid "Stop area"
-msgstr ""
+msgstr "Oblast zastávky"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4381(item:name|group:Road_markings|preset:Stop_line)
 msgid "Stop line"
-msgstr ""
+msgstr "Linie zastávky"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3568(item:name|preset:Stop_sign)
 msgid "Stop sign"
@@ -16784,14 +16786,14 @@ msgstr "Striptýzový klub"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4453(list_entry:display_value|group:Road_markings|preset:Restriction|value:stripes)
 msgid "Stripes"
-msgstr ""
+msgstr "Pruhy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4387(combo:text|group:Road_markings|preset:Stop_line|key:stroke)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4399(combo:text|group:Road_markings|preset:Lane_divider|key:stroke)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4418(combo:text|group:Road_markings|preset:Edge_line|key:stroke)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4430(combo:text|group:Road_markings|preset:Crossing_edge|key:stroke)
 msgid "Stroke"
-msgstr ""
+msgstr "Tloušťka"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:593(combo:text|key:stroller)
 msgid "Stroller access"
@@ -16913,7 +16915,7 @@ msgstr "Sunnit"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11560(check:text|group:Man_Made|preset:Weather_Station|key:weather:sunshine_recorder)
 msgid "Sunshine recorder"
-msgstr ""
+msgstr "Sluneční rekordér"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12641(item:name|group:Food|preset:Supermarket)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13620(combo:display_values|group:Other|preset:Wholesale|key:wholesale)
@@ -17116,7 +17118,7 @@ msgstr "S sebou"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10033(item:name|group:Free_flying|preset:Takeoff)
 msgid "Takeoff"
-msgstr ""
+msgstr "Vzlet"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1930(multiselect:display_values|key:language)
 msgid "Tamil"
@@ -17150,7 +17152,7 @@ msgstr "Taoismus"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15624(role:text|group:Power|preset:Power_circuit|key:tap)
 msgid "Tap point"
-msgstr ""
+msgstr "Bod klepnutí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14018(check:text|preset:Payment_Methods|key:payment:ep_tapcash)
 msgid "TapCash"
@@ -17223,7 +17225,7 @@ msgstr "Technologie"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2381(list_entry:display_value|value:Teileafon)
 msgid "Teileafon"
-msgstr ""
+msgstr "Teileafon"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2361(list_entry:display_value|value:TelH_08)
 msgid "TelH 08"
@@ -17461,7 +17463,7 @@ msgstr "Termální kolektor"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11547(check:text|group:Man_Made|preset:Weather_Station|key:weather:thermometer)
 msgid "Thermometer - air temperature"
-msgstr ""
+msgstr "Teploměr - teplota vzduchu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:102(list_entry:short_description|value:excellent)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3133(list_entry:short_description|preset:Sidewalk_right-hand_side|value:excellent)
@@ -17893,11 +17895,11 @@ msgstr "Stezka s plynulou linií a vyváženým stoupáním. Terén částečně
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4293(item:name|group:Access_Restrictions|preset:Trailer)
 msgid "Trailer"
-msgstr ""
+msgstr "Přívěs"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4300(combo:text|group:Access_Restrictions|preset:Trailer|key:trailer:conditional)
 msgid "Trailer @"
-msgstr ""
+msgstr "Přívěs @"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6991(item:name|group:Tourism|preset:Trailhead)
 msgid "Trailhead"
@@ -17936,11 +17938,11 @@ msgstr "Myčka vlaků"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9193(multiselect:text|group:Animal|preset:Animal_training|key:animal_training)
 msgid "Trained animals"
-msgstr ""
+msgstr "Vycvičená zvířata"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9181(multiselect:text|group:Animal|preset:Animal_breeding|key:animal_training)
 msgid "Training"
-msgstr ""
+msgstr "Výcvik"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2139(check:text|key:tram)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2821(list_entry:display_value|group:Lane_attributes|preset:Single_direction_roads|value:tram)
@@ -17978,7 +17980,7 @@ msgstr "Tramvajová zastávka"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7336(item:name|group:Leisure|preset:Trampoline_park)
 msgid "Trampoline park"
-msgstr ""
+msgstr "Trampolínová hala"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12234(label:text|preset:Pole_with_Transformer)
 msgid "Transformer Attributes:"
@@ -18055,7 +18057,7 @@ msgstr "Pařez stromu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9606(combo:display_values|group:Facilities|preset:Hunting_Stand|key:hunting_stand)
 msgid "Tree stand"
-msgstr ""
+msgstr "Stojan na strom"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14793(combo:text|group:Land_use|preset:Orchard|key:trees)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9564(combo:display_values|group:Facilities|preset:Outdoor_seating|key:weather_protection)
@@ -18401,23 +18403,23 @@ msgstr "UNI"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14032(check:text|preset:Payment_Methods|key:payment:upi)
 msgid "UPI"
-msgstr ""
+msgstr "UPI"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9712(combo:text|group:Facilities|preset:Device_Charging_Station|key:socket:device:USB-A)
 msgid "USB-A socket"
-msgstr ""
+msgstr "Zásuvka USB-A"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9713(combo:text|group:Facilities|preset:Device_Charging_Station|key:socket:device:micro-b)
 msgid "USB-B micro connector cable"
-msgstr ""
+msgstr "Kabel s mikro konektorem USB-B"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9715(combo:text|group:Facilities|preset:Device_Charging_Station|key:socket:device:USB-C_cable)
 msgid "USB-C cable"
-msgstr ""
+msgstr "Kabel USB-C"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9714(combo:text|group:Facilities|preset:Device_Charging_Station|key:socket:device:USB-C)
 msgid "USB-C socket"
-msgstr ""
+msgstr "Zásuvka USB-C"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5581(check:text|group:Car|preset:Fuel|key:payment:uta)
 msgid "UTA"
@@ -18433,7 +18435,7 @@ msgstr "Ukrajinština"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11554(check:text|group:Man_Made|preset:Weather_Station|key:weather:ultrasonic_snow_depth)
 msgid "Ultrasonic snow depth"
-msgstr ""
+msgstr "Ultrazvuková hloubka sněhu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13954(list_entry:short_description|preset:Vending_Machine|value:umbrellas)
 msgid "Umbrellas"
@@ -18492,7 +18494,7 @@ msgstr "Spojené"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:united_methodist)
 msgid "United Methodist"
-msgstr ""
+msgstr "Jednotní metodisté"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 msgid "United methodist"
@@ -18631,7 +18633,7 @@ msgstr "V Pay"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1728(text:text|key:ref:vatin)
 msgid "VAT code (international)"
-msgstr ""
+msgstr "DIČ (mezinárodní)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13891(item:name|group:Other|preset:Vacant)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16727(item:name|group:Offices|preset:Vacant)
@@ -18675,7 +18677,7 @@ msgstr "Ventily"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:154(combo:text|key:maxspeed:variable)
 msgid "Variable max. speed"
-msgstr ""
+msgstr "Variabilní max. rychlost"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3585(list_entry:display_value|preset:Traffic_sign|value:variable_message)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3593(list_entry:display_value|preset:Traffic_sign__(separate)|value:variable_message)
@@ -18885,7 +18887,7 @@ msgstr "Z"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11541(text:text|group:Man_Made|preset:Weather_Station|key:ref:wigos)
 msgid "WIGOS reference"
-msgstr ""
+msgstr "Referenční číslo WIGOS"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:956(combo:display_values|key:internet_access)
 msgid "WLAN"
@@ -18893,7 +18895,7 @@ msgstr "WLAN"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11540(text:text|group:Man_Made|preset:Weather_Station|key:ref:wmo)
 msgid "WMO reference"
-msgstr ""
+msgstr "Referenční číslo WMO"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10938(combo:display_values|group:Indoor_elements|preset:Room|key:room)
 msgid "Waiting"
@@ -19201,7 +19203,7 @@ msgstr "Počasí"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11533(item:name|group:Man_Made|preset:Weather_Station)
 msgid "Weather Station"
-msgstr ""
+msgstr "Meteorologická stanice"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9564(combo:text|group:Facilities|preset:Outdoor_seating|key:weather_protection)
 msgid "Weather protection"
@@ -19209,7 +19211,7 @@ msgstr "Ochrana proti povětrnostním vlivům"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11552(check:text|group:Man_Made|preset:Weather_Station|key:weather:radar)
 msgid "Weather radar"
-msgstr ""
+msgstr "Meteorologický radar"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1224(text:text|key:website)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12792(text:text|group:Food|preset:Public_Market|key:website)
@@ -19363,11 +19365,11 @@ msgstr "Šířka (v metrech)"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4422(text:text|group:Road_markings|preset:Edge_line|key:width)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4434(text:text|group:Road_markings|preset:Crossing_edge|key:width)
 msgid "Width of line (meters)"
-msgstr ""
+msgstr "Šířka čáry (v metrech)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:13423(item:name|group:For_the_body|preset:Wigs)
 msgid "Wigs"
-msgstr ""
+msgstr "Paruky"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:778(text:text|key:wikidata)
 msgid "Wikidata"
@@ -19414,11 +19416,11 @@ msgstr "Větrná turbína"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15296(list_entry:display_value|group:Relations|preset:Site|value:wind_farm)
 msgid "Wind farm"
-msgstr ""
+msgstr "Větrná elektrárna"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11545(check:text|group:Man_Made|preset:Weather_Station|key:weather:wind_vane)
 msgid "Wind vane - wind direction"
-msgstr ""
+msgstr "Větrná korouhvička - směr větru"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11210(combo:display_values|group:Man_Made|preset:Mineshaft|key:mineshaft_type)
 msgid "Winding"
@@ -19463,7 +19465,7 @@ msgstr "Zimní cesta"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14901(item:name|group:Land_use|preset:Winter_sports)
 msgid "Winter sports"
-msgstr ""
+msgstr "Zimní sporty"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9255(check:text|group:Facilities|preset:Toilets/Restrooms|key:toilets:paper_supplied)
 msgid "Wiping paper supplied"
@@ -19487,7 +19489,7 @@ msgstr "S obchodem"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:369(check:text|key:crossing:signals)
 msgid "With signals"
-msgstr ""
+msgstr "Se signály"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7246(list_entry:display_value|group:Leisure|preset:Animals|value:wolf)
 msgid "Wolf"
@@ -19868,11 +19870,11 @@ msgstr "domy patřící k ulici"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10966(text:text|group:Indoor_elements|preset:Indoor_beacon|key:beacon:major)
 msgid "ibeacon major number"
-msgstr ""
+msgstr "hlavní číslo ibeacon"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10965(text:text|group:Indoor_elements|preset:Indoor_beacon|key:beacon:minor)
 msgid "ibeacon minor number"
-msgstr ""
+msgstr "vedlejší číslo ibeacon"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15524(role:text|group:Routes|preset:Riding_Route|key:)
 msgid "infrastructure"
@@ -20603,12 +20605,12 @@ msgstr "Oba směry"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:229(combo:text|key:overtaking:hgv)
 msgctxt "overtaking"
 msgid "HGV Overtaking"
-msgstr ""
+msgstr "Předjíždění těžkých nákladních vozidel"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:232(combo:text|key:overtaking:hgv:conditional)
 msgctxt "overtaking"
 msgid "HGV Overtaking @"
-msgstr ""
+msgstr "Předjíždění těžkých nákladních vozidel @"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:226(list_entry:display_value|value:forward)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:230(list_entry:display_value|value:forward)
@@ -21252,7 +21254,7 @@ msgstr "Barva"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4396(combo:text|group:Road_markings|preset:Lane_divider|key:colour)
 msgctxt "colour"
 msgid "Color "
-msgstr ""
+msgstr "Barva "
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12193(combo:text|preset:Power_Tower|key:colour)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1663(combo:text|key:colour)
@@ -21730,7 +21732,7 @@ msgstr "Párek v rohlíku"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:868(list_entry:display_value|value:hotpot)
 msgctxt "cuisine"
 msgid "Hot pot"
-msgstr ""
+msgstr "Horký kotlík"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:869(list_entry:display_value|value:ice_cream)
 msgctxt "cuisine"
@@ -21910,7 +21912,7 @@ msgstr "Suši"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:904(list_entry:display_value|value:syrian)
 msgctxt "cuisine"
 msgid "Syrian"
-msgstr ""
+msgstr "Syrský"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:905(list_entry:display_value|value:taiwanese)
 msgctxt "cuisine"
@@ -22326,7 +22328,7 @@ msgstr "Motocykl"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4260(combo:text|group:Access_Restrictions|preset:Motorhome|key:motorhome)
 msgctxt "access"
 msgid "Motorhome"
-msgstr ""
+msgstr "Obytný vůz"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10861(combo:display_values|preset:Entrance|key:access)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1751(combo:display_values|key:dog)
@@ -22555,7 +22557,7 @@ msgstr "Turistické autobusy"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4296(combo:text|group:Access_Restrictions|preset:Trailer|key:trailer)
 msgctxt "access"
 msgid "Trailer"
-msgstr ""
+msgstr "Přívěs"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1751(combo:display_values|key:dog)
 msgctxt "access"
@@ -22979,7 +22981,7 @@ msgstr "Bruslení"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1099(list_entry:display_value|value:ski_jumping)
 msgctxt "sport"
 msgid "Ski jumping"
-msgstr ""
+msgstr "Skoky na lyžích"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1098(list_entry:display_value|value:skiing)
 msgctxt "sport"
@@ -24787,7 +24789,7 @@ msgstr "Pekárna"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10752(list_entry:display_value|group:Buildings|preset:Building_part|value:balcony)
 msgctxt "building"
 msgid "Balcony"
-msgstr ""
+msgstr "Balkón"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10697(list_entry:display_value|group:Buildings|preset:Building|value:barn)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10751(list_entry:display_value|group:Buildings|preset:Building_part|value:barn)
@@ -24954,7 +24956,7 @@ msgstr "Beton"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10754(list_entry:display_value|group:Buildings|preset:Building_part|value:conservatory)
 msgctxt "building"
 msgid "Conservatory"
-msgstr ""
+msgstr "Konzervatoř"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10768(combo:text|group:Buildings|preset:Building_construction|key:construction)
 msgctxt "building"
@@ -24983,7 +24985,7 @@ msgstr "Kulturní"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10755(list_entry:display_value|group:Buildings|preset:Building_part|value:deck)
 msgctxt "building"
 msgid "Deck"
-msgstr ""
+msgstr "Paluba"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10697(list_entry:display_value|group:Buildings|preset:Building|value:detached)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10717(list_entry:display_value|group:Buildings|preset:House|value:detached)
@@ -25405,7 +25407,7 @@ msgstr "Plast"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10757(list_entry:display_value|group:Buildings|preset:Building_part|value:porch)
 msgctxt "building"
 msgid "Porch"
-msgstr ""
+msgstr "Veranda"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10697(list_entry:display_value|group:Buildings|preset:Building|value:public)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10751(list_entry:display_value|group:Buildings|preset:Building_part|value:public)
@@ -26849,7 +26851,7 @@ msgstr "Zúžení silnice"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3715(list_entry:short_description|preset:Traffic_Hazard|value:school_zone)
 msgctxt "hazard"
 msgid "School zone"
-msgstr ""
+msgstr "Školní zóna"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14186(list_entry:short_description|group:Boundaries|preset:Hazardous_Area|value:shooting_range)
 msgctxt "hazard"
@@ -26942,7 +26944,7 @@ msgstr "Jednoduchý vývod požárního hydrantu umístěný pod zemí."
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9659(list_entry:short_description|group:Facilities|preset:Hydrant|value:underground)
 msgctxt "pipeline"
 msgid "A hydrant outlet located underground."
-msgstr ""
+msgstr "Vývod hydrantu umístěný v zemi."
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8730(list_entry:short_description|group:Emergency|preset:Fire_Hydrant|value:pillar)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9658(list_entry:short_description|group:Facilities|preset:Hydrant|value:pillar)
@@ -26964,7 +26966,7 @@ msgstr "Nástěnný požární hydrant."
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9660(list_entry:short_description|group:Facilities|preset:Hydrant|value:wall)
 msgctxt "pipeline"
 msgid "A wall-mounted hydrant."
-msgstr ""
+msgstr "Nástěnný hydrant."
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11300(combo:display_values|group:Man_Made|preset:Pipeline_Substation|key:substation)
 msgctxt "pipeline"
@@ -27501,7 +27503,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7641(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:agility_trail)
 msgctxt "leisure"
 msgid "Agility trail"
-msgstr ""
+msgstr "Překážková dráha"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9065(list_entry:display_value|group:Clubs|preset:Club|value:amateur_radio)
 msgctxt "leisure"
@@ -27517,7 +27519,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7642(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:archimedes_screw)
 msgctxt "leisure"
 msgid "Archimedes screw"
-msgstr ""
+msgstr "Archimédův šroub"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9066(list_entry:display_value|group:Clubs|preset:Club|value:art)
 msgctxt "leisure"
@@ -27528,7 +27530,7 @@ msgstr "Umění"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7676(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:mound)
 msgctxt "leisure"
 msgid "Artificial mound"
-msgstr ""
+msgstr "Umělý kopec"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9067(list_entry:display_value|group:Clubs|preset:Club|value:astronomy)
 msgctxt "leisure"
@@ -27549,7 +27551,7 @@ msgstr "Automobil"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7643(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:baby_swing)
 msgctxt "leisure"
 msgid "Baby swing"
-msgstr ""
+msgstr "Houpačka pro batolata"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7405(list_entry:display_value|group:Leisure|preset:Fitness_Station|value:balance_beam)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7645(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:balancebeam)
@@ -27561,7 +27563,7 @@ msgstr "Kladina"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7644(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:balance)
 msgctxt "leisure"
 msgid "Balancing device (unspecified)"
-msgstr ""
+msgstr "Balanční zařízení (nespecifikováno)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7545(check:text|group:Leisure|preset:Playground|key:playground:ball_pool)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7646(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:ball_pool)
@@ -27573,7 +27575,7 @@ msgstr "Suchý bazén"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7647(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:bannister_bars)
 msgctxt "leisure"
 msgid "Banister bars"
-msgstr ""
+msgstr "Šikmá bradla"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7548(check:text|group:Leisure|preset:Playground|key:playground:basketrotator)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7649(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:basketrotator)
@@ -27597,7 +27599,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7651(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:belt_bridge)
 msgctxt "leisure"
 msgid "Belt bridge"
-msgstr ""
+msgstr "Pásový most"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7287(list_entry:display_value|group:Leisure|preset:Rides|value:big_wheel)
 msgctxt "leisure"
@@ -27678,7 +27680,7 @@ msgstr "Kino"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7657(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:climbing)
 msgctxt "leisure"
 msgid "Climbing device (unspecified)"
-msgstr ""
+msgstr "Zařízení na lezení (nespecifikováno)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7557(check:text|group:Leisure|preset:Playground|key:playground:climbingframe)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7658(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:climbingframe)
@@ -27690,13 +27692,13 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7659(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:climbing_pole)
 msgctxt "leisure"
 msgid "Climbing pole"
-msgstr ""
+msgstr "Tyč na šplhání"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7559(check:text|group:Leisure|preset:Playground|key:playground:climbing_slope)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7660(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:climbing_slope)
 msgctxt "leisure"
 msgid "Climbing slope"
-msgstr ""
+msgstr "Lezecká rampa"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7560(check:text|group:Leisure|preset:Playground|key:playground:climbingwall)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7661(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:climbingwall)
@@ -27812,7 +27814,7 @@ msgstr "Fittness stanice"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7683(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:ride_on)
 msgctxt "leisure"
 msgid "Fixed riding device"
-msgstr ""
+msgstr "Pevné šlapací zařízení"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9083(list_entry:display_value|group:Clubs|preset:Club|value:freemasonry)
 msgctxt "leisure"
@@ -27857,7 +27859,7 @@ msgstr "Hamaka"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7668(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:hamster_wheel)
 msgctxt "leisure"
 msgid "Hamster wheel"
-msgstr ""
+msgstr "Křeččí kolo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9086(list_entry:display_value|group:Clubs|preset:Club|value:history)
 msgctxt "leisure"
@@ -27928,7 +27930,7 @@ msgstr "Mapa"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7674(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:marble_run)
 msgctxt "leisure"
 msgid "Marble run"
-msgstr ""
+msgstr "Kuličková dráha"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7295(list_entry:display_value|group:Leisure|preset:Rides|value:maze)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7572(check:text|group:Leisure|preset:Playground|key:playground:maze)
@@ -27941,7 +27943,7 @@ msgstr "Bludiště"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7675(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:monkey_bars)
 msgctxt "leisure"
 msgid "Monkey bars"
-msgstr ""
+msgstr "Stropní žebřiny"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9089(list_entry:display_value|group:Clubs|preset:Club|value:motorcycle)
 msgctxt "leisure"
@@ -28039,25 +28041,25 @@ msgstr "Horská dráha"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7684(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:rope_swing)
 msgctxt "leisure"
 msgid "Rope swing"
-msgstr ""
+msgstr "Zavěšená kladina"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7584(check:text|group:Leisure|preset:Playground|key:playground:rope_traverse)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7685(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:rope_traverse)
 msgctxt "leisure"
 msgid "Rope traverse"
-msgstr ""
+msgstr "Přechod po laně"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7585(check:text|group:Leisure|preset:Playground|key:playground:rotator)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7686(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:rotator)
 msgctxt "leisure"
 msgid "Rotating device (unspecified)"
-msgstr ""
+msgstr "Rotační zařízení (nespecifikováno)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7586(check:text|group:Leisure|preset:Playground|key:playground:rotating_seesaw)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7687(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:rotating_seesaw)
 msgctxt "leisure"
 msgid "Rotating seesaw"
-msgstr ""
+msgstr "Točící se vahadlová houpačka"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7587(check:text|group:Leisure|preset:Playground|key:playground:roundabout)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7688(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:roundabout)
@@ -28069,25 +28071,25 @@ msgstr "Kruhový objezd"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7689(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:sand)
 msgctxt "leisure"
 msgid "Sand play device (unspecified)"
-msgstr ""
+msgstr "Pískoviště (nespecifikováno)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7589(check:text|group:Leisure|preset:Playground|key:playground:sand_pulley)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7690(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:sand_pulley)
 msgctxt "leisure"
 msgid "Sand pulley"
-msgstr ""
+msgstr "Výtah na písek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7590(check:text|group:Leisure|preset:Playground|key:playground:sand_seesaw)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7691(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:sand_seesaw)
 msgctxt "leisure"
 msgid "Sand seesaw"
-msgstr ""
+msgstr "Vahadlová houpačka na písek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7591(check:text|group:Leisure|preset:Playground|key:playground:sand_wheel)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7692(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:sand_wheel)
 msgctxt "leisure"
 msgid "Sand wheel"
-msgstr ""
+msgstr "Koleso na písek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7592(check:text|group:Leisure|preset:Playground|key:playground:sandpit)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7693(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:sandpit)
@@ -28162,25 +28164,25 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7700(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:speaking_tube)
 msgctxt "leisure"
 msgid "Speaking tube"
-msgstr ""
+msgstr "Trubkový telefon"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7601(check:text|group:Leisure|preset:Playground|key:playground:spinner_bowl)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7702(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:spinner_bowl)
 msgctxt "leisure"
 msgid "Spinner bowl"
-msgstr ""
+msgstr "Kolotoč tvaru mísy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7602(check:text|group:Leisure|preset:Playground|key:playground:spinning_circle)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7703(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:spinning_circle)
 msgctxt "leisure"
 msgid "Spinning circle"
-msgstr ""
+msgstr "Kolotoč tvaru prstence"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7603(check:text|group:Leisure|preset:Playground|key:playground:spinning_disc)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7704(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:spinning_disc)
 msgctxt "leisure"
 msgid "Spinning disc"
-msgstr ""
+msgstr "Kolotoč tvaru disku"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7604(check:text|group:Leisure|preset:Playground|key:playground:splash_pad)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7705(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:splash_pad)
@@ -28197,7 +28199,7 @@ msgstr "Sport"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7706(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:spring_board)
 msgctxt "leisure"
 msgid "Spring board"
-msgstr ""
+msgstr "Deska na pružinách"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7606(check:text|group:Leisure|preset:Playground|key:playground:springy)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7707(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:springy)
@@ -28219,7 +28221,7 @@ msgstr "Stanice"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7708(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:stepping_post)
 msgctxt "leisure"
 msgid "Stepping post"
-msgstr ""
+msgstr "Pevné chůdy"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7608(check:text|group:Leisure|preset:Playground|key:playground:stepping_stones)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7709(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:stepping_stones)
@@ -28307,7 +28309,7 @@ msgstr "Polní, lesní cesta"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7766(item:name|preset:Traffic_park)
 msgctxt "leisure"
 msgid "Traffic park"
-msgstr ""
+msgstr "Dopravní hřiště"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7303(list_entry:display_value|group:Leisure|preset:Rides|value:train)
 msgctxt "leisure"
@@ -28347,36 +28349,36 @@ msgstr "Voda"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7719(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water_barrier)
 msgctxt "leisure"
 msgid "Water barrier"
-msgstr ""
+msgstr "Stavidlo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7620(check:text|group:Leisure|preset:Playground|key:playground:water_basin)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7720(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water_basin)
 msgctxt "leisure"
 msgid "Water basin"
-msgstr ""
+msgstr "Vodní nádrž"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7621(check:text|group:Leisure|preset:Playground|key:playground:water_cannon)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7721(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water_cannon)
 msgctxt "leisure"
 msgid "Water cannon"
-msgstr ""
+msgstr "Vodní dělo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7622(check:text|group:Leisure|preset:Playground|key:playground:water_channel)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7722(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water_channel)
 msgctxt "leisure"
 msgid "Water channel"
-msgstr ""
+msgstr "Vodní kanál"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7718(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water)
 msgctxt "leisure"
 msgid "Water device (unspecified)"
-msgstr ""
+msgstr "Vodní prvek (nespecifikováno)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7623(check:text|group:Leisure|preset:Playground|key:playground:water_seesaw)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7723(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water_seesaw)
 msgctxt "leisure"
 msgid "Water seesaw"
-msgstr ""
+msgstr "Vahadlová houpačka na vodu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7305(list_entry:display_value|group:Leisure|preset:Rides|value:water_slide)
 msgctxt "leisure"
@@ -28387,25 +28389,25 @@ msgstr "Vodní skluzavka"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7724(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water_sprayer)
 msgctxt "leisure"
 msgid "Water sprayer"
-msgstr ""
+msgstr "Mlžítko"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7625(check:text|group:Leisure|preset:Playground|key:playground:water_stream)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7725(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water_stream)
 msgctxt "leisure"
 msgid "Water stream"
-msgstr ""
+msgstr "Potok"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7626(check:text|group:Leisure|preset:Playground|key:playground:water_wheel)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7726(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:water_wheel)
 msgctxt "leisure"
 msgid "Water wheel"
-msgstr ""
+msgstr "Vodní kolo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7627(check:text|group:Leisure|preset:Playground|key:playground:wobble_bridge)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7727(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:wobble_bridge)
 msgctxt "leisure"
 msgid "Wobble bridge"
-msgstr ""
+msgstr "Vratký mostek"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9104(list_entry:display_value|group:Clubs|preset:Club|value:yachting)
 msgctxt "leisure"
@@ -28416,7 +28418,7 @@ msgstr "Jachtink"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7728(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:youth_bench)
 msgctxt "leisure"
 msgid "Youth bench"
-msgstr ""
+msgstr "Lavička pro mládež"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9105(list_entry:display_value|group:Clubs|preset:Club|value:youth_movement)
 msgctxt "leisure"
@@ -28488,7 +28490,7 @@ msgstr "Chemický"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9249(list_entry:display_value|group:Facilities|preset:Toilets/Restrooms|value:electric_hand_dryer)
 msgctxt "restroom"
 msgid "Electric hand dryer"
-msgstr ""
+msgstr "Elektrický sušič rukou"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7438(check:text|group:Leisure|preset:Public_bath|key:female)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9235(check:text|group:Facilities|preset:Toilets/Restrooms|key:female)
@@ -28506,7 +28508,7 @@ msgstr "Zarovnaný"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9248(combo:text|group:Facilities|preset:Toilets/Restrooms|key:toilets:hands_drying)
 msgctxt "restroom"
 msgid "Hands drying facilities "
-msgstr ""
+msgstr "Zařízení na sušení rukou "
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7439(check:text|group:Leisure|preset:Public_bath|key:male)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9236(check:text|group:Facilities|preset:Toilets/Restrooms|key:male)
@@ -28524,7 +28526,7 @@ msgstr "Žádné"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9250(list_entry:display_value|group:Facilities|preset:Toilets/Restrooms|value:paper_towel)
 msgctxt "restroom"
 msgid "Paper towels"
-msgstr ""
+msgstr "Papírové utěrky"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9239(combo:display_values|group:Facilities|preset:Toilets/Restrooms|key:toilets:disposal)
 msgctxt "restroom"
@@ -28534,12 +28536,12 @@ msgstr "Kadibudka"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9252(list_entry:display_value|group:Facilities|preset:Toilets/Restrooms|value:towel)
 msgctxt "restroom"
 msgid "Towel"
-msgstr ""
+msgstr "Ručník"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9251(list_entry:display_value|group:Facilities|preset:Toilets/Restrooms|value:towel_cabinet)
 msgctxt "restroom"
 msgid "Towel cabinet"
-msgstr ""
+msgstr "Věšák na ručníky"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9239(combo:text|group:Facilities|preset:Toilets/Restrooms|key:toilets:disposal)
 msgctxt "restroom"
@@ -29734,7 +29736,7 @@ msgstr "Hmyzí hotel"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11543(checkgroup:text|group:Man_Made|preset:Weather_Station)
 msgctxt "man_made"
 msgid "Instruments"
-msgstr ""
+msgstr "Nástroje"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11624(item:name|group:Man_Made|preset:MDF)
 msgctxt "man_made"
@@ -30259,7 +30261,7 @@ msgstr "Paifang"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12591(list_entry:display_value|group:Historic_Places_&_Objects|preset:Ceremonial_gate|value:tam_quan)
 msgctxt "ceremonial_gate"
 msgid "Tam quan"
-msgstr ""
+msgstr "Tam quan"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12587(list_entry:display_value|group:Historic_Places_&_Objects|preset:Ceremonial_gate|value:torii)
 msgctxt "ceremonial_gate"
@@ -30649,7 +30651,7 @@ msgstr "Budova soukromých garáží"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15011(item:name|preset:Harbour_area)
 msgctxt "Landuse"
 msgid "Harbour area"
-msgstr ""
+msgstr "Přístavní oblast"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14983(item:name|preset:Industrial_area)
 msgctxt "Landuse"
@@ -30839,7 +30841,7 @@ msgstr "Ropa"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15008(multiselect:display_values|preset:Port|key:port)
 msgctxt "industrial"
 msgid "Passenger"
-msgstr ""
+msgstr "Pasažér"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14988(combo:display_values|preset:Industrial_area|key:industrial)
 msgctxt "industrial"
@@ -30849,12 +30851,12 @@ msgstr "Přístav"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15008(multiselect:text|preset:Port|key:port)
 msgctxt "industrial"
 msgid "Port type"
-msgstr ""
+msgstr "Typ přístavu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15008(multiselect:display_values|preset:Port|key:port)
 msgctxt "industrial"
 msgid "Roll-on roll-off"
-msgstr ""
+msgstr "Nájezd sjezd"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14988(combo:display_values|preset:Industrial_area|key:industrial)
 msgctxt "industrial"

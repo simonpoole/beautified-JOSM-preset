@@ -1,14 +1,15 @@
 # 
 # Translators:
 # Aapo S., 2018
+# Lasse Liehu-Inui <larso@gmx.com>, 2026
 # Lasse Liehu-Inui <larso@gmx.com>, 2023
 # Mika Laari <laari@iki.fi>, 2017-2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
-"Last-Translator: Lasse Liehu-Inui <larso@gmx.com>, 2023\n"
+"Last-Translator: Lasse Liehu-Inui <larso@gmx.com>, 2026\n"
 "Language-Team: Finnish (http://app.transifex.com/openstreetmap/presets/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -444,8 +445,8 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
@@ -5774,7 +5775,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:76(combo:display_values|key:incline)
 msgid "Down"
-msgstr ""
+msgstr "Alas"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5393(item:name|group:Aerialway|preset:Drag_Lift)
 msgid "Drag Lift"
@@ -8125,6 +8126,7 @@ msgstr "Hindutemppeli"
 msgid "Hippopotamus"
 msgstr ""
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr "Historiallinen"
@@ -9437,7 +9439,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5073(list_entry:display_value|group:Shipping|preset:Seamark|value:light)
 msgid "Light"
-msgstr ""
+msgstr "Vaalea"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:5183(item:name|group:Railway|preset:Light_Rail)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6024(check:text|group:Public_Transport|preset:Stop_Position|key:light_rail)
@@ -18527,7 +18529,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:76(combo:display_values|key:incline)
 msgid "Up"
-msgstr "Ylempi"
+msgstr "Ylös"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:115(combo:text|key:mtb:scale:uphill)
 msgid "Uphill MTB Scale"

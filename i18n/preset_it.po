@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Manuel Tassi <mannivuwiki@gmail.com>, 2022-2026\n"
 "Language-Team: Italian (http://app.transifex.com/openstreetmap/presets/language/it/)\n"
@@ -452,8 +452,8 @@ msgstr "90°"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
@@ -8133,6 +8133,7 @@ msgstr "Tempio Hindu"
 msgid "Hippopotamus"
 msgstr "Ippopotamo"
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr "Storico"
@@ -28284,7 +28285,7 @@ msgstr "Dosso lungo"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7713(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:teenshelter)
 msgctxt "leisure"
 msgid "Teen shelter"
-msgstr "Rifugio per adolescenti"
+msgstr "Centro di accoglienza per adolescenti"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9101(list_entry:display_value|group:Clubs|preset:Club|value:theatre)
 msgctxt "leisure"
@@ -28952,7 +28953,7 @@ msgstr "Sì"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9018(item:name|group:Social_Facilities|preset:Shelter)
 msgctxt "social_facility"
 msgid "Shelter"
-msgstr "Riparo"
+msgstr "Casa di accoglienza"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9357(list_entry:display_value|group:Facilities|preset:Post_Box|value:CIIIR)
 msgctxt "post box"

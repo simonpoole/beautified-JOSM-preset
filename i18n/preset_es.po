@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Ignacio L'Episcopo, 2019,2021-2026\n"
 "Language-Team: Spanish (http://app.transifex.com/openstreetmap/presets/language/es/)\n"
@@ -453,9 +453,9 @@ msgstr "90°"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
-msgstr ""
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
+msgstr "?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Límite '} ?{'{%boundary} ' | ''} ?{'({admin_level})' | ''}"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
 msgid ""
@@ -3730,7 +3730,7 @@ msgstr "Bicicleta de carga"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6900(combo:text|group:Food+Drinks|preset:Diet|key:diet:carnivore)
 msgid "Carnivore"
-msgstr ""
+msgstr "Carnívoro"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15919(item:name|group:Crafts|preset:Carpenter)
 msgid "Carpenter"
@@ -6862,7 +6862,7 @@ msgstr "Zona de restaurantes"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:824(combo:text|key:food)
 msgid "Food available"
-msgstr ""
+msgstr "Comida disponible"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6696(group:name|group:Food+Drinks)
 msgid "Food+Drinks"
@@ -8134,6 +8134,7 @@ msgstr "Templo Hindú"
 msgid "Hippopotamus"
 msgstr "Hipopótamo"
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr "Histórico"
@@ -9028,7 +9029,7 @@ msgstr "Altura del bordillo (derecha)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6899(combo:text|group:Food+Drinks|preset:Diet|key:diet:keto)
 msgid "Keto"
-msgstr ""
+msgstr "Keto"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16023(item:name|group:Crafts|preset:Key_cutter)
 msgid "Key cutter"
@@ -13061,7 +13062,7 @@ msgstr "Muelle"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:940(check:text|key:piercing)
 msgid "Piercing service"
-msgstr ""
+msgstr "Servicio de piercings"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7221(list_entry:display_value|group:Leisure|preset:Animals|value:pig)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9180(multiselect:display_values|group:Animal|preset:Animal_breeding|key:animal_breeding)
@@ -13688,7 +13689,7 @@ msgstr "Indicador de trayectoria de aproximación de precisión (PAPI)"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:824(combo:display_values|key:food)
 msgid "Prepared meals"
-msgstr ""
+msgstr "Comidas preparadas"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1304(combo:display_values|key:denomination)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1315(list_entry:display_value|value:presbyterian)
@@ -16133,7 +16134,7 @@ msgstr "Suavidad"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:824(combo:display_values|key:food)
 msgid "Snacks"
-msgstr ""
+msgstr "Snacks"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7234(list_entry:display_value|group:Leisure|preset:Animals|value:snake)
 msgid "Snake"
@@ -16522,7 +16523,7 @@ msgstr "Papelería"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 msgid "Statistical"
-msgstr ""
+msgstr "Estadístico"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16408(combo:display_values|group:Offices|preset:Government|key:government)
 msgid "Statistics"
@@ -17982,7 +17983,7 @@ msgstr "Parada de tranvía"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7336(item:name|group:Leisure|preset:Trampoline_park)
 msgid "Trampoline park"
-msgstr ""
+msgstr "Parque de trampolines"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12234(label:text|preset:Pole_with_Transformer)
 msgid "Transformer Attributes:"
@@ -28311,7 +28312,7 @@ msgstr "Pista"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7766(item:name|preset:Traffic_park)
 msgctxt "leisure"
 msgid "Traffic park"
-msgstr ""
+msgstr "Parque de educación vial"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7303(list_entry:display_value|group:Leisure|preset:Rides|value:train)
 msgctxt "leisure"

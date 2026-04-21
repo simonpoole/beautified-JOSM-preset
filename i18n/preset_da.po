@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: ERYpTION, 2025-2026\n"
 "Language-Team: Danish (http://app.transifex.com/openstreetmap/presets/language/da/)\n"
@@ -447,8 +447,8 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
@@ -3724,7 +3724,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6900(combo:text|group:Food+Drinks|preset:Diet|key:diet:carnivore)
 msgid "Carnivore"
-msgstr ""
+msgstr "Kødæder"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15919(item:name|group:Crafts|preset:Carpenter)
 msgid "Carpenter"
@@ -4375,7 +4375,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8421(item:name|group:Education|preset:College)
 msgid "College"
-msgstr ""
+msgstr "Videregående uddannelse"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4153(item:name|group:Passageways|preset:Colonnade)
 msgid "Colonnade"
@@ -6856,7 +6856,7 @@ msgstr "Madmarked"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:824(combo:text|key:food)
 msgid "Food available"
-msgstr ""
+msgstr "Mad til rådighed"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6696(group:name|group:Food+Drinks)
 msgid "Food+Drinks"
@@ -8128,6 +8128,7 @@ msgstr "Hindu-tempel"
 msgid "Hippopotamus"
 msgstr ""
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr "Historisk"
@@ -17976,7 +17977,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7336(item:name|group:Leisure|preset:Trampoline_park)
 msgid "Trampoline park"
-msgstr ""
+msgstr "Trampolinpark"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12234(label:text|preset:Pole_with_Transformer)
 msgid "Transformer Attributes:"
@@ -24927,7 +24928,7 @@ msgstr "Ler (rødt grus)"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10769(list_entry:display_value|group:Buildings|preset:Building_construction|value:college)
 msgctxt "building"
 msgid "College"
-msgstr ""
+msgstr "Videregående uddannelse"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10753(list_entry:display_value|group:Buildings|preset:Building_part|value:column)
 msgctxt "building"

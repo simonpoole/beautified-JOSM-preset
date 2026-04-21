@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Diego Eduardo Ferreira Biavati <diegobiavati@gmail.com>, 2022-2024\n"
 "Language-Team: Portuguese (Brazil) (http://app.transifex.com/openstreetmap/presets/language/pt_BR/)\n"
@@ -447,8 +447,8 @@ msgstr "90°"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
@@ -3544,7 +3544,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16546(item:name|group:Offices|preset:Camping)
 msgid "Camping"
-msgstr ""
+msgstr "Campismo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:6654(checkgroup:text|group:Accommodation|preset:Campsite)
 msgid "Camping type"
@@ -5372,7 +5372,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9699(item:name|group:Facilities|preset:Device_Charging_Station)
 msgid "Device Charging Station"
-msgstr ""
+msgstr "Estação de carregamento de dispositivos"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:197(list_entry:short_description|value:diagonal)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:200(list_entry:short_description|value:diagonal)
@@ -7693,7 +7693,7 @@ msgstr "Solo"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11518(check:text|group:Man_Made|preset:Monitoring_Station|key:monitoring:groundwater)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8744(list_entry:display_value|group:Emergency|preset:Fire_Hydrant|value:groundwater)
 msgid "Groundwater"
-msgstr ""
+msgstr "Águas subterrâneas"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8989(item:name|group:Social_Facilities|preset:Group_Home)
 msgid "Group Home"
@@ -8128,6 +8128,7 @@ msgstr "Templo Hindu"
 msgid "Hippopotamus"
 msgstr ""
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr "Histórico"
@@ -10829,7 +10830,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7943(combo:display_values|group:Culture|preset:Museum|key:museum_type)
 msgid "Municipal"
-msgstr ""
+msgstr "Municipal"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14254(item:name|group:Places|preset:Municipality)
 msgid "Municipality"
@@ -11181,7 +11182,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15570(combo:display_values|group:Routes|preset:Inline_Skating_Route|key:network)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7943(combo:display_values|group:Culture|preset:Museum|key:museum_type)
 msgid "National"
-msgstr ""
+msgstr "Nacional"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14156(item:name|group:Boundaries|preset:National_Park)
 msgid "National Park"
@@ -12843,7 +12844,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11521(check:text|group:Man_Made|preset:Monitoring_Station|key:monitoring:pedestrian)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3219(combo:text|group:Ways|preset:Dedicated_Cycleway|key:foot)
 msgid "Pedestrians"
-msgstr ""
+msgstr "Travessia de pedestres"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8539(list_entry:display_value|group:Health|preset:Dentist|value:paediatric_dentistry)
 msgid "Pediatric dentistry"
@@ -14514,7 +14515,7 @@ msgstr "Religião"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14908(item:name|group:Land_use|preset:Religious)
 msgid "Religious"
-msgstr ""
+msgstr "Religiosa"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:2343(check:text|key:recording:remote)
 msgid "Remote"
@@ -15430,7 +15431,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3303(check:text|group:Ways|preset:Steps|key:platform_lift:seat)
 msgid "Seat"
-msgstr ""
+msgstr "Assento"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9542(combo:text|group:Facilities|preset:Bench|key:direction)
 msgid "Seat direction"
@@ -21346,7 +21347,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:8776(list_entry:display_value|group:Emergency|preset:Fire_Hydrant|value:purple)
 msgctxt "colour"
 msgid "Purple"
-msgstr ""
+msgstr "Roxo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1664(list_entry:display_value|value:red)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:4385(list_entry:display_value|group:Road_markings|preset:Stop_line|value:red)
@@ -24976,7 +24977,7 @@ msgstr "Estábulo"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1835(combo:display_values|key:building:use)
 msgctxt "building"
 msgid "Cultural"
-msgstr ""
+msgstr "Cultural"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10755(list_entry:display_value|group:Buildings|preset:Building_part|value:deck)
 msgctxt "building"
@@ -25002,7 +25003,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1841(list_entry:short_description|value:dome)
 msgctxt "building"
 msgid "Dome"
-msgstr ""
+msgstr "Domo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10697(list_entry:display_value|group:Buildings|preset:Building|value:dormitory)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10751(list_entry:display_value|group:Buildings|preset:Building_part|value:dormitory)
@@ -25271,7 +25272,7 @@ msgstr "MDF"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10719(list_entry:display_value|group:Buildings|preset:House|value:maisonette)
 msgctxt "building"
 msgid "Maisonette"
-msgstr ""
+msgstr "Duplex"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:10815(item:name|group:Roof_type|preset:Mansard)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1847(list_entry:short_description|value:mansard)
@@ -26736,7 +26737,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3698(list_entry:short_description|preset:Traffic_Hazard|value:curve)
 msgctxt "hazard"
 msgid "Curve"
-msgstr ""
+msgstr "Curva"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3699(list_entry:short_description|preset:Traffic_Hazard|value:curves)
 msgctxt "hazard"
@@ -26746,7 +26747,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3700(list_entry:short_description|preset:Traffic_Hazard|value:cyclists)
 msgctxt "hazard"
 msgid "Cyclists"
-msgstr ""
+msgstr "Ciclistas"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3701(list_entry:short_description|preset:Traffic_Hazard|value:dangerous_junction)
 msgctxt "hazard"
@@ -26792,12 +26793,12 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3707(list_entry:short_description|preset:Traffic_Hazard|value:ice)
 msgctxt "hazard"
 msgid "Ice"
-msgstr ""
+msgstr "Neve ou gelo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3708(list_entry:short_description|preset:Traffic_Hazard|value:landslide)
 msgctxt "hazard"
 msgid "Landslide"
-msgstr ""
+msgstr "Deslizamento de terra"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3709(list_entry:short_description|preset:Traffic_Hazard|value:loose_gravel)
 msgctxt "hazard"
@@ -26827,7 +26828,7 @@ msgstr "Outro"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3712(list_entry:short_description|preset:Traffic_Hazard|value:pedestrians)
 msgctxt "hazard"
 msgid "Pedestrians"
-msgstr ""
+msgstr "Travessia de pedestres"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3713(list_entry:short_description|preset:Traffic_Hazard|value:queues_likely)
 msgctxt "hazard"
@@ -26862,12 +26863,12 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3717(list_entry:short_description|preset:Traffic_Hazard|value:slippery)
 msgctxt "hazard"
 msgid "Slippery"
-msgstr ""
+msgstr "Pavimento escorregadio"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3718(list_entry:short_description|preset:Traffic_Hazard|value:turn)
 msgctxt "hazard"
 msgid "Turn"
-msgstr ""
+msgstr "Viragem"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:3719(list_entry:short_description|preset:Traffic_Hazard|value:turns)
 msgctxt "hazard"
@@ -27565,7 +27566,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7646(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:ball_pool)
 msgctxt "leisure"
 msgid "Ball Pool"
-msgstr ""
+msgstr "Piscina de bolas"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7546(check:text|group:Leisure|preset:Playground|key:playground:bannister_bars)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7647(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:bannister_bars)
@@ -27606,7 +27607,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7652(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:blackboard)
 msgctxt "leisure"
 msgid "Blackboard"
-msgstr ""
+msgstr "Quadro em lousa"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9069(list_entry:display_value|group:Clubs|preset:Club|value:board_games)
 msgctxt "leisure"
@@ -27665,7 +27666,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7656(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:chute)
 msgctxt "leisure"
 msgid "Chute"
-msgstr ""
+msgstr "Tubo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9072(list_entry:display_value|group:Clubs|preset:Club|value:cinema)
 msgctxt "leisure"
@@ -27778,7 +27779,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7664(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:excavator)
 msgctxt "leisure"
 msgid "Excavator"
-msgstr ""
+msgstr "Escavadeira"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7564(check:text|group:Leisure|preset:Playground|key:playground:exercise)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7665(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:exercise)
@@ -28102,7 +28103,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7694(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:seat)
 msgctxt "leisure"
 msgid "Seat"
-msgstr ""
+msgstr "Assento"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7594(check:text|group:Leisure|preset:Playground|key:playground:seesaw)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7695(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:seesaw)
@@ -28114,7 +28115,7 @@ msgstr "Gangorra"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7696(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:sieve)
 msgctxt "leisure"
 msgid "Sieve"
-msgstr ""
+msgstr "Peneira"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7413(list_entry:display_value|group:Leisure|preset:Fitness_Station|value:sign)
 msgctxt "leisure"
@@ -28290,7 +28291,7 @@ msgstr "Teatro"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7714(list_entry:display_value|group:Playground_equipment|preset:Playground_equipment|value:tire_swing)
 msgctxt "leisure"
 msgid "Tire Swing"
-msgstr ""
+msgstr "Balanço de pneu"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9102(list_entry:display_value|group:Clubs|preset:Club|value:tourism)
 msgctxt "leisure"
@@ -29427,12 +29428,12 @@ msgstr "Anúncio"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11032(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
 msgid "Athletic"
-msgstr ""
+msgstr "Atletismo"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11032(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
 msgid "Governmental"
-msgstr ""
+msgstr "Governamental"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11032(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
@@ -29442,7 +29443,7 @@ msgstr "Militar"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11032(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
 msgid "Municipal"
-msgstr ""
+msgstr "Municipal"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:11032(combo:display_values|group:Man_Made|preset:Flagpole|key:flag:type)
 msgctxt "flag"
@@ -30242,7 +30243,7 @@ msgstr "Memorial de guerra"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12589(list_entry:display_value|group:Historic_Places_&_Objects|preset:Ceremonial_gate|value:hongsalmun)
 msgctxt "ceremonial_gate"
 msgid "Hongsalmun"
-msgstr ""
+msgstr "Hongsalmun"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:12590(list_entry:display_value|group:Historic_Places_&_Objects|preset:Ceremonial_gate|value:iljumun)
 msgctxt "ceremonial_gate"

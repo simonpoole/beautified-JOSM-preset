@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Matija N, 2025-2026\n"
 "Language-Team: Croatian (http://app.transifex.com/openstreetmap/presets/language/hr/)\n"
@@ -443,8 +443,8 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
@@ -8124,6 +8124,7 @@ msgstr "Hinduistički hram"
 msgid "Hippopotamus"
 msgstr ""
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr ""
@@ -14506,7 +14507,7 @@ msgstr "Relacije"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:511(list_entry:short_description|value:religion)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9810(combo:display_values|group:Advertising|preset:Totem|key:message)
 msgid "Religion"
-msgstr ""
+msgstr "Religija"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14908(item:name|group:Land_use|preset:Religious)
 msgid "Religious"
@@ -31112,7 +31113,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16718(item:name|group:Offices|preset:Religion)
 msgctxt "office"
 msgid "Religion"
-msgstr ""
+msgstr "Religija"
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:0(None)

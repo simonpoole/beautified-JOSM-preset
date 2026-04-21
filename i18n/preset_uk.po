@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Presets\n"
-"POT-Creation-Date: 2026-04-07 16:37+0200\n"
+"POT-Creation-Date: 2026-04-08 10:10+0200\n"
 "PO-Revision-Date: 2015-06-19 16:53+0000\n"
 "Last-Translator: Михаил Девиченский <140mic@gmail.com>, 2022-2026\n"
 "Language-Team: Ukrainian (http://app.transifex.com/openstreetmap/presets/language/uk/)\n"
@@ -447,8 +447,8 @@ msgstr "90°"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15251(item:name_template|group:Relations|preset:Boundary)
 msgid ""
-"?{'{name} ' | '{postal_code} ' | ''} ?{'({%boundary}' | '('} ?{' "
-"{admin_level})' | ')'}"
+"?{'{name} ' | '{postal_code} ' | '{ref} ' | 'Boundary '} ?{'{%boundary} ' | "
+"''} ?{'({admin_level})' | ''}"
 msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1345(list_entry:short_description|value:smoke)
@@ -1999,7 +1999,7 @@ msgstr "Витвір мистецтва"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14401(item:name|group:Geography|preset:Arête)
 msgid "Arête"
-msgstr ""
+msgstr "Гребень"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1237(text:text|key:ascent)
 msgid "Ascent (m)"
@@ -8128,6 +8128,7 @@ msgstr "Індуський храм"
 msgid "Hippopotamus"
 msgstr ""
 
+#: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15257(combo:display_values|group:Relations|preset:Boundary|key:boundary)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9631(check:text|group:Facilities|preset:Drinking_Water|key:historic)
 msgid "Historic"
 msgstr "Історичні місця"
@@ -14510,7 +14511,7 @@ msgstr "Зв’язки"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:511(list_entry:short_description|value:religion)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:9810(combo:display_values|group:Advertising|preset:Totem|key:message)
 msgid "Religion"
-msgstr ""
+msgstr "Релігія"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14908(item:name|group:Land_use|preset:Religious)
 msgid "Religious"
@@ -16805,7 +16806,7 @@ msgstr ""
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:7466(multiselect:text|group:Leisure|preset:Dance|key:dance:style)
 msgid "Styles"
-msgstr ""
+msgstr "Стилі"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:15268(role:text|group:Relations|preset:Boundary|key:subarea)
 msgid "Sub area"
@@ -22882,7 +22883,7 @@ msgstr "Пелота"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1084(list_entry:display_value|value:pickleball)
 msgctxt "sport"
 msgid "Pickleball"
-msgstr ""
+msgstr "Піклбол"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1024(combo:display_values|key:leisure)
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:1027(combo:display_values|key:leisure)
@@ -30612,7 +30613,7 @@ msgstr ""
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14863(combo:text|group:Land_use|preset:Garden|key:garden:style)
 msgctxt "garden"
 msgid "Style"
-msgstr ""
+msgstr "Стиль"
 
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:14862(combo:text|group:Land_use|preset:Garden|key:garden:type)
 msgctxt "garden"
@@ -31116,7 +31117,7 @@ msgstr "Регіональні пішохідні маршрути"
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:16718(item:name|group:Offices|preset:Religion)
 msgctxt "office"
 msgid "Religion"
-msgstr ""
+msgstr "Релігія"
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C:\Users\simon\git\beautified-JOSM-preset\build\temp/v4.xml:0(None)
