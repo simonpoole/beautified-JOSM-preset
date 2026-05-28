@@ -30,6 +30,8 @@ https&#58;//github&#46;com/simonpoole/beautified-JOSM-preset/releases/latest/dow
 
 these will always return the current release of the specified file. 
 
+_Note: you can only have this or the original default preset active at any one time in JOSM._
+
 ## Information for developers
 
 ### Understanding the preset schema
