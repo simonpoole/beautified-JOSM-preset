@@ -721,6 +721,12 @@
         <list_entry value="no_entry" display_value="No entry" icon="${relation_turn_restriction_no_entry}" />
         <list_entry value="no_exit" display_value="No exit" icon="${relation_turn_restriction_no_exit}" />
     </chunk>
+    <chunk id="aerialway_access_values">
+        <list_entry value="entry" display_value="Entry"/>
+        <list_entry value="exit" display_value="Exit"/>
+        <list_entry value="both" display_value="Both entry and exit"/>
+        <list_entry value="no" display_value="No access" />
+    </chunk>
     <!-- Item chunks -->
     <chunk id="optional_speech_output">
         <optional>
@@ -2628,6 +2634,20 @@
         <reference ref="additonal_aerialway_tags"/>
         <check key="aerialway:bubble" text="Has bubble?" disable_off="true"/>
     </chunk>
+    <chunk id="aerialway_usage">
+        <multiselect key="usage" text="Usage" values="industrial;freight;tourism" display_values="Freight;Industrial;Tourism" values_context="usage" values_searchable="true" />
+    </chunk>
+    <chunk id="aerialway_access">
+        <combo text="Access" key="aerialway:access" >
+            <reference ref="aerialway_access_values"/>
+        </combo>
+        <combo text="Summer access" key="aerialway:summer:access" >
+            <reference ref="aerialway_access_values"/>
+        </combo>
+        <combo text="Winter access" key="aerialway:winter:access" >
+            <reference ref="aerialway_access_values"/>
+        </combo>
+    </chunk>
     <chunk id="playground_theme">
         <combo text="Theme" key="playground:theme" values="barrel,bee,bridge,castle,cat,cow,dog,dragon,helicopter,horse,locomotive,octopus,plane,rocket,ship,spiderweb,tiger,train" 
             display_values="Barrel,Bee,Bridge,Castle,Cat,Cow,Dog,Dragon,Helicopter,Horse,Locomotive,Octopus,Plane,Rocket,Ship,Spiderweb,Tiger,Train"/>
@@ -3033,9 +3053,6 @@
     </chunk>
     <chunk id="trail_visibility">
         <combo key="trail_visibility" text="Visibility" values="excellent,good,intermediate,bad,horrible,no" display_values="Excellent,Good,Intermediate,Bad,Horrible,Not visible" values_context="trail_visibility" values_sort="false"/>
-    </chunk>
-    <chunk id="aerialway_usage">
-        <multiselect key="usage" text="Usage" values="industrial;freight;tourism" display_values="Freight;Industrial;Tourism" values_context="usage" values_searchable="true" />
     </chunk>
     <chunk id="map_base">
         <reference ref="optional_name_ref_operator" />
@@ -6183,6 +6200,7 @@
                 <preset_link preset_name="No name"/>
                 <optional>
                     <reference ref="aerialway_usage"/>
+                     <reference ref="aerialway_access"/>
                 </optional>
             </item> <!-- Station -->
             <item name="Pylon" icon="${transport_aerialway_pylon}" type="node" preset_name_label="true">
