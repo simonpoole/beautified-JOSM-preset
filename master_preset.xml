@@ -11981,7 +11981,8 @@
             <optional>
                 <reference ref="name_ref_operator"/>
                 <check key="building" value_on="storage_tank" text="Storage tank building" values_context="building" disable_off="true" values_searchable="true" match="keyvalue" />
-                <combo key="content" text="Content" values="fuel,manure,oil,sewage,silage,slurry,water,wine" display_values="Fuel,Manure,Oil,Sewage,Silage,Slurry,Water,Wine" values_context="content"/>
+                <combo key="content" text="Content" values="beer,cement,drinking_water,fuel,gas,hot_water,manure,oil,salt,sewage,silage,slurry,wastewater,water,wine" 
+                    display_values="Beer,Cement,Drinking water,Fuel,Gas,Hot water,Manure,Oil,Salt,Sewage,Silage,Slurry,Wastewater,Water,Wine" values_context="content"/>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
                 <reference ref="additional_building_tags"/>
             </optional>
@@ -11998,6 +11999,8 @@
             <key key="man_made" value="bunker_silo"/>
             <optional>
                 <reference ref="name_ref_operator"/>
+                <combo key="content" text="Content" values="crop,grain,manure,salt,silage" 
+                    display_values="Crops,Grain,Manure,Salt,Silage" values_context="content"/>
             </optional>
         </item> <!-- Bunker Silo -->
         <item name="Crane" icon="${man_made_crane}" type="node,way,closedway" preset_name_label="true">
