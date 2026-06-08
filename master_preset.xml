@@ -9474,7 +9474,9 @@
             <link wiki="Tag:emergency=fire_extinguisher"/>
             <space/>
             <key key="emergency" value="fire_extinguisher"/>
-            <reference ref="ref_operator" />
+            <optional>
+                <reference ref="ref_operator" />
+            </optional>
             <reference ref="level"/>
             <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
         </item> <!-- Fire Extinguisher -->
