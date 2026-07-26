@@ -1905,7 +1905,7 @@
             <list_entry value="no" display_value="None" />
             <list_entry value="load-unload" display_value="Loading and unloading only" />
         </combo>
-        <combo key="maxstay:conditional" text="Time Limit" values_no_i18n="true" values_sort="false" match="none" editable="true">
+        <combo key="maxstay:conditional" text="Time Limit @" values_no_i18n="true" values_sort="false" match="none" editable="true">
             <reference ref="maxstay_conditional_values"/>
             <list_entry value="no @ (Mo-Fr 09:00-19:00)"/>
             <list_entry value="load-unload @ (Mo-Fr 09:00-19:00)"/>
