@@ -15100,6 +15100,13 @@
                 <reference ref="wikipedia_wikidata"/>
             </optional>
         </item> <!-- Administrative -->
+        <item name="Census" icon="${geography_boundary_census}" type="way,closedway,relation,multipolygon" preset_name_label="true" deprecated="true">
+            <link wiki="Tag:boundary=census"/>
+            <space/>
+            <key key="boundary" value="census"/>
+            <text key="name" text="Name"/>
+            <reference ref="wikipedia_wikidata"/>
+        </item> <!-- Political -->
         <item name="Political" icon="${geography_boundary_political}" type="closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=political"/>
             <space/>
@@ -15114,13 +15121,6 @@
             <key key="boundary" value="postal_code"/>
             <text key="postal_code" text="Postal Code"/>
         </item> <!-- Postal Code -->
-        <item name="National Park" icon="${geography_boundary_natural_park}" type="closedway,relation,multipolygon" preset_name_label="true">
-            <link wiki="Tag:boundary=national_park"/>
-            <space/>
-            <key key="boundary" value="national_park"/>
-            <text key="name" text="Name"/>
-            <reference ref="wikipedia_wikidata_images"/>
-        </item> <!-- National Park -->
         <item name="Protected Area" icon="${geography_boundary_protected_area}" type="closedway,relation,multipolygon" preset_name_label="true">
             <link wiki="Tag:boundary=protected_area"/>
             <space/>
@@ -15134,6 +15134,27 @@
                 <text key="start_date" text="Start date" value_type="date"/>
             </optional>
         </item> <!-- Protected Area -->
+        <item name="Maritime" icon="${geography_boundary_maritime}" type="way,closedway,relation,multipolygon" preset_name_label="true">
+            <link wiki="Tag:boundary=maritime"/>
+            <space/>
+            <key key="boundary" value="maritime"/>
+            <combo key="border_type" text="Border type" values="baseline,territorial,contiguous,eez" display_values="Baseline,Territorial,Contiguous,EEZ"/>
+            <text key="name" text="Name"/>
+        </item> <!-- Maritime -->
+        <item name="National Park" icon="${geography_boundary_natural_park}" type="closedway,relation,multipolygon" preset_name_label="true">
+            <link wiki="Tag:boundary=national_park"/>
+            <space/>
+            <key key="boundary" value="national_park"/>
+            <text key="name" text="Name"/>
+            <reference ref="wikipedia_wikidata_images"/>
+        </item> <!-- National Park -->
+        <item name="Statistical" icon="${geography_boundary_statistical}" type="way,closedway,relation,multipolygon" preset_name_label="true">
+            <link wiki="Tag:boundary=statistical"/>
+            <space/>
+            <key key="boundary" value="statistical"/>
+            <text key="name" text="Name"/>
+            <reference ref="wikipedia_wikidata"/>
+        </item> <!-- Statistical -->
         <item name="Hazardous Area" icon="${geography_boundary_hazardous_area}" type="closedway,relation" preset_name_label="true">
             <link wiki="Tag:boundary=hazard" />
             <space />
@@ -15152,13 +15173,6 @@
                 <text key="related_law" text="Related law" />
             </optional>
         </item> <!-- Hazardous Area -->
-        <item name="Maritime" icon="${geography_boundary_maritime}" type="way,closedway,relation,multipolygon" preset_name_label="true">
-            <link wiki="Tag:boundary=maritime"/>
-            <space/>
-            <key key="boundary" value="maritime"/>
-            <combo key="border_type" text="Border type" values="baseline,territorial,contiguous,eez" display_values="Baseline,Territorial,Contiguous,EEZ"/>
-            <text key="name" text="Name"/>
-        </item> <!-- Maritime -->
         <separator/>
         <item name="Boundary Marker" icon="${geography_boundary_marker}" type="node" preset_name_label="true">
             <link wiki="Tag:boundary=marker" />
@@ -16236,8 +16250,18 @@
             <key key="type" value="boundary"/>
             <text key="name" text="Name"/>
             <reference ref="wikipedia_wikidata"/>
-            <combo key="boundary" text="Boundary type" values="administrative,historic,maritime,national_park,place,political,postal_code,protected_area,statistical" 
-                display_values="Administrative,Historic,Maritime,National park,Place,Political,Postal code,Protected area,Statistical" values_searchable="true"/>
+            <combo key="boundary" text="Boundary type" values_searchable="true"> 
+                <list_entry value="administrative" display_value="Administrative"/>
+                <list_entry value="census" display_value="Census" deprecated="true"/>
+                <list_entry value="historic" display_value="Historic"/>
+                <list_entry value="maritime" display_value="Maritime"/>
+                <list_entry value="national_park" display_value="National park"/>
+                <list_entry value="place" display_value="Place"/>
+                <list_entry value="political" display_value="Political"/>
+                <list_entry value="postal_code" display_value="Postal code"/>
+                <list_entry value="protected_area" display_value="Protected area"/>
+                <list_entry value="statistical" display_value="Statistical"/>
+            </combo>
             <optional>
                 <combo key="admin_level" text="Administrative level" values="1,2,3,4,5,6,7,8,9,10,11" sort_values="false" match_expression="boundary=administrative"/>    
                 <text key="postal_code" text="Postal code" match_expression="boundary=postal_code"/> 
