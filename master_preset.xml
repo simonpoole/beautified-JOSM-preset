@@ -5675,6 +5675,26 @@
                 <key key="natural" value="strait" />
                 <reference ref="optional_name_wikipedia"/>
             </item> <!-- Strait -->
+            <separator/>
+            <item name="Access point" icon="${water_access_point}" type="node" preset_name_label="true" >
+                <link wiki="Tag:waterway=access_point"/>
+                <space/>
+                <key key="waterway" value="access_point"/>
+                 <reference ref="surface"/>
+                <reference ref="optional_name"/>
+                <reference ref="facility_access"/>
+                <check key="backcountry" text="Backcountry" disable_off="true"/>
+                <check key="seasonal" text="Seasonal" disable_off="true" />
+                <label text="Access:"/>
+                <check key="canoe" text="Canoe" disable_off="true"/>
+                <check key="swimming" text="Swimming" disable_off="true"/>
+                <check key="fishing" text="Fishing" disable_off="true"/>
+                <label text="When water body frozen:"/>
+                <check key="snowmobile" text="Snowmobile" disable_off="true"/>
+                <check key="ski:nordic" text="Cross-country skiing" disable_off="true"/>
+                <check key="ice_skates" text="Ice skating entry" disable_off="true"/>
+                <preset_link preset_name="Slipway" text="Similar but different tags:" alternative="true" />
+            </item> <!-- Access point -->
         </group> <!-- Water -->
         <group name="Shipping" icon="${water_transport_group}">
             <item name="Ferry Terminal" icon="${water_transport_ferry_terminal}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -5821,6 +5841,7 @@
                     <reference ref="surface" />
                     <reference ref="fee" />
                 </optional>
+                <preset_link preset_name="Access point" text="Similar but different tags:" alternative="true" />
             </item> <!-- Slipway -->
             <item name="Boatyard" icon="${water_transport_boatyard}" type="node,closedway,multipolygon" preset_name_label="true">
                 <link wiki="Tag:waterway=boatyard"/>
