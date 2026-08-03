@@ -3160,7 +3160,7 @@
             <list_entry value="K1" display_value="K1" regions="GB,IE" />
             <list_entry value="K2" display_value="K2" regions="GB" />
             <list_entry value="K3" display_value="K3" regions="GB" />
-            <list_entry value="K4â?£Postâ?£Office" display_value="K4 Post Office" regions="GB" />
+            <list_entry value="K4ï¿½?ï¿½Postï¿½?ï¿½Office" display_value="K4 Post Office" regions="GB" />
             <list_entry value="K6" display_value="K6" regions="GB" />
             <list_entry value="K8" display_value="K8" regions="GB" />
             <list_entry value="KX100" display_value="KX100" regions="GB" />
@@ -4803,8 +4803,31 @@
             <link wiki="Tag:barrier=fence"/>
             <key key="barrier" value="fence"/>
             <optional>
-                <combo key="fence_type" text="Type" values="barbed_wire,bars,chain_link,concrete,electric,metal,pole,railing,split_rail,wire,wood" 
-                    display_values="Barbed wire,Bars,Chain link,Concrete,Electric,Metal,Pole,Railing,Split rail,Wire,Wood" values_context="material"/>
+                <combo key="fence_type" text="Type" values_context="material">
+                    <list_entry value="animal_crossing" short_description="Animal crossing"/>
+                    <list_entry value="barbed_wire" display_value="Barbed wire"/>
+                    <list_entry value="bars" display_value="Bars"/>
+                    <list_entry value="chain" display_value="Chain" deprecated="true"/>
+                    <list_entry value="chain_link" display_value="Chain link"/>
+                    <list_entry value="concrete" display_value="Concrete"/>
+                    <list_entry value="corrugated_metal" display_value="Corrugated metal"/>
+                    <list_entry value="electric" display_value="Electric"/>
+                    <list_entry value="glass" display_value="Glass"/>
+                    <list_entry value="knee_rail" display_value="Knee rail"/>
+                    <list_entry value="krest" display_value="Krest"/>
+                    <list_entry value="metal" display_value="Metal" deprecated="true"/>
+                    <list_entry value="metal_bars" display_value="Metal bars"/>
+                    <list_entry value="net" display_value="Net"/>
+                    <list_entry value="paling" display_value="Paling"/>
+                    <list_entry value="pole" display_value="Pole"/>
+                    <list_entry value="post_and_rail" display_value="Post and rail"/>
+                    <list_entry value="railing" display_value="Railing"/>
+                    <list_entry value="roundpole" display_value="Roundpole"/>
+                    <list_entry value="slatted" display_value="Slatted"/>
+                    <list_entry value="split_rail" display_value="Split rail"/>
+                    <list_entry value="wire" display_value="Wire"/>
+                    <list_entry value="wood" display_value="Wood" deprecated="true"/> 
+                </combo>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Fence -->
@@ -12196,7 +12219,7 @@
             <space />
             <key key="pipeline" value="substation" />
             <text key="name" text="Name" />
-            <combo key="substation" text="Type" values="compression,distribution,field_gathering,inspection_gauge,measurement,valve,valve_group"
+            <combo key="substation" text="Role" values="compression,distribution,field_gathering,inspection_gauge,measurement,valve,valve_group"
                 display_values="Compression,Distribution,Field gathering,Inspection gauge,Measurement,Valve,Valve group" values_context="pipeline" values_searchable="true" />
             <reference ref="ref_operator" />
             <reference ref="substance" />
@@ -12969,7 +12992,7 @@
             <space/>
             <key key="power" value="substation"/>
             <text key="name" text="Name"/>
-            <combo key="substation" text="Type of substation" values="transmission,distribution,minor_distribution,converter,compensation,transition,traction,industrial" values_context="power"/>
+            <combo key="substation" text="Role" values="transmission,distribution,minor_distribution,converter,compensation,transition,traction,industrial" values_context="power"/>
             <reference ref="power_loc" />
             <reference ref="voltage_frequency" />
             <reference ref="ref_operator" />
@@ -12983,7 +13006,7 @@
             <link wiki="Tag:power=transformer"/>
             <space/>
             <key key="power" value="transformer"/>
-            <combo key="transformer" text="Type of transformer" values="distribution,generator,converter,main,phase_angle_regulator,auxiliary,yes" match="key" values_context="power"/>
+            <combo key="transformer" text="Type" values="distribution,generator,converter,main,phase_angle_regulator,auxiliary,yes" match="key" values_context="power"/>
             <reference ref="power_loc"/>
             <reference ref="transformer_voltage_frequency"/>
             <reference ref="ref_operator"/>
@@ -13151,10 +13174,25 @@
             <reference ref="power_pole"/>
             <space/>
             <label text="Transformer Attributes:"/>
-            <key key="transformer" value="distribution" match="key!"/>
+            <key key="transformer" value="distribution" match="keyvalue!"/>
             <reference ref="transformer_voltage_frequency"/>
             <reference ref="optional_transformer_rating_phases_devices_windings"/>
         </item> <!-- Pole with Transformer-->
+        <item name="Pole with Substation" icon="${power_pole_with_substation}" type="node" preset_name_label="true">
+            <link wiki="Tag:power=pole" />
+            <space />
+            <key key="power" value="pole" />
+            <label text="Pole Attributes:" />
+            <reference ref="power_pole" />
+            <space />
+            <label text="Substation Attributes:" />
+            <combo key="substation" text="Role of substation" values="industrial,minor_distribution" match="key!" />
+            <space />
+            <label text="Transformer Attributes:" />
+            <combo key="transformer" text="Nature of transformer" values="main" match="none" />
+            <reference ref="transformer_voltage_frequency" />
+            <reference ref="optional_transformer_rating_phases_devices_windings" />
+        </item> <!-- Pole with Substation -->
         <item name="Catenary mast" icon="${power_catenary_mast}" type="node" preset_name_label="true">
             <link wiki="Tag:power=catenary_mast"/>
             <space/>
