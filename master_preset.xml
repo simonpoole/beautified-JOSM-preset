@@ -8318,6 +8318,15 @@
             <preset_link preset_name="Water Park" text="Similar but different tags:" alternative="true" />
             <preset_link preset_name="Sports Centre" text="Similar but different tags:" alternative="true" />
         </item> <!-- Public bath -->
+         <item name="Hot tub" icon="${amenity_hot_tub}" type="node,closedway" preset_name_label="true">
+            <link wiki="Tag:leisure=hot_tub"/>
+            <space/>
+            <key key="leisure" value="hot_tub"/>
+            <check key="indoor" text="Located inside a building?" disable_off="true" match="none"/>
+            <reference ref="name_operator_oh_wheelchair"/>
+            <reference ref="facility_access"/>
+            <reference ref="link_contact_address_payment"/>
+        </item> <!-- Hot tub -->
         <item name="Tanning Salon" icon="${amenity_tanning_studio}" type="node,closedway,multipolygon" preset_name_label="true">
             <link wiki="Tag:leisure=tanning_salon"/>
             <space/>
