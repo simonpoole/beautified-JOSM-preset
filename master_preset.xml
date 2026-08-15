@@ -5803,8 +5803,10 @@
                     <check key="jetski_rental" text="Jetskis" disable_off="true"/>
                     <check key="sailboat_rental" text="Sailing boats" disable_off="true"/>
                     <check key="dinghy_rental" text="Dinghies" disable_off="true"/>
+                    <check key="rowboat_rental" text="Rowing boat" disable_off="true"/>
                     <check key="kayak_rental" text="Kayaks" disable_off="true"/>
                     <check key="canoe_rental" text="Canoes" disable_off="true"/>
+                    <check key="standup_paddleboard_rental" text="Stand up paddleboards" disable_off="true"/>
                 </optional>
                 <reference ref="link_contact_address_payment"/>
             </item> <!-- Boat rental -->
