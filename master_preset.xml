@@ -13190,7 +13190,8 @@
             <reference ref="power_pole"/>
             <space/>
             <label text="Switch Attributes:"/>
-            <combo key="switch" text="Type" values="mechanical,circuit_breaker,disconnector,earthing" match="key!" values_context="power"/>
+            <combo key="switch" text="Type" values="mechanical,circuit_breaker,disconnector,earthing" 
+                display_values="Mechanical,Circuit breaker,Disconnector,Earthing" match="key!" values_context="power"/>
             <optional>
                 <reference ref="voltage"/>
                 <reference ref="cables"/>
@@ -13216,10 +13217,11 @@
             <reference ref="power_pole" />
             <space />
             <label text="Substation Attributes:" />
-            <combo key="substation" text="Role of substation" values="industrial,minor_distribution" match="key!" />
+            <combo key="substation" text="Role of substation" values="industrial,minor_distribution" 
+                display_values="Industrial,Minor distribution" match="key!" />
             <space />
             <label text="Transformer Attributes:" />
-            <combo key="transformer" text="Nature of transformer" values="main" match="none" />
+            <combo key="transformer" text="Nature of transformer" values="main" display_values="Main" match="none" />
             <reference ref="transformer_voltage_frequency" />
             <reference ref="optional_transformer_rating_phases_devices_windings" />
         </item> <!-- Pole with Substation -->
@@ -13250,7 +13252,8 @@
         <item name="Power Line" icon="${power_line}" type="way" preset_name_label="true">
             <link wiki="Tag:power=line"/>
             <space/>
-            <combo key="power" text="Line type" values="line,minor_line" default="line" match="keyvalue"/>
+            <combo key="power" text="Line type" values="line,minor_line" 
+                display_values="Line,Minor line" default="line" match="keyvalue"/>
             <reference ref="voltage_frequency"/>
             <reference ref="ref_operator"/>
             <optional>
@@ -13268,7 +13271,8 @@
             <reference ref="ref_operator"/>
             <optional>
                 <reference ref="cables_circuits"/>
-                <combo key="location" text="Location" values="overground,overhead,surface,underground,underwater" display_values="Overground,Overhead,Surface,Underground,Underwater" values_context="power cable"/>
+                <combo key="location" text="Location" values="overground,overhead,surface,underground,underwater" 
+                    display_values="Overground,Overhead,Surface,Underground,Underwater" values_context="power cable"/>
                 <reference ref="layer"/>
                 <check key="communication" text="Used for data communications" value_on="line" value_off="" default="off"/>
             </optional>
