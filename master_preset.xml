@@ -2273,7 +2273,7 @@
         </optional>
     </chunk>
     <chunk id="telecom_medium">
-        <combo key="telecom:medium" text="Local loop type" values="copper,fibre,coaxial" display_values="Copper,Fibre,Coaxial" values_context="telecom" />
+        <combo key="telecom:medium" text="Local loop type" values="copper,fibre,coaxial" display_values="Copper,Fibre,Coaxial" text_context="telecom" values_context="telecom" />
     </chunk>
     <chunk id="maxweight">
         <text key="maxweight" text="Max. weight (tonnes)" match="key" />
