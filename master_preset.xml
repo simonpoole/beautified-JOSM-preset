@@ -2755,7 +2755,7 @@
     <chunk id="climbing_optional_attributes">
         <optional>
             <combo key="climbing:orientation" text="Orientation" values="N,NE,E,SE,S,SW,W,NW" display_values="N,NE,E,SE,S,SW,W,NW" values_no_i18n="true" values_sort="false"/>
-            <combo key="climbing:quality" text="Rock/ice quality" values="fragile,medium,solid" display_values="Fragile,Medium,Solid" />
+            <combo key="climbing:quality" text="Rock/ice quality" values="fragile,medium,solid" display_values="Fragile,Medium,Solid" values_context="quality"/>
             <combo key="climbing:rock" text="Rock type" values="limestone,sandstone,granite,basalt,slate" display_values="Limestone,Sandstone,Granite,Basalt,Slate" />
             <check key="climbing:summit_log" text="Summit/route log/register" />
             <check key="indoor" text="Climbing routes indoor" />
@@ -2805,7 +2805,7 @@
                 display_values="No,Yes,Trivision blades,Winding posters,Revolving,Screen,Digital messages,Digital prices,Wind" values_context="advertising" values_searchable="true" match="key"/>
             <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
             <reference ref="screen_additional" />
-            <combo key="orientation" text="Orientation" values="front,medium,parallel,opposite,multi" display_values="Front,Medium,Parallel,Opposite,Multi" />
+            <combo key="orientation" text="Orientation" values="front,medium,parallel,opposite,multi" display_values="Front,Medium,Parallel,Opposite,Multi" values_context="advertising" />
             <reference ref="facility_visibility" />
             <reference ref="support" />
         </optional>
@@ -15624,7 +15624,7 @@
             <space />
             <key key="natural" value="shrubbery" />
             <optional>
-                <combo key="shrubbery:density" text="Effective density" values_searchable="true" values_sort="false">
+                <combo key="shrubbery:density" text="Effective density" values_searchable="true" values_sort="false" values_context="density">
                     <list_entry value="sparse" icon="${natural_shrubbery_density_sparse}" display_value="Sparse" short_description="Sparsely planted shrubbery. Generally speaking able-bodied persons could walk through them (although this is usually not desirable)." />
                     <list_entry value="medium" icon="${shrubbery_density_medium}" display_value="Medium" short_description="Shrubbery with a medium density. Able-bodied persons might be able to barge through it, but it takes some effort and might result in scratches or soiled clothing." />
                     <list_entry value="dense" icon="${shrubbery_density_dense}" display_value="Dense" short_description="Densely planted shrubbery. Effectively impassible without damaging the shrubbery (which at this point often acts as a hedge) and getting your clothes torn." />
