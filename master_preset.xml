@@ -4804,7 +4804,6 @@
             <key key="barrier" value="fence"/>
             <optional>
                 <combo key="fence_type" text="Type" values_context="material">
-                    <list_entry value="animal_crossing" short_description="Animal crossing"/>
                     <list_entry value="barbed_wire" display_value="Barbed wire"/>
                     <list_entry value="bars" display_value="Bars"/>
                     <list_entry value="chain" display_value="Chain" deprecated="true"/>
@@ -4816,7 +4815,7 @@
                     <list_entry value="knee_rail" display_value="Knee rail"/>
                     <list_entry value="krest" display_value="Krest"/>
                     <list_entry value="metal" display_value="Metal" deprecated="true"/>
-                    <list_entry value="metal_bars" display_value="Metal bars"/>
+                    <list_entry value="metal_bars" display_value="Metal bars" deprecated="true"/>
                     <list_entry value="net" display_value="Net"/>
                     <list_entry value="paling" display_value="Paling"/>
                     <list_entry value="pole" display_value="Pole"/>
@@ -4828,6 +4827,7 @@
                     <list_entry value="wire" display_value="Wire"/>
                     <list_entry value="wood" display_value="Wood" deprecated="true"/> 
                 </combo>
+                <reference ref="material"/>
                 <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
             </optional>
         </item> <!-- Fence -->
