@@ -1136,7 +1136,7 @@
     <chunk id="railway_electrified">
         <combo key="electrified" text="Electrified" values="contact_line,no,yes,rail" display_values="Contact line,No,Yes,Rail" values_context="electrified"/>
         <combo key="voltage" text="Voltage in Volts (V)" values="600,650,750,1500,3000,15000,25000" length="5"/>
-        <combo key="frequency" text="Frequency in Hertz (Hz)" values="0,16.67,16.7,25" length="5" values_sort="false" />
+        <combo key="frequency" text="Frequency in Hertz (Hz)" values="0,16.67,16.7,25" display_values="Direct current,16.67,16.7,25" length="5" values_sort="false" />
         <reference ref="layer" />
     </chunk>
     <chunk id="railway_service_gauge_electrified">
