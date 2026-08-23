@@ -826,6 +826,9 @@
             <reference ref="smoothness_values"/>
         </combo>
     </chunk>
+    <chunk id="2d-shape">
+        <combo key="shape" text="Shape" values="circular,oval,rectangular,square" display_values="Circular,Oval,Rectangular,Square" />
+    </chunk>
     <chunk id="mtb_scale">
         <combo key="mtb:scale" text="MTB Scale">
             <list_entry value="0" short_description="0: Solid gravel/packed earth, no obstacles, wide curves"/>
@@ -12298,6 +12301,8 @@
             <combo key="manhole" text="Type"
                 values="drain,gas,heat,power,rainwater,sewer,telecom,water"
                 display_values="Drain,Gas,Heat,Power,Rainwater,Sewer,Telecom,Water" values_context="manhole" values_searchable="true" />
+            <reference ref="material" />
+            <reference ref="2d-shape" />
             <reference ref="ref_operator" />
         </item> <!-- Manhole -->
         <separator/>
