@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<presets version="5.106.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
+<presets version="5.107.0" xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" shortdescription="Default OpenStreetMap Preset for Vespucci and JOSM" 
     description="General purpose OpenStreetMap preset for Vespucci and JOSM, based on the original JOSM version" 
     object_keys="advertising,attraction,area:highway,building:part,cemetery,club,departures_board,disc_golf,golf,ford,harbour,hazard,noexit,indoor,indoormark,playground,pipeline,piste:type,police,public_transport,seamark:type,traffic_calming,traffic_sign,traffic_sign:backward,traffic_sign:forward,marker,mountain_pass,telecom,roller_coaster,climbing,road_marking,disused:amenity,disused:building,disused:highway,disused:leisure,disused:man_made,disused:military,disused:railway,disused:shop,abandoned:amenity,abandoned:building,abandoned:highway,abandoned:leisure,abandoned:man_made,abandoned:military,abandoned:railway,abandoned:shop">
 <!--
@@ -826,7 +826,7 @@
             <reference ref="smoothness_values"/>
         </combo>
     </chunk>
-    <chunk id="2d-shape">
+    <chunk id="shape2d">
         <combo key="shape" text="Shape" values="circular,oval,rectangular,square" display_values="Circular,Oval,Rectangular,Square" />
     </chunk>
     <chunk id="mtb_scale">
@@ -4086,6 +4086,7 @@
             <preset_link preset_name="Colonnade"/>
             <reference ref="path_access_restrictions"/>
         </item> <!-- Dedicated Footway -->
+        <separator/>
         <item name="Steps" icon="${highway_steps}" type="way" preset_name_label="true">
             <link wiki="Tag:highway=steps"/>
             <key key="highway" value="steps"/>
@@ -4134,6 +4135,7 @@
                 <text key="width" text="Width (meters)" value_type="dimension_horizontal"/>
             </optional>
         </item> <!-- Ladder -->
+        <separator/>
         <item name="Scramble" icon="${highway_scramble}" type="way" preset_name_label="true">
             <link wiki="Proposal:Highway=scramble"/>
             <key key="highway" value="scramble"/>
@@ -4148,6 +4150,22 @@
                 <reference ref="surface" />
             </optional>
         </item> <!-- Scramble -->
+        <item name="Via ferrata" icon="${highway_via_ferrata}" type="node,way" preset_name_label="true">
+            <link wiki="Tag:highway=via_ferrata"/>
+            <key key="highway" value="via_ferrata"/>
+            <label text="Protected climbing route that requires use of suitable safety equipment" />
+            <optional>
+                <reference ref="name_wikipedia"/>
+                <combo key="via_ferrata_scale" text="Scale (Hüsler)" values_searchable="true" values_sort="false">   
+                    <list_entry value="K1" display_value="K1 - Easy (secured paths and simple climbs with continuous, good safety cables)"/>
+                    <list_entry value="K2" display_value="K2 - Moderate (short, steeper sections often eased with iron steps or ladders)"/>
+                    <list_entry value="K3" display_value="K3 - Fairly difficult (steep and exposed rock sections, well-secured)"/>
+                    <list_entry value="K4" display_value="K4 - Difficult (steep terrain with vertical, short overhangs and small grips)"/>
+                    <list_entry value="K5" display_value="K5 - Very difficult (long, strenuous steep sections with sparse artificial aids)"/>
+                    <list_entry value="K6" display_value="K6 - Extremely difficult (highly strenuous, heavily overhanging, for experts only)"/>      
+                </combo>
+            </optional>
+        </item> <!-- Via ferrata -->
     </group> <!-- Ways -->
     <group name="Waypoints" icon="${highway_way_points_group}">
         <item name="Motorway Junction" icon="${highway_motorway_junction}" type="node" preset_name_label="true">
@@ -12303,7 +12321,7 @@
                 values="drain,gas,heat,power,rainwater,sewer,telecom,water"
                 display_values="Drain,Gas,Heat,Power,Rainwater,Sewer,Telecom,Water" values_context="manhole" values_searchable="true" />
             <reference ref="material" />
-            <reference ref="2d-shape" />
+            <reference ref="shape2d" />
             <reference ref="ref_operator" />
         </item> <!-- Manhole -->
         <separator/>
