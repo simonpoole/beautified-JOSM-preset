@@ -2498,6 +2498,9 @@
         <preset_link preset_name="Contact ('contact:*')"/>
         <preset_link preset_name="Address"/>
     </chunk>
+    <chunk id="self_checkout">
+        <combo key="seld_checkout" text="Self checkout" values="yes,only,no" display_values="Yes,Only,No" values_sort="false" match="key" />   
+    </chunk>
     <chunk id="link_contact_address_payment">
         <!-- this should likely be renamed to contact_commercial or similar -->
         <preset_link preset_name="Contact"/>
@@ -13665,6 +13668,7 @@
             <reference ref="organic"/>
             <reference ref="bulk_purchase"/>
             <reference ref="post_office_optional"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="baby_feeding" />
             <reference ref="kids_area" />
@@ -13678,6 +13682,7 @@
             <reference ref="fast_food"/>
             <reference ref="bulk_purchase"/>
             <reference ref="post_office_optional"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Convenience Store -->
         <item name="General store" icon="${shopping_general_store}" gtype="node,closedway,multipolygon" preset_name_label="true">
@@ -13745,6 +13750,7 @@
             <space/>
             <key key="shop" value="frozen_food"/>
             <reference ref="name_operator_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Frozen food -->
         <item name="Deli (Fine Food)" icon="${shopping_deli}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -13818,6 +13824,7 @@
             <key key="shop" value="greengrocer"/>
             <reference ref="name_oh_wheelchair_level"/>
             <reference ref="organic"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Greengrocer -->
         <item name="Farm Stand" icon="${shopping_farm}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -13857,6 +13864,7 @@
             <space/>
             <key key="shop" value="alcohol"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Alcohol -->
         <item name="Beverages" icon="${shopping_beverages}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -13864,6 +13872,7 @@
             <space/>
             <key key="shop" value="beverages"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Beverages -->
         <item name="Wine" icon="${shopping_wine}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -13888,6 +13897,7 @@
             <space/>
             <key key="shop" value="nutrition_supplements"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Nutrition supplements -->
         <item name="Health food" icon="${shopping_health_food}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -13897,6 +13907,7 @@
             <reference ref="organic"/>
             <reference ref="bulk_purchase"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
             <preset_link preset_name="Diet" />
         </item> <!-- Health food -->
@@ -13919,6 +13930,7 @@
             <reference ref="clothes"/>
             <combo key="second_hand" text="Second hand" values="only,yes,no" display_values="Only,Yes,No"/>
             <reference ref="organic"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="baby_feeding" />
             <reference ref="kids_area" />
@@ -14029,6 +14041,7 @@
             <space/>
             <key key="shop" value="computer"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Computer -->
         <item name="Consumer electronics" icon="${shopping_electronics}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -14036,6 +14049,7 @@
             <space/>
             <key key="shop" value="electronics"/>
             <reference ref="name_oh_wheelchair_level_toilets"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Computer -->
         <item name="Mobile Phone" icon="${shopping_mobile_phone}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -14127,6 +14141,7 @@
             <space/>
             <key key="shop" value="kitchen"/>
             <reference ref="name_brand_operator_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Kitchen -->
         <item name="Houseware" icon="${shopping_houseware}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -14262,6 +14277,7 @@
             <space/>
             <key key="shop" value="stationery"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Stationery -->
         <item name="Copy Shop" icon="${shopping_copyshop}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -14309,6 +14325,7 @@
             <space/>
             <key key="shop" value="chemist"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="baby_feeding" />
             <reference ref="kids_area" />
@@ -14318,6 +14335,7 @@
             <space/>
             <key key="shop" value="cosmetics"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Cosmetics -->
         <item name="Perfumery" icon="${shopping_perfumery}" type="node,closedway" preset_name_label="true">
@@ -14464,6 +14482,7 @@
             <key key="shop" value="sports"/>
             <reference ref="sport"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Sports -->
         <item name="Water sports" icon="${shopping_water_sports}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -14471,6 +14490,7 @@
             <space/>
             <key key="shop" value="water_sports"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
         </item> <!-- Water sports -->
         <item name="Fishing" icon="${shopping_fishing}" type="node,closedway,multipolygon" preset_name_label="true">
@@ -14567,6 +14587,7 @@
             <space/>
             <key key="shop" value="garden_centre"/>
             <reference ref="name_brand_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Garden Centre -->
@@ -14576,6 +14597,7 @@
             <space/>
             <key key="shop" value="doityourself"/>
             <reference ref="name_brand_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Do-It-Yourself Store -->
@@ -14584,6 +14606,7 @@
             <space/>
             <key key="shop" value="hardware"/>
             <reference ref="name_oh_wheelchair_level"/>
+            <reference ref="self_checkout"/>
             <reference ref="link_contact_address_payment"/>
             <reference ref="kids_area" />
         </item> <!-- Hardware -->
