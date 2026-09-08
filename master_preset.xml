@@ -2499,7 +2499,7 @@
         <preset_link preset_name="Address"/>
     </chunk>
     <chunk id="self_checkout">
-        <combo key="seld_checkout" text="Self checkout" values="yes,only,no" display_values="Yes,Only,No" values_sort="false" match="key" />   
+        <combo key="self_checkout" text="Self-checkout" values="yes,only,no" display_values="Yes,Only,No" values_sort="false" match="key" />   
     </chunk>
     <chunk id="link_contact_address_payment">
         <!-- this should likely be renamed to contact_commercial or similar -->
@@ -15088,7 +15088,7 @@
         <multiselect key="cash_withdrawal" text="Cash withdrawal" length="3" values="yes" display_values="Yes" match="none" editable="true"/>
         <optional>
             <text key="cash_withdrawal:operator" text="Operator" match="none"/>
-            <combo key="cash_withdrawal:type" text="Type" values="checkout,self_checkout" display_values="Checkout,Self checkout" values_searchable="true" match="none"/>        
+            <combo key="cash_withdrawal:type" text="Type" values="checkout,self_checkout" display_values="Checkout,Self-checkout" values_searchable="true" match="none"/>        
             <text key="cash_withdrawal:limit" text="Limit" match="none" value_type="integer" />
             <text key="cash_withdrawal:currency" text="Currency" match="none" />
             <check key="cash_withdrawal:purchase_required" text="Purchase required"  match="none"/>
