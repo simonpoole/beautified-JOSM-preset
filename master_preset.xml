@@ -1686,19 +1686,19 @@
         <optional>
             <reference ref="post_office"/>
             <multiselect key="post_office:brand" text="Postal services brand" values_searchable="true" match="key" values_context="post_office">
-                <list_entry value="DHL Paketshop" short_description="Germany: Shop offering DHL"/>
-                <list_entry value="Deutsche Post" short_description="Germany: Postfiliale (Deutsche Post)" />
-                <list_entry value="Hermes PaketShop" short_description="Shop offering Hermes services" />
-                <list_entry value="GLS" short_description="Shop offering GLS services" />
-                <list_entry value="FedEx OnSite" short_description="US: FedEx services" />
-                <list_entry value="UPS" short_description="Shop offering UPS services" />
-                <list_entry value="DPD" short_description="Shop offering DPD services" />
-                <list_entry value="PostNord" short_description="Shop offering PostNord services" />
-                <list_entry value="Australia Post" short_description="Australia Post office" />
-                <list_entry value="Posten" short_description="Norway: Posten" />
-                <list_entry value="Packeta" short_description="Czech Republic: Shop offering Packeta services" />
-                <list_entry value="La Poste" short_description="France: Shop offering La Poste services" />
-                <list_entry value="PaczkoPunkt InPost" short_description="Poland: Shop offering InPost services" />
+                <list_entry value="DHL Paketshop" short_description="DHL" regions="DE"/>
+                <list_entry value="Deutsche Post" short_description="Deutsche Post" regions="DE"/>
+                <list_entry value="Hermes PaketShop" short_description="Hermes"/>
+                <list_entry value="GLS"/>
+                <list_entry value="FedEx OnSite" short_description="FedEx"/>
+                <list_entry value="UPS"/>
+                <list_entry value="DPD"/>
+                <list_entry value="PostNord" regions="SE,NO,FI,DK"/>
+                <list_entry value="Australia Post" regions="AU"/>
+                <list_entry value="Posten" regions="NO"/>
+                <list_entry value="Packeta" regions="CZ"/>
+                <list_entry value="La Poste" regions="FR"/>
+                <list_entry value="PaczkoPunkt InPost" short_description="InPost" regions="PL"/>
             </multiselect>
         </optional>
     </chunk>
