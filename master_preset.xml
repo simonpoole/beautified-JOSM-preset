@@ -1883,6 +1883,7 @@
     <chunk id="fee">
         <combo key="fee" text="Fee" values="yes,no" display_values="Yes,No" match="none"/>
         <reference ref="conditional_fee"/>
+        <text key="charge" text="How much must be paid, e.g. 1 EUR or 2.7 USD/hour or 5 CHF/person"/>
     </chunk>
     <chunk id="fee_interval">
         <combo key="fee" text="Fee" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_no_i18n="true" values_sort="false" editable="true"/>
@@ -4172,7 +4173,7 @@
             <key key="highway" value="via_ferrata"/>
             <label text="Protected climbing route that requires use of suitable safety equipment" />
             <optional>
-                <reference ref="name_wikipedia"/>
+                <reference ref="name_wikipedia"/>                
                 <combo key="via_ferrata_scale" text="Scale (Hüsler)" values_searchable="true" values_sort="false">   
                     <list_entry value="K1" display_value="K1 - Easy (secured paths and simple climbs with continuous, good safety cables)"/>
                     <list_entry value="K2" display_value="K2 - Moderate (short, steeper sections often eased with iron steps or ladders)"/>
@@ -4181,6 +4182,15 @@
                     <list_entry value="K5" display_value="K5 - Very difficult (long, strenuous steep sections with sparse artificial aids)"/>
                     <list_entry value="K6" display_value="K6 - Extremely difficult (highly strenuous, heavily overhanging, for experts only)"/>      
                 </combo>
+                <reference ref="fee"/>
+                <combo key="opening_hours" text="Opening Hours" value_type="opening_hours" delimiter="|" values="24/7|dawn-dusk|sunrise-sunset" values_no_i18n="true" values_sort="false" match="none" editable="true" />
+                <text key="website" text="Website" value_type="website"/>
+                <check key="oneway" text="Allowed both or one way"/>
+                <check key="bridge" text="A bridge exists along the via ferrata"/>
+                <check key="ladder" text="A ladder exists along the via ferrata"/>
+                <check key="rungs" text="Rungs, stemples or pins exist along the via ferrata"/>
+                <check key="tunnel" text="A tunnel exists along the via ferrata"/>
+                <check key="overhang" text="node 	Overhanging sections of significant length "/>
             </optional>
         </item> <!-- Via ferrata -->
     </group> <!-- Ways -->
