@@ -5624,6 +5624,19 @@
                 </combo>
                 <reference ref="water_body" />
             </item> <!-- Other water bodies -->
+            <item name="Flowline" icon="${water_flowline}" type="way" preset_name_label="true">
+                <link wiki="Tag:waterway=flowline" />
+                <space />
+                <label text="Indication of water flow through a larger body of water." />
+                <space />
+                <key key="waterway" value="flowline" />
+                <text key="waterbody:name" text="Name of waterbody" />
+                <optional>
+                    <check key="intermittent" text="Intermittent" disable_off="true"/>
+                    <check key="seasonal" text="Seasonal" disable_off="true"/>
+                    <check key="tidal" text="In the tidal range" disable_off="true"/>
+                </optional>
+            </item> <!-- Flowline -->
             <item name="Coastline" icon="${water_coastline}" type="way,closedway" preset_name_label="true">
                 <link wiki="Tag:natural=coastline"/>
                 <space />
