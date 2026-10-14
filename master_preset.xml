@@ -11970,6 +11970,16 @@
                 <text key="beacon:major" text="ibeacon major number"/>
             </optional>
         </item>
+        <item name="Indoor level" icon="${indoor_level}" type="closedway,multipolygon" preset_name_label="true">
+            <link wiki="Tag:indoor=level" />
+            <key key="indoor" value="level" />
+            <reference ref="level" />
+            <optional>
+                <text key="name" text="Name" i18n="true" />
+                <text key="level:ref" text="Level reference" />
+                <text key="height" text="Height (meters)" length="7" value_type="dimension_vertical"/>
+            </optional>
+        </item>
     </group> <!-- Indoor elements -->
     <group name="Man Made" icon="${man_made_group}">
       <group name="Man Made" icon="${man_made_group}">
