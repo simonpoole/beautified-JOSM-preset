@@ -1122,7 +1122,7 @@
      </chunk>
      <chunk id="bridge_details">
         <combo key="bridge" text="Bridge" values="aqueduct,boardwalk,cantilever,covered,low_water_crossing,trestle,viaduct,yes" 
-            display_values="Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct,Yes" default="yes" match="keyvalue!" values_context="bridge"/>
+            display_values="Aqueduct,Boardwalk,Cantilever,Covered,Low water crossing,Trestle,Viaduct,Yes" match="keyvalue!" values_context="bridge"/>
         <combo key="bridge:structure" text="Structure" values="arch,beam,truss,floating,suspension,cable-stayed,simple-suspension,humpback" 
             display_values="Arch,Beam,Truss,Floating,Suspension,Cable-stayed,Simple suspension,Humpback" match="key" values_context="bridge"/>
         <combo key="bridge:movable" text="Moveable bridge type" values="bascule,drawbridge,lift,submersible,swing,transporter,retractable,tilt" 
