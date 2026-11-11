@@ -1929,11 +1929,11 @@
         </combo>
     </chunk>
     <chunk id="supervised">
-        <combo key="supervised" text="Supervised" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" values_i18n="false" values_sort="false" match="none" editable="true"/>
+        <combo key="supervised" text="Supervised" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" values_sort="false" match="none" editable="true"/>
     </chunk>
     <chunk id="supervised_lit_oh">
         <reference ref="supervised"/>
-        <combo key="lit" text="Lit" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" values_i18n="false" values_sort="false" match="none" editable="true"/>
+        <combo key="lit" text="Lit" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" values_sort="false" match="none" editable="true"/>
         <optional>
             <reference ref="oh"/>
         </optional>
@@ -4277,7 +4277,7 @@
             <key key="highway" value="crossing"/>
             <reference ref="crossing_type"/>
             <reference ref="crossing_markings" />
-            <combo key="supervised" text="Crossing attendant" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_i18n="false" values_sort="false" />
+            <combo key="supervised" text="Crossing attendant" delimiter="|" value_type="opening_hours_mixed" values="yes|no" display_values="Yes|No" match="none" values_sort="false" />
             <reference ref="check_crossing_access" />
             <reference ref="tactile_paving"/>
             <reference ref="kerb"/>
