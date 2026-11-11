@@ -11941,8 +11941,8 @@
                 <text key="ref" text="Room Number" />
             </optional>
             <combo key="room" text="Type"
-                values="auditorium,shop,conference,technical,waiting,stairs,hall,office,storage,elevator,library,entrance,class,gallery,escalator,restaurant,store,toilet,laboratory"
-                display_values="Auditorium,Shop,Conference,Technical,Waiting,Stairs,Hall,Office,Storage,Elevator,Library,Entrance,Class,Gallery,Escalator,Restaurant,Store,Toilet,Laboratory" />
+                values="auditorium,shop,classroom,conference,technical,waiting,stairs,hall,office,storage,elevator,library,entrance,class,gallery,escalator,restaurant,store,toilet,laboratory"
+                display_values="Auditorium,Shop,Classroom,Conference,Technical,Waiting,Stairs,Hall,Office,Storage,Elevator,Library,Entrance,Class,Gallery,Escalator,Restaurant,Store,Toilet,Laboratory" />
             <optional>
                 <text key="height" text="Height (Meters)" value_type="dimension_vertical"/>
             </optional>
