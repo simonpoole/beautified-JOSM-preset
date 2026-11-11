@@ -712,6 +712,14 @@
         <list_entry value="demanding_alpine_hiking" display_value="T5 - difficult alpine trail with climbing" short_description="single plainly climbing up to second grade. Exposed, demanding terrain, jagged rocks, few dangerous glacier and snow"/>
         <list_entry value="difficult_alpine_hiking" display_value="T6 - hazardous alpine trail with climbing" short_description="climbing up to second grade. Often very exposed, precarious jagged rocks, glacier with danger to slip and fall"/>
     </chunk>
+    <chunk id="via_ferrata_scale">
+        <list_entry value="1" display_value="1 - Easy (secured paths and simple climbs with continuous, good safety cables)"/>
+        <list_entry value="2" display_value="2 - Moderate (short, steeper sections often eased with iron steps or ladders)"/>
+        <list_entry value="3" display_value="3 - Fairly difficult (steep and exposed rock sections, well-secured)"/>
+        <list_entry value="4" display_value="4 - Difficult (steep terrain with vertical, short overhangs and small grips)"/>
+        <list_entry value="5" display_value="5 - Very difficult (long, strenuous steep sections with sparse artificial aids)"/>
+        <list_entry value="6" display_value="6 - Extremely difficult (highly strenuous, heavily overhanging, for experts only)"/>      
+    </chunk>
     <chunk id="turn_restriction_values">
         <list_entry value="no_left_turn" display_value="No left turn" icon="${relation_turn_restriction_no_left_turn}" />
         <list_entry value="no_right_turn" display_value="No right turn" icon="${relation_turn_restriction_no_right_turn}" />
@@ -4173,13 +4181,8 @@
             <label text="Protected climbing route that requires use of suitable safety equipment" />
             <optional>
                 <reference ref="name_wikipedia"/>
-                <combo key="via_ferrata_scale" text="Scale (Hüsler)" values_searchable="true" values_sort="false">   
-                    <list_entry value="1" display_value="1 - Easy (secured paths and simple climbs with continuous, good safety cables)"/>
-                    <list_entry value="2" display_value="2 - Moderate (short, steeper sections often eased with iron steps or ladders)"/>
-                    <list_entry value="3" display_value="3 - Fairly difficult (steep and exposed rock sections, well-secured)"/>
-                    <list_entry value="4" display_value="4 - Difficult (steep terrain with vertical, short overhangs and small grips)"/>
-                    <list_entry value="5" display_value="5 - Very difficult (long, strenuous steep sections with sparse artificial aids)"/>
-                    <list_entry value="6" display_value="6 - Extremely difficult (highly strenuous, heavily overhanging, for experts only)"/>      
+                <combo key="via_ferrata_scale" text="Scale (Hüsler)" values_searchable="true" values_sort="false">
+                    <reference ref="via_ferrata_scale" />  
                 </combo>
             </optional>
         </item> <!-- Via ferrata -->
@@ -16612,6 +16615,27 @@
                 </optional>
                 <reference ref="walking_routes_roles"/>
             </item> <!-- Hiking Route -->
+            <item name="Via ferrata (route)" icon="${relation_route_via_ferrata}" type="relation" preset_name_label="true"
+                name_template="Via ferrata (?{'{name} ' | ''}?{'{ref} ' | ''} '#{special:id}')">
+                <link wiki="Tag:route=via_ferrata"/>
+                <space/>
+                <key key="type" value="route"/>
+                <key key="route" value="via_ferrata"/>
+                <text key="name" text="Name"/>
+                <optional>
+                    <combo key="via_ferrata_scale" text="Maximum scale (Hüsler)" values_searchable="true" values_sort="false">
+                        <reference ref="via_ferrata_scale" />  
+                    </combo>
+                    <reference ref="route_hikebike_optionals"/>
+                </optional>
+                <roles>
+                    <role key="" text="Route segment" requisite="required" type="way,closedway" member_expression="highway"/>
+                    <role key="alternative" text="alternative segment" requisite="optional" type="way,closedway" member_expression="highway" />
+                    <role key="approach" text="Approach segment" requisite="optional" type="way" member_expression="highway" />
+                    <role key="connection" text="Connection segment" requisite="optional" type="way" member_expression="highway" />
+                    <role key="guidepost" text="Guidepost" requisite="optional" type="node" member_expression="information=guidepost"/>
+                </roles>
+            </item> <!-- Via ferrata (route) -->
             <item name="Walking Route" icon="${relation_route_foot}" type="relation" preset_name_label="true"
                 name_template="Walking route (?{'{name} ' | ''}?{'{ref} ' | ''}?{'{from} - {via} - {to}' | '{from} - {to}' | '{from}' | '{to}' | '#{special:id}'})">
                 <link wiki="Tag:route=foot"/>
